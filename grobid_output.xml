@@ -1,0 +1,1931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Modeling and Prediction of Land Use Land Cover Change Dynamics Based on Land Change Modeler (LCM) in Nashe Watershed, Upper Blue Nile Basin, Ethiopia</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2021-03-27">27 March 2021</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename type="first">Megersa</forename><surname>Kebede</surname></persName>
+							<email>megersa.kebede@uni-rostock.de</email>
+							<affiliation key="aff1">
+								<orgName type="department">Faculty of Agriculture and Environmental Sciences</orgName>
+								<orgName type="institution">University of Rostock</orgName>
+								<address>
+									<postCode>18051</postCode>
+									<settlement>Rostock</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Faculty of Civil and Environmental Engineering</orgName>
+								<orgName type="institution" key="instit1">Jimma Institute of Technology</orgName>
+								<orgName type="institution" key="instit2">Jimma University</orgName>
+								<address>
+									<postCode>378</postCode>
+									<settlement>Jimma</settlement>
+									<country key="ET">Ethiopia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Tamene</forename><forename type="middle">Adugna</forename><surname>Demissie</surname></persName>
+							<idno type="ORCID">0000-0001-6750-8819</idno>
+							<affiliation key="aff2">
+								<orgName type="department">Faculty of Civil and Environmental Engineering</orgName>
+								<orgName type="institution" key="instit1">Jimma Institute of Technology</orgName>
+								<orgName type="institution" key="instit2">Jimma University</orgName>
+								<address>
+									<postCode>378</postCode>
+									<settlement>Jimma</settlement>
+									<country key="ET">Ethiopia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jens</forename><surname>Tränckner</surname></persName>
+							<email>jens.traenckner@uni-rostock.de</email>
+							<idno type="ORCID">0000-0001-5830-817X</idno>
+							<affiliation key="aff1">
+								<orgName type="department">Faculty of Agriculture and Environmental Sciences</orgName>
+								<orgName type="institution">University of Rostock</orgName>
+								<address>
+									<postCode>18051</postCode>
+									<settlement>Rostock</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Susana</forename><surname>Martín-Fernández</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="laboratory">of Land Use Land Cover Change Dynamics Based on Land Change Modeler (LCM) in Nashe Watershed</orgName>
+								<address>
+									<addrLine>Upper Blue Nile Basin</addrLine>
+									<country key="ET">Ethiopia</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Modeling and Prediction of Land Use Land Cover Change Dynamics Based on Land Change Modeler (LCM) in Nashe Watershed, Upper Blue Nile Basin, Ethiopia</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2021-03-27">27 March 2021</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">75DC6899EF3982EFBC940D11C2687A33</idno>
+					<idno type="DOI">10.3390/su13073740</idno>
+					<note type="submission">Received: 25 February 2021 Accepted: 22 March 2021</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2025-03-21T11:17+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>land change modeler</term>
+					<term>Landsat images</term>
+					<term>modeling LULC change</term>
+					<term>multilayer perceptron</term>
+					<term>TerrSet</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Change of land use land cover (LULC) has been known globally as an essential driver of environmental change. Assessment of LULC change is the most precise method to comprehend the past land use, types of changes to be estimated, the forces and developments behind the changes. The aim of the study was to assess the temporal and spatial LULC dynamics of the past and to predict the future using Landsat images and LCM (Land Change Modeler) by considering the drivers of LULC dynamics. The research was conducted in Nashe watershed (Ethiopia) which is the main tributary of the Upper Blue Nile basin. The total watershed area is 94,578 ha. The Landsat imagery from 2019, 2005, and 1990  was used for evaluating and predicting the spatiotemporal distributions of LULC changes. The future LULC image prediction has been generated depending on the historical trends of LULC changes for the years 2035 and 2050. LCM integrated in TerrSet Geospatial Monitoring and Modeling System assimilated with MLP and CA-Markov chain have been used for monitoring, assessment of change, and future projections. Markov chain was used to generate transition probability matrices between LULC classes and cellular automata were used to predict the LULC map. Validation of the predicted LULC map of 2019 was conducted successfully with the actual LULC map. The validation accuracy was determined using the Kappa statistics and agreement/disagreement marks. The results of the historical LULC depicted that forest land, grass land, and range land are the most affected types of land use. The agricultural land in 1990 was 41,587.21 ha which increased to 57,868.95 ha in 2019 with an average growth rate of 39.15%. The forest land, range land, and grass land declined annually with rates of 48.38%, 19.58%, and 26.23%, respectively. The predicted LULC map shows that the forest cover will further degrade from 16.94% in 2019 to 8.07% in 2050, while agricultural land would be expanded to 69,021.20 ha and 69,264.44 ha in 2035 and 2050 from 57,868.95 ha in 2019. The findings of this investigation indicate an expected rapid change in LULC for the coming years. Converting the forest area, range land, and grass land into other land uses, especially to agricultural land, is the main LULC change in the future. Measures should be implemented to achieve rational use of agricultural land and the forest conversion needs to be well managed.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>Land use land cover (LULC) change occurs under a variety of pressure and it is the result of changes or modifications in the intensity of an existing LULC type to determine the location and nature of the land use change. The changes of LULC have been perceived as worldwide environmental change drivers in the watershed that are very sensitive to LULC dynamics <ref type="bibr" target="#b0">[1]</ref>. A dynamic LULC offers an inclusive sympathetic of the interactions and relations that are crucial for sustainable land resource management <ref type="bibr" target="#b1">[2]</ref>. At global and local levels, the changes of LULC are driven by anthropogenic and natural processes at different spatiotemporal levels. The LULC changes are dynamic, non-linear human-nature interactions that are significant land surface conversions and involve complex processes. The LULC change trajectory worldwide for the past 300 years has been categorized by gains in agriculture and losses in forests <ref type="bibr" target="#b2">[3,</ref><ref type="bibr" target="#b3">4]</ref>. According to the authors of <ref type="bibr" target="#b4">[5]</ref>, LULC changes are associated with the change of forest land to agricultural expansion, urbanization, and deforestation.</p><p>The LULC changes were broadly assessed in various areas of the world, for instance, Europe and USA <ref type="bibr" target="#b5">[6]</ref>, South America <ref type="bibr" target="#b6">[7]</ref>, Asia, and Africa <ref type="bibr" target="#b7">[8]</ref>, Ethiopia <ref type="bibr" target="#b8">[9,</ref><ref type="bibr" target="#b9">10]</ref>. In Africa, the expansion of agricultural land influenced by rapid population growth has been recognized as a primary driver of LUC. Many developed countries including Europe and the United states practiced massive deforestation because of agricultural expansion and industrialization until the early 19th century <ref type="bibr" target="#b10">[11]</ref>. Urbanization dynamics and urban growth are usually linked to demographic factors mostly in developing countries <ref type="bibr" target="#b11">[12]</ref>. In Africa, the expansion of agriculture influenced by population growth has been recognized as a primary driver of land use land cover change (LULCC). The landscape has been intensely changed due to socio-economic and political changes that occurred in the first half of the 19th century in Europe <ref type="bibr" target="#b10">[11]</ref>. The decrease in agricultural land at the expenditure of increased urban areas and water bodies in Europe is another strong trend <ref type="bibr">[13]</ref>.</p><p>The dynamics of LULC intensities and rates are changing because they are highly associated with the overexploitation of natural resources. The natural variability issues like climate change, soil conditions, and terrain characteristics have also accounted for land use changes <ref type="bibr" target="#b13">[14]</ref>. Therefore, the integration of natural and human factors in LULC dynamics have become a significant issue throughout the world in efficient land use. The assessment of LULC change and the drivers that have direct consequences on the natural environment and human societies are the focus of the current scientific examination of scientists <ref type="bibr" target="#b14">[15]</ref>. In order to develop sustainable strategies and to have informed planning decisions, understanding the drivers and dynamics of LULC change is crucial. The LULC change driving forces can be direct or indirect for change over time and space; this was incorporated to provide an estimate of future scenarios <ref type="bibr" target="#b15">[16]</ref>.</p><p>The drivers' assessment and predicting their future LULC status in the watershed is expected to have an essential contribution for land use planning management and sustainable water resources. The use of historical satellite imageries are used to effectively monitor and analyze LULC change <ref type="bibr" target="#b16">[17]</ref>. Future LULC change analysis and prediction are often complicated for the stochastic change of nature and the dynamic of natural and socioeconomic variables. The prediction of forthcoming LULC dynamics in areas where the economic condition depends upon agriculture has a profound impact. The LULC model developed in this study predicts a future LULC state based on a business-as-usual scenario. Therefore, understanding the earlier and current LULC changes and simulating for the future is vital for the management of land and water resources of the basin <ref type="bibr" target="#b17">[18,</ref><ref type="bibr" target="#b18">19]</ref>.</p><p>Models of land change are useful tools for environmental and other types of research concerning LULC change <ref type="bibr" target="#b19">[20]</ref>. The magnitude and location are the two important issues of LULC that have been considered in the modeling. LULC change assessment models are either dynamic or static, non-spatial or spatial, deductive or inductive, pattern-based or agent-based <ref type="bibr" target="#b20">[21,</ref><ref type="bibr" target="#b21">22]</ref>. Modeling the LULC process is to properly calibrate and validate the model for predicting future changes <ref type="bibr" target="#b22">[23]</ref>. The LCM embedded in the TerrSet model has been utilized to inspect the historical and to predict the future changes of LULC of the watershed. LCM primarily uses the MLPNN-CA-MC approach. The model is strong due to its dynamic projection proficiency, suitable calibration, and capability to simulate several types of land cover <ref type="bibr" target="#b23">[24,</ref><ref type="bibr" target="#b24">25]</ref>. LCM evaluates changes of the land use of two different periods, determines the changes, visualizes changes, and presents the results with various maps and graphs.</p><p>The model predicts future LULC images based upon MLPNN (Multi-Layer Perceptron neural networks) and CA-Markov Chain (CA-MC) <ref type="bibr" target="#b25">[26]</ref>. The "transition potential" of pixel to change into another class determination is through MLP drivers of change <ref type="bibr" target="#b26">[27]</ref>. The MC model is stochastic, which requires pairs of LULC images to derive the transition potential into the future predictions based on the amount of historical change <ref type="bibr" target="#b27">[28,</ref><ref type="bibr" target="#b28">29]</ref>. The blend of CA-MC can simulate the spatiotemporal dynamics of LULC change. The model predicts transitions of a cell from one LULC to another depending on "physical and socio-economic" data <ref type="bibr" target="#b29">[30,</ref><ref type="bibr" target="#b30">31]</ref>. The model validation process is the accuracy assessment of prediction and contrast made between the predicted and observed land cover maps. Therefore, to assess the change drivers of the past and to simulate for the future, the validated data have been used.</p><p>Remote sensing data particularly Landsat images provide suitable possibility for LULC change monitoring, particularly for developing countries where geospatial technologies are not well developed <ref type="bibr" target="#b31">[32]</ref>. In Africa, around 40% of the population were living in urban centers as of 2014. By 2050 the urban residents' percentage has been projected to reach 56% <ref type="bibr">[33]</ref>. In Europe, between 1990 and 2006 the population grew up by 146% <ref type="bibr" target="#b32">[34]</ref> as per the study was conducted in 24 European countries. Currently in Europe around 73% of the population lives in urban areas and it is estimated to be over 80% by <ref type="bibr">2050 [33]</ref>. The availability of resources as well as their dynamics and management varies considerably from area to area, especially in Ethiopia. Ethiopia is highly vulnerable to environmental changes induced by natural and anthropogenic activities. LULC change is a fundamental problem in the country <ref type="bibr">[35]</ref>.</p><p>Due to changes of LULC, Ethiopia experienced serious environmental problems including soil erosion, land degradation, loss of soil fertility, and deforestation <ref type="bibr" target="#b34">[36]</ref>. The "Upper Blue Nile Basin (UBNB)" is the most varied and a highly important river basin in Ethiopia <ref type="bibr" target="#b35">[37,</ref><ref type="bibr" target="#b36">38]</ref>. Nashe watershed is the tributary of the Basin that faced LULC change driven by population growth, urbanization, agricultural land expansion, deforestation, overgrazing, expansion of industrial activities, and political dynamics. The analysis of LULC change in Nashe watershed, its drivers, and prediction of future land use change are vital for understanding the dynamics of human environment interactions and environmental management interventions. Therefore, it is very important to assess and predict the LULC changes based on the historical data using Landsat images and Land Change Modeler. The following research questions were addressed: (i) what was the trend of LULC change within the study area in the past (1990-2019) and which LULC classes were mostly affected? (ii) What growth and change patterns can be expected in the future? (iii) What are the major driving factors of LULC change in the watershed?</p><p>The above research questions are so significant and addressed in this study of watershed since a dramatic socio-economic change with expected enormous effect on the land use is undergoing and this will influence various hydrological processes. Thus, especially in the UBNB, those changes need to be predicted in time for environmental management in this area in an effective and sustainable manner. The study findings are utilized to provide empirical evidence on patterns and rates and identify major driving forces of LULC dynamics at watershed level, and improve policies in land use within the framework of sustainable land use planning in relation to future changes or development.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Materials and Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Study Area</head><p>The Upper Blue Nile Basin (UBNB) is the main stream of the Nile basin and is located within the western and central part of Ethiopia between latitudes 7 • 45 and 12 • 45 N and longitudes 34 • 05 to 39 • 45 E. The UBNB consists of the major part of Ethiopia and covers an area of 157,000 km 2 . The basin is located within the region of Oromia, Amhara and Benishangul-Gumuz of Ethiopia. The basin has three main seasons: a main rainy season which occurs between June and September, a dry season from October to January, and a short rainy season between February and May. The basin mean yearly rainfall ranges within 800-2000 mm and increases with altitude. The Nashe watershed is the major tributary from the left bank within the UBNB of Ethiopia which is situated at about 300 km from Addis Ababa. The sub-basin lies in between 9 • 35 and 9 • 52 N latitudes and 37 • 00 and 37 • 20 E longitudes (Figure <ref type="figure" target="#fig_0">1</ref>). short rainy season between February and May. The basin mean yearly rainfall ranges within 800-2000 mm and increases with altitude. The Nashe watershed is the major tributary from the left bank within the UBNB of Ethiopia which is situated at about 300 km from Addis Ababa. The sub-basin lies in between 9° 35′ and 9° 52′ N latitudes and 37° 00′ and 37° 20′ E longitudes (Figure <ref type="figure" target="#fig_0">1</ref>). The watershed area varies in elevation from 1600 m in the lower plateau under the escarpment to the hills and ridges of the highland climbing to over 2500 m. The annual average rainfall of the Nashe watershed ranges from 1200 mm to 1600 mm (depending on data from five weather stations); June, July, August, and September are the main rainy season of the catchment. The observed average temperature of the catchment is 22 °C. The watershed area is categorized by intensive irrigable lands at the downstream, large water potential sites at the upstream, and also with high head of hydropower potential. Agriculture is the leading financial activity in the watershed and the main source of livelihood for the local population.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Data Types and Sources</head><p>The important spatial data required for the study were Digital Elevation Model, Landsat Images, and field data. The three Landsat images used were downloaded from the USGS (http://glovis.usgs.gov/, accessed on 2 January 2017) (Table <ref type="table" target="#tab_1">1</ref>) and DEM was obtained from the Ethiopian Ministry of Water, Irrigation and Energy (MoWIE). The collected 30 m spatial resolution of DEM was used to delineate the watershed, to develop elevation, and to generate the slope of the watershed. The analysis was performed using the TM Landsat-5 from 1990, ETM+ Landsat-7 from 2005, and OLI_TIRS Landsat-8 from 2019. The images were acquired in January, which corresponds to the dry season in Ethiopia when a clear sky period occurs to obtain images with Zero clouds and avoid extreme differences in the land cover reflectance dataset. The global positioning system (GPS) measurements were taken during fieldwork to verify and confirm the information gathered through remote sensing at each ground control points (GCP). The LULC types were noted and for reference purposes, photographs were also taken.</p><p>The coordinates of each location selected were marked with GPS, and these points were verified in Google Earth. During field survey and data collection, socioeconomic The watershed area varies in elevation from 1600 m in the lower plateau under the escarpment to the hills and ridges of the highland climbing to over 2500 m. The annual average rainfall of the Nashe watershed ranges from 1200 mm to 1600 mm (depending on data from five weather stations); June, July, August, and September are the main rainy season of the catchment. The observed average temperature of the catchment is 22 • C. The watershed area is categorized by intensive irrigable lands at the downstream, large water potential sites at the upstream, and also with high head of hydropower potential. Agriculture is the leading financial activity in the watershed and the main source of livelihood for the local population.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Data Types and Sources</head><p>The important spatial data required for the study were Digital Elevation Model, Landsat Images, and field data. The three Landsat images used were downloaded from the USGS (http://glovis.usgs.gov/, accessed on 2 January 2017) (Table <ref type="table" target="#tab_1">1</ref>) and DEM was obtained from the Ethiopian Ministry of Water, Irrigation and Energy (MoWIE). The collected 30 m spatial resolution of DEM was used to delineate the watershed, to develop elevation, and to generate the slope of the watershed. The analysis was performed using the TM Landsat-5 from 1990, ETM+ Landsat-7 from 2005, and OLI_TIRS Landsat-8 from 2019. The images were acquired in January, which corresponds to the dry season in Ethiopia when a clear sky period occurs to obtain images with Zero clouds and avoid extreme differences in the land cover reflectance dataset. The global positioning system (GPS) measurements were taken during fieldwork to verify and confirm the information gathered through remote sensing at each ground control points (GCP). The LULC types were noted and for reference purposes, photographs were also taken. The coordinates of each location selected were marked with GPS, and these points were verified in Google Earth. During field survey and data collection, socioeconomic survey methods such as interviews with key informants, discussions with focus groups, and participatory field observation were conducted. The socio-economic data collected were utilized to get information on historical land use change, socio-economic status, and the driving factors that change the land use in the watershed. The key informants were chosen purposely from various social groups including elders, community leaders, and local natural resource experts.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Land Use and Land Cover Change Assessment 2.3.1. Image Classification</head><p>The classification of images is to categorize automatically all pixels from the Landsat images into LULC classes to extract useful thematic information <ref type="bibr" target="#b37">[39]</ref>. For image classification, the data of ground truth were gathered on the field and satellite image verification. After pre-processing the satellite images, the supervised classification was implemented using "maximum likelihood classification (MLC)" technique to produce image classification. The MLC method is the widely used algorithm for supervised satellite image classification <ref type="bibr" target="#b38">[40]</ref>. The method has a strong theoretical foundation and the ability to accommodate varying data, LULC types, and satellite systems <ref type="bibr" target="#b27">[28]</ref>. The approach of supervised classification is adopted as it preserves the basic land cover characteristics through statistical classification techniques <ref type="bibr" target="#b39">[41]</ref>. In classifying the 1990, 2005, and 2019 images, reference data were gathered from images of Google Earth and through interviews from concerning body of the corresponding time periods. In this study, six separable LULC are considered (Table <ref type="table" target="#tab_2">2</ref>). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>LULC Types Description</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Agricultural Land</head><p>Includes areas used for perennial and annual crops, irrigated areas, scattered rural settlements, commercial farms (sesame cultivations and sugarcane plantations).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Forest Land</head><p>Areas covered with dense trees (deciduous forests, evergreen forests, mixed forests).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Range Land</head><p>Includes areas covered with small trees, less dense forests, bushes, and shrubs. These areas are less dense than forests.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Grass Land</head><p>Areas covered by grasses are usually used for grazing and those remain for some months in a year.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Urban Area</head><p>Areas of commercial areas, urban and rural settlements, industrial areas.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Water Body Areas covered by rivers, streams, and reservoirs</head><p>To accomplish classification of image in multi-temporal approach and for mapping purposes, the ERDAS Imagine 2015 and ArcGIS 10.3 software were used, respectively. For each LULC, as many as possible training samples were selected throughout the entire image, based on the composite images, as well as Google Earth images. For classification, verification, and validation of the classified images, the training data were used.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.2.">Accuracy Assessment</head><p>Accuracy assessment tells us to what extent the ground truth is represented on the equivalent classified image. Since land use maps derived from image classification usually contain some errors, the accuracy of classification results obtained must be assessed. Assessing the classification accuracy provides the degree of confidence in the results and the subsequent change detection <ref type="bibr" target="#b38">[40]</ref>. For accuracy assessment, the classified map was compared with ground truth data. For 1990 and 2005, the reference points were collected from Google Earth, original Landsat images, interviews, group discussion, previous reports, and maps. For the 2019 image, Google Earth, field observation, original Landsat images, interviews, and group discussions of random reference points in different LULC types were recorded from the field survey conducted by using GPS.</p><p>The common and most effective method used to measure the accuracy of the classified image from remotely sensed imagery is an error/confusion matrix <ref type="bibr" target="#b40">[42]</ref>. The confusion matrix provides overall accuracy, user accuracy, producer accuracy, and kappa statistics. Kappa coefficient was determined by using Equation ( <ref type="formula" target="#formula_0">1</ref>) <ref type="bibr" target="#b41">[43]</ref>. According to the authors of <ref type="bibr" target="#b20">[21]</ref>, a kappa coefficient value below 0.4 shows poor agreement, a value between 0.4 and 0.8 depicts a moderate agreement, and a value greater than 0.8 shows a strong agreement.</p><formula xml:id="formula_0">K = N ∑ r i=1 Xii -∑ r i=1 (Xi+) * (X + i) N 2 -∑ r i=1 (Xi+) * (X + i)<label>(1)</label></formula><formula xml:id="formula_1">K = (Total * sum o f correct) -sum o f all the (row total * column total) Total squared -sum o f all the (row total * column total)<label>(2)</label></formula><p>where r-rows number in the matrix, Xii-number of observations in row i and column i (the diagonal elements), X + i and Xi+-the marginal totals of row i and column I, respectively, and N-observations number.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.3.">Land Use Land Cover Change Drivers</head><p>Driving factors influence LULC changes. LULC changes are driven by natural and human activities <ref type="bibr" target="#b9">[10]</ref>. The regionally differing main drivers have great impact on many environmental aspects <ref type="bibr" target="#b42">[44]</ref>. Provided that drivers of past changes are sustained, they can be expected to be influential forces in the future. LULC change simulation studies have used topographic and distance driver variables <ref type="bibr" target="#b43">[45,</ref><ref type="bibr" target="#b44">46]</ref>. Elevation, slope, distance from roads, distance from streams, distance from urban area, and evidence likelihood rasters were considered as the potential driver variables. Distance from roads, distance from streams, and distance from urban area were set as dynamic variables to express the varying distance as they change over time.</p><p>The evidence likelihood is an empirical probability of change in the LULC categories between an earlier and a later map <ref type="bibr" target="#b45">[47]</ref>. It is used to transform categorical variables, such as change from one land cover class to another into numerical values. The significance of driver variables was tested using Cramer's V and P values which measure strength of the correlation between two variable classes. Cramer's V value is a coarse statistic measure of the association strength or dependency between variables, and it ranges from 0.0 to 1.0 in value. Generally, variables with a total Cramer's V value greater than 0.15 are considered useful and those with a score over 0.4 are considered good <ref type="bibr" target="#b46">[48,</ref><ref type="bibr" target="#b47">49]</ref>. The Cramer's V does not assure a strong performance of the variables, since it cannot represent the scientific prerequisites and the multifaceted nature of the relationships. It simply helps to determine whether or not to include the particular variable as a driving factor of LULC change <ref type="bibr" target="#b48">[50]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">LULC Change Prediction and Validation</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.1.">LULC Prediction</head><p>The LCM (Land Change Modeler) embedded in the TerrSet Geospatial Monitoring and Modeling System (TGMMS) software was used for prediction of future LULC for a specified year based on the classified historical satellite images. The LCM determines how the factors influence future LULC change, how much land cover change took place between earlier and later LULC, and then calculates a relative amount of transitions <ref type="bibr" target="#b49">[51]</ref>. It was widely tested and used to predict change for the analysis and modeling of impacts on biodiversity using multiple land cover categories <ref type="bibr" target="#b44">[46]</ref>. The module provides changes of the LULC assessment as losses and gains to each LULC category. LCM produces two simulated maps, i.e., soft projection and hard projection. In hard predictions, a simulated map is developed for the prediction year, in which each pixel is allocated to a specific land use category <ref type="bibr" target="#b50">[52]</ref>. Whereas, the soft prediction is a projected map created to show the vulnerability in which each pixel is allocated a value from 0 to 1. The smaller value indicates less vulnerability to change and the high value shows high susceptibility to change <ref type="bibr" target="#b50">[52]</ref>. Similarly, the model is used for analyzing, predicting, and validating the predicted LULC change <ref type="bibr" target="#b51">[53]</ref>.</p><p>The trend variations of LULC changes for the years 1990, 2005, and 2019 were analyzed to predict future years of the watershed. The future land use scenarios were based on recent trends, historical land use information, and anticipated future changes. The LCM uses the "change analysis" tab, the "transition potentials" tab, and the "change prediction" tab. The change rates were determined through the "change analysis" tab, along with the "transition potential" maps to simulate the future scenario. The LCM module allows three different approaches to produce maps of transition potential based on the individual sub-models and associated explanatory variables: multi-layer perceptron (MLP) neural network, logistic regression, and a similarity-weighted instance-based machine learning tool (SimWeight) <ref type="bibr" target="#b45">[47]</ref>. The MLP estimates accurately the land that would be estimated to change from the image of later date to the specified simulation date based on the projection. From the approaches, the performance of MLP is stronger when modeling the relationship between non-linear land change and the explanatory variables. It is more flexible and dynamic compared to the others when multiple transition types are modeled <ref type="bibr" target="#b45">[47]</ref>.</p><p>The TerrSet model uses CA-MC which is a stochastic modeling process to simulate the future changing over time from past changes <ref type="bibr" target="#b52">[54]</ref>. It predicts the spatial structure of various LULC categories and scenarios based on the TPM <ref type="bibr" target="#b30">[31,</ref><ref type="bibr" target="#b53">55]</ref>. To predict LULC change, the Markov matrix model depends on the Bayes equation (Equation ( <ref type="formula" target="#formula_1">2</ref>)) that evaluates the change by comparing the initial (T1) and the second land cover (T2) <ref type="bibr" target="#b45">[47]</ref>.</p><formula xml:id="formula_2">S (t+1) = P ij * S (t) (3) Pij =     P11 P12 . . . P1n P21 P22 . . . P2n . . . . . . . . . . . . Pn1 Pn2 . . . Pnn    <label>(4)</label></formula><p>where 0 ≤ Pij &lt; 1 and</p><formula xml:id="formula_3">n ∑ j=1 Pij = 1, (i, j = 1, 2, . . . , n).</formula><p>The cellular automata model can be expressed by the following equation:</p><formula xml:id="formula_4">S (t,t+1) = f[S(t),N]<label>(5)</label></formula><p>where S (t) and S (t+1) are the system status at times t and t + 1, respectively, N-cellular field, t and t + 1 are the different times, f-transformation rule of cellular states in local space, S-the set of limited and discrete cellular states, Pij-the transition probability matrix in a state.</p><p>The CA-Markov considers constraints and factors to prepare a single map of suitability <ref type="bibr" target="#b27">[28,</ref><ref type="bibr" target="#b49">51,</ref><ref type="bibr" target="#b54">56]</ref>. The model prepares the probability transition matrix and transition probability areas. The probability transitional matrix contains the changing probability of an individual LULC class to other classes. The transitional area matrix contains the pixel number that is expected to change from each LULC class over the specified time frame <ref type="bibr" target="#b46">[48]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.2.">Model Validation</head><p>Validation is simply a procedure to assess the quality of the predicted LULC map against a reference map <ref type="bibr" target="#b55">[57]</ref>. The images of Landsat for 1990 and 2005 were utilized to simulate the 2019 LULC image. The comparison of simulated LULC image with the actual map was developed. The LULC of the 1990 and 2005 years were provided to calibrate LCM, and the model was validated by simulating the recent LULC map of 2019. The validation process in LCM involves a cross-tabulation in a three-way comparison between the later land cover map (2005), the predicted land cover map (2019), and the actual map (2019). The module validation in the LCM model was used to assess statistically the quality of the predicted 2019 LULC image against the 2019 reference image <ref type="bibr" target="#b55">[57]</ref>.</p><p>The map shows areas where the model correctly predicted called "hits", areas where the model predicted change but it actually did not occur called "false alarms", and occasions where the model was unable to predict it, but areas are changed in reality, called "misses". After the model prediction capacity was verified between the 1990 and 2005 time periods for 2019, the simulation process was repeated to project the 2035 and 2050 map using 2005 and 2019 classified maps. The other method is the kappa coefficient calculation between the predicted map and actual land use map <ref type="bibr" target="#b56">[58]</ref>. However, the original kappa coefficient does not distinguish between the quantification and location error, delimiting its expressiveness. This can be resolved by calculating cause dependent K-indices, Kno (kappa for no information), Klocation (kappa for location), Kstandard (kappa for standard), and KlocationStrata (kappa for stratum-level location) <ref type="bibr" target="#b56">[58]</ref>.</p><p>The overall agreement of the projected and reference map indicates the Kappa for no information (Kno). The location kappa (Klocation) is used to compute the spatial accuracy in the overall landscape, because of the correct assignment values in each category between the simulated and reference map <ref type="bibr" target="#b57">[59]</ref>. The ratio of inaccurately allocations by chance to the correct assignments is kappa for standard (Kstandard) <ref type="bibr" target="#b51">[53]</ref>. The kappa for stratum level location (KlocationStrata) is a quantification of the spatial accuracy within pre-identified strata, and it indicates how well the grid cells are situated within the strata <ref type="bibr" target="#b45">[47]</ref>. The blend of Kstandard, Kno, Klocation, and Klocation strata scores is considered for a comprehensive evaluation of the overall accuracy both in terms of location and quantity. Additionally, the statistics considered are AgreementQuantity, AgreementChance, AgreementGridCell, Dis-agreementGridCell, and DisagreementQuantity to know exactly how strong the agreement is between the simulated map and the base map (Table <ref type="table" target="#tab_3">3</ref>). The DisagreementQuantity and DisagreementGridCell constituents are crucial to understand the simulated model <ref type="bibr" target="#b55">[57]</ref>. This sort of validation method gives the idea about the level of agreement or disagreement between projected and actual LULC maps <ref type="bibr" target="#b47">[49]</ref>. The two most important differences between the two categorical maps are in terms of quantity (changes or persistence) and allocation. Disagreement by quantity is the variation between two images because of an imperfect combination in the overall proportions of LULC categories. The allocation disagreement is the distinction between two images caused by an imperfect combination among the spatial allocations of all land cover map categories <ref type="bibr" target="#b51">[53]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5.">Analysis of Land Use Land Cover Change</head><p>The change of LULC assessment was computed using the LCM model. Different LULC categories of quantitative assessment, net change of LULC categories, and the contributors to the net change experienced by each LULC class are the three sections of results identified in the LCM. Change analysis was performed by using the classified maps <ref type="bibr">(1990, 2005, and 2019</ref>) and the predicted LULC (2035 and 2050) to demonstrate the pattern of changes <ref type="bibr" target="#b56">[58]</ref>. The LULC dynamics in each study period were assessed using the numerical values extracted from the classified images. To acquire the change pattern, the images classified from consecutive periods were cross-tabulated and compared to each other. The probability matrix was done between 1990 and 2005, 2005 and 2019, 2019 and 2035, 2035, and 2050 using LCM. The change percentage <ref type="bibr">[35]</ref> and the rate of change were determined <ref type="bibr" target="#b39">[41]</ref> for LULC categories by using Equations ( <ref type="formula" target="#formula_4">5</ref>) and ( <ref type="formula" target="#formula_5">6</ref>), respectively, to determine the amount of the changes experienced between the periods of the different LULC categories.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Percent of change =</head><p>Ay -Ax Ax * 100</p><p>Rate of change (ha/year) = Ay -Ax T</p><p>where Ax is the area of LULC (ha) of an earlier land cover image, Ay is the area of LULC (ha) of a later land cover image, T is the time interval between Ax and Ay in years.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">Results and Discussions</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Accuracy Assessment of the Classified Images</head><p>The assessment of accuracy was performed for LULC change analysis by generating confusion/error matrix in each LULC category of 1990, 2005, and 2019 classified maps. The overall accuracy, kappa statistics, producer's and user's accuracy have been used for assessment. The kappa statistics and overall accuracy of classified images shows 91.43%, 87.59%, 85.71% and 0.93, 0.90, and 0.88 for the years 2019, 2005, and 1990, respectively (Table <ref type="table" target="#tab_4">4</ref>). The more recent LULC map accuracy results were higher and these may be related to a higher spatial resolution of satellite images.</p><p>The accuracy assessment of LULC is required in any study using remote sensing Landsat data for the historical LULC. According to the authors of <ref type="bibr" target="#b59">[61]</ref>, LULC map accuracy is quantified by creating an error matrix or a confusion matrix, which compares the classified map with a reference classification map. The results of the study is consistent with some other studies conducted by the authors of <ref type="bibr" target="#b39">[41]</ref> in Dera District, of <ref type="bibr" target="#b34">[36]</ref> in Borena Woreda, of <ref type="bibr" target="#b9">[10]</ref> in Blue Nile basin, of <ref type="bibr" target="#b8">[9]</ref> in Gumera, of <ref type="bibr" target="#b60">[62]</ref> in Portugal, of <ref type="bibr" target="#b10">[11]</ref> in Poland, Slovakia, and Czechia, and of <ref type="bibr" target="#b61">[63]</ref> in India. The accuracy of this study shows that the result is within the range of accuracies, in which Land Change Modeler and Landsat images were used <ref type="bibr" target="#b53">[55,</ref><ref type="bibr" target="#b61">63]</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">LULC Change Analysis</head><p>The change of the LULC analysis was through evaluation of gains, net change, and losses experienced by different categories using change analysis in LCM. The evaluation of spatial and temporal changes between various classes during the period 1990, 2005, and 2019 was analyzed (Figure <ref type="figure" target="#fig_2">2</ref> and Table <ref type="table" target="#tab_5">5</ref>). The "from-to" transformations are summarized as loss, gain, and net change of LULC in Figures <ref type="figure" target="#fig_7">3</ref> and<ref type="figure" target="#fig_5">4</ref>. The gain of LULC for each class was determined from the result of persistence and the total column value, whereas the loss is from total row and the persistence. The percentage and rate of change were calculated using Equations ( <ref type="formula" target="#formula_4">5</ref>) and ( <ref type="formula" target="#formula_5">6</ref>), respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">LULC Change Analysis</head><p>The change of the LULC analysis was through evaluation of gains, net change, and losses experienced by different categories using change analysis in LCM. The evaluation of spatial and temporal changes between various classes during the period 1990, 2005, and 2019 was analyzed (Figure <ref type="figure" target="#fig_2">2</ref> and Table <ref type="table" target="#tab_5">5</ref>). The "from-to" transformations are summarized as loss, gain, and net change of LULC in Figure <ref type="figure" target="#fig_4">3</ref> and Figure <ref type="figure" target="#fig_5">4</ref>. The gain of LULC for each class was determined from the result of persistence and the total column value, whereas the loss is from total row and the persistence.  <ref type="table" target="#tab_5">5</ref>). The changes in LULC have influenced forest distribution in the study area. The forest land area, which is also the largest part of land use class, has significantly decreased. Similarly, according to the least prevalent types of land use, the urban areas and water body increased from 1990 to 2019. The significant increase of agricultural land, water body, urban land, and the sharp decline of forest land in the watershed were the major transformations observed.</p><p>Although forest land, range land, and grass land experienced reduction in coverage throughout the study periods, the greatest reduction rate was observed in forest land. To mitigate the rapid rates of LULC conversions at watershed, the application of integrated watershed management strategies, managing the rapid population growth, afforestation of degraded or deforested areas, and reducing the dependency of locals on forest products is critically important. The findings of the study are consistent with other studies conducted in Ethiopia by the authors of <ref type="bibr" target="#b63">[65]</ref> in Birr and Upper Didesa watersheds of the Blue Nile basin, and as outlined in <ref type="bibr" target="#b40">[42]</ref> for Dera district of northwestern Ethiopia, where the agricultural land increased significantly and the forest land was shrinking.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Driver Variables of LULC Change</head><p>The driver variables influencing changes are based on spatial analysis and added to the model either as static or dynamic components <ref type="bibr" target="#b46">[48]</ref>. The LULC prediction in the watershed was based on change in a driver's impact. In this study, both topography and proximity factors were selected to analyze the LULC change. Before the drivers are added -15,000.0 -10,000.0 -5,000.0 0.0 5,000.0 10,000.0  is also the largest part of land use class, has significantly decreased. Similarly, according to the least prevalent types of land use, the urban areas and water body increased from 1990 to 2019. The significant increase of agricultural land, water body, urban land, and the sharp decline of forest land in the watershed were the major transformations observed.</p><note type="other">Agricultural</note><p>Although forest land, range land, and grass land experienced reduction in coverage throughout the study periods, the greatest reduction rate was observed in forest land. To mitigate the rapid rates of LULC conversions at watershed, the application of integrated watershed management strategies, managing the rapid population growth, afforestation of degraded or deforested areas, and reducing the dependency of locals on forest products is critically important. The findings of the study are consistent with other studies conducted in Ethiopia by the authors of <ref type="bibr" target="#b63">[65]</ref> in Birr and Upper Didesa watersheds of the Blue Nile basin, and as outlined in <ref type="bibr" target="#b40">[42]</ref> for Dera district of northwestern Ethiopia, where the agricultural land increased significantly and the forest land was shrinking.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Driver Variables of LULC Change</head><p>The driver variables influencing changes are based on spatial analysis and added to the model either as static or dynamic components <ref type="bibr" target="#b46">[48]</ref>. The LULC prediction in the watershed was based on change in a driver's impact. In this study, both topography and proximity factors were selected to analyze the LULC change. Before the drivers are added -15,000.0 -10,000.0 -5,000.0 0.0 5,000.0 10,000.0  The agricultural land is the dominant LULC type of the watershed which covered 43.97% of the study area in 1990, 50.39% in 2005, and 61.19% in 2019 (Table <ref type="table" target="#tab_5">5</ref>). The changes in LULC have influenced forest distribution in the study area. The forest land area, which is also the largest part of land use class, has significantly decreased. Similarly, according to the least prevalent types of land use, the urban areas and water body increased from 1990 to 2019. The significant increase of agricultural land, water body, urban land, and the sharp decline of forest land in the watershed were the major transformations observed. Although forest land, range land, and grass land experienced reduction in coverage throughout the study periods, the greatest reduction rate was observed in forest land. To mitigate the rapid rates of LULC conversions at watershed, the application of integrated watershed management strategies, managing the rapid population growth, afforestation of degraded or deforested areas, and reducing the dependency of locals on forest products is critically important. The findings of the study are consistent with other studies conducted in Ethiopia by the authors of <ref type="bibr" target="#b62">[64]</ref> in Birr and Upper Didesa watersheds of the Blue Nile basin, and as outlined in <ref type="bibr" target="#b39">[41]</ref> for Dera district of northwestern Ethiopia, where the agricultural land increased significantly and the forest land was shrinking.</p><note type="other">Agricultural</note></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.">Driver Variables of LULC Change</head><p>The driver variables influencing changes are based on spatial analysis and added to the model either as static or dynamic components <ref type="bibr" target="#b45">[47]</ref>. The LULC prediction in the watershed was based on change in a driver's impact. In this study, both topography and proximity factors were selected to analyze the LULC change. Before the drivers are added to the model, the selected driver variables were tested for their explanatory value using Cramer's V and P values (Table <ref type="table" target="#tab_8">6</ref>). The Cramer's V value does not give decisive proof that a particular variable explains the change in land use. It is rather a more intuitive tool that can be utilized to understand the significance that a particular variable has in influencing change. Evidence likelihood is used for the determination of the relative frequency of pixels of different LULC types within the areas of change. It is recommended in cases where there are low Cramer's V values. The obtained result for evidence likelihood is considered as good. In this study, it is a quantitative measure of the frequency of change between agricultural land and all other land classes (also called disturbance).</p><p>From Table <ref type="table" target="#tab_8">6</ref>, it was observed that the variable such as elevation, distance from urban areas, distance from stream, distance from road are considered as useful variables of transitions. Variables such as slope have low Cramer's V values, and it shows that the effect of slope on LULC change in the study area is not critical. The variables with good Cramer's V value show that they are the most explanatory variables for LULC change. All driver variables were used to model the transitions in this study. The elevation and slope are recognized as the imperative topographic factors affecting LULC change. Topography has effects on the spread and extent of urban distribution, forest and range land conversion to agricultural land. The authors of <ref type="bibr" target="#b63">[65]</ref> found that deforestation decreases with the increase of the slope gradient. The other driver variables such as distance from stream, distance from urban areas, and distance from roads also play an important role in land use change, as each provides convenience to residents to access resources.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4.">Transition Probability Matrix (TPM)</head><p>Transition potential modeling is assessing the likelihood of LULC change from one class to another depending on the suitability transition of area and the presence of driving forces <ref type="bibr" target="#b64">[66]</ref>. The TPM records the probability of each land use class to change into the other class. The LULC changes of the future predictions are utilized through the probability of the transition matrix <ref type="bibr" target="#b65">[67]</ref>. The transition probability matrices produced by the model between LULC types during the periods 1990-2005 and 2005-2019 were depicted in Table <ref type="table" target="#tab_9">7</ref>. The spatiotemporal LULC change assessment between the earlier and later land cover maps were cross-tabulated. The cross-tabulation is used to determine the amounts of change and conversions between different land cover maps. In the table of cross-tabulation shown in Table <ref type="table" target="#tab_9">7</ref>, the bolded frequencies along the transition probability matrix of the diagonal confirm the probability of LULC class remaining unchanged (persistence) from the earlier to the later land cover map. Whereas, the off-diagonal frequencies express the possibility of a given LULC experiences changes from one to another. The change analysis is depends on the changes in LULC between time 1 and time 2 <ref type="bibr" target="#b27">[28]</ref>. The agricultural land which is the highest class has 39,662.13 ha with the probability of remaining as agricultural land in 1990-2005. The conversion of forest land, range land, and grass land was the major contributing land use for the agricultural land. The minimum loss of LULC category was observed from water body to grass land and urban land. Although in urban land there was minimum or no conversion to range land and water body. In 2005-2019 the highest class loss was the change of forest land to agricultural land by 12,051.96 ha.</p><p>In 2005-2019, especially since 2012, a dam on Nashe River was built for irrigation and hydropower purposes. The water body has increased. The displacement of communities occurred from their land during the expansion of hydropower projects and the displacement caused land scarcity. The lowland areas of the watershed was covered with forests, range lands, and grass lands before 1990 even before 2005. Currently, however, a great decline of forest cover is occurring because of urbanization and agricultural land expansion. In recent times, the expansion of urban areas has been continuously increasing at the highest rate.</p><p>The findings of the study show that urban area increase was consistent with other research findings in Africa <ref type="bibr" target="#b7">[8]</ref> and Ethiopia <ref type="bibr" target="#b8">[9,</ref><ref type="bibr" target="#b9">10]</ref>. The studies in some parts of Europe, for example, [13] in Slovakia, <ref type="bibr" target="#b60">[62]</ref> in Portugal, and <ref type="bibr" target="#b10">[11]</ref> in Poland, Slovakia, and Czechia, reported an increase in urban areas at the expense of agricultural land. Similarly, a study in China reported that the urban built-up land expansion from conversion of cultivated land <ref type="bibr" target="#b66">[68]</ref>. The authors of <ref type="bibr" target="#b11">[12]</ref> revealed that effective urban planning is needed to address the multiple challenges and competing interests of urban environments for the rapid increase in urban built-up area with scarce land and water resources on the urban edge.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5.">Validation of the Model</head><p>The agreement of the two categorical maps was measured by using Validation Module. In order to assess the accuracy, validation of the model is necessary. Validation is significant as it allows to determine the quality of the predicted land cover map with actual map. A comparison was made between the actual and simulated LULC map of 2019 so as to validate the predicted map. The less effective simulated LULC class is water body as the projected map was from the maps before construction of the dam and the actual LULC map is from after the construction. The validation results between the simulated and actual LULC test summary of the model are presented in Table <ref type="table" target="#tab_10">8</ref>. The achieved k-indices are compiled in Table <ref type="table" target="#tab_11">9</ref>. The model is regarded to be validated if the Kstandard (overall kappa) score exceeds 70% <ref type="bibr" target="#b21">[22]</ref>. The values of k-index greater than 80% show good agreement between the projected and actual LULC map that exceeds the minimum acceptable standard <ref type="bibr" target="#b45">[47]</ref>. Here, all indices are greater than 80%, showing a good overall agreement and projection ability of the model. The values of AgreementChance, AgreementQuantity, AgreementGridCell, Disagreement Grid Cell, and Disagreement Quantity in Table <ref type="table" target="#tab_12">10</ref> provide statistical agreement information between the simulated map and the reference map. Namely, DisagreementGridCell and DisagreementQuantity constituents are crucial to recognize the model simulated outputs <ref type="bibr" target="#b55">[57]</ref>. The disagreement between the two maps is generally low and this is mainly due to quantity errors (0.0513) rather than allocation errors (0.0269). The agreement measures show overall good agreement between the actual and simulated map (92.81%). The result shows that in the study area the model has higher ability to predict the LULC changes in location than in quantity. This indicates the good capacity of the model in simulating future LULC states and an accurate specification of location.</p><p>According to the authors of <ref type="bibr" target="#b53">[55]</ref>, the model was validated by comparing the map of observed LULC of 2019 with the predicted LULC map of 2019 using the statistics of kappa index. For accuracy assessment measurement in a number of studies, kappa coefficient is still considered as a vital tool <ref type="bibr" target="#b59">[61]</ref>. The LULC change model performance is different for different study areas because of varied environmental features and situations of the individual study area <ref type="bibr" target="#b60">[62,</ref><ref type="bibr" target="#b61">63]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.6.">Future LULC Prediction</head><p>The LULC change of the future has been predicted for the years 2035 and 2050. The future probable percentages of changes in LULC for the periods of 2019-2035 and 2035-2050 were analyzed by transition probabilities matrix. The quantity of change and the spatial distribution are the two aspects of LULC prediction in LCM that are provided by Markov chain and MLP neural network, respectively <ref type="bibr" target="#b67">[69]</ref>. The simulated future LULC images of the watershed obtained from the LCM are shown in Figure <ref type="figure" target="#fig_10">5</ref>. Similarly, the area coverage, percentage, and rate of change are provided in Table <ref type="table" target="#tab_14">11</ref>. Generally, the LULC change increase or decrease was provided in Figure <ref type="figure">6</ref>.</p><p>Sustainability 2021, 13, x FOR PEER REVIEW 15 of 23 index. For accuracy assessment measurement in a number of studies, kappa coefficient is still considered as a vital tool <ref type="bibr" target="#b60">[62]</ref>. The LULC change model performance is different for different study areas because of varied environmental features and situations of the individual study area <ref type="bibr" target="#b61">[63,</ref><ref type="bibr" target="#b62">64]</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.6.">Future LULC Prediction</head><p>The LULC change of the future has been predicted for the years 2035 and 2050. The future probable percentages of changes in LULC for the periods of 2019-2035 and 2035-2050 were analyzed by transition probabilities matrix. The quantity of change and the spatial distribution are the two aspects of LULC prediction in LCM that are provided by Markov chain and MLP neural network, respectively <ref type="bibr" target="#b68">[70]</ref>. The simulated future LULC images of the watershed obtained from the LCM are shown in Figure <ref type="figure" target="#fig_10">5</ref>. Similarly, the area coverage, percentage, and rate of change are provided in Table <ref type="table" target="#tab_14">11</ref>. Generally, the LULC change increase or decrease was provided in Figure <ref type="figure">6</ref>.</p><p>Significant change was observed from the change analysis result in LULC change between 1990 and 2050. Agricultural land will be the predominant LULC type. It was seen from the result as the area of agricultural land increment from 61.19% in 2019 to 72.98% in 2035 and 73.24% in 2050. This was mainly caused by converting forest, range, and some parts of grass land. Agricultural land increased significantly from 1990 to 2035 and then slowly from 2035 to 2050 (Figure <ref type="figure" target="#fig_13">7</ref> and Table <ref type="table" target="#tab_14">11</ref>). Similarly, a continuous increment was also observed in urban areas and water bodies from the 2019 to 2050 periods. The development of infrastructure, industry, and housing have taken place and are expected to take place around the watershed, therefore, the urban land will increase. The urban coverage around watershed totaled 1.15% in 2019, which is predicted to reach 2.00% and 3.82% by 2035 and 2050, respectively. The graphical demonstration of the area covered by six LULC classes for past years <ref type="bibr">(1990, 2005, and 2019</ref>) and for the prediction years (2035 and 2050) are shown in Figure <ref type="figure" target="#fig_15">8</ref>.   grass, and range land classes were registered net loss in the area from 1990 to 2035. Whereas, the range land and grass land smoothly gained from 2035-2050. The predicted results of the year 2035 and 2050 show an increase in agriculture, water body and urban land. Therefore, future land use activities ought to be based on proper land use development and land regulation to reduce the enduring adverse impact of LULC changes. Ref. <ref type="bibr" target="#b11">[12]</ref> confirmed that effective urban planning is needed to address the multiple challenges and competing interests of urban environments for rapid increase in urban built up area on scarce land.</p><p>Ref. <ref type="bibr" target="#b71">[73]</ref> indicated that agricultural land expansion, both for commercial and crop production is the main driver of LULC change. The rate of crop land expansion is increasing whereas forests, grass land, shrub land and other lands are decreasing in the world. This study finding is in agreement with results from previous studies that confirm the major driver of LULC change <ref type="bibr" target="#b8">[9,</ref><ref type="bibr" target="#b9">10,</ref><ref type="bibr" target="#b20">21,</ref><ref type="bibr" target="#b56">58,</ref><ref type="bibr" target="#b61">63,</ref><ref type="bibr" target="#b62">64,</ref><ref type="bibr" target="#b71">73]</ref>. Ref. <ref type="bibr">[74]</ref> reported that weak law enforcement and growth of population are fundamental drivers of deforestation. The other driving force for agricultural land expansion is probably government policy <ref type="bibr" target="#b71">[73]</ref>. On the other hand, the major underlying driving forces are Demographic, Economic, Technological, Institution, policy and biophysical factors were identified by the key informant and FGDs of the study. Agricultural expansion, firewood extraction, settlement expansion, land tenure policy and infrastructure development were the top LULC change drivers. Significant change was observed from the change analysis result in LULC change between 1990 and 2050. Agricultural land will be the predominant LULC type. It was seen from the result as the area of agricultural land increment from 61.19% in 2019 to 72.98% in 2035 and 73.24% in 2050. This was mainly caused by converting forest, range, and some parts of grass land. Agricultural land increased significantly from 1990 to 2035 and then slowly from 2035 to 2050 (Figure <ref type="figure" target="#fig_13">7</ref> and Table <ref type="table" target="#tab_14">11</ref>). Similarly, a continuous increment was also observed in urban areas and water bodies from the 2019 to 2050 periods. The development of infrastructure, industry, and housing have taken place and are expected to take place around the watershed, therefore, the urban land will increase. The urban coverage around watershed totaled 1.15% in 2019, which is predicted to reach 2.00% and 3.82% by 2035 and 2050, respectively. The graphical demonstration of the area covered by six LULC classes for past years <ref type="bibr">(1990, 2005, and 2019</ref>) and for the prediction years (2035 and 2050) are shown in Figure <ref type="figure" target="#fig_15">8</ref>.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Conclusions</head><p>The present study was carried out to understand the changes in the historical and predicted land use land cover patterns from the year 1990 to 2050. The integrated approach including remote sensing, GIS, and a MLPNN-based CA-MC model was used to understand the spatiotemporal dynamics of LULC and prediction of future LULC change in Nashe watershed, Ethiopia. The conclusions drawn from the research findings were the following.</p><p>The multitemporal satellite imagery data are used for informed decision-making in LULC change, providing the potential information required for monitoring and evaluating of LULC changes. The precision of the data from the remotely sensed imagery classified based on the maximum likelihood classification method with high resolution image of Landsat was checked through an error matrix and it yielded an acceptable result that was further processed for analysis.</p><p>To validate the model, the projected 2019 LULC map was compared with 2019 actual LULC map. After successful model validation, the LULC map for the years 2035 and 2050 were simulated by considering the business-as-usual scenario. In this procedure, we used 1990-2005 and 2005-2019 LULC data as a baseline and current scenario for comparison. Its validation showed a strong correlation between the simulated LULC map and satellitederived map, which proved the simulation model's reliability.</p><p>The rapid and massive changes of LULC in the watershed may have serious environmental impacts. The analysis of LULC change shows that forest cover has been decreasing, as well as the high increasing rate of urban area and agricultural land. The predicted LULC situation show that this cover would continue in the future. This will increase vulnerability of the watershed to landslides, soil loss, gully erosion, worsened air pollution, and impact the hydrology of the studied watershed in particular and the Blue Nile Basin The forest land and range land show a decreasing trend from 2019 to 2035. Unfortunately, the grass land, range land, and agricultural land will slightly increase from 2035 to 2050. This might be due to the limited area of land for different purposes. The major contributing factors to LULC change were the expansion of hydropower and irrigation projects, mostly at the downstream, for expansion of a sugar factory. The scarcity of jobs and urban expansions in the catchment amplified the socio-economic activities for LULC changes. In the watershed, the downstream and partly at the upstream areas, which were previously covered by forests and range lands, have been converted to agricultural land and commercial crop farms.</p><p>Forest reduction also occurred as a result of using charcoal and firewood as the energy source for most of the people living around the watershed, who depend on fuel wood. Additionally, most of the evacuated population during the construction of Nashe and Amerti projects were involved in converting the forest land to agriculture and settlement. Illegal and unplanned settlements by the local people to expand agriculture and settlement also contributed to destruction of forest land, range land, and grass land. Thus, the forest conversion needs to be controlled and well-managed, and a reasonable land use plan should be developed in an organized way. The expansion of one LULC type occurs at the detriment of other LULC classes <ref type="bibr" target="#b68">[70]</ref>. Currently, the government has given more emphasis to the plantation trees program. Hence, in the country, many of the areas that were deforested might become covered by plants again. In the future prediction of LULC scenarios, the change of the area in the transition matrix was determined (Table <ref type="table" target="#tab_15">12</ref>). LULC categories, agricultural land is expanding at an average rate of <ref type="bibr">39.15% (1990-2019)</ref>.</p><p>From the temporal patterns of the changes between 1990 and 2019, forest land decreased at a higher rate. The other affected LULC types were range land and grass land. The urban land and water body LULC classes gained trends in the study. Simulation analysis was conducted for the years of 2035 and 2050 based on historical LULC change data from 1990-2005, 2005-2019, and 1990-2019, which were used as a baseline. Similar to the historical analysis of LULC change, the predicted results of forest, grass, and range land classes were registered net loss in the area from 1990 to 2035. Whereas, the range land and grass land smoothly gained from 2035-2050. The predicted results of the year 2035 and 2050 show an increase in agriculture, water body and urban land. Therefore, future land use activities ought to be based on proper land use development and land regulation to reduce the enduring adverse impact of LULC changes. Ref. <ref type="bibr" target="#b11">[12]</ref> confirmed that effective urban planning is needed to address the multiple challenges and competing interests of urban environments for rapid increase in urban built up area on scarce land.</p><p>Ref. <ref type="bibr" target="#b70">[72]</ref> indicated that agricultural land expansion, both for commercial and crop production is the main driver of LULC change. The rate of crop land expansion is increasing whereas forests, grass land, shrub land and other lands are decreasing in the world. This study finding is in agreement with results from previous studies that confirm the major driver of LULC change <ref type="bibr" target="#b8">[9,</ref><ref type="bibr" target="#b9">10,</ref><ref type="bibr" target="#b20">21,</ref><ref type="bibr" target="#b55">57,</ref><ref type="bibr" target="#b60">62,</ref><ref type="bibr" target="#b61">63,</ref><ref type="bibr" target="#b70">72]</ref>. Ref. <ref type="bibr" target="#b71">[73]</ref> reported that weak law enforcement and growth of population are fundamental drivers of deforestation. The other driving force for agricultural land expansion is probably government policy <ref type="bibr" target="#b70">[72]</ref>. On the other hand, the major underlying driving forces are Demographic, Economic, Technological, Institution, policy and biophysical factors were identified by the key informant and FGDs of the study. Agricultural expansion, firewood extraction, settlement expansion, land tenure policy and infrastructure development were the top LULC change drivers.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">Conclusions</head><p>The present study was carried out to understand the changes in the historical and predicted land use land cover patterns from the year 1990 to 2050. The integrated approach including remote sensing, GIS, and a MLPNN-based CA-MC model was used to understand the spatiotemporal dynamics of LULC and prediction of future LULC change in Nashe watershed, Ethiopia. The conclusions drawn from the research findings were the following.</p><p>The multitemporal satellite imagery data are used for informed decision-making in LULC change, providing the potential information required for monitoring and evaluating of LULC changes. The precision of the data from the remotely sensed imagery classified based on the maximum likelihood classification method with high resolution image of Landsat was checked through an error matrix and it yielded an acceptable result that was further processed for analysis.</p><p>To validate the model, the projected 2019 LULC map was compared with 2019 actual LULC map. After successful model validation, the LULC map for the years 2035 and 2050 were simulated by considering the business-as-usual scenario. In this procedure, we used 1990-2005 and 2005-2019 LULC data as a baseline and current scenario for comparison. Its validation showed a strong correlation between the simulated LULC map and satellitederived map, which proved the simulation model's reliability.</p><p>The rapid and massive changes of LULC in the watershed may have serious environmental impacts. The analysis of LULC change shows that forest cover has been decreasing, as well as the high increasing rate of urban area and agricultural land. The predicted LULC situation show that this cover would continue in the future. This will increase vulnerability of the watershed to landslides, soil loss, gully erosion, worsened air pollution, and impact the hydrology of the studied watershed in particular and the Blue Nile Basin in general.</p><p>Therefore, suitable and timely management measures must be taken by policy decision makers to enable sustainable development and to protect the watershed in order to reduce the severity of the changes.</p><p>Settlement expansion, agricultural expansion, firewood extraction, land tenure policy, and infrastructure development were the top LULC change drivers. Moreover, to ensure a better environmental condition, this kind of study revealed a significant prospective to contribute towards the sustainable environmental planning and management system of an area at the local and global levels.</p><p>Finally, it can be concluded that the projected conditions may be reversed, which is very important to reduce the enduring adverse impact of LULC changes on the watershed hydrological components through the announced nationwide tree planting, implementing the strategy of climate resilient green economy and formulating the local-and regional-scale policies required for sustainable development. Future studies incorporating the assessment of land use and land cover change impacts on the hydrological parameters of the watershed would be helpful for better management of the watershed.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Map of the study area.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Map of the study area.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. The LULC of the Nashe watershed in 1990, 2005, and 2019. The agricultural land is the dominant LULC type of the watershed which covered 43.97% of the study area in 1990, 50.39% in 2005, and 61.19% in 2019 (Table5). The changes in LULC have influenced forest distribution in the study area. The forest land area, which</figDesc><graphic coords="12,71.37,113.01,452.28,219.48" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. The LULC of the Nashe watershed in 1990, 2005, and 2019.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Gain and loss area of the land use land cover class in 1990-2005 and 2005-2019.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Net change and net persistence area of LULC class of the study periods.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Gain and loss area of the land use land cover class in 1990-2005 and 2005-2019.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 3 .</head><label>3</label><figDesc>Figure 3. Gain and loss area of the land use land cover class in 1990-2005 and 2005-2019.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Net change and net persistence area of LULC class of the study periods.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Figure 4 .</head><label>4</label><figDesc>Figure 4. Net change and net persistence area of LULC class of the study periods.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. The predicted 2035 and 2050 LULC of the watershed.Figure 5. The predicted 2035 and 2050 LULC of the watershed.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>Figure 5 .</head><label>5</label><figDesc>Figure 5. The predicted 2035 and 2050 LULC of the watershed.Figure 5. The predicted 2035 and 2050 LULC of the watershed.</figDesc><graphic coords="16,170.02,498.93,371.87,179.66" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12"><head>Figure 6 .Figure 6 .</head><label>66</label><figDesc>Figure 6. Land use land cover change in 1990-2050.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13"><head>Figure 7 .</head><label>7</label><figDesc>Figure 7. The gain, loss, and net change of the projected LULC area (2019, 2035, and 2050).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_14"><head>Figure 7 . 23 Figure 8 .</head><label>7238</label><figDesc>Figure 7. The gain, loss, and net change of the projected LULC area (2019, 2035, and 2050).Sustainability 2021, 13, x FOR PEER REVIEW 19 of 23</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_15"><head>Figure 8 .</head><label>8</label><figDesc>Figure 8. Historical and predicted land use land cover change area coverage.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 1 .</head><label>1</label><figDesc>Details of Landsat images data used for the analysis of land use and land cover (LULC) in the study area.</figDesc><table><row><cell>Satellite Sensor</cell><cell>Path/Row</cell><cell>Acquisition Date</cell><cell>User Bands</cell><cell>Spatial Resolution</cell><cell>Year</cell></row><row><cell>Landsat 5 TM</cell><cell>169/053 170/053</cell><cell>January 1990</cell><cell>1-5, 7</cell><cell>30 m</cell><cell>1990</cell></row><row><cell>Landsat 7 ETM+</cell><cell>169/053 170/053</cell><cell>January 2005</cell><cell>1-5, 7, and 8</cell><cell>30 m, 15 m</cell><cell>2005</cell></row><row><cell>Landsat 8 OIL</cell><cell>169/053 170/053</cell><cell>January 2019</cell><cell>1-7, 9, and 8</cell><cell>30 m, 15 m</cell><cell>2019</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 2 .</head><label>2</label><figDesc>Major land use land cover types used and their descriptions.</figDesc><table /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 3 .</head><label>3</label><figDesc>Possible ranges of map comparison and level of agreement of kappa values<ref type="bibr" target="#b58">[60]</ref>.</figDesc><table><row><cell>No.</cell><cell>Values</cell><cell>Strength of Agreement</cell></row><row><cell>1</cell><cell>&lt;0</cell><cell>Poor</cell></row><row><cell>2</cell><cell>0.01-0.40</cell><cell>Slight</cell></row><row><cell>3</cell><cell>0.41-0.60</cell><cell>Moderate</cell></row><row><cell>4</cell><cell>0.61-0.80</cell><cell>Substantial</cell></row><row><cell>5</cell><cell>0.81-1.00</cell><cell>Almost Perfect</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 4 .</head><label>4</label><figDesc>Accuracy assessment of classified LULC maps for 1990, 2005, and 2019.</figDesc><table><row><cell>LULC Types</cell><cell>Agricultural Land</cell><cell>Forest Land</cell><cell>Range Land</cell><cell>Grass Land</cell><cell>Urban Land</cell><cell>Water Body</cell><cell>UA (%)</cell></row><row><cell>Agricultural Land</cell><cell>86</cell><cell>0</cell><cell>3</cell><cell>5</cell><cell>0</cell><cell>1</cell><cell>90.53</cell></row><row><cell>Forest Land</cell><cell>0</cell><cell>78</cell><cell>6</cell><cell>0</cell><cell>1</cell><cell>0</cell><cell>91.76</cell></row><row><cell>Range Land</cell><cell>1</cell><cell>4</cell><cell>67</cell><cell>3</cell><cell>0</cell><cell>0</cell><cell>89.33</cell></row><row><cell>Grass Land</cell><cell>4</cell><cell>3</cell><cell>0</cell><cell>56</cell><cell>5</cell><cell>2</cell><cell>80.00</cell></row><row><cell>Urban Land</cell><cell>0</cell><cell>4</cell><cell>4</cell><cell>2</cell><cell>50</cell><cell>0</cell><cell>83.33</cell></row><row><cell>Water Body</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>4</cell><cell>0</cell><cell>51</cell><cell>92.73</cell></row><row><cell>PA (%)</cell><cell>94.51</cell><cell>87.64</cell><cell>83.75</cell><cell>80.00</cell><cell>89.29</cell><cell>94.44</cell><cell></cell></row><row><cell></cell><cell></cell><cell cols="2">K = 85.71%; OA = 0.88</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>LULC Types</cell><cell>Agricultural Land</cell><cell>Forest Land</cell><cell>Range Land</cell><cell>Grass Land</cell><cell>Urban Land</cell><cell>Water Body</cell><cell>UA (%)</cell></row><row><cell>Agricultural Land</cell><cell>89</cell><cell>2</cell><cell>4</cell><cell>4</cell><cell>1</cell><cell>0</cell><cell>89.00</cell></row><row><cell>Forest Land</cell><cell>0</cell><cell>81</cell><cell>4</cell><cell>3</cell><cell>2</cell><cell>0</cell><cell>90.00</cell></row><row><cell>Range Land</cell><cell>3</cell><cell>4</cell><cell>72</cell><cell>0</cell><cell>1</cell><cell>0</cell><cell>90.00</cell></row><row><cell>Grass Land</cell><cell>5</cell><cell>0</cell><cell>1</cell><cell>54</cell><cell>1</cell><cell>4</cell><cell>83.08</cell></row><row><cell>Urban Land</cell><cell>0</cell><cell>1</cell><cell>0</cell><cell>2</cell><cell>52</cell><cell>0</cell><cell>94.55</cell></row><row><cell>Water Body</cell><cell>1</cell><cell>0</cell><cell>0</cell><cell>2</cell><cell>0</cell><cell>47</cell><cell>94.00</cell></row><row><cell>PA (%)</cell><cell>90.82</cell><cell>92.05</cell><cell>88.89</cell><cell>83.08</cell><cell>91.23</cell><cell>92.16</cell><cell></cell></row><row><cell></cell><cell></cell><cell cols="2">K = 87.59%; OA = 0.90</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>LULC types</cell><cell>Agricultural Land</cell><cell>Forest Land</cell><cell>Range Land</cell><cell>Grass Land</cell><cell>Urban Land</cell><cell>Water Body</cell><cell>UA (%)</cell></row><row><cell>Agricultural Land</cell><cell>100</cell><cell>0</cell><cell>1</cell><cell>3</cell><cell>1</cell><cell>0</cell><cell>95.24</cell></row><row><cell>Forest Land</cell><cell>2</cell><cell>84</cell><cell>4</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>93.33</cell></row><row><cell>Range Land</cell><cell>1</cell><cell>4</cell><cell>63</cell><cell>2</cell><cell>0</cell><cell>0</cell><cell>90.00</cell></row><row><cell>Grass Land</cell><cell>2</cell><cell>1</cell><cell>4</cell><cell>57</cell><cell>0</cell><cell>1</cell><cell>87.69</cell></row><row><cell>Urban Land</cell><cell>0</cell><cell>0</cell><cell>1</cell><cell>2</cell><cell>57</cell><cell>0</cell><cell>95.00</cell></row><row><cell>Water Body</cell><cell>0</cell><cell>0</cell><cell>0</cell><cell>2</cell><cell>0</cell><cell>48</cell><cell>96.00</cell></row><row><cell>PA (%)</cell><cell>95.24</cell><cell>94.38</cell><cell>86.30</cell><cell>86.36</cell><cell>98.28</cell><cell>97.96</cell><cell></cell></row><row><cell></cell><cell></cell><cell cols="2">K = 91.43%; OA = 0.93</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p>UA: User's Accuracy, PA: Producer's Accuracy, K: Kappa Statistics, OA: Overall Accuracy.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 5 .</head><label>5</label><figDesc>The area coverage of LULC, percent, and rate of changes in the Nashe watershed between 1990, 2005, and 2019.</figDesc><table><row><cell>Area</cell></row><row><cell>LULC Types</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8"><head>Table 6 .</head><label>6</label><figDesc>Cramer's V and p-value for each of the explanatory variables.</figDesc><table><row><cell>Driver Variables</cell><cell>Cramer's V</cell><cell>p-Value</cell></row><row><cell>Elevation</cell><cell>0.2967</cell><cell>0.0000</cell></row><row><cell>Slope</cell><cell>0.0094</cell><cell>0.0000</cell></row><row><cell>Distance_from_Urban</cell><cell>0.1547</cell><cell>0.0000</cell></row><row><cell>Distance_from_stream</cell><cell>0.2158</cell><cell>0.0000</cell></row><row><cell>Distance_from_road</cell><cell>0.1391</cell><cell>0.0000</cell></row><row><cell>Evidence Likelihood</cell><cell>0.4472</cell><cell>0.0000</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9"><head>Table 7 .</head><label>7</label><figDesc>Transition area matrix (ha) of LULC between 1990-2005 and 2005-2019.</figDesc><table><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>2005</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>LULC Types</cell><cell>Agricultural Land</cell><cell>Forest Land</cell><cell>Grass Land</cell><cell>Range Land</cell><cell>Urban Land</cell><cell>Water Body</cell><cell>Total</cell></row><row><cell></cell><cell>Agricultural Land</cell><cell>39,662.13</cell><cell>302.16</cell><cell>179.91</cell><cell>1121.71</cell><cell>321.25</cell><cell>0.06</cell><cell>41,587.21</cell></row><row><cell></cell><cell>Forest Land</cell><cell>5214.82</cell><cell>18,856.81</cell><cell>292.80</cell><cell>6429.98</cell><cell>59.35</cell><cell>180.12</cell><cell>31,033.88</cell></row><row><cell>1990</cell><cell>Grass Land Range Land</cell><cell>2001.18 778.37</cell><cell>617.60 6783.15</cell><cell>6419.75 1072.00</cell><cell>372.33 1911.17</cell><cell>32.42 0.74</cell><cell>0.12 92.39</cell><cell>9443.40 10,637.83</cell></row><row><cell></cell><cell>Urban Land</cell><cell>1.98</cell><cell>0.13</cell><cell>0.18</cell><cell>0.00</cell><cell>468.79</cell><cell>0.01</cell><cell>471.10</cell></row><row><cell></cell><cell>Water Body</cell><cell>0.01</cell><cell>19.44</cell><cell>0.00</cell><cell>0.28</cell><cell>0.00</cell><cell>1384.91</cell><cell>1404.64</cell></row><row><cell></cell><cell>Total</cell><cell>47,658.49</cell><cell>26,579.30</cell><cell>7964.65</cell><cell>9835.47</cell><cell>882.55</cell><cell>1657.60</cell><cell>94,578.05</cell></row><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>2019</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>LULC Types</cell><cell>Agricultural Land</cell><cell>Forest Land</cell><cell>Grass Land</cell><cell>Range Land</cell><cell>Urban Land</cell><cell>Water Body</cell><cell>Total</cell></row><row><cell></cell><cell>Agricultural Land</cell><cell>35,763.83</cell><cell>4299.68</cell><cell>1181.79</cell><cell>4196.23</cell><cell>349.90</cell><cell>1867.06</cell><cell>47,658.48</cell></row><row><cell></cell><cell>Forest Land</cell><cell>12,051.96</cell><cell>10,869.35</cell><cell>1360.03</cell><cell>1708.26</cell><cell>167.12</cell><cell>422.57</cell><cell>26,579.30</cell></row><row><cell>2005</cell><cell>Grass Land Range Land</cell><cell>4673.21 5021.16</cell><cell>913.15 3101.81</cell><cell>802.00 212.67</cell><cell>1317.94 1314.36</cell><cell>20.25 51.83</cell><cell>238.11 133.64</cell><cell>7964.65 9835.47</cell></row><row><cell></cell><cell>Urban Land</cell><cell>337.82</cell><cell>14.09</cell><cell>9.28</cell><cell>15.25</cell><cell>494.75</cell><cell>11.37</cell><cell>882.55</cell></row><row><cell></cell><cell>Water Body</cell><cell>20.97</cell><cell>221.04</cell><cell>0.26</cell><cell>2.92</cell><cell>0.13</cell><cell>1412.28</cell><cell>1657.60</cell></row><row><cell></cell><cell>Total</cell><cell>57,868.95</cell><cell>16,019.13</cell><cell>6966.01</cell><cell>8554.95</cell><cell>1083.98</cell><cell>4085.03</cell><cell>94,578.05</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_10"><head>Table 8 .</head><label>8</label><figDesc>LULC change prediction validation based on the actual and projected 2019 LULC.</figDesc><table><row><cell>LULC Category</cell><cell cols="2">Projected Area (Ha) Area (%)</cell><cell>Area (Ha)</cell><cell>Actual</cell><cell>Area (%)</cell></row><row><cell>Agricultural Land</cell><cell>54,161.90</cell><cell>57.27</cell><cell>57,868.95</cell><cell></cell><cell>61.19</cell></row><row><cell>Forest Land</cell><cell>20,384.75</cell><cell>21.55</cell><cell>16,019.13</cell><cell></cell><cell>16.94</cell></row><row><cell>Range Land</cell><cell>9388.67</cell><cell>9.93</cell><cell>6966.01</cell><cell></cell><cell>7.37</cell></row><row><cell>Grass Land</cell><cell>8288.78</cell><cell>8.76</cell><cell>8554.95</cell><cell></cell><cell>9.05</cell></row><row><cell>Urban Land</cell><cell>608.90</cell><cell>0.64</cell><cell>1083.98</cell><cell></cell><cell>1.15</cell></row><row><cell>Water Body</cell><cell>1745.06</cell><cell>1.85</cell><cell>4085.03</cell><cell></cell><cell>4.32</cell></row><row><cell>Total</cell><cell>94,578.05</cell><cell>100.00</cell><cell>94,578.05</cell><cell></cell><cell>100.00</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_11"><head>Table 9 .</head><label>9</label><figDesc>The k-index values of the simulated LULC map of 2019.</figDesc><table><row><cell>Index.</cell><cell>Value</cell></row><row><cell>Kno</cell><cell>0.9026</cell></row><row><cell>Klocation</cell><cell>0.9213</cell></row><row><cell>KlocationStrata</cell><cell>0.8836</cell></row><row><cell>Kstandard</cell><cell>0.8743</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_12"><head>Table 10 .</head><label>10</label><figDesc>The validation result analysis (agreement/disagreement component values).</figDesc><table><row><cell>Agreement/Disagreement</cell><cell>Value</cell><cell>Value (%)</cell></row><row><cell>Agreement Chance</cell><cell>0.1629</cell><cell>16.29</cell></row><row><cell>Agreement Quantity</cell><cell>0.3335</cell><cell>33.35</cell></row><row><cell>Agreement GridCell</cell><cell>0.4254</cell><cell>42.54</cell></row><row><cell>Disagreement GridCell</cell><cell>0.0269</cell><cell>2.69</cell></row><row><cell>Disagreement Quantity</cell><cell>0.0513</cell><cell>5.13</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_13"><head>Table 10 .</head><label>10</label><figDesc>The validation result analysis (agreement/disagreement component values).</figDesc><table><row><cell>Agreement/Disagreement</cell><cell>Value</cell><cell>Value (%)</cell></row><row><cell>Agreement Chance</cell><cell>0.1629</cell><cell>16.29</cell></row><row><cell>Agreement Quantity</cell><cell>0.3335</cell><cell>33.35</cell></row><row><cell>Agreement GridCell</cell><cell>0.4254</cell><cell>42.54</cell></row><row><cell>Disagreement GridCell</cell><cell>0.0269</cell><cell>2.69</cell></row><row><cell>Disagreement Quantity</cell><cell>0.0513</cell><cell>5.13</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_14"><head>Table 11 .</head><label>11</label><figDesc>The area coverage of LULC, percent, and rate of changes in the Nashe watershed between 2019, 2035, and 2050.</figDesc><table><row><cell>Area</cell></row><row><cell>LULC Types</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_15"><head>Table 12 .</head><label>12</label><figDesc>Transition area matrix (ha) of LULC between 2019-2035 and 2035-2050.</figDesc><table><row><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell><cell>2035</cell><cell></cell><cell></cell><cell></cell></row><row><cell></cell><cell>LULC Types</cell><cell>Agricultural Land</cell><cell>Forest Land</cell><cell>Grass Land</cell><cell>Range Land</cell><cell>Urban Land</cell><cell>Water Body</cell><cell>Total</cell></row><row><cell></cell><cell>Agricultural Land</cell><cell>44,533.17</cell><cell>6988.39</cell><cell>77.18</cell><cell>3731.99</cell><cell>385.73</cell><cell>2152.50</cell><cell>57,868.95</cell></row><row><cell></cell><cell>Forest Land</cell><cell>11,991.32</cell><cell>2864.52</cell><cell>508.76</cell><cell>337.33</cell><cell>122.17</cell><cell>195.03</cell><cell>16,019.13</cell></row><row><cell>2019</cell><cell>Grass Land Range Land</cell><cell>1897.14 3745.42</cell><cell>650.99 4286.30</cell><cell>3593.18 60.93</cell><cell>648.95 371.37</cell><cell>26.04 13.30</cell><cell>149.71 77.64</cell><cell>6966.01 8554.95</cell></row><row><cell></cell><cell>Urban Land</cell><cell>319.97</cell><cell>27.64</cell><cell>2.31</cell><cell>21.40</cell><cell>702.63</cell><cell>10.04</cell><cell>1083.98</cell></row><row><cell></cell><cell>Water Body</cell><cell>86.07</cell><cell>166.48</cell><cell>0.25</cell><cell>0.11</cell><cell>0.00</cell><cell>3832.13</cell><cell>4085.03</cell></row><row><cell></cell><cell>Total</cell><cell>69,021.20</cell><cell>11,759.00</cell><cell>2336.80</cell><cell>4929.30</cell><cell>1893.53</cell><cell>4638.21</cell><cell>94,578.05</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><p>Acknowledgments: <rs type="person">Megersa Kebede Leta</rs> thanks the <rs type="institution">German Academic Exchange Service (DAAD)</rs> for providing a scholarship during the study.</p></div>
+			</div>
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data Availability Statement:</head><p>The data used in this study can be available from the authors on reasonable request.</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The study shows that agricultural land experienced the largest increase from the historical analysis to the projections. The conversion of other land uses to agricultural land might be mainly associated with the land demand for crop production to satisfy the food demand of the increasing human population, deforestation for household energy consumption, construction of materials, and loss of land productivity. This may cause serious environmental impacts unless proper environmental management strategies are planned and implemented. As per the analysis in the entire watershed, the urban area was increased. This increase was assumed to be closely associated with the rise of infrastructure to accommodate the increasing population. To minimize land degradation, it is necessary to apply management measures such as soil and water conservation technologies, family planning, and promotion of agricultural land use intensification in the study watershed. The future land use and land cover change plan for the study area should be made in advance and needs to be incorporated at policy level.</p><p>A Multilayer Perceptron neural network and CA-Markov modeling in LCM-based analysis was combined with GIS, and remote sensing technologies was used to perform the analysis of the LULC change. The performance of the MLPNN-CA-MC in LCM for the LULC pattern was not assessed previously over this study watershed as far as the authors are aware. Additionally, analyses regarding the dynamics of LULC changes and their drivers are not conducted in the study area. Therefore, in this study, the LULC dynamics of the historical and future LULC were assessed using Landsat images and LCM by using the drivers of LULC dynamics. Consequently, this study will also help to assess the performance of the MLPNN-CA MC approach over the watershed area. The future LULC is somewhat known in some parts of Ethiopia but not in the study area. The LCM embedded in the TGMMS model was successfully used by different researchers in other areas and it confirmed that LCM, based on MLPNN-CA-MC, is a capable model for the assessment and prediction of LULC change, urban growth, and the validation of results <ref type="bibr" target="#b8">[9,</ref><ref type="bibr" target="#b20">21,</ref><ref type="bibr" target="#b55">57,</ref><ref type="bibr" target="#b61">63,</ref><ref type="bibr" target="#b69">71,</ref><ref type="bibr" target="#b70">72]</ref>.</p><p>Generally, the patterns of LULC change in the past almost three decades shows forest land decreased at an average rate of 48.38%. The results showed that the agricultural land gained the most area compared to the other LULC types. However, at the expense of forest </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflicts of Interest:</head><p>The authors declare no conflict of interest.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Watershed Management in Action: Lessons Learned from FAO Field Projects; Food &amp; Agriculture Organization</title>
+		<author>
+			<persName><surname>Fao</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="page" from="5" to="6" />
+			<pubPlace>Rome, Italy</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">How dynamics and drivers of land use/land cover change impact elephant conservation and agricultural livelihood development in Rombo</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">E</forename><surname>Mmbaga</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename><surname>Munishi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Treydte</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/1747423X.2017.1313324</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Tanzania. J. Land Use Sci</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="168" to="181" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Comparing two approaches to land use/cover change modeling and their implications for the assessment of biodiversity loss in a deciduous tropical forest</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pérez-Vega</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Mas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ligmann-Zielinska</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.envsoft.2011.09.011</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Environ. Model Softw</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page" from="11" to="23" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Evaluating drivers of land-use change and transition potential models in a complex landscape in Southern Mexico</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kolb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Mas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Galicia</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/13658816.2013.770517</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Geogr. Inf. Sci</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="1804" to="1827" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Climate Change and Food Security: Risks and Responses; Food &amp; Agriculture Organization</title>
+		<author>
+			<persName><surname>Fao</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<pubPlace>Rome, Italy</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+		<title level="m" type="main">Land Use and Land Cover Mapping in Europe</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Manakos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Braun</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2014">2014</date>
+			<publisher>Springer</publisher>
+			<pubPlace>Berlin/Heidelberg, Germany</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Land use change exacerbates tropical South American drought by sea surface temperature variability Land use change exacerbates tropical South American drought by sea surface temperature variability</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">E</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">R</forename><surname>Lintner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">K</forename><surname>Boyce</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">J</forename><surname>Lawrence</surname></persName>
+		</author>
+		<idno type="DOI">10.1029/2011GL049066</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Geophys. Res. Lett</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Tropical forests were the primary sources of new agricultural land in the 1980s and</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Gibbs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Ruesch</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Achard</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Clayton</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Holmgren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Ramankutty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Foley</surname></persName>
+		</author>
+		<idno type="DOI">10.1073/pnas.0910275107</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. Natl. Acad. Sci. USA 2010</title>
+		<meeting>Natl. Acad. Sci. USA 2010</meeting>
+		<imprint>
+			<date type="published" when="1990">1990</date>
+			<biblScope unit="volume">107</biblScope>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Patterns, causes and consequences of land use / cover dynamics in the Gumara watershed of lake Tana basin</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Wubie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Assen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Nicolau</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s40068-016-0058-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Northwestern Ethiopia. Environ. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="1" to="12" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Evaluation and prediction of land use/land cover changes in the Andassa watershed</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Gashaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Tulu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Argaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">W</forename><surname>Worqlul</surname></persName>
+		</author>
+		<idno type="DOI">10.1186/s40068-016-0078-x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Ethiopia. Environ. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="1" to="15" />
+			<date type="published" when="2017">2017</date>
+			<pubPlace>Blue Nile Basin</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">National level land-use changes in functional urban areas in Poland, Slovakia, and Czechia</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Wnek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Kudas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Stych</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/land10010039</idno>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+			<biblScope unit="volume">10</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Landscape and urban planning landscape transformation processes in two large and two small cities in Egypt and Jordan over the last five decades using remote sensing data</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Riad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Graefe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hussein</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Buerkert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Landsc. Urban Plan</title>
+		<imprint>
+			<biblScope unit="volume">197</biblScope>
+			<biblScope unit="page">103766</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Changes in agricultural land use in the context of ongoing transformational processes in Slovakia</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Tarasovičová</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Saksa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Blažík</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Falt'an</surname></persName>
+		</author>
+		<idno type="DOI">10.2478/agri-2013-0005</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Agriculture (Pol&apos;nohospodárstvo)</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="page" from="49" to="64" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Land-cover and land-use change in a Mediterranean landscape: A spatial analysis of driving forces integrating biophysical and human factors</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Serra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Pons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Saurí</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.apgeog.2008.02.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Appl. Geogr</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="189" to="209" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Ecological planning for sustainable development with a green technology : GIS</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tiwari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Suresh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Rai</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Adv. Res. Comput. Eng. Technol</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="636" to="641" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Modelling and analyzing the watershed dynamics using Cellular Automata (CA)-Markov model-A geo-information based approach</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">D</forename><surname>Behera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">N</forename><surname>Borate</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">N</forename><surname>Panda</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">R</forename><surname>Behera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">S</forename><surname>Roy</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s12040-012-0207-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Earth Syst. Sci</title>
+		<imprint>
+			<biblScope unit="volume">121</biblScope>
+			<biblScope unit="page" from="1011" to="1024" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Land use/land cover change modeling and the prediction of subsequent changes in ecosystem service values in a coastal area of China, the Su-Xi-Chang region</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Yirsaw</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Temesgen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Bekele</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/su9071204</idno>
+		<imprint>
+			<date type="published" when="1204">2017. 1204</date>
+			<biblScope unit="volume">9</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Land-use and land-cover scenarios and spatial modeling at the regional scale. US Geol. Surv</title>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">L</forename><surname>Sohl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">M</forename><surname>Sleeter</surname></persName>
+		</author>
+		<idno type="DOI">10.3133/fs20123091</idno>
+		<imprint>
+			<date type="published" when="2012">2012. 2012-3091, 4</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Land use change and prediction in the Baimahe Basin using GIS and CA-Markov model</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1755-1315/17/1/012074</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IOP Conf. Ser. Earth Environ. Sci</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="13" to="18" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Land change modelling: Moving beyond projections</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Paegelow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">T</forename><surname>Camacho Olmedo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Mas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Houet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">G</forename><surname>Pontius</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/13658816.2013.819104</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Geogr. Inf. Sci</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="1691" to="1695" />
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">A remote sensing aided multi-layer perceptron-Markov chain analysis for land use and land cover change prediction in Patna district (Bihar), India. Arab</title>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">N</forename><surname>Mishra</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">K</forename><surname>Rai</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s12517-015-2138-3</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Geosci</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="1" to="18" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Modeling land use/land cover change using remote sensing and geographic information systems: Case study of the Seyhan Basin</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>Zadbagher</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Becek</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Berberoglu</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10661-018-6877-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Turkey. Environ. Monit. Assess</title>
+		<imprint>
+			<biblScope unit="volume">190</biblScope>
+			<biblScope unit="page" from="1" to="15" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">A review of approaches to land use changes modeling</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Noszczyk</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/10807039.2018.1468994</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Hum. Ecol. Risk Assess</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="1377" to="1405" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Validation of CA-Markov for simulation of land use and cover change in the Langat Basin</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Memarian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Kumar Balasundram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Bin Talib</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Teh Boon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Sung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mohd Sood</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Abbaspour</surname></persName>
+		</author>
+		<idno type="DOI">10.4236/jgis.2012.46059</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Malaysia. J. Geogr. Inf. Syst</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="542" to="554" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Geospatial analysis of land use land cover change predictive modeling at Phewa Lake watershed of Nepal</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">R</forename><surname>Regmi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Saha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Balla</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Curr. Eng. Technol</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page" from="2617" to="2627" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Monitoring and predicting land use change in Beijing using remote sensing and GIS</title>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H.-Q</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R.-S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Paulussen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B.-H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.landurbplan.2005.10.002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Landsc. Urban Plan</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="page" from="322" to="333" />
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Inductive pattern-based land use/cover change models: A comparison of four software packages</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Mas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kolb</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Paegelow</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">T</forename><surname>Camacho Olmedo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Houet</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.envsoft.2013.09.010</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Environ. Model Softw</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="94" to="111" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<monogr>
+		<title level="m" type="main">IDRISI Selva Tutorial; 17th Version; IDRISI Production</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Eastman</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012">2012</date>
+			<biblScope unit="page" from="51" to="63" />
+			<pubPlace>Worcester, MA, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Scenario-based land cover change modeling and its implications for landscape pattern analysis in the Neka Watershed</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">J</forename><surname>Shooshtari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gholamalifard</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.rsase.2015.05.001</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Iran. Remote Sens. Appl. Soc. Environ</title>
+		<imprint>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="1" to="19" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Generating a future land-use change scenario : A case study of the Little Miami River Watershed</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">T Y</forename><surname>Tong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">J</forename><surname>Yang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ohio. J. Environ. Inform</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="108" to="119" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Using CA-Markov model to model the spatiotemporal change of land use/cover in fuxian lake for decision support</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">H</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">X</forename><surname>Jin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">Y</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">Y</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">L</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.5194/isprsannals-II-4-W2-163-2015</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ISPRS Ann. Photogramm. Remote Sens. Spat. Inf. Sci</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="163" to="168" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Land use/land cover change detection in metropolitan Lagos (Nigeria): 1984-2002</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">O</forename><surname>Adepoju</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">C</forename><surname>Millington</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">T</forename><surname>Tansey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Prospecting for Geospatial Information Integration, Proceedings of the ASPRS Annual Conference</title>
+		<meeting><address><addrLine>Reno, NV, USA; Bethesda, MD, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ASPRS</publisher>
+			<date type="published" when="2006-05">May 2006. 2006</date>
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Examining urban sprawl in Europe using spatial metrics</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Triantakonstantis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Stathakis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Geocarto Int</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="1" to="21" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Land use/cover dynamics and its drivers in Gelda catchment, Lake Tana watershed</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">H</forename><surname>Ebrahim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Mohamed</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ethiopia. Environ. Syst. Res</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="1" to="13" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">S</forename><surname>Abate</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Sustainable Development in Africa. J. Sustain. Dev. Africa</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="87" to="107" />
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Land-use change modelling in the upper blue nile basin</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">G</forename><surname>Yalew</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Mul</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Van Griensven</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Teferi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Priess</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Schweitzer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Van Der Zaag</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/environments3030021</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Environments</title>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note>3, 21. [CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Comprehensive assessment of soil erosion risk for better land use planning in river basins: Case study of the Upper Blue Nile River</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Haregeweyn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Tsunekawa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Poesen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Tsubo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">T</forename><surname>Meshesha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A</forename><surname>Fenta</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Nyssen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>Adgo</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.scitotenv.2016.09.019</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. Total Environ</title>
+		<imprint>
+			<biblScope unit="volume">574</biblScope>
+			<biblScope unit="page" from="95" to="108" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Monitoring and predicting land use change in Tripoli Metropolitan City using an integrated Markov chain and cellular automata models in GIS</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">A A</forename><surname>Al-Sharif</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Pradhan</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s12517-013-1119-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Arab. J. Geosci</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="4291" to="4301" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Optimal ground control points for geometric correction using genetic algorithm with global accuracy</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">R</forename><surname>Samal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">S</forename><surname>Gedam</surname></persName>
+		</author>
+		<idno type="DOI">10.5721/EuJRS20154806</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Eur. J. Remote Sens</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="85" to="99" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Evaluations of land use/land cover changes and land degradation in Dera District, Ethiopia: GIS and Remote Sensing Based Analysis</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Temesgen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Amare</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Abraham</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Sci. Res. Environ. Sci</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="199" to="208" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<monogr>
+		<title level="m" type="main">Trends in remote sensing accuracy assessment approaches in the context of natural resources</title>
+		<author>
+			<persName><forename type="first">M.-B</forename><surname>Lucia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">B</forename><surname>Lyons</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Phinn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><forename type="middle">M</forename><surname>Roelfsema</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="1" to="16" />
+		</imprint>
+	</monogr>
+	<note>Remote Sens</note>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<monogr>
+		<title level="m" type="main">Cohen&apos;s Kappa and Classification Table Metrics 2.0: An ArcView 3. x Extension for Accuracy Assessment of Spatially EXPLICIT Models</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Jenness</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Wynne</surname></persName>
+		</author>
+		<ptr target="http://www.treesearch.fs.fed.us/pubs/25707" />
+		<imprint>
+			<date type="published" when="2005-01-02">2005. 2 January 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Impacts of land use land cover change on sediment yield and stream flow</title>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">L</forename><surname>Megersa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Tamene</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">K</forename><surname>Sifan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Sci. Technol</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="763" to="781" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<monogr>
+		<title level="m" type="main">Spatial Modeling of Deforestation and Land Suitability Assessment in the Tam Dao National Park Region, Vietnam Spatial Modeling of Deforestation and Land Suitability Assessment in the Tam Dao National Park Region</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">D</forename><surname>Khoi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011-01">January 2011</date>
+			<pubPlace>Vietnam; Tsukuba, Japan</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>University of Tsukuba</orgName>
+		</respStmt>
+	</monogr>
+	<note type="report_type">Ph.D. Thesis</note>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Assessing simulated land use/cover maps using similarity and fragmentation indices</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">F</forename><surname>Mas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Pérez-Vega</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">C</forename><surname>Clarke</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ecocom.2012.01.004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Ecol. Complex</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="38" to="45" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<monogr>
+		<title level="m" type="main">TerrSet Geospatial Monitoring and Modeling System-Manual</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Eastman</surname></persName>
+		</author>
+		<ptr target="www.clarklabs.org" />
+		<imprint>
+			<date type="published" when="2016-01-02">2 January 2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">R</forename><surname>Eastman</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">IDRISI Production</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><surname>Idrisi</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">IDRISI Production</orgName>
+			</affiliation>
+		</author>
+		<author>
+			<persName><surname>Manual</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">IDRISI Production</orgName>
+			</affiliation>
+		</author>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<pubPlace>Worcester, MA, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Modeling land use change using cellular automata and artificial neural network: The case of Chunati wildlife sanctuary</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Islam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Rahman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Jashimuddin</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ecolind.2018.01.047</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Bangladesh. Ecol. Indic</title>
+		<imprint>
+			<biblScope unit="volume">88</biblScope>
+			<biblScope unit="page" from="439" to="453" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<monogr>
+		<title level="m" type="main">Future simulation of land use changes in rapidly urbanizing South China based on land change modeler and remote sensing data</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Hasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Abbas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">U A</forename><surname>Khan</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/su12114350</idno>
+		<imprint/>
+	</monogr>
+	<note>Sustainability 2020, 12, 4350. [CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">Clark</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Labs</surname></persName>
+		</author>
+		<ptr target="http://www.clarklabs.org" />
+		<imprint>
+			<date type="published" when="2015-01-02">2 January 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Land use land cover change detection and deforestation modeling</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Ayele</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Hayicho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Alemu</surname></persName>
+		</author>
+		<idno type="DOI">10.4236/jep.2019.104031</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Delomena district of Bale Zone</title>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="532" to="561" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Predicted land use change in the Soyang River Basin, South Korea</title>
+		<author>
+			<persName><forename type="first">I</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Jeong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Park</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tenhunen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the TERRECO Science Conference</title>
+		<meeting>the TERRECO Science Conference<address><addrLine>Garmisch-Partenkirchen, Germany</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2011-10-07">2-7 October 2011</date>
+			<biblScope unit="page" from="17" to="24" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Detection and prediction of land cover changes using Markov chain model in semi-arid rangeland in western Iran</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Fathizad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Rostami</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Faramarzi</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10661-015-4805-y</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Environ. Monit. Assess</title>
+		<imprint>
+			<biblScope unit="volume">187</biblScope>
+			<biblScope unit="page" from="1" to="12" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Accuracy assessments of land use change simulation based on Markov-cellular automata model</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Q</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">Q</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><forename type="middle">B</forename><surname>Zang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.proenv.2012.01.117</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Procedia Environ. Sci</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="1238" to="1245" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<monogr>
+		<title level="m" type="main">Predicting spatial and decadal LULC changes through cellular automata Markov chain models using earth observation datasets and geo-information</title>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">K</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Mustak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">K</forename><surname>Srivastava</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Szabó</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Islam</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s40710-015-0062-x</idno>
+		<imprint>
+			<date type="published" when="2015">2015</date>
+			<publisher>Environ. Process</publisher>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="61" to="78" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<monogr>
+		<title level="m" type="main">Analysis and prediction of land use changes related to invasive species and major driving forces in the state of Connecticut</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Allen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Boyer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Segerson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Silander</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/land5030025</idno>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page">25</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Monitoring land use change and measuring urban sprawl based on its spatial forms: The case of Qom city</title>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">M</forename><surname>Mosammam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">T</forename><surname>Nia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Khani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Teymouri</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kazemi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ejrs.2016.08.002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Egypt J. Remote Sens. Sp. Sci</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="page" from="103" to="116" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Predicting urban expansion in arak metropolitan area using two land change models</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Nadoushan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Soffianian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Alebrahim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">World Appl. Sci. J</title>
+		<imprint>
+			<biblScope unit="volume">18</biblScope>
+			<biblScope unit="page" from="1124" to="1132" />
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Understanding interobserver agreement: The kappa statistic</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Viera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Garrett</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Fam. Med</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="360" to="363" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<monogr>
+		<title level="m" type="main">Exploring land use and land cover of geotagged social-sensing images using Naive Bayes Classifier</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Sitthi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Nagai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Dailey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ninsawat</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/su8090921</idno>
+		<imprint>
+			<date type="published" when="2016">2016</date>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page">921</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Analysis and modeling of urban land cover change in Setúbal and Sesimbra</title>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">H</forename><surname>Araya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Cabral</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/rs2061549</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Portugal. Remote Sens</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="1549" to="1563" />
+			<date type="published" when="2010">2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Land use/land cover dynamics and modeling of urban land expansion by the land use/land cover dynamics and modeling of urban land expansion by the integration of cellular automata and Markov chain</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Rimal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Keshtkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Haack</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/ijgi7040154</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Geo Inf</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">154</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Forest cover change over four decades in the Blue Nile Basin, Ethiopia: Comparison of three watersheds</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">G</forename><surname>Solomon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Bewket</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">I</forename><surname>Gärdenäs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Bishop</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Reg. Environ. Chang</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="253" to="266" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<monogr>
+		<title level="m" type="main">Forecasting areas vulnerable to forest conversion in the tam Dao National Park region</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">D</forename><surname>Khoi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Murayama</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/rs2051249</idno>
+		<imprint>
+			<date type="published" when="2010">2010</date>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="1249" to="1272" />
+			<pubPlace>Vietnam</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Remote Sens</note>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<monogr>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Maguire</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Batty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Goodchild</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Gis</surname></persName>
+		</author>
+		<title level="m">Spatial Analysis, and Modeling</title>
+		<meeting><address><addrLine>Redlands, CA, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ESRI Press</publisher>
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+	<note>1st ed.</note>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Comparison of the structure and accuracy of two land change models</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">R</forename><surname>Pontius</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Malanson</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/13658810410001713434</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Geogr. Inf. Sci</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="page" from="243" to="265" />
+			<date type="published" when="2005">2005</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">Scenario simulation and the prediction of land use and land cover change in Beijing</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Song</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/su7044260</idno>
+	</analytic>
+	<monogr>
+		<title level="j">China. Sustainability</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="4260" to="4279" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">Predicting land cover change and avian community responses in rapidly urbanizing environments</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">A</forename><surname>Hepinstall</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Alberti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Marzluff</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10980-008-9296-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Landsc. Ecol</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="page" from="1257" to="1276" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">Assessment of land use and land cover change using GIS and remote sensing</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Cheruto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kauti</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Kisangau</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Kariuki</surname></persName>
+		</author>
+		<idno type="DOI">10.4172/2469-4134.1000175</idno>
+		<ptr target="https://www.omicsonline.org/open-access/assessment-of-land-use-and-land-cover-change-using-gis-and-remotesensing-techniques-a-case-study-of-makueni-county-kenya-2469-4134-1000175.pdf" />
+	</analytic>
+	<monogr>
+		<title level="j">J. Remote Sens. GIS</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="1" to="6" />
+			<date type="published" when="2016-01-02">2016. 2 January 2017</date>
+		</imprint>
+	</monogr>
+	<note>CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">Land use change detection and prediction in upper Siem Reap River, Cambodia</title>
+		<author>
+			<persName><forename type="first">C</forename><surname>Kosal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tunnicliffe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Asaad</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Ota</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Hydrology</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">64</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<monogr>
+		<title level="m" type="main">Measuring and predicting long-term land cover changes in the functional urban area of Budapest</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Lennert</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">Z</forename><surname>Farkas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">D</forename><surname>Kovács</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Molnár</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Módos</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Baka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Kovács</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/su12083331</idno>
+		<imprint/>
+	</monogr>
+	<note>Sustainability 2020, 12, 3331. [CrossRef</note>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Bale Mountains Eco-Region Reduction of Emission from Deforestation and Forest Degradation (REDD+) Project-Ethiopia</title>
+		<author>
+			<persName><forename type="first">Oromia</forename><surname>Forest</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wildlife</forename><surname>Enterprise</surname></persName>
+		</author>
+		<ptr target="https://s3.amazonaws.com/CCBA/Projects/Bale_Mountains_Eco-region_Reductions_of_Emissions_from_Deforestation_and_Forest_Degradation_Project/Bale+Mtns+REDD%2B+VCS%2BCCB+Project+Description+version+3.0.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Farm Africa and SOS Sahel Ethiopia</title>
+		<imprint>
+			<date type="published" when="2015-01-02">2 January 2015</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
