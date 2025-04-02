@@ -1,0 +1,319 @@
+================================================================================
+TITLE: Land-Use and Land-Cover Changes in Dong Trieu District, Vietnam, during Past Two Decades and Their Driving Forces
+================================================================================
+
+AUTHORS:
+- Thi-Thu Vu
+- Yuan Shen
+
+ABSTRACT:
+Land-use and land-cover (LULC) change analyses are useful in understanding the changes in our living environments and their driving factors. Modeling changes of LULC in the future, together with the driving factors derived through analyzing the trends of past LULC changes, bring the opportunity to assess and orientate the current and future land-use policies. As the entryway of Quang Ninh province, Vietnam, Dong Trieu locale has experienced significant LULC changes during the past two decades. In this study, the spatial distribution of six Level I LULC classes, forest, cropland, orchards, waterbody, built-up, and barren land, in Dong Trieu district at 2000, 2010, and 2019 were obtained from Landsat imageries by maximum likelihood technique. The most significant changes observed over the past twenty years are a decrease of barren land (9.1%) and increases of built-up (8.1%) and orchards (6.8%). Driving factor analysis indicated that the changes of cropland and built-up were dependent on distance from road (DFR), distance from main road (DFMR), distance from urban (DFU), distance from water (DFW), elevation, slope, and population density. The changes of forest were dependent on all the driving forces listed above, except DFMR. The orchards mainly appeared near the high-population-density area. The transformation of the waterbody was affected by geography (elevation and slope) and population density. The higher the population density, the less barren the land would appear.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+In 2018, 55% of the total world populace lived in metropolitan areas. Projections show that urbanization, with the increasing trend of the total populace, could add another 2.5 billion individuals to metropolitan territories by 2050, with nearly 90% of this increment occurring in Asia and Africa 
+Change detection is an important application of remote sensing, by observing objects or phenomena at different times through earth-orbiting satellites 
+Land use depends on the indigenous habitat and involvement of human activities. Hence, awareness of the driving components of the LULC is pivotal for land-use planning and administration 
+Dong Trieu district, Vietnam, experienced a radical LULC change due to population expansion, economic growth, and changes in the agriculture cultivation system over the past 20 years. However, the driving factors of LULC have not been studied. Therefore, the aims of this study were 
+
+## Methodology ##
+This study was divided into two parts, as shown in Figure 
+and binary encoding are classification methods commonly used when implementing supervised classification 
+Land use depends on the indigenous habitat and involvement of human activities. Hence, awareness of the driving components of the LULC is pivotal for land-use planning and administration 
+Dong Trieu district, Vietnam, experienced a radical LULC change due to population expansion, economic growth, and changes in the agriculture cultivation system over the past 20 years. However, the driving factors of LULC have not been studied. Therefore, the aims of this study were 
+
+## Methodology ##
+This study was divided into two parts, as shown in Figure 
+
+## Study Area ##
+Dong Trieu district, as the entryway of Quang Ninh province, is located in the northeast region of Vietnam, between 21°29′04" and 21°44′55" North latitude, and 106°33′ and 106°44′57" East longitude (Figure 
+
+## Satellite Data ##
+To monitor the land-use and land-cover changes, cloud-free scenes of Landsat Thematic Mapper-TM 
+
+## Satellite Data ##
+To monitor the land-use and land-cover changes, cloud-free scenes of Landsat Thematic Mapper-TM 
+The change detection and map production were conducted by ArcGIS (Ver 10.5, ArcGIS, ESRI, Redlands, CA, USA). 
+
+## Land Use/Land Cover Classification ##
+The maximum likelihood classifier was employed for LULC classification in this study. For 2000 and 2019, existing LULC maps, Google Earth imagery, and information collected from interviews with local experts were used to select specific training sites. The sample separability ranged from 1.8 to 2.0, measured by using the transformed divergence distance. Six LULC Level I classes, namely forest, cropland, orchard, waterbody, built-up, and barren land, were classified (Table 
+
+## Accuracy Assessment ##
+The classification accuracy of all three images (2000, 2010, and 2019) in the study was assessed by an error matrix using Google Earth and Land use maps from Dong Trieu Division of Natural Resources and Environment (DONRE). The true agreement from this validation is measured by the Kappa coefficient. The Kappa coefficient is broadly utilized in LULC accuracy assessment to compute the true agreement between the observed agreement and chance agreement 
+where x ii is the diagonal components in the error matrix, and x is the total samples in the error matrix. The kappa coefficient reflects the difference between actual agreement and the agreement expected by chance:
+where r is the number of rows; x ii is the observations at row i and column i; x i+ and x +i are the sum of row i and column i, respectively; and n is the number of observations.
+
+## Driving Forces ##
+Driving forces are natural or socioeconomic phenomena causing land-use change. Limited by data availability, only seven spatial variables commonly used [14, 
+
+## Cramer's V Coefficients Evaluation ##
+The correlations between the driving factors of LULC change were assessed by the Cramer's V Coefficient (CVC) or Cramer's V strategies 
+where ϕ is the coefficient of contingency, χ is derived from Pearson's chi-squared test, n represents the total of observations, k represents the number of columns, and r represents the number of rows in the LULC images. The CVC has a value between 0 and 1 (inclusive).
+A value close to 1 demonstrates that a driving factor has a high possibility of being an explanatory variable. A high total CVC value (more than 0.15) represents that the expected illustrative worth of the variable is acceptable or helpful; a value under 0.15 can be dismissed 
+
+## Results and Discussions ##
+
+
+## Classification Accuracy Assessments ##
+Accuracy assessments of the LULC classification in 2000, 2010, and 2019 are listed in Table 
+Major causes that yielded incorrect classifications were as follows: (1) A cropland may be under a rotating system. It might be recognized as a barren land or waterbody when the land was left for recuperation. (2) A majority of the forests in the studied region were plantation forests. It might be recognized as orchards, cropland, or barren land when the planted trees were still at the initial growth stage. (3) The residential areas were often surrounded by orchards. This could lead to difficulty in distinguishing between built-up and orchards. (4) It was challenging to separate cropland and barren land accurately at certain locations, contingent upon the states of the crops and the season. 
+
+## Temporal Changes of LULC Classes ##
+The statistics for the six LULC classes and their spatial distribution in 2000, 2010, and 2019 are represented in Table 
+In 2019, the areal coverage of built-up increased to 19.5% and took second place in the ranking. The orchards also expanded dramatically with an increase of about 2800 ha, which was about 1.6 times that of 2010, and took third place with an areal coverage of 19.2%. However, the cropland, waterbody, and barren land decreased by 2.3%, 2.8%, and 3.7%, respectively, from that of 2010.
+Therefore, the Dong Trieu district experienced various changes in LULC classes during the past two decades. Among all the changes of LULC classes, the rapid expansion of built-up and orchards and the dramatic decrease of barren land were the most significant changes in the Dong Trieu district. Therefore, the Dong Trieu district experienced various changes in LULC clas ing the past two decades. Among all the changes of LULC classes, the rapid expan built-up and orchards and the dramatic decrease of barren land were the most sig changes in the Dong Trieu district.
+
+## 21, 10, 798 ##
+
+
+## Conversions among LULC Classes ##
+Transformation matrices illustrating the conversions among LULC classes du studied period are shown in Table 
+
+## Conversions among LULC Classes ##
+Transformation matrices illustrating the conversions among LULC classes during the studied period are shown in Table 
+Orchards (e.g., dragon fruit, orange, and lychee) was the LULC class that developed most quickly and widely across the Dong Trieu district. From 2000 to 2010, a slight decrease in orchards area from 12.4% to 12.1% was found, but the area occupied by orchards increased nearly 7% in 2000-2019 (Table 
+The areal percentage occupied by waterbody experienced a continuous decline of 8.6%, 8.5%, and 5.7% in 2000, 2010, and 2019, respectively (Table 
+The areal percentages occupied by built-up in 2000, 2010, and 2019 were 11.5%, 14.4%, and 19.5%, respectively, and experienced a total increase of 3166.8 ha from 2000 to 2019 (Table 
+The areal percentage occupied by barren land also experienced a continuous decline of 10.3%, 4.9%, and 1.2% in 2000, 2010, and 2019, respectively (Table 
+
+## Driving Forces for LULC Changes ##
+The overall CVC values for each analyzed factor are listed in Table 
+The CVCs of distance from water (DFW) for forest, waterbody, and cropland are 0.388, 0.230, and 0.216, respectively, which suggested that the water area in this study was often located far from the forest. The cropland, however, often occurred near the water areas, possibly due to easy water accessibility. The continuous decline of the waterbody area caused the conversion of cropland to orchards or forests, as shown in Table 
+The CVCs of elevation showed a relatively strong relationship with forest (0.413), which indicated that the elevation has a good association with forest expansion. The distributions of built-up and cropland were less strongly affected by elevation, as indicated by their CVC values of 0.230 and 0.204, respectively.
+The CVCs of slope for forest, cropland, and built-up were 0.608, 0.326, and 0.266, respectively. Thus, slope appeared to be a good predictor of forest, cropland, and builtup. It is noted that the studied region has quite a large variation in topography and socioeconomic complexity, so that elevation and slope have large overall CVCs. Similar correlations between forest expansion topographic factors have been observed in Northwestern Vietnam 
+The population density had the highest overall CVC value among all analyzed factors and high CVC values for forest, cropland, and built-up, at 0.556, 0.447, and 0.384, respectively. Not surprisingly, deforestation is more substantial at places closer to an existing area of higher population density. Furthermore, the locations closer to a high population density area have higher probabilities of conversion to built-up. These results showed that population pressure played an important role in increasing built-up area and conversion of forest to other land-use classes.
+
+## Conclusions ##
+The spatial distribution of LULC classes identified through Landsat imageries acquired in 2000, 2010, and 2019 revealed significant LULC changes in the Dong Trieu district during the past two decades. The area under barren land, waterbody, cropland, and forest revealed a declining trend from 2000 to 2019, with a net decrease of 3576.5, 1147.7, 749.5, and 357.2 ha, respectively. The area under built-up and orchards exhibited an overall growing trend during the same period, with a net increase of 3166.8 and 2644.2 ha, respectively. The expansion and built-up area and the decrease of cropland were driven by all seven factors analyzed, i.e., distance from road (DFR), distance from main road (DFMR), distance from urban (DFU), distance from water (DFW), elevation, slope, and population density. The changes of forest were dependent on all the driving forces listed above, except DFMR. Orchards were established close to urban or areas of high population density. The transformation of the waterbody was affected by geography (elevation and slope) and population density. The higher the population density, the less the barren land would appear.
+According to the roles of active driving factors depicted by this study, land-use planners and decision-makers of the Dong Trieu district should introduce more environmentfriendly livelihood and measures, such as population-growth control to reduce the pressure on demanding more build-up area and conversion of forest to other land-use classes; better water-resources managements to reduce irrigation water shortage problems; encouragement of intensive use of agricultural lands and high-tech farming to increase yields and decrease the demand on more croplands; and encouragement of community participation in forest management to protect and expand the forest area, with intentions to promote sustainable development in the future.
+The methodologies presented in this study show how to combine satellite data with other ancillary data (DEM and population density in this study) that are varying in format, accuracy, and spatial resolution than remotely sensed images to understand the actual driving factors for structural changes of LULC in a given area. This can be a powerful planning tool with many positive insights into the policy and governance of a specific territory. A simulation study based on the roles of the driving factors depicted is currently being undertaken to further examine the potential impacts of these variables on land-use changes in future scenarios.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. 
+   Authors: 
+   Date: June 2020
+
+2. Dynamics of land-use and land-cover change in tropical regions
+   Authors: , , 
+   Date: 2003
+
+3. Detecting forest canopy change due to insect activity using Landsat MSS
+   Authors: 
+   Date: 1983
+
+4. A Land Use and Land Cover Classification System for Use with Remote Sensor Data; US Government Printing Office
+   Authors: 
+   Date: 1976
+
+5. Review article digital change detection techniques using remotely-sensed data
+   Authors: 
+   Date: 1989
+
+6. The next Landsat satellite: The Landsat data continuity mission. Remote Sens. Environ
+   Authors: , , 
+   Date: 2012
+
+7. Remote Sensing and Photo Interpretation
+   Authors: , 
+   Date: 1994
+
+8. Computing geostatistical image texture for remotely sensed data classification
+   Authors: , 
+   Date: 2000
+
+9. Image interpretation-guided supervised classification using nested segmentation
+   Authors: , , , , 
+   Date: 2015
+
+10. The effect of training strategies on supervised classification at different spatial resolutions
+   Authors: , 
+   Date: 2002
+
+11. Supervised Methods for Land Use Classification
+   Authors: , , 
+   Date: 2013
+
+12. Analysis of Land Use Change: Theoretical and Modeling Approaches
+   Authors: 
+   Date: 2019
+
+13. Human population growth and global land-use/cover change
+   Authors: , 
+   Date: 1992
+
+14. Land Use Change Trends and Their Driving Forces in the Kilombero Valley Floodplain, Southeastern Tanzania. Sustainability
+   Authors: , , 
+   Date: 2019
+
+15. Intensification in agriculture-forest frontiers: Land use responses to development and conservation policies in Brazil
+   Authors: , , , , , 
+   Date: 2018
+
+16. The Future of Food and Agriculture-Trends and Challenges
+   Authors: 
+   Date: 2017
+
+17. The emergence of land change science for global environmental change and sustainability
+   Authors: , , 
+   Date: 2007
+
+18. Environmental Change Detection Study in the Wider Area of Lignite Mines
+   Authors: , 
+   Date: 2018
+
+19. Environmental change detection in the central part of Iraq using remote sensing data and GIS
+   Authors: , , , 
+   Date: 2014
+
+20. Accuracy assessment of land use/land cover classification using remote sensing and GIS
+   Authors: , 
+   Date: 2017
+
+21. Comparing the accuracies of remote sensing global burned area products using stratified random sampling and estimation
+   Authors: , , , , , , , , , 
+   Date: 2015
+
+22. Land-use change and socio-ecological drivers of wetland conversion in Ha Tien Plain
+   Authors: , , , 
+   Date: 2017
+
+23. Urban growth and socio-economic development in Gujranwala, Pakistan: A geographical analysis
+   Authors: , , , 
+   Date: 2016
+
+24. Monitoring and predicting landuse/landcover change using an integrated markov chain & multilayer perceptron models: A case study of sahiwal tehsil
+   Authors: , , , 
+   Date: 2016
+
+25. Land Use Land Cover Change Detection and Deforestation Modeling
+   Authors: , , 
+   Date: 2019
+
+26. Land-use spatio-Temporal change and its driving factors in an artificial forest area in Southwest China
+   Authors: , , , , , 
+   Date: 2018
+
+27. Land Survey Handbook
+   Authors: , 
+   Date: 2018
+
+28. Manual Survey, Classification and Land Evaluation; Agricultural Publisher: Hanoi
+   Authors: , 
+   Date: 1999
+
+29. Goverment Resolution No 1210/2016/UBTVQH13 about Urban Classification; Standing Committee of the National Assembly: Hanoi
+   Authors: 
+   Date: 2016
+
+30. Mathematical Methods of Statistics
+   Authors: 
+   Date: 1946
+
+31. Statistical Power Analysis for the Behavioral Sciences
+   Authors: 
+   Date: 2013
+
+32. Forest allocation policy and level of forest dependency of economic household groups: A case study in northern central Vietnam
+   Authors: , 
+   Date: 2008
+
+33. Poverty alleviation through community forestry in Cambodia, Laos, and Vietnam: An assessment of the potential
+   Authors: 
+   Date: 2006
+
+34. The allocation of forestry land in Vietnam: Did it cause the expansion of forests in the northwest? For
+   Authors: 
+   Date: 2001
+
+35. Landslide Hazard Assessment in Muong Lay, Vietnam, Applying GIS and Remote Sensing
+   Authors: 
+   Date: 2010
+
+36. Analysing the land use change by using Landsat images-case in Daclak from 2000 to 2010
+   Authors: , 
+   Date: 2013
+
+37. 
+   Authors: , , , 
+   Date: 2000-2010. 2014
+
+38. Evaluating urban expansion and land use change in Shijiazhuang, China, by using GIS and remote sensing
+   Authors: , , , , , , 
+   Date: 2006
+
+39. Linking land-use change, landscape patterns, and ecosystem services in a coastal watershed of southeastern China
+   Authors: , , , , , 
+
+40. A comparative study of artificial neural networks in predicting blast-induced air-blast overpressure at Deo Nai open-pit coal mine
+   Authors: , , , 
+   Date: 2020
+
+41. Land use change from permanent rice to alternating rice-shrimp or permanent shrimp in the coastal Mekong Delta, Vietnam: Changes in the nutrient status and binding forms
+   Authors: , , , , , 
+   Date: 2020. 134758
+
+42. Monitoring and mapping rural urbanization and land use changes using Landsat data in the northeast subtropical region of Vietnam
+   Authors: , , , 
+   Date: 2020
+
+43. Stratfor-The Hub: International Perspectives
+   Authors: 
+   Date: 1986-2016. 27 May 2014. June 2021
+
+44. Simulating future land use and ecosystem services in Northern Thailand
+   Authors: , 
+   Date: 2018
+
+45. Change detection and identification of land potential for planting Krajood (Lepironia articulata) in Thale Noi
+   Authors: , , 
+   Date: 2012
+
+46. Technical and Economic Aspects of Recent Achievements in Mine Water Management in the Mines of Quang Ninh Coal Basin, Vietnam
+   Authors: 
+   Date: June 2017
+
+47. Development of a Methodology for Postmining Land Use Planning in Quang Ninh, Vietnam
+   Authors: , , , , , 
+   Date: October 2014
+
+48. GIS-Application for Environmental Management in Mining Areas on the Example of the Quang Ninh province, Vietnam
+   Authors: , , 
+   Date: December 2010
+
+49. Compulsory Land Acquisition and Voluntary Land Conversion in Vietnam: The Conceptual Approach, Land Valuation and Grievance Redress Mechanisms
+   Authors: 
+   Date: 2011
+
+50. Industrialization and Urbanization in Vietnam: How Appropriation of Agricultural Land Use Rights Transformed Farmers' Livelihoods in a Peri-Urban Hanoi Village? Final Report of an EADN Individual Research Grant Project
+   Authors: 
+   Date: 2009. June 2021
+
+51. The expansion of farm-based plantation forestry in Vietnam
+   Authors: , , , 
+   Date: 2010
+
+52. Drivers of deforestation and forest degradation in Vietnam: An exploratory analysis at the national level. For
+   Authors: , , , 
+   Date: 2018
+
+53. Impacts of socioeconomic factors on cropland transition and its adaptation in Beijing
+   Authors: , , , 
+   Date: 2018
+
+54. Driving forces behind land transformations in the Tamiraparani sub-basin, South India
+   Authors: , 
+   Date: 2017
+
+55. Analysis of land cover change and its driving forces in a desert oasis landscape of Xinjiang, northwest China
+   Authors: , 
+   Date: 2014
+
+56. Drivers of forest cover dynamics in smallholder farming systems: The case of Northwestern Vietnam
+   Authors: , , 
+   Date: 2013
+

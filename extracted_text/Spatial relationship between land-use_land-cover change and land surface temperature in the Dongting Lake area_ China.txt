@@ -1,0 +1,258 @@
+================================================================================
+TITLE: Spatial relationship between land-use/land-cover change and land surface temperature in the Dongting Lake area, china
+================================================================================
+
+AUTHORS:
+- Jie Tan
+- ✉ De
+- Qiang Li
+- Xuelan Tan
+- Weijun Zhou
+
+ABSTRACT:
+the Dongting Lake area (china) is a climate change-sensitive and ecologically fragile area and plays a crucial role in the regulation of the regional climate. in recent decades, rapid social and economic development has led to increased land use/land cover (LULc) changes in the Dongting Lake area, which affect the surface energy balance and hydrological processes. Its contemporary variability under climate change remains highly uncertain. therefore, we retrieved the Land surface temperature (LSt) from the Landsat 7 data and explored its relationship with the LULC types. The results showed that LST is significantly affected by surface type. LST varied significantly across LULC types, with higher LSTs in built-up land, reed beach land, forest land, and paddy fields than in water bodies, mud beaches, marshlands, and riparian forests. Water bodies play an important regulatory role in reducing LSt and mitigating thermal effects on the ground. The winter LST in the study area increased by approximately 3.5 °C, which may be related to the decrease in the area of Dongting Lake water bodies, water fields and reed flats after the Three Gorges Reservoir was impounded. Compared with the relationship between the nDVi, DeM, and distance from the water body, the negative correlation between the nDMi and LST was stronger and more stable and had the greatest effect on LST. These insights improve the understanding of the land change consequences on the temporal dynamics of LSt.
+Land surface temperature (LST) is a reflection of the energy flow in the interactions between the land surface and atmosphere and between the land surface and biosphere. The change in LST is an intuitive regional climate response to global climate change and has important research significance in agriculture, hydrology, ecology, environment, climate, and biogeochemistry1 1-6 . LULC is the interface between the atmosphere and biosphere for material and energy exchange and has a clear influence on LST. Currently, a wide consensus has been reached on the influence of LULC change on regional climate through various processes, such as water and heat flux between land and air 7 , surface wind speed, and boundary layer turbulence8 
+Although the use of meteorological data for regional climate change research has progressed, meteorological data are difficult to obtain, and data accuracy is dependent on the site and the scope of the investigation, resulting in difficulties in achieving large-scale and long-term research. Compared with traditional observation methods used at meteorological stations, monitoring LST with remote sensing offers the advantages of a wide observation range and strong spatial continuity. Thus, this monitoring has developed rapidly in thermal environment
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Untitled ##
+research 
+The Dongting Lake area is a typical water-land eco-fragile zone that has been strongly affected by human activities in recent decades. In particular, the Three Gorges Dam began to impound water on June 1, 2003, which accelerated the shrinking of water bodies and significantly altered the land cover state in the Dongting Lake area, and this process has been accompanied by many discussions about its environmental impacts. Some studies have said the dam has had important impacts on the elements of the regional climate system and the interactions between the land surface and the atmosphere. Specifically, it has changed the distribution pattern of regional precipitation and temperature. To verify the impact of the Three Gorges Dam on environmental changes, especially the relationship between LULC change and LST, we used U.S. Geological Survey Landsat TM/ETM + data to obtain LULC change and winter LST information for the Dongting Lake area in this study. Thus, we could better understand the influence of human activities on regional LST and its response to global warming. The exploration of such regional LULC and climate change patterns and processes can provide a typical case for a larger range of global change studies.
+
+## Extraction of LULC change information and inversion of LST ##
+Research areas and data. The Dongting Lake area is located in the middle and lower reaches of the Yangtze River (28°30′N-30°20′N, 111°40′E-113°10′E), mostly below 50 m above sea level (Fig. 
+To analyse the change in land use/land cover and its impact on LST in the Donting Lake area before and after Three Gorges impoundment of the Yangtze River, we selected 16 remote sensing images from the winters of 1995,  2001, 2004 and 2013 as the main data sources (Table 
+
+## Extraction of LULC information. ##
+To reduce the classification error caused by the large study area, we first divided the study area into three parts, namely, the eastern Dongting Lake area, the southern Dongting Lake area, and the western Dongting Lake area. Based on the the Convention on Wetlands of International Importance especially as Waterfowl Habitat and actual situation of the study area and the characteristics of the remote-sensing image, we divided the Dongting Lake area's LULC types into nine categories-water body, mud beach, marshland, reed beach land, riparian forest, paddy field, dryland, built-up land, and forest land. According to the high-resolution Google Earth images and field survey, we identified training samples to classified the LULC using the decision tree methodology which is based on the classification and regression tree (CART) algorithm 
+LSt retrieval and grading. The single-window algorithm is derived by Qin et al. 29 based on the surface thermal radiation conduction equation, which uses Landsat TM/ETM + data to invert LST. The single-window algorithm has the greatest consistency with the actual measurements. We compared the retrieval results of 2001, 2004, and 2013 with the MODIS temperature products from the same time, and the results indicated a relative error of 2% or less.
+where C = ε 6 × τ 6 (ε 6 is the surface emissivity; τ 6 is the atmospheric transmittance),
+T 6 is the land surface brightness temperature, and T a is the mean atmospheric temperature. The values of a in the TM and ETM+ sensors are -67.35535 and -63.18853, respectively, and the values of b are -0.458608 and 0.44411, respectively.
+The acquisition time for each image was in the winter. To reduce the influence of other factors, such as rainfall or snowfall, on the LST retrieval results and increase the comparability of the results, we standardized the results of the retrieval using a normalization method. The LST distribution range was standardized between 0 and 1, and the normalization formula is as follows:
+where N i is the normalized pixel value; LST i is the retrieval of LST for pixel i; LST max is the maximum LST value in the range; and LST min is the minimum LST value in the range. We graded LST using standard deviation classification and obtained the annual temperature grading of the Dongting Lake area (Table 
+
+## Statistical analysis. ##
+Using overlay analysis in ArcGIS software (Esri Redlands, CA), we calculated the mean temperature of each LULC type and the change in the area of each temperature grade. We graded the DEM, NDVI, NDMI and distance from the water body at regular intervals (NDVI and NDMI were in steps of 0.01 m, digital elevation was in steps of 10 m and distance from water body was in steps of 100 m). Then, we used correlation analysis to reveal the relationships between LST and these factors.
+where m t is the mean LST value of the whole study area in year t; LST i is the LST value of pixel i; m t,j is the mean LST value of land type j in year t; LST j,k is the LST value of pixel k in land type j; D t,j is the difference between the mean LST value of land type j and the LST value of the whole study area in year t. LST for different LULC types. The mean LST of the Dongting Lake area in the last 20 years increased from 7.13 °C to 11.01 °C, an increase of approximately 3.5 °C, which is consistent with the global warming trend (Table 
+correlation between LSt and other factors (nDVi, nDMi, DeM and distance from water body). In terms of the correlation of mean LST with these factors (Fig. 
+
+## Discussion ##
+Observational analyses show that the surface temperature changes in China in recent decades have shown significant warming in the north but not in the south, especially in the southwest and parts of the lower Yangtze River 
+
+## conclusion ##
+In this study, LST was extracted from Landsat TM/ETM+ data using a single-window algorithm, the differences in LST among different LULC types were analysed, the spatial distribution characteristics of LST and the NDMI, NDVI, DEM, and distance were discussed, their quantitative relationships were determined, and the spatiotemporal distribution laws and influencing factors of LST were clarified. The main conclusions were as follows. (1) The LULC type in the Dongting Lake area has changed significantly, with the area of water body and paddy field declining continuously and the area of built-up land and dryland increasing gradually; these results indicate that the changes in the LULC type in the area are related to the water impoundment of the Three Gorges Dam and the ecological management policies. (2) LST in the Dongting Lake area increased by 3.5 °C in winter, with differences in LST of different LULC types, LST of forest land and dryland is higher than that of other land types, and the LST of water body is much lower than that of other land types, also is much lower than the mean LST of the study area. In addition, within 300 m to the water body, the closer to the water body, the lower the LST. It suggests that the water body has a moderating effect on the LST and surface thermal effects at a certain distance around it. (3) The NDMI showed a strong negative spatial correlation with LST, while the NDVI, DEM and distance showed a weak spatial correlation with LST. In winter, water vapor plays a major role in altering the pattern of heat distribution on the lower mat, and the NDMI is a valid indicator for thermal environment studies and is more suitable for quantitative analysis of LST. Digital remote sensing methods can not only provide a range of surface temperatures across a region but also demonstrate its spatial pattern. These results have increased the understanding of the consequences of land change on the spatiotemporal dynamics of LST. 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Cooling and wetting effects of agricultural development on near-surface atmosphere over northeast China
+   Authors: , , , , 
+   Date: 2016
+
+2. Thermal regime of warm-dry permafrost in relation to ground surface temperature in the Source Areas of the Yangtze and Yellow rivers on the Qinghai-Tibet Plateau, SW China
+   Authors: 
+   Date: 2018
+
+3. Evaluation of MODIS land surface temperature data to estimate air temperature in different ecosystems over Africa
+   Authors: , , , 
+   Date: 2010
+
+4. Environmental degradation in the urban areas of China: Evidence from multisource remote sensing data
+   Authors: , , , , 
+   Date: 2017
+
+5. Physics of U.S. surface temperature response to ENSO
+   Authors: , , , 
+   Date: 2011
+
+6. Intra-annual variability of organic carbon concentrations in running waters: Drivers along a climatic gradient
+   Authors: , , , 
+   Date: 2011
+
+7. Climate-regulation services of natural and agricultural ecoregions of the Americas
+   Authors: 
+   Date: 2012
+
+8. Changes in the Asian monsoon climate during 1700-1850 induced by preindustrial cultivation
+   Authors: , , 
+   Date: 2009
+
+9. A case study of effects of atmospheric boundary layer turbulence, wind speed, and stability on wind farm induced temperature changes using observations from a field campaign
+   Authors: 
+   Date: 2016
+
+10. Land cover changes and their biogeophysical effects on climate
+   Authors: 
+   Date: 2014
+
+11. Regionalizing global climate models
+   Authors: , , 
+   Date: 2012
+
+12. The relative importance among anthropogenic forcings of land use/land cover change in affecting temperature extremes
+   Authors: , 
+   Date: 2019
+
+13. Global Consequences of Land Use
+   Authors: 
+   Date: 2005
+
+14. A dampened land use change climate response towards the tropics
+   Authors: , , 
+   Date: 2011
+
+15. The impact of anthropogenic land use and land cover change on regional climate extremes
+   Authors: 
+   Date: 2017
+
+16. Agriculture Development-induced Surface Albedo Changes and Climatic Implications Across Northeastern China
+   Authors: , , , , 
+   Date: 2012
+
+17. Application of Remote Sensing Techniques and Geographic Information Systems to Analyze Land Surface Temperature in Response to Land Use/Land Cover Change in Greater Cairo Region, Egypt
+   Authors: , 
+   Date: 2018
+
+18. Land degradation monitoring using terrestrial ecosystem carbon sinks/sources and their response to climate change in China
+   Authors: 
+   Date: 2018
+
+19. Impacts of land use and land cover change on regional meteorology and air quality over the Beijing-Tianjin-Hebei region
+   Authors: 
+   Date: 2018
+
+20. Interaction effects of climate and land use/land cover change on soil organic carbon sequestration[J]
+   Authors: 
+   Date: 2014
+
+21. Elucidating the complex interrelationships of soil organic carbon fractions with land use/land cover types and landform attributes in a montane ecosystem
+   Authors: , , 
+   Date: 2015
+
+22. Effect of Anthropogenic Land-Use and Land-Cover Changes on Climate and Land Carbon Storage in CMIP5 Projections for the Twenty-First Century
+   Authors: 
+   Date: 2013
+
+23. Land Use Changes and GHG Emissions from Tropical Forest Conversion by Oil Palm Plantations in Riau Province
+   Authors: , 
+   Date: 2013
+
+24. The spatial dimension of urban greenhouse gas emissions: analyzing the influence of spatial structures and LULC patterns in European cities
+   Authors: , , 
+   Date: 2015
+
+25. Exploring temperature indices by deriving relationship between land surface temperature and urban landscape
+   Authors: , , 
+   Date: 2020
+
+26. Estimating the surface air temperature by remote sensing in northwest China using an improved advection-energy balance for air temperature mode
+   Authors: , , , , 
+   Date: 2016
+
+27. Local temperature response to land cover and management change driven by non-radiative processes
+   Authors: , , , 
+   Date: 2017
+
+28. Patterns of land change and their potential impacts on land surface temperature change in Yangon
+   Authors: 
+   Date: 2018
+
+29. Mono-window algorithm for retrieving land surface temperature from Landsat TM data and its application to the Israel-Egypt border region
+   Authors: , , 
+   Date: 2001
+
+30. A generalized single-channel method for retrieving land surface temperature from remote sensing data
+   Authors: , , 
+   Date: 2003
+
+31. Inversion and verification of land surface temperature with remote sensing TM/ETM+ data
+   Authors: , , 
+   Date: 2008
+
+32. Response of ecological carrying capacity to socioeconomic and environmental changes in Dongting lake region during 2001-2010
+   Authors: , , , , 
+   Date: 2014
+
+33. Change characteristics of the air temperature during the past 60 a over Dongting lake area
+   Authors: , , , , 
+   Date: 2013
+
+34. Construction of temperature series in recent 100 years and its changes over Dongting lake region
+   Authors: , , , 
+   Date: 2014
+
+35. Classification and Regression Trees (CART)
+   Authors: , , , 
+   Date: 1984
+
+36. Classification and Regression Tree: An Introduction
+   Authors: , 
+   Date: 1999
+
+37. Comparison of support vector machine, neural network, and cart algorithms for the land-cover classification using limited training data points
+   Authors: , 
+   Date: 2012
+
+38. Climate Change in China From 1880 to 1998 and Its Impact on the Environmental Condition
+   Authors: , 
+   Date: 2001
+
+39. Characteristics of long-term climate change and the ecological responses in central china
+   Authors: , , , , 
+   Date: 2016
+
+40. The research on the sensitivity of climate change in China in recent 50 years based on composite index
+   Authors: , , , 
+   Date: 2012
+
+41. Impact of land-use and land-cover changes on temperature trends over western India
+   Authors: , 
+   Date: 2012
+
+42. Spatial impact of land use/land cover change on surface temperature distribution in Saranda Forest
+   Authors: , , , 
+   Date: 2016
+
+43. Exploring the relationship between urban form, land surface temperature and vegetation indices in a subtropical megacity
+   Authors: , 
+   Date: 2019
+
+44. Land use and land cover change effect on surface temperature over Eastern India
+   Authors: 
+   Date: 2019
+
+45. Land Surface Temperature Response to Irrigated Paddy Field Expansion: a Case Study of Semi-arid Western Jilin Province
+   Authors: , , 
+   Date: 2019
+
+46. Land surface temperature trends as indicator of land use changes in wetlands
+   Authors: 
+   Date: 2018
+
+47. Thermal infrared remote sensing
+   Authors: 
+   Date: 2013
+
+48. Quantifying the spatial and temporal relationship between air and land surface temperatures of different landcover types in Southeastern China
+   Authors: 
+   Date: 2017
+
+49. Urbanization impact on temperature change in China with emphasis on land over change and human activity
+   Authors: , , , , 
+   Date: 2013
+
+50. Studies on the relationships between land surface temperature and environmental factors in an inland river catchment based on geographically weighted regression and MODIS data
+   Authors: , , , , 
+   Date: 2012
+
+51. Does the NAO index represent zonal flow? The influence of the NAO on North Atlantic surface temperature
+   Authors: , 
+   Date: 2002
+
+52. Efficiency of landscape metrics characterizing urban land surface temperature
+   Authors: , , 
+   Date: 2018
+

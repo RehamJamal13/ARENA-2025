@@ -1,0 +1,574 @@
+================================================================================
+TITLE: Land-use change and biodiversity: Challenges for assembling evidence on the greatest threat to nature
+================================================================================
+
+AUTHORS:
+- Charles Davison
+- | Carsten Rahbek
+- Naia Morueta-Holme
+- Carsten Rahbek
+
+ABSTRACT:
+Land-use change is considered the greatest threat to nature, having caused worldwide declines in the abundance, diversity, and health of species and ecosystems. Despite increasing research on this global change driver, there are still challenges to forming an effective synthesis. The estimated impact of land-use change on biodiversity can depend on location, research methods, and taxonomic focus, with recent global metaanalyses reaching disparate conclusions. Here, we critically appraise this research body and our ability to reach a reliable consensus. We employ named entity recognition to analyze more than 4000 abstracts, alongside full reading of 100 randomly selected papers. We highlight the broad range of study designs and methodologies used; the most common being local space-for-time comparisons that classify land use in situ. Species metrics including abundance, distribution, and diversity were measured more frequently than complex responses such as demography, vital rates, and behavior. We identified taxonomic biases, with vertebrates well represented while detritivores were largely missing. Omitting this group may hinder our understanding of how land-use change affects ecosystem feedback. Research was heavily biased toward temperate forested biomes in North America and Europe, with warmer regions being acutely underrepresented despite offering potential insights into the future effects of land-use change under novel climates. Various land-use histories were covered, although more research in understudied regions including Africa and the Middle East is required to capture regional differences in the form of current and historical land-use practices. Failure to address these challenges will impede our global understanding of land-use change impacts on biodiversity, limit the reliability of future projections and have repercussions for the conservation of threatened species.
+Beyond identifying literature biases, we highlight the research priorities and data gaps that need urgent attention and offer perspectives on how to move forward.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## | INTRODUC TI ON ##
+The IPBES 2019 global report ranked land-use change as the greatest driver of declines in nature and biodiversity. Combined with the direct exploitation of nature through hunting, fishing, logging, and harvesting, these threats are thought to account for more than 50% of the human impacts on terrestrial and freshwater ecosystems 
+It is estimated that the biodiversity of terrestrial communities has declined on average by more than one-fifth 
+Land-use change can have direct impacts on species through the destruction of habitat and modification of the environment 
+Land-use change also interacts with other global change drivers. For example, it is known that road building facilitates the spread of invasive species 
+Several meta-analyses and syntheses have investigated the global impacts of land-use change on biodiversity. These studies generally report that land-use change substantially reduces local species richness 
+Species functional groups also show diverse responses to land-use change 
+A frequent observation of these syntheses is that the response of biodiversity depends on numerous factors including biome, taxonomic group, type of disturbance, and the biodiversity metric used (e.g., 
+Here, we review the land-use change and biodiversity literature to describe the range of study designs, land-use measurements, and species responses that are often used. We investigate the taxonomic, geographic, climatic, and historical distribution of the research by using named entity recognition applied to a large body of papers. Our aim is to critically evaluate the evidence base that is being used to assess the global impact of land-use change on species and to suggest ways for moving this key research forward.
+
+## | ME THODS ##
+We identified relevant studies by searching Scopus for articles that investigated the impacts of land use or land cover change on any aspect of species biology. We limited our search to terrestrial studies published prior to 2020, excluding reviews, meta-analyses, and studies from the distant past (search terms in Figure 
+
+## | Extracting taxonomic and location data ##
+We applied automated text mining methods to the abstracts of all papers identified by the Scopus search to determine the taxonomic focus and geographic distribution of research investigating land-use change impacts on species. Our analysis used and built on the methods of 
+Where extracted names were not directly matched with entries in the Catalogue of Life, we attempted a series of adjusted matches following 
+The process of matching extracted names with Catalogue of Life entries sometimes resulted in an extracted name being resolved to several accepted species, for example when the species was an ambiguous synonym or occasionally misapplied name. In these cases (9.9%), we kept only the directly matched accepted name from the same abstract (8.5%) or all candidate names if there were no direct matches (1.5%). Furthermore, all main analyses were conducted at genus level and above. We calculated the number of papers mentioning different taxonomic groups and used genus-level mentions to assess taxonomic representation. Additionally, species counts were aggregated into taxonomic groups and compared with the number of registered species per group in the Catalogue of Life 2019 (Figure 
+We extracted and geolocated all place name mentions (toponyms) from abstracts mentioning a species binomial using the Edinburgh Geoparser 
+
+## | Deriving additional data and validating ##
+Based on the geolocated mentions identified in the previous step, we derived several attributes to assess the representativeness of the literature in a global context. Firstly, using a map of global biomes 
+The background rate of papers published in the subject areas "Environmental" or "Agricultural and Biological science" on Scopus searched 16/07/2020 (more than 93% of papers in our search have one of these subject areas). (b) Publications on the impact of land-use change on species are increasing faster than the background rate, that is, as a percentage of (a), and mentions of "climate" and "intensity" are slowly increasing. (c) The frequency of papers mentioning different aspects of species biology from the search criteria. (d) Full Scopus search terms human land-use model to determine the representation of historical land-use patterns 
+We manually assessed our search results and accuracy of automated text methods (full information and results in the Supplementary Material). We manually identified and resolved species in a random 1% of papers, and manually geoparsed 100 random abstracts mentioning a species to assess the accuracy of the automated geoparser and the relevance of papers.
+
+## | In-depth review of selected papers ##
+To evaluate the methodological approaches used for studying landuse change impacts on species, we read and annotated a random selection of 100 papers. These were selected from papers that mention the term "land use" in their title, as these constituted a particularly relevant subset. These 100 papers were downloaded and processed using Zotero reference manager (Roy Rosenzweig Center for History & New Media, 2020). We extracted detailed information on the studies by manually adding keyword tags to each entry, 
+
+## | Common study designs ##
+A range of study designs are used in this field, with papers sometimes combining approaches; however, space-for-time substitutions (controlimpact) are by far the most common, accounting for 61 out of the 100 papers in our detailed analysis (Figure 
+Detailed before-after-control-impact (BACI) assessments can capture temporal patterns and compare changes to a dynamic baseline. For example, 
+All study approaches entail some trade-offs, either logistical or theoretical, and make key assumptions that can influence conclusions and impede efforts to synthesize results (reviewed in De 
+The overall finding of manually read studies was for a negative impact of land-use change on species biology; however, a low sample size for all except control-impact studies precluded us from identifying differences in the distribution of findings across study designs. The impact of land-use change on species depends on context, for example, intensifying the use of an abandoned meadow leads to increased species diversity, but intensification of a heavily grazed meadow causes declines 
+
+## | Measuring land-use change ##
+Land-use change is challenging to quantify and often involves sorting complex habitats into coarse anthropocentric cover categories such as forest, agriculture, and urban-a simplification that can overlook ecologically significant within class variation. A protected, floristically diverse grassland, for example, may support more and different species than a newly created grass field used for recreation. From an organism's perspective land-use classifications may be arbitrary, as they respond to myriad changes in difficult to measure environmental conditions such as light availability, resources, microclimate, and competition 
+There are many methods used to measure land-use change 
+Data on land-use intensity, such as fertilizer application or livestock per hectare, attempt to reconcile observed changes in biodiversity to within land-use variation, and capture more detailed facets of land-use change 
+
+## | Measuring biodiversity ##
+The choice of species response metric also influences our interpretation of land-use change impacts, with the perceived effects completely reversing in some scenarios. To illustrate this, consider an agricultural area beside a national park, with both habitats containing equal density of a particular species. Considering occupancy or abundance, one might conclude that agriculture is suitable habitat.
+However, if vital demographic rates such as births, deaths, and migration are examined, one may find that the agricultural area constitutes a sink habitat, with an elevated death rate that is concealed by immigration (e.g. 
+Of the search terms used to identify the species level effects of land-use change, "diversity" was the most common, with terms related to species composition, distribution, and abundance also occurring frequently across the 12,192 papers (Figure 
+Information on demographics and vital rates help explain how some species persist or thrive in disturbed environments (e.g., 
+Still, investigating these detailed variables is difficult, resource demanding, and subject to unique local variation. Basic presence data is easier to collect and is available globally for many taxa (e.g., 
+
+## | Biases in the literature ##
+
+
+## | Taxonomic biases ##
+For understanding the global effects of land-use change on biodiversity, it is essential to sample a diverse range of species. Broad taxonomic coverage helps us capture complex indirect impacts and trophic feedback 
+were matched to an abbreviated accepted name; 7.8% were matched to a synonym, and 1.1% were matched to an abbreviated synonym.
+Species mentioned belonged to 2721 different genera, with most genera (60%) being mentioned only once (mean = 2.90, SD = 6.63, Figure 
+Plants were mentioned in 45% of all papers with a species in their abstract. Several genera of large trees including Pinus, Quercus, and Eucalyptus dominated (Figure 
+Vertebrates were mentioned in 43% of papers, almost equaling plants, and were, therefore, overrepresented considering species richness of the group (Figure 
+A few mosquito genera were the focus of many arthropod studies, likely due to their role as vectors of human disease and the relationship between land-use change and their prevalence 
+Taxonomic biases are a caveat to the conclusions of many landuse change meta-analyses. Some syntheses resort to investigating a handful of well-studied groups, trading generality for data availability (e.g., 
+
+## | Geographic biases ##
+A well-distributed literature body across space helps us infer global patterns of land-use change, identify regional mechanisms, and highlight threatened areas. Of the 4108 abstracts mentioning species, 3213 also mentioned a geographic location. Of the 147 countries mentioned, the United States appeared most often, with roughly the same number of mentions (480) as the next five countries combined (Figure 
+In Russia, the Middle East, and Africa we found very few studies despite some hotspots in South Africa and Tanzania. The blank spots on the map-where there are few or no identified studies-reveal gaps in our knowledge of region-specific land-use change drivers and how they may be impacting ecological communities. In the conservation literature at least, research in Africa and Southeast Asia appears to be stagnant or even decreasing over time, exacerbating their underrepresentation (Di 
+The uneven geographic distribution of studies has consequences for the representation of biomes (sensu 
+Based on the coordinates of subcountry locations, we detected a surplus of studies in all temperate biomes, accounting for over half of all locations. This abundance, and disparity with global area, was most apparent for temperate forest biomes. The most underrepresented biomes regarding land area are deserts and xeric shrublands, tundra, and boreal forests. Insufficient sampling of arid regions could hamper conservation efforts as 
+Community responses to land-use change can vary geographically due to the specific nature of threats and differences in species sensitivity 
+
+## | Further dimensions of land-use change ##
+
+
+## | The role of climate ##
+Land use and climate change interact with the implications for the distribution and persistence of species 
+In our analysis, we found that the climatic distribution of landuse study locations did not match with the pattern of global terrestrial climate (Figure 
+The narrow climatic range of this research body may have several consequences as the richness of taxonomic groups peak in different climate zones 
+
+## | Land-use history ##
+Extensive and persistent influences of humans date back thousands of years in some regions 
+Global maps of land-use history can help us identify prime regions for investigating the role of legacy effects and recovery times (Figure 
+Synthesizing land-use change research requires covering the full diversity of land-use histories and understanding time-lagged biotic responses. We found that studies in areas with sustained human use (>20% of area used) until the present all had a higher share of studies than their global coverage suggests (Figure 
+The disparity in magnitude is particularly evident for areas with greater than 2000 years of sustained use, and areas with 100-250 years of sustained use. Coverage of these two extremes F I G U R E 7 Representation of land-use histories as the percent of location mentions within each category versus global cover. Land-use histories identified from 
+In some regions, human impacts have declined from previous levels and what appear to be pristine ecosystems may actually be recovering. Forests regrowing after agricultural abandonment, for example, can display the legacy effects lasting millennia 
+The geographic bias of studies limits the applicability of findings and the reliability of future projections. Investigating the full diversity of regional land-use mechanisms will be key to determining a global outlook. A bias toward forest ecosystems may be at the expense of other diverse habitats including tropical and subtropical savannas and grasslands. A key challenge moving forward will be ex- 
+
+## | PER S PEC TIVE S ##
+To improve our understanding of how land-use change affects biodiversity, we need to investigate both sides of the paradigm in greater detail through improvements in land use and biodiversity data as well as study designs (Figure 
+Land use and biodiversity surveys across large extents (e.g., nationally) are important but need to be aligned spatially and temporally.
+Moving forward, we must also put more attention on the legacies of historical human disturbance when monitoring biodiversity and pursue further research into the interaction of land-use change with other global drivers 
+Geographic and taxonomic biases underpin many of the challenges facing this field. However, neither can be solved with the data that we currently have. Filling these gaps will require concerted fieldwork on neglected taxonomic groups in understudied regions, with an emphasis on collaborative research efforts. The advancement of space-borne remote sensing will also be pivotal. Global submeter resolution maps of vegetation and land use will be invaluable for tackling geographic biases when coupled with fieldwork in understudied systems. Proximal sensing methods such as camera traps, drones, sound recorders, and climate loggers will also help increase the effectiveness of data collection. We cannot make effective conservation and policy decisions on what we do not fully understand.
+In this paper, we have highlighted the research priorities and data gaps that need urgent attention.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Adapting the Edinburgh geoparser for historical georeferencing
+   Authors: , , , 
+   Date: 2015
+
+2. Harnessing the world's biodiversity data: Promise and peril in ecological niche modeling of species distributions
+   Authors: 
+   Date: 2012
+
+3. Effects of habitat fragmentation on birds and mammals in landscapes with different proportions of suitable habitat
+   Authors: 
+   Date: 1994
+
+4. Do species' traits predict recent shifts at expanding range edges?
+   Authors: , , , , , 
+   Date: 2011
+
+5. Standards for distribution models in biodiversity assessments
+   Authors: , , , , , , , , , , , , 
+   Date: 2019
+
+6. A global analysis of the impacts of urbanization on bird and plant diversity reveals key anthropogenic drivers
+   Authors: , , , , , , , , , , , , , , , , , , , 
+   Date: 2014. 1780. 20133330
+
+7. Direct and cascading impacts of tropical land-use change on multi-trophic biodiversity
+   Authors: , , , , , , , , , , , , , , , , , , , 
+   Date: 2017
+
+8. The biomass distribution on Earth
+   Authors: , , 
+   Date: 2018. 17118
+
+9. Conventional land-use intensification reduces species richness and increases production: A global meta-analysis
+   Authors: , , , , , , , , , , , , , 
+   Date: 2019
+
+10. Habitat loss and population decline: A meta-analysis of the patch size effect
+   Authors: , , 
+   Date: 1998
+
+11. Tropical turmoil: A biodiversity tragedy in progress
+   Authors: , , 
+   Date: 2009
+
+12. Legacy effects of human land use: Ecosystems as time-lagged systems
+   Authors: , , 
+   Date: 2017
+
+13. 
+   Authors: , , , , , , , , , , , , , 
+
+14. Global biodiversity: Indicators of recent declines
+   Authors: , , , , , , 
+   Date: 2010
+
+15. Is local biodiversity declining or not? A summary of the debate over analysis of species richness time trends
+   Authors: , , , 
+   Date: 2018
+
+16. Adapting the IUCN Red List criteria for invertebrates
+   Authors: , , , , 
+   Date: 2011
+
+17. taxize: Taxonomic search and retrieval in R. F1000Research
+   Authors: , 
+   Date: 2013
+
+18. Taxonomic information from around the web
+   Authors: , , , , , , , , , , , , , , , 
+   Date: 2020
+
+19. Minimal spillover of native small mammals from Bornean tropical forests into adjacent oil palm plantations
+   Authors: , , , , , , 
+   Date: 2019
+
+20. Landuse intensity indirectly affects ecosystem services mainly through plant functional identity in a temperate forest
+   Authors: , , , 
+   Date: 2018
+
+21. From roadkill to road ecology: A review of the ecological effects of roads
+   Authors: 
+   Date: 2007. 2006
+
+22. Monitoring change in vertebrate abundance: The living planet index
+   Authors: , , , , , 
+   Date: 2009
+
+23. Emergence of a new neotropical malaria vector facilitated by human migration and changes in land use
+   Authors: , , , , , , 
+   Date: 2002
+
+24. A critique of the space-for-time substitution practice in community ecology
+   Authors: 
+   Date: 2019
+
+25. Implications of bias in conservation research and investment for freshwater species
+   Authors: , , , , , , , , , , , , , , , , , , 
+   Date: 2011
+
+26. Shifts in the demographics and behavior of bearded pigs (Sus barbatus) across a land-use gradient
+   Authors: , , , , , , 
+   Date: 2019
+
+27. Predicting bee community responses to land-use changes: Effects of geographic and taxonomic biases
+   Authors: , , , , , , , , , , , , , , , , , , , 
+   Date: 2016
+
+28. Challenges with inferring how land-use affects terrestrial biodiversity: Study design, time, space and synthesis
+   Authors: , , , , , , , , , 
+   Date: 2018
+
+29. A cross-taxonomic comparison of insect responses to grassland management and land-use legacies
+   Authors: , , , , , , , , , , 
+   Date: 2011
+
+30. Biogeographical and taxonomic biases in tropical forest fragmentation research
+   Authors: , , 
+   Date: 2014
+
+31. Changing trends and persisting biases in three decades of conservation science
+   Authors: , , , , , , , , , , , 
+   Date: 2017
+
+32. Pervasive human-driven decline of life on Earth points to the need for transformative change
+   Authors: , , , , , , , , , , , , , , , , , , , 
+   Date: 2019
+
+33. A review of the ecosystem functions in oil palm plantations, using forests as a reference system
+   Authors: , , , , , , , , , , , , , , , , , , , 
+   Date: 2017
+
+34. Assemblage time series reveal biodiversity change but not systematic loss
+   Authors: , , , , , , 
+   Date: 2014
+
+35. Biodiversity models need to represent land-use intensity more comprehensively
+   Authors: , , , , , 
+   Date: 2021
+
+36. Irreversible impact of past land use on forest soils and biodiversity
+   Authors: , , , 
+   Date: 2002
+
+37. Anthropogenic transformation of the biomes, 1700 to 2000
+   Authors: , , , , 
+   Date: 2010
+
+38. Used planet: A global history
+   Authors: , , , , , 
+   Date: 2013. 12172
+
+39. Cyberinfrastructure for an integrated botanical information network to investigate the ecological impacts of global climate change on plant biodiversity
+   Authors: , , , , 
+   Date: 2016. e2615v2
+
+40. The commonness of rarity: Global and future distribution of rarity across land plants
+   Authors: , , , , , , , , , , , , , , , , , , , 
+   Date: 2019
+
+41. Unexpectedly large impact of forest management and grazing on global vegetation biomass
+   Authors: , , , , , , , , , , , , 
+   Date: 2018
+
+42. Relative effects of habitat loss and fragmentation on population extinction
+   Authors: 
+   Date: 1997
+
+43. Historic and prehistoric humandriven extinctions have reshaped global mammal diversity patterns
+   Authors: , 
+   Date: 2015
+
+44. Climate change, conservation and management: An assessment of the peer-reviewed scientific journal literature
+   Authors: , , , , , , , , , , , , , , , , , , , 
+   Date: 2009
+
+45. WorldClim 2: New 1-km spatial resolution climate surfaces for global land areas
+   Authors: , 
+   Date: 2017
+
+46. Global consequences of land use
+   Authors: , , , , , , , , , , , , , , , , , , , 
+   Date: 2005
+
+47. Influence of the proximity and amount of human development and roads on the occurrence of the red imported fire ant in the lower Florida Keys
+   Authors: , , 
+   Date: 2002
+
+48. Do space-for-time assessments underestimate the impacts of logging on tropical biodiversity? An Amazonian case study using dung beetles
+   Authors: , , , , , 
+   Date: 2016
+
+49. The influence of human disturbance on wildlife nocturnality
+   Authors: , , , 
+   Date: 2018. 2021
+
+50. Effects of land use on plant diversity-A global metaanalysis
+   Authors: , , , , 
+   Date: 2014
+
+51. Primary forests are irreplaceable for sustaining tropical biodiversity
+   Authors: , , , , , , , , , , 
+   Date: 2011
+
+52. Estimating local biodiversity change: A critique of papers claiming no net loss of local diversity
+   Authors: , , , , , , , , , 
+   Date: 2016
+
+53. Phylogenetic and trait-based prediction of extinction risk for data-deficient amphibians
+   Authors: , , , , , , 
+   Date: 2019
+
+54. Use of the Edinburgh geoparser for georeferencing digitized historical collections
+   Authors: , , , , , , 
+   Date: 2010. 1925. 2010
+
+55. Land-use change interacts with climate to determine elevational species redistribution
+   Authors: , , 
+   Date: 2018. 1315
+
+56. Human appropriation of net primary production and species diversity in agricultural landscapes
+   Authors: , , , , , , , , , , 
+   Date: 2004
+
+57. Extinction debt at extinction threshold
+   Authors: , 
+   Date: 2002
+
+58. Worldwide impacts of past and projected future land-use change on local species richness and the Biodiversity Intactness Index
+   Authors: , , , , , , , , , 
+   Date: 2018
+
+59. The PREDICTS database: A global database of how local terrestrial biodiversity responds to human impacts
+   Authors: , , , , , , , , , , , , , , , , , , , 
+   Date: 2014
+
+60. Summary for policymakers of the assessment report on land degradation and restoration of the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services
+   Authors: , , , , , , , , , , , , , , , , , 
+   Date: 2018
+
+61. Summary for policymakers of the global assessment report on biodiversity and ecosystem services of the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services
+   Authors: , , , , , , , , , , , , , , , , , 
+   Date: 2019
+
+62. Biodiversity databases in Russia: Towards a national portal
+   Authors: , 
+   Date: 2017
+
+63. Balancing biodiversity in a changing environment: Extinction debt, immigration credit and species turnover
+   Authors: , 
+   Date: 2010
+
+64. Geographic range size and determinants of avian species richness
+   Authors: , 
+   Date: 2002
+
+65. Holocene carbon emissions as a result of anthropogenic land cover change
+   Authors: , , , , , 
+   Date: 2011
+
+66. Conservation of terrestrial invertebrates: A review of IUCN and regional red lists for myriapoda
+   Authors: , , , , 
+   Date: 2020
+
+67. Global patterns of agricultural land-use intensity and vertebrate diversity
+   Authors: , , , , , 
+   Date: 2015
+
+68. A global assessment of endemism and species richness across island and mainland regions
+   Authors: , , , , , , , 
+   Date: 2009
+
+69. Challenges and opportunities in mapping land use intensity globally
+   Authors: , , , , , , , , , , , , , , , 
+   Date: 2013
+
+70. Forbidden fruit: Human settlement and abundant fruit create an ecological trap for an apex omnivore
+   Authors: , , , , 
+   Date: 2017
+
+71. The influence of soil properties on the structure of bacterial and fungal communities across land-use types
+   Authors: , , , 
+   Date: 2008. 2008
+
+72. Biodiversity inventories, indicator taxa and effects of habitat modification in tropical forest
+   Authors: , , , , , , , , , , , , 
+   Date: 1998
+
+73. Bearded pig (Sus barbatus) utilisation of a fragmented forestoil palm landscape in Sabah, Malaysian Borneo
+   Authors: , , , , , 
+   Date: 2018
+
+74. Cross-boundary subsidy cascades from oil palm degrade distant tropical forests
+   Authors: , , , , , , 
+   Date: 2017
+
+75. Interactions between climate and habitat loss effects on biodiversity: A systematic review and meta-analysis
+   Authors: , , 
+   Date: 2012
+
+76. Mapping where ecologists work: Biases in the global distribution of terrestrial ecological observations
+   Authors: , , 
+   Date: 2012
+
+77. Improving estimates of biodiversity loss
+   Authors: , , 
+   Date: 2012
+
+78. How old is the human footprint in the world's largest alpine ecosystem? A review of multiproxy records from the Tibetan Plateau from the ecologists' viewpoint
+   Authors: , , , , , , , 
+   Date: 2014. 2013
+
+79. Text-analysis reveals taxonomic and geographic disparities in animal pollination literature
+   Authors: , , 
+   Date: 2019
+
+80. A meta-analysis of declines in local species richness from human disturbances
+   Authors: , 
+   Date: 2014
+
+81. Global effects of land use on biodiversity differ among functional groups
+   Authors: , , , , , , , , 
+   Date: 2020
+
+82. Global patterns of terrestrial assemblage turnover within and among land uses
+   Authors: , , , , , , , , , , 
+   Date: 2016
+
+83. Global effects of land use on local terrestrial biodiversity
+   Authors: , , , , , , , , , , , , , , , , , , , 
+   Date: 2015
+
+84. Interactions between climate change and land use change on biodiversity: Attribution problems, risks, and opportunities
+   Authors: , 
+   Date: 2014
+
+85. Terrestrial ecoregions of the world: A new map of life on earth
+   Authors: , , , , , , , , , , , , , , , , , 
+   Date: 2001. 2001
+
+86. Effects of subsistence hunting on vertebrate community structure in Amazonian forests
+   Authors: 
+   Date: 2000
+
+87. The influence of land-use change and landscape dynamics on the climate system: Relevance to climate-change policy beyond the radiative effect of greenhouse gases
+   Authors: , , , , , , , 
+   Date: 2002. 1797
+
+88. The legacy of past human land use in current patterns of mammal distribution
+   Authors: , , 
+   Date: 2019
+
+89. Rare species, the coincidence of diversity hotspots and conservation strategies
+   Authors: , , , , 
+   Date: 1993
+
+90. Habitat loss confounds climate change impacts
+   Authors: 
+   Date: 2004
+
+91. Geographical and taxonomic biases in invasion ecology
+   Authors: , , , , , 
+   Date: 2008
+
+92. R: A language and environment for statistical computing
+   Authors: 
+   Date: 2020
+
+93. Under the radar: Mitigating enigmatic ecological impacts
+   Authors: , , , 
+   Date: 2014. 2014
+
+94. Species 2000 & ITIS catalogue of life
+   Authors: , , , , , , , , , , , 
+   Date: 2019. 2019. 2019
+
+95. 
+   Date: 2020
+
+96. Global biodiversity scenarios for the year 2100
+   Authors: , , , , , , , , , , , , , , , , , , 
+   Date: 2000
+
+97. The role of land use and land cover change in climate change vulnerability assessments of biodiversity: A systematic review
+   Authors: , , , , , , , 
+   Date: 2021
+
+98. Plant dispersal by motor cars
+   Authors: 
+   Date: 1989
+
+99. Integrating the underlying structure of stochasticity into community ecology
+   Authors: , , , , , , , , , , , , , , , , , , , 
+   Date: 2020
+
+100. Flagships, umbrellas, and keystones: Is singlespecies management passe in the landscape era?
+   Authors: 
+   Date: 1998
+
+101. Applications of airborne lidar for the assessment of animal species diversity
+   Authors: , , 
+   Date: 2014
+
+102. Impacts of global change on species distributions: Obstacles and solutions to integrate climate and land use
+   Authors: , , , , , , , 
+   Date: 2017
+
+103. Demographic superiority with increased logging in tropical understorey insectivorous birds
+   Authors: , , 
+   Date: 2015
+
+104. Soil and climate are better than biotic land cover for predicting home-range habitat selection by endangered burrowing owls across the Canadian Prairies
+   Authors: , , 
+   Date: 2011
+
+105. Improvements in reports of species redistribution under climate change are required
+   Authors: , , , 
+   Date: 2021
+
+106. Habitat destruction and the extinction debt
+   Authors: , , , 
+   Date: 1994
+
+107. Climate change distracts us from other threats to biodiversity
+   Authors: , , , 
+   Date: 2016
+
+108. Global scenarios for biodiversity need to better integrate climate and land use change
+   Authors: , , , , , , , 
+   Date: 2017
+
+109. Geographical and taxonomic biases in research on biodiversity in human-modified landscapes
+   Authors: , 
+   Date: 2012
+
+110. Taxonomic bias in biodiversity data and societal preferences
+   Authors: , , , , 
+   Date: 2017
+
+111. Dangers of predicting bird species distributions in response to land-cover changes
+   Authors: , , 
+   Date: 2009
+
+112. Biodiversity conservation research challenges in the 21st century: A review of publishing trends in 2000 and 2011
+   Authors: , , , , , , 
+   Date: 2015
+
+113. Global meta-analysis reveals no net change in local-scale plant biodiversity over time
+   Authors: , , , , , , , , 
+   Date: 2013
+
+114. Sixteen years of change in the global terrestrial human footprint and implications for biodiversity conservation
+   Authors: , , , , , , , , , , , 
+   Date: 2016
+
+115. Challenges in using land use and land cover data for global change studies
+   Authors: , , 
+   Date: 2011
+
+116. Extinction debt and windows of conservation opportunity in the Brazilian Amazon
+   Authors: , , 
+   Date: 2012
+
+117. Flagship species, ecological complementarity and conserving the diversity of mammals and birds in sub-Saharan Africa
+   Authors: , , 
+   Date: 2000
+

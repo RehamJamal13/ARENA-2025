@@ -1,0 +1,519 @@
+================================================================================
+TITLE: Land Use and Land Cover Change Modeling and Future Potential Landscape Risk Assessment Using Markov-CA Model and Analytical Hierarchy Process
+================================================================================
+
+AUTHORS:
+- Biswajit Nath
+- Zhihua Wang
+- Yong Ge
+- Kamrul Islam
+- Ramesh Singh
+- Zheng Niu
+
+ABSTRACT:
+Land use and land cover change (LULCC) has directly played an important role in the observed climate change. In this paper, we considered Dujiangyan City and its environs (DCEN) to study the future scenario in the years 2025, 2030, and 2040 based on the 2018 simulation results from 2007 and 2018 LULC maps. This study evaluates the spatial and temporal variations of future LULCC, including the future potential landscape risk (FPLR) area of the 2008 great (8.0 M w ) earthquake of south-west China. The Cellular automata-Markov chain (CA-Markov) model and multicriteria based analytical hierarchy process (MC-AHP) approach have been considered using the integration of remote sensing and GIS techniques. The analysis shows future LULC scenario in the years 2025, 2030, and 2040 along with the FPLR pattern. Based on the results of the future LULCC and FPLR scenarios, we have provided suggestions for the development in the close proximity of the fault lines for the future strong magnitude earthquakes. Our results suggest a better and safe planning approach in the Belt and Road Corridor (BRC) of China to control future Silk-Road Disaster, which will also be useful to urban planners for urban development in a safe and sustainable manner.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+The land use land cover change and its modeling (LULCC-M) approach has recently been considered by the scientific community to observe environmental changes at level 4, such as local, regional, national, and global. To achieve the Sustainable Development Goals framework designed by the United Nations (UN) 2030, Sustainable Development Goals (SDGs) have been considered worldwide. Changes above level 4 are heavily impacted by natural hazards, i.e., earthquakes, floods, landslides, and forest fires. The term 'land use and land cover changes' (LULCC) refers to human modifications of the terrestrial surface of the earth, as well as the study of land surface change 
+To support LULCC, land-use change models (LUCM) are considered as effective tools to analyze the causes and consequences of land-use change. Moreover, the LULC model is found to be effective when predicting the future state and spatial distribution of LULC using the gained knowledge from previous years 
+Numerous methods, such as mathematical-equation-based, spatiotemporal modeling 
+CA-Markov initial conditions, parameterization of the model, calculations of the transition probabilities, and determination of the neighborhood rules were defined by the remote sensing and GIS datasets 
+In Sichuan province, many earth observation data have been used for land management, monitoring, and degradation studies 
+In connection with this, future land use and land cover change (FLULCC) and future potential landscape risk (FPLR) patterns for the years 2025, 2030, and 2040 were observed based on the cellular automata-Markov chain (CA-Markov) modeling and multicriteria-based analytical hierarchy process (MC-AHP) approach. LULCC modeling and FPLR assessment was carried out by integrating remote sensing and GIS techniques developed for the first time in the DCEN area. However, this study considers it a unique approach to model the DCEN area closely, focusing on FLULCC along with the FPLR scenarios up to 2040.
+Comparison and analysis of LULC in the distant past and in recent times is important in order to understand the changes in spatiotemporal LULC 
+The present study focuses on quantitative analysis of spatiotemporal changes of future LULC changes in 2025, 2030, and 2040 based on the 2018 LULC simulation and further considers recent LR 2018 data with ancillary layers to identify FPLR areas across the DCEN. In this study, examples are shared for each future LULC map preparation, referring to 2018 as the earlier example and 2025 as the recent one, and so on. However, the broad objectives of this study were to examine three issues: (1) quantitatively evaluating FLULC changes in the DCEN in considering 2018 simulation data, (2) quantitatively evaluating future LULCC in different time domain matrices' data such as comparing earlier LULC datasets with the recent one 
+
+## Materials and Methods ##
+
+
+## Study Area ##
+DCEN is a county-level city located in the Sichuan province of China, which covers an area of 318.30 km 2 . The city, which suffered a deadly earthquake in 2008, is now a UNESCO world heritage site and underwent massive renovations in 2013. It shares a border with southern Nagawa Tibet in the north, due to which it receives many tourists. The geography of the study site is mountainous with many forests, rivers, bridges, and urban infrastructures 
+
+## Data ##
+The remote sensing data used in this study were based on the Landsat 5 thematic mapper (TM) and Landsat 8 operation land imager (OLI). The spectral resolution and bands of the data were used in this study (Table 
+
+## Data ##
+The remote sensing data used in this study were based on the Landsat 5 thematic mapper (TM) and Landsat 8 operation land imager (OLI). The spectral resolution and bands of the data were used in this study (Table 
+In addition, a shuttle radar topographic mission (SRTM) with 30m resolution was used for the digital elevation model (DEM) (Figure 
+ISPRS Int. J. Geo-Inf. 2020, 9, x FOR PEER REVIEW 5 of 26
+The image covers less than 5% cloud in original satellite images, 2% in 2007, 4.65% and 2018 (4.65%). Due to the presence of cloud cover in the epicentral area, we only considered the area near the 2008 earthquake epicenter (8.0 Mw). The area of interest (AOI) is demarcated in the satellite images with the help of the polygon feature using the ArcGIS 10.6 software (ESRI, Redlands, USA) environment. The two Landsat images were geometrically corrected and projected to a WGS 84 (World Geodetic System 1984) into a Universal Transverse Mercator (UTM) Zone 48N coordinate system. Detailed preprocessing of the Landsat 5 TM and 8 OLI images was carried out by Nath et al. 
+In addition, a shuttle radar topographic mission (SRTM) with 30m resolution was used for the digital elevation model (DEM) (Figure 
+
+## Methodology ##
+The integrated research methodological workflow requires four main steps (Figure 
+Step 2: Creation of FLULC maps based on the CA-Markov model first, then transition matrix table creation based on different time periods with dynamic degree estimation, including overall change.
+Step 3: PCA image creation based on the Landsat 8 OLI image and the lineament-based lineament density (LD) map adopted from Nath et al. 
+
+## Methodology ##
+The integrated research methodological workflow requires four main steps (Figure 
+
+## LULCC Modeling Using Land Change Modeler ##
+In the present study, we used the Clark Lab's land change modeler (LCM) of TerrSet 18.21 version software to develop FLULC maps based on the preprocessed classified historical satellite images of 2007 and 2018 (adopted from Nath et al. 
+In order to run the future predictions, the integrated CA-Markov approach 
+In addition, the model further needed to be validated first before running the simulation. Since the actual LULC image of 2018 was already available, adopted from Nath et al. 2018 
+
+## LULCC Modeling Using Land Change Modeler ##
+In the present study, we used the Clark Lab's land change modeler (LCM) of TerrSet 18.21 version software to develop FLULC maps based on the preprocessed classified historical satellite images of 2007 and 2018 (adopted from Nath et al. 
+In order to run the future predictions, the integrated CA-Markov approach 
+In addition, the model further needed to be validated first before running the simulation. Since the actual LULC image of 2018 was already available, adopted from Nath et al. 2018 
+
+## FLULC Dynamic Degree Estimation and Transition Matrices Computation Method ##
+To estimate the dynamic degree (DD) changes between the various types of FLULC, i.e., to know whether there has been any loss in the area or gain in certain LULC types when comparing images for different periods, for a single FLULC type, we used the DD model to represent the spatiotemporal characteristics of FLULC change. The dynamic estimation can be calculated using the approach of Liu et al. 
+where D represents the DD model, which refers to rate of change; A a is the area in the initial year; A b is the area in the terminal year; and T is the temporal scale. In our case, the time comparisons are 7, 5, 10, and 22 years, respectively. The DD model finally serves to generate statistical data in a table with DD (%) and Gain and Loss (%). Furthermore, transition matrix (TM) tables of 2018-2025, 2025-2030, 2030-2040, and 2018-2040 were computed based on the simulated LULC data of 2018, which were generated from the original 2007 and 2018 image results. Therefore, based on the 2018 simulated LULC results, similar statistical results for the different time periods of 2018-2025, 2025-2030, 2030-2040, and 2018-2040 are prepared in this study. These data (vector format) were analyzed and conversion was carried out using ArcGIS 10.6 software, which allows the identification of the areas where changes will occur, and those LULC were not altered in the FLULC. Furthermore, all of the results obtained using GIS software were exported to a text file and the databases were later used for statistical analysis.
+
+## FPLR Evaluation Method ##
+In this study, the LR evaluation methodological concept adopted from Nath et al. 
+Recently, the multicriteria evaluation (MCE) method has been used to assess and aggregate weighted maps (criterion) based on expert knowledge of factor influence and interactions with LULC 
+Multiple parameters, such as the future LULC maps of 2025, 2030, and 2040, the 2018 lineament feature, the 2018 LD map, fault lines, and the epicenter, overlaid along with the local geology map, slope, aspect, and DEM, are used as reference datasets in integrated mapping. Moreover, the geology map was adopted from Nath et al. 
+Details of the meaning and individual weighted assigned score of each layer are given in Supplementary Table 
+In this stage, for better visualization purposes, a further classification procedure of the natural breaks (Jenks) method with a five-class range (graduated color ramp applied with the blue to red intensification) was implied for each FPLR map. Finally, the prepared FPLR maps of 2025, 2030, and 2040 were masked based on the study area boundary. The entire mapping phases were performed in the multiple software domain, such as Clark Lab's LCM of TerrSet 18.21, ArcGIS 10.6 including the previously adopted ENVI 5.3, PCI Geomatica 2018, and RockWorks 16 version software, considered for earlier map preparation.
+
+## Results ##
+
+
+## Validation of Future LULCC Prediction ##
+The actual land use of 2018 was compared with the simulated 2018 land use based on the CA-Markov model. Table 
+The results of the model evaluation performed by the Clark Lab's LCM module of TerrSet 18.21 version software represents a validation analysis of the agreement/disagreement components (Table 
+
+## FLULC Change, Dynamic Degree and Gain and Loss Estimation based on 2018-2040 data ##
+Based on the developed successful simulation of LULC changes in 2018 (Figure 
+However, Nath et al. 
+However, Nath et al. 
+The FLULC change will occurr in RA with a high negative DD change of -12.69% yr -1 in 2018-2025, and in the next two time periods of 2025-2030 and 2030-2040, positive changes in DD will be observed-4.78% and 0.53% yr -1 , respectively. Overall, in the 2018-2040 time period, this trend will negatively impact RA and DD, leading to a change of -3.88% yr -1 (R 2 = 0.922) in DCEN, which is clearly evident in different time intervals. From 2007 to 2018, it showed a -4.67% yr -1 decrease, whereas in the 2018-2025 and 2025-2030 periods, it decreased -12.69% yr -1 and increased 4.78% yr -1 , respectively. By contrast, BL is projected to increase 1.32% yr -1 in 2018-2025 (Table 
+However, the modeling results show different scenarios with regard to projected changes in LULC in future. The projected BU result shows the coverage area will be 15.39% in 2040 and 16.04% in 2025, both of which are lower than 2018, 18.49%. Overall, the BU data suggest a decline of -3.10% in 2018-2040 (Table 
+Based on the polynomial regression data fitted to a polynomial equation in three simulated time periods and the overall scenario, the regression equation and R 2 values show each trend line. During the period 2018-2025, the R 2 value is 0.234, whereas R 2 = 0.358 and R 2 = 0.298 for the periods 2025-2030, and 2030-2040, respectively. However, during the overall 2018-2040 periods, the R 2 value is 0.251. Our model-based results given in Table 
+
+## Analysis of FLULC Transition Probability Matrix (TPM) by Percentage ##
+
+
+## Analysis of FLULC Transition Probability Matrix (TPM) by Percentage ##
+In reference to Table 
+The FLULC data for the period 2018-2025 show that the BU class has a probability of 1.12% and 1.11% to change into WB and BL, respectively (Table 
+
+## FPLR Area Identification, Mapping and Pattern of Change Analysis ##
+In the final level analysis, this study further utilized MC-AHP approach to evaluate the FPLR zone for the periods 2025, 2030, and 2040. In a recent study, Nath et al. 
+For future landscape planning and sustainability of the DCEN area, it is important to prepare FPLR maps (Figure 
+Int. J. Geo-Inf. 2020, 9, x FOR PEER REVIEW 16 of 26 three time periods to remain as AG and a much lower TP of 7.60%, 5.70%, and 4.10% to be converted into BL. This change is obvious and always has a tendency to put pressure on AG, which likely to lead to an increase in the urban and rural population in the DCEN area.
+
+## FPLR Area Identification, Mapping and Pattern of Change Analysis ##
+In the final level analysis, this study further utilized MC-AHP approach to evaluate the FPLR zone for the periods 2025, 2030, and 2040. In a recent study, Nath et al. 
+In comparison to 2018, the FPLR areas of the very high risk category will grow approximately 2.5 times in 2025-2040. The rest of the areas will be very low to low risk categories in future (Table 9a-c) and (Figure 
+
+## Discussion ##
+In this section, we would like to address a few issues that have been observed during FLULC change model predictions in the changing landscape of the DCEN. Firstly, the predicted and observed data are not perfectly matched; therefore, a higher-level accuracy is not achieved. Generally, a higher level of accuracy is expected when the model is run through the LCM module of TerrSet 18.21 version software. We also detected FLULC scenarios, and its trends of change in the percentage and rate of change were observed per year based on different predicted time periods from 2018 to 2040. In connection with this study, the two LULC maps 
+Furthermore, the FLULC images were used to generate future potential landscape matrix (FPLM) tables based on the different time periods of 2018-2025, 2025-2030, 2030-2040, and overall 2018-2040. The model and observed data provide over 70% accuracy, which represents a substantial agreement (Section 3.1) of the model validation and its utilizations. Based on the FLULC image output, we produced FLULCC matrix tables of different time periods that show the LULCC transformation from one category to another, as well as its unchanged categories.
+In developing and developed countries, the LULC changes and predictive approaches using the CA-Markov model were used across the globe in recent times. However, those studies solely represented the particular LULC changes identified in the selective regions. However, those studies were not focused on the FPLR approaches which were given much less attention and documented less in the past. In recent times, the DCEN area showed changes in LULC for the first time prior to and after the earthquake of 2008 as well as its present status, including the integrated approach to assess the LR pattern 
+This study first developed and analyzed FLULC mapping and identified the different FLULCC in different time periods, 2018-2025, 2025-2030, 2030-2040, and overall 2018-2040 in the DCEN area of SW China. Here, FLULC gain/loss (%) as well as rate of change per year in the corresponding time frame were computed. Our projected results showed that the BU class has a probability of 1.12% and 1.11% to change into WB and BL, respectively (see Table 
+However, in 2018-2040, the BU data suggest decreasing conditions (-3.10%) of -0.14% yr -1 , which will further decerase (-0.47%) at a rate of -0.09% yr -1 during the periods 2025-2030 and -0.18% with a -0.02% yr -1 in the period 2030-2040. The results of the earlier studies 
+In addition, this study finally prepared and analyzed FPLR maps for the years 2025, 2030, and 2040 (Figure 
+Therefore, this study further identified the risk according to geological zones in three projected years, 2025, 2030, and 2040. The geological zones II, I, and IV were identified as in the very high risk category (Table 
+In this study, the FLULCC modeling results and FPLR areas and probable priority-based risk assessment raised a question on the environmental sustainability of the DCEN area in the coming decades. Thus, a priority-based sustainable solution would be further recommended, as well as checking the unsustainable LULC movements in the study areas. Therefore, by observing the FPLR pattern, it is high time to properly inspect and discuss with the locals what to do and what their concerns are regarding the future landscape change and FPLR, which will be incorporated in the future planning of this area to make the DCEN area sustainable. Moreover, the remote sensing and GIS integrated techniques help to build a model and validate it and are found to be ideal for plausible future LULCC prediction which may further help to identify future probable risk areas at spatiotemporal scale.
+
+## Conclusions ##
+The present study utilized geospatial data of the two past LULC maps of 2007 and 2018, LR map of 2018, and other associated derived map products used in an integrated manner to develop FLULC maps, future changing trends, and generate FPLR maps of the DCEN. As the DCEN area was previously affected by a high-intensity earthquake (8.0) and its landscape was severely affected afterwards 
+From CA-Markov modeling, changes in LULC will occur in the future in the DCEN area which may be very devastating if the area is affected by high-intensity earthquakes. Therefore, all developmental planning should be focused on finding a nature-based solution that ensures there is less risk and works in conjunction with sustainability goals, with a further suggestion to stop and check developmental activities in the fault and close adjoining areas, and if possible resettle urban dwellers elsewhere, far from the fault lines. The detailed analysis in the present study will be of great use for baseline information to assist city planners, local administrations, and earthquake engineers for future planning and development and technical-know-how about upcoming landscape changes and FLR of DCEN.
+An earlier study 
+Finally, we found that the multitemporal Landsat images of 2007 and 2018 are very useful to generate a LULC simulation image of 2018, followed by a FLULC image for the years 2025, 2030, and 2040 of DCEN using the LCM of TerrSet software. To understand the FLULC, its trends, and future gain and loss estimation of DCEN in the future, we further calculated the matrix of the FLULC in different time domains. However, based on the integrated layers, including the FLULC of 2025, 2030, and 2040, the LD of 2018 (which will change with time) and other ancillary data were recoded with risk priority with the weighted sum method, applied to prepare FPLR maps of DCEN in a consecutive manner for the years 2025, 2030, and 2040. As we observed, DCEN was identified as a risk-prone area in an earlier study 
+The findings of this study might serve as an example for any earthquake-prone city around the world, including the BRC, which will help to exclusively monitor future Silk Road disaster activities. The present study provides future projections about LULC change in the DCEN area, which may be checked in advance for further landscape damage. Geospatial (such as Remote sensing and GIS) integrated software techniques were also found to be ideal, helping to know the FLULC changing status, including in the FPLR areas. Moreover, the present study proved that the integrated techniques have the ability to know FPLR areas and the probable pattern of change in the BRC. Thus, to minimize the FPLR factors of DCEN, it is high time to exchange the results of the FLULC status and its probable change direction, including the FPLR pattern with academics, city planners, national policy makers, and locals to make the DCEN area of the BRC safe, sound, and disaster-proof. Detailed analysis shows a useful future prediction of Silk-Road disaster, which may further help towards achieving the UN 2030 sustainable goals.
+
+## Supplementary Materials: ##
+The following are available online at http://www.mdpi.com/2220-9964/9/2/134/s1, Table 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Environmental Information Coalition
+   Authors: , , 
+   Date: 2010
+
+2. Definition of Transition. Available online
+   Authors: , 
+   Date: 18 November 2018
+
+3. Changes in landuse/landcover patterns and humanpopulation growth in the Lake Chivero catchment
+   Authors: , , 
+   Date: 2017
+
+4. Using Land Long-term Data Records to Map Land Cover Changes in China Over 1981-2010
+   Authors: , , , , , , , , 
+   Date: 2017
+
+5. From Land Cover to Land Use: A Methodology to Assess Land Use from Remote Sensing Data
+   Authors: , 
+
+6. Change detection of land use/landcover pattern in an around Mandideep and Obedullaganj area, using remote sensing and GIS
+   Authors: , 
+   Date: 2011
+
+7. Spatiotemporal characteristics, patterns and causes of land use changes in China since the late 1980s
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+8. Spatial patterns and driving forces of land use change in China during the early 21st century
+   Authors: , , , , , , , , , 
+   Date: 2010
+
+9. Study on spatial pattern of land-use change in China during 1995-2000
+   Authors: , , , , 
+   Date: 2003
+
+10. The causes of land-use and land-cover change moving beyond the myths
+   Authors: 
+   Date: 2001
+
+11. Dynamics of land-use and land-cover change in tropical regions
+   Authors: , , 
+   Date: 2003
+
+12. Land-Use and Land-Cover Change: Local Processes and Global Impacts
+   Authors: , 
+   Date: 2006
+
+13. Progress of land science centered on land use / land cover change
+   Authors: 
+   Date: 2001
+
+14. Urban land use change in Lhasa
+   Authors: , , , , 
+   Date: 2000
+
+15. Evaluation of land use/land cover changes in Mekelle City, Ethiopia using Remote Sensing and GIS
+   Authors: , , 
+   Date: 2013
+
+16. Land Use and Land Cover Changes, and Environment and Risk Evaluation of Dujiangyan City (SW China) Using Remote Sensing and GIS Techniques
+   Authors: , , 
+   Date: 2018
+
+17. Characterizing Spatiotemporal Pattern of Land Use Change and Its Driving Force Based on GIS and Landscape Analysis Techniques in Tianjin during 2000-2015
+   Authors: , 
+   Date: 2017
+
+18. Change and Optimization of Landscape patterns in a Basin Based on Remote Sensing Images: A Case Study in China
+   Authors: , , 
+   Date: 2017
+
+19. Landscape change assessment of reservation areas using remote sensing and landscape metrics (case study: Jajroud reservation, Iran)
+   Authors: , , , , 
+   Date: 2015
+
+20. Quantifying spatiotemporal patterns of urban land-use change in four cities of China with time series landscape metrics
+   Authors: , 
+   Date: 2005
+
+21. Land Cover classification and change-detection analysis using multi-temporal remote sensed imagery and landscape metrics
+   Authors: , , 
+   Date: 2012
+
+22. The Use of Remote Sensing and Landscape Metrics to Describe Structures and Changes in Urban Land Uses
+   Authors: , , 
+   Date: 2002
+
+23. Analysis of land cover changes and landscape fragmentation in Batanghari Regency, Jambi Province
+   Authors: , , 
+   Date: 2015. November 2015
+
+24. From pattern to process: Landscape fragmentation and the analysis of land use/land cover change
+   Authors: , , 
+   Date: 2004
+
+25. Quantification of the impact of land-use changes on ecosystem services: A case study in Pingbian County
+   Authors: , , , , , 
+   Date: 2007
+
+26. Future impacts of changing land-use and climate on ecosystem services of mountain grassland and their resilience
+   Authors: , , , , , 
+   Date: 2017
+
+27. Climate change versus land-use change-What affects the mountain landscapes more? Land Use Policy
+   Authors: , , 
+   Date: 2017
+
+28. Urban Municipal Growth and Landuse Change Monitoring Using High Resolution Satellite Imageries and Secondary Data: A Geospatial Study on Kolkata Municipal Corporation
+   Authors: , 
+   Date: 2013
+
+29. Growth and Land Use/Land Cover Change of Pokhara Sub-metropolitan city
+   Authors: , 
+   Date: 2011
+
+30. Land use and land cover change in Greater Dhaka, Bangladesh: Using remote sensing to promote sustainable urbanization
+   Authors: , 
+   Date: 2009
+
+31. The study framework of land use/cover change based on sustainable development in China
+   Authors: , 
+   Date: 2002
+
+32. Influence of urbanization on the land use change: A case study of Srinagar City
+   Authors: , , 
+   Date: 2013
+
+33. Monitoring Land Use/Cover Change Using Remote Sensing and GIS Techniques: A Case Study of Hawalbagh Block, District Almora
+   Authors: , 
+   Date: 2015
+
+34. Application of Geo-Information Techniques in Land Use and Land Cover Change Analysis in a Peri-Urban District of Ghana
+   Authors: , , , 
+   Date: 2015
+
+35. Urban land use change and regional access: A case study in Beijing
+   Authors: , 
+   Date: 2016
+
+36. Dynamics of land use/cover changes and degradation of Nairobi City
+   Authors: , 
+   Date: 2010
+
+37. Human-environment interactions in China: Evidence of land-use change in Beijing-Tianjin-Hebei Metropolitan Region
+   Authors: , 
+   Date: 2013
+
+38. Using remote sensing and GIS to detect and monitor land use and land cover change in Dhaka Metropolitan of Bangladesh during 1960-2005
+   Authors: , 
+   Date: 2009
+
+39. Drivers of Land-Use/Land-Cover Changes and Dynamic Modeling for the Atlanta
+   Authors: , 
+   Date: 2002
+
+40. Land use change mapping and analysis using Remote Sensing and GIS: A case study of Simly watershed
+   Authors: , , , 
+   Date: 2015
+
+41. Integrated Approach for Prioritizing Watersheds for Management: A Study of Lidder Catchment of Kashmir Himalayas
+   Authors: , 
+   Date: 2015
+
+42. Coastal land use and land cover change and transformations of Kanyakumari coast, India using remote and GIS
+   Authors: , , , , 
+   Date: 2017
+
+43. Land use classification and change detection by using multi-temporal remotely sensed imagery: The case of Chunati wildlife sanctuary
+   Authors: , , , 
+   Date: 2018
+
+44. Modeling land use change using Cellular Automata and Artificial Neural Network: The case of Chunati Wildlife Sanctuary
+   Authors: , , 
+   Date: 2018
+
+45. Ground deformation of Gujarat earthquake of 26 January
+   Authors: , , , , 
+   Date: 2001. 2001
+
+46. Surface manifestations after the Gujarat earthquake
+   Authors: , , , , 
+   Date: 2001
+
+47. Significant changes in the ocean parameters after the Gujarat earthquake
+   Authors: , , 
+   Date: 2001
+
+48. Estimation of surface latent heat fluxes from IRSP4/ MSMR satellite data
+   Authors: , , 
+   Date: 2001
+
+49. Changes observed on land and ocean after Gujarat earthquake 26 January 2001 using IRS data
+   Authors: , , 
+   Date: 2002
+
+50. Surface Latent Heat Flux as an earthquake precursor
+   Authors: , 
+   Date: 2003
+
+51. Changes in atmospheric aerosol parameters after Gujarat earthquake of
+   Authors: , , 
+   Date: January 26 2001. 2004
+
+52. Anomalous changes in column water vapor after Gujarat earthquake
+   Authors: , , 
+   Date: 2004
+
+53. Changes in stress pattern around epicentral region of Bhuj earthquake of
+   Authors: , 
+   Date: 26 January 2001. 2005
+
+54. Building-damage detection using post-seismic high-resolution SAR satellite data
+   Authors: , 
+   Date: 2010
+
+55. Damage consequence chain mapping after the Wenchuan Earthquake using remotely sensed data
+   Authors: , , , , , 
+   Date: 2010
+
+56. Orthorectification and interpretation of differential InSAR data over mountainous areas: A case study of the May 2008 Wenchuan Earthquake
+   Authors: 
+   Date: 2010
+
+57. Probability assessment of river blocking by debris flow associated with the Wenchuan Earthquake
+   Authors: , , , , , 
+   Date: 2010
+
+58. Damage information derived from multi-sensor data of the Wenchuan Earthquake of
+   Authors: , 
+   Date: May 2008. 2010
+
+59. Estimating Wenchuan Earthquake induced landslides based on remote sensing
+   Authors: , , , 
+   Date: 2010
+
+60. Eco-environmental research on the Wenchuan Earthquake area using Disaster Monitoring Constellation (DMC) Beijing-1 small satellite images
+   Authors: , , , 
+   Date: 2010
+
+61. Satellite observations of the Wenchuan Earthquake
+   Authors: 
+   Date: 12 May 2008. 2010
+
+62. Remote sensing-based indicators of changes in a mountain rural landscape of Northeast Portugal
+   Authors: , , 
+   Date: 2011
+
+63. Effects of urbanization on landscape patterns in a mountainous area: A Case Study in the Mentougou District
+   Authors: , , , 
+   Date: 2016. 1190
+
+64. Tracing the Changes in the Pattern of Urban Landscape of Dehradun over Last Two Decades using RS and GIS
+   Authors: , , 
+   Date: 2013
+
+65. Agricultural land-use change and its drivers in mountain landscapes: A case study in the Pyrenees
+   Authors: , , , 
+   Date: 2006
+
+66. Exponentially sampling scale parameters for the efficient segmentation of remote-sensing images
+   Authors: , , 
+   Date: 2018
+
+67. A scale self-adapting segmentation approach and knowledge transfer for automatically updating land use/cover change databases using high spatial resolution images
+   Authors: , , , 
+   Date: 2018
+
+68. Study of Changes in the lineament structure, caused by earthquakes in South America by applying the lineament analysis to the ASTER (Terra) satellite data
+   Authors: , , 
+   Date: 2004
+
+69. Predicting Spatial and Decadal LULC Changes Through Cellular Automata Markov Chain Models Using Earth Observation Datasets and Geo-Information
+   Authors: , , , , 
+   Date: 2015
+
+70. Dynamic simulation of land use changes in Port city: A case study of Dalian
+   Authors: , 
+   Date: 2013
+
+71. Detection and Prediction of Land-Cover Changes in Upper Athi River Catchment, Kenya: A Strategy Towards Monitoring Environmental Changes
+   Authors: , , 
+   Date: 2013
+
+72. Agent-Based Spatial Models Applied to Agriculture: A Simiulation Tool for Technology Diffusion, Resource Use Changes and Policy Analysis
+   Authors: 
+   Date: 2001
+
+73. Predicting Land-Cover and Land-Use Change in the Urban Fringe: A Case in Morelia City
+   Authors: , , , 
+   Date: 2001
+
+74. Application of Cellular automata and Markov-chain model in geospatial environmental modeling-A review
+   Authors: , , , , , , , , , 
+   Date: 2017
+
+75. Urban Land Use and Land Cover Change Analysis and Modeling a Case Study Area Malatya
+   Authors: 
+   Date: 2013
+
+76. Geo-information Based Spatio-temporal Modeling of Urban Land Use and Land Cover Change in Butwal Municipality
+   Authors: 
+   Date: 2014
+
+77. Modeling urban dynamics through GIS-based cellular automata
+   Authors: , , 
+   Date: 1999
+
+78. A Dynamic Modeling Approach to Simulating Socioeconomic Effects on Landscape Changes
+   Authors: , 
+   Date: 2001
+
+79. Use Change Analysis in the Zhujiang Delta of China Using Satellite Remote Sensing, GIS and Stochastic Modelling
+   Authors: , 
+   Date: 2002
+
+80. Predicting land cover using GIS, Bayesian and evolutionary algorithm methods
+   Authors: , 
+   Date: 2009
+
+81. Automating land cover mapping of Scotland using expert system and knowledge integration methods
+   Authors: , 
+   Date: 2011
+
+82. TerrSet manual. Access. TerrSet Vers
+   Authors: 
+   Date: 2015
+
+83. Modeling and Projecting Land-Use and Land-Cover Changes with Cellular Automaton in Considering Landscape Trajectories: An Improvement for Simulation of Plausible Future States. EARSeL eProceed, European Association of Remote Sensing Laboratories
+   Authors: , 
+   Date: 22 February 2020
+
+84. Image interpretation and statistical analysis of vegetation damage caused by the Wenchuan earthquake and related secondary disasters
+   Authors: , , , , 
+
+85. Guest Editorial: Remote Sensing of the Wenchuan Earthquake
+   Authors: 
+   Date: 2009
+
+86. Hazard assessment on secondary mountain-hazards triggered by the Wenchuan earthquake
+   Authors: , , , , 
+   Date: 2009
+
+87. Automatic Detection of Terrain Surface Changes After Wenchuan Earthquake
+   Authors: , 
+   Date: May 2008. 2009
+
+88. A conceptual model for identifying the risk susceptibility of urban green spaces using geo-spatial techniques
+   Authors: , , 
+   Date: 2016
+
+89. Change Detection Technique Development for Improved Urbanized Area Delineation
+   Authors: , , 
+   Date: 1981
+
+90. Systematic processes of land use/land cover change to identify relevant driving forces: Implications on water quality
+   Authors: , , 
+   Date: 2014
+
+91. Remote Sensing of the Environment: An Earth Resource Perspective 2/e
+   Authors: 
+   Date: 2009
+
+92. Remote Sensing Digital Image Analysis
+   Authors: , 
+   Date: 1999
+
+93. Transforming our world: The 2030 Agenda for sustainable development
+   Date: 2015. 17 November 2018
+
+94. 
+   Date: 2007-2018. 10 February 2018
+
+95. A Land Use and Land Cover Classification for Use with Remote Sensor Data (USGS Professional Paper 964)
+   Authors: , , , 
+   Date: 1976
+
+96. Land Use and Land Cover Change Detection: A Comparative Approach using Post Classification Change Matrix Function Change Detection Methodology of Allahabad City
+   Authors: , , , 
+   Date: 2013
+
+97. Preparation of land use planning model using GIS based on AHP: Case study Adana-Turkey
+   Authors: , 
+   Date: 2010
+
+98. Shapefile: Generalized Geology of the Far East
+   Date: March 18 2005. June 2019
+
+99. Effect of canal on LULC using remote sensing and GIS
+   Authors: , , , , 
+   Date: 2009
+

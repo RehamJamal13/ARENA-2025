@@ -1,0 +1,503 @@
+================================================================================
+TITLE: Comprehensive review on land use/land cover change classification in remote sensing
+================================================================================
+
+AUTHORS:
+- M Navin
+- L Agilandeeswari
+
+ABSTRACT:
+Research in the field of remote sensing of the environment is valuable and informative. Hyperspectral (HSP) and multispectral (MSP) satellite images have been used for different remote sensing applications. Land Use/Land Cover (LU/LC) change classification has been considered as important research in the field of remote sensing environment. This review aims to identify the various LU/LC applications, remote sensing satellites, geospatial software, pre-processing techniques, LU/LC classification, clustering, spectral unmixing, landscape change models and evaluation metrics. The main objective of this review is to present the more frequently used techniques for analysing LU/LC change with MSP and HSP satellite images. An aim of this review is to motivate future researchers to work efficiently with MSP and HSP satellite images in the field of remote sensing.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Analysing multispectral (MSP) and hyperspectral (HSP) satellite images in the field of remote sensing and the geographic information system (GIS) environment have become some of the hottest topics among researchers around the world. Everyday changes on the Earth's surface have a significant impact on society, and this has been the driver for researchers to work on the land use/land cover (LU/LC) change problem. The information gathered from various satellites has been used by researchers to map the Earth's features and infrastructures. Land use and land cover are two different terms to describe the Earth's surface. The land cover area represents the forest-covered areas, wetlands, grasslands, water-covered areas, mountainous regions and deserts etc. Specific events and changes that take place in land cover represent changes in land use categories, such as urbanisation, shopping centres, reservoirs and parks etc. 
+
+## LU/LC applications and study area selection ##
+The modification of the Earth's surface or natural environment results in LU/LC change. We can see LU/LC change happening during the loss or development of forests, agricultural land, bodies of water and urban areas. Causes of LU/LC change are shown in Figure 
+The initial process in LU/LC change research is selecting the study area. Many researchers around the world have carried out LU/LC change analysis research over many years. Some of the study areas for LU/LC analysis have been North-eastern Latvia, 
+
+## Data acquisition ##
+
+
+## Geospatial software ##
+MSP and HSP satellite images are analysed and processed through different geospatial software tools. Some of these tools are described in   
+
+## Pre-processing techniques ##
+Pre-processing is an essential technique used to improve the quality of raw satellite data. The satellite data can be calibrated by using the process of atmospheric, radiometric, geometric and topographic corrections. The uses and limitations of these methods are shown in Table 
+
+## LU/LC classification and clustering ##
+Every pixel in a pre-processed satellite image is a unique entity and it has to be labelled to obtain the LU/LC classification maps using different classification techniques.
+Researchers have proposed and worked with many algorithms for extracting LU/LC data from satellite data. Classification or supervised learning works with known information about the data and is used in classifying LU/LC classes. Clustering is used for unsupervised learning, since there is no prior information about the labelled data. A few LU/LC classifications, supervised and clustering unsupervised methods are explained and shown in Table 
+
+## Spectral unmixing ##
+Spectral unmixing helps to identify pixels that contain more than one LU/LC type. The measured range of a mixed pixel is decomposed into a group of endmembers and their corresponding abundances, which specify the amount of each endmember within the pixel. Spectral unmixing methods are mostly used when processing HSP satellite images. The few spectral unmixing methods are explained and shown in Table 
+
+## Landscape change models ##
+Landscape change models are used for forecasting past, current and future LU/LC changes. LU/LC change analysis results will assist urban planners in taking the necessary action to protect the LU/LC environment. Table 
+Researchers have used the information from satellite images to determine land cover. They used the spectral bands directly to identify the level of vegetation over the area and validated the LU/LC classified map with reference data. Distance metrics were used to identify the LU/LC class in satellite images through the evaluation of the spectral distance between the pixels. Researchers have also calculated the amount of LU/LC changes experienced between certain time periods.
+
+## Spectral distance metrics ##
+By evaluating the spectral distance between the pixels in satellite images, LU/LC classes were assessed and this also helps to model spatial variables like slope, elevation, aspect, distance from the road, forest edge, farmland and water bodies etc. The frequently used distance metrics described in the following section are: Euclidean Distance, Mahalanobis Distance, Manhattan Distance, Canberra Distance, Jeffries-Matusita and SAM.
+
+## Euclidean Distance ##
+Remote sensing researchers frequently use Euclidean Distance d(x,y) to measure the distance between spectral signatures of satellite image pixels in n-dimensional spectral space. 
+,
+where x and y represent the spectral signature vectors of image pixels and n represents the number of bands in the image.
+
+## Mahalanobis Distance ##
+The Mahalanobis Distance classifier, which computes the Mahalanobis distance D i (x) between two data points in multivariate space is: 4,42,47
+
+## Techniques Uses Limitations ##
+Image Enhancement 
+Information loss when compared to original satellite images.
+Radiometric Correction 
+High computation time for larger datasets.
+
+## Atmospheric ##
+Correction 
+Removing the whole cloud or atmospheric effects in a satellite image that was acquired during the winter season is not easy.
+Geometric Correction 
+Edges are flattened and some limits of the data pixel values will be lost.
+Topographic Correction 
+Spatial misregistration can occur. 
+
+## Methods Purpose Limitations ##
+Classification methods
+
+## Maximum Likelihood ##
+Classification 
+Increase in computation time when the number of bands of the satellite image increases.
+k-Nearest Neighbour Classification (kNN) 
+With high dimensional data, the kNN algorithm performs a slower calculation of distance in each dimension.
+SVM Classification 
+The performance of SVM will be weak when the pixels of the satellite image are overlapped, i.e. when the satellite data are noisy.
+ANN Classification 
+More massive datasets take a long time to train-time consuming.
+Parallelepiped Classification 
+Problems occur when the class ranges are overlapped.
+
+## Minimum Distance to Mean ##
+Classification 
+Choosing the wrong number of clusters will lead to misclassification.
+Mahalanobis Distance Classification 
+If the variables are highly correlated, misclassification will occur.
+SAM Classification 
+Similar spectra are wrongly classified, for example, needle leaf and broadleaf forests are misclassified.
+
+## CART model ##
+
+
+## Logistic Regression ##
+Model 
+Non-linear problems were difficult to solve with the logistic regression model.
+Random Forest Classification 
+Constructing decision trees consumes more time while performing Random Forest Classification. ( ) ( ) ( )
+where i represents the i th class, x represents the number of bands of n-dimensional data, m i represents the mean vector of the class and 1 i å represents the inverse covariance matrix of a class.
+
+## Manhattan and Canberra Distance ##
+Manhattan Distance D M (x,y) computes the distance between the spectral values of the image pixel in a gridlike path. 
+,
+where n is the number of bands, and x i and y j are the spectral values of the image pixel.
+
+## Jeffries-Matusita Distance ##
+Both the Jeffries-Matusita Distance and transformed divergence 
+where x represents the first spectral signature vector, y represents the second spectral signature vector, and S x and S y represent the covariance matrix of samples x and y.
+
+## Spectral angular mapper ##
+The SAM, q(x,y), differentiates the spectral similarity by measuring the angle between the spectral signatures of satellite image pixels and the training spectral signatures. 
+The MARS method is not suitable when handling missing data.
+CART 
+Computational time is high to train every decision tree and tree structure is unstable when the data is changed.
+
+## Clustering methods ##
+K-Means Clustering 
+The k-Means method does not perform well when the clusters are of different sizes.
+Fuzzy C Means (FCM) 
+Computational time is high for more substantial dimensionality data.
+ISODATA 
+Computational time is high when the data is unstructured.
+( )
+where x represents the spectral signature vector of an image pixel, y represents the spectral signature vector of a training area and n represents the number of satellite image bands.
+
+## Vegetation index metrics ##
+Spectral information helps researchers to monitor the surface of the Earth and, therefore, provides the time series status of the land cover regions. The spectral features of vegetation help to gain information about the growth of plants and green areas throughout the world. The spatial resolution of each satellite spectrum differs, and Table 
+We have explained the most commonly used vegetation indices for measuring the level of vegetation and the water content in the specific land cover region: EVI, NDVI and Normalised Difference Water Index (NDWI). The optimised vegetation index or EVI is useful in computing the global vegetation greenness. It corrects the canopy background noise of the data and displays areas with more dense vegetation. 2 ( ) ( )
+where G represents the Gain factor, NIR represents the near infrared band, RED represents the red band and BLUE the blue band. C 1 , C 2 and L are the coefficients of aerosol resistance. The coefficient value of L = 1, C 1 = 6, C 2 = 7.5 and gain factor G = 2.5 were represented using the standard MODIS EVI algorithm.
+
+## Methods Purpose Limitations ##
+MESMA 
+The output will not be accurate when the given inputs have the wrong parameters and distributions.
+Linear Spectral Mixture Model (LSMM) 
+The main limitation of LSMM is endmember variability.
+Fully Constrained Least Squares (FCLS) 
+The image correction is not trivial and errors occur frequently.
+Unconstrained Least Squares (UCLS) 
+The low spatial resolution of the satellite image can lead to the most challenging problem of mixed pixels.
+
+## Mixture Tuned Matched ##
+Filtering (MTMF) Method 
+The flexibility of the method can also be a drawback since, due to spectral variability, false detection may occur in mixed pixels of the satellite image.
+
+## Monte Carlo Spectral ##
+Mixture Analysis (MCSMA) 
+Computational time is high and there is a risk of false precision.  The high and low possibilities of vegetation are identified by using NDVI values. 
+( )
+The high and low possibilities of having water content are identified by NDWI values. 
+( )
+
+## Classification metrics ##
+The most important metric for validating LU/LC classification results is accuracy assessment. The accuracy of the LU/LC classified map is assessed by creating random point locations with their class value from the ground truth/reference data and by validating that with the classified data in a confusion matrix. The overall accuracy and the kappa coefficient are computed to validate the LU/LC classified result. 
+( ) ( )  
+
+## Conversion of Land Use and its ##
+Effects (CLUE) model 
+
+## Stand-alone model ##
+This model used in the spatial allocation of LU/LC changes.
+Cannot directly be applied at the regional scale.
+Modules for land use Change Evaluation (MOLUSCE) 
+where OA represents overall accuracy, KC represents the kappa coefficient, N signifies the matrix total observations, r signifies the number of rows in the error matrix, x ii denotes row i and column i observations, x i+ denotes row i observations and x +i represents column i observations.
+
+## LU/LC change metrics ##
+The rate and percentage of change are calculated to analyse the LU/LC change. 
+
+## Conclusion ##
+In this paper, we have provided a review of the LU/LC change analysis process and the methods frequently used by researchers to analyse MSP and HSP satellite images. LU/LC change has been explained for various application areas such as deforestation, urban expansion, agriculture/crop damage, vegetation loss and wetland change. This review provides detailed information about the characteristics of satellite data, geospatial software, pre-processing techniques, classification, clustering and spectral unmixing methods, landscape change models and the performance metrics for evaluating the satellite images. Amongst geospatial software, Matlab, Python and Rstudio have the advantage in developing new algorithms for analysing LU/LC changes using HSP and MSP satellite images. Pre-processing should be performed to correct the geometric, radiometric, topographic and atmospheric effects present in satellite images. Classification, clustering and spectral unmixing methods are used to extract the spectral features from satellite images. Effective landscape models were used to analyse the LU/LC change for specific time intervals in a particular region. The importance of performance metrics has been discussed in this review. It should help future researchers to work on the LU/LC change analysis process in the field of remote sensing. Developing a new optimised algorithm for LU/ LC classification and for analysing LU/LC change remains a challenge for future researchers. Information about LU/LC change will help to assist Government officials responsible for land resource planning to take adequate measures to protect the LU/LC environment.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Using satellite data to monitor land-use land-cover change in Northeastern Latvia
+   Authors: , 
+   Date: 2014
+
+2. Data mining algorithms for land cover change detection: a review
+   Authors: , , 
+   Date: 2017
+
+3. Satellite imagery land cover classification using k-means clustering algorithm computer vision for environmental information extraction
+   Authors: 
+   Date: 2013
+
+4. A review of remote sensing image classification techniques: The role of spatio-contextual information
+   Authors: , , , , 
+   Date: 2014
+
+5. Prediction of land use/land cover change methods: A study
+   Authors: , , 
+   Date: 2017
+
+6. Prediction models for landscape development in GIS
+   Authors: , , 
+   Date: 2017
+
+7. Effects of preservation policy on land use changes in Iranian Northern Zagros forests
+   Authors: , , , , 
+   Date: 2019
+
+8. Assessing climate impact on forest cover in areas undergoing substantial land cover change using Landsat imagery
+   Authors: , , , , , , , 
+   Date: 2019
+
+9. Land use land cover changes along topographic gradients in Hugumburda national forest priority area, Northern Ethiopia
+   Authors: , , , , , , 
+   Date: 2019. 2018
+
+10. An automatic approach for land-change detection and land updates based on integrated NDVI timing analysis and the CVAPS method with GEE support
+   Authors: , , 
+   Date: 2018
+
+11. A comparative study of machine learning techniques to simulate land use changes
+   Authors: , , , 
+   Date: 2019
+
+12. Land cover change during a period of extensive landscape restoration in Ningxia Hui Autonomous Region, China
+   Authors: , , , , , , , , , 
+   Date: 2017
+
+13. Remote sensing and GIS techniques for prediction of land use land cover change effects on soil erosion in the high basin of the Oum Er Rbia River (Morocco)
+   Authors: , , , , 
+   Date: 2019. 2018
+
+14. Assessing and modelling the impact of land use and changes in land cover related to carbon storage in a western basin in Mexico
+   Authors: , , 
+   Date: 2019
+
+15. Sensitivity of the subspace method for land cover classification
+   Authors: , , , , 
+   Date: 2018
+
+16. Quantifying land use/land cover change and its potential impact on rice production in the Northern Nile Delta, Egypt
+   Authors: , 
+   Date: 2019
+
+17. Analysis of spatiotemporal land cover changes in Inner Mongolia using self-organizing map neural network and grid cells method
+   Authors: , , 
+   Date: 2018
+
+18. A multi-sensor and multi-temporal remote sensing approach to detect land cover change dynamics in heterogeneous urban landscapes
+   Authors: , , , , 
+   Date: 2019
+
+19. Geospatial analysis of land use change in the Savannah River Basin using Google Earth Engine
+   Authors: , , , , 
+   Date: 2018
+
+20. Comparison of random forest, k-nearest neighbor, and support vector machine classifiers for land cover classification using Sentinel-2 imagery
+   Authors: , 
+   Date: 2018
+
+21. Joint deep learning for land cover and land use classification
+   Authors: , , , , , , 
+   Date: 2019
+
+22. Evaluation and prediction of land use/land cover changes in the Andassa watershed
+   Authors: , , , 
+   Date: 2017
+
+23. Monitoring and predicting land use and land cover changes using remote sensing and GIS techniques-A case study of a hilly area
+   Authors: , , 
+   Date: 2018
+
+24. Predicting spatial and decadal LULC changes through cellular automata Markov chain models using Earth observation datasets and geo-information
+   Authors: , , , , , 
+   Date: 2015
+
+25. Monitoring and prediction of land use/land cover changes using CA-Markov model: a case study of Ravansar County in Iran
+   Authors: , , , 
+   Date: 2018
+
+26. Land use change assessment in coastal mangrove forests of Iran utilizing satellite imagery and CA-Markov algorithms to monitor and predict future change
+   Authors: , , 
+   Date: 2018
+
+27. Land use/land cover change detection and prediction in the north-western coastal desert of Egypt using Markov-CA
+   Authors: , , , 
+   Date: 2015
+
+28. Continuous change detection and classification of land cover using all available Landsat data
+   Authors: , 
+   Date: 2014
+
+29. Developments in Landsat land cover classification methods: A review
+   Authors: , 
+   Date: 2017
+
+30. Analysis of supervised maximum likelihood classification for remote sensing image
+   Authors: , , 
+   Date: 2014. 2014
+
+31. Prediction of land cover change using Markov and cellular automata models: case of Al-Ain, UAE, 1992-2030
+   Authors: , 
+   Date: 2014
+
+32. Study of land use classification in an arid region using multispectral satellite images
+   Authors: , , , 
+   Date: 2018
+
+33. Land use/land cover change modeling and the prediction of subsequent changes in ecosystem service values in a coastal area of China, the Su-Xi-Chang Region
+   Authors: , , , , 
+   Date: 2017
+
+34. Analysis of land use/land cover changes using remote sensing data and GIS at an Urban Area
+   Authors: , 
+   Date: 2013. 2013
+
+35. Prediction of land use/cover change in the Bharathapuzha river basin, India using geospatial techniques
+   Authors: , , 
+   Date: 2019
+
+36. Proximate causes of land-use and land-cover change in Bannerghatta National Park: a spatial statistical model
+   Authors: , , 
+   Date: 2017
+
+37. Evaluation of land use & land cover change using multi-temporal Landsat imagery: a case study Sulaimaniyah Governorate, Iraq
+   Authors: , , , 
+   Date: 2018
+
+38. Landslide susceptibility mapping using logistic regression model (a case study in Badulla District, Sri Lanka)
+   Authors: , , , 
+   Date: 2018
+
+39. Forest cover dynamics analysis and prediction modelling using logistic regression model
+   Authors: , , , 
+   Date: 2014
+
+40. Evaluation of IRS1D-LISS-III and Landsat 8-OLI images for mapping in Maroon Riparian Forest
+   Authors: , 
+
+41. 
+   Date: 2017
+
+42. Mapping of Krau Wildlife Reserve (KWR) protected area using Landsat 8 and supervised classification algorithms
+   Authors: , , , 
+   Date: 2018. 2018
+
+43. Determining the suitability and accuracy of various statistical algorithms for satellite data classification
+   Authors: , 
+   Date: 2014
+
+44. Prediction of land use and land cover changes for North Sumatra, Indonesia, using an artificial-neural-network-based cellular automaton
+   Authors: , 
+   Date: 2019
+
+45. Discriminating native and plantation forests in a Landsat time-series for land use policy design
+   Authors: , , , , 
+   Date: 2019
+
+46. Remote sensing classification using fuzzy C-means clustering with spatial constraints based on Markov random field
+   Authors: , , , 
+   Date: 2013
+
+47. Classification of Landsat 8 satellite data using unsupervised methods
+   Authors: , , 
+   Date: 2019
+
+48. Comparative analysis of different supervised classification techniques for spatial land use/ land cover pattern mapping using RS and GIS
+   Authors: , , , 
+   Date: 2013
+
+49. Study of land use/ land cover dynamics through classification algorithms for Harangi catchment area
+   Authors: , 
+   Date: 2015
+
+50. Effects of tree-crop farming on land-cover transitions in a mosaic landscape in the eastern region of Ghana
+   Authors: , , , , 
+   Date: 2018
+
+51. Automated forgery detection in multispectral document images using fuzzy clustering
+   Authors: , , , , 
+   Date: 2018. 2018
+
+52. A comparative study of advanced land use/land cover classification algorithms using Sentinel-2 data
+   Authors: , , , 
+   Date: 2018
+
+53. Land use/land cover changes monitoring and analysis of Dubai Emirate, UAE using multi-temporal remote sensing data
+   Authors: , 
+   Date: 2018
+
+54. Predicting urban expansion in Arak Metropolitan Area using two land change models
+   Authors: , , 
+   Date: 2012
+
+55. Assessing the spatio-temporal pattern of land use and land cover changes in Osun Drainage Basin, Nigeria
+   Authors: , , 
+   Date: 2019
+
+56. Modeling of urban growth in tsunami-prone city using logistic regression: analysis of Banda Aceh, Indonesia
+   Authors: , , , 
+   Date: 2015
+
+57. Parameter investigation of artificial neural network and support vector machine for image classification
+   Authors: , , , , 
+   Date: 2017. 2017
+
+58. Remote sensing data and SLEUTH urban growth model: as decision support tools for urban planning
+   Authors: , , 
+   Date: 2018
+
+59. Geospatial analysis of land use land cover change predictive modeling at Phewa Lake Watershed of Nepal
+   Authors: , , 
+   Date: 2014
+
+60. Spectral unmixing
+   Authors: , , , 
+   Date: 2012
+
+61. Spectral variability in hyperspectral data unmixing: a comprehensive review
+   Authors: , , , , , , , , 
+   Date: 2020
+
+62. Hyperspectral land cover classification of EO-1 Hyperion data by principal component analysis and pixel unmixing
+   Authors: , , 
+   Date: 2002. 2002
+
+63. Urban land cover classification using hyperspectral data
+   Authors: , , , 
+   Date: 2014
+
+64. Landuse classification of hyperspectral data by spectral angle mapper and support vector machine in humid tropical region of India
+   Authors: , , 
+   Date: 2020
+
+65. Precision and accuracy of EO-1 Advanced Land Imager (ALI) data for semiarid vegetation studies
+   Authors: , 
+   Date: 2003
+
+66. EO-1/Hyperion hyperspectral imager design, development, characterization, and calibration
+   Authors: , , , 
+   Date: 2001
+
+67. Hyperspectral data for land use/land cover classification
+   Authors: , , 
+   Date: 2014
+
+68. A comparative analysis of EO-1 Hyperion, Quickbird and Landsat TM imagery for fuel type mapping of a typical Mediterranean landscape
+   Authors: , , 
+   Date: 2014
+
+69. Analysis of land cover changes and landscape fragmentation in Batanghari Regency, Jambi Province
+   Authors: , , 
+   Date: 2016
+
+70. Suomi NPP VIIRS prelaunch and on-orbit geometric calibration and characterization
+   Authors: , , , , , 
+   Date: 2013
+
+71. Geospatial assessment of agricultural drought: a case study of Bankura District, West Bengal
+   Authors: , , 
+   Date: 2013
+
+72. Striping noise detection and correction of remote sensing images
+   Authors: , 
+   Date: 2008
+
+73. Artificial neural network model for prediction of land surface temperature from land use/ cover images
+   Authors: 
+   Date: 2013
+
+74. Using multivariate adaptive regression spline and artificial neural network to simulate urbanization in Mumbai, India
+   Authors: , , , 
+   Date: 2015
+
+75. Analysis of land use and land cover spatial pattern based on Markov chains modelling
+   Authors: , , 
+   Date: 2015
+
+76. Monitoring urban greenness dynamics using multiple endmember spectral mixture analysis
+   Authors: , , , , 
+   Date: 2014
+
+77. Modelling land-cover types using multiple endmember spectral mixture analysis in a desert city
+   Authors: , 
+   Date: 2009
+
+78. Topographic imaging simulation of optical remote sensing based on Landsat TM data
+   Authors: , , , , 
+   Date: 2013
+
+79. Scenario simulation and the prediction of land use and land cover change in Beijing, China
+   Authors: , , 
+   Date: 2015
+
+80. Geometric correction in recent high resolution satellite imagery: a case study in Coimbatore, Tamil Nadu
+   Authors: , 
+   Date: 2011
+
+81. Using the mixture-tuned matched filtering method for lithological mapping with Landsat TM5 images
+   Authors: , , , 
+   Date: 2013
+
+82. Partially and fully constrained least squares linear spectral mixture model for subpixel land cover classification using Landsat data
+   Authors: , , , , , 
+   Date: 2016
+
+83. Fuzzy C-means algorithm based satellite image segmentation
+   Authors: , 
+   Date: 2018
+

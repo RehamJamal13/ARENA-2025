@@ -1,0 +1,370 @@
+================================================================================
+TITLE: Analysis and prediction of land cover changes using the land change modeler (LCM) in a semiarid river basin, Iran
+================================================================================
+
+AUTHORS:
+- Sajad Khoshnood Motlagh
+- | Sadoddin
+- | Amin Haghnegahdar
+- Saman Razavi
+- | Salmanmahiny
+- | Khalil Ghorbani
+- Amir Sadoddin
+
+ABSTRACT:
+Predicting future land cover (LC) changes is an important step in the proper planning and management of watersheds. As a susceptible area to salinity and desertification, receiving only about 195 mm rainfall annually, the Hable-Rud River basin is especially sensitive to land use/cover changes. Based on corrected LANDSAT satellite images for the years 1986, 2000, and 2017, the LC were extracted using the maximum likelihood (ML) method. LC changes were predicted by applying the land change modeler (LCM) for the basin. The kappa index for classification in 1986, 2000, and 2017 was 75, 78, and 81%, respectively. Using LCM, the prediction was accomplished for the year 2017 with a kappa index of above 74%. The LC map was predicted for year 2040. The analysis indicates that over the past 32 years, bare land, saline land, agricultural, industrial, and residential areas have increased by about 8, 6.2, 2.7, 0.63, and 0.48%, respectively; while rangeland area was decreased by 18%. Results also indicate that given the predicted LC for year 2040 in comparison with the reference year (2017), saline land, agricultural, industrial, and residential areas will be likely to continue to increase by about 3, 1.5, 0.7, and 0.8%, respectively, whereas bare land and rangeland will most likely decrease by about 4.55 and 1.45%, respectively. The findings of this study assist in analyzing the future trends of LC changes in the basin. This information can be used as a guide for land planners and managers in future land use planning of the area.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## | INTRODUCTION ##
+The dynamic and sometimes substantial transformation in land use/land cover (LULC) occurs due to socio-economic and natural changes. Although reasons for land cover changes vary depending on the nature and extent of the area, the main drivers can be identified as deforestation, rangeland degradation, and expansion of agriculture 
+Analysis and prediction of LULC changes allows us to assess ecosystem changes and their environmental consequences at various temporal and spatial scales (Di 
+Over the past few decades, the application of remote sensing technology and geographical information systems (GIS) has gained momentum in landscape dynamics assessment in regional as well as global scales 
+These studies have shown that CA models are efficient in producing practical simulations of land cover patterns and other spatial structures. CA algorithm is an extension of the land change modeller (LCM) to help predict LC changes using the descriptive variables such as elevation, slope, aspect, and distance from specific areas 
+Land cover changes in arid and semiarid regions can lead to the rapid expansion of desert areas. The Hable-Rud River basin (HRB) has recently encountered desertification problems in its' south. It receives very low precipitation in some parts of the basin (95 mm), and has a large area of saline lands (1,800 km 2 ) in the southern parts of the basin due to the presence of evaporative sediments. Thus, the changes in land cover in this region can affect both the quantity and quality of water, as well as wind and water erosion severity in the HRB. Therefore, HRB requires assessment of LC changes for better management, planning, and policy-making. Thus, the main objective of this study was to quantify LC changes over the last 32 years  and predict them for the year 2040 using LANDSAT enhanced thematic mapper (ETM) and LANDSAT thematic mapper (TM) images.
+Hence, this research attempts to answer the following questions: 
+
+## | MATERIALS AND METHODS ##
+
+
+## | Study area ##
+The HRB, with an area of about 12,700 km 2 , is located between 34 26 0 54 00 to 35 57 0 31 00 N latitudes and 51 39 0 52 00 to 53 8 0 46 00 E longitudes. This basin straddles the border between the Tehran and Semnan provinces in Iran. Situated within the basin are the cities of Firouzkouh and part of Damavand in Tehran Province, and Garmsar, Sorkh, Aradan, and Eyvanekey in Semnan Province. The geographic location of HRB is shown in Figure 
+Most of the northern region is mountainous, while a large part of the southern region is in the plains. Average annual precipitation and temperature in the northern part are about 400 mm and 11 C, respectively, while in the southern part these are about 125 mm and 18 C, respectively. Evapotranspiration (ET) is high and the average potential ET can reach to 1,500 mm yr À1 in the basin 
+
+## | Data collection and research methods ##
+
+
+## | Satellite image preparation ##
+For this study, LANDSAT satellite images (level 1) of the Paths/Rows 163/35, 163/36, 164/35, and 164/36 with a resolution of 900 m 2 were accessed through the United States Geological Survey (https:// earthexplorer.usgs.gov/). Thus, imageries from the sensors TM, ETM+, and OLI of LANDSATS 5, 7, and 8 were obtained for the years 1986, 2000, and 2017, respectively. The coordinate system used was WGS_1984_UTM_Zone_39N. To reduce the effect of seasonal and phonological changes on the detected land cover changes, the image pairs were selected in the same season or temporally close for all years studied. Land cloud cover (less than 5%) was also a key criterion in selecting images. Radiometric and atmospheric corrections were accomplished to satisfy the preprocessing requirement for change detection. The images using iteratively reweighted multivariate alteration detection (IR-MAD) and fast line-of-sight atmospheric analysis of hypercube (FLAASH) methods in ENVI software were radiometrically and atmospherically corrected, respectively. The detail of the data is shown in Table 
+Difficulties when processing images included the rugged terrain with mountains in the north and downstream desert areas in the 
+
+## | Classification of images and extraction of historical LC maps ##
+All the steps for this section were implemented in the ENVI software version 5.1. First, the study area was divided into six main classes including rangeland, bare land, saline land, agricultural land, industrial area, and residential area (see Table 
+Finally, the accuracy of those trained samples is assessed by the kappa index or the percentage of the correspondence between Google Earth images and the extracted features on the LC maps.
+To do this, ground control points were selected from Google Earth, and then, the kappa index was estimated between the ground control points and their corresponding points on the extracted maps.
+
+## | Land use/cover prediction by applying the land change modeler (LCM) ##
+The LCM is a tool to predict land changes for land planning 
+
+## | Analyzing historical LC changes ##
+The changes in LC were analyzed using the extracted historical maps and in the process, classified image of the year 1986 was compared with that of 2000, and this was repeated for classified images of the year 2000 versus 2017, and 1986 versus 2017.
+
+## | Creating transition matrix maps ##
+LC transition matrix maps were created to analyze and determine spatial trends in LC changes as well as LC gains and losses. These maps were made based on one or a group of sub-model(s) in the LCM using a multi-layer perceptron (MLP) artificial neural network (ANN). Artificial neural networks (ANN) easily tackle nonlinearity in data and can provide a good mapping between dependent and independent variables 
+
+## | Model validation ##
+The validation process compares the quality of the predicted map to the extracted map in 2017. There are two different approaches for validation: visual and statistical 
+Where: p a ¼ 1 
+
+## | Predicting future LC map ##
+The extent of LC change expected to occur in the future was predicted by applying the CA algorithm based on the extracted maps of LC types for the past years 
+
+## | Land cover changes impact analysis ##
+To assess the possible impacts of the LC changes on hydrological characteristics in the HRB, some meteorological and hydrological variables were analyzed as below.
+The precipitation data on a daily basis during the years 1986-2017 from 12 meteorological stations were extracted and analyzed from the Iran Meteorological Organization database. Three meteorological stations from the Meteorological Organization and Iran Ministry of Energy were referred to extract the temperature data. Also, the streamflow and sediment load data for the Bonkouh hydrometric station were extracted and analyzed for the same period from the Iran Ministry of Energy database.
+The observed data are on a daily and monthly basis for the streamflow and sediment load, respectively. A regression equation between the discharges of streamflow and sediment load was established to estimate sediment load on a monthly basis 
+
+## | RESULTS ##
+
+
+## | LC extraction for the past ##
+The area and percent of LC differences for 1986, 2000, and 2017 are shown in Figure 
+
+## | LC conversion ##
+We used three different transition matrices for the periods: 1986- 
+
+## | Transition area matrices ##
+The descriptive variables showed in Table 
+The state transition probability matrices were created from the LC maps for the years 1986 and 2017. Then, the LC map predicted for 2017 and compared to the extracted map of the year 2017. The overall kappa index was close to 74% indicating a moderate agreement 
+
+## | Land cover changes impacts ##
+To show further consequences of LC changes, the long term observed data of precipitation, temperature, streamflow, and sediment load was analyzed in the basin. As mentioned in Section 2.6, based on the data observed at the gauging stations, the required analysis was conducted. Trend analysis of precipitation, temperature, streamflow, and sediment load show that both the observed precipitation and streamflow have negative trends, while the trend of sediment load and temperature show a slight increase during the period (1986-2017) (Figure 
+As shown in Figure 
+There are many reasons for this conversion. Firstly, the arid study area has faced several years of drought from 1986 to 2017. Secondly, during this period, rangeland was widely available for conversion to other LC classes. Thus, given the question "What are the major LC changes in the HRB?" it can be concluded that rangeland has been the major LC type that undergone the changes. Development of agriculture (both rainfed and irrigated) started at least two decades ago when the Iranian Government implemented a new strategy for agricultural products 
+LC plays a significant role in the sustainability of water resources and can have direct and indirect influences inside as well as beyond basin boundaries 
+Given the question "What are the environmental consequences of the LC changes in the HRB?" the extracted and predicted LC maps showed a large expansion of saline lands in the basin. Also, trend analysis of sediment load data provides more specific evidence regarding the sensitivity of sediment load to LC changes. This is why sediment load values positively changed although both precipitation and streamflow had a decreasing trend.
+This investigation provides an entry point for LC change as part of the discussion on more sustainable and adaptive water management in the basin. Consequently, the outcomes presented in the study should interpreted as an approach to discuss and create awareness of the consequences of LC change. To conclude, it is vital to formulate and implement some policies and strategies in the basin to prevent or minimize further land cover changes and land degradation. To this end, some relevant tools such as rewarding regulation and legislation, setting penalties, and more importantly education and outreach on the negative impacts of LC changes should be employed by the authorities in the basin. This becomes even more important with the impact of climate change.
+
+## | CONCLUSIONS ##
+of Lake Tana basin, Northwestern Ethiopia. Environmental Systems Research, 5(1), 1-12. https://doi.org/10.1186/s40068-016-0058-1 Yang, X., 
+Land Degradation & Development, 1-14. https://doi.org/10. 1002/ldr.3969
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Predicting land cover using GIS, Bayesian and evolutionary algorithm methods
+   Authors: , 
+   Date: 2009. 2007
+
+2. Use of fuzzy classification method to prepare land use map (a case study of Hable-Rud watershed)
+   Authors: , 
+   Date: 2013
+
+3. Sustainable planning model toward reviving Lake Urmia
+   Authors: , 
+   Date: 2015
+
+4. Prediction of spatial land use changes based on LCM in a GIS environment for desert wetlands -A case study: Meighan Wetland
+   Authors: , 
+   Date: 2019
+
+5. Advances in remote sensing of agriculture: Context description, existing operational monitoring systems and major information needs
+   Authors: 
+   Date: 2013
+
+6. Non-uniform cellular automata: Evolution in rule space and formation of complex structures
+   Authors: , 
+   Date: 1994
+
+7. Geosimulation: Object-based modeling of urban phenomena
+   Authors: , 
+   Date: 2004
+
+8. Estimation of soil loss by the WATEM/SEDEM model using an automatic parameter estimation procedure
+   Authors: , , , , 
+   Date: 2015
+
+9. Urban sprawl and its impact on landuse/land cover dynamics of Dehradun City
+   Authors: , , , 
+   Date: 2017
+
+10. Heavy extinctions of forest avifauna in Singapore: Lessons for biodiversity conservation in Southeast Asia
+   Authors: , , 
+   Date: 2000
+
+11. A coefficient of agreement for nominal scales
+   Authors: 
+   Date: 1960
+
+12. Dynamics of land use/cover changes and the analysis of landscape fragmentation in Dhaka Metropolitan
+   Authors: , , 
+   Date: 2012
+
+13. Land cover classification system (LCCS): Classification concepts and user manual
+   Authors: , , 
+   Date: 2000. May
+
+14. A short presentation of the land change modeler (LCM). Lcm
+   Authors: , 
+   Date: 2018
+
+15. Land use change assessment in coastal mangrove forests of Iran utilizing satellite imagery and CA-Markov algorithms to monitor and predict future change
+   Authors: , , 
+   Date: 2018
+
+16. Human-induced long-term changes in the lakes of the Jianghan Plain, Central Yangtze
+   Authors: , , 
+   Date: 2005. 2005
+
+17. Agricultural water use in Lake Urmia basin, Iran: An approach toadaptive policies and transition to sustainable irrigation water use
+   Authors: 
+   Date: 2012
+
+18. An integrated modelling system to predict hydrological processes under climate and land-use/cover change scenarios
+   Authors: , , , , 
+   Date: 2017
+
+19. Assessing regional virtual water flows and water footprints in the Yellow River basin, China: A consumption based approach
+   Authors: , , , 
+   Date: 2012
+
+20. Land use and land cover: Contradiction or complement. Re-presenting GIS
+   Authors: , , 
+   Date: 2005
+
+21. Global consequences of land use
+   Authors: , , , , , , 
+   Date: 2005
+
+22. Protected area zoning for conservation and use: A combination of spatial multicriteria and multiobjective evaluation
+   Authors: , 
+   Date: 2008
+
+23. Study of Geomorphological formations based on landscape analysis and Satellite Images
+   Authors: , , 
+   Date: 2008
+
+24. Investigating the role of downscaling and the method of calculating reference evapotranspiration in the analysis of the effect of climate change on water resources
+   Authors: , , , 
+   Date: 2018
+
+25. Analysis and predicting the trend of land use/cover changes using neural network and systematic points statistical analysis (SPSA)
+   Authors: , 
+   Date: 2019
+
+26. Future land cover change scenarios in South African grasslands -Implications of altered biophysical drivers on land management
+   Authors: , , , 
+   Date: 2018
+
+27. Remote sensing in landscape ecology: Experiences and perspectives in a European context
+   Authors: , , , 
+   Date: 2006
+
+28. 21(3 SPEC. ISS
+
+29. Characterizing the spatial variations of the relationship between land use and surface water quality using self-organizing map approach
+   Authors: , , , , , , 
+   Date: 2019. March
+
+30. Multi objective land allocation (MOLA) for zoning Ghamishloo Wildlife Sanctuary in Iran
+   Authors: , , , 
+   Date: 2011
+
+31. Determining the main factors in declining the Urmia Lake level by using system dynamics modeling
+   Authors: , , 
+   Date: 2012
+
+32. Techniques of water-resources investigations of the United States Geological Survey book 4
+   Authors: , 
+   Date: 2002
+
+33. Limitation of salt stress to plant growth
+   Authors: , 
+   Date: 2004. 2000
+
+34. Modeling land use change using cellular automata and artificial neural network: The case of Chunati Wildlife Sanctuary
+   Authors: , , 
+   Date: 2018. February
+
+35. Modelling and monitoring land-cover change processes in tropical regions
+   Authors: 
+   Date: 1997
+
+36. Improvement of LCM model and determination of model parameters at watershed scale for flood events in Hongde basin of China
+   Authors: , 
+   Date: 2017
+
+37. Remote sensing and image interpretation
+   Authors: , , 
+   Date: 2015
+
+38. Change detection techniques
+   Authors: , , , 
+   Date: 2004
+
+39. Water management in Iran: What is causing the looming crisis
+   Authors: 
+   Date: 2014
+
+40. Driving forces behind land transformations in the Tamiraparani sub-basin, South India
+   Authors: , 
+   Date: 2017. July
+
+41. Guiding SLEUTH land-use/land-cover change modeling using multicriteria evaluation: Towards dynamic sustainable land-use planning
+   Authors: , 
+   Date: 2012
+
+42. Investigating land-use dynamics at the periphery of a fast-growing city with cellular automata at two spatial scales. Modeling of Land-Use and Ecological Dynamics
+   Authors: , , 
+   Date: 2013. November, 2013
+
+43. Lessons in biostatistics interrater reliability: The kappa statistic
+   Authors: 
+   Date: 2012
+
+44. Determinants of farmers' adoption of land management practices in Gelana sub-watershed of northern highlands of Ethiopia
+   Authors: , 
+   Date: 2017
+
+45. An insight into land use and land cover changes and their impacts in the Rib watershed, Northwestern Highlands
+   Authors: , 
+   Date: 2018
+
+46. Landscape ecology and management
+   Authors: 
+   Date: 1987
+
+47. Urban growth simulation of Atakum (Samsun, Turkey) using cellular automata-Markov chain and multi-layer perceptron-Markov chain models
+   Authors: 
+   Date: 2015
+
+48. Possibilities and limits of prospective GIS land cover modelling -A compared case study: Garrotxes (France) and Alta Alpujarra, Granada (Spain)
+   Authors: , 
+   Date: 2005
+
+49. Modelling the impact of climate and land cover change on hydrology and water quality in a forest watershed in the Basque Country (Northern Spain)
+   Authors: , , , , 
+   Date: 2018. February
+
+50. The use of predictive modeling techniques for optimal exploitation of spatial databases: A case study in landslide hazard mapping with expert system-like methods
+   Authors: , , 
+   Date: 2002
+
+51. Comparison of the structure and accuracy of two land change models
+   Authors: , 
+   Date: 2005
+
+52. A multi-agent model system for land-use change simulation
+   Authors: , , , , , 
+   Date: 2013
+
+53. Adaptive neural networks for flood routing in river systems
+   Authors: , 
+   Date: 2007
+
+54. A new formulation for feedforward neural networks
+   Authors: , 
+   Date: 2011
+
+55. Assessing the potential and landscaping of integrated watershed management
+   Authors: , , , , , , 
+   Date: 2012
+
+56. Land cover change in the Bolivian Amazon and its implications for REDD+ and endemic biodiversity
+   Authors: , , 
+   Date: 2012
+
+57. Scenario analysis for integrated water resources management under future land use change in the Urmia Lake region
+   Authors: , , , , , , 
+   Date: 2020
+
+58. Soil salinity: A serious environmental issue and plant growth promoting bacteria as one of the tools for its alleviation
+   Authors: , 
+   Date: 2015
+
+59. Predicting spatial and Decadal LULC changes through cellular automata Markov chain models using earth observation datasets and geoinformation
+   Authors: , , , , 
+   Date: 2015
+
+60. Investigating the effect of data classification models on the accuracyof sediment load estimates in the Hable-Rud basin
+   Authors: 
+   Date: 2011
+
+61. Monitoring urban land cover change
+   Authors: , , 
+   Date: 2002
+
+62. Application of a hybrid cellular automaton -Markov (ca-markov) model in land-use change prediction: A case study of Saddle Creek drainage basin
+   Authors: , , 
+   Date: 2013
+
+63. Land use/land cover change evaluation using land change modeller: A comparative analysis between two main cities in Sierra Leone
+   Authors: , , , , 
+   Date: 2019. February
+
+64. Relating land-use and global landcover changes
+   Authors: , 
+   Date: 1993
+
+65. Satellite images for recognition of landscape and landuse changes
+   Authors: , 
+   Date: 1998
+
+66. Bio-treatment of phosphate from synthetic wastewater using pseudomonas sp YLW-7
+   Authors: , 
+   Date: 2011
+
+67. Challenges in using land use and land cover data for global change studies
+   Authors: , , 
+   Date: 2011
+
+68. An integrated approach to supporting land-use decisions in site redevelopment for urban renewal in Hong Kong
+   Authors: , , , 
+   Date: 2013
+
+69. Patterns, causes and consequences of land use/cover dynamics in the Gumara watershed
+   Authors: , , 
+   Date: 2016
+

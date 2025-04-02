@@ -1,0 +1,228 @@
+================================================================================
+TITLE: LAND USE/LAND COVER CHANGE PREDICTION USING MULTI-TEMPORAL SATELLITE IMAGERY AND MULTI-LAYER PERCEPTRON MARKOV MODEL
+================================================================================
+
+AUTHORS:
+- H Nguyen
+- T Pham
+- M Doan
+- P Tran
+
+ABSTRACT:
+This paper aims to predict the trend of land use land cover (LULC) changes in Dak Nong province over time. Data from Landsat images captured in 2009, 2015, and 2018 was employed to analyze and predict the spatial distributions of LULC categories. The Random Forest (RF) was adopted to classify the images into ten different LULC classes. Besides, integration of Multi-Layer Perceptron Markov Neural Network (MLP-NN) with Markov Chain (MC) was applied to predict the future LULC changes in the region based on the change detection over the previous years. For all classified images, overall accuracy (OA) ranged from 77.35% to 84.55% with kappa (K) coefficient index ranging from 0.75 to 0.8. The results revealed that the annual population growth together with social-economic development was regarded as major drives for land conversion in the area. The predicted map showed a significant decrease trend in the forest classes by 2025, accounting for 23 thousand ha. However, residential areas, rubber, and agricultural land classes are predicted to rise to 460 ha, 3,000 ha, and 20,000 ha, respectively. The simulated model and calibrated area data may be a vital contribution to sustainable development efforts of the local based on the dynamics of LULC and future LULC change scenarios. Overall, ascertaining the complex interface related to changes in land use and its major drivers over time provides useful information predict to explore the future trend of LULC changes, establish alternative land-use schemes and serve as guidelines for urban planning policymakers.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## INTRODUCTION ##
+Changes in land use land cover (LULC) relevant to anthropogenic activities have significantly changed the biological and geochemical processes on earth contributing to global environmental concerns 
+Remote sensing (RS) and geographic information systems (GIS) have been popularly adopted as essential and useful tools in obtaining accurate spatial data of LULC and quantifying the alternations of spatial data. The application of the CA-Markov model in predicting LULC changes has conveniences due to its powerful replication, and it is used for mapping LULC changes providing good performance regardless of dynamic modeling efficiently; high productivity with data, simple analysis; and capacity to detect transitions between land use classes 
+1 Corresponding author Stochastic Markov (St_Markov)", CA-MC, and MLP-MC 
+Dak Nong province has a high diversity of natural forest resources in the Central Highlands of Vietnam. In recent years, Dak Nong has experienced a burst in population growth resulting in high demand for agricultural land and urban expansion causing natural forest degradation. Besides, the technical guidelines in natural resource management mechanism have exposed issues such as deforestation, encroachment led to forest cover declined in the province 
+
+## MATERIALS AND METHODS ##
+
+
+## Study Area ##
+Dak Nong province where is a part of the subtropical monsoon climate zone characterized by humid tropical highland climate and dry-hot southwest monsoon, located in the Central Highlands of Vietnam (Figure 
+Figure 
+
+## Data Acquisition and Preparation ##
+The research used USGS Landsat 5, Landsat 8 SR (Surface Reflectance Tier 1), and remote sensing data collections available on Google Earth Engine (GEE). These satellite images were captured by the years 2009, 2015, and 2018. Landsat 5 and Landsat 8 SR atmospherically corrected surface reflectance from the sensors of Landsat 5 ETM and Landsat 8 OLI/TIRS, respectively. A resampling process of the thermal infrared (TIR) band was initially chosen at 120m/pixel resolution. Landsat 8 SR scenes contain four visible bands (B1, B2, B3, B4): orthorectifications of surface directional reflectance was applied to one near-infrared (VNIR: B5) and two short-wave infrared (SWIR: B6, B7) bands, while two thermal infrared (TIR: B10, B11) bands were processed to brightness temperature ortho-rectifications (Google Developers: Earth Engine Data Catalog). Landsat 5 SR data was corrected using LEDAPS (Department of the Interior U.S. Geological Survey. 2019a); LaSRC (Department of the Interior U.S. Geological Survey, 2019b) was used to correct Landsat 8 SR, and both included a mask for clouding and shadowing, through CFMASK 
+As three periods were considered in this study, including 2010, 2015, and 2018, Landsat 5 and 8 SR data were used to ensure that the entire area was covered and the effects of clouds were eliminated. Accordingly, the Landsat image data sets were divided into four temporal periods including i) a collection of Landsat 5 SR scenes in 
+
+## Selection of Drivers ##
+The driver variables are understood as factors that are the main contributors to LULC change 
+
+## Training and Validation Data ##
+Within the study area, the ten different types of LULC were discriminated: (1) Evergreen broadleaved forest;
+(2) Semievergreen forest (the forest that consists of a mixture of evergreen and deciduous dipterocarp tree species); (3) Dipterocarp forest;
+(4) Plantation forest; (5) Mature rubber (≥3 years old) (6) Perennial industrial plants; (7) Cropland; (8) Residential area; (9) Water surface; and (10) other types of land (including grassland, shrubs, bare land, unplanned land, abandoned land, and so on).
+Few studies have been published on the effectiveness of using collected samples from the integration of sources including the ground truth data, Landsat images with a high spatial resolution derived from Google Earth (GE), and reference maps 
+The dataset used in the classification and validation process was collected from different sources such as i) ground truth points collected in the field; ii) fine resolution and very fine resolution images obtained from GE and iii) the existing Dak Nong Forest Inventory/LULC Maps. Besides, the sample areas were directly collected according to the given Landsat satellite images where the samples are discriminated against others based on the user's experience.
+
+## Methods ##
+
+
+## Image Classification: ##
+The Random Forest (RF) algorithm proposed by 
+
+## LULC Change Detection Analysis: ##
+Employing LCM acquires different temporal maps, and LULC maps of the year 2009, 2015, and 2018 were used to detect the changes of LULC classes. This allowed us to comprehend the transitional trend and contribution between LULC classes over time.
+
+## LULC Change Prediction: ##
+The study used the integration of MLP with the MC to forecast the future LULCC in 2018 and 2025.
+The MLP-MC model displayed in the LCM tool includes the following steps: a) change detection, b) transition model and c) change anticipation 
+i. Change analysis: Two LULC maps were used to examine the primary transformations which are modeled independently as sub-model in the following stage.
+ii. Modeling a transition probability: To clarify the driver variables, Cramer's V, a prominent quantitative measurement which indicates a number ranged from 0 to 1 implying how strongly relevant factors are associated with two categorical maps 
+As performed in each sub-model of land transition, the MLP randomly develops a dataset of samples that have not shown the transition. Accordingly, each sub-model includes one transition and two samples of classes being provided. The MLP generates a neural network based on samples and driver variables corresponding with a connected network consisting of associated weights. The collected cells then are disjoined into two clusters including a sample set of 50 percent using for training and the remaining proportion for validation 
+iii. LULC change prediction: The process of forecasting change is implemented in the LCM to examine the quantity of the future LULC in a given temporal period simulated by MC. The first output is a hard prediction model resulted from a projected LULC map according to the process of land allocation. A soft prediction is the second output in which a comprehensive vulnerability map is conducted corresponding with the set of transitions. Overall, the default values ranged from 0 to 1 are the outputs of the soft prediction 
+To quantify the changes occurring on the future land use types, the MC simulation was modeled 
+Therefore, the MC in LCM was employed to create a transition probability matrix for 2018 until 2025 
+
+## Model Validation: ##
+The model validation process was implemented through an accurate comparison between predicted LULC maps and classified images in 2009, 2015, and 2018. The study employed the cross-tabulation in IDRISI regarding performance evaluation of the model to calculate OA from each predicted LULC category. Also, the K index was considered to measure the success of the simulation. Once the kappa index is acceptable, the LULC in 2025 will be predicted 
+
+## RESULTS AND DISCUSSIONS ##
+
+
+## Accuracy Assessment ##
+Overall, OA for all classified images from three temporal periods 
+
+## LULC Change Detection ##
+This study compared three maps 
+Human activities directly impact natural forests such as logging, agricultural expansion, or infrastructure, hydroelectricity and road development. However, the main driver of deforestation was the conversion of forests to commercial agriculture products such as coffee, pepper, rubber, cassava 
+
+## LULCC Prediction with CA-Markov and Validation ##
+The  As illustrated above, the MLP-MC prediction model achieved a K value >0.80. K coefficients usually range from 0 to 1 
+- The Disagree Grid cell and Disagree Quantity indices have significance in predicting the LULC changes 
+Our findings indicated that the Disagree Grid cell = 0.1250 is greater than Disagree Quantity = 0.0098, this means that the precision for the correct prediction of the model is relatively high. Therefore, it is more likely to forecast the variations of LULC for quantifying than considering the location. Besides, the Kno index is regarded as the most important parameter which is used for evaluating the overall of a model 
+The LULC map for the year 2025 presented in Figure 
+It is recognizable that the decline in the natural forests may be due to population growth, the expansion of residential areas, and the demand for agricultural land increases. Moreover, the transition of a natural forest area into other land-use types such as grasslands, bare land, shrubs (3,000 ha) is also the reason for the decrease of forest area.
+.  
+
+## LULC ##
+
+
+## CONCLUSIONS ##
+Based on the LULC analysis obtained for the year 2009, 2015, and 2018 in Dak Nong, the classification results showed that the OA of LULC maps achieved from 77.35to 84.55% with kappa varying from 0.75 to 0.81. From this study, the findings revealed that the majority of land conversion in Dak Nong is natural forests to residential areas and agricultural land since the province experienced an increase in population as well as socialeconomic growth.
+The simulation of LULCC in the year 2018 and 2025 using an integration of the MLP-MC resulted in high accuracy. The findings revealed that in 2018 the predicted LULC maps show reliable results with a significant agreement compared to the actual LULC maps. The simulation illustrates that the 2025 projected map indicates the trend observed from 2009 to 2018, revealing that the natural forest area will continue to decrease by more than 23 thousand ha. By contrast, rubber, residential area, and agricultural land are predicted to increase by approximately 460 ha, 3000 ha, and 20,000 ha, respectively. The findings from this study suggested that the observed continuous decrease in the natural forest area calls for concern which has caused pressures on the natural forest resources contributing to the high risk of global climate change. The modeled results also indicate that the current forest protection and management mechanisms did not very effectively work in the province. Therefore, findings may be useful and significant information for the local government to promote more effective policies regarding sustainable development and management of natural resources. -20,000-15,000-10,000 -5,000 0 5,000 10,000 15,000 20,000 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Modeling urban land cover growth dynamics using multi-temporal satellite images. A case study of Dhaka, Bangladesh
+   Authors: , 
+   Date: 2012
+
+2. Random Forests. Machine Learning
+   Authors: 
+   Date: 2001
+
+3. Monitoring and predicting land use and land cover changes using remote sensing and GIS techniques. A case study of a hilly area
+   Authors: , , 
+   Date: 2018
+
+4. High agreement but low kappa: II. Resolving the paradoxes
+   Authors: , 
+   Date: 1990
+
+5. Assessing the accuracy of remotely sensed data: Principles and Practices
+   Authors: , 
+   Date: 2019
+
+6. Markov method integration with multi-layer perceptron classifier for simulation of urban growth of Jaipur City
+   Authors: , 
+   Date: 2010. 15 July 2019. 2019. 18 July 2019
+
+7. Earth Engine Data Catalog
+   Authors: 
+   Date: 29 March 2019
+
+8. IDRISI Selva Tutorial, Manual Version 17
+   Authors: 
+   Date: 2012
+
+9. TerrSet Manual -Geospatial Monitoring and Modeling System
+   Authors: 
+   Date: 2016
+
+10. Monitoring and forecasting heat island intensity through multi-temporal image analysis and cellular automata-Markov chain modelling: A case of Babol city
+   Authors: , , , , 
+   Date: 2018
+
+11. Forecasting areas vulnerable to forest conversion in the Tam Dao National Park Region
+   Authors: , 
+   Date: 2010
+
+12. Policy responses to direct and underlying drivers of deforestation: examining rubber and coffee in the central highlands of Vietnam
+   Authors: 
+   Date: 2020
+
+13. An application of hierarchical kappa-type statistics in the assessment of majority agreement among multiple observers
+   Authors: , 
+   Date: 1977
+
+14. Modeling Expansion in Bangkok Metropolitan Region Using Demographic-Economic Data through Cellular Automata-Markov Chain and Multi-Layer Perceptron
+   Authors: , , , 
+   Date: 2016
+
+15. Land cover mapping analysis and urban growth modelling using remote sensing techniques in greater Cairo region-Egypt
+   Authors: , , , 
+   Date: 2015
+
+16. Prediction of land use changes based on land change modeler (LCM) using remote sensing: a case study of Muzaffarpur (Bihar), India
+   Authors: , , 
+   Date: 2014
+
+17. Geospatial scenario based modelling of urban and agricultural intrusions in Ramsar wetland Deepor Beel in Northeast India using a multi-layer perceptron neural network
+   Authors: , 
+   Date: 2014
+
+18. Comparing three transition potential models: A case study of built-up transitions in North-East India
+   Authors: , , 
+   Date: 2016
+
+19. From agricultural expansion to intensification: Rural development and determinants of land-use change in the Central Highlands of Vietnam
+   Authors: 
+   Date: 2004
+
+20. A Markov model of land-use change dynamics in the Niagara Region
+   Authors: , 
+   Date: 1994
+
+21. Vietnam's fifth national report to the United Nations convention on biological diversity
+   Date: 2014
+
+22. Land use change modeling through an integrated Multi-Layer Perceptron Neural Network and Markov Chain analysis (case study: Arasbaran region, Iran)
+   Authors: , , , , 
+   Date: 2019
+
+23. Land use/land cover change prediction in Daknong Province based on remote sensing and Markov Chain Model and Cellular Automata
+   Authors: , 
+   Date: 2018
+
+24. Applying random forest classification to map land use/land cover using landsat 8 OLI
+   Authors: , , 
+   Date: 2018
+
+25. Land Use/Land Cover Mapping Using Multitemporal Sentinel-2 Imagery and Four Classification Methods-A Case Study from Dak Nong
+   Authors: , , , 
+   Date: 2020
+
+26. Predicting Urban Land Use Changes Using a CA-Markov Model
+   Authors: , , , , 
+   Date: 2014
+
+27. Urban growth simulation of Atakum (Samsun, Turkey) using cellular Automata-Markov chain and multi-layer Perceptron-Markov chain models
+   Authors: 
+   Date: 2015
+
+28. Comparison of categorical maps
+   Authors: 
+   Date: 2000
+
+29. Land use and land cover change detection through remote sensing approach: A case study of Kodaikanal taluk, Tamil nadu
+   Authors: 
+   Date: 2010
+
+30. Simulation of land use spatial pattern of towns and villages based on CA-Markov model
+   Authors: , , , , 
+   Date: 2011
+
+31. Evaluating Sentinel-2 and Landsat-8 data to map sucessional forest stages in a subtropical forest in Southern Brazil
+   Authors: , , , 
+   Date: 2017
+
+32. 2018: A 30-m landsat-derived cropland extent product of Australia and China using random forest machine learning algorithm on Google Earth Engine cloud computing platform
+   Authors: , , , , , , 
+
+33. Analysis and prediction of land use changes related to invasive species and major driving forces in the state of Connecticut
+   Authors: , , , , , , 
+   Date: 2016
+
+34. Land use/land cover change modeling and the prediction of subsequent changes in ecosystem service values in a coastal area of China, the Su-Xi-Chang Region
+   Authors: , , , , 
+   Date: 2017
+

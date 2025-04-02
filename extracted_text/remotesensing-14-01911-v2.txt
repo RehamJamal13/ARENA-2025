@@ -1,0 +1,612 @@
+================================================================================
+TITLE: Using Remote Sensing to Quantify the Joint Effects of Climate and Land Use/Land Cover Changes on the Caatinga Biome of Northeast Brazilian
+================================================================================
+
+AUTHORS:
+- Ayyoob Sharifi
+- Chi Feng
+- Jun Yang
+- Alexandr Maniçob
+- Rosa Jardim
+- George Do Nascimen
+- Araújo Júnior
+- Marco Vinícius Da Silva
+- Anders Santos
+- Jhon Lennon Bezerra Da Silva
+- Héliton Pandorfi
+- José De Oliveira-Júnior
+- Antôn Heriberto De Castro Teixeir
+- Paulo Teodoro
+- João De Lima
+- Carlos Antonio Da Silva Junior
+- Lucia Bastos De Souza
+- Emanuel Silva
+- Thieres George Freire Da Silva
+
+ABSTRACT:
+Caatinga biome, located in the Brazilian semi-arid region, is the most populous semi-arid region in the world, causing intensification in land degradation and loss of biodiversity over time. The main objective of this paper is to determine and analyze the changes in land cover and use, over time, on the biophysical parameters in the Caatinga biome in the semi-arid region of Brazil using remote sensing. Landsat-8 images were used, along with the Surface Energy Balance Algorithm for Land (SEBAL) in the Google Earth Engine platform, from 2013 to 2019, through spatiotemporal modeling of vegetation indices, i.e., leaf area index (LAI) and vegetation cover (V C ). Moreover, land surface temperature (LST) and actual evapotranspiration (ET a ) in Petrolina, the semi-arid region of Brazil, was used. The principal component analysis was used to select descriptive variables and multiple regression analysis to predict ET a . The results indicated significant effects of land use and land cover changes on energy balances over time. In 2013, 70.2% of the study area was composed of Caatinga, while the lowest percentages were identified in 2015 (67.8%) and 2017 (68.7%). Rainfall records in 2013 ranged from 270 to 480 mm, with values higher than 410 mm in 46.5% of the study area, concentrated in the northern part of the municipality. On the other hand, in 2017 the lowest annual rainfall values (from 200 to 340 mm) occurred. Low vegetation cover rate was observed by LAI and V C values, with a range of 0 to 25% vegetation cover in 52.3% of the area, which exposes the effects of the dry season on vegetation. The highest LST was mainly found in urban areas and/or exposed soil. In 2013, 40.5% of the region's area had LST between 48.0 and 52.0 • C, raising ET a rates (~4.7 mm day -1 ). Our model has shown good outcomes in terms of accuracy and concordance (coefficient of determination = 0.98, root mean square error = 0.498, and Lin's concordance correlation
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+The Caatinga biome occupies a large portion of the Brazilian semi-arid region. It has a high ecological diversity of plant species, and it is considered the largest in the world under semi-arid conditions 
+Caatinga is located in the world's most populated dry area, with more than 53 million inhabitants and a population density close to 34 inhabitants per km 2 . This biome has been affected by environmental degradation and loss of biodiversity over the last decades, mainly by the intensification of agriculture (e.g., rainfed and irrigated crops cultivation), urban expansion, and the advance of pasture areas replacing the natural vegetation 
+Therefore, monitoring physical-water indicators of environmental change conditions, such as the loss of biodiversity of biomes and land use and occupation, is vital in managing scarce water resources. Furthermore, these indicators may be helpful in the planning of agricultural activities, as well as in the management of dry areas and the sustainable use and management of natural resources 
+In this scenario, remote sensing has been used as a tool that presents fast and low operational costs, being efficient in calculating the biophysical parameters used in the energy, water, and vegetation balances (e.g., 
+In this context, there are several surface energy balance models, such as Mapping EvapoTranspiration at high Resolution with Internalized Calibration (METRIC), Surface Energy Balance System (SEBS), Simple Algorithm for Evapotranspiration Retrieving (SAFER), Atmosphere-Land Exchange Inverse (Alexi), and the Energy Balance Algorithm for Land (SEBAL), based on remote sensing data. The approach is substantiated on biophysical parameters, such as LST, albedo, Normalized Difference Vegetation Index (NDVI), and emissivity, that are crucial for estimating ET 
+Based on the above, the main objective of this paper is to determine and analyze the changes in land cover, land use, and occupation on biophysical parameters in the Caatinga biome in the semi-arid region of Brazil. In the present study, the changes were assessed from 2013 to 2019 using Landsat imagery, and biophysical parameters (net radiation, energy balance, LAI, V C , ET a , and LST) were estimated by utilizing remote sensing. Additionally, the SEBAL model was applied to determine the surface energy balance in different vegetation environments. After applying the model, the dataset provided by SEBAL allowed us to determine the turbulent fluxes and actual evapotranspiration (ET a ) of the different land use and land cover (LULC) types. Thus, through the SEBAL products, the spatiotemporal variation patterns of ET a in agricultural and forestry areas were evaluated.
+
+## Materials and Methods ##
+
+
+## Study Area ##
+The study was carried out in the municipality of Petrolina, located in the State of Pernambuco, Brazil. The region comprises the domain of the Caatinga biome and it belongs to the semi-arid region of the sub-mean of the São Francisco Valley. The town is considered the largest fruit-growing center of the Brazilian semi-arid region due to the easy access to the São Francisco river, which supplies the irrigated perimeters. The municipality comprises a territorial area of 4561.870 km 2 (Figure 
+A characteristic of the Caatinga biome is the presence of different floristic mosaics, consisting of an area of tree and shrub vegetation, which presents its distribution conditioned to climatic and environmental variations, especially rainfall intensity and frequency 
+
+## Satellite Images and Weather Datasets ##
+Annual records of average air temperature ( • C), global radiation (MJ m -2 ), relative humidity (%), atmospheric pressure (kPa), wind speed (m s -1 ), and rainfall (mm) were obtained from the database of the National Institute of Meteorology 
+The years 2013 (334.4 mm) and 2019 (221.6 mm) showed the highest rainfall rates. Most of the rainfall recorded for Petrolina was concentrated from December to March (Figure 
+Rainfall data corresponding to the 30 days prior to the four imaging dates studied used were obtained from the Climate Hazards Group InfraRed Precipitation with Station (CHIRPS). CHIRPS are new precipitation products covering the coordinates 50 • S-50 • N and 180 • E-180 • W, with 0.05 • (±5.3 km) spatial resolution and daily to seasonal, temporal resolutions, available worldwide since 1981 
+
+## Vegetation Indices ##
+The Normalized Difference Vegetation Index (NDVI) was calculated to represent the amount and quality of vegetation present on the surface, characterized as an indicator of wet conditions, calculated using Equation (1).
+where ρ NIR and ρ Red are the reflectances measured in the near-infrared and red bands (i.e., Landsat-8 multispectral bands 5 and 4 of the OLI sensor), respectively, they range from -1 to +1. Values close to 1 on a positive scale correspond to high photosynthetic activity, and when negative, generally correspond to water bodies.
+Based on the NDVI, we calculated the vegetation cover (V C ) of the study area (Equation ( 
+where V C is the vegetation cover, NDVI S is the minimum NDVI value from bare soil pixels obtained in the study area, and NDVI V is the maximum NDVI value found in vegetated areas, i.e., from fully vegetated pixels. The NDVI S and NDVI V used to calculate V C were obtained from the domain of each NDVI image percentile map obtained from the NDVI histograms. Soil-Adjusted Vegetation Index (SAVI) was calculated to observe the vegetation cover of the area (Equation ( 
+where L is the adjustment factor to the soil, which varies between 0 and 1. The value 0 does not reach change, and resembles the NDVI. In areas with low-density vegetation, the value 1 is assigned; for intermediate-density vegetation areas, the value of 0.5; and for areas with high-density vegetation, the value 0.25 is assigned 
+To evaluate changes in vegetation biomass, the leaf area index (LAI, m 2 m -2 ) was determined (Equation ( 
+
+## Methodology for Estimating Evapotranspiration Using Satellite Images ##
+Evapotranspiration was estimated using the Energy Balance Algorithm for Land (SEBAL). For this, routine meteorological data and spectral bands from the Landsat-8 satellite were used. The SEBAL algorithm was implemented using JavaScript code through the Google Earth Engine (GEE) platform. The data were exported in spreadsheet format (*.xls). SEBAL uses mathematical modeling and operations to calculate the surface energy balance components and determine evapotranspiration. Thus, energy balance components are computed pixel-by-pixel, as described in Figure 
+
+## Surface Albedo Adjustment ##
+The surface albedo (α sup ) corresponds to a measure of the reflectivity of the Earth's surface, for each pixel, with atmospheric correction obtained according to Equation 
+where α toa is the albedo at the top of the atmosphere, that is, before atmospheric correction, α path is the atmospheric reflectance (set to 0.03, as used by Silva et al. 
+where P a is the atmospheric pressure (kPa), with dataset available freely in https://portal. inmet.gov.br/ (accessed on 10 August 2021), K t is the turbidity coefficient of the atmosphere (K t = 1.0, for a clear sky day), according to Allen et al. 
+where e a is the actual atmospheric water vapor pressure (kPa), estimated from Equation ( 
+where HR is the instantaneous relative humidity (%), and e s is the water vapor saturation pressure (kPa), estimated from Equation ( 
+where T 0 is the instantaneous air temperature ( • C) at the moment of the satellite pass.
+For obtaining α toa , a linear combination of the spectral reflectance of the six reflective OLI bands was performed according to Equation 
+where the terms Add b and Mult b belong to the radiometric rescaling group, specifically reflectance_add_band (equal to -0.1) and reflectance_mult_band (equal to 0.00002), respectively, presented in the metadata of each OLI-Landsat-8 image, DN is the digital number value corresponding to the pixel, θ is the solar zenith angle at the data acquisition time, and dr is the Earth-Sun distance in astronomical units.
+
+## Determination of Surface-energy Partitioning ##
+Based on the surface energy balance components, the evaporative fraction was determined. Initially, the surface radiation balance or net radiation-R n was calculated, which is distributed by the energy partitioning in front of the sensible heat fluxes-H, latent-LE, and soil heat flux-G 
+The land surface temperature (LST) in K (Kelvin) was obtained using the spectral radiance in band 10 of the TIRS sensor and the emissivity in the nearest band-ε nb by the modified Planck's Law 
+where K 1 and K 2 are radiation constants specific for the Landsat-8 TIRS band 10, equaling 774.89 W m -2 sr -1 µm -1 and 1321.08 K, respectively, provided by NASA/USGS; and L 10 is the radiance at the wavelength received by the sensors (band 10, the thermal band). The ε nb was calculated based on the LAI for each pixel according to Equation (13) 
+Initially, the temperature variation and aerodynamic resistance to heat transport in all pixels of the study area (Petrolina, Pernambuco) were determined. The atmosphere was initially assumed to be in a neutral stability condition. For this study, the hot pixel was considered in the exposed soil plots (i.e., no vegetation cover and/or little vegetation and low moisture content), assuming LE equal to zero. The cold pixel was considered in grape orchard plots irrigated by micro-sprinklers, when H can be considered zero 
+
+## Calculation of Energy Fluxes (H and LE) and Evaporative Fraction ##
+The sensible heat flux (H) in SEBAL is calculated using an iterative procedure from the aerodynamic function (Equation ( 
+where ρ air is the moist air density (kg m -3 ), C p is the air specific heat at constant pressure (1004 J kg -1 K -1 ), a and b are calibration constants of the temperature difference between two heights (i.e., between the roughness length for heat transfer and the reference height, usually 0.1 and 2.0 m above the displacement plane), and r ah is the near-surface aerodynamic resistance to heat transport (s m -1 ). Fundamentally, the coefficients a and b are determined through an internal calibration for each satellite image by interactive processes. We consider extreme pixels of wet/cold and dry/hot spots. They were selected to develop a linear relationship between the aerodynamic temperature of the surface and the air temperature difference, and the LST. By knowing the components of the surface energy balance, such as the net radiation (R n , W m -2 ), sensible heat flux (H, W m -2 ), and soil heat flux (G, W m -2 ), the latent heat flux (LE, W m -2 ) was determined, both corresponding to the time of the satellite pass over the study area, according to Equation 
+Subsequently, we determined the evaporative fraction (Λ) according to Equation 
+
+## Estimate of ET a Using SEBAL Method ##
+Finally, as a SEBAL product, we determine the actual evapotranspiration (ET a , mm day -1 ) 
+where R n24 is the daily net radiation (W m -2 ), 86,400 is a constant for daily timescale conversion (i.e., converts from seconds to days), and λ is the latent heat of vaporization of water (J kg -1 ). Then, the latent heat of vaporization allows the ET a expression in mm day -1 . Hence, accurate estimation of R n24 (Equation ( 
+where a is a regression coefficient of the relationship between net longwave radiation and atmospheric transmissivity on a daily scale, to which we assigned the value 143, as proposed by Teixeira et al. 
+
+## Land Use and Land Cover Dynamics ##
+In the present study, we sought to evaluate the impacts of changes in land use and land cover (LULC) under the biophysical variables in the municipality of Petrolina. Thus, we performed the extraction of descriptive statistical parameters (i.e., minimum, maximum, mean, median, and standard deviation) for the variables LAI, V C , ET a , LE, H, LST, emissivity, and R n in each class of LULC, from the maps available on the MapBiomas Brazil platform 
+(1) arboreal Caatinga, (2) shrub Caatinga, (3) herbaceous Caatinga, (4) pasture, (5) agriculture, (6) mosaic of agriculture and pasture, (7) urban area, and (8) water bodies with a spatial resolution of 30 meters 
+The MapBiomas classification is a hierarchical system combining land use and land cover. This classification is based on a pixel-by-pixel classification of Landsat images, where we use the machine learning algorithm random forest. Thus, the LULC classes for 2013, 2015, 2017, and 2019 were converted from raster files to vector files. We use the "polygonise" tool, which transforms classes into polygons with the help of QGIS 3.16 software 
+
+## Statistical Analyses ##
+In this study, we applied a principal component analysis (PCA) on the biophysical variables-e.g., LAI, V C , ET a , LE, H, LST, albedo, emissivity, and R n -for 2013, 2015, 2017, and 2019. Principal component analysis was performed to reduce the large dataset and convert the data series into sets of uncorrelated linear values without losing relevant information 
+Subsequently, we built a multiple linear regression model to determine ET a (predictand) in a simplified way. The selected variables were LST and H (predictors) due to their strong correlation over the years with land use and land cover classes (results obtained using PCA). This type of regression model assumes that there is a linear relationship between the response variable y and the predictor variables (e.g., x 1 , x 2 , . . . , x n ); it may be described as follows: y = β 0 + β 1 x 1 + β 2 x 2 + . . . + β n x n + ε rr , wherein β 0 is the constant value, β 1 , . . . , β n are regression coefficients, and ε rr is the random error. The threshold for predictor variable inclusion was p < 0.05.
+
+## Goodness of Fit ##
+The model performance analysis was based on the root mean square error (RMSE, the values close to zero reduce error and increase accuracy), the mean absolute error (MAE), percent bias (PBIAS), Nash-Sutcliffe efficiency coefficient (NSE), Lin's concordance correlation coefficient (LCCC), Willmott's index of agreement (d), which ranges from 0 to 1 (i.e., indicates no agreement at all and perfect agreement, respectively) 
+
+## Results and Discussion ##
+
+
+## Comparisons of Land Use and Land Cover (LULC) ##
+Based on the classification via the MapBiomas platform and on the Landsat-8 satellite, the thematic maps of land use and land cover for the years 2013, 2015, 2017, and 2019 were highlighted, with the main classes represented in Figure 
+The lowest percentages of areas occupied by Caatinga vegetation were observed in 2015 (67.8%) and 2017 (68.7%), respectively. Compared to 2013, there was an average reduction of 2%, equivalent to 9123.65 ha of native forest (Caatinga), while in 2019, the reduction was only 0.45% (Table 
+In 2013, the areas occupied with pasture represented 11.7%, agriculture 7.0%, and the mosaic of agriculture and pasture 8.64%, while areas with urban infrastructure and water bodies presented an occupation of 1.06 and 1.40%, respectively (Figure 
+Drought is costly to Brazil, for it causes strong impacts on agriculture and cattle ranching. For example, the 2012-2013 drought resulted in economic losses of USD 1.5 billion for more than ten important crops in the region and USD 1.6 billion in cattle mortality 
+The agricultural and cattle ranching activity were significant in 2015, 2017, and 2019 with 29.6, 28.7, and 27.7%, respectively. Among the agricultural activities, the class of pastures (in this study, there is no detailed distinction between irrigated and non-irrigated pasture areas) was responsible for the largest occupied area, with values of 55,356 ha in 2015; 60,156 ha in 2017, and 60,176 ha in 2019 (see Table 
+The agriculture class in 2015, 2017, and 2019 showed territorial occupation of 34,209, 35,678, and 36,718 ha, respectively, with an average increase of 0.80% (3616 ha) compared to 2013 (Table 
+
+## Rainfall Variability in Land Cover Classes ##
+Analyzing the spatiotemporal rainfall dynamics in the region over the 30 days preceding the passage of the Landsat-8 satellite on the four assessment dates (5 October 2013, 12 November 2015, 16 October 2017, and 7 November 2019) allowed us to observe the variation in rainfall distribution and volume, whose average accumulated values were 5.63, 1.7, 0.59, and 10.4 mm, for the respective dates. Despite the low rainfall volume observed in the region, some areas showed a tendency for higher rainfall occurrence, which may be conditioned to the native vegetation and orographic effects of the region (Figure 
+
+## Vegetation Cover Indices of the Municipality ##
+Figure 
+The results reported here contribute to understanding water limitations and vegetation behavior. Due to the proximity of the São Francisco river, which supplies the irrigation systems, the areas of higher vegetation cover are found in the irrigated agriculture sites in the southern part of the municipality and the few remaining fragments of arboreal Caatinga, reaching average values of 58.71 ± 22.18% and 59.78 ± 18.94%, respectively, throughout the period under study (Figure 
+Santos et al. 
+It is essential to highlight that on 7 November 2019, there was an average increase of 46.81% of areas with V C higher than 50% in the northern part of the municipality (Figure 
+During the studied dates, the LAI varied between 0.00 and 3.3 m 2 m -2 (Figure 
+
+## Land Surface Temperature (LST) in the Studied Classes ##
+In the present study, the minimum LST values were seen in areas of water bodies, while the maximum LST values were seen in areas of exposed soils, located at points of pasture and degraded Caatinga, urban infrastructure (asphalt, concrete, and gravel surfaces), and agricultural areas undergoing soil preparation for cultivation (Figure 
+It can be observed that the average LST values for the dates studied were higher in the areas dominated by pasture (47.69 ± 1.47 • C), herbaceous Caatinga (47.28 ± 1.27 • C), and shrub Caatinga (46.07 ± 1.44 • C), even higher than those observed in areas with urban infrastructure (45.80 ± 1.52 • C) (Figure 
+On the other hand, it is observed, in general, that in areas dominated by arboreal Caatinga and agriculture, the average LST values are lower (38.99 ± 2.48 • C and 43.11 ± 2.30 • C, respectively) (Figure 
+
+## Variations of the Actual Evapotranspiration (ET a ) of Land Use Classes ##
+Rainfall regime directly influenced ET a , so that on 16 October 2017 (Figure 
+On the other hand, due to the effect of the increase in air temperature and atmospheric demand verified throughout the dry season in Petrolina, combined with the presence of preserved riparian forests along stretches of water bodies and continuous irrigation in crops, higher mean ET a values were observed in the arboreal Caatinga (4.73 ± 0.49 mm day -1 ) and agriculture (3.07 ± 1.23 mm day -1 ) classes. For presenting areas with irrigated and dry cultivation, the average values of this class become more variable. When there is a greater contribution of moisture added to more dense vegetation, there is a favoring of the local microclimate in the region 
+The shrub and herbaceous Caatinga classes showed greater heterogeneity indicated by the largest standard deviations (2.42 ± 0.76 mm day -1 ) and (1.46 ± 0.71 mm day -1 ), respectively, relative to the arboreal Caatinga class (Figure 
+The arboreal and shrub species play a fundamental eco-hydrological role, maintaining soil humidity and structuring its porosity, guaranteeing the maintenance of infiltration capacity and favoring the survival of species 
+
+## Statistical Relations between the Variables Studied and Land Use ##
+In this study, we performed a PCA of the environmental variables in relation to land use and land cover classes. Therefore, the first two components with eigenvalues greater than 1.0 were extracted separately for the years 2013, 2015, 2017, and 2019 (Figure 
+On the other hand, PC2 contributed more to the variability of the responses of the variables regarding the canopy interactions (LAI and V C ) due to the strong negative correlation with cultivated land (i.e., agriculture class) (Figure 
+The results of the analysis of variance (ANOVA) and multiple regression analysis of the established model are presented in Table 
+
+## Conclusions ##
+In this study, we point out a significant tendency to increase the agricultural areas, which results in the progressive decrease of the Brazilian Caatinga biome. The vegetation cover is directly influenced by the soil-water regime; years of higher rainfall result in a lower percentage of suppression of the native forest in the municipality of Petrolina, Pernambuco (Brazil). The areas with pasture class presented hotspots due to degradative processes and higher surface temperatures, influenced by the sensible heat flux. A gradual increase in LST is observed in the municipality and it may cause future risks to forest areas.
+The SEBAL algorithm used in a semi-arid environment is a helpful tool to determine the energy and mass fluxes in different ecosystems. Notably, the Caatinga biome has particularities in biophysical according to the land cover and soil exposure on intra and inter-annual scales. The heterogeneity of the surface of the municipality of Petrolina, as a function of land use and land cover patterns, alters the energy exchange with the atmosphere. Our results also suggest a simplified and validated model for ET a determination in a semi-arid environment. The regression model could accurately predict the spatial distribution of ET a , with high R 2 and LCCC and low RMSE value.
+Thus, it is possible to suggest that the implementation of agricultural activities in the Petrolina should be carried out in a planned and sustainable way in order to mitigate the impacts that anthropic action causes on the Caatinga, especially with the increased vulnerability of this biome to the desertification process. However, further research is needed to investigate the spatial variations of the types of crops covering the soil in the municipality, as well as the dynamics of fires and their impacts on the diversity of the Caatinga biome. Field surveys and the use of unmanned aerial systems (UAS) could provide more detailed information at an intermediate and fine scale. 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. 48% herbaceous, and the other 0.12% arboreal (see Figure 4 and Table 2). Table 2. Annual quantification of land use and land cover conditions from 2013 to 2019 for the semi-arid region of Petrolina
+
+2. Shrub Caatinga 235
+   Date: 18 233,919.88 234,688.22 238
+
+3. 
+
+4. A framework for deriving measures of chronic anthropogenic disturbance: Surrogate, direct, single and multi-metric indices in Brazilian Caatinga
+   Authors: , , , , , , , , , 
+   Date: 2018
+
+5. The use of remote sensing for reliable estimation of net radiation and its components: A case study for contrasting land covers in an agricultural hotspot of the Brazilian semiarid region
+   Authors: , , , , 
+   Date: 2020. 108052
+
+6. A Phytogeographical Metaanalysis of the Semiarid Caatinga Domain in Brazil
+   Authors: , , , 
+   Date: 2016
+
+7. Medicinal plants of the Caatinga, northeastern Brazil: Ethnopharmacopeia (1980-1990) of the late professor Francisco José de Abreu Matos
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+8. Fruiting phenology and consumption of zoochoric fruits by wild vertebrates in a seasonally dry tropical forest in the Brazilian Caatinga
+   Authors: , , , , 
+   Date: 2020
+
+9. Does irrigated mango cultivation alter organic carbon stocks under fragile soils in semiarid climate?
+   Authors: , , , , , , , 
+   Date: 2019
+
+10. Yield components of the new seedless table grape 'BRS Ísis' as affected by the rootstock under semi-arid tropical conditions
+   Authors: , , , 
+
+11. Updated single and dual crop coefficients for tree and vine fruit crops
+   Authors: , , , , , , 
+   Date: 2021. 106645
+
+12. Fuzzified hedging rules for a reservoir in the Brazilian semiarid region
+   Authors: , , 
+
+13. Drought in Northeast Brazil-Past, present, and future
+   Authors: , , 
+   Date: 2017
+
+14. Improving drought management in the Brazilian semiarid through crop forecasting
+   Authors: , , , , , , , , 
+   Date: 2018
+
+15. Composition of Caatinga Species under Anthropic Disturbance and Its Correlation with Rainfall Partitioning
+   Authors: , , , , , , 
+
+16. Anthropogenic disturbance in tropical forests can double biodiversity loss from deforestation
+   Authors: , , , , , , , , , 
+   Date: 2016
+
+17. Persistent fire foci in all biomes undermine the Paris Agreement in Brazil
+   Authors: , , , , , , , , , , 
+   Date: 2020. 16246
+
+18. Intercropping forage cactus and sorghum in a semi-arid environment improves biological efficiency and competitive ability through interspecific complementarity
+   Authors: , , , , , , , , , 
+   Date: 2021. 104464
+
+19. Rainfall extremes and drought in Northeast Brazil and its relationship with El Niño-Southern Oscillation
+   Authors: , , , , , , , , , , 
+
+20. Desertification trends in the Northeast of Brazil over the period 2000-2016
+   Authors: , , , , , 
+   Date: 2018
+
+21. Identifying areas susceptible to desertification in the Brazilian northeast
+   Authors: , , , , , , , , , 
+   Date: 2015
+
+22. Land cover changes and greenhouse gas emissions in two different soil covers in the Brazilian Caatinga
+   Authors: , , , , , , , 
+   Date: 2016
+
+23. Water productivity assessments with Landsat 8 images in the Nilo Coelho irrigation scheme
+   Authors: , , , 
+
+24. Water indicators based on SPOT 6 satellite images in irrigated area at the Paracatu River Basin, Brazil
+   Authors: , , , , 
+   Date: 2017
+
+25. Surface albedo as a proxy for land-cover clearing in seasonally dry forests: Evidence from the Brazilian Caatinga
+   Authors: , , , , , 
+
+26. Assessment of Caatinga response to drought using Meteosat-SEVIRI Normalized Difference Vegetation Index
+   Authors: , , , , 
+   Date: 2008-2016. 2019
+
+27. B. Spatial and temporal dynamics of soil moisture for surfaces with a change in land use in the semi-arid region of Brazil
+   Authors: , , , , , , , 
+   Date: 2020. 104457
+
+28. The future of evapotranspiration: Global requirements for ecosystem functioning, carbon and climate feedbacks, agricultural management, and water resources
+   Authors: , , , , , , , , , 
+   Date: 2017
+
+29. Optimal management of cattle grazing in a seasonally dry tropical forest ecosystem under rainfall fluctuations
+   Authors: , , , , , , 
+   Date: 2020
+
+30. Disclosing contrasting scenarios for future land cover in Brazil: Results from a high-resolution spatiotemporal model
+   Authors: , , , , , , 
+   Date: 2020
+
+31. Land-use dynamics in a Brazilian agricultural frontier region
+   Authors: , , , , 
+   Date: 1985-2017. 2020. 104740
+
+32. The need for an understory decision support system for temperate deciduous forest management
+   Authors: , , , , , 
+   Date: 2021. 118634
+
+33. A sustainable agricultural landscape model for tropical drylands. Land Use Policy
+   Authors: , , , , , , , , , , 
+   Date: 2021
+
+34. Regional Estimation of Remotely Sensed Evapotranspiration Using the Surface Energy Balance-Advection (SEB-A) Method
+   Authors: , , , , , 
+
+35. Basin scale rainfall-evapotranspiration dynamics in a tropical semiarid environment during dry and wet years
+   Authors: , , , , , , , , 
+   Date: 2019
+
+36. Water productivity assessments for dwarf coconut by using Landsat 8 images and agrometeorological data
+   Authors: , , , , 
+   Date: 2019
+
+37. Estimativa da evapotranspiração em área urbana através de imagens digitais TM-Landsat 5
+   Authors: , , , 
+   Date: 2019
+
+38. Spatio-temporal monitoring of soil and plant indicators under forage cactus cultivation by geoprocessing in Brazilian semi-arid region
+   Authors: , , , , , , , , , 
+   Date: 2021. 103155
+
+39. Open-source Google Earth Engine 30-m evapotranspiration rates retrieval: The SEBALIGEE system
+   Authors: , 
+   Date: 2020. 104845
+
+40. Detecting linear trend of reference evapotranspiration in irrigated farming areas in Brazil's semiarid region
+   Authors: , , , , 
+   Date: 2019
+
+41. IBGE Instituto Brasileiro de Geografia e Estatística
+   Date: August 2021
+
+42. National Aeronautics and Space Administration
+   Authors: 
+   Date: August 2021
+
+43. Estimation of evapotranspiration for different land covers in a Brazilian semi-arid region: A case study of the Brígida River basin
+   Authors: , , , 
+   Date: 2017
+
+44. Progress in Operational Estimation of Regional Evapotranspiration Using Satellite Imagery
+   Authors: 
+   Date: 2003
+
+45. Performance of Satellite-Based Evapotranspiration Models in Temperate Pastures of Southern Chile
+   Authors: , , 
+   Date: 2020
+
+46. Determination of evapotranspiration and crop coefficient of cactus pear (Opuntia ficus-indica Mill.) with an energy balance technique
+   Authors: , , 
+   Date: 2013
+
+47. Response of global land evapotranspiration to climate change, elevated CO 2 , and land use change. Agric
+   Authors: , , , , , , , , , 
+
+48. Unified representation of the C3, C4, and CAM photosynthetic pathways with the Photo3 model
+   Authors: , , 
+   Date: 2018
+
+49. Assessment of an Automated Calibration of the SEBAL Algorithm to Estimate Dry-Season Surface-Energy Partitioning in a Forest-Savanna Transition in Brazil
+   Authors: , , , , , , 
+
+50. SEBAL (Surface Energy Balance Algorithms for Land)-Idaho Implementation, Advanced Training and Users Manual, Version 1.0; Idaho Department of Water Resources
+   Authors: , , , , 
+   Date: 2002
+
+51. SEBAL-based sensible and latent heat fluxes in the irrigated Gediz Basin
+   Authors: 
+   Date: 2000
+
+52. SEBAL Model with Remotely Sensed Data to Improve Water-Resources Management under Actual Field Conditions
+   Authors: , , , , , 
+   Date: 2005
+
+53. Satellite-Based Energy Balance for Mapping Evapotranspiration with Internalized Calibration (METRIC)-Model
+   Authors: , , 
+   Date: 2007
+
+54. Long time series of daily evapotranspiration in China based on the SEBAL model and multisource images and validation
+   Authors: , , , , , 
+   Date: 2021
+
+55. Impact of urban decadal advance on land use and land cover and surface temperature in the city of Maceió
+   Authors: , , , 
+   Date: 2019. 104026
+
+56. Monitoring the Vernal Advancement and Retrogradation (Greenwave Effect) of Natural Vegetation
+   Authors: , , , , 
+   Date: 1974
+
+57. Grassland degradation in Northern Tibet based on remote sensing data
+   Authors: , , , , , , , 
+   Date: 2006
+
+58. Remote Sensing Monitoring of Rice Fields: Towards Assessing Water Saving Irrigation Management Practices
+   Authors: , , 
+
+59. Reviewing SEBAL input parameters for assessing evapotranspiration and water productivity for the Low-Middle São Francisco River basin, Brazil: Part B: Application to the regional scale
+   Authors: , , , 
+   Date: 2009
+
+60. Local temperature response to land cover and management change driven by non-radiative processes
+   Authors: , , , , , 
+   Date: 2017
+
+61. Thermal-infrared technology for local and regional scale irrigation analyses in horticultural systems
+   Authors: , , , , , 
+   Date: 2008
+
+62. Energy and water balance measurements for water productivity analysis in irrigated mango trees
+   Authors: , , , , , 
+   Date: 2008
+
+63. Rainfall variability in the Brazilian northeast biomes and their interactions with meteorological systems and ENSO via CHELSA product
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+64. Reviewing SEBAL input parameters for assessing evapotranspiration and water productivity for the Low-Middle São Francisco River basin, Brazil: Part A: Calibration and validation
+   Authors: , , , 
+   Date: 2009
+
+65. Köppen's climate classification map for Brazil
+   Authors: , , , , 
+   Date: 2013
+
+66. Present and future Köppen-Geiger climate classification maps at 1-km resolution
+   Authors: , , , , , 
+   Date: 2018. 180214
+
+67. Climatology and trend analysis of extreme precipitation in subregions of Northeast Brazil
+   Authors: , , 
+   Date: 2017
+
+68. Spatiotemporal climatic analysis in Pernambuco State
+   Authors: , , , , , , , , , , , 
+
+69. Soil fertility changes in vineyards of a semiarid region in Brazil
+   Authors: , , , , 
+   Date: 2017
+
+70. Shading and intercropping with buffelgrass pasture affect soil biological properties in the Brazilian semi-arid region
+   Authors: , , , , , 
+   Date: 2019
+
+71. Optimizing multifunctional agroecosystems in irrigated dryland agriculture to restore soil carbon-Experiments and modelling
+   Authors: , , , , , , , , , 
+   Date: 2020. 138072
+
+72. 
+   Date: 29 August 2021
+
+73. Seasonal variation of surface radiation and energy balances over two contrasting areas of the seasonally dry tropical forest (Caatinga) in the Brazilian semi-arid
+   Authors: , , , , , , , , , 
+   Date: 2020
+
+74. 
+   Authors: , , , , , , , , , , 
+   Date: 2014
+
+75. Climatic characteristics of the 2010-2016 drought in the semiarid Northeast Brazil region
+   Authors: , , , , , 
+   Date: 2018
+
+76. Landsat Missions Timeline
+   Authors: 
+   Date: August 2021
+
+77. A soil-adjusted vegetation index (SAVI)
+   Authors: 
+   Date: 1988
+
+78. Spatial-temporal dynamics of the Caatinga vegetation cover by remote sensing in municipality of the Brazilian semi-arid
+   Authors: , , , , , , , 
+   Date: 2019
+
+79. Spatial-temporal dynamics of Caatinga vegetation cover by remote sensing in the Brazilian semiarid region
+   Authors: , , , , , , 
+
+80. Short-term grazing and its impacts on soil and pasture degradation
+   Authors: , , , , , , , , 
+   Date: 2020
+
+81. A remote sensing surface energy balance algorithm for land (SEBAL).: Part 2: Validation
+   Authors: , , , , , , 
+   Date: 1998
+
+82. A remote sensing surface energy balance algorithm for land (SEBAL). 1
+   Authors: , , , 
+   Date: 1998
+
+83. Procedures for calculation of the albedo with OLI-Landsat 8 images: Application to the Brazilian semi-arid
+   Authors: , , , , , 
+   Date: 2016
+
+84. Estimation of precipitable water over the United States for application to the division of solar radiation into its direct and diffuse components
+   Authors: , 
+   Date: 1990
+
+85. Landsat MSS and TM post-calibration dynamic ranges, exoatmospheric reflectances and at-satellite temperatures
+   Authors: , 
+   Date: 1986
+
+86. Spatial-scale effect on the SEBAL model for evapotranspiration estimation using remote sensing data
+   Authors: , , , , , 
+   Date: 2013
+
+87. Remote estimation of terrestrial evapotranspiration by Landsat 5 TM and the SEBAL model in cold and high-altitude regions: A case study of the upper reach of the Shule River Basin
+   Authors: , , , 
+   Date: 2017
+
+88. Analysis of energy fluxes and vegetation-atmosphere parameters in irrigated and natural ecosystems of semi-arid Brazil
+   Authors: , , , , 
+   Date: 2008
+
+89. The Modified SEBAL for Mapping Daily Spatial Evapotranspiration of South Korea Using Three Flux Towers and Terra MODIS Data
+   Authors: , 
+
+90. MapBiomas Brasil Plataforma de Mapas e Dados
+   Date: 29 August 2021
+
+91. Comparison of Global Land Cover Datasets for Cropland Monitoring
+   Authors: , , , 
+
+92. QGIS Geographic Information System; Open Source Geospatial Foundation Project; QGIS: Chur
+   Authors: 
+   Date: 2021
+
+93. The application of electronic computers to factor analysis
+   Authors: 
+   Date: 1960
+
+94. Australia lacks stem succulents but is it depauperate in plants with crassulacean acid metabolism (CAM)?
+   Authors: , , , , , , 
+   Date: 2016
+
+95. Mapping cation exchange capacity using a quasi-3d joint inversion of EM38 and EM31 data
+   Authors: , , , , 
+   Date: 2020, 200, 104618
+
+96. A Concordance Correlation Coefficient to Evaluate Reproducibility
+   Authors: , 
+   Date: 1989
+
+97. Soil exchangeable cations estimation using Vis-NIR spectroscopy in different depths: Effects of multiple calibration models and spiking
+   Authors: , , , 
+   Date: 2021. 105990
+
+98. R Core Team R: The R Project for Statistical Computing
+   Date: August 2021
+
+99. Soil occupation and atmospheric variations over Sobradinho Lake area. Part two: A regional modeling study
+   Authors: , , 
+   Date: 2006
+
+100. Pilot monitoring of caatinga spatial-temporal dynamics through the action of agriculture and livestock in the brazilian semiarid
+   Authors: , , , , , , , , , 
+   Date: 2020. 100353
+
+101. 
+   Authors: , , , 
+   Date: 2014
+
+102. Patterns of species richness and abundance among cactus communities receiving different rainfall levels in the semiarid region of Brazil
+   Authors: , , 
+   Date: 2016
+
+103. Monitoring vegetative drought dynamics in the Brazilian semiarid region
+   Authors: , , , 
+   Date: 2015
+
+104. Carbon exchange fluxes over peatlands in Western Siberia: Possible feedback between land-use change and climate change
+   Authors: , , , 
+   Date: 2016
+
+105. Representação matemática do comportamento intra-anual do NDVI no Bioma Caatinga
+   Authors: , , , , 
+   Date: 2020
+
+106. Causes and consequences of seasonal changes in the water flow of the São Francisco river in the semiarid of Brazil
+   Authors: , , , , , , , , , 
+
+107. Monitoramento da seca 2011/2012 no Nordeste brasileiro a partir do satélite SPOT-Vegetation e TRMM
+   Authors: , , , , 
+   Date: 2014
+
+108. Use of MSI/Sentinel-2 and airborne LiDAR data for mapping vegetation and studying the relationships with soil attributes in the Brazilian semi-arid region
+   Authors: , , , , 
+   Date: 2018
+
+109. Genotypic differences relative photochemical activity, inorganic and organic solutes and yield performance in clones of the forage cactus under semi-arid environment
+   Authors: , , , , , , , , , , , 
+   Date: 2021
+
+110. Realistic and simplified models of plant and leaf area indices for a seasonally dry tropical forest
+   Authors: , , , , 
+   Date: 2020. 101992
+
+111. Leaf area index of Caatinga biome and its relationship with hydrological and spectral variables
+   Authors: , , 
+   Date: 2019. 107705
+
+112. Importance of soil-water to the Caatinga biome
+   Authors: , , , 
+   Date: 2016
+
+113. Spatial Variability and Temporal Heterogeneity of Surface Urban Heat Island Patterns and the Suitability of Local Climate Zones for Land Surface Temperature Characterization
+   Authors: , , , , 
+
+114. Profile and concentric zonal analysis of relationships between land use/land cover and land surface temperature: Case study of Shenyang
+   Authors: , , , , 
+   Date: 2017
+
+115. Monitoring land surface temperature relationship to land use/land cover from satellite imagery in Maraqeh County
+   Authors: , , , , 
+   Date: 2013
+
+116. Dinâmica do balanço de energia sobre o açude Orós e suas adjacências
+   Authors: , , 
+   Date: 2012
+
+117. Parâmetros biofísicos obtidos por sensoriamento remoto em região semiárida do estado do Rio Grande do Norte
+   Authors: , , , , , , 
+   Date: 2014
+
+118. Remote sensing for irrigation water management in the semi-arid Northeast of Brazil
+   Authors: , , 
+   Date: 2009
+
+119. Shrub encroachment alters the spatial patterns of infiltration
+   Authors: , , 
+   Date: 2015
+
+120. Functional responses of the herbaceous plant community explain ecohydrological impacts of savanna shrub encroachment
+   Authors: , , , 
+   Date: 2019, 39, 125458
+
+121. Environmental and biophysical controls of evapotranspiration from Seasonally Dry Tropical Forests (Caatinga) in the Brazilian Semiarid
+   Authors: , , , , , , , , , 
+
+122. Spatio-temporal patterns of energy exchange and evapotranspiration during an intense drought for drylands in Brazil
+   Authors: , , , , , , , , , 
+   Date: 2020. 101982
+
+123. Assessment of automated evapotranspiration estimates obtained using the GP-SEBAL algorithm for dry forest vegetation (Caatinga) and agricultural areas in the Brazilian semiarid region
+   Authors: , , , , 
+   Date: 2021. 106863
+

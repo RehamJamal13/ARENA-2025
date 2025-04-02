@@ -1,0 +1,483 @@
+================================================================================
+TITLE: Watershed Hydrological Response to Combined Land Use/Land Cover and Climate Change in Highland Ethiopia: Finchaa Catchment
+================================================================================
+
+AUTHORS:
+- Wakjira Takala Dibaba
+- Tamene Demissie
+- Konrad Miegel
+
+ABSTRACT:
+Land use/land cover (LULC) and climate change affect the availability of water resources by altering the magnitude of surface runoff, aquifer recharge, and river flows. The evaluation helps to identify the level of water resources exposure to the changes that could help to plan for potential adaptive capacity. In this research, Cellular Automata (CA)-Markov in IDRISI software was used to predict the future LULC scenarios and the ensemble mean of four regional climate models (RCMs) in the coordinated regional climate downscaling experiment (CORDEX)-Africa was used for the future climate scenarios. Distribution mapping was used to bias correct the RCMs outputs, with respect to the observed precipitation and temperature. Then, the Soil and Water Assessment Tool (SWAT) model was used to evaluate the watershed hydrological responses of the catchment under separate, and combined, LULC and climate change. The result shows the ensemble mean of the four RCMs reported precipitation decline and increase in future temperature under both representative concentration pathways (RCP4.5 and RCP8.5). The increases in both maximum and minimum temperatures are higher for higher emission scenarios showing that RCP8.5 projection is warmer than RCP4.5. The changes in LULC brings an increase in surface runoff and water yield and a decline in groundwater, while the projected climate change shows a decrease in surface runoff, groundwater and water yield. The combined study of LULC and climate change shows that the effect of the combined scenario is similar to that of climate change only scenario. The overall decline of annual flow is due to the decline in the seasonal flows under combined scenarios. This could bring the reduced availability of water for crop production, which will be a chronic issue of subsistence agriculture. The possibility of surface water and groundwater reduction could also affect the availability of water resources in the catchment and further aggravate water stress in the downstream. The highly rising demands of water, owing to socio-economic progress, population growth and high demand for irrigation water downstream, in addition to the variability temperature and evaporation demands, amplify prolonged water scarcity. Consequently, strong land-use planning and climate-resilient water management policies will be indispensable to manage the risks.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Our world is functioning at a mixture of complex systems interacting at a variety of spatial and temporal scales in which both the natural and human factors are thoroughly intertwined. The strong relationship between land use, water and climate from these systems has contributed to prominent concern to the basic planet characteristics and process. The productivity of land, biodiversity, aridity
+The LULCC studies in different parts of Ethiopia revealed LULCC processes are intense in the highland parts, driving unprecedented changes at different scales [2, 
+Even though the availability of land and water in Africa is highest in the world, some areas of sub-Saharan Africa are seriously threatened through overuse because of the ever-increasing needs of the growing population and inappropriate land management practices 
+The fact that the country's relatively abundant water resources have played a minimal role in the Nation's economic development. The Ethiopian government intends to place a priority on water resource development as an essential strategy for economic and social development of the country 
+Consequently, studies that consider both the isolated and combined effects of LULCC and climate changes of the specific area are required at regional and local scales as drivers of changes, not limited to global and regional levels, but also local specific. Specifically, this research has been initiated to investigate the watershed hydrological response to the LULCC and climate changes. Integrated approaches of CA-Markov analysis for LULC prediction and ensemble mean of four regional climate models (RCMs) in the coordinated regional climate downscaling experiment (CORDEX)-Africa were used for the future climate change scenarios. Then, the Soil and Water Assessment Tool (SWAT) hydrological modelling was used for the evaluation of isolated and combined LULCC and climate change impacts. Specifically, this study was aimed at 
+
+## Materials and Methods ##
+
+
+## Study Area ##
+The study was conducted in the upper Blue Nile Basin, Finchaa sub-basin in Oromia Regional State, Ethiopia. Finchaa sub-basin lies in 9 • 10' to 10 • 00' North latitude and 37 • 00' and 37 • 40' East longitude covering 3781 km 2 areas. The catchment is characterized by high topographic relief, with elevation ranging from 851 to 3213 m above sea level. The area has large upstream water potential sites, intensive irrigable downstream lands, and high hydropower potential. The sub-basin contains three watersheds; Fincha, Amerti and Neshe 
+Water 2020, 
+
+## Materials and Methods ##
+
+
+## Study Area ##
+The study was conducted in the upper Blue Nile Basin, Finchaa sub-basin in Oromia Regional State, Ethiopia. Finchaa sub-basin lies in 9°10' to 10°00' North latitude and 37°00' and 37°40' East longitude covering 3781 km 2 areas. The catchment is characterized by high topographic relief, with elevation ranging from 851 to 3213 m above sea level. The area has large upstream water potential sites, intensive irrigable downstream lands, and high hydropower potential. The sub-basin contains three watersheds; Fincha, Amerti and Neshe 
+Agro ecologically, Finchaa sub-basin is characterized by tepid to cool sub-humid mid highlands in the north-western, moist mid highlands in the south-eastern, and hot to warm moist lowlands in the north-eastern parts of the catchment.
+
+## Data Sources and Methodology ##
+
+
+## Data ##
+A 30 × 30 m resolution of the Digital Elevation Model (DEM) obtained from the United States Geological Survey (USGS) at https://earthexplorer.usgs.gov/ was used to delineate the watershed of the study area. Moreover, it is used for slope classification, which was the basis for the Hydrological Response Unit (HRU) generation. The areas of different land slope classes as shown in Figure 
+Agro ecologically, Finchaa sub-basin is characterized by tepid to cool sub-humid mid highlands in the north-western, moist mid highlands in the south-eastern, and hot to warm moist lowlands in the north-eastern parts of the catchment.
+
+## Data Sources and Methodology ##
+
+
+## Data ##
+A 30 × 30 m resolution of the Digital Elevation Model (DEM) obtained from the United States Geological Survey (USGS) at https://earthexplorer.usgs.gov/ was used to delineate the watershed of the study area. Moreover, it is used for slope classification, which was the basis for the Hydrological Response Unit (HRU) generation. The areas of different land slope classes as shown in Figure 
+Water 2020, 12, 1801 6 of 25
+
+## Impact Assessment Framework ##
+The hydrological responses of Finchaa catchment to the impacts of LULCC and climate change were investigated for two future periods of 2021-2050 and 2051-2080. The baseline period consists of the years 1986-2015. Three simulation scenarios were developed for the independent and combined effects of the LULCC and climate change. The first scenario (S1) considers only LULCC, the second scenario (S2) considers only climate change and the third scenario (S3) considers both LULCC and climate change (the combination of the two). Details of the scenarios are depicted in Table 
+In the above equation, Po is the proportion of correctly simulated cells; Pc is the expected proportion correction by chance between the observed and simulated map. If Kappa ≤ 0.5 shows rare agreement, 0.5 ≤ Kappa ≤ 0.75 shows a medium level of agreement, 0.75 ≤ Kappa ≤ 1 shows a high level of agreement and Kappa = 1 for perfect agreement.
+
+## Climate Change Scenarios ##
+After evaluating the performance of six Regional Climate Models (RCMs) in Coordinated Regional Climate Downscaling Experiment (CORDEX) Africa, four RCMs showing a better performance were selected. Detail analysis of the CORDEX evaluation is presented in Dibaba et al. 
+The RCMs used in this study were: CCLM4-8, HIRHAM5, RACMO22T and RCA4, fed by data of the two representative concentration pathways (RCP) scenarios high emission scenario (RCP8.5) and mid-range mitigation emission (RCP4.5). The years 2021-2050 and 2051-2080 served as future scenario periods and the period from 1986 to 2015 as a historical baseline to evaluate the climate changes. Other weather variables, including solar radiation, relative humidity and wind speed in baseline/historical period were considered in the future scenarios without making any change as the changes in these variables may not have a significant impact in modelling the climate change scenarios on local hydrology 
+
+## Bias Correction ##
+The climate model data for hydrological modelling (CMhyd) 
+The distribution mapping (DM) uses a transfer function to adjust the cumulative distribution of estimated data to the cumulative distribution of rain gauges 
+
+## Hydrological Model ##
+Soil and Water Assessment Tool (SWAT) is a physically-based semi-distributed model that operates on a continues time scale 
+(2)
+where, SWt is the final soil water content(mm), SWo is the initial water content (mm), t is the time (days), Rday is the amount of precipitation on day i (mm), Qsurf is the amount of surface runoff on day i (mm), Ea is the amount of evapotranspiration on day i (mm), Wseep is the amount of water entering the vadose zone from the soil profile on day i (mm) and Qgw is the amount of return flow on day i (mm).
+In the SWAT model, the simulation of the hydrological process begins with watershed delineation and generating streamflow networks. With a 30 m resolution DEM, Finchaa watershed is delineated into 25 sub-basins and a multiple HRU was defined with classes of 10% land use, 20% soil and 10% slope. Accordingly, 231 HRUs were created. Then, with the input of weather data from five stations (Fincha, Hareto, Kombolcha, Nashe and Shambu), the SWAT model setup was ready for the first simulation, which was used for model evaluation. Shambu station, consisting of all the climate variables, was considered a weather generator.
+Before using the output of the SWAT simulation for analysis, the performance of the model was evaluated for the catchment. Although distributed hydrological models can relate spatial changes of LULCC to the hydrological process simulation, it is difficult to transform many calibrated parameters into time-variant conditions of the future, especially if empirical parameters are used 
+
+## Sensitivity Analysis, Calibration and Validation ##
+Owing to a large number of flow parameters in SWAT, identifying the most sensitive parameters is necessary to improve the calibration of the hydrological model. Through the sensitivity analysis, the most sensitive parameters that strongly influence the flow process will be identified. The Sequential Uncertainty Fitting (SUFI-2) embedded in the SWAT-CUP (Calibration and Uncertainty Program) was used to achieve the sensitivity analysis, calibration and validation 
+Calibration of the hydrological model is the process of estimating model parameters by comparing the model prediction with the observed data for the same condition 
+The fitness of the model simulation with the observed streamflow was expressed by statistics like coefficients of determination (R 2 ), Nash-Sutcliffe efficiency (NSE), percent bias (PBIAS) and the ratio of the root-mean-square error to the standard deviation of measured data (RSR). The model performance ratings were based on the statistics recommended by Moriasi et al. 
+Water 2020, 12, 1801
+In the above equations, Qm is the measured discharge, Qs is the simulated discharge, Qm is the average measured discharge, and Qs is the average simulated discharge.
+The propagation of uncertainties in model outputs in SUFI-2, expressed as the 95% probability distribution, calculated by the 2.5% and 97.5% levels of the cumulative distributions of output variables, is considered as 95PPU 
+
+## Results and Discussion ##
+
+
+## CA-Markov Model Performance and Land Use/Land Cover Change Projections ##
+The observed LULC1987 and LULC2002 were used to facilitate the simulation of LULC2017 using CA-Markov model. Then, the observed LULC2017 were cross-compared with the simulated LULC2017 to evaluate the performance of the model using the kappa index. Accordingly, the calculated Kappa index is calculated as 0.87. The result reveals a high level of agreement between the simulated and observed LULC2017, showing the CA-Markov model is strong to simulate the future LULC in the study area.
+The LULC classes of Finchaa catchment were grouped into eight classes: agriculture, commercial farm, forestland, grazing land, rangeland, urban and built up, swampy and water bodies. From the land use maps of 2002 and 2017, Finchaa catchment was characterized by expansion of intensive agriculture and urbanization resulting in a natural vegetation decline. Commercial farm, urban and built-up and agricultural lands have increased as shown by Table 
+The SWAT model requires the LULC classes to be reclassified in the code that the model recognizes. Accordingly, the LULC classes are defined with their equivalent representative, as shown in Figure 
+
+## Hydrological Model Performance ##
+
+
+## Sensitivity Analysis, Calibration and Validation ##
+Sensitivity analysis for the simulated streamflow was performed using a daily observed flow to identify the most sensitive parameter with strong influence on model outputs. Initially, parameters related to surface runoff, groundwater, geomorphology, evaporation and soil water were considered and 11 parameters were identified as the most sensitive parameters for calibration. The given ranks are shown in Table 
+
+## Hydrological Model Performance ##
+
+
+## Sensitivity Analysis, Calibration and Validation ##
+Sensitivity analysis for the simulated streamflow was performed using a daily observed flow to identify the most sensitive parameter with strong influence on model outputs. Initially, parameters related to surface runoff, groundwater, geomorphology, evaporation and soil water were considered and 11 parameters were identified as the most sensitive parameters for calibration. The given ranks are shown in Table 
+The calibration results on mean monthly flow show that SWAT model is able to capture the observed streamflow with R 2 , NSE, PBIAS and RSR of 0.71, 0.71, -1.1, and 0.54 respectively. The average monthly flow validation indicates R 2 , NSE, PBIAS and RSR of 0.81, 0.76, 14.3 and 0.49 respectively. This indicates that the performance of the SWAT model in the validation is good enough to simulate the stream flow in the Finchaa catchment. Furthermore, p-factor and R-factor statistics showed good agreement with 0.86 and 0.77 during calibration and 0.73, and 0.7 during validation, respectively. Overall, the statistics for goodness fit shows good agreement between the observed and simulated average monthly flow. However, the model is not able to simulate all peak flows well, as shown in Figure 
+
+## Climate Change Projections of the RCMs ##
+To illustrate how each RCMs predicted precipitation and temperature, the projection of individual RCMs and ensemble mean of the RCMs were analyzed. The bias-corrected precipitation, and temperature within distribution mapping for future scenarios, are compared to the baseline data sets . Further, the hydrological responses of the catchment are analyzed by quantifying and comparing the future water balance components (surface runoff, groundwater flow, total water yield and evapotranspiration).  
+
+## Climate Change Projections of the RCMs ##
+To illustrate how each RCMs predicted precipitation and temperature, the projection of individual RCMs and ensemble mean of the RCMs were analyzed. The bias-corrected precipitation, and temperature within distribution mapping for future scenarios, are compared to the baseline data sets . Further, the hydrological responses of the catchment are analyzed by quantifying and comparing the future water balance components (surface runoff, groundwater flow, total water yield and evapotranspiration).
+
+## Rainfall ##
+The individual and ensemble mean of the four RCMs were used to assess climate change in two future scenarios; near future (2021-2050) and mid future (2051-2080) with respect to the baseline period (1986-2015) under RCP4.5 and RCP8.5. The results of the projected precipitation by the individual RCMs show a different degree of precipitation changes. Except for HIRHAM5 in mid-term, all the RCMs show precipitation decline under both scenarios. According to CCLM4-8, precipitation decreases by -12.67% under RCP4.5 in near future and -27.47% under RCP8.5 scenarios in a midterm. The highest decline of the precipitation was simulated under RCP8.5 in a mid-term with CCLM4-8 and the lowest decline by HIRHAM5 under RCP4.5 in a midterm. HIRHAM5 shows that precipitation will increase under RCP8.5 scenarios. Summary of RCMs precipitation projections was presented in Table 
+Changes in projected precipitation are more profound on seasonal bases compared to the annual bases in the catchment. The projected precipitation shows a declining trend in all seasons, except in April by RCP8.5, for both future time horizons and August by RCP4.5 in a near-future scenario. However, the changes are projected higher in the dry season than a wet season as shown by Figure 
+precipitation decreases by -12.67% under RCP4.5 in near future and -27.47% under RCP8.5 scenarios in a midterm. The highest decline of the precipitation was simulated under RCP8.5 in a mid-term with CCLM4-8 and the lowest decline by HIRHAM5 under RCP4.5 in a midterm. HIRHAM5 shows that precipitation will increase under RCP8.5 scenarios. Summary of RCMs precipitation projections was presented in Table 
+Changes in projected precipitation are more profound on seasonal bases compared to the annual bases in the catchment. The projected precipitation shows a declining trend in all seasons, except in April by RCP8.5, for both future time horizons and August by RCP4.5 in a near-future scenario. However, the changes are projected higher in the dry season than a wet season as shown by Figure 
+The results of precipitation projections in this study are consistent with the results presented by climate change studies 
+
+## Temperature ##
+The variation of projected future maximum and minimum temperature is presented in Table 
+The changes in projected temperature were not only expected to vary annually, but they also vary in all seasons. However, the seasonal variations are higher for the minimum temperature than the maximum temperature, as shown in Figure 
+Like the annual changes, the highest seasonal rise in temperature is expected by the high emission scenario than the medium emission scenario. Likewise, the highest rise in maximum and minimum temperature is expected in the midterm scenario (2051-2080) than the near future (2021-2050).
+higher in the wet season (June, July, and August). The highest seasonal rise of maximum temperature is reported RCP 8.5 during 2051-2080 while RCP 4.5 reported the lowest rise during 2021-2050.
+Like the annual changes, the highest seasonal rise in temperature is expected by the high emission scenario than the medium emission scenario. Likewise, the highest rise in maximum and minimum temperature is expected in the midterm scenario (2051-2080) than the near future (2021-2050). 
+
+## Watershed Hydrological Responses to Land Use/Land Cover and Climate Change ##
+
+
+## Impacts of Land Use/Land Cover Change ##
+The hydrological responses of the catchment to LULCC was investigated with two LULCC scenarios; first scenario for LULCC of 2017 to 2036 and second scenario for LULCC of 2017 to 2055 with the base land use map of 2017. The hydrological responses of the watershed were considered in terms of the process contributs to the annual surface runoff, annual groundwater, total water yield and potential evapotranspiration as shown in Table 
+The highest increase in surface flow and decline of groundwater recharge is associated with the highest expansion of agricultural lands and urban expansion and decline of forest and shrubland. This reveals a massive conversion of LULC to intensive agriculture and settlements will reduce the soil infiltrations capacity, causing a large portion of rainfall directly changed to surface runoff. The reduction of soil water infiltration, in turn, causes groundwater flow decline. Furthermore, the increasing demand for the growing population to use groundwater could additionally contribute to the decline of groundwater by increasing groundwater withdrawal. The recent evidence by 
+The increase in surface water has increased the total water yield of the catchment. This indicates that degraded watersheds can accelerate surface runoff by reducing both the retention as soil water and groundwater recharge. Consequently, the catchment will face severe soil erosion, landslides and flash floods. This could become a great concern where mega hydropower projects exist. Overall, surface runoff, water yield and potential evapotranspiration were found to be more sensitive than the groundwater flow in Finchaa catchment under LULCC.
+The findings of the study are consistent with various research studies conducted in other catchments. For instance, Gashaw et al. 
+The findings of the study are consistent with various research studies conducted in other catchments. For instance, Gashaw et al. 
+
+## Impacts of Climate Change ##
+Changes in rainfall and temperature were used to predict the impacts of climate change on water balance components of the catchment. Consequently, the projected changes in mean annual precipitation and temperature, under the two RCPs, caused a significant variation in the projected water balance components of Finchaa catchment.
+SWAT simulations for the near future and mid future showed that the decline of precipitation and increase temperature will lead to reduced surface flow, groundwater and overall water yield (Table 
+vulnerability of land to soil erosion, which reduced the water resources of the catchment.
+
+## Impacts of Climate Change ##
+Changes in rainfall and temperature were used to predict the impacts of climate change on water balance components of the catchment. Consequently, the projected changes in mean annual precipitation and temperature, under the two RCPs, caused a significant variation in the projected water balance components of Finchaa catchment.
+SWAT simulations for the near future and mid future showed that the decline of precipitation and increase of temperature will lead to reduced surface flow, groundwater and overall water yield (Table 
+The spatial distribution of the hydrological process under the projected climate change for RCP4.5 and RCP 8.5 is presented in Figure 
+The increase in PET due to high-temperature increase coupled with decreasing precipitation could also lead to reduced soil moisture, which is required for plant growth and groundwater storage. This could imply the reduced availability of water for crop production, which will become chronic to the farmers in the catchment whose livelihood is based on agriculture alone. Further, an increase in temperature led to increased PET, this in turn, resulted in an increased need for irrigation.
+Climate change studies on Africa, sub-Sahara, in particular, confirmed similar findings as climate projections show a range of warming trends in inland subtropics, a frequent occurrence of Generally, the decrease in average annual flow over the catchment could be due to the annual and seasonal decrease of precipitation and increase in temperature under both scenarios. The possibility of surface water, groundwater and total water yield reduction in the catchment could affect the availability of water resources in the catchment and further aggravate water stress in the downstream. The acceleration of the increasing water abstractions could also contribute to the further decline in water resources besides the climate change pressure.
+The increase in PET due to high-temperature increase coupled with decreasing precipitation could also lead to reduced soil moisture, which is required for plant growth and groundwater storage. This could imply the reduced availability of water for crop production, which will become chronic to the farmers in the catchment whose livelihood is based on agriculture alone. Further, an increase in temperature led to increased PET, this in turn, resulted in an increased need for irrigation.
+Climate change studies on Africa, sub-Sahara, in particular, confirmed similar findings as climate projections show a range of warming trends in inland subtropics, a frequent occurrence of extreme heat events, increasing aridity and changes in rainfall 
+The finding also confirms the findings of Beyene et al. 
+The study by Shiferaw et al. 
+
+## Impacts of Land Use/Land Cover and Climate Change ##
+Although the direct effect of a decline in precipitation and increased temperature disturbs the hydrology of the catchment as presented under the impacts of climate change, changes in LULC with soil and vegetation properties, either enhance or decrease the impacts of climate change. In this regard, the effects of combined LULC and climate change on the hydrological process was done to distinguish the effects of LULC and climate change under the isolated and combined scenarios.
+The increase of temperature and decreasing precipitation under a varying LULC in Finchaa catchment shows a decline of surface runoff, groundwater and total water yield, whereas the projected evapotranspiration is increasing. The combined effects of LULC and climate change on the watershed hydrological process are presented in Table 
+the impacts due to climate change add significant impact on the existing undernutrition, infectious disease, the vulnerability of rain-fed agriculture and flash flooding crises in the region.
+The finding also confirms the findings of Beyene et al. 
+
+## Impacts of Land Use/Land Cover and Climate Change ##
+Although the direct effect of a decline in precipitation and increased temperature disturbs the hydrology of the catchment as presented under the impacts of climate change, changes in LULC with soil and vegetation properties, either enhance or decrease the impacts of climate change. In this regard, the effects of combined LULC and climate change on the hydrological process was done to distinguish the effects of LULC and climate change under the isolated and combined scenarios.
+The increase of temperature and decreasing precipitation under a varying LULC in Finchaa catchment shows a decline of surface runoff, groundwater and total water yield, whereas the projected evapotranspiration is increasing. The combined effects of LULC and climate change on the watershed hydrological process are presented in Table 
+the upstream and outlet of the catchment, with the highest under RCP8.5 in the late scenario. Water yield is projected to decline higher around the upstream while a high increase in PET is projected around the downstream of the catchment. The increasing temperature is the most dominant factor affecting surface runoff in climate change scenarios while increasing urbanization is the main contributor affecting the surface runoff in LULC scenarios. Overall, the increase in surface runoff and total water yield due to LULCC was offset by the decline of the surface runoff and total water yield, due to climate change impacts. Consequently, the effect of climate change is decisive compared to the LULCC in the Finchaa catchment. The high sensitivity of water balance components and streamflow to the climate change is also reported by other studies in different parts of the world 
+In summary, the seasonal and annual variation of the future temperature shows the increased hot and dry years that will lead to serious water scarcity. Consequently, the increase in warming and evaporation in the catchment highly affects the three reservoirs in the catchment increasing water stress. The recent study by Coffel et al. 
+In summary, the seasonal and annual variation of the future temperature shows the increased hot and dry years that will lead to serious water scarcity. Consequently, the increase in warming and evaporation in the catchment highly affects the three reservoirs in the catchment increasing water stress. The recent study by Coffel et al. 
+Although the study did not cover the quantification of sediment yield, the SWAT simulation, under the LULCC, shows that the sediment yield increases with the changes. However, sediment yield is decreasing with the projected scenarios of climate change. The study by Gadissa et al. 
+
+## Conclusions ##
+Four RCMs and their ensemble mean, under CORDEX-Africa, were applied for the climate change study. The simulations of all RCMs, except HIRHAM5, show decreasing precipitation under both high and medium-low emission scenarios. With respect to temperature, all RCMs projections show an increasing temperature with varying degree of changes. To avoid the considerable variations of the individual RCMs in projecting precipitation and temperature, the ensemble mean of the RCMs were used for the hydrological impact studies of climate changes, and the combined LULC and climate change. Although uncertainties of climate prediction still exist, the use of the ensemble RCMs was found to be a suited strategy to evaluate the uncertainties of individual RCMs.
+The findings from this work were applied to distinguish the effects of LULC and climate change on the water balance components of the Finchaa catchment. Consequently, the metro-hydrological process could change in probability and intensity due to climate change, but also due to local land use/land cover change. If climate change is considered alone, the increase in temperature and decrease of predicted precipitation will decrease the surface runoff, groundwater and total water yield, whereas potential evapotranspiration and evaporation increase. However, the surface runoff increases under land use/land cover changes, due to the highly expanding urbanization and intensive agriculture. Overall, the sensitivity of water resources for land use/land cover and climate change over Finchaa catchment shows the effect of land use/land cover change is stunned by the effects of climate change. Consequently, climate change is found to be predominant over the effects of LULCC.
+Further, the seasonal and annual variation of the future precipitation and temperature in the catchment shows the increasingly hot and dry years that will lead to serious water scarcity. Consequently, the catchment is highly vulnerable to climate change and its impacts could range from warming to crop failures as a result of prolonged dry seasons. The Upper Blue Nile basin will face regional water scarcity regardless of whether the precipitation is increased, constant or decreased 
+The study analysis suggests that the impact assessments of the combined land use/land cover and climate change in the Finchaa catchments are well-represented by the SWAT simulations. However, the limited availability and quality of hydro-climatic data in the region need urgent attention to improve our understanding of the change in existing and future climate and LULCCs.
+The findings of this study provided important information on the relative influences of how the watershed hydrological process in Finchaa catchment respond to the changes in land use/land cover and climate change. This could help to plan proper water resources management interventions. If the degraded sloppy lands are rehabilitated, the ground recharge increase and the surface runoff, which washes the topsoil into the lakes, is reduced. Furthermore, the three lakes in the catchment should be buffered with proper management strategies. In general, the result highlights the need for regional developments and cooperation to urge strong climate-resilient management strategies and to counteract the rapid climate changes in the catchment.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Interactions between climate change land use change on biodiversity: Attribution problems, risks, and opportunities
+   Authors: , 
+   Date: 2014
+
+2. Drivers and implications of land use/land cover dynamics in finchaa catchment
+   Authors: , , 
+   Date: 2020
+
+3. Estimating the impacts of land-cover change on runoff using the soil and water assessment tool (SWAT): Case study of Nzoia catchment, Kenya/Estimation des impacts du changement d'occupation du sol sur l'écoulement à l'aide de SWAT: Étude du cas du bassin
+   Authors: , , 
+   Date: 2009
+
+4. Land use change trends and their driving forces in the kilombero valley floodplain, Southeastern Tanzania. Sustainability
+   Authors: , , 
+   Date: 2019
+
+5. Mediterranean desertification and land degradation Mapping related land use change syndromes based on satellite observations
+   Authors: , , , , 
+   Date: 2008
+
+6. Advances in Geosciences Desertification risk assessment in southern Mediterranean areas
+   Authors: , , , 
+   Date: 2005
+
+7. Aqueduct Water Stress Projections: Decadal Projectons of Water Supply and Demand Using CMP5 GCMs
+   Authors: , , 
+   Date: 2015. 26 March 2020
+
+8. The Impact of Land Use Change on the Hydrology of the Angereb Watershed
+   Authors: , 
+   Date: 2012, 1, 4
+
+9. The causes of land-use and land-cover change: Moving beyond the myths
+   Authors: , , , , , , , , , 
+   Date: 2001
+
+10. Global consequences of land use
+   Authors: , , , , , , , , , 
+   Date: 2005
+
+11. Hydrological response of a catchment to climate and land use changes in Tropical Africa: Case study south central Ethiopia
+   Authors: , , 
+   Date: 2003
+
+12. A simple approach to distinguish land-use and climate-change effects on watershed hydrology
+   Authors: , 
+   Date: 2009
+
+13. Land Degradation and the Sustainable Development Goals:Threats and Potential Remedies
+   Authors: , , , , , , , , , 
+   Date: 2017
+
+14. Annual and seasonal streamflow responses to climate and land-cover changes in the Poyang Lake basin
+   Authors: , , 
+   Date: 2008
+
+15. Combined impact of climate and land use changes on streamflow and water quality in eastern Massachusetts
+   Authors: 
+   Date: 2009
+
+16. Hydrological Response to Climate Change for Gilgel Abay River, in the Lake Tana Basin-Upper Blue Nile Basin of Ethiopia
+   Authors: , , 
+   Date: 2013
+
+17. The effects of land use land cover change on hydrological process of Gilgel Gibe
+   Authors: , , 
+   Date: 2016
+
+18. The response of water balance components to land cover change based on hydrologic modeling and partial least squares regression (PLSR) analysis in the Upper Awash Basin
+   Authors: , , 
+   Date: 2019
+
+19. Monitoring and prediction of land use/land cover changes using CA-Markov model: A case study of Ravansar County in Iran
+   Authors: , , , 
+   Date: 2018
+
+20. Simulating and forecasting spatio-temporal characteristic of change with numerical model and remote sensing: A case study in Fuxian Lake Basin, China
+   Authors: , , , , , 
+   Date: 2019
+
+21. Monitoring and predicting land use and land cover changes using remote sensing and GIS techniques-A case study of a hilly area
+   Authors: , , 
+   Date: 2018. 200493
+
+22. Runoff Responses to Climate and Land Use/Cover Changes under Future Scenarios
+   Authors: , , , , , , , 
+   Date: 2017
+
+23. Predicting Land Use/Land cover changes using a ca-markov model under two different scenarios
+   Authors: , , 
+   Date: 2018
+
+24. Streamflow response to climate and landuse changes in a coastal watershed in North Carolina
+   Authors: , , , , 
+   Date: 2009
+
+25. Combined effects of climate and land-use change on the future of humid tropical forests
+   Authors: , , 
+   Date: 2010
+
+26. An independent and combined effect analysis of land use and climate change in the upper Rhone River watershed
+   Authors: , , , , , 
+   Date: 2015
+
+27. Combined impacts of future climate and land use changes on discharge, nitrogen and phosphorus loads for a Canadian river basin
+   Authors: , , , , , , 
+   Date: 2015
+
+28. Analysis of the combined and single effects of LULC and climate change on the streamflow of the Upper Blue Nile River Basin (UBNRB): Using statistical trend tests, remote sensing landcover maps and the SWAT model
+   Authors: , , , 
+
+29. Forecasting the combined effects of climate and land use change on Mexican bats
+   Authors: , , , 
+   Date: 2018
+
+30. Combined effects of climate and land-use change on the provision of ecosystem services in rice agro-ecosystems
+   Authors: , , , , 
+   Date: 2018
+
+31. Change Anomalies of Hydrologic Responses to Climate Variability and Land-use Changes in the Mt. Makiling Forest Reserve
+   Authors: , 
+   Date: 2012
+
+32. Land-use change modelling in the Upper Blue Nile Basin
+   Authors: , , , , , , , 
+   Date: 2016
+
+33. Evaluation and prediction of land use/land cover changes in the Andassa watershed
+   Authors: , , , 
+   Date: 2017
+
+34. Cellular automata and Markov Chain (CA_Markov) model-based predictions of future land use and land cover scenarios
+   Authors: , , , , 
+   Date: 2015-2033. 2017
+
+35. Analyzing past land use land cover change and CAMarkov based future modeling in the Middle Suluh Valley, Northern Ethiopia
+   Authors: , , , 
+   Date: 2018
+
+36. Hydrologic impacts of climate change on the Nile River Basin: Implications of the 2007 IPCC scenarios
+   Authors: , , 
+   Date: 2010
+
+37. Modeling Hydrological Responses to Changes in Land Cover and Climate in Geba River Basin, Northern Ethiopia
+   Authors: 
+   Date: 2014
+
+38. Hydrological response to climate change of the Upper Blue Nile River Basin: Based on IPCC fifth assessment report (AR5)
+   Authors: , 
+   Date: 2015
+
+39. Modelling hydrological response under climate change scenarios using SWAT model: The case of Ilala watershed
+   Authors: , , , 
+   Date: 2018
+
+40. The effect of climate change on loss of lake volume: Case of sedimentation in Central Rift Valley
+   Authors: , , , 
+   Date: 2018
+
+41. Impacts of climate change on Blue Nile flows using bias-corrected GCM scenarios
+   Authors: , , 
+   Date: 2009
+
+42. Sustainable Land Management in Practice-Guidelines and Best Practices for Sub-Saharan Africa; TerrAfrica, World Overview of Conservation Approaches and Technologies
+   Authors: , , , , 
+   Date: 2011
+
+43. Implications of climate change on hydrological extremes in the Blue Nile basin: A review
+   Authors: , , 
+   Date: 2015
+
+44. Modeling the effects of land use change and management practices on runoff and sediment yields in Fincha watershed
+   Authors: , , 
+   Date: 2014
+
+45. Soil Quality Attributes Induced by Land Use Changes in the Fincha'a Watershed
+   Authors: , , 
+   Date: 2016
+
+46. Hydropower-Induced Land Use Change in Fincha'a Watershed, Western Ethiopia: Analysis and Impacts
+   Authors: , 
+   Date: 2008
+
+47. SWAT-Modeling of the Impact of future Climate Change on the Hydrology and the Water Resources in the Upper Blue Nile River Basin, Ethiopia
+   Authors: , 
+   Date: June 2013
+
+48. Evaluating Potential Impact of Climate Change on Hydro-meteorological Variables in Upper Blue Nile Basin. A Case Study Fincha Sub-Basin
+   Authors: , 
+   Date: 2016
+
+49. Dynamics in land cover and its effect on stream fl ow in the Chemoga watershed
+   Authors: , 
+   Date: 2005
+
+50. Climate change, land-cover dynamics and ecohydrology of the Nile River Basin
+   Authors: , , , 
+   Date: 2009
+
+51. Community perception of land use/land cover change and its impacts on biodiversity and ecosystem services in northwestern Ethiopia
+   Authors: 
+   Date: 2018
+
+52. Climate Change Induced Temperature Prediction and Bias Correction in Finchaa Watershed
+   Authors: , 
+   Date: 2018
+
+53. Ethiopia and the Nile Dilemmas of National and Regional Hydropolitics; Center for Security Studies
+   Authors: 
+   Date: 2007
+
+54. Evaluation of the CORDEX regional climate models performance in simulating climate conditions of two catchments in Upper Blue Nile Basin
+   Authors: , , 
+   Date: 2019
+
+55. 
+   Date: 19. 2002
+
+56. Land use/land cover change detection and prediction in the north-western coastal desert of Egypt using Markov-CA
+   Authors: , , , 
+   Date: 2015
+
+57. Reliability of Content Analysis: The Case of Nominal Scale Coding
+   Authors: 
+   Date: 1955
+
+58. 
+   Authors: , , , , , , 
+   Date: 2016. 2 January 2020
+
+59. Bias correction of regional climate model simulations for hydrological climate-change impact studies: Review and evaluation of different methods
+   Authors: , 
+   Date: 2012
+
+60. De Comparing Bias Correction Methods Used in Downscaling Precipitation and Temperature from Regional Climate Models: A Case Study from the Kaidu River Basin in Western China
+   Authors: , , , , , , 
+   Date: 2018. 1046
+
+61. Quantifying the Impacts of Climate Change on Streamflow Dynamics of Two Major Rivers of the Northern Lake Erie Basin in Canada
+   Authors: , , , , , , 
+   Date: 2018. 2897
+
+62. Large Area Hydrologic Modeling and Assessment Part I: Model Development
+   Authors: , , , 
+   Date: 1998
+
+63. Soil & Water Assessment Tool Theoretical Documentation Version
+   Authors: , , , 
+   Date: 2009. 2011. 23 February 2020
+
+64. SWAT-CUP: SWAT Calibration and Uncertainty Programs-A User Manual; Eawag: Dübendorf
+   Authors: 
+   Date: 2015
+
+65. Model evaluation guidelines for quantification of accuracy in watershed simulation
+   Authors: , , , , , 
+   Date: 2007
+
+66. A continental-scale hydrology and water quality model for Europe: Calibration and uncertainty of a high-resolution large-scale SWAT model
+   Authors: , , , , , 
+   Date: 2015
+
+67. Streamflow and Sediment Yield Prediction for Watershed Prioritization in the Upper Blue Nile
+   Authors: , , , , 
+   Date: 2017
+
+68. Recent changes in dry spell and extreme rainfall events in Ethiopia
+   Authors: , 
+   Date: 2006
+
+69. Modeling the impact of climate change on water resources and soil erosion in a tropical catchment in Burkina Faso
+   Authors: , , , , , 
+   Date: 2018
+
+70. Potential Impact of Climate and Land Use Changes on the Water Resources of the Upper Blue Nile Basin
+   Authors: 
+   Date: 2012
+
+71. Climate Risk and Adaptation Country Profile
+   Authors: 
+   Date: 2011
+
+72. Catchment response to climate and land use changes in the Upper Blue Nile Sub-Basins
+   Authors: , , , 
+   Date: 2018
+
+73. Effects of Land-Use and Climate Change on Hydrological Processes in the Upstream of Huai River
+   Authors: , , , 
+   Date: 2013
+
+74. Modeling the hydrological impacts of land use/land cover changes in the Andassa watershed
+   Authors: , , , 
+   Date: 2018
+
+75. Future Hot and Dry Years Worsen Nile Basin Water Scarcity Despite Projected Precipitation Increases
+   Authors: , , , , , , 
+   Date: 2019
+
+76. Climate change impacts in Sub-Saharan Africa: From physical changes to their social repercussions
+   Authors: , , , , 
+   Date: 2016
+
+77. Estimating the effect of climate change on water resources: Integrated use of climate and hydrological models in the Werii watershed of the Tekeze river basin
+   Authors: , 
+   Date: 2018
+
+78. Climate and Land Use Effects on Hydrologic Processes in a Primarily Rain-Fed, Agricultural Watershed
+   Authors: , , , , , , , 
+   Date: 2019
+
+79. Impacts of changes in climate and land use/land cover under IPCC RCP scenarios on streamflow in the Hoeya River Basin, Korea
+   Authors: , , , 
+   Date: 2013
+

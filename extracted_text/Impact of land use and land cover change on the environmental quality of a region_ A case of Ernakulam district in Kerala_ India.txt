@@ -1,0 +1,475 @@
+================================================================================
+TITLE: Impact of land use and land cover change on the environmental quality of a region: A case of Ernakulam district in Kerala, India
+================================================================================
+
+AUTHORS:
+- Sruthi Krishnan
+- Mohammed Firoz
+
+ABSTRACT:
+The increasing urbanisation trend over the decades has resulted in the rapid transformation of land use and land cover (LULC) patterns worldwide. One of the significant consequences of such an uncontrolled conversion process is on the environmental quality (EQ) of the regions, which needs to be addressed. Hence, the present study attempts to derive the environmental quality index (EQI) to measure the impact of LULC along a rapidly urbanising region. The study was divided into three phases. Firstly, the relevant variables were systematically identified from the literature and screened based on relevance, redundancy, context, and scale of the study. The variables then were finalised based on data availability and expert suggestions. The selected variables were grouped under biophysical, LULC, and socio-economic domains. Secondly, using remote sensing and geographic information system (GIS) techniques, LULC analysis was performed and the bio-physical variables were processed. The LULC maps (with five classes: water body, settlements, hill, forest, and agriculture) were prepared for the study region for 2000, 2009, and 2019 from Landsat images using a supervised classification algorithm. The LULC analysis showed an increase in the settlement over the past two decades. The relationship between the bio-physical indicators, namely, land surface temperature (LST), normalised difference vegetation index, and normalised difference built-up index (NDBI), was also established to examine the general perception that the increase in urbanisation is one of the main causes for the increase in LST of a region. The correlation indicated that the LST Impact of land use and land cover change on the environmental quality of a region: A case of Ernakulam district in Kerala, India 103
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Environmental quality (EQ) and the quality of life positively influence each other 
+Sruthi Krishnan V. -Mohammed Firoz C.
+Regional 
+
+## /RS110205 ##
+With the increase in sprawl and urbanisation in cities, LULC change detection has become the key objective of any urban planning study 
+Variable selection, weighting, and aggregation are the essential and challenging elements of EQI construction 
+In this study, we seek to address mainly three research questions: (1) With the increasing urbanisation rate in the region under study, has there been a considerable change in LULC over the past two decades? (2) Is the increase in urbanisation one of the reasons for the increase in LST. (3) Does the LULC change influence the EQ of a region? The first research question is addressed by conducting a LULC change analysis of the study region for the years 2000, 2009, and 2019. The second question is attempted to be answered by performing a correlation analysis of the LST with the normalised difference vegetation index (NDVI) and NDBI of the study region for the three years. The final question is to evaluate the influence of LULC change on the EQ of a region by constructing an EQI involving the LULC classes, biophysical indicators, and socio-economic indicators. In the present study, the entropy method of weighting is used. Finally, EQI scores are represented in the form of a spatial map that can be used for making further interpretations and suggestions for improvement.
+
+## Materials and methods ##
+
+
+## Study region ##
+The study region is Ernakulam, one of the districts
+Ernakulam was taken as the case study region because of its highest decadal increase in urbanisation rate (68.07% according to the Census of India 2011 data) (Praveen-Sajini 2018). Kochi, which is the commercial, industrial, and financial capital of Kerala, is situated in this district and has the best connectivity through air routes, railways, and road networks, thus making it the most promising economically developed region. The effects of LULC transformations on the EQ was addressed by taking this case study, thereby rendering it truly representative for showcasing the impacts of urbanisation on the environment. The study region consists of 97 local bodies (LBs) 2 , which are the units of analysis in the present work. 
+
+## Variable selection ##
+After the delineation/selection of the study area, the next step in the EQI construction (Figure 
+Figure 
+The first category, bio-physical variables, are most commonly used as proxy variables to indicate the importance of vegetation and the effect of built-up areas on EQ 
+
+## Collection of data ##
+Primary and secondary data were used in the study. The primary data comprised satellite images downloaded from the Earth Explorer interface developed by the United States Geological Survey 
+Table 
+
+## LULC analysis ##
+The details of the LULC classification are critical for the various aspects of urban planning. For example, LULC information is required for land development, regular monitoring and evaluation of land use, environmental planning and management, construction activities, and landscape development. LULC change has a large impact on the environmental status of a region or an area. When a particular type of land cover is converted into another land use type, then its effects tend to be accumulative 
+Studies over the past decades [e.g. 
+For the analysis, the satellite images were first pre-processed for geo-referencing, atmospheric correction, and radiometric correction 
+The pre-processed Landsat images were opened in ArcMap10.5 software for the LULC classification. The supervised classification method was employed to categorise the pixels into suitable LULC classes. Maximum likelihood classification was adopted by collecting more than 100 training samples/regions for each class. Signature files for each class were created. The satellite images were categorised into five different LULC classes, namely, water body, settlements, forest, hill, and agriculture 
+
+## Accuracy assessment ##
+Accuracy of the classified LULC was assessed by using an error matrix and Kappa coefficient 
+The accuracy parameters included overall accuracy, user's accuracy, producer's accuracy, and Kappa coefficient 
+
+## Extraction of LST, NDVI, and NDBI ##
+For the extraction of LST, thermal bands 6 and 10 were used for Landsat 7 and Landsat 8, respectively. LST retrieval was carried out in ArcGIS 10.5. The process involved a series of steps 
+(i) Conversion of DN to at-sensor spectral radiance The satellite image contains information in the form of DN. Hence, it was converted to at-sensor spectral radiance [equation (1)] using the spatial analysis tool in ArcGIS. Lℷ = ML * Q cal + AL (1) where Lℷ = spectral radiance at sensor's aperture (in W m -2 sr -1 µm -1 ); ML = bandspecific multiplicative rescaling factor from Landsat metadata; AL = band-specific additive rescaling factor from Landsat metadata; and Q cal = Level 1 pixel value in DN.
+(ii) Conversion of radiance into TOA brightness temperature In the second step of extraction, thermal calibration was carried out, which involved the conversion of spectral radiance to TOA brightness temperature using equation ( 
+(2) where TB = TOA brightness temperature (℃); Lℷ = spectral radiance at sensor's aperture (in W m -2 sr -1 µm -1 ); and K 1 , K 2 = Thermal conversion constants for the bands.
+(iii) Conversion of TOA brightness temperature into LST In the final step, the TOA brightness temperature was converted to LST using equations ( 
+For Landsat 7, NDVI = float (Band 4 -Band 3) / float (Band 4 + Band 3) (6) For Landsat 8, NDVI = float (Band 5 -Band 4) / float (Band 5 + Band 4) (7) NDBI is an indicator to extract built-up pixels from satellite images. To extract NDBI from the Landsat images, shortwave infrared and near-infrared bands were used [equations ( 
+For Landsat 7, NDBI = float (Band 5 -Band 4) / float (Band 5 + Band 4) (8) For Landsat 8, NDBI = float (Band 6 -Band 5) / float (Band 6+ Band 5) (9)
+
+## Relationship between NDVI and LST vs NDBI and LST ##
+The variation of NDVI and NDBI with LST for all three years 
+Adjusted R 2 values were also calculated to measure the proportion of the dependent variable (i.e. LST) explained by the independent variables (i.e. NDVI and NDBI) (Pal-Ziaul 2017). Adjusted R 2 value ranges between 0 and 1, with higher values representing a good fit of the model (Pal-Ziaul 2017).
+
+## Construction of EQI ##
+Variable selection and data collection were explained previously. For the data matrix formation, the LULC classes and bio-physical variables (LST, NDVI, and NDBI) were processed from satellite images as explained previously. The data were collected for each observation unit of the study area. Data exploration was carried out and weighting the variables was performed using the entropy technique. The weighted variables were aggregated and an EQ score/index was obtained for each unit. Finally, the obtained scores were mapped spatially with the GIS techniques, and the EQI map for the study region was created. The detailed explanation of each stage of index construction is explained in the subsequent sections.
+
+## Initial data exploration ##
+In the present study, after completion of the extraction and collection of data for all the selected variables, the data matrix was created with the units of observations on the rows and the variables on the columns 
+
+## Weighting and aggregation ##
+After summarising the main characteristics of the dataset, the next step was to give weights to each variable. In this study, the objective method is selected for weighting. The entropy method of weighting, in which, the higher is the difference between the values of each variable, the higher is the preference given to the corresponding variable 
+
+## Sensitivity analysis ##
+Sensitivity analysis is important in spatio-temporal models 
+The output model may be affected by various error sources, and thus, the accuracy of the model can be checked by using this analysis 
+(12) where W(v m , p) is the new value of the m th variable when it is changed by p%; W(v m , 0) is the weight of the m th variable at its base run; W(v i , p) is the weight of the other variables when the m th variable alone is changed; and W(v i , 0) is the weight of the other variable at its base run.
+
+## Results ##
+
+
+## LULC change detection and analysis ##
+LULC classification of the study region for 2000, 2009, and 2019 was carried out using the maximum likelihood classification method (Figure 
+
+## Accuracy assessment ##
+Accuracy assessment was performed by comparing the classified LULC image with the ground truth observation (reference image). Stratified random sampling was adopted by selecting 250 random points on the ground (50 points per LULC class) using GPS survey (Figure 
+Thermal bands of the Landsat images were employed for extracting LST, NDVI, and NDBI and were derived using red, near-infrared, and shortwave infrared bands, as explained previously. The spatial mapping of LST of the study region showed that the average temperature prevalent in the LBs had increased from 22.5℃ in 2000 to 39℃ in 2019 (Figure 
+The relationship of LST with NDVI and NDBI is presented in Tables 
+The variation is evident from the LULC change in the study area for the two decades, as explained previously. The correlation between the two groups of variables was better represented in the form of scatter plots (Figure 
+
+## Construction of EQI ##
+The variables selected for the index construction were weighted based on the entropy method (Table 
+Regional 
+Figure 
+
+## Sensitivity analysis ##
+As discussed previously, 24 iterations were carried out to check the robustness of the developed model. Table 
+Sruthi Krishnan V. -Mohammed Firoz C.
+Regional 
+
+## Discussion ##
+The LULC change analysis was performed for the study region for the years 2000, 2009, and 2019. Five classes of LULC, namely water, settlements, forest, hill, and agriculture, were analysed. The results illustrated that till 2000, the percentage of area covered by settlements was very low. Later, with the increase in construction and developmental activities, such as industrial setups, service sectors, metro rail, and the opening of the container terminal, the settlement percentage increased. By contrast, the agricultural area has drastically declined over the decades primarily due to increasing population density, the shift in the occupational structure of the people from the primary sector to secondary and tertiary sectors 
+The study further investigated some of the impacts of the LULC change in the study region by assessing the correlation between LST, NDVI, and NDBI. The results show that from 2000 to 2019, LST recorded a sharp increase in its Celsius values, mainly due to the increase in settlement patterns. The buildings and the development of other non-pervious surfaces have contributed to the rising temperature. At the same time, the NDVI and NDBI values showed a decreasing and increasing trend, respectively, for the same decadal change. The most evident reason for this change is the construction and development activities that occurred in the study region. Additionally, the correlation analysis confirmed that the LST increases with the increase in NDBI, whereas it decreases with the increase in NDVI 
+The EQI spatial map of the study region showed that the identified poor and very poor EQ regions, which are distributed in the western part, have majority settlement characteristics, low NDVI, and high NDBI and LST values. Most of the industrial setups, ports, and container terminal are also situated here, which also contributes to the poor EQ of the region. The eastern part of the study region consists mainly of hills and forest areas, which primarily contribute to better EQ. The hills or natural resources restrict the construction or development activities, as evident from the research performed by 
+
+## Planning interventions ##
+This study focused on the current impacts on the EQ of a region because of the increasing urbanisation trend by constructing an index. The analysis of LULC helps in the planning interventions at the city level. The present study can contribute to the knowledge of development control regulations, provision of better transportation corridors in the region, proper management of sprawl development, and diminution of urban heat island effect 
+This study can also offer insight into the improvement in EQ and sustainability of coastal areas where these have been adversely impacted by the LULC changes 
+
+## Conclusions ##
+This study investigated the estimation of LULC change for the years 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. A comparative analysis between composite indexes of environmental performance : An analysis on the CIEP and EPI
+   Authors: , , 
+   Date: 2016
+
+2. Groundwater quality assessment using entropy weighted water quality index ( EWQI ) in Lenjanat
+   Authors: , , 
+   Date: 2014
+
+3. Fuzzy vulnerability mapping of urban groundwater systems to nitrate contamination
+   Authors: , , , , 
+   Date: 2017
+
+4. Analysis of multivariate social science data Second
+   Authors: , , , 
+   Date: 2008
+
+5. Land use / cover change and vulnerability evaluation in Olomuc
+   Authors: , , 
+   Date: 2014
+
+6. Making use of the Landsat 7 SLC-off ETM+ image through different recovering approaches
+   Authors: , , 
+   Date: 2012
+
+7. A review of assessing the accuracy of classifications of remotely sensed data
+   Authors: 
+   Date: 1991
+
+8. A hybrid approach using entropy and TOPSIS to select key drivers for a successful and sustainable lean construction implementation
+   Authors: , , , 
+   Date: 2020
+
+9. Urban sprawl and loss of agricultural land in peri-urban areas of Lagos
+   Authors: , , 
+   Date: 2015
+
+10. Land use/land cover classification using time series Landsat 8 images in a heavily urbanized area
+   Authors: , , , 
+   Date: 2019
+
+11. Impact of land-use/land-cover change on land surface temperature using satellite data: A case study of Rajarhat Block
+   Authors: , , , 
+   Date: 2019
+
+12. Exploring multi-criteria decision strategies in GIS with linguistic quantifiers: An extension of the analytical network process using ordered weighted averaging operators
+   Authors: 
+   Date: 2013
+
+13. An investigation of GIS overlay and PCA techniques for urban environmental quality assessment: A case study in
+   Authors: , 
+   Date: 2017
+
+14. Composite index of social development: A case of Kerala, India
+   Authors: , 
+   Date: 2018
+
+15. Sustainability indicators for industrial organizations: Systematic review of literature Sustainability
+   Authors: , , , , 
+   Date: 2019
+
+16. Construction and validation of an international reputation index: The European case
+   Authors: , , , 
+   Date: 2019
+
+17. Spatial planning in rural urban interface in Kerala Institute of Town Planners
+   Authors: 
+   Date: 2006
+
+18. A methodology to define the typology of rural urban continuum settlements in
+   Authors: , , 
+   Date: 2014
+
+19. Reclassification of the typology and pattern of composite settlement systems: A case of Kerala
+   Authors: , , 
+   Date: 2015
+
+20. Transforming economy of Calicut to smart economy
+   Authors: , , 
+   Date: 2017
+
+21. Urban vulnerability under various blast loading scenarios: Analysis using GIS-based multi-criteria decision analysis techniques
+   Authors: , , , , , 
+   Date: 2018
+
+22. Land use and land cover change effect on surface temperature over
+   Authors: , , , , , 
+   Date: 2019
+
+23. Land use/land cover changes dynamics and their effects on surface urban heat island in Bucharest
+   Authors: , 
+   Date: 2019
+
+24. Analysis of urban heat island (UHI) in relation to normalized difference vegetation index (NDVI): A comparative study of Delhi and Mumbai Environments
+   Authors: , 
+   Date: 2015. 2021
+
+25. Data analytics: Fundamentals, data analytics for intelligent transportation systems
+   Authors: 
+   Date: 2017
+
+26. Remote sensing and GIS application in the detection of environmental degradation indicators
+   Authors: , , 
+   Date: 2011
+
+27. 
+   Authors: , , , 
+   Date: 2014
+
+28. Urban ecological security assessment for cities in the Beijing-Tianjin-Hebei metropolitan region based on fuzzy and entropy methods
+   Authors: , , 
+   Date: 2015
+
+29. Land cover change detection using GIS and remote sensing techniques : A spatio-temporal study on Tanguar Haor , Sunamganj
+   Authors: , 
+   Date: 2017
+
+30. An index to assess South Africa's vulnerability to sealevel rise South
+   Authors: , 
+   Date: 1992
+
+31. Applying weight of evidence method and sensitivity analysis to produce a landslide susceptibility map
+   Authors: , 
+   Date: 2016
+
+32. Spatial-temporal analysis of urban environmental quality of Tehran
+   Authors: , , , , , 
+   Date: 2020
+
+33. Influence of land use/land cover (LULC) changes on atmospheric dynamics over the arid region of Rajasthan state
+   Authors: , , , , 
+   Date: 2013
+
+34. Constructing an area-based socioeconomic status index: a principal components analysis approach
+   Authors: 
+   Date: 2010
+
+35. A geospatial approach for the development of hazardous building zonation mapping Arabian
+   Authors: , , 
+   Date: 2016
+
+36. Regional urban environmental quality assessment and spatial analysis
+   Authors: , 
+   Date: 2020
+
+37. Multi-hazards coastal vulnerability assessment of Goa, India, using geospatial techniques Ocean and Coastal Management
+   Authors: , , , , , 
+   Date: 2014
+
+38. Remote sensing of the surface urban heat island and land architecture in Phoenix, Arizona: Combined effects of land composition and configuration and cadastraldemographic-economic factors
+   Authors: , , , , , 
+   Date: 2016
+
+39. Sensitivity analysis of spatial models
+   Authors: , 
+   Date: 2009
+
+40. Exploration of implicit weights in composite indicators The case of resilience assessment of countries' electricity supply
+   Authors: 
+   Date: 2018
+
+41. Assessing the urban environmental quality of mountainous cities : A case study in Chongqing
+   Authors: , , , , 
+   Date: 2017
+
+42. Haze detection and removal in remotely sensed multispectral imagery
+   Authors: , , , 
+   Date: 2013
+
+43. Assessing socio-economic vulnerability to climate change: a city-level index-based approach
+   Authors: , 
+   Date: 2017
+
+44. An assessment of urban vulnerability in the Amazon Delta and Estuary: a multicriterion index of flood exposure, socio-economic conditions and infrastructure
+   Authors: , , , , , 
+   Date: 2016
+
+45. Land use and land cover change detection using geospatial techniques in the Sikkim Himalaya
+   Authors: , , 
+   Date: 2019
+
+46. Prioritization of pollution potential zones for conservation activities of a lake system
+   Authors: , , , , , 
+   Date: 2016
+
+47. Determining extreme heat vulnerability of Harare Metropolitan City using multispectral remote sensing and socio-economic data
+   Authors: , , , 
+   Date: 2018
+
+48. Urban environmental quality assessment using remote sensing and census data
+   Authors: , , , 
+   Date: 2018. 2021
+
+49. Development planning and environment in coastal zone : Conflicts and violations in the context of Mumbai Journal of Institute of Town Planners
+   Authors: , , , 
+   Date: 2018
+
+50. Tools for composite indicators building Joint Research Centre
+   Authors: , , , 
+   Date: 2005
+
+51. Impact of land use and land cover changes on temperature trends over India Land Use Policy
+   Authors: , 
+   Date: 2019
+
+52. Approach for assessing coastal vulnerability to oil spills for prevention and readiness using GIS and the Blowout and Spill Occurrence Model Ocean and
+   Authors: , , , , 
+   Date: 2015
+
+53. Detection of land use and land cover change and land surface temperature in English Bazar urban centre
+   Authors: 
+   Date: 2008. 2017
+
+54. Urban planning with respect to environmental quality and human well-being
+   Authors: , , , 
+   Date: 2016
+
+55. Improvement of user's accuracy through classification of principal component images and stacked temporal images Geo-Spatial Information
+   Authors: , 
+   Date: 2010
+
+56. Impacts of urbanization on land use /cover changes and its probable implications on local climate and groundwater level
+   Authors: , , , 
+   Date: 2018
+
+57. Urbanization in Kerala -What Does the Census Data Reveal ?
+   Authors: , 
+   Date: 2018
+
+58. Urbanization and quality of urban environment using remote sensing and GIS techniques in East Delhi
+   Authors: , , , 
+   Date: 2011
+
+59. Coastal regulation zone rules in coastal panchayats (villages ) of Kerala , India vis-a socio-economic impacts from the recently introduced peoples ' participatory program for local self-governance and sustainable development
+   Authors: , , 
+   Date: 2005
+
+60. Monitoring land use/cover change using remote sensing and GIS techniques: A case study of Hawalbagh block, district Almora
+   Authors: , 
+   Date: 2015
+
+61. A systematic literature review of green and sustainable logistics: Bibliometric analysis, research trend and knowledge taxonomy
+   Authors: , , , , , 
+   Date: 2020
+
+62. Analysis of land surface temperature and land use / land cover types using remote sensing imagery -A case in Chennai
+   Authors: , 
+   Date: 2009. 29 June -3 July 2009
+
+63. Examining the nexus between land surface temperature and urban growth in chattogram Metropolitan Area of Bangladesh using long term Landsat series data Urban Climate
+   Authors: , , , , , , , , 
+   Date: 2020
+
+64. Sensitivity analysis and model validation
+   Authors: , , , 
+   Date: 2016
+
+65. Agricultural land decline in Kerala: An investigation International Journal of Scientific and Research Publications
+   Authors: , 
+   Date: 2015
+
+66. Environmental vulnerability assessment in middle-upper reaches of Dadu river watershed using projection pursuit model and Gis
+   Authors: , , , , 
+   Date: 2015
+
+67. Urgency for sustainable development in coastal urban areas with reference to weather pattern, land use, and water quality
+   Authors: , , , , 
+   Date: 2014
+
+68. Empirical analysis of the distribution of urban parks in Japan
+   Authors: 
+   Date: 2019
+
+69. Sensitivity analysis, a powerful system validation technique The Open Cybernetics
+   Authors: , , , 
+   Date: 2008
+
+70. Statistical approach to normalization of feature vectors and clustering of mixed datasets
+   Authors: , , , 
+   Date: 2012. 2145
+
+71. Effects of land-use change on eco-environmental quality in Hainan Island
+   Authors: , , , , , , 
+   Date: 2020
+
+72. Developing composite indicators for agricultural sustainability assessment: Effect of normalization and aggregation techniques Resources
+   Authors: , , 
+   Date: 2017. 2021
+
+73. Social vulnerability indices: a comparative assessment using uncertainty and sensitivity analysis Natural Hazards
+   Authors: 
+   Date: 2012
+
+74. Assessing environmental impacts of urban growth using remote sensing
+   Authors: , 
+   Date: 2020
+
+75. Analysis and simulation of land cover changes and their impacts on land surface temperature in a lower Himalayan region
+   Authors: , , , , , 
+   Date: 2019
+
+76. Indicators for the economic dimension of sustainable agriculture in the
+   Authors: , , 
+   Date: 2017
+
+77. Smart water management for smart Kozhikode Metropolitan Area
+   Authors: , , , , 
+   Date: 2020
+
+78. Environmental function zoning for spatially differentiated environmental policies in
+   Authors: , , , , , 
+   Date: 2020
+
+79. Combining AHP with GIS in synthetic evaluation of eco-environment quality -A case study of Hunan Province
+   Authors: , , , , , 
+   Date: 2007
+
+80. Land-cover change and environmental impact analysis in the Greater Mankato area of Minnesota using remote sensing and GIS modelling
+   Authors: 
+   Date: 2008
+
+81. Weighting methods and their effects on multi-criteria decision making model outcomes in water resources management Springer
+   Authors: , , , 
+   Date: 2015
+
+82. Environmental vulnerability assessment for mainland China based on entropy method Ecological Indicators
+   Authors: , , , , 
+   Date: 2018
+
+83. Entropy method for determination of weight of evaluating indicators in fuzzy synthetic evaluation for water quality assessment
+   Authors: , , 
+   Date: 2006
+
+84. Environmental performance index at the provincial level for China 2006-2011
+   Authors: , , , 
+   Date: 2017
+
+85. Administrative Divisions, Office of the Registrar General & Census Commissioner
+   Authors: , 
+   Date: 2011. September 2020
+
+86. District urbanisation report Ernakulam
+   Authors: , 
+   Date: 2011. September 2020
+
+87. EPI 2012:Environmental Performance Index and Pilot Trend Environmental Performance Index www
+   Authors: , , , , , , , , 
+   Date: 2012. September 2020
+
+88. Kerala Economic Review
+   Authors: , 
+   Date: 2009. Sept 2020
+
+89. 
+   Authors: , 
+   Date: 2018. September 2020
+
+90. Local bodies -Statistical year book India
+   Authors: 
+   Date: 2018. 2018. September 2020
+

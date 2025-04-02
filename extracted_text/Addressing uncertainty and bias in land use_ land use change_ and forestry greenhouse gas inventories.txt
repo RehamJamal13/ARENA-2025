@@ -1,0 +1,487 @@
+================================================================================
+TITLE: Addressing uncertainty and bias in land use, land use change, and forestry greenhouse gas inventories
+================================================================================
+
+AUTHORS:
+- Emily Mcglynn
+- Serena Li
+- Michael Berger
+- Meredith Amend
+- Kandice Harper
+
+ABSTRACT:
+National greenhouse gas inventories (NGHGIs) will play an increasingly important role in tracking country progress against United Nations (UN) Paris Agreement commitments. Yet uncertainty in land use, land use change, and forestry (LULUCF) NGHGHI estimates may undermine international confidence in emission reduction claims, particularly for countries that expect forests and agriculture to contribute large near-term GHG reductions. In this paper, we propose an analytical framework for implementing the uncertainty provisions of the UN Paris Agreement Enhanced Transparency Framework, with a view to identifying the largest sources of LULUCF NGHGI uncertainty and prioritizing methodological improvements. Using the USA as a case study, we identify and attribute uncertainty across all US NGHGI LULUCF "uncertainty elements" (inputs, parameters, models, and instances of plot-based sampling) and provide GHG flux estimates for omitted inventory categories. The largest sources of uncertainty are distributed across LULUCF inventory categories, underlining the importance of sector-wide analysis: forestry (tree biomass sampling error; tree volume and specific gravity allometric parameters; soil carbon model), cropland and grassland (DayCent model structure and inputs), and settlement (urban tree gross to net carbon sequestration ratio) elements contribute over 90% of uncertainty. Net emissions of 123 MMT CO 2 e could be omitted from the US NGHGI, including Alaskan grassland and wetland soil carbon stock change (90.4 MMT CO 2 ), urban mineral soil carbon stock change (34.7 MMT CO 2 ), and federal cropland and grassland N 2 O (21.8 MMT CO 2 e). We explain how these findings and other ongoing research can support improved LULUCF monitoring and transparency.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+National greenhouse gas (GHG) inventories (NGHGIs) are the primary tool for tracking anthropogenic (human-induced) GHG emissions at the country, sector, and source category level. Over the coming decade and beyond, NGHGIs will support setting and measuring progress against each country's "nationally determined contributions" (NDCs) for reducing GHG emissions under the United Nations (UN) Paris Agreement while also supporting domestic climate policy development and evaluation (UN Framework Convention on Climate Change (UNFCCC) 2019a; UNFCCC 2019b; 
+Yet LULUCF is a large source of uncertainty in estimating anthropogenic GHG emissions 
+(1) Transparently reporting on LULUCF NGHGI uncertainty estimation methods, including clarifying which uncertainty elements are accounted for and how LULUCF uncertainty is calculated (2) Identifying the largest uncertainty elements as a first step in prioritizing inventory improvements
+In our framework, we identify and attribute uncertainty across all US LULUCF GHG source and sink (collectively, flux) estimates and provide initial GHG flux estimates for omitted inventory categories. 
+
+## Evidence of global and national LULUCF uncertainty ##
+LULUCF estimation uncertainty results from a combination of structural and conceptual challenges, including (1) large heterogeneity in fluxes across time and space, driven by complex biological, geochemical, and physical processes combined with variable anthropogenic and natural disturbances; (2) the inability to continuously observe fluxes over time and over large areas; and (3) differences in definitions and accounting methods across countries and studies 
+NGHGIs play a useful role in tracking anthropogenic LULUCF GHG emissions. Alternative methods (global land use change bookkeeping models and dynamic global vegetation models (DGVMs)) exhibit large multi-model uncertainty for total atmosphere-to-land CO 2 fluxes, with a standard deviation equal to 10% of annual global anthropogenic GHG emissions (4.0 gigatonnes (Gt) CO 2 year -1 on average, 2010-2019) 
+However, individual NGHGIs vary widely in quality and precision, which creates challenges in tracking country-level emission trends and therefore NDC progress. The NGHGIs of major emitting countries reviewed in Table 
+Furthermore, there is significant heterogeneity in uncertainty estimation methods, making it difficult to compare precision across NGHGIs and to know how well uncertainty values reflect true variance of the flux point estimate. Challenges include not reporting LULUCF uncertainty at all (India, South Korea), not reporting uncertainty for inventory categories (China, Brazil), and, most commonly, providing insufficient information on how 3 IPCC (2006, 2019) NGHGI guidelines recommend that anthropogenic LULUCF GHG fluxes be defined as all GHG fluxes occurring on managed lands, the so-called managed land proxy. Given the objective of NGHGIs to quantify all anthropogenic GHG fluxes, the managed land proxy has recognized flaws, including the presence of naturally occurring GHG fluxes on managed lands (e.g., wildfires) and indirect humaninduced fluxes on unmanaged lands (e.g., methane emissions due to permafrost thaw). However, several rounds of IPCC review have found the managed land proxy to be the most pragmatic approach to delineating anthropogenic emissions in the LULUCF sector. For a useful review of the managed land proxy, see 
+Footnote 2 (continued) uncertainties were calculated (no reporting on uncertainty measures for emission factors or activity data; no information on how uncertainty measures were estimated).
+The large majority of LULUCF fluxes reported in NGHGIs are calculated using lower order (Tiers 1 and 2) methods, which likely limit accuracy 
+To support the Enhanced Transparency Framework, countries can use the methods demonstrated in this paper to both transparently report on NGHGI uncertainty methods and to identify the largest sources of LULUCF uncertainty as a way to prioritize inventory improvements. We use the USA as a case study due to the scale of US LULUCF fluxes (the largest of all Annex I countries, 
+
+## Defining and quantifying NGHGI uncertainty ##
+We are interested in a quantitative measure of the potential difference between an NGHGI flux estimate and the true value of the flux being estimated, referred to as model outcome uncertainty or prediction error 
+As recommended by 
+Previous work has relaxed the unbiasedness assumption by comparing independent calculations for the same inventory category 
+Many studies have assessed uncertainty across entire NGHGIs (e.g., 
+We look to build on these literature strands in two ways: (1) identifying individual sources of uncertainty which we term "uncertainty elements," for each NGHGI flux estimate, with a goal of resolving uncertainty attribution at a level that is meaningful for setting programmatic, research, and budgetary priorities, and (2) attributing uncertainty across all elements as consistently as possible for the entire LULUCF sector. While for most fluxes we are unable to account for bias, we suggest a measure of NGHGI bias by providing initial estimates of omitted GHG fluxes.
+
+## Methods ##
+Our analytical scope aligns with the IPCC 
+We describe here the two components of our analysis:
+• Uncertainty attribution: We quantify the contribution of each uncertainty element to the 95% CIs of all relevant LULUCF inventory categories. • Omitted flux estimation: We provide initial estimates of known omitted fluxes, using literature review, expert input, and Tier 1 and 2 methods.
+
+## Uncertainty attribution ##
+To identify sources of NGHGI uncertainty, we must first justify an uncertainty taxonomy tailored to the LULUCF NGHGI context. Based on the literature review described in SM Sect. 2, chapter 1.2, we define an uncertainty element as an individual input, parameter, model or submodel, and any instance of design-based sampling error. We refer to input, parameter, and model structure uncertainty collectively as model uncertainty, as distinct from sampling error. In some cases, we aggregate uncertainty elements into a group of inputs or parameters for ease of analysis and interpretation.
+Given this taxonomy, we review methods for each LULUCF inventory category and identify all uncertainty elements. For inventory categories where it was possible to recalculate the central flux estimate given available data, we attribute uncertainty to each element using the contribution index method (Eq. 1).
+Equation 1: Contribution index where i = 1,…,J: refers to uncertainty element i Range(full,k): is inventory category k 95% CI magnitude (97.5th quantile minus 2.5th quantile)
+Range(i,k): is inventory category k 95% CI magnitude holding element i at its mean or point estimate Index(i,k): is percentage contribution of element i to Range(full,k) Other methods for uncertainty attribution have been utilized in the literature, including sensitivity analysis 
+Where flux estimate recalculation was not possible, due to lack of access to data or methods, we use published uncertainty attribution results or, in the case of Tier 3 cropland and grassland fluxes, expert elicitation. US EPA recognizes expert elicitation as one method for NGHGI quality assurance and uncertainty analysis (US EPA 2002). We tailored US EPA (2002) NGHGI expert elicitation guidance to the objectives of our study (methods described in more detail below).
+Uncertainty elements that we identified but were not able to quantify are listed in SM Table 2-1. Table 
+
+## Omitted GHG flux estimation ##
+Most of the omitted fluxes identified in this paper are already recognized in the US LULUCF GHG inventory as planned improvements. We identified additional omitted fluxes by reviewing 
+(1) For each identified omitted flux, we reviewed the literature to identify activity data and emission factors. The resulting omitted GHG flux estimates are meant to be useful only for purposes of prioritizing future work.
+
+## Methods by land use and inventory categories ##
+We briefly summarize the methods used for each LULUCF inventory category here, with further details provided in the SM. Our analysis is based on the 2018 US NGHGI report, which covers inventory years 1990 to 2016 and which was the most complete inventory report available while the majority of our analytical work was completed.
+In the SM, we note any significant methodological updates in more recent US NGHGI reports, none of which meaningfully influences our findings.
+
+## Forests ##
+Above-and belowground biomass in living and standing dead trees (SM Sect. 2, chapter 2.1): We recalculate the carbon stock change flux and 95% CI for above-and belowground tree biomass and standing dead trees (hereafter, tree biomass), accounting for uncertainty in nine groups of allometric model parameters (Table 
+Litter and soil (SM Sect. 2, chapters 2.2 and 2.3): Using literature estimates of mean litter carbon stocks by forest type 
+Non-CO 2 from forest fires (SM Sect. 2, chapter 2.4): We recalculate the CH 4 and N 2 O emissions from forest fires and their respective 95% CIs, using Monte Carlo simulation to account for uncertainty from four input variables (burned area, fuel availability, combustion factor, and emission factor) using standard deviations reported in the US NGHGI (2018) and 
+Harvested wood products (SM Sect. 2, chapter 2.5): We modify contribution index results from 
+
+## Cropland and grassland ##
+The US NGHGI uses consistent methods across many cropland and grassland inventory categories, so we collapse analysis across the two land uses. The US NGHGI uses Tier 3 methods on 78% of managed cropland and grassland soils, and Tiers 1 and 2 on organic soils, federal grasslands, shaley and gravelly soils, and minor crop types.
+Carbon stock change, N 2 O, and rice CH 4 on Tier 3 soils (SM Sect. 2, chapter 3.1): It was not possible to recalculate Tier 3 fluxes, due to National Resources Inventory (NRI) dataset confidentiality. Therefore, we use expert elicitation to identify the largest sources of uncertainty stemming from inputs and structure of the biogeochemical model DayCent as well as scaling NRI plot estimates to population area. The expert elicitation included prompts to identify primary research, model development and intermodel comparison, and data priorities for reducing cropland and grassland Tier 3 flux uncertainty. Participation in uncertainty attribution sections of the survey required knowledge of Century, DayCent, or similar biogeochemical soil models and IPCC GHG accounting guidance. Respondents were asked to confirm that they possessed this knowledge before completing the survey. Respondent expertise was concentrated in soil science (87%), biogeochemistry (67%), and the carbon cycle (67%); 53% worked in academia, 33% in government, and the remainder in NGO or private sectors. Details on the expert elicitation protocol and results are provided in the SM Sect. 2, chapter 3.1, and the full expert elicitation survey is available in SM Sect. 3.
+Carbon stock change and N 2 O in Tier 1 and 2 soils (SM Sect. 2, chapter 3.2): We apply contribution index results from 
+
+## Settlements ##
+Carbon stock change in urban trees (SM Sect. 2, chapter 4.1): We recalculate the CO 2 flux and 95% CI attributable to carbon stock change in urban trees 
+
+## Wetlands ##
+The US NGHGI (2018) indicates that there are 43 million hectares of wetlands in the USA, yet GHG fluxes are calculated for only 2.9 million hectares of wetlands. The omission is due to lack of data that would allow for designating non-coastal wetlands as managed (that is, wetlands directly created by human activity or areas where the water level has been artificially altered) (US NGHGI 2018). Due to this data gap, we were not able to estimate omitted wetland fluxes (SM Sect. 2, chapter 5).
+
+## Alaska, Hawaii, and US territories ##
+Alaska, Hawaii, and US territories comprise nearly 20% of the total US land base (nearly all of this in Alaska), but they are not completely accounted for in the US NGHGI. The 2019 US NGHGI included forest carbon stock changes in interior Alaska for the first time, an area covering 24.5 million acres (9% of US managed forest area). We provide estimates for omitted fluxes in Alaska, Hawaii, and Puerto Rico (the largest US territory), based on IPCC (2006) guidance, emission data derived from the US NGHGI 
+
+## Results ##
+Uncertainty contribution results are reported as the uncertainty element's contribution index value (%) multiplied by its respective inventory category 95% CI range (MMT CO 2 e). We present the 10 largest sources of uncertainty for each land use category and then collectively show omitted GHG flux results. Complete results for all inventory categories and uncertainty elements are available in the SM.
+
+## Forests ##
+The largest source of forest GHG flux uncertainty is design-based sampling error in estimating tree biomass carbon stock change (434.3 MMT CO 2 e) (Table 
+While we find that allometric volume coefficients are a large source of forest carbon stock change uncertainty, we were not able to find an empirical estimate of volume coefficient uncertainty. Sensitivity analysis of the coefficient of variation (5%, 10% (base case), and 20%) found that this assumption has large impacts on both the tree biomass Model uncertainty for soil and litter carbon stock change are substantial (together, 91.7 to 288.9 MMT CO 2 e); we report a range for these pools to reflect sensitivity to carbon stock intertemporal covariance (SM Sect. 2, chapters 2.2 and 2.3).
+
+## Cropland and grassland ##
+The DayCent model accounts for the vast majority of cropland and grassland soil carbon stock change, agricultural N 2 O, and rice methane uncertainty (Table 
+
+## Settlements ##
+Urban tree gross to net sequestration ratio contribution is an order of magnitude larger than any other settlement uncertainty element (Table 
+Yard trimmings and food scraps carbon stock change inputs account for less than 12% of settlement GHG flux uncertainty, with negligible contributions from remaining fluxes (carbon stock change on drained organic soils and N 2 O emissions from soil N additions).
+
+## Uncertainty attribution synthesis ##
+Our findings suggest higher LULUCF uncertainty in the US NGHGI than is currently reported. While our recalculated uncertainty estimates generally align with reported values, two notable exceptions are forest carbon stock change and cropland and grassland Tier 3 fluxes, where we found 5-27% (with sensitivity to litter and soil carbon stock change uncertainty) and 94% larger CI ranges, respectively. Total LULUCF CI magnitude could be 18-35% higher than US NGHGI (2018) reported values (Fig. 
+Higher cropland and grassland Tier 3 uncertainty can be directly attributed to the expert elicitation, which directed respondents to identify the uncertainty contribution from elements not currently accounted for in reported US NGHGI CIs, which ultimately included the two largest DayCent uncertainty elements (soil properties; leaching, runoff, and volatilization) (US NGHGI 2018).
+It is less clear whether higher forest carbon stock change uncertainty can be attributed to our choice of analytical region (eastern Texas), including a larger number of uncertainty elements in our analysis, or other assumptions made in our analysis (e.g., intertemporal covariance for litter and soil carbon pools). Accounting for sensitivity to uncertainty contributions from soil and litter carbon stock change and tree biomass volume coefficient A meaningful reduction in US LULUCF uncertainty would require addressing many of the largest elements simultaneously. No single element or element group would reduce the LULUCF CI by more than 10% except for tree biomass sampling error (Fig. 
+
+## Omitted fluxes ##
+In total, we find that net emissions of 123 MMT CO 2 e could be omitted from the US NGHGI, with the majority occurring on croplands and grasslands (Fig. 
+Emissions from settlement mineral soils are not included in the US NGHGI due to a lack of activity data and emission factors, a challenge that the IPCC acknowledges in allowing this omission as a Tier 1 method 
+The US NGHGI does not currently account for indirect and direct N 2 O emissions from federally owned croplands and grasslands with the exception of pasture, range, and paddock (PRP) sources. Assuming that federal croplands and grasslands emit direct and indirect N 2 O at the same per-area rates as non-federal lands, net of PRP N 2 O emissions, we find that this omission could reach 22 MMT CO 2 e.
+The largest omitted sink category is microbial methane sequestration in cropland, grassland, and forest soils (-25 MMT CO 2 e). However, we note that the soil methane sink is directly tied to methane's atmospheric lifetime and is likely already incorporated to some extent in methane global warming potential (GWP) values. The IPCC 
+We do not provide error bars for these estimates to avoid suggesting precision-as described above, these values are generated using highly simplified assumptions about average GHG fluxes over large areas. Our estimates are meant only to provide a basis for prioritizing research and data collection.
+
+## Discussion ##
+
+
+## Comparison to other studies ##
+Our results compare well with US NGHGI Approach 2 key category analysis, which ranks source and sink categories, as defined by UNFCCC common reporting format (CRF) guidelines, by their one-direction 95% CI magnitude 
+However, our analysis provides important additional detail. For example, "Net CO 2 Emissions from Settlements Remaining Settlements" is the second ranked key category, while our analysis finds that addressing DayCent model uncertainty would have a larger impact than focusing on urban trees. This inconsistency is due to the fact that the Day-Cent model is used across nine different CRF key categories. Thus, uncertainty attribution analysis can usefully focus on highly ranked CRF key categories, as long as crosscutting uncertainty elements are recognized.
+It is difficult to compare uncertainty attribution results across studies, since they vary widely in scope and structure. However, our findings are consistent with studies that suggest design-based sampling error outweighs allometric model uncertainty 
+
+## Opportunities for inventory improvements ##
+Countries looking to improve LULUCF GHG estimation methods can take advantage of existing research, data gathering, and model development targeting the largest uncertainty elements identified above.
+
+## Forest sampling error ##
+Increasing the sampling rate or number of plots in existing forest is a costly option for reducing sampling error. Rather, research has increasingly focused on using remote sensing data like LiDAR or radar to generate wall-to-wall forest biomass estimates (e.g., 
+Care must be taken in comparing precision of plot-based and remote sensing-based methods. Countries with national forest inventories tend to use design-based or probability-based statistical inference to estimate forest carbon fluxes, assuming that uncertainty is a function of the probability of selecting a given sample (observations are considered constant). When using remote sensing-based models, analysts may instead choose modelbased inference, assuming that uncertainty is driven by a population probability distribution (observations are realizations of a random variable) (McRoberts 2010). It is not valid to rank precision across the two methods due to different assumptions about the source of randomness 
+Annually updated remote sensing data products can help address concerns that land cover and land use changes are not reflected in LULUCF flux estimates, a source of uncertainty that we were not able to evaluate in this paper due to data constraints. For example, the 2018 US NGHGI uses the 2011 National Land Cover Database (NLCD) to stratify eastern Texas forest by canopy cover. Though individual plots could capture disturbance after 2011, spatial weights would reflect only area disturbed prior to 2011. As a result, large changes in US forest GHG fluxes would not be reflected in the inventory for up to five years under current stratification methods. To address this issue, the USA has begun generating annual NLCD updates to more closely monitor land use change (LCMAP 2021, LCMS 2021).
+
+## Tree-level biomass estimation ##
+We find a higher contribution from allometric model uncertainty compared to other studies (e.g., 
+Tree-level biomass estimates are an important input to remote sensing models and so will be key to inventory methods even as remote sensing data is increasingly utilized. Challenges to allometric model improvements include inconsistent methods in biomass measurement field studies 
+In an effort to address some of these challenges, the US Forest Service has compiled the Legacy Tree Data platform, which contains over 15,000 individual tree biomass measurements 
+
+## Cropland and grassland fluxes ##
+Our expert elicitation survey asked respondents to rank research, modeling, and data priorities, as identified in the literature, for reducing uncertainty in cropland and grassland Tier 3 GHG flux estimates (SM Table 
+Survey respondents noted that they were keen to have more empirical data in order to improve and validate existing soil models 
+Survey respondents also indicated that increased collaboration among model developers would help refine soil carbon flux predictions 
+
+## Application to other countries ##
+Other countries with similar land cover and NGHGI methods can use US-based uncertainty attribution to inform priorities for further analysis. For example, most of the world's forest area is now covered by strategic forest inventories, with many countries utilizing statistical sampling methods similar to the USA 
+There is more international heterogeneity in non-forest flux estimation methods, with many non-Annex I countries omitting these inventory categories entirely 
+
+## Conclusion ##
+Many countries have deprioritized NGHGI uncertainty estimation and reporting due to lack of data and programmatic resources, as well as the complexity of uncertainty methods. As Brazil indicated in their Third National Communication (2016), "Quantifying uncertainty for individual data items is as or more difficult to assess as the actual information sought." Countries are likely to prioritize improvements in LULUCF accuracy by increasing the use of Tier 3 methods and updating Tier 1 and 2 methods with the most recent science 
+NGHGI LULUCF uncertainty is a challenge for many major emitting countries and, for some, including the USA, is large enough that planned LULUCF emission reductions fall within the margin of estimation error. The analytical framework suggested here is one approach that governments can use to both transparently report uncertainty estimation methods and to identify opportunities for improving NGHGI accuracy and precision, with a view to increasing international confidence in NDC emission reduction progress.
+Using the USA as a case study, we detail the contribution of over 90 LULUCF uncertainty elements and omitted fluxes to uncertainty and bias in the US NGHGI. Most inventory uncertainty is driven by a small set of elements distributed across forestry, cropland and grassland, and settlement land use categories. Omitted fluxes could account for up to 13% of the current LULUCF inventory on an absolute value basis, primarily driven by CO 2 and CH 4 emissions in Alaska and urban mineral soils. Other countries can use these results to inform initial priorities for further analysis, particularly those using similar NGHGI methods or those that plan to take up similar methods in the future.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. National forest carbon inventories: policy needs and assessment capacity
+   Authors: 
+   Date: 2008
+
+2. Geostatistical estimation of forest biomass in interior Alaska combining Landsat-derived tree cover, sampled airborne Lidar and field observations
+   Authors: 
+   Date: 2018. June
+
+3. Mapping U.S. forest biomass using nationwide forest inventory data and moderate resolution information
+   Authors: 
+   Date: 2008
+
+4. Quantifying the model-related variability of biomass stock and change estimates in the Norwegian National Forest Inventory
+   Authors: 
+   Date: 2014
+
+5. 
+   Authors: 
+   Date: 2015
+
+6. Spatial GHG inventory at the regional level: accounting for uncertainty
+   Authors: 
+   Date: 2010
+
+7. Climate analysis indicators tool (CAIT): WRI's climate data explorer
+   Authors: 
+   Date: 2021. 23 April 2021
+
+8. Climate-driven trends in stem wood density of tree species in the Eastern United States: ecological impact and implications for national forest carbon assessments
+   Authors: 
+   Date: 2017
+
+9. Estimation of waste component-specific landfill decay rates using laboratory-scale decomposition data
+   Authors: , 
+   Date: 2010
+
+10. Soil respiration contributes substantially to urban carbon fluxes in the Greater Boston area
+   Authors: 
+   Date: 2016
+
+11. General CH 4 oxidation model and comparisons of CH 4 oxidation in natural and managed systems
+   Authors: , 
+   Date: 2000
+
+12. Estimating litter carbon stocks on forest land in the United States
+   Authors: 
+   Date: 2016. July
+
+13. Toward inventory-based estimates of soil organic carbon in forests of the United States
+   Authors: 
+   Date: 2017
+
+14. Biomass estimation from simulated GEDI, ICESat-2 and NISAR across environmental gradients in Sonoma County
+   Authors: 
+   Date: 2020
+
+15. A global inventory of the soil CH 4 sink
+   Authors: , 
+   Date: 2007
+
+16. Bias in the attribution of forest carbon sinks
+   Authors: 
+   Date: 2013. 2020. 16 April 2021
+
+17. Global carbon budget 2020
+   Authors: 
+   Date: 2020
+
+18. The key role of forests in meeting climate targets requires science for credible mitigation
+   Authors: 
+   Date: 2017
+
+19. Reconciling global-model estimates and country reporting of anthropogenic forest CO2 sinks
+   Authors: 
+   Date: 2018
+
+20. Statistical rigor in LiDAR-assisted estimation of aboveground forest biomass
+   Authors: 
+   Date: 2016
+
+21. Reporting GHG emissions: change in uncertainty and its relevance for detection of emission changes
+   Authors: 
+   Date: 2010
+
+22. Uncertainty analysis: an evaluation metric for synthesis science
+   Authors: 
+   Date: 2015
+
+23. Quantifying uncertainty in net primary production measurements. In Principles and standards for measuring primary production
+   Authors: 
+   Date: 2007. 2021. 23 April 2021
+
+24. refinement to the 2006 IPCC guidelines for national greenhouse gas inventories. Intergovernmental Panel on Climate Change
+   Authors: , , , , , , 
+   Date: 2006. 2006. 2019. 31 Dec 2019
+
+25. National-scale biomass estimators for United States tree species
+   Authors: 
+   Date: 2003
+
+26. Comparison of preparatory signal analysis techniques for consideration in the (post-) Kyoto policy process
+   Authors: 
+   Date: 2010
+
+27. Uncertainty in an emissions-constrained world
+   Authors: 
+   Date: 2014
+
+28. Quantitative quality assessment of the greenhouse gas inventory for agriculture in Europe
+   Authors: 
+   Date: 2010
+
+29. Accounting for climate change: uncertainty in greenhouse gas inventories -verification, compliance, and trading
+   Authors: 
+   Date: 2007
+
+30. High-resolution forest carbon modelling for climate mitigation planning over the RGGI region, USA
+   Authors: 
+   Date: 2021
+
+31. Error propagation in stock-difference and gain-loss estimates of a forest biomass carbon balance
+   Authors: 
+   Date: 2014
+
+32. Inference for Lidar-assisted estimation of forest growing stock volume
+   Authors: 
+   Date: 2013
+
+33. Probability-and model-based approaches to inference for proportion forest using satellite imagery as ancillary data
+   Authors: 
+   Date: 2010
+
+34. Advances and emerging issues in national forest inventories
+   Authors: 
+   Date: 2010
+
+35. A general method for assessing the effects of uncertainty in individual-tree volume model predictions on large-area volume estimates with a subtropical forest illustration
+   Authors: 
+   Date: 2014
+
+36. Hybrid estimators for mean aboveground carbon per unit area
+   Authors: 
+   Date: 2016
+
+37. a) Uncertainty of forest carbon stock changes -implications to the total uncertainty of GHG inventory of Finland
+   Authors: 
+   Date: 2007
+
+38. Uncertainty in agricultural CH4 AND N2O emissions from Finland -possibilities to increase accuracy in emission estimates
+   Authors: 
+   Date: 2007b
+
+39. The Washington Post's analysis of UNFCCC emissions reporting
+   Authors: , , 
+   Date: 2021. 22 Dec 2021
+
+40. Verifying greenhouse gas emissions: methods to support international climate agreements
+   Date: 2011
+
+41. Uncertainties of a regional terrestrial biota full carbon account: a systems analysis
+   Authors: 
+   Date: 2007
+
+42. A ground-based method of assessing urban forest structure and ecosystem services
+   Authors: 
+   Date: 2008
+
+43. Carbon storage and sequestration by trees in urban and community areas of the United States
+   Authors: 
+   Date: 2013
+
+44. Bias and variance in model results associated with spatial scaling of measurements for parameterization in regional assessments
+   Authors: 
+   Date: 2006
+
+45. Scale and uncertainty in modeled soil organic carbon stock changes for US croplands using a process-based model
+   Authors: 
+   Date: 2010
+
+46. Uncertainty in estimating land use and management impacts on soil organic carbon storage for US agricultural lands between 1982 and 1997
+   Authors: 
+   Date: 2003
+
+47. Climate-smart soils
+   Authors: 
+   Date: 2016
+
+48. Factors affecting the uncertainty of sinks and stocks of carbon in Finnish forests soils and vegetation
+   Authors: 
+   Date: 2006
+
+49. European anthropogenic AFOLU greenhouse gas emissions: a review and benchmark data
+   Authors: 
+   Date: 2020
+
+50. Toward error analysis of large-scale forest carbon budgets
+   Authors: 
+   Date: 2000
+
+51. Did the UNFCCC review process improve the national GHG inventory submissions?
+   Authors: 
+   Date: 2017
+
+52. Legacy tree data: a national database of detailed tree measurements for volume, weight, and physical properties
+   Authors: 
+   Date: 2015. 2015
+
+53. Monte Carlo analysis of uncertainties in the Netherlands greenhouse gas emission inventory for 1990-2004
+   Authors: 
+   Date: 2008
+
+54. Contribution of the land sector to a 1.5 °C world
+   Authors: 
+   Date: 2019
+
+55. Comparisons of allometric and climate-derived estimates of tree coarse root carbon stocks in forests of the United States
+   Authors: 
+   Date: 2015
+
+56. Sensitivity analysis as a tool for systematic reductions in greenhouse gas inventory uncertainties
+   Authors: , 
+   Date: 2001
+
+57. Uncertainties in greenhouse gas emission inventories -evaluation, comparability and implications
+   Authors: , 
+   Date: 2001
+
+58. Persistence of soil organic matter as an ecosystem property
+   Authors: 
+   Date: 2011
+
+59. Can the uncertainty of full carbon accounting of forest ecosystems be made acceptable to policymakers?
+   Authors: 
+   Date: 2010
+
+60. Sequestration of carbon in harvested wood products for the United States
+   Authors: 
+   Date: 2008
+
+61. A method countries can use to estimate changes in carbon stored in harvested wood products and the uncertainty of such estimates
+   Authors: 
+   Date: 2004
+
+62. Identifying influences on model uncertainty: an application using a forest carbon budget model
+   Authors: , 
+   Date: 2001
+
+63. Sectoral approaches to improve regional carbon budgets
+   Authors: 
+   Date: 2008
+
+64. How to measure, report and verify soil carbon change to realize the potential of soil carbon sequestration for atmospheric greenhouse gas removal
+   Authors: 
+   Date: 2020
+
+65. Designing a national soil carbon monitoring network to support climate change policy: a case example for US agricultural lands
+   Authors: 
+   Date: 2011
+
+66. Sample-based estimation of greenhouse gas emissions from forests-a new approach to account for both sampling and model errors
+   Authors: 
+   Date: 2014
+
+67. The knowns, known unknowns and unknowns of sequestration of soil organic carbon
+   Authors: 
+   Date: 2013
+
+68. National Forest Inventory in India: developments toward a new design to meet emerging challenges
+   Authors: 
+   Date: 2020
+
+69. Ministry of Science, Technology and Innovations
+   Date: 2016. 16 April 2021
+
+70. Carbon sequestration potential of agroforestry practices in temperate North America
+   Authors: , 
+   Date: 2011
+
+71. Agroforestry USDA Reports to America, Fiscal Years 201-2012 -Comprehensive Version
+   Date: 2012. 20 Dec 2018
+
+72. lands cape-change-monit oring-system-lcms-scien ce-team
+   Authors: 
+   Date: 2021. 20 April 2021
+
+73. Land Change Monitoring, Assessment, and Projection (LCMAP)
+   Date: 2021. 20 April 2021
+
+74. Paris Agreement to the United Nations Framework Convention on Climate Change
+   Authors: 
+   Date: 2015
+
+75. Decisions adopted by the conference of the parties serving as the meeting of the parties to the Paris Agreement
+   Date: 2019
+
+76. Preparations for the implementation of the Paris Agreement and the first session of the conference of the parties serving as the meeting of the parties to the Paris Agreement
+   Date: 2019
+
+77. Quality assurance/quality control and uncertainty management plan for the U.S. greenhouse gas inventory: procedures manual for quality assurance/quality control and uncertainty analysis
+   Authors: , 
+   Date: 2002
+
+78. Inventory of U.S. greenhouse gas emissions and sinks: 1990-2016
+   Authors: 
+   Date: 2018. 19 Dec 2019
+
+79. Inventory of U.S. greenhouse gas emissions and sinks: 1990-2017
+   Authors: 
+   Date: 2019. December 19, 2019. 1990-2017
+
+80. Inventory of U.S. greenhouse gas emissions and sinks: 1990-2019
+   Authors: 
+   Date: 2021. September 20, 2021. 1990-2019
+
+81. Defining uncertainty: a conceptual basis for uncertainty management in modelbased decision support
+   Authors: 
+   Date: 2003
+
+82. A call to improve methods for estimating tree biomass for regional and national assessments
+   Authors: 
+   Date: 2015
+
+83. Statistical dependence in input data of national greenhouse gas inventories: effects on the overall inventory uncertainty
+   Authors: , 
+   Date: 2010
+
+84. Assessing the uncertainty associated with national greenhouse gas emission inventories: a case study for Austria
+   Authors: , 
+   Date: 2001
+
+85. Uncertainty in measurements of trees in the US Forest Service Forest Inventory and Analysis (FIA) program
+   Authors: 
+   Date: 2019. December 30, 2019
+
+86. Refining national greenhouse gas inventories
+   Authors: 
+   Date: 2020
+
+87. The National Forest Inventory in China: history -results -international context
+   Authors: 
+   Date: 2015
+

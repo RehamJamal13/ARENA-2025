@@ -1,0 +1,345 @@
+================================================================================
+TITLE: Global land use changes are four times greater than previously estimated
+================================================================================
+
+AUTHORS:
+- Karina Winkler
+- Richard Fuchs
+- Mark Rounsevell
+- Martin Herold
+
+ABSTRACT:
+Quantifying the dynamics of land use change is critical in tackling global societal challenges such as food security, climate change, and biodiversity loss. Here we analyse the dynamics of global land use change at an unprecedented spatial resolution by combining multiple open data streams (remote sensing, reconstructions and statistics) to create the HIstoric Land Dynamics Assessment + (HILDA +). We estimate that land use change has affected almost a third (32%) of the global land area in just six decades (1960-2019) and, thus, is around four times greater in extent than previously estimated from long-term land change assessments. We also identify geographically diverging land use change processes, with afforestation and cropland abandonment in the Global North and deforestation and agricultural expansion in the South. Here, we show that observed phases of accelerating (~1960-2005) and decelerating (2006-2019) land use change can be explained by the effects of global trade on agricultural production.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Untitled ##
+A bout three-quarters of the Earth's land surface has been altered by humans within the last millennium 
+Yet, in spite of its societal relevance, understanding how global land use/cover (LUC) has changed across space and through time is limited by a lack of comprehensive data and the large uncertainties within existing LUC reconstructions 
+Even in the age of satellites, 'big data' and a growing trend of opening access to information, LUC data are still constrained by fragmented content, varying scales, a lack of spatial or temporal detail and inconsistent time series 
+Existing global, long-term land use reconstructions often rely on only a few observational data streams and are built on assumptions concerning, for example, the allocation of cropland (HYDE3.2 
+To analyse and better understand the spatiotemporal dynamics of global land use change, we combined multiple, high-resolution remote sensing data (see Supplementary Table 
+In this paper, we present the gains and losses in major LUC categories, identify different land use change patterns and compare these across the globe.
+
+## Results and discussion ##
+Spatial extent and diverging patterns of global land use change.
+We estimate that 17% of the Earth's land surface has changed at least once between the six land categories from 1960 to 2019 (see Fig. 
+We identify a global net loss of forest area of 0.8 million km², but an expansion in global agriculture (i.e. cropland and pasture/ rangeland) of 1.0 and 0.9 million km², respectively. However, the global trends in land use change conceal many regionally different trajectories. Whereas forest areas in the Global North (including China) have increased, forest areas in developing countries of the Global South have strongly decreased. The North-South difference in gains and losses of forests, is the opposite for global cropland areas, which have decreased in the Global North and increased in the Global South. The difference between North and South is less pronounced for pasture/ rangeland change, since pasture expansion both in China and Brazil accounts for a major part of the global land area (see Fig. 
+
+## Gross change ##
+
+
+## Net change ##
+By separating land use change into areas with a single change (e.g. deforestation) or multiple change events (e.g. crop-grass rotation), we see clear patterns across the globe (see Fig. 
+Temporal dynamics of global land use change and its relation to globalised markets. The rate of global land use change was not constant over time. In analysing the temporal dynamics, we identify two different phases: (1) an acceleration phase with an increasing rate of change from 1960 to 2004; and (2) a decreasing rate of change from 2005 to 2019 (see Fig. 
+However, the data suggest a rather abrupt change to decreasing rates of land use change in the period from 2005, which is most evident in Africa and South America (see Fig. 
+Aside from globalised trade, other important drivers of land change dynamics, which have increasingly influenced the rate of land use change during the deceleration phase, are climate change and its associated impacts such as extreme events, drought and floods. Agricultural land use has been affected by droughts in West 
+When analysing the temporal dynamics of global land use change per LUC category, we find large annual variability in agricultural land use change. While global forest area shows a rather steady annual net decrease, which accelerated during the 1990s (see Fig. 
+Comparing the rate of global land use change. Comparing the HILDA + annual change rates with previous land use reconstructions (see Fig. 
+Land cover change rates derived from higher-resolution remote sensing datasets such as Hansen GFC 
+Since HILDA + is built on multiple heterogeneous datasets, errors inherent in single datasets are attenuated during the change allocation procedure. By harmonising multiple information in the change allocation procedure, we build on a confluence of evidence. Thus, HILDA + can be seen as a synthesis product of quality-tested, recognised LUC datasets. To assess the uncertainty of HILDA + maps of global land use change, we analysed the agreement of the used input datasets and the area fraction for each indicated LUC category on an annual basis (see Supplementary Table 
+The results of the HILDA + land use change reconstruction show how synergistic information from Earth Observation data, reconstructions and national statistical inventories can be used to identify the spatial patterns and temporal dynamics of global land use change at unprecedented levels of detail. This study shows the benefit of using multiple, data-driven resources, which is needed for comprehensive land change assessment at a global scale. This gives more detailed insights into both the spatial patterns and the temporal dynamics of land use change across the Earth. We identify diverging processes of deforestation and agricultural expansion and demonstrate that the rate and extent of global land use change is responsive to socio-economic developments and disruptions such  
+
+## Methods ##
+We reconstructed LUC change dynamics for six LUC categories (urban, cropland, pasture/rangeland, forest, unmanaged grass/shrubland, sparse/no vegetation) based on multiple sources of observational data, from which country-scale change extents and mean fractional area were derived per 1 × 1 km grid cell from 1960 to 2019. We calculated the country-and year-specific areas of change for each land transition between these categories. A base map for the year 2015 served as a starting point for the change allocation procedure, which, at first, runs backward in time (2015-1960) and, subsequently, forward in time (2015-2019). For each time step and country, LUC change was allocated to selected candidate pixels by using ranked gridded class fractions and the data-derived change extents. Each of these iterative procedures yielded a global LUC map, which served as the new base map for the next time step. A visualisation of the HILDA + reconstruction framework, which evolved from the approach of the HILDA over Europe 
+Pre-processing of remote sensing-based LUC data. The HILDA + reconstruction was derived from multiple, openly available global, continental, regional and national LUC datasets (see Supplementary Table 
+Harmonisation of LUC maps. We defined a common generalised classification scheme for harmonising the remote sensing-based LUC products. The classification scheme was based on six LUC classes that aim to encompass the major land use changes caused by people and, at the same time, to find a common ground for the input datasets that differ in thematic detail. This classification relates to the FAO land use definitions 
+For those years when no observational datasets were available, remote sensing products with a sufficiently long time series (ESA CCI, MODIS MCD12Q1, GLAD UMD VCF) were back-casted in a stepwise manner, based on a linear extrapolation of the mean trend of the first five observed values in time.
+Probability maps for LUC categories. For each of the harmonised land cover categories (see Supplementary Table 
+Based on the resulting maps of area fractions, we derived probability maps for our final LUC categories (see Supplementary Table 
+For separating managed from unmanaged grasslands, we first combined the maps for grassland and shrubland by calculating the mean of their area fractions. We used the resulting maps as probability layers for LUC category 5: Unmanaged grass-/shrubland. For generating the probability layers of LUC category 3: Pasture/ rangelands, we used the Gridded Livestock World v3 (GLW, see Supplementary Table 
+Base map calibration. We used the recently released Copernicus LC100 Global Land Cover map for the reference year 2015 to generate a base map for the subsequent reconstruction of LUC change. After reclassifying the map into the generalised land cover categories (see Supplementary Table 
+Preparing datasets for national LUC change matrices. The absolute matrices of LUC change, and the land area in each LUC category that changes into another category in a specific country and year, were generated from two different data streams: FAO statistics and remote sensing products. First, we prepared tables of FAO land use area 
+Change calculation. We derived net changes in the categories 2: Cropland, 3: Pasture/rangelands and 4: Forest from the FAO land use inventories (Arable land and Permanent cropland, Permanent meadows and pastures, Forest), applying the relative changes to the areas from the base map, respectively. We used the base map and the relative population development from FAO (Total population) as a proxy for net urban area change (LUC 1: Urban areas). The remaining land portion (FAO land area minus Urban, Cropland, Pasture/rangelands and Forest area) was divided proportionally into LUC category 5: Unmanaged grass/shrubland and 6: Sparse/no vegetation according to the area ratio of these categories in the base map.
+During the change allocation procedure, a new transition matrix including all gross changes between the LUC categories was iteratively built for each time step, each country and each land transition based on the minimum ratio of gross change to class area from the data-derived country-specific mean transition matrix. This ratio represents the average share of land under a specific LUC category that is converted to another category, either a gain or a loss in LUC category.
+Change allocation. Based on the recalculated country-and year-specific transition matrices, the magnitude of LUC change was distributed over the grid by means of corresponding probability maps for each LUC category. This was carried out in three consecutive steps: First (round 1), change was assigned if the respective LUC categories held the highest area fraction and were greater than 0.1. Second (round 2), if no candidate pixels were found in round 1, change was allocated to grid cells where the area fraction of the respective LUC category was greater than 0.4. Round 3 applied if no candidate pixels were existent after rounds 1 and 2. In the end, no changes were allocated in this step. This procedure was undertaken iteratively for each year (in a back-and forward mode starting from the base year 2015, respectively), for each individual country and for each land transition between two LUC categories. The output of each change allocation step of the annual loop was a new global map of LUC, which served as the base map for the next processing step.
+Change analysis. The output of the HILDA + change allocation procedure are annual maps of global LUC states (the distribution of LUC categories) and transitions. The transition layers served as the basis for analysing spatial extent, patterns, rates and dynamics of global land use change. Looping through all transition layers, we classified the coded transitions into change and non-change events and counted their occurrence per pixel. The sum of all change occurrences represents the total amount of gross LUC change for the study period. Similarly, LUC category-specific changes were derived by classifying the coded land transitions into gain, loss or stable/non-change events within the respective LUC category. Again, we summed up the occurrences of the different events iteratively through time. Based on the resulting frequencies, we assigned LUC category-specific change on the global grid: gain (single change event), loss (single change event), both gain and loss (multiple change events).
+Uncertainty assessment. In order to analyse the uncertainty and assess the reliability of the resulting HILDA + dataset, we derived annual layers of uncertainty information based on the available input LUC datasets. The number of available datasets, the maximum deviation in class area fraction and the mean class area fraction from all available datasets per year were used to generate per-pixel quality information. Based on the multi-year mean of dataset agreement (maximum deviation) and class coverage (mean class area fraction), global quality flags were derived and mapped across the globe (see Supplementary Table 
+Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit http://creativecommons.org/ licenses/by/4.0/. © The Author(s) 2021
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Land management and land-cover change have impacts of similar magnitude on surface temperature
+   Authors: 
+   Date: 2014
+
+2. Framing and Context. in Climate Change and Land: An IPCC Special Report on Climate Change, Desertification, Land Degradation, Sustainable Land Management, Food Security, and Greenhouse Gas Fluxes in Terrestrial Ecosystems
+   Authors: 
+   Date: 2019
+
+3. The global carbon budget 1959-2011
+   Authors: , 
+   Date: 2013
+
+4. Global models of human decision-making for land-based mitigation and adaptation assessment
+   Authors: , , 
+   Date: 2014
+
+5. Land-use protection for climate change mitigation
+   Authors: 
+   Date: 2014
+
+6. Global habitat loss and extinction risk of terrestrial vertebrates under future land-use-change scenarios
+   Authors: , 
+   Date: 2019
+
+7. Global land use change, economic globalization, and the looming land scarcity
+   Authors: , 
+   Date: 2011
+
+8. The key role of forests in meeting climate targets requires science for credible mitigation
+   Authors: 
+   Date: 2017
+
+9. Uncertainties in the land-use flux resulting from land-use change reconstructions and gross land transitions
+   Authors: 
+   Date: 2017
+
+10. Current challenges of implementing anthropogenic land-use and land-cover change in models contributing to climate change assessments
+   Authors: 
+   Date: 2017
+
+11. A high-resolution and harmonized model approach for reconstructing and analysing historic land changes in Europe
+   Authors: , , 
+   Date: 2013
+
+12. Models meet data: challenges and opportunities in implementing land management in Earth system models
+   Authors: 
+   Date: 2018
+
+13. Anthropogenic land use estimates for the Holocene -HYDE 3.2
+   Authors: , , , 
+   Date: 2017
+
+14. Harmonization of global land-use change and management for the period 850-2100 (LUH2) for CMIP6
+   Authors: 
+   Date: 2020
+
+15. Estimating historical changes in global land cover: croplands from 1700 to 1992
+   Authors: , 
+   Date: 1999
+
+16. Annual dynamics of global land cover and its long-term changes from 1982 to 2015
+   Authors: 
+   Date: 2020
+
+17. FAOSTAT land use
+   Date: 2019
+
+18. FAOSTAT population, annual population
+   Date: 2019
+
+19. China's response to a national land-system sustainability emergency
+   Authors: 
+   Date: 2018
+
+20. China and India lead in greening of the world through land-use management
+   Authors: 
+   Date: 2019
+
+21. Revegetation in China's Loess Plateau is approaching sustainable water resource limits
+   Authors: 
+   Date: 2016
+
+22. The effects of land use and climate change on the carbon cycle of Europe over the past 500 years
+   Authors: , , 
+   Date: 2012
+
+23. Returning forests analyzed with the forest identity
+   Authors: 
+   Date: 2006
+
+24. Forest Resources of the United States
+   Authors: , , , 
+   Date: 2017
+
+25. 
+   Date: 2019
+
+26. Prevailing myths about agricultural abandonment and forest regrowth in the United States
+   Authors: , , 
+   Date: 2010
+
+27. Large-scale treeline changes recorded in Siberia
+   Authors: , 
+   Date: 2004
+
+28. Tree-line structure and dynamics at the northern limit of the larch forest: Anabar Plateau
+   Authors: 
+   Date: 2013
+
+29. The effects of climate, permafrost and fire on vegetation change in Siberia in a changing climate
+   Authors: , , 
+   Date: 2009
+
+30. Shrub invasions of North American semiarid grasslands
+   Authors: 
+   Date: 2000
+
+31. Diversity and change in Australia's rangelands: a post-productivist transition with a difference?
+   Authors: 
+   Date: 2002
+
+32. The role of pasture and soybean in deforestation of the Brazilian Amazon
+   Authors: , , , 
+   Date: 2010
+
+33. Decoupling of deforestation and soy production in the southern Amazon during the late 2000s
+   Authors: 
+   Date: 2012
+
+34. What causes deforestation in Indonesia?
+   Authors: , , , 
+   Date: 2019
+
+35. Rapid conversions and avoided deforestation: examining four decades of industrial plantation expansion in Borneo
+   Authors: 
+   Date: 2016
+
+36. Oil palm concessions in southern Myanmar consist mostly of unconverted forest
+   Authors: 
+   Date: 2019
+
+37. Exploring land use changes and the role of palm oil production in Indonesia and Malaysia
+   Authors: , , , 
+   Date: 2011
+
+38. 
+   Authors: 
+   Date: 2018
+
+39. Eliminating Deforestation from the Cocoa Supply Chain
+   Authors: , , , 
+   Date: 2017
+
+40. Deforestation risk due to commodity crop expansion in sub-Saharan Africa
+   Authors: , , 
+   Date: 2017
+
+41. Managing China's pastoral lands: current problems and future prospects
+   Authors: , 
+   Date: 2015
+
+42. 
+   Authors: , 
+   Date: 2020
+
+43. Integrated crop-livestock systems in Australian agriculture: trends, drivers and implications
+   Authors: , 
+   Date: 2012
+
+44. Intensified dryland crop rotations support greater grain production with fewer inputs
+   Authors: , , 
+   Date: 2018
+
+45. Determinants of agricultural land abandonment in post-Soviet European Russia
+   Authors: , , , , 
+   Date: 2013
+
+46. Are shrubs really a sign of declining ecosystem function? Disentangling the myths and truths of woody encroachment in Australia
+   Authors: , 
+   Date: 2015
+
+47. Shrub encroachment and climate change increase the exposure to drought of Mediterranean wood-pastures
+   Authors: , 
+   Date: 2019
+
+48. Globalization's effects on world agricultural trade
+   Authors: 
+   Date: 1960-2050. 2010
+
+49. Food regimes and their trade links: a socioecological perspective
+   Authors: , 
+   Date: 2019
+
+50. Tele-connecting local consumption to global land use
+   Authors: , , 
+   Date: 2013
+
+51. Crude oil prices -70 year historical chart
+   Authors: 
+   Date: 2010
+
+52. Bioenergy and global land-use change
+   Authors: , , 
+   Date: 2014
+
+53. Contextualising land grabbing: contemporary land deals, the global subsistence crisis and the world food system. Can
+   Authors: 
+   Date: 2012
+
+54. Rising food prices, food price volatility, and social unrest
+   Authors: 
+   Date: 2015
+
+55. Teleconnected food supply shocks
+   Authors: , , , , 
+   Date: 2016
+
+56. What drives the global "land rush
+   Authors: , , 
+   Date: 2015
+
+57. Is China different from other investors in global land acquisition? Some observations from existing deals in China's Going Global Strategy
+   Authors: , , , 
+   Date: 2017
+
+58. Transnational land acquisitions beyond the food and financial crises
+   Authors: , , , 
+   Date: 2019
+
+59. Spatio-temporal patterns of drought and impact on vegetation in North and West Africa based on multi-satellite data
+   Authors: 
+   Date: 2020
+
+60. Drought vulnerability drives land-use and land cover changes in the Rift Valley dry lands of Ethiopia
+   Authors: , 
+   Date: 2013
+
+61. Dynamics of land-use and land-cover change in tropical regions
+   Authors: , , 
+   Date: 2003
+
+62. Post-Soviet cropland abandonment and carbon sequestration in European Russia
+   Authors: 
+   Date: 2013
+
+63. Why the US-China trade war spells disaster for the Amazon
+   Authors: 
+   Date: 2019
+
+64. United States, Department of Agriculture, Economic Research Service, & Agriculture and
+   Authors: 
+   Date: 1987
+
+65. Identifying droughts affecting agriculture in Africa based on remote sensing time series between 2000-2016: rainfall anomalies and vegetation condition in the context of ENSO
+   Authors: , , 
+   Date: 2017
+
+66. Achieving Peak Pasture: shrinking Pasture's footprint by spreading the livestock revolution
+   Authors: , , , 
+   Date: 14 June 2019
+
+67. High-resolution global maps of 21st-century forest cover change
+   Authors: 
+   Date: 2013
+
+68. Land Cover CCI Product User Guide V. 2. maps
+   Authors: 
+   Date: 2017
+
+69. MCD12Q1 MODIS/Terra+Aqua Land Cover Type Yearly L3 Global 500m SIN Grid V006
+   Authors: , 
+   Date: 2019
+
+70. Land Cover Classification System (LCCS)
+   Authors: , , 
+   Date: 2000
+
+71. HILDA+ (HIstoric Land Dynamics Assessment+) global land use change between 1960 and 2015
+   Authors: , , , 
+   Date: 2020
+

@@ -1,0 +1,297 @@
+================================================================================
+TITLE: Remote Sensing of Environment
+================================================================================
+
+AUTHORS:
+- Dizhou Guo
+- Wenzhong Shi
+- Ming Hao
+- Xiaolin Zhu
+
+ABSTRACT:
+Spatiotemporal fusion is a feasible solution to resolve the tradeoff between the temporal and spatial resolutions of remote sensing images. However, the development of spatiotemporal fusion algorithms has not yet reached maturity, and existing methods still face many challenges, e.g., accurately retrieving land cover changes and improving the robustness of fusion algorithms. The Flexible Spatiotemporal DAta Fusion (FSDAF) method proposed by Zhu et al. in 2016 solved the abovementioned problems to some extent. However, FSDAF has two shortcomings that can be further improved: (1) FSDAF is prone to losing spatial details and predicting a "blurrier" image due to the input of coarse pixels containing type change information and a large amount of boundary information for unmixing calculation, and (2) FSDAF does not optimize the areas of land cover change. In this paper, an improved FSDAF method incorporating change detection technology and an optimized model for changed-type areas (FSDAF 2.0) was proposed to improve the aforementioned problems. Based on the existing FSDAF algorithm, FSDAF 2.0 excludes changed pixels and boundary pixels for unmixing calculation, and establishes a model to optimize the changed pixels. Its performance was compared with that of the Spatial and Temporal Adaptive Reflectance Fusion Model (STARFM), the original FSDAF, and the enhanced FSDAF that incorporates sub-pixel class fraction change information (SFSDAF). Two sites consisting of landscapes with heterogeneous and large-scale abrupt land cover changes were employed for testing. The results of the experiments demonstrate that FSDAF 2.0 effectively improves the shortcomings of FSDAF, blends synthetic fine-resolution images with higher accuracy than that of the other three methods at two different sites, and strengthens the robustness of the fusion algorithm. More importantly, FSDAF 2.0 has a powerful ability to retrieve land cover changes and provides a feasible way to improve the performance of retrieving land cover changes. Consequently, FSDAF 2.0 has great potential for monitoring complex dynamic changes in the Earth's surface.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+With the rapid development of remote sensing technology in the past decade, remote sensing has played an increasingly important role in monitoring urbanization 
+Moreover, a growing problem currently exists in the use of remote sensing data: the remote sensing community has accumulated a large amount of historical data since the first remote sensing satellite launched. However, due to the influence of thick cloud contamination and other factors (e.g., SLC-off problem in Landsat 7 ETM+), limited remote sensing data can be employed directly, which further increases the difficulty of obtaining dense time series with high spatial resolution data.
+To solve the abovementioned problems, launching more satellites or improving the performance of sensors in a short period of time is impractical, while the spatiotemporal fusion of multisource images from multiple satellites to obtain high spatial resolution and dense timeseries data is a feasible solution. Compared with traditional pansharpening fusion, spatiotemporal fusion is a relatively new concept 
+Due to a large number of satellite images being freely available to the public (e.g., Landsat, MODIS, and Sentinel) and the large demand for Earth monitoring with high spatial resolution and dense time series, in the last two decades, there has been increasing interest in spatiotemporal fusion. Recently, existing spatiotemporal fusion methods have been classified into five groups based on the specific principle: weight function-based, unmixing-based, Bayesian-based, learning-based, and hybrid methods. A comprehensive review of spatiotemporal fusion methods in these five groups can be found in the literature 
+The Spatial and Temporal Adaptive Reflectance Fusion Model (STARFM) is the weight function-based method developed first 
+Consequently, spatiotemporal fusion technology has developed rapidly, but as a relatively new research topic in the remote sensing field, existing fusion methods based on different principles have their own strengths and weaknesses. The development of spatiotemporal fusion algorithms has not yet reached maturity, and existing solutions still face many challenges, such as the following typical problems.
+
+## Difficulty in retrieving land cover changes ##
+Retrieving land cover changes is a difficult problem for spatiotemporal fusion 
+
+## Low robustness in different types of landscapes ##
+Currently, existing spatiotemporal fusion algorithms have different advantages and limitations in different landscapes due to their various principles. For example, faced with a site with a heterogeneous landscape, a site with a homogeneous landscape, and a site with large-scale abrupt land cover changes, the blending results of using various spatiotemporal fusion algorithms are quite different; for example, STARFM has promising accuracy in homogeneous landscapes, but it is ineffective in the face of heterogeneous landscapes 
+
+## High demand of input data ##
+Many existing spatiotemporal fusion methods, including ESTARFM, STAARCH, STDFA, SPSTFM, etc., need more than one prior coarse-and fine-resolution image pair as input data. For real-time processing, some fusion methods like ESTARFM and STAARCH cannot be used because they need the image after the prediction time. For historical case, due to the influence of thick cloud contamination and other factors, it is difficult to acquire one more high-quality coarse-and fine-resolution image pair that has acceptable temporal distance or does not experience large-scale land cover changes between the image pairs, only one pair of prior images may be available in most cases 
+The FSDAF proposed by 
+Although FSDAF performs excellently in spatiotemporal fusion, it has two problems that can be improved: (1) in the unmixing process of FSDAF, coarse pixels with change values within the range of the 0.1-0.9 quantiles (or a narrower range, e.g., 0.2-0.8) are selected to participate in the unmixing calculation to filter out the changed pixels. However, this strategy is empirical and not strict. In addition, the coarse pixels containing a large amount of boundary information are not excluded. These pixels would introduce the wrong spectral information into the unmixing calculation once selected. As a result, FSDAF is prone to reducing the contrast between different objects, losing spatial details and predicting a "blurrier" image. This problem is particularly acute in the case of the large-scale type change occurring during the fusion period.
+(2) FSDAF can capture part of the change information from the coarseresolution image at T 2 by using the TPS interpolation method 
+To address the above problems, an improved FSDAF method incorporating change detection technology and an optimized model for changed-type areas (FSDAF 2.0) is proposed in this paper. Its goal is to overcome the disadvantages of FSDAF and solve the three typical problems mentioned above. Specifically, FSDAF 2.0 employs change detection technology to find the changed-type pixels by detecting two coarse-resolution images of different phases and excludes the coarse pixels containing changed-type areas and a large amount of boundary information in the unmixing process. Furthermore, FSDAF 2.0 establishes an optimized model that performs targeted optimization on the prediction values of changed-type pixels. To validate the effectiveness of the proposed method, we compared the performance of FSDAF 2.0 with the STARFM, the original FSDAF, and the enhanced FSDAF that incorporates sub-pixel class fraction change information (SFSDAF) 
+
+## Methodology ##
+FSDAF 2.0 only requires one pair of coarse-and fine-resolution images acquired at T 1 and one coarse-resolution image at T 2 . The flowchart of FSDAF 2.0 is shown in Fig. 
+FSDAF 2.0 includes four main steps: (1) classify and detect edges; (2) obtain thin plate spline (TPS) interpolation images and detect changed pixels; (3) unmix and obtain the temporal prediction; and (4) optimize and obtain the final prediction. The specific steps and theories of FSDAF 2.0 are as follows:
+
+## Classify and detect edges ##
+This step involves acquiring the classification map and the edge image. The fraction of each class within one coarse pixel, which needs to be used in the subsequent unmixing process, can be obtained from the classification map. In this paper, the unsupervised classifier ISODATA is used to classify the fine-resolution image at T 1 . The edge detection algorithm is employed to extract the features of the object boundary, i.e., obtain the edge image of the fine-resolution image at T 1 . For convenience, the edge of the surface is referred to as the "boundary area". The fine pixels inside the boundary area are called "boundary pixels". The boundary pixels can be found by using the threshold method in the edge image. The boundary pixel is mixed with two or more types of features, generally due to being located at the edges of different objects. Accordingly, its spectral features are quite different from the type to which it belongs. Therefore, the prediction accuracy can be affected once coarse pixels containing a large number of boundary pixels are employed to estimate the temporal change of each class, specifically, increasing the error of the unmixing calculation and reducing the contrast between different objects in the blending image. To avoid the above problems, determining the boundary pixels is a key process. FSDAF 2.0 employs the Sobel operator to obtain the edge image. The pixels in the edge image with values within the range of the 0.96-1.0 quantiles are defined as boundary pixels.
+
+## Obtain TPS interpolation images and detect changed pixels ##
+Thin plate spline (TPS) interpolation is a kind of spatial interpolation method based on spatial dependence, and is a tool for interpolating surfaces from scattered datasets. TPS interpolation can produce a "smooth" interpolation image and capture the spatial patterns and land cover type change signals. More information about TPS can be found in the literature 
+The ability of capturing change information in FSDAF mainly results from the TPS interpolation of coarse-resolution image at T 2 (i.e., spatial prediction). However, FSDAF distributes residuals on the assumption that errors depend mainly on the homogeneity of the surface in step 3. In other words, the original FSDAF does not make targeted optimization to changed-type areas. The lack of this process affects the accuracy and reliability of the blending result when facing a site with land cover type changes. The key to settling this problem is to find the changed-type pixels during the fusion period. Therefore, it is reasonable to employ change detection technology to solve this problem. The selection of the change detection algorithm depends on many factors, e.g., image size, resolution, scale of the type changes, and calculation efficiency. For convenience, the fine pixels that have type changes during the fusion period are referred to as "changed pixels", while other pixels are called "unchanged pixels".
+In this paper, two thresholding algorithms were employed: the thresholding method based on the Gaussian distribution model and OTSU 
+where C 1 and C 2 are the coarse-resolution images at T 1 and T 2 , respectively; In most cases, the difference values of remote sensing images in two phases approximately agree with the Gaussian distribution 
+where ω 0 is the ratio of the unchanged pixels to the number of total pixels, ω 1 is the ratio of the changed pixels to the number of total pixels, μ 0 is the average value of the unchanged pixels, μ 1 is the average value of the changed pixels, and μ is the average value of the total pixels. OTSU employs the traversing method to obtain the threshold values. The thresholds are calculated separately for two cases.
+Compared with the Gaussian distribution model, OTSU tends to mistakenly judge phenological changes as classification changes, but it is suitable for detecting areas where the land cover type changes on a large scale. Consequently, FSDAF 2.0 chooses the change detection algorithm according to whether the difference values of TPS interpolation result in two phases in accordance with the Gaussian distribution model. There are many methods that can judge whether the difference values agree with the Gaussian distribution model, such as the Shapiro-Wilk test 
+In the above threshold calculation, coarse-resolution images are used instead of TPS interpolation images. We found that there is negligible difference between the threshold values obtained by using interpolation images and coarse-resolution images as input. This strategy effectively reduces the calculation amount. After thresholds are obtained, the difference image of two interpolation images is employed to make the change detection binary image. Specifically, the values of pixels in the range of the thresholds are selected as changed pixels.
+The specific steps of change detection include (1) acquiring a difference image by subtracting two coarse-resolution images; (2) judging whether the difference values are accordance with the Gaussian distribution model; (3) calculating thresholds; and (4) determining the changed pixels in the difference image of interpolation images. In this paper, the thresholds of each band are obtained, which need to be used to limit the results of the unmixing calculation in step 3. In the change detection process, the shortwave infrared band (e.g., SWIR1 or SWIR2 is chosen in Landsat 7 ETM+) is employed to calculate difference values only. The shortwave infrared band is often employed to distinguish rock 
+
+## Unmix and obtain the temporal prediction ##
+This step employs linear unmixing technology to estimate the change value between two phases and then calculate the temporal prediction. In the classification process, the class fractions within a coarse pixel f c (x i , y i ) are acquired. According to the spectral linear unmixing theory, and assuming no type change occurs during the blending period, the temporal change of a coarse pixel is the weighted sum of the temporal change of all classes within it:  
+(1, )
+Considering that the changed pixels involved in the inversion calculation can affect the accuracy, the original FSDAF excludes the pixels with ΔC outside of the range of the 0.1-0.9 quantiles. This strategy is empirical and has no theoretical basis. Instead, FSDAF 2.0 excludes the changed pixels according to the result of change detection in step 2 and limits the change value of class ΔF in the closed interval [Q neg , Q pos ]. Furthermore, FSDAF 2.0 takes into account the effect of boundary pixels, and coarse pixels containing more than 10% of boundary pixels are also excluded. The process of filtering pixels is shown in Fig. 
+After the calculation of temporal change is completed, and the change value of each class is assigned to fine pixels in the T 1 phase of the corresponding class, and the temporal prediction can be obtained.
+
+## Optimize and obtain the final prediction ##
+Similar to FSDAF, FSDAF 2.0 distributes residuals on the assumption that errors depend mainly on the homogeneity of the surface. Consequently, the change value of each class is corrected. However, the above calculation is on a pixel-by-pixel basis; thus, the neighborhood information is employed to reduce the block effect and obtain a more robust prediction F c . The specific processes of distributing residuals and using neighborhood information to obtain robust prediction can be found in the literature 
+Theoretically, the TPS interpolation result of the coarse-resolution image at T 2 preserves most of the actual information of the fine-resolution image at T 2 in homogeneous areas. In that case, using the TPS interpolation result to replace the changed pixels is a reasonable optimization method. The TPS interpolation result, however, only uses the spatial dependence of the coarse pixels, which means it produces a "smooth" result. Compared with the real fine-resolution image at T 2 , the TPS interpolation result loses many spatial details, and may lead to many spectral and structural errors. In addition, the spectral differences between two sensor platforms should also be considered. Therefore, replacing the changed pixels directly by TPS interpolation results is not rigorous.
+To address this problem, FSDAF 2.0 proposes the TPS reliability coefficient (TRC) to describe the reliability degree to which the changed pixels are replaced by the TPS interpolation result. The similarity, homogeneity and consistency index between two images in different phases are used to calculate the TPS reliability coefficient.
+The similarity index (SI) describes the spectral similarity between the TPS interpolation image and the real fine-resolution image. Specifically, the similarity index not only describes the difference in pattern between the fine-resolution image and TPS interpolation image but also reflects the spectral difference of different sensor platforms. Theoretically, more similarity between the real image and TPS interpolation image leads to more reliable employment of the TPS interpolation result at T 2 to correct the changed pixels. Logically, the values of SI in the T 2 phase need be obtained. However, the fine-resolution image at T 2 is unknown; instead, the images at T 1 are employed to calculate the SI. Before calculating the similarity index, the difference values of the TPS interpolation image and fine-resolution image at T 1 need to be obtained, as shown in the following equation:
+(5)
+where (x ij , y ij , b) is the coordinate index of the jth fine pixel within the coarse pixel at location (x i , y i ) in band b, F 1 TPS (x ij , y ij , b) is the value of the TPS interpolation result at T 1 , and F 1 (x ij , y ij , b) is the value of the fine-resolution image in T 1 phase.
+To simplify the calculation, we assume that the difference values F d (x ij , y ij , b) are in accordance with the Gaussian distribution model and consider that there is no spectral similarity between the TPS interpolation image and the real image when the difference value is beyond the triple standard deviations of the average difference. In that case, the similarity index is 0. For other changed pixels, the calculation process is as follows:
+where mean(F d ) is the average difference value in band b, stddev(F d ) is the standard deviation of the difference value in band b. The SI ranges from 0 to 1, and larger values indicate more spectral similarity between the TPS interpolation image and the real image.
+The homogeneity index reflects the complexity of the land surface. Logically, the higher the homogeneity of the image is, the less spatial details the surface has; thus, less information can be lost by TPS interpolation. In that case, it is more suitable to use the TPS interpolation result to modify the value of the changed pixel. FSDAF 2.0 uses a modified version of the homogeneity index in the original FSDAF to describe the homogeneity of the fine-resolution image in the T 1 phase:
+where I p = 1 means the pth fine pixel within a moving window with the same land cover type as the central pixel (x ij , y ij ); otherwise, I p = 0. k is the number of fine pixels within one coarse pixel; MHI ranges from 0 to 1, and larger values indicate a more homogenous landscape 
+Because the similarity index and homogeneity index at the prediction phase cannot be calculated without the fine-resolution image of the T 2 phase, instead, the similarity index and homogeneity index mentioned above are the values of the T 1 phase. These indexes of the two phases are different mainly because of the land cover changes. The reliability of the blending result cannot be guaranteed by using the calculated value of the T 1 phase to correct the values of the changed pixels. To solve this problem, the consistency index (CI) of the two coarse-resolution images is proposed to reflect the consistency of the spatial information and structural relations in different phases. A larger consistency index indicates a smaller change in the internal spatial relation between two phases; furthermore, a larger index means that the similarity index and homogeneity index of the two phases are closer. The calculation formula of CI is as follows:
+where stddev(C 1 ) is the standard deviation of the coarse-resolution image value in band b at T 1 and stddev(C 2 ) is the standard deviation of the values of the coarse-resolution image in band b at T 2 . The standard deviation can describe the internal relationship characteristics of the image data. Theoretically, CI can reflect the changes in the internal characteristics of the two phases.
+The TPS reliability coefficient TRC is the product of the similarity index, homogeneity index and consistency index, as follows:
+The list optimization model for changed pixels is as follows:
+where (x ij , y ij , b) is the index of the changed pixel, F c (x ij , y ij , b) is the value of the changed pixel in the robust prediction, and F 2 TPS (x ij , y ij , b) is the TPS interpolation result in the coarse-resolution image at T 2 , i.e., the spatial prediction. After optimizing each changed pixel, the final synthetic image is obtained.
+
+## Testing experiment ##
+
+
+## Study area and data ##
+FSDAF 2.0 was tested by two challenging landscapes that were intercepted from Irina V. Emelyanova's open spatiotemporal fusion experimental data 
+The heterogeneous site is located in the southern part of New South Wales, Australia (145.0675°E, 34.0034°S), as shown in Fig. 
+The site with large-scale abrupt land cover changes is located in the northern part of New South Wales, Australia (149.2818°E, 29.0855°S), as shown in Fig. 
+There were four images from each landscape: two pairs of Landsat and MODIS images at T 1 and T 2 . The Landsat image at T 2 was employed to compare the experimental results and calculate the blending accuracy. All experimental images were pre-processed for radiation calibration and atmospheric correction before experimentation.
+
+## Comparison and evaluation ##
+The performance of FSDAF 2.0 was compared with that of the STARFM, FSDAF and SFSDAF algorithms. Each method requires the same input data: one pair of coarse-and fine-resolution images and one coarse-resolution image in the prediction phase. Blended images predicted by the four methods were compared with the real image in the T 2 phase visually and quantitatively in this section. It should be noted that SFSDAF only participated in the comparison of inputting simulated MODIS-like images in experiment 2. Because SFSDAF requires the input MODIS pixel should be the original pixel, while the process of resampling MOD09GA images to 25 m may incorrectly determine the range of the MODIS pixel. This registration error could affect the final result of SFSDAF.
+Visual analysis of the fusion results was used to judge the similarity between the synthetic image and the real image in the spectrum and structure of objects by visual comparison, with the purpose of comprehensively evaluating the advantages of the improved algorithm.
+To achieve quantitative analysis, three precision indexes were proposed to reflect different aspects of accuracy. The root mean square error (RMSE) was used to gauge the difference between the predicted reflectance and the actual reflectance and describe the overall errors in the spectrum. The visual assessment index structure similarity (SSIM) was used to evaluate the similarity of the overall structure between the real and blended images. In addition, the correlation coefficient (r) was used to show the linear relationship between the predicted and actual reflectance. Theoretically, a smaller value of RMSE and larger values of SSIM and r indicate a more accurate blending result.
+
+## Results ##
+
+
+## Blending results and evaluation in a heterogeneous landscape ##
+In this experiment, there was no distinct type change in the heterogeneous images but rapid phenological changes between two time periods. Therefore, the experimental comparison of blended heterogeneous images focused on the observation of the ecosystem dynamics and overall improvement of FSDAF 2.0 over the original FSDAF. In addition, this experiment also tested the robustness of FSDAF 2.0 and its performance in blending real MODIS images.
+The blending results are shown in Fig. 
+The quantitative evaluation data of the experimental results are shown in Table 
+The quantitative evaluation data of the experimental results are shown in Table 
+
+## Discussion ##
+The proposed spatiotemporal data fusion model FSDAF 2.0 shows satisfactory performance in two experiments. In particular, compared with the original FSDAF, FSDAF 2.0 can more accurately capture the ecosystem dynamics and changing type boundaries of objects and retain more details. In this section, a theoretical comparison of the rationale behind the key steps in retrieving land cover changes between FSDAF and FSDAF 2.0 and how FSDAF 2.0 outperforms FSDAF are discussed. Moreover, a comparative experiment of the various steps in FSDAF and FSDAF 2.0 was added. In addition, the efficiency of the algorithm should be considered in the application; thus, a computation time comparison among the four methods was discussed. Finally, we discussed the further improvement of FSDAF 2.0.
+
+## Comparison of the processes of FSDAF and FSDAF 2.0 in retrieving land cover changes ##
+The results of experiment 2 in section 4 demonstrate that both FSDAF and FSDAF 2.0 have the ability to retrieve land cover changes. The ability of FSDAF to retrieve changed pixels is mainly come from the spatial prediction. Theoretically, spatial prediction describes the information of the real surface in the T 2 phase, which can maintain the signals of land cover type change and local variability in the fusion result 
+The reconversion capability of FSDAF 2.0 comes from the spatial prediction and the optimization model for the changed pixels. FSDAF 2.0 employs edge detection technology and change detection technology to exclude the coarse pixels that contain changed pixels or more than 10% of the boundary pixels. As a result, FSDAF 2.0 obtains more accurate predicted values in the area where the types of objects are unchanged. These differences are the main reason why FSDAF 2.0 obtains more details and more accurate spectral information than the original FSDAF. In addition, FSDAF 2.0 establishes an optimization model for changed areas in the final step to offset the error caused by  unreasonable assumptions in the residual distribution process. Theoretically, FSDAF 2.0 can achieve higher accuracy. To demonstrate the above points explicitly, a comparison of various steps in FSDAF and FSDAF 2.0 to retrieve land cover changes was added. As shown in Fig. 
+
+## Comparison of computation time ##
+The computation times of the four methods in section 4 are shown in Table 
+
+## Further improvement of FSDAF 2.0 ##
+The results of the experiments in section 4 demonstrate that FSDAF 2.0 can obtain satisfactory overall accuracy in two challenging landscapes: heterogeneous and large-scale abrupt land cover changes. The blending results of the improved method have higher overall spectral accuracy, more similar structure and closer correlation to real images, especially in areas where the types of land cover changed. These improvements are due to overcoming the shortcomings of the original FSDAF. Although FSDAF 2.0 has satisfactory performance, it still has the potential to improve.
+First, the improvement of FSDAF 2.0 can mainly be achieved through improved temporal prediction and increased targeted optimization in the final step, but the step of obtaining spatial prediction is consistent with that of the original FSDAF; for example, the result of TPS interpolation is used as the spatial prediction. However, the TPS interpolation image is "smooth" and loses many spatial details; if the spatial prediction could be replaced by a better scale-down algorithm without consuming too much time, FSDAF could theoretically retain more image details.
+Second, similar to FSDAF, FSDAF 2.0 still distributes residuals on the assumption that errors depend mainly on the homogeneity of the surface. This strategy is very empirical and has no theoretical basis. It may not be an optimal way to distribute residuals for different scenarios 
+Third, on account of the lack of fine-resolution image in the T 2 phase, FSDAF 2.0 employs the TPS interpolation images of coarse-resolution images in two phases to detect changed areas. Therefore, it is difficult to capture tiny land cover changes. Theoretically, fine-resolution images acquired from other satellites can be employed to solve this problem in the future research process. In addition, long time-series observations or the use of more flexible change detection algorithms can also improve the performance and robustness of FSDAF 2.0.
+
+## Conclusions ##
+This study described the theoretical basis, implementation process and performance of an improved flexible spatiotemporal data fusion method incorporating change detection technology and an optimized model for changed-type areas. Landsat and MODIS images of two different sites were employed to test the performance of the improved method. All results demonstrate that FSDAF 2.0 improves the shortcomings of FSDAF, blends synthetic fine-resolution images with higher accuracy in different landscapes, and strengthens the robustness of the algorithm and the ability of retrieving land cover changes compared with those of the original FSDAF algorithm. In addition, FSDAF 2.0 has acceptable efficiency even though it has more steps than the original FSDAF, because effective but fewer computation algorithms were employed in the additional steps.
+The key idea of FSDAF 2.0 is using the change detection technology to label the changed pixels. This is a precondition for the subsequent improvement of the unmixing step and targeted optimization, which effectively helps improve the fusion accuracy in changed-type areas. In the spatiotemporal fusion field, retrieving land cover changes is a challenge, and FSDAF 2.0 provides a feasible way to overcome this problem. Moreover, this field has great potential for improvement, such as improving the accuracy of change detection through long time-series observations or using other satellite data to assist in change detection.
+Similar to FSDAF and other spatiotemporal methods, FSDAF 2.0 can  also be used to blend other products that are derived from reflectance data, e.g., normalized difference vegetation index (NDVI), surface temperature and leaf area index. FSDAF has been shown to have high accuracy in fusing other products 
+In conclusion, the FSDAF 2.0 algorithm improves the capability for blending fine-resolution remote sensing images, especially for areas of land cover changes. This improvement is beneficial for monitoring the land surface and dynamics of our Earth systems.
+
+## Table 4 ##
+The computation time of STARFM, FSDAF, SFSDAF and FSDAF 2.0 in two experiments. 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Fusing Landsat and MODIS data to retrieve multispectral information from fireaffected areas over tropical savannah environments in the Brazilian Amazon Fusing Landsat and MODIS data to retrieve multispectral
+   Authors: , , , , , 
+   Date: 2018
+
+2. Multitemporal fusion of Landsat/TM and ENVISAT/MERIS for crop monitoring
+   Authors: , , , , , , 
+   Date: 2013
+
+3. Estimating maize biomass and yield over large areas using high spatial and temporal resolution Sentinel-2 like remote sensing data
+   Authors: , , , , , , , 
+   Date: 2016
+
+4. Comparing splines and kriging
+   Authors: 
+   Date: 1984
+
+5. Assessing the accuracy of blending Landsat-MODIS surface reflectances in two landscapes with contrasting spatial and temporal dynamics : a framework for algorithm selection
+   Authors: , , , , 
+   Date: 2013
+
+6. On the blending of the landsat and MODIS surface reflectance: predicting daily landsat surface reflectance
+   Authors: , , , 
+   Date: 2006
+
+7. A new data fusion model for high spatial-and temporal-resolution mapping of forest disturbance based on Landsat and MODIS
+   Authors: , , , , , , , 
+   Date: 2009
+
+8. Spatiotemporal reflectance fusion via sparse representation
+   Authors: , 
+   Date: 2012
+
+9. Comparison of five Spatio-temporal satellite image fusion models over landscapes with various spatial heterogeneity and temporal variation
+   Authors: , , , , 
+   Date: 2019
+
+10. Efficient circular Thresholding
+   Authors: , 
+   Date: 2014
+
+11. Blending multi-resolution satellite sea surface temperature (SST) products using Bayesian maximum entropy method
+   Authors: , , , , , 
+   Date: 2013
+
+12. SFSDAF: an enhanced FSDAF that incorporates sub-pixel class fraction change information for spatio-temporal image fusion
+   Authors: , , , , , , 
+   Date: 2020
+
+13. Bayesian method for building frequent Landsat-like NDVI datasets by integrating MODIS and Landsat NDVI
+   Authors: , , , , , 
+   Date: 2016
+
+14. On the Kolmogorov-Smirnov test for normality with mean and variance unknown
+   Authors: 
+   Date: 2012
+
+15. An improved flexible spatiotemporal DAta fusion (IFSDAF) method for producing high spatiotemporal resolution normalized difference vegetation index time series
+   Authors: , , , , , , 
+   Date: 2019
+
+16. A waveletartificial intelligence fusion approach (WAIFA) for blending Landsat and MODIS surface temperature
+   Authors: , , , , , 
+   Date: 2015
+
+17. A threshold selection method from Gray-level histograms
+   Authors: 
+   Date: 1979
+
+18. Study on the utility of IRS-P6 AWiFS SWIR band for crop discrimination and classification
+   Authors: , 
+   Date: 2009
+
+19. Approximating the Shapiro-Wilk W-test for non-normality
+   Authors: 
+   Date: 2000
+
+20. Remote sensing monitoring of the impact of a major mining wastewater disaster on the turbidity of the Doce River plume off the eastern Brazilian coast
+   Authors: , , , 
+   Date: 2018
+
+21. A linear physically-based model for remote sensing of soil moisture using short wave infrared bands
+   Authors: , , 
+   Date: 2015
+
+22. Agricultural and Forest meteorology influences of temperature and precipitation before the growing season on spring phenology in grasslands of the central and eastern Qinghai-Tibetan Plateau
+   Authors: , , , , , , , , , , , 
+   Date: 2011. 2019
+
+23. Spatiotemporal satellite image fusion through one-pair image learning
+   Authors: , 
+   Date: 2013
+
+24. Classification and change detection using Landsat TM data : when and how to correct atmospheric effects?
+   Authors: , , , , 
+   Date: 2000
+
+25. A two-stage spatiotemporal fusion method for remote sensing images
+   Authors: , 
+   Date: 2019
+
+26. A spatio-temporal fusion method for remote sensing data using a linear injection model and local neighbourhood information
+   Authors: , , 
+   Date: 2018
+
+27. Deriving high spatiotemporal remote sensing images using deep convolutional network
+   Authors: , , , 
+   Date: 2018
+
+28. Monitoring urbanization in mega cities from space
+   Authors: , , , , , 
+   Date: 2012
+
+29. Spatio-temporal fusion for daily Sentinel-2 images
+   Authors: , 
+   Date: 2018
+
+30. Enhancing Spatiotemporal fusion of MODIS and Landsat data by incorporating 250 m MODIS data
+   Authors: , , , , 
+   Date: 2017
+
+31. Use of MODIS and Landsat time series data to generate high-resolution temporal synthetic Landsat data using a spatial and temporal reflectance fusion model
+   Authors: , , , , 
+   Date: 2012
+
+32. An error-bound-regularized sparse coding for spatiotemporal reflectance fusion
+   Authors: , , 
+   Date: 2015
+
+33. Spectral indices for lithologic discrimination and mapping by using the ASTER SWIR bands
+   Authors: , 
+   Date: 2010
+
+34. An enhanced spatial and temporal data fusion model for fusing Landsat and MODIS surface reflectance to generate high temporal Landsat-like data
+   Authors: , , , , , , , 
+   Date: 2013
+
+35. Blending MODIS and Landsat images for urban flood mapping
+   Authors: , , 
+   Date: 2014
+
+36. A generalization of spatial and temporal fusion methods for remotely sensed surface parameters
+   Authors: , , , , 
+   Date: 2015
+
+37. An enhanced spatial and temporal adaptive reflectance fusion model for complex heterogeneous regions
+   Authors: , , , , 
+   Date: 2010
+
+38. A flexible spatiotemporal method for fusing satellite images with different resolutions
+   Authors: , , , , , 
+   Date: 2016
+
+39. Spatiotemporal fusion of multisource remote sensing data: literature survey, taxonomy, principles, applications, and future directions
+   Authors: , , , 
+   Date: 2018
+
+40. Monitoring interannual dynamics of desertification in Minqin County, China, using dense Landsat time series
+   Authors: , , , 
+   Date: 2019
+
+41. Unmixing-based multisensor multiresolution image fusion
+   Authors: , , , 
+   Date: 1999
+
+42. Unmixing-based Landsat TM and MERIS FR data fusion
+   Authors: , , , 
+   Date: 2008
+

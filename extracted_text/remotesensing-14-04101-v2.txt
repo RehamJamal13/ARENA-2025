@@ -1,0 +1,301 @@
+================================================================================
+TITLE: Global 10 m Land Use Land Cover Datasets: A Comparison of Dynamic World, World Cover and Esri Land Cover
+================================================================================
+
+AUTHORS:
+- Wu Xiao
+- Qiusheng Wu
+- Xuecao Li
+- Zander Venter
+- David Barton
+- Tirthankar Chakraborty
+- Trond Simensen
+- Geethen Singh
+
+ABSTRACT:
+The European Space Agency's Sentinel satellites have laid the foundation for global land use land cover (LULC) mapping with unprecedented detail at 10 m resolution. We present a cross-comparison and accuracy assessment of Google's Dynamic World (DW), ESA's World Cover (WC) and Esri's Land Cover (Esri) products for the first time in order to inform the adoption and application of these maps going forward. For the year 2020, the three global LULC maps show strong spatial correspondence (i.e., near-equal area estimates) for water, built area, trees and crop LULC classes. However, relative to one another, WC is biased towards over-estimating grass cover, Esri towards shrub and scrub cover and DW towards snow and ice. Using global ground truth data with a minimum mapping unit of 250 m 2 , we found that Esri had the highest overall accuracy (75%) compared to DW (72%) and WC (65%). Across all global maps, water was the most accurately mapped class (92%), followed by built area (83%), tree cover (81%) and crops (78%), particularly in biomes characterized by temperate and boreal forests. The classes with the lowest accuracies, particularly in the tundra biome, included shrub and scrub (47%), grass (34%), bare ground (57%) and flooded vegetation (53%). When using European ground truth data from LUCAS (Land Use/Cover Area Frame Survey) with a minimum mapping unit of <100 m 2 , we found that WC had the highest accuracy (71%) compared to DW (66%) and Esri (63%), highlighting the ability of WC to resolve landscape elements with more detail compared to DW and Esri. Although not analyzed in our study, we discuss the relative advantages of DW due to its frequent and near real-time data delivery of both categorical predictions and class probability scores. We recommend that the use of global LULC products should involve critical evaluation of their suitability with respect to the application purpose, such as aggregate changes in ecosystem accounting versus site-specific change detection in monitoring, considering trade-offs between thematic resolution, global versus. local accuracy, class-specific biases and whether change analysis is necessary. We also emphasize the importance of not estimating areas from pixel-counting alone but adopting best practices in design-based inference and area estimation that quantify uncertainty for a given study area.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Global land use land cover (LULC) maps provide information necessary to quantify and understand Earth system processes and anthropogenic pressures, often at multiple spatial and temporal scales 
+Global LULC maps are adopted in a vast range of scientific domains and application environments. A few examples of LULC map application include: data input into mesoscale models for operational numerical weather forecasts and climate models for future climate projections 
+Over the past two decades, the spatial resolution of land cover maps has kept pace with the resolution of available satellite sensors, including the Moderate Resolution Imaging Spectroradiometer (MODIS; 250-500 m), PROBA-v (100 m) and Landsat (30 m) satellites. The most prominent corresponding global LULC maps include the National Aeronautics and Space Administration (NASA) MCD12Q1 500 m resolution dataset 
+Advancing upon the revolutionary legacy of the open-access Landsat missions 
+To date, there have been no systematic evaluations of the three global 10 m LULC products with reference to one another. Given the importance of global LULC maps for various applications, and the large differences in the production of the recent 10 m products, we aimed to compare DW, WC and Esri global LULC maps in terms of their spatial correspondence with one another and their global and regional accuracy. To quantify accuracy at the global scale, we used the hand-annotated validation dataset published alongside DW. We supplemented this with a regional reference dataset of in situ point-based survey data on LULC across the European Union. We discuss how spatial correspondence and accuracy vary across LULC classes, biomes and human settlement types and explore key limitations and advantages of the three datasets.
+
+## Materials and Methods ##
+
+
+## Land Cover Data Processing ##
+Data pre-processing and extraction took place in GEE 
+
+## Spatial Correspondence Assessment ##
+To assess how strongly the global LULC products corresponded to one another over space, we quantified and compared class-wise LULC area sums that were aggregated to an equal-area hexagonal grid (70,000 km 2 ), which covered the globe. The size of the grid was chosen based on a trade-off between computation time and precision of area 
+
+## Spatial Correspondence Assessment ##
+To assess how strongly the global LULC products corresponded to one another over space, we quantified and compared class-wise LULC area sums that were aggregated to an equal-area hexagonal grid (70,000 km 2 ), which covered the globe. The size of the grid was chosen based on a trade-off between computation time and precision of area aggregation. Pixels were aggregated over mutually overlapping extents and image masks across the three LULC products. To quantify correspondence between products, for each LULC class and unique hexagonal grid cell, we calculate the proportional share of each product's area estimation. Perfect correspondence resulted in a proportional ratio of 0.33:0.33:0.33 or 33% proportional share for each product. We defined strong correspondence when no single product's proportional share of the LULC class area exceeded 40% in a grid cell. Therefore, weak correspondence was when the maximum difference between the product with the biggest and smallest proportional share was greater than 20%. We visualized these proportional shares for each hexagon over the globe by assigning a color code along a tri-color gradient using the tricolore (v1.2.2.) package in R. The relative abundance of the given LULC class (average of the three products' area estimates) was mapped to the opacity of each hexagon grid so that areas where the LULC is abundant appear opaque and those where the LULC is less abundant are transparent.
+
+## Accuracy Assessment ##
+To quantify the accuracy of the three LULC products, we used two sources of openaccess reference data (Figure 
+
+## Flooded vegetation ##
+Wetlands (H00): Wetlands located inland and having fresh water and wetlands located on marine coasts or having salty or brackish water as well as areas of a marine origin. 
+
+## LULC Class LUCAS Classes Used and Descriptions ##
+
+
+## Water ##
+Water areas (G10 to G40): Inland or coastal areas without vegetation and covered by water and flooded surfaces, or likely to be so over a large part of the year.
+
+## Snow and ice ##
+Glaciers, permanent snow (G50): Areas covered by glaciers (generally measured at the time of their greatest expansion in the season) or permanent snow.
+The 2020 LULC predictions for each global product were sampled over the annotated image pixels (global validation set) and survey locations (regional validation set). Accuracy was quantified globally/regionally, but also stratified by biome, settlement type (urban, rural and uninhabited) and continent. Biomes were defined using the RESOLVE bioregions dataset 
+
+## Implementation Details ##
+Data were summarized and/or extracted from GEE using the JavaScript API. The data were summarized by a global grid created using the dgggridR (v2.0.3) package. The figures were all created in R (v4.2.1) using the tricolore (v1.2.2.), ggplot2 (v3.3.5), ggmap (v3.0.0), sf (v1.0.9) and raster (v3.5) packages.
+
+## Results ##
+
+
+## Spatial Correspondence ##
+The area estimates for built area, crops, trees and water showed strong correspondence between the three global LULC products, particularly in areas with the greatest relative abundance of the given LULC class (i.e., gray areas with bordered grid cells in Figure 
+The LULC classes with the lowest correspondence between global products were bare ground, grass, scrub and shrub (Figure 
+The LULC classes flooded vegetation, and snow and ice exhibited notable disagreements between products for the northern latitudes (Figure 
+
+## Accuracy ##
+Using the global ground truth dataset with a minimum mapping unit of 250 m 2 , we found that Esri had the highest overall accuracy (75%) compared to DW (72%) and WC (65%; Table 
+
+## Accuracy Dynamic World Esri World Cover ##
+Global validation 72% 75% 65% Regional validation (European) 66% 63% 71% Using the regional ground truth dataset (LUCAS) across Europe with an MMU of <100 m 2 , we found that the order of product accuracies was reversed compared to the global validation (Table 
+
+## Discussion ##
+
+
+## Explaining the Differences between Global LULC Products ##
+The production of global LULC maps is inherently difficult due to the extensive biogeographical variations within and across biomes that lead to diverse spectral signatures within a single LULC class 
+
+## Discussion ##
+
+
+## Explaining the Differences between Global LULC Products ##
+The production of global LULC maps is inherently difficult due to the extensive biogeographical variations within and across biomes that lead to diverse spectral signatures within a single LULC class 
+
+## Minimum Mapping Unit ##
+The global LULC maps had contrasting accuracies when validated against the global versus regional reference datasets (Figure 
+
+## Classification Typology ##
+Another factor leading to differences between global LULC products is the classification typology used. For the purposes of cross-comparison, we harmonized all three LULC products to a nine-class typology (Table 
+Another source of discrepancy between LULC products is the slight difference in LULC definitions for certain classes (see descriptions in Table 
+
+## Modeling and Validation Methods ##
+At the global scale, the accuracies of DW, WC and Esri were different to one another (Figure 
+The DW and Esri maps were produced using a deep learning model, whereas WC was produced using a random forest classification. This difference in modeling framework likely explains some of the difference in accuracy between LULC products. Deep learning models, such as the fully convolutional neural network employed in DW, take the pixel context into account when making inferences, whereas random forest does not. This, together with the difference in MMU, explains why the DW and Esri maps are clustered and generalized at a landscape scale (inset maps Figure 
+Finally, we acknowledge that we are using reference data from 2019 (global) and 2018 (European) that do not align with the year of the LULC maps (2020) and that this may lead to discrepancies between the validation set and the reality on the ground in 2020. However, we suspect these changes to be minimal, and any bias introduced should be consistent across global LULC products. Furthermore, even the WC reference dataset, which is not open-access, faces the same limitation as it was collected for the year 2015 and used to create and validate the WC map for the year 2020.
+
+## Recommendations for Users ##
+The cross-comparison results presented here indicate that there is no "one-size-fits-all" when it comes to global LULC maps and their potential application. We find differences in accuracy across spatial scales (global versus regional), LULC classes, continents, biomes and urban settlement types. Therefore, an overall recommendation is to carefully evaluate the global LULC products with respect to the aforementioned factors and how they relate to the application requirements. We note that it is also possible to use all three LULC products in combination by creating some form of majority vote or weighted average. Nevertheless, we make some general recommendations for users of either DW, Esri or WC or a combination thereof:
+
+## • ##
+Regardless of LULC product, users should implement design-based inference when calculating LULC areas or changes and avoid drawing conclusions from simple 'pixelcounting', which leads to biased area estimates 
+
+## • ##
+WC is most appropriate when considering an MMU of <100 m 2 or when a user wants to resolve smaller landscape elements. For example, WC is advantageous in urban areas and complex agricultural landscapes with small or thin vegetation structures, such as trees or hedge rows.
+
+## • ##
+Based on our supplementary analysis of the DW compositing method (Figure 
+
+## • ##
+The delivery format of DW in near real-time, covering the entire Sentinel-2 image collection and including LULC class-specific probability scores, is qualitatively unique from Esri and WC, which only produce annual LULC maps without probability scores. We encourage users to take advantage of this unique aspect to DW by exploring novel possibilities discussed in the section below.
+
+## Potential for Future Research ##
+Although our analysis provides important information about global model accuracies, it remains to be seen which LULC product provides area change estimates with the least amount of error as measured using design-based inference for area estimation 
+The probability scores available in the DW product provide scope for several other avenues of further research and tailored LULC classification. Firstly, they can be aggregated over time frames relevant to the application task. For example, annual composites might be appropriate for some tasks, while summer or winter mosaics might be appropriate for others. Secondly, users can apply custom thresholds or more complex decision frameworks to the predicted probabilities in order to derive continuous or discrete LULC outputs (Figure 
+There are several spheres of application for which 10 m LULC maps are particularly well-suited. Urban ecology and climate science is one such area because landscape composition and structure often manifest at scales of 10 m or less. In an increasingly urbanizing planet, it is important to accurately monitor global and regional urban extent for planning purposes. How these newer-generation datasets compare to existing estimates across regions is still largely unknown 
+
+## Conclusions ##
+LULC mapping at global extents has been revolutionized by the plethora of mediumresolution satellite data available from programs such as Landsat and Sentinel. In our cross-comparison of global 10 m resolution LULC maps, we found large inaccuracies and spatial and thematic biases in each product that vary across biomes, continents and human settlement types. Our overarching recommendation is to critically evaluate each LULC product with reference to the application purpose. We highlight the novelty of DW as a global near real-time LULC product with class probability scores. LULC types, regardless of definition and type system, share with ecosystems the property that their composition, structure and processes often vary in a gradual, continuous manner over space and time. We suggest that the DW probability scores offer a fundamental shift in land cover mapping from categorical to continuum concepts.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Recent Applications of Landsat 8/OLI and Sentinel-2/MSI for Land Use and Land Cover Mapping: A Systematic Review
+   Authors: , , 
+
+2. Sentinel-2 Data for Land Cover/Use Mapping: A Review
+   Authors: , , , , , 
+
+3. Finer-Resolution Mapping of Global Land Cover: Recent Developments, Consistency Analysis, and Prospects
+   Authors: , , , , , 
+
+4. Towards Delivering on the Sustainable Development Goals Using Earth Observations
+   Authors: , , , , , , , , 
+
+5. Representing a New MODIS Consistent Land Surface in the Community Land Model (CLM 3.0)
+   Authors: , 
+   Date: 2007. 01023
+
+6. Assessment of Implementing Satellite-Derived Land Cover Data in the Eta Model. Weather Forecast
+   Authors: , , 
+   Date: 2003
+
+7. Potential Contributions of Remote Sensing to Ecosystem Service Assessments
+   Authors: , , 
+   Date: 2014
+
+8. Methods for Mapping Ecosystem Service Supply: A Review
+   Authors: , 
+   Date: 2012
+
+9. Reduction in Human Activity Can Enhance the Urban Heat Island: Insights from the COVID-19 Lockdown
+   Authors: , , 
+   Date: 2021
+
+10. Monitoring Biodiversity in the Anthropocene Using Remote Sensing in Species Distribution Models
+   Authors: , , , , , , , , , 
+
+11. High Resolution Prediction Maps of Solitary Bee Diversity Can Guide Conservation Measures
+   Authors: , , , , , , , , , 
+   Date: 2022. 104267
+
+12. Landscape Ecological Concepts in Planning: Review of Recent Developments
+   Authors: , , , , 
+   Date: 2021
+
+13. Remote Sensing of Forest Degradation: A Review
+   Authors: , , , 
+   Date: 2020. 103001
+
+14. Establishing the SEEA Ecosystem Accounting as a Global Standard
+   Authors: , , , , , , , , , 
+
+15. Hierarchical Mapping of Annual Global Land Cover 2001 to Present: The MODIS Collection 6 Land Cover Product
+   Authors: , , , 
+   Date: 2019
+
+16. Copernicus Global Land Cover Layers-Collection 2
+   Authors: , , , , , 
+
+17. Global Land Cover Mapping at 30 m Resolution: A POK-Based Operational Approach
+   Authors: , , , , , , , , , 
+   Date: 2015
+
+18. A Critical Analysis of the Potential for EU Common Agricultural Policy Measures to Support Wild Pollinators on Farmland
+   Authors: , , , , , , , , , 
+   Date: 2020
+
+19. Mapping Urban Tree Canopy Cover Using Airborne Laser Scanning-Applications to Urban Ecosystem Accounting for Oslo
+   Authors: , , 
+   Date: 2019
+
+20. Benefits of the Free and Open Landsat Data Policy
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+21. Google Earth Engine: Planetary-Scale Geospatial Analysis for Everyone
+   Authors: , , , , , 
+   Date: 2017
+
+22. The OpenEO API-Harmonising the Use of Earth Observation Cloud Services Using Virtual Data Cube Functionalities
+   Authors: , , , , , , , , , 
+
+23. 
+   Authors: , , , , , , , , , 
+
+24. ESA WorldCover 10 m 2020 V100
+   Authors: , , , , , , , , , 
+   Date: 2021
+
+25. Global Land Use/Land Cover with Sentinel 2 and Deep Learning
+   Authors: , , , , , 
+   Date: 2021
+
+26. R: A Language and Environment for Statistical Computing 2021
+   Authors: 
+   Date: 21 July 2022
+
+27. Situ Land Cover and Use Database for Field Surveys from 2006 to 2018 in the European Union. Sci
+   Authors: , , , , , , , , , 
+
+28. An Ecoregion-Based Approach to Protecting Half the Terrestrial Realm
+   Authors: , , , , , , , , , 
+   Date: 2017
+
+29. GHS Settlement Grid Following the REGIO Model 2014 in Application to GHSL Landsat and CIESIN GPW V4-Multitemporal
+   Authors: , 
+   Date: 1975-1990-2000-2015. 2016. 2016. 21 July 2022
+
+30. Towards a Systematics of Ecodiversity: The EcoSyst Framework
+   Authors: , , , , , , 
+   Date: 2020
+
+31. Cover and Land Cover Change Products
+   Authors: , 
+   Date: 2014
+
+32. Continental-Scale Land Cover Mapping at 10 m Resolution Over Europe (ELC10)
+   Authors: , 
+
+33. Mapping Pan-European Land Cover Using Landsat Spectral-Temporal Metrics and the European LUCAS Survey
+   Authors: , , , 
+   Date: 2019
+
+34. Assessment Using LUCAS (Land Use/Cover Area Frame Statistical Survey)
+   Authors: , 
+   Date: 2000. 2006
+
+35. Good Practices for Estimating Area and Assessing Accuracy of Land Change. Remote Sens. Environ
+   Authors: , , , , , 
+   Date: 2014
+
+36. Key Issues in Rigorous Accuracy Assessment of Land Cover Products
+   Authors: , 
+   Date: 2019
+
+37. Medium Spatial Resolution Mapping of Global Land Cover and Land Cover Change Across Multiple Decades From Landsat
+   Authors: , , , , , , , , , 
+
+38. Land Use and Land Cover Area Estimates from Class Membership Probability of a Random Forest Classification
+   Authors: , , , 
+   Date: 2021
+
+39. Predicting Individual Pixel Error in Remote Sensing Soft Classification
+   Authors: , , 
+   Date: 2017
+
+40. Per-Pixel Land Cover Accuracy Prediction: A Random Forest-Based Method with Limited Reference Sample Data
+   Authors: , , , 
+   Date: 2021
+
+41. Resolution Canopy Height Model of the Earth. arXiv 2022
+   Authors: , , , , 
+
+42. Demystifying LandTrendr and CCDC Temporal Segmentation
+   Authors: , , , , , , 
+   Date: 2022. 102806
+
+43. A Critical Look at Representations of Urban Areas in Global Maps
+   Authors: , 
+   Date: 2007
+
+44. Urban Warming Advances Spring Phenology but Reduces the Response of Phenology to Temperature in the Conterminous United States
+   Authors: , , , , , , , , , 
+   Date: 2020
+
+45. How to Assess the Temporal Dynamics of Landscape Connectivity in Ever-Changing Landscapes: A Literature Review
+   Authors: , , , , 
+   Date: 2021
+
+46. Ecosystem Condition Underpins the Generation of Ecosystem Services: An Accounting Perspective
+   Authors: , , , , 
+
+47. Towards a Unification of Unified Theories of Biodiversity
+   Authors: 
+   Date: 2010
+
+48. Setting Reference Levels and Limits for Good Ecological Condition in Terrestrial Ecosystems-Insights from a Case Study Based on the IBECA Approach
+   Authors: , , , , , , , , , 
+   Date: 2020. 106492
+

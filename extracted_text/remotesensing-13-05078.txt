@@ -1,0 +1,410 @@
+================================================================================
+TITLE: Mapping Land Use Land Cover Changes and Their Determinants in the Context of a Massive Free Labour Mobilisation Campaign: Evidence from South Wollo, Ethiopia
+================================================================================
+
+AUTHORS:
+- Bichaye Tesfaye
+- Monica Lengoiboni
+- Jaap Zevenbergen
+- Belay Simane
+
+ABSTRACT:
+Northern Ethiopia is characterised by fragile mountain eco-systems that are highly susceptible to land degradation, impacting food security and livelihoods. This study appraises Land Use Land Cover Changes (LULCC) and their determinants from 2000 to 2020 in Dessie Zuria and Kutaber Woredas. It explores the LULCC and the key anthropogenic drivers of the change over the past 20 years through a mix of satellite imagery and a survey of local understandings. Six land use types (agriculture, forest, area closure, grazing, settlement and bare land) were mapped from satellite imagery that was acquired from Landsat 7 for the years 2000, 2005, and 2010, and Landsat 8 and OLI multispectral imageries for the years 2015 and 2020 with a spectral resolution of 30-m obtained from USGS. The results showed that agricultural land increased from 29.68% in 2000 to 35.77% in 2020.Furthermore, settlement and grazing lands enlarged from 5.95% and 6.04%, respectively, to 8.31% and 6.35% during the same period, while bare land increased from 9.89% to 10.92% in 2020. On the contrary, forest and area closure decreased from 18.45% and 29.99% to 17.8% and 17.38%, respectively. Meanwhile, population growth, unrestricted grazing, losing a sense of ownership of protected area closures and forests, lack of cooperation, using the free labour mobilisation schemes for government-induced agendas, weak enforcement of laws and bylaws, and engaging farmers for extended days on the campaign were prominent determinants of the changes. This research has implications for development actors across land management and food security towards implementing sustainable land management in the area and beyond.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+The sustainability of natural resources has been seriously constrained by enormous land degradation in Ethiopia 
+Land degradation in Sub-Saharan Africa (SSA) is widespread. Sixty-five per cent of agricultural land is degraded due to wind and soil erosion, and 28% of the population lives in areas that are prone to land degradation. Specifically, 40% of the grassland, 26% of the forestland, and 12% of the cropland have severe land degradation 
+Land degradation is negatively correlated with food security; Soil fertility decline and nutrient mining leads to reduced agricultural productivity and, thus, translate to food insecurity 
+Cognisant of this, the Government of Ethiopia (GoE) and other development agencies have tried to halt the land degradation problem. Considerable resources have been mobilised to manage the farmlands' sustainability and promote agricultural productivity with improved natural resource-conserving technologies. In 1970, the World Food Program introduced a MERT (Managing Environmental Resources to Enable Transitions to a more Sustainable Livelihoods) program, which aims at controlling land degradation by rehabilitating ruined lands and improving productivity 
+Investigating LULCC are essential components in current strategies for managing natural resources and monitoring environmental changes 
+The principal action employed by the GoE and the community to revitalise the natural resource basis of each watershed is through a free labour mobilisation campaign, which involves mobilising and organising all capable farmers for 30-60 days in the watershed activities during the off-farm months of the year. The campaign took place for the last two decades, most specifically in areas assumed as degradation prone and resource-poor. Despite the program's widespread implementation, the contribution of these campaigns to bring anticipated LULCC has not yet been studied and documented 
+The paper is composed of five parts. After this introduction, sections two, three, four and five will discuss methods, results, discussion, and conclusion and future work.
+
+## Materials and Methods ##
+
+
+## Description of the Study Area ##
+Encompassing a 17,067.45 km 2 area, South Wello is one of the ten zones (administrative tier of government below the regional state and above Woreda) in the Amhara National Regional State (ANRS). The zone lies around 11 • 8 N and 39 • 38 E (Figure 
+According to the South Wello Agriculture and Natural Resource Management Bureau 
+
+## Research Approach, Data Collection and Method of Analysis ##
+The choice of a research technique is primarily determined by the concept of the investigation issue or issue being addressed, the researcher's close interactions, and the groups of onlookers for the study 
+
+## Data Collection ##
+
+
+## Spatial Data ##
+Socio 
+
+## Socio-Economic Data ##
+Both qualitative and quantitative data types were collected using different instruments. Key informants interviews (KII), focus group discussions (FGD), household questionnaires, document reviews, and participatory rural appraisal (PRA) techniques, such as the pair-wise matrix and transact walk, were among the instruments deployed. The fieldwork was started by conducting KIIs 
+
+## Socio-Economic Data ##
+Both qualitative and quantitative data types were collected using different instruments. Key informants interviews (KII), focus group discussions (FGD), household questionnaires, document reviews, and participatory rural appraisal (PRA) techniques, such as the pairwise matrix and transact walk, were among the instruments deployed. The fieldwork was started by conducting KIIs 
+
+## Ground Truth Data ##
+Ground truth is a method by which the contents of "pixel" on a satellite image are compared with reality to verify the contents of the "pixel" on the image 
+
+## Image Pre-Processing ##
+A raw digital image cannot be used as a map unless corrected accordingly 
+
+## Image Processing and Classification ##
+A thematic map is an image information representation that depicts the spatial distribution of a specific theme 
+Several factors influence the selection of an appropriate classifier. These include the accuracy of the topographic map, the rate and scale of human intervention, time required to train the classifier, and the classifier's complexity 
+Both unsupervised and supervised image classification approaches were used. The unsupervised classification was performed before the field survey, whereas the supervised image classification was computed after the training sample was collected in the field survey. After assigning the signature value (training area) in the supervised image classifications, a spatial merging approach was used to achieve a more homogenous appearance of the individual classes. This approach is used to merge neighbouring regions based on their spatial features 
+Based on the information obtained and the procedures followed, the study adopted a classification scheme consisting of six land-use types (agricultural land, forests, area closure, grazing land, settlement, and bare land) (Table 
+
+## Land-Use Type Description ##
+Agricultural land
+Areas of land ploughed/prepared for the growing of rain-fed crops. This includes areas currently under crop and fallow, as well as land under preparation   
+
+## Change Detection ##
+It is critical to investigate changes in land use/land cover to take appropriate management action. In remote sensing, change detection is used to examine the differences in an object's status utilising multi-temporal spatial data sets. The premise behind satellite imagery is to detect changes in land use, and the land cover reflects themselves as variances in spectral brightness 
+
+## Results ##
+
+
+## Accuracy Assessment ##
+Satellite imagery was acquired from Landsat 7 for 2000, 2005, and 2010 and from Landsat 8 for 2015 and 2020. OLI multispectral imageries used with a spectral resolution of 30-m were acquired from USGS (Table 
+
+## Change Matrix ##
+The Change Matrix denotes a shift in area coverage. The Change Matrix indicates a change in area coverage measured by hectares and percentage for the five periods, 2000, 2005, 2010, 2015 and 2020, indicated below (Table 
+Total 100 164,339. 9 100 164,339.9 100 164,339.9 1 100 164,339.9 100 164,340
+The study revealed considerable LULC changes during 2000, 2005, 2010, 2015 and 2020 reference years. The satellite imagery result indicates increasing and decreasing changes in each of the six land-use types (Figure 
+The research revealed that the increments in this land-use resulted at the expense of other land uses, like forests, area closures, and grazing lands. Correspondingly, an area under settlement has shown a rise at a different degree in the four-period intervals. It increased from 9773.6 ha or 5.95% in 2000 to 10,586.61 ha or 6.4% in 2020. Bare land, which accounts for 9.89% of the total area, increased to 10.92 per cent in 2020. Changes between periods were calculated using the following formula 
+
+## Percentage of LULCC = ##
+Area final year -Area initial year Area initial year Nevertheless, other land uses, for instance, forest and area closure, decreased from 18.45% and 29.99% to17.8% and 17.38%. The satellite imagery data revealed a change in LULC between 2000 and 2020. Specifically, settlement, agriculture and grazing land have increased by 32 %, 16.51% and 19.97%. Contrary to this, forest and area closure decreased by 30 % and 19.73 %. Though insignificant, bare land has increased by 1.36 % (Table 
+
+## LULCC and Free Labour Mobilisation Campaign ##
+The GoE was keen to rehabilitate degraded lands through a variety of mechanisms. The MERT program and the preceding "food for work and cash for work" were among the interventions in this regard. Due to concerns around sustainability and other related matters, the GoE came with a unique approach called the free labour mobilisation campaign. The campaign takes place annually, where farmers are assumed to be free from any onfarm activities (Figure 
+ters, the GoE came with a unique approach called the free labour mobilisation campaign. The campaign takes place annually, where farmers are assumed to be free from any onfarm activities (Figure 
+
+## Drivers of Lulcc ##
+Many factors are seen as responsible for the prevailing LULCC between 2000-2020. High population growth and the intention of young people to intrude and farm both forest and area closures are among the significant threats raised during respective discussions. Furthermore, high population growth, which increases at the rate of 2.9% 
+Emerging jobless youth and the shrinkage of farmland because of land degradation and sharing among family members have increased agricultural density from 154.84/km 2 in 2000 to 183.3/km 2 in 2020 (Figure 
+Similarly, the study Woredas were found to have the highest livestock population. The finding of this research indicates the existence of a high TLU per the studied households. As indicated in Table 
+Similarly, the study Woredas were found to have the highest livestock population. The finding of this research indicates the existence of a high TLU per the studied households. As indicated in Table 
+
+## Livestock holding in TLU ##
+3.63 3.1 2.74 3.07 3.14 3.06
+A large TLU, coupled with free grazing management, has caused a significant burden on area closures and forest schemes. Data obtained from qualitative and quantitative sources reveal that free grazing is one of the main problems for the poor expansion of these schemes (Figure 
+Individual household heads were interviewed using household questionnaires to reflect their views regarding the significant determinants of LULCC in their area. The percentages and rank were derived based on how the respondents selected the variables using the Likert scale. Based on what has been raised in different sessions and the information obtained from reports and pieces of literature, a household survey was undertaken to investigate the problem of free labour mobilisation. Ten constraints were identified and deliberately included in the questioner to obtain the respondents' responses based on the Likert scale. Of the 402 respondents, 223 believe that the campaign had passed with many problems in the last two decades. However, the remaining 179 households believed that the campaign had no problem.
+The finding of the household survey identified six critical problems of the campaign: losing a sense of ownership; the intention of farmers to start the campaign first from their vicinity; shortage of seeds, seedlings, and cuttings; absence of solid laws and bylaws; lack of cooperation; and using the labour campaign for other political agendas. The shortage of farm tools, poor representation of women and the risk of rodent infestations were put under a lesser priority scenario (Table 
+
+## Discussion ##
+It is inevitable to observe LULCC occurring in non-linear form due to complex and interweaved anthropogenic and natural processes. Transformation of land is a trend that will continue to unfold, as most of the intervention was raised from the very egocentric nature of human beings and their descendants 
+The multi-temporal satellite imagery and other qualitative methods reveal that the study area has undergone prominent LULCC. Between 2000 and 2020, agricultural land and settlement increased at the expense of area closures and forests. In research done in the same basin, the same was found by 
+In addition to this, the practice of free grazing and having much livestock per household remains a problem for the development of forest and area closures. Unquestionably, livestock plays a pivotal contribution to the crop-livestock farming system by contributing draught power and manure to the crop sector. However, having huge numbers of livestock and an unmanaged grazing system has negatively affected the intended land use in the study area. Shrinking grazing land coupled with the ever-growing livestock population is likely to lead to massive overstocking, overgrazing, and the over browsing of pasture and herbs. Unlike this, some scholars argue that free grazing will pave a mechanism for increasing soil fertility through manure dropped in the field while grazing 
+Very significantly, the diminishing size seen in forests and area closures and the poor performance of the free labour mobilisation campaign can be linked to many related factors raised by the community. This study identified extended campaign days, over politicisation of the movement, losing a sense of ownership, and lack of cooperation as significant bottlenecks. Extended campaign days, which occur for between 30 and 60 days, have prevented farmers from performing some social obligations and off-farm activities that sometimes can be a source of cash income. Secondly, engaging oneself for the days mentioned can make the farmer burned out and exhausted. Losing a sense of ownership and lack of cooperation among community members can also be linked with a lack of tenure security which has a gap on as how mange and utilize the natural resources, like grass, wood, and other products from the schemes. It is a kind of ad-hoc appearing campaign that lacks appropriate awareness creation, and which fails to participate the community in all stages of the planning and implementation process. A study by Ayal and others stipulated that indigenous knowledge is important and can solve grassroots problems 
+Moreover, lack of firm and binding rules and bylaws was commonly cited as a reason for inadequate management and utilisation of area closures and forest resources in the studied micro-catchments. According to data acquired from many sources, many of the shared resources suffer from the tragedy of the commons. Even though the GoE and CANRS (Council of Amhara National Regional State) have passed bills and guidelines on watershed development and management 
+The demographic trends of the research area and similar locations have identical manifestations of population trends explianed by a high proportion of youth. This group requires job opportunities, land to till and other means of livelihood to the extent possible. Parallel to the emerging youth population, communities' interest in maximising the benefit from common-pool resources remains a bottleneck to sustainable land resource management. As clearly stipulated in the thesis of 
+
+## Conclusions and Future Work ##
+The reasons for the poor performance of the free labour mobilisation campaigns were high population growth, unrestricted grazing, a lack of sense of ownership and low intent to protect the schemes, over politicisation of the campaign and the use of the campaign for non-SWC activities, and engaging farmers on the campaign for extended days and the resulting burnout. Furthermore, widespread trends of free grazing possess a lion's share of responsibility for the observed resource degradation. The problem is further compounded by the presence of landless youth and their unlimited intent to earn cash from the sale of wood and grass. Land, which is completely under the federal government's control, has adversely affected the interest of farmers to invest in SWC activities because of the prevailing tenure insecurity. In addition, poor enforcement and the absence of laws and bylaws also have their own share for the recorded poor result.
+To avoid further deterioration of suitable LULC and improve the quality of the ecosystem through well-coordinated free labour mobilisations, emphasis should be given to the following remedial actions. Awareness creation and training of community members on environmental education and family planning, introduction of a cut-and carry grazing system, destocking and restocking animals accordingly, job creation, amendment of the existing land tenure policy, introduction of workable SWC practices, scaling up of evidencebased best practices observed while implementing the previous campaigns, boosting community participation, and enforcing laws and bylaws have been recommended as a way forward.
+Finally, this study highlights the importance of incorporating remote sensing and GIS technologies to interpolate and magnify quantitative information with qualitative local understandings to improve our knowledge of land use/cover change and mass mobilisation movements to reduce environmental degradation and bring sustainable use of natural resources.
+The study could add scarce information we had related to free labour mobilisations, watershed campaigns, and sustainable land management. Correspondingly, besides its input to academia, it also helps GoE and other development actors incorporate better watershed management and free labour mobilisations in policy formulation, planning, and decision-making. The following research challenge will be identifying SWC practices most acceptable by farmers and exploring drivers of adoption and extent of sustainability using farm-level indicators.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Land quality indicators: Research plan
+   Authors: , , , 
+   Date: 2000
+
+2. Land Degradation in SubSaharan Africa: What Explains the Widespread Adoption of Unsustainable Farming Practices? Department of
+   Authors: 
+   Date: 2003
+
+3. Report on Global Trends of Land Degradation
+   Authors: 
+   Date: 2005
+
+4. Climate and Land Degradation-An Overview
+   Authors: , 
+   Date: 2007
+
+5. Biomass Productivity-Based Mapping of Global Land Degradation Hotspots
+   Authors: , , 
+   Date: 2016
+
+6. Resettlement and Food Security Nexus in Ethiopia: A Case from Nonno Resettlement Sites, Central Ethiopia
+   Authors: 
+   Date: 2012
+
+7. Determinants of farmers' perception to invest in soil and water conservation technologies in the North-Western Highlands of Ethiopia
+   Authors: , 
+   Date: 2017
+
+8. Identifying Categorical Land Use Transition and Land Degradation in Northwestern Drylands of Ethiopia
+   Authors: , 
+
+9. Ethiopia Forest and Climate Change Commission. Ethiopia State and Outlook of the Environment
+   Date: 2017. 2018
+
+10. Causes of Seasonal Food Insecurity in Oromiya Zone of Amhara Region: Farmers' View
+   Authors: 
+   Date: August 2001
+
+11. Nutrition among older adults in Africa: The situation at the beginning of the millenium
+   Authors: , 
+   Date: 2001
+
+12. The State of Food Security and Nutrition in the World 2018. Building Climate Resilience for Food Security and Nutrition
+   Authors: , 
+   Date: 2018
+
+13. Working with Communities and Building Local Institutions for Sustainable Land Management in the Ethiopian Highlands
+   Authors: , , , , , 
+   Date: 2007
+
+14. Monitoring and predicting land use and land cover changes using remote sensing and GIS techniques-A case study of a hilly area
+   Authors: , , 
+   Date: 2018. 0200493
+
+15. Effectiveness of Soil and Water Conservation Measures for Land Restoration in the Wello Area, Northern Ethiopian Highlands
+   Authors: 
+   Date: July 2012
+
+16. Opportunities and Challenges in Reversing land Degradation: The Regional Experience
+   Authors: 
+   Date: 2003
+
+17. Using a time series of satellite imagery to detect land use and land cover changes in the Atlanta, Georgia metropolitan area
+   Authors: , 
+   Date: 2002
+
+18. Review Article Digital change detection techniques using remotely-sensed data
+   Authors: 
+   Date: 1989
+
+19. Effects of Land Degradation on Agricultural Land Use: A Case Study of Smallholder Farmers Indigenous Knowledge on Land Use Planning and Management in Kalama Division
+   Authors: 
+   Date: 23 February 2016
+
+20. The effect of sustainable land management (SLM) to ensure food security; local evidences from Tehuledere Woreda
+   Authors: 
+   Date: 2015
+
+21. The State of Food Insecurity in the World Addressing Food Insecurity in Protracted Crises 2010 Key Messages; Food and Agriculture Organization: Quebec, QC, USA
+   Date: 2010
+
+22. Adaptation Response to Climate Change, Cases in Ethiopia
+   Authors: , , 
+   Date: 2012
+
+23. Land Degradation Vulnerability Assessment Using GIS and Remote Sensing in Beshilo River Basin
+   Authors: 
+   Date: 2016
+
+24. 
+   Authors: , , 
+   Date: 2013
+
+25. Agroecologial Belts of Ethiopia: Explanatory Notes on Three Maps at a Scale of 1:1,000,000; Centre for Development and Environment
+   Authors: 
+   Date: 1998
+
+26. Population Projection of Ethiopia for All Regions At Wereda Level from
+   Date: 2014. 2017. 2017
+
+27. South Wello Zone Agriculture and Natural Recourse Management Bureau
+   Authors: 
+   Date: 2020
+
+28. Dessie Zuria Woreda Agriculture and Natural Resource Management Office
+   Authors: 
+   Date: 2020
+
+29. Kutaber Woreda Agriculture and Natural Resource Management Office
+   Authors: 
+   Date: 2020
+
+30. Mixed method research: Fundamental issues of design, validity, and reliability in construction research
+   Authors: , 
+   Date: 2010
+
+31. Quantitative Qualitative Large-Scale Study
+   Authors: 
+   Date: 1985
+
+32. Developments in Landsat land cover classification methods: A review
+   Authors: , 
+   Date: 2017
+
+33. Change detection techniques in remote sensing: A review
+   Authors: , , 
+   Date: 2017
+
+34. Image Classification in Remote Sensing
+   Authors: , , , 
+   Date: 2013
+
+35. Status of land cover classification accuracy assessment. Remote Sens. Environ
+   Authors: 
+   Date: 2002
+
+36. Change detection techniques
+   Authors: , , , 
+   Date: 2004
+
+37. Remote Sensing and GIS Integration
+   Authors: 
+   Date: 2020
+
+38. Methods Used For the 2006 Radiance Lights
+   Authors: , , , 
+   Date: 2010
+
+39. Remote Sensing and Image Interpretation
+   Authors: , 
+   Date: 1994
+
+40. Assessing the Accuracy of Remotely Sensed Data: Principles and Practices; Routledge: Oxforshire, UK
+   Authors: , 
+   Date: 2019
+
+41. An atmospheric correction method for the automatic retrieval of surface reflectances from TM images
+   Authors: , , 
+   Date: 1994
+
+42. Using remote sensing and GIS to detect and monitor land use and land cover change in Dhaka Metropolitan of Bangladesh during 1960-2005
+   Authors: , 
+   Date: 2009
+
+43. An investigation into the use of maximum likelihood classifiers, decision trees, neural networks and conditional probabilistic networks for mapping and predicting salinity
+   Authors: 
+   Date: 1998
+
+44. Rapid maximum likelihood classification
+   Authors: , 
+   Date: 1991
+
+45. Land cover change assessment using decision trees, support vector machines and maximum likelihood classification algorithms
+   Authors: , 
+   Date: 2010
+
+46. Comparison of maximum likelihood classification method with supervised artificial neural network algorithms for land use activities
+   Authors: , , 
+   Date: 2004
+
+47. Roboust Change Detection of Forests: A Case Study of Mountain Range from Ghatghar to Washere in Akole Tahsil
+   Authors: 
+   Date: 2015
+
+48. Remote sensing: The Quantitative Approach
+   Authors: , 
+   Date: 1979
+
+49. Remote Sensing Digital Image Analysis: An Introduction
+   Authors: 
+   Date: 1986
+
+50. Remote Sensing and Image Interpretation
+   Authors: , 
+   Date: 2015
+
+51. Using the satellite-derived NDVI to assess ecological responses to environmental change
+   Authors: , , , , , 
+   Date: 2005
+
+52. An assessment of several linear change detection techniques for mapping forest mortality using multitemporal Landsat TM data
+   Authors: , 
+   Date: 1996
+
+53. The comparative study of three methods of remote sensing image change detection
+   Authors: , , , 
+   Date: August 2009
+
+54. Land Use/Land Cover Change Analysis Using Object-Based Classification Approach in Munessa-Shashemene Landscape of the Ethiopian Highlands
+   Authors: , , , 
+   Date: 2013
+
+55. Tropical Livestock Units: Re-evaluating a Methodology
+   Authors: , , 
+   Date: 2020
+
+56. Environmental implications of soil erosion and sediment yield in Lake Hawassa watershed, south-central
+   Authors: , , 
+   Date: 2021
+
+57. Assessing the Quality Land Administration System in Pakistan Using Systematic Approach of Case Study Methodology
+   Authors: , , 
+   Date: 2014
+
+58. The implications of land use and land cover changes for rural household food insecurity in the Northeastern highlands of Ethiopia: The case of the Teleyayen sub-watershed
+   Authors: , 
+   Date: 2017
+
+59. Land cover change in the blue Nile river headwaters: Farmers' perceptions, pressures, and satellite-based mapping
+   Authors: , , , 
+   Date: 2021
+
+60. Population Projections for Ethiopia
+   Date: 2007-2037. 2013
+
+61. Data on spatiotemporal land use land cover changes in peri-urban Addis Ababa, Ethiopia: Empirical evidences from Koye-Feche and Qilinto peri-urban areas
+   Authors: , , 
+   Date: 2017
+
+62. Population Projection of Ethiopia for all Regions at Wereda Level from
+   Date: 2014. 2017. 2013
+
+63. Challenges facing agricultural extension agents: A case study from South-western Ethiopia
+   Authors: , 
+   Date: 2004
+
+64. Land use/Land cover changes and their causes in Libokemkem District of South Gonder
+   Authors: , , , 
+   Date: 2017
+
+65. Opportunities and challenges of indigenous biotic weather forecasting among the Borena herders of southern Ethiopia
+   Authors: , , , , , 
+   Date: 2015
+
+66. Towards integrated watershed management in highlands Ethiopia: The Chemoga watershed case study
+   Authors: 
+   Date: 2003
+
+67. The Economics of Land Degradation. Ethiopia Case Study
+   Authors: , , , , , , , , , 
+   Date: 2015
+
+68. Stakeholder Analysis for Sustainable Land Management (SLM) in Ethiopia: Assessment of Opportunities, Strategic Constraints, Information Needs, and Knowledge Gaps
+   Authors: , , , 
+   Date: 2006
+
+69. Deforestation and Land Degredation in the Ethiopian Highlands: A Strategy for Physical Recovery
+   Authors: 
+   Date: 2001
+
+70. Council of Amhara Regional State. Watershed Administration and Use System Proclamation
+   Authors: 
+   Date: 2018. 2018
+
+71. The Federal Democratic Republic of Ethiopia, House of Representatives. Development, Management and Utilization of Community Watersheds Proclamation, No.1223/2020; The Federal Democratic Republic of Ethiopia, House of Representatives: Addis Ababa
+   Date: 2020
+
+72. Ministry of Agriculture and Rural Development, The Federal Democratic Republic of Ethiopia. Community-Based Participatory Watershed Development: A Guideline; Ministry of Agriculture and Rural Development: Addis Ababa
+   Date: 2005
+
+73. Council of Amhara Regional State. The Revised Rural Land Administration and Use Determination Proclamation of and Use Determination Proclamation of the Amhara National Regional State
+   Date: 2017. 2017
+
+74. The Tragedy of the Commons
+   Authors: 
+   Date: 1968
+
+75. An Essay on the Principle of Population, as it Affects the Future Improvement of Society with Remarks on the Speculations of Mr
+   Authors: 
+   Date: 2007
+
+76. Environment, Population, and Technology in Primitive Societies
+   Authors: 
+   Date: 1976
+

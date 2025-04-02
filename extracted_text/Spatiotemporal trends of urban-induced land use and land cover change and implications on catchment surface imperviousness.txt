@@ -1,0 +1,349 @@
+================================================================================
+TITLE: Spatiotemporal trends of urban-induced land use and land cover change and implications on catchment surface imperviousness
+================================================================================
+
+AUTHORS:
+- Tesfa Andualem
+- Stefan Peters
+- Guna Hewa
+- John Boland
+- Baden Myers
+
+ABSTRACT:
+Urbanization, changes in land use and land cover (LULC), and an increase in population collectively have significant impacts on urban catchments. However, a vast majority of LULC studies have been conducted using readily available satellite imagery, which often presents limitations due to its coarse spatial resolution. Such imagery fails to accurately depict the surface characteristics and diverse spectrum of LULC classifications contained within a single pixel. This study focused on the highly urbanized Dry Creek catchment in Adelaide, South Australia and aimed to determine the impact of urbanization on spatiotemporal changes in LULC and its implications for the land surface condition of the catchment. Very high spatial resolution imagery was utilized to examine changes in LULC over the past four decades. Support Vector Machine-learningbased image classification was utilized to classify and identify the changes in LULC over the study area. The classification accuracy showed strong agreement, with a kappa value greater than 0.8. The findings of this analysis showed that extensive urban development, which expanded the built-up area by 34 km 2 , were responsible for the decline in grass cover by 43.1 km 2 over the last 40 years . Moreover, built-up areas, plantation, and water features, in contrast to grass cover, have demonstrated an increasing trend during the study period. The overall urban expansion over the study period was 136.6%. Urbanization intensified impervious area coverage, increasing the runoff coefficient, equivalent impervious area, and curve number by 60.6%, 60.6%, and 7.9%, respectively, while decreasing the retention capacity by 38.6%. These modifications suggest a potential variability in catchment surface runoff, prompting the need for further research to understand the surface runoff changes brought by the changes in LULC resulting from urbanization. The findings of this study can be used for land use planning and flood management.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Population growth and increased migration to urban areas have contributed to have increased urbanization affecting the LULC dynamics of an area 
+The analysis of LULC changes is necessary to determine the extent and magnitude of urban expansion 
+Several image classification methods, including the ISO cluster unsupervised classification, Maximum Likelihood (ML), random tree, Support Vector Machine (SVM), and K-nearest neighbor, can be used to produce a LULC map and assess the impact of urbanization 
+The accuracy of LULC change detection studies are dependent on spatial scale or map resolution 
+It is crucial to manage and mitigate the ecological and geomorphological effects of urban development by comprehending the effects of urbanization on fluvial systems and sedimentation through the analysis of spatiotemporal changes in urbanization 
+The Dry creek catchment is an urbanized catchment in the metropolitan area of Adelaide, South Australia, with significant land use changes due to urban sprawl since the 1970s 
+
+## Materials and methods ##
+
+
+## Study area description ##
+This study focused on the Dry Creek catchment, which is located in the Northern part of Adelaide, South Australia. The catchment is located between 138°35′0″ and 138°46′0″ E longitude and 34°51′18″ and 34°45′28″ S latitude (Fig. 
+In contrast to the upper watershed, which is primarily rural, the lower catchment is primarily dense residential, commercial, and industrial, and contains some salt fields scheduled for development and various constructed wetlands. According to the Department of Planning, Transport and Infrastructure (DPTI) (Department of Planning Transport and Infrastructure 2017), the 30-year plan for Greater Adelaide showed that the Dry Creek catchment area has been marked as a potential urban growth area.
+The increase in urban growth rises the impervious surface area with a potential of flooding to the downstream environment.
+
+## Data source ##
+Very high-resolution aerial imagery 
+Although raster imagery with smaller cell sizes results in a larger file size and takes longer to process, its importance in LULC classification cannot be overstated. This is due to its higher spatial resolution, which provides finer details of land surface features. The hydrologic soil group of the area was retrieved from the global hydrologic soil group and resampled to 2.5 m resolution using the nearest neighbor resampling technique to estimate the curve number  
+
+## Image classification ##
+The number of LULC classes was determined by the current condition of the catchment by visual inspection of the ground information and the imagery, the spatial and spectral resolution of the imagery, the availability of various land use practices, and the intended purpose of the classification output or the fineness of the classification. Preliminary investigations were conducted by visiting the catchment and viewing high-resolution images on Google Earth Pro. Typical land use classes in urban settings include built-up areas, vegetation, water bodies and/or wetlands, green spaces, open land, and cropland 
+The image segmentation procedure, which combines neighboring pixels that are similar in color and have geometric properties, is commonly utilized during image classification using SVM. Three criteria (spectral detail, spatial detail, and minimum segment size in pixels) govern the separation of images into objects in image segmentation. A classification schema is necessary to establish the number and type of classes to be utilized for supervised classification. In the ArcGIS Pro 3.0 environment, a schema with four LULC classes was created and saved in an Esri classification schema file (.ecs), which employs JSON syntax (https:// pro. arcgis. com/ en/ pro-app/ latest/ help/ analy sis/ image-analy st/ the-image-class ifica tion-wizard. htm accessed on December 15, 2022). User-defined training samples were prepared at randomly distributed locations (Fig. 
+
+## Classification accuracy ##
+The assessment of image classification accuracy helps to evaluate the precision of classification results, ensuring the reliability of subsequent analysis and applications 
+The OA that provides a comprehensive measure of how accurately the model predicts the correct class across all classes, is computed using Eq. 3 
+
+## Change detection ##
+Post-classification comparison was used to detect changes in LULC at three different time periods. Change detection can be either a categorical change, pixel value change, or time series change. Categorical change computes the change between two thematic rasters and quantifies and explores the pixels that are changed or remained unchanged. The pixel value change computes the absolute or relative change between the two continuous raster images. Time series change uses LandTrendr to analyze changes in a multidimensional raster and compute the date on which each pixel changed. LandTrendr uses regression-and vertex-to-vertex-based trajectory fitting to detect abrupt events, such as disturbances, as well as longer duration processes, such as regrowth 
+where Δ is percent change, R c is rate of change, R ue is rate of urban expansion, N is the number of years between the
+two LULC maps, CA n-1 and CA n are the initial and final LULC class area coverage (in km 2 ), BA n-1 and BA n, are the built-up area at time t n-1 and t n (in km 2 ). The rate of urban sprawl/expansion between the three study periods was also determined using Eq. 7.
+
+## Impact of urbanization on surface imperviousness ##
+Surface imperviousness is altered by urbanization; imperviousness can be evaluated in hydrological studies using the runoff coefficient, curve number, and retention capacity. In this study, built-up areas, such as buildings, parking lots, and roadways, were considered as impervious surfaces. The curve number represents the stormwater runoff capacity of a drainage basin. It is an empirical measure used in hydrology to anticipate direct runoff or infiltration from excess rainfall 
+where CN composite is the composite curve number used for runoff volume computations; C w is the weighted runoff coefficient; i is an index for the catchment subdivisions of uniform land use and soil type; CN i is the curve number for subdivision i; C i is runoff coefficient value for each subdivision; EIA is the equivalent impervious area (km 2 ), and A i is the drainage area of subdivision i (km 2 ).
+
+## Results and discussion ##
+
+
+## Accuracy of LULC classification ##
+The overall accuracy and kappa coefficient obtained from the confusion matrix agreed consistently demonstrated strong 
+
+## Spatiotemporal land use and land cover maps ##
+The classification results revealed that in 1979, the catchment was dominated by grass cover occupying an area of 67.65 km 2 followed by built-up and plantation with 24.9 km 2 and 22.52 km 2 areal coverage, respectively ( From the spatial map of the LULC maps, it was observed that grass was dominantly found in the eastern and central parts of the catchment in 1979. Most plantation/tree LULC classes have been found in the eastern (upper) parts of the catchment over the last four decades (Fig. 
+
+## Spatiotemporal changes in LULC classes ##
+The LULC maps for 1979, 2006, and 2019 indicated a substantial trend of LULC change over the last four decades. Notably, the built-up areas expanded by 33.98 km 2 (29.46%) while the grass cover diminished by 43.09 km 2 (33.73%) between 1979 and 2019. During this period, the rate of change of grass cover changes closely corresponded to the rate of the built-up area change, with a decrement of -1.08 km 2 /yr for grass cover and increment of 0.85 km 2 /yr for built-up areas (Table 
+In comparison with the plantation and water classes, the built-up area increased extensively. Regardless, grass cover has consistently declined over all time periods. The water class increased due to the construction of Mawson Lakes and other reservoirs in some parts of the catchment and pond water in the upstream parts of the catchment in mining holes. Between 2006 and 2019, the rate of change in built-up area was 1.03 km 2 /yr; whereas, the rate of change in grass cover was -1.29 km 2 /yr.
+Plantation coverage increased due to the implementation of Urban Forest Biodiversity Program (UFBP, 2002) and urban greening, which includes private greening, streetscapes and transportation corridors, riparian vegetation or green and blue corridors, and urban parks. Riparian landscapes (lands near rivers and streams) help to stabilize stream channel morphology, protect streams from upland pollution sources, and divert sediment-producing activities away from the stream 
+Post-classification categorical LULC change detection was carried out in ArcGIS Pro 3.0. A significant transition from grass to built-up areas was noted due to increased population and urbanization, with strong demand for residential, commercial, and industrial buildings with car parks and roadways. There was also a visible transition from built-up area to grass cover. This was because places under development were entirely regarded as built-up areas and later developed with backyards and some trees, particularly in residential districts.
+The spatial changes in LULC and urbanization showed that the central, northeastern, and southern parts of the catchment significantly changed from grass cover to builtup areas in the three consecutive study periods (Fig. 
+Approximately 72.68 km 2 of the catchment area experienced categorical LULC changes between 1979 and 2019, with a maximum extent of 32.26 km 2 of grass cover    converted to built-up. During the study period, only 37.02% of the catchment area remained unchanged (Table 
+The study found that urban expansion across the entire study period was 34 km 2 , with an average annual change rate of 3.41% specifically within the built-up area. This observation indicated that urban development in the study area has been increasing (Table 
+
+## Population growth and contributions to LULC ##
+According to the Australian Bureau of Statistics (ABS), Australia's population has increased by over 25% from 2001 to 2016, reaching twenty-four million people. Currently, 90% of Australians live in cities, which was 60% in 1911. Notably, overseas migration currently has accounted for slightly over 55% of Australia's population growth since 2001, making it as the predominant contributor to the country's population growth (ABS 2019). The Australian Bureau Statistics data for South Australia showed that the state's population increased by 251,420 residents between 1979 and 2006, followed by an increase 226,284 individuals between 2006 and 2021 (Table 
+The population statistics of inner north suburbs of Adelaide, in which Dry Creek is located, has shown consistent upward trajectory from the baseline census population in 2016 to the 2036 projection (Table 
+
+## Urbanization impact on catchment surface imperviousness ##
+The surface imperviousness of a catchment is highly interrelated to the runoff coefficient and runoff generation capacity 
+Irrespective of the rainfall condition, the catchment's weighted curve number exhibited an increase from 80.94 to 87.37 (Table 
+
+## Conclusion ##
+The study of LULC change caused by urbanization is crucial for analyzing the influence of urban sprawl on catchment surface imperviousness and its consequences for the hydrological processes of urban catchments. High-quality data and a reliable classification method using remote sensing are helpful in the study of changes in land use land cover. LULC classification utilizing high-quality images provide more accurate classification results, which can subsequently be used for environmental and hydrological studies. In the present study, very high-resolution aerial imagery with a resolution of 0.075 m and SPOT satellite imagery with a resolution of 2.5 m were utilized to assess the long-term spatiotemporal LULC changes caused by urban sprawl over the Dry Creek catchment. This study developed LULC maps of the area and assessed categorical changes in the catchment using an advanced and user-friendly ArcGIS Pro 3.0 environment employing the SVM method of image classification. Following an examination of the accuracy assessment performance indicators of automatic classification, image post-classification was demonstrated to improve the classification accuracy. The overall classification accuracy was found to be high, with kappa coefficient and overall accuracy results greater than 0.83 and 0.88, respectively. The SVM image classification approaches performed well in classifying high-resolution imageries, with good performance metrics. The built-up area, plantation and water expanded by 34.0 km 2 , 8.7 km 2 and 0.4 km 2 , respectively from 1979 to 2019, whereas grass cover declined by 43.09 km 2 , revealing a significant transformation in the LULC. Between 1979 and 2019, the study area has undergone substantial changes in land use and land cover. The LULC in the study area changed categorically by 62.98% during the study period. High rates of change were observed in the grass and built-up areas, with respective values of -1.08 and 0.85 km 2 /yr. Urbanization raised the impervious surface from 24.90 to 58.90 km 2 with 136.55% urban expansion. During the study period, an increase in surface imperviousness increased the runoff coefficient and curve number by 60.63% and 7.95%, respectively, while decreasing soil retention capacity by 38.56%. This undoubtedly increases the quantity of catchment surface runoff by increasing the risk of flooding to the downstream environment. The findings of this study have significant implications for the development and implementation of flood and stormwater control strategies. Therefore, future research should focus on how LULC changes caused by urbanization affect runoff and other hydrological and morphological catchment parameters.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Spatio-temporal simulation and prediction of land-use change using conventional and machine learning models: a review
+   Authors: , , 
+   Date: 2019. 2019
+
+2. Spatiotemporal change detection of carbon storage and sequestration in an arid ecosystem by integrating google earth engine and InVEST (the Jiroft plain, Iran)
+   Authors: , , , , , 
+   Date: 2022
+
+3. Spectral analysis of wetlands using multi-source optical satellite imagery
+   Authors: , , , 
+   Date: 2018
+
+4. Spatial evaluation of impacts of increase in impervious surface area on SCS-CN and runoff in Nagpur urban watersheds
+   Authors: , , 
+   Date: 2016
+
+5. Effects of urbanization on storm water run-off: a case study of Kathmandu Metropolitan City
+   Authors: , , 
+   Date: 2015
+
+6. Comparison of land use land cover classifiers using different satellite imagery and machine learning techniques
+   Authors: , , , , , , 
+   Date: 2022
+
+7. Geographic object-based image analysis-towards a new paradigm
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+8. Linking stormwater BMP designs and performance to receiving water impact mitigation
+   Authors: 
+   Date: 2002
+
+9. Survey on SVM and their application in image classification
+   Authors: , 
+   Date: 2021
+
+10. Examining the effect of spatial resolution and texture window size on classification accuracy: an urban environment case
+   Authors: , , 
+   Date: 2004
+
+11. 39 urbanization and river channels
+   Authors: , , , 
+   Date: 2013
+
+12. Impact of the city on the rapid increase in the runoff and transport of suspended and dissolved solids during rainfall-the example of the silnica river
+   Authors: , 
+   Date: 2020
+
+13. Reliability of water supply from stormwater harvesting and managed aquifer recharge with a brackish aquifer in an urbanising catchment and changing climate
+   Authors: , , , , , 
+   Date: 2015
+
+14. A review of assessing the accuracy of classifications of remotely sensed data
+   Authors: 
+   Date: 1991
+
+15. Assessing the accuracy of remotely sensed data: principles and practices
+   Authors: , , , , 
+   Date: 2019. 1985
+
+16. Comparison of support vector machines and random forests for corine land cover mapping
+   Authors: , , , , , , , , 
+   Date: 2021
+
+17. Application of remote sensing for evaluation of land use change responses on hydrology of Muga watershed, Abbay River Basin
+   Authors: , 
+   Date: 2018. 2016 -36, December 2019. 2016-36, December 2019 release
+
+18. Time series analysis of land cover change using remotely sensed and multisource urban data based on machine learning: a case study of Shenzhen, China from 1979 to 2022
+   Authors: , , , , , , , , 
+   Date: 2022
+
+19. Urbanization impacts on flood risks based on urban growth data and coupled flood models
+   Authors: , , 
+   Date: 2021
+
+20. Impact of satellite imagery spatial resolution on land use classification accuracy and modeled water quality
+   Authors: , , , , 
+   Date: 2018
+
+21. Harshness in image classification accuracy assessment
+   Authors: 
+   Date: 2008
+
+22. Spatiotemporal trends of urban land use/land cover and green infrastructure change in two Ethiopian cities: Bahir dar and hawassa
+   Authors: , 
+   Date: 2018
+
+23. Modelling land use/cover change to assess future urban sprawl in Romania
+   Authors: , , , , , 
+   Date: 2021
+
+24. An automatic approach for land-change detection and land updates based on integrated NDVI timing analysis and the CVAPS method with GEE support
+   Authors: , 
+   Date: 2018
+
+25. Modelling spatiotemporal trends of land use land cover dynamics in the abbay river basin Ethiopia
+   Authors: , , , , , , 
+   Date: 2022
+
+26. GCN250, new global gridded curve numbers for hydrologic modeling and design
+   Authors: , , 
+   Date: 2019
+
+27. Modeling relationship between land surface temperature anomaly and environmental factors using GEE and Giovanni
+   Authors: , , , 
+   Date: 2022
+
+28. Investigating the relationship between land use/ land cover change and land surface temperature using google earth engine; case study: melbourne
+   Authors: , , , , , 
+   Date: 2022
+
+29. Monitoring and modelling of urban sprawl using remote sensing and GIS techniques
+   Authors: , , 
+   Date: 2008. 2007
+
+30. Detecting trends in forest disturbance and recovery using yearly Landsat time series: 1. LandTrendr-Temporal segmentation algorithms
+   Authors: , , 
+   Date: 2010
+
+31. Performance of ANN, SVM and MLH techniques for land use/cover change detection at Sultan Marshes wetland
+   Authors: , , , 
+   Date: 2019
+
+32. Quantifying land use/land cover spatio-temporal landscape pattern dynamics from Hyperion using SVMs classifier and FRAGSTATS®
+   Authors: , , , , , , 
+   Date: 2018
+
+33. Object-based land-cover mapping with high resolution aerial photography at a county scale in midwestern USA
+   Authors: , 
+   Date: 2014
+
+34. Effects of urbanization on direct runoff characteristics in urban functional zones
+   Authors: , , , , , 
+   Date: 2018
+
+35. Comparative assessment of the measures of thematic classification accuracy
+   Authors: , , 
+   Date: 2007
+
+36. Remote sensing monitoring and driving force analysis of urban expansion in Guangzhou City
+   Authors: , 
+   Date: 2010
+
+37. Analysis of land use/land cover change trends over birr river Watershed
+   Authors: , , , 
+   Date: 2022
+
+38. Integrated and individual impacts of land use land cover and climate changes on hydrological flows over birr river watershed
+   Authors: , , 
+   Date: 2023
+
+39. Analysis of twenty years of categorical land transitions in the lower hunter of new South Wales
+   Authors: , , 
+   Date: 2010
+
+40. Monitoring land use and land cover changes in the mountainous cities of Oman using GIS and CA-Markov modelling techniques
+   Authors: , , , 
+   Date: 2020
+
+41. Interrater reliability: the kappa statistic
+   Authors: 
+   Date: 2012
+
+42. Before and after riparian management: sediment and nutrient exports from a small agricultural catchment
+   Authors: , , , , 
+   Date: 2003
+
+43. Use of stage data to characterize hydrologic conditions in an urbanizing environment 1
+   Authors: , , , , 
+   Date: 2003
+
+44. Intrusion detection system based on SVM for WLAN
+   Authors: , 
+   Date: 2012
+
+45. Decadal urban land use/land cover changes and its impact on surface runoff potential for the Dhaka City and surroundings using remote sensing
+   Authors: , , , , , , , 
+   Date: 2020
+
+46. A decision framework for selecting stormwater management interventions to reduce fine sediments and improve coastal water quality
+   Authors: , , , , , , 
+   Date: 2021
+
+47. Urbanization effects on watershed hydrology and in-stream processes in the southern United States
+   Authors: , , , , , 
+   Date: 2020. 2010
+
+48. Land cover change and its relation with population dynamics in Burkina Faso
+   Authors: , , , , , 
+   Date: 2010
+
+49. Object-based image classification of summer crops with machine learning methods
+   Authors: , , , , , 
+   Date: 2014
+
+50. Spatial modeling and assessment of urban form
+   Authors: 
+   Date: 2017
+
+51. Pre and post earthquake land use and land cover identification in Concepción
+   Authors: , , , , 
+   Date: 2013
+
+52. Accuracy assessment of land use/ land cover classification using remote sensing and GIS
+   Authors: , 
+   Date: 2017
+
+53. Urban hydrology for small watersheds, technical release no. 55 (TR-55)
+   Authors: 
+   Date: 1986
+
+54. Spatiotemporal detection of land use/ land cover change in the large basin using integrated approaches of remote sensing and GIS in the upper awash basin
+   Authors: , 
+   Date: 2019
+
+55. Impacts of impervious surface on watershed hydrology: a review
+   Authors: , , , , 
+   Date: 2005
+
+56. Using google earth engine to detect land cover change: Singapore as a use case
+   Authors: , , 
+   Date: 2018
+
+57. Spatiotemporal impact of land use/land cover changes on urban heat islands: a case study of Paço do Lumiar
+   Authors: , , 
+   Date: 2018
+
+58. Comparison of random forest, k-nearest neighbor, and support vector machine classifiers for land cover classification using Sentinel-2 imagery
+   Authors: , , 
+   Date: 2023. 2017
+
+59. The 30-year plan for greateradelaide
+   Date: 2017
+
+60. Northern adelaide plains water stocktake technical report, the goyder institute for water research
+   Date: 2016
+
+61. Reconstruction of historical stormwater flows in the adelaide metropolitan area
+   Authors: 
+   Date: 2005. 2005
+
+62. Mapping and monitoring of land cover/land use (LCLU) changes in the crozon peninsula (Brittany, France) from 2007 to 2018 by machine learning algorithms (support vector machine, random forest, and convolutional neural network) and by post-classification comparison (PCC)
+   Authors: , 
+   Date: 2021
+
+63. Mapping annual land use and land cover changes using MODIS time series
+   Authors: , , , , 
+   Date: 2014
+
+64. Assessing the long-term impact of urbanization on run-off using a remote-sensing-supported hydrological model
+   Authors: , , 
+   Date: 2015
+
+65. Automatic high-resolution land cover production in madagascar using sentinel-2 time series, tile-based image classification and google earth engine
+   Authors: , , , , , , , , , 
+   Date: 2020
+
+66. Impact of training and validation sample selection on classification accuracy and accuracy assessment when using reference polygons in object-based classification
+   Authors: , , , 
+   Date: 2013
+

@@ -1,0 +1,300 @@
+================================================================================
+TITLE: Land use and land cover change detection using geospatial techniques in the Sikkim Himalaya, India
+================================================================================
+
+AUTHORS:
+- Prabuddh Mishra
+- Aman Rai
+- Chand Rai
+
+ABSTRACT:
+Mapping and monitoring of land use land cover (LULC) changes in the Himalayas is vital for sustainable development, planning and management. Based on remote sensing (RS) and geographic information system (GIS) techniques, the study is an attempt to monitor the changes in LULC patterns of Rani Khola
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+The potential of satellite based data as a basis for generating valuable information for LULC is by now widely recognized 
+Land-use/cover is largely determined by the ecological conditions, altitudes, geological structure and slope along with technological, socio-economic and institutional set-up, which also influences the land-use pattern 
+In the present study Multi-temporal satellite images of Landsat-5 Thematic Mapper (TM) and a High resolution (10 m) Sentinel 2A Imagery has been used to map the changing pattern of LULC of Rani Khola watershed from 1988 to 2017. Land-use/cover in the study watershed is largely determined by the ecological conditions, altitudes, geological structure and slope. Apart from the above factors, technological, socio-economic and institutional set-up is also expected to influence the LULC pattern 
+There have been some attempts to study the LULC and inventory of resources in Sikkim Himalaya 
+
+## Materials and methods ##
+
+
+## Study area ##
+The present study was conducted in Rani Khola watershed located in the East District of Sikkim State, India (Fig. 
+
+## Data source ##
+Multi-temporal Landsat-5 Thematic Mapper (TM) imageries of 
+
+## Methodology ##
+Overall methodological framework and data analysis is presented in Fig. 
+
+## Pre-processing ##
+ASTER DEM was used to extract the boundary of the Rani Khola watershed. Satellite imageries were available in TOA and converted in Bottom of Atmospheric Reflectance (BOA) using Semi-Automatic Classification Plug-in of QGIS software. After the conversion of TOA reflectance to BOA reflectance, sentinel SWIR bands were resampled from 20 m to 10 m. Thereafter, all five bands of satellite imagery were stacked and watershed boundary generated from ASTER DEM was used for subsetting all the imageries. Standard false colour composite (FCC) of all decades was created for mapping.
+
+## Land-cover classification scheme ##
+To prepare the LULC map from satellite imageries, a classification scheme which defines the LULC classes was considered. The numbers of LULC classes are preferred based on the requirement of a specific project for a particular application 
+2.3.3. Post processing 2.3.3.1. Supervised classification. After the preparation of classification scheme one of the most widely used image classification technique, i.e., maximum likelihood classification was adopted for mapping all the land use/cover classes. Before the selection of training samples, empirical analysis of satellite imagery; google earth images and toposheet of the watershed were investigated carefully. For most of the classes, a minimum number of training samples were 100. Selecting training samples for water was tough because of the dense canopy of forests along with the river channel and lack of water in the river channels since the acquisition date of imagery was in mid-November and at that time most of the rivers in the mountains carry less water as compared to the monsoon season.
+
+## Field survey and accuracy assessment ##
+A field survey was conducted for ground verification of doubtful areas with the help of GPS and local guides in different parts of watershed covering all the LULC classes. Due to mountainous topography, rough terrain and steep slopes, few areas were not accessible. Photographs taken during the field survey are shown in Fig. 
+
+## LULC change detection ##
+LULC map of 2017 was re-sampled on 30 m to match the spatial resolution of all the classified maps thereafter; post-classification change detection technique was used for analysing the changes. In the last few decades, many change detection methods have been developed viz; image differencing, post classification change matrix, comparison technique and principal component analysis 
+
+## Results ##
+
+
+## LULC status ##
+Multi-temporal LULC covering six major classes: agricultural land, barren land, built-up area, dense forest, open forest and water-bodies of 
+Results from classified maps indicated that in 1988 area occupied by different classes viz; agricultural land was about 20.46%, barren land was 4.38%, built-up area covered 2.82%, dense and open forest covered most part of the watershed and occupied about 38.26% and 34.07% area respectively. On the other hand, in 1996 about 15.08% of the area was covered by agricultural land against 20.46% area in 1988 showed a decrease in cultivated land. Barren land and builtup area covered 4.25% and 3.51% respectively while, dense forest had largest share of 41.35% followed by open forest 35.81%. The area covered by water bodies was less than 1% (0.01 km 2 ) of the total geographical area for the year 1988-1996 (Table 
+Results from the classified image of 2008 illustrate that more than 50% of the area was covered by dense forest, whereas open forest share was 30%. Agricultural land occupied 12.75%; built-up area covered 3.60% while barren land and water bodies collectively covered 2.66% area. In 2017, the area under dense and open forest has fairly grown and covered 74.75% collectively. Agricultural lands and built-up area covered 17.63% and 4.95% area respectively (Table 
+
+## Field survey and accuracy assessment ##
+During the field survey and accuracy assessment the notable differences found in classified image and actual ground were the misclassification of unpaved roads as barren lands and dirt roads as agricultural fallow land. In some areas exposed river bedrocks were also misclassified as built-up area. Photograph A captured the dense forest cover near Bhusuk village as shown in 
+One of the most frequently used Kappa accuracy assessment technique was selected to assess the accuracy of classified map of 2017. Accuracy assessment was done using a high resolution (3.9 Meters) satellite imagery of Planet scope 300 stratified random points with minimum 20 points in each class were generated (Table 
+
+## Discussion ##
+
+
+## LULC changes ##
+Several studies analyses changes in broad LULC in the Himalaya 
+
+## LULC patterns over the period of 1996-2008 ##
+Dense forests and built up area showed increasing trend during this time period, in contrast to decrease in the change rate of other    
+
+## Overall gain and loss ##
+
+
+## Conclusion ##
+This study assessed and monitored the changes in LULC pattern in the Rani Khola watershed of Sikkim Himalaya using Landsat-5 TM and sentinel-2 data from 1988 to 2017. The result of this study reveals that the major land use in the watershed is forestry. Due to massive afforestation programme, declaration of Sikkim as organic state (2005), stringent law enforcement in forestry sector and sustainable agroforestry systems the area under dense forest has increased by 16.4% (41.76 km 2 ) between 1988 and 2017. Open forest showed increasing trend during 1988-1996 whereas decreasing trend has been observed during 1996-2017, this may be associated with the conversion of open forest into dense forest area. The second dominant land use is agriculture which was recorded as 17.63% (2017) as against 12.75% in 2008 due to traditional agroforestry practices, horticulture, floriculture and animal husbandry which is widely practiced by the. During the study period , barren land has been decreased significantly due to conversion in agriculture, vegetation and built-up land. The major changes in built up area were noted along the periphery of the Gangtok being the capital city due to urban sprawl and expansion of the town area during the last two decades.
+Since forestry and agriculture are the predominant user of land, their quality (soils) and quantity (area) is directly related to the nature of landforms. This data would ultimately help to identify limiting resources as also the environmentally critical areas which can be delimited as hot spots for conservation or remediation. The evaluation of resources would also lead to understand the impacts of various developmental activities on these resources on the one hand and the planning process on the other. Present study utilizes the RS and GIS approach which is one of the most prominent technology at present for spatio-temporal analysis which is not possible through other conventional mapping techniques. The analysis and findings of the study have important policy implications for the sustainable land-use/cover practices in the Sikkim Himalaya.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. A land use and land cover classification system for use with remote sensor data
+   Authors: 
+   Date: 1976
+
+2. Multi-source classification using artificial neural network in a rugged terrain
+   Authors: , 
+   Date: 2001
+
+3. Inferring urban land use by spatial and structural pattern recognition
+   Authors: , , 
+   Date: 2001. 19th February 2019
+
+4. 
+   Authors: 
+
+5. Diagrammatic illustration of land use/cover change in percent in Rani Khola watershed
+
+6. An analysis of land use/cover change in Indonesia
+   Authors: , , , 
+   Date: 1996
+
+7. Assessment of climate change impact on river flow regimes in The Red River Delta, Vietnam-a case study of the Nhue-Day River Basin
+   Authors: , , , 
+   Date: 2016
+
+8. Ministry of Environment and Forests: Dehradun, India
+   Date: 2017. 19th February 2019
+
+9. Modeling the hydrological impacts of land use/land cover changes in the Andassa watershed, blue Nile basin
+   Authors: , , , 
+   Date: 2018
+
+10. GIS assessment of land use/land cover changes associated with community forestry implementation in the Middle Hills of Nepal
+   Authors: , , 
+   Date: 2002. 2002
+
+11. What Drives Tropical Deforestation? A MetaAnalysis of Proximate and Underlying Causes of Deforestation Based on Sub-national Case Study Evidence
+   Authors: , 
+   Date: 2001
+
+12. Geology, Mineral, and Water Resources of Sikkim Himalaya. Abstract Volume, Sikkim Unit
+   Authors: 
+   Date: 2006
+
+13. Impacts of land use and land cover change on surface runoff, discharge and low flows: Evidence from East Africa
+   Authors: , , , , 
+   Date: 2018
+
+14. The use of GIS for monitoring and predicting urban growth in East and West St Paul
+   Authors: 
+   Date: 2002
+
+15. Spectral resolution requirements for mapping urban areas
+   Authors: , , 
+   Date: 2003
+
+16. Assessing sustainable land management (SLM)
+   Authors: 
+   Date: 2000
+
+17. The Himalayan Dilemma: Reconciling Development and Conservation
+   Authors: , 
+   Date: 1989
+
+18. Land cover classification using Landsat 8 Operational Land Imager data in Beijing
+   Authors: , , , , , 
+   Date: 2014
+
+19. A land cover change detection and classification protocol for updating Alaska NLCD 2001 to 2011
+   Authors: , , , 
+   Date: 2017
+
+20. A comprehensive change detection method for updating the national land cover database to circa 2011
+   Authors: , , , , , 
+   Date: 2013
+
+21. Land cover change and woodland degradation in a charcoal producing semi-arid area in Kenya
+   Authors: , , , 
+   Date: 2017
+
+22. Monitoring forest degradation in tropical regions by remote sensing: some methodological issues
+   Authors: 
+   Date: 1999
+
+23. Dynamics of land use and cover change in tropical regions
+   Authors: , , 
+   Date: 2003
+
+24. Global land use change, economic globalization, and the looming land scarcity
+   Authors: , 
+   Date: 2011
+
+25. Are agricultural land-use models able to predict changes in land-use intensity?
+   Authors: , , 
+   Date: 2000
+
+26. Change detection techniques
+   Authors: , , , 
+   Date: 2004
+
+27. Post-processing approach for refining raw land cover change detection of very high-resolution remote sensing images
+   Authors: , , , , 
+   Date: 2018
+
+28. Ecosystem services and biodiversity trends in Mozambique as a consequence of land cover change
+   Authors: , , , 
+   Date: 2017
+
+29. Modeling the environmental impacts of urban land use and land cover change-a study in Merseyside, UK. Landsc. Urban Plan
+   Authors: , , 
+   Date: 2005
+
+30. Quantifying processes of land-cover change by remote sensing: resettlement and rapid land-cover changes in south-eastern Zambia
+   Authors: , , 
+   Date: 2001
+
+31. Developments in landsat land cover classification methods: a review
+   Authors: , 
+   Date: 2017
+
+32. Conservation in the Sikkim Himalaya: traditional knowledge and land-use of the Mamlay watershed
+   Authors: , , 
+   Date: 1994
+
+33. Land use dynamics and landscape change pattern in a typical micro watershed in the mid elevation zone of central Himalaya
+   Authors: , 
+   Date: 2001
+
+34. Spatial methods for characterising land cover and detecting land-cover changes for the tropics
+   Authors: , 
+   Date: 2002
+
+35. Modeling land-use and cover as part of global environmental change
+   Authors: , , 
+   Date: 1994
+
+36. Manual of remote sensing
+   Authors: 
+   Date: 1983
+
+37. Land use and land cover classification over a large area in Iran based on single date analysis of satellite imagery
+   Authors: , , , , , 
+   Date: 2011
+
+38. Land cover classification using IRS LISS III image and DEM in a rugged terrain: a case study in Himalayas
+   Authors: , , , 
+   Date: 2005
+
+39. Land use and land cover change impacts on the regional climate of non-Amazonian South America: a review
+   Authors: , , , , 
+   Date: 2015
+
+40. Bio-economic modeling of land use and forest degradation at watershed level in Nepal
+   Authors: , , , 
+   Date: 2003
+
+41. Pixelbased classification analysis of land use land cover using sentinel-2 and landsat-8 data
+   Authors: , , 
+   Date: 2017
+
+42. Patterns and ecological implications of agricultural land-use changes: a case study from central Himalaya
+   Authors: , , , , , , 
+   Date: 2004
+
+43. Remote sensing and GIS for mapping and monitoring land cover and landuse changes in the Northwestern coastal zone of Egypt
+   Authors: , 
+   Date: 2007
+
+44. 
+   Authors: , , , , , , 
+   Date: 1992
+
+45. Land use and Land cover mapping of East District of Sikkim using IRS P6 satellite imagery
+   Authors: , , , 
+
+46. Traditional agroforestry in the eastern Himalayan region: land management system supporting ecosystem services
+   Authors: , , 
+   Date: 2007
+
+47. Gangtok, Sikkim, Government of Sikkim
+   Date: 2007. 19th February 2019
+
+48. The impact of land use/land cover change on ecosystem services in the central highlands of Ethiopia
+   Authors: , , 
+   Date: 2017
+
+49. A spatial explicit allocation procedure for modelling the pattern of land use change based upon actual land use
+   Authors: , , , , 
+   Date: 1999
+
+50. Human domination of Earth's ecosystems
+   Authors: , , , 
+   Date: 1997
+
+51. Thermal remote sensing of urban climates
+   Authors: , 
+   Date: 2003
+
+52. Unsupervised object-based change detection via aWeibull mixturemodel-based binarization for high-resolution remote sensing images
+   Authors: , , , , 
+   Date: 2018
+
+53. Mapping the influence of land use/land cover changes on the urban heat island effect-a case study of Changchun
+   Authors: , , , , , , , 
+   Date: 2017
+
+54. Land cover classification and change analysis of the Twin Cities (Minnesota) Metropolitan Area by multitemporal Landsat remote sensing
+   Authors: , , , 
+   Date: 2005
+
+55. Land use/cover change and environmental vulnerability analysis in Birahi Ganga subwatershed of the Garhwal Himalaya
+   Authors: , , , , , , 
+   Date: 2007
+
+56. Local spectrum-trend similarity approach for detecting land-cover change by usingspot-5 satellite images
+   Authors: , , 
+   Date: 2014
+
+57. Continuous change detection and classification of land cover using all available landsat data
+   Authors: , 
+   Date: 2014
+

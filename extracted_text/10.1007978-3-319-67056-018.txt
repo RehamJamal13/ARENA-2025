@@ -1,0 +1,337 @@
+================================================================================
+TITLE: Using Text Mining Techniques for Extracting Information from Research Articles
+================================================================================
+
+AUTHORS:
+- Said Salloum
+- Mostafa Al-Emran
+- Azza Monem
+- Khaled Shaalan
+- ⋅ Shaalan
+
+ABSTRACT:
+Nowadays, research in text mining has become one of the widespread fields in analyzing natural language documents. The present study demonstrates a comprehensive overview about text mining and its current research status. As indicated in the literature, there is a limitation in addressing Information Extraction from research articles using Data Mining techniques. The synergy between them helps to discover different interesting text patterns in the retrieved articles. In our study, we collected, and textually analyzed through various text mining techniques, three hundred refereed journal articles in the field of mobile learning from six scientific databases, namely: Springer, Wiley, Science Direct, SAGE, IEEE, and Cambridge. The selection of the collected articles was based on the criteria that all these articles should incorporate mobile learning as the main component in the higher educational context. Experimental results indicated that Springer database represents the main source for research articles in the field of mobile education for the medical domain. Moreover, results where the similarity among topics could not be detected were due to either their interrelations or ambiguity in their meaning. Furthermore, findings showed that there was a booming increase in the number of
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Untitled ##
+published articles during the years 2015 through 2016. In addition, other implications and future perspectives are presented in the study.
+Keywords Text mining ⋅ Information extraction ⋅ Topic identification Scientific databases ⋅ Mobile learning ⋅ Higher education
+
+## Introduction ##
+Nowadays, almost all of the existing information in different institutions (e.g. government, business, industry, and others) is preserved in electronic documents in which it contains semi-structured data. In these documents, the "abstract" is an example of unstructured text component. Whereas, examples of structured fields in a document are: author's name, publication date, title, and category 
+Text mining intends to detect the information that was not recognized before through extracting it automatically from various text-based sources. Structured data can be handled through data mining tools while unstructured or semi-structured datasets like full-text documents, emails, and HTML files can be handled through text mining. Typically, the information will be kept in a natural form known as text. Text mining is not similar to web mining. When something is explored on the web by the user, it means that it is previously known and it was written by someone else 
+Data is the basic kind of information, which is required to be organized and mined for the knowledge generation. Discovering patterns and trends from huge data is a significant challenge. Finding out the unknown trends and patterns from databases properly is a major objective of data mining. It is a method where data pre-processing is necessary before applying any other method. Many approaches like clustering, classification, and decision trees are involved in data mining. All the textual based information is stored by electronic means, either on a client's personal computers or on a web server. Due to the increasing growth in hardware storage devices, any computer or laptop has the ability to store an enormous amount of data. Creating new information can be simple while finding out relevant information from a huge amount of data is challenging. In order to extract the relevant information, knowledge, or patterns from various sources that are in unstructured form, text mining technique can be employed. The common structure of text mining involves two consecutive stages: text refining and knowledge distillation. In text refining, free-form text documents are converted into an intermediate form, whereas in knowledge distillation, patterns or knowledge are derived from intermediate form. Intermediate form (IF) can be either semi-structured like the theoretical graph illustration or structured like the relational data illustration. IF can be either a document-based where every entity symbolizes document, it can be a concept-based where every unit symbolizes an object or a concept of interest in a particular area.
+Various research areas, techniques, and models are involved in different research domains. The hottest topics of the research domains are the primary focus of many research papers. The research results of a particular domain may influence other research domains since some research domains may have similar topics. These research topics always discuss such a promising research area that is worth studying. Therefore, the trend of cross domain is determined in this research. The longitudinal trends of academic articles in Mobile Leaning (ML) were explored in this research with the help of text mining methods. We recovered and examined (300) refereed journal articles and conference proceedings from various authentic databases.
+The primary goals of this research are (1) Using text mining techniques for identifying the topics of a scientific text related to ML research and developing a hierarchical and evolutionary connection among these topics. (2) Using visualization tools for presenting both the topics and the association among them as a convenient way to help users to determine relevant topics.
+This paper is categorized as follows: Sect. 2 provides an inclusive background concerning in the text mining field. Other related studies are addressed by Sect. 3. Research methodology is presented in Sect. 4. The results are demonstrated in Sect. 5. Conclusion and future perspectives are presented in Sect. 6.
+
+## Background on Text Mining and Information Extraction ##
+
+
+## Text Mining ##
+The development in the fields of web, digital libraries, technical documentation, medical data has made it easier to access a larger amount of a textual documents, which come together to develop useful data resources 
+
+## Information Extraction ##
+An initiation point for computers to evaluate unstructured manuscripts is to use Information Extraction (IE). IE software recognizes key phrases and relationships included in the manuscript. This is performed through finding the predefined arrangements in a text; this technique is called pattern matching. Regular language text documents consist of information that cannot be utilized for mining. IE agrees with the documentation, choosing appropriate articles, and the association among them to make them more available for added guidance 
+
+## Extracting Knowledge from Text ##
+Under most of the conditions, only specific data is obtained from the information extracted from unstructured text instead of abstract knowledge. In such a case, it is required to employ a text mining task along with additional techniques to mine knowledge from the data in hand 
+
+## Text Mining Methods and Techniques ##
+Text mining is usually employed to obtain quick results 
+
+## Text Clustering ##
+Text clustering is based on the Cluster hypothesis which proposes that relevant documents must have more similarities with one another than the non-relevant ones 
+Various methods and algorithms based on unsupervised document management are included in the process of document clustering. In the clustering process, the numbers, properties, and associations of the grouped sets are initially unknown. The grouping of documents is performed by categorizing them into a particular category such as medical, financial, and/or legal 
+
+## Association Rule Extraction ##
+A study by 
+The ARM identifies the variable-value combinations which tend to occur frequently. The method of ARM in data mining also known as knowledge discovery in databases; that is similar to the correlation analysis that finds out the relationships between two variables. Wong et al. 
+
+## K-Means Algorithms ##
+The k-mean approach divides the data set into k clusters, where every cluster is subjected to be represented by the mean of points; called the centroid. A two-step repetitive process is employed for the application of the algorithm: (1) Assigning every point to the nearest centroid. (2) Evaluating the centroids for a recently developed group. The process is ended when the cluster centroid comes to a constant value. The k-mean algorithm has an extensive application owing to its direct parallelization. Furthermore, the order of respective data does not affect the kmean algorithm which attributes the numerical characteristics to it. It is required to mention the maximum value of k at the beginning of the process. The representation of the cluster is made by the k-medoid algorithm that chooses the object adjoining the center of the cluster. Though, the selection of the k objects is done randomly in the algorithm. The selected objects help to determine the distance. A cluster is formed on the basis of the nearest object to k, whereas the other objects acquire the position of k recursively till the required quality of the cluster is achieved 
+
+## Information Visualization ##
+Information visualization puts great textual bases in a visual hierarchy or plan and offers browsing abilities as well as general searching. This technique offers improved and quicker comprehensive knowledge, which assists us to mine enormous accumulation documents. The operators can distinguish the colors, associations, and gaps. The assortment of documents can be demonstrated as a structured layout utilizing indexing or vector space model.
+
+## Word Cloud ##
+Jayashankar and Sridaran 
+Word cloud tends to serve as a preliminary stage for in-depth analysis of certain text material 
+
+## Related Work ##
+Many research works contributed to the field of IE through the use of various techniques. The primary focus of these researches was to determine how different text mining procedures can be utilized as the structured data sets exist in the text document format. This part begins with defining the topic of the research, evaluating previous researches, and then major techniques are applied using information extraction and text mining. In order to determine the topic of each research area and to develop an evolutionary and hierarchical connection between these topics, 
+Moreover, these tools are used in order to show the connection between these topics and to offer interactive functions so that users can effectively find the cross-domain topics and know the trends of cross-domain research. Moloshnikov et al. 
+In order to offer a reference for additional researches of other researchers, 
+In order to extract inter-language clusters through multilingual documents depending on Closed Concepts Mining and vector model, a new statistical approach was suggested by 
+Santosh 
+Sirsat et al. 
+Song and Kim 
+In order to facilitate the accurate extraction of text from PDF files of research articles that can be utilized in text mining applications, a "Layout-Aware PDF Text Extraction" (LA-PDF Text) system was presented by 
+Mooney and Bunescu 
+We can observe from the surveyed literature that there is a limitation in addressing the issue of IE from research articles using data mining techniques. The synergy between these approaches (i.e. IE with data mining techniques) helps to discover different interesting text patterns in the retrieved articles. This approach could be applied to a variety of research topics, where in each topic can generate a wide range of knowledge patterns. Mobile learning (M-learning) has become one of the trendy fields in the higher education 
+
+## Research Methodology ##
+
+
+## Text Mining Processing Framework ##
+We have developed our customized framework which is inspired by the designed framework proposed by 
+
+## Data Collection and Pre-processing ##
+The research articles were collected from six scientific databases, namely: Springer, Wiley, Science Direct, SAGE, IEEE, and Cambridge. The search term used for data collection is simply "Mobile Learning in higher education". Based on that, 300 research articles in the field of mobile learning were collected. These articles are categorized into six folders, where each folder represents the database where these articles were retrieved.
+The presence of the linguistic noise is a common problem in the content of the extracted articles and we have dealt with. Then, the cleaned data are uploaded into RapidMiner tool while the misplaced and unnecessary data have been removed from the dataset. In order to improve the performance and data quality, all the irrelevant characteristics are debarred while the data is being uploaded into RapidMiner tool. The major steps involve the separation of the document into tokens; this task is called Tokenization 
+
+## Experimental Results ##
+The application of various text mining techniques on the collected articles presents different results and suggestions. In the present study, we are trying to apply almost all of the text mining techniques that were mentioned in the literature on the collected articles. Nevertheless, these techniques have not been applied to the research articles concerning mobile learning in higher education; the reason that makes this study is unique and adds a value to the research community.
+
+## Q1: What are the most frequent keywords in the collected articles? ##
+As per the study of 
+
+## Fig. 2 Words cloud across all databases ##
+Moreover, we have applied the word frequency technique on the text in the collected articles. As per (Fig. 
+According to (Fig. 
+As per (Fig. 
+According to (Fig. 
+As per (Fig. 
+As per (Fig. 
+According to (Fig. 
+As per (Fig. 
+
+## Q2: What are the most frequent terms among the collected articles? ##
+As per the study of 
+
+## Q3: What are the most common topics among the collected articles? ##
+As per the study of 
+
+## Q4: How are the articles interrelated to each other? ##
+According to 
+
+## Q5: How are the articles distributed in terms of publication year? ##
+Figure 
+
+## Conclusion ##
+The present study demonstrates a comprehensive overview about text mining and its current research status. According to the surveyed literature, there is a limitation in discussing the issue of information extraction from research articles using data mining techniques. The synergy between information extraction and data mining techniques helps to discover different interesting text patterns in the retrieved articles. This approach could be applied to a variety of research topics, where in each topic it can generate a wide range of knowledge patterns. Mobile learning has become one of the trendy fields in the higher education. Accordingly, we can perceive that information extraction and data mining techniques were never applied to the mobile learning field. This creates a need for collecting a dataset that consists of several research articles in the field of mobile learning from different scientific databases, and applying the proposed approach on them.
+Three hundred refereed journal articles from six scientific databases were collected, and textually analyzed through text mining techniques. The six databases are Science Direct, IEEE, Wiley, Cambridge, SAGE, and Springer. The selection of the collected articles was based on the criteria that all these articles should incorporate mobile learning as the main component in the higher educational context. In the present study, text clustering, association rule, word cloud, and word frequency are the main tasks used for text analysis.
+By applying the word cloud and the word frequency techniques, results indicated that "Learning" is the most frequent keyword across all the collected articles; followed by "Patients" and "Students", respectively. The increasing number of the words: "learning" and "students" could be attributed to the fact that learning and students form the core of the higher educational processes. In addition, results revealed that the words: "patients", "care", "medical", and "clinical", were frequently mentioned in Springer database. These results indicate that the most frequent linked words are those focused on studies targeting mobile learning in medical education. Springer database represents the richest source that contains these words followed by Wiley and Science Direct, respectively. That is, researchers who are specialized in mobile medical education should benefit from these results as it shows them that Springer database is the topmost among other databases for finding research articles in this field.
+By applying the association rule technique, findings showed that the term "Education" is shown as being central to the tree structure having all the relevant words connected to it. This could be referred to the fact that the text acquired from the collected research articles is mainly concentrated on the learning field. In addition, we performed the similarity measure on the collected articles in order to identify the topics that are highly similar to each other. Results revealed that the similarity operator could not detect a clear similarity among some topics the reason is that these topics are interrelated and similar in meaning to each other (i.e. all the articles are discussing the topic of mobile learning in higher education).
+By applying the clustering technique, we used the k-means algorithm through the use of different k values. Results indicated that there were six clusters. Almost all of the articles (N = 285) were accumulated in one cluster; this indicates that these articles are discussing the main studied topic (i.e. mobile learning in higher education). On the other side, by further investigating the remaining articles (N = 15) that are accumulated in the other clusters; it has been found that these articles are discussing other topics in learning and education rather than the studied topic. By distributing the collected research papers across their years of publication, findings showed that there was a booming increase in the number of published articles during the years 2015 through 2016. This could be referred to the reason that mobile learning has witnessed in these years an enormous attraction from a lot of scholars who published many articles that contribute to the evolvement of mobile learning.
+As a future work, we are interested in collecting articles from various research topics, i.e. not to focus on one area. This will help us to find more interesting patterns in these articles and how such articles are distributed among the targeted databases. In addition, this will allow the similarity operator to work properly and to draw a clear relationship among the articles.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Text mining methods and techniques
+   Authors: , , 
+   Date: 2014
+
+2. A Survey of text mining in social media: facebook and twitter perspectives
+   Authors: , , , 
+   Date: 2017
+
+3. Data warehousing and data mining
+   Authors: , 
+   Date: 2000
+
+4. A survey of text mining techniques and applications
+   Authors: , 
+   Date: 2009
+
+5. Automating content extraction of html documents
+   Authors: , , , , 
+   Date: 2005
+
+6. A review of data mining applications in crime
+   Authors: , , , 
+   Date: 2016
+
+7. Knowledge discovery in textual databases (KDT)
+   Authors: , 
+   Date: 1995
+
+8. Text mining: The state of the art and the challenges
+   Authors: 
+   Date: 1999
+
+9. Untangling text data mining
+   Authors: 
+   Date: 1999
+
+10. Text mining: natural language techniques and text mining applications
+   Authors: , 
+   Date: 1998
+
+11. A text mining technique using association rules extraction
+   Authors: , , , 
+   Date: 2008
+
+12. Text mining: challenges and future directions
+   Authors: 
+   Date: 2015
+
+13. Techniques on text mining
+   Authors: , 
+   Date: 2012
+
+14. A Survey of lexical functional grammar in the Arabic context
+   Authors: , , 
+   Date: 2016
+
+15. A survey of intelligent language tutoring systems
+   Authors: , 
+   Date: 2014
+
+16. Parsing modern standard Arabic using Treebank resources
+   Authors: , , 
+   Date: 2015
+
+17. Information extraction: Towards scalable, adaptable systems
+   Date: 2003
+
+18. Information extraction
+   Authors: , 
+   Date: 1996
+
+19. Knowledge representation and information extraction for analysing architectural patterns
+   Authors: , , , , 
+   Date: 2016
+
+20. Template-based information mining from HTML documents
+   Authors: , 
+   Date: 1997
+
+21. Text mining with information extraction, multilingualism and electronic language management
+   Authors: , 
+   Date: 2003
+
+22. TopCat: data mining for topic identification in a text corpus
+   Authors: , , 
+   Date: 2004
+
+23. Mining knowledge from text repositories using information extraction: A review
+   Authors: , , 
+   Date: 2014
+
+24. Technology Mining bibliometrics analysis: applying network analysis and cluster analysis
+   Authors: 
+   Date: 2015
+
+25. Similarity measures for text document clustering
+   Authors: 
+   Date: 2008
+
+26. TopCat: Data mining for topic identification in a text corpus
+   Authors: , 
+
+27. 
+   Authors: 
+   Date: 1999
+
+28. Clustering based on association rule hypergraphs
+   Authors: , , , 
+   Date: 1997
+
+29. A survey on text mining in social networks
+   Authors: , , , , , , 
+   Date: 2015
+
+30. An introduction to association rule mining: An application in counseling and help-seeking behavior of adolescents
+   Authors: , 
+   Date: 2007
+
+31. Visualizing association rules for text mining
+   Authors: , , 
+   Date: 1999. 1999
+
+32. Superlative model using word cloud for short answers evaluation in eLearning
+   Authors: , 
+   Date: 2016
+
+33. Get your head into the clouds: using word clouds for analyzing qualitative assessment data
+   Authors: , 
+   Date: 2014
+
+34. The folksonomy tag cloud: when is it useful?
+   Authors: , 
+   Date: 2008
+
+35. Manyeyes: a site for visualization at internet scale
+   Authors: , , , , 
+   Date: 2007
+
+36. A text visualization method for cross-domain research topic mining
+   Authors: , 
+
+37. An algorithm of finding thematically similar documents with creating context-semantic graph based on probabilistic-entropy approach
+   Authors: , , , 
+   Date: 2015
+
+38. Research status and trend analysis of global biomedical text mining studies in recent 10 years
+   Authors: , , , , , 
+   Date: 2015
+
+39. Extraction of interlingual documents clusters based on closed concepts mining
+   Authors: , , 
+   Date: 2015
+
+40. g-DICE: graph mining-based document information content exploitation
+   Authors: 
+   Date: 2015
+
+41. Detecting the knowledge structure of bioinformatics by mining full-text collections
+   Authors: , 
+   Date: 2013
+
+42. Layout-aware text extraction from full-text PDF of scientific articles
+   Authors: , , , 
+   Date: 2012
+
+43. Mining knowledge from text using information extraction
+   Authors: , 
+   Date: 2005
+
+44. Knowledge-based extraction of named entities
+   Authors: , 
+   Date: 2002
+
+45. Investigating Students' and Faculty members' Attitudes Towards the Use of Mobile Learning in Higher Educational Environments at the Gulf Region
+   Authors: 
+   Date: 2014
+
+46. E-podium Technology: A medium of managing Knowledge at Al Buraimi University College via M-learning
+   Authors: , 
+   Date: 2014
+
+47. Attitudes towards the use of mobile learning: a case study from the gulf region
+   Authors: , 
+   Date: 2015
+
+48. Learners and educators attitudes towards mobile learning in higher education: State of the art
+   Authors: , 
+   Date: 2015
+
+49. Investigating attitudes towards the use of mobile learning in higher education
+   Authors: , , 
+   Date: 2016
+
+50. The Impact of Google Apps at Work: Higher Educational Perspective
+   Authors: , 
+   Date: 2016
+
+51. Academics' awareness towards mobile learning in Oman
+   Authors: , 
+   Date: 2017
+
+52. A review on text mining
+   Authors: , , 
+   Date: 2015
+
+53. Tokenization and Filtering Process in Rapid Miner
+   Authors: , , 
+   Date: 2014
+
+54. Mining and exploration of credit cards data in UAE
+   Authors: , 
+   Date: 2015. 2015
+

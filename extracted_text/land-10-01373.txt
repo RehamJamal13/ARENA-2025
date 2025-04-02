@@ -1,0 +1,322 @@
+================================================================================
+TITLE: Effects of Long-Term Land Use and Land Cover Changes on Ecosystem Service Values: An Example from the Central Rift Valley, Ethiopia
+================================================================================
+
+AUTHORS:
+- Wolde Mekuria
+- Merga Diyasa
+- Anna Tengberg
+- Amare Haileslassie
+
+ABSTRACT:
+Changes in land use and land cover (LULC) are the leading contributors to the decline and loss of ecosystem services in the world. The present study covered the Central Rift Valley lakes basin in Ethiopia, focusing on the valley floor and the East and West escarpments, to analyze changes in LULC and to estimate associated losses in ecosystem service values (ESVs). Covering both upstream and downstream areas in the basin, the study addressed major gaps in existing studies by connecting the sources and sinks of material (e.g., sediment and water) in source-to-lake systems. Additionally, the study facilitated the identification of critical areas for conserving natural resources and reversing the decline of associated ESVs in the Central Rift Valley. A post-classification comparison approach was used to detect LULC changes between 1973 and 2020 using four Landsat images from 1973, 1990,  2005 and 2020. The value transfer valuation method was used to estimate the changes in ESVs due to LULC changes. Among the seven major identified LULC classes, farmlands, settlements, and bare lands showed positive changes, while forestlands, grasslands, shrublands and waterbodies showed negative changes over the last 47 years. The expansion of farmlands, for example, has occurred at the expense of grasslands, forestlands and shrublands. The changes in LULC over a period of 47 years resulted in a total loss of US $62,110.4 × 10 6 in ESVs. The contributors to the overall loss of ESVs in decreasing order are provisioning services (US $33,795.1 × 10 6 ), cultural services (US $28,981.5 × 10 6 ) and regulating services (US $652.9 × 10 6 ). The results imply that addressing the degradation of land and water resources is crucial to reversing the loss of ecosystem services and achieving the national Sustainable Development Goals (SDGs) related to food and water security (SDGs 2 and 6) and life on land (SDG 15).
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+The Millennium Ecosystem Assessment 
+Pressures on ecosystem services are among the most critical global challenges 
+In Sub-Sharan Africa, LULC under improper land management is a major challenge e.g., 
+As in other Sub-Saharan African countries, the expansion of agriculture, urbanization, extraction of forest products, the prevalence of drought, poor land-use planning and increasing human and livestock populations are driving a significant change in LULC in Ethiopia, and these changes in LULC are causing considerable losses in ecosystem services 
+The Central Rift Valley (CRV) and the surrounding escarpments, the study area, is one of the most environmentally sensitive areas in Ethiopia and is currently experiencing considerable LULC changes 
+Most of these studies, however, have estimated the changes in ESVs in response to LULC changes at watershed or sub-watershed level and have not estimated the impact at basin level connecting both upstream and downstream areas and flows of ecosystem services 
+Unlike the previously conducted studies, the present study used ESV coefficients updated in 2020 
+
+## Materials and Methods ##
+The present study covered the CRV Lakes basin, which is part of the great African rift valley and the East and West escarpments (i.e., the Arsi and Gurage highlands), Ethiopia (Figure 
+The study area includes a wide range of ecosystems, including farmland, forestland, waterbodies, shrubland and grassland, which provide humans with a range of important ecosystem services. The study area is endowed with a suitable land potential for rainfed and irrigated agriculture. Over 95% of the total agricultural land is cultivated by smallholder farmers and most of the agricultural production is rainfed.
+Table 
+The collection of Ground Control Points (GCPs) employed the following steps. First, we conducted unsupervised image classification to identify the major LULC classes. At this stage, we identified seven major LULC classes; bare land, forestland, shrubland, grassland, farmland, settlements and waterbodies. Second, we used a random sampling technique to select sampling points for gathering GCPs from each identified LULC class. Third, we gathered GCPs from each selected point in each LULC class during field surveys conducted in June 2020. We followed these steps to ensure the collection of GCPs from all major LULC classes and fair representation during training and verification of image classification. During the entire field survey, data for 206 GCPs and an additional 394 reference points from google earth were collected for classification and accuracy assessment. The collection of GCPs was aided by topographic maps and a Global Positioning System with a positional error of ±3 m.
+The actual classification was carried out after the training data had been established (half of the sampled data) and the classification was conducted using the Maximum Likelihood Classifier 
+Table 
+
+## LULC Classes Description ##
+Bare Lands Represents degraded land because of soil erosion and are left without crops, exposed rocks and dried-up lake or wetland beds.
+
+## Farmland ##
+Represents lands covered with agricultural crops and include smallholder rainfed and irrigated lands as well as government owned mechanized agriculture or irrigated croplands.
+
+## Settlements ##
+This class includes intensively used lands, such as rural villages, towns, and roads.
+
+## Forest ##
+Represents both natural and fragmented plantation forest areas greater or equal to 0.05 ha, where the trees reach a minimum height of 5 m at maturity, consisting of closed forest formations where various stories and undergrowth cover a high proportion of the ground. It includes young natural stands and all plantations established for forestry purposes, which reach a crown density of 10%.
+
+## Grassland ##
+Represents lands where short grasses are the predominant natural vegetation. It also includes land with scattered or patches of trees, used for grazing and browsing.
+
+## Shrubland ##
+Land supporting an assemblage of small trees and shrubs. It also includes land with scattered or patches of trees and bush lands.
+
+## Waterbody ##
+Land covered by water, mainly lakes and wetlands.
+Accuracy assessment (overall, producer and user accuracies) and Kappa coefficient were determined by comparing the area extent of the LULC classes in the classified images with the reference data set using error matrices. The accuracy of the classified image was assessed using 420 random reference points for each year of analysis (i.e., 
+where OA is overall accuracy, X is the total number of correctly classified values in the diagonals of the matrix, Y is the total number of reference points, PA is the producer accuracy, Q is the number of correctly classified pixels in each category (on the major diagonal), R is the number of reference pixels "known" to be of that category (the column total), UA is the user accuracy, A is the number of correctly classified pixels in each category, B is the total number of pixels that were classified in that category (the row total). K is Kappa coefficient, r is the number of rows in the matrix, xii is the number of observations in row i and column i, xi+ are the marginal totals of row i, x + i are the marginal totals column i and M is the total number of observations in the matrix. We used a post-classification comparison approach to determine changes in LULC classes in three intervals; 
+To map the transition matrix of losses and gains with each LULC between the four periods, the land-use change module (LUCM), which is an extension to ArcGIS, was used. The magnitude of LULC change experienced between the different periods was expressed in percent Equation ( 
+where PC is percentage change, RC is the rate of change in ha yr -1 , X is the area of LULC in ha in time 2, Y is the area of LULC in ha in time 1, Z is the time interval between X and Y in years.
+The change in ecosystem service values (ESVs) was assessed using the classified 
+The Ecosystem Services Valuation Database (ESVD) is a follow-up to "The Economics of Ecosystems and Biodiversity" (TEEB) database which contained over 1300 data points from 267 case studies on monetary values of ecosystem services across all biomes 
+The recently updated global ecosystem service valuation database (ESVD) 
+
+## Results and Discussion ##
+
+
+## Accuracy of the Classification Process ##
+The overall accuracy for the base year (i.e., 1973) was 90%, 87% for 1990, 86% for 2005, and 88% for 2020. The Kappa coefficient for 1973 was 0.88, 0.85 for 1990, 0.84 for 2005, and 0.86 for 2020. Figure 
+
+## Change in Land Use and Land Cover ##
+We detected that farmlands, grasslands and shrublands are distributed throughout the basin, but forestlands are dominantly found in the highlands (i.e., in eastern and western escarpments), and waterbodies (mainly lakes) and bare lands are concentrated in the valley floor (Figure 
+Farmlands, bare lands and settlement areas showed positive changes, while forest, grasslands, shrublands and waterbodies showed negative changes over the analyzed 47-year period (Table 
+The expansion of agricultural lands and the associated decrease in forestland, shrubland and grassland, as well as the expansion of bare lands at the expense of waterbodies can be explained by the growing pressures on land from increasing population and livestock in the basin. Several major assessments e.g., 
+
+## Changes in the Total Ecosystem Service Values ##
+Table 
+
+## Changes in the Total Ecosystem Service Values ##
+Table 
+
+## Impact of Land Use and Landcover Changes on the Specific Ecosystem Service Values ##
+Most of the ecosystem services were reduced during the observation period compared to the base year (Table 
+
+## Implications for Landscape Management ##
+The results of the present study indicate that the impacts of LULC changes in the basin on ecosystem services are considerable. In particular, the degradation of forest resources and waterbodies (e.g., rivers, lakes) in the CRV lakes basin needs further attention as their degradation in the basin is contributing significantly to the loss of a multitude of ESVs. The main human drivers identified included increasing pressures from human and livestock populations, which in turn lead to an enhanced demand for food, water and raw materials. It could, therefore, be argued that these provisioning ecosystem services have been prioritized at the expense of regulating services, such as water flows, as well cultural ecosystem services. Regulating services are best addressed at the basin and landscape scale, as they require integrated management of different land cover classes at scale and the linking of upstream and downstream interventions. In the face of climate change and recurrent drought, this is becoming even more important. Integrated basin and landscape approaches also need to engage with stakeholders at multiple levels and be participatory. Mapping of stakeholder interest and influence, benefit-sharing dialogues for shared visioning, and multi-stakeholder platforms for coordinated decision-making and learning are important 
+In line with this, using different policy incentives for landscape management, such as payment for ecosystem services and integration of income generating activities within land management practices, could help restore degraded forests and landscapes. The use of incentives for forest and landscape restoration, for example, helps to bridge the gap between landscape restoration and ecosystem services in the long term and local economic losses in the short term. This, in turn, supports local communities to adopt long-term conservation approaches (e.g., exclosures for landscape restoration) and to maintain or increase the ESVs of the natural resources in the basin. For example, Kibret et al. 
+This study has shown how long-term LULC changes can have negative impacts on a wide range of ecosystem services and that in general the regulating, supporting and cultural ecosystem services are more negatively impacted than provisioning services, e.g., provision of food, feed and energy. Changes in LULC need to be monitored and managed at the basin and landscape scales to manage trade-offs between different ecosystem services and to balance losses and gains of land cover within the same land cover classes. This will contribute to the achievement of national SDG targets related to food and water security (SDGs 2 and 6) and life on land (SDG15). This also requires adaptive management of ecosystems and natural resources 
+
+## Conclusions ##
+The present study covered the Central Rift Valley lakes basin in Ethiopia, focusing on the valley floor and the East and West escarpments, to analyze changes in LULC and to estimate associated losses in ecosystem service values (ESVs), as well as to facilitate the identification of critical areas for conserving natural resources and reversing the decline of associated ESVs. Covering both upstream and downstream areas in the basin, the study addressed major gaps in existing studies by connecting the sources and sinks of material (e.g., sediment and water) in source-to-lake systems. The long-term LULC changes observed in this study have negative impacts on a wide range of ecosystem services. Therefore, this supports that LULC are the leading contributors to the decline and loss of ecosystem services in the CRV. This, in turn, suggests that addressing the decline in forest cover and waterbodies, the major observed LULC changes in CRV, plays a vital role in improving ecosystem services in the CRV lakes basin. Our analysis of LULC changes and the associated losses in ecosystem service values can provide a guide as to where to focus when planning and implementing landscape restoration measures.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. 
+   Date: 1827.7 350,090.8 -23,994.1 -126,999.8 2690.7 -207,748.9 4133.7 2005-2020 Loss-2020
+
+2. Millennium Ecosystem Assessment. Ecosystems and human well-being: Wetlands and water
+   Date: 2005
+
+3. Integrating the ecological and economic dimensions in biodiversity and ecosystem service valuation
+   Authors: , , , , , , 
+   Date: 2010
+
+4. The Economics of Biodiversity: The Dasgupta Review
+   Authors: 
+   Date: 2021
+
+5. Impact of land use land cover changes on ecosystem service value-A case study of Guangdong, Hong Kong, and Macao in South China
+   Authors: , , 
+   Date: 2020. 0231259
+
+6. The economic feedbacks of loss of biodiversity and ecosystems services
+   Authors: 
+   Date: 2015
+
+7. How much wetland has the world lost? Long-term and recent trends in global wetland area
+   Authors: 
+   Date: 2014
+
+8. Earth: 50 years challenge
+   Authors: 
+   Date: 2019
+
+9. The State of the World's Forests 2020
+   Authors: 
+   Date: 2020
+
+10. Assessing nature-based solutions for transformative change
+   Authors: , , , , , , , , , 
+   Date: 2021
+
+11. Effects of land-use change on wetland ecosystem services: A case study in the Doñana marshes
+   Authors: , , , , , 
+   Date: 2014
+
+12. Gradient of land cover and ecosystem service supply capacities-A comparison of suburban and rural fringes of towns Dresden (Germany) and Poznan (Poland)
+   Authors: , 
+   Date: 2015
+
+13. Impacts of rapid urbanization on ecosystem services along urban-rural gradients: A case study of the Guangzhou-Foshan Metropolitan Area, South China
+   Authors: , , , , , , 
+   Date: 2018
+
+14. Changing agricultural landscapes in Ethiopia: Examining application of adaptive management approach
+   Authors: , , , , 
+
+15. A revisit to the impacts of land use changes on the human wellbeing via altering the ecosystem provisioning services
+   Authors: , , , , 
+   Date: 2013. 2013
+
+16. Impact of land use and land cover changes on ecosystem services in Menglun, Xishuangbanna, Southwest China
+   Authors: , , 
+   Date: 2007
+
+17. Land-use/land-cover changes and their influence on the ecosystem in Chengdu City, China during the period of 1992-2018
+   Authors: , , , , , 
+   Date: 2018
+
+18. Modeling land use and land cover changes and their effects on biodiversity in central Kalimantan
+   Authors: , , , , , , 
+   Date: 2018
+
+19. Agricultural growth and land use land cover change in peri-urban India
+   Authors: , , 
+   Date: 2019
+
+20. Implications of land use/land cover dynamics and Prosopis invasion on ecosystem service values in Afar Region
+   Authors: , , , , , , , 
+   Date: 2019
+
+21. Major consequences of land-use changes for ecosystems in the future in the agro-pastoral transitional zone of Northern China
+   Authors: , , , , , 
+   Date: 2020
+
+22. Ecological risk assessment based on land cover changes: A case of Zanzibar (Tanzania)
+   Authors: , 
+
+23. Cropland expansion outweighs the monetary effect of declining natural vegetation on ecosystem services in sub-Saharan Africa
+   Authors: , , , , , , , , , 
+
+24. Estimating the impacts of land use/land cover changes on ecosystem service values: The case of the Andassa watershed in the Upper Blue Nile basin of Ethiopia
+   Authors: , , , , , 
+   Date: 2018
+
+25. Analysis of land use/land cover changes and their causes using landsat data in hangar watershed, Abay basin
+   Authors: 
+   Date: 2020
+
+26. Impact of land use/cover changes on lake ecosystem of Ethiopia central rift valley
+   Authors: , , , 
+   Date: 2019, 5, 1595876
+
+27. Land-use and land-cover dynamics in the Central Rift Valley of Ethiopia
+   Authors: , , , 
+   Date: 2009
+
+28. Woodland cover change in the Central Rift Valley of Ethiopia
+   Authors: , , , , 
+   Date: 2020
+
+29. Land-use and land-cover change in Lake Ziway watershed of the Ethiopian Central Rift Valley region and its environmental impacts. Land Use Policy
+   Authors: , 
+   Date: 2020. 104682
+
+30. Influence of land use and land cover changes on ecosystem services in the Bilate Alaba Sub-watershed, Southern Ethiopia
+   Authors: , , , 
+   Date: 2018
+
+31. Changes of ecosystem service values in response to land use/land cover dynamics in Munessa-Shashemene landscape of the Ethiopian highlands
+   Authors: , , , 
+   Date: 2016
+
+32. Building foundations for source-to-sea management: The case of sediment management in the Lake Hawassa sub-basin of the Ethiopian Rift Valley
+   Authors: , , , 
+   Date: 2021
+
+33. Drivers and implications of land use/land cover dynamics in Finchaa Catchment
+   Authors: , , 
+   Date: 2020
+
+34. 
+   Authors: 
+   Date: 2019
+
+35. Update of Global Ecosystem Service Valuation Database
+   Authors: , , 
+
+36. Centre for Development and Environment (CDE)
+   Authors: , , , , , , , , 
+   Date: 2016
+
+37. Investigation on land cover mapping capability of maximum likelihood classifier: A case study on North Canara, India
+   Authors: , 
+   Date: 2018
+
+38. Good practice guidance for land use, land-use change and forestry
+   Authors: , , , , , , 
+   Date: 2003
+
+39. Van Den Belt, M. The value of the world's ecosystem services and natural capital
+   Authors: , , , , , 
+   Date: 1997
+
+40. The TEEB Valuation Database: Overview of Structure, Data and Results; Foundation for Sustainable Development: Wageningen
+   Authors: , , 
+   Date: 2010
+
+41. Global estimates of the value of ecosystems and their services in monetary units
+   Authors: , , , , , , , , , 
+   Date: 2012
+
+42. Changes in the global value of ecosystem services
+   Authors: , , , , , , , 
+   Date: 2014
+
+43. Landscape composition and configuration in the central highlands of Ethiopia
+   Authors: , , 
+   Date: 2016
+
+44. 
+   Authors: , , , 
+   Date: 2006
+
+45. World Atlas of Desertification; Publication Office of the European Union
+   Authors: , , , , 
+   Date: 2018
+
+46. Accelerating land cover change in West Africa over four decades as population pressure increased
+   Authors: , , , 
+   Date: 2020
+
+47. Drivers of land use-land cover changes in the Central Rift Valley of Ethiopia
+   Authors: , , 
+   Date: 2019
+
+48. Evaluation of land use and land cover change (1986-2019) using Remote Sensing and GIS in Dabus Sub-Catchment, Southwestern Ethiopia
+   Authors: , , , 
+   Date: 2019
+
+49. Evaluating ecosystems services values due to land use transformation in the Gojeb watershed
+   Authors: , , , 
+   Date: 2021
+
+50. Scenario modelling of land use/land cover changes in Munessa-Shashemene landscape of the Ethiopian highlands
+   Authors: , , , , 
+   Date: 2018
+
+51. Land use/land cover analysis and ecosystem services valuation in the central highlands of Ethiopia
+   Authors: , , 
+   Date: 2016
+
+52. The effects of spatiotemporal changes in land degradation on ecosystem services values in Sanjiang Plain
+   Authors: , , , , , , , 
+
+53. Linking land use change, ecosystem services and human well-being: A case study of the Manas River Basin of Xinjiang
+   Authors: , , , , , , , , 
+   Date: 2017
+
+54. Ecosystem service values changes in response to land-use/land-cover dynamics in dry afromontane forest in Northern Ethiopia
+   Authors: , , 
+   Date: 2019
+
+55. Assessing changes in ecosystem service values over 1985-2050 in response to land use and land cover dynamics in Abaya-Chamo Basin, Southern Ethiopia
+   Authors: , , , 
+   Date: 2020
+
+56. Stakeholders interest and influence and their interactions in managing natural resources in Lake Hawassa catchment
+   Authors: , , , 
+   Date: 2021
+
+57. Knowledge production for resilient landscapes: Experiences from multi-stakeholder dialogues on water, food, forests, and landscapes. Forests
+   Authors: , , , 
+   Date: 2020
+
+58. Governing resilient landscapes across the source-to-sea continuum
+   Authors: , , , , , 
+   Date: 2021
+
+59. Multicriteria decision-support system to assess the potential of exclosurebased conservation in Ethiopia
+   Authors: , , , 
+   Date: 2020
+

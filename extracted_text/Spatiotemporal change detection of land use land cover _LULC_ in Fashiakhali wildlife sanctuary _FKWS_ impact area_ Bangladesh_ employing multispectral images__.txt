@@ -1,0 +1,489 @@
+================================================================================
+TITLE: Spatiotemporal change detection of land use land cover (LULC) in Fashiakhali wildlife sanctuary (FKWS) impact area, Bangladesh, employing multispectral images and GIS
+================================================================================
+
+AUTHORS:
+- Md Sazzad Hossain
+- Md Asif
+- Haider Khan
+- Tomiwa Oluwajuwon
+- Jayanta Biswas
+- S Rubaiot
+- Md Seikh
+- Sadiul Islam Tanvir
+- Sirajum Munira
+- Md Naif
+- Ahmed Chowdhury
+- Md Hossain
+
+ABSTRACT:
+Land cover change has posed significant concerns to biodiversity and climate change in Bangladesh and globally. Despite the country's designation of forest regions as protected areas to conserve their valuable resources, deforestation and forest conversion remained unabated. Fashiakhali Wildlife Sanctuary (FKWS), a protected area in the Chittagong Hill Tracts, and its surrounding forested impact area have experienced considerable changes over the years, yet are deficient in extensive assessment. This study evaluated the land use land cover (LULC) changes in the FKWS impact area over almost 3 decades  using multispectral remotely sensed data. The Landsat images of 1994, 2001, 2010, and 2021  were classified using a maximum likelihood algorithm and analyzed for change detection. The comparative potential of vegetation indices, including Normalized Difference Vegetation Index (NDVI) and Soil Adjusted Vegetation Index (SAVI), in forest cover assessment, and the relationship between Land Surface Temperature (LST) and NDVI was also assessed. A significant forest cover loss of around 1117.17 ha (16%) was recorded in the FKWS impact area between 1994 and 2021, with the hugest proportion of 867.78 ha (12.24%) deforested in the first period (1994)(1995)(1996)(1997)(1998)(1999)(2000)(2001). Agricultural land also declined by 593.73 ha (8.37%) within the entire period, despite its initial increase of 392.04 ha (5.53%) between 2001 and 2010, being the primary driver of earlier deforestation. However, in the recent decade (2010)(2011)(2012)(2013)(2014)(2015)(2016)(2017)(2018)(2019)(2020)(2021), settlement expansion of 963.90 ha (13.59%) due to massive human migration in the area contributed to the most remarkable overall land cover change of 1731.51 ha (24.42%). Furthermore, NDVI provided a better and more accurate forest cover assessment than SAVI and was recommended to aid in the quick evaluation and monitoring of the future impacts of agriculture, settlement, and other sorts of land use on the forest cover. In tandem with the widely acknowledged issue of increased temperature due to climate change, an absolute negative correlation was found between the NDVI and LST, confirming the negative impact of climate change on forest loss in the FKWS impact area.
+Land use land cover (LULC) • Landsat • Normalized difference vegetation index (NDVI) • Soil adjusted vegetation index (SAVI) • Land surface temperature (LST)
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+The alarming rate of deforestation and its repercussions have raised concerns on a global scale 
+Bangladesh is a small developing nation with a vast population size that was around 147 million as of mid-2007 and is predicted to be 222 million by 2050 
+The Fashiakhali Wildlife Sanctuary (FKWS), located within Fashiakhali Forest Reserve, is a protected area in the Chittagong Hill Tracts, Bangladesh and was declared a wildlife sanctuary in 2007 
+The land cover describes the physical and environmental characteristics of the land surface area, including the presence of water, crops, forests, constructions, etc. 
+Remote sensing is a fundamental approach for studying spatial and temporal changes in LULC 
+Moreover, until now, several studies have been conducted to detect changes in LULC of different Bangladesh's hill forests 
+
+## Materials and methods ##
+
+
+## Study area ##
+Fashiakhali Wildlife Sanctuary (FKWS) is situated in Cox's Bazar District of Chittagong Division, located in the South-Eastern part of Bangladesh. The FKWS is situated within Fashiakhali Forest Reserve (3068.7 ha) and lies between 21°45' to 21°40' N and 92°4' to 92°8' E 
+
+## Satellite images and field data ##
+Landsat images of respective sensor and satellite types for 
+
+## Image pre-processing and classification ##
+In this study, all the remote sensing analyses (i.e., image pre-processing, classification, change detection, vegetation indices, surface temperature mapping, and accuracy assessment) were performed in QGIS version 3.24.2 (Fig. 
+
+## Change detection and accuracy assessment ##
+The study employed pixel-by-pixel cross-tabulation analysis 
+where TP is total pixels, and TCP is total corrected pixels.
+
+## Vegetation indices ##
+Several vegetation indices can be employed to detect and analyze the existence and extent of vegetation and forest cover. Among the commonest ones are NDVI and SAVI 
+(1) 
+
+## Land surface temperature (LST) ##
+LST is an essential parameter that measures the emission of thermal radiance (temperature) from the land surface or, in vegetated areas, the canopy surface 
+ETM + thermal band 6 (10.4-12.5 μm), and OLI thermal band 10 (10.6-11.19 μm) were used. The first stage involved converting the thermal band digital number (DN) values for each Landsat image, according to the respective sensor types, to sensor spectral radiance using the following formula (Eq. 4) 
+where, L max λ = Maximum spectral radiance scaled The following equation (Eq. 5) is then used to convert spectral radiance to temperature in Kelvin 
+where
+
+## Relationship between NDVI and LST ##
+The linear relationship between the NDVI and LST was computed using R (R Core 
+
+## Results and discussion ##
+
+
+## LULC patterns of FKWS impact area (1994-2021) ##
+The LULC classification of the study area for the years 1994, 2001, 2010, and 2021 are shown in Fig. 
+
+## Land cover change detection of FKWS impact area ##
+The change detection analysis for each land cover category is mapped in Fig. 
+The forest, water, and agriculture/grassland classes predominantly experienced negative changes, although agriculture/ grassland had recorded a considerable positive change within 2001-2010. On the other hand, the land areas considered bare land and settlement recorded a positive change over the years. The most significant transitions between 1994 and 2021 were found for forest and settlement, with a total of about 16% loss and 24% gain, respectively. Of these changes, the hugest forest change was recorded within the earliest seven (7) years evaluated 
+In the recent decade, although the direct conversion of forest for agriculture in the protected area was no longer prominent, there has been continual cultivation of a large expanse of bare land. However, the rate decreased, with settlement expansion becoming the most prominent driver of forest cover loss (300.15 ha) (Table 
+
+## Accuracy of classified images ##
+An important step after land cover classification is accuracy evaluation, which defines the validity of the resultant map by assessing the errors for each class and generally for the whole classified image 
+
+## Assessment of forest cover based on vegetation indices (NDVI and SAVI) ##
+Remotely sensed vegetation indices are straightforward and efficient methods for quantitative and qualitative assessments of vegetation cover, vitality, and growth dynamics 
+
+## Land surface temperature of FKWS impact area ##
+Remotely sensed Land Surface Temperature (LST) has become one of the crucial indices to characterize and understand the thermal behavior of the earth cover in response to vegetation changes and associated climate processes 
+
+## Conclusion ##
+This study assessed the land use land cover changes in FKWS impact area in Bangladesh within nearly 3 decades  using remotely sensed multispectral imagery. The forest cover, predominantly accounting for almost 50% of the entire land area, drastically reduced over the years, especially within the first evaluation period 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Land use and land cover change detection in the western Nile delta of Egypt using remote sensing data
+   Authors: , , , , 
+   Date: 2011
+
+2. Forest and agrarian change in the Chittagong Hill Tracts region of Bangladesh
+   Authors: , 
+   Date: 2016
+
+3. Recent trends of forest cover change and ecosystem services in eastern upland region of Bangladesh
+   Authors: , , , , 
+   Date: 2019
+
+4. Temporal variation of land surface temperature in response to changes in vegetation index of Bhawal National Park
+   Authors: , , , 
+   Date: 2022
+
+5. Spatial-temporal dynamics of land surface temperature in relation to fractional vegetation cover and land use/cover in the Tabriz urban area
+   Authors: , , , 
+   Date: 2009
+
+6. A land use and land cover classification system for use with remote sensor data
+   Authors: , , , 
+   Date: 1976
+
+7. Forest cover change analysis based on remote sensing & GIS of West Singhbhum District, Jharkhand
+   Authors: , 
+   Date: 2018
+
+8. 65: 8008/ WebTe stApp licat ion/ userfi les/ Image/ Subje ctMat terDa taInd ex/ YB-2012
+   Authors: 
+   Date: 2012. May 2022. 2012. May 2022
+
+9. Management plan for Fasiakhali Wildlife Sanctuary 2015-2025. Ministry of Environment, Forest and Climate Change. Bangladesh Forest Department (BFD)
+   Authors: 
+   Date: 2015
+
+10. Land cover change and its impact on human-elephant conflict: a case from Fashiakhali forest reserve in Bangladesh
+   Authors: , , , 
+   Date: 2021
+
+11. Forests and forest management practices in Bangladesh: the question of sustainability
+   Authors: , 
+   Date: 2007
+
+12. A global empirical re-assessment of the Environmental Kuznets curve for deforestation
+   Authors: 
+   Date: 2020
+
+13. Deforestation: causes, effects and control strategies
+   Authors: , , , , 
+   Date: 2012
+
+14. Land use/land cover change assessment of Halda watershed using remote sensing and GIS
+   Authors: , , , , 
+   Date: 2010. 2020. 2018
+
+15. Semi-automatic classification plugin documentation
+   Authors: 
+   Date: 2016
+
+16. Rohingya refugee camps and forest loss in Cox's Bazar, Bangladesh: an inquiry using remote sensing and econometric approaches
+   Authors: , , 
+   Date: 2022
+
+17. Diversity and structural composition of species in dipterocarp forests: a study from Fasiakhali Wildlife Sanctuary
+   Authors: , , 
+   Date: 2018
+
+18. Monitoring land-cover changes in semiarid regions: remote sensing data and field observations in the Ferlo
+   Authors: , 
+   Date: 2001
+
+19. How feasible are global forest restoration commitments?
+   Authors: , , , , 
+   Date: 2020
+
+20. Population dynamics in Bangladesh: data sources, current facts and past trends
+   Authors: , , , 
+   Date: 2011
+
+21. Incorporating density in spatiotemporal land use/cover change patterns: the case of Attica
+   Authors: , , , 
+   Date: 2018
+
+22. Modeling of forest ecosystem degradation due to anthropogenic stress: the case of Rohingya influx into the Cox's Bazar-Teknaf Peninsula of Bangladesh
+   Authors: , , , , 
+   Date: 2021
+
+23. A time series analysis of forest cover and land surface temperature change over Dudpukuria-Dhopachari Wildlife Sanctuary using landsat imagery
+   Authors: 
+   Date: 2021
+
+24. Major environmental issues and problems of South Asia, particularly Bangladesh
+   Authors: , , 
+   Date: 2018
+
+25. Rohingya refugee crisis and forest cover change in Teknaf
+   Authors: , , , , 
+   Date: 2018
+
+26. Analysis of land use land cover dynamics and driving factors in Desa'a forest in Northern Ethiopia
+   Authors: , , 
+   Date: 2021
+
+27. Global issues: an introduction
+   Authors: , 
+   Date: 2021
+
+28. An overview on shifting cultivation with reference to Bangladesh
+   Authors: 
+   Date: 2011
+
+29. Socio-economic situation of the indigenous people in the Chittagong Hill Tracts (CHT) of Bangladesh
+   Authors: 
+   Date: 2013
+
+30. Diversity and conservation status of tree species in Hazarikhil Wildlife Sanctuary (HWS) of Chittagong
+   Authors: , , , , 
+   Date: 2020
+
+31. The worldwide extent of land-use change
+   Authors: 
+   Date: 1994
+
+32. A commentary review on the use of normalized difference vegetation index (NDVI) in the era of popular remote sensing
+   Authors: , , , , 
+   Date: 2021
+
+33. A soil-adjusted vegetation index (SAVI)
+   Authors: 
+   Date: 1988
+
+34. Vegetation indices, remote sensing and forest monitoring
+   Authors: 
+   Date: 2012
+
+35. Spatiotemporal variation in land use land cover in the response to local climate change using multispectral remote sensing data
+   Authors: , , 
+   Date: 2022
+
+36. Causes of forest encroachment: an analysis of Bangladesh
+   Authors: , 
+   Date: 2005
+
+37. Deforestation, land conversion and illegal logging in Bangladesh: the case of the Sal (Shorea robusta) forests
+   Authors: , 
+   Date: 2012
+
+38. Land use effects on soil quality in a tropical forest ecosystem of Bangladesh
+   Authors: , 
+   Date: 2000
+
+39. Quantitative Assessment of land cover change using landsat time series data: case of Chunati Wildlife Sanctuary (CWS), Bangladesh
+   Authors: , , , 
+   Date: 2016
+
+40. Land use classification and change detection by using multi-temporal remotely sensed imagery: the case of Chunati wildlife sanctuary, Bangladesh
+   Authors: , , , 
+   Date: 2018
+
+41. A three decade assessment of forest cover changes in Nijhum dwip national park using remote sensing and GIS
+   Authors: , , , 
+   Date: 2021
+
+42. Inland wetland change detection using aircraft MSS data
+   Authors: , , , , , 
+   Date: 1987
+
+43. Analysis of the impact of land use/land cover change on land surface temperature with remote sensing
+   Authors: , 
+   Date: 2010
+
+44. Combined effects of climate models, hydrological model structures and land use scenarios on hydrological impacts of climate change
+   Authors: , , 
+   Date: 2016. 2016
+
+45. The causes of land-use and land-cover change: moving beyond the myths
+   Authors: , , 
+   Date: 2001
+
+46. Satellite-derived land surface temperature: current status and perspectives
+   Authors: , , , , , , , 
+   Date: 2013
+
+47. Differences of image classification techniques for land use and land cover classification
+   Authors: , , 
+   Date: 2015
+
+48. Does coal fly ash influence the growth of mangroves?
+   Authors: , , 
+   Date: 2021
+
+49. Analysis of land use/land cover changes using remote sensing data and GIS at an Urban Area
+   Authors: , 
+   Date: 2013. 2013
+
+50. Spatio-temporal analysis of land cover changes in the evergreen and semi-evergreen rainforests: a case study in Chittagong Hill Tracts
+   Authors: , 
+   Date: 2020
+
+51. Assessment of land cover changes from protected forest areas of Satchari National Park in Bangladesh and implications for conservation
+   Authors: , 
+   Date: 2020
+
+52. Role of forest income in rural household livelihoods: the case of village common forest communities in the Chittagong Hill Tracts
+   Authors: , 
+   Date: 2015
+
+53. Land surface temperature and emissivity estimation for Urban Heat Island assessment using medium-and low-resolution space-borne sensors: a review
+   Authors: , , 
+   Date: 2017
+
+54. Assessment of agricultural expansion and its impact on land surface temperature in El-Beheira Governorate
+   Authors: , 
+   Date: 2021
+
+55. Forest protected area systems and biodiversity conservation in Bangladesh
+   Authors: , , 
+   Date: 2016. 2016110101. 20 June 2022
+
+56. Quantitative assessment of forest cover change of a part of Bandarban Hill tracts using NDVI techniques
+   Authors: 
+   Date: 2014
+
+57. Forest cover change detection using normalized difference vegetation index (NDVI): a study of Reingkhyongkine Lake's adjoining areas
+   Authors: , 
+   Date: 2013
+
+58. Land-use change and land degradation on the Mongolian Plateau from 1975 to 2015 -a case study from Xilingol
+   Authors: , , 
+   Date: 2018
+
+59. An assessment of data sources, data quality and changes in national forest monitoring capacities in the Global Forest Resources Assessment 2005-2020
+   Authors: , , 
+   Date: 2021
+
+60. Climate change and forest sinks: factors affecting the costs of carbon sequestration
+   Authors: , 
+   Date: 2000
+
+61. Forest cover dynamics of a lowland rainforest in southwestern Nigeria using GIS and remote sensing techniques
+   Authors: , , , 
+   Date: 2021
+
+62. Evaluation of a land use change matrix in the IPCC's land use, land use change, and forestry area sector using national spatial information
+   Authors: , , 
+   Date: 2017
+
+63. The evaluation of spectral vegetation indexes and redundancy reduction on the accuracy of crop type detection
+   Authors: , 
+   Date: 2022
+
+64. Remote sensing of mangrove forest phenology and its environmental drivers
+   Authors: , , 
+   Date: 2018
+
+65. Mapping mediterranean forest plant associations and habitats with functional principal component analysis using landsat 8 NDVI time series
+   Authors: , , , 
+   Date: 2020
+
+66. National satellitebased humid tropical forest change assessment in Peru in support of REDD + implementation
+   Authors: , , 
+   Date: 2014
+
+67. R: a language and environment for statistical computing
+   Authors: 
+   Date: 2013
+
+68. Causes of biodiversity depletion in Bangladesh and their consequences on ecosystem services
+   Authors: 
+   Date: 2015
+
+69. Effectiveness of protected areas in reducing deforestation and forest fragmentation in Bangladesh
+   Authors: , 
+   Date: 2021
+
+70. The causes of deterioration of Sundarban mangrove forest ecosystem of Bangladesh: conservation and sustainable management issues
+   Authors: , , 
+   Date: 2010
+
+71. Causes and consequences of shifting cultivation and its alternative in the hill tracts of eastern Bangladesh
+   Authors: , , 
+   Date: 2012
+
+72. Land use change and forest fragmentation analysis: a geoinformatics approach on Chunati Wildlife Sanctuary
+   Authors: , , , 
+   Date: 2016
+
+73. The competitiveness of the phytosociological attributes of the protected areas in Bangladesh with that in the other tropical countries
+   Authors: , , , , 
+   Date: 2016
+
+74. Socioeconomics of biodiversity conservation in the protected areas: a case study in Bangladesh
+   Authors: , , 
+   Date: 2017
+
+75. Monitoring land use/cover change using remote sensing and GIS techniques: a case study of Hawalbagh block, district Almora
+   Authors: , 
+   Date: 2015. 2015
+
+76. Development of national database on long-term deforestation (1930-2014) in Bangladesh
+   Authors: , , , , 
+   Date: 2016. 2016
+
+77. Analysis of forest cover change at Khadimnagar National Park, Sylhet, Bangladesh, using landsat TM and GIS data
+   Authors: , , 
+   Date: 2014
+
+78. Land-use and land-cover dynamics in response to changes in climatic, biological and socio-political forces: the case of southwestern Ethiopia
+   Authors: , , , , , , 
+   Date: 2000
+
+79. Forest biodiversity and deforestation in Bangladesh: The latest update
+   Authors: , 
+   Date: 2019
+
+80. Relationships between dominant plant species, fractional cover and land surface temperature in a Mediterranean ecosystem
+   Authors: , , , , 
+   Date: 2015
+
+81. Assessing change in national forest monitoring capacities of 99 tropical countries
+   Authors: , , 
+   Date: 2015. 2015
+
+82. Accuracy assessment of land use/ land cover classification using remote sensing and GIS
+   Authors: , 
+   Date: 2017
+
+83. The causes of forest cover loss in the hill forests in Bangladesh
+   Authors: , , 
+   Date: 1999
+
+84. Land cover change in the bolivian Amazon and its implications for REDD + and endemic biodiversity
+   Authors: , , 
+   Date: 2012
+
+85. Study of land surface temperature and spectral emissivity using multi-sensor satellite data
+   Authors: , , 
+   Date: 2010
+
+86. Values and benefits of protected areas
+   Authors: , , , 
+   Date: 2015
+
+87. Population challenges for Bangladesh in the coming decades
+   Authors: , 
+   Date: 2008
+
+88. Depleting tropical forest at a landscape scale: finding solutions for Bangladesh
+   Authors: , , , 
+   Date: 2011
+
+89. Systematic modeling of impacts of land-use and land-cover changes on land surface temperature in Adama Zuria District
+   Authors: , 
+   Date: 2019
+
+90. An assessment of remotely sensed land surface temperature
+   Authors: , , , 
+   Date: 2008
+
+91. Local faces, global flows: the role of land use and land cover in global environmental change
+   Authors: 
+   Date: 1994
+
+92. Plant Biodiversity of Fashiakhali Wildlife Santuary
+   Authors: , , , 
+   Date: 2011
+
+93. Impact of protected areas and co-management on forest cover: a case study from Teknaf Wildlife Sanctuary
+   Authors: , , , , 
+   Date: 2022
+
+94. Exploring the socioeconomic drivers of deforestation in Bangladesh: the case of Teknaf Wildlife Sanctuary and its surrounding community
+   Authors: , , , 
+   Date: 2022b
+
+95. Comparative study of NDVI and SAVI vegetation indices in Anantapur district semi-arid areas
+   Authors: , 
+   Date: 2017
+
+96. Spatial explorations of land use change and grain production in China
+   Authors: , 
+   Date: 2000
+
+97. Strengthening protected areas for biodiversity and ecosystem services in China
+   Authors: , , 
+   Date: 2017
+
+98. Dynamics and drivers of land use and land cover changes in Bangladesh
+   Authors: , , , , , 
+   Date: 2020
+
+99. Significant remote sensing vegetation indices: a review of developments and applications
+   Authors: , 
+   Date: 2017
+
+100. Dynamics of land surface temperature (LST) in response to land use and land cover (LULC) changes in the Weigan and Kuqa river oasis
+   Authors: , , , , , , 
+   Date: 2016
+

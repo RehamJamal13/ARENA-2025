@@ -1,0 +1,388 @@
+================================================================================
+TITLE: Investigating impact of land-use and land cover changes on hydro-ecological balance using GIS: insights from IIT Bombay, India
+================================================================================
+
+AUTHORS:
+- Aman Srivastava
+- Pennan Chinnasamy
+
+ABSTRACT:
+The present study, for the first time, examined land-use land cover (LULC), changes using GIS, between 2000 and 2018 for the IIT Bombay campus, India. Objective was to evaluate hydro-ecological balance inside campus by determining spatio-temporal disparity between hydrological parameters (rainfall-runoff processes), ecological components (forest, vegetation, lake, barren land), and anthropogenic stressors (urbanization and encroachments). High-resolution satellite imageries were generated for the campus using Google Earth Pro, by manual supervised classification method. Rainfall patterns were studied using secondary data sources, and surface runoff was estimated using SCS-CN method. Additionally, reconnaissance surveys, ground-truthing, and qualitative investigations were conducted to validate LULC changes and hydro-ecological stability. LULC of 2018 showed forest, having an area cover of 52%, as the most dominating land use followed by built-up (43%). Results indicated that the area under built-up increased by 40% and playground by 7%. Despite rapid construction activities, forest cover and Powai lake remained unaffected. This anomaly was attributed to the drastically declining barren land area (up to ~ 98%) encompassing additional construction activities. Sustainability of the campus was demonstrated with appropriate measures undertaken to mitigate negative consequences of unwarranted floods owing to the rise of 6% in the forest cover and a decline of 21% in water hyacinth cover over Powai lake. Due to this, surface runoff (~ 61% of the rainfall) was observed approximately consistent and being managed appropriately despite major alterations in the LULC. Study concluded that systematic campus design with effective implementation of green initiatives can maintain a hydro-ecological balance without distressing the environmental services.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+India represents the third-largest higher education system in the world next to China and the USA 
+The information on LULC in the form of statistical data and maps is an essential requirement for better utilization of land, spatial planning, and management 
+Open-source digital platforms, such as Google Earth Pro, is commonly used for analyzing Earth observation data on land transformations. Google Earth Pro, released in 2004 (initially named as Earth Viewer 3D) by Keyhole Inc., a Central Intelligence Agency (CIA) funded company acquired by Google, is a Graphical User Interface (GUI) tool. Based on satellite imagery, it provides a three-dimensional model of the Earth and two-dimensional geographical information via maps. The key feature of Google Earth Pro is that it provides a free high-resolution imagery database from different satellite platforms, such as CNES Airbus, Landsat, and Copernicus 
+Several previous studies have extensively used Google Earth Pro for investigating and analyzing natural resources, hydrological balance, ecological stability, LULC changes, navigation, agricultural watersheds, geosciences, and archeological findings from across the globe 
+Generating LULC classes using a manual supervised classification technique is yet another approach adopted in land transformation studies 
+The number of universities is increasing and expanding in terms of land area to accommodate the increasing number of students by constructing a greater number of hostels in an academic institution. Therefore, understanding and quantifying the spatio-temporal dynamics of the institution's LULC changes and its driving factors are crucial to put forward the right policies and monitoring mechanisms for planners and policymakers 
+
+## Study objectives ##
+Dunbar and Acreman 
+The aforementioned objectives require good quality and quantity of observation data. For example, good quality and quantity of rainfall data were acquired from the Regional Meteorological Center (RMC), located in Mumbai for the present study site; however, obtaining such data for other parameters, such as vegetation, forest cover, was challenging. In such instances, when observation data are limited, the use of RS data and GIS has been widely used to address data gaps. This paper presents an integrated study using secondary data, RS, GIS, and field observations for the IITB campus.
+
+## Methods ##
+
+
+## Study site ##
+The IITB campus is located in the financial and commercial capital of India-Mumbai, between the Powai lake and Vihar lake region, at a geographical location between 19°8′01.09″N and 72°54′55.29″E (Fig. 
+
+## Data collection and data processing ##
+The data acquisition of the present research was based both on quantitative (secondary data-based) and qualitative (survey-based) research methods aiming to investigate LULC changes in the campus of IITB between 2000 and 2018. An open-source GIS platform-QGIS and satellite data from Google Earth Pro-was employed for developing LULC maps. Besides this, rainfall data and curve number data were also collected from secondary sources for estimating surface runoff and further analysis of the rainfall-runoff process.
+
+## Rainfall (P) ##
+The rainfall data (P), from 2000 to 2018, for the Santacruz region of Mumbai were collected from the RMC, Mumbai region 
+
+## Remote sensing (RS) using Google Earth Pro ##
+Considering the advantages of the manual classification of the high-resolution satellite imagery for a fine-scale study area, Google Earth Pro is used. The RS data were collected by developing a boundary map of the IITB campus by digitizing it in Google Earth Pro (as shown in insets of Fig. 
+Due to the undulating topography of the study area, ground reference data were collected from Google Earth Pro with Ground Control Points (GCPs). As the total study area was small (~ 4.6 km 2 ), each LULC type was groundtruthed using the reconnaissance survey for accuracy assessment. The GCPs for thematic accuracy were collected near the boundary between different LULC classes, whereas GCPs for position accuracy were taken on easily recognizable elements in the satellite images, such as playground corners, building (built-up) edges, bank of Powai lake, and nursey corners. The OSMTracker (online Global Positioning System App) was used to validate the geographical locations. The accuracies of classification were observed better than expected. A negligible error was recorded in the overall accuracy of the classification image for the year 2018, wherein an overall accuracy ranging between 90 and 96% was obtained. Finally, based on these land-use classifications, a Google Earth KML file was obtained for each LULC type.
+
+## QGIS processing ##
+The KML files, obtained from Google Earth Pro, were postprocessed in QGIS to estimate the area. The steps included, (1) exporting the KML file to QGIS; (2) converting the KML file into shapefile; (3) generating a LULC image of the IITB campus by defining its boundary (legends) and by assigning different colors for different land uses. Six major LULC classifications were found in the ground survey, which was used for the RS imagery. Following these, LULC maps were generated for the years 
+
+## Soil conservation services-curve number (SCS-CN) ##
+The SCS-CN method, as developed by the US Department of Agriculture (USDA) Soil Conservation Service (SCS), primarily aimed at estimating rainfall excesses from rainfall 
+
+## Runoff (R) and weighted curve number (WCN) estimations ##
+Using the rainfall (P), area of each land cover type (A), and runoff curve number (CN) estimations, as described in Sects. 2.2, the runoff volume (R) was calculated as the product of P, A, and, CN. The WCN was calculated to determine the overall impact of different land uses over rainfallrunoff behavior inside the campus. For this, the total runoff volume (R 1,t + R 2,t + R 3,t + R 4,t ) from the major four land-use classifications viz., (1) built-up, (2) forest, (3) playground, and (4) barren land were considered, as they were primarily resulting into surface runoff. The R was calculated for each year (t) and divided with the corresponding annual rainfall (P t ) received in that particular year (t). With this, the value of WCN for all the mentioned years in the given study period was obtained.
+
+## Qualitative and field investigations ##
+The primary data were used in this study for understanding the nuances of the secondary data, given the behavior of rainfall-runoff components and associated measures being taken to manage the campus development initiatives. The purpose of bringing qualitative investigations in this study was to acquire field insights and understanding people's perception of the changing rainfall-runoff behavior. Key qualitative findings were included in the present study based on personal communication with the residents of the IITB campus (Achary and Yughabala, personal communication, March 9, 2020). Field investigations were conducted inside the campus, which included transect walks at the periphery of the Powai lake and reconnaissance survey, thereby creating social and resource maps indicating diverse land uses. The investigation primarily ground-truthed two facets viz., (1) ascertaining the socio-economic patterns impacting and regulating provisions for groundwater percolation (from green cover) and surface runoff (from built-up cover) and (2) understanding the distinctions of green cover in terms of vegetation, forest cover, and barren land with infrastructural development.
+
+## Results ##
+
+
+## Rainfall-runoff analysis ##
+The average annual rainfall in the study period was recorded to be 2,331 mm, with a maximum rainfall observed in the year 2011 (3,129 mm) and the least rainfall received in the year 2015 (1,800 mm) (Fig. 
+
+## Qualitative analysis on LULC changes ##
+The LULC maps for the years 
+
+## Quantitative analysis of LULC trends ##
+The changes in LULC for playground, built-up, forest, and barren land between 2000 and 2018 are summarized in Fig. 
+
+## Water hyacinth cover and its impact over the Powai lake ##
+The analysis of Powai lake, having an area of about 2.34 km 2 , was based on the visible area under satellite imagery for water cover (lake) and the WH cover between 2000 and 2018 (Fig. 
+
+## Comparative analysis between LULC for 2000 and 2018 ##
+
+
+## Runoff versus built-up change ##
+To understand the rainfall-runoff behavior of the entire campus, the value of WCN was calculated and compared with the built-up cover of the IITB campus. The depth of the runoff (in mm) was used in the estimation of the WCN based on the magnitude of the rainfall (in mm) received each year. The value of WCN was observed fluctuating in the range of 36 to 40 (averaging 39) with an overall decreasing trend across the study period (Fig. 
+
+## Discussions ##
+
+
+## Status and plans of infrastructure development post-2018 ##
+The rapid expansion in student numbers resulted in an increase in infrastructure activities within the campus. The population of students increased from about 5500 in 2008 to nearly 11,000 in 2020 (Fig. 
+To accommodate all the students and staff, additional buildings were needed. The institute planned to construct new hostels by targeting to bring more than 2,000 additional rooms for non-married students and 400 rooms for married students by the year 2022 
+
+## Key observations from field investigation ##
+Given the context of minimizing flash flood events together with enhancing green cover amidst rapid infrastructural development, field investigation and qualitative surveys were conducted inside the IITB campus. Findings from the investigation revealed that the construction of any building was preceded by surveying the total vegetation and tree losses that could occur after the construction. Such losses of greenery were more or less compensated by additional plantation of the trees either in the vicinity of the constructed building or in the nearby gardens (Fig. 
+
+## Status and recommendations for sustainable campus development ##
+The fact claimed by the website of IITB -"…the campus' green cover has been maintained and even increased over the years" 
+Besides student-run bodies, institute-level committees were formed to address the prevailing issues focusing on the implications of the rainfall-runoff behavior, and impacts of the rapid built-up growth on campus ecology. This included the Green Campus Initiative (GCI) committee established in 2010 
+
+## Learnings from past studies ##
+There are yet studies that focused on spatio-temporal variation of landscape patterns, wherein they considered complex interactions of social, economic, demographic, technological, political, biophysical, and cultural factors, for example Behera et al. 
+
+## Future scopes ##
+The developing campuses are more vulnerable to rapid LULC changes, in case, not enough consideration is given in devising sustainable strategies for overall holistic campus development. Based on the results and discussions, this study proposes to focus on the following attributes in future investigations for the IITB campus:
+• In order to develop a green model, holistic approaches are further needed to improving sectors like solid waste management (to eradicate landfills), wastewater management (to reduce water hyacinth cover in Powai lake; invading as a result of the discharge of the wastewater), smarter and greener buildings (to install rainwater harvesting coupled with roof-top plantation making maximum utilization of rainfall and minimizing runoff ), etc. Similar initiatives with characteristics like lower carbon footprint 
+• Since the land-use classes are generated by the manual classification method, the accuracy associated with the satellite imagery cannot be assessed using the Kappa coefficient and user's and producer's accuracies of individual classes. Future research should consider applying supervised classification for image processing and interpretation that can better differentiate between vegetation cover, barren land, and the forest (cover) leaves. A maximum-likelihood algorithm could be employed to detect the land-use classifications. The primary three geoprocessing tools, viz., create accuracy assessment points, update accuracy assessment points, and compute confusion matrix, can be employed to generate an accuracy assessment report. 
+
+## Summary and conclusions ##
+The present study, for the first time, examined the changes in the land-use land cover (LULC) pattern of the Indian Institute of Technology Bombay (IITB) campus from the period of 2000 to 2018 using remote sensing data and Geographical Information System. Parameters, such as greenery (vegetation and forest), water hyacinth (WH) cover in Powai lake, and other land uses and their impacts over the rainfall-runoff process, were studied and analyzed. The analysis was based on the simplified mass balance algorithms that can be used by land managers with less training efforts. Results indicated that the LULC change was major in the case of built-up, barren land, Powai lake, and the WH cover, while the LULC change observed was minor in the case of the forest cover and playground. The infrastructural development (built-up), including academic building, hostels, and roads, drastically increased in the study period, and the expansion of the built-up cover, in terms of the area, mostly happened through available barren land without interfering with the forest cover. The overall WH cover decreased significantly from 0.9 km 2 in 2000 to 0.4 km 2 in 2018 in the Powai lake, due to the aesthetics aspect of Hiranandani settlements, but the WH on the IITB's side was not much improved since 2000. Hiranandani was a tourist place, and thus, to maintain its tourism, the Powai lake at this zone was substantially maintained, which gradually reduced the WH cover to null in the year 2018, thereby bringing back the lake to its initial coverage. The number of trees on the campus of IITB recorded a fluctuating increase, thus improving the green cover on the campus. As a result, a fluctuating slighter decrease in runoff volume to Powai lake was observed despite the rapid rise in the built-up area. This happened because of the increase in the number of trees in the gardens of all buildings and along both sides of the major and minor roads including the surrounding area of the Powai lake. The various student-run social and technical bodies along with administrative and institute committees of IITB have taken appropriate measures to maintain the green cover within the campus, which resulted in keeping the check over high runoff discharge. This paper further summarized how the infrastructural development in IITB has changed the LULC pattern and documented the potential impacts of the same on the green cover, runoff patterns and hydrological balance inside the campus. Lessons learned from substantial LULC change assessments can lead to sustainable design for eco-friendly LULC which could be an alternative for any campus. Based on the major findings from the present study, the following conclusions were drawn:
+• The IITB campus and its surrounding region witnessed more rainfall than the average annual rainfall of Mumbai. It was observed during field observation and remote sensing studies that the forest (green) cover was the most dominating land use inside campus, coupled with the presence of the national park in the campus vicinity. It can be concluded that the green cover caused higher rainfall in the region. Therefore, careful management strategies, through the lens of green campus initiatives, for controlling events of flash flood amidst new constructions become obligatory. • Removal of the water hyacinth from Powai lake, though appeared challenging, was achievable given the fact that the Hiranandani complex was able to clear it to a considerable extent. Therefore, the maintenance aspects of the lake not only needed higher prioritization but also needed the participatory-based involvement of diverse stakeholders.
+• Despite rapid construction activities, the events of flash floods (due to higher runoff ) within the campus remained dormant. Apart from appropriate water routing and discharging surplus runoff into Powai lake, it was concluded that the forest cover, or more specifically the greater density of the trees, caused higher infiltration of the rain against surface runoff. • The evidence that the weighted curve number unevenly declined across the study period against the increasing built-up cover concluded that the systematic campus design, with effective implementation of the green initiatives, can maintain hydro-ecological balance without compromising with the environmental services.
+• The study finally concluded that the limited land availability for future constructions must be coupled with exploring appropriate strategies for sustainable and eco-friendly constructions, given the threat to the green cover. Green technologies, such as roof-top plantation and green building conceptions, could be employed for creating additional green spaces inside the campus.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Development of land-use/land-cover maps using Landsat-8 and MODIS Data, and their integration for hydro-ecological applications
+   Authors: , , , , , 
+   Date: 2019. 1922
+
+2. Harvesting river water through small dams promote positive environmental impact
+   Authors: , , , 
+   Date: 2016
+
+3. LULC analysis of urban spaces using Markov chain predictive model at Ranchi in India
+   Authors: , , 
+   Date: 2017
+
+4. Modelling and analyzing the watershed dynamics using Cellular Automata (CA)-Markov model-A geo-information based approach
+   Authors: , , , , 
+   Date: 2012
+
+5. Remote sensing based deforestation analysis in Mahanadi and Brahmaputra river basin in India since 1985
+   Authors: , , , , , , , , , , 
+   Date: 2018
+
+6. A review of the USDA SCS curve number method
+   Authors: 
+   Date: 1989
+
+7. Size-constrained region merging (SCRM)
+   Authors: , , 
+   Date: 2008
+
+8. Higher education in India-issues, challenges and suggestions
+   Authors: 
+   Date: 2020
+
+9. Google Earth imageries for validating groundwater recharge zone in basaltic region
+   Authors: , , , , , , 
+   Date: 2020
+
+10. Stream and shallow groundwater nutrient concentrations in an Ozark forested riparian zone of the central USA
+   Authors: , 
+   Date: 2015
+
+11. Remote sensing-based assessment of coastal regulation zones in India: a case study of Mumbai
+   Authors: , 
+   Date: 2020
+
+12. Evaluating the effectiveness of water infrastructures for increasing groundwater recharge and agricultural production -A case study of Gujarat
+   Authors: , , , , 
+   Date: 2015
+
+13. Impact of 2018 Kerala floods on soil erosion: need for post-disaster soil management
+   Authors: , , 
+   Date: 2020
+
+14. Economic growth in India: the role of physical and social infrastructure
+   Authors: , 
+   Date: 2010
+
+15. Applied hydro-ecological science for the twenty-first century
+   Authors: , 
+   Date: 2001. July 1999
+
+16. Detection of urban land use land cover dynamics using GIS and remote sensing: a case study of Axum town, Northern Ethiopia
+   Authors: , , , , 
+   Date: 2019
+
+17. Detecting the boundaries of urban areas in India: a dataset for pixelbased image classification
+   Authors: , , , 
+   Date: 2016
+
+18. Investigation of curve number procedure
+   Authors: 
+   Date: 1991. 1991
+
+19. Land use change increases flood hazard: a multi-modelling approach to assess change in flood characteristics driven by socio-economic land use change scenarios
+   Authors: , , , 
+   Date: 2019
+
+20. Report of the green campus initiative (GCI) committee. IIT Bombay Publishing
+   Date: 2010. 11 October 2020
+
+21. Information on the strategic plan
+   Date: 2016. 2017-2022. 11 Oct 2020
+
+22. IIT Bombay strategic plan (2017-2022): supplementary document
+   Date: 2016. 11 October 2020
+
+23. Statistics for the year 2017-2018
+   Date: 2017. 11 October 2020
+
+24. Statistics for the year 2018-2019
+   Date: 2018. 11 October 2020
+
+25. Annual report
+   Date: 2018. 2018-2019. 11 October 2020
+
+26. About IIT Bombay (official website)
+   Date: 2020. 11 October 2020
+
+27. IIT Bombay director's report. IIT Bombay Publishing
+   Date: 2020. 11 October 2020
+
+28. Sustainability cell-a student run social body
+   Date: 2020. 11 October 2020
+
+29. Abhuyday-a social body of IIT Bombay (official website)
+   Date: 2020. 11 October 2020
+
+30. Perspectives on green: recent urbanisation works and measures in Brazil and India
+   Authors: , , 
+   Date: 2019
+
+31. Coastal landuse and land cover change and transformations of Kanyakumari coast, India using remote sensing and GIS
+   Authors: , , , , 
+   Date: 2017
+
+32. Comparative analysis on the archaeological content of imagery from Google Earth
+   Authors: , , , 
+   Date: 2011
+
+33. Opportunities and limitations of object based image analysis for detecting urban impervious and vegetated surfaces using true-colour aerial photography
+   Authors: , , 
+   Date: 2008
+
+34. Assessment of land-use and landcover change and its impact on groundwater quality using remote sensing and GIS techniques in Raipur City
+   Authors: , 
+   Date: 2018
+
+35. Application of Google Earth in mapping intermittent rivers of Montenegro
+   Authors: , , 
+   Date: 2020
+
+36. Managing urban sprawl using remote sensing and GIS
+   Authors: , 
+   Date: 2020
+
+37. Applications and impacts of Google Earth: a decadal review
+   Authors: , , 
+   Date: 2018. 2006-2016. 2018
+
+38. Remote sensing and image interpretation
+   Authors: , , 
+   Date: 2015
+
+39. Quantitative estimation of soil erosion using open-access earth observation data sets and erosion potential model
+   Authors: , 
+   Date: 2019
+
+40. Monastery, sanctuary, laboratory: 50 years of IIT-Bombay
+   Authors: 
+   Date: 2008
+
+41. Soil conservation service curve number (SCS-CN) methodology
+   Authors: , 
+   Date: 2013
+
+42. Institutional networks of association for GIS use: the case of an urban local body in India
+   Authors: 
+   Date: 2020. 2019. 16914
+
+43. temps .com/preci pitat ion
+   Date: 2020. Oct 2020
+
+44. Modelling land use and land cover dynamics of Dedza district of Malawi using hybrid Cellular Automata and Markov model
+   Authors: , , , , , 
+   Date: 2020. 2019.10027 6
+
+45. New methodological approach for biomass resource assessment in India using GIS application and land use/land cover (LULC) maps
+   Authors: , , , 
+   Date: 2016
+
+46. Simulation of extreme event-based rainfall-runoff process of an urban catchment area using HEC-HMS
+   Authors: , 
+   Date: 2019
+
+47. Assessing the role of hydrological modifications on land use/land cover dynamics in Punarbhaba river basin of Indo-Bangladesh
+   Authors: , 
+   Date: 2020
+
+48. Urban green spaces and their need in cities of rapidly urbanizing India: a review
+   Authors: , 
+   Date: 2019
+
+49. An assessment of the potential impact of climate change on flood risk in Mumbai
+   Authors: , , , , , , , , , , 
+   Date: 2011
+
+50. Estimation of surface runoff from semi-arid ungauged agricultural watershed using SCS-CN method and earth observation data sets
+   Authors: , 
+   Date: 2017
+
+51. Appraisal of soil conservation capacity using NDVI model-based C factor of RUSLE model for a semi arid ungauged watershed: A case study
+   Authors: , 
+   Date: 2018
+
+52. Comparative evaluation of models to estimate direct runoff volume from an agricultural watershed
+   Authors: , , 
+   Date: 2020. 18336
+
+53. Mumbai rainfall data (official website)
+   Authors: , , 
+   Date: 2019. Oct 2020
+
+54. Impact of water demand on hydrological regime under climate and LULC change scenarios
+   Authors: , , , 
+   Date: 2018
+
+55. Energy and reliability optimization of a system that combines daylighting and artificial sources. A case study carried out in academic buildings
+   Authors: , , , , 
+   Date: 2016. 2016
+
+56. Future land use land cover scenario simulation using open source GIS for the city of Warangal
+   Authors: , , 
+   Date: 2020
+
+57. Sustainability in an urbanizing planet
+   Authors: , , , 
+   Date: 2017
+
+58. Higher education in India: challenges and opportunities
+   Authors: 
+   Date: 2017
+
+59. Quantitative assessment of landscape transformation using earth observation datasets in Shirui Hill of Manipur
+   Authors: , , , , 
+   Date: 2019. 2019
+
+60. Landscape transform and spatial metrics for mapping spatiotemporal land cover dynamics using Earth Observation data-sets
+   Authors: , , , , , 
+   Date: 2017
+
+61. Monitoring spatial LULC changes and its growth prediction based on statistical models and earth observation datasets of Gautam Budh Nagar
+   Authors: , , , , 
+   Date: 2020
+
+62. Water management in the Noyyal River basin a situation analysis
+   Authors: , , , , , , , 
+   Date: 2014
+
+63. Water management using traditional tank cascade systems: a case study of semi-arid region of Southern India
+   Authors: , 
+   Date: 2021
+
+64. Engineering hydrology
+   Authors: 
+   Date: 2013
+
+65. The state of school infrastructure in the assembly constituencies of rural India: analysis of 11 census indicators from pre-primary to higher education
+   Authors: , , , , , , 
+   Date: 2020. 1701
+
+66. Measuring the quality of public open space using Google Earth
+   Authors: , , , , , 
+   Date: 2011
+
+67. Mapping public and private spaces of urban agriculture in Chicago through the analysis of highresolution aerial images in Google Earth
+   Authors: , 
+   Date: 2012
+
+68. Impact of urbanization on creeks of Mumbai, India: a geospatial assessment approach
+   Authors: , , , 
+   Date: 2020
+
+69. Google Earth and virtual visualizations in geoscience education and research
+   Authors: 
+   Date: 2012
+
+70. Impact of urbanization on rainfall-runoff processes: case study in the Liangshui River Basin in Beijing
+   Authors: , 
+   Date: 2016
+
+71. Google Earth as a virtual globe tool for Earth science applications at the global scale: progress and perspectives
+   Authors: , 
+   Date: 2012
+
+72. Land use and land cover changes in Doume Communal Forest in eastern Cameroon: implications for conservation and sustainable management
+   Authors: , , , , , , , , 
+   Date: 2019
+
+73. Impacts of land useland cover change and urbanization on flooding: a case study of Oshiwara River Basin in Mumbai
+   Authors: , , 
+   Date: 2016
+

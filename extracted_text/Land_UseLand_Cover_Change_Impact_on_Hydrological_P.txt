@@ -1,0 +1,302 @@
+================================================================================
+TITLE: Land Use/Land Cover Change Impact on Hydrological Process in the Upper Baro Basin, Ethiopia
+================================================================================
+
+AUTHORS:
+- Tewodros Getu Engida
+- Tewodros Nigussie
+- Abreham Aneseyee
+- John Barnabas
+
+ABSTRACT:
+Understanding the hydrological process associated with Land Use/Land Cover (LU/LC) change is vital for decision-makers in improving human wellbeing. LU/LC change significantly affects the hydrology of the landscape, caused by anthropogenic activities. e scope of this study is to investigate the impact of LU/LC change on the hydrological process of Upper Baro Basin for the years 1987, 2002, and 2017. e Soil Water Assessment Tool (SWAT)  model was used for the simulation of the streamflow. e required data for the SWAT model are soils obtained from the Food and Agriculture Organization; Digital Elevation Model (DEM) and LU/LC were obtained from the United States Geological Survey (USGS). e meteorological data such as Rainfall, Temperature, Sunshine, Humidity, and Wind Speeds were obtained from the Ethiopian National Meteorological Agency. Data on discharge were obtained from Ministry of Water, Irrigation and Electricity. Ecosystems are deemed vital. Landsat images were used to classify the LU/LC pattern using ERDAS Imagine 2014 software and the LU/LC were classified using the Maximum Likelihood Algorithm of Supervised Classification. e Sequential Uncertainty Fitting (SUFI-2) global sensitivity method within SWAT Calibration and Uncertainty Procedures (SWAT-CUP) was used to identify the most sensitive streamflow parameters. e calibration was carried out using observed streamflow data from 01 January 1990 to 31 December 2002 and a validation period from 01 January 2003 to 31 December 2009. LU/LC analysis shows that there was a drastic decrease of grassland by 15.64% and shrubland by 9.56% while an increase of agricultural land and settlement by 18.01% and 13.01%, respectively, for 30 years. e evaluation of the SWAT model presented that the annual surface runoff increased by 43.53 mm, groundwater flow declined by 27.58 mm, and lateral flow declined by 5.63 mm. e model results showed that the streamflow characteristics changed due to the LU/LC change during the study periods 1987-2017 such as change of flood frequency, increased peak flows, base flow, soil erosion, and annual mean discharge. Curve number, an available water capacity of the soil layer, and soil evaporation composition factor were the most sensitive parameters identified for the streamflow. Both the calibration and validation results disclosed a good agreement between measured and simulated streamflow. e performance of the model statistical test shows the coefficient of determination (R 2 ) and Nash-Sutcliffe (NS) efficiency values 0.87 and 0.81 for calibration periods of 1990-2002 and 0.84 and 0.76 for the validation period of 2003 to 2009, respectively. Overall, LU/LC significantly affected the hydrological condition of the watershed. erefore, different conservation strategies to maintain the stability and resilience of the ecosystem are vital.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+e response of hydrologic circulation is closely related to land use planning and management 
+is can be either by increasing the water yield or by eliminating the flow in some circumstances, thereby increasing the sediment load and decreasing the groundwater 
+LU/LC changes and population growth are the most common problems in developing countries such as Ethiopia since their economic development mainly depends on agriculture 
+e modifications/conversions of natural vegetation and physical soil conditions are usually the principal cause of changes in rainfall-runoff characteristics of the local catchment, which consequently change the river flow regimes 
+Watershed studies can provide direct evidence of LU/ LC change impacts on runoff 
+e Upper Baro Basin is hurt from human-induced degradation mainly due to large-scale agricultural expansion, which leads to LU/LC dynamism. e impacts of such changes on local hydrology are poorly understood. Hence, systematic analyses and understanding the impacts of LU/ LC changes on the watershed hydrology are important for planning water resources management and maintaining the sustainable flow of water to the Baro-Akobo River. is study also helps decision-makers know where to invest to conserve the hydrological services.
+erefore, the objectives of the study are as follows: (1) to assess the LU/LC change over the past 30 years on the hydrological response of Upper Baro Basin and (2) to check the applicability of SWAT model for the study area.
+
+## Materials and Methods ##
+
+
+## e Study Area. ##
+e Upper Baro Basin is found in southwestern Ethiopia located at 766 km away from Addis Ababa, the capital city of Ethiopia, between latitudes 7.44 °and 9.41 °N and longitudes 34.52 °and 36.31 °E, covering an area of 23462 km 2 . e altitude ranged from 390 m to 3266 m above sea level (Figure 
+e Upper Baro basin has a long rainy season in the months of May-September. e area indicates a monomodal, bimodal, and triple-modal rainfall pattern. e annual average rainfall is varying from about 1163.03 mm to over 2258.36 mm with a monthly maximum rainfall record of 302.79 mm in August, while relative mean monthly rainfall for dry seasons occurs between December and March (Figure 
+e topography of the Upper Baro Basin is characterized by variation from flat to mountainous terrain and falls in the altitude range of 390 m to over 3000 m a.m.s.l. with 42% in between 1000 m and 2000 m a.m.s.l. e eastern two-thirds of the basin area lies between 1000 m and 2400 m a.m.s.l. and a gently sloping plain lies in the west between 380 m and 500 m a.m.s.l. Dystric nitisols and dystric gleysols are the dominant soil type in the study area.
+
+## SWAT Model Data Types and Analysis ##
+
+
+## Meteorological Data. ##
+e SWAT model requires daily meteorological (Weather) data such as daily precipitation, minimum and maximum air temperature, relative humidity, wind speed, dew point, and daily sunshine. e standard deviation of each parameter was calculated. iessen method is used to adjust for nonuniform meteorological station distribution by proportion to the area which is closer. Eleven meteorological stations were selected (Table 
+ese data were obtained from the National Meteorological Agency of Ethiopia (NMAE) over the period . e missing values were estimated from other stations around the missed record station by using both arithmetic mean method and normal ratio method and also consistency test which shows double mass.
+e SWAT weather generator model (WGEN) was used to match the access table and lookup table. e daily precipitation and temperature of all gauging stations were prepared in comma-delimited (.csv) format. Solar radiation, relative humidity, and wind speed data were available only for principal Gore and Masha stations (synoptic stations).  
+
+## Soil ##
+ey were radiometrically calibrated to reflectance value and the Quick Atmospheric Correction algorithm was applied in ERDAS software. Radiometric and geometric corrections were applied to the removal of sensor noise, haze, correction data loss, and missing lines due to a solar position, satellite calibration 
+Overall accuracy and Kappa coefficient, the classify maps will check classification accuracy. According to 
+e SWAT Model has predetermined four-letter codes for each LU/LC category (Table 
+
+## SWAT Model Description. ##
+SWAT is a physically based semidistributed continuous time-scale hydrological model, which works on a daily time step. is model can simulate runoff, sediment, nutrients, pesticide, and bacterial transport from agricultural watersheds 
+where SW t and SW o are the final and initial soil water content, respectively, (mm), Q i � daily surface runoff (mm), R i � daily rainfall (mm), ET i � daily evapotranspiration (mm), R i � daily lateral flow (mm), and P i � daily percolation (mm).
+
+## Peak Runoff Rate. ##
+e peak runoff rate is a result of the erosive power of a storm and is used to predict sediment loss. SWAT calculates the peak runoff rate with a modified rational method for each HRU using the following equation:
+where Q peak is peak runoff rate (m 3 /s), α tc the fraction of daily rainfall that occurs during the time of concentration, Q surf is the surface runoff (mm), A is the sub-basin area (km 2 ), and t conc is the time of concentration (hr).
+
+## Surface Runoff Generation. ##
+e CN method was initially developed for small agricultural watersheds and the CN varies nonlinearly with the moisture content of the soil. It drops to zero as the soil approaches the wilting point and increases to be near 100 as the soil approaches saturation, with higher CNs associated with higher runoff potential watershed. is method is widely used 
+According to USDA, 1985 
+where Q s is the accumulated runoff (mm), Ra is the rainfall depth for the day (mm), and
+where CN is the curve number for the day and its value is the function of land use practice, soil permeability and soil hydrologic group. Conceptual framework showing the components and relationships have been used as a framework for the analysis of hydrology in research (Figure 
+
+## SWAT Model Simulation, Sensitivity Analysis, Calibration, and Validation. ##
+e simulation result cannot be directly used for further analysis. Instead, the ability of the model to sufficiently predict the constituent streamflow should be evaluated through sensitivity analysis, model calibration, and model validation 
+2.6.1. Sensitivity Analysis. Fifteen hydrological parameters related to streamflow were selected for sensitivity analysis in the study area.
+e sensitivity of each parameter was identified using the T test and P values. P values were used to determine the significance of the sensitivity. A value close to zero has more significance. T test provides a measure of sensitivity and the most sensitive parameters usually appear with P values less than the alpha level of 0.05 (larger absolute values are more sensitive) 
+
+## Model Calibration and Validation. ##
+e SUFI-2 algorithm was applied and frequently used in this study of calibration for the SWAT model at a large scale due to its easy application and the reduced number of model runs needed to achieve a decent prediction 
+
+## Model Performance Evaluation. ##
+Model performance was carried out to verify the robustness of the model to simulate hydrological processes. A model performance framework proposed by 
+Nash and Sutcliffe simulation efficiency (NSE) indicates the degree of fitness of observed and simulated data, and it is calculated using the following equation:
+where N � number of compared values, Q obs is the observed data, Q obs is the observed mean, and Q sim is the simulated data. e NSE indicates how well the plot of observed versus simulated value fits the 1 : 1 line. e closer the model efficiency is to 1, the more accurate the model, and if it is found between 0 and 1, it indicates deviations between measured and predicted values. If NSE is negative, predictions are poor, and the average value of output is a better estimate than the model prediction 
+Coefficient of determination (R 2 ) measures the ability of a model to predict or explain an outcome in the linear regression setting (Equation ( 
+where X i is measured value, X av is average measured value, Y i is simulated value, and Y av is the average simulated value. Percent bias (PBIAS) measures the average difference between the simulated and measured values for a given quantity over a specified period (usually the entire calibration or validation period) and it is calculated using the following equation 
+where X i is measured value and Y i is simulated value. Model evaluation classifies as follows:
+(i) 0.75 < NSE < 1.00, PBIAS < ±10-better predictor (ii) 0.65 < NSE ≤ 0.75, ±10 < PBIAS < ±15-good (iii) 0.50 < NSE ≤ 0.65, ±15 < PBIAS < ±25-satisfactory (iv) (NSE ≤ 0.50, PBIAS >±25)-unsatisfactory  
+
+## Results and Discussion ##
+e results obtained for 1987-2002 reveal that forest land covers 36.74% and followed by grassland, 19.77% and shrubland and woodland also cover 19.76% and 11.32%, respectively. Between 2002 and 2017, the distribution of forest cover demonstrates highest in the catchment, which covered 33.33%, followed by agricultural land and shrubland, with the value of 15.6%, 15.1%, respectively. Forest land and shrubland decreased after 1987-2002, with -3.41% and -4.65%, respectively (Figure 
+In the last 30 years, the study displays an increase in agriculture, bare land, urban, and shrubland, whereas the forest, grassland, water, and wetland were noted declined. Agricultural land increased by 18.01% during the study period. is is due to the increase of population growth that causes the increase in demand for cultivation land for different agricultural products like cereal crops, field crops, industrial crops, whereas the forest area was diminished.
+is might be due to deforestation activities that have taken place for agriculture and urban expansion.
+Consequently, agricultural investment policies encouraged further deforestation that leads to land conversion 
+In this study, the accuracy assessment was performed using the 340 referenced points collected through stratified sampling. Overall accuracies obtained were 92.14%, 94.63%, and 95.93% for the 1987, 2002, and 2017 images, respectively (Table 
+
+## Stream Flow Modeling Using SWAT ##
+3.2.1. Sensitivity Analysis. Sensitivity analysis was carried out to identify which model parameter was the most important or sensitive. Flow sensitivity analysis was carried out for 13 years, the calibration period (from January 1, 1990, to 
+
+## SWAT Model Calibration and Validation. ##
+e simulated monthly flows demonstrated a good agreement with the monthly observed discharge of Upper Baro Basin with a coefficient of determination (R 2 � 0.86), Nash-Sutcliffe efficiency (NSE � 0.80), and percent bias (PBIAS � -17%) (Figure 
+SWAT model also successfully validated streamflow for an independent period (2003-2010) with R 2 � 0.84, NS � 0.76, and PBIAS � -4.5% during the validation period; the values fulfilled the statistical model performance criteria R 2 > 0.6 and NSE > 0.5 recommended by SWAT developer 
+e percent bias (PBAIS) values (-17% and 4.5%) during calibration and validation periods, respectively, also fulfilled the statistical model performance criteria PBAIS> ±15 
+Generally, the above information showed that the performance of the model was better during the calibration period more than the validation period (Table 
+
+## Land Use/Land Cover Change Response to Hydrological ##
+Process.
+e simulated results of the Upper Baro Basin under different land use/land cover scenarios are shown in Table 
+
+## Mean Monthly Wet and Dry Month Streamflow Simulation and eir ##
+Variability. Months July, August, and September were considered as wet periods and Jan, Feb, and March were considered dry months; these seasonal variabilities of streamflow were evaluated.
+
+## Spatial Variability of Surface Runoff over Sub-Basin. ##
+Spatial variability of surface runoff shows that surface runoff is highly sensitive to the change of LU/LC over subwatersheds in the period of 1987, 2002, and 2017 (Figure 
+
+## Comparison of Mean Monthly Surface Runoff and ##
+Groundwater. Decreases in base flow had a potential effect on the change in annual river flow (Figure 
+
+## Conclusions ##
+In the present study, the Upper Baro Basin has been simulated using the SWAT hydrological model for assessing the impact of LULC change on its hydrological regime successfully. Initially, the change in LULC between the years 1987, 2002, and 2017 has been assessed. It is evident that land cover changes had occurred between 1987 and 2017. Forest cover had decreased from 36.74% to 31.21%, attributable to logging for timber, firewood, and clearing for agricultural purposes. In contrast, the agricultural area increased over the years from 8.81% to 26.81%. Similarly, grasslands and bushes have also been converted to agricultural areas. Sensitivity analysis of the SWAT parameters indicates that runoff is most sensitive to curve number, an available water capacity of the soil layer, soil evaporation composition factor, manning's "n" value for the main channel, and saturated hydraulic conductivity. Seasonal streamflow variability due to the LU/LC was assessed and comparisons were made on surface runoff, lateral flow, and groundwater flow contributions to streamflow based on the three simulation outputs. Surface runoff was increased from 713.85 mm to 760.49 mm, while groundwater was decreased from 283.21 mm to 257.13 mm in the years 1987 and 2017. Also, surface runoff was increased from 737.67 mm to 760.49 mm, while groundwater was decreased from 266.32 mm to 257.13 mm in the year 2002 and 2017. Land use/land cover change over the last 30 years also affect the soil and soil properties in the study area significantly. For example, forest land declined and agricultural land is increased. is dynamism would maximize soil erosion, which leads to the loss of important soil nutrients. erefore, different soil and water conservation measures are required to reverse the challenges.  
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Human-induced land use land cover change and its impact on hydrology
+   Authors: , , , , , 
+   Date: 2019
+
+2. Spatiotemporal impacts of land use land cover changes on hydrology from the mechanism perspective using SWAT model with time-varying parameters
+   Authors: , , 
+   Date: 2019
+
+3. e impact of land use/land cover change on hydrological components due to resettlement activity: SWAT model approach
+   Authors: , , , 
+   Date: 2015
+
+4. Modelling hydrological responses to land use and climate change: a southern african perspective
+   Authors: 
+   Date: 2000
+
+5. Evidence that local land use practices influence regional climate, vegetation, and stream flow patterns in adjacent natural areas
+   Authors: , , , , 
+   Date: 1998
+
+6. Analysis of land use change and its impact on the hydrology of kakia and esamburmbur sub
+   Authors: , , , 
+   Date: Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec 1987
+
+7. 60 Ground water (mm) Month
+   Date: 1987 2002 2017. 2019
+
+8. Streamflow response to land useland cover change over the nethravathi river Basin, India
+   Authors: , 
+   Date: 2015
+
+9. World reference base for soil resources 2014, international soil classification system for naming soils and creating legends for soil maps
+   Date: 2014
+
+10. Watershed hydrological response to changes in land use/land covers patterns of river basin: a review
+   Authors: , , 
+   Date: 2014
+
+11. e hydrological impacts and sustainability of wetland drainage cultivation in Illubabor, Ethiopia
+   Authors: 
+   Date: 2002
+
+12. Modeling the hydrological impacts of land use/land cover changes in the Andassa watershed
+   Authors: , , , 
+   Date: 2018
+
+13. Assessment of land use land cover change impact on hydrological regime of a basin
+   Authors: , , 
+   Date: 2017
+
+14. e impacts of climate variability and land use change on streamflow in the Hailiutu River Basin
+   Authors: , , , , 
+   Date: 2018
+
+15. Analysis of streamflow responses to climate variability and land use change in the Loess Plateau region of China
+   Authors: , , , 
+   Date: 2017
+
+16. Quantifying the contributions of climate variation, land use change, and engineering measures for dramatic reduction in streamflow and sediment in a typical loess watershed, China
+   Authors: , , 
+   Date: 2020
+
+17. Assessing the impacts of climate and land use change on streamflow, water quality and suspended sediment in the Kor River Basin, southwest of Iran
+   Authors: , , 
+   Date: 2017
+
+18. Assessing the impacts of land use-cover change on hydrology of Melka Kuntrie subbasin in Ethiopia, using a conceptual hydrological model
+   Authors: , 
+   Date: 2015
+
+19. A hydrological model for predicting runoff from different land use areas
+   Authors: , , , , 
+   Date: 1999
+
+20. Estimating of the impact of land use changes using the conceptual hydrological model THESEUS--a case study
+   Authors: 
+   Date: 2002
+
+21. e impact of land use change on the hydrology of the Angereb watershed, Ethiopia
+   Authors: , 
+   Date: 2012
+
+22. Streamflow sensitivity to climate and land cover changes: Meki River, Ethiopia
+   Authors: , , , 
+   Date: 2010
+
+23. Hydrological modelling in the lake Tana Basin, Ethiopia using SWAT model
+   Authors: , , 
+   Date: 2008
+
+24. Implications of land use and land cover dynamics for mountain resource degradation in the Northwestern Ethiopian highlands
+   Authors: , 
+   Date: 2001
+
+25. Remote sensing of tropical ecosystems: atmospheric correction and cloud masking matter
+   Authors: , , , , , 
+   Date: 2012
+
+26. Multi-angle implementation of atmospheric correction for MODIS (MAIAC): 3. atmospheric correction
+   Authors: , , 
+   Date: 2012
+
+27. A Land Use and Land Cover Classification System for Use with Remote Sensor Data, US Government Printing Office
+   Authors: 
+   Date: 1976
+
+28. Status of land cover classification accuracy assessment
+   Authors: 
+   Date: 2002
+
+29. Large area hydrologic modeling and assessment part I: model development
+   Authors: , , , 
+   Date: 1998
+
+30. Soil and Water Assessment Tool eoretical Documentation Version
+   Authors: , , , 
+   Date: 2009. 2011
+
+31. United State Department of Agriculture -Soil Conservation Service (USDA-SCS)
+   Date: 1985
+
+32. Sensitivity analysis, calibration, and validations for a multisite and multivariable SWATmodel 1
+   Authors: , 
+   Date: 2005
+
+33. A continental-scale hydrology and water quality model for Europe: calibration and uncertainty of a high-resolution large-scale SWAT model
+   Authors: , , , , , 
+   Date: 2015
+
+34. SWAT-CUP 2012. SWAT Calibration and Uncertainty Program-A User Manual
+   Authors: 
+   Date: 2013
+
+35. SWAT model calibration and uncertainty analysis for streamflow prediction in the Kunwari River Basin, India, using sequential uncertainty fitting
+   Authors: , , , , 
+   Date: 2015
+
+36. Model evaluation guidelines for systematic quantification of accuracy in watershed simulations
+   Authors: , , , , , 
+   Date: 2007
+
+37. River flow forecasting through conceptual models part I-a discussion of principles
+   Authors: , 
+   Date: 1970
+
+38. Validation of the swat model on a large river Basin with point and nonpoint sources
+   Authors: , , , , , 
+   Date: 2001
+
+39. Hydrologic simulation on agricultural watersheds: choosing between two models
+   Authors: , , 
+   Date: 2003
+
+40. Status of automatic calibration for hydrologic models: comparison with multilevel expert calibration
+   Authors: , , 
+   Date: 1999
+
+41. Evaluating the SWAT model for hydrological modeling in the Xixian watershed and a comparison with the XAJ model
+   Authors: , , 
+   Date: 2011
+
+42. Intensification of smallholder agriculture in Ethiopia: options and scenarios
+   Authors: 
+   Date: 2006
+
+43. Incorporation of seasonal climate forecasts in the ensemble streamflow prediction system
+   Authors: , 
+   Date: 2010
+
+44. Between "land grabs" and agricultural investment: land rent contracts with foreign investors and Ethiopia's normative setting in focus
+   Authors: 
+   Date: 2011
+
+45. Application of SWAT to assess the effects of land use change in the murchison bay catchment in Uganda
+   Authors: , , , , , 
+   Date: 2017
+
+46. Effect of land use change on runoff and sediment yield in da river basin of Hoa Binh province, northwest Vietnam
+   Authors: , , 
+   Date: 2015
+
+47. Hydrological responses to land use/cover changes in the Olifants Basin, South Africa
+   Authors: , , 
+   Date: 2016
+
+48. Evaluating hydrological responses to urbanization in a tropical River Basin: a water resources management perspective
+   Authors: , 
+   Date: 2019
+

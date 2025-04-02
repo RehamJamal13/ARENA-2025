@@ -1,0 +1,414 @@
+================================================================================
+TITLE: Detecting and Analyzing Land Use and Land Cover Changes in the Region of Al-Jabal Al-Akhdar, Libya Using Time-Series Landsat Data from 1985 to 2017
+================================================================================
+
+AUTHORS:
+- Jamal Alawamy
+- Siva Balasundram
+- Ahmad Husni
+- Mohd Hanif
+- Christopher Boon
+
+ABSTRACT:
+The region of Al-Jabal Al-Akhdar in northeastern Libya has undergone rapid, wide-ranging changes in the land use and land cover (LULC) intensified by the conversion of natural resources for food purpose, urbanization, and other socioeconomic benefits. This study examined the use of geographic information system (GIS) and remote sensing techniques to gain a quantitative understanding of the spatiotemporal dynamics of LULC. In addition, the major factors behind LULC changes and decline of natural vegetation in the region were analyzed. A post-classification comparison approach was used to detect LULC changes in the study area between 1985 and 2017 using four Landsat images from 1985, 2000, 2010, and 2017. The observed changes were indicative of a decrease in the expanse of the natural Mediterranean forest which lost 9018 ha over 32 years, 39% of its total area, with the highest deforestation rate registered between 2010 and 2017 estimated at 513 ha. year -1 . Orchards and rain-fed agriculture lands gained 4095 ha, which matches 55% of initial area, whereas the land under irrigated crops increased by 2266 ha, about 85% of the original area. The area of urban and built-up land in 2017 was more than double in 1985 and achieved the highest urbanization rate between 2010 and 2017 at 203 ha.year -1 . Results indicate an unstable trend of bare and low vegetation lands which generally increased by about 50%. From the outcomes of this research, it is strongly recommended that urgent measures be taken to conserve the natural forest and to achieve a rational use of agricultural land in the region of Al-Jabal Al-Akhdar.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Many countries in the world are faced with rapid, wide-ranging changes in land use (e.g., human activities and various utilization of the land) and land cover (e.g., physical characteristics of the land surface) 
+Globally, land use change through the conversion of the world's forest land to other uses continues on an increasing scale due to the unprecedented growth of the human population which increases the demand for food and land 
+In Libya, LULC changes have been intensified by the conversion of natural resources for food purpose and other socioeconomic benefits which have increased land exploitation and conversion by humans both on spatial and temporal scales 
+Land cover classification is one of the most important remote sensing applications in the interests of identifying features such as land use by employing commonly multispectral satellite imagery 
+In Libya, LULC change continues without a national monitoring program 
+
+## Materials and Methods ##
+
+
+## Study Area ##
+Libya lies along the southern side of the Mediterranean coast, approximately between the latitudes of 19 • 30 N and 33 • 10 N and the longitudes of 09 • 30 E and 25 • 00 E. Libya is mostly a desert country with a dry climate and a rare vegetation cover. However, the region of Al-Jabal Al-Akhdar in the northeastern part is an exception with a relatively high annual rainfall (250-650 mm) combining intense farming areas, natural forests, and shrubs. This region is the most favored part of the country from the climatic aspect with human settlements and land use dating back to the classical period and where agricultural activities are concentrated and expanding until today. As shown in Figure 
+
+## Data Collection ##
+Satellite imagery and ancillary data were used for investigating the historical changes of LULC in the study area over 32 years from 1985 to 2017. Four Landsat satellite scenes for Path/Row 183/37 from three types of sensors were downloaded from the United States Geological Survey (USGS) website (https://earthexplorer.usgs.gov/). Table 
+The dates of imagery were defined based on events that had considerable impacts in expanding deforestation activities and LULC changes in Libya. The image of Landsat 5 Thematic Mapper (TM) This work was carried out in an area covering the middle northern part the of Al-Jabal Al-Akhdar region between the latitudes of 32 • 42'N and 32 • 56'N and the longitudes of 21 • 30 and 21 • 50 E (Figure 
+
+## Data Collection ##
+Satellite imagery and ancillary data were used for investigating the historical changes of LULC in the study area over 32 years from 1985 to 2017. Four Landsat satellite scenes for Path/Row 183/37 from three types of sensors were downloaded from the United States Geological Survey (USGS) website (https://earthexplorer.usgs.gov/). Table 
+The dates of imagery were defined based on events that had considerable impacts in expanding deforestation activities and LULC changes in Libya. The image of Landsat 5 Thematic Mapper (TM) captured in 1985 was used to represent the status before the first abolishment of the Ministry of Agriculture in 1986. Unfortunately, we could not get a usable image from the same year. The Landsat 7 Enhanced Thermal Mapper Plus (ETM+) image of 2000 was captured in May, about two months after the second abolishment of the Ministry of Agriculture, and thus was selected to picture the LULC status at the beginning of the second period. The popular uprising in Libya which started on 17 February 2011, was an important event, after which the whole country experienced dramatic changes in many political, economic, and social aspects that significantly contributed to LULC change; therefore, the Landsat 7 ETM+ image acquired on 5 September 2010, just five months before this event, was used as a reference for the beginning of the third period.
+Ancillary data comprised a collection of Ground Control Points (GCP) and a combination of digital and paper maps covering the study area including a series of topographic maps at scale (1:50,000) and land use and land cover maps of 2005. In addition, aerial photographs covering a part of the study area taken on 30 May 1979, with a scale of 1:6000, were obtained and used for identification of areas subjected to LULC change. Ground truthing points were collected using a hand-held Geographical Positioning System (GPS) through field visits organized in 2016 during the same season in which satellite images were acquired. Points were separated into two groups, one for training samples used in the classification stage and another for test samples for classification accuracy assessment.
+
+## Image Processing and Analysis ##
+Image data were treated using ENVI 5.3 and Arc-GIS 10.3 software packages. The data processing steps are given in Figure 
+Sustainability 2020, 12, x FOR PEER REVIEW 5 of 24 captured in 1985 was used to represent the status before the first abolishment of the Ministry of Agriculture in 1986. Unfortunately, we could not get a usable image from the same year. The Landsat 7 Enhanced Thermal Mapper Plus (ETM+) image of 2000 was captured in May, about two months after the second abolishment of the Ministry of Agriculture, and thus was selected to picture the LULC status at the beginning of the second period. The popular uprising in Libya which started on 17 February 2011, was an important event, after which the whole country experienced dramatic changes in many political, economic, and social aspects that significantly contributed to LULC change; therefore, the Landsat 7 ETM+ image acquired on 5 September 2010, just five months before this event, was used as a reference for the beginning of the third period. Ancillary data comprised a collection of Ground Control Points (GCP) and a combination of digital and paper maps covering the study area including a series of topographic maps at scale (1:50,000) and land use and land cover maps of 2005. In addition, aerial photographs covering a part of the study area taken on 30 May 1979, with a scale of 1:6000, were obtained and used for identification of areas subjected to LULC change. Ground truthing points were collected using a hand-held Geographical Positioning System (GPS) through field visits organized in 2016 during the same season in which satellite images were acquired. Points were separated into two groups, one for training samples used in the classification stage and another for test samples for classification accuracy assessment.
+
+## Image Processing and Analysis ##
+Image data were treated using ENVI 5.3 and Arc-GIS 10.3 software packages. The data processing steps are given in Figure 
+
+## Satellite Image Preprocessing ##
+Comparative analysis using different Landsat data (i.e., TM, ETM+, and OLI (Operational Land Imager)) can be challenging due to the instrumental errors related to ache sensor, noise from several sources, and uncertainty in scale and geometric conditions 
+To reduce radiometric errors, images were calibrated using the radiometric correction tool in ENVI 5.3, where raw data from the sensors (DNs) were converted to top-of-atmosphere reflectance. For atmospheric correction, a dark object subtraction model was applied in the current study as it is relatively the simplest and most widely used empirical method for classification and change detection applications 
+The imageries were projected to the Universal Transverse Mercator (UTM) coordinate system, Datum LGD2006, zone 34 North and corrected for geometric errors from the sources. Image-to-map rectification method was applied to geometrically correct the Landsat 8 OLI/TIRS (Operational Land Imager and Thermal Infrared Sensor) satellite image dated 11 May 2017 using well-distributed ground control points (GCPs) taken from topographic maps at a scale of 1:50000. The other three Landsat images (1985 TM, 2000 TM, and 2010 ETM+) were then referenced by performing the image-to-image registration method using the corrected Landsat 8 OLI/TIRS 2017 image as a reference image. The first-degree polynomial method and nearest neighbor resampling technique were applied when performing the geometrical rectification and image registration.
+Because of scan line corrector (SLC) failure (known as the SLC-Off problem) that occurred on May 31, 2003, for the Enhanced Thermal Mapper Plus (ETM+) sensor of Landsat 7, all Landsat 7 images collected from that date till 2013 have had line gaps appear as long lines on both sides of each image, resulting in a loss about 22% of data. However, it was found that the effect of those missing data was slight or passable in some applications, such as monitoring land use change and crop quality 
+Landsat 8 OLI and Landsat 7 ETM+ imagery were sharpened to increase the resolution from 30 m to 15 m, where the spatial information in the high-resolution panchromatic bands and the color information in the multispectral bands were merged using the nearest neighbor diffusion (NNDiffuse) pan sharpening technique in order to create a more valuable color image with high resolution that improves mapping and classification accuracy 
+
+## Image Classification ##
+Image classification is an important remote sensing technique used to catalog all pixels in an image or raw remotely sensed data into a finite number of individual LULC classes to produce beneficial thematic maps and information 
+For this study, a classification scheme was developed after Anderson et al. 
+
+## Image Classification ##
+Image classification is an important remote sensing technique used to catalog all pixels in an image or raw remotely sensed data into a finite number of individual LULC classes to produce beneficial thematic maps and information 
+For this study, a classification scheme was developed after Anderson et al. 
+There are several different methods of imagery data classification; however, unsupervised and supervised techniques are the two main approaches commonly used for mapping land cover 
+Classification accuracy was assessed using measures derived from the error matrices, and these included overall accuracy and kappa coefficient. In addition, user's and producer's accuracies were also obtained for each class, which respectively measure the commission and omission errors. The value of overall accuracy greater than 70% is regarded as an acceptable classification accuracy 
+
+## Change Detection ##
+Change detection is defined as "the process of identifying differences in the state of an object or phenomenon by observing it at different times" 
+The post-classification approach involves the classification of multiple date images separately to generate thematic maps, after which a pixel-based comparison of the corresponding classes is used to produce tables and maps of changes that have occurred 
+The magnitude of change (MC), the percentage of change (PC), and the annual rate of change (ARC) for each LULC class during each period of time were computed based on the following equations:
+ARC ha. year
+where A i is the class area (ha) at the initial time, A f is the class area (ha) at the final time, and n is the number of years of the time period.
+
+## Results and Discussion ##
+
+
+## Accuracy Assessment ##
+The use of maximum likelihood classifier to categorize the Landsat images (TM, ETM+, and OLI/TIRS) has produced maps showing the distribution of the five prevalent LULC classes in the study area for the years 1985, 2000, 2011, and 2017. Accuracy assessment was carried out for the classified maps of 2010 and 2017 to examine the agreement between the produced maps and what actually exists on the ground. Table 
+The LULC classification of Landsat ETM+ 2010 and OLI 2017 recorded the largest commission and omission error within the BLV, IC, and OR classes (Figure 
+
+## Year ##
+Overall Accuracy (%) The classified maps of 2010 and 2017 achieved overall accuracy values of 81% and 83%, respectively, indicating that both LULC maps met the criterion. Furthermore, values of the kappa coefficient for both the two maps were more than 0.75, indicating good agreements. Results also showed that means of commission and omission errors were less than 20%, inferring an acceptable classification accuracy.
+The LULC classification of Landsat ETM+ 2010 and OLI 2017 recorded the largest commission and omission error within the BLV, IC, and OR classes (Figure 
+
+## Supervised Classification ##
+The processing and supervised classification of Landsat imagery (TM, ETM+, and OLI/TIRS) acquired in 1985, 2000, 2010, and 2017 produced four classification maps for the five LULC types prevalent in the study area (Figure 
+
+## Supervised Classification ##
+The processing and supervised classification of Landsat imagery (TM, ETM+, and OLI/TIRS) acquired in 1985, 2000, 2010, and 2017 produced four classification maps for the five LULC types prevalent in the study area (Figure 
+
+## Supervised Classification ##
+The processing and supervised classification of Landsat imagery (TM, ETM+, and OLI/TIRS) acquired in 1985, 2000, 2010, and 2017 produced four classification maps for the five LULC types prevalent in the study area (Figure 
+
+## LULC Change Detection ##
+The outcomes of the post-classification comparison give an account of the amount and type of change that has taken place for each LULC class. Areal change of LULC types in all imageries was obviously visible and occurred as either an expansion or a decline between sequential dates. Attempts to further study these outcomes can give insight to the land use behavior, pattern, and rate at which the changes occur in the study area in particular and in the region of Al-Jabal Al-Akhdar in general. This essential information would be vital for development planners and decision makers.
+Change matrices and statistics for the periods of 1985-2000, 2000-2010, and 2010-2017 were generated from the comparison of classified maps of 1985, 2000, 2010, and 2017 and will be discussed in detail in the following sections.
+
+## LULC Change between 1985 and 2000 ##
+In 1985, the NMF class constituted the major type of LULC in the study area at 64.17% of the total area, followed by OR (20.62%), IR (7.44%), and UB (4.79%), whereas BLV only covered 3% and occupied the smallest area. During the 15-year time frame from 1985 to 2000, the area covered by NMF declined by 2724 ha, viz. 11.79% of the initial area, while other LULC types increased at different rates. Table 
+It is important to remember that, in 1986, under the previous political regime, the Ministry of Agriculture in Libya was abolished with all its departments and various control and enforcement agencies at the national level including the forest guard; thus, the agricultural sectors in all regions regrouped under the management of the sector directors, and this encouraged forests encroachment and failure of protection efforts. The weakness of institutions and absence of accountability among other factors encouraged the local people to engage in forest encroachment by either clearance of vegetation cover for agricultural expansion or by cutting trees for gathering firewood, especially for making the popular Libyan bread, in addition to producing charcoal for heating, barbecue, and cooking. In addition, some landowners have tried exploiting forest land in an attempt to regain their lands that were confiscated and turned into state property by law (No. 142 of 1970). Although the Ministry of Agriculture was reinstated in 1990 and a new forest law was enacted in 1992 to correct the accesses committed, the disaster of forest loss had already taken place and its negative effects were visible and tangible.
+On the other hand, forests in Libya, like others in the Mediterranean region, which is one of the most affected regions by forest fires, have suffered excessive degradation by fires which are mainly due to manmade activities 
+The area of agricultural land in 2000, in comparison to 1985, increased by 2050 ha, where the area of OR increased from 7426 ha (20.62%) to 8659 ha (24.05%) with an annual rate of 82 ha.year -1 , while the area of IC increased from 2679 ha (7.44%) to 3496 (9.71%) with an annual rate of 55 ha.year -1 (Table 
+Libya has given the agricultural sector the largest share of the allocation of its transformation agenda through developmental projects during the 1970s and 1980s such as vertical and horizontal expansion in crop and fodder production. The region of Al-Jabal Al-Akhdar received a large share of these allocations that were used to reclaim large tracts of land estimated at about 160,000 ha. New farms were established in the Al-Jabal Al-Akhdar region to produce fruit and grain crops to attain self-sufficiency in food production; however, substantial areas of natural cover have been left without change for conservation purposes or to be used for natural grazing, particularly on hilly sites. The local people later exploited these marginal unused areas for establishing more private fields to produce cereal crops as well as fruits and irrigated vegetables in order to capitalize on the increasingly lucrative market.
+The results shown in Table 
+produce cereal crops as well as fruits and irrigated vegetables in order to capitalize on the increasingly lucrative market.
+The results shown in Table 
+
+## LULC Change between 2000 and 2010 ##
+During the 10 years between 2000 and 2010, more forest land was cleared or changed to other land uses. NMF areas, which amounted to 20,385ha (56.61%) in 2000, decreased to 17,685 ha (49.11%) in 2010, with an annual rate of 270 ha.year -1 (1.32%) (Table 
+
+## LULC Change between 2000 and 2010 ##
+During the 10 years between 2000 and 2010, more forest land was cleared or changed to other land uses. NMF areas, which amounted to 20,385ha (56.61%) in 2000, decreased to 17,685 ha (49.11%) in 2010, with an annual rate of 270 ha.year -1 (1.32%) (Table 
+During the second period, each of the OR and IC classes increased by 1214 ha, with an annual rate of 121 ha.year -1 (Table 
+Population growth and the consequent increase in food demand encouraged farmers in the study area to extend their cultivated areas through the clearance of more forests in order to benefit from the increased profits by marketing the agricultural produce in neighboring towns and cities as well as in the remote areas in the west of the country. Drilling more underground wells by the local population in the study area, either at their own expense or through state support in form of agricultural and pastoral loans, has greatly augmented the rate of deforestation and land conversion for irrigated agriculture.
+Classification results shown in Table 
+The increase in urban expansion might be attributed to population growth within the region of Al-Jabal Al-Akhdar through the period 1995-2006 (Figure 
+The area of BLV in the period between 2000 and 2010, unlike in the previous period 
+
+## LULC Change between 2010 and 2017 ##
+The results shown in Table 
+It should be recalled that the deforestation during the third period was induced by some factors entirely unlike those during the previous periods from 1985 to 2010. Presently, increased deforestation might be attributed to a of factors including the total breakdown of the Al-Qaddafi regime in 2011 and the accompanying chaos and spread of weapons, the inability of subsequent governments to prevent forest clearance, the lack of housing projects, and the significant increase in land price. Some citizens exploited the fall of the government regime, the cessation of regulatory agencies, and the complete absence of agricultural policing to clear more forest land for agricultural expansion or to sell cleared land building houses or construction of holiday homes and resorts.
+The supervised classification analysis indicated an increase in the area of agricultural land in the study area during the third period (2010-2017), which was estimated at 1883 ha, where the area of agricultural land use increased from 14,583 ha (40.50% of total area) in 2010 to 15,466 ha (44.72% of total area) in 2017 (Table 
+The results shown in Table 
+During the third period, UB extended from 6.75% to 10.70% of the total land use and had an annual rate of increase of 8.36%, which was much higher compared to the previous periods. The UB area increased from 2430 ha in 2010 to 3852 ha in 2017, achieving a total increase of 1422 ha and representing about 58.52% of the initial area. The annual rate of increase during this period which was estimated at 203 ha.year -1 (Table 
+Results in Table 
+Several factors were responsible for the increase in the urban expansion in the Al-Jabal Al-Akhdar region. The most important factors are administrative causes that are related to the state policy, the weak application of legislation, and urban laws relating to the protection of agricultural and forest lands. Furthermore, population concentration in cities is not in tandem with their needs for residential schemes due to poor planning and organization which have contributed to the emergence of social and financial motivation for unplanned urban sprawl represented in the dominance of some tribes on large areas of land who capitalized on the housing deficit and the lack of new housing projects to sell land as residential plots without approval from the state. On the other hand, after the fall of the previous political regime in 2011, some people misappropriated state funds and bought lands in or around cities and then constructed residential or holiday houses as a means of money laundering. Additionally, some people from outside the district, particularly displaced citizens and migrants from some Arabic countries who left their homelands fleeing the menace of ongoing wars and armed conflicts, have shown interest in acquiring land and building houses to live in the study area. These people perceive the study area as comparatively safer than other regions in Libya, so land ownership is regarded as a means of attaining stability.
+Additionally, because the region of Al-Jabal Al-Akhdar includes the finest places for tourism and recreation in Libya, the demand for accommodations for tourists and visitors has increased, which encouraged some citizens to establish more holiday homes and resorts in the absence of government control and stringent regulations.
+The results in Table 
+On the other hand, forest fires were a serious occurrence that led to the increase in the area of BLV land and to the decline of natural vegetation. Government reports indicated a significant increase in forest fires in Libya after 2011. In May 2013, after a dry season with severe shortage of rainfall and severe heat wave, a total of 5924 ha was destroyed in Libya due to more than seven fires of at least 40 ha, most of which occurred in the Al-Jabal Al-Akhdar region, which includes a single very large fire of more than 3300 ha 
+The increased demand for firewood during the years following the Libyan uprising as a result of the wars which broke out in some Libyan cities was another factor that contributed to the decline in forest cover and to the increase in BLV. A severe shortage of cooking gas and kerosene in addition to electricity outage were common during the period after 2011. This has forced citizens to seek alternatives for heating and cooking; regrettably, they found cutting forest trees to be the easier option for gathering firewood and for producing charcoal for use or selling in local markets. Cutting forest trees is a negative phenomenon that can lead to stripping plenty of spaces of their natural vegetation cover. In fact, in such a semiarid climate, the loss of natural trees is difficult to recover due to the inability of the existing tree species in the region to regenerate naturally in addition to other limiting factors such as insufficient moisture due to frequent droughts and soil shallowness resulting from increased erosion rate after removal of protective vegetation.
+
+## Conclusion ##
+Remote sensing is an effective tool for mapping natural resources at a regional level. The outcomes of the investigation enumerated in this research highlight the importance of satellite digital image processing with the aid of GIS technology in mapping and detecting LULC changes. Maximum likelihood supervised classification of Landsat TM5, ETM+7, and OLI8 imagery and post-classification comparison approach can be used to predict and obtain fairly accurate maps of LULC changes. The overall accuracy and kappa coefficient values of the LULC classifications achieved in this research is encouraging. It was generally observed that there was a significant decline in natural Mediterranean forest (NMF) and a corresponding increase in other land uses such as orchards and rain-fed agriculture (OR), irrigated crops (IC), urban and built-up lands (UB), and bare and low vegetation (BLV). The changes observed were indicative of a decrease in the expanse of NMF land, which lost about 39% of its total area over the 32 years, and the highest deforestation rate was registered in the third period (2010-2017). The high deforestation was generally a result of citizen exploitation of the weakness of the state's institutions post 2011 revolution in addition to the frequency of forest fires. Most of the changed area of NMF were converted for agricultural land use. Land under the OR class increased by about 55% and achieved a greater rate of increase during the third period, whereas the land under the IC class increased by about 85% with a higher rate of increase achieved between 2000 and 2010, and the lowest rate was recorded during the third period from 2010 to 2017. The urban expansion in the study area was mostly at the expense of forest and agricultural lands. The annual rate of urbanization during the third period was approximately 10 and 5 times more than those recorded in the first period 
+Indeed, if the present trend of deforestation continues, the forest in the study area will lose more than 50% of its current natural forest cover over the next 15 years. Deforestation in the study area and Al-Jabal Al-Akhdar in general is an important environmental challenge.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Monitoring land-cover changes: A comparison of change detection techniques
+   Authors: 
+   Date: 1999
+
+2. A study of change in agricultural and forest land in Gwalior city using satellite imagery
+   Authors: , , , 
+   Date: 2017
+
+3. Monitoring and predicting land use change in Tripoli Metropolitan City using an integrated Markov chain and cellular automata models in GIS
+   Authors: , 
+   Date: 2014
+
+4. Time series land cover mapping and change detection analysis using geographic information system and remote sensing
+   Authors: , , , , , , , 
+   Date: 2018
+
+5. Changing consumption patterns-Drivers and the environmental impact
+   Authors: , , 
+   Date: 2018
+
+6. Land use change around protected areas: Management to balance human needs and ecological function
+   Authors: , , , , 
+   Date: 2007
+
+7. Global Forest Resources Assessment 2015: How are the World's Forests Changing?
+   Authors: 
+   Date: 2016
+
+8. Analysis on the causes of deforestation and forest degradation in Liberia: Application of the DPSIR framework
+   Authors: , , , , 
+   Date: 2014
+
+9. Is there a forest transition? Deforestation, reforestation, and development 1
+   Authors: 
+   Date: 1989
+
+10. Spatially differentiated trends in urbanization, agricultural land abandonment and reclamation, and woodland recovery in Northern China
+   Authors: , , , 
+   Date: 2016
+
+11. Forest transitions: Towards a global understanding of land use change
+   Authors: , , , , , , 
+   Date: 2005
+
+12. A requiem for the southern regionalists: Reforestation in the South and the uses of regional social science
+   Authors: , 
+   Date: 1996
+
+13. Logging the Globe. Montreal and Kingston
+   Authors: 
+   Date: 1995
+
+14. Land conversion to urban use: Its impact and character in Libya
+   Authors: 
+   Date: 1983
+
+15. Nature and causes of land degradation and desertification in Libya: Need for sustainable land management
+   Authors: , , 
+   Date: 2013
+
+16. Deforestation in Jefara Plain, Libya: Socio-Economic and Policy Drivers (Algarabulli District Case Study)
+   Authors: 
+   Date: 2015
+
+17. Factors Affecting Recent Vegetation Change in North-East Libya
+   Authors: 
+   Date: 2017
+
+18. Application of Remote Sensing and GIS In Change Detection in Green Mountian Forest, Libya
+   Authors: , 
+   Date: July 2018. 2018
+
+19. Studying and Evaluating the Natural Vegetation in Al Jabal Al Akhdar Area
+   Date: 2005
+
+20. Infrared Spectral Measurements in Remotes Sensing and GIS to asses factors controlling Flora diseases in Jabal Al Akhdar, Libya
+   Authors: , , , , 
+   Date: 2014
+
+21. Insect Herbivores and Neighbourhood Effects in Plant Communities of Al Jabal Al Akhdar
+   Authors: 
+   Date: 2011
+
+22. The Important Local and Imported Trees and Shrubs in Al-Jabal Al-Akhdar Region, Libya; Aldar Alacademya for printing, writing
+   Authors: , 
+   Date: 2006
+
+23. A comparative analysis on intensification and extensification in Mediterranean agriculture: Dilemmas for LFAs policy
+   Authors: 
+   Date: 2000
+
+24. Libya: Country report
+   Authors: , , , , , 
+   Date: June 1996
+
+25. Using TM and ETM+ data to determine land cover/land use changes in the Libyan Al-jabal Alakhdar region
+   Authors: , 
+   Date: 2010
+
+26. Comparison of land cover image classification methods
+   Authors: , , 
+   Date: 2012
+
+27. Continuous change detection and classification of land cover using all available Landsat data
+   Authors: , 
+   Date: 2014
+
+28. MODIS Collection 5 global land cover: Algorithm refinements and characterization of new datasets
+   Authors: , , , , , , 
+   Date: 2010
+
+29. An assessment of some factors influencing multispectral land-cover classification
+   Authors: , 
+   Date: 1990
+
+30. Comparison of classification algorithms and training sample sizes in urban land classification with Landsat thematic mapper imagery
+   Authors: , , , , 
+   Date: 2014
+
+31. Evaluation of Land Development Impact on a tropical Watershed Hydrology Using Remote Sensing and GIS
+   Authors: , , , 
+   Date: 2003
+
+32. Distribution and dynamics of mangrove forests of South Asia
+   Authors: , , , , , , 
+   Date: 2015
+
+33. Digital change detection methods in ecosystem monitoring: A review
+   Authors: , , , , 
+   Date: 2004
+
+34. Atmospheric correction for satellite remotely sensed data intended for agricultural applications: Impact on vegetation indices
+   Authors: , , , , , , , , , 
+   Date: 2010
+
+35. Image-based atmospheric corrections-Revisited and improved
+   Authors: 
+   Date: 1996
+
+36. Preliminary Assessment of the Value of Landsat 7 ETM+ Data following Scan Line Corrector Malfunction; US Geological Survey
+   Authors: , , , , , , , , , 
+   Date: 2003
+
+37. A review of remote sensing image fusion methods
+   Authors: 
+   Date: 2016
+
+38. Effect of pan-sharpening multi-temporal Landsat 8 imagery for crop type differentiation using different classification techniques
+   Authors: , , 
+   Date: 2017
+
+39. Landsat images for assessment of the impact of land use and land cover changes on the Barekese catchment in Ghana
+   Authors: , , , 
+   Date: 2008
+
+40. A Land Use and Land Cover Classification System for Use with Remote Sensor Data
+   Authors: , , , 
+   Date: 1978
+
+41. Multi-feature joint sparse model for the classification of mangrove remote sensing images
+   Authors: , , , 
+   Date: 2017
+
+42. Improving Landsat and IRS image classification: Evaluation of unsupervised and supervised classification through band ratios and dem in a mountainous landscape in Nepal
+   Authors: , 
+   Date: 2009
+
+43. Assessment and comparison of classification techniques for forest inventory A case study using IRS-ID imagery
+   Authors: , 
+   Date: 2009
+
+44. Accuracy Assessment of Supervised and Unsupervised Classification Using Landsat Imagery of Little Rock, Arkansas
+   Authors: 
+   Date: 2014
+
+45. Crop Area Estimation for Bundi Tahsil of Rajasthan using Remote Sensing and GIS Technique
+   Authors: 
+   Date: January 2011
+
+46. Rapid maximum likelihood classification
+   Authors: , 
+   Date: 1991
+
+47. Land use classification and change detection by using multi-temporal remotely sensed imagery: The case of Chunati wildlife sanctuary
+   Authors: , , , 
+   Date: 2018
+
+48. Assessing the Impact of Land Cover Changes on Surface Urban Heat Islands with High-Spatial-Resolution Imagery on a Local Scale: Workflow and Case Study
+   Authors: , , , 
+   Date: 2019
+
+49. A review of assessing the accuracy of classifications of remotely sensed data
+   Authors: 
+   Date: 1991
+
+50. Remote Sensing and Image Interpretation
+   Authors: , , 
+   Date: 2008
+
+51. The Measurement of Interrater Agreement, in Statistical Methods for Rates and Proportions
+   Authors: , , 
+   Date: 2003
+
+52. Digital change detection techniques using remotely-sensed data
+   Authors: 
+   Date: 1989
+
+53. Remote sensing and land cover area estimation
+   Authors: 
+   Date: 2004
+
+54. Quantitative comparison of change-detection algorithms for monitoring eelgrass from remotely sensed data
+   Authors: , 
+   Date: 1998
+
+55. Change detection techniques
+   Authors: , , , 
+   Date: 2004
+
+56. Status of land cover classification accuracy assessment. Remote Sens. Environ
+   Authors: 
+   Date: 2002
+
+57. Applying post classification change detection technique to monitor an Egyptian coastal zone
+   Authors: 
+   Date: 2016
+
+58. Analysis of Land Use Land Cover Change in Ikeja, Lagose State. Nigeria Using Remote Sensing and GIS Techniques
+   Authors: , , 
+   Date: 2016
+
+59. Introductory Digital Image Processing: A Remote Sensing Perspective
+   Authors: 
+   Date: 2005
+
+60. Monitoring land use/cover change using remote sensing and GIS techniques: A case study of Hawalbagh block, district Almora
+   Authors: , 
+   Date: 2015
+
+61. Land use change mapping and analysis using Remote Sensing and GIS: A case study of Simly watershed
+   Authors: , , , 
+   Date: 2015
+
+62. Impact of Land Use/Land Cover Change on Hydrological Components in Chongwe River Catchment
+   Authors: , , 
+   Date: 2019
+
+63. Evaluating Land Use and Land Cover Change in the Gaborone Dam Catchment, Botswana, from 1984-2015 Using GIS and Remote Sensing
+   Authors: , , , 
+   Date: 2019
+
+64. The effect of forest fires on physical properties and magnetic susceptibility of semi-arid soils in northeastern
+   Authors: , , 
+   Date: 2014
+
+65. Bureau of Statistics and Census Libya
+   Date: 15 June 2019
+
+66. Combating desertification in the Negev: Dryland agriculture vs. dryland urbanization
+   Authors: , 
+   Date: 2004
+
+67. Towards a National Strategy for the Sustainability of Natural Resources and Enhancing Food Security in Libya, 1st ed
+   Authors: 
+   Date: 2013
+
+68. Forest cover in Tunisia before and after the 2011 Tunisian revolution: A spatial analysis approach
+   Authors: , , , 
+   Date: 2018
+
+69. Drivers of deforestation and forest degradation: A synthesis report for REDD+ policymakers
+   Authors: , , 
+   Date: 2012
+
+70. Forest fires in Europe, Middle East and North Africa
+   Authors: , , , , , , , , , 
+   Date: 2013. 2014
+

@@ -1,0 +1,1558 @@
+================================================================================
+TITLE: Land Use and Land Cover in Tropical Forest: Global Research
+================================================================================
+
+AUTHORS:
+- Andrés Velastegui-Montoya
+- Néstor Montalván-Burbano
+- Gina Peña-Villacreses
+- Aline De Lima
+- Gricelda Herrera-Franco
+
+ABSTRACT:
+Tropical ecosystems play an important role in the environment. They provide multiple ecosystem services, such as carbon capture and sequestration, food supply, and climate regulation. Studying land use and land cover change makes it possible to understand the land's alterations associated with deforestation, degradation, erosion, soil desertification, and biodiversity loss. The objective of this study is to evaluate the different approaches to land use and land cover research in tropical forests based on the evolutionary and qualitative analysis of the last 44 years of scientific production. The data were collected using the Scopus database and was based on the PRISMA methodology's four phases: (i) identification, (ii) screening, (iii) eligibility, and (iv) included. The results showed a significant increase in the study of land use and land cover consolidated in 4557 articles, with contributions from 74 countries, revealing 14 themes and seven lines of research. Core research areas such as biodiversity, land use, and conservation exist due to the ongoing interest in the value of tropical forests and their response to climate change. The present research allowed us to consider future study topics such as the relationship between sustainable development goals and land use and cover in tropical forests, as well as the evaluation of the environmental impact of economic activities in forests.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Tropical forests differentiate between neotropical (New World) and paleotropical (Old World) 
+Tropical forests are classified according to their elevation, annual rainfall, and degree of seasonality. They fall into four main types: ever-humid, semi-green, dry, and montane deciduous forests 
+The Amazon houses approximately 30% of the world's tropical forests 
+Tropical forests play a vital role in the conservation of biodiversity, climate change, and the regulation of the water cycle in the region 
+Land use and land cover (LULC) changes directly or indirectly transform the quality of the tropical forests and the resources they provide 
+Land use and land cover is commonly used to describe the Earth's surface coverage 
+LULC studies can help manage natural resources sustainably 
+Forests 2022, 13, 1709 3 of 34 sustainable practices for the development of agriculture 
+Tropical forests have been the subject of studies regarding LULC due to their ecological, economic, and social importance. In these studies, various areas are analyzed; some focus on the relationship between LULC and climate change and its effects on the environment 
+The constant growth of published information in the form of academic texts requires knowledge of the tools to measure the performance of the literature 
+Over time, various studies on land cover and land use change in tropical regions have taken place, but only a few show this area's growth through bibliometric analyses. Among those studies, there is the study of the causes and effects of fires in tropical forests 
+This study has five sections: the first section, or introduction, discusses the importance of tropical forest land use change, as well as the objective of the study; the second section contains materials and methods that show the database used, as well as the data search and processing; the third section includes results, detailing the main findings and their analysis; the fourth section focuses on the discussion, where the implications of the results are analyzed; and the fifth section includes the conclusions and limitations of the study.
+
+## Materials and Methods ##
+
+
+## Study Area ##
+The study area comprises tropical forests located between the Tropics of Cancer (23.44 • N) and Capricorn (23.44 • S) (https://pb463.users.earthengine.app/view/fipnee202 0, accessed on 5 August 2022) 
+
+## Methods: Data Processing ##
+Academic literature can be analyzed and explored through systematic and bibliometric analyses. The systematic approach includes rigorous techniques to make the data collection procedure transparent and easily replicated, thus reducing the bias in the information obtained 
+Bibliometric analysis can effectively describe a discipline's state of knowledge, characteristics, and trends 
+Based on the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) methodology (Figure 
+Based on the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) methodology (Figure 
+
+## Stage I: Basis Query ##
+This research aims to evaluate the land cover and land use changes in tropical forests worldwide through the bibliometric analysis of scientific publications. The search terms used are related to land use 
+Based on the above, the defined criteria aim to answer the following research questions (RQ):
+
+## • ##
+RQ1: What are the scientific production trends regarding LULC in tropical forests? • RQ2: What are the most relevant publications and the countries that contributed to the growth of this field of study? 
+
+## Stage I: Basis Query ##
+This research aims to evaluate the land cover and land use changes in tropical forests worldwide through the bibliometric analysis of scientific publications. The search terms used are related to land use 
+Based on the above, the defined criteria aim to answer the following research questions (RQ):  The data collection occurred exclusively using the Scopus database, with a defined period from 1978 to 2021. The year 1978 was selected because it was when the first articles appeared in the database and the year 2022 was excluded, given that it is in progress at the time of this research.
+
+## Stage II: Data Search and Collection ##
+Bibliometric studies generally need appropriate databases with complete and reliable information 
+The article sample analyzed in this study was selected based on a search carried out in February 2022 in the Scopus database using the topic search: TS = ((TITLE-ABS-KEY ("land use") OR TITLE-ABS-KEY ("land cover") OR TITLE-ABS-KEY ("land use change"))) AND ((TITLE-ABS-KEY ("amazon*") OR TITLE-ABS-KEY ("rain forest*") OR TITLE-ABS-KEY ("tropical forest*"))) AND (EXCLUDE (PUBYEAR, 2022)). The search obtained a total of 5557 documents.
+Documents that went through a general review process, such as editorials, books, and conference papers, were excluded 
+
+## Stage III Software and Data Selection ##
+Once collected, the data from the Scopus database were exported to both a Microsoft Excel spreadsheet and a text document for its respective treatment 
+The Microsoft Excel Office 365 MSO software (Version 2209) performed the descriptive statistical analyses of the studied variables 
+The bibliometric maps were built with the VOSviewer tool to visually present the statistical results related to the distribution of authors, institutes, countries/territories, and keywords 
+
+## Stage IV Data Interpretation ##
+During the collected data analysis, two bibliometric approaches were used. The first bibliometric approach focuses on the performance of scientific production. The second bibliometric approach involves studying its intellectual structure through bibliometric mapping 
+Performance analysis evaluates the impact of the scientific publications that make up this structure by contrasting information related to the number and year of publications, authors, affiliations, and journals 
+
+## Results ##
+
+
+## Performance Analysis ##
+
+
+## Scientific Production Analysis (RQ1) ##
+The scientific production of LULC in tropical forests comprises 4557 documents and 206,083 citations over 
+
+## Period I (1978-1989) ##
+The first twelve years show the beginning of scientific production within the prescribed period of study. In this period, there are 65 publications (1.43% of the documents) that add up to 2942 (1.43%) citations. Before the 1980s (1978 and 1979), articles were published on the causes and consequences of rotational cultivation and population pressure in tropical areas 
+Period 
+Period 
+During this period, there was an advancement in environmental and climate debates, Period 
+Historically, it is a consolidation period for environmental research, mainly due to online information, storage platforms, and their public availability for consultation. The "US Geological Survey" [166] site is highlighted during this time because it facilitated an expressive set of information involving the Earth's surface mapping. That data will become a part of the National Aeronautics and Space Administration (NASA)'s EarthData 
+Forests 2022, 
+In this phase, the Google Earth system was widely used, popularizing the use of geographic information systems in people's daily lives, through the historical analysis of images, providing a quick view of the changes in vegetation cover and the effects of deforestation. Continuing with the Google platform, the Google Engine tool makes the processing of digital images and land cover change analysis independent from commercial programs. In addition, it marks the current advancement in geotechnologies, including drone imaging, which generates high spatial resolution imagery applicable to environmental surveillance and enforcement.
+Although Figure 
+
+## Top 10 Frequently Cited Documents (RQ2) ##
+Citation evaluation in bibliometric analysis is an indicator of the quality and impact of the research 
+The American Journal of Science published the first two most-cited papers. In the first article, the authors use satellite information to map the change in forest cover worldwide. The article verified that tropical forests experienced a significant forest cover loss 
+The annual citation index is a parameter that establishes the relationship between the total number of citations per article and their respective publication time 
+Figure 
+The country with the highest number of publications and citations is the United States, with 1893 and 127,366, respectively. Brazil and the United Kingdom rank second and third with 1591 and 610 documents, respectively. In addition, these three countries have published 87 investigations on the subject, with a closer relationship between the United States and Brazil since they have 503 documents together.
+From the collaboration between the United States and Brazil, we can highlight publications that study the Brazilian Amazon land cover change through satellite images, as well as the impacts of deforestation, the ecology of tropical forests due to fragmentation by agricultural activities, and the analysis of public policy applications 
+Figure 
+From the collaboration between the United States and Brazil, we can highlight publications that study the Brazilian Amazon land cover change through satellite images, as well as the impacts of deforestation, the ecology of tropical forests due to fragmentation by agricultural activities, and the analysis of public policy applications 
+Table 
+
+## Bibliometric Mapping Analysis ##
+Bibliometric mapping gives access to visual representations in the form of an analysis unit network (authors, keywords, journals, or countries), facilitating the observation of their development and interaction in a network made up of nodes and grouped in clusters 
+
+## Co-Occurrence Author Keyword Network (RQ4) ##
+This analysis allows the detection of central research topics and themes and their trends in the field of study 
+Cluster 1 (red), "Tropical forest, biodiversity, and fragmentation", presents 69 nodes with 1490 occurrences. Relevant topics are tropical forests, biodiversity, and rainforest. In this cluster, there are articles related to the value of tropical forests and their biodiversity 
+Cluster 2 (green), "Land use change", consists of 69 nodes and 1360 occurrences. The publications in this cluster present research on soil structure changes 
+Cluster 2 (green), "Land use change", consists of 69 nodes and 1360 occurrences. publications in this cluster present research on soil structure changes 
+In cluster 3 (blue), "Remote sensing, land cover, and GIS", the terms "rem sensing" and "Landsat" predominate. This cluster presents studies using remote sens In cluster 3 (blue), "Remote sensing, land cover, and GIS", the terms "remote sensing" and "Landsat" predominate. This cluster presents studies using remote sensing to determine forest changes over time 
+Cluster 4 (yellow) is "Land use and indigenous people". This cluster has 54 nodes and 1019 occurrences. The predominant themes are land use and agriculture. In addition, it includes articles referring to the economic value of non-timber products and the risk they face due to deforestation 
+Cluster 5 (purple), "Amazon, deforestation, and public policy", shows land use dynamics in the Amazon 
+Cluster 6 (sky-blue) is "Ecosystem service, logging, and forest management". The main terms in this cluster are pasture and ecosystem service. In this group, 45 nodes with 641 occurrences are presented and include research on the importance of ecosystem services 
+Cluster 7 (orange) is "Fire, human disturbance, and climate". In this cluster, there are 39 nodes and 430 occurrences. These topics are mainly related to articles that study the change of forest cover due to fires 
+Cluster 8 (brown) is "Secondary forest and carbon cycle". The main characteristics of this cluster are research on biodiversity 
+Cluster 9 (violet) is "Climate change, land cover change, and water cycle". In this cluster, the central terms are climate change and land cover change, with 32 nodes and 603 occurrences. The effects of climate change and its impacts 
+Cluster 10 (pink), "Land use and land cover change, disturbance", includes 32 nodes with 510 occurrences. Among the most common topics are carbon and nitrogen dynamics due to land use 
+Clusters 11 to 14 (light green, mustard, light blue, and lilac) are small clusters with familiar topics, which is why they have been grouped under the name "Global change, protected area, and Amazon basin". This cluster contains 74 nodes with 162 occurrences. The central topics include publications referring to the general analysis of the Amazon basin, its different land uses and changes in vegetation structure 
+
+## Co-Citation Analysis (RQ4) ##
+This analysis makes it easier to determine the papers that are more likely to be related or belong to a similar study area 
+
+## Author Co-Citation Analysis (ACA) ##
+This analysis aims to show the structure and connections of the most frequently cited authors 
+authors 
+Cluster 2 (green) is the "Carbon and nitrogen cycle". This cluster features 733 authors who discuss topics relating to carbon and nitrogen reserves, emissions, and sequestration. For example, Sandra Brown (1283) makes estimates of carbon density, biomass, and carbon pools [178, 
+Cluster 3 (blue), "Wildfires and land use dynamics", presents 720 authors who focus on studying the effect of fires in tropical forests and the impacts of land use change. The most relevant publication by Daniel Nepstad (2640) focuses on the positive and negative effects of forest fires 
+Cluster 4 (yellow), "Rainforest", includes 694 authors mainly studying tropical forests and their dynamics and interactions. Among the most relevant authors is Carlos Nobre (1369), who presents studies on changes in the Amazon due to logging and fires 
+Cluster 5 (purple), "Remote sensing and monitoring", which contains 468 authors, deals with issues related to estimating carbon cycle products and changes in coverage visualized through satellite images. Gregory Asner (1580) studies estimates of biomass and greenhouse gas emissions 
+Cluster 6 (sky-blue), "Mining and historical LULC", has 96 authors, and the publications are related to mining activity in tropical forests and LULC multi-temporal analysis. Timothy Killeen (398) studies land use biodiversity evolution 
+Cluster 7 (orange) and Cluster 8 (brown), "Logging, fire, and evaporation", have an author in each of their clusters. Jeffrey Gerwing 
+Journal Co-Citation Analysis (JCA) This analysis considers the similarity of the journals according to the received reference patterns, where two journals are cited by several documents that are related to one another 
+Figure 
+Cluster 2 (green), "Environment, land use, and development", includes 144 journals totaling 28,462 citations. The journals of this cluster stand out for their topics encompassing various aspects of the environment, and land use and its ecological, economic, social, and political implications. Among the journals, we find: Agriculture, Ecosystems and Environment (the Netherlands, 1645 citations), Bioscience (the United States, 1532 citations), World Development (the United Kingdom, 1249), Ecological Economics (the Netherlands, 1138 citations), and Land Use Policy (the United Kingdom, 1038 citations).
+Cluster 3 (blue), "Soil and biogeochemistry", contains 140 journals, totaling 22,566 citations. Usually, the journals that belong to this group present publications on the study of soil structure, soil dynamics, and biogeochemical cycles, their function, and interactions. All of the topics mentioned in each cluster are related to tropical forests. They are made up of different biological structures, as well as topics ranging from the biodiversity, ecology, and conservation of tropical forests to the dynamics of the different environmental matrices.
+
+## Discussion ##
+This paper investigates the scientific trends and evolution of LULC research in tropical forests. Regarding environmental sciences, this bibliometric research adds a new perspective to the current forest situation by identifying the countries that contribute the most to LULC studies. At the same time, the management, conservation, and implementation of public policies that help control environmental problems such as global warming, deforestation, and forest degradation are increasingly crucial for researchers, world leaders, and organizations. For this reason, a bibliometric analysis can serve as a starting point to determine the topics of most significant interest in this field of study.
+Tropical forests play an important ecological, social, and economic role. In addition to having rich biodiversity, they are home to multiple human communities and providers of various ecosystem services 
+On the other hand, Brazil has a considerable extension of tropical forests. Their participation is important due to their interest in Amazon conservation, which represents approximately 60% of the Brazilian territory 
+The importance and conservation of tropical forests and their carbon reserves and emissions belong to topics analyzed through satellite images. These images also facilitate the exploration of different land uses, land cover, and the carbon balance 
+The Sustainable Development Goals (SDGs) established in 2015 would also benefit the development and conservation of tropical forests. Several researchers analyzed the relationship of LULC with the SDGs in these ecosystems. These studies include public policy proposals to allow the sustainable management of tropical forests, coverage mapping 
+Remote sensing has been a tool used since the beginning of LULC research in tropical forests. Since 1972, Landsat satellite data has made it possible to analyze changes in global coverage, such as deforestation and the expansion of agricultural and urban areas. Starting in 2008, corrections were made regarding the errors presented in the datasets to improve their coverage 
+Despite continuous advances in LULC research techniques in tropical forests, forest degradation retains various unknows in many human impact analyses 
+The three bibliometric maps and intellectual structure analyses allowed us to analyze the relationships between the different topics and schools of thought:
+
+## • ##
+First, the keyword co-occurrence analysis made it possible to analyze the most prominent themes (Figure 
+
+## • ##
+The author co-citation analysis reveals the interconnections between different authors (Figure 
+This research facilitates the analysis of the interrelationships between researchers, countries, and schools of thought where the different areas of LULC in tropical forests are studied. The development of this theme aims at the continuous understanding of the LULC impacts using newer mathematical, computer, and technological models, satellite missions 
+An integrated analysis indicates that the scientific research on tropical forests has a greater focus on the Amazon region, which may be related to the fact that this area represents the largest tropical forest in the world, as well as to its fundamental role in conservation and in the fight against climate change. It also concerns land use and land cover alterations, which South American institutions and other countries are widely investigating, particularly in the United States and Europe. There is an inequality between Brazil and the other Amazonian countries regarding scientific production, since the Andean countries have a much lower percentage of research. This inequality creates a differentiated understanding of Amazonian problems and decreases the use of these studies in the development of public policies to control deforestation throughout the region.
+Another important region for tropical forest assessment is Africa, where research production is reduced. The United States appears as a producer of knowledge about other areas of the planet, which reflects its dominance of information storage platforms, which have made satellite and radar images of the Earth accessible to the public, becoming a global generator of geospatial information. This situation implies that many countries with no surveillance systems use these external databases as the primary source of information, thus generating a direct intervention in their geopolitics.
+Finally, although LULC research in tropical forests is not recent, and its growth in the last decade has been prominent, it is necessary to consider what other topics within the area could be analyzed. The following are some gaps in the research that future studies could address:
+1.
+Studies linking compliance with SDGs concerning LULC in tropical forests are required. Few studies address this issue, and the ones that do focus mainly on how deforestation and degradation monitoring can be used to manage these objectives.
+
+## 2. ##
+Studies of specific activities such as oil exploitation and mining focus solely on the effects on human health, and there are few publications on its impact on the environment.
+
+## 3. ##
+LULC studies in the Andean-Amazonian region should be expanded. A large part of the analyses use optical satellite images, where the presence of cloud cover is a problem that limits the generation of maps regarding land use and land coverage in these regions.
+This study has some limitations, such as i) the exclusive consideration of scientific articles in English, and ii) the fact that the data analysis was limited to data from the Scopus database. As a result, the present study may have ignored some contributions in this field. Subsequent studies could consider these limitations to broaden the subject of study.
+
+## Conclusions ##
+This study demonstrates that in the last four decades, there has been an increase in the scientific production of tropical forests' LULC due to the collaboration of 74 countries. The intellectual structure in this field of study records collaborations of greater scientific production concerning (i) researchers: Shimabukuro Yosie and Barlow Jos; (ii) countries: the United States and Brazil; and (iii) journals: Forest Ecology and Management and PLOS One, as well as the collaborations with the highest number of citations: (i) author: Eric Davidson; (ii) country: the United States; and (iii) journal: Science.
+The different approaches associated with LULC tend to focus on research topics related to the analysis of multiple anthropogenic activities that cause forest degradation and changes in their ecological dynamics. In addition, a growing interest in conserving these ecosystems due to their high biological, economic, and social value is revealed. The use and evolution of different technological tools that allow a multi-temporal analysis of the dynamics and structure of tropical forests were also evidenced.
+This research serves as a contribution to future studies that explore the areas of knowledge focused on LULC in tropical forests because (i) it facilitates access to information on the most studied topics and the most representative authors, (ii) it guides researchers to form networks of collaboration when developing projects according to their area of study, (iii) it is a management tool for researchers to understand, in a general way, the intellectual structure of the area, and (iv) it is a complement for the identification of tendencies in the area that allow the generation of knowledge in favor of the sustainable management of forests.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Tropical Forest Ecosystems
+   Authors: 
+   Date: 2013
+
+2. Increasing Turnover Through Time in Tropical Forests
+   Authors: , 
+   Date: 1994
+
+3. Rainforest Ecosystems, Animal Diversity
+   Authors: 
+   Date: 2013
+
+4. Biogeographical and Taxonomic Biases in Tropical Forest Fragmentation Research
+   Authors: , , 
+   Date: 2014
+
+5. Soil Biogeochemical Responses of a Tropical Forest to Warming and Hurricane Disturbance
+   Authors: , , , , , 
+   Date: 2020
+
+6. Replacing Rubber Plantations by Rain Forest in Southwest China-Who Would Gain and How Much?
+   Authors: , , 
+   Date: 2015
+
+7. Tropical Rainforests and Climate Change
+   Authors: 
+   Date: 2018
+
+8. Securing the Climate Benefits of Stable Forests
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+9. Carbon Dynamics of Tropical Forests
+   Authors: , , , 
+   Date: 2012
+
+10. Ever-Wet Tropical Forests as Biodiversity Refuges
+   Authors: , , , 
+   Date: 2014
+
+11. The Response of Tropical Rainforests to Drought-Lessons from Recent Research and Future Prospects
+   Authors: , , , , 
+   Date: 2016
+
+12. Causes of Extinction
+   Authors: , 
+   Date: 2013
+
+13. Even Hotter Hotspot: Description of Seven New Species of Many-Plumed Moths (Lepidoptera, Alucitidae) from Mount Cameroon
+   Authors: , , , , , , 
+   Date: 2020
+
+14. Investigation of Phytosociological Parameters and Physico-Chemical Properties of Soil in Tropical Semi-Evergreen Forests of Eastern Himalaya
+   Authors: , , , 
+   Date: 2017
+
+15. Resource Partitioning and Niche Overlap between Hoolock Gibbon (Hoolock Hoolock) and Other Frugivorous Vertebrates in a Tropical Semi-Evergreen Forest
+   Authors: , , 
+   Date: 2021
+
+16. Tropical Forest | Tropical Dry Forests
+   Authors: , , 
+   Date: 2004
+
+17. Contrasting Seasonal Leaf Habits of Canopy Trees between Tropical Dry-Deciduous and Evergreen Forests in Thailand
+   Authors: , , , , , , , , 
+   Date: 2006
+
+18. Tropical Montane Cloud Forests
+   Authors: 
+   Date: 2013
+
+19. Editorial: Tropical Montane Forests in a Changing Environment
+   Authors: , , , , , , 
+   Date: 2021
+
+20. Spatial Prediction of Soil-Water Transmissivity Based on Fuzzy Logic in a Brazilian Headwater Watershed
+   Authors: , , , , , 
+   Date: 2016
+
+21. Airborne Remote Sensing of Spatiotemporal Change (1955-2004) in Indigenous and Exotic Forest Cover in the Taita Hills
+   Authors: , , , 
+   Date: 2009
+
+22. Fragmentación Progresiva y Pérdida de Hábitat de Bosques Naturales En Uno de Los Hotspot Mundiales de Biodiversidad
+   Authors: , 
+   Date: 2017
+
+23. The Fate of Amazonia
+   Authors: 
+   Date: 2019
+
+24. Distribution of Aboveground Live Biomass in the Amazon Basin
+   Authors: , , , , 
+   Date: 2007
+
+25. Amazonian Biodiversity and Protected Areas: Do They Meet?
+   Authors: , , , , , , , 
+   Date: 2007
+
+26. The Sustainability Challenges of Indigenous Territories in Brazil's Amazonia
+   Authors: , 
+   Date: 2015
+
+27. Maintaining Ecosystem Function and Services in Logged Tropical Forests
+   Authors: , , , , 
+   Date: 2014
+
+28. Wild Meat Sharing among Non-Indigenous People in the Southwestern Amazon
+   Authors: , , , 
+   Date: 2019
+
+29. Macaques Can Contribute to Greener Practices in Oil Palm Plantations When Used as Biological Pest Control
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+30. The Linkages between Photosynthesis, Productivity, Growth and Biomass in Lowland Amazonian Forests
+   Authors: , , , , , , , , , 
+   Date: 2015
+
+31. Ecosystem Processes and Biogeochemical Cycles in Secondary Tropical Forest Succession
+   Authors: , 
+   Date: 2017
+
+32. The Role of Trees in the Geomorphic System of Forested Hillslopes -A Review
+   Authors: 
+   Date: 2013
+
+33. 
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+34. Perceptions of Ecosystem Services Provided by Tropical Forests to Local Populations in Cameroon
+   Authors: , , , , , 
+   Date: 2019. 100956
+
+35. A Comparative Analysis of Ecosystem Services Valuation Approaches for Application at the Local Scale and in Data Scarce Regions
+   Authors: , , , , , 
+   Date: 2016
+
+36. The GEO Handbook on Biodiversity Observation Networks
+   Authors: , , , , , , , , , 
+   Date: 2017
+
+37. Spatial Congruence and Divergence between Ecosystem Services and Biodiversity in a Tropical Forested Landscape
+   Authors: , , , , 
+   Date: 2018
+
+38. Multitemporal Analysis of Land Use and Land Cover within an Oil Block in the Ecuadorian Amazon
+   Authors: , , , , , , , 
+   Date: 2021. 191
+
+39. Ongoing Primary Forest Loss in Brazil, Democratic Republic of the Congo, and Indonesia
+   Authors: , , , 
+   Date: 2018
+
+40. Global Demand for Gold Is Another Threat for Tropical Forests
+   Authors: , 
+   Date: 2015. 014006
+
+41. Impacts of Roads and Linear Clearings on Tropical Forests
+   Authors: , , 
+   Date: 2009
+
+42. Greenhouse Gas Emissions from Brazil's Amazonian Hydroelectric Dams
+   Authors: 
+   Date: 2016
+
+43. Multitemporal Analysis of Deforestation in Response to the Construction of the Tucuruí Dam
+   Authors: , , 
+   Date: 2020
+
+44. Analysis of the Land Cover around a Hydroelectric Power Plant in the Brazilian Amazon
+   Authors: , , 
+   Date: 2019
+
+45. Where Deforestation Leads to Urbanization: How Resource Extraction Is Leading to Urban Growth in the Brazilian Amazon
+   Authors: , 
+   Date: 2015
+
+46. Grass, I. Environmental, Economic, and Social Consequences of the Oil Palm Boom
+   Authors: , , 
+   Date: 2020
+
+47. What Is the Socioeconomic Impact of the Tucuruí Dam on Its Surrounding Municipalities? Sustainability 2022
+   Authors: , , 
+   Date: 1630
+
+48. Land Cover 2.0
+   Authors: , , , , 
+   Date: 2018
+
+49. Impacts of Urbanization on Land Use /Cover Changes and Its Probable Implications on Local Climate and Groundwater Level
+   Authors: , , , 
+   Date: 2018
+
+50. Impact of Land Cover and Land Use Change on Runoff Characteristics
+   Authors: , 
+   Date: 2015
+
+51. A Global Model of the Response of Tropical and Sub-Tropical Forest Biodiversity to Anthropogenic Pressures
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+52. Land-Cover Change within and around Protected Areas in a Biodiversity Hotspot
+   Authors: , , , 
+   Date: 2016
+
+53. Different Responses of Soil Respiration to Environmental Factors across Forest Stages in a Southeast Asian Forest
+   Authors: , , , , , , , 
+   Date: 2021
+
+54. Impact of Land Cover Change on Ecosystem Services in a Tropical Forested Landscape
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+55. Socioecological System and Potential Deforestation in Western Amazon Forest Landscapes
+   Authors: , , , 
+   Date: 2018
+
+56. The Role of Accessibility for Land Use and Land Cover Change in the Brazilian Amazon
+   Authors: , , , , , 
+   Date: 2021. 102419
+
+57. Evaluation of Decadal Shoreline Changes in the Coastal Region of Miri, Sarawak, Malaysia
+   Authors: , , , 
+   Date: 2019
+
+58. Spatiotemporal Analysis of Land Use/Land Cover and Its Effects on Surface Urban Heat Island Using Landsat Data: A Case Study of Metropolitan City Tehran
+   Authors: , , , , , , , 
+   Date: 1988-2018. 2018
+
+59. Land Use and Land Cover Change Effect on Surface Temperature over Eastern India
+   Authors: , , , , , 
+   Date: 2019
+
+60. Impact of Land-Use and Land-Cover Change on Urban Air Quality in Representative Cities of China
+   Authors: , , , , , , 
+   Date: 2016
+
+61. Dynamics of Ecosystem Services (ESs) in Response to Land Use Land Cover (LU/LC) Changes in the Lower Gangetic Plain of India
+   Authors: , , , , 
+   Date: 2020. 106121
+
+62. Effects of Land Use Plans on Urban Development: A Property Rights Approach
+   Authors: 
+   Date: 2020
+
+63. Zoonotic Host Diversity Increases in Human-Dominated Ecosystems
+   Authors: , , , , , , 
+   Date: 2020
+
+64. 
+   Authors: , , , , , , , , , 
+   Date: 2018
+
+65. Changes in Climate and Land Use Over the Amazon Region: Current and Future Variability and Trends
+   Authors: , , , , , , , 
+   Date: 2018
+
+66. Remote Sensing for Agricultural Applications: A Meta-Review
+   Authors: , , 
+
+67. Biodiversity Monitoring, Earth Observations and the Ecology of Scale
+   Authors: 
+   Date: 2018
+
+68. How Climate Change and Land Use/Land Cover Change Affect Domestic Water Vulnerability in Yangambi Watersheds
+   Authors: , , , , , , 
+   Date: 2021
+
+69. Effects of Climate Change and Land Cover on the Distributions of a Critical Tree Family in the Philippines
+   Authors: , , 
+   Date: 2021
+
+70. Monitoring Forest Change in the Amazon Using Multi-Temporal Remote Sensing Data and Machine Learning Classification on Google Earth Engine
+   Authors: , , 
+   Date: 2020
+
+71. Monitoring Tropical Forest Degradation Using Spectral Unmixing and Landsat Time Series Analysis
+   Authors: , , 
+
+72. Predicting Fires for Policy Making: Improving Accuracy of Fire Brigade Allocation in the Brazilian Amazon
+   Authors: , , , , , 
+   Date: 2020. 106501
+
+73. Impact of Mining Activities on Areas of Environmental Protection in the Southwest of the Amazon: A GIS-and Remote Sensing-Based Assessment
+   Authors: , , , , , 
+   Date: 2020. 110392
+
+74. Relationships between Forest Cover and Fish Diversity in the Amazon River Floodplain
+   Authors: , , , , , 
+   Date: 2018
+
+75. Contrasting Impacts of Land-Use Change on Phylogenetic and Functional Diversity of Tropical Forest Birds
+   Authors: , , , 
+   Date: 2018
+
+76. How to Conduct a Bibliometric Analysis: An Overview and Guidelines
+   Authors: , , , , 
+   Date: 2021
+
+77. Mapping Inclusive Innovation: A Bibliometric Study and Literature Review
+   Authors: , , , 
+   Date: 2021
+
+78. Bibliometric Methods in Management and Organization
+   Authors: , 
+   Date: 2015
+
+79. Causes and Effects of Forest Fires in Tropical Rainforests: A Bibliometric Approach
+   Authors: , , 
+   Date: 2017
+
+80. Remote Sensing of Wetlands in South America: Status and Challenges
+   Authors: , , , , , , , 
+   Date: 2018
+
+81. Trends in Global Research in Deforestation. A Bibliometric Analysis
+   Authors: , , , 
+   Date: 2018
+
+82. Worldwide Research on Land Use and Land Cover in the Amazon Region. Sustainability 2021
+   Authors: , , , , 
+
+83. Terrestrial and Aquatic Carbon Dynamics in Tropical Peatlands under Different Land Use Types: A Systematic Review Protocol. Forests 2021
+   Authors: , , , , , , , , , 
+   Date: 1298
+
+84. Tropical Forests
+   Authors: 
+   Date: 2014
+
+85. A Policy-Driven Framework for Conserving the Best of Earth's Remaining Moist Tropical Forests
+   Authors: , , , , , , , , , 
+   Date: 2020
+
+86. 
+   Authors: 
+   Date: 2020. 2020
+
+87. Conducting Systematic Literature Reviews and Bibliometric Analyses
+   Authors: , , 
+   Date: 2020
+
+88. Towards a Methodology for Developing Evidence-Informed Management Knowledge by Means of Systematic Review
+   Authors: , , 
+   Date: 2003
+
+89. Interpreting Bibliometric Data
+   Authors: , , , , , , 
+   Date: 2021
+
+90. Hot Topics and Emerging Trends in Tourism Forecasting Research
+   Authors: , , , 
+   Date: 2019
+
+91. Software Tools for Conducting Bibliometric Analysis in Science: An up-to-Date Review
+   Authors: , , , 
+   Date: 2020
+
+92. The Circular Economy -A New Sustainability Paradigm?
+   Authors: , , , 
+   Date: 2017
+
+93. Open Innovation for Sustainability or Not: Literature Reviews of Global Research Trends. Sustainability 2021
+   Authors: , , , , , 
+   Date: 1136
+
+94. A Bibliometric Analysis of Research on Intangible Cultural Heritage Using CiteSpace
+   Authors: , , 
+   Date: 2019. 215824401984011
+
+95. Cultural Heritage and Tourism Basis for Regional Development: Mapping of Scientific Coverage
+   Authors: , , , , 
+   Date: 2019
+
+96. Flood Risk-Related Research Trends in Latin America and the Caribbean
+   Authors: , 
+
+97. Worldwide Research on Geoparks through Bibliometric Analysis. Sustainability 2021
+   Authors: , , , , 
+   Date: 1175
+
+98. Freshwater Plastic Pollution: Recognizing Research Biases and Identifying Knowledge Gaps
+   Authors: , , , , 
+   Date: 2018
+
+99. Advances in Water Use Efficiency in Agriculture: A Bibliometric Analysis
+   Authors: , , , 
+   Date: 2018
+
+100. Bibliometric Review of the Knowledge Base on Healthcare Management for Sustainability
+   Authors: , 
+   Date: 1994-2018. Sustainability 2020, 12, 205
+
+101. The Boundaries of Urban Metabolism
+   Authors: , 
+   Date: 2015
+
+102. Remote-Sensing Image Analysis and Geostatistics
+   Authors: 
+   Date: 2012
+
+103. 
+   Authors: , , , , , , , , , 
+   Date: 2020. 117802
+
+104. Trends in Global Research in Forest Carbon Sequestration: A Bibliometric Analysis
+   Authors: , , , 
+
+105. Geographic and Temporal Trends in Amazonian Knowledge Production
+   Authors: , , , , , , , 
+   Date: 2014
+
+106. Introduction
+   Authors: 
+   Date: 2009
+
+107. Trends and Developments in Mindfulness Research over 55 Years: A Bibliometric Analysis of Publications Indexed in Web of Science
+   Authors: , 
+   Date: 2021
+
+108. A User-Friendly Method to Merge Scopus and Web of Science Data during Bibliometric Analysis
+   Authors: , 
+   Date: 2021
+
+109. Web of Science and Scopus Language Coverage
+   Authors: , , 
+   Date: 2019
+
+110. Scopus as a Curated, High-Quality Bibliometric Data Source for Academic Research in Quantitative
+   Authors: , , , , 
+   Date: 2020
+
+111. An Analysis of Peer Reviewed Publications on Openness in Education in Half a Century: Trends and Patterns in the Open Hemisphere
+   Authors: , , 
+   Date: 2019
+
+112. Web of Science (WoS) and Scopus: The Titans of Bibliographic Information in Today's Academic World. Publications 2021
+   Authors: 
+
+113. Geodiversity and Mining towards the Development of Geotourism: A Global Perspective
+   Authors: , , , 
+   Date: 2021
+
+114. Application of the Theory of Planned Behavior in Environmental Science: A Comprehensive Bibliometric Analysis
+   Authors: , , , , , 
+   Date: 2019. 2788
+
+115. Review of Off-Site Construction Literature Published between 2008 and 2018
+   Authors: , , , , 
+   Date: 2018
+
+116. Collaboration in BIM-Based Construction Networks: A Bibliometric-Qualitative Literature Review
+   Authors: , , , , 
+   Date: 2017
+
+117. Web of Science, and Scopus: A Systematic Comparison of Citations in 252 Subject Categories
+   Authors: , , , , 
+   Date: 2018
+
+118. A Citation Analysis
+   Authors: , 
+   Date: 1958-2014. 2016
+
+119. Industry 4.0: A Bibliometric Analysis and Detailed Overview
+   Authors: , , 
+   Date: 2019
+
+120. Reviewing the Transport Domain: An Evolutionary Bibliometrics and Network Analysis
+   Authors: , , , 
+   Date: 2017
+
+121. A Bibliometric Review of Research on Educational Administration: Science Mapping the Literature, 1960 to 2018
+   Authors: , 
+   Date: 2019
+
+122. Bibliometric Analysis of Worldwide Scientific Literature in Mobile -Health: 2006-2016
+   Authors: , , , , , 
+   Date: 2017
+
+123. Worldwide Research Trends in Landslide Science
+   Authors: , , , , 
+   Date: 2021
+
+124. Visualizing Bibliometric Networks BT -Measuring Scholarly Impact: Methods and Practice
+   Authors: , 
+   Date: 2014
+
+125. A Unified Approach to Mapping and Clustering of Bibliometric Networks
+   Authors: , , 
+   Date: 2010
+
+126. Software Survey: VOSviewer, a Computer Program for Bibliometric Mapping
+   Authors: , 
+   Date: 2010
+
+127. Agricultural Waste: Review of the Evolution, Approaches and Perspectives on Alternative Uses
+   Authors: , , , 
+   Date: 2020
+
+128. Edible Insects: A Bibliometric Analysis and Current Trends of Published Studies (1953-2021)
+   Authors: , , , , , 
+   Date: 2022
+
+129. Tourism and Carbon Emissions: A Bibliometric Review of the Last Three Decades: 1990-2021
+   Authors: , , , , 
+   Date: 2022
+
+130. An Approach for Detecting, Quantifying, and Visualizing the Evolution of a Research Field: A Practical Application to the Fuzzy Sets Theory Field
+   Authors: , , , 
+   Date: 2011
+
+131. Worldwide Research Analysis on Natural Zeolites as Environmental Remediation Materials. Sustainability 2021
+   Authors: , , , 
+
+132. Mapping the Field: A Bibliometric Analysis of Land Use and Carbon Emissions (LUCE) Research from 1987 to 2018
+   Authors: , 
+   Date: 2021
+
+133. Bibliometrical Analysis of International Big Data Research: Based on Citespace and VOSviewer
+   Authors: 
+   Date: July 2018
+
+134. Cation Exchange of Natural Zeolites: Worldwide Research. Sustainability 2021
+   Authors: , , , 
+
+135. The Organizational Socialization Field Fragmentation: A Bibliometric Review
+   Authors: , 
+   Date: 2015
+
+136. The Causes and Consequences of Shifting Cultivation in Relation to Tropical Forest Survival
+   Authors: 
+   Date: 1978
+
+137. Population Pressure and Areas of Potential Rural Development in Southern Nigeria
+   Authors: 
+   Date: 1978
+
+138. Forestry and the Conservation of Plants and Animals in the Tropics
+   Authors: 
+   Date: 1979
+
+139. Development of New Agro-Forestry Land Use Systems in the Humid Tropics
+   Authors: 
+   Date: 1979
+
+140. Global Vegetation and Land Use: New High-Resolution Data Bases for Climate Studies
+   Authors: 
+   Date: 1983
+
+141. Tropical Forests and the Global Carbon Cycle
+   Authors: , 
+   Date: 1988
+
+142. The Use of Imaging Radars for Applications A Review Ecological
+   Authors: , , 
+   Date: 1996
+
+143. Integrating Amazonian Vegetation, Land-Use, and Satellite Data
+   Authors: , , , 
+   Date: 1994
+
+144. What Drives Deforestation in the Brazilian Amazon?
+   Authors: 
+   Date: 1999
+
+145. Forest Recovery in Abandoned Tropical Pastures in Puerto Rico
+   Authors: , , , , 
+   Date: 1995
+
+146. Diversity, Disturbance, and Sustainable Use of Neotropical Forests: Insects as Indicators for Conservation Monitoring
+   Authors: 
+   Date: 1997
+
+147. Tropical Secondary Forests
+   Authors: , 
+   Date: 1990
+
+148. Carbon, and Nutrient Dynamics of Secondary Forests in a Humid Tropical Region of Mexico
+   Authors: , , , 
+   Date: 1999
+
+149. The Role of Deep Roots in the Hydrological and Carbon Cycles of Amazonian Forests and Pastures
+   Authors: , , , , , , , , , 
+   Date: 1994
+
+150. Soil Carbon Changes from Conversion of Forest to Pasture in Brazilian Amazonia
+   Authors: , 
+   Date: 1998
+
+151. The Annual Net Flux of Carbon to the Atmosphere from Changes in Land Use 1850-1990
+   Authors: 
+   Date: 1999
+
+152. Soil Carbon and Nitrogen Stocks Following Forest Clearing for Pasture in the Southwestern Brazilian Amazon
+   Authors: , , , , , , 
+   Date: 1997
+
+153. Land Use Change and Biogeochemical Controls of Nitrogen Oxide Emissions from Soils in Eastern Amazonia
+   Authors: , , , , , 
+   Date: 1999
+
+154. Positive Feedbacks in the Fire Dynamic of Closed Canopy Tropical Forests
+   Authors: , , , , , , 
+   Date: 1999
+
+155. Ecosystem Structure in the Brazilian Cerrado: A Vegetation Gradient of Aboveground Biomass, Root Mass and Consumption by Fire
+   Authors: , 
+   Date: 1998
+
+156. Large-Scale Impoverishment of Amazonian Forests by Logging and Fire
+   Authors: , , , , , , , , , 
+   Date: 1999
+
+157. Conservation of the Brazilian Cerrado
+   Authors: , 
+   Date: 2005
+
+158. The Importance of Land-Cover Change in Simulating Future Climates
+   Authors: , , , , , , 
+   Date: 2005
+
+159. Climatic Impact of Tropical Lowland Deforestation on Nearby Montane Cloud Forests
+   Authors: , , , 
+   Date: 2001
+
+160. A Climate-Change Risk Analysis for World Ecosystems
+   Authors: , , , 
+   Date: 2006
+
+161. Tropical Forest Recovery: Legacies of Human Impact and Natural Disturbances
+   Authors: 
+   Date: 2003
+
+162. 
+   Authors: , , , , , , 
+   Date: 2009
+
+163. Soybean Cultivation as a Threat to the Environment in Brazil
+   Authors: 
+   Date: 2001
+
+164. Demand for Rubber Is Causing the Loss of High Diversity Rain Forest in SW China
+   Authors: , , , , 
+   Date: 2007
+
+165. Expansion of Sugarcane Ethanol Production In Brazil: Environmental and Social Challenges
+   Authors: , 
+   Date: 2008
+
+166. NASA Earth Data
+   Date: 11 July 2022
+
+167. Tropical Forests Are a Net Carbon Source Based on Aboveground Measurements of Gain and Loss
+   Authors: , , , , , 
+   Date: 2017
+
+168. Age, Extent and Carbon Storage of the Central Congo Basin Peatland Complex
+   Authors: , , , , , , 
+   Date: 2017
+
+169. A Large and Persistent Carbon Sink in the World's Forests
+   Authors: , , , , , , , , , 
+   Date: 2011
+
+170. High-Resolution Forest Carbon Stocks and Emissions in the Amazon
+   Authors: , , , , , , , , , 
+   Date: 2010
+
+171. Estimated Carbon Dioxide Emissions from Tropical Deforestation Improved by Carbon-Density Maps
+   Authors: , , , , , , , , , 
+   Date: 2012
+
+172. Effect of Increasing CO 2 on the Terrestrial Carbon Cycle
+   Authors: , , 
+   Date: 2015
+
+173. Primary Forests Are Irreplaceable for Sustaining Tropical Biodiversity
+   Authors: , , , , , , , , , 
+   Date: 2011
+
+174. High-Resolution Global Maps of 21st-Century Forest Cover Change
+   Authors: , , , , , , , , , 
+   Date: 2013
+
+175. Dynamics of Global Forest Area: Results from the FAO Global Forest Resources Assessment
+   Authors: , , , , , 
+   Date: 2015. 2015
+
+176. Estimation of Tropical Forest Height and Biomass Dynamics Using Lidar Remote Sensing at La Selva, Costa Rica
+   Authors: , , , , , , 
+   Date: 2010
+
+177. Markedly Divergent Estimates of Amazon Forest Carbon Density from Ground Plots and Satellites
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+178. Global Estimates of Evapotranspiration and Gross Primary Production Based on MODIS and Global Meteorology Data
+   Authors: , , , , , , , , , 
+   Date: 2010
+
+179. Public Policies Can Reduce Tropical Deforestation: Lessons and Challenges from Brazil
+   Authors: , , , 
+   Date: 2014
+
+180. When and Where to Actively Restore Ecosystems?
+   Authors: , 
+   Date: 2011
+
+181. Community Managed Forests and Forest Protected Areas: An Assessment of Their Conservation Effectiveness across the Tropics
+   Authors: , , , , , 
+   Date: 2012
+
+182. 
+   Authors: , , 
+   Date: 1986
+
+183. Mapping the Landscape and Evolutions of Green Supply Chain Management. Sustainability
+   Authors: , 
+   Date: 2018
+
+184. Tropical Forests Were the Primary Sources of New Agricultural Land in the 1980s and
+   Authors: , , , , , , 
+   Date: 1990
+
+185. Aboveground Forest Biomass and the Global Carbon Balance
+   Authors: 
+   Date: 2005
+
+186. Mapping the Research on Knowledge Transfer: A Scientometrics Approach
+   Authors: , , 
+
+187. Classifying Successional Forests Using Landsat Spectral Properties and Ecological Characteristics in Eastern Amazônia
+   Authors: , , , , , 
+   Date: 2003
+
+188. Deforestation for Pasture Alters Nitrogen and Phosphorus in Small Amazonian Streams
+   Authors: , , , 
+   Date: 2001
+
+189. Slowing Amazon Deforestation through Public Policy and Interventions in Beef and Soy Supply Chains
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+190. Classification of Multispectral Images Based on Fractions of Endmembers: Application to Land-Cover Change in the Brazilian Amazon
+   Authors: , , , , , , 
+   Date: 1995
+
+191. Ten-Year Landsat Classification of Deforestation and Forest Degradation in the Brazilian Amazon
+   Authors: , , , , , , , , , 
+   Date: 2013
+
+192. Assessing the Contribution of Ecosystem Services to Human Wellbeing: A Disaggregated Study in Western Rwanda
+   Authors: , 
+   Date: 2015
+
+193. Biodiversity in Small-Scale Tropical Agroforests: A Review of Species Richness and Abundance Shifts and the Factors Influencing Them
+   Authors: , 
+   Date: 2008
+
+194. Long-Term Forest-Savannah Dynamics in the Bolivian Amazon: Implications for Conservation
+   Authors: , , , 
+   Date: 2007
+
+195. Through the Eyes of Children: Perceptions of Environmental Change in Tropical Forests
+   Authors: , , , , 
+   Date: 2014. 22722
+
+196. Effectiveness of Strict vs. Multiple Use Protected Areas in Reducing Tropical Forest Fires: A Global Analysis Using Matching Methods
+   Authors: , 
+   Date: 2011. 103005
+
+197. Forty-Five Years of Journal of Business Research: A Bibliometric Analysis
+   Authors: , , 
+   Date: 2020
+
+198. Cropland Expansion Changes Deforestation Dynamics in the Southern Brazilian Amazon
+   Authors: , , , , , , , 
+   Date: 2006
+
+199. Land Cover Changes in the Brazilian Cerrado and Caatinga Biomes from 1990 to 2010 Based on a Systematic Remote Sensing Sampling Approach
+   Authors: , , , , , , 
+   Date: 2015
+
+200. Decoupling of Deforestation and Soy Production in the Southern Amazon during the Late 2000s
+   Authors: , , , , , 
+   Date: 2012
+
+201. Monitoring Land Cover in Acre State, Western Brazilian Amazonia, Using Multitemporal Remote Sensing Data
+   Authors: , , , , , 
+   Date: 2010
+
+202. Digital Processing of a Landsat-TM Time Series for Mapping and Monitoring Degraded Areas Caused by Independent Gold Miners, Roraima State, Brazilian Amazon. Remote Sens. Environ
+   Authors: , 
+   Date: 2002
+
+203. Influence of Landscape Heterogeneity on Spatial Patterns of Wood Productivity, Wood Specific Density and above Ground Biomass in Amazonia
+   Authors: , , , , , , , , , 
+   Date: 2009
+
+204. Deforestation and Land Use and Land Cover Changes in Protected Areas of the Brazilian Cerrado: Impacts on the Fire-Driven Emissions of Fine Particulate Aerosols Pollutants
+   Authors: , , , , , , , , , 
+   Date: 2021
+
+205. Impacts of Land Use and Land Cover Changes on Sediment Yield in a Brazilian Amazon Drainage Basin. GIScience Remote Sens
+   Authors: , , 
+   Date: 2008
+
+206. Soil Emissions of Nitric Oxide in a Seasonally Dry Tropical Forest of Mexico
+   Authors: , , , , , 
+   Date: 1991
+
+207. Emissions of Nitrous Oxide and Nitric Oxide from Soils of Native and Exotic Ecosystems of the Amazon and Cerrado Regions of Brazil
+   Authors: , , 
+   Date: 2001
+
+208. Land-Use Change and Biogeochemical Controls of Methane Fluxes in Soils of Eastern Amazonia
+   Authors: , , , 
+   Date: 2000
+
+209. Nitrogen Oxide Fluxes and Nitrogen Cycling during Postagricultural Succession and Forest Fertilization in the Humid Tropics
+   Authors: , , 
+   Date: 2001
+
+210. Recuperation of Nitrogen Cycling in Amazonian Forests Following Agricultural Abandonment
+   Authors: , , , , , , , , , 
+   Date: 2007
+
+211. Landscape Pattern and Spatial Variability of Leaf Area Index in Eastern Amazonia
+   Authors: , , , 
+   Date: 2005
+
+212. Disentangling the Contribution of Multiple Land Covers to Fire-Mediated Carbon Emissions in Amazonia during the 2010 Drought
+   Authors: , , , , , , , , , 
+   Date: 2015
+
+213. Burning in Southwestern Brazilian Amazonia
+   Authors: , , , , , , , , , 
+   Date: 2016-2019. 2021
+
+214. Global Warming and Tropical Land-Use Change: Greenhouse Gas Emissions from Biomass Burning, Decomposition and Soils in Forest Conversion, Shifting Cultivation and Secondary Vegetation
+   Authors: 
+   Date: 2000
+
+215. Forests and Global Warming Mitigation in Brazil: Opportunities in the Brazilian Forest Sector for Responses to Global Warming under the "Clean Development Mechanism
+   Authors: 
+   Date: 1999
+
+216. Biomass and Greenhouse-Gas Emissions from Land-Use Change in Brazil's Amazonian "Arc of Deforestation": The States of Mato Grosso and Rondônia
+   Authors: , , , , , , , 
+   Date: 2009
+
+217. The Value of Primary, Secondary and Plantation Forests for Amazonian Birds
+   Authors: , , , 
+   Date: 2007
+
+218. Quantifying the Biodiversity Value of Tropical Primary, Secondary, and Plantation Forests
+   Authors: , , , , , , , , , 
+   Date: 2007
+
+219. Deforestation Drivers in Southwest Amazonia: Comparing Smallholder Farmers in Iñapari, Peru, and Assis Brasil
+   Authors: , , , , 
+   Date: 2010
+
+220. Household Life Cycles and Secondary Forest Cover among Small Farm Colonists in the Amazon
+   Authors: , , 
+   Date: 2002
+
+221. People and Environment in Amazonia: The LBA Experience and Other Perspectives
+   Authors: , , , , , 
+   Date: 2013
+
+222. Remote Sensing and GIS at Farm Property Level: Demography and Deforestation in the Brazilian Amazon
+   Authors: , , , , , 
+   Date: 1999
+
+223. Effects of Soil Fertility and Land-Use on Forest Succession in Amazônia
+   Authors: , , , , , 
+   Date: 2000
+
+224. Abrupt Increases in Amazonian Tree Mortality Due to Drought-Fire Interactions
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+225. The Amazon Basin in Transition
+   Authors: , , , , , , , , , 
+   Date: 2012
+
+226. Creating a Self-Plagiarism Research Topic Typology through Bibliometric Visualisation
+   Authors: , , , 
+   Date: 2016
+
+227. 
+   Authors: , , , , 
+   Date: 2019
+
+228. Wastewater Treatment by Advanced Oxidation Process and Their Worldwide Research Trends
+   Authors: , , , , 
+   Date: 2020
+
+229. 
+   Authors: , , 
+   Date: 2019
+
+230. The High Value of Logged Tropical Forests: Lessons from Northern Borneo
+   Authors: , , , , , , , , , 
+   Date: 2010
+
+231. Impacts of Forest Fragmentation on Species Composition and Forest Structure in the Temperate Landscape of Southern Chile
+   Authors: , , , , 
+   Date: 2007
+
+232. Impact of Land Use and Land Cover Changes on Ecosystem Services in Menglun, Xishuangbanna, Southwest China
+   Authors: , , 
+   Date: 2008
+
+233. Alpha and Beta Diversity of Plants and Animals along a Tropical Land-Use Gradient
+   Authors: , , , , , , , , , 
+   Date: 2009
+
+234. Biodiversity in a Forest-Agriculture Mosaic-The Changing Face of West African Rainforests
+   Authors: , , , , , , 
+   Date: 2010
+
+235. 
+   Authors: , , , , 
+   Date: 2010
+
+236. Predictors of Deforestation in the Brazilian Amazon
+   Authors: , , , , , , 
+   Date: 2002
+
+237. Patterns and Causes of Deforestation in the Colombian Amazon
+   Authors: , , , , 
+   Date: 2006
+
+238. Land Use History, Environment, and Tree Composition in a Tropical Forest
+   Authors: , , , , , , , , 
+   Date: 2002
+
+239. Land-Use History and Forest Regeneration in the Cayey Mountains
+   Authors: , , , 
+   Date: 2000
+
+240. Recovery of Plant Species Richness and Composition after Slash-and-Burn Agriculture in a Tropical Rainforest in Madagascar
+   Authors: , , , , , , 
+   Date: 2010
+
+241. Soil Organic Carbon Dynamics: Variability with Depth in Forested and Deforested Soils under Pasture in Costa Rica
+   Authors: , , 
+   Date: 1997
+
+242. Quantifying Effects of Different Agricultural Land Uses on Soil Microbial Biomass and Activity in Brazilian Biomes: Inferences to Improve Soil Quality
+   Authors: , , 
+   Date: 2011
+
+243. Effects of Soil Water Content on Soil Respiration in Forests and Cattle Pastures of Eastern Amazonia
+   Authors: , , , , 
+   Date: 2000
+
+244. Composition and Aboveground Tree Biomass of a Dry Semi-Evergreen Forest on Mexico's Yucatan Peninsula
+   Authors: , , , 
+   Date: 2003
+
+245. Species Composition, Similarity and Diversity in Three Successional Stages of a Seasonally Dry Tropical Forest
+   Authors: , , , , , 
+   Date: 2004
+
+246. Diversity and Structure of Regenerating Tropical Dry Forests in Costa Rica: Geographic Patterns and Environmental Drivers
+   Authors: , , , 
+   Date: 2009
+
+247. Management of Tropical Soils as Sinks or Sources of Atmospheric Carbon
+   Authors: , 
+   Date: 1993
+
+248. Succession and Management of Tropical Dry Forests in the
+   Authors: , , , , , , , , , 
+   Date: 2009
+
+249. Conversion of Secondary Forest into Agroforestry and Monoculture Plantations in Amazonia: Consequences for Biomass, Litter and Soil Carbon Stocks after 7 Years
+   Authors: , , , , 
+   Date: 2002
+
+250. Changes in Soil Organic Carbon Stocks under Agriculture in Brazil
+   Authors: , , 
+   Date: 2005
+
+251. Predicted Soil Organic Carbon Stocks and Changes in the Brazilian Amazon between 2000 and 2030
+   Authors: , , , , , , , , , 
+   Date: 2007
+
+252. Carbon Emissions from Agricultural Expansion and Intensification in the Chaco
+   Authors: , , , , , , 
+   Date: 2017
+
+253. Historical Carbon Emissions and Uptake from the Agricultural Frontier of the Brazilian Amazon
+   Authors: , , , , , , 
+   Date: 2011
+
+254. Use Change Sector Contribution to the Carbon Historical Emissions and the Sustainability-Case Study of the Brazilian Legal Amazon
+   Authors: , , , 
+   Date: 2009
+
+255. Agricultural Intensification Increases Deforestation Fire Activity in Amazonia
+   Authors: , , , , , 
+   Date: 2008
+
+256. Mapping the Biomass of Bornean Tropical Rain Forest from Remotely Sensed Data Published by
+   Authors: , , , , , , 
+   Date: 2001
+
+257. Characteristics of Bird Species Using Forest and Agricultural Land Covers in Southern Costa Rica
+   Authors: , , 
+   Date: 2004
+
+258. Tropical Dry Forests of Venezuela: Characterization and Current Conservation Status
+   Authors: , , , , , , , 
+   Date: 2005
+
+259. Deforestation in Central Africa: Estimates at Regional, National and Landscape Levels by Advanced Processing of Systematically-Distributed Landsat Extracts
+   Authors: , , , 
+   Date: 2008
+
+260. Proximate Causes of Deforestation in the Bolivian Lowlands: An Analysis of Spatial Dynamics
+   Authors: , , , , 
+   Date: 2012
+
+261. Land Use and Land Cover Changes in Doume Communal Forest in Eastern Cameroon: Implications for Conservation and Sustainable Management
+   Authors: , , , , , , , , 
+   Date: 2019
+
+262. Mapping Pasture Management in the Brazilian Amazon from Dense Landsat Time Series. Remote Sens. Environ
+   Authors: , , , 
+   Date: 2018
+
+263. Role of Non-Timber Forest Products in the Economy of Peripheral Communities of Knuckles National Wilderness Area of Sri Lanka: A Farming Systems Approach
+   Authors: , , 
+   Date: 1993
+
+264. The Effects of Amazon Deforestation on Non-Timber Forest Products
+   Authors: , , , 
+   Date: 2021
+
+265. The Use of Riparian Environments in the Rural Peruvian Amazon
+   Authors: , 
+   Date: 2003
+
+266. Swidden Agriculture in a Protected Area: The Matsigenka Native Communities of Manu National Park
+   Authors: , , , 
+   Date: 2008
+
+267. Land Use and Land Cover Changes in the Diversity and Life Zone for Uncontacted Indigenous People: Deforestation Hotspots in the Yasuní Biosphere Reserve
+   Authors: , , , , , 
+
+268. Agroforestry Systems Conserve Species-Rich but Modified Assemblages of Tropical Birds and Bats
+   Authors: , 
+   Date: 2007
+
+269. The Role of Complex Agroforestry Systems in the Conservation of Forest Tree Diversity and Structure in Southeastern Ghana
+   Authors: , 
+   Date: 2010
+
+270. Analysis Land Use and Land Cover Dynamics in the Brazilian Amazon: An Overview
+   Authors: , , 
+   Date: 1996
+
+271. Agricultural Land Use Dynamics in the Brazilian Amazon Based on Remote Sensing and Census Data
+   Authors: , , , , 
+   Date: 2012
+
+272. Changing Drivers of Deforestation and New Opportunities for Conservation
+   Authors: , , , 
+   Date: 2009
+
+273. Conserving Africa's Rain Forests: Problems in Protected Areas and Possible Solutions
+   Authors: , , 
+   Date: 2005
+
+274. Selective-Logging and Oil Palm: Multitaxon Impacts, Biodiversity Indicators, and Trade-Offs for Conservation Planning
+   Authors: , , , , , , , , , , 
+   Date: 2014
+
+275. Does Logging and Forest Conversion to Oil Palm Agriculture Alter Functional Diversity in a Biodiversity Hotspot?
+   Authors: , , , , , , , , 
+   Date: 2014
+
+276. Importance and Use of Ecosystem Services Provided by the Amazonian Landscapes in Ecuador-Evaluation and Spatial Scaling of a Representative Area
+   Authors: , , , , 
+   Date: 2019
+
+277. The Impact of Tropical Forest Logging and Oil Palm Agriculture on the Soil Microbiome
+   Authors: , , , , , , 
+   Date: 2016
+
+278. Fire Impacts on Vegetation in Central Africa: A Remote-Sensing-Based Statistical Analysis
+   Authors: , 
+   Date: 2002
+
+279. Burned Area Detection and Mapping Using Sentinel-1 Backscatter Coefficient and Thermal Anomalies
+   Authors: , , , 
+   Date: 2019. 111345
+
+280. Land Use and Land Cover Change Impacts on the Regional Climate of Non-Amazonian South America: A Review
+   Authors: , , , , 
+   Date: 2015
+
+281. Future Deforestation in the Amazon and Consequences for South American Climate
+   Authors: , , , , 
+   Date: 2015
+
+282. Understanding the Biodiversity Consequences of Habitat Change: The Value of Secondary and Plantation Forests for Neotropical Dung Beetles
+   Authors: , , , 
+   Date: 2008
+
+283. Climate Change and Its Impact on Soil and Vegetation Carbon Storage in
+   Authors: , , , , , , , , , 
+   Date: 2007
+
+284. Regional Application of an Ecosystem Production Model for Studies of Biogeochemistry in Brazilian Amazonia
+   Authors: , , , , , 
+   Date: 1998
+
+285. Modelling the Effects of Historical and Future Land Cover Changes on the Hydrology of an Amazonian Basin
+   Authors: , , , , , , 
+   Date: 2018
+
+286. Modelling Ecological Niches from Low Numbers of Occurrences: Assessment of the Conservation Status of Poorly Known Viverrids (Mammalia, Carnivora) across Two Continents
+   Authors: , 
+   Date: 2007
+
+287. Vegetation Dynamics and Rainfall Sensitivity of the Amazon
+   Authors: , , , , , , , , 
+   Date: 2014
+
+288. 
+   Authors: , , , , 
+   Date: 2005
+
+289. Carbon and Nitrogen Stocks in the Soils of the Amazon Region
+   Authors: , 
+   Date: 1999
+
+290. Carbon, and Nitrogen Pools in Mexican Tropical Dry Forest Landscapes
+   Authors: , , , , , 
+   Date: 2003
+
+291. Soil Microbial Dynamics and Biogeochemistry in Tropical Forests and Pastures, Southwestern Costa Rica
+   Authors: , , , 
+   Date: 2003
+
+292. A Molecular Survey of the Diversity of Microbial Communities in Different Amazonian Agricultural Model Systems
+   Authors: , , , 
+   Date: 2010
+
+293. Sustainable Forest Use in Brazilian Extractive Reserves: Natural Regeneration of Brazil Nut in Exploited Populations
+   Authors: , , , 
+   Date: 2008
+
+294. Social Movements and Large-Scale Tropical Forest Protection on the Amazon Frontier: Conservation from Chaos
+   Authors: , , , 
+   Date: 2010
+
+295. Blockchain Technology in Logistics and Supply Chain Management-A Bibliometric Literature Review from 2016 to January 2020
+   Authors: , , 
+   Date: 2020
+
+296. Exploring the Domain of Open Innovation: Bibliometric and Content Analyses
+   Authors: , , 
+
+297. Exploring the Scope of Open Innovation: A Bibliometric Review of a Decade of Research
+   Authors: , , 
+   Date: 2015
+
+298. Citation-Based Clustering of Publications Using CitNetExplorer and VOSviewer
+   Authors: , 
+   Date: 2017
+
+299. Knowledge Management: A Global Examination Based on Bibliometric Analysis
+   Authors: , , 
+   Date: 2019
+
+300. Knowledge Mapping of Platform Research: A Visual Analysis Using VOSviewer and CiteSpace
+   Authors: , 
+   Date: 2020
+
+301. Visualizing the Intellectual Structure and Evolution of Innovation Systems Research: A Bibliometric Analysis
+   Authors: , , , 
+   Date: 2015
+
+302. A Crisis in the Making: Responses of Amazonian Forests to Land Use and Climate Change
+   Authors: 
+   Date: 1998
+
+303. Estimating the Global Conservation Status of More than 15
+   Authors: , , , , , , , , , 
+   Date: 2015
+
+304. The Spatial Distribution of Forest Biomass in the Brazilian Amazon: A Comparison of Estimates
+   Authors: , , , 
+   Date: 2001
+
+305. Land Use and Organic Carbon Content of Some Subtropical Soils
+   Authors: , , 
+   Date: 1986
+
+306. Soil Carbon Dynamics in Regrowing Forest of Eastern Amazonia
+   Authors: , , , , , 
+   Date: 1999
+
+307. Nitrogen Fixation Inputs in Pasture and Early Successional Forest in the Brazilian Amazon Region: Evidence From a Claybox Mesocosm Study
+   Authors: , , , , 
+   Date: 2018
+
+308. Nutrient Loss and Redistribution after Forest Clearing on a Highly Weathered Soil in Amazonia
+   Authors: , , , 
+   Date: 2004
+
+309. Nutrient Limitations to Secondary Forest Regrowth
+   Authors: , 
+   Date: 2013
+
+310. Long-Term Potential for Tropical-Forest Degradation Due to Deforestation and Fires in the Brazilian Amazon
+   Authors: , , , , , 
+   Date: 2009
+
+311. Land-Use and Climate Change Risks in the Amazon and the Need of a Novel Sustainable Development Paradigm
+   Authors: , , , , , 
+   Date: 2016
+
+312. Concurrent Climate Impacts of Tropical South America Land-Cover Change
+   Authors: , , 
+   Date: 2011
+
+313. Carbon Uptake by Mature Amazon Forests Has Mitigated Amazon Nations' Carbon Emissions
+   Authors: , , , , , , , , , 
+   Date: 2017
+
+314. Environmental Change and the Carbon Balance of Amazonian Forests
+   Authors: , , , , , , , 
+   Date: 2014
+
+315. Estimating Aboveground Carbon Density across Forest Landscapes of Hawaii: Combining FIA Plot-Derived Estimates and Airborne LiDAR
+   Authors: , , , , , 
+   Date: 2018
+
+316. Airborne Laser-Guided Imaging Spectroscopy to Map Forest Trait Diversity and Guide Conservation
+   Authors: , , , , , , , 
+   Date: 2017
+
+317. Land-Use Allocation Protects the Peruvian Amazon
+   Authors: , , , , , , , 
+   Date: 2007
+
+318. Detecting Vulnerability of Humid Tropical Forests to Multiple Stressors
+   Authors: , , , , , , , , , 
+   Date: 2021
+
+319. Humid Tropical Forest Disturbance Alerts Using Landsat Data
+   Authors: , , , , , , , , , 
+   Date: 2016
+
+320. Amazon Tree Dominance across Forest Strata
+   Authors: , , , , , , , , , 
+   Date: 2021
+
+321. Holocene Fire and Occupation in Amazonia: Records from Two Lake Districts
+   Authors: , , , , , , , 
+   Date: 2007
+
+322. Spatiotemporal Patterns of Pre-Columbian People in Amazonia
+   Authors: , 
+   Date: 2019
+
+323. Deforestation and Forest Degradation Due to Gold Mining in the Peruvian Amazon: A 34-Year Perspective
+   Authors: , , , , , 
+   Date: 2018. 1903
+
+324. Mercury in Soils Impacted by Alluvial Gold Mining in the Peruvian Amazon
+   Authors: , , , , , , , , , 
+   Date: 2021. 112364
+
+325. Degradation of Forests through Logging and Fire in the Eastern Brazilian Amazon
+   Authors: 
+   Date: 2002
+
+326. Evaporation from Young Secondary Vegetation in Eastern Amazonia
+   Authors: , , , , 
+   Date: 1997
+
+327. Visualizing the Knowledge Domain of Academic Mobility Research from 2010 to 2020: A Bibliometric Analysis Using CiteSpace
+   Authors: , , 
+   Date: 2022
+
+328. 
+   Authors: , , , , , 
+   Date: 2020
+
+329. A New Approach to Journal Co-Citation Matrix Construction Based on the Number of Co-Cited Articles in Journals
+   Authors: , , 
+   Date: 2019
+
+330. Land-Cover Change Threatens Tropical Forests and Biodiversity in the Littoral Region, Cameroon
+   Authors: , , , , 
+   Date: 2020
+
+331. Spatiotemporal Evolution of Tropical Forest Degradation and Its Impact on Ecological Sensitivity: A Case Study in Jinghong
+   Authors: , , , , , 
+   Date: 2020. 138678
+
+332. The Application of Landsat Data to Tropical Forest Surveys, 1
+   Authors: 
+   Date: 1980
+
+333. Fusing Sentinel-1 and-2 to Model Gedi-Derived Vegetation Structure Characteristics in Gee for the Paraguayan Chaco
+   Authors: , , 
+
+334. La Amazonía En El Pensamiento Geopolítico Brasileño. Rev. tempo do mundo 2021
+   Authors: , 
+
+335. A Bibliometric Analysis of Global Forest Ecology Research during
+   Authors: , 
+   Date: 2002-2011. Springerplus 2013
+
+336. Global Patterns of Tropical Forest Fragmentation
+   Authors: , , , , , , , 
+   Date: 2018
+
+337. Mapping the Deforestation Footprint of Nations Reveals Growing Threat to Tropical Forests
+   Authors: , 
+
+338. Deforestation of Rainforests Requires Active Use of UN's Sustainable Development Goals
+   Authors: , , , , , , , , , , 
+   Date: 2020
+
+339. Production of Global Daily Seamless Data Cubes and Quantification of Global Land Cover Change from 1985 to 2020 -IMap World 1
+   Authors: , , , , , 
+
+340. Assessment of the NASA-USGS Global Land Survey (GLS) Datasets. Remote Sens. Environ
+   Authors: , , , , 
+   Date: 2013
+
+341. Twenty-First Century Remote Sensing Technologies Are Revolutionizing the Study of Tropical Forests
+   Authors: , , , , , , 
+   Date: 2017
+
+342. Application of Google Earth Engine for Land Cover Classification in Yasuni National Park, Ecuador
+   Authors: , , , , 
+   Date: July 2022. 2022
+
+343. How Can Remote Sensing Help Monitor Tropical Moist Forest Degradation?-A Systematic Review
+   Authors: , , , 
+
+344. Remote Sensing of Selective Logging in Tropical Forests: Current State and Future Directions. IForest
+   Authors: , 
+   Date: 2020
+
+345. Why Are Tropical Forests Being Lost, and How to Protect Them
+   Authors: 
+   Date: June 2022
+
+346. Land-Sparing Agriculture Sustains Higher Levels of Avian Functional Diversity than Land Sharing
+   Authors: , , , , , 
+   Date: 2019
+
+347. Tropical Forest Conversion to Rubber Plantation in Southwest China Results in Lower Fungal Beta Diversity and Reduced Network Complexity
+   Authors: , , , , , , 
+   Date: 2019
+
+348. Modeling of Land Use and Land Cover Change Dynamics for Future Projection of the Amazon Number Curve
+   Authors: , , 
+   Date: 2022. 152348
+
+349. Monitoring Land Use Changes and Its Future Prospects Using Cellular Automata Simulation and Artificial Neural Network for Ahmedabad City
+   Authors: , , , 
+   Date: 2022
+
+350. Pronounced Loss of Amazon Rainforest Resilience since the Early
+   Authors: , , 
+   Date: 2000s. Nat. Clim. Chang. 2022
+
+351. Priorities of Action and Research for the Protection of
+   Authors: , , , , , , , , , 
+   Date: 2022. 109404
+

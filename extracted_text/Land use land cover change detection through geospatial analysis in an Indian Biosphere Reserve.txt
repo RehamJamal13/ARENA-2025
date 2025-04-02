@@ -1,0 +1,260 @@
+================================================================================
+TITLE: Trees, Forests and People
+================================================================================
+
+AUTHORS:
+- Tarun Kumar Thakur
+- Kumar Patel
+- Arvind Bijalwan
+- Mammohan Dobriyal
+- Anirudh Kumar
+- Anita Thakur
+- Abhishek Bohra
+- Jahangeer Bhat
+
+ABSTRACT:
+The present study examines the land use land cover (LULC) and change detection impacts on forest ecosystem in Achanakmaar Amarkantak Biosphere Reserve (AABR -area 626.76 km 2 ) of Central India. Results revealed that there has been a change in AABR land use pattern from 2008 to 2018. The major changes include loss of 19.72 km 2 of vegetation cover in various forest types due to increasing biotic interference and over grazing, conversion of 14.77 km 2 of Dense Sal mixed forest to open mixed forest and cultivable land, and 5.0 km 2 teak plantation and Bamboo brakes to agricultural land. Despite losing many plant species due to anthropogenic pressure, the present study found that the AABR as a unique repository of plant species rich in biodiversity. Many spots of this area are invaded or replaced by exotic species which is causing the loss of ecology and diversity of this region. Based on our study Sal mixed forest reduced by 2.88% (5.23 km 2 ), Dense mixed forest 4.02% (9.54 km 2 ), Teak plantation 6.77% (2.61 km 2 ) and Bamboo brakes reduced by 7.66% (2.34 km 2 ). The study concludes that the Landsat 7 TM and Resourcesat 2A satellite images are the most suitable for studying the LULC change on forest ecosystem of AABR. We advocate that by adopting the rigorous conservation measures, especially in open & dense forest and young under-stocked teak forests can restore the vegetation density and diversity in the area. Moreover, Sal natural regeneration of vegetation would remain crucial, and invasion of exotic species over native species needs to be restored in the forest area. Such findings on major changes occurring in forest ecosystem hold tremendous implications in relation to the welfare of the resource-poor tribal communities who are greatly dependent on the natural resources available in AABR for their livelihood.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Undulating geography with anecdotal slopes covered with different forest type's viz. Dense mixed and Sal mixed forests, Bamboo plantations, Teak forest, Open mixed forest and manmade plantations harbor huge amount of diversity in and around the Achanakmaar Amarkantak Biosphere Reserve (AABR). There are many plant species endemic to this area such as Cupressus torulosa, Araucaria bidwilli, Thuja oreintalis, Pinus caribbea etc and are well distributed ( https://www.indianetzone. com/40/achanakmar_amarkantak_biosphere_reserve.htm ). It is a storehouse of many medicinal and aromatic plants, edible plants, nontimber forest products and many other useful plants and harbors different animals which reflect the rich heritage of natural resources 
+A number of primitive tribes such as, Gond, Baiga, Panika, Pradhan, Kols etc. are living amidst the thick forests of AABR. Forest based ac- tivities and agriculture is the main sources of livelihood and income of these poor tribal populations in-habiting the AABR 
+The research on natural resources assessment of AABR remains limited both qualitatively and quantitatively. In this context, application of the modern geospatial techniques underpins the spatial database that is quite necessary for planning for conservation and sustainable development. Additionally field surveys of the selected areas, the dataset offers ground realities of LULC status and traditional uses of biological resources. Satellite Remote sensing (RS) techniques and ground measurements will provide clear advantages for the LULC pattern in AABR. 
+
+## Material and methods ##
+
+
+## Study area ##
+The UNESCO natural heritage site AABR was chosen for research as the biotic interferences have notably increased in the last two decades, causing deforestation and conversion of forest areas to agricultural and open forest area. The study area lies between 22°15 ' N to 22°58 ' N and 81°25 ' E to 82°5 ' E which covers 626.76 km 2 area of the watershed with a mean altitude of 1048 m from ASL. The AABR region is a vast reservoir of biodiversity including a variety of medicinal plants. Besides, this area holds unique geological formations where water resources are created and conserved due to interaction of forest and rocks. For example, interaction between the extensive root network of Sal tree and lime stone bauxite holds water during rainy season and the water is then released slowly through aquifers or minor rivers of this region. Reserve forest and different forest types in the core and buffer zones of AABR enrich the floral diversity of this region. The typical climate of the reserve has summer, rainy and winter. The maximum temperature is recorded in the month of May, while the December month registers the minimum temperature. The south-western monsoons carries rainfall during the months of June to September and mean annual precipitation   is more than 1600 mm. The average of relative humidity is found between 50 to 85%, whereas, the mean temperatures of the area in winter and summer remain 16.1°C and 31°C, respectively. The layout map with an elevation model of the study area is depicted in Fig. 
+
+## Data source ##
+Medium resolution of 30 m in Landsat-7 TM of 2008 image and Resourcesat 2A level-1C at 5.8 m high resolution of 2018 image was used for mapping LULC and change detection of Achanakmaar Amarkantak Biosphere Reserve from 2008 to 2018 ( Table 
+
+## Pre-processing and classification ##
+The detailed methodological framework and analysis for the entire study are illustrated in Fig. 
+
+## Field survey and accuracy assessment ##
+The reference/ground and ancillary data were collected through the field survey as ground control point with the help of GPS and direct lo-cal field measurements for ground verification and which was performed for image classification. The coordinates of the sample points in the field were taken and a total of 50 sample plots were selected for ground survey and 10 sample plots in each forest type. The sample points used in the study area are mentioned in Table 
+
+## LULC change detection and analysis ##
+LULC map of 2018 was resampled to the spatial and high resolution of 5.8 m for the classified map and for performing LULC and change detection analysis. A comparison in a pixel-based technique was performed to generate changes on pixel basis for more efficient enchanting the advantages of all the categories. Pairs of two different time series classified images (2008 and 2018) were compared using cross -tabulation in order to find out the information of LULC changes for the periods from 2008 to 2018. Change matrix presents significant information about the spatial extent of vegetation changes in LULC ( Shalaby and  
+
+## Results and discussion ##
+
+
+## Land use and land cover status ##
+The LULC and change detection analysis was performed in a study area of AABR of India by using MLA. (0.30%), Water bodies was about 6.45 km 2 (1.03%), Agriculture 18.6 km 2 (2.96%), Bamboo Brakes 32.89 km 2 (5.24%), Teak forest area covered 41.15 km 2 (6.56%), Open mixed forest was 92.8 km 2 (14.8%) while, Dense mixed forest and Sal mixed forest had maximum part of the watershed and occupied about 246.5 km 2 (39.32%), and 186.49 km 2 (29.49%) area, respectively. A comparison of the latest classified maps (2018) with that of (2008) suggested crop land, habitation and open mixed forest increasing from 2.96 to 4.38%, 0.30 to 0.34% and 14 to 16.67%, respectively over the last ten years. Interestingly, in 2018 map water bodies was less than 1% (5.29 km 2 ) of the total geographical area, 4.87% area was covered by Bamboo Brakes, and Teak forest area was covered 38.54 km 2 (6.14%) which is reduction in the area with respect to 2008. Similarly, Dense mixed forest and Sal mixed forest types reduced to 66.72% in 2018 against 69% in 2008 due to increasing biotic interference inside the biosphere reserve ( Table 
+Medium resolution (Landsat 7 image) and high-resolution satellite images (i.e. Resourcesat 2A image) have been used for LULC changes from 2008 to 2018 of AABR. LULC and changes monitoring and mapping has gradually more standard as few of the most efficient tools for LULC and natural resource management applications. As demonstrated earlier by 
+Overall accuracy, using LULC classification in the current study varies from 87.69% to 92.4%, which is in agreement of 
+Following the LULC change from 2008 to 2018 in AABR, we could discern notable changes that occurred over the 10-year duration; such as conversion of Dense and Sal mixed forest covers to Open mixed forest and Agricultural land, ecological degradation by anthropogenic activities like slash and burn, overgrazing, overexploitation of MAPs in ground & underground vegetation, encroachment etc., The construction of permanent structure, mining, settlements, water crisis also pose severe pressure on biological resources leading to destruction of habitats of flora and fauna. Many native species are replaced by non-native or exotic species which is affecting the ecology of this region e.g. Sal and Mahua were replaced by tropical Pines and Eucalyptus which is damaging the diversity of AABR. 
+
+## Direct field measurement and accuracy assessment ##
+The reconnaissance survey was done for direct field measurements and the LULC maps in 2008 and 2018 were derived from Landsat 7 and Resourcesat 2A satellite data ( Fig. 
+
+## Establishing correlations among NDMI with NDVI and EVI ##
+Data on LULC using vegetation indices are represented in Figs. 9 and 10 . The results of change detection as per Normalized difference moisture index (NDMI) revealed in the study area decreased by almost 1.42% ( Table 
+
+## Conclusion ##
+AABR has vast forest area with high anthropogenic pressure for resource utilization by tribes and other forest dwelling communities. The decadal LULC changes in the AABR covering an area of 626.76 km 2 in temporal scale from 2008 to 2018. LULC patterns are important in identifying limited resources, and environmentally critical areas from land conversion or human exploitation. The area is predominantly covered with forest vegetation but substantial conversion witnessed in different vegetation classes such as Dense mixed forest and Sal mixed forest in fringe areas of cultivable land and habitation. The field survey in combination with interaction with local communities' reveals that the forest resources are the main source of livelihood which put intense pressure without proper forest management regulations.
+We advocate that by adopting the rigorous conservation measures, especially re-vegetation of open forest with indigenous species & augmentation of dense forest by the respective species. To check cultivable land expansion forest farming or ecological farming concepts need to taught to tribals for better livelihood options. Current findings hold tremendous implications in framing biodiversity based livelihood plan for socio economic upliftment of forest dwelling communities. The ethos of ensuring sustainable utilization of the natural diversity in the forest ecosystem is key to mitigate climate change impact. 
+
+## Declaration of Competing Interest ##
+Authors declare that they have no competing interests.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Comparative analysis of pixel-based and object-based classification of high resolution remote sensing images -a review
+   Authors: , , 
+   Date: 2016
+
+2. Diversity and use of wild and non-cultivated edible plants in the Western Himalaya
+   Authors: , , , , , 
+   Date: 2018
+
+3. Object-based land-use/land-cover change detection using Landsat imagery: a case study of Ardabil, Namin, and Nir counties in northwest Iran
+   Authors: , 
+   Date: 2018
+
+4. Land use and land cover spatiotemporal dynamic pattern and predicting changes using integrated CA-Markov model
+   Authors: , , 
+   Date: 2016
+
+5. Comparison of object and pixel-based land cover classification through three supervised methods
+   Authors: , , 
+   Date: 2017
+
+6. Consumption patterns of wild edibles by the Vasavas: a case study from Gujarat
+   Authors: , , , , , 
+   Date: 2018
+
+7. 
+   Authors: , , , 
+   Date: 2019. 1990-2030
+
+8. Status of land cover classification accuracy assessment
+   Authors: 
+   Date: 2002
+
+9. What drives tropical deforestation? A meta analysis of proximate and underlying causes of deforestation based on sub-national case study evidence
+   Authors: , 
+   Date: 2001
+
+10. The influence of soil-salinity, growth form and leaf moisture on the spectral radiance of Spartina altemiflora canopies
+   Authors: , , 
+   Date: 1983
+
+11. Change detection in the water bodies of Burullus Lake, Northern Nile Delta, Egypt, using RS/GIS
+   Authors: , 
+   Date: 2016
+
+12. MODIS vegetation index (MOD13) algorithm theoretical basis document
+   Authors: , 
+   Date: 1999
+
+13. Integrating ecosystem services into effectiveness assessment of ecological restoration program in northern China's arid areas: insights from the Beijing-Tianjin sandstorm source region
+   Authors: , , , 
+   Date: 2018
+
+14. Achanakmar-Amarkantak Biosphere Reserve
+   Authors: , , 
+   Date: 2010
+
+15. Assessment of the capability of remote sensing and GIS techniques for monitoring reclamation success in coal mine degraded lands
+   Authors: , , 
+   Date: 2016
+
+16. Statistical Yearbook of Forestry
+   Date: 2010
+
+17. Biomass carbon emissions according to conversion of forest land in Korea
+   Authors: , , , 
+   Date: 2005
+
+18. Thematic accuracy assessment procedures: national park service vegetation inventory, version 2.0
+   Authors: , 
+   Date: 2010
+
+19. Monitoring land cover changes in the tropical high forests using multi-temporal remote sensing and spatial analysis techniques
+   Authors: , , 
+   Date: 2019
+
+20. Land use/cover change detection using Landsat and IRS imagery: a case study
+   Authors: , , 
+   Date: 2018
+
+21. Land use and land cover change detection using geospatial techniques in the Sikkim Himalaya
+   Authors: , , 
+   Date: 2019
+
+22. Improved land cover classification by integrating Landsat imagery with Lidar and object-based image analysis for land cover classification of the international lake of the woods/rainy river basin
+   Authors: , 
+   Date: 2016
+
+23. Detection of land use / land cover changes using remotely-sensed data
+   Authors: , 
+   Date: 2016
+
+24. Support vector machines and object-based classification for obtaining land-use/cover cartography from Hyperion hyperspectral imagery
+   Authors: , , 
+   Date: 2012
+
+25. Impacts of climate change and human factors on land cover change in inland mountain protected areas: a case study of the Qilian Mountain National Nature Reserve in China
+   Authors: , , , , 
+   Date: 2019
+
+26. Monitoring land use/cover change using remote sensing and GIS techniques: a case study of Hawalbagh block, district Almora
+   Authors: , 
+   Date: 2015
+
+27. Ecosystems and Human Well-being: Synthesis
+   Authors: , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+   Date: 2005
+
+28. Monitoring vegetation system in the great plains with ERTS
+   Authors: , , , 
+   Date: 1973
+
+29. Ethnobotanical uses of plant species in Achanakmar-Amarkantak biosphere reserve
+   Authors: , , 
+   Date: 2016
+
+30. Land use and land cover classification over a large area in Iran based on single date analysis of satellite imagery
+   Authors: , , , , , 
+   Date: 2011
+
+31. Remote sensing and GIS for mapping and monitoring land cover and land use changes in the northwestern coastal zone of Egypt
+   Authors: , 
+   Date: 2007
+
+32. Land cover classification and change detection analysis of Qaroun and Wadi El-Rayyan lakes using multi-temporal remotely sensed imagery
+   Authors: , 
+   Date: 2019
+
+33. Accuracy assessment: a user's perspective photogramm
+   Authors: , 
+   Date: 1986
+
+34. Stratification approach for forest cover type and land use mapping using IRS-1A LISS-II data -a case study
+   Authors: 
+   Date: 1994
+
+35. Wild edible plants of Sikkim Himalayas: nutritive value of selected species
+   Authors: , 
+   Date: 2001
+
+36. Illicit drivers of land use change: narcotrafficking and forest loss in central America
+   Authors: , , , , , , , , , , 
+   Date: 2020
+
+37. Diversity, composition and structure of understorey vegetation in the tropical forest of Achanakmaar Biosphere Reserve
+   Authors: 
+   Date: 2018
+
+38. Traditional uses and sustainable collection of ethnobotanicals by aboriginal communities of the Achanakmaar Amarkantak Biosphere Reserve of India
+   Authors: , , , 
+   Date: 2017
+
+39. Assessment of biomass and net primary productivity of a dry tropical forest using geospatial technology
+   Authors: , , 
+   Date: 2019
+
+40. Estimation of the seasonal leaf area index in an alluvial forest using high-resolution satellite-based vegetation indices
+   Authors: , , , 
+   Date: 2014
+
+41. Documentation of ethnomedical knowledge among the tribes of Achanakmar-Amarkantak biosphere reserve
+   Authors: , , 
+   Date: 2014
+
+42. Unsupervised object-based change detection via a Weibull mixture model-based binarization for high-resolution remote sensing images
+   Authors: , , , , 
+   Date: 2018
+
+43. Mapping the influence of land use/land cover changes on the urban heat island effect-a case study of Changchun
+   Authors: , , , , , , , 
+   Date: 2017
+
+44. Post classification comparison change detection of Guangzhou Metropolis
+   Authors: , 
+   Date: 2011
+
+45. Land use/cover change and environmental vulnerability analysis in Birahi Ganga sub-watershed of the Garhwal Himalaya
+   Authors: , , , , , , 
+   Date: 2007
+
+46. Spatiotemporal evolution of tropical forest degradation and its impact on ecological sensitivity: a case study in Jinghong
+   Authors: , , , , , 
+   Date: 2020. 138678
+
+47. Land cover classification and change analysis of the Twin Cities (Minnesota) Metropolitan Area by multitemporal Landsat remote sensing
+   Authors: , , , 
+   Date: 2005
+
+48. Local spectrum-trend similarity approach for detecting land-cover change by usingspot-5 satellite images
+   Authors: , , 
+   Date: 2014
+

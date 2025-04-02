@@ -1,0 +1,331 @@
+================================================================================
+TITLE: The impact of land-use/land cover changes on water balance of the heterogeneous Buzi sub-catchment, Zimbabwe
+================================================================================
+
+AUTHORS:
+- Abel Chemura
+- Donald Rwasoka
+- Onisimo Mutanga
+- Timothy Dube
+- Terence Mushore
+
+ABSTRACT:
+The nature of interactions between ecological, physical and hydrological characteristics that determine the effects of land cover change on surface and sub-surface hydrology is not well understood in both natural and disturbed environments. The spatiotemporal dynamics of water fluxes and their relationship with land cover changes between 2009 and 2017 in the headwater Buzi sub-catchment in Zimbabwe is evaluated. To achieve this, land cover dynamics for the area under study were characterised from the 30 m Landsat data, using the eXtreme Gradient Boosting (XGBoost) algorithm. After the land cover classification, the key water balance components namely; interception, transpiration and evapotranspiration (ET) contributions for each class in 2009 and 2017 were estimated. Image classification of Landsat data achieved good overall accuracies above 80% for the two periods. Results showed that the percentage of the plantation land cover types decreased slightly between 2009 (25.4%) and 2017 (22.5%). Partitioning the annual interception, transpiration and ET according to land cover classes showed that the highest amounts of ET in the basin were from plantation where land cover types with tea had the highest interception, transpiration and ET in the catchment. Higher ET, interception and transpiration were observed in the eastern parts of the catchment. At catchment level, results show that 2017 had a higher water balance than 2009, which was partly explained by the decrease in plantation cover type.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Spatial information on water flux within the soil-vegetationatmosphere system is critical for water management at catchment level in the face of anthropogenic surface modifications and global change. Land cover change alters the atmospheric carbon and nitrogen cycles, albedo, runoff, soil water holding capacity and biodiversity among others at local, regional and global scales 
+Changes in vegetation cover have significant impacts on the surface water budget, especially for evapotranspiration (ET), an important component of the terrestrial hydrological cycle 
+Agricultural and forestry plantations are important economic activities that contribute to local employment and national development. Plantation forests use more water per unit area per year than agricultural land covers such as grains, pasture and other crops, which lowers runoff and discharge in areas that they are dominant 
+It is well established in literature that different vegetation types have different ET, and therefore major changes in land cover have consequent effects on ET 
+The substantial extent of plantations as a land cover type in some catchments together with the degree to which they reduce runoff and recharge is sufficient to justify the inclusion of plantations in water resource planning, policy and management 
+Given the importance of agricultural and forestry plantations as a land cover type in terms of economic importance and provision of environmental service on one hand and catchment hydrology and related water resource management on the other, it is therefore important to understand how land cover change can have an impact on aspects of the water balance in the catchment. We hypothesize that there is a link between land use/cover and water balance such at catchment level that is modified by land cover change. The objectives of this study were therefore to (1) determine the proportion of agricultural and forestry plantations as land use/cover types in Buzi sub-catchment in 2009 and 2017, (2) establish the quantitative and spatial changes in land cover between the time periods and (3) understand the relationship between changes in land cover and water balance in the catchment level.
+
+## Materials and methods ##
+
+
+## Study area ##
+The Buzi headwaters sub-catchment is located between latitude 32 � 32 � 0 E and 32 � 52 � 0 E, and longitude 20 � 20 � 0 S and 20 � 08 � 0 S in Chipinge district in Zimbabwe under the Save Catchment (Fig. 
+
+## Land cover change assessment ##
+
+
+## Image data acquisition pre-processing ##
+For the land cover classification, two dry season Landsat images for 2009 and 2017 were acquired. The imagery were obtained with georeferencing, which was sufficient for general land cover classification as was required in the study. To ensure consistency in the atmospheric correction, the analysis ready, atmospherically corrected Landsat Surface Reflectance Level 2 science products were ordered from the earth explorer (https://earthexplorer.usgs.gov). These were 16-bit signed integer data with radiometric and geometric correction and were converted to surface reflectance with a provided scale factor. The dates, sensor types, cloud cover and other characteristic of the images are in Table 
+Image stacks were made of five bands, that is, blue (B), green (G), blue (B), near infrared (NIR) and shortwave infrared (SWIR1) as Seven land cover types formed the classification scheme used to classify the images. These are described in detail in Table 
+
+## Image classification algorithm ##
+To classify the four image stacks for 2009 and 2017, we applied the eXtreme Gradient Boosting (XGBoost) approach. Boosting is an ensemble machine learning approach that creates a strong learner from a given number of weak learners. XGBoost is an improved step from the recursive tree-based partitioning method of gradient boosting introduced by 
+
+## Classification accuracy assessment ##
+We used the confusion matrix to assess the accuracy of the classification process relative to reference data. The overall accuracy (OA), user's accuracy (UA) and producer's accuracy were determined from the confusion matrix. OA is the percentage that indicates the probability that a pixel is classified correctly by the thematic map. PA for is the percentage of a category on the ground that is correctly classified by the on the map, and measures proportion of pixels omitted from a reference classes (omission error). UA expresses the proportion of a category on the ground that is included erroneously in another category (commission error) 
+
+## Linking land cover changes to water balance in the catchment ##
+The land cover types obtained from the classification were linked to the annual water balance parameters for the catchment that were obtained from the FAO Vapor data portal (https://wapor.apps.fao.org/ catalog/1). This was done with the objective of determining the contribtuion of each land cover type to the water flux that are important for catchment boundaly layer processes (Table 
+The FAO WaPOR datasets were at a lower resolution that the landsat data and therefore majority (modal) resampling was applied on the classified image to bring them to the same resolution of 250 m of the FAO Wapor data. The resampled classes were converted to points and used to extract the values of the water balance parameters for each land cover class for the two periods. In addition, to determine the relationships between the different land cover types and water flux, we calculated three water related vegetation indices from the Landsat bands that have been identified as direct indicators of leaf water content 
+The process of modelling the relationship between land cover types and water flux is summarized in the schematic diagram in Fig. 
+
+## Results ##
+
+
+## Image classification results ##
+The XGBoost achieved an overall accuracy of 83.1% for 2009 and 86.6% for 2017 (Table 
+
+## Land cover/use types and changes between 2009 and 2017 ##
+The thematic maps for the two time periods 
+
+## Land use based ET in Buzi sub-catchment ##
+The resampled land cover classes for 2009 and 2017 are shown in Fig. 
+Using all the pixels in the catchment, the results showed that the greatest amounts of interception in the sub-catchment occur in the cover class tea and plantation forests, followed by natural forest. As expected, water had the least interception and transpiration but high evapotranspiration (Fig. 
+We further determined the correlation between precipitation, interception, transpiration and evapotranspiration losses for all pixels in the catchment, which are shown in Table 
+
+## Discussion ##
+In this study, we aimed at understanding how land cover change affect aspects of the water balance at sub-catchment level by linking remote sensing image classification with water flux in a heterogeneous tropical catchment. We have presented a catchment-level water balance assessment using remote sensing derived land cover dynamics for 2009 and 2017, which were linked to interception, transpiration and ET. Finally, the water balance for the two periods was calculated to represent long-term spatio-temporal dynamics of terrestrial variables.
+
+## Land cover change assessment ##
+The image classification process determined the spatial and quantitative distribution of the selected land cover classes in the Buzi Headwaters sub catchment as shown by the thematic maps for 2009 and 2017. The accuracies achieved by implementation of the XGBoost algorithm for image classification are satisfactory and comparable to other classification accuracies in similar landscapes. For example, while Chemura and Mutanga (2017) obtained comparable classification using Landsat data, the XGBoost has added advantages that it is fast and produces smaller but more accurate models as it applies the sparsity-aware split-finding approach to more efficiently train the classifier 
+A significant part of the Buzi Headwaters have been modified by human activities as human-induced cover types (cropland, plantation forest, coffee, tea and water) now dominate the landscape of the sub basin accounting for 44.6% in 2009 and 46% in 2017. The high agricultural development potential of the Buzi Headwaters sub catchment makes the area to be in high demand for agricultural land uses at the expense of natural cover types. In 2009 a quarter of the catchment      (25.4%) was under plantation cover type which reduced to 22.5% in 2017 but in both years exceeding the recommended maximum threshold of 20% of catchment for plantation cover types 
+In addition to changes in area for land cover types, co-occurrences of the plantation cover type was also observed especially for tea and plantation forest. Tea and plantation forest cover types have been shown to be concentrated in certain localities compared to coffee, which was scattered in smallholder plots across the sub-catchment. The close association between tea and plantation forest means that these plantation types will take significant areas in particular parts of the catchment, increasing the impact of plantations on the catchment hydrology and other environmental conditions. 
+The growth of plantation forests has also been linked to large-scale government initiated reforestation programs elsewhere 
+
+## Land cover change and water balance ##
+Although the plant physiology and management govern negative and positive environmental interactions of plantation land cover types, there  are significant differences between annual crops and plantations. Tree crops alter the water cycle of catchments, as they are likely to increase interception and increase evapotranspiration, which in both cases reduces runoff 
+This study has demonstrated that ET sources shift in a catchment with land cover changes, with this also altering the water flux in the catchment. From a catchment management perspective, it shown which areas need focus in term of reducing ET from the catchment in order to maximize water yield and discharge. Thus, depending on the type of changes in land cover at catchment scale, water flux parameters respond accordingly and it is possible to achieve both positive and negative effects on water balance. As such, the suggestion by 
+It is also important to note that the effects of the changes in land cover may be beyond quantitative water flux but may also include water quality changes and resultant impacts on ecosystems and economic activities 
+
+## Implications on catchment scale water resources management ##
+The issue of plantations and water resources requires an understanding of several areas of hydrology because forest vegetation cover influences several aspects of water balance in landscapes. This is even more urgent in transboundary basins where activities in one sub-basin have spill over effects in other basins and other countries. According Lagerblad (2010) irrigation is the largest water user in the basin, taking up to 4% of the flows. The expected urban and agricultural development in the Upper Buzi catchment due to population growth and the land reform program respectively are expected to lead to increased demand on water resources in the Buzi basin in eastern Zimbabwe, both for urban water supply and irrigated agriculture 
+
+## Conclusions ##
+In this study, we connected land cover changes from satellite remote sensing data to water flux variables data at catchment level to understand the contribution of land cover change to water flux for a tropical catchment. Our approach presents a remote sensing based approach for evaluating and tracking the effect of land use/cover change on water balance that is related to many ecosystem processes. We observed that there were changes in land use/cover in Buzi sub-catchment from 2009 to 2017 with major changes related to human dominated activities such as settlements and croplands with decreases in grasslands. From the results of this study, we conclude that increase in areas under agricultural plantations could threaten water yield as these land cover types increase ET with decreases in their areas being good for positive catchment water balance. We also found that spatial distribution and rearrangement of plantations within a catchment is an important factor in water balance, as they are some plantations types co-occur and thus are concentrated in specific parts of the catchment. It was noted that plantation cover types are significant in influencing water flux in Buzi subcatchments that they are significant and water balance changing with land use change. From our findings, we recommend that regular monitoring of development of plantations is important at catchment level given their contribution to water dynamics vis-vis decreasing water availability die to climate change and competing uses. The insights from this study are imperative for catchment managers for related or similar catchments with plantations cover types in terms of understanding, and projecting impacts from land cover change on water resources for integrated catchment management.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Evapotranspiration of annual and perennial biofuel crops in a variable climate
+   Authors: , , , , , , 
+   Date: 2015
+
+2. Effects of dynamic land use/land cover change on water resources and sediment yield in the Anzali wetland catchment
+   Authors: , , , , , , 
+   Date: 2020
+
+3. A remote sensing surface energy balance algorithm for land (SEBAL). 1
+   Authors: , , , 
+   Date: 1998
+
+4. Land use and land cover dynamics and drivers in the Muga watershed
+   Authors: , 
+   Date: 2019
+
+5. Trends and drivers of land use/land cover change in Western Ethiopia
+   Authors: , , , 
+   Date: 2019
+
+6. The land surfaceatmosphere interaction: a review based on observational and global modeling perspectives
+   Authors: , , , , 
+   Date: 1996
+
+7. Development of catchment research, with particular attention to Plynlimon and its forerunner, the East African catchments
+   Authors: , 
+   Date: 2007
+
+8. A review of catchment experiments to determine the effect of vegetation changes on water yield and evapotranspiration
+   Authors: , 
+   Date: 1982
+
+9. Modelling impacts of land cover change on critical water resources in the Motueka River catchment
+   Authors: , , , 
+   Date: 2009
+
+10. Developing detailed age-specific thematic maps for coffee (Coffea arabica L.) in heterogeneous agricultural landscapes using random forests applied on Landsat 8 multispectral sensor
+   Authors: , 
+   Date: 2017
+
+11. Xgboost: a scalable tree boosting system
+   Authors: , 
+   Date: 2016
+
+12. 
+   Authors: , , , 
+   Date: 2019
+
+13. A review of assessing the accuracy of classifications of remotely sensed data
+   Authors: 
+   Date: 1991
+
+14. Assessing human and environmental pressures of global land-use change 2000-2010
+   Authors: , , , , , , 
+   Date: 2019
+
+15. Quantifying the relative importance of direct and indirect biophysical effects of deforestation on surface temperature and teleconnections
+   Authors: , , , 
+   Date: 2018
+
+16. Satellite-based, multi-indices for evaluation of agricultural droughts in a highly dynamic tropical catchment
+   Authors: , , , 
+   Date: 2018
+
+17. Biophysics and vegetation cover change: a process-based evaluation framework for confronting land surface models with satellite observations
+   Authors: , , , , , , 
+   Date: 2018
+
+18. The mark of vegetation change on Earth's surface energy balance
+   Authors: , , 
+   Date: 2018
+
+19. The effect of land cover type and structure on evapotranspiration from agricultural and wetland sites in the Sacramento
+   Authors: , , , , , , 
+   Date: 2018
+
+20. Effects of afforestation on water yield: a global synthesis with implications for policy
+   Authors: , , 
+   Date: 2005
+
+21. Status of land cover classification accuracy assessment
+   Authors: 
+   Date: 2002
+
+22. Greedy function approximation: a gradient boosting machine
+   Authors: 
+   Date: 2001
+
+23. The climate hazards infrared precipitation with stations-a new environmental record for monitoring extremes
+   Authors: , , , , , , 
+   Date: 2015
+
+24. Climate, forest growing season, and evapotranspiration changes in the central Appalachian Mountains
+   Authors: , , , , , 
+   Date: 2019
+
+25. Forest cover change over four decades in the Blue Nile Basin, Ethiopia: comparison of three watersheds
+   Authors: , , , 
+   Date: 2014
+
+26. Human modification of global water vapor flows from the land surface
+   Authors: , , , , , 
+   Date: 2005
+
+27. Effect of landcover/ land-use changes on water availability in and around Ruti Dam in Nyazvidzi catchment
+   Authors: , , , , 
+   Date: 2018
+
+28. Crude oil price forecasting using XGBoost
+   Authors: , 
+   Date: 2017
+
+29. Evapotranspiration is resilient in the face of land cover and climate change in a humid temperate catchment
+   Authors: , , , , 
+   Date: 2018
+
+30. Spatio-temporal variation of potential evapotranspiration and climatic drivers in the Jing-Jin-Ji region
+   Authors: , , , , , , 
+   Date: 2018
+
+31. Effects of different land use types on potential evapotranspiration in the Beijing-Tianjin-Hebei region, North China
+   Authors: , , , , , , 
+   Date: 2019
+
+32. Climate change, vegetation dynamics, and the landscape water balance
+   Authors: , 
+   Date: 2007
+
+33. Dominant effect of increasing forest biomass on evapotranspiration: interpretations of movement in Budyko space
+   Authors: , , , , , , 
+   Date: 2018
+
+34. Exploring the linkages between river water chemistry and watershed characteristics using GIS-based catchment and locality analyses
+   Authors: , , 
+   Date: 2002
+
+35. Impact of land-use change on the water resources of the Upper Kharun Catchment
+   Authors: , , , , 
+   Date: 2017
+
+36. Assessment of Environmental Flow Requirements
+   Authors: 
+   Date: 2010
+
+37. Impacts of land-cover change on the water flow regulation ecosystem service: invasive alien plants, fire and their policy implications. Land Use Pol
+   Authors: , , 
+   Date: 2014
+
+38. Forest plantations and water consumption: a strategy for hydrosolidarity
+   Authors: , , , , 
+   Date: 2012
+
+39. Response of evapotranspiration and water availability to changing climate and land cover on the Mongolian Plateau during the 21st century
+   Authors: , , , , , , 
+   Date: 2013
+
+40. Disentangling climatic and anthropogenic controls on global terrestrial evapotranspiration trends
+   Authors: , , , , , , 
+   Date: 2015
+
+41. Land-use change and its socio-environmental impact in Eastern Ethiopia's highland
+   Authors: , , , , 
+   Date: 2014
+
+42. Land cover distribution in the peatlands of Peninsular Malaysia, Sumatra and Borneo in 2015 with changes since
+   Authors: , , 
+   Date: 2016. 1990
+
+43. Sida Support to Save Catchment Council
+   Authors: , , 
+   Date: 2004
+
+44. The Agronomy and Economy of Important Tree Crops of the Developing World
+   Authors: 
+   Date: 2010
+
+45. Implementing Environmental Water Requirements in Buzi River Basin, Mozambique: an Impact Analysis Based on the Water Resource Yield Model
+   Authors: 
+   Date: 2010
+
+46. Effects of land cover change on evapotranspiration in the Yellow River Delta analyzed with the SEBAL model
+   Authors: , , 
+   Date: 2017
+
+47. Combining principal component analysis, discrete wavelet transform and XGBoost to trade in the financial markets
+   Authors: , 
+   Date: 2019
+
+48. Effects of conversion of native cerrado vegetation to pasture on soil hydro-physical properties, evapotranspiration and streamflow on the Amazonian agricultural frontier
+   Authors: , , , , , , 
+   Date: 2017
+
+49. Plantations, Farm Forestry, and Water: A Discussion Paper
+   Authors: , 
+   Date: 2001
+
+50. Impact of land use and land cover transitions and climate on evapotranspiration in the Lake Naivasha Basin
+   Authors: , , , 
+   Date: 2019
+
+51. Evaluating land cover change and its impact on hydrological regime in Upper Shire river catchment
+   Authors: , , 
+   Date: 2011
+
+52. Plantations and Water Use, Australian Government. Bureau of Rural Sciences
+   Authors: , , 
+   Date: 2007
+
+53. Crop expansion and conservation priorities in tropical countries
+   Authors: , , , , , , 
+   Date: 2013
+
+54. A Review of Plantations as a Water Intercepting Land Use in South Australia
+   Authors: , 
+   Date: 2009
+
+55. Impact of land use and land cover change on groundwater recharge and quality in the southwestern US
+   Authors: , , , , 
+   Date: 2005
+
+56. Extreme gradient boosting as a method for quantitative structure-activity relationships
+   Authors: , , , , 
+   Date: 2016
+
+57. Applying satellite-derived evapotranspiration rates to estimate the impact of vegetation on regional groundwater flux
+   Authors: , , , 
+   Date: 2020
+
+58. A review of global terrestrial evapotranspiration: observation, modeling, climatology, and climatic variability
+   Authors: , 
+   Date: 2012
+
+59. Different response of surface temperature and air temperature to deforestation in climate models
+   Authors: , , , , , , 
+   Date: 2018
+
+60. Quantifying the biophysical and socioeconomic drivers of changes in forest and agricultural land in South and Southeast Asia
+   Authors: , , 
+   Date: 2019
+
+61. Global estimation of effective plant rooting depth: implications for hydrological modelling
+   Authors: , , 
+   Date: 2016
+

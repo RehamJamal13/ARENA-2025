@@ -1,0 +1,541 @@
+================================================================================
+TITLE: Annual emissions of carbon from land use, land-use change, and forestry from 1850 to 2020
+================================================================================
+
+AUTHORS:
+- Richard Houghton
+- Andrea Castanho
+
+ABSTRACT:
+Estimates of the annual emissions of carbon from land use, land-use change, and forestry (LULUCF) are important for constructing global, regional, and national carbon budgets, which in turn help predict future rates of climate change and define potential strategies for mitigation. Here, we update a long-term (1850-2020) series of annual national carbon emissions resulting from LULUCF (https://doi.org/10.7910/DVN/U7GHRH, Houghton and Castanho, 2023), based largely, after 1960, on statistics of land use from the Food and Agriculture Organization (FAO) of the United Nations (http://www.fao.org/faostat/en/#data/, FAO, 2021). Those data suggest that rates of deforestation in the tropics (and thus net emissions of carbon) have decreased over the last 10 years (2011)(2012)(2013)(2014)(2015)(2016)(2017)(2018)(2019)(2020). The data also indicate that the net loss of tropical forest area was greater than the net gain in agricultural lands, and we explore four alternative explanations for this apparent forest conversion, one of which is shifting cultivation. We also discuss how opposing trends in recent estimates of tropical deforestation (and emissions) might be reconciled. The calculated emissions of carbon attributable to LULUCF approximate the anthropogenic component of terrestrial carbon emissions, but limiting national carbon accounting to the anthropogenic component may also limit the potential for managing carbon on land.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+The annual net exchanges of carbon between land and atmosphere are represented by two terms in the global carbon budget: one term for direct anthropogenic effects (i.e., management) and a second term for natural effects and indirect anthropogenic effects (e.g., the response of terrestrial ecosystems to environmental change) 
+One surrogate for the emissions of carbon attributable to management is based on land use, land-use change, and forestry (LULUCF) 
+A second approach for estimating the emissions from LU-LUCF is the approach used by countries to define their national greenhouse gas inventories (NGHGIs) 
+The analysis described here is based on the first of these approaches. We update and improve an earlier analysis of emissions attributable to LULUCF 
+The update and improvements consist of four steps. First, we improved the bookkeeping model's simulation of fuelwood and industrial wood harvest. We then extended the period of analysis to 2020, based largely on national data on land use from 
+
+## Methods ##
+Annual emissions of carbon from LULUCF were calculated with a bookkeeping model based on two types of data: activ-ity data (rates of wood harvest and rates of land-use change) (Sect. 2.2) and per hectare effects of land-use change and harvest on carbon stocks (Mg C ha -1 yr -1 ) (Sect. 2.3).
+
+## Bookkeeping model ##
+We used a bookkeeping model 
+The model is nonspatial. It uses national LULUCF data and calculates emissions for individual countries, but it does not use gridded data. Rather, the input data are annual rates of land-use change per country and cubic meters of wood harvested per country.
+The overall purpose of the bookkeeping model is to track changes in carbon on every hectare of land affected by land use, land-use change, and forestry. Only lands experiencing LULUCF are included in the calculations. The effects of environmental change on lands either managed or unmanaged are excluded to the extent possible.
+Each year a new age class of hectares is created in the model for each type of land use or land-use change in each type of ecosystem. Age classes either lose carbon annually (cropland newly converted from forest) or gain carbon annually (growing forest) until they reach a minimum soil carbon (croplands) or a maximum biomass carbon (mature forest) value (Fig. 
+The changes in carbon stocks that take place as a result of land use and land-use change are prescribed in the model using response curves (Fig. 
+Burning and decay of organic matter as a result of LU-LUCF accounted for annual gross emissions of carbon, while growing forests recovering from harvest or agricultural abandonment removed carbon from the atmosphere. The model simulated annual age classes until an age class reached a new equilibrium, at which point no further loss of carbon occurred (e.g., in cultivated land) or no further gain of carbon occurred (e.g., in a mature forest).
+The bookkeeping model was developed to calculate only direct anthropogenic effects, ignoring the effects of environmental change on stocks of carbon. That is, rates of forest growth and rates of decay (Mg C ha -1 yr -1 ) varied for different types of land use and land-use change and for different ecosystem types (the model included 20 ecosystem types), but they did not vary through time. The same rates of growth and decay applied in 1850 and 2020. Thus, the model calculated emissions from LULUCF as though the environment was constant. The approach could not completely eliminate the effects of environmental change because field data used to define changes in vegetation and soil (Sect. 2.3) were collected at different times during the last 50 years or so and, thus, included indirect effects. For example, increased rates of growth as a result of CO 2 fertilization led the model to overestimate rates of forest growth in the past and to underestimate them in recent years.
+Emissions of carbon from organic soils (burning and decay of peatlands as a result of management) were not explicitly included in the bookkeeping model, but they were added to the results based on independent studies 
+We ran the model starting in 1700 but report emissions only after 1850 to avoid artificial emissions resulting from the model spin-up. For example, it took several decades for the pools of carbon in wood products and slash to reach equilibrium (inputs equal outputs). Similarly, it took approximately 150 years for the pools of carbon in age classes of growing forests to reach equilibrium. Rather than initializing the model with pool sizes and age classes specified in 1850, we spun up the model from 1700 so that these pools were in existence and approximately of the appropriate magnitude by 1850.
+2.2 Changes in land use (rates of conversion, ha yr -1 , and rates of wood harvest, m 3 yr -1 )
+We considered the four major types of land use that FAO-STAT (FAO, 2021) reports: croplands, permanent meadows and pastures (hereafter referred to as pastures), forest land, and "other land". The latter land-use type, other land, includes all lands that are neither agricultural nor forest land, such as urban lands, settlements, grasslands that were not grazed, rock, ice, and lands denuded by mining. The sum of areas in all four categories is equal to the total land area of a country, and other land is calculated as a residual to reach that total. We assumed that changes in these land uses from one year to the next are directly anthropogenic (i.e., a consequence of management decisions). Below, we discuss the possible exceptions to and implications of that general assumption.
+We also considered forest management as a land use (i.e., the annual harvest of industrial wood and fuel wood; FAO, 2021). In the US, we included fire exclusion as an aspect of forest management that affects the carbon stocks of forests. Areas burned by wildfires were not obtained from the FAO but rather from the United States Department of 
+We reconstructed historical changes in land use for each country starting with the most recent information and working backwards in time. From 1990 to 2020, we used data from FAO (2021) for national areas comprising forest land, croplands, pastures, and other land. From 1961 to 1990, we used the same data for croplands and pastures, but data on forest area were not available from that source. Before 1961 (for croplands and pastures) and before 1990 (for forests), we used national statistics or the literature, where available, to quantify areas under different types of land use regimes.
+In the absence of such information, we extrapolated rates of change into the past in proportion to population growth. Thus, uncertainties in rates of LULUCF were greater before 1990 and greater still before 1961. Ironically, the variation among emissions estimates appears to be lower in the past compared with recent years, in part because rates of land-use change were lower in the past and in part because different studies presumably used similar assumptions in the absence of data 
+Calculating rates of land-use change from FAOSTAT (FAO, 2021) data on land use was not a trivial exercise. We used changes in land area from one year to the next to determine rates of conversion among categories. For example, if forest area decreased by 1 ha and crop area increased by 1 ha, then we assigned 1 ha as converted from forest to crop. It is possible, however, that 2 ha was deforested and 1 ha was converted from crop to forest, thus yielding the same net change: 1 ha from forest to cropland. We underestimated the gross emissions and removals of carbon that would have resulted from gross changes in land use. The effect on net emissions is unclear, but some effect is likely as the emissions and removals associated with gross changes in land use are not necessarily symmetrical in time. For example, the rate of emissions from a hectare burned at the time of forest clearing is higher than the rate of carbon removal due to forest growth.
+The relationship between annual changes in land-use categories (FAOSTAT; FAO, 2021) and rates of conversion between one category and another (land-use change) becomes more complex when net changes in area are reported for more than two categories. For example, if both forest and other land each decreased by 1 ha while cropland and pasture each increased by 1 ha, it was unclear how much forest area was converted to crop as opposed to pasture and how much other land was converted to either. Thus, we developed a series of rules to determine the translation of FAOSTAT data to annual rates of land-use change.
+With these rules, a loss of forest was preferentially converted to cropland, then to pasture, and finally to other land to the extent that these categories increased in area. We explore the apparent conversion of forest to other land in more detail below 
+The areas under cropland regimes are better documented through history than other land uses. Areas under permanent meadow and pasture regimes are less consistently defined, in large part because many lands that are grazed (rangelands) are neither meadows nor pastures.
+With few exceptions (the USA, Europe, and South and Southeast Asia), national accounting of forest areas is not well documented historically. Thus, we generally reconstructed or extrapolated historical changes in forest areas backwards from the oldest available data into the past. Because the areas of different land uses are least well known for years before 1961, we adjusted the starting areas (1700) so as to end in 2020 with the areas of land use reported by FAOSTAT.
+
+## Changes in carbon per hectare as a result of LULUCF (response curves) ##
+The stocks of carbon in vegetation and soils of different types of natural ecosystems were initially compiled from ecological and forestry literature. These values were assigned to modeled ecosystems in 1700. 
+The changes in carbon stocks that took place as a result of land use and land-use change were prescribed in the model for each type of ecosystem and each type of land use and land-use change (Fig. 
+Similar response curves were used to define the rates of loss and accumulation of soil organic carbon following the cultivation of native soils and the abandonment of agriculture, respectively. Approximately 25 % of the organic carbon in the top meter of soil is lost with cultivation in a two-stage process approximating exponential decay 
+In addition to changing the carbon in vegetation and soil, management also generates slash (branches, twigs, leaves, stumps, and roots left on site after harvest and forest conversion) and wood products. Slash was assigned exponential decay rates in the model that varied with ecosystem type, and wood products were assigned to pools that decayed at rates of 1, 0.1, or 0.01 yr -1 , corresponding roughly to fuelwood, paper and pulp, and lumber, respectively, which were obtained from FAOSTAT 
+A set of four response curves defined the annual changes in carbon for each hectare cultivated, abandoned, or harvested. A different set of response curves was assigned for each type of land use and land-use change on each type of ecosystem. A total of 20 ecosystem types were included.
+
+## Updates included in this work ##
+We incorporated the changes to 
+-In step 1, we improved the calculation of carbon emissions from wood harvest, using data from FAOSTAT (FAO, 2015) 
+-In step 2, we updated and revised input to accommodate new data from FAOSTAT (FAO, 2021); this step included some historical adjustments as well.
+-In step 3, we treated the apparent conversion of forests to other land with four alternative assumptions. We also estimated the historical trajectory of this conversion before 1990 so that there was not an abrupt change when the FAO data on forest area first became available 
+-In step 4, we included other effects of management (peat drainage and burning in Southeast Asia and peatland use in the Northern Hemisphere)
+Each of these steps is elaborated below.
+
+## Adjustments to the bookkeeping model for wood harvest -step 1 ##
+Two adjustments were made to the original code used by 
+the appropriate volume of wood products (from FAOSTAT; FAO, 2021) because some of the annual production had been assigned to slash. In the improved version, the total amount of wood products harvested was the amount specified by the FAO, and an additional amount of carbon was converted from biomass to slash.
+The second adjustment reduced harvest intensity (Mg C ha -1 ) for secondary forests to account for the lower biomass in these forests. Thus, harvests were more representative of harvest practices. The improvement increased the areas of secondary forests harvested, thereby increasing the annual gross uptake of carbon in recovering forests.
+
+## Incorporation of new data from the FAO -step 2 ##
+We used two data sources from the FAO to update the analyses to 2020. Every 5 years since 1990, the FAO has published a Global Forest Resources Assessment (FRA), with the latest being FRA 2020 
+For a few countries, we used sources of data other than from the FAO. For example, we used cropland areas from Liu and Tian (2010) from 1961 to 1995 for China, after which we used data from the FAO. Appendix B shows the differences between the two sources of data. For Russia, Ukraine, and Belarus, we used arable land from 
+
+## Alternative interpretations of forest conversion to other land -step 3 ##
+As discussed above (Sect. 2.2), FAOSTAT (FAO, 2021) has reported national areas under cropland, permanent meadow and pasture, and forest land regimes annually since 1990. However, the three classes of land use do not account for all land areas; therefore, a fourth class, other land, has been used by the FAO to account for other land uses and to ensure that the total area of all four classes sums to a country's total land area. Other land includes any lands that are not classified as cropland, permanent meadows and pasture, or forest. It can include un-grazed grasslands, shrublands, and deserts as well as anthropogenic lands, such as settlements and urban lands, lands affected by mining and energy extraction, and anything else that does not match the definitions of the first three categories. The problem with other land, from a carbon perspective, is that, without further information, its carbon density is unknown. This ambiguity creates a problem for carbon accounting when forests are converted to other land or when other land is converted to croplands. Actually, it is a potential problem even if the area of other land does not change. If shrublands were converted to urban areas, for example, the area reported to be in other land would not change, yet the carbon stocks would. We did not deal with this potential problem.
+Here, we were particularly concerned with the observation that net losses of forest area exceeded net gains in agricultural area in many tropical countries. Forests were declining while other land was increasing. We explored the effects of four different interpretations of this apparent forest conversion to other land (FCO). Note that FCO is not a term reported in FAOSTAT (FAO, 2021); rather, it was inferred from the rules that we applied to the FAO data on land use to calculate annual rates of land-use change. This investigation of FCO became a major focus of this analysis.
+The first interpretation of FCO was that the apparent loss of forest to other land was a statistical or accounting error. The data reported by countries are total areas of croplands, permanent meadows and pastures, forests, and other land. It is quite possible that areas were revised in one category without adjusting the others. There are two possibilities for error. The first likelihood is that the loss of forest might be overestimated and that, in reality, no forests were converted to other land. This error seems unlikely because FAOSTAT incorporates forest data from the latest FRA publication, which is systematically carried out and up to date. The second possibility is that the error might be in assigning deforestation to other land when, in reality, it was for agricultural land. For this interpretation, we implemented the reported deforestation rates but assigned deforestation to cropland rather than to other land.
+However, what if FCO, or at least some fraction of it, represented a real change in land use? FCO has accounted for more tropical deforestation than agriculture, about 90 % of it after 2010 (Fig. 
+We explored the effect of three alternative interpretations of FCO in addition to error. The rationale for considering that the reported change might be real was based not only on its relative magnitude (Fig. 
+Thus, the first interpretation of FCO as real was that forests apparently converted to other land were converted to shifting cultivation. FAO (2021) does not recognize shifting cultivation in its classifications of land; rather, it is included in cropland. Here, we considered it a particular type of cropland. We have used the interpretation previously 
+Traditional shifting cultivation is a special case for cropland. In this regime, the fallow period is longer than the period used for crops, and some tree cover persists. Typical fallow lengths are 2 to 25 years 
+Our definition of shifting cultivation is broad and includes more than traditional shifting cultivation. It refers to the repeated use of forests for temporary agriculture. Shifting cultivation, or swidden, was the most prevalent type of agriculture in the tropics ". . . well into the second half of the 20th century" 
+For this shifting cultivation interpretation, we estimated areas and changes in areas as follows. First, we compared each country's area of other land in 1980 (based on our extrapola-tion of FAOSTAT data) with that country's area of forest fallow (shifting cultivation) in 1980 as reported by FAO/UNEP 
+Annual increases (or decreases) in shifting cultivation were based on FCO between 1990 and 2020 and were estimated to remain a constant fraction of other land for prior years (1700 to 1980). A less uncertain reconstruction is difficult because the areas are not well known. A greater number of people might be supported by either a larger area under a shifting cultivation regime or a shortened length of fallow; however, neither of these variables is known for most regions 
+For the second interpretation of FCO as real, we assumed that it represented the conversion of forests to new croplands, and, at the same time, the abandonment of an equivalent area of croplands to other land (in this case unproductive or degraded croplands). The abandoned croplands had low amounts of carbon in vegetation and soils, and they did not accumulate more after they were abandoned. In this interpretation, labeled degraded, there was a net loss of forest area, no change in cropland area, and an increase in other land. The increase in other land could just as well include mining or energy extraction activities as well as the degradation of croplands. Note that degraded cropland is not a term used by FAOSTAT (FAO, 2021); it is simply our label for identifying a possible interpretation of FCO, which we inferred from the FAO data (FAOSTAT; 
+To summarize, the degraded, shifting cultivation, and recovering interpretations of FCO may be described as alternatives leading to high, medium, and low emissions, respectively, based on their long-term effects on biomass (Fig. 
+
+## The draining and burning of peatlands -step 4 ##
+Because our bookkeeping model did not calculate the changes in peatland soils from the use, draining, and burning of peat, we used published estimates to supplement the fluxes calculated here. In the tropics, we used the emissions from burning peatlands reported in version 4 of the Global Fire Emissions Database (GFED4) 
+We note that the FAO also reports national emissions of carbon from drained and burned peatlands 
+
+## Results ##
+The four steps to revising the model and input data produced estimates of global emissions from LULUCF over the period from 1850 to 2015 that were surprisingly similar to the results reported 5 years ago (Fig. 
+
+## Adjustments to the bookkeeping model for wood harvest ##
+Adjustments to the code to account for (1) the fraction of harvest that becomes slash instead of wood product and (2) the larger area required for secondary forests to provide the same volume of harvested wood as primary forests had offsetting effects; however, together, the adjustments led to lower emissions (Fig. 
+
+## Incorporation of new data from FAOSTAT (FAO, 2021) ##
+The "new" data from FAOSTAT (FAO, 2021) were largely land-use data for the last 5 years (2016-2020), but they included some revisions before 2016. Furthermore, we included revisions that we made to estimated areas of land use before 1990 in order to avoid abrupt transitions in rates of land-use change. Use of these new and revised data increased the cumulative net emissions little: from 112 to 116 Pg C for the period from 1850 to 2015 (Table 
+
+## Alternative interpretations of the conversion of forest to other land ##
+As discussed above, the annual loss of forest area in many tropical countries exceeded the gain in agricultural lands and resulted in a gain in other land 
+(2) shifting cultivation, including fallow; (3) degraded land; and (4) recovering forest.
+The cumulative area in this FCO category was large. If all conversions of tropical forests to other land were assumed to be for shifting cultivation, the area was 450 × 10 6 ha in 2020, up from 239×10 6 ha in 1850 according to our assumptions. The highest rates of conversion to other land were in the 1990s (Fig. 
+Because grown forests have the highest carbon densities in biomass, croplands have the lowest densities, and shifting cultivation is intermediate, emissions would be expected to be highest for the degraded interpretation, intermediate for shifting cultivation, and lowest for the recovering interpretation (Fig. 
+The uncertainty in emissions is large, but the range is undoubtedly an overestimate because each interpretation is  treated as if it explained all of FCO. In reality, the true explanation for FCO is likely to include a mixture of these interpretations (and more). Furthermore, the uncertainty is higher than a more detailed analysis might find because expertise within the FAO would likely provide the appropriate explanation for FCO for any country and time. Those details were not used in this analysis.
+
+## The draining and burning of peatlands ##
+Over the 170-year period from 1850 to 2020, the emissions from use of peatlands added 8 Pg C to emissions from countries in Southeast Asia and 29 Pg C to countries in the Northern Hemisphere midlatitudes (Fig. 
+
+## Overall results from the revised analysis ##
+The results presented above sequentially addressed the four revisions to the model and input data. Below, we report the results of the complete update (all four steps included). Unless otherwise specified, the estimates given below refer to the shifting cultivation interpretation of FCO.
+
+## Net and gross emissions ##
+Global net emissions of carbon from LULUCF increased from about 0.6 Pg C yr -1 in 1850 to about 1 Pg C yr -1 in the 1930s and never got much higher (except in 1997 as a result of unusually high emissions from peatlands in Southeast Asia) (Fig. 
+The largest net emissions in the last 10 years (2011-2020) were from the three tropical regions (a mean of 0.500, 0.411, 0.308 Pg C yr -1 for South and Southeast Asia, sub-Saharan Africa, and Latin America, respectively) (Table 
+In the period from 2011 to 2020, global gross emissions (3.38 Pg C yr -1 ) were more than 3 times higher than net emissions (0.96 Pg C yr -1 ), while gross removals averaged 2.42 Pg C yr -1 (Fig. 
+Gross emissions were predominantly (69 %) found in the three tropical regions (Latin America, tropical Africa, and South and Southeast Asia), while the gross sink was distributed nearly equally between tropical (46 %) and nontropical (54 %) regions. The higher net emissions from the tropics were attributable to the higher rates of deforestation there.
+The offset of gross emissions and gross removals is not simultaneous and has implications for mitigation. Because most gross emissions happen rapidly, whereas most gross removals occur over a longer time, a reduction in shifting cultivation would result in a rapid reduction in (gross) emissions, whereas the (gross) removals (in regrowing forests) would continue for decades. Hence, gross fluxes are more indicative of the potential for mitigation than net fluxes. Furthermore, our estimates of gross fluxes are underestimated because rates of land-use change were based on net changes in area as reported by FAOSTAT.
+
+## Emissions by country ##
+Over the last decade (2011-2020), according to the analysis based on the shifting cultivation interpretation of FCO, three countries (Indonesia, Brazil, and the Democratic Re- Net negative emissions are removals of carbon from the atmosphere (sinks). An explanation of the abbreviations used in the legend and a list of the countries in each region are given in Table 
+
+## Emissions by type of land use or land-use change ##
+Land uses with the greatest emissions or removals of carbon varied among regions and over time (Fig. 
+
+## Emissions by carbon pool ##
+The annual global net flux of 0.96 Pg C yr -1 to the atmosphere for the period from 2011 to 2020 was composed of gross emissions of 3.38 Pg C yr -1 from the burning of live vegetation, the decay of dead vegetation (slash), the oxidation of wood products, and the oxidation of soil carbon as a result of cultivation, including peatland emissions. Annual global gross removals were -2.42 Pg C yr -1 as a result of vegetation and soil recovering from wood harvest and agricultural abandonment (Table 
+The annual transfers of carbon among pools for the period from 2011 to 2020 are shown in Fig. 
+Wood products accumulated carbon over this decade (Fig. 
+Forests accounted for nearly all emissions (99 %) for the decade from 2011 to 2020 if emissions from peatlands were excluded. It is unclear whether the emissions from peatlands in Northern Hemisphere regions were from forests or not. Emissions from peatlands (0.36 Pg C yr -1 ) were 37 % of the   total global net flux in this decade, while emissions from mineral soils were 22 % (0.22 Pg C yr -1 ).
+
+## Discussion ##
+We limit the discussion below to three general topics. First, we explore the likely explanation for forest converted to other land (FCO). Second, we examine how these new estimates of emissions compare with other recent studies, including recent estimates of forest degradation. Finally, we discuss how we can reconcile reduced emissions of carbon from LU-LUCF in the tropics with increased rates of deforestation reported in the literature 
+
+## Forests converted to other land ##
+Four interpretations were initially proposed to explain the apparent conversion of tropical forests to other land. "Apparent" is used here because the conversion is inferred from the areas of land reported by the FAO (2021) between 1990 and 2020. When the loss of forest area exceeded the gain in agricultural areas, the excess forest loss appeared as other land.
+If FCO is an error in assigning newly deforested land to other land rather than to agricultural land, the emissions would be essentially the same as from the degradation interpretation. Both of them increase the area of cropland, rather than other land. The recovering interpretation is the least consistent with the FAO data, as it leads to a greater area of forest than reported by the FAO and is inconsistent with FRA 2020. Thus, either shifting cultivation or degradation seems more likely if FCO is a real change in land use.
+According to the FAO, shifting cultivation is included in cropland. Thus, this poses the following question: are the areas assigned to croplands 
+For Latin America, however, where the area calculated here as being under a shifting cultivation regime is nearly as large as the total area assigned to croplands, either our estimate for shifting cultivation is too large or the total cropland area is not large enough. Clearly, Latin America has large areas under croplands that are not under a shifting cultivation regime.
+In any case, if shifting cultivation (and fallows) was included in croplands, we are left with the question of what changes in other land represent.
+Based on these arguments, the most reasonable interpretations for FCO seem to be the conversion of forest either to shifting cultivation or to new agricultural land, mistakenly called other land or offset by the abandonment of old agricultural land that does not return to forest. By comparison, the recovering interpretation departs from FAOSTAT 
+It is important to recognize that these interpretations include more than their labels suggest. For example, the degradation interpretation applies to more than the conversion of forest to croplands and the simultaneous abandonment of croplands. It includes the conversion of forest to any low-carbon ecosystems (e.g., urban lands, settlements, roads, mining and energy extraction operations). It also includes the emissions that would result from an error in classification if the deforestation had been for new agricultural land instead of other land. The shifting cultivation interpretation includes the conversion of forest to ecosystems of intermediate carbon stocks. The recovering interpretation represents temporary deforestation followed by forest recovery (Fig. 
+Note that the more reasonable interpretations (shifting cultivation and degradation) are those with higher emissions. We use the shifting cultivation interpretation as our preferred estimate. It has the advantage of including shifting cultivation explicitly, although it is likely an overestimate. In the discussion below, we compare our estimates of area under shifting cultivation with other estimates. We also discuss the importance of shifting cultivation for gross emissions of carbon and, finally, whether shifting cultivation accounts for much of the uncertainty associated with emissions from forest degradation.
+Trends in the area of shifting cultivation are uncertain 
+We evaluated changes in shifting cultivation using an independent approach inferred from land-use data from FAO-STAT 
+If we assume that FCO was driven entirely by the expansion of shifting cultivation and that fallows are counted as other land, then we calculate the total area under shifting cultivation to have been 277 × 10 6 ha in 1980 and 450 × 10 6 ha in 2020. These estimates are probably high because we assumed that all of the increase in other land was attributable to shifting cultivation rather than to other land uses in this calculation. For example, a recent analysis and review by 
+Overall, the uncertainty remains, affecting both rates of land-use change and emissions of carbon. For example, in the last 10 years the degradation interpretation emitted about 0.260 Pg C yr -1 more than the recovery interpretation, a difference that was greater than the annual emissions from any country except Indonesia. The unknown fate of FCO lands (degraded, recovering, or shifting cultivation) contributed an uncertainty of about 13 % to global net emissions from LU-LUCF. If the emissions from peatlands are ignored, the uncertainty for FCO accounted for about 20 % of these global net emissions.
+All of these interpretations make the implicit assumption that FCO is anthropogenic. Another possible interpretation for FCO is that the loss of forest to other land might not be directly anthropogenic but, instead, the result of increasing droughts, fires, or storms (see 
+
+## Gross emissions and removals ##
+The greatest difference between shifting cultivation and the two other interpretations of tropical forest loss is the effect that they have on gross fluxes of carbon. Aside from wood harvest and agricultural abandonment, both of which include forest recovery, there are few other land uses that generate gross fluxes of carbon. Shifting cultivation accounted for 30 % of the global gross emissions of carbon over the period from 2011 to 2020 in our analysis. Gross emissions and removals for shifting cultivation alone were 1.02 and -0.72 Pg C yr -1 , respectively, in comparison with total gross emissions and removals of 3.38 and -2.42 Pg C yr -1 , respectively (Table 
+
+## Is shifting cultivation deforestation or forest degradation? ##
+Carbon may be lost to the atmosphere through either deforestation (a change in the area of forests) or forest degradation (a reduction in forest carbon stocks without a change in forest area). Estimates of the carbon emitted from forest degradation vary widely, from nearly zero to greater than the emissions from deforestation 
+In this analysis, the relative contributions of deforestation and degradation to the net carbon emissions from the tropics were 69 % and 5 %, respectively, for the period from 2011 to 2020 (Fig. 
+
+## How do these estimates of emissions compare with other recent studies? ##
+Given that most of the data used in this analysis came from the FAO, one might expect the calculated emissions to agree with those reported by the FAO 
+It is perhaps worth noting that the different methods used for computing emissions had little effect on the estimates (Table 
+As noted earlier, the emissions calculated here were not very different (1850-2015) from those reported by 
+(2017). Thus, although the results of the two studies are similar, those reported here are more comprehensive and up to date.
+The net and gross emissions reported here are lower than the emissions calculated by BLUE 
+Overall, the variation in estimates among bookkeeping models is small in comparison with other recent estimates of terrestrial carbon emissions 
+Finally, we consider our estimates relative to two recent studies that have documented forest degradation 
+
+## Are emissions from LULUCF declining? ##
+The recent decline in LULUCF emissions reported here (Fig. 
+In contrast to the declining emissions calculated from the FAO data on land use, 
+None of our simulations showed the increase in emissions that 
+The trends in rates of tropical deforestation and associated emissions are strikingly different between the 
+
+## Are the emissions from deforestation gross or net emissions? ##
+When a hectare is deforested, net and gross emissions of carbon are identical. However, when FAOSTAT (FAO, 2021) reports a loss of forest area for a country, that loss is a net loss, and it is possible that high-resolution data from satellites record gross rates of forest loss that are partially offset by gross rates of forest gain within that country. In such a case, the emissions from gross losses in forest area would be greater than the emissions from net losses of forest area. It is possible that the higher estimates of deforestation (and emissions) from 
+
+## Deforestation versus forest loss ##
+Another possible explanation for different rates of deforestation is related to the definition of deforestation. The United Nations Framework Convention on Climate Change (UN-FCCC) and the Intergovernmental Panel on Climate Change (IPCC) define deforestation as the conversion of forest to another land use, i.e., cropland, pasture, or other land. The temporary loss of forests as a result of harvests, fire, or other disturbances, even if directly anthropogenic, is not deforestation according to this definition, as the disturbed forest is expected to recover. Moreover, the land is still defined as forest if it is temporarily without trees. Some estimates of deforestation, particularly those from satellite data (e.g., 
+
+## Re-clearing of fallows already under shifting cultivation ##
+A third possible explanation for different deforestation rates and associated emissions is that the re-clearing of fallows under shifting cultivation may be attributed to deforestation. The term deforestation is appropriate the first time a forest is  converted to shifting cultivation, but subsequent re-clearing of fallow is not deforestation (unless the recovery of forest in the fallows is identified as an increase in forest area).
+The cropped areas of shifting cultivation have tree cover and may be mistakenly identified as forests with remote sensing. Older fallows are even more forest-like, although perhaps recognizable as degraded forest.
+If only a small fraction of the re-clearing of fallows was counted as deforestation by 
+Although any of these three explanations might help explain why satellite-based data would provide higher rates of forest loss than ground surveys, none of them explains why the disagreement between FAOSTAT (FAO, 2021) and 
+
+## 4.3.4 ##
+What if some deforestation is not directly anthropogenic? 
+The broader issue is whether changes in land use and land cover are directly anthropogenic or not. We assumed that changes in land use reported by FAOSTAT were indeed directly anthropogenic. Clearly, croplands and pastures are (directly anthropogenic) land uses. Forestry is also anthropogenic, but forests and other land are not land uses, they are land covers; thus, if changes in other land result not only from changes in land use but also from indirect effects, FCO may not be anthropogenic, as assumed here. The distinction between directly and indirectly anthropogenic is important, as emissions from indirect effects offer clues regarding whether the terrestrial carbon sink may be changing. If landuse data from the FAO include indirect as well as direct effects, those data may no longer help define or constrain direct effects.
+The distinction between direct and indirect effects has some similarities with the distinction between land use and land cover. Land use is clearly anthropogenic, whereas land cover may or may not be. Hence, the two commonly used acronyms to describe terrestrial carbon emissions -LULUCF (land use, land-use change, and forestry) and LULCC (land-use and land-cover change) -are not the same. LULUCF is a UNFCCC and IPCC term and concerns direct anthropogenic changes in land use. In contrast, LULCC, a term used by NASA and generally based on satellite data, concerns changes in land cover. The terms have been used interchangeably but perhaps ought not to be. LULUCF is generally assumed to be anthropogenic, whereas LULCC includes land-cover change, which need not be anthropogenic. If some deforestation is driven by changes in climate (e.g., droughts, fires, and storms), it should be attributed to indirect effects.
+Indirect effects are believed responsible for a land sink that is larger than the net emissions from management 
+Our use of data from FAOSTAT assumed that changes in land use/land cover were directly anthropogenic. On the contrary, changes in forest land and other land, in particular, could include both direct and indirect effects. Most scholars think that droughts, fires, and storms have so far been minor in replacing forests with other land cover. In other words, deforestation has been largely anthropogenic to date. The same is not true for forest degradation, which is driven by both direct and indirect effects. Separation of the emissions attributable to these effects is important, as mistaken attribution could mask a declining land sink. Indeed, declining emissions from LULUCF, given a generally constant airborne fraction, suggest that the land and/or ocean sinks are also declining 
+Overall, one would expect satellite-based changes in land use to be more consistent (the same approach used everywhere) and, perhaps, more accurate (less potential for cheating) than changes reported to the FAO by individual countries using varied methods for determining change. Sadly, however, if the conditions described above account for the divergent trends in rates of deforestation and reported emissions, then data from satellites may not provide an easy resolution. The "advantage" of satellite data being more consistent may not be an advantage if, for example, shifting cultivation is not consistently practiced in different countries. Furthermore, anthropogenic versus non-anthropogenic disturbances are difficult to distinguish with any kind of measurement, and the fate of disturbed lands (including both land use and carbon density) may remain uncertain for years following a disturbance. The recent disagreement between satellite-based and ground-based rates of wood harvest in Europe provides an example of the limitations of satellite-based measures of land use 
+On the other hand, forest degradation, as opposed to deforestation, may be better documented with satellite data than with tabular data, as it seems to be widespread and caused by a variety of different agents and processes 
+One further advantage of satellite data (as opposed to tabular data) is their explicit geographic specificity. If the spatial resolution is fine enough, maps of changes in area can be overlaid on maps of biomass to determine the biomass of the forests actually deforested 
+
+## Conclusions ##
+A major objective in quantifying the emissions of carbon from terrestrial ecosystems is to separate the emissions resulting from management (direct anthropogenic activities) from those resulting from the effects of environmental change (indirect effects). Those resulting from management can, in theory, be controlled, whereas those resulting from environmental change are more difficult to control. The estimated emissions of carbon from LULUCF calculated in this analysis approximate the emissions resulting from management, but they are not complete: they do not include the effects of agricultural management practices (e.g., irrigation), only the effects of converting lands from one use to another. They also include the major effects of forestry (i.e., wood harvest). Despite the difficulties and uncertainties apparent throughout this effort, quantifying the terrestrial emissions of carbon that are directly anthropogenic is important, both for predicting future rates of climate change and for identifying land-based solutions for mitigation.
+However, the separation of emissions into those caused by direct, as opposed to indirect, effects of human activity may not be necessary for national reporting of emissions and, further, it may be limiting. Carbon credits and debits are now limited to anthropogenic emissions, defined by the emissions from managed lands 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. 21st Century drought-related fires counteract the decline of Amazon deforestation carbon emissions
+   Authors: , , , , , , , , , , , , , , , , , , , , 
+   Date: 2018
+
+2. Tropical forests are a net carbon source based on aboveground measurements of gain and loss
+   Authors: , , , , , 
+   Date: 2017
+
+3. Mapping of arable land in Russia using multi-year time series of MODIS data and the LAGMA classification technique
+   Authors: , , 
+   Date: 2016
+
+4. Comparison of uncertainties in land-use change fluxes from bookkeeping model parameterisation
+   Authors: , , , , , 
+   Date: 2021
+
+5. Pathways of savannization in a mesic African savanna-forest mosaic following an extreme fire
+   Authors: , , , 
+   Date: 2022
+
+6. The role of ecosystem-atmosphere interac-tions in simulated Amazonian precipitation decrease and forest dieback under global climate warming
+   Authors: , , , , , 
+   Date: 2004
+
+7. Droughts, wildfires, and forest carbon cycling: A pantropical synthesis
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+8. Satellite passive microwaves reveal recent climate-induced carbon losses in African drylands
+   Authors: , , , , , , , , , , , , , , , , 
+   Date: 2018. 4 November 2021. 2020
+
+9. Land-use harmonization datasets for annual global carbon budgets
+   Authors: , , , , , , , , , , 
+   Date: 2021
+
+10. Five decades of northern land carbon uptake revealed by the interhemispheric CO 2 gradient
+   Authors: , , , , , , , , , , , , , 
+   Date: 2019
+
+11. Positive feedbacks in the fire dynamic of closed canopy tropical forests
+   Authors: , , , , , , 
+   Date: 1999
+
+12. Drainage of organic soils and GHG emissions: validation with country data
+   Authors: , 
+   Date: 2020
+
+13. Classifying drivers of global forest loss
+   Authors: , , , , 
+   Date: 2018
+
+14. Changes in soil carbon inventories following cultivation of previously untilled soils
+   Authors: , 
+   Date: 1993
+
+15. Land use patterns and related carbon losses following deforestation in South America
+   Authors: , , , , , , 
+   Date: 2015
+
+16. Land use change and the global carbon cycle: the role of tropical soils
+   Authors: 
+   Date: 1986
+
+17. Bias in the attribution of forest carbon sinks
+   Authors: , , , , , , 
+   Date: 2013
+
+18. Annual emissions of carbon from LULUCF from 1850 to 2020 region: Implications for farmers' livelihood and conservation
+   Authors: , , , , , , , , 
+   Date: 2017. 1990. 1993. March 2016. 2015. October 2021. 2020
+
+19. FAO/UNEP: Los Recursos Foresrales de Ia America Tropical
+   Authors: , 
+   Date: October 2021. 2021. 1981. 1981
+
+20. 
+   Date: 1981. 1981
+
+21. New estimates of CO 2 forest emissions and removals: 1990-2015
+   Authors: , , , , 
+   Date: 2015
+
+22. Doubling of annual forest carbon loss over the tropics during the early twenty-first century
+   Authors: , , , , , , , , , 
+   Date: 2022
+
+23. Human amplification of drought-induced biomass burning in Indonesia since 1960
+   Authors: , , 
+   Date: 2009
+
+24. Global Carbon Budget 2022
+   Authors: , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+   Date: 2022
+
+25. Historical CO 2 emissions from land use and land cover change and their uncertainty
+   Authors: , , , , , 
+   Date: 2020
+
+26. Amazonia as a carbon source linked to deforestation and climate change
+   Authors: , , , , , , , , , , , , , , , , , , 
+   Date: 2021
+
+27. Reconciling global-model estimates and country reporting of anthropogenic forest CO 2 sinks
+   Authors: , , , , , , , , , 
+   Date: 2018
+
+28. Harmonising the land-use flux estimates of global models and national inventories for 2000-2020
+   Authors: , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+   Date: 2023
+
+29. Soil carbon stocks and land use change: a meta analysis
+   Authors: , 
+   Date: 2002
+
+30. Relevance of methodological choices for accounting of land use change carbon fluxes
+   Authors: , , 
+   Date: 2015
+
+31. Swidden systems and settlement, in: Man, Settlement and Urbanism
+   Authors: 
+   Date: 1972
+
+32. Global maps of twenty-first century forest carbon fluxes
+   Authors: , , , , , , , , , , 
+   Date: 2021
+
+33. A global view of shifting cultivation: Recent, current, and future extent
+   Authors: , , , , , , , , , 
+   Date: 2017
+
+34. Current and future CO 2 emissions from drained peatlands in Southeast Asia
+   Authors: , , , , , , 
+   Date: 2010
+
+35. Subsidence and carbon loss in drained tropical peatlands
+   Authors: , , , , , , 
+   Date: 2012
+
+36. Annual emissions of carbon from land use, land-use change, and forestry 1850-2020
+   Authors: , 
+   Date: 2023
+
+37. Emissions of carbon from land use change in sub-Saharan Africa
+   Authors: , 
+   Date: 2006
+
+38. How well do we know the flux of CO 2 from landuse change?
+   Authors: 
+   Date: 2010
+
+39. Global and regional fluxes of carbon from land use and land cover change 1850-2015
+   Authors: , 
+   Date: 2017
+
+40. Negative emissions from stopping deforestation and forest degradation, globally
+   Authors: , 
+   Date: 2018
+
+41. Harmonization of global land use scenarios
+   Authors: , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+   Date: 2017
+
+42. Harmonization of global land use change and management for the period 850-2100 (LUH2) for CMIP6
+   Authors: , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+   Date: 2020
+
+43. Shifting cultivation and deforestation in tropical Africa: critical reflections
+   Authors: 
+   Date: 2006
+
+44. Effects of forest management on soil C and N storage: meta analysis
+   Authors: , 
+   Date: 2001
+
+45. Risk of intact forest landscape loss goes beyond global agricultural supply chains
+   Authors: , , , , , , , , , 
+   Date: 2023
+
+46. Percapita estimations of long-term historical land use and the consequences for global change research
+   Authors: , , 
+   Date: 2017
+
+47. Anthropogenic land use estimates for the Holocene -HYDE 3.2
+   Authors: , , , 
+   Date: 2017
+
+48. Are Land-Use Change Emissions in Southeast Asia Decreasing or Increasing?
+   Authors: , , , , , , , , , 
+   Date: 2020. 2022
+
+49. Longterm agricultural land-cover change and potential for cropland expansion in the former Virgin Lands area of Kazakhstan
+   Authors: , , , , , , , 
+   Date: 2015
+
+50. Tropical Forest Resources FAO Forestry Pap
+   Authors: 
+   Date: 1982
+
+51. The drivers and impacts of Amazon forest degradation
+   Authors: , , , , , , , , , 
+   Date: 2023
+
+52. China's land cover and land use change from 1700 to 2005: Estimations from high-resolution satellite data and historical archives
+   Authors: , 
+   Date: 2010
+
+53. Does conversion of forest to agricultural land change soil carbon and nitrogen? A review of the literature
+   Authors: , , , 
+   Date: 2002
+
+54. Global soil organic carbon removal by water erosion under climate change and land use change during AD 1850-2005
+   Authors: , , , , , 
+   Date: 2018
+
+55. Delineating managed land for reporting national greenhouse gas emissions and removals to the United Nations framework convention on climate change
+   Authors: , , , , , , , , 
+   Date: 2018
+
+56. Concerns about reported harvests in European forests
+   Authors: , , , , , , , , , 
+   Date: 2021
+
+57. A Large and Persistent Carbon Sink in the World's Forests
+   Authors: , , , , , , , , , , , , , , , , , 
+   Date: 2011
+
+58. Recent increase in European forest harvests as based on area estimates (Ceccherini et al., 2020) not confirmed in the French case
+   Authors: , , , , , , , , , , 
+   Date: 2021
+
+59. Terminology as a key uncertainty in net land use and land cover change carbon flux estimates
+   Authors: , , , 
+   Date: 2014
+
+60. Soil carbon sequestration and landuse change: processes and potential
+   Authors: , 
+   Date: 2000
+
+61. Effects of institutional changes on land use: agricultural land abandonment during the transition from state-command to market-driven economies in post-Soviet Eastern Europe
+   Authors: , , , , 
+   Date: 2012. August 2022
+
+62. Large historical carbon emissions from cultivated northern peatlands
+   Authors: , , , , , , , , , 
+   Date: 2021
+
+63. Global Fire Emissions Database, Version 4, (GFEDv4)
+   Authors: , , , , 
+   Date: 2018
+
+64. Annual emissions of carbon from LULUCF from 1850 to
+   Authors: , 
+   Date: 2054. 2020
+
+65. Global warming and tropical carbon
+   Authors: 
+   Date: 2013
+
+66. FAOSTAT estimates of greenhouse gas emissions from biomass and peat fires
+   Authors: , , , , , , , 
+   Date: 2016
+
+67. Institutional analysis of causes of deforestation in REDD+ pilot sites in the Equateur province: Implication for REDD+ in the Democratic Republic of Congo
+   Authors: , , , 
+   Date: 2018
+
+68. Post-Soviet cropland abandonment and carbon sequestration in European Russia, Ukraine, and Belarus
+   Authors: , , , , , 
+   Date: 2013
+
+69. The world carbon pool in soil organic matter: A source of atmospheric CO 2 , in The Role of Terrestrial Vegetation in the Global Carbon Cycle: Measurement by Remote Sensing
+   Authors: 
+   Date: 1984
+
+70. Changes in soil carbon storage and associated properties with disturbance and recovery
+   Authors: 
+   Date: 1986
+
+71. Differences in land-based mitigation estimates reconciled by separating natural and land-use CO 2 fluxes at the country level
+   Authors: , , , , , , , , , 
+   Date: 2022
+
+72. Greenhouse gas emissions from shifting cultivation in the tropics, including uncertainty and sensitivity analysis
+   Authors: , , , 
+   Date: 20304. 2011
+
+73. Compositional analysis of selected second-growth species from lowland Guatemala and Panama
+   Authors: , 
+   Date: 1969
+
+74. Carbon emissions and removals from forests: new estimates
+   Authors: , , , , , 
+   Date: 1990-2020. 2021
+
+75. Population pressure and agricultural intensity
+   Authors: , , 
+   Date: 1977
+
+76. Global trends of forest loss due to fire from
+   Authors: , , , , , , , , , 
+   Date: 2001 to 2019. 2022
+
+77. USDA: Forest Service Cooperative Fire Protection Program Wildfire Statistics
+   Authors: , , , , , 
+   Date: 2023. 1926-1990
+
+78. New land-use-change emissions indicate a declining CO 2 airborne fraction
+   Authors: , , , , , 
+   Date: 2022
+
+79. Trends, drivers and impacts of changes in swidden cultivation in tropical forest-agriculture frontiers: a global assessment
+   Authors: , , , , , , , , , 
+   Date: 2012
+
+80. Human-induced erosion has offset onethird of carbon emissions from land cover change, Nat
+   Authors: , , , , , , 
+   Date: 2017
+
+81. Land use, land-use change and forestry
+   Authors: , , , 
+   Date: 2000
+
+82. Quantifying forest change in the European Union
+   Authors: , , , , , , 
+   Date: 2021
+
+83. Understanding the role of land-use emissions in achieving the Brazilian Nationally Determined Contribution to mitigate climate change, Climate Resilience and Sustainability
+   Authors: , , , , 
+   Date: 2022
+
+84. Changes in global terrestrial live biomass over the 21st century
+   Authors: , , , , , , , , , 
+   Date: 2021
+
+85. Forest expansion dominates China's land carbon sink since 1980
+   Authors: , , , , , , , , , 
+   Date: 2022
+
+86. Worldwide Organic Soil Carbon and Nitrogen Data, Rep. ORNL/CDIC-18
+   Authors: , , , , 
+   Date: 1986
+

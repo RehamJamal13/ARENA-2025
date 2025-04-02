@@ -1,0 +1,291 @@
+================================================================================
+TITLE: Hydrological responses to human-induced land use/land cover changes in the Gidabo River basin, Ethiopia
+================================================================================
+
+AUTHORS:
+- Henok Aragaw
+- Manmohan Goel
+- Surendra Mishra
+- S Archfield
+- V Samadi
+
+ABSTRACT:
+Land-use/land-cover (LULC) changes in the Gidabo basin, Rift Valley, Ethiopia, have greatly affected the hydrology of the basin. This study integrates hydrological modelling with statistical analysis to evaluate the hydrological response of LULC changes during the period 1988-2018. Using the Soil and Water Assessment Tool (SWAT) and partial least squares regression (PLSR) models, the influences of individual LULC changes on different components of the hydrological cycle are assessed. The results of the Mann-Kendall test showed no significant trends in annual rainfall over the basin at the 95% significance level. Change in LULC resulted in an increase in annual mean surface runoff by 23.6 mm during the period 1988-2018. Meanwhile, the annual mean baseflow, lateral flow, percolation and evapotranspiration (ET) were reduced by 9.1, 4.2, 10.2 and 12.2 mm, respectively. PLSR analysis indicated that cultivated land affected the lateral flow and ET negatively in contrast to agroforestry and grassland, which had a positive influence.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Water is one of the most important natural resources on which all living things thrive. It goes through a system of circulation among ocean, atmosphere and land, known as the hydrological cycle 
+Hydrological models are generally used to evaluate the effects of LULC changes on hydrological processes. These models simulate the spatial as well as temporal responses of various LULC changes on the hydrological components in a river basin 
+In addition to quantifying the impacts of gross LULC changes on hydrological components using a hydrological model, it is also important to scrutinize the effect and contribution of each LULC change on different hydrological components of a catchment 
+In Ethiopia, anthropogenic activities have affected the availability of water resources in river basins 
+
+## Study area ##
+The Gidabo watershed (Fig. 
+
+## Data availability ##
+The dataset required for the SWAT model setup includes a digital elevation model (DEM), soil map, LULC map and the climate data. The Shuttle Radar Topographic Mission (SRTM) DEM from the US Geological Survey (USGS) Earth Explorer (https://earthexplorer.usgs.gov), with 30 m × 30 m resolution, was processed in ArcGIS and used in this study. Images from the Landsat satellite (Table 
+The SWAT model requires daily meteorological data as input. Therfore, the daily precipitation data, and maximum and minimum daily temperature data, for eight stations from 1987 to 2018 were obtained from the National Meteorological Services Agency of Ethiopia. After analysing the data, six rainfall stations and five temperature stations were selected. The observed daily streamflows of two gauging sites were obtained from the Ministry of Water, Irrigation and Electricity of Ethiopia for model calibration and validation. Finally, all the input data for the study basin were processed for input to the SWAT model.
+
+## Methodology adopted ##
+
+
+## Trend and change-point analysis ##
+Assessing the presence of trends in hydro-climatological variables is vital for distinguishing and understanding changes in hydrological elements 
+
+## Image classification and LULC change detection ##
+For LULC change detection, Landsat images were first preprocessed to enhance the quality and visibility of features 
+Ground truth points of 191 locations were utilized for accuracy assessment of the images from 2018. However, for the images from 1988 and 2000, 149 and 155 reference data, obtained from Google Earth, were used. Overall accuracy and Kappa statistics, derived from the error matrix, were used to evaluate the accuracy. ERDAS 2018 and ArcGIS 10.5 were used for image classification and mapping. The LULC maps for the years 1988, 2000 and 2018 are shown in Fig. 
+where ChangeRate is the rate of change (km 2 /year); A is the area of LULC (km 2 ) at time t -2; B is the area of LULC (km 2 ) at time t -1; and Z is the time interval between A and B (years).
+
+## Description of the SWAT model ##
+SWAT is a semi-distributed physically based simulation model that can predict the effect of climate and anthropogenic alterations on the hydrological systems in watersheds with varying soils, land-use and management conditions over long periods 
+where SW t is the final soil water content (mm), SW 0 is the initial soil water content on day i (mm), t is the time (d), R d is the amount of precipitation on day i (mm), Q s is the amount of surface runoff on day i (mm), E a is the amount of evapotranspiration on day  
+
+## Set-up and calibration of the SWAT model ##
+The model SWAT Version 2012 
+In line with the suggestion of 
+
+## Model application ##
+To evaluate the effects of LULC changes on hydrological components at basin and sub-basin scales, simulations with the calibrated SWAT model were carried out by separately considering the LULC maps for the years 1988, 2000 and 2018 as inputs to the model.
+
+## PLSR model ##
+The PLSR technique is an extension of multivariate analysis, which combines the features of principal component analysis and multiple regressions 
+Assessing the hydrological responses using the hydrological model is not done to reveal the relationship of individual LULC classes with, or their influence on, components of the water budget 
+where a is the regression coefficient for the intercept and b is the regression coefficient for variables 1, . . ., n, computed from the data. Here, the dependent variables represent the changes in the surface runoff, water yield, base flow, lateral flow, percolation and evapotranspiration, while the independent variables represent the changes in the cultivated land, evergreen forest, agroforestry, grassland, shrubland and urban area. Furthermore, the degree of influence of independent variables on dependent variables is explained by the variable importance in the projection (VIP) 
+Initially, the multicollinearity of the LULC classes was measured by tolerance and variable inflation factor (VIF) 
+
+## Results and discussion ##
+The results obtained with respect to the various analyses performed in the study are presented in this section.
+
+## Trend and change-point analysis ##
+The results of the MK trend test for annual rainfall at six stations in around the Gidabo watershed are summarized in Table 
+The basin-wide areal rainfall trend showed no significant change in annual rainfall in the Gidabo watershed (Fig. 
+
+## Evaluation of LULC change and accuracy assessment ##
+The Landsat satellite images, in combination with unsupervised and supervised classification techniques, were used to map the LULC in the study watershed in the years 1988, 2000 and 2018, and, subsequently, changes in the LULC characteristics were calculated. Around 150 or more reference ground truth locations were used to assess the accuracy of the classification. The error matrix (Table 
+The areal extent and rate of change of LULC in the Gidabo watershed are shown in Fig. 
+
+## Calibration and validation of the model ##
+Table 
+
+## Hydrological responses to LULC changes at the basin level ##
+The yearly mean basin estimates of surface runoff, water yield, baseflow, lateral flow, percolation and ET and their relative changes at the basin outlet, which have been estimated from the 1988, 2000 and 2018 LULC maps, are shown in Table 
+The results for baseflow, lateral flow and percolation (Table 
+
+## Response of hydrological components to LULC changes at the sub-basin level ##
+The spatial distributions of the changes of major LULC classes and the yearly mean hydrological components between 1988 and 2018 are shown in 
+The baseflow in 45 sub-basins demonstrated a decreasing pattern during 1988 and 2018, with the most significant reduction occurring in the southern and central parts of the basin. Meanwhile, the yearly average ET in all sub-basins decreased by 15.13 mm, with the most extreme decrease in the southern part of the basin (Fig. 
+The sub-basin-level (Fig. 
+
+## Influence of individual LULC changes on changes in hydrological components ##
+A Pearson matrix of six LULC classes and six hydrological components is shown in Table 
+Grassland is seen to have an excellent association with surface runoff, water yield, lateral flow and ET, with correlation coefficients of -0.47, -0.57, +0.50 and +0.62, respectively. In contrast, grassland has a relatively low correlation with baseflow (-0.21) and percolation (-0.21). The regression coefficient (Table 
+Evergreen forest shows a high correlation with surface runoff, baseflow and percolation, with correlation coefficients of -0.33, +0.49 and +0.38, respectively. In contrast, evergreen forest shows a relatively low correlation with other hydrological components (Table 
+In general, the surface runoff and water yield are profoundly related to change in the cultivated and urban areas. In contrast, baseflow, lateral flow, percolation and ET are negatively related to change in cultivated and urban areas. Moreover, baseflow, lateral flow, percolation and ET are highly positively related to alteration of evergreen forest, agroforestry and grassland, while surface runoff inversely correlates to alteration in these areas. The shrubland LULC classes also show a positive or negative impact on all hydrological components (Table 
+
+## Conclusions ##
+In this study, an attempt is made to assess the hydrological responses to LULC changes using the SWAT model and statistical analysis. The following conclusions can be derived from the study:
+1. The MK test showed no significant trend in basin-wide annual rainfall during the study period  at the 95% significance level. The Pettitt test too could not detect any break in the basin-wide annual rainfall. Hence, any change in hydrological components during the study period  might be attributable to the effects of LULC changes. 2. An assessment of 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. A guideline for successful calibration and uncertainty analysis for soil and water assessment: a review of papers from the 2016 international SWAT conference
+   Authors: , , 
+   Date: 2017
+
+2. Modelling hydrology and water quality in the pre-alpine/alpine Thur watershed using SWAT
+   Authors: 
+   Date: 2007
+
+3. Partial least-square regression
+   Authors: 
+   Date: 2007
+
+4. Partial least squares regression and projection on latent structure regression (PLS regression)
+   Authors: 
+   Date: 2010
+
+5. Land-use and land-cover changes in the Central Rift Valley of Ethiopia: assessment of perception and adaptation of stakeholders
+   Authors: , , 
+   Date: 2015
+
+6. Large area hydrologic modeling and assessment part I: model development
+   Authors: 
+   Date: 1998
+
+7. Hydrological responses to land use/cover changes in the source region of the Upper Blue Nile basin
+   Authors: 
+   Date: 2017
+
+8. Using the soil and water assessment tool (SWAT) to assess land use impact on water resources in an East African watershed
+   Authors: , 
+   Date: 2013
+
+9. Hydro-meteorological trends in the Gidabo catchment of the Rift Valley Lakes basin of Ethiopia
+   Authors: 
+   Date: 2018
+
+10. Estimating flow data in urban drainage using partial least squares regression
+   Authors: , , 
+   Date: 2017
+
+11. Partial least squares regression as an alternative to current regression methods used in ecology
+   Authors: , , , , , 
+   Date: 2009. 1988
+
+12. Partial least squares regression for determining the control factors for runoff and suspended sediment yield during rainfall events
+   Authors: 
+   Date: 2015
+
+13. Spatial distribution and temporal trends of rainfall and erosivity in the Eastern Africa region
+   Authors: 
+   Date: 2017
+
+14. Human-induced land use land cover change and its impact on hydrology
+   Authors: 
+   Date: 2019
+
+15. Evaluation and prediction of land use/land cover changes in the Andassa watershed
+   Authors: 
+   Date: 2017
+
+16. Modeling the hydrological impacts of land use/ land cover changes in the Andassa watershed
+   Authors: 
+   Date: 2018
+
+17. Trend analysis of runoff and sediment fluxes in the Upper Blue Nile basin: a combined analysis of statistical tests, physically-based models and landuse maps
+   Authors: 
+   Date: 2013
+
+18. Attributing the hydrological impact of different land use types and their long-term dynamics through combining parsimonious hydrological modelling, alteration analysis and PLSR analysis
+   Authors: , , 
+   Date: 2019
+
+19. Chemometrics and intelligent laboratory systems relationships between PCA and PLS-regression
+   Authors: , , 
+   Date: 2014
+
+20. Hydrological responses to land use/cover changes in the Olifants basin
+   Authors: , , 
+   Date: 2016
+
+21. Rank correlation methods
+   Authors: 
+   Date: 1975
+
+22. Hydrological response of a catchment to climate and land use changes in Tropical Africa: case study south central Ethiopia
+   Authors: , , 
+   Date: 2003
+
+23. Exploring land use/land cover changes, drivers and their implications in contrasting agro-ecological environments of Ethiopia
+   Authors: , , 
+   Date: 2019
+
+24. Hydrological responses to land use/land cover change and climate variability in contrasting agro-ecological environments of the Upper Blue Nile basin, Ethiopia
+   Authors: 
+   Date: 2019
+
+25. Modeling nutrient runoff yields from combined in-field crop management practices using SWAT
+   Authors: 
+   Date: 2010
+
+26. Nonparametric tests against trend
+   Authors: 
+   Date: 1945
+
+27. Attribution of changes in the water balance of a tropical catchment to land use change using the SWAT model
+   Authors: 
+   Date: 2017
+
+28. Recharge variability and sensitivity to climate: the example of Gidabo River basin, Main Ethiopian Rift
+   Authors: , , 
+   Date: 2015
+
+29. The pls package: principal component and partial least squares regression in R
+   Authors: , 
+   Date: 2007
+
+30. Evaporation and environment
+   Authors: 
+   Date: 1965. 2393175
+
+31. Model evaluation guidelines for systematic quantification of accuracy in watershed simulations
+   Authors: 
+   Date: 2007
+
+32. Modelling the impact of agroforestry on hydrology of Mara River basin in East Africa
+   Authors: 
+   Date: 2016
+
+33. Soil and water assessment tool theoretical documentation version
+   Authors: 
+   Date: 2011. 2009
+
+34. Assessing impacts of Landuse and Landcover changes on hydrology for the upper San Pedro watershed
+   Authors: 
+   Date: 2011
+
+35. Determining the importance of model calibration for forecasting absolute/relative changes in streamflow from LULC and climate changes
+   Authors: , , 
+   Date: 2015
+
+36. A non-parametric approach to the change-point problem
+   Authors: 
+   Date: 1979
+
+37. The potential for agricultural land use change to reduce flood risk in a large watershed
+   Authors: 
+   Date: 2014
+
+38. Spatial delineation of soil erosion vulnerability in the Lake Tana basin
+   Authors: 
+   Date: 2009
+
+39. The response of water balance components to land cover change based on hydrologic modeling and partial least squares regression (PLSR) analysis in the Upper Awash basin
+   Authors: , , 
+   Date: 2019
+
+40. Partial least-squares regression for linking land-cover patterns to soil erosion and sediment yield in watersheds
+   Authors: 
+   Date: 2013
+
+41. Hydro-climatic trends in the Abay/Upper Blue Nile basin, Ethiopia. Physics and Chemistry of the Earth
+   Authors: , , 
+   Date: 2013
+
+42. National engineering handbook,section 4: hydrology
+   Authors: 
+   Date: 1972
+
+43. An assessment of land use change impacts on the water resources of the Mula and Mutha Rivers catchment upstream of Pune
+   Authors: , , 
+   Date: 2013
+
+44. PLSregression: a basic tool of chemometrics
+   Authors: , , 
+   Date: 2001
+
+45. Water Works Design and Supervision Enterprise)
+   Authors: 
+   Date: 2007
+
+46. Impacts of land use change on watershed streamflow and sediment yield: an assessment using hydrologic modelling and partial least squares regression
+   Authors: 
+   Date: 2013
+
+47. Spatial patterns of hydrological responses to land use/cover change in a catchment on the Loess Plateau
+   Authors: 
+   Date: 2018
+
+48. Hydrological impacts of land use change and climate variability in the headwater region of the Heihe River basin
+   Authors: 
+   Date: 2016
+
+49. Hydrological response to urbanization at different spatio-temporal scales simulated by coupling of CLUE-S and the SWAT model in the Yangtze River Delta region
+   Authors: 
+   Date: 2013
+

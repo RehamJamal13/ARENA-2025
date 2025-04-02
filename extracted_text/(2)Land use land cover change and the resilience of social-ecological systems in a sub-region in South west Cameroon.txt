@@ -1,0 +1,271 @@
+================================================================================
+TITLE: Land use land cover change and the resilience of social-ecological systems in a sub-region in South west Cameroon
+================================================================================
+
+AUTHORS:
+- Ewane Ewane
+
+ABSTRACT:
+LULCC and magnitude of impact of the drivers and predictors of LULCC in the sub-region by engag-| ing 25 stakeholders in a focus group survey. Other cultivated areas of cropland, built-up, oil palm, and banana plantation covers increased by 21,360 ha (10.5%), 3152 ha (1.6%), 5721 ha (2.8%), and 1823 ha (0.9%), while dense forest, rubber and tea plantation covers decreased by -44,945 ha (-22.1%), -15,557 ha (-7.7%), and -110 ha (-0.1%), respectively, from 1986 to 2018. Most of the deforestation and LULCC was caused by expansion of other cultivated areas of cropland by smallholders, contrary to the widely publicised narrative of agro-industrial and built-up areas expansion. The spatial pattern of LULCC showed that expansion of other cultivated areas of cropland and agro-industrial plantations were highest in the north and east zones, respectively, while expansion of builtup areas and decrease in agro-industrial plantation covers were highest in the central, south and western coastal zones of Fako division. The variations in the spatial patterns of LULCC between the sub-divisions are attributed to differences in rates of population growth and urbanisation, topography, size of farming population, proportion of cultivable land, socioeconomic opportunities, and strength and resilience of Abstract The old paradigm of horizontal expansion of agricultural land and built-up areas over highland and lowland ecosystems remains highly prevalent in Cameroon, causing significant changes in LULC and undermining the resilience and sustainability of social-ecological systems. We analysed satellite imagery of 1986 and 2018 to examine the extent and spatial patterns of LULCC in Fako sub-region of Cameroon. In addition, we explored the likelihood of Highlights • Most of the deforestation and LULCC was caused by expansion of other cultivated areas of cropland by smallholders, contrary to the widely publicised narrative of agro-industrial plantation and built-up area expansion from 1986 to 2018. • Dense forest and rubber plantation covers decreased, while oil palm and banana plantation covers increased, owing to local economics and increase in local and international palm oil demand. • Spatial patterns of change in LULC classes were highly variable within the sub-region, but common temporal trends in LULCC were observed on the most part. • Differences in biophysical and socio-economic factors explained the variability in the spatial patterns of LULCC among sub-divisions. • Changes in LULC decreased with elevation, but increased with nearness to the sea and national road networks.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Holistically, landscape as a geographical area is characterised by its biophysical contents of observable, natural, and human-induced characteristics, including ecosystem type and socio-cultural relations to areas at different spatial scales 
+Decision-making in land use land cover change (LULCC) can be explained, to a large extent, by the socio-economic, climatic, and soil conditions of a location 
+SES are integrated complex and adaptive systems, in which social and ecological sub-systems are coupled and interdependent, each a function of the other, expressed in a series of mutual feedback relationships 
+Landscapes and their ecosystems are influenced by the institutions that govern their use and by the indigenous communities dependent on the forest resources 
+The spatio-temporal patterns, processes, and causes of LULCC are still not well understood in land system science 
+The old paradigm of horizontal expansion of agricultural land and built-up areas over highland and lowland ecosystems remains the norm in Cameroon, causing significant changes in LULC and undermining the resilience and sustainability of SES along its western highland region, where the study area of Fako division is located. The biophysical landscape of the study area is composed of important lowland agricultural estates, mountain forests, and coastal mangrove ecological systems across its five sub-divisions, which are undergoing increasing transformation. In this study, the concept of SES was used to understand human-environment interactions and outcome, while that of LULCC was used to understand the spatio-temporal patterns and processes of change related to biophysical and socio-economic factors in Fako division from 1986 to 2018. 
+The main objective of this study is to explore LULCC and expert stakeholder perceptions of changing SES in Fako division, South west region of Cameroon. Specifically, the study aims 
+
+## Methods ##
+
+
+## Study area ##
+The study area is Fako division (Fig. 
+The sub-region falls within the tropical rainforest zone with an equatorial monsoon climate. Annual rainfall ranges from 2000 to 4000 mm, attributed to the effect of the forested Mount Cameroon (4095 m above sea level), which intercepts wet air masses and its proximity to the Atlantic Coast of Cameroon. The highest rainfall comes between July and September with monthly amounts ranging from 400 to 500 mm, particularly in Limbe, Buea, and West Coast sub-divisions, with the latter receiving even higher monthly and annual rainfall. The high annual rainfall and historical volcanic eruption of lava and ash contributes to the very high soil fertility in the sub-region, which is highly exploited for small-, medium-, and large-scale agricultural production activities. The sub-region presents the best example of historically human-induced progressive conversion and changes in lowland dense forest and grassland cover in Cameroon, predominantly for plantation agriculture, a legacy of German colonial administration. Current urban sprawl dominated by housing development and expanding arable cropland and agro-industrial plantations in peri-urban areas are significantly transforming the landscape and producing varied social-ecological systems in Fako Division.
+
+## Data sources ##
+
+
+## Land use land cover data ##
+A combination of Multispectral Scanner 3 (MSS), Landsat Enhanced Thematic Mapper Plus 7 (ETM +), and Landsat Operational Land Imager 8 (OLI) was used to obtain the LULC and LULCC data of Fako division, in the South west region of Cameroon (http:// glovis. usgs. gov/), supplemented with Google Earth Imagery data. Details of the methods of LULCC data collection and the general procedure for acquisition of the LULC maps and classification of LULC classes can be found in 
+The study is based on the biophysical landscape characterisation approach using statistical analyses to obtain LULC data in order to identify gradients of variation in the presence and /or abundance of landscape diversity 
+The study used two LULC maps of Fako division for the period 1986 (Fig. 
+
+## Focus group survey data ##
+This exploratory study followed a stakeholder-driven scenario development during multi-stakeholder questionnaire administration in focus group discussion sessions held in Buea, headquarter of Fako division. Focus group survey is a form of group interview that capitalises on communication and deliberation between participants to generate data based on a group consensus 
+Stakeholders play an important role in scenario analysis, especially for assessing and modelling future LULCC and their possible impacts 
+The identification and selection of participants for the stakeholder focus group interview took into consideration the participant's knowledge of evolving land uses, their drivers, and indicators, and demonstrated interest, willingness, and readiness in local knowledge sharing and collaborative learning. The survey method involved the selection of economic sectors and development of qualitative and semiquantitative sector trajectories; assessing the likelihood of LULCC, identifying the drivers, indicators, and the spatial patterns. In the stakeholder scenario analysis, we used the business as usual scenario (BUS) and green economy scenario (GES). In the BUS, continuous expansion of human degradation activities such as land use conversion to agricultural uses impacts forests, woodland, and wetlands, with no productivity gain expected. In the GES, decreasing deforestation and degradation with increasing productivity and implementation of payment for ecosystem service schemes is envisaged 
+In this study, we identified 8 socio-economic drivers of LULCC specific to Cameroon, including population growth, agricultural and cropland expansion, biomass energy (fuelwood and charcoal) exploitation, livestock grazing, commercial logging/timber exploitation (legal and illegal), bushfires (human-set fire), infrastructural development, and mining expansion. All the 25 participants in the focus groups were presented with these socio-economic sectors most relevant to local livelihoods and national economy. It is invaluable to define a representation of the proximate and most important groups of drivers and underlying causes of deforestation and LULCC 
+During the focus groups, participants were encouraged to use information such as specific sites of potential LULCC such as administrative units or gazetted sites, or biophysical factors associated with them such as nearness to mountain, sea and national road network, proportion of cultivable land, endemism, conservation attraction, size of farm labour, and business growth attractions, among others, in the ranking exercises. The stakeholders discussed their different perspectives to generate consensus and harmonise visions within each sub-division and in the sub-region. Each expert focus group discussion session was led by a facilitator, who took notes and ensure a collective understanding of the objectives, without actively participating in the discussion. The structured questions were designed to explore expert stakeholder observations, perceptions, and future scenarios of either continuous resource degradation or improved resource governance, sustainable land use planning and green economy development based on the current activities and practices in the sub-region.
+
+## Data analysis ##
+Quantitative analyses for LULCC assessment statistics and understanding of evolving spatial patterns and trajectories in the sub-region from 1986 to 2018 were performed using ArcGIS 10.2. Data on the likelihood for potential changes from one LULC class to another in each of the sub-divisions was analysed using a likelihood probability ratio scale to locate the points of similarity or dissimilarity of variables within the sub-divisions and sub-region. We used the likelihood probability ratio scale of 0.95-1.0 (Extremely likely), 0.9-1.0 (Very likely), 0.66-1.0 (Likely), 0.50-1.0 (Possible), 0.33-1.0 (Unlikely), 0.10-1.0 (Very unlikely), and 0.05-1.0 (Extremely unlikely). This vulnerability or likelihood scale enabled stakeholders to deliberate and negotiate uncertainty and confidence intervals of variables in the LULCC and scenario analysis framework. Data from stakeholder ranking of the drivers and indicators of LULCC under the BUS and GES were also analysed using radar charts while statistically significant differences in the stakeholder perceptions ranking across the five sub-divisions was detected using Friedman test statistics in XLSTAT version 2020. In a radar chart, the data length of a spoke is proportional to the magnitude of the variable for the data point starting from a center point of 0.0 relative to the maximum magnitude point of 1.0 of the variable across all the data points 
+
+## Results ##
+
+
+## Spatial distribution of land use land cover change assessment ##
+The spatial distribution of LULCC among the five sub-divisions in the sub-region showed appreciable spatial and temporal variability but with somehow similar trends from 1986 to 2018 (Appendix 1). In Buea sub-division, dense forest cover decreased from 25,937 to 12,736 ha (-50.9%), that is, by 22.3% of the total land surface area, and at an annual rate of 0.7% (Table 
+In Limbe sub-division, dense forest cover decreased from 12,675 to 9818 ha (-22.5%), that is, by 11.76% of the total land surface area, and at an average annual rate of 0.37% from 1986 to 2018 (Table 
+In Tiko sub-division, dense forest cover decreased from 16,221 to 5179 ha (-68.1%), that is, by 23.8% of the total land surface area, and at an average annual rate of 0.67% from 1986 to 2018 (Table 
+In Muyuka sub-division, dense forest cover decreased from 29,618 to 6859 ha (-76.8%), that is, by 47.4% of the total land surface area, and at an average annual rate of 1.48% from 1986 to 2018 (Table 
+In West Coast sub-division, dense forest decreased from 17,565 to 6232 ha (-64.5%), that is, by 46.1% of the total land surface area, at an average annual rate of 1.44% from 1986 to 2018 (Table 
+For LULCC at the sub-regional scale, mangrove forest, grassland, and montane forest increased from 14,971 to 20,155 ha (2.55%), 9062 to 9686 ha (0.31%), and 2795 to 28,733 ha (12.8%), respectively, from 1986 to 2018 (Table 
+Under the GES analysis, sustainable land management (e.g. adequate master and land use plans), good governance (e.g. law enforcement, capacity building, community awareness), conservation (e.g. creation of protected areas, community forest, council forest), and afforestation and reforestation (ecosystem restoration initiatives) were ranked as the most important measures towards LULCC reduction in all the subdivisions. On the other hand, sustainable forest management (good practices, access, and equity in benefit sharing), incentives (payment for ecosystem services to smallholders and communities), and technological improvement (improved stoves, alternative energy sources) were ranked as the lowest impact measures towards LULCC reduction under GES in the subdivisions (Fig. 
+Furthermore, the expert stakeholders ranked the indicators of the socio-economic drivers of LULCC under the BUS and GES and the results were similar on the most part, with only small variations in the order of the ranking of the indicators among the subdivisions (Figs. 
+The likelihood of a potential change from one LULC to another was envisaged to be highest for mangrove forest, oil palm plantation, banana planation, water, dense forest, and other cultivated areas in Buea subdivision (Fig. 
+The spatial pattern of degradation of LULC under the BUS in the future is presented in Fig. 
+The spatial pattern of degradation of LULC under the GES in the future is presented in Fig. 
+
+## Discussion ##
+In the 1980s, landscape transformation in the study area was mainly dominated by conversion of lowland dense forest and grassland to agro-industrial plantations in a time of low population growth and low land and food demand, thus producing more resilient and adaptable SES. In the 2000s, the historical hot zones for agro-industrial plantations that were initial sites of rapid dense forest cover conversion became attractive sites for conversion to built-up areas and other cultivated areas of cropland in the sub-region, following increased population growth and high land and food demand, thus producing less resilient and adaptable SES. The spatial pattern of LULCC show some appreciable common decreasing trends in dense forest cover in all the five sub-divisions, with the decrease ranging from 11.76 to 47.4% from 1986 to 2018. The increased LULCC from the year 2000 are associated with the dwindling resilience and adaptability of SES in areas closer to the sea and national road networks in the sub-region, where social systems such as student villages, residential suburbs, migrant settlements, and farming and fishing village communities have developed and expanded at the detriment of ecological systems such as lowland forests, grassland and mangroves. Consistent with this result, forest cover loss showed increasing trends in four community forests in Fako division from 2001 to 2018, due to mainly to agricultural expansion, illegal exploitation of wood and non-wood products, and weak governance 
+The decrease in rubber plantation cover, ranging from 1.08 to 13.2% across all the sub-divisions, is indicative of changing global commodity consumption patterns and falling commodity product prices in the export market, consistent with the observations of 
+The population of Fako division has almost doubled over the last 30 years, that is, from 248,032 inhabitants in 1987 to 466,412 inhabitants in 2005 with a growth rate of 4.89, compared to a national average of 2.59%. Urban sprawl remains the dominant and widely prevailing form of urban growth in the sub-region. The observed significant differences in the increase of built-up areas between the sub-divisions are attributable to differences in population growth, socio-economic attractions, and strength and resilience of the local economy. Buea and Limbe sub-divisions have higher population growth rates (> 4.5% compared to 2.59% national average), urbanisation rate, socio-economic attractions, business growth rate, and traffic density than Tiko, Muyuka, and West Coast sub-divisions with significantly more agrarian local economy. Beyond 2000, much of the expansion in built-up areas and other cultivated areas of cropland occurred more in non-forest than forest areas in Buea and Limbe subdivisions, leading to a decrease in the area cover of agro-industrial plantations. Built-up land expansion due to urban growth usually occurs at the expense of ecological land cover classes in many developing countries 
+In addition, the rapid population growth is causing high land value and increasing competition for farmland, leading to increased food prices, and threatening food security in Buea and Limbe sub-divisions. In particular, the rapid population growth rate due mainly to migration is triggering unprecedented progressive land tenure change from public land tenure to customary tenure and private land ownership since the 2000s to meet up with the increasing land demand for housing and farmland development. The wellintended government development strategy of land redistribution (land reform) has increased land and land use conflict, systematic land grabbing by local elites, wealthy business owners and decentralised government administrators, and exacerbated forest clearing and land use conversion for personal gains, consistent with the results of 
+The old paradigm of horizontal expansion of smallholder cultivated areas of cropland and agro-industrial (including non-industrial oil palm) plantations remains the main form of agricultural growth in the sub-region. It occurs in both non-forest and dense forest areas, mostly in West Coast, Muyuka, and Tiko sub-divisions of the sub-region, with higher farming population and poorer socio-economic development. Smallholder land use decision-making in terms of survivalist, subsistence-oriented, and market-oriented types are more likely found in areas with higher poverty levels and overall lower levels of socio-economic development 
+Results on the spatial distribution of LULCC in the sub-region indicated dense forest cover and other cultivated areas of cropland, respectively, decreased and increased the highest in the Northern and Eastern zones, located in Muyuka (-47.4% and 16.2%) and Tiko (-23.8% and 11.9%) sub-divisions from 1986 to 2018. In both sub-divisions, the topography is relatively low-lying, high farming population, and large proportion of cultivable land favoured the conversion of dense forest to cocoa, arable cropland, and agro-industrial plantations. In the northern zone, the on-going armed conflict in Anglophone Cameroon is causing more and more people to seek semi-permanent refuge in the forests, clearing more forest land to expand farmland and semi-permanent settlements. In general, the lowland ecological systems in the subregion experienced tremendous transformation due to greater vulnerability to overwhelming human pressure, undermining their resilience and sustainability. The lowland dense forest and grassland covers were converted to other land uses, mainly other cultivated areas (10.51%), oil palm (2.82%), banana (0.92%) plantations, and built-up areas (1.6%). In the lowland ecological systems, LULCC mostly increased with nearness to the Atlantic Coastline and settlements, and along national road networks and major markets linking main cities, towns, and villages in the sub-region, emphasising the vulnerability of lowland and coastalland boundary ecosystems. Consistent with this study results, 
+On the other hand, the conversion of dense forest to other land uses was lower (-13,201 ha and -22.3%) in the mountain ecological systems in Buea sub-division, indicating their greater resilience to human-induced change relating to deforestation and forest degradation, and lesser vulnerability to agricultural expansion activities compared to lowland areas of Muyuka and Tiko sub-divisions. The results confirm the hypothesis that LULCC decreased with increase in elevation of Mount Cameroon (4095 m), a biophysical barrier in the northwest zone, emphasising the resilience of the mountain ecosystem in the sub-region. 
+The stakeholder groups successfully ranked the drivers and indicators of LULCC under the BUS and GES despite the technical complexity of the questionnaire, thanks to the higher education level, academic and professional background, and technical experience. Under the BUS, the expert stakeholders emphasised that population growth, agricultural land expansion, infrastructural development, and biomass energy exploitation (fuelwood and charcoal), respectively, are the key drivers of increased LULCC in the sub-region. This is consistent with the findings of 
+
+## 338 ##
+Page 20 of 23
+The expansion of agricultural and croplands is consistent with government policy encouraging more youths to engage in agriculture as a means of employment, with the aim of increasing national GDP from export earnings, food security, nutrition diversity, household income, and local economic resilience. This is consistent with reports that arable production in Cameroon is declining or stagnating, and the situation is pushing more people to facing the problems of food insecurity 
+The expert stakeholders ranked sustainable land management, good governance, conservation, and reforestation, respectively, as the highest impact drivers and predictors of green economy development, with only small variations in stakeholder perceptions between the sub-divisions. Consistent with this result, 
+The stakeholders emphasised that population growth and sustainable land management, respectively, are the main drivers of increased and decreased degradation under the BUS and GES in the subregion. Population growth drives expansion in oil palm plantations at small scale, while national agricultural development plan triggers expansion of agroindustrial plantations at large spatial scales in the subregion 
+
+## Conclusion ##
+Natural vegetation landscapes are undergoing significant human transformations, causing significant alterations of ecosystem services and functions, and undermining the resilience and sustainability of SES. We analysed satellite imagery of 1986 and 2018 to examine the extent and spatial patterns of LULCC and validated current and future LULCC scenarios with expert multi-stakeholder perceptions in five subdivisions of Fako division of Cameroon. The increase in other cultivated areas of cropland, oil palm plantations and built-up areas, and decrease in dense forest and rubber plantation covers dominated the LULCC in the sub-region from 1986 to 2018. However, most of the deforestation and LULCC was caused by expansion of other cultivated areas of cropland by smallholders, contrary to the widely publicised narrative of agro-industrial and built-up areas expansion. Expansion of other cultivated areas of cropland, oil palm, and banana plantations were highest in the northern and eastern zones located in Muyuka and Tiko sub-divisions, respectively. The low-lying topography, higher proportion of cultivable land, farm labour, and predominantly agrarian local economy favoured horizontal agricultural land expansion more in the northern and eastern zones of the subregion. The increase in built-up areas was highest in Page 21 of 23 338 the central, south, and western coastal zones due to rapid population growth, unregulated urbanisation, and better socio-economic opportunities in Buea and Limbe sub-divisions. Due to the rapid unregulated urbanisation, urban sprawl was the dominant mode of urban growth in the sub-region. Rubber plantations and lowland dense forest are extremely vulnerable to degradation based on the economics of changing commodity market prices. Oil palm and banana plantations, mangrove, and montane forests showed appreciable resilience to human transformation activities in the sub-region. Population growth, agricultural and farmland expansion, and infrastructural development were ranked as the three most important drivers of degradation under the BUS, while sustainable land management, good governance, and afforestation/reforestation were ranked as the three most important predictors of LULCC reduction under the GES. LULCC decreased with increase in elevation of Mount Cameroon (4095 m) in the northwest zone, but increased with nearness to the Atlantic Coast in the western zone and national road networks, emphasising the resilience of the mountain ecosystem and the vulnerability of lowland and coastal-land boundary ecosystems. The west and south facing slopes of Mount Cameroon harbours high value forests with high endemism and conservation attractiveness, and remains a key biodiversity hot spot, watershed providing clean water, healthy soil and regulating the climate in the central Africa sub-region and beyond. In general, production and living land covers significantly increased at the expense of ecological land covers. Therefore, increasing the legal protection of the mountain and coastal land-boundary ecological systems while providing for production and living land is invaluable for the sustainability of ecosystem functions and services in the western highland region of Cameroon and in the rainforest-rich Congo Basin.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Urbanization, land use transformation and spatioenvironmental impacts: Analyses of trends and implications in major metropolitan regions of Ghana
+   Authors: , , , , , , , 
+   Date: 2020
+
+2. Shifting patterns of oil palm driven deforestation in Indonesia and implications for zero-deforestation commitments
+   Authors: , , , , , 
+   Date: 2017
+
+3. The impact of urbanization on agricultural dynamics: A case study in Belgium
+   Authors: , , , 
+   Date: 2020. 17692
+
+4. Environmental governance for the Anthropocene? Social-ecological systems, resilience, and collaborative learning
+   Authors: 
+   Date: 2017
+
+5. Navigating socialecological systems: Building resilience for complexity and change
+   Authors: , , 
+   Date: 2003
+
+6. Rediscovery of traditional ecological knowledge as adaptive management
+   Authors: , , 
+   Date: 2000
+
+7. Linking social and ecological systems: Management practices and social mechanisms for building resilience
+   Authors: , , 
+   Date: 1998
+
+8. From local scenarios to national maps: A participatory framework for envisioning the future of Tanzania
+   Authors: , , , , , , , , 
+   Date: 2016
+
+9. A methodological framework for assessing agents, proximate drivers and underlying
+   Authors: , , , , , 
+   Date: 2015. 2021
+
+10. 338 Page 22 of 23 causes of deforestation: Field test results from southern Cameroon
+
+11. Graphical methods of data analysis
+   Authors: , , , 
+   Date: 1983
+
+12. Social and ecological factors and land-use land-cover diversity in two provinces in Southeast Asia
+   Authors: , , , 
+   Date: 2010
+
+13. Testing focus groups as a tool for connecting indigenous and local knowledge on abundance of natural resources with science-based land management systems
+   Authors: , , , , , , , , , , , 
+   Date: 2014
+
+14. Long-term assessment of oil palm expansion and landscape change in the eastern Brazilian Amazon
+   Authors: , , 
+   Date: 2020. 2019. 104321
+
+15. Drivers of arable production stagnation and policies to combat stagnation based on a systematic analysis of drivers and agents of arable production in Cameroon
+   Authors: , 
+   Date: 2015. 2014
+
+16. Characterisation and mapping of landscape types, a case study from Norway
+   Authors: , , 
+   Date: 2015
+
+17. Forest governance regimes and forest cover loss in community-and government-managed forests in Cameroon. Revised
+   Authors: 
+   Date: 2021
+
+18. Assessing land use and landscape factors as determinants of water quality trends in Nyong River Basin, Cameroon
+   Authors: 
+   Date: 2020
+
+19. Assessing land use land cover change impacts on the hydrology of the southern portion of a large tropical forested catchment (Nyong River Basin) in Cameroon
+   Authors: , 
+   Date: 2020
+
+20. Rights, resources and rural development: Community-based natural resource management in Southern Africa
+   Authors: , 
+   Date: 2004
+
+21. Resilience thinking: Integrating resilience, adaptability and transformability
+   Authors: , , , , , 
+   Date: 2010
+
+22. Resilience: The emergence of a perspective for social-ecological systems analyses
+   Authors: 
+   Date: 2006. 2006
+
+23. A holistic approach to studying social-ecological systems and its application to Southern Transylvania
+   Authors: , , , , , , , , , , , 
+   Date: 2014
+
+24. Towards a better understanding of land conversion at the urban-rural interface: Planning intentions and the effectiveness of growth management
+   Authors: , , 
+   Date: 2020. 17654
+
+25. Qualitative research-introducing focus groups
+   Authors: 
+   Date: 1995
+
+26. Local history and landscape dynamics: A comparative study in rural Brazil and rural France. Land Use Policy
+   Authors: , , 
+   Date: 2015. 2014
+
+27. Societal Governance
+   Authors: 
+   Date: 2003
+
+28. Global land use change, economic globalization, and the looming land scarcity
+   Authors: , 
+   Date: 2011
+
+29. Taking into account farmers' decision making to map fine-scale land management adaptation to climate and socio-economic scenarios
+   Authors: , , , , , 
+   Date: 2013. 2013
+
+30. Mapping global patterns of land use decision-making
+   Authors: , 
+   Date: 2020
+
+31. Characteristics of the population of Cameroon from 1976 to
+   Date: 2006. 2014
+
+32. Oil palm expansion and deforestation in Southwest Cameroon associated with proliferation of informal mills
+   Authors: , , , 
+   Date: 2019
+
+33. Oil palm expansion in Cameroon: Insights into sustainability opportunities and challenges in Africa
+   Authors: , , , 
+   Date: 2017
+
+34. Governing the Commons: The Evolution of Institutions for Collective Action
+   Authors: 
+   Date: 1990
+
+35. Seeking sustainable pathways for land use in Latin America
+   Authors: , , , 
+   Date: 2020
+
+36. Scenario methodology for modelling of future landscape developments as basis for assessing ecosystem services
+   Authors: , , , 
+   Date: 2014. 201433
+
+37. Challenges for land system science
+   Authors: , , , , , , 
+   Date: 2012
+
+38. Land use/land cover change detection and urban sprawl in the peri-urban area of greater Cairo since the Egyptian Page 23 of 23 338 revolution of 2011
+   Authors: , , 
+   Date: 2020. 17654
+
+39. Methods for landscape characterisation and mapping: A systematic review
+   Authors: , , 
+   Date: 2018. 2018
+
+40. Landscape character assessment. Guidance for England and Scotland
+   Authors: 
+   Date: 2002
+
+41. Mapping socio-economic scenarios of land cover change: a GIS method to enable ecosystem service modelling
+   Authors: , , , , , , , , , , 
+   Date: 2011. 2010
+
+42. Synthesis of agricultural land system change in China over the past 40 years
+   Authors: , , 
+   Date: 2018. 17474 23X. 2019. 15711 20
+
+43. Land system science: Between global challenges and local realities
+   Authors: , , , 
+   Date: 2013
+
+44. Review and combination of recent remote sensing based products for forest cover change assessments in Cameroon
+   Authors: , , , 
+   Date: 2016. 19683
+
+45. The impacts of oil palm on recent deforestation and biodiversity loss
+   Authors: , , , 
+   Date: 2016
+
+46. Resilience: What it is and is not
+   Authors: 
+   Date: 2020
+
+47. Resilience, adaptability and transformability in social-ecological systems
+   Authors: , , , 
+   Date: 2004
+

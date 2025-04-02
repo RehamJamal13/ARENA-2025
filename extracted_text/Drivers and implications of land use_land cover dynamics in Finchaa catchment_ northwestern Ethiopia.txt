@@ -1,0 +1,384 @@
+================================================================================
+TITLE: Drivers and Implications of Land Use/Land Cover Dynamics in Finchaa Catchment, Northwestern Ethiopia
+================================================================================
+
+AUTHORS:
+- Wakjira Takala Dibaba
+- Tamene Demissie
+- Konrad Miegel
+
+ABSTRACT:
+Understanding the trajectories and extents of land use/land cover change (LULCC) is important to generate and provide helpful information to policymakers and development practitioners about the magnitude and trends of LULCC. This study presents the contributing factors of LULCC, the extent and implications of these changes for sustainable land use in the Finchaa catchment. Data from Landsat images 1987Landsat images  , 2002Landsat images  , and 2017   were used to develop the land use maps and quantify the changes. A supervised classification with the maximum likelihood classifier was used to classify the images. Key informant interviews and focused group discussions with transect walks were used for the socio-economic survey. Over the past three decades, agricultural land, commercial farm, built-up, and water bodies have increased while forestland, rangeland, grazing land, and swampy areas have decreased. Intensive agriculture without proper management practice has been a common problem of the catchment. Increased cultivation of steep slopes has increased the risk of erosion and sedimentation of nearby water bodies. Multiple factors, such as biophysical, socio-economic, institutional, technological, and demographic, contributed to the observed LULCC in the study area. A decline in agricultural yield, loss of biodiversity, extended aridity and drought, land and soil degradation, and decline of water resources are the major consequences of LULCC in the Finchaa catchment. The socio-economic developments and population growth have amplified the prolonged discrepancy between supply and demand for land and water in the catchment. More comprehensive and integrated watershed management policies will be indispensable to manage the risks.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land use/land cover change (LULCC) is among the major factors that affect biophysical systems at all scales 
+In the past, recognition of the importance of the natural environment for human well-being has been less influential in maintaining sustainable development and poverty alleviation strategies 
+In recent years, the study of LULCC has become an important topic of research 
+LULCC processes are triggered by the interaction of anthropogenic and biophysical drivers 
+The upper part of the Blue Nile Basin is characterized by a very rich diversity of natural resources, including land, vegetation, genetic diversity, and water in a diverse biophysical and socioeconomic environment experiencing multi-faceted pressures 
+Relatively abundant water resources in Ethiopia have played a minimal role in the development of the national economy. As a result, the country intends to place a priority on water resource development as an essential strategy for economic and social development 
+The Finchaa catchment has a large share of Ethiopia's hydroelectric power, sugar, and ethanol supply. However, there has been limited multidisciplinary and independent research in the catchment compared to other areas. There are few studies on Finchaa catchment in LULCC 
+The goal of this study is to investigate problems of scale and temporal variability of the LULCC in the Finchaa catchment. Specifically, the objectives of this study are (i) analyze the changes in land use/land cover over the last 30 years (1987-2017), (ii) examine the LULC inter-category transitions and the LULCC associations with slope, (iii) identify the major driving factors and explore the implications of the LULCC in Finchaa catchment.
+
+## Materials and Methods ##
+
+
+## Study Area ##
+The study was conducted in the upper Blue Nile Basin, Finchaa sub-basin in Oromia Regional State, Ethiopia. Finchaa sub-basin lies in 9°10' to 10°00' North latitude and 37°00' and 37°40' East longitude, covering a 3781 km 2 area. The catchment is characterized by high topographic relief, with elevation ranging from 851 to 3213 meters above sea level. The area has large upstream water potential sites, intensive irrigable downstream lands, and high hydropower potential 
+The annual rainfall of Finchaa catchment ranges from 1367 to 1842 mm, with the lower rainfall occurring in the northern lowlands and the higher rainfall greater than 1500 mm occurring in the southern and western highlands of the sub-basin. June to September is the main rainy season of the catchment, with an average annual rainfall of 1604 mm and a peak occurring between July to August 
+
+## Data Sources and Methodology ##
+
+
+## Spatial Data ##
+Landsat images, Digital Elevation Model (DEM), and field data were used in this study. A 30 m DEM obtained from the United States Geological Survey (USGS) at https://earthexplorer.usgs.gov/ was used to delineate the watershed and generate slope maps of the study area. Ground Control Points (GCP) for image classification and accuracy assessment were collected through direct field observations using Global positioning system (GPS), Landsat composites, and Google Earth. Two sets of Landsat Thematic Mapper (TM) imagery and one set of Landsat 8 Operational Land Imager and Thermal Infrared Sensor (OLI-TIRs) image obtained from USGS at https://landsatlook.usgs.gov/ were used for the analysis of LULCC (Table 
+
+## Socio-Economic Data ##
+We used a socio-economic survey to collect information to improve the understanding of local resources, resources use, interactions with the government decision-making process, and community perceptions of trends and priority issues 
+During both KIIs and FGDs, open-ended questions were used concerning the major shifts in LULC, the relationship among the biophysical environment, institution, socio-economic activities and demography. Discussions on practices and regulations that influence land management in their locality were held to get information on the management perspectives, evaluate the efforts made towards resource management and their challenges. The issue related to land degradation and the most priority issues that require interventions were also discussed. During the discussion and interviews, the main focuses were to get sufficient information about the past and present trend of LULCC, identify the root driving factors of the changes and implications of LULCC on the socioeconomic activity of the community and the environment. To better understand the major observed problems of the catchment and resource management practice, transect walks, field walks, and informal talks with people in their farms/fields were used. Farmers were asked to explain what parts of the landscape were changed and explained why the change had occurred. The farmers were also asked to describe the consequences of the changes in their livelihood, surroundings, and environment. Furthermore, farmers were asked to explain how their socio-economic activity contributes to the land-use change.
+Field observation was carried out based on checklists designed in advance to observe the situation in the watershed, and photographs of important sites were taken to enrich the study. With the aid of field observation, information from experts, and review of documents from national and regional offices, eight classes of land use/land cover types were identified as depicted in Table 
+
+## LULC Classes Description ##
+
+
+## Agricultural land ##
+Areas used for crop cultivation (both annual and perennial), fallow plots, scattered rural settlements, some pastures and plantations around settlements. Sparsely located settlements and roads constructed from earthwork were included here as it was difficult to separate them from agricultural lands. Rangeland (Shrubland) Sparsely located trees with brush and shrub form types, bushes, woodlands, grasses, mixed rangelands, and transitional forests (less dense forests) were included.
+
+## Forest land ##
+Areas covered with a dense growth of trees that include: evergreen forests, mixed forest land, deciduous forest lands. Plantations of indigenous specious of trees were also considered here.
+
+## Urban and built-up ##
+Residential, commercial and services, recreational sites, public installation, infrastructures. Due to their similar reflectance, bare lands and rock query sites were considered here. Roads made from pavement are also included in this category.
+
+## Water bodies ##
+Areas that are completely inundated by water like lakes and major rivers.
+
+## Grazing land ##
+Area covered with small grasses, scattered bushes and trees, and wetland (intermittent) used for grazing.
+
+## Swampy land ##
+Areas that are swampy during both wet and dry seasons Commercial farm Areas used for sugarcane plantations and sesame cultivations.
+
+## Data Analysis ##
+The analysis and quantification of the spatio-temporal dynamics of the LULC from 1987 to 2017 were achieved through Landsat image processing, classification, and post-processing. Image preprocessing involved geometric and radiometric correction before the image analysis. In this study, only six spectral bands of TM (band 1-5 and 7) and eight spectral bands of Landsat 8 OLI (bands 1-7 and 9) were used during the image processing for LULC classification. A 15-m spatial resolution layer (band 8) found in OLI was fused with 30 m multispectral bands using the Principal Component Analysis (PCA) method found in ERDAS. The pan-sharpened OLI image was used only to get a better visualization and interpretation of the images.
+The maximum likelihood parametric rule was used to classify each pixel based on the known ground truth. A minimum of 50 samples is recommended for image classification with maps having less than 12 classes 
+
+## Accuracy Assessment ##
+The process of doing an accuracy assessment involved generating a set of points from the classified image and comparing the positions of points whose location was determined by the ground truth data and corresponding coordinates from the original maps 
+From the error matrix, overall accuracy, user's accuracy, producer's accuracy, and kappa statistics were derived. Kappa coefficients typically lie between 0 and 1. According to Viera and Garrett 
+
+## Land Use/Land Cover Change Analysis ##
+Once the land cover classifications were derived, Arc Geographic and Information System (ArcGIS 10.1) was used to prepare the LULC maps of 1987, 2002, and 2017. Then, the areas of the LULC classes were calculated from the maps, and analysis of LULCC and rates of changes were computed. Total LULCC between the two periods is calculated as follows:
+Total LULC Gain/loss = Area of the final year -Area of the initial year
+Percentage of LULC Gain/loss = (Area of the final year -Area of the initial year) Total area of the catchment
+A LULC matrix was developed by ArcGIS to analyze the LULC inter-category transitions and examined the catchment experience in LULC transitions. The matrix was developed for the 1987-2002 and 2002-2017 transitions. Through the matrix, the area of gains, losses, persistence, and swapping between the LULC types are calculated.
+The terrain slope-LULC relationship was developed by overlaying the slope generated from the DEM of the study area and the classified maps. Then, the distribution of LULCC with slope was quantified. The result was helpful to see how continuous demand for agricultural land had brought changes in LULC of higher slope areas.
+The socio-economic data from the KIIs and FGDs were analyzed thematically with the focus on the past and current conditions of LULC, drivers, and implications of the LULCC. The ranking was used to identify the most common drivers and consequences of the changes.
+
+## Result and Discussion ##
+
+
+## Accuracy Assessment ##
+The confusion error matrix and Kappa statistics used for the classification accuracy of 1987, 2002, and 2017 LULC maps are presented in Table 
+
+## Spatio-Temporal Distributions of Land Use/Land Cover Changes in Finchaa Catchment ##
+Agricultural lands, the dominant land use type of the catchment, covered 36.27% of the study area in 1987, 42.64% in 2002, and 51.86% in 2017 (Table 
+In 1987, forestland, rangeland, and grazing land were the major LULC accounting for 21.55%, 20.63%, and 13.55% of the catchment, respectively. Similarly, forestland, rangeland, and grazing land were the major LULC in 2002 and 2017. For the periods of 1987 to 2002 and 2002 to 2017, forestland and rangeland showed the highest decline, whereas agricultural land showed the highest increase. Comparatively, the LULCC was higher for the changes from 2002 to 2017 than the changes from 1987 to 2002. The distribution of LULCC over 30 years is given by Figure 
+
+## LULC Inter-Category Transitions and Changes Trajectories in Finchaa Watershed ##
+The LULCC analysis of Finchaa showed that the catchment experienced intricate LULC transitions. LULC matrix was developed for the 1987-2002 and 2002-2017 transitions. Through the matrix, the areas gained, lost, persisted, and swapped among the LULC types were calculated (Table 
+During 1987-2002, the highest losses occurred in rangeland class, followed by forest land and grazing land. Urban and built-up areas followed by water bodies and swampy areas showed the lowest loss. Similar patterns of changes were observed during the 2002-2017 period with the highest losses shown by rangeland, followed by forest land and agricultural land, whereas the lowest loss was shown by urban and built-up followed by swampy area and water bodies. The highest gain for the period of 1987-2002 was shown by agricultural land followed by rangeland and forest land, whereas the lowest gain was shown by urban and built up followed by water bodies. For period's 2002-2017, agricultural land followed by rangeland and grazing land has shown the highest gain while water bodies followed by swampy and urban and built-up area shows the lowest gain.
+Concerning net persistence, the ratio of the net change (gain-loss) to diagonals of each class, urban and built-up area has shown the highest net change to persistence ratio during 1987-2002 and 2002-2017. The highest net change to persistence ratio implies the lowest persisting class of the LULC. The lowest persisting LULC class in the Finchaa catchment was urban and built-up followed by rangeland during 1987-2002, whereas agricultural land followed by grazing land has shown the highest persisting LULC class. During 2002-2017, urban and built-up, and commercial farm were the lowest persisting LULC, and water bodies followed by agricultural lands were the highest persisting LULC classes. 
+
+## Land Use/Land Cover Change with Slope Gradients in Finchaa Catchment ##
+The continuous demand for agricultural land brought changes in LULC, especially in higher slope areas. A large part of the land (22.7%) was found in moderately rolling (8% to 15%), followed by the strongly rolling slope (15% to 30%) with the dominant agricultural land. In 1987, forest lands were higher in undulating slope (2% to 5%), followed by the gently rolling slope (5% to 8%). However, in 2017 forest land was higher in the hilly slope (30% to 60%), followed by a strongly rolling slope. The shift by forest land dominance from the undulating and gently rolling to the hilly and strongly rolling was owing to the agricultural land expansion, urban and built up, and increased water body on the lower slopes. Over the three decades (1987 to 2017), agricultural land expanded with the maximum rate of expansion shown on slope classes of strongly rolling to very hilly. The forestland was decreased in all slope ranges with the maximum rate of loss in gently undulating to moderately rolling slopes. Likewise, the swamp area was decreased in all slope ranges.
+From 1987 to 2017, the urban and built-up area expanded in all slope ranges with the highest expansion on the moderately rolling to gently rolling slopes. Grazing land was increased only on the slope ranges of 2%-5% and 0%-2% (gently undulating). The water bodies increased on all slope ranges except with higher slope areas. The highest increase by water bodies was shown on slope ranges from 0% to 2%. In contrast to water bodies, rangeland decreased on all slope ranges except in very hilly slope areas. The highest decline was shown in the slope ranges from 8% to 15%.
+The spatial distribution of LULCC with terrain slope in 1987 and 2017 is given in Table 
+
+## Drivers and Impacts of Land Use/Land Cover change ##
+The results of FGDs, KIIs, and field observation revealed that both anthropogenic and natural processes derived LULCC. However, anthropogenic activities were found to be predominant and immediate as compared to the natural process as a driver of LULCC. Further, some drivers are not only limited to local specific issues; rather, they are regional, national, and global issues. From a range of different drivers, respondents perceived six human-related activities as major drivers of LULCC in the study area (Table 
+KIIs and FGDs showed that the focus of the government to build hydropower projects and irrigation projects were among the major socio-economic and institutional causes of LULCC. The expansion of irrigation projects increased commercial farms, and the construction of reservoirs increased water bodies in the catchment. Infrastructure and built-up are also increasing in the catchment. For example, the construction of institutes like the Teacher Training College, Technical and Vocational Education and Training, private colleges, the Wollega University Shambu campus, a sugar factory, the Horro Cattle breed production center, and the Shambu referral hospital contributed to urban and built-up area expansion.
+The expansion of hydropower projects has displaced the community from their farmland and forced them to resettle in other places without adequate compensation. The increased resettlement on unproductive lands coupled with the relative depreciation of agricultural land made it difficult for inhabitants to remain, forcing them to move. Further, the lack of jobs for youths and urban developments in the catchment amplified the socio-economic activities for LULCC. Group discussions with the community and interviews with agricultural experts on how the construction of projects and weak environmental consideration caused LULCC were added as follows:
+"The construction of Fincha Dam 1973, Amerti Reservoir in 1987, and Neshe Dam in 2012 displaced many households from their farmland and made the community landless. Then, those who have good wealth moved to the town and settled. The poor were forced to work for others who have owned land in other places. Others are also moved to the town to work daily labor activities." (Community Members, Abay Chomen District and Horro District, Focus Group Discussion, March 2018).
+"The displacements of the community from reservoir areas have made land scarcity, especially in highland parts of the catchment. Consequently, there were efforts to drain wetlands mainly for agricultural land expansion, which was described in the local language as 'Duula Caffee Qoorsuu' to mean campaign of wetland draining. On the other hand, wetlands are not equally valued as natural resources. For example, there is no one accused of wetland degradation. The use of wetlands for agriculture limited the area of communal grazing where many livestock populations were allowed for grazing." (Agricultural Officer, Guduru District, Key Informant Interview, April 2018).
+The expansion of agriculture on communal and private grazing lands reduced the area of grazing lands. Consequently, a small area of land is used frequently for grazing a livestock population beyond its capacity. The experience of the community in using controlled grazing is low.
+According to KIIs and FGDs, the community perceived six major consequences of LULCC in Finchaa catchment. These include the decline of agricultural yield, biodiversity, and habitat loss, low and decreasing profitability of farmers, land and soil degradation, water resource decline, and extended aridity and drought.
+Losses of soil fertility have caused the decline of agricultural yields. The following quotes show how crop yield and soil fertility is related to the profitability of the farmers:
+"Agricultural yields are declined from time to time. Farmer's profitability from agriculture is decreasing. In some areas, the application of fertilizer is not adequate to recover crop yields due to the high decline in soil fertility. Soil acidity is increasing in the region and lack of adequate resources to treat soil acidity have worsened the situation." (Agricultural Officer and Development Agent, Jima Geneti District, Key Informant Interview, May 2018).
+"In the past, we used to produce adequate yields. But now, we are losing some parts of our farms as the land is becoming less fertile, and we are not getting adequate yields. Even, the benefits from the crop yields are not enough to cover the cost of the fertilizer. We are struggling just to get a hand to mouth production, and we are unable to support our children for a better life."(Farmer group, Jima Geneti District, Focus group Discussion, May 2018).
+The beginning and expansion of the commercial farms initiated the community to start new cultivation in the lowland areas. A 67-year-old man described the past and present situation in the catchment as follows:
+"I was born and grew up in Gudane village. When I was young, forestland, woodlands, and grasslands covered a significant portion of the area, and there were a variety of animals. I used to hunt animals like buffalo and bushbuck with my friends. But now, the forests are cleared, and it is difficult to find animals like buffalo in the area." (Abay Chomen District, March 2018).
+The interview with the natural resource management expert on forest degradation was "The community used to destroy forests to have new farmland, to build settlements, for charcoal and domestic fuel, timber and woodworks. Further, farmers expand agricultural lands to natural forests. After cutting the natural forests, the farmers plant exotic trees such as eucalyptus (Eucalyptus globulus), which were mechanisms to own the land. Consequently, forest covers are reduced to remnants and are remained around high pick mountain areas, inaccessible areas, and along streams and valleys areas."(Natural Resource Management officers, Abay Chomen District and Horro District, Key Informant Interview, March 2018).
+Currently, landslides have become the common form of land degradation in Jima Geneti (upstream of Fincha Reservoir). They are the main sources of sediment/siltation for the reservoir. An expert interview regarding landslides and their challenge was quoted as follows:
+"Landslide was found to be the major problems that destroyed the farmlands, roads, and sometimes houses. The community sometimes perceives landslide as a natural process. However, the areas affected by landslides are areas that have been covered with forest once, but the forest is cleared now and areas that receive high erosion from the hillside. Erosion from the roadside, where there is no proper outlet, also caused gully and landslides. The efforts to manage landslide was limited by resources and skill required as landslide is becoming frequent." (Natural Resources Management Officer and Environment and Climate Change Officer, Jima Geneti District, Key Informant Interviews, May 2018).
+The other implication of LULCC revealed in the catchment was the decline of water resources. The discharges from the agricultural field and pollution from urban and domestic wastes are specified as the causes of water resource pollution in the catchment. The interview with the natural resource management expert regarding the status of the reservoir areas and streams described the issue as "There is no established buffer zone for the reservoir areas, and there are no stream protections. The farmers cultivate until the edge of the stream and the streams are exposed to siltation and scouring by soil erosion. Braided rivers are formed when erosion deposits soil and the river depth gets decreased and begin to form new channels and even change the flow course." (Natural Resources Management officer, Horro District and Abay Chomen District, Key Informant Interview, March 2018).
+"In several areas within the catchment, groundwater is an important source of water supply. In areas where wetlands are drained, the springs are dried out, the levels of hand-dug wells are declined." (Zonal Water Resources Officer, Horro Guduru Wollega Zone, Key Informant Interview, March 2018)
+The field observation result was consistent with the interview. When the level of water in the reservoir area declines, free land will be formed. Then, farmers will use the free land for winter cultivation (locally named "Bone") and when the reservoir fills, it will submerge the farm areas and take all the minerals and soil into the reservoir. Figure 
+
+## Discussion ##
+
+
+## Land Use/Land Cover Changes ##
+The LULCC analysis of Finchaa catchment over 30 years (1987-2017) revealed a dramatic LULCC (Table 
+Although deforestation occurred throughout the catchment, the high decline of forest cover was because of the expansion of the commercial farms, land expansion, and continuous wood extraction. Before 1987, lowland areas of the catchment (also called Finchaa valley) were covered with forests, woodlands, and rangeland. In the Finchaa catchment, not only the coverage but also the qualities of the forest compositions (especially indigenous plants) were diminished. Studies conducted in different parts of the upper Blue Nile of Ethiopia also reported similar findings. For example, Wubie et al. 
+Urban and built-up areas are continuously increasing, with the highest rate in recent years. The increments are due to the expansion and construction of infrastructures like roads, institutions, and settlements. The same trend was witnessed in the Blue Nile basin, the Gelda catchment 
+The findings of forest decline and urban growth were also reported with different studies over Africa. For example, manmade impervious surfaces and built-up have increased at the expense of biomass over the whole of Africa between 2000 and 2015 
+
+## Drivers of LULC Dynamics and Their Consequences ##
+Although both natural and anthropogenic drivers of LULCC were stated in the catchment, anthropogenic drivers were marked as the most immediate drivers. The community also enhances the natural process by deforestation and unsustainable agricultural practices, which worsen the effects of the LULCC. Restoring such land degradation and the effect of these processes could take time and require a huge amount of resources. A study conducted in southeastern Ethiopia reported that anthropogenic factors were the major responsible drivers of LULCC 
+The construction of the reservoir had displaced farmers and caused land scarcity. The scarcity of land, coupled with the need to farm more land, has led the community to cultivate steep slopes. As presented under the analysis of LULCC with slope (Table 
+Urban development, scarcity of grazing mismanagement, and lack of adequate technology to improve agricultural practices and livestock also contributed to LULCC. A similar study conducted in Munessa-Shashemene reported similar findings that the social, economic, and environmental policies and technology highly contributed to LULCC 
+The adverse impacts of LULCC were associated with the underlying factors related to human activities. The scarcity of land and the need to farm more coupled with resettlement have reduced grazing lands. The reduction of the grazing land forced the community to reduce their livestock, which has negative effects on household income and their consumption of livestock products. Likewise, population growth and agricultural expansion were associated with biophysical degradations like soil, water, and environment. Equally important to the environmental problem, socio-economic and institutional problems were also posed a significant impact on the sustainability of the sub-basin. For example, increased agricultural land on a steep slope without proper management practices potentially have increased the vulnerability of the land to erosion and sedimentation in water bodies of the catchment. A similar study also reported that LULCC has a significant potential for reducing the production of subsistence agriculture production 
+The process of the hydro-development process affected local communities and their livelihoods, mostly by changing access to land and also less water 
+According to KIIs and FGDs, extended aridity and drought (longer dry season) are increasing in the catchment. The increase in the longer dry season has amplified the effects of water security in the catchment. A climate projection study reported that the upper Blue Nile basin will face regional water scarcity regardless of the increase or decrease in precipitation 
+
+## Conclusions ##
+The quantitative spatio-temporal evidence obtained through interpretations of satellite images shows that Finchaa has undergone significant LULCC since 1987. Between 1987 and 2017, agricultural land, commercial farm, urban and built-up areas increased while rangeland, grazing lands, and swampy area decreased. The transition matrix developed to assess inter-category transitions and the change trajectories highlight the dominant dynamic events and internal conversions between LULC classes. The urban and built-up areas show the highest ratio of the net change to persistence, whereas agricultural land has shown the lowest net change to persistence ratio in the 1987-2002 transition. In general, the highest net change to persistence ratio is associated with the lowest persisting LULC classes. The spatial distribution of LULCC with slope shows a continuous expansion of agriculture and settlement and a reduction of forestland and swampy along all slopes. The rangeland has been decreased in all slope ranges except hilly slope areas.
+Agricultural expansion, urbanization and infrastructure developments, timber and woodworks, resettlement, uncontrolled grazing, and weak environmental considerations were identified as the major driving factors of LULCC. The adverse impacts of LULCC are associated with the underlying causes of human activities related to the environment, socio-economic, biophysical, and institutional problems. The decline of agricultural yield, biodiversity and habitat loss, low and decreasing profitability of farmers, land and soil degradation, water resource decline, and extended aridity and drought are the major impacts of LULCC perceived by the community. Notably, increased cultivation of lands situated either on steep slopes or in flood-prone areas requires urgent action to avert the challenges of land and soil degradation as it is threatening the survival of forest remnants and other important natural resources. Further, the lifespan of the three reservoirs in the catchment depends on the sustainability of natural resources management.
+The qualitative and quantitative study of the LULCC, its driving forces, and the impacts presented in this study could help a decision-maker by providing information that supports integrated watershed management and future developments. Special attention should be given to rehabilitate the degraded lands and to protect the natural resource in the catchment. With this, the undesirable effects of complex environmental dynamics in the catchment can be reduced.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. The diagonals (written in bold) indicates area of land that remained unchanged for each class during the transition. The net persistence of the LULC during
+   Date: 1987-2002 and 2002-2017
+
+2. Global Consequences of Land Use
+   Authors: , , , , , , , , , 
+   Date: 2005
+
+3. 
+   Authors: , 
+   Date: 18 September 2019
+
+4. Estimating the Impacts of Land-Cover Change on Runoff Using the Soil and Water Assessment Tool (SWAT): Case Study of Nzoia Catchment, Kenya/Estimation Des Impacts Du Changement d'occupation
+   Authors: , , 
+   Date: 2009
+
+5. Interactions between Climate Change and Land Use Change on Biodiversity: Attribution Problems, Risks, and Opportunities
+   Authors: , 
+   Date: 2014
+
+6. Land Use Change Trends and Their Driving Forces in the Kilombero Valley Floodplain
+   Authors: , , 
+   Date: 2019
+
+7. The Causes of Land-Use and Land-Cover Change: Moving beyond the Myths
+   Authors: , , , , , , , , , 
+   Date: 2001
+
+8. Land-Use/Land-Cover Changes and Their Influence on the Ecosystem in Chengdu City, China during the Period of 1992-2018
+   Authors: , , , , 
+   Date: 2018
+
+9. Accounting for the Impact of Conservation on Human Well-Being
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+10. Taking Natural Limits Seriously : Implications
+   Authors: 
+   Date: 2015
+
+11. Will the Sustainable Development Goals Address the Links between Poverty and the Natural Environment ?
+   Authors: , , 
+   Date: 2018
+
+12. Soils for Productive and Resilient Agricultural Landscapes; CGIAR Research Program on Water, Land and Ecosystems (WLE)
+   Authors: , , 
+   Date: 2017
+
+13. Economics of Land Degradation and Improvement -A Global Assessment for Sustainable Development
+   Authors: , , , 
+   Date: 2016
+
+14. The State of the World's Land and Water Resources for Food and Agriculture (SOLAW)-Managing Systems at Risk
+   Authors: 
+   Date: 2011. 22 October 2019
+
+15. Drivers and Implications of Land Use and Land Cover Change in the Central Highlands of Ethiopia : Evidence from Remote Sensing and Socio-Demographic Data Integration
+   Authors: , 
+   Date: 2014
+
+16. Patterns, Causes and Consequences of Land Use/Cover Dynamics in the Gumara Watershed of Lake Tana Basin
+   Authors: , , 
+   Date: 2016
+
+17. Land Use / Land Cover Changes and Their Environmental Implications in the Gelana Sub -Watershed of Northern Highlands of Ethiopia
+   Authors: , 
+   Date: 2017
+
+18. Time Series Land Cover Mapping and Change Detection Analysis Using Geographic Information System and Remote Sensing
+   Authors: , , , , , , , 
+   Date: 2018
+
+19. Trends and Drivers of Land Use / Land Cover Change in Western Ethiopia
+   Authors: , , , 
+   Date: 2019
+
+20. Land Use Land Cover Dynamics, Its Drivers and Environmental Implications in Lake Hawassa Watershed of Ethiopia
+   Authors: , , , 
+   Date: 2019
+
+21. Reported Driving Factors of Land-Use/Cover Changes and Its Mounting Consequences in Ethiopia : A Review
+   Authors: 
+   Date: 2019
+
+22. Land Use Land Cover Change Trend and Its Drivers in Somodo Watershed South Western
+   Authors: , , 
+   Date: 2019
+
+23. Land Use / Cover Spatiotemporal Dynamics , Driving Forces and Implications at the Beshillo Catchment of the Blue Nile Basin , North Eastern Highlands of Ethiopia
+   Authors: , 
+   Date: 2019, 8, 21
+
+24. The Impact of Land Use Change on the Hydrology of the Angereb Watershed
+   Authors: , 
+   Date: 2012, 1, 4
+
+25. Drivers of Land Use/Land Cover Changes in Munessa-Shashemene Landscape of the South-Central Highlands of Ethiopia
+   Authors: , , , 
+   Date: 2015
+
+26. Dynamics of Land-Use and Land-Cover Change in Tropical Regions
+   Authors: , , 
+   Date: 2003
+
+27. Causes and Trajectories of Land-Use/Cover Change
+   Authors: , , , , , 
+   Date: 2006
+
+28. The Implications of Changes in Population, Land Use, and Land Management for Surface Runoff in the Upper Nile Basin Area of Ethiopia
+   Authors: , , 
+   Date: 2005
+
+29. Land Use Change and Suitability Assessment in the Upper Blue Nile Basin under Water Resources and Socio-Economic Constraints: A Drive towards a Decision Support System
+   Authors: , , , , , , 
+   Date: July 2012
+
+30. Ethiopia and the Nile Dilemmas of National and Regional Hydropolitics
+   Authors: 
+   Date: 2007
+
+31. Water Resources and Irrigation Development in Ethiopia
+   Authors: , , , , , 
+   Date: 2007
+
+32. Modeling the Effects of Land Use Change and Management Practices on Runoff and Sediment Yields in Fincha Watershed
+   Authors: , , 
+   Date: 2014
+
+33. GIS and Remote Sensing In Land Use Land Cover Change Detection in Finchaa Valley Area
+   Authors: 
+   Date: 2005
+
+34. Hydropower-Induced Land Use Change in Fincha'a Watershed, Western Ethiopia: Analysis and Impacts
+   Authors: , 
+   Date: 2008
+
+35. Use/Land-Cover Changes in Major Asian and African Cities
+   Authors: , , , , , 
+   Date: 2015
+
+36. Evaluating Potential Impact of Climate Change on Hydro -Meteorological Variables in Upper Blue Nile Basin . A Case Study Fincha Sub -Basin
+   Authors: , 
+   Date: 2016
+
+37. Evaluation of the CORDEX Regional Climate Models Performance in Simulating Climate Conditions of Two Catchments in Upper Blue Nile Basin
+   Authors: , , 
+   Date: 2019
+
+38. Practical Guide for Socio-Economic Livelihood, Land Tenure and Rights Surveys for Use in Collaborative Ecosystem-Based Land Use Planning
+   Authors: , , , , 
+   Date: 2012
+
+39. Remote Sensing and Image Interpretation
+   Authors: , , 
+   Date: 2004
+
+40. Erdas Field Guide
+   Authors: 
+   Date: 2013
+
+41. Community Perception of Land Use/Land Cover Change and Its Impacts on Biodiversity and Ecosystem Services in Northwestern Ethiopia
+   Authors: 
+   Date: 2018
+
+42. Accuracy Assessment of Land Use Land Cover Classification Using Google Earth
+   Authors: , 
+   Date: 2015
+
+43. Evaluation and Prediction of Land Use/Land Cover Changes in the Andassa Watershed
+   Authors: , , , 
+   Date: 2017
+
+44. Land Use / Land Cover Factor Values and Accuracy Assessment Using a GIS and Remote Sensing in the Case of the Quashay Watershed in Northwestern
+   Authors: , , , 
+   Date: 2017
+
+45. Horizontal Accuracy Assessment of Very High-Resolution Google Earth Images
+   Authors: , , 
+   Date: 2015
+
+46. Understanding Interobserver Agreement : The Kappa Statistic
+   Authors: , 
+   Date: 2005
+
+47. CSA. Summary and Statistical Report of the 2007 Population and Housing Census; Central Statistical Agency: Addis Ababa
+   Date: 2007
+
+48. Central Statistical Agency: Population Projection of Ethiopia for All Regions At Wereda Level from
+   Authors: 
+   Date: 2014-2017. 2013
+
+49. Land Use/Land Cover Dynamics in Response to Various Driving Forces in Didessa Sub-Basin
+   Authors: , , , 
+   Date: 2019
+
+50. Land Use/Cover Dynamics and Its Drivers in Gelda Catchment, Lake Tana Watershed
+   Authors: , 
+   Date: 2017
+
+51. Modeling the Hydrological Impacts of Land Use/Land Cover Changes in the Andassa Watershed
+   Authors: , , , 
+   Date: 2018
+
+52. Urban Expansion in Ethiopia from 1987 to 2017: Characteristics, Spatial Patterns, and Driving Forces. Sustainability
+   Authors: , , , , 
+   Date: 2019
+
+53. Mapping Land Cover Change over Continental Africa Using Landsat and Google Earth Engine Cloud Computing
+   Authors: , , , , , , 
+   Date: 2017
+
+54. Evaluating Land Use and Land Cover Change in the Gaborone Dam Catchment, Botswana, from 1984-2015 Using GIS and Remote Sensing
+   Authors: , , , 
+   Date: 2019
+
+55. Assessment of Land Use and Land Cover Changes from 1979 to 2017 and Biodiversity & Land Management Approach in Quirimbas National Park
+   Authors: , , , 
+   Date: 2018
+
+56. Effects of Land Use Changes on Climate in the Greater Horn of Africa
+   Authors: , , 
+   Date: 2012
+
+57. Land Use and Land Cover Change in the Bale Mountain Eco-Region of Ethiopia during 1985 to 2015
+   Authors: , , 
+   Date: 2016
+
+58. Controversial Connections: The Water-Energy-Food Nexus in the Blue Nile Basin of Ethiopia. Land
+   Authors: , 
+   Date: 2019
+
+59. Future Hot and Dry Years Worsen Nile Basin Water Scarcity Despite Projected Precipitation Increases Earth's
+   Authors: , , , , , , 
+   Date: 2019
+
+60. The Effects of Land Use Land Cover Change on Hydrological Process of Gilgel Gibe
+   Authors: , , , 
+   Date: 2016, 7,8
+

@@ -1,0 +1,625 @@
+================================================================================
+TITLE: Flooding and its relationship with land cover change, population growth, and road density
+================================================================================
+
+AUTHORS:
+- Mahfuzur Rahman
+- Chen Ningsheng
+- Iftekhar Golam
+- Monirul Mahmud
+- Hamid Islam
+- Hilal Pourghasemi
+- Jules Ahmad
+- Rana Habumugisha
+- Ali Muhammad
+- Mehtab Washakh
+- Enlong Alam
+- Zheng Liu
+- Huayong Han
+- Tian Ni
+- Ashraf Shufeng
+- Dewan
+- G Mahmud
+- Monirul Islam
+- H Pourghasemi
+- Hilal Ahmad
+- Jules Habumugisha
+- Rana Muhammad
+- Ali Washakh
+- Mehtab Alam
+- Enlong Liu
+- Zheng Han
+- Huayong Ni
+- Tian Shufeng
+- Ashraf Dewan
+- Mahmud
+- Hamid Pourghasemi
+
+ABSTRACT:
+This is a PDF file of an article that has undergone enhancements after acceptance, such as the addition of a cover page and metadata, and formatting for readability, but it is not yet the definitive version of record. This version will undergo additional copyediting, typesetting and review before it is published in its final form, but we are providing this version to give early visibility of the article. Please note that, during the production process, errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Owing to the immense destruction of properties, infrastructure and loss of lives, floods are one of the most destructive natural hazards. The estimated global economic damage associated with floods since the end of the 20th century was 386 billion USD 
+Frequent flooding occurs in Bangladesh as a result of severe overflow from three major rivers: the Ganges, Brahmaputra, and Meghna rivers (GBM), and heavy rainfall from upstream and inland locations 
+Anthropogenic climate change is expected to increase the occurrence of flooding in Bangladesh 
+Even though flooding cannot be fully controlled, its damage to people and property can be mitigated by identifying flood susceptible areas and influencing factors. In Bangladesh, many attempts have been made to map flood vulnerability and susceptible areas across the country; however, basin-scale risk assessment is still underdeveloped. The accurate identification of floodprone areas in specific catchments may help susceptible communities and decision-makers to mitigate the damage caused by floods in the future, thereby alleviating flood risk 
+Flooding is a dynamic process resulting from the complex interaction of watershed manageme nt and hydro-meteorological, hydrogeological, and geomorphological conditions. It is a complex and non-linear process that may never be effectively controlled through simple linear processes 
+Geospatial techniques are widely used in flood susceptibility modeling (FSM) 
+Ensemble modeling is the process of integrating a standalone model into a combined model to improve the prediction accuracy 
+
+## Materials and methods ##
+
+
+## Study area ##
+The Surma River basin of northeast Bangladesh located at 25°10'N and 91°30'E (Fig. 
+Detailed information on specific aspects of the workflow is outlined below (Fig. 
+
+## Land cover analysis ##
+In this study, the CART algorithm was used in the Google Earth Engine (GEE) (https://code.earthengine.google.com/) to develop multi-temporal land cover maps of the study area between 2000 and 2017. CART is a non-parametric algorithm, capable of detecting inputparameter relationships and splitting them into nodes based on spectral similarity. Further information on the CART algorithm is presented in section 2.5.5. The GEE aids in the storage of satellite images and the performance of complex calculations in the cloud. Calibrated top-ofatmosphere (TOA) reflectance products from Landsat 7 
+Training datasets were used to generate land cover maps, and the remaining 30% of the data was used to examine accuracy and classification performance.
+Following 
+The single land cover dynamic index (SLCDI) and bilateral land cover dynamic index (BLCDI) are often used to quantify changes in the intensity of land cover conversion. These indices can be used to identify internal variations and transitions of LC by calculating the loss and gain of each LC category over a time period. In addition, the variation of LC intensity was also determined for each study period using the integrated bilateral land cover dynamic index (IBLCDI). SLCDI, BLCDI and IBLCDI can be defined as follows 
+In Eqs.
+(1) to (3), LAS and LAE are areas of land cover type at the beginning and end of the study period, respectively; T is the monitoring period; 𝐿𝐴 𝑆,𝐸 is the area converted from Sth to Eth type, denotes loss; and 𝐿𝐴 𝐸,𝑆 is the area converted from Eth to Sth type and denotes gain.
+
+## Population growth ##
+Population data for 2000, 2014, and 2017 were obtained from the LandScan dataset (https://landscan.ornl.gov/landscan-datasets). Further, to calculate the PG, we divided the population by grid size (30 m × 30 m) using resampling tools. Finally, the PG in each pixel is calculated using the following equation:
+where PS and PE are the population per pixel at the start and end times in the study period, respectively, and T is the monitoring period.
+
+## Road density ##
+Road data of the study area were obtained from the Local Government Engineering Department
+(LGED) at a scale of 1:800,000. It is worth noting that national highways, regional highways, and district roads were considered. RD values were calculated using the kernel density function.
+
+## Flood susceptibility modeling 2.5.1 Preparation of flood inventory map ##
+The mapping of the flood extent aids in determining of its relationship with influencing factors. In this study, three flood inventory maps for 2000, 2014, and 2017 were prepared using Landsat 7
+(ETM+), Landsat 8, and Sentinel-1 satellite images, respectively, and 1500 (500 for each year) flood points were considered. Landsat 7 and 8 images were obtained from the Earth Explorer (https://www.earthexplorer.usgs.gov) and processed in ArcGIS (v. 10.5) to develop flood inventories for 2000 and 2014. The 2017 flood inventory was prepared using JavaScript API in the GEE platform (https://code.earthengine.google.com) considering Sentinel-1 SAR: C-band (Synthetic Aperture Radar). To delineate flooded areas, satellite images consisting of pre-and post-flood periods were considered for each flooded year. Water and non-water pixels were combined to obtain the maximum waterbodies. The waterbodies that appeared in both images (preand post-floods) were considered permanent waterbodies (rivers, wetlands, ponds, etc.), and nonwater pixels were deemed non-flooded areas. Hence, the areas depicting waterbodies in both images but non-waterbodies in the pre-flood image were considered to be flooded areas 
+training and testing 
+
+## Identifying factors that influence floods ##
+To determine flood-susceptible locations, a number of factors influencing the susceptibility of an area were studied. As the influencing factors may vary 
+The factors derived from DEM, that is, elevation, slope, aspect, curvature, drainage density, etc., have a different spatial resolutions (30 m). At the same time, geology, soil texture, and proximity to roads were digitized at a scale of 1:100,000 and 1:800,000. Owing to these different spatial resolutions, it was challenging to avoid uncertainties. All factor maps were resampled to a 30 m × 30 m grid, assuming that the same grid size would be useful. This is also a common practice in geospatial data 
+
+## Feature selection and multicollinearity analysis ##
+Information gain ratio (IGR) is a technique that can be used for feature selection. It is one of the most common methods for evaluating significant factors affecting flooding, and improving the predictive efficiency and performance of the models 
+
+## Bayesian regularization back propagation neural network ##
+A BRBP neural network is a multi-layer neural network that typically consists of three layers:
+input layers (ILs), one or more hidden layers (HLs), and an output layer (OL). This MLA is computationally intensive but can result in a strong generalization of complex, limited, or noisy datasets. In this study, the "trainbr" algorithm with the command "nftool" in MATLAB (v.
+R2017a) was used to implement the BRBP neural network for FSM 
+
+## Classification and regression trees ##
+CART is a non-parametric method proposed by 
+
+## Evidence belief function ##
+EBF is a statistical model based on the Dempster-Shafer theory which identifies spatial integratio n based on a combination law 
+(i) belief function (Bel), disbelief function (DisBel), (iii) uncertainty (Unc), and (iv) plausibility (Pls). The values of these four functions varied from zero to one (Supplementary Data, Fig. 
+
+## Ensemble modeling ##
+A few weaknesses have been observed in the aforementioned individual models, as they usually do not yield desirable outcomes; hence, many researchers recommend the use of ensemble models to overcome specific model limitations 
+where EM indicates the ensemble model, and 𝐴𝑈𝐶𝑅𝑂𝐶 𝑖 𝑆𝑢 represents the AUCROC value for the success rate of the standalone model (SMi; 
+
+## Validation and performance of the models ##
+In this study, the area under the curve-receiver operating characteristic (AUC-ROC) was plotted to validate flood susceptibility maps for both standalone and ensemble models. In the AUC-ROC, the "X" axis indicates the false positive (FP) rate or 1-specificity, while the "Y" axis indicates the true positive (TP) rate or sensitivity 
+The AUC-ROC was separately calculated for training (success rate) and testing (prediction rate) datasets, and testing datasets were not used to develop the model.
+Furthermore, the performance of predictive models (standalone and ensemble models) was graphically analyzed using a Taylor diagram 
+In the Taylor diagram, statistical indices such as correlation coefficients and standard deviation (SD) were derived to compare model outputs and actual results.
+
+## Flood susceptibility mapping ##
+Flood susceptibility maps of the study area were developed for three time periods 
+Finally, flood susceptibility was categorized into four classes: low, moderate, high, and very high susceptibility using the natural breaks classification method 
+
+## Relative changes in flooding areas ##
+To analyze the correlations between flood susceptible areas with land cover, population, and RD, the relative changes in flooding (RCF) areas were calculated for the same period with a grid size of 30 m × 30 m. The RCF can be derived using the following equation 
+where 𝐹𝑆 𝑠 indicates flood susceptibility in the initial year, 𝐹𝑆 𝐸 denotes the ending year; and T is the monitoring period.
+
+## Geo-statistical analysis for spatial correlation 2.6.1 Moran's I index ##
+The spatial correlation (Moran's I) was calculated from the residuals obtained from geographica lly weighted regression (GWR) model 
+That is, it determines the similarity of features. Positive Moran's I denotes clustering, while a negative value represents dispersion 
+
+## Multiple linear regression analysis ##
+Multiple linear regression (MLR) was performed to examine the relationship between differe nt LCC scenarios and the relative changes in flood areas. Twelve scenarios (Sc.)-Sc. 1: agricultura l land to built-up area, Sc. 2: agricultural land to forest, Sc. 3: agricultural land to waterbodies, Sc.
+4: built-up area to agricultural land, Sc. 5: built-up area to forest, Sc. 6: built-up area to waterbodies, Sc. 7: forest to agricultural land, Sc. 8: forest to built-up area, Sc. 9: forest to waterbodies, Sc. 10: waterbodies to agricultural land, Sc. 11: waterbodies to built-up area, and Sc.
+12: waterbodies to agricultural land-were selected as input variables to perform MLR analysis 
+
+## Rose diagram construction ##
+The rose diagram was constructed based on the range value, obtained from the semi-vario gra m statistics. Additional details can be sourced from studies conducted by 
+
+## Results ##
+
+
+## Land cover classification and accuracy assessment ##
+The classified land cover maps of the study area are shown in Fig. 
+Confusion matrix and kappa coefficients were calculated to determine the accuracy of satellite-derived land-cover classification. The results revealed that the overall accuracy levels of the land cover for 2000, 2014, and 2017 were 89.57%, 97.75%, and 92.36%, respectively (Table 
+
+## Land cover change ##
+The Markov transfer matrix was applied to detect land-cover transitions at different times (e.g., 
+However, the water area increased from 2014 to 2017. The forest area expanded from 2000 to 2014 and from 2000 to 2017, while it decreased from 2014 to 2017 (Fig. 
+Furthermore, the comparative LCC rate for forests from 2000 to 2017 was 163%, demonstrating a substantial increase in this category. Built-up areas changed from 2.62% in 2000 to 4.97% in 2017 at a comparative rate of 89.62% (Supplementary Data, Tables 
+
+## Dynamic index for land cover changes ##
+Throughout the short-and long-term transition periods, BLCDI for the built-up area was significantly higher; the newly developed built-up area was mostly transformed from agricultura l land and waterbodies. This occurred as a result of the expansion of urban areas and constructio n of various types of infrastructure. More specifically, the increase in population resulted in a higher demand for housing and industrial growth, and consequently, the built-up area increased at the expense of agricultural land and waterbodies. The results of IBLCDI showed that the overall longterm dynamic transition intensity was 13.32% 
+
+## Feature selection and multi-collinearity test of flood influencing factors ##
+The results of the IGR for three different periods among 13 influencing factors, elevation, slope, NDVI, aspect, mean monsoon rainfall, land cover, plan curvature, soil texture, drainage density, proximity to rivers, proximity to roads, and population density, are shown in Fig. 
+The results of the Pearson's correlation indicated that the values did not exceed 0.70, which confirmed that the factors were free from multicollinearity (Fig. 
+
+## Construction of flood susceptibility maps ##
+In Furthermore, the ensemble model (BRBP-CART-EBF) was used to generate the flood susceptibility map for the three time periods 
+
+## Validation and model performance ##
+The accuracies of the standalone and ensemble models were evaluated by plotting the (AUC-ROC). The model's training datasets (60%) were used to plot the success rate curve (SRC), but were unable to evaluate the model's predictive capability. Hence, the prediction rate curve (PRC) was used to determine the accuracy of flood prediction. The SRCs and PRCs for the 2017 flood are shown in Fig. 
+Furthermore, the aggregated accuracy of the models was checked using the Taylor diagram and the results showed that EM4 outperformed other standalone and ensemble models (Fig. 
+
+## Relationships between flooding with land cover change, population growth, and road density ##
+
+
+## Spatial pattern assessment ##
+The results of the Moran's I index, derived from spatial correlation are presented in Table 
+Hence, relative changes in flood areas can be inferred to have been associated with LCC, increase in population, and growth of road networks.
+
+## Multiple linear regression ##
+The MLR results as a part of the correlation analysis between the RCF areas and different scenarios of LCC are presented in Table 
+
+## Assessment of semi-variogram and rose diagrams ##
+Semi-variogram plots were generated for four scenarios of LCC with RCF areas because these scenarios provided useful information regarding the relationship between flood and LCC (Supplementary Data, Table 
+
+## Population growth and road density ##
+An increased population within an area translates to increased anthropogenic activities, which enhances the likelihood of flood occurrence. A positive correlation between an increase in population and flooding was observed in this study. Specifically, people living downstream and adjacent to the river network were exposed to a relatively greater risk of flooding. Table 
+Furthermore, the assessment of RD is an important factor in the occurrence of floods suggesting that the distribution of roads was directly related to flooding (Table 
+
+## Discussion ##
+Flooding is a natural phenomenon that cannot be avoided entirely, and noticeably affects livelihoods and socioeconomic development in affected areas. However, the lack of knowledge on the spatial variability of floods can result in poor understanding of its management. Therefore, flood susceptibility mapping is an important step toward flood risk management and decreasing flood damage. Several factors influence the occurrence of floods. The selection of influenc ing factors was based on IGR coefficients. Drainage density, rainfall, slope, NDVI, and LC were found to be the dominant factors affecting floods in the study area. However, geology has a minima l effect on floods. These findings are consistent with those of the studies conducted by 
+Further, this study explored the relationship between LCC, PG, and increase in RD with relative changes in flood areas for the period between 2000 and 2017. Our results indicated that changes in land cover between 2000 and 2017 resulted in increased flood occurrence, especially in the downstream section of the study area. Flood incidents were more apparent in residential areas than in grasslands and barren land, because built-up areas hinder the infiltration of water and inhib it surface runoff. Although open and grassland areas cannot hinder the flow of water 
+The increase in population density has caused rapid urbanization in Bangladesh. The changes in hydro-morphological cycles, reduction of natural drainage capacity and flooding in densely populated areas are mainly attributable to rapid urbanization. The findings of this study are consistent with those of previous studies conducted by 
+and 
+Specifically, roads may affect the volume of infiltrated water. This finding is in agreement with those of studies conducted by 
+This study had three limitations. The first is the unavailability of relevant hydrological informa tio n such as flood depth, velocity, and discharge, precluding the development of a robust model. In addition, elevation data with 30 m spatial resolution appeared to be too coarse, especially in areas with flat topography. Unfortunately, a high-resolution elevation dataset is not available for monsoon regions such as Bangladesh. Finally, updated land use information for the study area is another constraint.
+This study shows that flood hazards in Bangladesh are increasing as a result of increased floodplain development. The proposed algorithm can be a practical and novel approach to flood risk management in northeast Bangladesh and in similar settings. In addition, the findings could inform the development of adaption measures at a basin-scale and can guide the development of flood countermeasures by policymakers to minimize flood-related damage. Although the EM4 ensemble model was superior for flood susceptibility assessment in this case study, it can be tested in other environmental hazards such as landslides and debris flows.
+As flooding is affected by growing anthropogenic activities (e.g., rapid changes in land cover) in combination with geographical factors (e.g., terrain characteristics), existing algorithms may be of little help. Hence, the proposed approach could provide a robust solution for quickly simula ting flood maps in data-sparse regions. In addition, the primary focus of this work was to evaluate and compare the modeling performances of different approaches and to identify the best alternative.
+Although we applied this work to a specific area, the proposed method can be used in other areas with similar characteristics. Based on the available literature, we hope that this work will be helpful for future studies. Note that the accuracy of the outputs may be dependent on the environme nta l characteristics of the study area as well as input variables, wherein, hydrogeological and topographical variations may exist. However, the method used in this study can be employed in other areas to understand its sensitivity.
+
+## Conclusions ##
+This study used machine learning techniques and various factors to clarify flood-susceptible areas in the northeast region of Bangladesh. The results demonstrated that anthropogenic activities such as rapid LCC led to more frequent and severe flooding, and climate change may worsen the situation. Therefore, sophisticated techniques are required to determine areas that are more susceptible to flooding. Of the three standalone and four ensemble models, BRBP-CART-EBF (EM4) yielded the highest AUC values (AUC > 90% in the training and testing stages) for the three flood events evaluated 
+were considered accurate for delineating of areas that were susceptible to floods.
+Furthermore, LCC that occurred in the downstream portion of the monitoring area was associated with changes in flooding areas between 2000 and 2017. In addition, flooding increases as RD and population increase. More specifically, a considerable decrease in waterbodies (+11.53% with SLCDI = 0.858%) and agricultural land (+25.94% with SLCDI = 0.90%) was observed, mostly due to rapid urbanization and population growth. This resulted in a decrease in the floodplain and disruption of floodwater by infrastructural development, resulting in greater flood susceptibility.
+The resulting maps could inform strategies for reducing of flood vulnerability and aid in the development of adaptation measures. The major difference between the proposed approach and existing studies is that the ensemble algorithms, along with a standalone algorithm, are examined for the first time to predict floods. Hence, the novelty of this study contributes to new ensemble algorithms that can also be applied to other areas. In addition, the proposed ensemble algorithms are not only limited to floods; they can be utilized in different susceptibility mapping, for example, 
+
+## Figures caption ##
+Fig. 
+
+## Tables caption ##
+Table 
+
+## Factor ##
+Association between influencing factors and flood susceptibility Class Classification method Proximity to rivers (m) Areas close to main channels are more likely to be flooded, thus, proximity to rivers plays a significant role in the assessment of flood susceptibility 
+
+## Geology ##
+The geology greatly influences the structure of the drainage pattern, contributing to floodplain growth 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. 
+   Authors: , , , 
+   Date: 2020
+
+2. Land Use Policy
+
+3. Flash flood potential prioritization of sub-basins in an ungauged basin in Turkey using traditional multi-criteria decision-making methods
+   Authors: , 
+   Date: 2020
+
+4. Global projections of river flood risk in a warmer world
+   Authors: , , , , , , , 
+   Date: 2017
+
+5. Mapping flood susceptibility in an arid region of southern Iraq using ensemble machine learning classifiers: a comparative study
+   Authors: 
+   Date: 2018
+
+6. Bangladesh Population and Housing Census -2011
+   Authors: 
+   Date: 2011. 2019
+
+7. Classification and Regression Trees
+   Authors: , , , 
+   Date: 1984
+
+8. A novel hybrid approach based on a swarm intelligence optimized extreme learning machine for flash flood suscep tibility mapping
+   Authors: , , , , , , 
+   Date: 2019
+
+9. Novel hybrid evolutionary algorithms for spatial prediction of floods
+   Authors: , , , , , , , , , 
+   Date: 2018
+
+10. High-resolution wall-to-wall land-cover mapping and land change assessment for Australia from 1985 to 2015
+   Authors: , , 
+   Date: 2021
+
+11. Evidential belief functions for data-driven geologically constrained mapping of gold potential
+   Authors: , 
+   Date: 2003
+
+12. Recommendations and future directions for supervised machine learning in psychiatry
+   Authors: , , 
+   Date: 2019
+
+13. Summary of current radiometric calibration coefficients for Landsat MSS, TM, ETM+, and EO-1 ALI sensors
+   Authors: , , 
+   Date: 2009
+
+14. Flood susceptibility modellin g using novel hybrid approach of reduced-error pruning trees with bagging and random subspace ensembles
+   Authors: , , , , , , 
+   Date: 2019
+
+15. Modeling flood susceptibility using data-driven approaches of naïve bayes tree, alternating decision tree, and random forest methods
+   Authors: , , , , , , , , , 
+   Date: 2020
+
+16. An ensemble prediction of flood susceptibility using multivariate discriminant analysis, classification and regression trees, and support vector machines
+   Authors: , , , , , 
+   Date: 2019
+
+17. Precipitation forecasting using classification and regression trees (CART) model: a comparative study of different approaches
+   Authors: , , , , , 
+   Date: 2018
+
+18. Flood susceptibility mapping by ensemble evidential belief function and binomial logistic regression model on river basin of eastern India
+   Authors: , , 
+   Date: 2020
+
+19. Use of remote sensing data in comprehending an extremely unusual flooding event over southwest Bangladesh
+   Authors: , 
+   Date: 2017
+
+20. Flash-flood potential assessment in the upper and middle sector of Prahova river catchment (Romania): a comparative approach between four hybrid models
+   Authors: 
+   Date: 2019
+
+21. Using GIS, remote sensing, and machine learning to highlight the correlation between the land-use/land-cover changes and flash-flood potential
+   Authors: , , , , , , , , , , 
+   Date: 2020
+
+22. Spatial prediction of flood potential using new ensembles of bivariate statistics and artificial intelligence: a case study at the Putna river catchment of Romania
+   Authors: , 
+   Date: 2019
+
+23. Comparative assessment of the flash-flood potential within small mountain catchments using bivariate statistics and their novel hybrid integration with machin e learning models
+   Authors: , , 
+   Date: 2020
+
+24. Flash-flood susceptibility assessment using multi-criteria decision making and machine learning supported by remote sensing and GIS techniques
+   Authors: , , , , , , , , 
+   Date: 2020
+
+25. Spatiotemporal analysis of land cover changes in the Chemoga Basin
+   Authors: , , 
+   Date: 2020
+
+26. Flood vulnerability analysis and risk assessment using analytical hierarchy process
+   Authors: , 
+   Date: 2017
+
+27. A generalization of Bayesian inference
+   Authors: 
+   Date: 1968
+
+28. Cartography: Thematic Map Design, Guide
+   Authors: 
+   Date: 1993
+
+29. Evaluating flood hazard for land-use planning in greater Dhaka of Bangladesh using remote sensing and GIS techniques
+   Authors: , , , 
+   Date: 2007
+
+30. Land use and land cover change in greater Dhaka, Bangladesh: using remote sensing to promote sustainable urbanization
+   Authors: , 
+   Date: 2009
+
+31. Societal impacts and vulnerability to floods in Bangladesh and Nepal
+   Authors: 
+   Date: 2015
+
+32. Best practice guidelines for the integrated planning and design of economically sound and environmentally friendly roads in the Mekong floodplains of Cambodia and Viet Nam
+   Authors: , , 
+   Date: 2009
+
+33. A comparative study of heterogeneous ensemble-learning techniques for landslide susceptibility mapping
+   Authors: , , , 
+   Date: 2020
+
+34. 
+   Authors: , , , , , , , , , 
+   Date: 2003
+
+35. Geographically weighted regression: the analysis of spatially varying relationships
+   Authors: , , 
+   Date: 2003
+
+36. Improved land cover map of Iran using Sentinel imagery within Google Earth Engine and a novel automatic workflow for land cover classification using migrated training samples
+   Authors: , , , , , 
+   Date: 2020
+
+37. A Bayesian regularization-backpropagation neural network model for peeling computations
+   Authors: , , , 
+   Date: 2020
+
+38. Predictions of future hydrological conditions and contribution of snow and ice melt in total discharge of Shigar River Basin in Central Karakoram
+   Authors: , , , , , 
+   Date: 2017
+
+39. Rock glacier inventory, permafrost probability distribution modeling and associated hazards in the Hunza River Bas in
+   Authors: , , , 
+   Date: 2021. 146833
+
+40. Assessing the performance of decision tree and neural network models in mapping soil properties
+   Authors: , , , 
+   Date: 2019
+
+41. Local level flood forecasting system using mathematical model incorporating WRF model predicted rainfall
+   Authors: 
+   Date: 2015
+
+42. Impacts of climatic variability on agriculture and options for adaptation in th e Surma River basin
+   Authors: , 
+   Date: 2019
+
+43. Flood susceptibility modelling using advanced ensemble machine learning models
+   Authors: , , , , , , , 
+   Date: 2020
+
+44. Development of flood hazard maps of Bangladesh using NOAA-AVHRR images with GIS
+   Authors: , 
+   Date: 2000
+
+45. Urban flood risk mapping using an optimised additive weighting methodology based on open data
+   Authors: , , 
+   Date: 2019
+
+46. Spatial and temporal distribution of expressway and its relationships to land cover and population: a case study of Beijing
+   Authors: , , , , , , 
+   Date: 2014
+
+47. Flood susceptibility appraisal in Ponnaiyar River Basin, India using frequency ratio (FR) and Shannon's Entropy (SE) models
+   Authors: , 
+   Date: 2016
+
+48. A method for mapping flood hazard along roads
+   Authors: , , , , 
+   Date: 2014
+
+49. Resilience to flash floods in wetland communities of northeastern Bangladesh
+   Authors: , , , , , , 
+   Date: 2018
+
+50. Convolutional neural network approach for prediction of flood hazard at national scale of Iran
+   Authors: , , , , , , 
+   Date: 2020
+
+51. A comparative assessment of flood susceptibility modeling using multi-criteria decision-makin g analysis and machine learning methods
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+52. Flood risk assessment of global watersheds based on multiple machine learning models
+   Authors: , , , , , 
+   Date: 2019
+
+53. Comparison between different distributed methods for flood susceptibility mapping
+   Authors: , , 
+   Date: 2019
+
+54. Bayesian interpolation
+   Authors: 
+   Date: 1992
+
+55. Prediction of highly flood prone areas by GIS based heuristic and statistical model in a monsoon d ominated region of Bengal Basin
+   Authors: , , , , , 
+   Date: 2020
+
+56. Application of 2D numerical simulation for rating curve development and inund ation area mapping: a case study of monsoon dominated Dwarkeswar River
+   Authors: , 
+   Date: 2020
+
+57. Trend of extreme rainfall events using suitable Global Circulation Model to combat the water logging condition in Kolkata Metropolitan Area
+   Authors: , , , , , , 
+   Date: 2020
+
+58. Assessment of flood hazard, vulnerability and risk of mid-eastern Dhaka using DEM and 1D hydrodynamic model
+   Authors: , 
+   Date: 2012
+
+59. The importance of the model choice for experimental semivariogram modeling and its consequence in evaluation process
+   Authors: , 
+   Date: 2013. 2013
+
+60. The use of geospatial technologies in flood hazard mapping and assessment: case study from River Evros
+   Authors: , , 
+   Date: 2018
+
+61. Machine learning methods for landslide susceptibility studies: A comparative overview of algorith m performance
+   Authors: , , , , , , , 
+   Date: 2020. 103225
+
+62. Ensemble machine-learning-based geospatial approach for flood risk assessment using multi-sensor remote-sensing data and GIS
+   Authors: , , , , 
+   Date: 2017
+
+63. Notes on continuous stochastic phenomena
+   Authors: 
+   Date: 1950
+
+64. Detecting flood prone areas in Harris County: a GIS based analysis
+   Authors: , 
+   Date: 2020
+
+65. A hybrid data balancing method for classification of imbalanced training data within Google Earth Engine: case studies from Mountainous Regions
+   Authors: , , , , 
+   Date: 2020
+
+66. Intense Flooding in Bangladesh
+   Authors: 
+   Date: 2020. 2020
+
+67. A new modeling approach for spatial prediction of flash flood with biogeography optimized CHAID tree ensemble and remote sensing data
+   Authors: , , , , , , , , , , 
+   Date: 2020
+
+68. Selection of a semivariogram model in the study of spatial distribution of soil moisture
+   Authors: , 
+   Date: 2017
+
+69. Geomorphic signatures of active tectonics from Sylhet city and adjoining areas Surma basin
+   Authors: , , 
+   Date: 2015
+
+70. Flood frequency analysis and its management in selected part of Bardhaman district, West Bengal
+   Authors: , , , , 
+   Date: 2020
+
+71. GIS-based spatial prediction of landslide susceptibility using frequency ratio model of Lachung River basin
+   Authors: , 
+   Date: 2019
+
+72. A new deep convolutional neural network for fast hyp erspectral image classification
+   Authors: , , , 
+   Date: 2018
+
+73. Application of the GIS-based probabilistic models for mapping the flood susceptibility in Bansloi sub-basin of Ganga-Bhagirathi river and their comparison
+   Authors: , , 
+   Date: 2019
+
+74. Flood risk assessment and mapping using AHP in arid and semiarid regions
+   Authors: , , 
+   Date: 2019
+
+75. Urban flood susceptibility zonation mapping using evidential belief function, frequency ratio and fuzzy gamma operator models in GIS: a case study of Greater Mumbai
+   Authors: , 
+   Date: 2020
+
+76. Changes in land use/cover using geospatial techniques: A case study of Ramnagar town area, district Nainital
+   Authors: , , 
+   Date: 2013
+
+77. Geology of Bangladesh. Gebruder Borntreger
+   Authors: 
+   Date: 1993
+
+78. Threats of climate and land use change on future flood susceptibility
+   Authors: , , , , , 
+   Date: 2020
+
+79. Spatial prediction of soil erosion susceptibility using a fuzzy analytical network process: Application of the fuzzy decision making trial and evaluation laboratory approach
+   Authors: , , , , 
+   Date: 2018
+
+80. Flood vulnerability mapping using frequency ratio (FR) model: a case study on Kulik river basin, Indo-Bangladesh Barind region
+   Authors: , 
+   Date: 2020
+
+81. Flood mapping with convolutional neural networks using spatiocontextual pixel information
+   Authors: , , , 
+   Date: 2019
+
+82. Flood detection and susceptibility mapping using sentinel-1 remote sensing data and a machine learning approach: hybrid intelligence of bagging ensemble based on k-nearest neighbor classifier
+   Authors: , , , , , , , , , 
+   Date: 2020
+
+83. Flash flood susceptibility mapping using a novel deep learning model based on deep belief network, back propagation and genetic algorithm
+   Authors: , , , , , , , , 
+   Date: 2020
+
+84. 
+
+85. Understanding the permutation of integrated agriculture approach for bringing resilience at Haor Basins in Bangladesh
+   Authors: , , , 
+   Date: 2017
+
+86. Flood susceptibility modeling in Teesta River basin, Bangladesh using novel ensembles of bagging algorithms
+   Authors: , , , , , , , 
+   Date: 2020
+
+87. The application of a Dempster-Shafer-based evidential belief function in flood susceptibility mapping and comparison with frequency ratio and logistic regression methods
+   Authors: , 
+   Date: 2018
+
+88. A novel GIS-based ensemble technique for flood susceptibility mapping using evidential belief function and support vector machine
+   Authors: , , 
+   Date: 2019
+
+89. Flood hazard mapping using geospatial techniques and satellite images -a case study of coastal district of Tamil Nadu
+   Authors: , 
+   Date: 2019
+
+90. New hybrids of ANFIS with several optimization algorithms for flood susceptibility modeling
+   Authors: , , , , , , , , , 
+   Date: 2018
+
+91. Flood hazard and risk analysis in the southwest region of Bangladesh
+   Authors: , 
+   Date: 2005
+
+92. GIS-based flood hazard mapping using relative frequency ratio method: a case study of Panjkora River Basin
+   Authors: , 
+   Date: 2020
+
+93. A study on multiple linear regression analysis
+   Authors: , 
+   Date: 2013
+
+94. Attribution of regional flood changes based on scaling fingerprints
+   Authors: , , , , , 
+   Date: 2016
+
+95. The human cost of weather-related disasters 1995-2015
+   Authors: , 
+   Date: 2015
+
+96. A GIS-based spatial multi-criteria approach for flood risk assess ment in the Dongting Lake Region
+   Authors: , , , 
+   Date: 2011
+
+97. Flood susceptibility mapping using convolutional neural network frameworks
+   Authors: , , , 
+   Date: 2020
+
+98. Development of a spatially complete floodplain map of the conterminous United States using random forest
+   Authors: , , , , 
+   Date: 2019
+
+99. Predicting compressive strength of lightweight foamed concrete using extreme learning machine model
+   Authors: , , , , , , 
+   Date: 2018
+
+100. Landslide susceptibility mapping: a comparison of logistic regression and neural networks methods in a medium scale study, Hendek region (Turkey)
+   Authors: , 
+   Date: 2005
+
+101. Landslide susceptibility mapping using multiscale sampling strategy and convolutional neural network: A case study in Jiuzhaigou reg ion. Catena, 195
+   Authors: , , , , 
+   Date: 2020
+
+102. Evaluating the impact and risk of pluvial flash flood on intra-urban road network: A case study in the city center of Shanghai
+   Authors: , , , , 
+   Date: 2016
+
+103. Effects of land use/land cover and climate changes on surface runoff in a semi-humid and semi-arid transition zone in northwest China
+   Authors: , , , 
+   Date: 2017
+
+104. Learning multiscale and deep representations for clas sifying remotely sensed imagery
+   Authors: , 
+   Date: 2016
+
+105. Optimization of computational intelligence models for landslide sus ceptibility evaluation
+   Authors: , 
+   Date: 2020
+
+106. Impacts of land use-land cover change and urbanization on flooding: a case study of Oshiwara River Basin in Mumbai
+   Authors: , , 
+   Date: 2016
+

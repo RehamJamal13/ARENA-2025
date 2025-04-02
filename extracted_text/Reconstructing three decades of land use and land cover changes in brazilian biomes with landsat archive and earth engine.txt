@@ -1,0 +1,469 @@
+================================================================================
+TITLE: Reconstructing Three Decades of Land Use and Land Cover Changes in Brazilian Biomes with Landsat Archive and Earth Engine
+================================================================================
+
+AUTHORS:
+- Carlos Souza
+- Julia Shimbo
+- Marcos Rosa
+- Leandro Parente
+- Ane Alencar
+- Bernardo Rudorff
+- Heinrich Hasenack
+- Marcelo Matsumoto
+- Laerte Ferreira
+- Pedro Souza-Filho
+- Sergio De Oliveira
+- Washington Rocha
+- Antônio Fonseca
+- Camila Marques
+- Cesar Diniz
+- Diego Costa
+- Dyeden Monteiro
+- Eduardo Rosa
+- Eduardo Vélez-Martin
+- Eliseu Weber
+- Felipe Lenti
+- Fernando Paternost
+- Frans Pareyn
+- João Siqueira
+- José Viera
+- Luiz Ferreira Neto
+- Marciano Saraiva
+- Marcio Sales
+- Moises Salgado
+- Rodrigo Vasconcelos
+- Soltan Galano
+- Vinicius Mesquita
+- Tasso Azevedo
+
+ABSTRACT:
+Brazil has a monitoring system to track annual forest conversion in the Amazon and most recently to monitor the Cerrado biome. However, there is still a gap of annual land use and land cover (LULC) information in all Brazilian biomes in the country. Existing countrywide efforts to map land use and land cover lack regularly updates and high spatial resolution time-series data to better understand historical land use and land cover dynamics, and the subsequent impacts in the country biomes. In this study, we described a novel approach and the results achieved by a multi-disciplinary network called MapBiomas to reconstruct annual land use and land cover information between 1985 and 2017 for Brazil, based on random forest applied to Landsat archive using Google Earth Engine. We mapped five major classes: forest, non-forest natural formation, farming, non-vegetated areas, and water. These classes were broken into two sub-classification levels leading to the most comprehensive and detailed mapping for the country at a 30 m pixel resolution. The average overall accuracy of the land use and land cover time-series, based on a stratified random sample of 75,000 pixel locations, was 89% ranging from 73 to 95% in the biomes. The 33 years of LULC change data series revealed that Brazil lost 71 Mha of natural vegetation, mostly to cattle ranching and agriculture activities. Pasture expanded by 46% from 1985 to 2017, and agriculture by 172%, mostly replacing old pasture fields. We also identified that 86 Mha of the converted native vegetation was undergoing some level of regrowth. Several applications of the MapBiomas dataset are underway, suggesting that reconstructing historical land use and land cover change maps is useful for advancing the science and to guide social, economic and environmental policy decision-making processes in Brazil.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Our society is highly dependent on a functional and stable land system for food production, and to access natural resources including water, timber, fiber, ore and fuel, among other ecosystem services and goods 
+Brazil is one of the richest biodiversity countries in the world 
+Deforestation for pasture and agriculture expansion, infrastructure development, cities, and political and financial incentives to land occupation are the main drivers of LULC changes in the Brazilian biomes, affecting biodiversity, water resources, carbon emissions, regional and local climate 
+Spatially explicit information on the historical trajectories of LULC in Brazil is key to inform the planning and the sustainable management of natural resources, policy formulation, among other societal applications. Nevertheless, as consequence of governmental policies and funding focused on the biomes that host most of the remaining Brazilian natural vegetation under threat, maps for measuring the historical extent and intensity of LULC change often exist for the Amazon and Cerrado biomes, and are scarce and/or lack adequate spatial and temporal resolution in the other biomes. Examples of mapping efforts include the Probio project from 2002 by the Brazilian Ministry of Environment, the National Inventory from 1994, 2002 and 2010 
+The open access of Landsat archive 
+The objectives of this paper were threefold. First, we aimed at presenting how we reconstructed the annual time-series of LULC maps for all the Brazilian biomes between 1985 and 2017, by combining Landsat data, GEE, machine learning and a network of local experts, in a concept of progressively evolving LULC map collections. The second objective was to assess the extent, rates and main drivers of LULC change in the Brazilian biomes between 1985 and 2017 using the LULC time-series produced. The last objective was to present the MapBiomas image processing and classification protocol which maps the main land cover classes separately for each biome and common cross-cutting land use themes (i.e., pasture, agriculture, coastal zone, and urban infrastructure) followed by the integration of the LULC map products. We then demonstrated that the proposed protocol of MapBiomas is a step-wise learning process from local experts and feedback from users to improve the annual LULC maps. We also discuss the current applications of this free open access dataset to science, policy and monitoring LULC change in Brazil, as well as the remaining uncertainties and challenges of our LULC mapping approach.
+
+## Materials and Methods ##
+
+
+## Study Area and LULC Approach ##
+Brazil is a megadiverse country, the largest in South America. Its vast territory occupies more than 851 Mha embracing six unique biodiversity-rich biomes named Amazon, Cerrado, Caatinga, Pampa, Pantanal and Atlantic Forest (Figure 
+
+## Land Use and Land Cover (LULC) Classification ##
+Defining a classification system remains a challenge for remote sensing and land ecosystem studies, especially for harmonizing different map products 
+
+## Land Use and Land Cover (LULC) Classification ##
+Defining a classification system remains a challenge for remote sensing and land ecosystem studies, especially for harmonizing different map products 
+
+## Savanna Formation ##
+Vegetation types with a tree layer varying in density, distributed over a continuous shrub-herbaceous layer.
+
+## Mangrove ##
+Dense and evergreen forest formation often flooded by tide and associated with the mangrove coastal ecosystem.
+
+## Forest Plantation ##
+Planted tree species for commercial use.
+
+## Non-Forest Formation ##
+Non-Forest Formation in Wetland Floodplain with fluvial and lake influence, subject to periodic or permanent flooding, located along watercourses and in lowlands areas that accumulate water, with herbaceous shrub vegetation and/or arboreal and pioneer formations, and marshes (marine influence).
+
+## Grassland Formation ##
+Vegetation type with a predominance of herbaceous stratum, including patches with a well developed shrub-herbaceous stratum.
+Salt flat "Apicuns" or salt flats are formations often without tree vegetation, associated to saline and a less flooded area in the mangrove, generally in the transition between this area and the continent.
+Other Non-Forest Formation Natural grasslands, Savanna, Park Savanna, Steppe Savanna, Woody-Grassland Savanna, "Campinarana" in the Amazon biome. The MapBiomas LULC Classification System can be linked to other international and national classification systems 
+
+## Remote Sensing Dataset ##
+The satellite imagery dataset used in the MapBiomas project was composed by the Thematic Mapper (TM), Enhanced Thematic Mapper Plus (ETM+) and the Operational Land Imager (OLI) Landsat sensors, on board Landsat 5, Landsat 7 and Landsat 8, respectively. MapBiomas used Collection 1 Tier 1 from 
+
+## Pre-Processing ##
+The mapping unit adopted in the MapBiomas project was defined based on the subdivision of the International Chart of the World to the Millionth on the 1:250,000 scale. Each tile covers an area of 1 • 30 of longitude by 1 • of latitude, totaling 558 tiles covering all the Brazilian biomes (Figure 
+The first pre-processing step was to build cloud-free annual tile Landsat mosaics yearly. Cloud and cloud shadow masks were applied to all Landsat scenes. For that, we used the temporal dark outlier mask (TDOM) 
+
+## Landsat Feature Space ##
+The annual Landsat scenes produced in the pre-processing step were used to generate the feature space (i.e., variables) used as input for the random forest classifier. All cloud-free Landsat scenes acquired over the biomes in a given year were used to produce temporal annual mosaics with spectral bands and index, fractions and index from spectral mixture analysis (SMA), temporal index (based on median, min, amplitude and standard deviation reducers) and textural index. The images from the best period of each biome (Table 
+After building the annual mosaics, the next step was to build the feature space for the random forest classifier. For that, we used the compositional, spectral, temporal and textural information extracted from the image annual mosaics and from all cloud-free pixels within the year. Fractional information was obtained with spectral mixture analysis (SMA; Tables 
+The temporal mosaics procedure described above is not optimal to separate all LULC, especially agriculture and pasture and non-forest formations due to seasonal changes. To overcome this limitation, some classes were classified separately, as cross-cutting themes. These classes included: pasture, agriculture, forest plantation, urban infrastructure, and mining. Each cross-cutting theme (used a specific classification approach with all cloud-free Landsat scenes available yearly, or a temporal mosaic for specific intra-annual period, to highlight the seasonal change and better distinguish these LULC classes. Additionally, the feasibility to derive the 104 variables varied temporally and spatially due to data availability and cloud conditions. The areas affected by these factors, with less Landsat data, generally produced poorer classification results which were corrected using the temporal filtering approach. More information about the cross-cutting theme input images and their classification methods are provided in the Appendix S2.
+
+## Random Forest Classification ##
+We used the random forest classifier available in Google Earth Engine for LULC classification 
+For training the random forest classifier, we applied two approaches. For the Amazon biome, we combined existing land cover maps to randomly select and automatically assign the land cover classes to the training samples. We extrapolated the land cover class assigned to the training sample for the years that did not have land cover maps from other sources. Image analysts inspected Landsat color composites of these years and reassigned the correct land cover to the training samples. For the other biomes, we built training samples for the random forest classifier using a previous MapBiomas Collection 2.3 as a reference to identify stable land cover classes; i.e., pixels with no change in land cover over the timespan of this map collection 
+
+## Post-Classification Filters and Map Integration ##
+The final classification result for each map tile consisted of three products: (a) classification (no post-processing), (b) classification after applying spatial and temporal filters and (c) post-filter, integrated classification resulting from combining with cross-cutting themes following empirically defined prevalence orders. The first post-classification action was the application of spatial and temporal filters to the maps generated in the LULC classification step. The application of these filters removed classification noise and disallowable LULC class transitions. The temporal filter was also used to fill the information gap due to the cloud. These post-classification procedures were implemented in the Google Earth Engine platform and are described in more detail below.
+
+## Spatial Filter ##
+The spatial filter segmented and indexed the classes of each collection into contiguous regions 
+
+## Temporal Filter ##
+The temporal filter seeks to identify and correct the class transitions that are expected along a series of consecutive years (i.e., 3 to 5), as well as to fill in pixels with no data caused by cloud cover 
+
+## Map Integration ##
+The biome products of digital classification after temporal filter application, for each of the 33 years in the period 1985-2017, were then integrated with the cross-cutting themes, by applying a set of specific hierarchical prevalence rules (Table 
+
+## LULC Transitions ##
+Transition classes represent LULC change measured by the annual pixel-to-pixel class difference between 1985 and 2017. A similar spatial filter described in the Section 2.3.5 was applied in the transition maps to remove spurious isolated class transitions. The aim of the LULC transition filter is to eliminate single pixels or streams of pixels on the border of different classes derived from the created transition maps. The general rule applied in this filter was to remove from the transition classes' single isolated pixels and streams of up to five pixels along the border of transition classes.
+
+## Accuracy Assessment and Area Estimation ##
+Accuracy assessment analysis and area estimation were performed based on ~75,000 independent samples (named reference dataset) at the Landsat pixel level for each one of the years from 1985 to 2017 in all of Brazil (Appendix S3). These samples were generated by a stratified random sampling, which considered 127 regular strata (resulting from the spatial aggregation of neighbors tiles from International Charts of the World to the Millionth on the 1:250,000 scale), a confidence interval of 95%, and a maximum standard error of 5% to establish the sample size for each stratum, following the good practices proposed by 
+Each sample (i.e., Landsat pixel) was inspected by three independent interpreters, and in case of disagreement among interpreters, a senior interpreter assigns the final LULC class of the pixel. This evaluation was performed using the Temporal Visual Inspection web application (TVI-tvi.lapig.iesa.ufg.br), developed by the Laboratório de Processamento de Imagens e Geoprocessamento (Lapig).The TVI application allowed the evaluation of all LULC classes using at least two Landsat images per year, the Moderate Resolution Imaging Spectroradiometer (MODIS) vegetation index, precipitation time-series, and high-resolution imagery available in Google Earth. Accessing all these datasets for each sample through a graphical user interface of TVI with satellite image color composites to provide texture and contextual information, spectrum-temporal graphs to assess phenology of LULC class, and higher spatial resolution imagery, allowed the interpreters to evaluate and differentiate the LULC classes (Table 
+Subsequently, we used a majority agreement rule, which considers the LULC class assigned by the majority of the interpreters as the final one to the reference sample. Finally, a classification error matrix was created and several metrics (i.e., global user and producer accuracies, quantity and allocation disagreement) were calculated for each year, class and biome, following a standard good practice protocol 
+
+## Results ##
+
+
+## LULC Map Accuracy ##
+We generated 33 annual LULC maps for Brazil with Landsat data from 1985 to 2017 using Google Earth Engine at 30 m pixel resolution. First, we presented the temporal trends of the five main LULC classes including forest, non-forest formation, farming, non-vegetated area and water (Table 
+
+## LULC Spatial and Temporal Trends in Brazil ##
+In 1985, the forest class, which also includes forest plantation, secondary forest and old growth forest with or without signs of degradation by fire, forest fragmentation or selective logging, covered 70.5% of the Brazil's territory, with 600 Mha. The total extent of the farming class reached 172 Mha in that year, with the second largest extent of land cover (20.3% of the territory). The minority land cover classes in terms of extent were non-forest formation (63.4 Mha, 7.48%), followed by surface water with 12.5 Mha (1.47%) and non-vegetated area (2.17 Mha, 0.25%) (Table 
+At the country level, the water class showed the lowest annual average percent change (0.17% per year; s ± 7.12%) with a more pronounced trend towards reducing surface water between 2010 and 2017 in the Caatinga and Cerrado biomes (Figure 
+Non-vegetated area was the LULC class with the smallest extent, but showed a rapid increase in area from 1985 to 2017 with an average expansion rate of 1.72% per year (s ± 10.2%) in the whole country (Figure 
+The farming class also expanded between 1985 and 2017 at rate of 1.7% per year (s ± 3.8%) (Figure 
+The non-forested formation class showed an annual change of -0.34% per year (s ± 2.8%) between 1985 and 2017. The Atlantic Forest and the Pampa biomes showed the highest rate of shrinking with -0.83% and -0.68% per year on average, respectively. The remaining biomes had a lower annual average reduction of non-forested areas ranging between -0.06% per year in the Amazon and -0.2% in the Cerrado (Figure 
+decreasing change in surface water. In Amazon biome, we also detected a slight signal of surface water reduction in the 2010s. The Atlantic Forest and Pampa biomes also showed a minor trend towards an increase in surface water and higher variation over the time-series period. However, surface water had the lowest extent in the Pampa biome between 1985 and 1995. The Pantanal biome presented the highest variation of surface water exhibiting a twenty-year harmonic cycle (1985-2005) (Figure 
+
+## The Main LULC Change in Brazil ##
+The spatial distribution of these LULC classes in 1985 and 2017 are shown in Figure 
+The grassland class was mapped in all biomes except in the Amazon (Figure 
+The pasture class showed different annual trends in the biomes with periods of continuing expansion (Amazon and Pantanal), stabilization after 1995 (Caatinga, Cerrado), and shrinking (Atlantic Forest). This class was not mapped in the Pampa biome because natural grasslands area is used for raising animals in this biome. Overall, the pasture area increased by 45.4 Mha in Brazil from 1985 to 2017 (Table 
+River, lakes and ocean (RLO), as well as urban infrastructure LULC classes had an increase in area between 1985 and 2017 of 1.0 Mha each (Table 
+
+## LULC Biome Transitions ##
+We estimated 63.5% of the Brazilian territory did not undergo change in its original land cover class from 1985 to 2017, totaling 540.7 Mha (Table 
+The vegetation loss totaled 102.4 Mha, representing 33% of the total area that underwent LULC change between 1985 and 2017 (i.e., 310.8 Mha; Table 
+Shifting land-use was responsible for 31.6% of the total LULC change between 1985 and 2017 (Table 
+Remote Sens. 2020, 
+Shifting land-use was responsible for 31.6% of the total LULC change between 1985 and 2017 (Table 
+
+## Discussion ##
+This is the first time that LULC change has been quantified in all Brazilian biomes with this degree of spatial detail (i.e., at 30 m pixel size) using +30-year time-series Landsat data. Until now, this LULC change information in Brazil was either restricted in space and time, covering a few biomes and short periods of time (e.g., 
+The LULC annual dataset presented in this study allowed numerous applications, such as the estimation of vegetation gain and loss, and the understanding of land cover drivers. Between 1985 and 2017, 38% of the Brazilian territory was modified by cattle ranching and agriculture activities, as well as infrastructure development, changing native forest and non-forest formations, indistinctly in all six biomes. Pasture expanded by 46% in the country, mainly in the Amazon and Pantanal biomes, while agriculture increased by 172%, mostly in the Atlantic Forest replacing old pastures and in the Cerrado biomes converting savanna and grasslands formations. Our LULC dataset revealed that 86 Mha of the converted native vegetation is undergoing some level of regrowth. The MapBiomas time-series also generated that, in the Amazon biome, secondary vegetation increased 12 Mha in 2017 
+We built the LULC maps of this study iterating over map collections, such as that applied to MODIS global land cover products 
+Yet, besides the gain in information brought by MapBiomas LULC Collection 3.1, there are still challenges and limitations to be overcome. First, overall accuracy was lower than 80% in highly seasonal and heterogeneous biomes (e.g., Cerrado, Caatinga, Pantanal and Pampa). The Amazon biome, with most of the land cover comprised by forest, had the highest overall mapping accuracy of 95%. However, less predominant LULC classes had lower accuracy in all biomes. For example, the spatial variability of native vegetation types and spectral similarity among LULC classes, such as grassland and pasture, are challenging to separate 
+Several studies have already been published by the MapBiomas network to better understand the spatial-temporal LULC dynamics in Brazilian biomes focusing on specific LULC classes. For example, surface water dynamics in the Amazon region 
+All products, methods and tools of the MapBiomas Project are open access, transparent and publicly available in the internet (https://mapbiomas.org/) for non-commercial use. With open access data, it was possible to perfect the LULC maps with end-user feedback, which reached one hundred thousand users in 2019. Additionally, more than one hundred peer-reviewed research articles were published between 2017 and 2019 using the LULC maps of this project. Since the first MapBiomas Collection, the applications of this dataset keep growing in science including, for example, the assessment of conservation and biodiversity policies 
+
+## Conclusions ##
+We reconstructed LULC time-series information over three decades in Brazil, based on Google Earth Engine cloud-computing, freely available Landsat data and a collaborative network of experts willing to share knowledge. Our LULC mapping protocol required breaking up the image classification per biome and cross-cutting themes, followed by the post-classification map integration rules. This process was required to account for the unique conditions of the biomes, including the phenological changes of LULC classes, the availability of Landsat data due to cloud conditions, and the history and intensity of land use. The accuracy assessment was used to define the optimum period of each biome using calibration data training embedded in the random forest classifier. Classifying separately cross-cutting classes (e.g., pasture, agriculture and urban infrastructure) was necessary to reduce spectral confusion in the random forest. The key element of our LULC approach is the post-classification integration protocol, which requires spatial coherence of the integrated maps along the biome boundaries. Finally, we decided to put the LULC maps openly available prior to the scientific publications, with a detailed description of the methodology. This allowed several scientific publications using our LULC dataset in Brazil and abroad, and getting feedback from the data users to improve our maps. Policy-makers are also using the LULC dataset to make, plan and assess public policies in the country. The MapBiomas collaborative initiative is also expanding to generate new LULC products in other countries, such as in the Pan-Amazonian countries (https://amazonia.mapbiomas.org/), Chaco region (https://chaco.mapbiomas.org/) and most recently in Indonesia. Based on MapBiomas experience in Brazil, involving local institutions and experts, and international partners, our LULC mapping protocol will likely expand to other countries contributing to support science and societal applications and better policy decisions. Society (iCS), Humanize Institute, Children's Investment Fund Foundation, Wellspring Foundation, Quadrature Climate Foundation, Walmart Foundation, Global Wildlife Conservation, Climate and Land Use Alliance (CLUA) and Oak Foundation.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Land-use choices: Balancing human needs and ecosystem function
+   Authors: , , 
+   Date: 2004
+
+2. Analysis of historic changes in regional ecosystem service provisioning using land use data
+   Authors: , , , 
+   Date: 2011
+
+3. Community and ecosystem responses to recent climate change
+   Authors: 
+   Date: 2010. 2019-2024
+
+4. Anthropogenic transformation of the biomes, 1700 to 2000
+   Authors: , , , , 
+   Date: 2010
+
+5. Land system science and sustainable development of the earth system: A global land project perspective
+   Authors: , , , , , , , , , 
+   Date: 2015
+
+6. Global biodiversity: Indicators of recent declines
+   Authors: , , , , , , , , , 
+   Date: 2010
+
+7. Biodiversity hotspots for conservation priorities
+   Authors: , , , 
+   Date: 2000
+
+8. A large-scale field assessment of carbon stocks in human-modified tropical forests
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+9. Brazil's soil carbon stocks
+   Authors: , , , 
+   Date: 2002
+
+10. Global Safety of Fresh Produce
+   Authors: , 
+   Date: 2014
+
+11. CAIT Historical-Explore Historic Greenhouse Gas Emissions
+   Authors: 
+   Date: 19 August 2020
+
+12. Land Use and Land Cover Transition in Brazil and Their Effects on Greenhouse Gas Emissions
+   Authors: , , , , , 
+   Date: 2017
+
+13. The Amazon basin in transition
+   Authors: , , , , , , , , , 
+   Date: 2012
+
+14. Policy in Brazil (2016-2019) threaten conservation of the Amazon rainforest
+   Authors: , , , , , , 
+   Date: 2019
+
+15. 
+   Authors: , , , , , , , , , 
+   Date: 2019. 12671
+
+16. Effects of habitat fragmentation on plant guild structure in the montane Atlantic forest of southeastern Brazil
+   Authors: 
+   Date: 1999
+
+17. Introduction: The Brazilian Atlantic Forest
+   Authors: , 
+   Date: 2000
+
+18. Effects of roads, topography, and land use on forest cover dynamics in the Brazilian Atlantic Forest
+   Authors: , , 
+   Date: 2010
+
+19. Atlantic Forest spontaneous regeneration at landscape scale
+   Authors: , , , 
+   Date: 2015
+
+20. Conserving the Brazilian semiarid (Caatinga) biome under climate change
+   Authors: , , , , 
+   Date: 2012
+
+21. Land use, fallow period and the recovery of a Caatinga forest
+   Authors: , , , , , 
+   Date: 2016
+
+22. Deforestation and Reforestation of Latin America and the Caribbean
+   Authors: , , , , , , , , , 
+   Date: 2001-2010. 2013
+
+23. Cattle ranching and deforestation in the Brazilian Pantanal
+   Authors: , , 
+   Date: 2001
+
+24. Effects of highland land-use over lowlands of the Brazilian Pantanal
+   Authors: 
+   Date: 2013
+
+25. The Brazilian Pampa: A fragile biome
+   Authors: , , , , , , 
+   Date: 2009
+
+26. Agricultural land use change in the Brazilian Pampa Biome: The reduction of natural grasslands
+   Authors: , , , , , , , , 
+   Date: 2017
+
+27. Brazil's neglected biome: The South Brazilian Campos
+   Authors: , , , , , , , , 
+   Date: 2007
+
+28. Forests, shrublands and grasslands in southern Brazil are neglected and have specific needs for their conservation
+   Authors: , , , 
+   Date: 2016
+
+29. Conservation in Brazil needs to include non-forest ecosystems
+   Authors: , , , , , , , , , 
+   Date: 2015
+
+30. Evaluation and Perspectives of Using Multitemporal L-Band SAR Data to Monitor Deforestation in the Brazilian AmazÔnia
+   Authors: , , , 
+   Date: 2005
+
+31. Spatial accuracy assessment and integration of global land cover datasets
+   Authors: , , , 
+   Date: 2015
+
+32. Global land cover mapping at 30 m resolution: A POK-based operational approach
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+33. MODIS Collection 5 global land cover: Algorithm refinements and characterization of new datasets
+   Authors: , , , , , , 
+   Date: 2010
+
+34. The first comprehensive accuracy assessment of globel and 30 at a national level: Methodology and results
+   Authors: , , , , 
+   Date: 2015
+
+35. Opening the archive: How free data has enabled the science and monitoring promise of Landsat. Remote Sens. Environ
+   Authors: , , , , 
+   Date: 2012
+
+36. The global Landsat archive: Status, consolidation, and direction
+   Authors: , , , , , , , , , 
+   Date: 2016
+
+37. Developments in Landsat land cover classification methods: A review
+   Authors: , 
+   Date: 2017
+
+38. Google Earth Engine: Planetary-scale geospatial analysis for everyone
+   Authors: , , , , , 
+   Date: 2016
+
+39. Landsat-based classification in the cloud: An opportunity for a paradigm shift in land cover monitoring
+   Authors: , 
+   Date: 2017
+
+40. Cloud cover in Landsat observations of the Brazilian Amazon
+   Authors: 
+   Date: 2001
+
+41. Mapa de Biomas do Brasil
+   Authors: 
+   Date: 19 August 2020
+
+42. The Standardization and Harmonization of Land Cover Classification Systems towards Harmonized Datasets: A Review
+   Authors: , , , , 
+   Date: 2017
+
+43. From Land Cover to Land Use: A Methodology to Assess Land Use from Remote Sensing Data
+   Authors: , 
+   Date: 2012
+
+44. Global Forest Resources Assessment
+   Authors: , 
+   Date: 2015
+
+45. Manual Técnico de Uso da Terra; IBGE: Rio de Janeiro
+   Authors: 
+   Date: 2013
+
+46. 
+   Date: 19 August 2020
+
+47. Change detection using landsat time series: A review of frequencies, preprocessing, algorithms, and applications
+   Authors: 
+   Date: 2017
+
+48. An evaluation of forest health insect and disease survey data and satellite-based remote sensing forest change detection methods: Case studies in the United States
+   Authors: , , 
+   Date: 2018. 1184
+
+49. Combining spectral and spatial information to map canopy damage from selective logging and forest fires
+   Authors: , , , 
+   Date: 2005
+
+50. Large Area Mapping of Land-Cover Change in Rondonia Using Multitemporal Spectral Mixture Analysis and Decision Tree Classifiers
+   Authors: , , , , , , , 
+   Date: 2002
+
+51. Good practices for estimating area and assessing accuracy of land change
+   Authors: , , , , , 
+   Date: 2014
+
+52. Estimating area and map accuracy for stratified random sampling when the strata are different from the map classes
+   Authors: 
+   Date: 2014
+
+53. Land use intensity trajectories on Amazonian pastures derived from Landsat time series
+   Authors: , , , 
+   Date: 2015
+
+54. Land cover changes in the Brazilian Cerrado and Caatinga biomes from 1990 to 2010 based on a systematic remote sensing sampling approach
+   Authors: , , , , , , 
+   Date: 2015
+
+55. Land-use and land-cover change in Atlantic Forest landscapes
+   Authors: , , , 
+   Date: 2012
+
+56. Reconstructing long term annual deforestation dynamics in Pará and Mato Grosso using the Landsat archive
+   Authors: , , 
+   Date: 2018
+
+57. Discriminating Land Use and Land Cover Classes in Brazil Based on the Annual PROBA-V 100 m Time Series
+   Authors: , , , , , , 
+   Date: 2020
+
+58. Assessing consistency of five global land cover data sets in China
+   Authors: , , , , , 
+   Date: 2014
+
+59. Unmasking secondary vegetation dynamics in the Brazilian Amazon
+   Authors: , , , , , , 
+   Date: 2020
+
+60. Monitoring tropical forest from space: The prodes digital project
+   Authors: , , , , 
+   Date: 2004
+
+61. Ten-year landsat classification of deforestation and forest degradation in the brazilian amazon
+   Authors: , , , , , , , , , , 
+   Date: 2013
+
+62. Mapping three decades of changes in the brazilian savanna native vegetation using landsat data processed in the google earth engine platform
+   Authors: , , , , , , , , , 
+
+63. Seasonal characterization and discrimination of savannah physiognomies in Brazil using hyperspectral metrics from hyperion/EO-1
+   Authors: , , , 
+   Date: 2017
+
+64. Methods to summarize change among land categories across time intervals
+   Authors: , , , , 
+   Date: 2017
+
+65. Long-Term Annual Surface Water Change in the Brazilian Amazon Biome: Potential Links with Deforestation, Infrastructure Development and Climate Change. Water
+   Authors: , , , , 
+   Date: 2019
+
+66. Brazilian mangrove status: Three decades of satellite data analysis
+   Authors: , , , , , , 
+
+67. Assessing the spatial and occupation dynamics of the Brazilian pasturelands based on the automated classification of MODIS images from 2000 to 2016
+   Authors: , 
+   Date: 2018
+
+68. Analysis of High Temporal Resolution Land Use/Land Cover Trajectories
+   Authors: , , 
+   Date: 2019
+
+69. Data Descriptor: SEEG initiative estimates of Brazilian greenhouse gas emissions from 1970 to
+   Authors: , , , , , , , , , 
+   Date: 2015. 2018. 180045
+
+70. Protecting forests at the expense of native grasslands: Land-use policy encourages open-habitat loss in the Brazilian cerrado biome
+   Authors: , , , , , 
+   Date: 2019
+
+71. There is hope for achieving ambitious Atlantic Forest restoration commitments
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+72. A social and ecological assessment of tropical land uses at multiple scales: The Sustainable Amazon Network
+   Authors: , , , , , , , , , , 
+   Date: 2013. 20120166
+
+73. Intensification in agriculture-forest frontiers: Land use responses to development and conservation policies in Brazil
+   Authors: , , , , , 
+   Date: 2018
+
+74. Fragmentation of Andes-to-Amazon connectivity by hydropower dams
+   Authors: , , , , , , , , , 
+   Date: 2018. 1642
+
+75. Forest loss in Brazil increases maximum temperatures within 50 km
+   Authors: , , , , , , 
+   Date: 2019
+
+76. Expansion of the range of Necromys lasiurus (Lund, 1841) into open areas of the Atlantic Forest biome in Rio de Janeiro state, Brazil, and the role of the species as a host of the hantavirus
+   Authors: , , , , , , , , , , , 
+   Date: 2018
+
+77. Determination of the spatial susceptibility to yellow fever using a multicriteria analysis
+   Authors: , , , , , 
+   Date: 2019
+
+78. Ecological niche modelling and predicted geographic distribution of Lutzomyia cruzi, vector of Leishmania infantum in South America
+   Authors: , , , , 
+   Date: 2018
+

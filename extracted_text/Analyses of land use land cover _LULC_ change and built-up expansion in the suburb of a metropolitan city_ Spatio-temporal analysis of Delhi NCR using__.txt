@@ -1,0 +1,385 @@
+================================================================================
+TITLE: Analyses of land use land cover (LULC) change and built-up expansion in the suburb of a metropolitan city: Spatio-temporal analysis of Delhi NCR using landsat datasets
+================================================================================
+
+AUTHORS:
+- Waseem Mohd
+- Mohd Naikoo
+- Mohammad Rihan
+- Shahfahad Ishtiaque
+
+ABSTRACT:
+During past four decades, in post economic reforms period, Delhi and its surrounding regions has attracted a large number of populations which led to the rapid transformation of its LULC pattern. Therefore, this study is aimed to analyze the LULC changes during 1990-2018 as well as the growth and pattern of built-up surfaces in relation to the population growth and migration in the suburbs of Delhi metropolitan city which is also known as the National Capital Region (NCR). The Landsat 5 (TM) and Landsat 8 (OLI/TIRS) data has been used for the LU/LC classification of Delhi NCR. The K means clustering technique was applied on the Landsat data for the LULC classification and then the change detection technique was used to quantify the LULC change.
+The result shows that the considerable changes in LULC have occurred with continuous increase in built-up area and open/fallow land and decrease in agriculture land and vegetation over the study time period. Built-up area increased by about 326 percent and open/fallow land by 44 percent while the agricultural land and vegetation cover have decreased by 12 percent and 34 percent of the total area of study respectively during the study period. Built-up area has mostly increased at the expense of agricultural land and vegetation cover while vegetation cover has been transformed into Built-up area, Ridge and Agriculture. The statistical analysis shows that the association between built-up expansion and the population and migrants varies from weak to high but the coefficient of determination was always positive.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Though the environmental transformation of earth by human activities began in late-Pleistocene, it increased with the emergence of agriculture and urbanized societies 
+The global changes are brought about as a consequence of the LULC changes which are being driven by the human to fulfil their need for food, water, fibre and shelter 
+The LULC changes have shown to have both direct and indirect impacts on the various aspects of environment 
+Numerous studies have analyzed the quantitative and qualitative changes in the LULC pattern and its drivers using different approaches and techniques. 
+Population density of Delhi has increased from 6352 persons per sq. Km in 1991-11,297 per sq. Km in 2011 (Census of India, 2011). It had resulted not only in the formation of separate and extended regional planning Unit which is called National Capital Region or Delhi NCR 
+
+## Study area ##
+Delhi NCR is the Indian central planning region comprising of National Capital Territory Delhi in its core with 18 adjacent districts from the states of Haryana, Uttar Pradesh and Rajasthan surrounding it (Fig. 
+In NCR, Delhi has the dominances of impermeable concrete surfaces comprising of residential, industrial and commercial areas in its land use 
+
+## Materials and methods ##
+
+
+## Materials ##
+For 1990 and 2003 the Landsat 5 (TM) data while for 2018, the Landsat 8 (OLI/TIRS) data downloaded from United States Geological Survey (USGS) Earth Explorer has been used in this study for LULC mapping and change analysis. The spatial resolution of Landsat TM data was 30 m and OLI/TIRS data was 15 m (after incorporating the panchromatic band). The data were downloaded for same season of the each study year, i.e. March or April months. The details of the satellite data used in this study are given in Table 
+
+## Methods ##
+
+
+## Method for land use land cover (LULC) classification ##
+LULC classification is one of the methods for obtaining the information from satellite imageries 
+
+## Accuracy assessment ##
+The post classification accuracy assessment is an important part of the LULC classification and mapping which is used to analyze the precision of the classified maps 
+In this study, Kappa coefficient technique is used to evaluate the accuracy of LULC maps of Delhi-NCR using 400 randomly selected points. The points were selected in a way that covers each LULC classes in almost equal proportion and from all parts of the study area. The ground observation for 1990 and 2003 were taken from Google Earth Pro domain as the field data was not available for these years. Further, for 2018, the ground observations were taken partially both from field visit as well as using Google Earth pro domain for the areas having either no or difficult access. The results of accuracy assessment show an overall accuracy level of 87.79 percent, 90.41 percent and 89.57 percent for 1990, 2003 and 2018, respectively and the corresponding Kappa statistics was 0.8763, 0.8909 and 0.8872, respectively.
+
+## Statistical analysis ##
+To analyze the relationships between the LULC demographic changes, the linear regression technique has been performed using scatter plot technique on the Microsoft Excel (MS Excel) software 2010 version. In this study, the district-wise built-up area and population and migration data has been used for the year-wise regression analysis. For this the built-up area was extracted from the LULC maps prepared using Landsat (TM and OLI) data while the data of population and total migrants were taken from Census of India. The scatter plots are used to show the trend of linear relationship. The uphill trend line shows the positive linear relationship between the variables while the downhill trend line shows the opposite. The magnitude of the relationship is calculated by the coefficient of determination (R 2 ) which can be high, medium or low.   
+
+## Dynamics of land use land cover (LULC) change ##
+In general NCR has witnessed changes in all the LULC categories but maximum changes have been witnessed in Built-up. Built-up area has witnessed a gigantic growth of 114 percent from 1990 to 2003 and 99.02 percent from 2003 to 2018, making an overall growth of 326 percent during the study period (Table 
+Fallow land is next to Built-up that has witnessed massive increase of 44 percent during the study period, however rate of increase    was 29.19 from 1990 to 2003 and 9.90 percent from 2003 to 2018. This growth is mostly at the expanse of agriculture which contributes to about 57.6 percent to the total increase of fallow land during the study period. While fallow land has witnessed an increase on western side it has undergone decrease on south-western side of the study area. The Vegetation cover has witnessed the maximum decrease of 34 percent among all the LULC classes during the study period however it decreased by 23 percent from 1990 to 2003 and 15.13 percent from 2003 to 2018 (Fig. 
+
+## Analysis association of built-up expansion with population and migration ##
+For the analysis of association of built-up expansion with population growth and migration, the district-wise data of population, migration and built-up areas has been used. The Delhi NCR covers 34 districts; 11 districts of Delhi, 2 districts of Rajasthan, 13 districts of Haryana and 8 districts of Uttar Pradesh state. The result shows that the coefficient of determination (R 2 ) varies from very low to high. The association between total migrants and built-up area was positive but very weak (0.03) in 1990 while it was moderate and positive (0.44) in 2003 and high positive (0.56) in 2018 (Fig. 
+
+## Discussion ##
+In India, the urbanization has taken place at an unprecedented rate during past few decades, especially after the economic reforms of 1991 
+The maximum expansion of built-up area has been noticed from the Gautam Buddha Nagar district in which the fast growing Noida city is located and the NCT of Delhi, located in the centre of NCR. Both these cities (Noida and Delhi) have experienced rapid urbanization during the past few decades due to population growth and economic development 
+Land is the main and primary natural resource available for human and is utilized in various ways for various purposes. Thus any change in human population directly affects the land and land use pattern of an area 
+
+## Conclusion ##
+This comprehensive study is done to examine the Spatio-temporal pattern of LULC changes in Delhi NCR, which is an inter-state planning region and has experienced rapid population growth and economic development during past decades. The land use land cover (LULC) maps were prepared using Landsat 5 (TM) and Landsat 8 (OLI/TIRS) satellite data and then the change matrix was calculated. The result shows that LULC pattern of the Delhi NCR has been altered significantly during the study period. The maximum change is noticed from the built-up area which has increased to about 326.65 percent, followed by open/fallow land which is increased by about 41.98 percent during 1990-2018. At the same time the vegetation cover, water bodies and agricultural land are declined by -34.84, -22.51 and -12.44 percent, respectively, while the ridge part has noticed a negligible decline in its area. The result also shows that the agricultural land and fallow land are the major contributors in the growth of built-up area, as the built-up area has expanded mostly over these land use classes, while the vegetation cover also has significant contribution in built-up expansion. Further, the analysis of relationship between built-up and population distribution shows that in 1990 and 2003, the association was positive but weak but in 2018, relationship significant and positive. On the other hand, the relationship between total migrants and built-up distribution was weak in 1990, but is moderate and positive in 2003 and high-positive in 2018. This implies that the increasing migration is the major determinant of built-up expansion; however, it does not completely determine the built-up expansion and land use change. Thus the authors suggests for the future research to incorporate the data of economic growth and industrial development (like number of industries) in the study of LULC change of such region with high economic and administrative importance. 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Economic impacts of SEZs: Theoretical approaches and analysis of newly notified SEZs in India. Munich Personal RePec Archive Paper no. 20902. Munich: University Libray of
+   Authors: 
+   Date: 2010
+
+2. A k-mean clustering algorithm for mixed numeric and categorical data
+   Authors: , 
+   Date: 2007
+
+3. A land use and land cover classification system for use with remote sensor data
+   Authors: , , , 
+   Date: 1976
+
+4. Land-cover change within and around protected areas in a biodiversity hotspot
+   Authors: , , , 
+   Date: 2016
+
+5. The world population explosion: Causes, backgrounds and projections for the future
+   Authors: 
+   Date: 2013
+
+6. Urban sprawl and its impact on landuse/land cover dynamics of Dehradun City
+   Authors: , , , 
+   Date: 2017
+
+7. District Census handbook
+   Date: 2011
+
+8. An analysis of urban growth trends in the post-economic reforms period in India
+   Authors: , 
+   Date: 2012
+
+9. The impact of rural out-migration on land use transition in China: Past, present and trend
+   Authors: , , , , 
+   Date: 2014
+
+10. From land cover to land use: A methodology for efficient land-use mapping over large areas
+   Authors: , 
+   Date: 2001
+
+11. Dynamics of urbanization and its impact on urban ecosystem services (UESs): A study of a medium size town of West Bengal, eastern India
+   Authors: , 
+   Date: 2019
+
+12. Land use planning for disaster risk reduction and climate change adaptation: Operationalizing policy and legislation at local levels
+   Authors: , , , , 
+   Date: 2016
+
+13. The effects of anthropogenic land use changes on climate in China driven by global socioeconomic and emission scenarios
+   Authors: , , , , 
+   Date: 2019
+
+14. The dream of Delhi as a global city
+   Authors: 
+   Date: 2011
+
+15. Land use dynamics and peri-urban growth characteristics: Reflections on master plan and urban suitability from a sprawling north Indian city
+   Authors: 
+   Date: 2012
+
+16. Application of geo-spatial indices for detection of growth dynamics and forms of expansion in English Bazar Urban Agglomeration, West Bengal
+   Authors: , 
+   Date: 2019
+
+17. Changing pattern of urban landscape and its effect on land surface temperature in and around Delhi
+   Authors: , , , 
+   Date: 2019
+
+18. Estimating urban growth in peri-urban areas and its interrelationships with built-up density using earth observation datasets
+   Authors: , , , 
+   Date: 2020
+
+19. Impact of land use change on hydrological systems: A review of current modeling approaches
+   Authors: , 
+   Date: 2015
+
+20. Understanding the impact of urbanization on surface urban heat islands-a longitudinal analysis of the oasis effect in subtropical desert cities
+   Authors: , , , , , 
+   Date: 2017
+
+21. The dynamics of urban expansion and land use/land cover changes using remote sensing and spatial metrics: The case of Mekelle city of northern Ethiopia
+   Authors: , , , , , 
+   Date: 2017
+
+22. Global consequences of land use
+   Authors: , , 
+   Date: 2005
+
+23. Land use and land cover change effect on surface temperature over Eastern India
+   Authors: , , , , , 
+   Date: 2019
+
+24. An unsupervised method of classifying remotely sensed images using Kohonen self-organizing maps and agglomerative hierarchical clustering methods
+   Authors: , , , 
+   Date: 2008
+
+25. Land cover classification system, classification concepts
+   Authors: 
+   Date: 2016. 2016
+
+26. Mineral identification using unsupervised classification from hyperspectral data
+   Authors: , 
+   Date: 2020
+
+27. Changes in land use/cover mapped over 80 years in the Highlands of Northern Ethiopia
+   Authors: , , , , , 
+   Date: 2018
+
+28. Characterization of thermal environment over heterogeneous surface of National Capital Region (NCR), India using LANDSAT-8 sensor for regional planning studies
+   Authors: , 
+   Date: 2018
+
+29. Dynamics of land use and land cover change (LULCC) using geospatial techniques: A case study of islamabad Pakistan
+   Authors: , , , , , 
+   Date: 2016
+
+30. Assessment of land-use and land cover change in guangxi
+   Authors: , , , 
+   Date: 2019
+
+31. Land cover changes and their driving mechanisms in central asia from 2001 to 2017 supported by Google earth engine
+   Authors: , 
+   Date: 2019. 2016
+
+32. Monitoring land use and cover around parks: A conceptual approach
+   Authors: , , , , , 
+   Date: 2009
+
+33. Impact of urbanization and land-use change on climate
+   Authors: , 
+   Date: 2003
+
+34. Assessing the spatial drivers of land use and land cover change in the protected and communal areas of the zambezi region
+   Authors: , , , , , 
+   Date: 2018
+
+35. Classifying and mapping periurban areas of rapidly growing mediumsized sub-saharan african cities: A multi-method approach applied to tamale
+   Authors: , , , , , 
+   Date: 2019
+
+36. The impact of urban proximity, transport accessibility and policy on urban growth: A longitudinal analysis over five decades
+   Authors: , , 
+   Date: 2017
+
+37. Peri-urban land use pattern and its relation to land use planning in Ghana
+   Authors: , , , , , 
+   Date: 2017
+
+38. Role of special economic zone (SEZs) in creation of employment, investment and export in India
+   Authors: , , , 
+   Date: 2018
+
+39. Effects of land use plans on urban development: A property rights approach
+   Authors: 
+   Date: 2020
+
+40. Optimizing unsupervised classifications of remotely sensed imagery with a data-assisted labeling approach
+   Authors: , , , 
+   Date: 2008
+
+41. Remote sensing and image interpretation
+   Authors: , , 
+   Date: 2004
+
+42. Physical and socioeconomic driving forces of land-use and land-cover changes: A case study of wuhan city
+   Authors: , , , 
+   Date: 2016
+
+43. Detection and prediction of land use/land cover change using spatiotemporal data fusion and the Cellular Automata-Markov model
+   Authors: , , , 
+   Date: 2019
+
+44. Modeling urban heat islands in heterogeneous land surface and its correlation with impervious surface area by using night-time ASTER satellite data in highly urbanizing city, Delhi-India
+   Authors: , , 
+   Date: 2013
+
+45. Geospatial and geostatistical approach for groundwater potential zone delineation
+   Authors: , , , , , 
+   Date: 2015
+
+46. Improving the accuracy of land use and land cover classification of Landsat data using post-classification enhancement
+   Authors: , , 
+   Date: 2009
+
+47. Quantification of the land use/land cover dynamics and the degree of urban growth goodness for sustainable urban land use planning in Addis Ababa and the surrounding Oromia special zone
+   Authors: , 
+   Date: 2019
+
+48. Dynamics of urbanization and its impact on land-use/land-cover: A case study of megacity Delhi
+   Authors: , , , , 
+   Date: 2011
+
+49. Land use change trends and their driving forces in the kilombero valley floodplain, southeastern Tanzania
+   Authors: , , 
+   Date: 2019
+
+50. Projecting global land-use change and its effect on ecosystem service provision and biodiversity with simple models
+   Authors: , , , , , 
+   Date: 2010
+
+51. Expansion of traditional land-use and deforestation: A case study of an adat forest in the kandilo subwatershed, east kalimantan, Indonesia
+   Authors: , , , 
+   Date: 2018
+
+52. Land-cover changes and potential impacts on soil erosion in the Nan watershed
+   Authors: , 
+   Date: 2011
+
+53. Impacts of urbanization on land use/cover changes and its probable implications on local climate and groundwater level
+   Authors: , , , 
+   Date: 2018
+
+54. Vegetation change and fragmentation in the mega city of Delhi: Mapping 25 years of change
+   Authors: , 
+   Date: 2015
+
+55. Impact of land use/land cover change on changes in surface solar radiation in eastern China since the reform and opening up
+   Authors: 
+   Date: 2016
+
+56. Monitoring urban sprawl using remote sensing and GIS techniques of a fast growing urban centre, India
+   Authors: , , , 
+   Date: 2011
+
+57. Urbanization and quality of urban environment using remote sensing and GIS techniques in East Delhi-India
+   Authors: , , , 
+   Date: 2011b
+
+58. Assessment of land use/land cover change in the north-west district of Delhi using remote sensing and GIS techniques
+   Authors: , , , 
+   Date: 2012
+
+59. Classification of cities in Bangladesh based on remote sensing derived spatial characteristics
+   Authors: , , , , 
+   Date: 2019
+
+60. Conservation in the Sikkim himalaya: Traditional knowledge and land-use and mamlay watershed
+   Authors: , , 
+   Date: 1994
+
+61. Urbanization in India before and after the economic reforms: What does the Census data reveal?
+   Authors: 
+   Date: 2019
+
+62. Future land use land cover scenario simulation using open source GIS for the city of Warangal, Telangana, India
+   Authors: , , 
+   Date: 2020
+
+63. Assessment of public open spaces (POS) and landscape quality based on per capita POS index in Delhi
+   Authors: , , , , , 
+   Date: 2019
+
+64. Indices based assessment of built-up density and urban expansion of fast growing Surat city using multi-temporal Landsat data sets
+   Authors: , , , , 
+   Date: 2020
+
+65. Impact of land use change and urbanization on urban heat island in Lucknow city, Central India. A remote sensing based estimate
+   Authors: , , 
+   Date: 2017
+
+66. Predicting spatial and decadal LULC changes through cellular automata Markov chain models using earth observation datasets and geo-information
+   Authors: , , , , 
+   Date: 2015
+
+67. Rapid urbanization and induced flood risk in Noida
+   Authors: , 
+   Date: 2011
+
+68. Selection of classification techniques for land use/land cover change investigation
+   Authors: , , , , 
+   Date: 2012
+
+69. Archaeological assessment reveals Earth's early transformation through land use
+   Authors: , , 
+   Date: 2019
+
+70. Impact of Land-Use and Land-Cover Change on urban air quality in representative cities of China
+   Authors: , , , , , 
+   Date: 2016
+
+71. Land use land cover change in national capital region of India: A remote sensing & GIS based two decadal spatialtemporal analyses
+   Authors: , 
+   Date: 2011
+
+72. Dynamics of ecosystem services (ESs) in response to land use land cover (LU/LC) changes in the lower Gangetic plain of India
+   Authors: , , , , , 
+   Date: 2020
+
+73. Biophysical and policy drivers of landscape change in a central Vietnamese district
+   Authors: , , 
+   Date: 2007
+
+74. Impacts of state-led and bottom-up urbanization on land use change in the peri-urban areas of Shanghai: Planned growth or uncontrolled sprawl?
+   Authors: , , 
+   Date: 2017
+
+75. Global land-use land-cover change-towards an integrated study
+   Authors: , , 
+   Date: 1994
+
+76. Thermal remote sensing of urban climates
+   Authors: , 
+   Date: 2003
+
+77. Industry builds the city: The suburbanization of manufacturing in the san francisco bay area,1850-1940
+   Authors: 
+   Date: 2001
+
+78. Expert system classification of urban land use/cover for Delhi, India
+   Authors: , , , , 
+   Date: 2008
+
+79. Analysis of impacts of urban land use and land cover on air quality in the Las Vegas region using remote sensing information and ground observations
+   Authors: 
+   Date: 2007
+
+80. Land-cover change and environmental impact analysis in the Greater Mankato area of Minnesota using remote sensing and GIS modelling
+   Authors: 
+   Date: 2008
+

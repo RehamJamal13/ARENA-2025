@@ -1,0 +1,409 @@
+================================================================================
+TITLE: J o u r n a l P r e -p r o o f
+================================================================================
+
+AUTHORS:
+- Helen Aghsaei
+- Naghmeh Dinan
+- Ali Moridi
+- Zahra Asadolahi
+- Majid Delavar
+- Nicola Fohrer
+- Paul Wagner
+
+ABSTRACT:
+This is a PDF file of an article that has undergone enhancements after acceptance, such as the addition of a cover page and metadata, and formatting for readability, but it is not yet the definitive version of record. This version will undergo additional copyediting, typesetting and review before it is published in its final form, but we are providing this version to give early visibility of the article. Please note that, during the production process, errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Current global trends, such as population and economic growth which often lead to increased food and fuel demands, exert increasing pressure on land and water resources worldwide 
+These may include changes in total suspended sediment and nutrient concentration 
+
+## J o u r n a l P r e -p r o o f ##
+However, most SWAT model applications assessed the hydrological impacts based on static LULC data 
+The Anzali wetland catchment in Iran contains ecologically significant ecosystems such as the Anzali wetland and the Hyrcanian forests. It is also one of the important rice-growing regions of Iran. In recent decades the catchment has been subjected to environmental issues like urban sprawl and gradual land degradation 
+
+## Materials and methods ##
+
+
+## Study area ##
+The catchment of the Anzali wetland is located in the Gilan province of Iran on the southern coast of the Caspian Sea (36 • 54'-37 • 28' N, 48 • 48'-49 • 37' E; fig. 
+The Anzali wetland catchment is composed of two types of landforms; a lowland area in the north-east and a mountainous area in the south-west. The land use of the catchment is dominated by agricultural land with fertile and productive soil types at lower elevations. About 70% of the agricultural area is under rice plantation and the remaining is mostly rain-fed agriculture.
+Hyrcanian forests are mostly at higher elevations and grassland can be found on the western and southern borders of the catchment. Urban area is scattered mainly from the east where the capital Journal Pre-proof J o u r n a l P r e -p r o o f city of the state, Rasht, is located, to the center of the catchment in proximity to areas that are suitable for agriculture. Water for irrigation agriculture is mainly provided by surface water.
+Approximately 80% of the irrigation water is transferred to the catchment from the Sefidrood river through two diversion dams which transfer water to two main irrigation canals (Fig. 
+To process the satellite data and quantitatively assess LULC change in the study area, ArcGIS and ERDAS Imagine software were used. All the images were resampled to 30 m * 30 m pixel resolution using nearest neighbor resampling to preserve the original image radiometry 
+Ground truth (200 points) from a field survey and from a land use map of the Plan and Budget Organization of Iran (PBO, 2013) was used for supervised LULC classification and accuracy assessment of the classification results. The Crosta method was used for False Color Composite (FCC) creation of training areas 
+The overall classification accuracy was 91% for 1990, 88.2% for 2000, and 85.8% for 2013. The Kappa coefficients of 0.90, 0.87, and 0.85 denote an almost perfect inter-rater agreement for the classified maps 
+Journal Pre-proof J o u r n a l P r e -p r o o f
+
+## Hydrologic modeling ##
+In this study, the GIS interface ArcSWAT-2012 was used to set up a SWAT model of the Anzali wetland catchment. The SWAT model 
+Model calculations are based on hydrologic response units (HRUs) representing lumped areas with a unique land use, soil, and slope class combination within a sub-basin. The following data inputs are used to set up the SWAT model: a Digital Elevation Model (DEM) with a spatial resolution of 30 m was derived from ASTER satellite data (GDEM V 2 ), soil spatial distribution data and soil parameters were obtained from the global soil map of the Food and Agriculture Organization 
+Management operations for rice and orchards as derived from field work and expert knowledge were set up in the SWAT model (Table 
+Journal Pre-proof J o u r n a l P r e -p r o o f Table 
+As daily streamflow data were not available for all of the hydrological stations, monthly streamflow data from eleven hydrological stations were used. This data covers both landforms in the catchment, i.e. the lowland areas and the mountain areas (Fig. 
+To study the hydrological impacts of LULC change in the Anzali wetland catchment, two different model runs were set up: a static model run using the LULC of 1990 and a dynamic model run using land use updates. For this purpose, the Land Use Update tool (LUU) 
+Then, HRU-fractions for each year of the simulation period were calculated using a linear interpolation of annual land use change from 1990 to 2000 and 2000 to 2013.
+The Anzali wetland catchment consists of nine main streams that drain into the Anzali wetland.
+We used two SWAT models, one for the northern and another one for the southern streams, to model the entire catchment, which allows us to better represent the entire catchment. Based on the DEM, land use, and soil data, the Anzali wetland catchment was divided into 30/34 subbasins and 822/1004 HRUs in the two delineated sub-catchments. The entire Anzali wetland catchment consists of 64 sub-basins and 1826 HRUs.
+After the setup and delineation of the static LULC model in ArcSWAT, a sensitivity analysis was performed in SWAT-CUP 
+Journal Pre-proof J o u r n a l P r e -p r o o f local (one-at-a-time) sensitivity analysis 
+For the SWAT model with dynamic LULC updates, we used the same parameters as derived from the calibration of the static model. To assess the impacts of LULC changes, we compared the results from the dynamic model to the static baseline model. With this modeling approach hydrologic response is isolated to a single variable (LULC change), so that the differences in the static and dynamic model outputs is a result of LULC change. The same method was used in similar studies (e.g., 
+
+## Results and discussion ##
+
+
+## LULC change analysis ##
+In the year 1990, the upper part of the Anzali wetland catchment is dominated by forest (45.8%), followed by agricultural land (40.8%) in the middle and lower part. Grassland covers 8% and is mostly found at the border of the forest coverage. Wetland, water, and urban areas accounted for 2.5%, 1.4%, and 1.5% of the catchment in 1990. The spatial distribution of the major LULC classes in 1990, 2000, and 2013 is shown in the supplementary document.
+Comparing the LULC data of the years 1990, 2000, and 2013, the most obvious LULC changes occurred in the agricultural and forest land use classes (Table 
+(177.8km²), 12.5% was grassland (29.3 km²), and 11.4% was wetland (26.7 km²). Forest, grassland and wetland showed a decline by -6.8% (227.4 km 2 ), -1.0% (33.4 km 2 ), and -0.7% of the catchment area (23.4 km 2 ), respectively. Most of the lost forest area was converted to agriculture (91%) and about 9% was converted to grassland. The lost wetland was entirely (100% of the area) converted for agricultural purposes. The water area of the catchment is assumed to remain constant during the study period.
+Urban area changed the most in relative terms among all the LULC classes, increasing to 100% in 2013 as compared to 1990. However, the expansion of the urban class is not substantial with respect to the total area of the catchment, i.e., an increase of 1.5% (50.2 km 2 ). According to Journal Pre-proof J o u r n a l P r e -p r o o f
+Table 
+Journal Pre-proof J o u r n a l P r e -p r o o f Journal Pre-proof J o u r n a l P r e -p r o o f
+
+## Calibration and validation of the SWAT model ##
+For the streamflow calibration in SWAT-CUP, eighteen parameters were initially selected and, finally, ten parameters with the highest sensitivity values were selected to be adjusted for each monitoring station through the discharge calibration process (Supplementary material, Table 
+were used for the sediment calibration. Among the parameters, the peak rate adjustment factor for sediment routing in the sub-basin (ADJ_PKR) was the most sensitive, followed by the USLE support practice factor (USLE_P), sediment concentration in lateral flow and groundwater flow (LAT_SED), and the USLE soil erodibility factor (USLE_K). ADJ_PKR adjusts the effect of peak flow rate on sediment routing in tributary channels and have a major impact on sediment transportation (Dakhlalla and 
+The NSE and PBIAS values for the monthly calibration and validation of streamflow and sediment yield at the gauging stations are shown in Table 
+Journal Pre-proof J o u r n a l P r e -p r o o f    
+show that water yield has a slightly higher proportion of precipitation than evapotranspiration.
+The difference in the hydrological response between the two applied models provide the isolated impact of land use change. The differences in the long-term average annual values for water balance components are smaller than 10 mm on the catchment scale. The estimated ET, WYLD, and SURQ in the dynamic land use model increased by 0.9%, 1%, and 2.8%, respectively. Total sediment loading is also increased by 2.6% (3 t/km 2 ) through the dynamic land use model. A possible reason for the increase in ET is the conversion of forest to irrigated paddy fields. Also, a positive impact on SURQ and WYLD can be observed as almost 80% of the irrigation water for the expanded rice fields are taken from outside the catchment (Sefidrood river). The slight decrease in groundwater flow and lateral flow can be attributed to less soil infiltration and more surface runoff 
+It is a commonly known effect that impacts of LULC change are small when aggregated in space and time 
+Revap is the amount of water moving from shallow aquifer to plants/soil profile in the catchment
+
+## Hydrological response at the sub-basin scale ##
+The effect of dynamic land use change on the hydrological response was more discernible on the sub-basin scale. To relate the magnitude and direction of these changes to the changes in land use data, spatial distribution of the main land use changes at sub-basin level between 1990 and 2013 were assessed (Fig. 
+
+## Hydrological response at the seasonal time scale ##
+The following analysis is focused on the monthly time scale impacts of land use change as more distinct differences in water balance components can be identified from the continuous land use changes. Seasonal responses to land use change have been identified in some other studies (e.g., 
+In both sub-basins, small differences are observed in the early years of the study period, while more pronounced seasonal patterns are generated with the increase of the magnitude of land use changes towards the end of the simulation period. In sub-basin 16, ET increases by up to 17.2 mm in dry season (April-August) and decreases by up to -2.7 mm in the wet season (September-February). The increase of ET is due to the increased irrigated agriculture 
+The decrease of ET shows the ability of forests to produce higher values of ET during the nonirrigated months than the agriculture. 
+In sub-basin 16, the expanded agriculture area resulted in an increase of WYLD by up to 17.6 mm in July 2012. The most significant changes of WYLD occur in the dry season as a consequence of the water withdrawal for the irrigation activities. The increased WYLD leads to a higher sedimentation rates during the irrigated months. The largest variation in SYLD is observed in October 2013 (+2.8 t/km 2 ). 
+In those sub-basins where the agriculture area increases at the expense of wetland area (e.g., sub- expected, as irrigation water does not add to WYLD anymore. In sub-basin 8, a similar pattern of WYLD responses were observed for the SYLD. The highest differences of SYDL is -7 t/km 2 in September 2011, where the WYLD is also decreased by -5.2 mm. However, no discernable changes were observed for the SYDL during the non-irrigated months, since no significant changes were observed for WYLD as well.
+Similar results are presented in some other studies. For example, in a study conducted in the Bochung catchment in Korea, 
+For the first time, hydrological modeling was conducted for the Anzali wetland catchment to assess the impacts of dynamic land use change on spatio-temporal changes in hydrological fluxes of the catchment. The findings from this study provide quantitative information that would help decision makers to implement effective land-use planning policies and water resource
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Modeling hydrology and water quality in the pre-alpine/alpine Thur watershed using SWAT
+   Authors: , , , , , , 
+   Date: 2007
+
+2. Assessing model parameters sensitivity and uncertainty of streamflow, sediment, and nutrient transport using SWAT
+   Authors: 
+   Date: 2019
+
+3. Hydrological responses to land degradation in the Northwest Benin Owena River Basin
+   Authors: , , 
+   Date: 2018
+
+4. Modeling flood reduction effects of low impact development at a watershed scale
+   Authors: , 
+   Date: 2016
+
+5. Gilan province statistical yearbook
+   Authors: , , 
+   Date: 2015
+
+6. Operational estimates of reference Journal Pre
+   Authors: , , , 
+   Date: 1989
+
+7. 
+
+8. Large area hydrologicmodeling and assessmentpart 1: model development
+   Authors: , , , 
+   Date: 1998
+
+9. Detecting the influence of land use changes on discharges and floods in the Meuse River Basinthe predictive power of a ninety-year rainfall-runoff relation?
+   Authors: , , , , 
+   Date: 2006
+
+10. Estimation of water balance and water yield in the Reedy Fork-Buffalo Creek Watershed in North Carolina using SWAT
+   Authors: , 
+   Date: 2018
+
+11. Simulation of streamflow and sediment with the Soil Water Assessment Tool in a data scarce catchment in the Three Gorges Region
+   Authors: , , 
+   Date: 2012
+
+12. The impact of land use change in the Xiangxi Catchment (China) on water balance and sediment transport
+   Authors: , , 
+   Date: 2015
+
+13. Remote Sensing and Geographic Information System Based Approach for Watershed Conservation
+   Authors: , , 
+   Date: 2002
+
+14. Application of WaSiM-ETH model to Northern German lowland catchments: model performance in relation to catchment characteristics and sensitivity to land use change
+   Authors: , 
+   Date: 2010. 2010
+
+15. Assessing sediment yield in Kalaya gauged watershed (Northern Morocco) using GIS and SWAT model
+   Authors: , , , 
+   Date: 2016
+
+16. Using atmospherically-corrected Landsat imagery to measure glacier area change in the cordillera Blanca, Peru from 1987 to 2010
+   Authors: , 
+   Date: 2014
+
+17. Modelling the hydrologic effects of dynamic land-use change using a distributed hydrologic model and a spatial land-use allocation model
+   Authors: , , , , 
+   Date: 2010
+
+18. A comparison of hydrological models for assessing the impact of land use and climate change on discharge in a tropical catchment
+   Authors: , , 
+   Date: 2013
+
+19. Geological mapping using Landsat thematic mapper imagery in Almeria Province, South-east Spain
+   Authors: , 
+   Date: 2007
+
+20. Mid-Levels Study: report on Geology, Hydrology and Soil Properties. Government Printer, Hong Kong
+   Authors: 
+   Date: 1983. 1982
+
+21. Impact of land use change on hydrological systems: A review of current modeling approaches
+   Authors: , 
+   Date: 2015
+
+22. Simulated impact of past and possible future land use changes on the hydrological response of the Northern German lowland -Hunte‖ catchment
+   Authors: , 
+   Date: 2010
+
+23. Digital Soil Map of the World and Derived Soil Properties
+   Authors: 
+   Date: 1995
+
+24. Hydrologic response to land use changes on the catchment scale
+   Authors: , , , 
+   Date: 2001
+
+25. Development of a snowfall-snowmelt routine for mountainous terrain for the soil water assessment tool (SWAT)
+   Authors: , , , 
+   Date: 2002
+
+26. The Impact of Land Use Change on the Hydrology of the Angereb Watershed
+   Authors: , 
+   Date: 2012
+
+27. SWAT-Simulated Hydrological Impact of Land-Use Change in the Zanjanrood Basin
+   Authors: , , , 
+   Date: 2010
+
+28. Land use change and nutrients simulation for the Siah Darvishan basin of the Anzali Journal Pre-proof
+   Authors: , , , , , , 
+   Date: 2010
+
+29. ) as a tool in Integrated Watershed and Coastal Zone Management
+   Authors: , , , , , , 
+   Date: 2014
+
+30. Annual and seasonal streamflow responses to climate and landcover changes in the Poyang Lake basin
+   Authors: , , 
+   Date: 2008
+
+31. Examining the relationships between watershed urban land use and stream water quality using linear and generalized additive models
+   Authors: , , , 
+   Date: 2016
+
+32. Assessing the impacts of land use changes on watershed hydrology using MIKE SHE
+   Authors: , , , 
+   Date: 2009
+
+33. Application of SCS curve number method for irrigated paddy field
+   Authors: , , 
+   Date: 2007
+
+34. Dynamic simulation of urban expansion based on cellular automata and logistic regression model: Case study of the Hyrcanian Region of Iran
+   Authors: , , , , 
+   Date: 2016
+
+35. Prediction of land use changes based on Land Change Modeler and attribution of changes in the water balance of Ganga basin to land use Journal Pre-proof J o u r n a l P r e -p r o o f change using the SWAT model
+   Authors: , , 
+   Date: 2018
+
+36. Hydrologic modeling impacts of post-mining land use changes on streamflow of Peace River
+   Authors: , 
+   Date: 2015
+
+37. Impacts of future land cover and climate change on the water balance in northern Iran
+   Authors: , , , 
+   Date: 2017
+
+38. Changes in sediment and water yield downstream on a small watershed
+   Authors: , , 
+   Date: 2012
+
+39. Characteristics of Water Budget Components in Paddy Rice Field under the Asian Monsoon Climate: Application of HSPF-Paddy Model
+   Authors: , , 
+   Date: 2014
+
+40. The effects of land use change on hydrological responses in the choke mountain range (Ethiopia)a new approach addressing land use dynamics in the model SWAT
+   Authors: , , , , 
+   Date: 2012
+
+41. Modelling hydrological impacts of agricultural expansion in two macro-catchments in Southern Amazonia
+   Authors: , , , , 
+   Date: 2016
+
+42. Streamflow sensitivity to climate and land cover changes: Meki River
+   Authors: , , , 
+   Date: 2010
+
+43. Assessing the Hydrologic Impacts of Land Use Change in the Taihu Lake Basin of China from
+   Authors: , , , , 
+   Date: 2018. 1985 to 2010
+
+44. No-tillage effects on N and P exports across a rice-planted watershed
+   Authors: , , , , , 
+   Date: 2016
+
+45. Impacts of land-use change on hydrologic responses in the Great Lakes region
+   Authors: , 
+   Date: 2009
+
+46. Model evaluation guidelines for systematic quantification of accuracy in watershed simulations
+   Authors: , , , , , 
+   Date: 2007
+
+47. River flow forecasting through conceptual models: Part I. A discussion of principles
+   Authors: , 
+   Date: 1992. 1970. 2004
+
+48. Soil and Water Assessment Tool: Input/ Output File Documentation, Version
+   Authors: , , , , 
+   Date: 2010. 2009
+
+49. Effect of land use change on runoff and sediment yield in Da River Basin of Hoa Binh province, Northwest Vietnam
+   Authors: , , 
+   Date: 2015
+
+50. Assessing impacts of land use and land cover changes on hydrology for the upper San Pedro watershed
+   Authors: , , , , , 
+   Date: 2011
+
+51. Impact of Land Use Change on Groundwater Recharge in Haridwar District
+   Authors: , , 
+   Date: 2015. 17-19 December
+
+52. SWAT2009_LUC: A tool to activate the land use change module in SWAT 2009
+   Authors: , 
+   Date: 2011
+
+53. 
+   Authors: , , , 
+   Date: 2016
+
+54. Effects of land cover change on evapotranspiration and streamflow of small catchments in the Upper Xingu River Basin, Central Brazil
+   Authors: , , , , 
+   Date: 2015. 2013
+
+55. Land use change impacts on floods at the catchment scale: Challenges and opportunities for future research
+   Authors: , , 
+   Date: 2017
+
+56. Hydrologic response of a Hawaiian watershed to future climate change scenarios
+   Authors: , 
+   Date: 2012
+
+57. Examination of the water balance of irrigated paddy fields in SWAT 2009 using the curve number procedure and the pothole module
+   Authors: , , 
+   Date: 2014
+
+58. Estimating increased evapotranspiration losses caused by irrigated agriculture as part of the water balance of the Orari Catchment
+   Authors: , , 
+   Date: 2009
+
+59. The effect of land use/cover change on surface runoff in Shenzhen region
+   Authors: , , , , , 
+   Date: 2007
+
+60. Using the SWAT model to improve process descriptions and define hydrologic partitioning in South Korea
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+61. 
+   Date: 1972
+
+62. Introduction to special section on impacts of land use change on water resources
+   Authors: , , 
+   Date: 2009
+
+63. Evaluation of static and dynamic land use data for watershed hydrologic process simulation: A case study in Gummara watershed
+   Authors: , , , , 
+   Date: 2019
+
+64. Modeling the impact of agricultural crops on the spatial and seasonal variability of water balance components in the Lake Tana Basin
+   Authors: , , , 
+   Date: 2019
+
+65. Factors of runoff generation in the Dongting Lake basin based on a SWAT model and implications of recent land cover change
+   Authors: , , 
+   Date: 2018
+
+66. Dynamic integration of land use changes in a hydrologic assessment of a rapidly developing Indian catchment
+   Authors: , , , , , , , 
+   Date: 2016
+
+67. Comparing the effects of dynamic versus static representations of land use change in hydrologic impact assessments
+   Authors: , , , , , 
+   Date: 2019
+
+68. 
+
+69. An assessment of land use change impacts on the water resources of the Mula and Mutha Rivers catchment upstream of Pune
+   Authors: , , 
+   Date: 2013
+
+70. Effect of dynamic land use inputs on improvement of SWAT model performance and uncertainty analysis of outputs
+   Authors: , , , , 
+   Date: 2018
+
+71. Using the SWAT model to assess impacts of land use changes on runoff generation in headwaters
+   Authors: , , , , 
+   Date: 2014
+
+72. Spatio-temporal patterns of land use and cropping frequency in a tropical catchment of South India
+   Authors: , , , 
+   Date: 2017
+
+73. Sediment routing for agricultural watersheds
+   Authors: 
+   Date: 1975
+
+74. Impacts of land use change on watershed streamflow and sediment yield: an assessment using hydrologic modelling and partial least squares regression
+   Authors: , , , 
+   Date: 2013
+
+75. Using a time series of satellite imagery to detect land use and land cover changes in the Atlanta
+   Authors: , 
+   Date: 2002
+
+76. A novel pollution index based on the bioavailability of elements: a study on Anzali wetland bed sediments
+   Authors: , , 
+   Date: 2014
+
+77. The change of soil water storage in three land use types after 10 years on the Loess Plateau
+   Authors: , 
+   Date: 2016
+
+78. 
+   Authors: 
+
+79. Impacts of land use change and climate variability on green and blue water resources in the Weihe river basin of northwest china
+   Authors: , , , , 
+   Date: 2016
+
+80. Long-term hydrological impacts of land use/land cover change from 1984 to 2010 in the Little River Watershed
+   Authors: , 
+   Date: 2014
+
+81. Quantification of impact of changes in land use-land cover on hydrology in the upper Indus Basin
+   Authors: , , 
+   Date: 2018
+

@@ -1,0 +1,389 @@
+================================================================================
+TITLE: Land Use/Land Cover Changes and Their Driving Factors in the Northeastern Tibetan Plateau Based on Geographical Detectors and Google Earth Engine: A Case Study in Gannan Prefecture
+================================================================================
+
+AUTHORS:
+- Chenli Liu
+- Wenlong Li
+- Gaofeng Zhu
+- Huakun Zhou
+- Hepiao Yan
+- Pengfei Xue
+
+ABSTRACT:
+As an important production base for livestock and a unique ecological zone in China, the northeast Tibetan Plateau has experienced dramatic land use/land cover (LULC) changes with increasing human activities and continuous climate change. However, extensive cloud cover limits the ability of optical remote sensing satellites to monitor accurately LULC changes in this area. To overcome this problem in LULC mapping in the Ganan Prefecture, 2000-2018, we used the dense time stacking of multi-temporal Landsat images and random forest algorithm based on the Google Earth Engine (GEE) platform. The dynamic trends of LULC changes were analyzed, and geographical detectors quantitatively evaluated the key driving factors of these changes. The results showed that (1) the overall classification accuracy varied between 89.14% and 91.41%, and the kappa values were greater than 86.55%, indicating that the classification results were reliably accurate. (2) The major LULC types in the study area were grassland and forest, and their area accounted for 50% and 25%, respectively. During the study period, the grassland area decreased, while the area of forest land and construction land increased to varying degrees. The land-use intensity presents multi-level intensity, and it was higher in the northeast than that in the southwest. (3) Elevation and population density were the major driving factors of LULC changes, and economic development has also significantly affected LULC. These findings revealed the main factors driving LULC changes in Gannan Prefecture and provided a reference for assisting in the development of sustainable land management and ecological protection policy decisions.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land use/land cover (LULC) changes are the most basic and prominent landscape characteristic describing the impact of anthropogenic disturbance on the surface of the Earth and play an important role in the studies of regional and global environmental changes 
+There are currently great uncertainties and differences among existing global LULC products due to different data sources, methods, and classification systems. Furthermore, most previous studies were concerned about long-term vegetation change on the TP 
+However, the processing of multi-source satellite data is a huge challenge for computing capacity. Currently, a free cloud platform provides new methods for geospatial analysis. The Google Earth Engine (GEE) can avoid the process of image downloading and preprocessing and hence greatly improve the efficiency of LULC change research 
+The driving force analysis can determine the process of LULC changes and reveal the regional ecological environment change mechanism 
+Gannan Prefecture is an important water supply area for the Yellow River, located in the northeast TP. This area plays an important role in conserving water sources, maintaining biodiversity, and regulating climate 
+This study applied dense time stacking of Landsat images to monitor LULC changes in Gannan Prefecture and explored its driving factors based on geographical detectors. We aimed to (1) obtain the LULC information of Gannan Prefecture 2000-2018 based on the GEE platform, (2) analyze the spatiotemporal change pattern of land-use intensity in Gannan Prefecture, and (3) identify the main socioeconomic and natural factors affecting LULC changes using geographical detectors. The results are expected to provide theoretical support for adjusting and optimizing land use in Gannan Prefecture.
+
+## Materials and Methods ##
+
+
+## Study Area ##
+The Gannan Prefecture is within the alpine pastoral region in the southwest of Gansu Province, located in the transition zone between the northeastern Tibetan Plateau (TP) and the Loess Plateau (Figure 
+Remote Sens. 2020, 
+
+## Materials and Methods ##
+
+
+## Study Area ##
+The Gannan Prefecture is within the alpine pastoral region in the southwest of Gansu Province, located in the transition zone between the northeastern Tibetan Plateau (TP) and the Loess Plateau (Figure 
+
+## Data Preparation ##
+The GEE platform provides Landsat datasets by the United States Geological Survey (USGS, https://www.usgs.gov/) 
+
+## Data Preparation ##
+The GEE platform provides Landsat datasets by the United States Geological Survey (USGS, https://www.usgs.gov/) 
+
+## Training and Validation Sample Selection ##
+The classification system was determined based on current LULC in the Gannan Prefecture and by referring to previous research 
+Supervised classification methods require high-quality training and validation samples. Training samples used to create the classification model were collected through visual interpretation and field observations 
+
+## Anthropogenic and Natural Data ##
+Because anthropogenic and natural factors profoundly influence LULC changes, 11 potential factors were selected in this study to detect their influence on LULC changes in Gannan Prefecture in 2000, 2009, and 2018 (Figure 
+Remote Sens. 2020, 12, x 5 of 18
+we collected more than 1323 reference points in 2000, 2009, and 2018, covering seven LULC types (Supplementary Materials Figure 
+
+## Anthropogenic and Natural Data ##
+Because anthropogenic and natural factors profoundly influence LULC changes, 11 potential factors were selected in this study to detect their influence on LULC changes in Gannan Prefecture in 2000, 2009, and 2018 (Figure 
+
+## Methods ##
+We used Landsat images based on the dense time stack of multi-temporal Landsat images to generate a cloudless and minimal snow cover image on the GEE platform. The specific research methods and structural framework are shown in Figure 
+Remote Sens. 2020, 12, x 6 of 18
+
+## Methods ##
+We used Landsat images based on the dense time stack of multi-temporal Landsat images to generate a cloudless and minimal snow cover image on the GEE platform. The specific research methods and structural framework are shown in Figure 
+
+## LULC Classification and Accuracy Assessment ##
+We selected a random forest (RF) algorithm as the classifier because it generally has greater processing power for data noise and overfitting 
+An accuracy assessment is necessary for LULC classification to explain the correspondence between ground truth and classification results 
+
+## LULC Classification and Accuracy Assessment ##
+We selected a random forest (RF) algorithm as the classifier because it generally has greater processing power for data noise and overfitting 
+An accuracy assessment is necessary for LULC classification to explain the correspondence between ground truth and classification results 
+
+## Land Use Degree Index ##
+Land-use intensity is the most intuitive representation of human activity and can directly reflect the state of LULC 
+where La is the land use degree index value; A i is the hierarchical index of land use degree i; C i is the percentage of the graded area of land use degree of category i. According to the previous studies of Zhuang et al. 
+
+## Geographical Detector ##
+The geographical detector model is a spatial heterogeneity detection method usually used to quantify the driving force of each factor on the dependent variable 
+where q is the explanatory power index of the influencing factors of land use degree. The greater the q value, the greater the effect of the independent variable x on the heterogeneity of land use. N h is the number of samples of the sub-regions h; N is the total sample size; σ and σ 2 denote the total variance and variance of samples in sub-region h, respectively.
+
+## Results ##
+
+
+## Variable Importance Analysis and Accuracy Assessment of LULC Classification ##
+The RF model can analyze the importance of characteristic variables, which improves classification accuracy while reducing data redundancy and processing workload. We used the explain method on the classifier to view the importance of characteristic parameters on the GEE platform. The higher the importance score indicated, the greater the impact and contribution of the variable to the classification results. Our results showed that elevation had the highest importance score among all the characteristic variables; its average value was greater than 1100 (Figure 
+Remote Sens. 2020, 12, x 8 of 18 MNDWI, and NDVI followed, and they are more important for the identification of water body and vegetation. The importance score of other characteristic variables for LULC classification remained stable (Figure 
+
+## Spatiotemporal Characteristics of LULC Changes ##
+The LULC maps of Gannan Prefecture in 2000, 2009, and 2018 are shown in Figure 
+
+## Spatiotemporal Characteristics of LULC Changes ##
+The LULC maps of Gannan Prefecture in 2000, 2009, and 2018 are shown in Figure 
+
+## Spatiotemporal Characteristics of LULC Changes ##
+The LULC maps of Gannan Prefecture in 2000, 2009, and 2018 are shown in Figure 
+
+## LULC Transformation ##
+To observe the changes in various LULC types, we used the spatial analysis method to create the 2000-2018 LULC changes transition matrix and mapped them. From 2000 to 2009, in general, grassland and wetlands decreased, and farmland, forest land, and construction land expanded (Figures 
+grassland and wetlands decreased, and farmland, forest land, and construction land expanded (Figures 
+Similarly, from 2009 to 2018, the areas of farmland and grassland continued to decrease, while forest land, wetland, and unused land expanded (Figures 
+Similarly, from 2009 to 2018, the areas of farmland and grassland continued to decrease, while forest land, wetland, and unused land expanded (Figures 
+Comparing the spatial-temporal changes in LULC between 2000-2009 and 2009-2018, we found that the farmland area increased first and then decreased, but the wetland area followed the opposite trend. In general, between 2000-2018, the grassland was continuously degraded, and the area under forest land and construction land gradually increased. The water body area did not change much, and the area of unused land also increased, which was mainly caused by grassland and water body shrinkage.
+
+## Degree of Land Use Change ##
+We calculated the dynamic degree of land use based on the LULC dataset of Gannan Prefecture. The spatial changes in land-use intensity represent diversified types and multi-level intensity, and the overall land-use intensity in the northeast was higher than that in the southwest (Figure 
+Remote Sens. 2020, 12, x 11 of 18
+Comparing the spatial-temporal changes in LULC between 2000-2009 and 2009-2018, we found that the farmland area increased first and then decreased, but the wetland area followed the opposite trend. In general, between 2000-2018, the grassland was continuously degraded, and the area under forest land and construction land gradually increased. The water body area did not change much, and the area of unused land also increased, which was mainly caused by grassland and water body shrinkage.
+
+## Degree of Land Use Change ##
+We calculated the dynamic degree of land use based on the LULC dataset of Gannan Prefecture. The spatial changes in land-use intensity represent diversified types and multi-level intensity, and the overall land-use intensity in the northeast was higher than that in the southwest (Figure 
+
+## Analysis of Driving Mechanisms in LULC Changes ##
+Factor detection revealed the influence of each factor on land-use intensity. The calculated q values of anthropogenic and natural factors (Table 
+
+## Discussion ##
+
+
+## Analysis of LULC Classification Variable Importance and Result Verification ##
+This study constructed various characteristic variables on the GEE platform and used the RF machine algorithm to classify LULC in Gannan Prefecture. The RF algorithm provides flexibility to include different data types in the modeling process and accurately classifies the LULC heterogeneity 
+The overall accuracy and kappa coefficient were reasonable, as, according to the USGS survey, the recommended threshold is 85%, and Gashaw et al. 
+
+## Temporal-Spatial Variation of LULC Changes ##
+LULC changes are influenced by the interaction between humans and the environment at different spatial and temporal scales. Monitoring LULC changes can help us understand the causes of their dynamic changes, and it supports land management and decision-making 
+The change in land-use intensity reflects the disturbance degree of human activities on natural resources 
+
+## Major Drivers of LULC Changes ##
+LULC is a complex process affected by natural, social, and economic factors. Here, we explain the driving mechanism of LULC changes by analyzing the relative importance of natural and human disturbances. Generally, LULC changes are greatly affected by human activities. Our results showed that from 2000 to 2018, population density explained much of the LULC changes. This finding agrees with previous reports that the LULC changes driven by human activities are increasing 
+LULC changes are also closely related to natural factors 
+
+## Advantages and Limitations of the Current Study ##
+The GEE cloud computing platform has unique computing capabilities, free satellite images, integrated APIs, and researchers can process massive geographic data 
+Factor detection found that the influence of natural factors on LULC changes in Gannan Prefecture is greater than the influence of the anthropogenic factors, which might be caused by the fragile ecological environment and lack of investment and transportation 
+
+## Conclusions ##
+The study used the dense time stacking of multi-temporal Landsat images and the RF machine learning algorithm to map the LULC in Gannan Prefecture, and then analyze potential driving forces based on geographic detectors. Our results demonstrated that from 2000 to 2018, Gannan Prefecture was dominated by grassland, followed by forest land and farmland. Grasslands and wetlands gradually degraded from 2000 to 2018, while forest land, construction land, and unused land expanded. Grassland was mainly converted to forest land. The high land-use intensity was distributed in Lintan, northern Xiahe, and Hezuo. The overall land-use intensity of Gannan Prefecture was higher in the northeast than in the southwest, and these areas are relatively flat, mainly consisting of cultivated land and construction land. In addition, the importance analysis of all variables using the RF model found that elevation was the most important characteristic variable for LULC classification in Gannan Prefecture.
+The driving factor analysis also found that elevation was the most important factor affecting the LULC in Gannan Prefecture. However, with economic development, the driving effects of anthropogenic factors on the LULC have gradually expanded. In 2018, population density, GDP, livestock quantity, and chemical fertilizer consumption had an explanatory power exceeding 0.3117 for LULC changes, which indicates that economic development has promoted LULC changes. In conclusion, our study results indicate that elevation restricts the dominant factors of LULC changes in alpine regions. The study provides results that revealed the land use mechanism in the northeastern TP.
+
+## Supplementary Materials: ##
+The following are available online at http://www.mdpi.com/2072-4292/12/19/3139/s1, Figure 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Exploring land use/land cover change and drivers in Andean mountains in Colombia: A case in rural Quindio
+   Authors: , , 
+   Date: 2018
+
+2. Climatic controls on spring onset of the Tibetan Plateau Grasslands from 1982 to
+   Authors: , , , , 
+   Date: 2008. 2015
+
+3. Quantifying trends of land change in Qinghai-Tibet Plateau during 2001-2015
+   Authors: , , 
+   Date: 2019. 2435
+
+4. Altitude and temperature dependence of change in the spring vegetation green-up date from 1982 to 2006 in the Qinghai-Xizang Plateau
+   Authors: , , , , , , 
+   Date: 2011
+
+5. Climate change will affect the asian water towers
+   Authors: , , 
+   Date: 2010
+
+6. Quantitative assessment of the impact of physical and anthropogenic factors on vegetation spatial-temporal variation in Northern Tibet
+   Authors: , , , , , , , , , 
+
+7. Quantitative assess the driving forces on the grassland degradation in the Qinghai-Tibet Plateau
+   Authors: , , , , , , , , , 
+   Date: 2016
+
+8. Land cover change in the Lower Yenisei River using dense stacking of landsat imagery in Google Earth Engine
+   Authors: , , , , 
+   Date: 2018. 1226
+
+9. Classification and assessment of land cover and land use change in southern Ghana using dense stacks of Landsat 7 ETM + imagery
+   Authors: , , , , , , , , 
+   Date: 2016
+
+10. Trajectory-based change detection for automated characterization of forest disturbance dynamics
+   Authors: , , 
+   Date: 2007
+
+11. A Mapping framework to characterize land use in the Sudan-Sahel region from dense stacks of landsat data
+   Authors: , , 
+   Date: 2019
+
+12. An efficient approach to capture continuous impervious surface dynamics using spatial-temporal rules and dense Landsat time series stacks
+   Authors: , , , , , , 
+   Date: 2019
+
+13. Google Earth Engine: Planetary-scale geospatial analysis for everyone
+   Authors: , , , , , 
+   Date: 2017
+
+14. Google Earth Engine applications
+   Authors: , 
+   Date: 2019
+
+15. Land cover changes and their driving mechanisms in Central Asia from 2001 to 2017 Supported by Google Earth Engine
+   Authors: , 
+
+16. Spatio-temporal evolution of agricultural land use change drivers: A case study from Chalous region
+   Authors: , , 
+   Date: 2020
+
+17. Land use and land cover dynamics and drivers in the Muga watershed
+   Authors: , 
+   Date: 2019
+
+18. Driving factors and future prediction of land use and cover change based on satellite remote sensing data by the LCM model: A case study from Gansu Province
+   Authors: , , , , , 
+   Date: 2020. 2757
+
+19. Exploring land use/land cover changes, drivers and their implications in contrasting agro-ecological environments of Ethiopia. Land Use Pol
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+20. Geographical detectors-based health risk assessment and its application in the neural tube defects study of the Heshun Region, China
+   Authors: , , , , , , 
+   Date: 2010
+
+21. Long-term land cover change in Zambia: An assessment of driving factors
+   Authors: , , 
+   Date: 2019
+
+22. Quantifying the spatial heterogeneity influences of natural and socioeconomic factors and their interactions on air pollution using the geographical detector method: A case study of the Yangtze River Economic Belt
+   Authors: , , , 
+   Date: 2019
+
+23. Quantifying influences of natural factors on vegetation NDVI changes based on geographical detector in Sichuan, western
+   Authors: , , 
+   Date: 2019
+
+24. Exploring the regional differences of ecosystem health and its driving factors in China
+   Authors: , , , 
+   Date: 2019
+
+25. Modeling of alpine grassland cover based on unmanned aerial vehicle technology and multi-factor methods: A case study in the East of Tibetan Plateau
+   Authors: , , , , , , , 
+
+26. A risk-based model for grassland management using MODIS data: The case of Gannan region, China. Land Use Pol
+   Authors: , , , 
+   Date: 2018
+
+27. Classification management for grassland using MODIS data: A case study in the Gannan region, China
+   Authors: , , , , , 
+   Date: 2012
+
+28. Organic carbon and total nitrogen variability in permafrost-affected soils in a forest tundra ecotone
+   Authors: , , , , , 
+   Date: 2007
+
+29. Spatiotemporal variation of NDVI in the vegetation growing season in the source region of the Yellow River
+   Authors: , , , 
+   Date: 2020
+
+30. Spatio-temporal analysis of vegetation variation in the Yellow River Basin
+   Authors: , , , , , 
+   Date: 2015
+
+31. Bi-temporal characterization of land surface temperature in relation to impervious surface area, NDVI and NDBI, using a sub-pixel image analysis
+   Authors: , , 
+   Date: 2009
+
+32. Modification of normalised difference water index (NDWI) to enhance open water features in remotely sensed imagery
+   Authors: 
+   Date: 2006
+
+33. 40-Year (1978-2017) human settlement changes in China reflected by impervious surfaces from satellite remote sensing
+   Authors: , , 
+   Date: 2019
+
+34. Spatiotemporal characteristics, patterns, and causes of land-use changes in China since the late 1980s
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+35. Finer resolution observation and monitoring of global land cover: First mapping results with Landsat TM and ETM+ data
+   Authors: , , , , , , , , , 
+   Date: 2013
+
+36. Spatially differentiated trends in urbanization, agricultural land abandonment and reclamation, and woodland recovery in Northern China
+   Authors: , , , 
+   Date: 2016
+
+37. Land cover change in the central region of the Lower Yangtze River based on landsat imagery and the Google Earth Engine: A case study in Nanjing
+   Authors: , 
+   Date: 2020. 2091
+
+38. Applying geodetector to disentangle the contributions of natural and anthropogenic factors to NDVI variations in the middle reaches of the Heihe River Basin
+   Authors: , , 
+   Date: 2020
+
+39. Random forest classification of wetland landcovers from multi-sensor data in the arid region of Xinjiang
+   Authors: , , , 
+
+40. Mapping major land cover dynamics in Beijing using all Landsat images in Google Earth Engine
+   Authors: , , , , , , , , , 
+
+41. Random forest in remote sensing: A review of applications and future directions
+   Authors: , 
+   Date: 2016
+
+42. A 30-m landsat-derived cropland extent product of Australia and China using random forest machine learning algorithm on Google Earth Engine cloud computing platform
+   Authors: , , , , , , , 
+   Date: 2018
+
+43. Improved land cover mapping using random forests combined with landsat thematic mapper imagery and ancillary geographic data
+   Authors: , , , , 
+   Date: 2010
+
+44. Google Earth Engine for geo-big data applications: A meta-analysis and systematic review
+   Authors: , , , , , 
+   Date: 2020
+
+45. An assessment of the effectiveness of a random forest classifier for land-cover classification
+   Authors: , , , , 
+   Date: 2012
+
+46. Spatiotemporal analysis of land cover changes in the Chemoga Basin, Ethiopia, using landsat and Google Earth images
+   Authors: , , 
+
+47. Spatio-temporal analysis of agricultural land-use intensity across the Western Siberian grain belt
+   Authors: , , 
+   Date: 2016
+
+48. Study on the model of regional differentiation of land use degree in China
+   Authors: , 
+   Date: 1997
+
+49. Sustainable land use in the trans-provincial marginal areas in China
+   Authors: , , , 
+   Date: 2020
+
+50. Geospatial analysis of land use change in the Savannah River Basin using Google Earth Engine
+   Authors: , , , , 
+   Date: 2018
+
+51. Random forests
+   Authors: 
+   Date: 2001
+
+52. Effects of terrain-induced shade removal using global DEM data sets on land-cover classification
+   Authors: , 
+   Date: 2014
+
+53. Ecological Risk Assessment and Impact Factor Analysis of Alpine Wetland Ecosystem Based on LUCC and Boosted Regression Tree on the Zoige Plateau
+   Authors: , , , , , , , , 
+
+54. Modeling alpine grassland cover based on MODIS data and support vector machine regression in the headwater region of the Huanghe River
+   Authors: , , , , , , , 
+   Date: 2018
+
+55. Estimating the impacts of land use/land cover changes on ecosystem service values: The case of the Andassa watershed in the Upper Blue Nile basin of Ethiopia
+   Authors: , , , , , 
+   Date: 2018
+
+56. Monitoring of land use/land-cover changes in the arid transboundary Middle Rio Grande Basin using remote sensing
+   Authors: , , , , 
+   Date: 2018. 2005
+
+57. Spatially explicit simulation of land use/land cover changes: Current coverage and future prospects
+   Authors: , , , , , 
+   Date: 2019
+
+58. Spatial correlation between type of mountain area and land use degree in Guizhou Province
+   Authors: , 
+   Date: 2016
+
+59. Rapid urbanization and its driving mechanism in the Pan-Third Pole region
+   Authors: , 
+   Date: 2020
+
+60. Overgrazing leads to soil cracking that later triggers the severe degradation of alpine meadows on the Tibetan Plateau
+   Authors: , , , , , , , 
+   Date: 2019
+
+61. Impacts of topography on the land cover classification in the Qilian Mountains, Northwest China
+   Authors: , , , , , , 
+   Date: 2020
+
+62. A process-based land use/land cover change assessment on a mountainous area of Greece during 1945-2009: Signs of socio-economic drivers
+   Authors: , , 
+   Date: 2017
+
+63. Responses of alpine wetlands to climate changes on the Qinghai-Tibetan Plateau based on remote sensing
+   Authors: , , 
+   Date: 2020
+

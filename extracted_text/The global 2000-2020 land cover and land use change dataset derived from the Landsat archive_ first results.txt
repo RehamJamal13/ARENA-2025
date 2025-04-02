@@ -1,0 +1,385 @@
+================================================================================
+TITLE: The Global 2000-2020 Land Cover and Land Use Change Dataset Derived From the Landsat Archive: First Results
+================================================================================
+
+AUTHORS:
+- Peter Potapov
+- Matthew Hansen
+- Amy Pickens
+- Andres Hernandez-Serna
+- Alexandra Tyukavina
+- Svetlana Turubanova
+- Viviana Zalles
+- Xinyuan Li
+- Ahmad Khan
+- Fred Stolle
+- Nancy Harris
+- Xiao-Peng Song
+- Antoine Baggett
+- Indrani Kommareddy
+- Anil Kommareddy
+- Hansen Mc
+- Zalles Li
+
+ABSTRACT:
+Recent advances in Landsat archive data processing and characterization enhanced our capacity to map land cover and land use globally with higher precision, temporal frequency, and thematic detail. Here, we present the first results from a project aimed at annual multidecadal land monitoring providing critical information for tracking global progress towards sustainable development. The global 30-m spatial resolution dataset quantifies changes in forest extent and height, cropland, built-up lands, surface water, and perennial snow and ice extent from the year 2000 to 2020. Landsat Analysis Ready Data served as an input for land cover and use mapping. Each thematic product was independently derived using locally and regionally calibrated machine learning tools. Thematic maps validation using a statistical sample of reference data confirmed their high accuracy (user's and producer's accuracies above 85% for all land cover and land use themes, except for built-up lands). Our results revealed dramatic changes in global land cover and land use over the past 20 years. The bitemporal dataset is publicly available and serves as a first input for the global land monitoring system.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## INTRODUCTION ##
+The implementation of global initiatives towards sustainable development, climate change mitigation, and maintaining biodiversity and ecosystem functions, such as the United Nations Framework Convention on Climate Change (UNFCCC), the Paris Agreement and COP26 Glasgow Declaration, the Convention on Biological Diversity, the UN Sustainable Development Goals, and others depends on the timely provision of relevant data on land cover and land use change (LCLUC) at global, national, and local scales. The need for globally consistent LCLUC data has long been a priority of the scientific community, with the promise of improved quantification made possible through the use of remote sensing data 
+The LCLUC data user community requires diverse thematic data for their applications. Earth resources and climate change scientists, national land management and reporting agencies, non-government environmental organizations, and civil society all need different thematic products that are impossible to provide using a single LCLU classification system 
+A suite of thematic maps that reflects LCLU composition, structure, and dynamics at the product cell (pixel) scale is an alternative to discrete-legend characterization. The Vegetation Continuous Fields (VCF) approach provides per-pixel continuous fractional cover of the major land cover types, namely woody vegetation, herbaceous vegetation, and nonvegetated land cover. The VCF products were created at global and national scales using Moderate Resolution Imaging Spectroradiometer (MODIS) 
+The Landsat program jointly operated by the United States Geological Survey (USGS) and the National Aeronautics and Space Administration (NASA) provides the only satellite data record that enables multidecadal LCLUC assessment at medium spatial resolution 
+Recent advances in Landsat data processing into analysisready data enhanced our capacity to map LCLUC globally with higher precision and thematic detail. The Landsat analysis-ready data processing and machine learning algorithms were successfully employed for global forest monitoring 
+
+## METHODS ##
+We derived most global thematic products, except open water, using consistently processed Landsat Analysis Ready Data 
+
+## Landsat Data ##
+The Landsat data archive enabled multidecadal LCLUC monitoring at global extent and medium (30 m per pixel) spatial resolution. For all thematic products except water, we used the spatiotemporally consistent Landsat GLAD ARD inputs available from https://glad.umd.edu/ard as the source data for global LCLU mapping. The GLAD ARD product consists of 16day global Landsat normalized surface reflectance and brightness temperature composites combined from the best quality observations. The entire Landsat Collection 1 Tier 1 data archive over the land area between 75 °N and 56 °S from 1997 to 2020 was processed. Small islands, Arctic islands (e.g., Novaya Zemlya), and Greenland were excluded from the GLAD ARD extent due to the absence of high-quality Tier 1 data or a short growing season (Figure 
+We integrated the annual GLAD ARD 16-day clear-sky time series into a set of rank-based statistics, hereafter named phenology metrics, that enabled the application of the multitemporal classification and regression models. Observations contaminated by cloud and cloud shadows were excluded. To avoid data inconsistency and gaps in cloudy regions (where only a few clear-sky observations per year are available) we implemented a gap-filling technique. For the forest structure and perennial snow/ice mapping, we added observations collected during three preceding years (e.g., 1997-1999 for the year 2000) in case a gap between clear-sky observations was longer than a month. For cropland mapping, we integrated all available 16-day data into an annualized time series for 
+For each metric, we used the original per-pixel value along with the 3 × 3-pixels average value. The metric methodology is presented in detail in 
+We augmented the Landsat reflectance metrics with topographic metrics, including elevation and slope. These  
+
+## Thematic Mapping and Change Detection ##
+Forest Height, Extent, and Disturbance
+We mapped the height of woody vegetation for the years 2000 and 2020 using the approach of 
+We employed the global Landsat-based woody vegetation height mapping model calibrated for the year 2019 using GEDI observations 
+The training data for each model were aggregated from GEDI observations between 40 °N and 52 °N and manually collected samples of treeless wetlands and tundra areas. The model calibrated for the year 2019 was applied to 
+The forest disturbance data for the 2001-2020 interval is the result of the combination of two datasets: the Global Forest Loss (GFL) data V1.8 
+The woody vegetation height values for the years 2000 and 2020 were calculated as the median of 
+We produced the year 2000 and 2020 forest extent maps by attributing pixels with ≥5 m forest height as the "forest" land cover class. The forest extent change (net forest extent loss and gain) was derived directly from the year 2000 and 2020 map comparison. The woody vegetation heigh maps were used to stratify forest extent by height classes. The forest height increase and decrease maps employed conservative definition of height change to eliminate noise in the annual model application. We calculated the net forest height increase only if a pixel had height ≥5 m in 2020 and 1) had forest height <5 m in 2000 or 2) had net forest height increase from the year 2000-2020 by ≥100%. Similarly, the net forest height loss was calculated only for pixels with year 2000 forest heigh ≥5 m if forest height reduced below 5 m or the net height reduction was by ≥50% of the year 2000 value. Areas with small differences between the years 2000 and 2020 forest height data that have no indication of forest disturbance are considered stable forests in this prototype product.
+
+## Cropland ##
+Cropland was defined as land used to produce annual and perennial herbaceous crops for human consumption, forage, and biofuel 
+The cropland mapping model was calibrated with manually delineated training areas which were extrapolated in space and time through a three-stage algorithm 
+Supervised classification (bagged decision tree ensembles) was implemented at each of these three steps. At the first step, we selected 924 GLAD ARD tiles that represent crop type and agricultural techniques diversity. For each tile, we calibrated an individual cropland mapping model using manually collected training data and 2016-2019 multitemporal metrics. At the second stage, we used the resulting crop maps as training data to calibrate regional models for the 2016-2019 interval. These models were applied to a set of time intervals to create a cropland map time series prototype. At the last step, we used the stable cropland and no cropland pixels from different time intervals as training to calibrate a set of local cropland mapping models. This way we created a set of individual cropland models (one for each 1 × 1 °tile) that allowed us to map cropland areas consistently for the 2000-2003 and 2016-2019 intervals. The final products were filtered by removing artifacts and cropland patches smaller than 0.5 ha.
+
+## Built-Up Lands ##
+Built-up land consists of man-made land surfaces associated with infrastructure, commercial and residential land uses. At the Landsat spatial resolution, we define the built-up land class as pixels that include man-made surfaces, even if such surfaces do not dominate within the pixel 
+
+## Water ##
+Open surface water, or simply water, is defined as inland water that covers ≥50% of a pixel and is not obscured by objects above the surface (e.g., tree canopy, floating aquatic vegetation, bridges, or ice). The presented multidecadal surface water change product is based on the annual water presence dataset produced by 
+The water dynamics analysis had three major steps: 1) perscene Landsat data classification 1999-2020, 2) production of the annual water presence time series, and 3) multidecadal water dynamics characterization. The Landsat data for the water mapping was processed differently than for the other thematic products 
+The annual water presence time series was derived from the counts of clear-sky water and land observations. To account for intra-annual variation in clear-sky observation frequency, we first calculated water presence per meteorological season. These products were integrated into annual water presence time series using seasonal weighting, for more details see 
+The annual water presence maps were used to characterize the 1999-2020 water dynamics 
+
+## Perennial Snow and Ice ##
+The perennial snow and ice layer includes land covered by glaciers and snow which remains during the entire year. The map is limited to the GLAD ARD tiles where perennial snow and ice areas were detected using the ARD observation quality layer. To define the mapping area, we first generated preliminary annual snow and ice maps by selecting the ARD pixels where 16-day observation quality layers show the presence of snow and ice and the absence of snow-free land or water within the year. Using these annual maps, we selected GLAD ARD tiles which contain perennial snow and ice in the year 2000 or 2020 (Figure 
+We mapped permanent snow and ice using regionally calibrated supervised classification models (decision tree ensembles). Overall, we used 14 models, one model per mountain system or geographic region. Each classification model was calibrated with manually collected training data from multitemporal Landsat metrics. We used the Landsat data from the years 2000, 2010, and 2020 for training data collection. For each year, we compiled composites from Landsat observations during the peak land surface temperature and peak NDVI to separate perennial and annual snow cover. The training data were delineated using visual interpretation and integrated from 3 years to calibrate a single regional model. We iterated the models by assessing the classification output and adding training data. The final model was applied to the years 2000 and 2020, and the results were filtered using a set of rules to remove noise and artifacts.
+
+## Validation ##
+We validated each thematic product separately using an independently collected reference sample. The individual Landsat GLAD ARD pixel (0.00025 °× 0.00025 °) served as a sampling unit. The sampling region consists of the thematic product mapping area which is equal to the GLAD ARD extent for forests, water, and built-up lands (Figure 
+
+## Forest Extent and Height ##
+To estimate the accuracy of forest height mapping, we compared the forest height map for the year 2020 with the GEDI RH95 metric values within the extent of stable forests (forests that had map-based tree height ≥5 m in both years 2000 and 2020 and no indication of forest disturbance, degradation, or enhancement). We used the GEDI Collection 2 data collected between April 2019 and September 2020 for this comparison. Unlike the Collection 1 data that were used for model calibration 
+To validate the forest extent and change product derived from the forest height dataset using the ≥5 m forest class definition, we used five strata designed to target stable and dynamic forests. The strata represented pixels which were characterized by the map time series as 1) stable non-forest; 2) stable forest; 3) forest extent loss; 4) forest extent gain; 5) forest that experienced disturbance, net loss, or gain of forest height, or was within a 30-m buffer of strata 3 or 4. We allocated 1,000 sample pixels in each of the strata equally, 200 sample pixels per stratum. To account for the latitude difference in GLAD ARD pixel area, we performed sampling of pixels with inclusion probabilities proportional to their area 
+
+## Cropland ##
+The strata design for the cropland map time series represents the intersection of seven geographic regions (North and Central America, South America, Africa, Europe and Northern Asia, Southwest Asia, Southeast Asia, Australia and New Zealand) and five cropland change scenarios, including stable cropland and no cropland, cropland gain and loss, and possible cropland omission 
+
+## Built-Up Lands ##
+The built-up map validation followed the same principles as forest extent validation. We defined four strata, including 1) stable built-up land, 2) low and 3) high confidence built-up gain, and 4) other lands. In each stratum, we randomly allocated 100 sample pixels (400 pixels total) that were interpreted using Landsat image composites and highresolution data from Google Earth. A sample pixel was assigned to the built-up class if the analyst detected the presence of a building or an infrastructure object within the pixel area. Two map classes were validated separately: stable builtup and built-up land expansion. The reference sample data were used to select the best threshold of built-up class likelihood (by balancing user's and producer's accuracies) in addition to map validation.
+
+## Water ##
+The surface water 1999-2018 product validation was performed using a sample of 600 reference pixels allocated using a stratified random design created by 
+
+## Perennial Snow and Ice ##
+For the perennial snow and ice product validation, we implemented a stratified sampling design with five strata: 1) stable snow/ice presence and 2) absence, 3) snow/ice gain and 4) loss between 2000 and 2020, and 5) a 30-m buffer around all detected snow/ice areas to quantify class omission. We randomly allocated 500 sample pixels (100 pixels per stratum) and interpreted these pixels using Landsat time series data. To ensure the correct separation of perennial and seasonal snow cover for each year, we used the 16-day Landsat ARD data composite with the highest brightness temperature for sample visualization and interpretation.
+
+## Map Analysis and Intercomparison ##
+The global thematic map extent is limited by the land area where the Landsat ARD data was available (Figure 
+We summarized the LCLU area and change by country and continent. Country boundaries were obtained from the Database of Global Administrative Areas (GADM V3.6, https://gadm.org). We delineated continents using national and administrative boundaries. We divided North and South America by the boundary between Panama and Colombia. We divided Europe and Asia by the Russian southern border and by the boundary of Russian administrative regions along the Ural Mountains. Australia includes New Zealand and Pacific Islands and is separated from Asia by the Indonesia/Papua-New Guinea country border.
+We compared our map-based estimates with the official forest and cropland data provided by the FAO. The FAO Forest Resource Assessment 2020 (FAO, 2020) provides data on national forest areas for the years 2000 and 2020. The FAOSTAT year 2018 national arable land area and the year 2019 global herbaceous crop area were used to compare against our cropland area estimates 
+The recently published global Sentinel-based 2020 WorldCover 2020 
+To analyze the carbon emissions due to the forest loss, we estimated the average aboveground biomass carbon (AGC) density for each forest height and type strata using the harmonized global AGC map for the year 2010 
+We performed a LCLUC hotspot analysis to highlight regions that have the highest intensity of the 2000-2020 change. Hotspots were selected for the four thematic LCLUC categories that have the highest environmental and social value: deforestation (defined as net forest loss for 2000-2020); forest AGC reduction for 2000-2020 (estimated using forest AGC strata area for years 2000 and 2020 and the per-strata mean AGC); net cropland gain for 2003-2019; and built-up area expansion for 2000-2020. The regions were defined using the Icosahedral Snyder Equal Area aperture 3 Hexagon Geodesic Discrete Global Grid System (ISEA3H GDGGS) 
+
+## RESULTS ##
+
+
+## Global Land Cover and Land Use Dynamics ##
+Our global bitemporal maps portray changes in the Earth's land cover and land use during the first 20 years of the century. The results show the reduction of global tree cover extent and expansion of cropland and settlements. LCLU dynamics have distinct regional patterns reflecting the expansion and abandonment of intensive land management. Surface water dynamics have pronounced regional variation linked to hydropower projects and depletion of natural lakes in dry climates. The area of perennial snow and ice declined dramatically in a warming climate. The global and regional LCLUC areas were obtained directly from the maps, therefore regional area estimates may be biased due to map errors. Our global maps can facilitate the national and sub-national reporting provided that an additional statistical sampling approach and independent reference data collection are employed.
+
+## Forest Dynamics ##
+We define forest as land cover with tree canopy height ≥5 m, including natural and planted trees. In the year 2020, the global forest area was 40.2 million km 2 , which makes up 31% of the analyzed land area (land area within the Landsat ARD product extent excluding inland water). During the last two decades, 2000-2020, forest extent decreased by 1 million km 2 , or by 2.4% of the year 2000 forest area (Table 
+Asia and South America had the largest shares of global forest extent in 2020 (33 and 21%, respectively), while Europe and Australia's shares were the least (9 and 4%) (Table 
+Our forest height maps provide information on land cover dynamics that is relevant for carbon monitoring. Here, we separated forest extent into three strata by forest height: short (5-9 m), medium-height (10-19 m), and tall (≥20 m) forests. Most of the world's forests have canopy heights of 10 m and higher. Of the total year 2020 forest area, short forests made up 24% while medium-height and tall forests made up 38% each (Figures 2B, 3A and Table 
+Gross loss and gain dynamics affect short and medium-height forests more than tall forests. Of the global gross forest loss and gain area, only 20 and 12%, respectively, were found within tall forests. However, the ratio of gross forest gain to loss is lower for tall forests (0.34) than for short and medium-height forests (0.56  and 0.68, respectively). As a result, net forest loss area is highest for the tall forests strata (0.65 million km 2 , or 4.1% of the year 2000 forest area) (Table 
+Intensive gross forest loss and gain in short and mediumheight forests of Asia are nearly balanced and resulted in a small net area gain (Figure 
+Tall forests store the highest amount of carbon per unit of area 
+Reference sample data are the best tool for attribution of forest change proximity drivers 
+Using the reference sample data, we estimated that 39% (s.e. 5%) of gross forest gain was due to man-made restoration or plantation establishment, and the remainder to natural forest restoration. Of the mapped gross forest gain, 5% were located within year 2020 built-up lands. Asia had the largest share of gross forest gain in settlements. Because the thematic land cover maps were derived independently, a small overlap between land cover classes may be due to the inconsistencies in mixed pixel attribution (e.g., a mixed pixel on the border of cropland and forest may be attributed as both these classes). Given this limitation, findings from the land cover map overlays should be confirmed with reference sample data.
+
+## Cropland Dynamics ##
+Global cropland area increased by 11.5% between the 2000-2003 interval and the 2016-2019 interval (Table 
+The largest net cropland area increase was in Africa (by 0.5 million km 2 ), followed by Asia and South America. South America had the largest relative cropland area increase (45% of the year 2000 cropland area) followed by Africa (33% increase), while other continents increased their cropland area by less than 10%.
+During the last 20 years, the gross global cropland area expansion (2.3 million km 2 ) was twice higher than the cropland area reduction (1.1 million km 2 ). In Europe and North America, where crop expansion (mostly through pasture or long fallow conversion) and reduction (through abandonment or conversion to other land uses) are balanced, the resulting net cropland area change was small. In Africa and South America, cropland expansion is four times and six times (respectively) higher than reduction, driving net cropland area increase.
+In 2019, six countries, the USA, India, China, Russia, Brazil, and Australia, hosted more than half of the global cropland area (Figure 
+Our sample reference data 
+Global cropland reduction was primarily driven by crop abandonment or conversion into pastures (52% of cropland loss area, 
+
+## Built-Up Lands Expansion ##
+The map-based year 2020 global built-up lands area was 4.3 million km 2 , nearly half of which (47%) was in Asia (Figure 
+
+## Water Dynamics ##
+Globally, 3.5 million km 2 were mapped as persistent inland open water in 2020. Persistent water was defined as ≥50% annual water presence, excluding snow and ice cover. North America had the most inland surface water, representing 46% of all persistent water in 2020, followed by Asia with 27%. Africa, South America, and Europe each shared 8-9% of global persistent water area, and Australia had only 0.4%. Canada alone represents 34% of the global surface water, largely due to the water-saturated landscape of the Canadian Shield (Figure 
+Considering 1999-2020 interannual dynamics, North America had the most surface water, with 39% of the global total for all water dynamic classes and 51% of all permanent water. The surface water extent of North America is the most stable with permanent water composing 63% of its total water extent. Asia had the largest extent of dynamic water presence (44% global total) but only 22% of permanent water. The surface water extent in Australia was the most dynamic with 82% of its total water area being seasonally (44%) or interannually variable (39%) and only 18% permanent.
+On the national scale, Kazakhstan had the largest share of global surface water loss (14%) following by Uzbekistan (8%) due to the decline of the Aral and Caspian Seas  (Figure 
+
+## Perennial Snow and Ice Reduction ##
+Our global mapping extent excludes the largest Earth's ice sheets of Greenland and Antarctica. Within the analyzed land area (between 75 °N and 56 °S), the perennial snow and ice cover is mostly found within mountain regions in the form of mountain and valley glaciers and snowcaps, and as perennial snowfields in the Arctic. For mapping purposes, we define perennial snow and ice by the land cover during the hottest time of the year at the Landsat ARD pixel scale. A pixel was assigned to this thematic class if snow or ice cover was detected for the Landsat observation with the highest annual land surface temperature.
+Our bitemporal maps show that the area of perennial snow and ice within the analyzed part of the globe decreased by   11.5%. Such a high area loss, however, was not confirmed by our sample analysis, which quantifies the total loss of snow and ice cover by 6.6% (see section 3.2.5). The overestimation is related to the year 2000 snow and ice commission error. While our maps may not serve for direct estimation of ice and snow cover change, they can be used to indicate change hotspots. The highest rate of snow and ice decline was found in Africa (Table 
+
+## Map Accuracy and Product Intercomparison ##
+
+
+## Forest Height and Extent ##
+The year 2019 forest height model validation results are provided in 
+The sample-based validation revealed that the maps of forest extent 2000 and 2020 and the stable forest class extent have high accuracies, with both user's and producer's accuracies above 93% (Table 
+Our global map-based forest area estimates are very similar to the global forest area reported by FAO Forest Resource Assessment 2020 (FAO FRA) (FAO, 2020), with less than 1% difference for both year 2000 and 2020 total forest area (Figure 
+The ESA WorldCover 2020 overestimates our map-based forest area and FAO FRA forest area by 7 and 6%, respectively (Figure 
+We compared our new year 2000 forest extent map (based on the ≥5 m forest height threshold) with the forest extent map that was obtained by applying canopy cover thresholds on the tree canopy cover map for the year 2000 
+
+## Cropland Extent ##
+The year 2000-2003 and 2016-2019 interval cropland maps have high quality, with both user's and producer's accuracies above 86% (Table 
+The cropland area change map has higher uncertainty compared to the crop extent maps, specifically, for the cropland gain class, which has relatively low user's accuracy (Table 
+A comparison of the national 2016-2019 cropland area with the year 2018 arable land estimates published by the FAO showed good agreement (R 2 of 0.98) 
+We compared our global cropland area estimates with the FAO land cover statistics for the year 2019 that is derived from multiple data sources, including MODIS Land Cover product (MCD12Q1), Catholic University of Louvain Geomatics land cover (CCILC), and Copernicus Global Land Service land cover product (CGLS) 
+The cropland areas from our map and the ESA WorldCover 2020 product are very similar (Figure 
+
+## Built-Up Land Extent ##
+The built-up lands class is inherently heterogeneous at the Landsat pixel scale, which impedes the accurate class mapping and reference data collection. We defined built-up lands as Landsat pixels that contains man-made constructions or surfaces, like buildings and roads. This thematic class effectively outlines the extent of human settlements, by it is not sensitive to internal settlement structure when different land covers (impervious surfaces, soil, trees, grass) are intermixed within the Landsat pixel. The reference data for the validation exercise considered the presence of man-made surfaces, even when they did not occupy most of the pixel area. Consequently, the user's and producer's accuracies for stable built-up class and built-up expansion are relatively low (Table 
+Despite the low accuracies of the built-up class, the over-and underestimation rates are balanced, and the total map-based class area is within the 95% confidence interval of the sample-based estimate (Figure 
+Our year 2020 built-up lands area is nearly five times higher than the ESA WorldCover 2020 built-up class area due to definition differences. (Figure 
+
+## Water Dynamic ##
+Annual 2000 water percent has high and balanced user's and producer's accuracies of 92.2 and 92.8%, respectively, when thresholded at ≥50% water presence. However, mapping water dynamics is much more difficult as reflected by the accuracies of the dynamic classes (Table 
+The map-based areas of total area with open surface water within 1999-2018 (4.8 million km 2 ) are within 1% of the sample-based area estimates of 
+
+## Perennial Snow and Ice Extent ##
+The snow and ice extent and dynamic maps have high producer's accuracies (above 86%), which confirms that these maps correctly delineate the extent of glaciers and perennial snowfields (Table 
+The ESA WorldCover data shows the much larger area of persistent snow and ice than our map (Figure 
+
+## Global LCLUC Hotspots ##
+The global hotspots map (Figure 
+Most of the built-up expansion area found in South and Southeast Asia, with the largest hotspots in China, India, Turkey, and Indonesia (Figure 
+The global thematic maps provide insights into LCLU change trajectories. We show that net forest loss was partly driven by cropland and settlement expansion (sections 3.1.1 and 3.1.2). The reduction of perennial snow and ice (section 3.1.5) was likely caused by climate warming, which is in turn linked to carbon emissions from forest AGC reduction (section 3.1.1) and agriculture development (section 3.1.2). The changes in land management priorities resulted in cropland conversion to settlements (section 3.1.2) and flooding forests and croplands by water reservoirs.
+Global LCLUC data support the development, implementation, and monitoring of national land management policies and global initiatives towards climate change mitigation and protection of natural ecosystems. Here, we will outline just a few examples of possible applications of our bitemporal maps. Spatially explicit maps highlight regions where investments in sustainable development, nature protection, and mitigation of climate change effects are most needed. Our forest change data shows that 50% of the global forest AGC reduction is due to forest clearing in just three countries, Brazil, Indonesia, and the DRC, highlighting the need for national policies combating deforestation. The overlay of our forest and cropland change data with protected areas and primary forests highlights conservation priority targets 
+
+## Limitations of Thematic Maps ##
+It is well known that any thematic LCLU map derived from the satellite images has errors 
+Landsat clear-sky data availability is the primary limitation for land cover mapping. While some of the land cover themes can be directly mapped using a single-day satellite images (e.g., surface water), others may not be directly retrieved from the optical medium resolution data and instead are predicted using empirical modeling tools that requires information on land surface phenology (such as forest height or cropland extent). The incompleteness of the Landsat observation time series decreases map accuracy in regions with persistent cloud cover. For the perennial snow and ice mapping, the availability of Landsat observations during the warmest time of the year is critical, and the absence of such observations causes class overestimation. Short revisit interval is the key requirement for future satellite missions aimed at global LULC monitoring.
+A high proportion of mixed pixels at the Landsat spatial resolution is another important constraint for discrete land cover classes mapping in heterogeneous landscapes. Most LULC classes have higher map accuracy over large homogeneous areas compared to fragmented landscapes and class patch edges. Cropland maps are more accurate over industrial agriculture areas (North and South Americas) compared to fragmented rural landscapes (Europe, Asia, and Africa). Some classes, like settlements and infrastructure, mostly consist of mixed pixels and thus may be hard to map using per-pixel classifications. To overcome some of these issues, we implemented a CNN tool that considers spatial properties and distribution of objects for mapping built-up lands. Small features (fractional water, single trees, isolated houses, and narrow roads) cannot be consistently mapped globally using Landsat data and are usually omitted by global maps.
+The spectral similarity between different LCLU classes may preclude class discrimination. Lava fields, dark soils and vegetation, and high turbidity are typical reasons for surface water mapping errors. Croplands may be confused with intensively managed permanent pastures as both classes have similar spectral response and phenology, which caused crop commission in Australia, New Zealand, and parts of Western Europe. Rainfed dryland agriculture is not always spectrally separable from the surrounding natural land cover, which is the reason for crop omission in the Sahel, Central Asia, and the Middle East.
+Continuous structure variables, such as forests height, are the most challenging to map using medium resolution optical data. Our forest height product has issues related to GEDI data quality and Landsat data availability 
+Dynamic classes (LCLU class loss and gain) have lower accuracies compared to static maps. The changes in Landsat data frequency and sensor radiometric resolution are primary factors for temporal inconsistencies of the LCLU maps. The change data was filtered to reduce errors, which, in turn, may result in land cover change omission.
+Thematic maps provide valuable data for global LCLUC analysis. Direct map-based area estimations may be used to highlight trends and hotspots of land change and to compare areas of thematic classes and their change between regions. However, map-based estimates are not adequate for national and international reporting due to unknown spatial and temporal variability of map errors. A probability-based sample analysis is the recommended good practice approach for LCLU extent and change estimation 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. An Unexpectedly Large Count of Trees in the West African Sahara and Sahel
+   Authors: , , , , , 
+   Date: 2020
+
+2. Sampling Techniques. 3
+   Authors: 
+   Date: 1977
+
+3. Land Cover Statistics. Global, Regional and Country Trends
+   Authors: , 
+   Date: 2021. 2000-2019
+
+4. Classifying Drivers of Global forest Loss
+   Authors: , , , , 
+   Date: 2018
+
+5. Mapping the Land Surface for Global Atmosphere-Biosphere Models: Toward Continuous Distributions of Vegetation's Functional Properties
+   Authors: , , , , , 
+   Date: 1995
+
+6. Evolution of the Representation of Global Vegetation by Vegetation Continuous fields
+   Authors: , , , 
+   Date: 2021
+
+7. The Global Ecosystem Dynamics Investigation: High-Resolution Laser Ranging of the Earth's Forests and Topography
+   Authors: , , , , , 
+   Date: 2020
+
+8. A System of Integrated Agricultural Censuses and Surveys
+   Authors: 
+   Date: 2005
+
+9. Global Ecological Zones for FAO forest Reporting: 2010 Update
+   Authors: 
+   Date: 2012
+
+10. FAOSTAT
+   Authors: 
+   Date: 2020. 2021. December 17, 2021
+
+11. Water Body Extraction from Very High-Resolution Remote Sensing Imagery Using Deep U-Net and a Superpixel-Based Conditional Random Field Model
+   Authors: , , , , 
+   Date: 2019
+
+12. Impacts of Climate Change on Fire Activity and Fire Management in the Circumboreal forest
+   Authors: , , , 
+   Date: 2009
+
+13. Identifying and Quantifying Uncertainty and Spatial Disagreement in the Comparison of Global Land Cover for Different Applications
+   Authors: , , 
+   Date: 2008
+
+14. NDWI-A Normalized Difference Water index for Remote Sensing of Vegetation Liquid Water from Space
+   Authors: 
+   Date: 1996
+
+15. Natural Climate Solutions
+   Authors: , , , , , 
+   Date: 2017
+
+16. Global Percent Tree Cover at a Spatial Resolution of 500 Meters: First Results of the MODIS Vegetation Continuous Fields Algorithm
+   Authors: , , , , , 
+   Date: 2003
+
+17. Continuous fields of Land Cover for the Conterminous United States Using Landsat Data: First Results from the Web-Enabled Landsat Data (WELD) Project
+   Authors: , , , , , 
+   Date: 2011
+
+18. High-resolution Global Maps of 21st-century forest Cover Change
+   Authors: , , , , , 
+   Date: 2013
+
+19. Global Land Use Extent and Dispersion within Natural Land Cover Using Landsat Data
+   Authors: , , , , , 
+   Date: 2022
+
+20. Sampling with Unequal Probabilities and without Replacement
+   Authors: , 
+   Date: 1962
+
+21. Forest Loss in Protected Areas and Intact forest Landscapes: a Global Analysis
+   Authors: , , , , , 
+   Date: 2015
+
+22. Global Land Use/Land Cover with Sentinel 2 and Deep Learning
+   Authors: , , , , , 
+   Date: 2021
+
+23. An Operational Automated Mapping Algorithm for In-Season Estimation of Wheat Area for Punjab, Pakistan
+   Authors: , , , , , 
+   Date: 2021
+
+24. Mitigating the Effects of Omission Errors on Area and Area Change Estimates. Remote Sensing Environ
+   Authors: , , , , , 
+   Date: 2020
+
+25. Good Practices for Estimating Area and Assessing Accuracy of Land Change. Remote Sensing Environ
+   Authors: , , , , , 
+   Date: 2014
+
+26. OpenStreetMap contributors
+   Date: 2021. Accessed December 1, 2020
+
+27. Concerns about Reported Harvests in European Forests
+   Authors: , , , , , 
+   Date: 2021
+
+28. Mapping and Sampling to Characterize Global Inland Water Dynamics from 1999 to 2018 with Full Landsat Time-Series. Remote Sensing Environ
+   Authors: , , , , , 
+   Date: 2020
+
+29. Landsat Analysis Ready Data for Global Land Cover and Land Cover Change Mapping
+   Authors: , , , , , 
+   Date: 2020
+
+30. Mapping Global forest Canopy Height through Integration of GEDI and Landsat Data. Remote Sensing Environ
+   Authors: , , , , , 
+   Date: 2021
+
+31. Global Maps of Cropland Extent and Change Show Accelerated Cropland Expansion in the Twenty-First century
+   Authors: , , , , , 
+   Date: 2021b
+
+32. Annual Continuous fields of Woody Vegetation Structure in the Lower Mekong Region from
+   Authors: , , , , , 
+   Date: 2019. 2000-2017
+
+33. 
+
+34. U-net: Convolutional Networks for Biomedical Image Segmentation
+   Authors: , , , , , , 
+   Date: 2015. 2015
+
+35. Primitives as Building Blocks for Constructing Land Cover Maps
+   Authors: , , , , , 
+   Date: 2020
+
+36. Geodesic Discrete Global Grid Systems. Cartography Geogr
+   Authors: , , 
+   Date: 2003
+
+37. Improved Global Cropland Data as an Essential Ingredient for Food Security
+   Authors: , , , , , 
+   Date: 2015
+
+38. Climate-induced Boreal forest Change: Predictions versus Current Observations
+   Authors: , , , , , 
+   Date: 2007
+
+39. Massive Soybean Expansion in South America since 2000 and Implications for Conservation
+   Authors: , , , , , 
+   Date: 2021
+
+40. Harmonized Global Maps of above and Belowground Biomass Carbon Density in the Year 2010. Sci
+   Authors: , , , 
+   Date: 2020
+
+41. Estimating Area and Map Accuracy for Stratified Random Sampling when the Strata Are Different from the Map Classes
+   Authors: 
+   Date: 2014
+
+42. Improved Global Data for Land Applications: a Proposal for a New High Resolution Data Set
+   Authors: 
+   Date: 1992
+
+43. Red and Photographic Infrared Linear Combinations for Monitoring Vegetation
+   Authors: 
+   Date: 1979
+
+44. Ongoing Primary forest Loss in Brazil, Democratic Republic of the Congo, and Indonesia
+   Authors: , , , 
+   Date: 2018
+
+45. Aboveground Carbon Loss in Natural and Managed Tropical Forests from 2000 to 2012
+   Authors: , , , , , 
+   Date: 2015
+
+46. Congo Basin forest Loss Dominated by Increasing Smallholder Clearing. Sci. Adv. 4, eaat
+   Authors: , , , , , 
+   Date: 2018
+
+47. Types and Rates of forest Disturbance in Brazilian Legal Amazon, 2000-2013
+   Authors: , , , , , 
+   Date: 2017
+
+48. Opening the Archive: How Free Data Has Enabled the Science and Monitoring Promise of Landsat
+   Authors: , , , , 
+   Date: 2012
+
+49. Global Bare Ground Gain from 2000 to 2012 Using Landsat Imagery
+   Authors: , , , , , 
+   Date: 2017
+
+50. Rapid Expansion of Human Impact on Natural Land in South America since 1985
+   Authors: , , , , , 
+   Date: 2021
+
+51. ESA WorldCover 10 M 2020 V100
+   Authors: , , , , , 
+   Date: 2021
+

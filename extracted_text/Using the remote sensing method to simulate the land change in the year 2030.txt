@@ -1,0 +1,274 @@
+================================================================================
+TITLE: Turkish Journal of Agriculture -Food Science and Technology
+================================================================================
+
+AUTHORS:
+- Burcu Değerli
+- Mehmet Çetin
+
+ABSTRACT:
+This is study is based with the support of RS-GIS technology on the land use of Samsun Center, as well as the coastal districts of Ilkadım,Atakum,Bafra Plain, through the processing and interpretation of satellite images in the summer months of 2000,2010,2020. Spatial and temporal variability properties of LU/LC were determined using MLC algorithm, controlled classification approach. The predictive values of the LU/LC change that will occur in 2030, calculated with the MLP-ANN model based on Machine Learning algorithms and mapped with the QGIS 3.16 program. To determine the accuracy coefficient of the model, 2020 LU/LC simulation performed using the transition potential matrix of 2000 and 2010 LU/LC data. The results of simulation were compared the data of land use land cover with the 2020 to evaluate the accuracy of the simulation model. The model of MLP-ANN provided an accuracy of 72% based on the kappa fit index. According to MLP-ANN model 2030 results were an increase of 73.33 km² in built up areas, an increase of 56.89 km² in bare areas, and a decrease of 129.66 km² in green areas. It provided a reference basis for future Samsun urban to rural coastline LU planning and management and LU structure optimization.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land Use and Cover (LULC) change of the detection and forecast is an important factor for guiding planning, land resource, sustainable development management. Considering the phenological effect and seasonal adaptation, the estimation and detection of the same seasons for different years from LULC maps will greatly benefit 
+An urban area is a mosaic of different landscape features or land use (e.g., impermeable surfaces, green areas, residential areas, planting areas, etc.) and has different thermal properties 
+Since the 21st century, many studies show that land use change causes natural disasters, energy shortages, food shortages, economic crisis and other social and ecological problems 
+The aim of this research is to (i) understand the growth of urban model and its direction, (ii) identify the land usecover changes by determining the possible future growth scenario through simulations in Samsun, one of the most vulnerable and rapidly growing cities of Turkey. The findings obtained from this study are intended to be useful to regional planners by predicting land use in advance in planning the resident and abundant resources of nature in the region by the enhancing demands in the future.
+There are studies on land classification using the Remote Sensing method for Samsun. 
+When we look at international indexes 
+Looking at the literature review, many UA researchers have applied data mining models and different machine learning to predict future the independent UA data and LULC change using dependent. GIS commonly used the models of forecasting are as follows: SLEUTH (slope, land use, exclusion, urban extent, transportation, and hill shade), state and transition simulation model (STSM); land transformation model (LTM); ), CLUE (conversion of land use and its effects), ANN (artificial neural networkcellular automata (CA), Markov chain (MC), land change models (LCM), logistic regression (LR), spatially explicit landscape event simulation ( SELES), and GIS-based weights of evidence (WoE) approach. LU/ LC change for especially aim of predicting for the future was to provide to get useful information to the decision-makers, planning amanagemnet, government officials, and land resource planners, and for taking an effective plan for planning and management in protecting the environment of LU/LC 
+This study was evaluated in terms of (i) site selection being on both urban and rural scales in the direction of increasing urbanization, (ii) being based on current data sets (iii) including simulation as well as change analysis (iii) the program used (QGis) and the algorithm used (MLP-ANN) differs from other studies.
+
+## Material and Method ##
+Samsun province is coordinate of the 40° 50'-41° 51' N, 34° 25' and 37° 08' E. It has an area of approximately 9.725 km² and consists of 17 districts (Anonymous, Accessed on 05.06.2021). According to TUIK 2020 data, the population of Samsun is 1,356,079. Samsun is the 16th largest province of Turkey in terms of population, and it constitutes 17% of the population of the Black Sea Region and 1.6% of the population of Turkey (Anonymous, Retrieved 02.05.2021). It is located in the coastline of middle part of the Black Sea, between the deltas where the rivers of Kızılırmak and Yeşilırmak flow into the Black Sea. Neighbors of the province, in the north of which the Black Sea is located; Sinop in the west, Tokat and Amasya in the south, Ordu in the east, and Çorum in the southwest. Samsun shows three different features in terms of landforms. The first part is the mountainous part in the south; the part of second region is the plateaus between the mountainous part and the coastline, the third; coastal plains between the highlands and the Black Sea 
+Samsun has undergone radical changes in the last 50 years as a result of the settlement pressure concentrated on the coastal areas due to urbanization, population growth and socio-economic developments (Anonymous, Accessed: 06.06.2021). After 1998, the urban settlement area in Samsun increased by 96.32% and grew to approximately 32 km², and this growth generally developed towards agricultural areas. Since 1998, Atakum district has become a second city center 
+As the study area selection criteria, the population of Atakum district is 202,618 according to 2018 data; the population of the region of Ilkadim is 332,230, the population of the region of Canik is 97,564. It is seen that the population in the research area increased in the 28-year period between 1990 and 2018, but the increase occurred more in the western direction, which is called Atakum, unlike the 30-year period between 1960 and 1990. When we look at the 2020 TUIK data, the 3rd crowded district of Samsun has been Bafra District, which is located in the western countryside (Figure 
+The satellite used in the research are Landsat 8 OLI/TIRS (Collection 2, Level 2), Landsat 7 ETM+ (Collection 1, level 1), satellite data belonging to the summer months of 
+The detailed process of LULC modeling covers different stages such as data collection, preprocessing, LULC post-classification analysis, validation, classification, LULC change prediction, spatial variables modeling 
+In our study, algorithm of MLC was used to classify for images of satellite. The MLC technique was preferred so that it is the efficient and common classification matrils metha in the literature when the data/locations of correct training are created 
+Descriptive statistics properties (mean values for each spectral band and DN (digital number) variances) are determined with the help of spectral signatures. As described in 
+Controlled classification typically involves a series of steps (i) identification of training fields, (ii) spectral signature collection, and (iii) image classification 
+In this study, MLC-controlled classification was performed with the original satellite data bands (LANDSAT) that produced LU/LC maps for 2000, 2010 and 2020. Then, the LU/LC maps were evaluated using the cross-classification method. The LU/LC 2000-2020 variation was observed using classified map features. A table showing the area in square kilometers was created and the area (km²) for each LU/LC class and the percentage change in the data set were calculated. accuracy assessment is that the confusion matrix statistically obtained from field data (signature file) and the maps of LU/LC was used for 
+The classes within the study area were determined as (i) Water (River, Lake, Sea), (ii) Built up (Urban, Roads), (iii) Vegetation (Forest, Cropland, Delta, (iv) Open Land (Bare Soil) 
+the future urban LUC of prediction in the determined research area in Samsun, the study includes three main steps: (i) preparation of LULC from satellite images, (ii) preparation of data input for terrain change modeling (iii) modeling of present LULC forecast to calculate future LULC forecast accuracy. Land use and classified images from the years 2000 and 2010 were used to generate a transition potential matrix using the QGIS MOLUSCE tool. NDVI, Distance from river, Dem, Slope were used as additional data for the model. Digital Elevation Model (DEM) which is the map of Elevation made using obtained from the of ALOS PALSAR RTC. The DEM data are extracted for the map of Slope. River networks from DEM data SHP. It was mapped by calculating the Euclidean distance from the rivers using the file. After the transition potential matrix was created, the LULC forecast for the year 2020 was modeled. Finally, the LULC simulation of the year 2030 was obtained with the MLP-ANN model. Validation of the modle of MLP-ANN is important; therefore, validation between the Q GIS Molusce extension and the MLP-ANN model, the simulated LULC for 2020 and the 2020 LULC, was obtained and the kappa coefficient was obtained.
+For the prediction model of 2030, machine learning MLP-ANN algorithm was used in the field of UA and GIS. This model works such as the brain of human, where each neuron node carries information processing between them. nodes which are processing units are interconnected by or ANN with artificial neurons. output a d Input units make up the units processing of the ANN. ANN has a set of learning rules and a result follows. In the training phase of ANN, supervised and unsupervised the methods of learning are performed. In the first phase of ANN, data models will be recognized textually and visually. The wroks of ANN backwards and adjusts the connections network of weight until it produces a minimum of erroneous output 
+the model of structure of ANN defined three layers, these layers are the output, hidden and input layers. The ANN of flow working of for datasets of raster is shown in Figure 
+In the prediction model of 2030, LU/LC maps (raster) were used as the basic input data of 2000, 2010 and 2020 (for verification) of the present data. The supplement (auxiliary data) used in the 2030 forecast is shown in the Table 
+Dem is important for geoscientists as it gives quantitative information about the structure of the land 
+Calculated based on DEM, this factor shows the slope according to the Literature. It is accepted as one of the factors that have the greatest impact on urbanization 
+NDVI Index: Normalized Difference Vegetation Index (Formula 1).
+The NDVI index is the mot important data revealing the pressure of urbanization on green areas 
+In order to better demonstrate the transformation from green areas in the land cover to built-up areas, the NDVI index was used as the predictive model auxiliary data.
+Formula 1. NDVI Index on below Landsat 7 Landsat 8 B4-B3 B4+B3
+
+## B5-B4 B5+B4 ##
+Water has been a very important natural resource in the establishment and spread of settlements throughout history. Cities have been established and developed depending on the availability of suitable natural conditions and water resources. In this respect, there is a close relationship between the water resources on earth and the distribution of urban centers. It has been seen that urban areas have been established near fresh water sources such as rivers, lakes and underground waters and on the sea coast for a long time. The horizontal development of cities established near water resources varies depending on the geomorphology and characteristics of the coast and the area behind it 
+By selecting the first and second raster Dem data, a two-way raster comparison was made and all raster data loaded into MOLUSCE was checked. Pearson's correlation was used to compare the data in this study. The correlation coefficient between the data is given in Table 
+Artificial Neural Network (ANN) machine learning algorithm (Figure 
+The procedure c of validation compares the accuracy of the estimated LULC with the map of LULC obtained by processing Landsat raw data as a reference. The Kappa coefficient was used for validation purposes. It is calculated using the Kappa coefficient, see. Equation 2 
+
+## Results ##
+The changes of LU/LC to better understand, the results are divided into 4 parts: (i.) an accuracy assessment and composition of the LU/LC layers for the years 2000, 2010 2020; (ii.) change the periods of 2000-2010 analysis; (iii.) 2020 simulation with MLP-ANN method, results of comparison of simulation with 2020 data of LU/LC, determination of the method that provides the accuracy highest in the research (iv.) land cover forecast for 2030 using the method that gave the best results in the 2020 simulation. The terrain classes maps made using the maximum likelihood algorithm are given in Figure 
+Parameters of ccuracy such as manufacturer and accuracy user, overall accuracy classification and coefficient of kappa of classified the maps of LULC are given in Table 
+The forecast model of the accuracy of was examined by comparing the 2020 LULC forecast map with the 2020 LULC map classified. The 2020 LULC map was estimated using the 2000 and 2010 LULC maps. The overall accuracy obtained was 72% and the kappa coefficient was 0.65. This shows that the classified and predicted LULC maps of 2020 are in valid agreement with each other. Figure 
+After analyzing LU changes between the two periods, relevant co-factors were determined. The co-factors Slope and Distance from River maps obtained from the Dem data are shown in Figure 
+Each LU/LC category; the first step of the LCM includes rates of change, where land use change trends are evaluated in terms of losses and gains incurred. LULC losses and gains are analyzed for the period 2000-2010, 2010-2020. Tables 
+Between the years 2000-2010 in Samsun, coastal filling areas were realized especially in Ilkadım district and thus an urban growth was experienced in the northern direction. Batıpark, Doğupark city parks, etc., which were built in the filling area. coastal arrangements, parks and sports fields have been effective in bringing the district to the fore. Filling areas obtained by filling the shores are used as ports, piers, fishermen's shelters, marinas, parks, public institutions and organizations.
+The need for housing and social reinforcement areas, which emerged in parallel with the rapid population growth (annual increase rate of 64.5%) in the 2000-2010 period in Atakum district, caused the areal increases in the urban texture to create a more heterogeneous city pattern 
+Among the parks on both sides of Samsun, Batıpark is 1.000.000 m² and Doğupark is 250.000 m². With the completion of these projects, the green area per capita has reached 9.02 square meters.
+Transition Probabilities and Future Projection is an image layer of transition potential represents the probability of transition from one LU/LC class to each another for pixel 
+The variation of LULC classes between land classes over the 2000-2020 time periods is shown in Figure 
+According to the results obtained, the decrease in the water mass in the study area, which includes Samsun Ilkadım -Atakum -Bafra city centers and the coastline in the 20-year period between 2000 and 2020, shows the transformation into built-up areas by making the shoreline filling area. The decrease in green areas shows the transformation into bare soil areas. With the transformation into bare areas, construction begins. The filling of Samsun coastal areas dates back to the 1960s and accelerates after the 2000s 
+The north-eastern part of the region includes the city center. But over the years, it is seen that the settlement has spread in the direction the topography allows. It is seen that the settlement increases in the south-west direction along the coastline. This spread towards rural areas first became a bare area and then transformed into a residential area. The matrix represents that the need for accelerated construction was came primarily by the decline in scrub and soil bare, followed by farmland and sparse vegetation.
+According to the results of the algorithm, the ongoing change direction between 2000-2020 is also expected for 2030. The variation of LULC classes between land classes over the time periods 2020-2030 (10 years) is shown in Figure 
+
+## Discussions ##
+Due to the environmental problems caused by rapid and uncontrolled urbanization, studies to understand the land change and to predict possible changes in the future are increasing rapidly. datasets of remote sensing, available as open access, economical, up-to-date, and archival, are the most common systems used for spatial/temporal modeling and to determine LU/LC changes and urban growth. In this study, the LULC change between 2000, 2010, 2020 for the study area including Ilkadım, the central district where the development is most intense in Samsun, the largest port city of the Black Sea, Atakum along the coastline, and Bafra, the rural district with the most agricultural lands. were analyzed and a land change forecast for 2030 was made using the MLP-ANN (multi-layer perception artificial neural network) algorithm. The rate of land change for the years 2000, 2010, 2020, 2030 is shown in Table 
+For the accuracy of the study, precautions were taken during the data download and processing stages. For example, we preferred satellite images of the summer months and recent dates so that the land cover can be seen more clearly due to seasonal factors. During the download phase of the satellite images, we determined the cloud-free rate, and at the same time, we separated the cloud-free images during the preview phase of the images. In the land classification stage, since the spectral signatures of bare soil and built areas are similar to each other, the two classes are mixed. We re-checked this separation with the Jeffries-Matusita distance meter and repeated the samples with close values. However, there are many different factors that will affect the accuracy in estimation studies. For example, heterogeneity of land in urban areas affects the results. Due to technical errors, situations that may affect the accuracy of the model may occur at the classification stage. In addition, factors of human activities are not taken into account in the estimation of LULC data 
+Ozturk, (2015) chose Samsun Atakum district as the study area and compared the kappa accuracy coefficients of the results of the two estimation algorithms (CA-MC and MLP-MC) and stated that the most accurate method was MLP-MC Multi-Layer Perceptron-Markov Chain. can reach figures that will be considered valid and useful for all algorithms, but the preference of machine learning (ANN) in this study has added up-to-dateness to the study. As a result of the study and in the literature review, it is seen that the auxiliary data added to the estimation algorithm are important data that affect the land change, their numbers and accuracy affect the accuracy coefficient of the algorithm. For example, 
+
+## Conclusions ##
+Remote sensing methods are one of the most efficient methods used to analyze spatial and temporal terrain change. Machine learning for prediction is one of the methods that has emerged in recent years. In the current study, it was deemed appropriate to use the artificial neural network (MLP-ANN) algorithm. Considering the results, the conversion of fertile lands to bare land and built lands will create future ecological problems and unproductive areas that cannot meet the natural food requirement.
+Our study does not currently include estimates of the impact of land change on climate change, but as 
+
+## Suggestions ##
+Based on the results, ongoing planning criteria need to be reconsidered to prevent loss of farmland and other vegetation. It is strongly recommended that the population spread should be shaped according to the new plans. In the planning phase, multidisciplinary teams consisting of city planners, landscape architects, surveyors and architects should be formed and joint work should be done. Urbanization plans cannot be considered by ignoring the ecological characteristics and habitat of the area.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Spatio-temporal simulation and prediction of land-use change using conventional and machine learning models: a review
+   Authors: , , 
+   Date: 2019
+
+2. Spatial and decadal prediction of land use/land cover using multi-layer perceptron-neural network (MLP-NN) algorithm for a semi-arid region of Asir, Saudi Arabia
+   Authors: , , , , , 
+   Date: 2021
+
+3. Future land use land cover prediction with special emphasis on urbanization and wetlands
+   Authors: , 
+   Date: 2020
+
+4. Provincial and District Areas
+
+5. Samsun Integrated Coastal Areas Management and Planning Project-Spatial Strategy Plan
+
+6. Statistical indicators
+   Authors: 
+
+7. Land Use and Temporal Change in the Kızılırmak Delta (Samsun) (1987-2019)
+   Authors: , 
+   Date: 2019
+
+8. 2015-2019 STRATEGIC PLAN
+   Authors: 
+   Date: 2014
+
+9. Neural network approaches versus statistical methods in classification of multisource remote sensing data
+   Authors: , , , 
+   Date: 1990. July 10-14, 1989
+
+10. Principles of soil conservation and management
+   Authors: , 
+   Date: 2008
+
+11. Monitoring and modeling of spatio-temporal urban expansion and land-use/land-cover change using markov chain model: a case study in Siliguri Metropolitan area
+   Authors: , 
+   Date: 2020
+
+12. Prediction of land use/land cover change methods: A study
+   Authors: , , 
+   Date: 2017
+
+13. Interest in intermediate soft-classified maps in land change model validation: suitability versus transition potential
+   Authors: , , , 
+   Date: 2013
+
+14. A coefficient of agreement for nominal scales
+   Authors: 
+   Date: 1960
+
+15. Semi-automatic classification plugin documentation
+   Authors: 
+   Date: 2016
+
+16. Semi-Automatic Classification Plugin: A Python tool for the download and processing of remote sensing images in QGIS
+   Authors: 
+   Date: 2021
+
+17. Effects of rapid urbanization on vegetation cover in the metropolises of China over the last four decades
+   Authors: , , , , , 
+   Date: 2019
+
+18. Modeling land cover change based on an artificial neural network for a semiarid river basin in northeastern Brazil
+   Authors: , , , , 
+   Date: 2020
+
+19. Climate change meets urban environment
+   Authors: , , 
+   Date: 2012
+
+20. Detecting spatially non-stationery and scaledependent relationships between urban landscape fragmentation and related factors using Geographically Weighted Regression
+   Authors: , 
+   Date: 2011
+
+21. Using landsat data to determine land use/land cover changes in Samsun
+   Authors: , , 
+   Date: 2007
+
+22. Modelling land use/land cover changes prediction using multi-layer perceptron neural network (MLPNN): a case study in Makassar City
+   Authors: , , , 
+   Date: 2021
+
+23. Predicting land use/land cover changes using a CA-Markov model under two different scenarios
+   Authors: , , 
+   Date: 2018
+
+24. Modeling land use change using cellular automata and artificial neural network: the case of Chunati Wildlife Sanctuary
+   Authors: , , 
+   Date: 2018
+
+25. A fit-for-purpose algorithm for environmental monitoring based on maximum likelihood, support vector machine and random forest
+   Authors: 
+   Date: 2019
+
+26. Introductory digital image processing: a remote sensing perspective
+   Authors: 
+   Date: 1986
+
+27. Examination of the Coastal Fill Area of Samsun City in terms of Landscape Architecture and Suggestions
+   Authors: , 
+   Date: 2007. 2013
+
+28. An application of hierarchical kappatype statistics in the assessment of majority agreement among multiple observers
+   Authors: , 
+   Date: 1977
+
+29. Evaluation of the Bayesian and maximum likelihood approaches in analyzing structural equation models with small sample sizes
+   Authors: , 
+   Date: 2004
+
+30. Detection and prediction of land use/land cover change using spatiotemporal data fusion and the Cellular Automata-Markov model
+   Authors: , , , 
+   Date: 2019
+
+31. Modelling spatial drivers for LU/LC change prediction using hybrid machine learning methods in Javadi Hills
+   Authors: , 
+   Date: 2021
+
+32. Survey on Land Use/Land Cover (LU/LC) change analysis in remote sensing and GIS environment: Techniques and Challenges
+   Authors: , , 
+   Date: 2020
+
+33. Evaluation of vertical accuracy of open-source Digital Elevation Model (DEM)
+   Authors: , , , , , 
+   Date: 2013
+
+34. Urban growth simulation of Atakum (Samsun, Turkey) using cellular automata-Markov chain and multilayer perceptron-Markov chain models
+   Authors: 
+   Date: 2015
+
+35. Assessment of urban sprawl using Shannon's entropy and fractal analysis: a case study of Atakum, Ilkadim and Canik (Samsun, Turkey)
+   Authors: 
+   Date: 2017
+
+36. Determination of Temporal Changes in Urban Tissue Morphology in Samsun Districts by Fractal Analysis
+   Authors: , 
+   Date: 2020
+
+37. A review and analysis of backpropagation neural networks for classification of remotely-sensed multi-spectral imagery
+   Authors: , 
+   Date: 1995
+
+38. City and Water Resources
+   Authors: 
+   Date: 2015
+
+39. Predictive modelling of the spatial pattern of past and future forest cover changes in India
+   Authors: , , , , , 
+   Date: 2017
+
+40. On the possibility of using CORONA and Landsat data for evaluating and mapping longterm LULC: Case study of Iraqi Kurdistan
+   Authors: , , 
+   Date: 2018
+
+41. Mapping and monitoring temporal changes for coastline and coastal area by using aerial data images and digital photogrammetry: A case study from Samsun
+   Authors: 
+   Date: 2010
+
+42. Land-use and land-cover change: science/research plan
+   Authors: , , , , , 
+   Date: 1995
+
+43. Remote sensing-based quantification of the relationships between land use land cover changes and surface temperature over the Lower Himalayan Region
+   Authors: , , , , , 
+   Date: 2019
+
+44. Center for Earth Observation, Landsat
+   Authors: 
+   Date: 2020. 2020. 2020
+
+45. Our Black Sea coasts in terms of coastal law
+   Authors: 
+   Date: 1998
+
+46. Urban ecology and sustainability: The state-of-thescience and future directions
+   Authors: 
+   Date: 2014
+
+47. Analysis of Land Use Changes and Driving Forces in the Yanhe River Basin from 1980 to
+   Authors: , , , , , 
+   Date: 2021. 2015. 2021
+
+48. Land use/land cover change modeling and the prediction of subsequent changes in ecosystem service values in a coastal area of China, the Su-Xi-Chang Region
+   Authors: , , , , 
+   Date: 2017
+
+49. Shifting concepts of urban spatial heterogeneity and their implications for sustainability
+   Authors: , , 
+   Date: 2017
+

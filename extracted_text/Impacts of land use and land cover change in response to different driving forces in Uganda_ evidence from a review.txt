@@ -1,0 +1,309 @@
+================================================================================
+TITLE: Impacts of land use and land cover change in response to different driving forces in Uganda: evidence from a review
+================================================================================
+
+AUTHORS:
+- Justine Luwa
+- Yazidhi Bamutaze
+- Jackson-Gilbert Majaliwa Mwanjalolo
+- Daniel Waiswa
+- Petter Pilesjö
+- Espoir Mukengere
+
+ABSTRACT:
+This reviewe of Land Use Land Cover Change (LULCC) studies in Uganda indicate agriculture, forest, grassland, and woodland as the major land use and land cover types. Central Uganda is the most studied region (15%), followed by western ( 
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land use and land cover change (LULCC) can result from both intentional and non-intentional human activities or as a result of natural causes. However, human forces are now known to be altering the natural global landscape at unprecedented magnitudes and at different spatial-temporal scales 
+Many studies on LULCC change have been conducted in Uganda at different spatial and temporal scales for different reasons. For example, 
+Uganda is geared to attain a middle income economy by 2040 in the background of a young and rapidly growing population (growth rate of above 3.03% per annum). The total population was 34 million in 2014 and is projected to reach 80 million by 2040 
+
+## Country profile and framework of the review ##
+
+
+## Country profile ##
+Uganda is a landlocked country in East Africa located in Southeast Africa between 1° N and 4° N latitude and 30° E and 35° E longitude. The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands (UBOS, 2014). Uganda has equatorial type of climate with mean annual temperatures ranging from 16° C to 30° C (UBOS, 2014). Two rainy seasons are experienced in the central, western, and eastern regions from March to May and September to November. The northern region receives one long rainy season (April-October) in a year. Average annual amount of rainfall received in most parts of the country ranges between 750 mm and 2,100 mm (UBOS, 2014). Uganda's vegetation varies, with the south having tropical rain forest and savannah, while woodlands and semiarid vegetation dominate the other parts of the country. Uganda has one of the highest population growth rates (>3%) in the world and over 80% of its 34,6 million people (Table 
+
+## Framework within which the review was conducted ##
+The current study focuses on review of LULCC studies within Uganda and it was restricted to only electronically available literature. The review was conducted within the framework of the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) approach (Figure 
+
+## Results and discussion ##
+
+
+## The study locations in Uganda ##
+The review revealed that central Uganda is the most studied region with (15) of the case studies, followed by western region (14), eastern region (10), while northern region registered (3) case studies see (Figure 
+
+## Major land use and land cover types ##
+Generally, ten major land use and land cover types were addressed in the case studies. Of the different land use and land cover types, agriculture, forest, grassland, and woodland were the most commonly reported (Figure 
+13 
+29 
+
+## Publication trend ##
+In research, the number and growth rate of scientific publications are taken as important science productivity or output indicators 
+Statistically, each author is producing 1.2 publication every twenty years equivalent to 0.6 publication per decade. The mean of publication over the two decades is 3 while the median is also 3 with a variance of 4.6 document published and standard deviation of 2.1. The growth in number of publication fits an exponential curve with R 2 = 0.42. The pattern of growth of literature on LULCC in Uganda agrees with the scientifically documented pattern in studies of literature production over a long period of time 
+
+## Intensity of the studies ##
+The intensity of the studies (Figure 
+
+## Time frame of case studies ##
+It is noted from Figure 
+
+## Scales of the studies ##
+Uganda is divided into administrative units: the first is national, second is regional, third is district, forth is county, fifth is subcounty, sixth is parish, seventh is village. In addition to the administrative  
+On the other hand, all catchment scale studies have directly or indirectly focused on impacts of LULCC on water resources. For example, 
+The reasons for the national scale studies have been to: understand the spatial and temporal land use and carbon stock changes in Uganda 
+
+## Methods/data employed ##
+The review has indicated that the most used method/data was earth observation, particularly Landsat imagery (30 m resolution) employed in 95.2% of cases and then MODIS (250 m and 500 m) employed in 2.4% of cases, and transect walk plus interview in 2.4% of studies (Figure 
+
+## Land use and land cover change statistics in Uganda ##
+The review points that generally, agriculture and built up areas (from here on used interchangeably with settlements) have increased while forest and woodland have decreased over the period 
+The numbers of urban centers increased from 67 in 1991 to 259 in 2014, while urban population increased from 0.6 million people in 1969 to 6.4 million people in 2014 (UBOS, 2014). The implication is that the interaction of population growth and other drivers of LULC change is favoring agriculture and built-up/urban areas expansion at the expense of forest, woodlands, wetlands, as later discussed in Section. On local scales, 
+Note that the trends of forest cover and agriculture in northern Uganda are different from the national trend and those in other regions. First, only 9.5% of the reviewed LULCC studies were from northern Uganda. Fewer studies meant less representation of the actual situation on the ground. Northern Uganda also experienced armed conflict from 1986 to mid-2000s. During the period of the armed conflict, people were restricted to live in Internally Displaced Person's camp (IDP's). The people had little or no access to their land, and could therefore not exploit the resources therein. With return of peace in northern Uganda, IDP's life ended in the late 2008. There are now good roads linking all parts of the region to the grater markets within Uganda, and with South Sudan and DR. Congo. There has also been rapid expansion of commercial farming (by the so-called 'investors') in the northern districts of Nwoya and Amuru in the last ten years. The dynamics and the trajectory of LULCC in northern Uganda have thus changed. It is not surprising that the study of 
+
+## Reported major drivers of land use and land cover change ##
+Only 38% of the studies analyzed the drivers of LULCC. However, even articles that did not analyze LULCC drivers have alluded to some or all the drivers in (Figure 
+
+## Interactions between drivers of LULCC ##
+The review indicates that the major drivers of LULCC do not operate in isolation but rather combined. For example, the population of Uganda grew from 6.8 million people in 1960 to  
+In Uganda, agriculture is a key sector to the livelihoods of the rural population (79% of total population) and to the economy of Uganda (UBOS, 2018). Accordingly, in the year 2013/14 and 2015/16, agriculture employed 74.7% and 73% of total rural labor force respectively and the sector's contribution to total GDP increased from 23.7% in 2015/16 to 25% in 2016/17 
+As already discussed, the population of Uganda is projected to more than double by 2040. In simple term and based on analysis of drivers of LULCC, this can be translated as more pressure on the fixed land resources by 2040. The demographic trend and desire for socioeconomic growth in Uganda may continue to drive LULCC in the country. Similarly, 
+
+## Impacts of land use and land cover change ##
+LULCC is having a wide range of impacts on the environment and the people of Uganda at different spatial and temporal scales. For example, 
+
+## Summary of findings ##
+The review has indicated that that LULCC studies in Uganda have only been conducted for 20 years 1998-2018. The studies mostly used Landsat 30 m data and covered different spatial and temporal scales. Generally, agriculture and built up areas are increasing at the expense of forest, wetland and woodland. Although, the major drivers of LULCC interact with one another, population pressure stands out of all the key drivers of LULCC at both national and local scales. The magnitudes and impacts of LULCC differs in both space and time within Uganda. The historical to current trend of LULCC change and related impacts are likely to significantly increase in (2040); as the projected population is likely to double by 2040 in Uganda.
+
+## Limitations ##
+Our study mainly focused on electronically published articles available in Web of Science and Google scholar. Hard copies of documents in university libraries and ministerial achieves were not considered. This could have increased the number of materials selected and analyzed. However, most probably this would only have a positive impact on the sampling space, but not affecting the findings.
+
+## Disclosure statement ##
+No potential conflict of interest was reported by the authors.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Land use/cover change and perceived watershed status in Eastern Uganda
+   Authors: , , , 
+   Date: 2016
+
+2. Growth of literature on Bradford's law. Investigación Bibliotecológica: Archivonomía, Bibliotecológica e Información
+   Authors: 
+   Date: 2015
+
+3. Application of SWAT to assess the effects of land use change in the murchison bay catchment in Uganda
+   Authors: , , , , , 
+   Date: 2017
+
+4. Dynamics of land use/cover trends in Kanungu District, South-western Uganda
+   Authors: , , , 
+   Date: 2011
+
+5. Implication of Human Activities on Land Use Land Cover Dynamics in Kagera Catchment
+   Authors: 
+   Date: 2013
+
+6. Economics of land degradation in mid-hills of mt. elgon watershed, eastern uganda
+   Authors: , 
+   Date: 2010. August
+
+7. Land use and cover change in pastora; systems of Uganda: Implications on livestock management under drought induced pasture
+   Authors: , , , 
+   Date: 2014. 1986
+
+8. Drivers of land use change and household determinants of sustainability in smallholder farming systems of Eastern Uganda
+   Authors: , , , , , 
+   Date: 2010
+
+9. Landuse/cover change trend in Soroti District Eastern Uganda
+   Authors: , 
+   Date: 2010
+
+10. Spatio-temporal dynamics of forage and land cover changes in Karamoja sub-region, Uganda. Pastoralism: Research, Policy and Practice
+   Authors: , , , , , 
+   Date: 2014
+
+11. Analysing and Modelling Urban Land Cover Change for Run-Off Modelling in Kampala
+   Authors: 
+   Date: 2013
+
+12. Analysis of the impacts of armed conflict on the Eastern Afromontane forest region on the South Sudan -Uganda border using multitemporal Landsat imagery
+   Authors: , , , , 
+   Date: 2012
+
+13. Dwindling resources and fragmentation of landscapes around parks: Wetlands and forest patches around Kibale National Park
+   Authors: , 
+   Date: 2009
+
+14. Landscape change around Kibale National Park, Uganda: Iimpacts on land cover, land use and livelihoods
+   Authors: 
+   Date: 2013
+
+15. Spatiotemporal analysis of encroachment on wetlands: A case of Nakivubo wetland in Kampala
+   Authors: , 
+   Date: 2016
+
+16. Topographic and spectral data resolve land cover misclassification to distinguish and monitor wetlands in western Uganda
+   Authors: , , , 
+   Date: 2014. 2014 2014
+
+17. Deforestation and biomass fuel dynamics in Uganda
+   Authors: , 
+   Date: 2017
+
+18. Looking for Medium-term Conservation and Development Impacts of Community Management Agreements in Uganda's Rwenzori Mountains National Park
+   Authors: , , , , 
+   Date: 2018. April
+
+19. Land use change, fuel use and respiratory health in Uganda
+   Authors: , 
+   Date: 2014
+
+20. Land cover change assessment using decision trees, support vector machines and maximum likelihood classification algorithms
+   Authors: , 
+   Date: 2010. 2010
+
+21. Assessing land use and land cover changes in the Murchison Bay catchment of Lake Victoria Basin in Uganda
+   Authors: , , , , 
+   Date: 2018
+
+22. Land use/ cover change patterns in highland ecosystems of Lake Bunyonyi catchment in western Uganda
+   Authors: , , , , , , , 
+   Date: 2017
+
+23. The rate of growth in scientific publication and the decline in coverage provided by science citation
+   Authors: , 
+   Date: 2010. 2010
+
+24. An examination of historical and future land use changes in Uganda using change detection methods and agent-based modelling
+   Authors: , , 
+   Date: 2016
+
+25. Royal Swedish Academy of Sciences Mitigating the Relationship between Population Growth and Land Degradation: Land-Use Change and Farm Management in Southwestern Uganda
+   Authors: , , 
+   Date: 1998
+
+26. A comparative assessment of land cover dynamics of three protected forest areas in tropical eastern Africa
+   Authors: , 
+   Date: 2010
+
+27. The Republic of Uganda Ministry of agriculture, animal industries and fisherise: Performance review report. Government of Uganda
+   Authors: 
+   Date: 2017
+
+28. Land use changes, impacts and options for sustaining productivity and livelihoods in the basin of lake Victoria
+   Authors: , , , , 
+   Date: 2010
+
+29. The effect of land cover change on soil properties around Kibale National Park in South Western Uganda
+   Authors: , , , , , , , , , , , , , , , 
+   Date: 2009. 2010. 2010. May2010
+
+30. The effects of land use cover change on rangeland ecosystems in Kakooge sub-county Nakasongola district
+   Authors: 
+   Date: 2014
+
+31. State State of of Uganda ' S Forestry. Government of Uganda, Kampala
+   Authors: 
+   Date: 2015. 2016
+
+32. Land use changes on the slopes of Mount Elgon and the implications for the occurrence of landslides
+   Authors: , , 
+   Date: 2012
+
+33. Land tenure and soil conservation practices on the slopes of Mt Elgon National Land tenure and soil conservation practices on the slopes of Mt Elgon National Park, Eastern Uganda
+   Authors: , 
+   Date: 2013. October
+
+34. The effect of land use on carbon stocks and implications for climate variability on the slopes of Mount Elgon, Eastern Uganda
+   Authors: , , , 
+   Date: 2015
+
+35. Assessing the extent of historical, curreent, and future land use systems in Uganda
+   Authors: , , , , , , , , , 
+   Date: 2018
+
+36. Expansion of commercial sugarcane cultivation among smallholder farmers in Uganda: Implications for household food security
+   Authors: , , , , , , 
+   Date: 2018
+
+37. Land-use and cover changes
+   Authors: , 
+   Date: 2008. 1988-2002. October
+
+38. Spatial and temporal land use and carbon stock changes in Uganda : Implications for a future REDD strategy. Forest Policy and Economics-01253 No. of pages
+   Authors: , , 
+   Date: 2011
+
+39. Agricultural land use change in Karamoja Region
+   Authors: , , 
+   Date: 2017
+
+40. Land use changes in Aswa Basin-Northern Uganda: Opportunities and constraints to water resources management
+   Authors: 
+   Date: 2010
+
+41. Review of studies on land use and land cover change in Nepal
+   Authors: , , , , , 
+   Date: 2016
+
+42. Applying a systematic review to land use land cover change in Northern Upland Vietnam: The missing case of the borderlands
+   Authors: , , 
+   Date: 2015
+
+43. Population pressure, land tenure, and tree resource management in Uganda
+   Authors: , 
+   Date: 2000
+
+44. Complex contexts and dynamic drivers: Understanding four decades of forest loss and recovery in an East African protected area
+   Authors: , , , 
+   Date: 2013
+
+45. Detecting forest cover and ecosystem service change using integrated approach of remotely sensed derived indices in the Central Districts of Uganda
+   Authors: , , 
+   Date: 2017
+
+46. Changing Trends of Natural Resources Degradation in Kagera Basin: Case Study of Kagera Sub-Basin
+   Authors: , , 
+   Date: 2012. 2012
+
+47. Change : Global integrated study towards an
+   Authors: , , 
+   Date: 2009
+
+48. Dynamics of forest cover conversion in and around Bwindi impenetrable forest, Southwestern Uganda
+   Authors: , , , , , , , 
+   Date: 2011
+
+49. Three decades of forest cover change in Uganda's Northern Albertine Rift Landscape
+   Authors: , , , 
+   Date: 2015
+
+50. Implications of Land Governance on Natural Resources Management: The Case of Land-Use and Forest-Cover Change in Kibaale District
+   Authors: 
+   Date: 2014. 2018. 2019. 2013
+
+51. Uganda Population Dynamics
+   Date: 2017. March. 2017. March
+
+52. The strengthening the reporting of observational studies in epidemiology (STROBE) statement: Guidelines for reporting observational studies
+   Authors: , , , , , , 
+   Date: 2007
+
+53. Geospatial assessment of uncontrolled urbanization and its deviation from an intelligent city: A case study of Fort Portal, Uganda
+   Authors: , 
+   Date: 2017
+
+54. The Political Ecology of unplanned land use changes in Kampala City, Uganda. A case of selected parishes of Kawempe Division
+   Authors: , , , , , 
+   Date: 2014. 2017
+
+55. Evidence of climate change impact on stream low flow from the tropical mountain rainforest watershed in Hainan Island
+   Authors: , , , , , 
+   Date: 2017
+

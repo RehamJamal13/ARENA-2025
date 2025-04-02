@@ -1,0 +1,466 @@
+================================================================================
+TITLE: Land use and land cover change detection and prediction in Bhutan's high altitude city of Thimphu, using cellular automata and Markov chain
+================================================================================
+
+AUTHORS:
+- Sonam Wang
+- Lamchin Munkhnasan
+- Woo-Kyun Lee
+
+ABSTRACT:
+Rapid urbanization is changing landscapes often resulting in the degradation of ecosystem services and quality of urban life. Remote sensing and GIS tools can provide valuable information to deepen our understanding of the dynamics of these changes to better plan and build sustainable cities for the future. Using remote sensing data, socio-economic data, and field observations, we simulated spatiotemporal dynamics of land use and land cover changes in the city of Thimphu. Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050. The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground. On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%). Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes. These changes have fragmentated forest cover, increased soil/gully erosion, surface runoff, and storm induced floods of storm and sanitation drains, thereby impinging on the overall quality of life in the city. Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city. These findings beg for an urgent need to implement effective planning specially to protect the existing forest and water resources from further degradation.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Global cities, which are the engines of economic development 
+These studies have generated highly credible information on the state of land use changes and their drivers, which can inform better decision making for sustainable planning of cities 
+The Kingdom of Bhutan is located in the rugged landscape of the eastern Himalayas between 88 ˚54' and 92 ˚10 
+The impact of LULC changes are more serious in the cities than other areas mainly due to pressures from population, developmental programs, and rate of urbanization 
+
+## Methodology ##
+
+
+## Study area ##
+Thimphu city, the capital of Bhutan is the crucible of socio-economic, political, and environmental development in the country. Administratively, the city is composed of central core, southern extension, and northern extension. Geographically, the city is located at 27 ˚29'N latitude and 89 ˚36'E longitude between an elevation of about 2347-2438 m amsl 
+With over 15.75% (114,551) of Bhutan's entire population (727,145) living in Thimphu, it is the most populated of all the cities of Bhutan 
+
+## Land policy and regime changes ##
+Historically, Thimphu city started in 1961 with some 25 shops or so which currently falls within the central core of the city. Prior to this, the area was occupied by terraced agricultural fields and some 13 villages. Planned development for Thimphu started in 1985 with the establishment of National Urban Development Commission. Since then, two major policy interventions have expediated the growth of the city thereby changing its LULC: Source: (Source: http://glovis.usgs.gov ) (i) Approval of city extension : Government approval of the comprehensive structural plan for Thimphu city in 2002, approved the expansion of the core area towards the south and north 
+
+## Data acquisitions and preparation ##
+Methodological framework of the simulation has been illustrated in Fig. 
+These data sets were imported into TerrSet satellite image processing software to create a false color composite. Other geospatial data collected from Thimphu city office include, digital elevation model (DEM 30 m resolution), administrative boundaries, and infrastructure data such as road networks, drainage networks, water bodies, buildings, and other important establishments in the city. Additionally, field consultations with select communities, experts, and planners from the city office The years 2002 and 2018 were selected to correspond to major sociopolitical and policy changes in Bhutan that has significant bearings on LULC in the city. Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig. 
+
+## Pre-processing and classification ##
+Pre-processing is an important step to establish direct affiliation between the acquired data and biophysical phenomenon. Remotely sensed data are susceptible to radiance, geometric, and atmospheric distortions due to acquisition systems and platform movements. One major function of pre-processing is to remove such distortions especially when optical sensor data is used. Atmospheric correction involves removal of haze primarily originating from water vapor, fog, dust, smoke, or other particles in the atmosphere 
+Visual interpretation was also used to resolve any issues related to mixed pixels and enhance classification accuracy.
+The outputs were then subjected to supervised classification using the Maximum Likelihood Classifier (MLC). MLC classifier was used as it is a robust and popular algorithm increasingly used for classification of LULC 
+
+## Assessment of classification accuracy ##
+Assessment of classification accuracy is a prerequisite for classification data to credibly detect changes 
+Where, i is the class number, n is the total number of classified pixels that are being compared to actual data, n ii is the number of pixels belonging to the actual data class i , that were classified with a class i, C i is the total number of classified pixels belonging to class i and G i is the total number of actual data pixels belonging to class i .
+In order to deepen the understanding of major land uses and drivers of their changes and socio-environmental implications, the principal investigator carried out field visits in 2019. During the field visits, field observations and consultations were held with the stakeholders including communities, experts and local officials to collect biophysical and climatic data. Discussions were also held to acquire information about urban expansion, evolution of land use, possible reasons for the observed changes and resident perception on socio-environmental resilience. In addition, records of major incidents such as disasters (fire, floods), plantation efforts, policy changes, etc. were also noted. These information and firsthand experience from the field were used to further validate the classified images.
+
+## Land use and land cover change analysis ##
+CA-Markov is a robust model that has outperformed other methods for simulating and predicting LULC types 
+
+## Markov chain analysis ##
+The Markov model simulated changes in LULC from one time to another in order to predict future change. Markov chain analysis built in module at TerrSet was used to generate transition probability matrix (where the probabilities of transition represent the probability that a pixel of a given class will move to some other cell class in the next time period) and transition area matrix (which represents the total area (in cells) expected to change from one LULC class to another over the prescribed number of time units). The transition probability matrix is expressed in a text file that records the likelihood of moving each land use and land cover category to some other category, while the transition area matrix, also represented in a text file records the number of pixels required to transition from one land use and land cover class to another over the specified number of time unit ( Fig. 
+The Markovian chain analysis is represented as, S(t,t + 1) = Pij × S(t) , where, S(t) is the system status at time of t, S(t + 1) is the system status at time t + 1; Pij is the transition probability matrix in a state, which is calculated using the following formula 
+where, 𝜌 is the Markov probability matrix, and 𝜌 𝑖𝑗 stands for the probability of converting from current state i to another state j in next time period. Low transition will have a probability near (0) and high transition probability near (1). The 2002 LULC image of the Thimphu city was used as the base ( t 1 ) image while 2018 LULC map as the later ( t 2 ) image in this model to obtain the transition matrix between 2002 and 2018. In this study, ArcGIS cross-tabulation functionality was used to generate transitional area matrices by multiplying each column in the transition probability matrix by the number of pixels of corresponding class in the later image.
+
+## Transitional suitability maps ##
+Multi-Criteria Evaluation (MCE) was used to build transition suitability maps which show the probability of a pixel to change to another class or remain unchanged. MCE integrates various driving factors to derive a single index of evaluation 
+
+## The CA-Markov model ##
+The transition probability matrix and transition area matrix from 2002 to 2018 calculated in Markov chain analysis. The area of each land class to be converted to another LULC classes was estimated based on the transition probabilities. These areas were divided by the total number of iterations (16 years) for the cellular automation to generate the areas to be converted per iteration. We applied a contiguity filter of 5 × 5 pixels to define the effect of neighboring cells on the central cell. The future assignment to a specific LULC class for each pixel was based on how much the pixel is suitable for that LULC class and how close the pixel is to other pixels of the same class. The new policy and political developments after 2001 and 2008 were assumed as in simulating future scenarios. The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape. Assuming that these probabilities 
+
+## Results and discussion ##
+
+
+## Classification accuracy ##
+Model validation is an important precondition for studies that attempt to predict LULC changes 
+
+## Analysis of land use and land cover types ##
+LULC analysis allows us to understand biophysical changes such as: loss of productive ecosystems/biodiversity, deterioration of environmental quality, loss of forest and agricultural lands what are important information for planning sustainable cities 
+Our study applied latest remote sensing and GIS techniques to quantify LULC in Thimphu city. Using the outputs from remote sensing imagery, field surveys, and topped expert knowledge of the study area, five LULC types were classified; water body, bare ground, built-up area, forest, and agriculture ( Fig. 
+These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008. The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.
+Studies by 
+
+## LULC transition between years ##
+To deepen our understanding of the evolving nature of the LULC types in the city, we created confusion matrices for changes in 2002 and 2018 ( Table 
+The potential for these trends to continue remain high with transition probabilities of 0.83 for bare ground and 0.58 for forest to transition to built-up area. Although small, agriculture land shows a significant probability to transition to built-up area which has been the trend in many cities 
+The findings indicate that rapid development of urban built will lead to sharp declines in forest and agriculture and increase in urban population. These developments could jeopardize ecosystem health, human well-being, and food security 
+
+## Prediction of land use land cover change ##
+Results of LULC prediction using CA-Markov analysis are shown in Table 
+
+## Conclusion ##
+This study represents a first ever attempt to simulate the process of land use dynamics and the effects of physical, demographic, and socioeconomic driving forces on LULC in Bhutan's capital city of Thimphu using remote sensing and GIS technology. Results clearly confirm significant changes in LULC from the start of expansion to current area in 2002 to 2018. Significant increase in built-up areas were associated with parallel loss of important land cover types such as forest and agriculture. Significant changes in Thimphu's landscapes are correlated with the government's decision to expand the city northwards and southwards. This expansion received a boost after the institution of constitutional democracy in 2008 which brought in expediated development in the city. These two policy events topped with rapid population growth mainly from rural urban migration for better opportunities and development activities expediated the LULC changes in the city. Combined these factors have reduced and fragmented forest cover which will degrade ecosystem services that are vital for maintaining the quality of human wellbeing in the city. Reports from the city residents also confirm that the impacts of these changes especially in the face of climate change are disproportionately felt by the most vulnerable groups such as low income, women, and children. The results of prediction for 2050 also did not bear well for Thimphu city, with forest cover diminishing to a mere 4.28km 2 (16.32%) which are also highly fragmented. Loss of forest cover will degrade important ecological services and increase vulnerability of the city to landslides, gulley erosion, drying of water sources, worsened air pollution, and loss of important biodiversity. More studies are recommended to especially monitor the impact of these changes and identify adaptive and mitigative interventions for a more sustainable city.
+Study also show that remote sensing and GIS are effective tools for simulating urban changes, which are useful for guiding urban planning and management. The findings of this study are useful to policy makers, urban planners, and citizens to adopt better environmental management practices including adaptation and mitigation strategies for the city and its surrounding areas. The study recommend an ecosystem based adaptation policies and other legal frameworks should be developed and practically implemented to protect the current forest cover as well as rehabilitate and improve the existing green spaces in and around the urban centers. Such efforts must focus on planting fruit trees in urban spaces such as parking lots, between buildings, back yards, and along roads. These will significantly, increase water retention, protect soil from ero-sion, host biodiversity, as well as regulate temperature and pollution. Current capacities of storm drains and water reservoirs must also be enhanced. Informal settlements must either be formalized by providing all basic facilities or moved to formal settlements. We also caution the city to restrain from land filling flood plains and use the claimed land for building infrastructure as these areas are not only prone to flooding especially global lake outburst floods but also important for biodiversity. We encourage the city planners and experts to use the findings and recommendations from our study to avert irreversible changes to its LULC.
+The accuracy of the classification results was not perfect due to the hilly nature of the study area, where ground changes in altitude can impact the image pixel value. However, it is significant and as such study findings and recommendations can be applied to other cities in Bhutan and other mountainous countries which share similar ecological and socioeconomic characteristics.
+
+## Declaration of Competing Interests ##
+Authors have no competing interests.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Urban and Peri-urban agriculture in developing countries studied using remote sensing and in situ methods
+   Authors: 
+   Date: 2010
+
+2. Predicting land cover using GIS, Bayesian and evolutionary algorithm methods
+   Authors: , 
+   Date: 2009
+
+3. Application of geo-information techniques in land use and land cover change analysis in a peri-urban district of Ghana
+   Authors: , , , 
+   Date: 2015
+
+4. Analysis and modelling of urban land cover change in Setubal and sesimbra
+   Authors: , 
+   Date: 2010
+
+5. Biodiversity hotspot of Bhutan and its sustainability
+   Authors: , 
+   Date: 2016
+
+6. Can engaging local people' interest reduce forest degradation in Central Vietnam?
+   Authors: , , , , 
+   Date: 2009
+
+7. Forest cover changes in Bhutan: Revisiting the forest transition
+   Authors: , , 
+   Date: 2016
+
+8. Land cover mapping of large areas from satellites: status and research priorities
+   Authors: 
+   Date: 2000
+
+9. Assessing the Accuracy of Remotely Sensed Data: Principles and Practices
+   Authors: , 
+   Date: 2009
+
+10. A review of assessing the accuracy of classifications of remotely sensed data
+   Authors: 
+   Date: 1991
+
+11. Digital change detection methods in ecosystem monitoring: a review
+   Authors: , , , 
+   Date: 2004
+
+12. Land use dynamics and Peri-urban growth characteristics reflections on master plan and urban suitability from a sprawling North Indian city
+   Authors: 
+   Date: 2012
+
+13. IDRISI Guide to GIS and Image Processing Accessed in IDRISI Selva 17
+   Authors: 
+   Date: 2009
+
+14. Using GIS for time series analysis of the dead sea from remotely sensing dat
+   Authors: , 
+   Date: 2014
+
+15. 
+   Authors: 
+   Date: 2017. 2016
+
+16. Land Cover Change and Its Relationship with Climate Change in Koshi River Basin of Central Himalaya. Institute of Geographic Sciences and Natural Resources
+   Authors: 
+   Date: 2012
+
+17. Decadal land cover change dynamics in Bhutan
+   Authors: , , , , , , 
+   Date: 2015
+
+18. Land use and land cover change effect on surface temperature over Eastern India
+   Authors: , , , , 
+   Date: 2019
+
+19. Modelling urban land use change by the integration of cellular automation and markov model
+   Authors: , , , , , 
+   Date: 2011
+
+20. Land use and land cover change in the Bale Mountain eco-region of Ethiopia during 1985 to
+   Authors: , , 
+   Date: 2016. 2015
+
+21. Scenario simulation and the predition of land use and land cover change in Beijin
+   Authors: , , 
+   Date: 2015
+
+22. High--resolution global maps of 21st century forest cover change
+   Authors: , , , , , , , , , , 
+   Date: 2013
+
+23. Examination of land use/land cover changes, urban growth dynamics, and environmental sustainability in Chittagong city
+   Authors: , 
+   Date: 2015
+
+24. Land use land cover changes in detection of water quality: A study based on remote sensing and multivariate statistics
+   Authors: 
+   Date: 2017
+
+25. Detection and prediction of land use change in Beijing based on remote sensing and GIS. The international archives of the photogrammetry
+   Authors: , , , , 
+   Date: 2008
+
+26. GIS and logit regression model applications in land use and land cover change and distribution in Usangu catchment
+   Authors: 
+   Date: 2015
+
+27. Climate change and the urban poor: Risk and Resilience in 15 of the World's most Vulnerable Cities
+   Authors: 
+   Date: 2009
+
+28. Rapid urban growth in the Kathmandu valley, Nepal: monitoring land use land cover dynamics of a Himalayan city with landsat imageries
+   Authors: , , 
+   Date: 2017
+
+29. Land use change prediction in Dhaka city using GIS aided Markov chain Modelling
+   Authors: , 
+   Date: 2011
+
+30. Impact of urbanization and land-use change on climate
+   Authors: , 
+   Date: 2003
+
+31. Rural sustainability under threat in Zimbabwe -simulation of future land use/cover changes in the Bidura district based on the Markov-cellular automate model
+   Authors: , , , 
+   Date: 2009
+
+32. Land-cover classification and analysis of change using machine-learning classifiers and multi-temporal remote sensing imagery
+   Authors: , , 
+   Date: 2017
+
+33. Automatic detection of spatiotemporal urban expansion patterns by using OSM and landsat data in Kathmandu
+   Authors: , , , 
+   Date: 2019
+
+34. CA-Markov analysis of constrained coastal urban growth modelling
+   Authors: , , , 
+   Date: 2013
+
+35. New directions: can a "blue sky " return to Indian megacities?
+   Authors: , , , , , , 
+   Date: 2013
+
+36. Modelling and monitoring land-cover change processes in tropical regions
+   Authors: 
+   Date: 1997
+
+37. Are agricultural land use models able to predict changes in land use intensity?
+   Authors: , , 
+   Date: 2000
+
+38. Examining urban impervious surface distribution and its dynamic change in Hangzhou Metropolis
+   Authors: , , 
+   Date: 2016
+
+39. Remote Sensing and Image Interpretation
+   Authors: , 
+   Date: 1999
+
+40. Monitoring and predicting land use and land cove changes using remote sensing and GIS techniques -A case study of a hilly area
+   Authors: , , 
+   Date: 2018
+
+41. Change detection techniques
+   Authors: , , , 
+   Date: 2004
+
+42. An Accuracy Assessment of 1992 Landsat-MSS Derived Land Cover for the Upper San Pedro Watershed
+   Authors: , 
+   Date: 2002
+
+43. Haze detection and removal in remotely sensed multispectral imagery
+   Authors: , , , 
+   Date: 2014
+
+44. Remote sensing and GIS application in change detection study in urban zone using multi temporal satellite
+   Authors: , , , 
+   Date: 2013. 2010
+
+45. Ecosystems and Human Well-Being: Opportunities and Challenges for Business and Industry
+   Authors: 
+   Date: 2005
+
+46. Land use/land cover changes and their environmental implications in the Gelana sub-watershed of northern highlands of Ethiopia
+   Authors: , 
+   Date: 2017
+
+47. Land use and land cover change detection using geospatial techniques in the Sikkim Himalaya
+   Authors: , , 
+   Date: 2019
+
+48. The spatio-temporal pattern of urban green spaces in Southern Ethiopia
+   Authors: , , 
+   Date: 2018
+
+49. Thimphu City Development Strategy. Ministry of Works and Human Settlement (MoWHS)
+   Authors: 
+   Date: 2008
+
+50. State of the basin report 2010. Mekong River Commission
+   Authors: , , 
+   Date: 2010
+
+51. Markov model of land-use change dynamics in the Niagara Region
+   Authors: , 
+   Date: 1994
+
+52. Urban Planning in Thimphu -its contribution to Development in Neither Tale (s) nor Poems but Some Concept Papers
+   Authors: 
+   Date: 2020
+
+53. Population and Housing Census of Bhutan
+   Authors: 
+   Date: 2017. 2017
+
+54. Bhutan Land Cover Assessment 2010. Thimphu: National Soil and Services Centre and Policy and Planning Division, Ministry of Agriculture and Forests
+   Authors: , 
+   Date: 2011
+
+55. Spatial autocorrelation in multi--scale land use models
+   Authors: , , 
+   Date: 2003
+
+56. Urbanization and agricultural land loss in India.: comparing satellite estimates with census data
+   Authors: , 
+   Date: 2015
+
+57. The influence of land-use change and landscape dynamics on the climate system: relevance to climate-change policy beyond the radiative effect of greenhouse gases
+   Authors: , , , , , , , 
+   Date: 2002
+
+58. Assessing spatial dynamics of urban growth using an integrated land use model. Application in Santiago metropolitian area. Land Use Pol
+   Authors: , , 
+   Date: 2014
+
+59. Detection of land use/land cover changes and urban sprawl in Al-Khobar, Saudi Arabia: an analysis of multi-temporal remote sensing data
+   Authors: 
+   Date: 2016
+
+60. A multi-agent model system for land-use change simulation
+   Authors: , , , , , 
+   Date: 2013
+
+61. Atmospheric/Topographic Correction for Satellite Imagery ATCOR-2/3 User Guide to Remote Sensing Applications
+   Authors: , 
+   Date: 2002
+
+62. Land Use/Land Cover Change Dynamics and Modeling of Urban Land expansion by the Integration of Cellular Automata and Markov Chain
+   Authors: , , , , , 
+   Date: 2018
+
+63. Monitoring and modeling spatio-temporal urban expansion and landuse and land cover change using integrated markov chain cellular automata model
+   Authors: , , , , 
+   Date: 2017
+
+64. Remote sensing technology for mapping and monitoring landcover and land-use change
+   Authors: , 
+   Date: 2004
+
+65. Assessing land-use and cover changes in relation to geographic factors and urban planning in the metropolitan area of concepcion' (Chile). Implications for biodiversity conservation
+   Authors: , , , 
+   Date: 2013
+
+66. 
+   Authors: , , , , , , , , , , , , , , , , , , 
+   Date: 2000
+
+67. Land-use/land-cover change and forest fragmentation in Jigme Dorji National Park
+   Authors: , , , 
+   Date: 2016
+
+68. The vulnerability of global cities to climate hazards
+   Authors: , , , 
+   Date: 2007
+
+69. Predicting spatial and decadal LULC changes through cellular automata Markov Chain models using earth observation datasets and geo-information
+   Authors: , , , , 
+   Date: 2015
+
+70. Markov land cover change modelling using pairs of time series satellite images
+   Authors: , 
+   Date: 2013
+
+71. The development of dynamic spatial models for landscape ecology: a review and prognosis
+   Authors: , 
+   Date: 1991. 1991
+
+72. Clarity versus complexity: land-use modeling as a practical tool for decisionmakers
+   Authors: , 
+   Date: 2013
+
+73. Monitoring urban land cover change: an expert system approach to land cover classification of semiarid to arid urban centers
+   Authors: , , 
+   Date: 2001
+
+74. Application of a hybrid Cellular Automaton-Markov (CA-Markov) model in land-use change prediction: a case study of saddle creek drainage basin
+   Authors: , , 
+   Date: 2013
+
+75. Quantifying different types of urban growth and the change dynamic in Guangzhou using multi-temporal remote sensing data
+   Authors: , , , , 
+   Date: 2013
+
+76. Land use/land cover change detection through using remote sensing and GIS technology -A case study of St. Thomas Mount Block, Kancheepuram District, Tamil Nadu
+   Authors: , , , , 
+   Date: 2011
+
+77. New dimensions of urban landscapes: The spatio-temporal evolution from a polynuclei area to a mega-region based on remote sensing data
+   Authors: , , , , 
+   Date: 2014
+
+78. Tourism Council of Bhutan (TCB)
+   Authors: 
+   Date: 2016
+
+79. Forecasting rural land use change: a comparision of regression and spatial transition-based models
+   Authors: , 
+   Date: 1998
+
+80. Special Issue on the October 1993 Conference on Land-Use and Land-Cover in Australia-Living with Global Change-Preface
+   Authors: 
+   Date: 1994
+
+81. The emergence of land change science for global environmental change and sustainability
+   Authors: , , 
+   Date: 2007
+
+82. The World's Cities in 2016 -Data Booklet
+   Date: 2016
+
+83. The effect of atmospheric and topographic correction on pixel-based image composites: improved forest cover detection in mountain environments
+   Authors: , , 
+   Date: 2015
+
+84. Predicting land use change
+   Authors: , 
+   Date: 2001
+
+85. One of a kind: Bhutan and the modernity challenge
+   Authors: 
+   Date: 2011
+
+86. Land use and land cover change detection and prediction in the Kathmandu district of Nepal using remote sensing and GIS
+   Authors: , , , , 
+   Date: 2020
+
+87. Assessing barriers and opportunities for ecosystem-based adaptation in high altitude city of Thimphu
+   Authors: , , 
+   Date: 2019
+
+88. Assessing socio-economic impact of agricultural subsidies: a case study from Bhutan
+   Authors: , , , 
+   Date: 2019
+
+89. Rangelands Areas of Bhutan
+   Authors: 
+   Date: 2017
+
+90. A remote sensing-GIS evaluation of urban expansion and its impact on surface temperature in the Zhujiang Delta, China
+   Authors: 
+   Date: 2001
+
+91. Land cover dynamics since the 1950s in Chemoga watershed
+   Authors: 
+   Date: 2002
+
+92. A spatiotemporal model of land use change based on ant colony optimization, Markov chain and cellular automata
+   Authors: , , 
+   Date: 2012
+
+93. Land use land cover changes in Bhutan: 2000-2013
+   Authors: , , 
+   Date: 2015
+
+94. LandSys: an agent-based cellular automata model of land use change developed for transportation analysis
+   Authors: , 
+   Date: 2012
+

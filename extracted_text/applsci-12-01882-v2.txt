@@ -1,0 +1,478 @@
+================================================================================
+TITLE: Application of Remote Sensing Tools to Assess the Land Use and Land Cover Change in Coatzacoalcos, Veracruz, Mexico
+================================================================================
+
+AUTHORS:
+- Dimitrios Paraforos
+- Anselme Muzirafuti
+- Josept David Revuelta-Acost
+- Edna Suhail Guerrero-Lu
+- Jose Terrazas-Rodriguez
+- Cristian Gomez-Rodriguez
+- Gerardo Perea
+
+ABSTRACT:
+Land use and land cover (LULC) change has become an important research topic for global environmental change and sustainable development. As an important part of worldwide land conservation, sustainable development and management of water resources, developing countries must ensure the use of innovative technology and tools that support their various decision making systems. This study provides the most recent LULC change analysis for the last six years (2015-2021) of Coatzacoalcos, Veracruz, Mexico, one of the most important petrochemical cities in the world and host of the ongoing Interoceanic Corridor project. The analysis was carried out using Landsat 8 Operational Land Imager (OLI) satellite images, ancillary data and ground-based surveys and the Normalized Difference Vegetation Index (NDVI) to identify and to ameliorate the discrimination between four main macro-classes and fourteen classes. The LULC classification was performed using the maximum likelihood classifier (MLC) to produce maps for each year, as it was found to be the best approach when compared to minimum distance (MDM) and spectral angle mapping (SAM) methods. The macro-classes were water, built-up, vegetation and bare soil, whereas the classes were an improved classification within those. Our study achieved both user accuracy (UA) and producer accuracy (PA) above 90% for the proposed macro-classes and classes. The average Kappa coefficient for macro-classes was 0.93, while for classes it was 0.96, both comparable to previous studies. The results from the LULC analysis show that residential, industry and commercial areas slowed down their growth throughout the study period. These changes were associated with socioeconomical drivers such as insecurity and lack of economic investments. Groves and trees presented steady behaviors, with small increments during the five-year period. Swamps, on the other hand, significantly degraded, being about 2% of the study area in 2015 and 0.93% in 2021. Dunes and medium and high vegetation densities (∼ 80%) transitioned mostly to low vegetation densities. This behavior is associated with rainfall below the annual reference and increments of surface runoff due to the loss of vegetation cover. Lastly, the present study seeks to highlight the importance of remote sensing for a better understanding of the dynamics between human-nature interactions and to provide information to assist planners and decision-makers for more sustainable land development.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land use and land cover (LULC) changes are among the research topics more recurrent in remote sensing 
+Some of the more remarkable research found in literature is the work conducted by Yuan et al. 
+In Mexico, little research related to the quantification of LULC changes has been found within the literary review. One of the few works found was carried out by Colditz et al. 
+Due to the limitations observed in the use of remote sensing in Mexico, such as limited research using remote sensing and map course resolution, this study has integrated remote sensing, Geographic Information Systems (GIS) analysis, field sampling and image revision to assess the potential of the use of Landsat 8 satellite data to assess and monitor land use changes and coverage changes in the southeastern region of the state of Veracruz, Mexico, located in the southern coastal area of the Gulf of Mexico. Three widely used classification methods are explored to select the more appropriate algorithm for LULC classification under the same level of information previously extracted from field data, digital maps and ancillary data. This comparison allows for conclusions on the advantages and drawbacks of current classification algorithms. The analysis encompasses the definitions of macro-classes of land use and their derived classes. The Normalized Difference Vegetation Index, also known as NDVI, was used to identify and improve discrimination between macro-classes and classes within the study area. A supervised classification method, the Maximum Likelihood Classification (MLC), was applied in this study due to its availability within the GIS applications in addition to it not requiring an extensive training process 
+Additionally, this study proposes a methodology to obtain updated temporal information of the change in land use and land cover for the Coatzacoalcos area using Landsat 8 satellite imagery, which has a higher resolution with the available MODIS maps. The mapping of land use and its changes are critical and important factors for sustainable development as well as the monitoring of environmental impacts. The final product of this research will help government agencies to make decisions on urban development and preservation of available natural resources, since one of the emblematic projects in Mexico known as the Interoceanic Corridor is being executed in the present year. Lastly, this piece of research is going to serve as the baseline for additional contributions on LULC change prediction with more complex analyses of the drivers forcing these landscape modifications.
+
+## Materials and Methods ##
+
+
+## Study Area ##
+The study area is the southeastern region of the state of Veracruz, Mexico, in which one of the most important pretrochemical ports of the country is located at the city of Coatzacoalcos. This city is surrounded by the Coatzacoalcos and Tonalá rivers and extends between latitudes 18.06 • and 18.21 • and longitudes -94.22 • and -94.64 • (Figure 
+Physiographically, the study area has an average elevation of 10 meters above sea level. The soils found in the region are clayey lateritic Acrisol and Luvisol in high elevations and Gleysol, Cambisol, Vertisol and Nitosol in plains 
+
+## Data Acquisition and Processing ##
+The images used in this study were obtained from the Landsat 8 satellite, which captures multispectral images of 30 m resolution sampled with the OLI (Operational Land Imager) sensor. The Landsat 8 satellite also provides a 15 m panchromatic band, allowing for a greater spatial resolution. All images were geometrically corrected and acquired in level 1 (L1). The images can be directly downloaded from the EarthExplorer gateway of the United States Geological Survey (USGS) 
+where ρ s is the surface reflectance, d is the distance to the sun, ESUN λ is the mean solar exo-atmospheric irradiance, L λ is the solar spectral radiance to the satellite, θ s is the zenith angle and λ p is the path radiance given by 
+where L min is the radiance corresponding to a digital count value for which the sum of all the pixels with digital counts lower than or equal to this value is equal to 0.01% of all the pixels from the image considered 
+
+## NDVI Classification ##
+Based on the interpretation of the Normalized Difference Vegetation Index (NDVI), the analysis of Google-Earth-extracted images, RGB (red, green, blue) images, panchromatic bands and ground-based georeferenced information, NDVI thresholds were proposed to classify the area of study into four macro-classes during the analysis period (2015-2021), as shown in Table 
+where φ nir is the near-infrared reflectance and φ red is the red-band reflectance. Band 4 (0.64-0.67 µm) and band 5 (0.85-0.88 µm) represent φ nir and φ red , respectively, in the Landsat products. The NDVI values vary from -1 to 1. Values close to 1 represent vegetation in optimal environmental conditions, whereas low values of NDVI indicate low vegetation density or a different land use. After the macro-class definition, a second classification was performed to refine the LULC characteristics through a more extensive discrimination of pixels. These new classes were defined according to the CORINE land cover inventory proposed by the European Environmental Agency 
+
+## Classifier Comparison ##
+In addition to its social and environmental objectives, this study seeks to evaluate the potential and the drawbacks of the minimum distance classifier 
+where x is the spectral signature vector of an image, y is the spectral signature vector of the training area and n is the number of bands of the image. Once the spectral distance is computed for every pixel, the class with the closest spectral signature to the training set is assigned according to the following discrimination function 
+where C k is the land cover macro-class or class, y k is the spectral signature of class k and y j is the spectral signature of class j. This equation is valid when k = j.
+
+## Spectral Angle Mapping Classifier ##
+The spectral angle mapping (SAM) algorithm computes the spectral angle between the spectral signatures of the image pixels and the training spectral signatures. The spectral angle θ is given by
+Thus, a pixel resides in the macro-class or class that has the lowest spectral angle, as provided by
+where k = j.
+
+## Maximum Likelihood Classifier ##
+The maximum likelihood classifier (MLC) is based on the probability that a pixel belongs to or is within macro-classes or a particular class 
+The MLC algorithm calculates the weighted distance or probability D that an unknown value in the vector M p belongs to one of the macro-classes or classes M c . This likelihood is based on the Bayesian equation 
+where D is the weighted distance or probability, c is a particular macro-class or class, M p is the measurement vector of the candidate pixel, M c is the mean vector of the sample of macro-class or class c, a c is the percentage probability of any pixel belonging to the macro-class or class c, Cov c is the covariance matrix of the pixels in the sampled macro-class or class c, |Cov c | is the determinant of the matrix Cov c , Cov c-1 is the inverse of Cov c and T is the transposition function.
+
+## Precision Assessment ##
+The analysis of the accuracy is an important step for the evaluation of the resulting classification because the users of the information, once the classification is performed, need to know how accurate the result is in order to use the data in their decision making. A minimum level of overall precision for a selected macro-class or class of at least 85%, according to the recommendations found in similar works 
+where N is the sample size, W i is the mapped area proportion of the class i, S i is the standard deviation of the stratum i and So is the expected standard deviation of overall accuracy, often valued at 0.01 
+
+## Validation Point Estimation ##
+The number of samples calculated with Equation ( 
+
+## Results ##
+This section is divided into four main subsections: First, the analysis of the land use and its spatial distribution at macro-class level is presented. Second, an analysis at class level is performed, similar to the one conducted in the first section. Third, an assessment of the land use change from 2015 to 2021 is carried out as a study case, and, lastly, a discussion of the possible drivers forcing land use change is established.
+
+## LULC Classifier Assessment and Selection ##
+The three classification methods were run for the seven-year period proposed in this analysis. Results show a similar behavior for extracting LULC information using the same level of ancillary data. This condition allowed a fair comparison between the classification algorithms. Figure 
+Numerically, all the classification methods presented good behavior for both overall precision and Kappa values, all being above 85% and 0.85, respectively (Table 
+
+## Macro-Class-Based LULC Classification ##
+The classification based on macro-classes represented a course scheme to generate four of the main land uses found in Coatzacoalcos. These macro-classes are water, built-up, vegetation and bare soil. The spatial distribution of them can be observed in Figure 
+Additionally, Figure 
+
+## Class-Based LULC Classification ##
+A class-based LULC classification was conducted to identify a more discrete evolution of the land use within the study period. This identification will help prioritize the location of areas that require ecological attention, the inclusion of best management practices (BMP) for water and soil conservation as well as a more appropriate location of the upcoming urbanization due to the Interoceanic Corridor project execution. At this level, we identified that pixels representing the sea did not change significantly. This behavior can be observed in Figure 
+Man-made construction was divided into industry, residential, commercial and roads classes. Industry shows a constant percentage from 2016 to 2021. The only change occurred in 2015. The industrial area called Etileno XXI, the largest petrochemical complex in Latin America, concluded 99.2% of its construction in 2015 
+Vegetation plays an important role in our natural ecosystem and also holds up the biosphere in various ways. Vegetation helps to regulate the flow of numerous biogeochemical cycles, most importantly those of nitrogen, carbon and water. It also contributes to the local and global energy balances. In this study, the classes within vegetation included mixed forest, shrubland, wetland and dune. Figure 
+Dunes, in Figure 
+Table 
+For the sake of simplicity, only the most significant changes are discussed here. Residential land use grew only 0.88 km 2 during the last six years, which reflects a very small growth in comparison with that of industrial cities in Mexico, which has been characterized as about 5% per year 
+
+## Discussion ##
+LULC changes measure the transitions of different land uses in complex interactions between humans and the physical environment 
+
+## Conclusions ##
+This paper determined land use and land cover (LULC) over the period 2015-2021 for the city of Coatzacoalcos and its metropolitan area, located in the state of Veracruz, Mexico. Based on images from Landsat 8, MLC, Geographic Information Systems (GIS), NVDI spectral index and field data, the annual land use variability was produced up-todate as reliable information for decision making and ecosystem preservation during the execution of the ongoing project called the Interoceanic Corridor. This project represents Mexico's narrowest stretch between the Pacific and Atlantic oceans and the expansion and modernization of Coatzacoalcos and Salina Cruz ports.
+The objective of this study was to provide the most recent information on land use spatial distribution that Coatzacoalcos experienced in the last six years and to improve the current available course resolution maps. The satisfactory results can be summarized in four main aspects: (1) built-up areas, including industry, residential and commercial areas, have slowed down their growth due to socio-economical drivers such as security and null monetary investments; (2) vegetation such as mixed forest and low density vegetation (bare surfaces, sparse vegetation and grassland) has been sustained and increased over time due to reforestation or migration from other classes; (3) swamps experienced considerable degradation over the past five years and (4) high and medium vegetation densities have transformed mostly to low vegetation densities due to climate drives such as low precipitation and possible high soil evaporation, which might also increase the overland flow for those areas.
+Lastly, this study demonstrated the use of free available Landsat data and their processing by open source tools. It provided an accurate approach to mapping and assessing LULC changes over time. This methodology can be applied similarly for longer periods of time and other satellite products and contributes to improving the number of applications of remote sensing and research in Mexico and other developing countries. 
+
+## Appendix A ##
+
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Remote Sensing of Land Use and Land Cover
+   Authors: , 
+   Date: 2012
+
+2. Finer resolution observation and monitoring of global land cover: First mapping results with Landsat TM and ETM+ data
+   Authors: , , , , , , , , , 
+   Date: 2013
+
+3. Utilization of Landsat data to quantify land-use and land-cover changes related to oil and gas activities in West-Central Alberta from 2005 to
+   Authors: , , , 
+   Date: 2013. 2017
+
+4. Analysis on Land-Use Change and Its Driving Mechanism in Xilingol, China, during 2000-2020 Using the Google Earth Engine
+   Authors: , , , , 
+
+5. Land use/land cover changes in the coastal zone of Ban Don Bay, Thailand using Landsat 5 TM data
+   Authors: , 
+   Date: 2005
+
+6. Land cover change in Europe between 1950 and 2000 determined employing aerial photography
+   Authors: , , , , , , , , , 
+   Date: 2010
+
+7. Landsat remote sensing of forest windfall disturbance
+   Authors: , , , , , 
+   Date: 2012
+
+8. Land-cover change dynamics and insights into ecosystem services in European stream riparian zones
+   Authors: , , 
+   Date: 2014
+
+9. Assessing the impacts of climate and land use and land cover change on the freshwater availability in the Brahmaputra River basin
+   Authors: , 
+   Date: 2015
+
+10. Impacts of forest cover change on ecosystem services in high Andean mountains
+   Authors: , , , 
+   Date: 2015
+
+11. Assessment of land cover change hotspots in Gulf of Kachchh, India using multi-temporal remote sensing data and GIS
+   Authors: , , , , 
+   Date: 2016
+
+12. Remote sensing in mangrove research-relationship between vegetation indices and dendrometric parameters: A case for Coringa, east coast of India
+   Authors: , , , , 
+   Date: November 2001
+
+13. Evaluation of the consistency of MODIS Land Cover Product (MCD12Q1) based on Chinese 30 m GlobeLand30 datasets: A case study in Anhui Province
+   Authors: , , , , , 
+   Date: 2015
+
+14. WebGIS Implementation for Dynamic Mapping and Visualization of Coastal Geospatial Data: A Case Study of BESS Project
+   Authors: , , , , , , , , , 
+
+15. Mapping of Sicilian Pocket Beaches Land Use/Land Cover with Sentinel-2 Imagery: A Case Study of Messina Province
+   Authors: , , , , , 
+   Date: 2021
+
+16. Designing a European-Wide Crop Type Mapping Approach Based on Machine Learning Algorithms Using LUCAS Field Survey and Sentinel-2 Data
+   Authors: , , , , , 
+
+17. 
+   Authors: 
+   Date: 10 December 2021
+
+18. Preliminary analysis of LANDSAT-4 Thematic Mapper
+   Authors: , , , , 
+   Date: 1983
+
+19. American landscape characterization dataset development and data fusion issues
+   Authors: , , , , 
+   Date: 1998
+
+20. Landsat's role in ecological applications of remote sensing
+   Authors: , 
+   Date: 2004
+
+21. Forestry information content of Thematic Mapper data
+   Authors: , , 
+   Date: 2007
+
+22. Introduction to Remote Sensing, 4
+   Authors: 
+   Date: 2007
+
+23. Modeling and Prediction of Land Use Land Cover Change Dynamics Based on Land Change Modeler (LCM) in Nashe Watershed
+   Authors: , , 
+   Date: 2021
+
+24. Comparing two approaches to land use/cover change modeling and their implications for the assessment of biodiversity loss in a deciduous tropical forest
+   Authors: , , 
+   Date: 2012
+
+25. Landscape transformation processes in two large and two small cities in Egypt and Jordan over the last five decades using remote sensing data
+   Authors: , , , 
+   Date: 2020. 103766
+
+26. Changes in agricultural land use in the context of ongoing transformational processes in Slovakia
+   Authors: , , , 
+   Date: 2013
+
+27. Land cover classification and change analysis of the Twin Cities (Minnesota) Metropolitan Area by multitemporal Landsat remote sensing
+   Authors: , , , 
+   Date: 2005
+
+28. Land use/Land cover changes and their causes in Libokemkem District of South Gonder
+   Authors: , , , 
+   Date: 2017
+
+29. Generation and analysis of the 2005 land cover map for Mexico using 250 m MODIS data
+   Authors: , , , , , , , , 
+   Date: 2012
+
+30. A land cover map of Latin America and the Caribbean in the framework of the SERENA project
+   Authors: , , , , , , , , , 
+   Date: 2013
+
+31. Mapping ancient chinampa landscapes in the Basin of Mexico: a remote sensing and GIS approach
+   Authors: 
+   Date: 2012
+
+32. Evolution of the 2014-2015 sea surface temperature warming in the central west coast of Baja California, Mexico, recorded by remote sensing
+   Authors: 
+   Date: 2016
+
+33. Assessment for a Run-of-River (RoR) Scheme Using a Rectangular Mesh Sweeping Approach (MSA) Based on GIS. Energies 2021
+   Authors: , , , , , 
+
+34. An assessment of the effectiveness of decision tree methods for land cover classification
+   Authors: , 
+   Date: 2003
+
+35. Spatio-temporal monitoring of vegetation phenology in the dry sub-humid region of Nigeria using time series of AVHRR NDVI and TAMSAT datasets
+   Authors: , , , 
+   Date: 2018
+
+36. Monitoring land use/cover change using remote sensing and GIS techniques: A case study of Hawalbagh block, district Almora
+   Authors: , 
+   Date: 2015
+
+37. Exposure to persistent organic pollutants (POPs) and DNA damage as an indicator of environmental stress in fish of different feeding habits of Coatzacoalcos
+   Authors: , , , , , , 
+   Date: 2010
+
+38. Cleaner production and methodological proposal of eco-efficiency measurement in a Mexican petrochemical complex
+   Authors: , , , , , , 
+   Date: 2006
+
+39. 
+   Authors: 
+   Date: 10 December 2021
+
+40. 
+   Authors: 
+   Date: 10 December 2021
+
+41. 
+   Authors: 
+   Date: 10 December 2021
+
+42. Atmospheric and radiometric correction algorithms for the multitemporal assessment of grasslands productivity
+   Authors: , , , , , 
+   Date: 2018
+
+43. Evaluation of the dark-object subtraction technique for adjustment of multispectral remote-sensing data
+   Authors: 
+   Date: 1993
+
+44. An improved dark-object subtraction technique for atmospheric scattering correction of multispectral data
+   Authors: , 
+   Date: 1988
+
+45. Historical land-use and landscape change in southern Sweden and implications for present and future biodiversity
+   Authors: , , , , , 
+   Date: 2014
+
+46. Land surface temperature retrieval from LANDSAT TM 5. Remote Sens. Environ
+   Authors: , , 
+   Date: 2004
+
+47. Assessment of Agricultural Water Requirements for Semi-Arid Areas: A Case Study of the Boufakrane River Watershed (Morocco)
+   Authors: , , , , 
+   Date: 10379
+
+48. Investigative spatial distribution and modelling of existing and future urban land changes and its impact on urbanization and economy
+   Authors: , , , , , 
+   Date: 2019
+
+49. Land use/land cover (LULC) using landsat data series (MSS, TM, ETM+ and OLI
+   Authors: , , , , , , 
+   Date: 2018
+
+50. Quantifying the impact of NDVIsoil determination methods and NDVIsoil variability on the estimation of fractional vegetation cover in Northeast China
+   Authors: , , , , 
+
+51. Measuring land cover change in Seremban, Malaysia using NDVI index
+   Authors: , , , 
+   Date: 2015
+
+52. Evaluation of NDVI using Spot-5 satellite data for northern Ghana
+   Authors: , , , 
+   Date: 2013
+
+53. Classification and change detection using Landsat TM data: when and how to correct atmospheric effects?
+   Authors: , , , , 
+   Date: 2001
+
+54. Remote Sensing Digital Image Analysis
+   Authors: 
+   Date: 1999
+
+55. Illustrated Nomenclature Guidelines
+   Authors: , , , , 
+   Date: 2017
+
+56. Remote Sensing Digital Image Analysis: An Introduction
+   Authors: , 
+   Date: 2006
+
+57. The spectral image processing system (SIPS)-interactive visualization and analysis of imaging spectrometer data
+   Authors: , , , , , , 
+   Date: 1993
+
+58. Development of a remotely sensed, historical land-cover change database for rural Chihuahua
+   Authors: 
+   Date: 2005
+
+59. Land cover change assessment using decision trees, support vector machines and maximum likelihood classification algorithms
+   Authors: , 
+   Date: 2010
+
+60. Status of land cover classification accuracy assessment. Remote Sens. Environ
+   Authors: 
+   Date: 2002
+
+61. 
+   Authors: , , 
+   Date: 1999
+
+62. Coordinating methodologies for scaling landcover classifications from site-specific to global: Steps toward validating global map products
+   Authors: , , 
+   Date: 1999
+
+63. A Land Use and Land Cover Classification System for Use with Remote Sensor Data; US Government Printing Office
+   Authors: 
+   Date: 1976
+
+64. A survey of image classification methods and techniques for improving classification performance
+   Authors: , 
+   Date: 2007
+
+65. A review of assessing the accuracy of classifications of remotely sensed data
+   Authors: 
+   Date: 1991
+
+66. Understanding interobserver agreement: the kappa statistic
+   Authors: , 
+   Date: 2005
+
+67. Automatic Classification Plugin: A Python tool for the download and processing of remote sensing images in QGIS
+   Authors: , 
+   Date: 2021
+
+68. Development of classification system for LULC using remote sensing and GIS
+   Authors: , 
+
+69. Good practices for estimating area and assessing accuracy of land change
+   Authors: , , , , , 
+   Date: 2014
+
+70. Reestructuración urbana e inversión privada en una ciudad media mexicana
+   Authors: , , 
+   Date: 2013
+
+71. The urban heat island and its impact on heat waves and human health in Shanghai
+   Authors: , , , , , , 
+   Date: 2010
+
+72. 
+   Authors: , 
+   Date: 2019. 21 December 2021
+
+73. 
+   Date: 1995 a 2020. 2015. 2020. 10 December 2021
+
+74. 
+   Authors: , , 
+   Date: 2021. 21 December 2021
+
+75. 
+   Authors: , 
+   Date: 21 December 2021
+
+76. Land-cover changes and drivers of palm swamp degradation in southeastern Brazil from 1984 to 2018
+   Authors: , , , , , 
+   Date: 2021. 102604
+
+77. Impacts of land use change on ecosystem services and implications for human well-being in Spanish drylands
+   Authors: , , , 
+   Date: 2016
+
+78. Remote sensing of Wetlands: Applications and Advances
+   Authors: , , 
+   Date: 2015
+
+79. El Pantano: Una Riqueza Que se Destruye
+   Authors: , , 
+   Date: 1987
+
+80. Desempeño industrial en las principales ciudades de México
+   Authors: 
+   Date: 1980-2003. 2007
+
+81. Impact of land use land cover change on a sand dune ecosystem in Northwest Beach, Point Pelee National Park
+   Authors: , 
+   Date: 2019
+
+82. Land use/land cover changes and climate: modeling analysis and observational evidence
+   Authors: , , , , , , 
+   Date: 2011
+
+83. Monitoring and predicting land use and land cover changes using remote sensing and GIS techniques-A case study of a hilly area
+   Authors: , , 
+   Date: 2018. 0200493
+
+84. Land use/land cover change modeling and the prediction of subsequent changes in ecosystem service values in a coastal area of China, the Su-Xi-Chang Region
+   Authors: , , , , 
+   Date: 2017. 1204
+
+85. Assessment of urban heat island effect for different land use-land cover from micrometeorological measurements and remote sensing data for megacity Delhi
+   Authors: , , , , 
+   Date: 2013
+
+86. Detection and prediction of land use change in Beijing based on remote sensing and GIS
+   Authors: , , , , , 
+   Date: 2008
+
+87. Spatiotemporal mapping of Land Use/Land Cover dynamics using Remote Sensing and GIS approach: A case study of Prayagraj City
+   Authors: , 
+   Date: 1988-2018. 2021
+
+88. Evaluating drivers of land-use change and transition potential models in a complex landscape in Southern Mexico
+   Authors: , , 
+   Date: 2013
+
+89. Land-cover and land-use change in a Mediterranean landscape: a spatial analysis of driving forces integrating biophysical and human factors
+   Authors: , , 
+   Date: 2008
+
+90. From land cover to land use: A methodology to assess land use from remote sensing data
+   Authors: , 
+   Date: 2012
+
+91. Sistema de noticias de la UV. Mexico
+   Date: 2019. 21 December 2021
+
+92. Coastal water quality assessment and groundwater transport in a subtropical mangrove swamp in Daya Bay
+   Authors: , , , , , , 
+   Date: 2019
+
+93. Loss of biodiversity and ecosystem functioning in Indo-Malayan peat swamp forests
+   Authors: 
+   Date: 2010
+
+94. Hydrology and aquatic habitat characteristics of a riverine swamp: I. Influence of flow on water temperature and chemistry
+   Authors: , , , 
+   Date: 1999
+
+95. Hydrology and aquatic habitat characteristics of a riverine swamp: II. Hydrology and the occurrence of chronic hypoxia
+   Authors: , , , 
+   Date: 1999
+
+96. Vegetation-infiltration relationships across climatic and soil type gradients
+   Authors: , , , 
+   Date: 2010
+
+97. Vegetation influences on infiltration in Hawaiian soils
+   Authors: , , 
+   Date: 2018. 1973
+

@@ -1,0 +1,309 @@
+================================================================================
+TITLE: Detection of land use/land cover changes in a watershed: A case study of the Murredu watershed in Telangana state, India
+================================================================================
+
+AUTHORS:
+- Padala Raja
+- Aneesh Mathew
+
+ABSTRACT:
+Land-use change refers to a change in how a particular area of land is utilised or managed by humans. Land-cover change refers to a change in some continuous features of the land, such as vegetation type, soil conditions, and so on. For the purpose of identifying change-vulnerable areas and creating sustainable ecosystem services, mapping and quantifying the state of land use/land cover (LULC) changes and change-causing factors are crucial. The present research utilizes a geographic information system (GIS) and remote sensing (RS) techniques to categorise and identify changes in a Murredu watershed in Telangana state, India, between 1996 and 2019. Five major LULC categories (agricultural land, forest, barren land, built-up area, and waterbodies) from satellite images of 1996 to 2019 were mapped. The maximum likelihood approach was used to supervise the classification process, and high-resolution Google Earth Pro was used to evaluate the accuracy of the classified map. The accuracy of the mapping was evaluated using the error matrix and Kappa statistics. Overall classification accuracy for the classified image of 2019 was found to be 90 % with overall kappa statistics of 85.98%. From these findings, change detection analysis shows that the area used for agricultural land, barren land, forest, built-up areas, and waterbodies has increased by 5.17%, 3.39%, 0.84%, and 0.26%, respectively, between 1996 and 2019. The forest area has decreased by 9.67% at the same time. Therefore, this research anticipates that the findings might provide information to planners, land managers, and decision-makers for the sustainable management and development of the natural resource.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+The term ''land-use" describes how humans use the land cover to support themselves. It covered both the methods and motivations used to change the biophysical characteristics of the land. Crop cultivation, mining, housing, and infrastructure development are a few examples of land use 
+The hydrological and geomorphological processes and features of a river system, as well as their interactions, variability, and spatial distribution, are described by river hydro-morphology 
+Finding differences in a phenomenon's status by watching it at various periods is the method of ''change detection" 
+Assessment of LULC change aids in determining the degree of human impact over the environment. Numerous academics believed it to be a significant process that has local, regional, and worldwide effects on both natural environments and socioeconomic conditions 
+Due to its recurring data collecting, precise georeferencing processes, and digital format suited for computer processing, satellite remote sensing is the most popular data source for the quantification, identification, and mapping of LULC forms and variations 
+There are several satellite programmes running right now. The Landsat programme is exceptional for change detection research because it offers a historical and ongoing archive of imagery 
+In the watershed, biological circumstances, gradients, and elevations play a significant role in determining land use/land cover. In addition to the aforementioned variables, technological, socioeconomic, and institutional setup are also anticipated to have an impact on the LULC change 
+In the present work, the changing pattern of LULC in the Murredu watershed from 1996 to 2019 has been mapped using multitemporal satellite images from Landsat-5 TM and Landsat 8 OLI/ TIRS imagery. The main objective of the current study was to utilise GIS and RS applications to find out the extent of changes occurring in the Murredu Watershed. However, the specific objectives were to: utilize SRTM-DEM to delineate the Murredu basin's watershed; and, furthermore, detect LULC changes in the Murredu watershed between 1996 and 2019.
+
+## Study area ##
+The current investigation was carried out in the Telangana state of India's Murredu watershed (Fig. 
+
+## Data acquisition ##
+The SRTM-DEM data, collected and was utilized to generate watershed boundary of the Murredu basin. For the purpose of visual image interpretation and identifying LULC change, satellite data comprised of multi-spectral data collected by the Landsat satellite and made available by the USGS Earth Explorer (https:// earthexplorer.usgs.gov/) were utilised (Table 
+The Landsat-8 image acquired in 2019 is part of the utilised satellite dataset. Launched on 2013, the Landsat-8 satellite sensor has two sensors: a thermal infrared sensor (TIRS) and an operational land imager (OLI). Landsat-8 satellite information consist of eleven bands with a spatial resolution of 30 m for bands 1 through 9. For bands 10 as well as 11, the spatial resolution is 100 m. In the panchromatic band (band 8), which has a spatial resolution of 15 m. Bands 1 to 7 coastal, blue, green, red, nearinfrared, shortwave infrared I, and shortwave infrared II were chosen for examination in this study since bands 8 to 11 are less frequently employed in LULC classification (https://www. usgs.gov/media/images/landsat-8-band-designations).
+On the other hand, the satellite dataset used includes the 1996 Landsat-5 image. Landsat-5 Thematic Mapper (TM) level 1 records were acquired in 1996; the mission was launched on 1984. Each of the seven bands of the Landsat-5 satellite data has a spatial resolution of 30 m. Thermal band 6 has a 120 m spatial resolution. Visible (bands 1 to 3), near-infrared, and mid-infrared are included (https://www.usgs.gov/landsat-missions/landsat-5). It was difficult to choose images from the same date across the entire study period. Additionally, LULC class ground truth data were used. This information was gathered as reference data points for 2019 image analysis utilising the Google Earth Pro, and it was utilised to classify images and evaluate the classification results' overall accuracy.
+
+## Data preparation for watershed delineation ##
+The highest sensitivity zones may be extrapolated using DEMs, which are based on watershed realisation utilising the computational watershed application of Spatial Analyst tools 
+
+## Methodology ##
+Fig. 
+
+## Pre-processing ##
+Prior to change detection, pre-processing of satellite images is crucial and has the specific objective of creating a more direct connection between biophysical processes and information 
+
+## Land-cover classification scheme ##
+A classification scheme that specifies the LULC classes was taken into consideration when creating the LULC map from satellite imagery. The ideal number of LULC classes depends on the specifications of a particular project for a particular application. For mapping the entire watershed region, the five key LULC classifications of built-up area, agricultural land, forest, barren land, and waterbodies were selected (Table 
+
+## Post-processing ##
+Delimiting polygons around typical sites allowed training samples to be chosen for each of the specified LULC types. The spectral signatures for the various land cover categories seen in the satellite images were determined using the pixels contained in these polygons. Confusion among them to be mapped land covers is assessed  to be minimal when a spectral signature is deemed to be satisfactory 
+A Google Earth Pro examination has been conducted. To carry out supervised classifications, choose a training site, and assess classification accuracy, ground truth data should be collected. The Google Earth Pro was used to gather training and testing interest sites for the ground truth information in this investigation. The current research area classes were defined after interpretation and five LULC classes (built-up area, agricultural land, forest, barren land, and water-bodies) were identified because the google earth pro image has a high spatial resolution.
+
+## LULC change detection ##
+The LULC mapping project was expected to produce data on the spatial distribution of land use categories, as well as identify and estimate changes in land use over the previous decades. Furthermore, the number of transitions from one land cover category to another between time periods (1996 and 2019) was quantified. Important information about the spatial distribution of LULC changes is presented by the change matrix 
+
+## Accuracy assessment ##
+The comparison of a classification with actual data serves as an accuracy assessment, which determines how accurately the classification captures the real world. Using a random sampling   Settlements, artificial infrastructure, transportation and so on Agricultural Crop fields and fallow lands approach with 200 points, an accuracy assessment of the classified images that resulted in this study was done to examine the quality of the information that was produced from the data. The error matrix was used to conduct this evaluation. To assess the degree of classification accuracy from the report portion of ERDAS Imagine 2015, Kappa statistics and the overall accuracy of the categorised images were conducted.
+
+## Results ##
+
+
+## Murredu watershed ##
+This river's watershed covers 1593 km 2 in total (Fig. 
+
+## LULC scenario of Murredu watershed, 1996 ##
+Agriculture accounted for 54.19 percent of the watershed's land area in 1996. Forest (40.30 %) was the watershed's second most prevalent land cover. Because a forest infiltrates the majority of the rain that falls during the monsoon and reduces both soil erosion and surface runoff, it often plays a significant influence in the hydrological features of a watershed. In low land watersheds, it will also lessen flood intensity 
+
+## LULC scenario of Murredu watershed, 2019 ##
+After 1996, there was a significant amount of deforestation in the watershed region, which left the land unforested and suitable for agriculture and other uses. The majority of the watershed's land was used for agriculture in 2019 (59.36 %). Forest (30.63 %) was the second most prevalent land cover in the watershed. As shown in Fig. 
+Forests are recognised for promoting groundwater recharge and consuming a lot of water through evapotranspiration from the trees 
+
+## Accuracy assessment ##
+One of the significant differences between the classified image and the actual or real ground is accuracy evaluation. The accuracy of the 2019 classified map was evaluated using one of the most popular Kappa accuracy assessment techniques. Using highresolution satellite images from Google Earth Pro, 200 stratified random points were generated (Table 
+
+## Conclusion ##
+This present study demonstrates how LULC changes in the Murredu drainage basin have altered significantly over the past decades. Overall classification accuracy for the classified image of 2019 was found to be 90 % with overall kappa statistics of 85.98 %. From these findings, change detection analysis shows that the area used for agricultural land, barren land, forest, built-up areas, and waterbodies has increased by 5.17 %, 3.39 %, 0.84 %, and 0.26 %, respectively, between 1996 and 2019. The forest area has decreased by 9.67 % at the same time. The area of forest has decreased, whereas the areas for agriculture, waterbodies, bare land, and built-up areas have all increased. Therefore, this research anticipates that the findings might provide information to planners, land managers, and decision-makers for the sustainable management and development of the natural resource. In a future study, sub-watersheds could be created within the watershed since it is large enough to be included in management practices. Additionally, these sub-watersheds could be given higher priority for management and conservation based on the degree of deterioration.    
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Analysing land use/land cover changes and its dynamics using remote sensing and GIS in Gubalafito district
+   Authors: , , 
+   Date: 2022
+
+2. Impacts of rainfall variability, land use and land cover change on stream flow of the Black Volta Basin
+   Authors: , , 
+   Date: 2016
+
+3. Hydrological responses to land degradation in the Northwest Benin Owena River Basin
+   Authors: , , 
+   Date: 2018
+
+4. The influence of catchment land use on stream integrity across multiple spatial scales
+   Authors: , , 
+   Date: 1997
+
+5. Using the Soil and Water Assessment Tool (SWAT) to assess land use impact on water resources in an East African watershed
+   Authors: , 
+   Date: 2013
+
+6. Land use and land cover dynamics and drivers in the Muga watershed
+   Authors: , 
+   Date: 2019
+
+7. Assessing the land use/cover dynamics and its impact on the low flow of Gumara Watershed
+   Authors: , 
+   Date: 2017
+
+8. Changes of the spatial and temporal characteristics of land-use landscape patterns using multi-temporal Landsat satellite data: A case study of Zhoushan Island China
+   Authors: , , , , , , , 
+   Date: 2021
+
+9. A simple and effective radiometric correction method to improve landscape change detection across sensors and across time
+   Authors: , , 
+   Date: 2005
+
+10. Digital change detection methods in ecosystem monitoring: a review
+   Authors: , , , , 
+   Date: 2004
+
+11. Soil Map of the world, Revised Legend with Corrections and Updates World Soil Resource. Food and agricultural organization
+   Authors: 
+   Date: 1988
+
+12. Future climate and land use change impacts on river flows in the Tapajós Basin in the Brazilian Amazon
+   Authors: , , , , , , , 
+   Date: 2019
+
+13. Determination of land degradation causes in Tongyu County, Northeast China via land cover change detection
+   Authors: , 
+   Date: 2010
+
+14. Watershed Management in Bangladesh. Degradation of Upland Watershed in Bangladesh Project-a USDa Funded Project
+   Authors: 
+   Date: 2013
+
+15. Analysis of streamflow response to land use and land cover changes using satellite data and hydrological modelling: case study of Dinder and Rahad tributaries of the Blue Nile (Ethiopia-Sudan)
+   Authors: , , , 
+   Date: 2017
+
+16. Prioritization of sub-watersheds based on morphometric and land use analysis using remote sensing and GIS techniques
+   Authors: , , 
+   Date: 2009
+
+17. Watershed Prioritization using Morphometric and Land Use Analysis parameters: A Remote Sensing and GIS based approach
+   Authors: , 
+   Date: 2011
+
+18. Impacts of land use land cover change and climate change on river hydro-morphology-a review of research studies in tropical regions
+   Authors: , , 
+   Date: 2022
+
+19. Analysis of spatio-temporal dynamics of land use and cover changes in Western Kenya
+   Authors: , , 
+   Date: 2019
+
+20. Land Use, Land Cover Change, Local Process and Global Impacts
+   Authors: , 
+   Date: 2006
+
+21. Characterisation of channel morphological pattern changes and flood corridor dynamics of the tropical Tana River fluvial systems
+   Authors: , , , 
+   Date: 2020
+
+22. Flood Prioritization of Basins Based on Geomorphometric Properties Using Morphometric Analysis and Principal Component Analysis: A Case Study of the Maner River Basin. River Dynamics and Flood Hazards. Disaster Resilience and Green Growth
+   Authors: , 
+   Date: 2023
+
+23. Investigating the contrast diurnal relationship of land surface temperatures with various surface parameters represent vegetation, soil, water, and urbanization over Ahmedabad city in India
+   Authors: , , 
+   Date: 2022
+
+24. Land Use / Land Cover changes over a district in northern India using remote sensing and GIS and their impact on society and environment
+   Authors: , 
+   Date: 2020
+
+25. Efficient extraction of drainage networks from massive, radar-based elevation models with least cost path search
+   Authors: , , 
+   Date: 2011
+
+26. Monitoring of changes in Land Use/ Land cover in Syria from 2010 to 2018 using multitemporal Landsat imagery and GIS
+   Authors: , , 
+   Date: 2020
+
+27. People within parks-forest villages, landcover change and landscape fragmentation in the Tadoba Andhari Tiger Reserve
+   Authors: , , 
+   Date: 2006
+
+28. Delineation of groundwater prospective zones from a delta region of India, using geoelectrical and water quality approach
+   Authors: , , , 
+   Date: 2018
+
+29. Quantifying the impacts of land cover change on hydrological responses in the Mahanadi river basin in India
+   Authors: , , 
+   Date: 2021
+
+30. Assessment of Spatio-Temporal Changes of Land Use and Land Cover over South-Western African Basins and Their Relations with Variations of Discharges
+   Authors: , , , , , , , , , , 
+   Date: 2018
+
+31. Conservation in the Sikkim Himalaya: traditional knowledge and land-use of the Mamlay watershed
+   Authors: , , 
+   Date: 1994
+
+32. Identification of Groundwater Potential Zones Using Remote Sensing Techniques in and Around Guntur Town, Andhra Pradesh
+   Authors: , , 
+   Date: 2001
+
+33. Monitoring land use/cover change using remote sensing and GIS techniques: a case study of Hawalbagh block, district Almora
+   Authors: , 
+   Date: 2015
+
+34. Flood prioritization of basin based on geomorphometric properties using principal component analysis, morphometric analysis and Redvan's priority methods: a case study of Harshit river basin
+   Authors: , 
+   Date: 2021
+
+35. Analyzing the impacts of land cover change to the hydrologic and hydraulic behaviours of the Philippines' third largest River Basin
+   Authors: , , , , 
+   Date: 2019
+
+36. Monitoring land cover change of the dryland forest landscape of Central Chile
+   Authors: , , , , 
+   Date: 2010. 1975e2008
+
+37. Land-cover and land-use change in a Mediterranean landscape: a spatial analysis of driving forces integrating biophysical and human factors
+   Authors: , , 
+   Date: 2008
+
+38. Remote sensing and GIS for mapping and monitoring land cover and landuse changes in the Northwestern coastal zone of Egypt
+   Authors: , 
+   Date: 2007
+
+39. Prioritising sub-watersheds using morphometric analysis, principal component analysis, and land use/land cover analysis in the Kinnerasani River basin
+   Authors: , 
+   Date: 2022
+
+40. Erosion Susceptibility Mapping Based on Hypsometric Analysis Using Remote Sensing and Geographical Information System Techniques. River Dynamics and Flood Hazards. Disaster Resilience and Green Growth
+   Authors: , 
+   Date: 2023
+
+41. Mathew A (2022a) Morphometric analysis for prioritizing sub-watersheds of Murredu River basin, Telangana State, India, using a geographical information system
+   Authors: , 
+   Date: 2022
+
+42. Mathew A (2022b) Evaluation of Morphometric and Hypsometric analysis of the Bagh River basin using Remote Sensing and Geographic Information System techniques
+   Authors: , 
+   Date: 2022
+
+43. Digital change detection techniques using remotely-sensed data
+   Authors: 
+   Date: 1989
+
+44. Groundwater prospecting and management in an agro-based rural environment of crystalline terrain of India
+   Authors: 
+   Date: 2003
+
+45. Groundwater potential index in a crystalline terrain using remote sensing data
+   Authors: 
+   Date: 2006
+
+46. A numerical scheme for groundwater development in a watershed basin of basement terrain: A case study from IndiaUn procédé numérique pour la viabilisation des eaux souterraines dans un bassin versant sur des terrains du socle: étude de cas en IndeUn esquema numérico para el desarrollo de las aguas subterráneas en una cuenca hidrográfica en basamento: un caso de estudio de la India基岩地区流域盆地地下水开发的一种数值方法 : 一个 印度的实例研究Uma metodologia numérica para o planeamento da água subterrânea numa bacia hidrográfica em terrenos de soco cristalino: um caso de estudo na Índia
+   Authors: 
+   Date: 2009
+
+47. Guidelines for success of well site selections
+   Authors: 
+   Date: 2011
+
+48. Indicators for occurrence of groundwater in the rocks of Eastern Ghats
+   Authors: 
+   Date: 2012
+
+49. Geoenvironmental appraisal in a developing urban area
+   Authors: , 
+   Date: 2004
+
+50. Morphometric approach using remote sensing and GIS in watershed management
+   Authors: , , , , , , , 
+   Date: 2016
+
+51. Deciphering artificial groundwater recharge suitability zones in the agricultural area of a river basin in Andhra Pradesh, India using geospatial techniques and analytical hierarchical process method
+   Authors: , , 
+   Date: 2022
+
+52. Impacts of Climate and Land Use Change on Hydrological Response in Gumara Watershed
+   Authors: , , , , 
+   Date: 2021
+
+53. History of land use in India during 1880-2010. Large scale land transformations reconstructed from satellite data and historical archives
+   Authors: , , , 
+   Date: 2014
+
+54. Patterns, causes and consequences of land use/cover dynamics in the Gumara watershed of lake Tana basin
+   Authors: , , 
+   Date: 2016
+
+55. Landsat continuity: Issues and opportunities for land cover monitoring
+   Authors: , , , , , , , , 
+   Date: 2008
+
+56. Modeling social and land-use/land-cover change data to assess drivers of smallholder deforestation in Belize
+   Authors: , 
+   Date: 2010
+
+57. Using a time series of satellite imagery to detect land use and land cover changes in the Atlanta, Georgia metropolitan area
+   Authors: , 
+   Date: 2002
+
+58. Increase and Spatial Variation in Soil Infiltration Rates Associated with Fibrous and Tap Tree Roots
+   Authors: , , , , 
+   Date: 2019. 1700
+

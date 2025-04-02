@@ -1,0 +1,266 @@
+================================================================================
+TITLE: Dynamic World, Near real-time global 10 m land use land cover mapping
+================================================================================
+
+AUTHORS:
+- Christopher Brown
+- Steven Brumby
+- Brookie Guzder-Williams
+- Tanya Birch
+- Samantha Hyde
+- Joseph Mazzariello
+- Wanda Czerwinski
+- Valerie Pasquarella
+- Robert Haertel
+- Simon Ilyushchenko
+- Kurt Schwehr
+- Mikaela Weisse
+- Fred Stolle
+- Craig Hanson
+- Oliver Guinan
+- Rebecca Moore
+- Alexander Tait
+
+ABSTRACT:
+Unlike satellite images, which are typically acquired and processed in near-real-time, global land cover products have historically been produced on an annual basis, often with substantial lag times between image processing and dataset release. We developed a new automated approach for globally consistent, high resolution, near real-time (NRT) land use land cover (LULC) classification leveraging deep learning on 10 m Sentinel-2 imagery. We utilize a highly scalable cloud-based system to apply this approach and provide an open, continuous feed of LULC predictions in parallel with Sentinel-2 acquisitions. This first-of-its-kind NRT product, which we collectively refer to as Dynamic World, accommodates a variety of user needs ranging from extremely up-to-date LULC data to custom global composites representing user-specified date ranges. Furthermore, the continuous nature of the product's outputs enables refinement, extension, and even redefinition of the LULC classification. In combination, these unique attributes enable unprecedented flexibility for a diverse community of users across a variety of disciplines.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Background & Summary ##
+Regularly updated global land use land cover (LULC) datasets provide the basis for understanding the status, trends, and pressures of human activity on carbon cycles, biodiversity, and other natural and anthropogenic processes 
+Currently, almost all moderate resolution LULC products are available with only limited spatial and/or temporal coverage (e.g., USGS NLCD 
+Simultaneous advances in large-scale cloud computing and machine learning algorithms in high-performance open source software frameworks (e.g., TensorFlow 
+
+## Methods ##
+Land Use Land Cover taxonomy. The classification schema or "taxonomy" for Dynamic World, shown in Table 
+Training dataset collection. Our modeling approach relies on semi-supervised deep learning and requires spatially dense (i.e., ideally wall-to-wall) annotations. To collect a diverse set of training and evaluation data, we divided the world into three regions: the Western Hemisphere (160°W to 20°W), Eastern Hemisphere-1 (20°W to 100°E), and Eastern Hemisphere-2 (100°E to 160°W). We further divided each region by the 14 RESOLVE Ecoregions biomes 
+At each sample location, we performed an initial selection of Sentinel-2 images from 2019 scenes based on image cloudiness metadata reported in the Sentinel-2 tile's QA60 band. We further filtered scenes to remove images with many masked pixels. We finally extracted individual tiles of 510 × 510 pixels centered on the sample sites from random dates in 2019. Tiles were sampled in the UTM projection of the source image and we selected one tile corresponding to a single Sentinel-2 ID number and single date.
+Further steps were then taken to obtain an "as balanced as possible" training dataset with respect to the LULC classifications from the respective LULC products. In particular, for each Dynamic World LULC category contained within a tile, the tile was labeled to be high, medium, or low in that category. We then selected an approximately equal number of tiles with high, medium or low category labels for each category.
+To achieve a large dataset of labeled Sentinel-2 scenes, we worked with two groups of annotators. The first group included 25 annotators with previous photo-interpretation and/or remote sensing experience. The expert group labeled approximately 4,000 image tiles (Fig. 
+All Dynamic World annotators used the Labelbox platform 
+
+## Image preprocessing. ##
+We prepared Sentinel-2 imagery in a number of ways to accommodate both annotation and training workflows. An overview of the preprocessing workflow is shown in Fig. 
+For training data collection, we used the Sentinel-2 Level-2A (L2A) product, which provides radiometrically calibrated surface reflectance (SR) processed using the Sen2Cor software package 
+In addition to our preliminary cloud filtering in training image selection, we adopted and applied a novel masking solution that combines several existing products and techniques. Our procedure is to first take the 10 m Sentinel-2 Cloud Probability (S2C) product available in Earth Engine 
+In order to remove cloud shadows, we extend the cloudy pixel mask 5 km in the direction opposite the solar azimuthal angle using the scene level metadata "SOLAR_AZIMUTH_ANGLE" and a directional distance transform (DDT) operation in Earth Engine. The final cloud and shadow mask is resampled to 100 m to decrease both the data volume and processing time. The resulting mask is applied to Sentinel-2 images used for training and inference such that unmasked pixels represent observations that are likely to be cloud-and shadow-free.
+The distribution of Sentinel-2 reflectance values are highly compressed towards the low end of the sensor range, with the remainder mostly occupied by high return phenomena like snow and ice, bare ground, and specular reflection. To combat this imbalance, we introduce a normalization scheme that better utilizes the useful range of Sentinel-2 reflectance values for each band. We first log-transform the raw reflectance values to  equalize the long tail of highly reflective surfaces, then remap percentiles of the log-transformed values to points on a sigmoid function. The latter is done to bound on (0, 1) without truncation, and condenses the extreme end members of reflectances to a smaller range.
+To account for an annotation skill differential between the non-expert and expert groups, we one-hot encode the labeled pixels, and smooth them according to the confidence in a binary label of the individual annotator (expert/non-expert): this is effectively linearly interpolating the distributions per-pixel from their one-hot encoding (i.e. a vector of binary variables for each class label) to uniform probability. We used 0.2 for experts, and 0.3 for non-experts (i.e. ~82% confidence on the true class for experts and ~73% confidence on the true class for the non-expert. We note that these values approximately mirror the Non-Expert to Expert Consensus agreement as discussed in the Technical Validation section). This is akin to standard label-smoothing 
+We generate a pair of weights for each pixel in an augmented example designed to compensate for class imbalance across the training set and weight high-frequency spatial features at the inputs during "synthesis" (discussed further in the following section). We also include a weight per pixel designed to attenuate labels in the center of labeled polygons where human annotators often missed small details using a simple edge finding kernel.
+We finally perform a series of augmentations (random rotation and random per-band contrasting) to our input data to improve generalizability and performance of our model. These augmentations are applied four times to each example to yield our final training dataset of examples paired with class distributions, masks, and weights (Fig. 
+
+## Model training. ##
+Our broad approach to transferring the supervised label data to a system that could be applied globally was to train a Fully Convolutional Neural Network (FCNN) 
+Although applying CNN modeling, including FCNN, to recover LULC is not a new idea 
+
+## Data Records ##
+The Dynamic World NRT product is available for the full Sentinel-2 L1C collection from 2015-06-27 to present. The revisit frequency of Sentinel-2 is between 2-5 days depending on latitude, though Dynamic World imagery is produced at about half this frequency (across all latitudes) given the aforementioned 35% filter on the CLOUDY_PIXEL_PERCENTAGE Sentinel-2 L1C metadata.
+The NRT product is hosted as an Earth Engine Image Collection under the collection ID "GOOGLE/ DYNAMICWORLD/V1". This is referenced in either the Earth Engine Python or JavaScript client library with ee.ImageCollection('GOOGLE/DYNAMICWORLD/V1') and in the Earth Engine data catalog at https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1 
+
+## technical Validation ##
+We used several different approaches to characterize the quality of our NRT products. We first compared expert and non-expert annotations to establish baseline agreement across human interpreters. This is particularly relevant in understanding the quality of 20,000 training tiles that were annotated by non-experts. We then compared expert reference annotations with Dynamic World products and to existing national and global products produced at an annual time step. We note that, for all comparisons with Dynamic World products, we ran the trained Dynamic World model directly on the Sentinel-2 imagery in the test tile and applied our cloud mask in order to benchmark the NRT results for the reference image date.
+To create a balanced validation set, we randomly extracted ten image-markup pairs per biome per hemisphere from the existing markups: 140 from the 14 biomes in the Western Hemisphere, 130 from the 13 biomes in Eastern Hemisphere-1, and another 140 from the 14 biomes in Eastern Hemisphere-2. Each tile was independently labeled by three annotators from the expert group and by a member of the non-expert group such that we had four different sets of annotations for each validation tile. In total, this process produced 1636 tile annotations over 409 Sentinel-2 tiles (Fig. 
+Annotations were combined in three different ways to measure (1) agreement between expert and non-expert labels, (2) expert-to-expert consistency, and (3) agreement between machine labeling and multi-expert consensus under several expert voting schemes.The four voting schemes considered were Three Expert Strict agreement, where all three experts had an opinion and all three agreed on feature class; Expert Consensus, where all three experts agreed, or where two experts agreed and the third had no opinion, or where one expert had an opinion and the other two did not; Expert Majority, where at least two experts agreed on feature class, or where one expert had an opinion and the other two did not; Expert Simple Majority, where at least two experts agreed and at least two agreed on feature class.
+
+## Comparison of expert and non-expert annotations. ##
+To assess the quality of non-expert annotations, which comprise the majority of our training dataset, we directly compared rasterized versions of hand-digitized expert and non-expert annotations for our validation sample. Though these validation images were not used as part of model training, this comparison highlights strengths and potential weaknesses of the training set. We summarize the agreement between non-experts and experts for different voting schemes in Table 
+Agreement for all comparisons was greater than 75%, suggesting fairly consistent labeling across different levels of expertise. As would be expected, the Three Expert Strict set shows the highest overlap with the Non-Expert set (91.5%), as only the pixel labels with the highest confidence amongst expert annotators remain.   the highest probability (or "Top-1" label) was compared to the four expert voting schemes. Neither the validation images, nor other images from the same locations were available to the model during training. Thus, this assessment quantifies how well the model performs when applied outside the training domain. The results of these comparisons are shown in Tables 
+
+## Comparison of Dynamic World predictions with expert annotations. ##
+We considered the Expert Consensus scheme to best balance "easy" labels (where many experts would agree) and "hard" labels (where labels would be arguably more ambiguous) and used this as our primary performance metric. Overall agreement between these single-image Dynamic World model outputs and the expert labels was observed to be 73.8%. Comparing this 73.8% to the non-expert to expert agreement of 77.8% in Table 
+
+## Comparison of Dynamic World and other LULC datasets. ##
+As a third point of comparison, we contextualize our results in terms of existing products. We qualitatively and quantitatively compared Dynamic World with other publicly available global and regional LULC datasets (Table 
+Measured against the expert consensus of annotations for the 409 global tiles, Dynamic World exceeded the agreement of all other LULC datasets except for the regional product LCMAP 2017 (Table 
+
+## Usage Notes ##
+Extensions of the Dynamic World NRT collection offer new opportunities to create global analysis products at a speed, cost, and performance that is appropriate for a broad range of stakeholders, e.g. national or regional governments, civil society, and national and international research and policy organizations. It is our hope that Dynamic World and spatially consistent products like it can begin to make LULC and derived analysis globally equitable.
+
+## Time series of class probabilities. ##
+Though we used Top-1 labels for validation and cross-dataset comparisons, Dynamic World includes class probabilities in addition to a single "best" label for each pixel (Table 
+Uncertainties. We find single-date Dynamic World classifications agree with the annotators nearly as well as the annotators agree amongst each other. The Dynamic World NRT product also achieves performance near, or exceeding many popular regional and global annual LULC products when compared to annotations for the same validation tiles. However, we have observed that performance varies spatially and temporally as a function of both the quality of S2 cloud masking and variability in land cover and condition.
+Dynamic World tends to perform most strongly in temperate and tree-dominated biomes. Arid shrublands and rangelands were observed to present the greatest source of confusion specifically between crops and shrub. In Fig. 
+We also note that single-date classifications are highly dependent on accurate cloud and cloud shadow masking. Though we have implemented a fairly conservative masking process that includes several existing products and algorithms, missed clouds are typically misclassified as Snow & Ice and missed shadows as Water. However, because Dynamic World predictions are directly linked to individual Sentinel-2 acquisitions, these misclassifications can be identified by inspecting source imagery and resolved through additional filtering or other post-processing.
+Creating new products from the Dynamic World collection. As a fundamentally NRT and continuous product, Dynamic World allows users to constrain observed data ranges and leverage the continuous nature of the outputs to characterize land conditions as needed for their specific interests and tasks. For example, we do not expect the prescriptiveness of the "label" band to be appropriate for all user needs. By applying a desired threshold or more advanced decision framework to the estimated probabilities, it is possible to customize a discrete classification as is appropriate for a user's unique definitions or downstream task. Furthermore, users can aggregate NRT results to represent longer time periods. For example, one could create a monthly product as seen in Fig. 
+Quantifying accuracy of derived products. Rigorous assessment of map accuracy and good practices in estimating areas of mapped classes require probability sampling design that supports design-based inference of population-level parameters such as overall accuracy 
+In the assessments performed as part of our Technical Validation, we focus on agreement between reference annotations and our Top-1 NRT labels as our primary validation metric. While these agreement assessments support the general quality and utility of the Dynamic World dataset from the perspective of benchmarking, we note that our confusion matrices are not population confusion matrices and thus cannot be used to estimate population parameters. These matrices also do not account for model-based estimates of uncertainty, specifically class probability bands that characterize uncertainty in model predictions. While more rigorous characterization of model uncertainty could be achieved using model-based inference techniques 
+As an example, a Dynamic World derived product was generated by simply averaging class probabilities and a proof-of-concept assessment was performed by the University of Maryland Global Land Analysis and Discovery Laboratory (UMD-GLAD) using a stratified random sampling strategy with a total of 19 strata based on a prototype 30 m UMD-GLAD LULC map. Fifty sampling units were randomly selected from each of the 19 strata. Reference data for interpretation and class assignment consisted of high resolution data from the Google Maps Satellite layer viewed in Google Earth and MODIS time-series NDVI. Each interpreted sampling unit was re-labeled with one of the eight DynamicWorld classes and all results were compared to the temporally aggregated DynamicWorld product. Results generally indicated higher accuracies in terms of precision/user's accuracy and recall/producer's accuracy for relatively stable LULC classes such as water and trees. However, mixed classes such as built area and shrub & scrub and classes such as bare ground, crop, grass, and flooded vegetation that represent transient states or exhibit greater temporal dynamics tended to show much lower accuracies. Some of these lower levels of agreement also reflect potential mismatches in class definitions that arise from the NRT nature of the Dynamic World classes, i.e. "Flooded vegetation" may characterize an ephemeral state that is different from a more traditional "wetland" categorization.
+While this example provides one possible derived product and assessment useful for demonstration purposes, we intentionally do not provide a standard derivative map product of the Dynamic World dataset and instead encourage users, as is standard practice, to develop assessments of their unique derivative map products using tools such as Collect Earth 40 designed for reference data collection and community standard guidance 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. The Importance of Land-Cover Change in Simulating Future Climates
+   Authors: 
+   Date: 2005
+
+2. The impact of global land-cover change on the terrestrial water cycle
+   Authors: , , 
+   Date: 2012
+
+3. Land management and land-cover change have impacts of similar magnitude on surface temperature
+   Authors: 
+   Date: 2014
+
+4. MCD12Q1 MODIS/Terra+Aqua Land Cover Type Yearly L3 Global 500m SIN Grid V006
+   Authors: , 
+   Date: 2019
+
+5. Hierarchical mapping of annual global land cover 2001 to present: The MODIS Collection 6 Land Cover product
+   Authors: , , , 
+   Date: 2019
+
+6. Climate Change Initiative, Land Cover maps
+   Date: 2017
+
+7. Copernicus Global Land Service: Land Cover 100m: collection 3: epoch 2019: Globe
+   Authors: 
+   Date: 2020
+
+8. Copernicus Global Land Cover Layers-Collection 2. Remote Sens
+   Authors: 
+   Date: 2020
+
+9. Bringing an ecological view of change to Landsat-based remote sensing
+   Authors: 
+   Date: 2014
+
+10. Overall Methodology Design for the United States National Land Cover Database
+   Authors: 
+   Date: 2016. 2019
+
+11. Lessons learned implementing an operational continuous United States national land change monitoring capability: The Land Change Monitoring, Assessment, and Projection (LCMAP) approach
+   Authors: 
+   Date: 2020
+
+12. Using Classified and Unclassified Land Cover Data to Estimate the Footprint of Human Settlement
+   Authors: , , , , 
+   Date: 2018
+
+13. Global land cover mapping at 30m resolution: A POK-based operational approach
+   Authors: 
+   Date: 2015
+
+14. Stable classification with limited sample: transferring a 30-m resolution sample set collected in 2015 to mapping 10-m resolution global land cover in 2017
+   Authors: 
+   Date: 2019
+
+15. Production of global daily seamless data cubes and quantification of global land cover change from 1985 to 2020 -iMap World 1.0. Remote Sens. Environ
+   Authors: 
+   Date: 2021
+
+16. TensorFlow: A system for large-scale machine learning
+   Authors: 
+   Date: 2016
+
+17. Google Earth Engine: Planetary-scale geospatial analysis for everyone
+   Authors: 
+   Date: 2017
+
+18. A Land Use and Land Cover Classification System for Use with Remote Sensor Data
+   Authors: 
+   Date: 1976
+
+19. LUCAS 2015 topsoil survey: presentation of dataset and results
+   Date: 2020
+
+20. Reconstructing Three Decades of Land Use and Land Cover Changes in Brazilian Biomes with Landsat Archive and Earth Engine
+   Authors: 
+   Date: 2020
+
+21. in Good Practice Guidance For Land Use, Land-use Change And Forestry
+   Authors: 
+   Date: 2003
+
+22. An Ecoregion-Based Approach to Protecting Half the Terrestrial Realm
+   Authors: 
+   Date: 2017
+
+23. 
+   Authors: 
+
+24. Sen2Cor for Sentinel-2. in Image and Signal Processing for Remote Sensing
+   Authors: 
+   Date: 2017
+
+25. Cloud Probability
+   Authors: 
+   Date: 2021
+
+26. Improvement of the Fmask algorithm for Sentinel-2 images: Separating clouds from bright surfaces based on parallax effects
+   Authors: , , , , 
+   Date: 2018
+
+27. When does label smoothing help?
+   Authors: , , 
+   Date: 2019
+
+28. Towards understanding label smoothing
+   Authors: , , , , 
+   Date: 2020
+
+29. Fully convolutional networks for semantic segmentation
+   Authors: , , 
+   Date: 2015
+
+30. Sentinel-2 Data for Land Cover/Use Mapping: A Review
+   Authors: 
+   Date: 2020
+
+31. Bigearthnet: A Large-Scale Benchmark Archive for Remote Sensing Image Understanding
+   Authors: , , , 
+   Date: 2019
+
+32. Combining Sentinel-1 and Sentinel-2 Satellite Image Time Series for land cover mapping via a multi-source deep learning architecture
+   Authors: , , , 
+   Date: 2019
+
+33. U-Net: Convolutional Networks for Biomedical Image Segmentation
+   Authors: , , 
+   Date: 2015
+
+34. Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation
+   Authors: , , , , 
+   Date: 2018. 2018
+
+35. 
+   Date: 2022
+
+36. Dynamic World Test Tiles
+   Authors: 
+   Date: 2021
+
+37. Dynamic World training dataset for global land use and land cover categorization of satellite imagery
+   Authors: , , , , 
+   Date: 2021
+
+38. Key issues in rigorous accuracy assessment of land cover products
+   Authors: , 
+   Date: 2019
+
+39. Practical Implications of Design-Based Sampling Inference for Thematic Map Accuracy Assessment
+   Authors: 
+   Date: 2000
+
+40. Collect Earth: An online tool for systematic reference data collection in land cover and use applications
+   Authors: 
+   Date: 2019
+
+41. Making better use of accuracy data in land change studies: Estimating accuracy and area and quantifying uncertainty using stratified estimation
+   Authors: , , , 
+   Date: 2013
+
+42. Good practices for estimating area and assessing accuracy of land change
+   Authors: 
+   Date: 2014
+
+43. Key issues in rigorous accuracy assessment of land cover products
+   Authors: , 
+   Date: 2019
+
+44. google/dynamicworld: v1.0.0. zenodo
+   Authors: 
+   Date: 2021
+

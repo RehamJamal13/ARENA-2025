@@ -1,0 +1,304 @@
+================================================================================
+TITLE: a global land cover training dataset from 1984 to 2020
+================================================================================
+
+AUTHORS:
+- Radost Stanimirova
+- Katelyn Tarrio
+- Konrad Turlej
+- Kristina Mcavoy
+- Sophia Stonebrook
+- Kai-Ting Hu
+- Paulo Arévalo
+- Eric Bullock
+- Yingtong Zhang
+- Curtis Woodcock
+- Pontus Olofss
+- Zhe Zhu
+- Christoph Barber
+- Carlos Souza
+- Shijuan Chen
+- Jonathan Wang
+- Foster Mensah
+- Marco Calderoń-Loor
+- Michalis Hadjikakou
+- Brett Bryan
+- Jordan Graesser
+- Dereje Beyene
+- Brian Mutasha
+- Sylvester Siame
+- Abel Siampale
+- Mark Friedl
+
+ABSTRACT:
+State-of-the-art cloud computing platforms such as Google Earth Engine (GEE) enable regionalto-global land cover and land cover change mapping with machine learning algorithms. However, collection of high-quality training data, which is necessary for accurate land cover mapping, remains costly and labor-intensive. To address this need, we created a global database of nearly 2 million training units spanning the period from 1984 to 2020 for seven primary and nine secondary land cover classes. Our training data collection approach leveraged GEE and machine learning algorithms to ensure data quality and biogeographic representation. We sampled the spectral-temporal feature space from Landsat imagery to efficiently allocate training data across global ecoregions and incorporated publicly available and collaborator-provided datasets to our database. To reflect the underlying regional class distribution and post-disturbance landscapes, we strategically augmented the database. We used a machine learning-based cross-validation procedure to remove potentially mis-labeled training units. Our training database is relevant for a wide array of studies such as land cover change, agriculture, forestry, hydrology, urban development, among many others.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Background & Summary ##
+The accuracy of land cover and land cover change maps derived from remote sensing data depends on training sample size and quality -two key considerations in planning and conducting supervised classification 
+As the global impact of climate change and anthropogenic activity has increased in recent decades, so has the need for high-quality maps of global land cover and land cover change. These maps require comprehensive, global, and high-quality land cover training datasets that are adaptable to the needs of a wide range of end users depending on the region of interest and the classification algorithm used. Currently, only a handful of continental-to-global training 
+The goal of the Global Land Cover Estimation (GLanCE) project is to provide high-quality long-term records of land cover and land cover change at 30 m spatial resolution for the 21st century using the Landsat archive 
+Our training data collection and curation approach leverages relatively recent technological advances such as cloud computing (e.g., Google Earth Engine (GEE)) and machine learning algorithms (e.g., Random Forest, k-means clustering etc.) to enforce data quality and ecological representation. Specifically, we implement an iterative quality assessment procedure that relies on expert review and a machine learning-based cross-validation procedure to remove poorly labeled training data.
+Given the global scope of GLanCE, combined with the time and resource-intensive nature of training data collection, it was necessary to supplement the GLanCE data collection with external datasets and map products. Specifically, we harmonized seven publicly available land cover training datasets to be consistent with GLanCE data and combined them into a global database 
+The objective of this paper is to describe the GLanCE training dataset, which is available to the public for use in regional-to-global land cover and land cover change studies. The dataset is global, medium spatial resolution (30 m), designed to be geographically and spectrally representative of all global ecoregions 
+
+## Methods training data collection. ##
+GLanCE training data were collected by a team of trained image analysts at Boston University using the land cover key and a suite of online tools (https://github.com/parevalo/measures_collector, using Google Earth Engine API). Image analysts interpreted land cover on-screen using a combination of high-resolution Google Earth imagery, Landsat imagery, time series of spectral reflectance, vegetation indices, and Landsat-derived Tasseled Cap transformations. In addition, image analysts used Google Earth photos and StreetView (where available) to aid their interpretations. Hereafter we refer to each entry in the database, which represents individual Landsat pixels, as a training unit. Each training unit corresponds to an interpretation by an image analyst of Continuous Change Detection and Classification (CCDC) (https://developers.google.com/ earth-engine/datasets/catalog/GOOGLE_GLOBAL_CCDC_V1) time segments (explained below) (Fig. 
+Over the course of data collection, the team of image analysts consisted of 6 to 12 members who were trained to interpret satellite imagery for land cover attributes. Analysts alternated between interpreting sets of randomly assigned training units and reviewing peers' interpretations. All image analysts received the same training to ensure consistency in their interpretation, followed by a practice training set for each continent that was collectively discussed so that analysts learned from their errors and followed consistent interpretation protocols. Training included image interpretation, guidance on how to use software tools that were developed to support this activity 
+Because a single Landsat pixel can include multiple land cover types over time, an important component of our training data collection protocol was the interpretation of land cover change. The core algorithm used in this project, the CCDC algorithm 
+
+## Data collected by the ##
+The second set of training data that image analysts collected was based on unsupervised clustering of spectral-temporal features estimated from Landsat image time series using the CCDC algorithm. This approach was stratified using the World Wildlife Fund (WWF) ecoregions 
+Our cluster-based approach included two main steps: (1) principal component analysis (PCA) to reduce the dimensionality of the data; and (2) k-means clustering on the principal components (PCs) to identify the optimal partitioning of the training data. For each ecoregion, we selected a maximum of 10 PCs to capture at least 80% of the variance, although 99% of the variance was frequently captured in fewer PCs. We ran k-means clustering for a range of K values from 5 to 400 and for each value we calculated the sum of squared distances from each point to its assigned center to select the optimal (fewest) number of clusters that were well separated from one another. As a result, we selected 30 to 60 clusters -for a maximum of 500 training units -per ecoregion. The resulting dataset was representative of the distribution of land cover at the regional scale and included a mix of homogeneous and heterogeneous training units. Because the STEP-and cluster-based datasets were collected explicitly for the purposes of the GLanCE project, together they represent the most thematically detailed and complete data in our database, with up to 23 recorded attributes per training unit.
+The third set of training data were generated to iteratively improve the accuracy of land cover maps. Despite our best efforts to represent all ecoregions in the training data, examples of some specialized and regionally relevant land uses (e.g., greenhouses in Spain and China, sparse orchards, and plantations in India etc.) were missing in our training database, which resulted in obvious errors in the map results. To ameliorate these issues, we collected "Feedback" training units for these locations around the globe using the interpretation tools described above.
+
+## Supplementary data sources. ##
+Given the global scale of the GLanCE project and the lack of available high-resolution imagery in some parts of the world, the GLanCE-collected dataset described above was insufficient to capture the full range of geographic, temporal, and spectral heterogeneity in global land cover. To address this, we supplemented the GLanCE training database by leveraging existing publicly available, collaborator-contributed, and team-collected datasets that we harmonized and standardized to conform to the GLanCE land cover classification key. The sources and key features of these data are summarized in Table 
+Unfortunately, even after the data collected by the GLanCE team were combined with the supplementary datasets described above, some land cover classes, especially rarer classes (e.g., developed, water, shrub), were underrepresented. To address this, we augmented the database with training data derived from the World Settlement Footprint product 
+Pre-processing and harmonization of supplementary data sources. Pre-processing and harmonization of supplementary datasets consisted of four steps: (1) if available, each dataset was filtered based on interpreter confidence (highest) or consensus score (100% agreement among interpreters); (2) the land cover legend for each data set was harmonized with the GLanCE legend (crosswalk tables in Supplementary Information);
+(3) each dataset was compared against an existing land cover product (ESA World Cover 
+
+## Data Records ##
+The GLanCE training dataset described in this paper is available from Source Cooperative 
+Because land cover is dynamic and can change due to natural or anthropogenic processes, GLanCE training units are characterized as either 'stable' or 'transitional' (Segment_Type in Table 
+The V1.0 training dataset consists of Barren/sparsely vegetated (4) Land comprised of natural occurrences of soils, sand, or rocks where less than 10% of the area is vegetated.
+
+## Soil (4) ##
+Land covered with less than 10% vegetation and dominated by soil.
+
+## Rock (5) ##
+Land covered with less than 10% vegetation and dominated by rocks.
+Beach/sand (6) Land covered with less than 10% vegetation and dominated by beach/sand.
+Trees (5)   Land where tree cover is greater than 30%. Note that cleared trees (i.e., clear-cuts) are mapped according to current cover (e.g., barren/sparsely vegetated, shrubs, or herbaceous).
+Deciduous (7)  Land with tree cover greater than 30% and all trees present are deciduous.
+Evergreen (8)  Land with tree cover greater than 30% and all trees present are evergreen.
+Mixed (9)  Land with tree cover greater than 30% and neither deciduous nor evergreen trees dominate.
+Shrub ( 
+Herbaceous (7)  Land covered by herbaceous plants. Total vegetation cover exceeds 10%, tree cover is less than 30%, and shrubs comprise less than 10% of the area.
+Grassland (11)  Herbaceous land covered with grass.
+Agriculture (12)  Herbaceous land covered with cultivated cropland.
+Moss/lichen (13) Herbaceous land covered with lichen and/or moss.  In contrast, ice/snow is not well represented because it tends to be located in areas where Landsat data density is insufficient for CCDC (Fig. 
+To our knowledge, the dataset presented in this study is the longest, most extensive, and comprehensive publicly available global land cover and land use training database. We standardized and harmonized 22 disparate sources of land cover labels into a single unified training database that is comprised of 39% publicly available data, 55% collaborator-provided data, 4% GLanCE-collected data (collected explicitly for the purposes of the GLanCE product), 1% Boston University team collected data (collected by team members for other projects, not explicitly for the purposes of GLanCE), and 0.2% MODIS-derived training data (Table 
+
+## technical Validation ##
+Human error is inherent to all land cover training data sets, especially those compiled by on-screen interpretation 
+We then examined the difference between the 1st and 2nd most likely classes; training data with margins less than 0.05 were discarded because they represented cases where the two most likely classes were easily confused. To select this threshold, we performed a 10-fold cross validation analysis, which demonstrated that training cases with margins less than or equal to 0.05 had substantially higher misclassification rates relative to cases with higher margins. We then removed all misclassified cases for which the margin between the predicted label and the label assigned to the unit in the database was in the upper quartile of margins for each class. In other words, we removed data where the assigned label differed from the label predicted by random forest, and where the class probability for the label assigned by random forest was high.
+Using this procedure, we removed ~15% of the training data in each continent (Fig. 
+As an additional technical validation, we followed an approach used by Doda et al. 
+Tables S2-S7 show the confusion matrices between the observed and predicted land cover labels. Even though the user's accuracy is high (greater than 0.8 in most continents) (Fig. 
+
+## Usage Notes ##
+Because the process of acquiring supplementary datasets was opportunistic and non-systematic based on data availability and quality, the full database includes geographic variation in data density. For example, some regions have training units that are geographically clumped (e.g., Ghana) or land cover classes that are overrepresented (e.g., herbaceous) (Figs. 
+For applications focused on land cover change (abrupt or gradual), for which our database includes proportionally less data, we recommend retaining all change training data (for guidance see 
+Fig. 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. The sensitivity of mapping methods to reference data quality: Training supervised image classifications with imperfect reference data
+   Authors: , , , , 
+   Date: 2016
+
+2. Accounting for training data error in machine learning applied to earth observations
+   Authors: 
+   Date: 2020
+
+3. An evaluation of different training sample allocation schemes for discrete and continuous land cover classification using decision tree-based algorithms
+   Authors: 
+   Date: 2015
+
+4. The use of small training sets containing mixed pixels for accurate hard image classification: Training on mixed spectral responses for classification by a SVM
+   Authors: , 
+   Date: 2006
+
+5. Training data selection for annual land cover classification for the Land Change Monitoring, Assessment, and Projection (LCMAP) Initiative
+   Authors: , , , , 
+   Date: 2020
+
+6. Implementation of machine-learning classification in remote sensing: an applied review
+   Authors: , , 
+   Date: 2018
+
+7. Support vector machines in remote sensing: A review
+   Authors: , , 
+   Date: 2011
+
+8. An assessment of the effectiveness of a random forest classifier for land-cover classification
+   Authors: , , , , 
+   Date: 2012
+
+9. Classification in the presence of label noise: A Survey
+   Authors: , 
+   Date: 2014
+
+10. An assessment of support vector machines for land cover classification
+   Authors: , , 
+   Date: 2002
+
+11. Assessing the impact of training sample selection on accuracy of an urban classification: a case study in Denver, Colorado
+   Authors: , , 
+   Date: 2014
+
+12. A survey of image classification methods and techniques for improving classification performance
+   Authors: , 
+   Date: 2007
+
+13. Optimizing selection of training and auxiliary data for operational land cover classification for the LCMAP initiative
+   Authors: 
+   Date: 2016
+
+14. LandCoverNet: A global benchmark land cover classification training dataset
+   Authors: , 
+   Date: 201203111. 2020
+
+15. A global reference database of crowdsourced cropland data collected using the Geo-Wiki platform
+   Authors: 
+   Date: 2017
+
+16. Harmonised LUCAS in-situ land cover and use database for field surveys from 2006 to 2018 in the
+   Authors: 
+   Date: 2020
+
+17. A global dataset of crowdsourced land cover and land use reference data
+   Authors: 
+   Date: 2017
+
+18. Hierarchical mapping of annual global land cover 2001 to present: The MODIS Collection 6 Land Cover product
+   Authors: , , , 
+   Date: 2019
+
+19. A dataset of global land cover validation samples
+   Authors: , , , , 
+   Date: 2019
+
+20. LCMAP reference data product 1984-2018 land cover, land use and change process attributes
+   Authors: 
+   Date: 2020
+
+21. SpaceNet: A remote sensing dataset and challenge series
+   Authors: , , 
+   Date: 2019
+
+22. BigEarthNet: A large-scale benchmark archive for remote sensing image understanding
+   Authors: , , , 
+   Date: 2019
+
+23. DeepSat -A Learning framework for satellite imagery
+   Authors: 
+   Date: 2015
+
+24. Medium spatial resolution mapping of global land cover and land cover change across multiple decades from Landsat
+   Authors: 
+   Date: 2022
+
+25. A crop type dataset for consistent land cover classification in Central
+   Authors: 
+   Date: 2020
+
+26. High-resolution wall-to-wall land-cover mapping and land change assessment for Australia from 1985 to
+   Authors: , , 
+   Date: 2015. 2021
+
+27. Reconstructing three decades of land use and land cover changes in Brazilian biomes with Landsat archive and Earth Engine
+   Authors: 
+   Date: 2020
+
+28. Landscapes of West Africa -A WindoW on A ChAnging World
+   Authors: 
+   Date: 2016
+
+29. Monitoring temperate forest degradation on Google Earth Engine using Landsat time series analysis
+   Authors: 
+   Date: 2021
+
+30. Monitoring shifting cultivation in Laos with Landsat time series
+   Authors: , , , 
+   Date: 2023
+
+31. Continuous monitoring of land change activities and post-disturbance dynamics from Landsat time series: A test methodology for REDD+ reporting
+   Authors: , , 
+   Date: 2020
+
+32. Temporally-consistent annual land cover from Landsat time series in the Southern Cone of South America
+   Authors: 
+   Date: 2022
+
+33. Widespread changes in 21st century vegetation cover in Argentina, Paraguay, and Uruguay
+   Authors: , , , 
+   Date: 2022
+
+34. Extensive land cover change across Arctic-Boreal Northwestern North America from disturbance and climate forcing
+   Authors: 
+   Date: 2020
+
+35. Automated training sample extraction for global land cover mapping
+   Authors: 
+   Date: 2014
+
+36. Using the 500 m MODIS land cover product to derive a consistent continental scale 30 m Landsat land cover classification
+   Authors: , 
+   Date: 2017
+
+37. Outlining where humans live, the World Settlement Footprint
+   Authors: 
+   Date: 2015. 2020
+
+38. High-resolution mapping of global surface water and its long-term changes
+   Authors: , , , 
+   Date: 2016
+
+39. Terrestrial ecoregions of the world: A new map of life on earth
+   Authors: 
+   Date: 2001
+
+40. A suite of tools for continuous land change monitoring in Google Earth Engine
+   Authors: , , , 
+   Date: 2020
+
+41. Continuous change detection and classification of land cover using all available Landsat data
+   Authors: , 
+   Date: 2014
+
+42. Exploring issues of training data imbalance and mislabelling on random forest performance for large area land cover classification using the ensemble margin
+   Authors: , , , 
+   Date: 2015
+
+43. 
+   Authors: 
+   Date: 10 m 2020 v100. 2021
+
+44. Copernicus global land cover layers-Collection 2. Remote Sens
+   Authors: 
+   Date: 2020
+
+45. A global land cover training dataset from
+   Authors: 
+   Date: 1984 to 2020. 2023
+
+46. Integration of remote-sensing and ground-based observations for estimation of emissions and removals of greenhouse gases in forests: Methods and Guidance from the Global Forest Observations Initiative
+   Authors: 
+   Date: 2020
+
+47. Lands cover classification system (LCCS)
+   Authors: , , 
+   Date: 2000
+
+48. Identifying mislabeled training data
+   Authors: , 
+   Date: 1999
+
+49. So2Sat POP -A curated benchmark data set for population estimation from space on a continental scale
+   Authors: 
+   Date: 2022
+
+50. Random forest in remote sensing: A review of applications and future directions
+   Authors: , 
+   Date: 2016
+
+51. Random Forests
+   Authors: 
+   Date: 2001
+

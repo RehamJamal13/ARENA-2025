@@ -1,0 +1,49 @@
+================================================================================
+TITLE: Predicting the Future Land Use and Land Cover Changes for Bhavani Basin, Tamil Nadu, India Using QGIS MOLUSCE Plugin
+================================================================================
+
+AUTHORS:
+- Manikandan Kamaraj
+- Sathyanathan Rangarajan
+
+ABSTRACT:
+Human population growth, movement, and 9 demand have a substantial impact on land use 10 and land cover dynamics. Thematic maps of land 11 use and land cover (LULC) serve as a reference 12 for scrutinizing, source administration, and 13 forecasting, making it easier to establish plans 14 that balance preservation, competing uses, and 15 growth compressions. The objective of this study 16 is to identify the changeover of land-use changes 17 in the Bhavani basin for the two periods 2005 18 and 2015, as well as to forecast and establish 19 potential land-use changes in the year 2025 and 20 2030 by using QGIS 2.18.24 version MOLUSCE
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Untitled ##
+194
+Study Area
+
+## 195 ##
+The Bhavani river basin is located between (Fig. 
+
+## Data and Criteria ##
+The source of data set for the study 
+
+## 256 ##
+The following parameters which were  
+
+## Methods ##
+In the Cellular Automation model, the transition probabilities from the ANN learning process are employed to describe the LULC changes. The (MOLUSCE) plugin in Quantum GIS 2.18.24 software is used for this method (Fig. 
+
+## Evaluation Correlation ##
+The   
+
+## Results and Discussion ##
+
+
+## 475 ##
+The trend of LULC change from 2005
+
+## 476 ##
+to 2020 is summarised in Tables 
+
+## 587 ##
+The results demonstrate that due to anthropogenic  
+
+================================================================================
+REFERENCES:
+================================================================================

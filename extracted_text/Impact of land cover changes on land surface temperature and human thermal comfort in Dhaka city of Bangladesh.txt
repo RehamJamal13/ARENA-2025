@@ -1,0 +1,487 @@
+================================================================================
+TITLE: Impact of Land Cover Changes on Land Surface Temperature and Human Thermal Comfort in Dhaka City of Bangladesh
+================================================================================
+
+AUTHORS:
+- H Imran
+- Anwar Hossain
+- • Saiful Islam
+- Ataur Rahman
+- Md Abul
+- Ehsan Bhuiyan
+- Supria Paul
+- Akramul Alam
+
+ABSTRACT:
+Urbanization leads to the construction of various urban infrastructures in the city area for residency, transportation, industry, and other purposes, which causes major land use change. Consequently, it substantially affects Land Surface Temperature (LST) by unbalancing the surface energy budget. Higher LST in city areas decreases human thermal comfort for the city dwellers and affects the urban environment and ecosystem. Therefore, a comprehensive investigation is needed to evaluate the impact of land use change on the LST. Remote Sensing (RS) and Geographic Information System (GIS) techniques were used for the detailed investigation. RS data for the years 1993, 2007 and 2020 during summer (March-May) in Dhaka city were used to prepare land cover maps, analyze LST, generate hazard maps and relate the land cover change with LST by using GIS. The results show that the built-up area in Dhaka city increased by 67% from 1993 to 2020 by replacing lowland mainly, followed by vegetation, bare soil and water bodies. LSTs found in the study area were ranged from 23.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Urban land use changes play an important role in influencing regional climate 
+Published in partnership with CECCR at King Abdulaziz University surfaces to built-up areas affects the amount of humidity in the air, which is related to atmospheric temperature 
+The increased global population is accelerating the demand for accommodations, agricultural production, food and shelter. Consequently, the land cover characteristic is changing for meeting the increased demand of population and replacing the vegetated area with impervious surfaces due to anthropogenic activities, and therefore, leading to climate changes inadvertently 
+Geographic Information System (GIS) and Remote Sensing (RS) are widely used tools to investigate LULC changes and associated LST 
+Some studies show that the temperature vegetation index (TVX) was constructed to investigate the influence of land changes over LST 
+Rapid urbanization has been taking place in the major cities particularly in capital cities (e.g. Delhi, Dhaka, etc.) of the developing countries. Dhaka is the capital of Bangladesh and one of the most densely populated megacities in the world with a population growth of 37.38% in the last decade which leads to its rapid urbanization 
+Many recent studies focused on the prediction of future land use change and their relationship with LST based on 1 3
+Published in partnership with CECCR at King Abdulaziz University four LULC indexes over three major cities: Dhaka, Chittagong and Rajshahi in Bangladesh 
+On the other hand, a few studies in Dhaka city investigated the thermal comfort conditions affecting by urbanization. 
+
+## Methodology ##
+
+
+## Study Area ##
+This study investigates the LULC changes and LST in Dhaka (Fig. 
+
+## Remote Sensing and Temperature Data ##
+Landsat satellite image data of the Dhaka city for the years 
+
+## Methods of Land Cover Classification ##
+
+
+## Land Cover Classification ##
+Supervised classification has been followed in this study to classify land cover from Landsat 5 TM and Landsat 8 OLI/ TIRS data. The user defines the known land cover in supervised classification and develops the cell signature value for each land cover type. Built-up area, water bodies, vegetation, bare soil and low land have been chosen as major land cover based on the previous research in Dhaka city (Ahmed 1 3
+Published in partnership with CECCR at King Abdulaziz University  
+
+## Accuracy Assessment of Land Cover Map ##
+The accuracy assessment of classified land cover maps for different years was made by using the confusion matrix method. Total 250 points were randomly selected on the classified image, which was matched with Google Earth and Sentinel images for verification and accuracy calculation. The overall accuracy of the classified images was obtained from accuracy assessment, which indicated the percentage of correctly classified points to the total number of points taken as Eq. 1:
+There are two commonly used approaches named Producer's accuracy and User's accuracy, which are calculated individually for all land cover classes. The producer's accuracy is found in percentage by dividing the number of correct points in one class by the total number of points as derived from the reference image. It measures how well the land base has been classified. The error of omission is considered in the Producer's accuracy, which represents the proportion of observed points on the ground but not classified in the map 
+Finally, all the derived LULC maps were validated based on the remote sensing images captured by Google Earth and Sentinel-2 for different locations in the city.
+(1)
+
+## Overall accuracy ##
+
+
+## = ##
+Total number of correctly classified pixels Total number of reference pixels × 100 %
+(2)
+Producer's accuracy (% ) = 100% -Error of omission (% ),
+(5) User's accuracy = 100% -Error of comission (% ).
+(6) k =
+The total sum of correct -Sum of all the (row total × column total) Total squared -Sum of all the (row total × column total) .
+
+## Land Surface Temperature (LST) Retrieval from Thermal Band ##
+Landsat 5 TM and Landsat 7 ETM + have one thermal band (band 6) while Landsat 8 OLI/TIRS has two thermal bands (bands 10 and 11). Specifically, to retrieve LST, TM band 6, ETM + band 6_1 (high gain) and TIRS band 10 were used in this study. TIRS band 11 was not used as the USGS recommended not to use because of its more significant calibration uncertainty 
+LST was retrieved using digital numbers (DN) of the thermal band of Landsat 5 TM (band 6), Landsat 7 ETM + (band 6) and Landsat 8 OLI (band 10). Thermal band 6 of Landsat 5 and 7 was acquired by 120 m and 60 m resolution, respectively. In contrast, thermal band 10 was acquired by 100 m resolution, but all of those were resampled to 30 m resolution (Table 
+
+## Conversion of the Digital Number (DN) to Spectral Radiance (L λ ) ##
+The following equations (Eqs. 7 and 8) were used to calculate the spectral radiance (L λ ) from thermal bands of Landsat 
+Published in partnership with CECCR at King Abdulaziz University
+where M L = band-specific multiplicative rescaling factor (0.0003342), QCAL = digital numbers of band 10, A L = band-specific additive rescaling factor (0.1).
+
+## Conversion of Spectral Radiance (L λ ) to At-Satellite Brightness Temperature ##
+The following equation (Eq. 9) was used to derive the atsatellite brightness temperature from spectral radiance:
+where T B = at satellite brightness temperature (K), L λ = spectral radiance, K 1 and K 2 = calibrated constant depending on the sensor of 
+
+## Calculation of Land Surface Temperature (LST) ##
+Obtained brightness temperature or black body temperature had to be corrected for spectral emissivity (ε) to determine LST. The algorithm used by 
+where S T = land surface temperature in (°C), T B = at satellite brightness temperature (K), λ = wavelength of emitted (10) 1 3
+Published in partnership with CECCR at King Abdulaziz University radiance in meters (11.5 μm), ρ = 1.438 × 10 -2 mK, ε = emissivity (ranges from 0.97 to 0.99).
+Emissivity can be expressed as (Eq. 11):
+where P V = proportion of vegetation; P V is calculated by Eq. 12:
+Emissivity (ε) and Proportion of vegetation (P V ) were calculated by following 
+
+## Calculation of Human Thermal Comfort ##
+Human thermal comfort (HTC) in urban areas provides information to the city dwellers and the urban planner about the adverse impacts on human health due to extreme temperatures and the increase of LST. To evaluate the HTC, two bio-meteorological indices were considered in this study: (a) the Discomfort Index (DI), and (b) the approximated wet-bulb globe temperature (AWBGT). 
+where Ta is air temperature (°C) and RH is relative humidity (%). This study used LST instead of Ta to calculate DI at the surface level as only LST is calculated from Landsat data. The thermal comfort at skin surface level is not usually evaluated as compared to pedestrian level; however, this study presents an understanding of how LULC changes can impact HTC at surface level.
+Furthermore, AWBGT is an index that indicates outdoor thermal stress conditions. AWBGT is calculated following Eq. 14 by 
+where e is water vapor pressure (hPa) and Ta is air temperature (°C). In this case, LST was also used to calculate AWBGT at surface level instead of Ta. Water vapor pressure (e) used in Eq. 14 to calculate AWBGT was calculated using relative humidity and LST instead of air temperature. First, the Goff-gratch equation shown in Eq. 15 was used to calculate the saturation vapor pressure, and then vapor pressure was computed by using relative humidity: 
+
+## Calculation of NDVI, NDBI, NDWI and NDBAI ##
+NDVI, NDBI, NDWI and NDBAI were used to characterize land cover class associated with LST 
+where NIR in the near infrared band of the image (TM band 4, OLI band 5), RED = red band of the image (TM band 3, OLI band 4).
+NDBI is sensitive to the built-up area and used as an indicator of built-up extent. NDWI is used to monitor water content in vegetation. In addition, to monitor the bareness of soil, NDBAI was also applied in this study area. NDBI, NDWI and NDBAI values vary between -1 and + 1. NDBI, NDWI and NDBAI was calculated following Eqs. 17, 18 and 19 
+
+## Results ##
+
+
+## Analysis of Land Cover Changes ##
+Five major land cover classes in Dhaka City have been analyzed for representing the dominant land cover according to the area proportion of land cover classes. Different land cover analyses have been shown in the following sections starting with the accuracy assessment.
+
+## Accuracy Assessment ##
+Land cover maps usually contain some errors due to classification techniques and methods of image acquisition 
+
+## Changes of Land Cover Areas ##
+The final classified map was generated by showing different land cover types in Dhaka city for the years 1993, 2007 and 2020 (Fig. 
+On the other hand, vegetation and water bodies gradually decreased while a considerable decrease in the lowland was found in the second stage of the study period (Fig. 
+Trends and amount of land cover changes are shown in Table 
+
+## Changes in Land Surface Temperatures ##
+The spatial distribution of LSTs with classified temperature zones was derived from Landsat thermal band for summer seasons in the years 1993, 2007 and 2020 (Fig. 
+
+## Variations of LSTs for Different Land Covers ##
+Figure 
+
+## LST Changes in Converted LULC Areas ##
+LST changes between 1993 and 2020 in newly grown land cover units are shown in Table 
+
+## LST and Observed Air Temperature ##
+A comparison of derived LST for the specified date of the summer season for the particular years 1993, 2007 and 2020 and observed air temperature (March-May) from Dhaka weather station during the years of 1993 to 2020 is shown in Fig. 
+The relationship between LST and air temperature in the study period from 1993 to 2020 for the weather station at Dhaka is shown in Fig. 
+Published in partnership with CECCR at King Abdulaziz University therefore, the LST was substantially higher than the air temperature. The greater variations between LST and the air temperature was indicating the lower coefficient of determination (R 2 ). However, the relationship showed an increasing trend of LST and air temperature.
+
+## Analysis of Human Thermal Comfort ##
+Changes in the human thermal Discomfort Index (DI) over the study area are shown in Fig. 
+In the case of AWBGT, the index values are classified in three categories that represent an absence of heat stress conditions (< 27.7 °C), the heat stress increases (27.7 °C to < 32.2 °C) and great heat stress danger occurs (> 32.2 °C) 
+
+## Relationship Between LST and Land Cover Indices ##
+Variation of LST depends on land cover types. 
+The impact of land cover change on the LST has mainly been focused on the previous sections, however, there was also an impact of climate change. Several previous studies in Bangladesh showed the trend of temperature change due to climate change. For example, 
+From the above results and discussion, the findings of this study can be summarized more specifically as follows:
+(1) This study revealed significant growth (67.41%) of urban or built-up area, which was converted from vegetation, lowland, bare soil and water bodies. On the other hand, bare soil drastically increased by filling lowland with sand. As a result, the area of the higher temperature zone increased substantially.
+(2) Built-up area and bare soil showed higher LST than other land covers while lowland exhibited lowest LST for all years. The spatial mean LST significantly increased by 6.43 °C during the study period.
+(3) Gradual increase of LST was found for all land covers over the study period, which was the evidence of urban microclimate warming effect in Dhaka city and consistent with the previous studies 
+Finally, regression analysis shows that LST increased (decreased) with the increase (decrease) of built-up (NDBI) and bareness indices (NDBAI). On the other hand, LST decreased with the increased vegetation (NDBI) and water body indices (NDWI) and vice-versa.
+
+## Conclusions ##
+This study investigated the impact of land use and land cover changes on LST from 1993 to 2020 in Dhaka city of Bangladesh. Regression analysis was conducted to find the relationship between LST and four land cover indices. The land cover of Dhaka city was substantially altered due to rapid urbanization and socio-economic development. Built-up and bare soil areas increased by 13.61% and 25.24% from losing water bodies, vegetation and lowland during the study period. The built-up area drastically increased in the periphery and northern part of the city while substantial newly grown bareness area replaced most of the lowland and naturally vegetated areas. Expansion of urban area changed the surface radiative properties that imbalanced surface energy budget, and consequently, affected the LST with an increasing trend. Spatial distribution of maximum and mean LST in Dhaka city showed the increase of 4.62 °C and 6.43 °C, respectively, during the study period, while the change in minimum LST was not substantial. Area of higher temperature zones increased due to the expansion of urban areas and bare lands. It is also notable that the mean LST gradually increased from 1993 to 2020 irrespective of land cover type. This was partly due to the impact of climate change; however, further study will be needed to confirm this. Builtup area and bare soil showed a higher LST while lowland showed the lowest LST. The increase of LST over time was mainly occured due to urbanization. Furthermore, human thermal discomfort substantially shifted from moderate to strong heat stress during the study period. Finally, the results show that NDWI and NDVI were negatively correlated with LST while NDBI and NDBAI were positively correlated.
+Based on the above findings, policymakers in Dhaka city should concern about future urban expansion both horizontally and vertically and should make a proper plan for environment-friendly construction, green building, and green or cool roof technology to reduce the urban microclimatewarming effect. Growth management policies should be suggested to reduce the LST-related urban heat island problem.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Simulating land cover changes and their impacts on land surface temperature in dhaka, bangladesh
+   Authors: , , , , , 
+   Date: 2013
+
+2. Land-use change and urbanization of Adana
+   Authors: 
+   Date: 2003
+
+3. Temperature response to future urbanization and climate change
+   Authors: , , , 
+   Date: 2013
+
+4. Survey of emissivity variability in thennography of urban areas
+   Authors: , 
+   Date: 1982
+
+5. Algorithm for automated mapping of land surface temperature using LANDSAT 8 satellite data
+   Authors: , 
+   Date: 2016. 2016
+
+6. change detection in land surface temperature and land use land cover over Lagos Metropolis
+   Authors: , 
+   Date: 2016. 10001
+
+7. Landsat-8 thermal infrared sensor (TIRS) vicarious radiometric calibration
+   Authors: , , , , , 
+   Date: 2014
+
+8. Population & housing census
+   Authors: 
+   Date: 2011
+
+9. On the use of NDVI profiles as a tool for agricultural statistics: the case study of wheat yield estimate and forecast in Emilia Romagna
+   Authors: , 
+   Date: 1993
+
+10. Use of very high spatial resolution commercial satellite imagery and deep learning to automatically map ice-wedge polygons across Tundra vegetation types
+   Authors: , , 
+   Date: 2020. 20137
+
+11. Understanding the effects of optimal combination of spectral bands on deep learning model predictions: a case study based on permafrost Published in partnership with CECCR at King Abdulaziz University Tundra landform mapping using high resolution multispectral satellite imagery
+   Authors: , , , , , , , , 
+   Date: 2020
+
+12. Assessment of urban sprawl of Islamabad metropolitan area using multi-sensor and multi-temporal satellite data
+   Authors: , , , , , , , , , , , , 
+   Date: 2012. 2011
+
+13. Impact of Land use changes on the surface temperature distribution of area surrounding the national botanic garden, Shah Alam
+   Authors: , , 
+   Date: 2013
+
+14. Revised landsat-5 TM radiometric calibration procedures and postcalibration dynamic ranges
+   Authors: , 
+   Date: 2003
+
+15. Remote sensing imagebased analysis of the relationship between urban heat island and land use/cover changes
+   Authors: , , , 
+   Date: 2006
+
+16. The Egyptian journal of remote sensing and space sciences assessment of land use land cover changes and its impact on variations of land surface temperature in Asansol-Durgapur development region
+   Authors: , , 
+   Date: 2019
+
+17. A coefficient of agreement for nominal scales
+   Authors: 
+   Date: 1960
+
+18. Land use and land cover change in Greater Dhaka, Bangladesh: using remote sensing to promote sustainable urbanization
+   Authors: , 
+   Date: 2009. 2008
+
+19. Surface urban heat island intensity in five major cities of Bangladesh: patterns, drivers and trends
+   Authors: , , , , , 
+   Date: 2021
+
+20. Land-use/land-cover change and its influence on surface temperature: a case study in Beijing City
+   Authors: , 
+   Date: 2013
+
+21. Toward achieving a sustainable management: characterization of land use/land cover in Sokoto Rima floodplain
+   Authors: , , 
+   Date: 2016
+
+22. On the compensation for chance agreement in image classification accuracy assessment
+   Authors: 
+   Date: 1992
+
+23. Ndvi: vegetation change detection using remote sensing and gis-a case study of Vellore District
+   Authors: , , , 
+   Date: 2015
+
+24. Spatio-temporal dynamic land cover changes and their impacts on the urban thermal environment in the Chittagong metropolitan area
+   Authors: , , , 
+   Date: 2020
+
+25. Development of an operational modeling system for urban heat islands: an application to Athens
+   Authors: , , , 
+   Date: 2014
+
+26. Too hot for comfort: the heatwaves in Greece in 1987 and 1988
+   Authors: , , 
+   Date: 1990
+
+27. A spatiotemporal analysis of the relationship between near-surface air temperature and satellite land surface temperatures using 17 years of data from the ATSR series
+   Authors: , , , 
+   Date: 2017
+
+28. Global change and the ecology of cities
+   Authors: , , , , , , 
+   Date: 2008
+
+29. Monitoring urban growth and land use change detection with GIS and remote sensing techniques in Daqahlia governorate Egypt
+   Authors: , 
+   Date: 2015
+
+30. The effect of land-use intensity on surface temperature in the Dongting lake area
+   Authors: , , 
+   Date: 2015
+
+31. Land use/land cover changes and their impact on land surface temperature using remote sensing technique in district Khanewal
+   Authors: , 
+   Date: 2021. 19232
+
+32. Urban land use land cover changes and their effect on land surface temperature: case study using Dohuk City in the Kurdistan region of Iraq
+   Authors: 
+   Date: 2017
+
+33. Impact of urban land cover change on land surface temperature
+   Authors: , 
+   Date: 2018
+
+34. Effectiveness of green and cool roofs in mitigating urban heat island effects during a heatwave event in the City of Melbourne in southeast Australia
+   Authors: , , , 
+   Date: 2018
+
+35. Effectiveness of vegetated patches as Green Infrastructure in mitigating Urban Heat Island effects during a heatwave event in the City of Melbourne
+   Authors: , , , 
+   Date: 2019. 2019
+
+36. Impacts of future urban expansion on urban heat island effects during heatwave events in the city of Melbourne in Southeast Australia
+   Authors: , , , 
+   Date: 2019
+
+37. Use of cool roofs and vegetation to mitigate urban heat and improve human thermal stress in Melbourne
+   Authors: , , , 
+   Date: 2018
+
+38. Impact of rural urban migration on physical and social environment: the case of Dhaka city
+   Authors: 
+   Date: 2012
+
+39. Surface runoff responses to suburban growth: an integration of remote sensing, GIS, and curve number
+   Authors: , , 
+   Date: 2021
+
+40. Analysis of the impact of land use/land cover change on land surface temperature with remote sensing
+   Authors: , 
+   Date: 2010
+
+41. Land use/land cover and land surface temperature analysis in Wayanad district, India, using satellite imagery
+   Authors: , , , , 
+   Date: 2020. 19475 683. 2020. 17336
+
+42. Modelling future land use land cover changes and their impacts on land surface temperatures in Rajshahi
+   Authors: , , , 
+   Date: 2020
+
+43. Simulation of the urban thermal comfort in a high density tropical city: analysis of the proposed urban construction rules for Dhaka
+   Authors: , , 
+   Date: 2009
+
+44. Land Use Analysis on Land Surface Temperature in Urban Areas Using a Geographically Weighted Regression and Landsat 8 Imagery, a Case Study: Tehran, Iran. ISPRS -International Archives of the Photogrammetry
+   Authors: , , 
+   Date: 2017
+
+45. Observed trends in climate extremes over Bangladesh from 1981 to 2010
+   Authors: , , , , , , 
+   Date: 2019
+
+46. at-7-data-users-handb ook Landsat 8 Data Users Handbook (2019) Landsat Project Science Office at NASA's Goddard Space Flight Center
+   Date: 2019
+
+47. Relationship between MODIS-NDVI data and wheat yield: a case study in Northern Buenos Aires province
+   Authors: , , , 
+   Date: 2015
+
+48. An assessment of reference data variability using a " Virtual Field Reference Database
+   Authors: , , , 
+   Date: 2001
+
+49. Tau coefficients for accuracy assessment of classification of remote sensing data
+   Authors: , 
+   Date: 1995
+
+50. correlation and monitoring of land surface temperature urban heat island with land use-land cover of Dhaka City using satellite imageries
+   Authors: , , 
+   Date: 2017
+
+51. Comparing global vegetation maps with the Kappa statistic
+   Authors: , 
+   Date: 1992
+
+52. Observed trends in temperature and rainfall in Bangladesh using pre-whitening approach
+   Authors: , , , 
+   Date: 2018. 2018
+
+53. Remote sensing-and GIS-based runoff modeling with the effect of land-use changes (a case study of Cochin corporation)
+   Authors: , 
+   Date: 2014
+
+54. Advantages in Land use classification of urban areas from Hyperspectral data
+   Authors: , , , , , 
+   Date: 2018. Mar 2021
+
+55. Impact of land use/land cover change on surface temperature condition of Awka Town
+   Authors: , , , 
+   Date: 2017
+
+56. Spatiotemporal analysis of land use dynamics and its potential indications on land surface temperature in Sokoto Metropolis
+   Authors: , , , 
+   Date: 2018
+
+57. Detection of land use and land cover change and land surface temperature in English Bazar urban centre
+   Authors: , 
+   Date: 2017. 2016
+
+58. Application of vegetation indices for agricultural crop yield prediction using neural network techniques
+   Authors: , , 
+   Date: 2010
+
+59. Impacts of urbanization on land use/cover changes and its probable implications on local climate and groundwater level
+   Authors: , , , 
+   Date: 2018
+
+60. Drought monitoring with NDVI-based Standardized Vegetation Index
+   Authors: , , , , , 
+   Date: 2002
+
+61. Assessment of multiresolution and multi-sensor data for urban surface temperature retrieval
+   Authors: , , , 
+   Date: 2006. 2005
+
+62. Spatio temporal analysis trend of land use and land cover change against temperature based on remote sensing data in Malang city
+   Authors: , 
+   Date: 2016
+
+63. Monitoring effect of spatial growth on land surface temperature in Dhaka
+   Authors: , , , , , , , , , , , , 
+   Date: 2020
+
+64. Spatial distribution of heatwave vulnerability in a coastal city of Bangladesh
+   Authors: , , , , 
+   Date: 2021
+
+65. Implications of temporal change in urban heat island intensity observed at Beijing and Wuhan stations
+   Authors: , , , 
+   Date: 2007
+
+66. Examining the nexus between land surface temperature and urban growth in Chattogram Metropolitan Area of Bangladesh using long term Landsat series data
+   Authors: , , , , , , , , 
+   Date: 2020
+
+67. Green and cool roofs to mitigate urban heat island effects in the Chicago metropolitan area: evaluation with a regional climate model
+   Authors: , , , , , 
+   Date: 2016
+
+68. Analysis of microclimatic diversity and outdoor thermal comfort perceptions in the tropical megacity Dhaka
+   Authors: , , 
+   Date: 2015. 2015
+
+69. Contribution of multispectral (optical and radar) satellite images to the classification of agricultural surfaces
+   Authors: , , 
+   Date: 2020
+
+70. Land surface temperature retrieval from LANDSAT TM 5
+   Authors: , , 
+   Date: 2004
+
+71. Agricultural drought analysis using the NDVI and land surface temperature data; a case study of Raichur District
+   Authors: , 
+   Date: 2015
+
+72. Quantifying urban heat island effects and human comfort for cities of variable size and urban morphology in the Netherlands
+   Authors: , , , , 
+   Date: 2011
+
+73. Accuracy assessment: a user' s perspective
+   Authors: , 
+   Date: 1986
+
+74. The discomfort index
+   Authors: 
+   Date: 1959
+
+75. Analysis of the dynamics of African vegetation using the normalized difference vegetation Published in partnership with CECCR at King Abdulaziz University index
+   Authors: , 
+   Date: 1986
+
+76. Effects of rapid urbanisation on the urban thermal environment between 1990 and 2011 in Dhaka Megacity
+   Authors: , , 
+   Date: 2017
+
+77. World Urbanization Prospects: The 2018 Revision
+   Date: 2019
+
+78. Thermal remote sensing of urban climates
+   Authors: , 
+   Date: 2003
+
+79. A remote sensing-GIS evaluation of urban expansion and its impact on surface temperature in the Zhujiang Delta, China
+   Authors: 
+   Date: 2001
+
+80. Towards First pan-Arctic Ice-wedge Polygon Map: Understanding the Synergies of Data Fusion and Deep Learning in Automated Icewedge Polygon Detection from High Resolution Commercial Satellite Imagery
+   Authors: , , 
+   Date: 2019. 2019
+
+81. The impacts of rapid urbanization on the thermal environment: a remote sensing study of Guangzhou South China
+   Authors: , , , , , 
+   Date: 2012
+
+82. The cooling effect of urban parks and its monthly variations in a snow climate city
+   Authors: , , , , , , , 
+   Date: 2017
+
+83. Impacts of land cover transitions on surface temperature in China based on satellite
+   Authors: , 
+   Date: 2018
+
+84. Deep convolutional neural networks for automated characterization of arctic ice-wedge polygons in very high spatial resolution aerial imagery
+   Authors: , , , 
+   Date: 2018
+
+85. On the ground estimation of vegetation cover in Australian Rangelands
+   Authors: , , 
+   Date: 1998
+
+86. Multi-feature classification of multi-sensor satellite imagery based on dual-polarimetric sentinel-1A, landsat-8 OLI, and hyperion images for urban land-cover classification
+   Authors: , , 
+   Date: 2018
+

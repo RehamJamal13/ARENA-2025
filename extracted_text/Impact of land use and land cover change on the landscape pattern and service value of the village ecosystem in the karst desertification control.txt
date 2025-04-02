@@ -1,0 +1,412 @@
+================================================================================
+TITLE: Impact of land use and land cover change on the landscape pattern and service value of the village ecosystem in the karst desertification control
+================================================================================
+
+AUTHORS:
+- Qi Wang
+- Kangning Xiong
+- Jiayi Zhou
+- Hua Xiao
+- Shanhai Song
+- Chen Zeng
+- Anlu Zhang
+- Huiqing Han
+
+ABSTRACT:
+Human activities have had a significant impact on ecosystems. Studying landscape patterns and ecosystem services (ES) at the village scale based on land use and land cover (LULC) is essential in addressing current ecosystem issues. Based on GF images, the paper selects village ecosystems of karst desertification control (KDC) as the research object. It uses the landscape pattern index, topographic position index (TPI), and value equivalent method to conduct a spatial and temporal analysis of the ecosystem service value (ESV) of the karst desertification control cycle (2015)(2016)(2017)(2018)(2019)(2020). The results show that: 1) forest land, orchard land, and construction land increase, and dryland and grassland decrease. The landscape shows an aggregated state, with spreading and connectivity increasing while fragrant diversity is decreasing. 2) The total ecosystem service value increased by CNY 63.45 × 10 4 , with regulating and cultural services on the rise and supply and support services on the decline. 3) With the rise of the TPI, the value of the supply services is inversely U-shaped, while the value of the remaining services increases. This study provides a case study about karst desertification areas for village-scale ecosystem services research.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land use for producing goods and services is the most significant human change to the planet 
+Land cover has been changing rapidly due to solid human activities such as agricultural and urban construction 
+The value of ecosystem services is a quantitative indicator of ecosystem services 
+A growing body of research on land use, landscape patterns, and ecosystem services aim to address scientific questions arising from specific regions and objectives (Q. J. 
+Karst landscapes are a typical type of carbonate landscape worldwide, with carbonate karst covering more than 10%-15% of the continental area 
+Therefore, we have selected village ecosystems as the object of study within the demonstration area where the KDC project is implemented 
+2 Materials and methods
+
+## Study area ##
+The study area is a village ecosystem consisting of Chaoying Village, Chongfeng Village, and Zhongshan Village, located in Salaxi Town, Qixingguan District, Bijie City, Guizhou Province, China (Figure 
+
+## Data sources ##
+Land use data is obtained through remote sensing classification, manual visual interpretation, and field surveys. The original images are from the GF-2 satellite and the in-formation for the required images was retrieved from the China Centre for Resources Satellite Data and Application website (http://36.112.130.153:7777/DSSPlatform/index. html), with data provided by the GF Guizhou Centre. The GF-2 satellite was launched in 2014 and equipped with two PAN/MS cameras. The instrument collects one PAN band (0.45-0.9 µm) of 1 m spatial resolution and four MS bands (0.45-0.52 µm, 0.52-0.59 µm, 0. 63-0.69 µm, and 0.77-0.89 µm) of 4 m spatial resolution. The swath width of 45 km, and the repetition cycle of 5 days 
+
+## Research methods ##
+
+
+## Selection of landscape pattern indices ##
+The landscape pattern index is the most effective measure of information about the composition and spatial structure of the landscape 
+
+## Calculating the value of ecosystem services ##
+In the Eqs 1, 2, θ is the revision factor of the study area, Q and Q 0 are the average yield per unit area of the study area and the country, respectively. E i denotes the modified equivalent factor of land use type i , and E i0 denotes the equivalent factor of the same land use type as determined by 
+The socio-economic survey and the statistical yearbook (https:// data.cnki.net/yearbook/Single/N2021110004) showed that the grain yield per unit area of arable land in 2020 was 6.73 t/hm 2 and 5.73 t/hm 2 for the study area and the whole country, respectively. The equivalent revision factor for ecological services in the study area was derived from Eq. 1 as 1.17.
+According to the literature 
+In the Eq. 3, E a is the economic value per unit area of farmland ecosystem providing food production services (CNY/hm 2 ), i is the crop type; p i is the unit price of i crops (CNY/kg); q i is the yield of i food crops (kg/hm 2 ); m i is the area of i food crops (hm 2 ); M is the total area of n food crops (hm 2 ).
+According to the socio-economic survey of the study area in 2020, the yield of maize and potatoes, food crops in the region, was 1,333,200 kg and 1,579,500 kg, respectively. The sown areas were 222.2 hm 2 and 210.6 hm 2 , respectively. Price obtained from the official website of the Bureau of Agriculture and Rural Development of Bijie City (https://www. bijie.gov.cn/bm/bjsnyncj/gk_5126790/scxq/index_ 1.html). Corn and potatoes cost CNY 2.763 per kg and CNY 2.613 per kg, respectively. Thus, according to Eq. 3, the economic value of food production services provided per arable unit area in the study area was CNY 18,047.26 
+
+## Topographic position index (TPI) ##
+The TPI is a composite reflection of the influence of two topographic factors, elevation, and slope, on the value of ecosystem services. The equation is as follows.
+In the Eq. 4, T denotes the topographic position index, E and E represent the arbitrary and average elevation of the study area, and S and S represent the arbitrary and average slope of the study area.
+The TPI of the study area is a normal distribution characteristic, and the Jenks natural breakpoint method is used in the study area. The Jenks natural breaks classification method, also known as Jenks Optimization, is a data classification method used to determine the best alignment of values between classes. This is done by minimizing each class's average deviation from the class mean while maximizing each class's deviation from the means of the other groups 
+
+## Results ##
+
+
+## Land use and land cover change (LULCC) analysis ##
+Land use status in the study area for 2015 and 2020 (Table 
+
+## Landscape pattern change analysis ##
+The LPI represents the proportion of the maximum plaque area to the total area, allowing for identifying dominant types (Table 
+At the landscape level (Table 
+
+## Time-change analysis of ecosystem services value ##
+In KDC for 5 years, the value of ES in the study area has increased by CNY 63.45 × 10 4 , with the most significant increase being in the transfer of services (Table 
+Implementing KDC projects such as artificial afforestation, returning farmland to forest, and forest closure has increased the amount of tree woodland, shrub woodland, and orchard land. The expansion of these three types of landscapes has positively affected provision services, regulating services, support services, and cultural services, and has contributed to the ecological recovery of karst areas.
+
+## Spatial analysis of the value of ecosystem services ##
+In the last 5 years of KDC, the spatial variation of ESV in the study area fluctuated wildly. The increase or decrease was more significant, indicating that the value of ES in the study area did not form a stable trend and ES could be more stable. This also indicates that the karst village ecosystem is highly susceptible to external interference and has vulnerabilities. The areas where changes in ESV show decreasing trends are mainly in the north-western region and the eastern region of the study area, while the south-western region shows an increase in ESV (Figure 
+The services are classified according to the value per unit area on different TPI gradients. Provision services show an inverted U-shape as the TPI increases, reaching a maximum in the TPI III gradients. Regulating, support and cultural services all increase with the TPI, and the total service value follows the same trend (Figure 
+4.2 Enhancing the supply capacity of village ecosystem services and promoting the economic transformation of service values is a win-win path to ecological restoration and economic development in karst desertification areas
+This study corrects the equivalent value factor for ES. The value per unit area in 2015 and 2020 is 
+
+## 4.3 ##
+The TPI provides a spatial reference for enhancing the value of village ecosystem services
+Existing studies have more often analyzed and elaborated spatially on ecosystem services with the help of orientation. This approach only elucidates the spatial distribution characteristics of ecosystem services in this one location, does not reveal the universal characteristics of similar study areas, and lacks guidance. The TPI can reflect spatial characteristics well. The spatial significance can be uncovered by using it to elaborate on the spatial characteristics of ecosystem services. The nature of the spatial distribution of ecosystem services can be revealed to dissect the spatial distribution characteristics of village ecosystem services in the study area and extend the result to other areas of the same type. The village ecosystems in this study show different characteristics of change in service value at different TPI gradients. The value of provision services shows an inverted U-shaped distribution as TPI rises, peaking at gradient III, a feature inconsistent with findings in other karst regions 
+
+## Limitations ##
+There are some possible limitations to this study. Firstly, the land use data in this paper were obtained by interpreting remote sensing imagery. This method can only identify two-dimensional space. However, tree forests, shrublands, and grasslands may coexist in three-dimensional space. Only tree forests can be identified if this situation exists, and information on shrublands and grasslands will be lost, leading to an underestimation of the value of village ecosystem services. The future of remote sensing interpretation should be a breakthrough in three dimensions. Secondly, the research context of this paper is the karst plateau mountains and targets village ecosystems with potential-light KDC. Due to the high heterogeneity of karst areas, the findings of this study may be more applicable to village ecosystems with characteristics consistent with this paper. Future research on KDC in village ecosystems should be increased, especially comparative studies between different village ecosystems.
+
+## Conclusion ##
+Based on dynamic changes in LULC, this paper investigates the landscape pattern and EVS of potential-light KDC village ecosystems in the karst plateau mountains using the land use matrix method, the landscape pattern index, the TPI, and the modified value equivalents. It bridges the gaps in the field at village scales, in rural environments, and in the context of KDC, and provides a reference about KDC for research on ES. Based on the findings and discussions, we conclude the following. Firstly, during the period of KDC, the vegetation types of the village ecosystems in the karst plateau mountains with potential mild KDC are in positive succession, and the land use is dominated by woodland, or-chard, and construction land, while the area of dry land and grassland shows a decreasing trend. The dominance of shrubland is gradually increasing. The shape of the orchard and construction land types tends to be more complex, while the shape of woodland, grassland, and cropland tend to be more regular. The shape of the landscape also tends to be regular and clustered. Landscape spread and connectivity are increasing, while fragmentation and SHID is decreasing. Secondly, the value of regulation and cultural services has increased over the 5 years, with regulation services making the most significant contribution. However, landscape change has led to a trade-off between services, with a downward trend in the value of provisioning and support services. The supply capacity of village ecosystem services is inadequate due to the offsetting services generated. The total value of ES in KDC villages increased by only CNY63.45 × 10 4 , and the value of services was not effectively transformed economically. Thirdly, the value of ecosystem services exhibited different characteristics of variation across topographic space. As TPI increases, the value of provisioning services follows an inverted U-shape, with the remaining services increasing as TPI increases. Furthermore, the value of ecosystem services has a more significant potential to increase on the gradient of low TPI.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Bringing Ecosystem Services into Economic Decision-Making: Land Use in the United Kingdom
+   Authors: , , , , , 
+   Date: 2013
+
+2. Understanding relationships among multiple ecosystem services
+   Authors: , , 
+   Date: 2009
+
+3. 
+   Authors: , , , , , 
+   Date: 2018
+
+4. Satellite-observed major greening and biomass increase in south China karst during recent decade
+
+5. Millennium ecosystem assessment: Research needs
+   Authors: , , , , , 
+   Date: 2006
+
+6. Research on geographical environment unit division based on the method of natural breaks (Jenks)
+   Authors: , , , , 
+   Date: 2013
+
+7. Landscape evolution and it's impact of ecosystem service value of the wuhan city, China
+   Authors: , 
+   Date: 2021
+
+8. The value of the world's ecosystem services and natural capital
+   Authors: , , , , , 
+   Date: 1997
+
+9. Changes in the global value of ecosystem services
+   Authors: , , , , , 
+   Date: 2014
+
+10. 
+
+11. Nature's services: Societal dependence on natural ecosystems
+   Authors: 
+   Date: 1997
+
+12. The emergence of land systems as the nexus for sustainability transformations
+   Authors: 
+   Date: 2021
+
+13. Integrating the ecological and economic dimensions in biodiversity and ecosystem service valuation
+   Authors: , , 
+   Date: 2012
+
+14. Challenges in integrating the concept of ecosystem services and values in landscape planning, management and decision making
+   Authors: , , , , 
+   Date: 2010
+
+15. An African account of ecosystem service provision: Use, threats and policy options for sustainable livelihoods
+   Authors: , , , , , , 
+   Date: 2012
+
+16. Extinction : the causes and consequences of the disappearance of species/Paul and Anne Ehrlich. 1st Edn
+   Authors: , 
+   Date: 1981
+
+17. Quantifying landscape pattern and ecosystem service value changes in four rapidly urbanizing hill stations of Southeast Asia
+   Authors: , 
+   Date: 2016
+
+18. Impacts of the grain for Green Program on the spatial pattern of land uses and ecosystem services in mountainous settlements in southwest China
+   Authors: , 
+   Date: 2020
+
+19. Coproduction of ecosystem services as human-nature interactions-an analytical framework
+   Authors: , 
+   Date: 2016
+
+20. Human impacts and environmental rehabilitation
+   Authors: , 
+   Date: 2007a
+
+21. Introduction to karst
+   Authors: , 
+   Date: 2007b
+
+22. Principles and applications of landscape
+   Authors: 
+   Date: 2001
+
+23. Linking ecosystem processes and ecosystem services
+   Authors: , , , 
+   Date: 2013
+
+24. Evaluation of karst ecosystem service value: A case study of huajiang gorge of Guizhou province
+   Authors: , 
+   Date: 2015
+
+25. The effect of farmland fragmentation on the intensity of farmland in different utilization ways
+   Authors: , , 
+   Date: 2020
+
+26. On the effects of scale for ecosystem services mapping
+   Authors: , , , , , 
+   Date: 2014
+
+27. Revision of the Common international classification for ecosystem services (CICES V5.1): A policy brief
+   Authors: , 
+   Date: 2018
+
+28. Comparison of ecosystem services value of karst poor villages in southwest China
+   Authors: , , , , 
+   Date: 2020
+
+29. Effects of landscape type change on spatial and temporal evolution of ecological assets in a karst plateau-mountain area
+   Authors: , , , , , 
+   Date: 2022
+
+30. The spatial characteristics and relationships between landscape pattern and ecosystem service value along an urban-rural gradient in Xi'an city
+   Authors: , , 
+   Date: 2020
+
+31. Mapping provisioning ecosystem services at the local scale using data of varying spatial and temporal resolution
+   Authors: , , 
+   Date: 2013
+
+32. Projected land-use change impacts on ecosystem services in the United States
+   Authors: , , , , , 
+   Date: 2014
+
+33. Relationship between landscape pattern and ecosystem services value in the karst area of southwest China
+   Authors: , , 
+   Date: 2022
+
+34. Temporal and spatial evolution characteristics of rocky desertification control landscape pattern in Salaxi demonstration area in Bijie city
+   Authors: , , 
+   Date: 2020
+
+35. Landscape functional zoning at a county level based on ecosystem services bundle: Methods comparison and management indication
+   Authors: , , , , 
+   Date: 2019
+
+36. Research on the response of ecosystem service function to landscape pattern changes caused by land use transition: A case study of the guangxi Zhuang autonomous region
+   Authors: , , , 
+   Date: 2022
+
+37. Considering landscape-level processes in ecosystem service assessments
+   Authors: , , , , , 
+   Date: 2021
+
+38. Ecosystems and human well-being: The assessment series(four volumes and summary)
+   Date: 2005
+
+39. Reframing landscape fragmentation's effects on ecosystem services
+   Authors: , , , , , 
+   Date: 2015
+
+40. A primary study on Chinese terrestrial ecosystem services and their ecological-economic values
+   Authors: , , 
+   Date: 1999
+
+41. Ecosystem services and human well-being: A participatory study in a mountain community in
+   Authors: , , , 
+   Date: 2005
+
+42. Fusing China GF-5 hyperspectral data with GF-1, GF-2 and sentinel-2A multispectral data: Which methods should Be used?
+   Authors: , , , , 
+   Date: 2020
+
+43. Linking ecosystem services with the constituents of human well-being for poverty alleviation in eastern Himalayas
+   Authors: , 
+   Date: 2014
+
+44. The intergovernmental sciencepolicy platform on biodiversity and ecosystem services (IPBES): Getting involved
+   Authors: , , 
+   Date: 2017
+
+45. Change and comparison of agricultural landscape patterns and ecological service values in karst and non-karst areas: A case study of quanzhou county
+   Authors: , , , , , 
+   Date: 2018
+
+46. Change of land use and landscape pattern under rocky desertification control
+   Authors: , , 
+   Date: 2022
+
+47. Assessment of ecosystem services and benefits in village landscapes -a case study from
+   Authors: , , 
+   Date: 2016
+
+48. Archaeological assessment reveals Earth's early transformation through land use
+   Authors: , , , , , 
+   Date: 2019
+
+49. Characterizing landscape pattern and ecosystem service value changes for urbanization impacts at an eco-regional scale
+   Authors: , , , 
+   Date: 2012
+
+50. Rural settlement expansion and paddy soil loss across an ex-urbanizing watershed in eastern coastal China during market transition
+   Authors: , , , , 
+   Date: 2011
+
+51. A review of village ecosystem vulnerability and resilience: Implications for the rocky desertification control
+   Authors: , , , , , , 
+   Date: 1986. 2022
+
+52. A critical assessment of available ecosystem services data according to the Final Ecosystem Goods and Services framework
+   Authors: , 
+   Date: 2019
+
+53. Urban ecosystem services quantification through remote sensing approach: A systematic review
+   Authors: , , , , 
+   Date: 2019
+
+54. Increased vegetation growth and carbon stock in China karst via ecological engineering
+   Authors: , , , , , 
+   Date: 2018. 1997
+
+55. Impact of LUCC on ecosystem services values in the Yili River Basin based on an intensity analysis model
+   Authors: , , , , 
+   Date: 2022b
+
+56. Impact of land transition on landscape and ecosystem service value in northeast region of China from
+   Authors: , , , , , 
+   Date: 2022. 2000-2020
+
+57. 
+
+58. How Much Are Nature's Services Worth?
+   Authors: , 
+   Date: 1977
+
+59. Landscape ecology, cross-disciplinarity, and sustainability science
+   Authors: 
+   Date: 2006
+
+60. Global land use changes are four times greater than previously estimated
+   Authors: , , , 
+   Date: 2021
+
+61. Landscape sustainability science: Ecosystem services and human wellbeing in changing landscapes
+   Authors: 
+   Date: 2013
+
+62. Dynamics of landscape ecological quality based on benefit evaluation coupled with the rocky desertification control in South China Karst
+   Authors: , , , 
+   Date: 2022
+
+63. Economic value of ecosystem services in Mangcuo Lake drainage basin
+   Authors: , , , 
+   Date: 2003
+
+64. Improvement of the evaluation method for ecosystem service value based on per unit area
+   Authors: , , , , 
+   Date: 2015
+
+65. Expert knowledge based valuation method of ecosystem services in China
+   Authors: , , 
+   Date: 2008
+
+66. RS-GIS typical research of karst rocky desertification-A case study in Guizhou province
+   Authors: 
+   Date: 2002
+
+67. Study on Ecological industry technology and demonstration for Karst rocky desertification control of the Karst Plateau-Gorge
+   Authors: , , , , , 
+   Date: 2016
+
+68. Services based on land use: A case study of bohai rim
+   Authors: , , , , 
+   Date: 2012
+
+69. On the fragility of karst environment
+   Authors: 
+   Date: 1990
+
+70. Assessment of the impact of land use change on spatial differentiation of landscape and ecosystem service values in the case of study the pearl river delta in China
+   Authors: , , 
+   Date: 2021
+
+71. Modeling changes in land use patterns and ecosystem services to explore a potential solution for meeting the management needs of a heritage site at the landscape level
+   Authors: , , , , , 
+   Date: 2017
+
+72. Large scale rocky desertification reversal in South China karst
+   Authors: , , , , , 
+   Date: 2022
+
+73. Quantifying the spatial correlations between landscape pattern and ecosystem service value: A case study in ebinur lake basin, xinjiang, China
+   Authors: , , , 
+   Date: 2018
+
+74. The landscape pattern and ecological service value in Danjiangkou City under land use change from 2003 to 2018
+   Authors: , , , , , 
+   Date: 2021a
+
+75. Quantifying landscape pattern and ecosystem service value changes: A case study at the county level in the Chinese loess plateau
+   Authors: , , , , 
+   Date: 2020
+
+76. Accounting for value changes in cultivated land resources within the karst mountain area of southwest China
+   Authors: , , , , , 
+   Date: 2022. 2001-2020
+
+77. Responses of spatial-temporal variation of Karst ecosystem service values to landscape pattern in northwest of Guangxi
+   Authors: , , , 
+   Date: 2011
+
+78. The ecosystem services value change and its driving forces responding to spatio-temporal process of landscape pattern in the Co-urbanized area
+   Authors: , , , , , 
+   Date: 2021b
+
+79. Human causes of soil loss in rural karst environments: A case study of Guizhou
+   Authors: , 
+   Date: 2019
+
+80. Quantifying land use/land cover and landscape pattern changes and impacts on ecosystem services
+   Authors: , , , , 
+   Date: 2020
+
+81. Current situation and measures of karst rocky desertification control in southwest China
+   Authors: , , , , 
+   Date: 2021
+
+82. Response of ecosystem service value of karst mountainous city to terrain gradient-A case study of downtown of guiyang city
+   Authors: , , , 
+   Date: 2021
+
+83. A review of ecological assets and ecological products supply: Implications for the karst rocky desertification control
+   Authors: , , , , 
+   Date: 2022
+

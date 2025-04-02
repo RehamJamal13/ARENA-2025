@@ -1,0 +1,460 @@
+================================================================================
+TITLE: Past and Future Land Use/Land Cover Changes in the Ethiopian Fincha Sub-Basin
+================================================================================
+
+AUTHORS:
+- Motuma Shiferaw
+- Michael Nones
+
+ABSTRACT:
+The increasing human pressure on African regions is recognizable when looking at Land Use Land Cover (LULC) change maps, generally derived from satellite imagery. Using the Ethiopian Fincha watershed as a case study, the present work focuses on (i) identifying historical LULC change in the period 1989-2019; (ii) estimating LULC in the next thirty years, combining Geographical Information Systems (GIS) with Land Change Modelling (LCM). Landsat 5/8 images were combined with field evidence to map LULC in three reference years (1989, 2004, 2019), while the Multi-Layer Markov Chain (MPL-MC) model of LCM was applied to forecast LULC in 2030, 2040, and 2050. The watershed was classified into six classes: waterbody, grass/swamp, built-up, agriculture; forest; and shrub. The results have shown that, in the past 30 years, the Fincha watershed experienced a reduction in forest and shrubs of about -40% and -13%, respectively, mainly due to ever-increasing agricultural activities, and such a trend is also expected in the future. In fact, for the period 2019-2050, LCM simulated a significant decrease in both forest and shrubs (around -70% and -20%, respectively), in favor of more areas covered by grass (19%) and built-up (20%). It is worth noting that a decrease in natural forests can drive an increase in soil erosion, fostering siltation in the water reservoirs located in the sub-basin. The study pointed out the urgency of taking actions in the sub-basin to counteract such changes, which can eventually lead to a less sustainable environment.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land use is defined as how land is utilized by human beings and their habitats, usually with an accent on the practical role of land for economic activities, whereas land cover is a physical characteristic of the Earth's surface or attributes of a part of the Earth's land surface and immediate subsurface, including biota, soil, topography, surface and groundwater, and human structures 
+The Land Change Modeler is a model used to evaluate the changing trend from one land use category to another and has been found to provide high spatial and temporal resolution with a reduced computational effort 
+Few studies of LULC change provide a combined assessment of the driving forces and consequences of such variations, particularly in developing countries such as Bangladesh 
+Indeed, in this region, the dynamics of LULC intensities and rates are changing and highly associated with overexploitation of natural resources, while the process is governed by climate (long dry periods followed by heavy precipitation), soil characteristics (thin layer of topsoil, silty texture, or low organic matter content), vegetation (barren land), topography (steep-slope), and natural hazards (forest fire, landslides) 
+Focusing on the Fincha River sub-basin in Ethiopia, this research aims to: (i) understand the historical LULC changes over the past three decades (1989-2019); (ii) predict possible LULC patterns in the future three decades (2030-2050). The objectives of the paper will be tackled by combining satellite imagery (Landsat dataset) and modeling (LCM), using field evidence such as photos and information from local farmers to support the study. The study area and the methods used will be described in Section 2, while the results are presented and discussed in Section 3. In Section 4, the results are then discussed in light of actual policies on land management, showing the current limitations and possible future directions. The main outcomes of the study and its limitations are summarized in Section 5.
+
+## Materials and Methods ##
+
+
+## Study Area ##
+The Fincha sub-basin is located in Ethiopia, Oromiyaa regional state, Horroo Guduruu Wallaggaa, in the Upper Blue Nile basin (UBNB), between latitudes 9 • 9 53 N to 10 • 1 00 N and longitudes 37 • 00 25 E to 37 • 33 17 E, at around 300 km from Addis Ababa (Figure 
+Natural resources, such as the Fincha, Amarti, and Nashee lakes (see Figure 
+
+## Dataset ##
+The study was performed using freely available satellite imagery and a Digital Elevation Model (DEM). The latter, having a resolution of 30 m and referring to 2019, was acquired from the GIS and Remote Sensing Department, Ministry of Water, Irrigation and Energy of Ethiopia 
+Landsat-5 TM (L5, for the years 1989 and 2004) and Landsat-8 OLI-TIRS (L8, for the year 2019) data were downloaded from the United States Geological Survey (USGS) website (earthexplorer.usgs.gov). As the Landsat-5 mission started in March 1984, it was not possible to acquire the images every 10 years, so the first reference year was set to 1989. The images referred to January, when there is a clear sky corresponding to the dry season, and were atmospherically corrected via QGIS (qgis.org). To cover the whole watershed area, a composite of Landsat images from different paths/rows was created, ensuring that the images refer to the same season (Table 
+Open-ended questions about LULC's significant changes in the study area, the connection between the biophysical environment, institution, socioeconomic activity, and demography were utilized during both KII and FGD. To learn more from a management point of view, assess the efforts made towards resource management, and identify obstacles, discussions on the practices and regulations that affect land management and policies in the area were held. The topic of land degradation and the most urgent problems that need solutions were also covered. The major goals of the discussion and interviews were to gather enough information on the historical and present trends of LULC changes, identify their fundamental causes, and assess their effects on regional socio-economic life and the environment. In detail, farmers were asked to describe the areas of the landscape that have altered and to recognize the reasons behind those changes. Moreover, they were questioned on the effects of the modifications to their way of life, their surroundings, and their working environment. In addition, farmers were asked to describe how their socioeconomic activity affects the change in land usage.
+Based on a checklist created in advance to assess the situation in the watershed, field observations were conducted, and images of significant sites were obtained.
+
+## Land Use Land Cover Classification of Historical Data ##
+To map LULC, satellite images should be classified, assigning predefined LULC classes to some pixels. As pointed out by Jemberie et al. 
+The study was performed by classifying three reference years 
+Following ample literature on this topic e.g., 
+To quantitatively assess the accuracy, statistical methods such as overall accuracy and kappa value were applied. Based on this, random sampling data were prepared to check the overall accuracy OA and to determine the kappa coefficient K. Comparing the total corrected samples TCS and the total samples TS, OA provides an idea of how many sites are correctly classified (Equation ( 
+The kappa coefficient K (Equation ( 
+where the matrix columns indicate the correspondence between ground truth data and the pixel location, while the matrix rows indicate to which class the is pixel assigned.
+
+## Prediction of Future LULC and Associated Driving Forces ##
+To manage natural resources (biodiversity) influences, and to analyze and forecast spatial LULC changes, the Land Change Modeler (LCM) in TerrSet (formerly known as IDRISI) software was developed 
+In LCM, there are two options for modeling algorithms that are used to model the transition variables: logistic regression and Multi-Layer Perceptron (MLP) neural network 
+To evaluate the capability of LCM in predicting future LULC, a predicted map of 2019 was created based on 1989 and 2004 LULC, and then compared with the actual 2019 map. To evaluate the quality of the 2019 predicted map against the 2019 reference map, the TerrSet validation module was used 
+Kappa indices, such as kappa for no information (Kno), kappa for location (Klocation), and kappa standards (Kstandards)l are used to identify potential errors 
+To corroborate the study outcomes, a series of statistics were considered 
+Driving forces are the factors that affect LULC changes at the local scale, and therefore they should be locally investigated and addressed 
+The type of land cover is strongly correlated with anthropogenic disturbance, for example, the local population can access resources more conveniently while changing the land use because of the distance from the stream. The ease with which land can transition to urban usage depends on the distance from urban centers, which can be a highly powerful force for change. One of the key factors in drawing more urban uses and expansion is the distance from roads, which determines accessibility. The primary topographic component known to affect LULC change is elevation. In addition, it seems reasonable to use the evidence likelihood, a quantitative variable that reflects the likelihood of discovering change between agricultural land and all other land classes at the relevant pixel, given that the annual pace of agricultural expansion was considerable. The watershed slope influences the spatial trends of land cover change, leading one to assume that changes in land use are highly influenced by the terrain slope: gains in urban land are primarily concentrated on relatively flat slopes and deforestation declines as the slope's gradient increases.
+It is worth remembering that the selection of variables and indicators, to a certain extent, may cause some differences in the simulation results or model parameters, which will have effects on the prediction of LULC change. For example, for distance from the road, if the forest is very close to the road, the rate of forest clearance (deforestation) is very high, and vice versa, i.e., if there is road availability, the people living nearby can clear the forest for agriculture or other purposes. This is also applicable to other driving factors. The Cramer's V Coefficient (CVC), sometimes called Cramer's V strategy 
+
+## LULC Detection ##
+LULC changes were detected via a few parameters: magnitude of change C, rate of change R, and change percentage P, using the following equations [2,72,73]:
+where i represents the LULC class, B i and L i are the areas [ha] with the earliest and latter LULC, respectively. The period between B i and L i is T [year] and determines the rate of change R i . Positive values of P i mean an increase in a specific LULC in the study period T (L i > B i , R i > 0), while negative values mean a decrease (L i < B i , R i < 0).
+
+## Results ##
+
+
+## Historical LULC Maps ##
+Three reference years (1989, 2004, and 2019) were considered to evaluate historical LULC via a maximum likelihood supervised classification (Figure 
+
+## Accuracy Assessment for Historical LULC ##
+The overall accuracies OA and kappa values K were 82.80%, 85.57%, and 89.82% and 80.51%, 82.54%, and 87.84%, respectively, for the three reference years (Tables 
+Hailu et al. 
+
+## Historical LULC Changes and Transition Probability Matrix ##
+Comparing the three reference years, it is possible to observe a considerable reduction in the area covered by forest and shrubs during the observation period (Table 
+The results presented here are in line with the existing literature on LULC in the Fincha watershed 
+Between 1989 and 2004, the highest and the lowest persistent LULC classes were waterbody and grass/swamps, characterized by a percentage of stability of 91% and 42%, respectively. During the period 2004-2019, the most and the least stable LULC class categories were waterbody and grass/swamp, which accounted for around 80% and 31%, respectively. Over the entire temporal horizon observed (1989 to 2019), a large part of the forest was converted to agriculture and grass/swamps (see Tables A4-A6 for the detailed LULC transition matrixes).
+According to information obtained during field investigations (KII and field evidence), waterbodies increased after the construction of the Nashe Dam. During the construction of the reservoir, many farmers along and downstream of the Nashe stream were displaced to other agricultural places or towns. The abandonment of fields and the need for resettling in other areas caused a decrease in forests and an increase in built-up areas. In addition, poorly planned and long-term urban development and agricultural management strategies contribute to negatively affecting natural resources, causing a significant decline in the last decades (Figure 
+
+## Model Validation ##
+The LULC map of 2019, predicted from the 1989 and 2004 data, has been validated with the classified LULC map of the very same year (Table 
+
+## Future LULC ##
+To forecast future LULC changes, it is necessary to account for the most important driving variables (Table 
+
+## Discussion and Policy Implications ##
+As suggested in the review carried out by Regasa et al. 
+The reduction in forest cover pointed out in the present study compares well with similar research performed at the Ethiopian level 
+As pointed out by Tolessa et al. 
+As with other Ethiopian basins 
+To provide both decision-makers and local stakeholders such as farmers with more evidence on the importance of safeguarding water resources and ecosystem services at the basin scale, additional studies are needed, also taking advantage of information remotely acquired, such as satellite imagery, or considering different simulation algorithms and expanding the dataset of field evidence. Indeed, acquiring ground truth data and information from the local population, paramount for assuring a proper calibration/validation of the model, in locations that are hardly reachable or with unstable political situations such as the Fincha sub-basin, could be very difficult and expensive.
+
+## Conclusions ##
+The present study investigated the historical LULC 
+The study results have shown that, over the last thirty years, the forest covering the Fincha watershed was mostly converted to agricultural and grass/swamp areas. An increase in zones covered by waterbody and built-up was also observable, mainly connected to the increasing human pressure and the construction of new hydropower reservoirs. This trend is recognizable not only in the study sub-basin but also in many Ethiopian basins 
+As pointed out by the modeling results, in the future, a similar trend is more than probable. Indeed, if management strategies are not changed towards a more sustainable approach, also via proper reforms at the national level, an even more significant decrease in forest coverage should be expected in favor of new settlement areas and cropland. This change could help locals in sustaining their livelihood in the short term, but, in the medium/long term, the reduction in areas covered by forest will contribute to decreasing biodiversity and ecosystem services, as well as fostering soil erosion, with detrimental consequences such as reservoir siltation.
+It is worth remembering that, to corroborate the results presented here and to reduce the uncertainties, additional data should be included in the study, mostly deriving from laborious and expensive field investigations. However, due to the current conditions of the study area, obtaining such information in the coming months could be very challenging. On the other hand, the increasing availability of commercial high-resolution satellite images could partially help in enlarging the dataset of field evidence, pointing out LULC changes happening at a more detailed scale. Therefore, in the future, a deeper analysis of satellite information is planned. 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Transition area matrix
+   Date: 2004 to 2019
+
+2. Total Percentage of
+   Authors: 
+   Date: 2019
+
+3. Transition area matrix
+   Authors: 
+   Date: 1989 to 2019
+
+4. Total Percentage of Stability (%) Agriculture Built-Up Forest Grass/SwampShrub Waterbody
+   Authors: 
+   Date: 2019. 1989
+
+5. Transition area matrix [ha] of LULC from
+   Authors: 
+   Date: 2040 to 2050
+
+6. Land Class 2050 Total Percentage of
+
+7. Using Landsat satellite data for assessing the land use and land cover change in Kashmir valley
+   Authors: , , 
+   Date: 2020
+
+8. Hydrological Responses of Watershed to Historical and Future Land Use Land Cover Change Dynamics of Nashe Watershed
+   Authors: , , 
+   Date: 2021. 2372
+
+9. Review on Land Use and Land Cover Change in Ethiopian Basins
+   Authors: , , 
+   Date: 2021
+
+10. Analysis of the current and future prediction of land use/land cover Change using remote sensing and the CA-markov model in majang forest biosphere reserves of Gambella, southwestern
+   Authors: , , 
+   Date: 2021. 2021
+
+11. Land-use/land-cover change analysis in part of Ethiopia using Landsat Thematic Mapper data
+   Authors: , , , 
+   Date: 2005
+
+12. Land use and land cover change dynamics and its impact on watershed hydrological parameters: The case of Awetu watershed
+   Authors: 
+
+13. Hydrological Responses to Land Use Land Cover Changes in the Fincha'a Watershed
+   Authors: , , , 
+   Date: 2021
+
+14. Use of GIS and Remote Sensing Data to Understand the Impacts of Land Use/Land Cover Changes (LULCC) on Snow Leopard (Panthera uncia) Habitat in Pakistan
+   Authors: , , , , , , 
+
+15. Are agricultural land-use models able to predict changes in land-use intensity?
+   Authors: , , 
+   Date: 2000
+
+16. Scenario simulation and the prediction of land use and land cover change in Beijing
+   Authors: , , 
+   Date: 2015
+
+17. Temporal dynamics of land use/land cover change and its prediction using CA-ANN model for southwestern coastal Bangladesh
+   Authors: , , , , , , 
+   Date: 2017
+
+18. Temporal and spatial change detecting (1998-2003) and predicting of land use and land cover in Core corridor of Pearl River Delta (China) by using TM and ETM+ images
+   Authors: , , 
+   Date: 2008
+
+19. Land use land cover change modeling by integrating artificial neural network with cellular Automata-Markov chain model in Gidabo river basin, main Ethiopian rift
+   Authors: , , 
+   Date: 100419
+
+20. Efficacy of Spatial Land Change Modeler as a forecasting indicator for anthropogenic change dynamics over five decades: A case study of Shoolpaneshwar Wildlife Sanctuary
+   Authors: , 
+   Date: 2020. 106171
+
+21. Modeling Land-Use/Land-Cover Change, Using Multi-Layer Perceptron and Markov Chain Analysis: A Study on Bahir Dar City, Ethiopia
+   Authors: , 
+   Date: 2021
+
+22. Land use change assessment in coastal mangrove forests of Iran utilizing satellite imagery and CA-Markov algorithms to monitor and predict future change
+   Authors: , , 
+   Date: 2018
+
+23. Modeling and Prediction of Land Use Land Cover Change Dynamics Based on Land Change Modeler (LCM) in Nashe Watershed
+   Authors: , , 
+   Date: 2021
+
+24. Monitoring and predicting land use change in Tripoli Metropolitan City using an integrated Markov chain and cellular automata models in GIS
+   Authors: , 
+   Date: 2014
+
+25. Application of a hybrid cellular automaton-Markov (CA-Markov) model in land-use change prediction: A case study of Saddle Creek Drainage Basin
+   Authors: , , 
+   Date: 2013
+
+26. Statistical independence test and validation of CA Markov land use land cover (LULC) prediction results
+   Authors: , , , 
+   Date: 2016
+
+27. Assessment of land use land cover changes and future predictions using CA-ANN simulation for Selangor
+   Authors: , , , , 
+   Date: 2022
+
+28. Quantitatively assessing the future land-use/land-cover changes and their driving factors in the upper stream of the Awash River based on the CA-Markov model and their implications for water resources management
+   Authors: , 
+
+29. Analysis of the Driving Force of Land Use Change Based on Geographic Detection and Simulation of Future Land Use Scenarios
+   Authors: , , 
+
+30. Analysis of peri-urban land use/land cover change and its drivers using geospatial techniques and geographically weighted regression
+   Authors: , , , , , , 
+
+31. Prediction of urban expansion and identifying its impacts on the degradation of agricultural land: A machine learning-based remote-sensing approach in Rajshahi
+   Authors: , , , , , , 
+   Date: 2021
+
+32. Spatio-temporal changes of land use land cover and ecosystem service values in coastal Bangladesh
+   Authors: , , , , 
+
+33. Multi-temporal Land Use Land Cover (LULC) change analysis of a dry semi-arid river basin in western India following a robust multi-sensor satellite image calibration strategy
+   Authors: , 
+   Date: 2019. 01478
+
+34. Land-use and land-cover dynamics in response to changes in climatic, biological and socio-political forces: The case of southwestern Ethiopia
+   Authors: , , , , , , 
+   Date: 2000
+
+35. Remote sensing of land use-land cover change and climate variability on hydrological processes in Sub-Saharan Africa: Key scientific strides and challenges
+   Authors: , , 
+
+36. Land use/cover change analysis and local community perception towards land cover change in the lowland of Bale rangelands, Southeast Ethiopia
+   Authors: , , 
+   Date: 2017
+
+37. The impact of land use/land cover change (LULCC) on water resources in a tropical catchment in Tanzania under different climate change scenarios
+   Authors: , , , , , 
+   Date: 2019
+
+38. Land-use/land-cover changes and implications in Southern Ethiopia: Evidence from remote sensing and informants
+   Authors: , , 
+
+39. The impact of land use/land cover change on ecosystem services in the central highlands of Ethiopia
+   Authors: , , 
+   Date: 2017
+
+40. Implications of land use/land cover dynamics and Prosopis invasion on ecosystem service values in Afar Region
+   Authors: , , , , , , 
+   Date: 2019
+
+41. Ecosystem Service Valuation along Landscape Transformation in Central Ethiopia
+   Authors: , , , , , , 
+   Date: 2022
+
+42. Future land use management effects on ecosystem services under different scenarios in the Wabe River catchment of Gurage Mountain chain landscape
+   Authors: , , , , 
+   Date: 2019
+
+43. Influence of land use changes on spatial erosion pattern, a time series analysis using RUSLE and GIS: The cases of Ambuliyar sub-basin
+   Authors: , 
+   Date: 2018
+
+44. Land use and land cover changes and associated driving forces in north western lowlands of Ethiopia
+   Authors: , , , 
+   Date: 2015
+
+45. Drivers and implications of land use/land cover dynamics in Finchaa catchment, northwestern Ethiopia
+   Authors: , , 
+   Date: 2020
+
+46. Dynamics of land use, land cover change trend and its drivers in Jimma Geneti District, Western Ethiopia. Land Use Policy
+   Authors: , , 
+   Date: 2020. 105011
+
+47. Spatiotemporal detection of land use/land cover change in the large basin using integrated approaches of remote sensing and GIS in the Upper Awash basin
+   Authors: , 
+   Date: 2019
+
+48. Available online: www.mowe.gov.et
+   Date: January 2021
+
+49. Trends and drivers of land use/land cover change in Western Ethiopia
+   Authors: , , , 
+   Date: 2019
+
+50. Evaluation of land use land cover change on stream flow: A case study of Dedissa Sub Basin, Abay Basin, South Western Ethiopia
+   Authors: , , 
+   Date: 2016
+
+51. Land use land cover change trend and its drivers in Somodo watershed, south-western Ethiopia
+   Authors: , , 
+   Date: 2019
+
+52. Land use/land cover change analysis using object-based classification approach in Munessa-Shashemene landscape of the Ethiopian highlands
+   Authors: , , , 
+   Date: 2013
+
+53. Assessment of land use and land cover change detection and prediction using remote sensing and CA Markov in the northern coastal districts of Tamil Nadu
+   Authors: , 
+
+54. Image classification tool for land use/land cover analysis: A comparative study of maximum likelihood and minimum distance method
+   Authors: , , 
+   Date: 2012
+
+55. Spatiotemporal variability in spate irrigation systems in Khirthar National Range, Sindh, Pakistan (case study)
+   Authors: , , , , , 
+   Date: 2020
+
+56. A comparative analysis of different pixel and object-based classification algorithms using multi-source high spatial resolution satellite data for LULC mapping
+   Authors: , , , , 
+   Date: 2021
+
+57. Accuracy assessment of land use/land cover classification using remote sensing and GIS
+   Authors: , 
+   Date: 2017
+
+58. Change detection and prediction of urban land use changes by CA-Markov model (case study: Talesh County)
+   Authors: , , , 
+   Date: 2019
+
+59. Modeling the Spatio-temporal dynamics and evolution of land use and land cover (1984-2015) using remote sensing and GIS in Raya
+   Authors: , , , , 
+   Date: 2017
+
+60. Application of land change modeler for prediction of future land use land cover: A case study of Vijayawada City
+   Authors: , , 
+   Date: 2015
+
+61. Land change modeler for predicting land cover change in Banjarmasin City
+   Authors: , 
+   Date: 2014-2022. 2020
+
+62. Prediction of spatio-temporal land use/land cover dynamics in rapidly developing Varanasi district of Uttar Pradesh, India, using geospatial approach: A comparison of hybrid models
+   Authors: , , , , 
+   Date: 2018
+
+63. Future simulation of land use changes in rapidly urbanizing South China based on land change modeler and remote sensing data
+   Authors: , , , , 
+
+64. Analysis and prediction of land cover changes using the land change modeler (LCM) in a semiarid river basin
+   Authors: , , , , , 
+   Date: 2021
+
+65. Learning internal representations by error propagation
+   Authors: , , 
+   Date: 1986
+
+66. Prediction of land use changes based on land change modeler (LCM) using remote sensing: A case study of Muzaffarpur (Bihar)
+   Authors: , , 
+   Date: 2014
+
+67. 
+   Authors: 
+
+68. Predicting land use changes in Philadelphia following green infrastructure policies
+   Authors: , 
+   Date: 2019, 8, 28
+
+69. Analysis of settlement expansion and urban growth modelling using geoinformation for assessing potential impacts of urbanization on climate in Abuja City
+   Authors: , , , , 
+
+70. Spatio-temporal urban growth dynamics of Lagos Metropolitan Region of Nigeria based on Hybrid methods for LULC modeling and prediction
+   Authors: , 
+   Date: 2018
+
+71. Analysis and prediction of land use changes related to invasive species and major driving forces in the state of Connecticut
+   Authors: , , , , , , 
+   Date: 2016
+
+72. Mathematical Methods of Statistics
+   Authors: 
+
+73. Theory & Methods: Partitioning Pearson's Chi-squared Statistic for Singly Ordered Two-way Contingency Tables
+   Authors: 
+   Date: 2001
+
+74. IDRISI Taiga Guide to GIS and Image Processing
+   Authors: 
+   Date: 2009
+
+75. Spatio-temporal analysis of land use and land cover change: A systematic model inter-comparison driven by integrated modelling techniques
+   Authors: , , , , 
+   Date: 2020
+
+76. Future Scenarios for Land Use in Chile: Identifying Drivers of Change and Impacts over Protected Area System
+   Authors: , , 
+   Date: 2021
+
+77. Land-Use and Land-Cover Changes in Dong Trieu District, Vietnam, during Past Two Decades and Their Driving Forces
+   Authors: , 
+   Date: 2021
+
+78. An analysis of LULC change detection using remotely sensed data; A Case study of Bauchi City
+   Authors: , , 
+   Date: 2014. 012056
+
+79. Multi-temporal image analysis for LULC classification and change detection
+   Authors: , , 
+   Date: 2021
+
+80. Analysing past land use land cover change and CA-Markov-based future modelling in the Middle Suluh Valley, Northern Ethiopia
+   Authors: , , , 
+   Date: 2020
+
+81. Land-use/cover dynamics in Northern Afar rangelands
+   Authors: , , , 
+   Date: 2010
+
+82. Impacts of land cover/use dynamics of Gilgel Abbay catchment of Lake Tana on climate variability
+   Authors: , 
+   Date: 2012
+
+83. Controversial connections: The water-energy-food nexus in the Blue Nile basin of Ethiopia
+   Authors: , 
+   Date: 2019
+
+84. Forest cover change over four decades in the Blue Nile Basin, Ethiopia: Comparison of three watersheds
+   Authors: , , , 
+   Date: 2014
+
+85. Land-use change and its socio-environmental impact in Eastern Ethiopia's highland
+   Authors: , , , , 
+   Date: 2014
+
+86. Land Use Land Cover Changes in the Fincha Basin, Ethiopia
+   Authors: , 
+   Date: June 2022
+
+87. Deforestation and environmental degradation in Ethiopia: The case of Jam Jam Province
+   Authors: 
+   Date: 1995
+
+88. Pattern and magnitude of deforestation in the south central rift valley region of Ethiopia
+   Authors: , 
+   Date: 2007
+
+89. Federal Democratic Republic of Ethiopia-FDRE. Constitution of the Federal Democratic Republic of Ethiopia; National Legislative Bodies/National Authorities: Addis Ababa
+   Date: 1994
+
+90. Direct Consumptive Use Valuation of the Ecosystem Goods and Services in the Bale Mountains Eco-Region, Ethiopia
+   Authors: 
+   Date: 2007
+
+91. Manage or convert Boswellia woodlands? Can frankincense production payoff?
+   Authors: , , 
+   Date: 2013
+
+92. Assessment of the linkages between ecosystem service provision and land use/land cover change in Fincha watershed, North-Western Ethiopia
+   Authors: , , 
+
+93. Vulnerability analysis of smallholder farmers to climate variability and change: An agro-ecological system-based approach in the Fincha'a sub-basin of the upper Blue Nile Basin of Ethiopia
+   Authors: , 
+   Date: 2019
+
+94. Hydropower-induced land use change in Fincha'a watershed, western Ethiopia: Analysis and impacts
+   Authors: , 
+   Date: 2008
+
+95. The study of land use and land cover (LULC) dynamics and the perception of local people in Aykoleba, northern Ethiopia
+   Authors: , , 
+   Date: 2022
+
+96. Community perception of land use/land cover change and its impacts on biodiversity and ecosystem services in northwestern Ethiopia
+   Authors: 
+   Date: 2018
+

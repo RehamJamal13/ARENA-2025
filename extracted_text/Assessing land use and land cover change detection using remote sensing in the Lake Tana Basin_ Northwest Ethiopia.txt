@@ -1,0 +1,238 @@
+================================================================================
+TITLE: Assessing land use and land cover change detection using remote sensing in the Lake Tana Basin, Northwest Ethiopia
+================================================================================
+
+AUTHORS:
+- Dires Tewabe
+- Temesgen Fentahun
+
+ABSTRACT:
+No abstract
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## ENVIRONMENTAL MANAGEMENT & CONSERVATION | RESEARCH ARTICLE ##
+Assessing land use and land cover change detection using remote sensing in the Lake Tana Basin, Northwest Ethiopia Dires Tewabe 1 * and Temesgen Fentahun 2
+Abstract: Land use land cover (LULC) change detection based on remote sensing data is an important source of information for various decision support systems. Information derived from land use and land cover change detection is important to land conservation, sustainable development, and management of water resources. This purpose of this study is therefore concerned with identifying the change in land use and land cover detection of the Tana basin. To identify land cover changes detection; remote sensing data, satellite imagery and image processing techniques had done within three dates of 1986, 2002 and 2018 using Land sat TM 30 m resolution images. ENVI and Arc GIS soft wares had used to identify the changes. The classification had done using six land cover (water body, bushland, grassland, forestland, cultivated, and residential land) class. Preprocessing and classification of the images had analyzed carefully and accuracy assessment was tested separately using the kappa coefficient. The results showed that overall accuracy in the basin was 84.21%, 83.32% and 91.40% and kappa coefficient of 79.02%, 83.32%, 89.66% for the years 1986, 2002 and 2018 respectively. This study indicated that in the last 32 years period, agricultural land and residential areas had significantly increased by 15.61% and 8.05% respectively in the basin. Therefore, proper land management 
+
+## PUBLIC INTEREST STATEMENT ##
+Human activities are one of the main driving forces of land use and land cover changes, and generally in natural environments. Land-use change affects the nature of the climate, cause natural hazards and socio-economic dynamics on a global and local scale. Therefore, defining the land-use change is an important issue considering global dynamics and their response to the water flow, forest, soil, and rainfall and runoff characteristics of the catchment or basins. In addition to that investigating land use, land cover change is important for effective sustainable land resource management, effective utilization of the natural resource, and use as a tool for policymakers and understanding the changes in hydrological processes. Therefore, this study is an important hint for decision-makers to understand the dynamic nature of the basin for the last decades and to take measures based on the finding.
+practices, integrated watershed management, and active participation of the local community should be advance to protect undesirable LULC change in the basin.
+
+## Introduction ##
+The land use and land cover change of an area is an outcome of natural and socio-economic aspects and their operation by the human in time and space. Land use land cover (LULC) changes are mostly influenced by increase and decrease in population growth in the system 
+Change detection is valuable in many applications related to land use and land cover (LULC) changes detection including cultivation, urban expansion and landscape changes 
+In most developing countries like Ethiopia, population growth has been a dominant cause of land use and land cover change 
+Therefore, the aim of this study was to assess the trend of land use and land cover change in the Tana basin of Northwest Ethiopia. In this study, LULC changes had investigated using remote sensing data with the help of GIS and ENVI software. Therefore, we expect that the finding of this study could contribute information for decision-makers, land managers and planners for sustainable development and management of the natural resource.
+
+## Materials and methods ##
+
+
+## Description of the study area ##
+Lake Tana is the source of the Blue Nile River and the lake covers 3,060 km 2 at elevation 1,786 masl. The lake is the largest in Ethiopia and the third-largest in the Nile Basin. The basin has minimum elevation at the flood plain of Fogera, Dembia, and Gilgel Abay while the maximum elevation is about 4109 masl in the mountainous area. It is located at 12°00ʹ Northing and 37°15ʹ Easting which is 564 km from the capital of Ethiopia, Addis Ababa (Figure 
+
+## Materials ##
+Landsat image is a special sensor onboard the Landsat Satellite platform and is capable of capturing multispectral imagery. Landsat multispectral images capture many bands of the electromagnetic spectrum, including visible, reflective infrared and thermal infrared energy. Understanding the strengths and weaknesses of different types of sensor data is essential for the selection of suitable remotely sensed data for image classification 
+
+## Methodology ##
+In remote sensing studies, a representative ground truth data is a prerequisite to associate this reflectance property to the object and the train classifiers and facilitate accurate automatic classification 
+
+## Land use and land cover classification ##
+To perform image classification, the raw data must be preprocessed and prepared properly so that error due to the geometry of the earth, radiometric and atmospheric effects could be accounted for. The general procedure in the preprocessing stage has included the detection and restoration of bad lines, geometric rectification or image registration, radiometric calibration, atmospheric correction, and topographic correction.
+
+## Supervised image classification ##
+In this process, we select pixels that represent patterns we recognize, or that we could identify with help from other sources (Google earth) information. Knowledge of the data, the classes desired, and the algorithms to be used were required before we begin selecting training samples. By setting priorities to these classes, we had supervised the classification of pixels as they had assigned to a class value.
+
+## Accuracy assessment ##
+A classified image or change detection map needs to be compared against reference data, assumed to be true, to assess its performance and quantify its accuracy 
+
+## Image processing ##
+The procedure in the preprocessing stage was including the detection and restoration of bad lines, geometric rectification or image registration, radiometric calibration, atmospheric correction, and topographic correction. Accurate geometric rectification or image registration of remotely sensed data is a prerequisite for a combination of different source data in a classification process 
+
+## Change detection ##
+The importance of change detection is to determine which land-use class is changing to the other. The most commonly used land change detection methods include image overlay, classification comparisons of land cover statistics, change vector analysis, principal component analysis, image rationing and the differencing of normalized difference vegetation index (NDVI) 
+
+## Results and discussion ##
+
+
+## Land use and land cover analysis ##
+To assess the classification accuracy, confusion matrix had used including overall accuracy, user's accuracy, and producer's accuracy. Classification is not complete until its accuracy is assessed using the known Kappa statistics 
+
+## Overall accuracy ##
+This accuracy gives the overall results of the confusion matrix. It is calculated by dividing the total number of correct pixels (diagonal values) by the total number of pixels in the confusion matrix. According to 
+
+## Kappa coefficient (KC) ##
+The Kappa statistic had used to measure the agreement between two sets of categorizations of a dataset (Table 
+In this study, 116, 139 and 162 number of ground control points had used to validate the classified images for 1986, 2002 and 2018 respectively using Global Positioning System (GPS) point from Google earth on the field in addition to the unchanged ground control point. The accuracy had performed separately for the 
+Generally, the results (Table 
+
+## Land use and land cover maps ##
+The spatial analysis had carried out to describe land cover change patterns and overall land-use changes with time. Forestland, bush/shrubland, Grassland, Cultivated land, and Residential area were the major land use and land cover classes of the basin. Land use land cover change (Figure 
+Analyses of the result indicated that bushland was the dominant land cover class of 19. 39 and 15.82 % next to Agricultural land 37.56 and 43.12 % in 1986 and 2002 respectively. This result reveals that the main source of income was agriculture during this period. Analysis of the 2018 image revealed that agricultural land constituted the largest proportion while bushland was the second dominant coverage of 9.56 % next to Agricultural land in the basin. This result is due to the expansion of population growth and the increments of human needs. Generally, the result indicates that forestland, bushland, and grassland had decreased while residential areas and cultivated land had increased this may be due to the increment of population growth and high demand for agricultural production.
+LULC change detection in the basin revealed that agricultural land and settlement areas increased from 1984 to 2018 in the last 32 years (Table 
+
+## Change detection analysis ##
+The land use and land cover change detection based on remote sensing images have been widely applied in research for LUCC, natural resource management and environment monitoring & protection 
+
+## Conclusions ##
+In this study, LULC detection of Lake Tana basin over the last three decades had analyzed. The result of the study showed that significant change detection had observed during the study period. Agriculture and residential/urban areas showed an increasing trend of 13 and 9.1 %, respectively, while forest, bushland, and grassland showed a decreasing trend of 2.3, 9.8 and 10 %, respectively. This result revealed that the change of forest, bushland, and grassland to agricultural and residential areas which may problems including change in streamflow, soil degradation, and hydrological system in the basin. These changes could have implications for sustainable resource management and the livelihood of the local society. Therefore, improved land management practices (soil and water conservation), improved agricultural inputs, integrated watershed management (land use planning and management), and active participation of local community should be advance to prevent undesirable LULC dynamics in the basin. In this study, the change detection analysis using GIS and remote sensing could deliver useful information to understand the seasonal patterns of land use dynamics for planners and decision-makers consequently sustainable land management planning is possible.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Land use change detection using remote sensing and artificial neural network: Application to Birjand
+   Authors: 
+   Date: 2014
+
+2. Impacts of rainfall variability, land use and land cover change on stream flow of the black Volta Basin
+   Authors: , , 
+   Date: 2016
+
+3. Longterm dynamics in land resource use and the driving forces in the Beressa watershed, highlands of Ethiopia
+   Authors: , , 
+   Date: 2007
+
+4. A land use and land cover classification system for use with remote sensor data
+   Authors: 
+   Date: 1976
+
+5. Land use and land cover dynamics and drivers in the Muga watershed
+   Authors: , 
+   Date: 2019
+
+6. Land cover dynamics since the 1950s in Chemoga watershed
+   Authors: 
+   Date: 2002
+
+7. Land use land cover changes along topographic gradients in Hugumburda national forest priority area, Northern Ethiopia
+   Authors: , , , , , 
+   Date: 2019. 2018
+
+8. Assessing the land use/cover dynamics and its impact on the low flow of Gumara Watershed
+   Authors: , 
+   Date: 2017
+
+9. A simple and effective radiometric correction method to improve landscape change detection across sensors and across time
+   Authors: , , 
+   Date: 2005
+
+10. Status of land cover classification accuracy assessment
+   Authors: 
+   Date: 2002
+
+11. Dynamics of land-use and landcover change in Freetown, Sierra Leone and its effects on urban and peri-urban agriculture -A remote sensing approach
+   Authors: , 
+   Date: 2011
+
+12. Land-use and land-cover dynamics in the central rift valley of Ethiopia
+   Authors: , , , 
+   Date: 2009
+
+13. Assessing the impacts of land use and land cover change on hydrology of watershed: A case study on Gigel-Abbay Watershed
+   Authors: 
+   Date: 2013
+
+14. Optical remotely sensed time series data for land cover classification: A review
+   Authors: , , 
+   Date: 2016
+
+15. Evaluating land-use change in rapidly urbanizing China: Case study of Shanghai
+   Authors: , , , 
+   Date: 2009. 2009
+
+16. Monitoring urban growth and land use change detection with GIS and Tewabe & Fentahun
+   Authors: , 
+   Date: 2015. 2020. 1778998
+
+17. The spatiotemporal form of urban growth: Measurement, analysis and modeling
+   Authors: , , 
+   Date: 2003
+
+18. The implications of changes in population, land use, and land management for surface runoff in the upper Nile basin area of Ethiopia
+   Authors: , , 
+   Date: 2005. 2005
+
+19. Pattern and development of land-use changes in the Kenyan highlands since the 1950s. Agriculture
+   Authors: 
+   Date: 1999
+
+20. Introductory digital image processing: A remote sensing perspective
+   Authors: 
+   Date: 1996
+
+21. Dynamics of land-use and land-cover change in tropical regions
+   Authors: , , 
+   Date: 2003
+
+22. A survey of image classification methods and techniques for improving classification performance
+   Authors: , 
+   Date: 2007
+
+23. Pixelbased classification of multispectral remotely sensed data using support vector machine classifier
+   Authors: , , 
+   Date: 2015
+
+24. Model evaluation guidelines for systematic quantification of accuracy in watershed simulations
+   Authors: , , , , , 
+   Date: 2007
+
+25. Remote sensing & GIS for land cover, land use change detection and analysis in the seminatural ecosystems and agriculture landscapes of the central Ethiopian Rift Valley
+   Authors: 
+   Date: 2006
+
+26. Monitoring land use/cover change using remote sensing and GIS techniques: A case study of Hawalbagh block, district Almora
+   Authors: , 
+   Date: 2015
+
+27. Land-cover and land-use change in a mediterranean landscape: A spatial analysis of driving forces integrating biophysical and human factors
+   Authors: , , 
+   Date: 2008
+
+28. Spatial delineation of soil erosion vulnerability in the Lake Tana Basin
+   Authors: , , , 
+   Date: 2009
+
+29. Land use/cover change at infraz Watershed, Northwestren Ethiopia
+   Authors: 
+   Date: 2015
+
+30. Land use/cover change detection based on remote sensing data (A case study
+   Authors: , , , 
+   Date: 2010
+
+31. Natural regeneration of degraded hillslopes in Southern Wello, Ethiopia: A study based on permanent plots
+   Authors: 
+   Date: 2001
+
+32. Monitoring growth in rapidly urbanizing areas using remotely sensed data
+   Authors: , , 
+   Date: 2000
+
+33. 
+   Authors: , , , , , , , 
+   Date: 2016
+
+34. Land-use change modelling in the Upper Blue Nile Basin
+
+35. Influence of resettlement on pastoral land use and local livelihoods in southwest Ethiopia
+   Authors: , , , 
+   Date: 2013
+
+36. Land cover classification and change analysis of the Twin Cities (Minnesota) Metropolitan Area by multitemporal Landsat remote sensing
+   Authors: , , , 
+   Date: 2005
+
+37. Implications of land use and land cover dynamics for mountain resource degradation in the Northwestern Ethiopian highlands
+   Authors: , 
+   Date: 2001
+
+38. An analysis of land use change dynamics and its impacts on hydrological processes in the Jialing River Basin
+   Authors: , , , 
+   Date: 2014
+
+39. Budgeting suspended sediment fluxes in tropical monsoonal watersheds with limited data: The Lake Tana basin
+   Authors: , , , , , , 
+   Date: 2018
+

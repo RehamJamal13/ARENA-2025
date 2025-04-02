@@ -1,0 +1,250 @@
+================================================================================
+TITLE: Multi-scenario simulation of land use/land cover change and water yield evaluation coupled with the GMOP-PLUS-InVEST model: A case study of the Nansi Lake Basin in China
+================================================================================
+
+AUTHORS:
+- Yingchun Liu
+- Yande Jing
+- Shanmei Han
+
+ABSTRACT:
+Changes in land use/land cover (LULC) can impact water yield (WY) by altering the structural layout and functions of terrestrial ecosystems. Therefore, to ensure regional economic and ecosystem sustainability, it is critical to investigate the correlation between LULC change and WY. The GMOP-PLUS-InVEST (GPI) coupling model based on the gray multi-objective optimization model, the patch-generating land use simulation model, and the integrated valuation of ecosystem services and trade-offs model was used in this study. Establishing three different scenarios: business as usual (BAU), economic development scenario (ED), and ecological conservation scenario (EC) to predict the LULC distribution pattern in the Nansi Lake Basin (NLB) in 2035, and obtain the WY from 2000 to 2035. Getis-Ord Gi* and Anselin Local Moran's I were used to investigate the spatial-temporal features of WY at the grid scale. The results indicated that: (1) The dominant LULC types of the NLB were farmland and construction land. The primary transfer trend was construction land encroaching on farmland due to the acceleration of the urbanization process and policy intervention. (2) The results of the LULC simulation in the NLB in 2035 showed that the BAU had a continuous trend of change for nearly 20 years; Under the ED, the intensity of construction land encroachment on farmland was accelerating; Under the EC, an apparent increase in the proportion of ecological land could be seen, and the contradiction between construction land and farmland had eased, which was expected to be more in line with the policy and planning objectives. (3) LULC change had a significant effect on WY. From 2000 to 2035, WY of the NLB continued to increase, and in 2035, the WY under different scenarios was ED > EC > BAU. Spatially it always showed a high value distribution in the south and west in the NLB. The GPI coupling model can be used for LULC optimization and ecosystem service evaluation, providing ideas for rational planning of future LULC. Research results have significant reference significance for the formulation of LULC policies and the protection and restoration of ecological environment of the NLB.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Water yield (WY) in ecosystem services is the foundation of various ecological processes and ecological service functions 
+In terms of WY evaluation, the existing studies mostly adopt two methods for quantitative evaluation: value-based and physical quantity evaluation 
+Forecasting the possible implications of long-term LULC change on the WY of the ecosystem is crucial for formulating rational and timely ecological protection plans in advance. Cellular automata (CA)-Markov 
+Previous land prediction models utilized a bottom-up approach to assign each land type to an appropriate location but relied on their individual transformation principles and are devoid of optimized LULC structures. Fewer studies have been conducted on LULC optimization from the perspective of improving the comprehensive benefits of LULC. Few studies explored LULC optimization using multi-objective optimization scenario combination prediction models that analyze LULC quantity, spatial layout, and collaborative optimization of benefits 
+The Nansi Lake Basin (NLB) is situated in the Southern Shandong Economic Circle of China. In recent years, the economic level of the NLB has shown improvement, the industrialization and urbanization process has accelerated. However, due to the region's heavy responsibility of grain production, the contradiction between human and land has become increasingly prominent. To address this issue, the Department of Natural Resources of Shandong Province issued the "Special plan for ecological protection and restoration of the NLB (2021-2035)" in 2022. Hereinafter referred to as "Special plan (2021-2035)". This plan aims to build an ecological pattern of "one core, one screen, two belts, three zones, and multiple corridors" to achieve the development goal of creating an excellent ecological environment in the NLB characterized by "green mountains, clear water, lush forests, fertile fields, and beautiful lakes". In light of this, the objective of this study was to establish three scenarios: business as usual (BAU), economic development scenario (ED), and ecological conservation scenario (EC), using the GPI coupling model, anticipate the future distribution of LULC of the NLB, evaluate its WY, and analyze how the WY is spatially correlated. Specifically, the following objectives were addressed: (1) Identify the spatial-temporal changes in LULC of the NLB from 2000 to 2020. (2) Make quantitative predictions and spatial simulation of the LULC in the NLB under three scenarios (BAU, ED, EC) in 2035. (3) Evaluate the spatial-temporal changes and spatial correlation of WY of the NLB from 2000 to 2035. Overall, this study reveals the influence of LULC changes on WY, and provides a reliable scientific proof and reference for the rational development of land resources and restoration of ecological environment in the basin.
+
+## Study area and data sources ##
+
+
+## Study area ##
+Nansi Lake, situated at the junction of Shandong and Jiangsu provinces, is composed of four interconnected lakes, namely Weishan Lake, Zhaoyang Lake, Dushan Lake, and Nanyang Lake. It is the largest freshwater lake in northern China (Fig. 
+
+## Data sources ##
+Various data sources encompassed LULC, natural environment, socioeconomic, accessibility factors, etc. were used in this study. (Table 
+
+## Methods ##
+The research framework used in this study can be broken down into three main components (Fig. 
+
+## Optimization of LULC structure based on GMOP ##
+The GMOP model is an innovative approach that combines and advances the gray linear regression and multi-objective programming techniques. It not only accommodates the kinds of nondeterminacy in goal functions and restraint condition related to real-world LULC, but also addresses multi-objective issues during the optimization process of LULC structure 
+
+## Decision variables ##
+In this study, the setting of decision variables was selected in consideration of data availability and operability of the NLB. Six decision variables were selected, including farmland, forestland, grassland, water area construction land, and unused land.  
+
+## Scenario settings ##
+BAU: Based on the probability matrix of land transfer from 2000 to 2020, the quantitative demand for various LULC types in 2035 was calculated using linear regression.
+ED: The economic benefit objective function is:
+where F 1 (x) is the economic benefit; C j is the economic benefit per unit area of each decision variable, and x j is the decision variable.
+Using GM (1,1) model, it was predicted that the economic benefits per unit area of farmland, forestland, grassland, water area, and construction land in the target year are 5.95/hm 2 , 5.74/hm 2 , 41.9/hm 2 , 6.61/hm 2 , and 150.16/hm 2 , respectively. Because the economic benefits of unused land were not obvious, the economic benefits of unused land were set at 0.01/hm 2 . Finally, the economic benefit objective function coefficient of the NLB was obtained (unit: 10,000 yuan/hm 2 ):
+Max (x) = 5.95x 1 + 5.74x 2 + 41.90x 3 + 6.61x 4 + 150.16x 5 + 0.01x 6 EC: Set target functions to maximize the total ecosystem service value (ESV) supplied by all LULC types. The ecological benefit objective function is:
+where F 2 (x) is ESV; X j is the decision variable of j LULC type (x 1-6 represents farmland, forestland, grassland, water area, construction land, and unused land, respectively); D j represents the ESV per unit area. This study used ESV to characterize ecological benefits. To reduce errors, based on the "Unit Area ESV Equivalency Table" 
+Max (x) = 0.84 x 1 + 4.10x 2 + 2.52 x 3 + 26.20 x 4 + 0 x 5 + 5.42x 6
+
+## Constraint setting ##
+(1) Total land
+(2) Population The population of the construction land should be controlled within the target predicted population range of the study area:
+where m is the average population density of the construction land, and P is the total population. gray GM (1,1) model was used to forecast the average population density and total population of construction land in 2035, determining m = 13.58, P = 1012234.
+(3) Farmland According to the requirements of "grain for green" and "returning farmland to grassland" in the "Special plan (2021-2035)", while strictly observing the arable land minimum, the area of basic farmland in various regions was protected to guarantee the growth of the agricultural economy. The farmland area should be smaller than the status quo and larger than the arable land minimum:
+(4) Forestland According to the requirements of "grain for green" in the "Special plan (2021-2035)", the proportion of forests should be increased. To ensure ecological construction and increase forest coverage, the area of forestland of the NLB in 2035 should not be smaller than the current situation:
+(5) Grassland From 2000 to 2020, the total grassland area decreased year by year and was mainly converted into farmland. According to the requirements of "returning farmland to grassland" in the "Special plan (2021-2035)", the percentage of grassland needs to be improved. In conjunction with the economic development requirements of the NLB, the grassland area should be maintained below the grassland area in 2000:
+(6) Water area From 2000 to 2020, the water area of Nansi Lake changed significantly. To coordinate the balanced development of economy and ecology, the peak value of water area for nearly 20 years was set as the lower limit, and the valley value was set as the upper limit:
+(7) Construction land In the light of the "Special plan (2021-2035)", taking urbanization process and economic development requirements into account, the construction land area of the NLB in 2035 should be at least larger than the current situation:
+
+## Solution ##
+Solve the functions of the above constraints using Lingo 18 software and ultimately obtain the land demand quantity for the multi-objective optimization scenarios in 2035.
+
+## Optimization of spatial LULC structure based on PLUS ##
+CA model exhibits inadequacies in both conversion rule mining strategies and simulation strategies for landscape dynamic change. Therefore, this study utilized the PLUS model which encompasses both LEAS and CARS to simulate future LULC changes. LEAS provides the ability to dissect the dynamics of LULC change over a certain period of time with enhanced explanatory power, whereas CARS blends a random seed generation mechanism with a threshold reduction mechanism to automatically generate spatial-temporally dynamic simulated patches within the restraints of probability of occurrence.
+
+## Model input ##
+To estimate the appropriate probability of different LULC types, this study utilized LULC data from two phases to obtain LULC extension map. In accordance with the natural environment, socioeconomic development of the research area, previous studies 
+
+## Accuracy verification ##
+By utilizing LULC data and driving factor data in 2010 and 2020, this study adopted the PLUS model to make simulations of LULC landscape pattern of the NLB in 2020. Through a comparison between the actual and simulated results, it was found that the overall accuracy reached 0.92, with a Kappa coefficient of 0.81. These results demonstrate that the PLUS model exhibited excellent simulation accuracy for the research area and is highly reliable and applicable. Based on this, the study anticipated and analyzed LULC under diverse scenarios in 2035 via the LULC data for 2020.
+
+## Evaluation of WY changes ##
+To assess the WY of the NLB, we employed the WY module of the InVEST model in this study. The Budyko water heat coupling equilibrium hypothesis and annual average precipitation data were utilized to determine the annual WY Y of each grid unit × in the NLB 
+where AET(x) represents the actual annual evapotranspiration of grid unit x, and P represents the annual precipitation of grid unit x.
+In the water balance formula, the vegetation evapotranspiration for LULC types was calculated using the formula:
+where PET(x) represents the potential evapotranspiration, ω nonphysical parameters that represent the natural climate-soil properties.
+
+## Spatial relevance evaluation based on grid ##
+To generate a grid of 3 km × 3 km consistent with the study area, we employed ArcGIS software. Subsequently, we linked the WY data to the grid to obtain the WY value for each unit area. Utilizing GeoDa software, the global auto-correlation results were obtained by first calculating Moran's value at the grid scale. The distribution of WY hot spots in the NLB was analyzed using Getis Ord Gi*. Finally, local auto-correlation results and LISA aggregation graphs were obtained by utilizing Anselin Local Moran's I.
+
+## Results ##
+
+
+## Spatial-temporal changes in LULC in NLB ##
+According to the findings presented in Table 
+According to Fig. 
+
+## Multi-scenario simulation based on PLUS ##
+According to Table 
+
+## Contribution rate of driving factors for LULC expansion ##
+The LEAS and CARS are the central components of the PLUS model. The LEAS uses a built-in random forest regression training process to provide directly quantitative information on how the various drivers affect the extent of the contribution of each LULC type to the expansion. This information helps us understand the potential causes of LULC change. Fig. 
+
+## Evaluation of WY change based on InVEST ##
+The model was utilized to assess the changes in WY in the NLB by inputting the LULC simulation results in 2000, 2010, 2020, and different scenarios in 2035 (Fig. 
+
+## Spatial correlation of WY in NLB ##
+From a spatial correlation perspective, the Moran's I value of WY in the NLB from 2000 to 2020 and under different scenarios in 2035 were all greater than 0, with values of 0.395, 0.500, 0.496, 0.593, 0.617, and 0.612 respectively. This result indicates that the territorial distribution of WY in the NLB exhibited certain clustering phenomena. Through Getis-Ord Gi* analysis, significant clustering regions can be identified. These are locations where high or low value elements cluster spatially, with cold and hot spots representing low and high values respectively. The Getis-Ord Gi* analysis (Fig. 
+
+## Discussion ##
+The results of the study showed that LULC transfers were occurring all the time in the NLB from 2000 to 2020, with farmland and construction land being the most significant 
+Based on the results of LULC simulation in the NLB in 2035, evaluation results of the InVEST model revealed that a significant increase in WY under three different scenarios, with the highest WY observed under the ED and the lowest under the BAU 
+Policies and regulations in different periods have a direct impact on  the direction of LULC, but most previous studies did not a detailed analysis of policy scenarios when establishing simulation models 
+
+## Conclusion ##
+In this study, we used the GPI coupling model to optimize the LULC layout in the NLB under different scenarios and to investigate its impact on WY. Our simulation results demonstrated that compared to the BAU and ED, the EC showed a decrease in construction land expansion rate while ensuring basic farmland, alleviating the conflict between construction land and farmland, and increasing the proportion of ecological land, which is more aligned with the goals of the "Special plan (2021-2035)". Our assessment of the spatial-temporal pattern of WY in the NLB helped to understand the consequences of LULC change on WY. By examining changes in WY, we can comprehend the comprehensive impact and relative importance of LULC change on it, helping to address LULC planning issues and provide ideas for LULC decision-making. Since entering the 21st century, construction land encroaching on farmland has been the main trend of LULC change in the NLB and has resulted in the most significant land conflict issue in the region. Balancing urban expansion while ensuring the minimum amount of arable land to guarantee food security is the primary challenge facing the basin presently. From the perspective of ecosystem service changes, reasonable LULC planning can have a positive impact on WY to some extent. Effective management practices can further help managers formulate more comprehensive spatial planning, thereby ensuring that the efficiency of land resource use in the NLB is improved and the ecological environment is restored. Although this study has certain limitations, the results are practical and policy-relevant and can provide a reference for LULC change and ecosystem service function planning in the NLB and other similar regions. 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Effects of dynamic land use/land cover change on water resources and sediment yield in the Anzali wetland catchment
+   Authors: , , , , , , , , , 
+   Date: 2020. 2019
+
+2. Detecting land use and climate impacts on water yield ecosystem service in arid and semi-arid areas
+   Authors: , , , , 
+   Date: 2022
+
+3. Mapping water ecosystem services: Evaluating InVEST model predictions in data scarce regions
+   Authors: , , , , , 
+   Date: 2021
+
+4. Improving predictions of climate change-land use change interactions
+   Authors: , , , 
+   Date: 2021
+
+5. Biophysical and economic assessment of four ecosystem services for natural capital accounting in Italy
+   Authors: , , , , 
+   Date: 2020
+
+6. Evaluating and mapping water supply and demand for sustainable urban ecosystem management in Shenzhen
+   Authors: , , , , 
+   Date: 2020
+
+7. ecosystem carbon storage in Hangzhou Bay area based on InVEST and PLUS Models
+   Authors: , , , , 
+   Date: 2022
+
+8. Multiscenario simulation and trade-off analysis of ecological service value in the Manas River Basin Based on Land Use Optimization in China
+   Authors: , , , , , , , , , 
+   Date: 2022
+
+9. On the forest cover-water yield debate: from demand-to supply-side thinking
+   Authors: , , 
+   Date: 2012
+
+10. Scenario analysis of ecosystem service changes and interactions in a mountain-oasis-desert system: a case study in Altay Prefecture
+   Authors: , , , , , 
+   Date: 2018
+
+11. Measurement and prediction of land use conflict in an opencast mining area
+   Authors: , , , 
+   Date: 2021
+
+12. Response of water yield function of ecosystem to land use change in Nansi Lake Basin based on CLUE-S model and InV EST model
+   Authors: , , , , 
+   Date: 2016
+
+13. Land conservation can mitigate freshwater ecosystem services degradation due to climate change in a semiarid catchment: The case of the Portneuf River catchment
+   Authors: , , , , , , 
+   Date: 2019
+
+14. Simulation and prediction of the spatial dynamics of land use changes modelling through CLUE-S in the Southeastern Region of Bangladesh
+   Authors: , , , , 
+   Date: 2021
+
+15. Land-use changes and ecosystem services under different scenarios in Nansi Lake Basin
+   Authors: , , , 
+   Date: 2021
+
+16. Modeling and prediction of land use land cover change dynamics based on land change modeler (LCM) in Nashe Watershed
+   Authors: , , 
+   Date: 2021
+
+17. Research on land-use evolution and ecosystem services value response in mountainous counties based on the SD-PLUS model
+   Authors: , , 
+   Date: 2022
+
+18. Multi-scenario simulation of ecosystem service value for optimization of land use in the Sichuan-Yunnan ecological barrier
+   Authors: , , , , , 
+   Date: 2021
+
+19. Understanding the drivers of sustainable land expansion using a patch-generating land use simulation (PLUS) model: A case study in Wuhan
+   Authors: , , , , , 
+   Date: 2021
+
+20. Detection and prediction of land use/land cover change using spatiotemporal data fusion and the Cellular Automata-Markov model
+   Authors: , , , 
+   Date: 2019
+
+21. Research on the change in prediction of water production in urban agglomerations on the northern slopes of the Tianshan Mountains based on the InVEST-PLUS Model
+   Authors: , , , , 
+   Date: 2023
+
+22. Uncovering the relationships between ecosystem services and social-ecological drivers at different spatial scales in the Beijing-Tianjin-Hebei region
+   Authors: , , , , , , 
+   Date: 2021
+
+23. Spatio-temporal quantification of patterns, trade-offs and synergies among multiple hydrological ecosystem services in different topographic basins
+   Authors: , , 
+   Date: 2020
+
+24. 2022a. Spatio-temporal relationship of landuse carton emission and ecosystem service value in Mansi Lake Basin basedupon a grid square
+   Authors: , , , 
+
+25. Water yield service influence by climate and land use change based on InVEST model in the monsoon hilly watershed in South China
+   Authors: , , , , , , 
+   Date: 2022
+
+26. Spatial and temporal variation, simulation and prediction of land use in ecological conservation area of western Beijing
+   Authors: , , , , , 
+   Date: 2022
+
+27. Coupling PLUS-InVEST model for ecosystem service research in Yunnan Province
+   Authors: , , , , , 
+   Date: 2023
+
+28. Application of the InVEST model for assessing water yield and its response to precipitation and land use in the Weihe River Basin
+   Authors: , , , , 
+   Date: 2022
+
+29. Improvement of ecosystem service valuation method based on unit area value equivalent factor
+   Authors: , , , , 
+   Date: 2015
+
+30. Spatial gradient differences of ecosystem services supply and demand in the Pearl River Delta region
+   Authors: , , , 
+   Date: 2021
+
+31. Climate and land use change impacts on water yield ecosystem service in the Yellow River Basin
+   Authors: , , , 
+   Date: 2021
+
+32. Understanding the impacts of climate and landuse change on water yield
+   Authors: , , , 
+   Date: 2018
+
+33. Land use/cover predictions incorporating ecological security for the Yangtze River Delta region
+   Authors: , , , , , , , 
+   Date: 2020
+
+34. Landscape ecological risk projection based on the PLUS model under the localized shared socioeconomic pathways in the Fujian Delta region
+   Authors: , , , , , , 
+   Date: 2022
+
+35. Modelling cultural ecosystem services in agricultural dykelands and tidal wetlands to inform coastal infrastructure decisions: a social media data approach
+   Authors: , , , , , 
+   Date: 2023. Mar
+

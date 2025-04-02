@@ -1,0 +1,196 @@
+================================================================================
+TITLE: Influence of the Changes in Land-Use and Land Cover on Temperature over Northern and North-Eastern India
+================================================================================
+
+AUTHORS:
+- Sridhara Nayak
+- Suman Maity
+- Kuvar Singh
+- Hara Nayak
+- Soma Dutta
+
+ABSTRACT:
+This study explores the influence of land-use and land cover (LULC) changes on the temperature over North India (NI) and North-Eastern India (NEI) during 1981-2006 by subtracting the reanalysis temperature from the observed temperature (observation minus reanalysis (OMR) method). The normalized difference vegetation index (NDVI) data of the AVHRR satellite for the period 1981-2006 were analyzed to understand the type of LULC changes during this period and their linkage with the temperature change over the two regions. The results from OMR indicated that the LULC change over NI during 1981-2006 resulted a warming of 0.03 • C, and that of NEI during this period resulted a cooling of 1.5 • C.
+The results from LULC changes during the said period indicated an increase of dry land/snow cover and agriculture/fallow land by ~0.1% of total area and a decrease of shrubs/small vegetation and dense forest over NI by about 0.1-0.2%. Over NEI, the areas under agricultural/fallow land, open forest and dense forest showed an increase by about 0.8-2.4% during this period, and the areas under dry/snow cover and shrubs/small vegetation indicated a decrease by ~0.7-3.6%. The comparison between the OMR analysis and LULC changes indicated that the warming over NI during 1981-2006 is due to the expansion of the dry land and the decline of dense forest. On the other hand, the cooling over NEI during the period is attributed to the decline of non-vegetated/small vegetated lands and the expansion of agricultural land/forest covers in that period. This study has an overall implication towards the modeling studies for the impact assessment of LULC changes in the present as well as future climate.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Recent studies have revealed that anthropogenic forcing due to the changes in land-use and land cover (LULC) is one of the responsible factors for the temperature change in recent decades 
+Northern India (NI), located in the north part of India, comprising the states of Jammu and Kashmir, Ladakh, Haryana, Punjab, Chandigarh, Uttarakhand, Uttar Pradesh, and the union territories of Delhi. North-Eastern India (NEI), located at the easternmost part of India, consists of eight states viz. Sikkim, Assam, Tripura, Arunachal Pradesh, Meghalaya, Manipur, Mizoram, and Nagaland. A location map of the two regions viz. NI and NEI are depicted in Figure 
+Land 2021, 10, x FOR PEER REVIEW 2 of 14 forest in Jharkhand state has increased due to the decrease of vegetation cover during 1994-2014. Similarly, the changes in LULC resulted in warming over Western India due to a decrease in forest areas during 1975-2005 
+Similarly, LULC changes over Eastern India contributed towards warming at a rate of ~2 °C per decade during 1991-2006 due to conversion of small vegetation into bare lands, while it resulted in cooling during 1981-1990 due to an increase of dense forests and agricultural lands 
+Northern India (NI), located in the north part of India, comprising the states of Jammu and Kashmir, Ladakh, Haryana, Punjab, Chandigarh, Uttarakhand, Uttar Pradesh, and the union territories of Delhi. North-Eastern India (NEI), located at the easternmost part of India, consists of eight states viz. Sikkim, Assam, Tripura, Arunachal Pradesh, Meghalaya, Manipur, Mizoram, and Nagaland. A location map of the two regions viz. NI and NEI are depicted in Figure 
+Previous studies 
+
+## Materials and Methods ##
+The reanalysis daily temperature datasets were obtained from the NCER/NCAR Reanalysis (NNRP1) over NI and NEI regions, and the observed daily temperature was taken from the National Climatic Data Center (NCDC) at 16 different stations for the period 1981-2006. The geographical locations of each station are given in Table 
+where T s is the reanalysis temperature at the station, d i -1 is the Euclidean distance from the station to the corner point g i , Tg i is the reanalysis temperature at point g i . The temperature trends over the regions are then estimated from the linear trends in the reanalysis and observed temperature anomalies during 1981-2006 with respect to their 26 years means. Finally, we subtracted the reanalysis temperature trend from the observed temperature trend to calculate the contribution of LULC changes towards the temperature over the regions. This method of estimating the impact of LULC changes on the temperature is known as the observation minus reanalysis (OMR) method 
+The normalized difference vegetation index (NDVI) images from AVHRR products are classified into different LULC types at 8 km resolution for the years 1981, 1991, and 2006 by using the hierarchy approach of LULC types 
+N IR -Red N IR + Red The hierarchy approach refers to categorizing the whole LULC into two groups based on the NDVI values and then to categorize each individual into another two groups and to continue the process 
+
+## NDVI = ##
+𝑁𝐼𝑅 -𝑅𝑒𝑑 𝑁𝐼𝑅 + 𝑅𝑒𝑑 The hierarchy approach refers to categorizing the whole LULC into two groups based on the NDVI values and then to categorize each individual into another two groups and to continue the process 
+
+## LULC Map ##
+
+
+## LULC Change ##
+Figure 
+
+## LULC Change ##
+Figure 
+
+## LULC Change versus Temperature Trends ##
+In this section, we investigated the conversion of each LULC type from one type to another over NI and NEI during 1981-2006 (Figure 
+Land 2021, 10, x FOR PEER REVIEW 11 of 14
+
+## LULC Change Versus Temperature Trends ##
+In this section, we investigated the conversion of each LULC type from one type to another over NI and NEI during 1981-2006 (Figure 
+
+## Discussion ##
+In this study, we explored the impact of LULC changes on the temperature over NI and NEI during 1981-2006 by subtracting the reanalysis temperature from the observed temperature (observation minus reanalysis (OMR) method). We found that the LULC change during 1981-2006 resulted warming of 0.034 • C over NI, while it caused cooling of 1.5 • C over NEI during this period. Our results over NI were found to be qualitatively comparable with the previous studies conducted over other regions of India 
+We further attempted to investigate the changes in LULC over NI and NEI during 1981-2006 from the AVHRR satellite datasets to understand the type of LULC changes and their linkage with the temperature change over these two regions. Analysis indicated that the warming over NI during 1981-2006 could be due to expansion of the areas under dry land/snow cover and reduction of areas under dense forest during this period. The cooling over NEI during 1981-2006 could be due to the decline of non-vegetated/small vegetated lands and the expansion of agricultural land/forest covers in that period. It is noticed that the dry land/snow cover and shrubs/small vegetation are largely decreased over NEI during 1981-2006. The reason for the decreased areas under these categories over NEI could be attributed to the snowmelt 
+
+## Conclusions ##
+This study explored the influences of LULC changes on the temperature trend during 1981-2006 over two regions (NI and NEI) of India. The reanalysis temperature over each region was subtracted from the observed temperature over the corresponding region. The so-called "observation minus reanalysis" (OMR) method was used to quantify the impact of LULC changes on the temperature over both regions. The results indicated that due to the LULC changes during 1981-2006, NI experienced a warming of 0.034 • C, while NEI experienced cooling of 1.5 • C during this period. AVHRR satellite images were deployed to recognize the LULC changes occurring during this period over NI and NEI and to understand their linkage with the surface temperature change. Overall analysis inferred an expansion of the areas under dry land/snow cover over NI during 1981-2006 and a reduction of areas under dense forest over the same region in that period. This may lead to warming over NI during 1981-2006. On the other hand, a decline of non-vegetated/small vegetated lands is noticed over NEI during this 1981-2006 and an expansion of agricultural land/forest covers is seen over the same region in that period. This may lead to the cooling over NEI during 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Climate Change 2013: The Physical Science Basis
+   Authors: , , , , , , , 
+   Date: 2013
+
+2. Land use and land cover change effect on surface temperature over Eastern India
+   Authors: , , , , , 
+   Date: 2019
+
+3. The Role of the Land Surface in the Climate System
+   Authors: 
+   Date: 2002
+
+4. Contrasting response of European forest and grassland energy exchange to heatwaves
+   Authors: , , , , , , , , 
+   Date: 2010
+
+5. Possible Socio-scientific Issues of Land-use and Land-cover Change Impact and Associated Tools of Study with a Special Reference to Delhi-Mumbai Industrial Corridor Region
+   Authors: , , 
+   Date: 2014
+
+6. Local cooling and warming effects of forest based on satellite data
+   Authors: , , , , , 
+   Date: 2015
+
+7. Spatial impact of land use/land cover change on surface temperature distribution in Saranda Forest
+   Authors: , , , 
+   Date: 2016, 2, 127
+
+8. Land use/land cover classification and mapping of Pilibhit District Uttar Pradesh India
+   Authors: , 
+   Date: 2008
+
+9. Changes in land use/cover using geospatial techniques: A case study of Ramnagar town area, district Nainital
+   Authors: , , 
+   Date: 2013
+
+10. RegCM4 simulation with AVHRR land use data towards temperature and precipitation climatology over Indian region
+   Authors: , , 
+   Date: 2018
+
+11. Impact of land use and land cover changes on temperature trends over India. Land Use Policy
+   Authors: , 
+   Date: 2019. 104238
+
+12. Impacts of the agricultural Green Revolution-induced land use changes on air temperatures in India
+   Authors: , , , , , , , 
+   Date: 2007
+
+13. Urban modification of thunderstorms: an observational storm climatology and model case study for the Indianapolis urban region
+   Authors: , , , , , , , 
+   Date: 2011
+
+14. Impact of urbanization and land-use/land-cover change on diurnal temperature range: A case study of tropical urban airshed of India using remote sensing data
+   Authors: , 
+   Date: 2015
+
+15. Assessing Land Use-Land Cover Change and Its Impact on Land Surface Temperature Using LANDSAT Data: A Comparison of Two Urban Areas in India
+   Authors: , 
+   Date: 2020
+
+16. Impact of land use and land cover change on temperature trends over Western India
+   Authors: , 
+   Date: 2012
+
+17. Analyzing land surface temperature distribution in response to land use/land cover change using split window algorithm and spectral radiance model in Sundarban Biosphere Reserve
+   Authors: , , 
+
+18. Examining the impact of regional land use and land cover changes on temperature: the case of Eastern India
+   Authors: , 
+   Date: 2019
+
+19. Climate classification
+   Authors: , 
+
+20. 
+   Authors: , 
+   Date: 1987
+
+21. Impact of urbanization and land-use change on climate
+   Authors: , 
+   Date: 2003
+
+22. Impact of Vegetation Types on Surface Temperature Change
+   Authors: , , , 
+   Date: 2008
+
+23. Impacts of land use land cover on temperature trends over the continental United States: assessment using the North American Regional Reanalysis
+   Authors: , , , , , 
+   Date: 2010. 1980-1993
+
+24. Effects of land use/land cover on diurnal temperature range in the temperate grassland region of China
+   Authors: , , 
+   Date: 2017
+
+25. Impact of variations in vegetation on surface air temperature change over the Chinese Loess Plateau
+   Authors: , , , , 
+   Date: 2020. 136967
+
+26. NDVI-derived land cover classifications at a global scale
+   Authors: , 
+   Date: 1994
+
+27. Global land cover classification at 1 km spatial resolution using a classification tree approach
+   Authors: , , , 
+   Date: 2000
+
+28. Temperature and precipitation changes in the north-east India and their future projections
+   Authors: , , , , 
+   Date: 2012
+
+29. The Major Drainage Systems in the Northeastern Region of India
+   Authors: 
+   Date: 2018
+
+30. Recognizing the rapid expansion of rubber plantation-A threat to native forest in parts of northeast India
+   Authors: , , , , 
+   Date: 2018
+
+31. Homogenization of temperature series via pairwise comparisons
+   Authors: , , 
+   Date: 2009
+
+32. On the reliability of the U.S. surface temperature record
+   Authors: , , , 
+   Date: 2010. 11108
+
+33. Analysis of the impacts of station exposure on the U.S. Historical Climatology Network temperatures and temperature trends
+   Authors: , , , , , , , 
+   Date: 2011. 14120
+
+34. Observation of irrigation-induced climate change in the Midwest United States
+   Authors: , , 
+   Date: 2019
+

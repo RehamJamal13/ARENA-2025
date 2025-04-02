@@ -1,0 +1,317 @@
+================================================================================
+TITLE: Surface runoff associated with climate change and land use and land cover in southeast region of Brazil
+================================================================================
+
+AUTHORS:
+- Leticia Arantes
+- Ana Claudia
+- Pereira Carvalho
+- Ana Paula
+- Reinaldo Lorandi
+- Luiz Moschini
+- José Augusto
+- Di Lollo
+
+ABSTRACT:
+The objective of this research was to understand the environmental dynamics of the studied region considering this context and to develop instruments for the best management of water resources, based on Potential Runoff Charts generated from natural and anthropic environment attributes consideration in the years 2001 and 2017. The study area was the Rio Claro Watershed (RCW), which covers 251.91 km 2 and is located in the northwest region of São Paulo State, Brazil. Analytic Hierarchy Process (AHP) was used to define weights of the environmental attributes: steepness; total annual rainfall; land use/cover; soil; landforms; and aquifer units. The charts present the surface runoff in five classes (Very Low, Low, Medium, High, and Very High). The results showed significant changes in the period, due to climate changes, and, secondly, due to land use/cover changes. While in 2001 the Low and Medium Potential classes (59.3%) predominated, in 2017 the Medium and Very Low Potential classes (56.5% total) were the most common. High and Very High Potential classes showed small variations in the two years. Results derivate especially from lower rainfall in 2017 compared to 2001, showing that climate changes does not always mean an increase in rainfall on a regional scale and that water resources management instruments should consider such situations. The proposed measures aim to favor infiltration, reduce erosive processes, and favoring aquifers recharge.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Freshwater resources are increasingly scarce, requiring effective water management tools 
+According to 
+The knowledge of soil cover changes allows to identify its effects on the hydrological processes 
+In this context, the integration of climate change and human interference with data from the natural environment allows understanding of the dynamics of the watersheds, allowing the proposition of instruments for local and regional management of water resources.
+Given this, the main objective of the article was to elaborate the Surface Runoff Potential Chart for the Rio Claro watershed, based on the weighting of attributes of the natural and anthropic environment, using the map algebra technique based on the Analytic Hierarchy Process (AHP). The product had the purpose of identifying how these attributes interfere with the water behavior of the area. The study area was chosen because it presents records of environmental degradation (floods, changes in water courses and widespread occurrence of erosion processes), resulting in water resources quality problems.
+
+## Studied area ##
+The Rio Claro Watershed (RCW) is part of the Water Resources Management Unit 09 of the State of São Paulo ( FEHIDRO -Fundo Estadual de Recursos Hídricos, 2011 ), presents an area of 251.91 km 2 and has its location shown in Fig. 
+In 55.40% of the area, there are concave medium hills with slopes between 5% and 10%; medium hills cover 15.90% of the area in areas with slopes lower than 5%. The other forms of relief in the area are small convex hills (12.33%), scarps (7.50%), wide open valleys (7.29%), and small closed valleys occupying 1.39% of the area 
+According to ( IF -Instituto Florestal do Estado de São Paulo 2010 ), the RCW conserves an important part of the remaining vegetation cover of the Atlantic Forest biome, with semideciduous forests, as well as floodplains and cerrado areas to a lesser extent. In addition to remnants of native vegetation, agricultural activities (sugarcane, coffee, citriculture, forestry), pasture, urbanization and mining were identified.
+The soils in the basin have predominantly sandy texture, with the exception of the residual soils of Basic Magmatites and Corumbataí For-  
+
+## Materials and methods ##
+The sequence of methodological procedures adopted in this study is shown in Fig. 
+The weights definitions for Surface Runoff Potential Charts production was based on AHP (Analytic Hierarchy Process) method of 
+Rainfall data were obtained from the National Institute of Meteorology 
+In the map algebra generation from AHP use, the weights of each class of the attributes in the analysis was defined by the AHP eigenvectors, using Reclassify tool of ArcGIS 10.5.1®. Subsequently, a consistency analysis of the weights adopted for the information plans was carried out, in this way, the Consistency Ratio (RC) and the Consistency Index (CI) were calculated, according to the equations in Table 
+The weights adopted through the AHP method for each class of attributes are shown in Table 
+The map algebra was developed using Weighted Sum function, and the used weights corresponded to the values of the eigenvectors for each environmental attribute obtained from AHP, as shown in Table 
+The weights of the environmental components were defined considering its importance on surface runoff in the watershed. The steepness was the component that received the highest weight since it is a determinant factor in the local surface runoff; rainfall was the second component in importance, since the regional climate is characterized by rainfall concentrated in short periods of the year (four months of summer).
+The components soil, landforms, and aquifer systems resulted in lower weights depending on the preferences adopted. The reasons for    The Surface Runoff Potential Charts resultant from natural and natural/anthropic environments of the RCW (years 2001 and 2017) were presented considering five runoff classes (Very Low, Low, Medium, High and Very High). These classes were quantified for each of the five subbasins of the RCW. The sub-basins were individually analyzed in order to verify the expected runoff conditions in these areas so that water management recommendations for each sub-basin could be elaborated. The sub-basins were automatically delimited in the Global Mapper® software, and their limits were obtained using the Generate Watershed tool, through the drainage network generated from the Digital Elevation Model obtained from the Topodata Project 
+
+## Results and discussions ##
+The intermediate results used in Surface Runoff Potential Charts generation, i.e. land use/cover and annual precipitation charts, are showed in Fig. 
+Regarding land use/cover, results show sugarcane cultivation and native vegetation as the predominant classes, corresponding to 72.53% (182.70 km 2 ) of the area. Exposed soil in 2001 includes fallow areas, which in the year 2017 were occupied by sugar cane cultivation, citriculture, forestry and pasture, which resulted in a reduction of 77.64% in this class. The urbanized areas of the RCW increased by 48.94% considering the studied period, generating a significant increase in the waterproofed areas in the basin.
+Regarding the total annual precipitation, the RCW in 2001 presented values ranging from 1307.89 to 1343.26 mm, however, in 2017 there was a reduction of these levels to 1175.97-1218.45 mm (10% reduction in precipitation). The eastern portion of the RCW presents higher levels  of precipitation, unlike the central-west region towards the mouth of Rio Claro, which present lower levels in both years. In Fig. 
+The charts of potential runoff that did not consider the annual total precipitation show few differences for the two years analyzed. However, the charts that consider precipitation for the years 2001 and 2017 show significant changes resulting from precipitation levels in the two years of analysis. The results obtained for each sub-basin of the Rio Claro basin are discussed in the sequence. The choice to present the results by subbasins was due to the differences in results between them and the fact that environmental management strategies could be more effective.
+
+## Córrego Passa-Quatro sub-basin (A) ##
+In this sub-basin, "Very Low" and "Low" classes of surface runoff predominates in both years, and rainfall was the determining factor conditioning this classification, due to its lower levels of precipitation when compared to other regions of the RCW. Increases in rainfall in this area, can induces runoff increase and soil erosion 
+The lower surface runoff favor the infiltration, contributing to the recharge of the Santa Rita do Passa Quatro and Pirambóia aquifers, with greater territorial extension in the sub-basin, both porous aquifers, which are sooty to soils with sandy texture and thicknesses greater than 10 m, occupied mainly by sugarcane and pasture, in both years considered.
+In 2001, "Medium" class was mainly located in the urban area, associated with sandy soils, increasing soil erosion potential in extraurban areas. In 2017, this area was classified as "Low Potential Runoff", due to lower precipitation values, confirming the relationship of rainfall and surface runoff in this are. According to 
+The "High and Very High" classes in this basin are associated to larger slopes ( > 20%) and medium-textured and less thick soils. According to 
+
+## Ribeirão do Sapé sub-basin (B) ##
+The greater variation in the potential for surface runoff in this subbasin between 2001 and 2017 was observed in the "Medium" class, with a reduction of 85.31%, with strong "Low Potential" growth (43.45%). The class occurs in areas of sugarcane cultivation and the presence of native vegetation, with vegetation cover reducing the surface runoff and increasing infiltration 
+In 2017, "High" and "Very High Potential Flow" classes were identified in regions with high slopes ( > 30%), directing flow to areas with softer slopes with sandy soils and profiles thicker than 10 m. The combination of attributes in this region of flat relief favors the recharge of the aquifer unit (Pirambóia).
+
+## Rio Clarinho sub-basin (C) ##
+This area shows strong variation from "Very Low " and "Low " to "Medium " and "High" classes, mainly due to changes in total annual precipitation and in land use and cover changes. In 2001, total annual rainfall varied from 1314.97 mm to 1322.04 mm in the southwest portion, and between 1322.04 mm and 1329.11 mm in the rest of the sub-basin, while in 2017 the variations were between 1190.13 mm and 1204, 29 mm in the southwest portion, and 1204.29 mm at 1218.45 mm in the rest of the area.
+Considering land use and cover, there is a decrease of exposed soil, and increases sugarcane cultivation. Another notable change was the change of sugarcane for pasture in the northern and central portions of the sub-basin. Between 2001 and 2017 there was a native vegetation loss of 30.1%, which also influenced the alteration of the surface runoff classes.
+In addition, a small-scale increase of areas with citrus and silviculture in the center and south of the sub-basin in 2017, being the first class influencing the reduction of flow velocity due to planting in corridors 
+Runoof is conditioned by slope (10-30%) in the northern portion, associated with fine texture soils with thickness of less than 2 m. In the rest of the sub-basin, the soils have a sandy texture, favoring aquifer units' recharge.
+
+## Córrego do Faveiro sub-basin (D) ##
+This was the only sub-basins that did not present the "Very Low" and "Low Potential" classes in 2017. In 2001, these classes occurred mainly in the western portion of the sub-basin, and in 2017 classified as "Medium " and "High" potential to the outflow.
+This change was due mainly from land use and cover changes, such as the reduction of native vegetation as a result of increased agricultural activities (sugarcane, citrus, silviculture, and pasture) and mining. According to 
+In the year 2001, the occurrence of "Medium Potential" class in the eastern portion (soil with sandy texture and depth above 10 m), contributes to Pirambóia Aquifer recharge. Annual rain fall shows increases from 2001 to 2017 in this area. In both, 2001 and 2017 years, Córrego do Faveiro sub-basin presented a higher percentage of the "Medium Potential" class, in areas with coarser soil texture.
+The "High" and "Very High" classes were concentrated in the northeastern and north-western portions in 2001, regions with gradients up  to 30%, sandy soils with thicknesses ranging from 5 to 10 m, or greater than 10 m in areas with forms of relief (planar rectilinear and planar convex) that favor surface runoff. In these conditions, low influence of the uncontaminated materials on the potential flow, and strong control of the relief, the precipitation indices, and the types of soil use and cover are observed 
+
+## Rio Claro sub-basin (E) ##
+Rio Claro sub-basin presents greater diversity among the environmental attributes. The area shows significant changes in soil cover in the period 2001-2017, influencing surface runoff, such as increased sugar cane cultivation and pasture, in the entire sub-basin; and decrease of exposed soil areas.
+In 2001, total annual rainfall increases from west to east strongly than 2017. This was one of the factors that led to the decrease between the years 2001 and 2017 of 83.26% of the "Very High" class potential for surface runoff and the "Very Low" class increase in the order of 38.74% . The effects caused by precipitation types in the runoff process, as well as in soil loss are directly related to the duration and intensity of precipitation 
+The areas with the higher slope (greater than 20%) are located in the eastern, central, and western portions of the sub-basin, moderately interfering with potential runoff. Soil texture varies from sandy to clayey texture, with a thickness ranging from less than 2 m up to over 10 m. From the western portion to the center of the sub-basin there are also scattered spots of clayey soils whose thickness does not exceed 5 m, regions with greater potential flow, influenced by the characteristics of the soils.
+Considering this general scenario in RCW, and focusing in minimizing impacts from surface runoff, these set of recommendations were proposed.
+"Very Low " and "Low " classes' areas favor infiltration and recharging aquifers, needing cares related to farming conservative techniques and water resources protection. Some soil physical attributes can be modified by soil management and conservation practices are adopted, and the rate of infiltration of soil water can be modified, more favoring infiltration process.
+In "Medium " class areas the above strategies needs to be associated with vegetation cover protection, mainly in areas of higher slope values, since the suppression of the vegetation can contribute to the reduction of the infiltration capacity and generate an increase in the surface runoff and the erosive processes resulting from it 
+Inadequate management and poor soil conservation practices have been considered as the main factors influencing surface runoff, resulting in changes in water infiltration conditions in soils and an increase in surface runoff, which may link erosion processes 
+In "High " and "Very High " Potential areas, measures should be applied in agricultural areas with annual crops that can reduce runoff, such as terracing to reduce water loss and soil retention of streams when precipitation extrapolates the soil infiltration capacity. Another interesting alternative to reduce runoff is vertical infiltration furrow, which can provide increased water volume in the slopes, allowing perennial drainage channels 
+It is important to preserve forest areas and Permanent Preservation Areas (APP) in accordance with the Forest Code (Law no. 12.651/2012) ( BRASIL, 2012 ), as the absence of vegetation cover increases the probability of soil, either by detachment of particles or by removal of the surface layer from the soil. Secondly, such a measure has the benefit of decreasing the likelihood of sedimentation of water bodies. 
+In the case of high-slope slopes, the reduction of the flow velocity obtained by the installation of energy sinks can be a tool to reduce the increase in surface runoff 
+Although the Surface Runoff Potential Charts does not highlight the urban areas of the basin, it is essential to consider that urban growth tends to increase the waterproofed area, increasing the flow velocity. Thus, some specific measures can be adopted in urban areas, creating legal instruments that guarantee permeability rates between 20% and 30% of the total land area when it exceeds 300 m 2 of area; to build temporary rainwater storage tanks; deploy gardens along sidewalks; to implant sidewalks and gutters with drainage floors 
+In urban areas, measures such as the green roof 
+
+## Conclusions ##
+In general, surface runoff potential charts produced for RCW show significant influence of total annual rainfall in both considered years, evidencing the importance of climate change, either globally or regionally. Rio Claro Basin, considering natural or manmade attributes, occurs in vast areas of the southeastern region of Brazil, which is why the conclusions observed here can be extrapolated to a large area of the Paraná Basin.
+Considering local variations (sub-basins), we observe a strong control from soil texture and thickness and land use land cover in potential runoff. This situation indicates the need of large scale environmental management strategies, without neglecting local actions.
+Surface Runoff Potential Chart enables the identification of specific areas that require constant monitoring to prevent and/or minimize negative impacts resulting from anthropic interventions, as leaching of fertilizers and pesticides that contaminate the soil and, consequently, the underground water resources from infiltration, and also the surface, with the flow of these components to the water courses changing their physical and chemical properties, often causing the eutrophication of water courses.
+The proposed measures aim to favor infiltration, reducing the possibility of erosive processes in the soil and favoring the recharge of aquifer units. The results of this study can assist environmental managers and planners in their decision-making, aiming at a sustainable balance between socio-economic development and the rational use of water resources.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Effectiveness of alternative management scenarios on the sediment load in a Mediterranean agricultural watershed
+   Authors: , , , 
+   Date: 2014
+
+2. The effect of land cover change on duration and severity of high and low flows
+   Authors: , 
+   Date: 2017
+
+3. Land use and climate change impacts on runoff and soil erosion at the hillslope scale in the Brazilian Cerrado
+   Authors: , , , 
+   Date: 2018
+
+4. Use of Landsat thermal imagery in monitoring evapotranspiration and managing water resources
+   Authors: , , , 
+   Date: 2012
+
+5. Mapeamento do uso e ocupação do solo no município de Belém de São Francisco -PE nos anos de
+   Authors: , , , 
+   Date: 2014. 1985 e 2010
+
+6. Estimativa da infiltração de água no solo na escala de bacia hidrográfica
+   Authors: , , , , , 
+   Date: 2014
+
+7. Avaliação do desempenho hidráulico de um sistema de drenagem de águas pluviais urbanas
+   Authors: , , 
+   Date: 2018
+
+8. Lei n; 12.651, de 25 de maio de 2012. Código Florestal Brasileiro. Brasília, DF, 25 de maio de
+   Authors: 
+   Date: 2012. 19 June 2018
+
+9. Land use change mapping and analysis using remote sensing and GIS: a case study of Simly watershed
+   Authors: , , , 
+   Date: 2015
+
+10. Sustentabilidade: Um desafio na gestão dos recursos hídricos
+   Authors: , , 
+   Date: 2010
+
+11. Caracterização geomorfométrica e do uso do solo da bacia hidrográfica do alto meia ponte
+   Authors: , , , , , 
+   Date: 2012
+
+12. Proposta para redução do escoamento superficial das águas pluviais em Seropédica-RJ
+   Authors: , , , 
+   Date: 2015
+
+13. 
+   Authors: , 
+   Date: 2009
+
+14. Telhado verde: redução e retardo do escoamento superficial
+   Authors: , , 
+   Date: 2012
+
+15. Banco de dados hidrológicos
+   Authors: , 
+   Date: 2018. 14 may 2018
+
+16. Modelo Digital de Elevação
+   Authors: , 
+   Date: 2018. 2018
+
+17. Separating the impacts of climate change and human activities on streamflow: a review of methodologies and critical assumptions
+   Authors: , 
+   Date: 2017
+
+18. Effects of urbanization on streamflow using SWAT with real and simulated meteorological data
+   Authors: , 
+   Date: 2012
+
+19. An integrated system for regional environmental monitoring and management based on internet of things
+   Authors: , , , , , , 
+   Date: 2014
+
+20. Plano da Bacia Hidrográfica: 2008-2011. Comitê da Bacia Hidrográfica do Rio Mogi Guaçu
+   Authors: 
+   Date: 2011
+
+21. Geração de escoamento superficial em uma microbacia com cobertura de cana-de-açúcar e floresta ripária
+   Authors: , , , , , , , 
+   Date: 2013
+
+22. Avaliação de um modelo para a estimativa da lâmina máxima de escoamento superficial
+   Authors: , , , 
+   Date: 2001
+
+23. Início do Processo Erosivo. Erosão e Conservação dos Solos
+   Authors: 
+   Date: 2012
+
+24. Impacts of land use and land cover change on surface runoff, discharge and low flows: evidence from East Africa
+   Authors: , , , , 
+   Date: 2018
+
+25. Managing aquatic ecosystems and water resources under multiple stress -an introduction to the MARS project
+   Authors: , , , , , , 
+   Date: 2015
+
+26. Institutional design propositions for the governance of adaptation to climate change in the water sector
+   Authors: , , , , , 
+   Date: 2012
+
+27. Inventário Florestal do Estado de São Paulo
+   Date: 2010
+
+28. TOPODATA, banco de dados geomorfométricos do Brasil
+   Date: 2017
+
+29. Effects of the land use/cover on the surface runoff and soil loss in the Ni ğde-Akkaya Dam Watershed
+   Authors: 
+   Date: 2018
+
+30. Interplay between land-use dynamics and changes in hydrological regime in the Vietnamese Mekong Delta
+   Authors: , , , , 
+   Date: 2018. June 2016
+
+31. Formação e Conservação dos Solos
+   Authors: 
+   Date: 2010
+
+32. Zoneamento Geoambiental Analítico da Bacia do Rio Claro (SP) na escala 1:50.000. Relatório Final de Pesquisa
+   Authors: , 
+   Date: 2016
+
+33. Climatologia: Noções Básicas e Climas do Brasil. Oficina de textos
+   Authors: , 
+   Date: 2007
+
+34. Effects of rainfall patterns on runoff and soil erosion in field plots
+   Authors: , 
+   Date: 2015
+
+35. The impact of vegetative cover type on runoff and soil erosion under different land uses
+   Authors: , 
+   Date: 2010
+
+36. Runoff generation in a degraded Andean ecosystem: interaction of vegetation cover and land use
+   Authors: , , , , , 
+   Date: 2007
+
+37. Quantifying the combined effects of land use and climate changes on stream flow and nutrient loads: a modelling approach in the Odense Fjord catchment (Denmark)
+   Authors: , , , , 
+   Date: 2018
+
+38. Estimating the effects of potential climate and land use changes on hydrologic processes of a large agriculture dominated watershed
+   Authors: , 
+   Date: 2015
+
+39. A review on water resources yield model. South Afr
+   Authors: , , , 
+   Date: 2017. July 2016
+
+40. Climate change adaptation and water resource management: a review of the literature
+   Authors: 
+   Date: 2014
+
+41. 
+   Authors: , , , , , 
+   Date: 2017
+
+42. Monitoring and quantification of stormwater runoff from mixed land use and land cover catchment in response to land development
+   Authors: , , , , , , 
+   Date: 2018
+
+43. SUDS (sustainable urban drainage systems): uma contextualização histórica
+   Authors: 
+   Date: 2011
+
+44. Sensitivity of hydrology and water quality to variation in land use and land cover data
+   Authors: , , , , 
+   Date: 2020
+
+45. The Analytic Hierarchy Process
+   Authors: 
+   Date: 1980
+
+46. Impact of land cover and land use change on runoff characteristics
+   Authors: , 
+   Date: 2015
+
+47. Cartografia digital para estimativa de escoamento superficial visando ao planejamento urbano
+   Authors: , , 
+   Date: 2016
+
+48. Impacts of climate and land use changes on the hydrological and erosion processes of two contrasting Mediterranean catchments
+   Authors: , , , , , , 
+   Date: 2015
+
+49. Predicting plausible impacts of sets of climate and land use change scenarios on water resources
+   Authors: , , , , 
+   Date: 2012
+
+50. TOPODATA: Utilization Guide for Geomorphological Local Data Usage. Instituto Nacional de Pesquisas Espaciais
+   Authors: 
+   Date: 2008
+
+51. Hydrological impacts of land use change in three diverse South African catchments
+   Authors: , , 
+   Date: 2012
+
+52. Hydrological responses to land use/cover changes in the source region of the Upper Blue Nile Basin
+   Authors: , , , 
+   Date: 2017
+
+53. Distinguishing the relative impacts of climate change and human activities on variation of streamflow in the poyang lake catchment
+   Authors: , , , , 
+   Date: 2013
+
+54. Comprehensive evaluation of the effects of climate change and land use and land cover change variables on runoff and sediment discharge
+   Authors: , , , , 
+   Date: 2020
+
+55. Modeling Land-use and land-cover change and hydrological responses under consistent climate change scenarios in the Heihe river basin
+   Authors: , , , 
+   Date: 2015
+
+56. Global pattern for the effect of climate and land cover on water yield
+   Authors: , , , , , , 
+   Date: 2015
+

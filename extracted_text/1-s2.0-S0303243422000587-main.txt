@@ -1,0 +1,201 @@
+================================================================================
+TITLE: Detecting land use and land cover change on Barbuda before and after the Hurricane Irma with respect to potential land grabbing: A combined volunteered geographic information and multi sensor approach
+================================================================================
+
+AUTHORS:
+- Andreas Rienow
+- Jan Schweighöfer
+- Torben Dedring
+- Marcus Goebel
+- Valerie Graw
+
+ABSTRACT:
+Two months after the hurricanes Irma and Maria hit Barbuda, the construction of a new international airport led to accusations of degrading the Codrington Lagoon National Park and contravening the conventions of the Ramsar Program. Scientists have analyzed the aftermath with respect to historical legacies, disaster capitalism, manifestation of climate injustices and green gentrification. The main objective of this study was to quantify and allocate land use and land cover change (LULCC) in Barbuda before and after the 2017 Hurricane disasters. Remote sensing data and volunteered geographic information were analyzed to detect the potential changes in natural LULC so that human activities and the emergence of artificial surfaces could be detected. Human-induced LULCC occurred at different sites on the island, with decreased activities in Codrington, but increased and continued activities at Coco and Palmetto Points. With an accuracy of 97.1 %, we estimated a total increase of vegetated areas by 6.56 km 2 , and a simultaneous slight increase in roads and buildings with a total length of 249.67 km and a total area of 1.43 km 2 . The vegetation condition itself depict a steady decrease since 2017. New hotspots of human activity emerged on the island in the Codrington Lagoon National Park.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+"Buy land, God doesn't create any more." This aphorism by Mark Twain can be considered as the guiding principle for humankind, evident from the steadily increasing global land consumption. Accordingly, the term "land grab" was coined and is related to the increased number of large-scale and commercial land deals by international actors 
+A. Rienow et al. 
+Scientists have analyzed the effect of severe storms with respect to historical legacies and reconstruction politics 
+This study addresses the following research questions:
+1) Where is human-induced LULCC taking place on Barbuda and how accurate can it be allocated? 2) To what extent is LULCC occuring on Barbuda and how can it be quantified? 3) How does LULCC on Barbuda has changed before and after Hurricane Irma in terms of location and quantity?
+This paper is structured as follows: Section 2 discusses the historical role of land in defining the identity of the Barbudans. Section 3 presents the data and methods used in the study that are multispectral remote sensing-based LULCC classification, very high-resolution satellite imagery, nighttime lights, and volunteered geographic information gathered through Ohsome API and Twitters' Twarc 2 API. Section 4 presents the results of human-induced LULC regarding allocation, quantity, and dynamics before and after the severe Hurricanes 2017. A short conclusion and future research directions are presented in section 5.
+
+## Study site -Barbuda and the role of land to a distinctive identity ##
+Barbuda is a Caribbean Island in the Lesser Antilles with an area of 161 km 2 and a population of 1,886 (projection based on Census 2011, https://statistics.gov.ag/) (Fig. 
+The relationship of Barbuda with its larger sister island in the colonial nation state of Antigua and Barbuda, is characterized by a historically developed subordination of Barbuda to Antigua 
+
+## Data and methods ##
+For the assessment of artificial LULCC and human activity on the ground, we mainly utilized two data sources: 1) remotely sensed satellite data and 2) in situ mapped volunteered geographic information. We processed Sentinel-1 (S-1), Sentinel-2 (S-2), NOAA VIIRS data, MODIS Terra, and RapidEye data, and obtained data from the OSM archive via the Ohsome API and Twitter via twarc2 API (2). Thus, procured highresolution (5-10 m scale) quantitative and regional information on LULCC before and after the Hurricane disasters in September 2017, and on-ground information on the artificial LULC. The nighttime light (NTL) imagery enabled the assessment of dynamic human activity (Fig. 
+The LULCC analysis of Barbuda Island was performed using satellite imagery acquired from (S-2) and (S-1) data. Atmospherically corrected Level 2 data that had a cloud cover < 10 % were used. Subsequently, annual samples were created based on simple median filter methods for 2016-2017 (before September 5, 2017) and 2019-2020 (Fig. 
+In order to derive more information on the vegetation condition, we have also acquired data of the Moderate Resolution Imaging Spectroradiometer (MODIS) Terra and Aqua Satellites 
+According to 
+Considering a baseline between 2000 and 2020, MODIS Terra NDVI (MOD13Q1) 16-day composites at 250 m resolution were used to calculate the mean annual VCI for each year between 2015 and 2020.
+
+## Table 1 ##
+Acquired and processed NTL data from the VIIRS. In order to remotely assess human activities, night light emissions are a simple and effective option 
+The utilized satellite data have spatial resolutions of 10 m and 5 m, which is still too coarse to detect smaller residential buildings in Codrington. We enhanced the satellite-based samples with Open Street Map (OSM) feature data to accurately differentiate between vegetated and non-vegetated and artificial and non-artificial areas. OSM is the most commonly used volunteered geographic information system in the world 
+Note that the mapping activities enhanced in the aftermath of the 2017 Hurricanes (Fig. 
+The study wants to contribute to the discourse of land grabbing, neocolonialism, and disaster capitalism by enriching spatially explicit geoinformation with impressions of Barbudan LULCC from the Twitter community. Although the most used social medium in Barbuda is Facebook, we have chosen Twitter since it reflects both: international news and official statements as well as local opinions on those. We set up a scientific developer account and accessed the full Twitter archive via the twarc2 API (Twarc-Project, 2021). We conducted an "all of these words" search for collecting tweets containing the words "barbuda land change" and "barbuda plh". We used the Natural Language Toolkit, comprising the Jupiter "vader" and "stopwords" lexicons, to build a Python program to analyze the collected tweets 
+
+## Results and discussion ##
+Progress in the development of the Barbudan Ocean Club has already been observed via Twitter. Fig. 
+Fig. 
+The quantitative results of the classification based on S-1 and S-2 are presented in Table 
+Fig. 
+The limitations of the remote sensing approach with MODIS or even Sentinel data is the resolution, which is too coarse for the detection of small Barbudan houses and the sampling methods. To overcome the problem of clouded imagery, we created annual median samples, which did not cover the seasonal effects. However, the quantification and allocation of vegetated and non-vegetated areas and their changes before and after the Hurricane can be carried out with an accuracy of 0.97. The kind of land use, i.e., housing, agricultural area, cannot be detected with the proposed approach.
+Accordingly, we assessed the development of settlement structures using the Ohsome API (Fig. 
+Note that the unpaved under construction area of the international airport in the center of the islandthe main reason for the letter of UN to the Government of Barbuda 
+To add further value to the potential human-induced LULCC analyses based on remote sensing and OSM data, we analyzed the archive of the NOAA VIIRS DNB (Fig. 
+
+## Conclusion ##
+The study was conducted to quantify the LULCC in Barbuda in the context of the ongoing debate on neocolonialism and land grabbing. Geospatial data, such as multispectral satellite images or voluntarily mapped OSM features provide an objective representation of the real world. Spectral, spatial, and temporal resolutions and different mapping intensities can be considered as the limitations to this approach. Therefore, we combined different types and strengths of geospatial data, such as the broad spectrum of remote sensing data that can visualize geospatial characteristics, which are invisible to the human eye, and in situ information derived by local mappers. We observed that humaninduced LULCC is occurring on different sites on the island, with decreased activities in Codrington, but increased and ongoing activities leading to a LULCC in Coco Point and Palmetto Point. With an accuracy of 97.1 %, we estimated a total increase of vegetated areas by 6.56 km 2 and simultaneous increase in roads and buildings with a total length of 249.67 km and a total area of 1.43 km 2 ; this includes the area of the under construction central international airport. The satellite classification measures an area of ~ 1.09 km 2 , which is ten times the combined sum of all the buildings mapped with the OSM. This and the fact that the vegetation condition itself depict a steady decrease since 2017 show the severe human-induced LULCC since the hurricanes Irma and Maria hit Barbuda and led to its temporary evacuation. While some places show a decrease in human activity, such as Codrington and the Lighthouse Bay Resort, other places experienced increased human activities. They became new NTL radiance hotspots on the island. Since these hotspots are the sites of the Barbudan Ocean Club, the dispute along the humaninduced LULCC in the aftermath of the 2017 Hurricanes will and needs to be continued. It should be acknowledged that the Nobu Inn and the Palmetto Point site of the PLH are already under construction despite the international attention and applicable Barbudan land law. Hence, future work on geospatial analyses needs to focus on the connection between land rights and land development in Barbuda. While the Copernicus program does not provide data below 10 m spatial resolution, the base maps of the NICFI program could be an alternative; they are currently flawed by artifacts, geometric distortions, and atmospheric radiances. The OSM database needs to be updated so that the recently developed hotels and the international airport construction site can be found in the maps. Finally, landscape transformation needs to be analyzed with respect to the common wealth of the Barbudan citizens, and its impacts on the unique ecosystem of Barbuda.   
+
+## CRediT authorship contribution statement ##
+
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Period Scenes Jun-Aug
+   Date: 2015
+
+2. The Manifestation of Climate Injustices: The Post-Hurricane Irma Conflicts Surrounding Barbuda's Communal Land Tenure
+   Authors: , 
+   Date: 2019
+
+3. Is a pixel worth 1000 words? Critical remote sensing and China's Belt and Road Initiative
+   Authors: 
+   Date: 2020. 2019.102127
+
+4. After Irma, Disaster Capitalism Threatens Cultural Heritage in Barbuda
+   Authors: , 
+   Date: 2019
+
+5. Sustainable Resilience in Barbuda: Learning From the Past and Developing Strategies for the Future
+   Authors: , , , 
+   Date: 2016
+
+6. The coloniality of disaster: Race, empire, and the temporal logics of emergency in Puerto Rico, USA
+   Authors: 
+   Date: 2020
+
+7. UN Letter to Government of Barbuda
+   Authors: , , , , , 
+   Date: 2021
+
+8. UN human rights body have 'deep concerns' over billionaire resort
+   Authors: 
+   Date: 2021
+
+9. On the evaluation and combination of state-of-the-art features in Twitter sentiment analysis
+   Authors: , 
+   Date: 2021
+
+10. Life of the party: The polarizing effect of foreign direct investment
+   Authors: , 
+   Date: 2021
+
+11. Testing the positional accuracy of OpenStreetMap data for mapping applications
+   Authors: 
+   Date: 2016
+
+12. VIIRS night-time lights
+   Authors: , , , , 
+   Date: 2017
+
+13. Monitoring of Urban Sprawl and Densification Processes in Western Germany in the Light of SDG Indicator 11.3.1 Based on an Automated Retrospective Classification Approach
+   Authors: , , , , , , 
+   Date: 2021
+
+14. Green gentrification and disaster capitalism in Barbuda: Barbuda has long exemplified an alternative to mainstream tourist development in the Caribbean. After Irma and Maria, that could change
+   Authors: , 
+   Date: 2018. 2008. 2007
+
+15. Timing is everything -drought classification for risk assessment
+   Authors: , , , , , , , , , 
+   Date: 2020
+
+16. Commonwealth Update
+   Authors: 
+   Date: 2018
+
+17. VADER: A Parsimonious Rule-Based Model for Sentiment Analysis of Social Media Text
+   Authors: , 
+   Date: 2014
+
+18. An Introduction to OpenStreetMap in Geographic Information Science: Experiences, Research, and Applications
+   Authors: , , , 
+   Date: 2015
+
+19. What does it take to kill a megaproject? The reverse escalation of commitment
+   Authors: , , 
+   Date: 2021
+
+20. Remote Sensing for Short-Term Economic Forecasts
+   Authors: , , , 
+   Date: 2021
+
+21. Direct measurement of the contribution of street lighting to satellite observations of nighttime light emissions from urban areas
+   Authors: , , , , , , , , 
+   Date: 2021
+
+22. Remote sensing of night lights: A review and an outlook for the future
+   Authors: , , , , , , , , , , , , 
+   Date: 2020. 2019.111443
+
+23. The Resilience of Land Tenure Regimes During Hurricane Irma: How Colonial Legacies Impact Disaster Response and Recovery in Antigua and Barbuda
+   Authors: , , 
+   Date: 2019
+
+24. Seeing through the clouds -Mapping desert fog oasis ecosystems using 20 years of MODIS imagery over Peru and Chile
+   Authors: , , , , , , , , , , , , , 
+   Date: 2021. 2020. April
+
+25. Land Grabbing: Der globale Kampf um Grund und Boden (2 Aufl.)
+   Authors: 
+   Date: 2012
+
+26. The Sea Will Rise
+   Authors: , 
+   Date: 2020
+
+27. Disrupted identities and forced nomads: A post-disaster legacy of neocolonialism in the island of Barbuda
+   Authors: , , , , 
+   Date: 2021. 2021
+
+28. Barbuda: A Caribbean Island In Transition
+   Authors: , 
+   Date: 2012
+
+29. OSHDB: A framework for spatio-temporal analysis of OpenStreetMap history data
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+30. Dispossession, disaster capitalism and the post-hurricane context in the Caribbean
+   Authors: 
+   Date: 2020
+
+31. From Barbuda to the World: Love (and Peace and Happiness) in the Time of Climate Emergency-NYU School of Law
+   Authors: , 
+   Date: 2021
+
+32. Communal land ownership in Barbuda a myth, says prime minister
+   Authors: 
+   Date: 2018. April 23
+
+33. 
+   Authors: 
+   Date: 2021, September 16
+
+34. Tourism development from disaster capitalism
+   Authors: , , 
+   Date: 2021
+
+35. Assessing the Completeness and Positional Accuracy of OpenStreetMap in China
+   Authors: , 
+   Date: 2014
+

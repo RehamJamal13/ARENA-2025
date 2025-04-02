@@ -1,0 +1,1475 @@
+Entity,Type
+Challenges The,ORG
+the last few decades,DATE
+LU/LC,ORG
+Various LU,PERSON
+earth,LOC
+increasing,VRC
+more than 4000,CARDINAL
+100,CARDINAL
+forested,LAND_COVER
+North,DIRECTION
+Europe,LOC
+Africa,LOC
+the Middle,LOC
+East,DIRECTION
+the Northeastern Tibetan Plateau Based,LOC
+Geographical Detectors,ORG
+Google Earth,ORG
+Gannan Prefecture,GPE
+China,GPE
+Tibetan Plateau,LOC
+increasing,VRC
+the Ganan Prefecture,LOC
+2000-2018,DATE
+Landsat,PERSON
+forest,LAND_COVER
+the Google Earth Engine,ORG
+1,CARDINAL
+between 89.14% and 91.41%,PERCENT
+86.55%,PERCENT
+2,CARDINAL
+forest,LAND_COVER
+50% and,PERCENT
+25%,PERCENT
+decreased,VRC
+forest,LAND_COVER
+increased,VRC
+3,CARDINAL
+Gannan Prefecture,GPE
+Future Potential Landscape Risk Assessment Using,ORG
+Dujiangyan City,GPE
+DCEN,ORG
+"the years 2025, 2030",DATE
+2040,DATE
+2018,DATE
+2007,DATE
+2018,DATE
+FPLR,ORG
+2008,DATE
+south,DIRECTION
+west,DIRECTION
+China,GPE
+Cellular,ORG
+Markov,PERSON
+CA-Markov,PRODUCT
+MC-AHP,ORG
+"the years 2025, 2030",DATE
+2040,CARDINAL
+FPLR,ORG
+FPLR,ORG
+Road Corridor,PERSON
+BRC,ORG
+China,GPE
+Silk-Road Disaster,ORG
+Uganda,GPE
+Land Use Land Cover Change,ORG
+Uganda,GPE
+forest,LAND_COVER
+woodland,GPE
+15%,PERCENT
+Landsat,NORP
+first,ORDINAL
+annual,DATE
+30,CARDINAL
+forest,LAND_COVER
+the year 2000 to 2020,DATE
+Landsat Analysis Ready Data,ORG
+85%,PERCENT
+the past 20 years,DATE
+first,ORDINAL
+Two,CARDINAL
+India,GPE
+two,CARDINAL
+Indian,NORP
+two,CARDINAL
+Indian,NORP
+urbanization,LULCC_PROCESS
+the years,DATE
+two,CARDINAL
+Indian,NORP
+Surat,PERSON
+Bharuch,ORG
+2 decades,DATE
+Landsat 5 Thematic Mapper,ORG
+Landsat 8 OLI,PERSON
+NDVI,ORG
+LST,ORG
+NDVI,ORG
+LST,ORG
+LST,ORG
+increase,VRC
+LST,ORG
+85%,PERCENT
+increase,VRC
+Surat,NORP
+the past 2 decades,DATE
+31%,PERCENT
+increase,VRC
+Bharuch,GPE
+Surat,PERSON
+increase,VRC
+2.42,CARDINAL
+Bharuch,GPE
+increased,VRC
+2.13,CARDINAL
+LST,ORG
+NDVI,ORG
+two,CARDINAL
+increase,VRC
+2008,DATE
+2016,DATE
+North,DIRECTION
+South,DIRECTION
+Surat,NORP
+increased,VRC
+urbanization,LULCC_PROCESS
+Surat,PERSON
+2008,DATE
+2016,DATE
+north,DIRECTION
+south,DIRECTION
+Narmada,ORG
+urbanization,LULCC_PROCESS
+Surat,NORP
+Bharuch,ORG
+Jimma Geneti District,PERSON
+the year 1973-2019,DATE
+Five,CARDINAL
+USGS,ORG
+LULC,GPE
+FGD,ORG
+forest,LAND_COVER
+8632.5,CARDINAL
+20.9 %,PERCENT
+1973-5647.23,DATE
+13.7 %,PERCENT
+2019,DATE
+forest,LAND_COVER
+between 1973 and 2019,DATE
+2985.27,CARDINAL
+7.22 %,PERCENT
+34.6 %,PERCENT
+forest,LAND_COVER
+1973,DATE
+wetlands,LAND_COVER
+9919.5,CARDINAL
+24.0 %,PERCENT
+1973-2000.24,DATE
+4.8 %,PERCENT
+2019,DATE
+wetlands,LAND_COVER
+9919.5,CARDINAL
+24.0 %,PERCENT
+1973-2000.24,DATE
+4.8 %,PERCENT
+2019,DATE
+increased,VRC
+18617.0,CARDINAL
+45.1 %,PERCENT
+27708.1,CARDINAL
+67.1 %,PERCENT
+908.7,CARDINAL
+2.2 %,PERCENT
+4436.46,CARDINAL
+10.7 %,PERCENT
+JGD,ORG
+the past 46 years,DATE
+Bhutan,GPE
+Thimphu,GPE
+Markov,PERSON
+Rapid,ORG
+urbanization,LULCC_PROCESS
+Thimphu,GPE
+Thimphu,GPE
+2050,DATE
+increase,VRC
+12.77%,PERCENT
+2002,DATE
+52.88%,PERCENT
+2018,DATE
+65.5%,PERCENT
+increase,VRC
+forest,LAND_COVER
+15.25%,PERCENT
+1.01%,PERCENT
+forest,LAND_COVER
+increased,VRC
+the year,DATE
+2050,DATE
+73.21%,PERCENT
+forest,LAND_COVER
+only about 16%,PERCENT
+forest,LAND_COVER
+ISPRS Journal of Photogrammetry,ORG
+2011,DATE
+2011,DATE
+82%,PERCENT
+83%,PERCENT
+0.5%,PERCENT
+increase,VRC
+Between 2001 and 2016,DATE
+almost 8%,PERCENT
+Nearly 50%,PERCENT
+forest,LAND_COVER
+forest,LAND_COVER
+increasing,VRC
+forest,LAND_COVER
+15.9%,PERCENT
+increase,VRC
+4778 km,QUANTITY
+2,DATE
+7.94%,PERCENT
+wetland,LAND_COVER
+15.2%,PERCENT
+14.5%,PERCENT
+increase,VRC
+"almost 29,000 km 2",QUANTITY
+15 years,DATE
+5.6%,PERCENT
+increased,VRC
+2001-2006,DATE
+2011-2016,DATE
+increasing,VRC
+expanding,VRC
+Content,ORG
+two,CARDINAL
+eight,CARDINAL
+two,CARDINAL
+Three Decades of Land Use and Land Cover Changes,DATE
+Brazilian,NORP
+Landsat Archive,PERSON
+Earth Engine,NORP
+Brazil,GPE
+annual,DATE
+forest,LAND_COVER
+Amazon,ORG
+Cerrado,ORG
+annual,DATE
+Brazilian,NORP
+MapBiomas,ORG
+annual,DATE
+1985,DATE
+2017,DATE
+Brazil,GPE
+forest,LAND_COVER
+Landsat,PERSON
+Google Earth Engine,ORG
+five,CARDINAL
+forest,LAND_COVER
+forest,LAND_COVER
+two,CARDINAL
+30,CARDINAL
+"75,000",CARDINAL
+89%,PERCENT
+73 to 95%,PERCENT
+The 33 years,DATE
+Brazil,GPE
+71,CARDINAL
+expanded,VRC
+46%,PERCENT
+1985 to 2017,DATE
+172%,PERCENT
+86,CARDINAL
+MapBiomas,ORG
+Brazil,GPE
+Bangladesh Configurations of LULC,ORG
+Bangladesh,GPE
+increased,VRC
+summer,DATE
+winter,DATE
+0.55,CARDINAL
+2.54,CARDINAL
+1999-2019,DATE
+increases,VRC
+the last 30 years,DATE
+Summer and winter,DATE
+more than 50 % and 13 %,PERCENT
+35,CARDINAL
+2039,DATE
+Turkey,GPE
+four,CARDINAL
+Landsat,PERSON
+1985,DATE
+2000,DATE
+2021,DATE
+Belek Tourism Center,ORG
+Turkey,GPE
+second,ORDINAL
+"between 1985 and 2000, 2000",DATE
+2021,DATE
+1985,DATE
+2021,DATE
+third,ORDINAL
+Belek Tourism Center,ORG
+2040,DATE
+the Land Change Modeler,ORG
+36-year,DATE
+forest,LAND_COVER
+increased,VRC
+11.91%,PERCENT
+13.67%,PERCENT
+0.82%,PERCENT
+22.25%,PERCENT
+4.15%,PERCENT
+2040,DATE
+expand,VRC
+5.46%,PERCENT
+4.21%,PERCENT
+2021,DATE
+South,DIRECTION
+west,DIRECTION
+engag-|,CARDINAL
+25,CARDINAL
+increased,VRC
+"21,360",CARDINAL
+10.5%,PERCENT
+3152,DATE
+1.6%,PERCENT
+5721,CARDINAL
+2.8%,PERCENT
+1823,DATE
+0.9%,PERCENT
+forest,LAND_COVER
+decreased,VRC
+-22.1%,PERCENT
+1986 to 2018,DATE
+deforestation,LULCC_PROCESS
+LULCC,ORG
+north,DIRECTION
+east,DIRECTION
+decrease,VRC
+south,DIRECTION
+Fako,PERSON
+Cameroon,GPE
+1986,DATE
+2018,DATE
+Fako,PERSON
+Cameroon,GPE
+Highlights •,ORG
+deforestation,LULCC_PROCESS
+1986 to 2018,DATE
+forest,LAND_COVER
+decreased,VRC
+increased,VRC
+increase,VRC
+decreased,VRC
+increased,VRC
+The Flexible Spatiotemporal DAta Fusion,ORG
+Zhu et al.,PERSON
+2016,DATE
+FSDAF,ORG
+two,CARDINAL
+1,CARDINAL
+2,CARDINAL
+2.0,CARDINAL
+2.0,CARDINAL
+Spatial,ORG
+Two,CARDINAL
+2.0,CARDINAL
+FSDAF,ORG
+three,CARDINAL
+two,CARDINAL
+Earth,LOC
+China,GPE
+the Random Forest Classifier,ORG
+China,GPE
+Ann township,GPE
+Myanmar,GPE
+Rakhine State,PERSON
+Myanmar,GPE
+2010 to 2012,DATE
+forest,LAND_COVER
+forests,LAND_COVER
+Myanmar,GPE
+China,GPE
+Se,PERSON
+Soil Se,PERSON
+increased,VRC
+SOC,ORG
+National,ORG
+United Nations,ORG
+UN,ORG
+Paris Agreement,ORG
+NGHGHI,ORG
+forests,LAND_COVER
+GHG,ORG
+the UN Paris Agreement Enhanced Transparency Framework,ORG
+USA,GPE
+US,GPE
+GHG,ORG
+DayCent,ORG
+90%,PERCENT
+123,CARDINAL
+MMT CO 2,PRODUCT
+US,GPE
+Alaskan,NORP
+wetland,LAND_COVER
+90.4,CARDINAL
+MMT CO 2,PRODUCT
+34.7,CARDINAL
+MMT CO 2,PRODUCT
+N 2,PRODUCT
+21.8,CARDINAL
+MMT CO 2,PRODUCT
+PDF,ORG
+metadata,PERSON
+LCM,ORG
+Nashe Watershed,GPE
+Upper Blue Nile Basin,ORG
+Ethiopia Change,ORG
+Landsat,NORP
+LCM (Land Change Modeler,ORG
+Nashe,PERSON
+Ethiopia,GPE
+the Upper Blue Nile,ORG
+"94,578",CARDINAL
+Landsat,PERSON
+"2019, 2005",DATE
+1990,DATE
+the years 2035,DATE
+2050,DATE
+LCM,ORG
+TerrSet Geospatial Monitoring and Modeling System,ORG
+CA-Markov,PRODUCT
+Markov,PERSON
+2019,DATE
+Kappa,ORG
+forest,LAND_COVER
+1990,DATE
+"41,587.21",CARDINAL
+increased,VRC
+"57,868.95",CARDINAL
+2019,DATE
+39.15%,PERCENT
+forest,LAND_COVER
+annually,DATE
+48.38%,PERCENT
+19.58%,PERCENT
+26.23%,PERCENT
+forest,LAND_COVER
+16.94%,PERCENT
+2019,DATE
+8.07%,PERCENT
+2050,DATE
+expanded,VRC
+"69,021.20 ha and 69,264.44",CARDINAL
+2035,DATE
+2050,DATE
+"57,868.95",CARDINAL
+2019,DATE
+the coming years,DATE
+forest,LAND_COVER
+forest,LAND_COVER
+2020,DATE
+1 km,QUANTITY
+1 km,QUANTITY
+the former year,DATE
+SSP-RCP,ORG
+1 km,QUANTITY
+Kappa,ORG
+0.94,CARDINAL
+OA,GPE
+0.97,CARDINAL
+0.10,CARDINAL
+Jimma Geneti District,PERSON
+the year 1973-2019,DATE
+Five,CARDINAL
+USGS,ORG
+LULC,GPE
+FGD,ORG
+forest,LAND_COVER
+8632.5,CARDINAL
+20.9 %,PERCENT
+1973-5647.23,DATE
+13.7 %,PERCENT
+2019,DATE
+forest,LAND_COVER
+between 1973 and 2019,DATE
+2985.27,CARDINAL
+7.22 %,PERCENT
+34.6 %,PERCENT
+forest,LAND_COVER
+1973,DATE
+wetlands,LAND_COVER
+9919.5,CARDINAL
+24.0 %,PERCENT
+1973-2000.24,DATE
+4.8 %,PERCENT
+2019,DATE
+wetlands,LAND_COVER
+9919.5,CARDINAL
+24.0 %,PERCENT
+1973-2000.24,DATE
+4.8 %,PERCENT
+2019,DATE
+increased,VRC
+18617.0,CARDINAL
+45.1 %,PERCENT
+27708.1,CARDINAL
+67.1 %,PERCENT
+908.7,CARDINAL
+2.2 %,PERCENT
+4436.46,CARDINAL
+10.7 %,PERCENT
+JGD,ORG
+the past 46 years,DATE
+Dak Nong,GPE
+Landsat,NORP
+2009,DATE
+2015,DATE
+2018,DATE
+The Random Forest,ORG
+RF,ORG
+ten,CARDINAL
+Multi-Layer,ORG
+Markov Chain,PERSON
+the previous years,DATE
+OA,ORG
+77.35% to 84.55%,PERCENT
+0.75,CARDINAL
+0.8,CARDINAL
+decrease,VRC
+forest,LAND_COVER
+2025,DATE
+23 thousand,CARDINAL
+460,CARDINAL
+"3,000",CARDINAL
+"20,000",CARDINAL
+recent decades,DATE
+MLC,ORG
+MLC,ORG
+MLC,ORG
+Tropical Coastal Land-Use and Land Cover Changes,ORG
+Rapid Urbanization of,ORG
+Benin,GPE
+West,DIRECTION
+West,DIRECTION
+African,NORP
+Beninese,NORP
+the last few decades,DATE
+urbanization,LULCC_PROCESS
+ESV,ORG
+Benin,GPE
+West,DIRECTION
+Globe Land,ORG
+30,CARDINAL
+the years 2010,DATE
+2020,DATE
+ESV,ORG
+BTA,ORG
+GIS,ORG
+1,CARDINAL
+forest,LAND_COVER
+increase,VRC
+2,CARDINAL
+decreased,VRC
+8.51%,PERCENT
+USD 7.1557 million,MONEY
+2010,DATE
+USD 6.5941 million,MONEY
+2020,DATE
+3,CARDINAL
+increased,VRC
+the last 10 years,DATE
+4,CARDINAL
+5,CARDINAL
+ESV,ORG
+51%,PERCENT
+2010,DATE
+41%,PERCENT
+2020,DATE
+37%,PERCENT
+2010,DATE
+35%,PERCENT
+2020,DATE
+25%,PERCENT
+2010,DATE
+30%,PERCENT
+2020,DATE
+forest,LAND_COVER
+ESV,ORG
+Ernakulam,GPE
+Kerala,GPE
+India,GPE
+increasing,VRC
+the decades,DATE
+One,CARDINAL
+EQ,ORG
+EQI,ORG
+three,CARDINAL
+Firstly,ORDINAL
+Secondly,ORDINAL
+five,CARDINAL
+forest,LAND_COVER
+2000,DATE
+2009,DATE
+2019,DATE
+Landsat,NORP
+increase,VRC
+the past two decades,DATE
+NDBI,ORG
+increase,VRC
+increase,VRC
+Ernakulam,GPE
+Kerala,GPE
+India,GPE
+103,CARDINAL
+Landsat,NORP
+first,ORDINAL
+annual,DATE
+30,CARDINAL
+forest,LAND_COVER
+the year 2000 to 2020,DATE
+Landsat Analysis Ready Data,ORG
+85%,PERCENT
+the past 20 years,DATE
+first,ORDINAL
+GIS,ORG
+2016,DATE
+2019,DATE
+Artificial Neural Network,ORG
+the years 2025 and,DATE
+2040,DATE
+2022,CARDINAL
+0.77,CARDINAL
+86.83%,PERCENT
+increase,VRC
+8.37 km 2,QUANTITY
+2040,DATE
+7.08 km 2,QUANTITY
+1.16 km,QUANTITY
+Drought Severity,ORG
+the Growing Season,LOC
+annual,DATE
+Geographic Information System,ORG
+the growing season,DATE
+Botswana,ORG
+2000-2018,DATE
+2020-2021,DATE
+17,CARDINAL
+Botswana,ORG
+fourth,ORDINAL
+the Central District,LOC
+Botswana,GPE
+Botswana,ORG
+2002-2003,DATE
+2003-2004,DATE
+2015-2016,DATE
+El Niño,ORG
+the ongoing season,DATE
+2020-2021,DATE
+years,DATE
+forests,LAND_COVER
+Mahalapye,GPE
+west,DIRECTION
+eight,CARDINAL
+Mahalapye,GPE
+east,DIRECTION
+seven,CARDINAL
+Boteti,PERSON
+west,DIRECTION
+seven,CARDINAL
+between six and two,CARDINAL
+Botswana,ORG
+the Region of Al-Jabal Al-Akhdar,GPE
+Libya Using Time-Series Landsat Data,ORG
+1985,DATE
+Al-Jabal Al-Akhdar,LOC
+Libya,GPE
+urbanization,LULCC_PROCESS
+between 1985 and 2017,DATE
+four,CARDINAL
+Landsat,NORP
+1985,DATE
+2000,DATE
+2010,DATE
+2017,DATE
+decrease,VRC
+Mediterranean,LOC
+forest,LAND_COVER
+9018,DATE
+32 years,DATE
+39%,PERCENT
+deforestation,LULCC_PROCESS
+between 2010 and 2017,DATE
+513,CARDINAL
+Orchards,ORG
+4095,CARDINAL
+55%,PERCENT
+increased,VRC
+2266,DATE
+about 85%,PERCENT
+2017,DATE
+1985,DATE
+urbanization,LULCC_PROCESS
+between 2010 and 2017,DATE
+203 ha.year -1,MONEY
+increased,VRC
+about 50%,PERCENT
+forest,LAND_COVER
+Al-Jabal Al-Akhdar,LOC
+10,CARDINAL
+annual,DATE
+10,CARDINAL
+first,ORDINAL
+NRT,ORG
+Dynamic World,ORG
+recent decades,DATE
+MLC,ORG
+MLC,ORG
+MLC,ORG
+multi-century,DATE
+Asia,LOC
+Asian,NORP
+Elephas maximus,PERSON
+present-day,DATE
+centuries,DATE
+over 64%,PERCENT
+3.36 million km 2,QUANTITY
+Asia,LOC
+the year 1700,DATE
+South,DIRECTION
+Asia,LOC
+Southeast Asia,LOC
+83%,PERCENT
+"approximately 99,000-16,000 km",QUANTITY
+decreased,VRC
+83%,PERCENT
+~ 4 million km 2,QUANTITY
+45%,PERCENT
+"54,000 km 2",QUANTITY
+7.5%,PERCENT
+100%,PERCENT
+100 km,QUANTITY
+the year 1700,DATE
+over half,CARDINAL
+2015,DATE
+deforestation,LULCC_PROCESS
+this century,DATE
+Habitat,ORG
+1-3,CARDINAL
+An estimated three quarters,CARDINAL
+Earth,LOC
+4,CARDINAL
+recent decades,DATE
+"2,7,8",CARDINAL
+Oregon,GPE
+wetlands,LAND_COVER
+Iowa,GPE
+forests,LAND_COVER
+Germany,GPE
+11,CARDINAL
+One,CARDINAL
+four,CARDINAL
+the HIstoric Land Dynamics Assessment +,ORG
+almost a third,CARDINAL
+32%,PERCENT
+just six decades,DATE
+1960-2019,DATE
+four,CARDINAL
+the Global,LOC
+North,DIRECTION
+deforestation,LULCC_PROCESS
+South,DIRECTION
+~1960-2005,DATE
+2006-2019,DATE
+Australia,GPE
+1985 to 2015,DATE
+the Dongting Lake,LOC
+china,GPE
+Dongting Lake,LOC
+china,GPE
+recent decades,DATE
+increased,VRC
+the Dongting Lake,LOC
+LST,ORG
+reed beach,GPE
+forest,LAND_COVER
+forests,LAND_COVER
+winter,DATE
+increased,VRC
+approximately 3.5,CARDINAL
+decrease,VRC
+Dongting Lake,LOC
+the Three Gorges Reservoir,ORG
+DeM,PERSON
+LST,ORG
+LST,ORG
+LST,ORG
+LST,ORG
+7,CARDINAL
+Forests,NORP
+forest,LAND_COVER
+Achanakmaar,GPE
+626.76 km 2,QUANTITY
+Central India,LOC
+2008,DATE
+2018,DATE
+19.72 km 2,QUANTITY
+forest,LAND_COVER
+increasing,VRC
+14.77 km 2,QUANTITY
+Dense Sal,ORG
+forest,LAND_COVER
+forest,LAND_COVER
+5.0 km 2,QUANTITY
+Bamboo,NORP
+AABR,ORG
+Sal,PERSON
+forest,LAND_COVER
+2.88%,PERCENT
+5.23 km 2,QUANTITY
+Dense,ORG
+forest,LAND_COVER
+4.02%,PERCENT
+9.54 km 2,QUANTITY
+6.77%,PERCENT
+2.61 km 2,QUANTITY
+Bamboo,NORP
+7.66%,PERCENT
+2.34 km 2,QUANTITY
+the Landsat 7 TM,ORG
+Resourcesat 2A,ORG
+forest,LAND_COVER
+forest,LAND_COVER
+forests,LAND_COVER
+Sal,PERSON
+forest,LAND_COVER
+forest,LAND_COVER
+2000,DATE
+2020,DATE
+Shandong Province,GPE
+China,GPE
+annual,DATE
+NDVI,ORG
+annual,DATE
+NEP,ORG
+2000,DATE
+2020,DATE
+Shandong province,GPE
+2000-2020,DATE
+2000,DATE
+2010,DATE
+4930.62 km 2,QUANTITY
+2010,DATE
+2020,DATE
+78.35%,PERCENT
+decreased,VRC
+463.96,CARDINAL
+4,CARDINAL
+193.50,CARDINAL
+4,CARDINAL
+2000-2010,DATE
+2010-2020,DATE
+2000,DATE
+2020,DATE
+Shandong Province,GPE
+Phenomena,ORG
+1,CARDINAL
+Earth,LOC
+recent years,DATE
+4,CARDINAL
+increased,VRC
+0.74 °,CARDINAL
+the last century 7,DATE
+CO 2,PRODUCT
+increased,VRC
+1.9,CARDINAL
+year 8,DATE
+The Global Carbon Budget Project,ORG
+increase,VRC
+0.5%,PERCENT
+2019,DATE
+US,GPE
+increasing,VRC
+China,GPE
+India,GPE
+9,CARDINAL
+increasing,VRC
+CO 2,ORG
+roughly one-third,CARDINAL
+increasing,VRC
+CO 2,ORG
+China,GPE
+China,GPE
+Deng et al.,PERSON
+expanding,VRC
+China,GPE
+2001 to 2011 11,DATE
+Lu,PERSON
+al,PERSON
+31,CARDINAL
+the Future Land Use and Land Cover Changes for,LAW
+Bhavani Basin,LOC
+Tamil Nadu,PERSON
+India Using,ORG
+9,CARDINAL
+10,CARDINAL
+11,CARDINAL
+12,CARDINAL
+13,CARDINAL
+14,CARDINAL
+15,CARDINAL
+16,DATE
+17,CARDINAL
+Bhavani,NORP
+two,CARDINAL
+19,CARDINAL
+the year 2025,DATE
+20 2030,DATE
+2.18.24,CARDINAL
+MOLUSCE,ORG
+Research,WORK_OF_ART
+HSP,ORG
+MSP,ORG
+LU,PERSON
+LU,PERSON
+LU,PERSON
+MSP,ORG
+HSP,ORG
+MSP,ORG
+HSP,ORG
+LCM,ORG
+Iran Predicting,ORG
+only about 195,CARDINAL
+annually,DATE
+the Hable-Rud River,ORG
+"the years 1986, 2000",DATE
+2017,DATE
+ML,ORG
+LCM,ORG
+1986,DATE
+2000,DATE
+2017,DATE
+75,DATE
+78,DATE
+81%,PERCENT
+the year 2017,DATE
+above 74%,PERCENT
+year 2040,DATE
+the past 32 years,DATE
+increased,VRC
+about 8,CARDINAL
+6.2,CARDINAL
+2.7,CARDINAL
+0.63,DATE
+0.48%,PERCENT
+decreased,VRC
+18%,PERCENT
+year 2040,DATE
+the reference year (2017,DATE
+increase,VRC
+about 3,CARDINAL
+1.5,CARDINAL
+0.7,CARDINAL
+0.8%,PERCENT
+decrease,VRC
+about 4.55,CARDINAL
+1.45%,PERCENT
+Kenya,GPE
+Mt. Elgon,LOC
+forest,LAND_COVER
+Kenya,GPE
+forest,LAND_COVER
+One,CARDINAL
+forest,LAND_COVER
+Mt. Elgon,LOC
+forest,LAND_COVER
+Kenya,GPE
+Mt. Elgon,LOC
+forest,LAND_COVER
+the last 45 years,DATE
+the United States Geological Survey,ORG
+between 1973 and 2019,DATE
+Arc,ORG
+10.5,CARDINAL
+Selva 17.0,PERSON
+Land Use-Land Cover,PERSON
+forests,LAND_COVER
+PDF,ORG
+metadata,PERSON
+Landsat Analysis Ready Data,ORG
+Landsat,PERSON
+Landsat Analysis Ready Data,ORG
+the Global Land Analysis and Discovery,ORG
+the University of Maryland,ORG
+16-day,DATE
+Landsat,PERSON
+1997,DATE
+annually,DATE
+ARD,ORG
+Landsat,PERSON
+forest,LAND_COVER
+GLAD,ORG
+the Lake Tana Basin,LOC
+Northwest Ethiopia,GPE
+Land Cover Change Detection Techniques,ORG
+2 0274-6638/21,DATE
+2021,DATE
+Earth,LOC
+VHR,ORG
+VHR,ORG
+VHR,ORG
+the past decades,DATE
+VHR,ORG
+first,ORDINAL
+VHR,ORG
+three,CARDINAL
+VHR,ORG
+VHR,ORG
+Egyptian,NORP
+Nile Delta,LOC
+Nile Delta,LOC
+Egypt,GPE
+1987,DATE
+the 25th of January 2011,DATE
+Egyptian,NORP
+increase,VRC
+decrease,VRC
+increase,VRC
+decrease,VRC
+increase,VRC
+1987,DATE
+305296.1,CARDINAL
+increased,VRC
+170578.1,CARDINAL
+2000 to 2015,DATE
+increase,VRC
+2000,DATE
+1987-2000,DATE
+97940.8,CARDINAL
+53112.6,CARDINAL
+Egyptian,NORP
+Uzbekistan,NORP
+Uzbekistan,GPE
+Central Asia,LOC
+LULCC,ORG
+Uzbekistan,GPE
+LULCC,ORG
+urbanization,LULCC_PROCESS
+LULCC,ORG
+Uzbekistan,GPE
+IIT Bombay,ORG
+India,GPE
+first,ORDINAL
+between 2000 and 2018,DATE
+IIT Bombay,ORG
+India,GPE
+forest,LAND_COVER
+urbanization,LULCC_PROCESS
+Google Earth Pro,ORG
+SCS,ORG
+2018,DATE
+forest,LAND_COVER
+52%,PERCENT
+43%,PERCENT
+increased,VRC
+40%,PERCENT
+7%,PERCENT
+forest,LAND_COVER
+Powai,GPE
+98%,PERCENT
+6%,PERCENT
+forest,LAND_COVER
+21%,PERCENT
+water hyacinth,DATE
+Powai,GPE
+61%,PERCENT
+Dhaka City,GPE
+Bangladesh Urbanization,ORG
+Land Surface Temperature,ORG
+decreases,VRC
+LST,ORG
+Remote Sensing,PERSON
+Geographic Information System,ORG
+"the years 1993, 2007",DATE
+2020,DATE
+March-May,DATE
+Dhaka,GPE
+LST,ORG
+Dhaka,GPE
+increased,VRC
+67%,PERCENT
+1993,DATE
+2020,DATE
+23,CARDINAL
+Machine Learning Classifiers for Satellite Observations-A Review Rapid,ORG
+the late twentieth and early twenty-first centuries,DATE
+increased,VRC
+LULC,GPE
+six,CARDINAL
+forest,LAND_COVER
+RF,ORG
+ANN,ORG
+Fuzzy ARTMAP,ORG
+angle mapper,PERSON
+SAM,ORG
+MD,GPE
+Kappa,ORG
+RoC,GPE
+RF,ORG
+0.89,CARDINAL
+MD,GPE
+0.82,CARDINAL
+RF,ORG
+RF,ORG
+0.96,CARDINAL
+0.99,CARDINAL
+1,CARDINAL
+0.05,CARDINAL
+ANN,ORG
+RF,ORG
+SAM,PERSON
+Kappa,ORG
+0.84,CARDINAL
+0.85,CARDINAL
+RF,ORG
+six,CARDINAL
+RF,ORG
+Rapid Land Cover Change,ORG
+Coastal County Sea,LOC
+2009,DATE
+Somerset County,GPE
+Maryland,GPE
+wetland,LAND_COVER
+forested,LAND_COVER
+wetland,LAND_COVER
+wetland,LAND_COVER
+forest,LAND_COVER
+two,CARDINAL
+only 8 years,DATE
+6.1 km 2,QUANTITY
+5.7 km 2,QUANTITY
+over 2%,PERCENT
+wetland,LAND_COVER
+Landsat Analysis Ready Data,ORG
+Landsat,PERSON
+Landsat Analysis Ready Data,ORG
+the Global Land Analysis and Discovery,ORG
+the University of Maryland,ORG
+16-day,DATE
+Landsat,PERSON
+1997,DATE
+annually,DATE
+ARD,ORG
+Landsat,PERSON
+forest,LAND_COVER
+GLAD,ORG
+Drivers and Implications of Land Use/Land Cover Dynamics,ORG
+Finchaa Catchment,ORG
+Northwestern Ethiopia Understanding,ORG
+LULCC,ORG
+LULCC,ORG
+Finchaa,ORG
+Landsat,NORP
+1987Landsat,CARDINAL
+2002Landsat,CARDINAL
+2017,DATE
+the past three decades,DATE
+increased,VRC
+decreased,VRC
+Increased,VRC
+increased,VRC
+Finchaa,ORG
+EU,GPE
+India,GPE
+Japan,GPE
+South,DIRECTION
+25-80%,PERCENT
+2050,DATE
+0.5-5%,PERCENT
+0 to 50,CARDINAL
+increase,VRC
+1,CARDINAL
+"1,10",CARDINAL
+"7,14-16",CARDINAL
+CSP,ORG
+LUE,ORG
+six,CARDINAL
+the Gulf Cooperation Council,ORG
+GCC,ORG
+Oman,GPE
+Nizwa city,GPE
+Al Dakhliyah,PERSON
+Oman,GPE
+Cellular Automata,PERSON
+CA)-Markov,PERSON
+three,CARDINAL
+Landsat TM,PERSON
+1998,DATE
+2008,DATE
+2018,DATE
+2008-2018,DATE
+"12,014",CARDINAL
+418.5 %,PERCENT
+"14,985",CARDINAL
+2028,DATE
+"37,465",CARDINAL
+increase,VRC
+2038,DATE
+the next two decades,DATE
+"12,813",CARDINAL
+35,CARDINAL
+Omani,NORP
+Oman,GPE
+Delhi NCR,ORG
+past four decades,DATE
+Delhi,GPE
+1990-2018,DATE
+Delhi,GPE
+the National Capital Region,ORG
+NCR,ORG
+The Landsat 5,PRODUCT
+TM,ORG
+Landsat 8,PERSON
+Delhi NCR,ORG
+K,ORG
+Landsat,PERSON
+increase,VRC
+decrease,VRC
+increased,VRC
+about 326 percent,PERCENT
+44 percent,PERCENT
+decreased,VRC
+12 percent,PERCENT
+34 percent,PERCENT
+increased,VRC
+Ridge,PERSON
+Agriculture,ORG
+ISPRS Journal of Photogrammetry,ORG
+2011,DATE
+2011,DATE
+82%,PERCENT
+83%,PERCENT
+0.5%,PERCENT
+increase,VRC
+Between 2001 and 2016,DATE
+almost 8%,PERCENT
+Nearly 50%,PERCENT
+forest,LAND_COVER
+forest,LAND_COVER
+increasing,VRC
+forest,LAND_COVER
+15.9%,PERCENT
+increase,VRC
+4778 km,QUANTITY
+2,DATE
+7.94%,PERCENT
+wetland,LAND_COVER
+15.2%,PERCENT
+14.5%,PERCENT
+increase,VRC
+"almost 29,000 km 2",QUANTITY
+15 years,DATE
+5.6%,PERCENT
+increased,VRC
+2001-2006,DATE
+2011-2016,DATE
+increasing,VRC
+expanding,VRC
+Challenges The,ORG
+the last few decades,DATE
+LU/LC,ORG
+Various LU,PERSON
+earth,LOC
+Highland Ethiopia,LOC
+Finchaa Catchment Land,ORG
+aquifer recharge,PERSON
+Cellular Automata,PERSON
+IDRISI,ORG
+four,CARDINAL
+four,CARDINAL
+increase,VRC
+RCP4.5,LOC
+RCP8.5,GPE
+increases,VRC
+RCP8.5,ORG
+increase,VRC
+decrease,VRC
+annual,DATE
+the Gulf Cooperation Council,ORG
+GCC,ORG
+Oman,GPE
+Nizwa city,GPE
+Al Dakhliyah,PERSON
+Oman,GPE
+Cellular Automata,PERSON
+CA)-Markov,PERSON
+three,CARDINAL
+Landsat TM,PERSON
+1998,DATE
+2008,DATE
+2018,DATE
+2008-2018,DATE
+"12,014",CARDINAL
+418.5 %,PERCENT
+"14,985",CARDINAL
+2028,DATE
+"37,465",CARDINAL
+increase,VRC
+2038,DATE
+the next two decades,DATE
+"12,813",CARDINAL
+35,CARDINAL
+Omani,NORP
+Oman,GPE
+recent decades,DATE
+MLC,ORG
+MLC,ORG
+MLC,ORG
+PDF,ORG
+metadata,PERSON
+Nwabiagya,GPE
+Ashanti,ORG
+Ghana Land,PERSON
+Earth,LOC
+urbanization,LULCC_PROCESS
+Nwabiagya District,LOC
+forest,LAND_COVER
+1986-2019,DATE
+Seven,CARDINAL
+forest,LAND_COVER
+forest,LAND_COVER
+4178.5,CARDINAL
+7%,PERCENT
+forest,LAND_COVER
+increase,VRC
+21685.3,CARDINAL
+37%,PERCENT
+increase,VRC
+Nwabiagya District,LOC
+CA-Markov,PRODUCT
+Duhok,ORG
+Iraq,GPE
+the last four decades,DATE
+Duhok,ORG
+north,DIRECTION
+Iraq,GPE
+Cellular Automata,PERSON
+CA)-Markov,PERSON
+MLC,ORG
+three consecutive-year,DATE
+Landsat,PERSON
+1988,DATE
+2008,DATE
+2017,DATE
+three,CARDINAL
+1988-2008,DATE
+2008-2017,DATE
+2017,DATE
+2060,DATE
+2017,DATE
+2017,DATE
+0.8315,CARDINAL
+0.8267,CARDINAL
+Kstandard,ORG
+0.7978,CARDINAL
+2060,DATE
+2017,DATE
+forest,LAND_COVER
+forest,LAND_COVER
+decrease,VRC
+327.08,CARDINAL
+241.08 km 2,QUANTITY
+-0.76%,PERCENT
+2372.29,CARDINAL
+2355.82 km,QUANTITY
+-5.86%,PERCENT
+973.21,CARDINAL
+916.27 km 2,QUANTITY
+2918.9,CARDINAL
+2,CARDINAL
+increase,VRC
+271.19%,PERCENT
+161.99,CARDINAL
+602.19.8 km,QUANTITY
+forest,LAND_COVER
+Duhok,ORG
+1988,DATE
+2017,DATE
+forest,LAND_COVER
+forest,LAND_COVER
+forest,LAND_COVER
+increased,VRC
+between 1998 and 2017,DATE
+increase,VRC
+2.36%,PERCENT
+2017,DATE
+8.76%,PERCENT
+2060,DATE
+Urbanization,LULCC_PROCESS
+LULCC,ORG
+Dong Trieu District,FAC
+Vietnam,GPE
+Past Two Decades,DATE
+Quang Ninh province,PERSON
+Vietnam,GPE
+Dong Trieu,PERSON
+the past two decades,DATE
+six,CARDINAL
+forest,LAND_COVER
+Dong Trieu,FAC
+2000,DATE
+2010,DATE
+2019,DATE
+Landsat,NORP
+the past twenty years,DATE
+decrease,VRC
+9.1%,PERCENT
+increases,VRC
+8.1%,PERCENT
+6.8%,PERCENT
+DFR,ORG
+DFMR,ORG
+DFU,ORG
+DFW,ORG
+forest,LAND_COVER
+DFMR,ORG
+LCM,ORG
+Nashe Watershed,GPE
+Upper Blue Nile Basin,ORG
+Ethiopia Change,ORG
+Landsat,NORP
+LCM (Land Change Modeler,ORG
+Nashe,PERSON
+Ethiopia,GPE
+the Upper Blue Nile,ORG
+"94,578",CARDINAL
+Landsat,PERSON
+"2019, 2005",DATE
+1990,DATE
+the years 2035,DATE
+2050,DATE
+LCM,ORG
+TerrSet Geospatial Monitoring and Modeling System,ORG
+CA-Markov,PRODUCT
+Markov,PERSON
+2019,DATE
+Kappa,ORG
+forest,LAND_COVER
+1990,DATE
+"41,587.21",CARDINAL
+increased,VRC
+"57,868.95",CARDINAL
+2019,DATE
+39.15%,PERCENT
+forest,LAND_COVER
+annually,DATE
+48.38%,PERCENT
+19.58%,PERCENT
+26.23%,PERCENT
+forest,LAND_COVER
+16.94%,PERCENT
+2019,DATE
+8.07%,PERCENT
+2050,DATE
+expanded,VRC
+"69,021.20 ha and 69,264.44",CARDINAL
+2035,DATE
+2050,DATE
+"57,868.95",CARDINAL
+2019,DATE
+the coming years,DATE
+forest,LAND_COVER
+forest,LAND_COVER

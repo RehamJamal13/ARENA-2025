@@ -1,0 +1,492 @@
+================================================================================
+TITLE: Monitoring land use and land cover change near a nuclear power plant construction site: Akkuyu case, Turkey
+================================================================================
+
+AUTHORS:
+- Muzaffer Can
+- Ezgi Sahin
+- M Iban
+
+ABSTRACT:
+. The agricultural areas in the study area were changed into other LULC classes: 9.1% to artificial surfaces, 27.6% to barren lands, and 21.7% to forest. The rise in the area of artificial surfaces was especially noticeable within the 1 km buffer zone: construction activities converted 36.1% of agricultural fields, 54.1% of forests, and 23.2% of barren lands into artificial surfaces. The filling activities on the seashore resulted in a loss of water bodies of up to 26.5%. The study provides an overview of how the LULC classes have evolved on the construction site and in the region. In the end, the study discusses how the current land use preferences in the region contradict the issues and concerns mentioned in the existing body of literature.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Although the Fukushima nuclear disaster in 2011 has had a significant influence on nuclear energy development in recent years, nuclear energy, as a low-carbon energy source, is presently an alternative energy source that can be produced on a large scale. Despite a modest decline in nuclear output after Fukushima, nuclear power generation has continued to increase in recent Abstract Land use and land cover (LULC) change analysis of the construction site and its surroundings of the Akkuyu Nuclear Power Plant project in southern Turkey was undertaken in this case study, which was supported by remotely sensed Landsat 8 image composites. The composite images compiled in 2017 and 2021 were prepared on the Google Earth Engine platform. The Random Forest algorithm was used as the classifier model. A high classification performance was obtained for both images (kappa > 0.88, overall accuracy > 90%). After the classification process, LULC maps for both years were generated, and statistical calculations for the LULC change were computed for both the entire study area (15 × 25 km) and a buffer zone with a radius of 1 km around the power plant. In the whole study area, artificial surfaces significantly increased (78.46%), whereas forests (-8.31%) and barren lands experienced a considerable decrease (-6.11%). In the 1 km buffer, artificial surfaces predominantly increased (113.94%), while forests and barren lands decreased dramatically Vol:. 
+Many researchers have conducted systematic studies on the environmental impact assessment 
+Monitoring LULC changes enables scientists to get a picture of the interconnection between natural geography and human activities. Once humanity rules over the natural environment, such inhabited areas become more populated and the dynamics of the natural environment change significantly 
+The preceding case studies on LULC served a variety of goals. However, the principal goal of recent works was to track the land use changes 
+The research of LULC change relies heavily on RS products. Remotely sensed image classification is regarded as a key activity in image processing and is therefore employed in the extraction of knowledge from LULC data by classifying the spectral signs 
+LULC change analyses for other types of power plants have been put into practice by researchers, and it has been proven that such analyses help measure the impact of power plants on the natural and built environment. For instance, 
+This study tracks the LULC changes surrounding the Akkuyu NPP, which is under construction now in the south of Turkey, with the help of the classification of multi-temporal remotely sensed data. In the second section, a literature review on the LULC policies and preferences around NPPs is presented, and the background of the Akkuyu NPP project and related LULC policies are introduced. In the third section, the study area and its extent are demonstrated. In the fourth section, information about the datasets used in the study, the classification scheme of satellite images, accuracy assessment, and LULC change analysis are given. In the fifth section, the quantitative and comparative results of the LULC change analysis are demonstrated. LULC maps for the years 2017 and 2021 are presented, and the LULC change is illustrated to shed light on how the Akkuyu NPP project increases the use of land for built-up spaces and negatively affects the natural land cover. The sixth section discusses how the current land use preferences in the region contradict the issues and concerns mentioned in the existing body of literature.
+
+## Background ##
+The construction of NPPs has a consequential impact on the terrestrial and marine environment. Even though NPPs do not require a massive land area for energy production, just like hydropower, solar, and wind energy 
+Destroyed vegetation (agricultural and barren lands, forests) must be taken into account in the first place, as it can lead to erosion, local pollution, and a decrease in groundwater sources 
+The construction of NPPs has an impact on builtup areas and the local population. An increase in the population densities around NPPs can occur due to the influx of labor forces 
+Turkey is one of the countries that still intends to benefit from nuclear power without revising its original plans despite the Fukushima and Chernobyl disasters. The central government has been coordinating the planning and installation of NPPs as a step forward in energy independence and scientific advancement. Turkey intends to set up three NPPs that are expected to meet 15% of its electricity needs 
+Akkuyu Project Company (APC) in 2011 and the produced report was reviewed and approved by the Turkish Energy, Nuclear and Mining Research Authority and the International Atomic Energy Agency (IAEA). Then, the environmental impact assessment report for the project was prepared and submitted by the APC. The Turkish Ministry of Environment and Urbanization approved this assessment report in 2013 
+According to the IAEA's guide 
+The Environmental Land Use Plan (ELUP) at a scale of 1:100000 covering the provinces of Mersin and Adana was entered into force in 2018 and has been updated 18 times so far. This plan also covers the Akkuyu NPP construction area. The ELUP does not contain any statement about controlling the LULC around the Akkuyu NPP. The expected policy outcome should be to limit new development that may attract migration and keep the population density below a certain level in the region. Paradoxically, the plan shows that large-scale development areas, which may lead to a significant population rise, are planned for the rural settlements in the region. The ELUP does not suggest any method that limits the number of residential units for prospective employees. Instead, it seems that the government is addressing new development areas around rural villages to supply the housing needs of the labor force. The Akkuyu Region is sparsely populated, and the main driver of the regional economy is agricultural production. Nonetheless, the land use decisions taken in the ELUP will accelerate urbanization in the region. Furthermore, the APC states that they will monitor the environment during the construction and help to reclamate and revegetate the land affected by the construction. However, neither the APC nor the Turkish government indicates the amount of land surface that will be used for construction and be affected by the NPP. Thus, it can be said that this study will help determine this unexplained land use amount by applying RS techniques.
+
+## Study area ##
+The Akkuyu NPP study area is located in the province of Mersin in southern Turkey, at the coordinates of 36°08′ N and 33°32′ E (Fig. 
+Various studies have stated the reasons why Akkuyu was selected for the first NPP in Turkey. Among these is the fact that Akkuyu is seismically stable and located on the seashore, provides appropriate transportation and cooling water, and is significantly less populated, making it safer in case of any accidents 
+According to IAEA's guide (2015), two off-site emergency zones should be established: the first one, namely the precautionary action zone (PAZ), where arrangements are taken in order to "reduce the risk of severe deterministic health effects before and shortly after the release of any radioactive material," and the second one, namely the urgent protective action planning zone (UPZ), where arrangements are taken to "reduce the negative effects of the radioactive dose."
+The Akkuyu NPP is a category 1 facility and will have four reactors that produce more than 1000 MW. IAEA's guide suggests approximate distances for such reactors (3-5 km for PAZ, 5-30 km for UPZ); however, there is no crystal-clear definition of how to select these distances in the IAEA's guide or the National Radiation Emergency Plan (URAP) prepared by the Turkish Ministry of Interior-Disaster and Emergency Management Presidency (2019). Therefore, in order to test the suggested methodology and evaluate the results, a rectangular area with 15 × 20 km dimensions, whose center is overlaid with the construction site, is selected for the LULC monitoring. This study area covers the PAZ and UPZ addressed in the IAEA guides, a new highway being constructed nearby the project site, and the new development areas planned in the ELUP near Akkuyu. For NPPs, there is an exclusionary zone which is under effective control of the plant management, and public habitation is prohibited within this zone 
+
+## Materials and methods ##
+The goal of this study is to identify LULC changes around the Akkuyu NPP construction site by classifying remotely sensed images. The workflow consists of four steps: selecting the images, classifying the images, accuracy assessment in Google Earth Engine, and LULC change analysis (Fig. 
+For image selection and supervised classification, the Google Earth Engine (GEE) was used. GEE is a cloud-based web platform for geospatial tasks. It takes advantage of Google's extensive computational expertise for numerous Earth monitoring activities. The main advantages of GEE are that it provides multi-petabyte data, GIS functionality, built-in RS and machine learning (ML) algorithms, an online code editor and visualization, and cloud processing. The GEE is in charge of many of the issues that arise when it comes to data storage, cataloguing, and projection. Many of the most common RS data sources have been absorbed by GEE 
+
+## Data used ##
+The study area was delimitated by uploading a vector file as an input to the GEE. Then, we chose Landsat 8 (L8) atmospherically corrected surface reflectance scenes accessible on the GEE platform for the year 2017 (before construction began) and the year 2021 in order to delineate the LULC change between these 2 years and evaluate the impact of the construction of Akkuyu NPP. These multi-temporal composites were created using the filtered collection by date function (filterDate) on the GEE platform. Both composites cover the summer period between May 1 and September 30, as this is the time of year when different kinds of vegetation are all at a stable stage.
+As part of NASA's Landsat Data Continuity Mission (LDCM), the L8 Operational Land Imager (OLI) generates RS data that is consistent with previous Landsat projects. Medium-resolution Landsat datasets allow LULC analyses across long time scales. L8 offers multi-spectral imagery with a 30-m spatial resolution, 5 visible and near-infrared bands, and 2 short-wave infrared bands, with a revisit period of 16 days 
+A vital stage in every LULC classification is the preparation of the basis dataset. The compilation of this dataset for the L8 data in this study begins in the GEE with a filtered and cloud-masked image collection. Visible and infrared bands of L8 images, as seen Table 
+
+## Classification scheme ##
+The classification scheme is interested in five LULC classes: (1) artificial surfaces, including settlements, lands covered by concrete, and all sorts of built-up areas; (2) agricultural areas, including annual and permanent crops, grasslands, and greenhouses; (3) forests; (4) water bodies, including the sea and streams; and (5) barren lands, including lands having few plants, sandy, and rocky areas.
+Satellite image classification aims to automatically classify each pixel into LULC classes. However, supervised image classification requires a priori knowledge of the LULC classes of interest. The selected LULC classes need to be marked on the images for training the supervised classification algorithms. Hence, we collected a total of 2000 randomly distributed pixels throughout both composite images in the GEE environment. This sample set is randomly split into 1400 training pixels (70% of the samples and 280 samples per class) and 600 validation (test) pixels (30% of the samples and 120 samples per class). The training pixels were used for training the classifier, and the remaining validation pixels were used for assessing the performance of the classification. The selection of these pixels was based on a visual approach supported Vol:. ( 
+by high-resolution Bing and Google Earth images, L8 NDVI profiles, false color composites, and local LULC maps. The confusion matrix method, which is a widely used approach for comparing classification outputs with validation data, was used to analyze the performance of the classifier. The confusion matrix can be used to derive some specific accuracy measures: overall accuracy (OA, Eq. 1), producer's accuracy (PA, Eq. 2), and user's accuracy (UA, Eq. 3). The OA corresponds to the total efficacy of the classifier. The PA (also known as recall) can be defined as the power of the algorithm to detect positive labels. The UA (also known as precision) gives the consistency between the input and the positive labels detected by the algorithm. When a classifier achieves a high recall and precision value, it is considered very accurate. High precision (UA) corresponds to a low number of commission errors, while high recall (PA) leads to a low number of omission errors in the LULC classification.
+(1)
+
+## OA = ##
+The number of correctly classified samples The total number of samples The last metric we used is Cohen's kappa coefficient (Eq. 4). Cohen's kappa is a common statistic for determining how well the predicted and observed classes agree, calculated as follows:
+where p 0 is the relative observed agreement in the classifier, and p e is the hypothesized probability of change agreement. It basically tells how much better the classifier performs than a classifier that predicts randomly based on the class frequency. The Cohen's kappa coefficient is always less than or equal to one. A number of 0 indicates no agreement, 0.21-0.40 is reasonable, 0.41-0.60 is moderate, 0.61-0.80 is considerable, and 0.81-1 is nearly faultless agreement.
+The classifier package of GEE administers supervised image classification by so-called ML algorithms. These ML classifiers are SVM, CART, Naïve Bayes, gradient tree boost, and RF. We used the RF classifier to accomplish our LULC classification task. So far, RF is one of the most commonly used ML classifiers for LULC classification using remote sensing data. The RF classifier handles outliers and noisier datasets as well as it has shown good performance with high dimensional input data 
+
+## LULC mapping and change detection ##
+The LULC maps of the study area were produced using the RF classification approach for two different Landsat composites. In order to assess the LULC (2) PA =
+The number of correctly classified samples of a particular class The total number of samples of the same class
+The number of correctly classified samples of a particular class The total number of classified samples in the same class
+change between the years 2017 and 2021, the postclassification method was implemented to compare the LULC at these different times after two independent image classifications. Therefore, LULC change can be detected using two classified images by computing a matrix of change without the serious impact of atmospheric and environmental differences between the acquisition dates 
+
+## Results ##
+A total of 2000 pixels were captured across the 5 classes in both image composites, resulting in 1400 training data pixels and 600 validation data pixels. Table 
+Vol:. ( 
+to 77-100% in 2021. Moreover, class-specific PA ranged from 78-100% for 2017 to 82-100% for 2021. Water bodies appeared to be the most accurately predicted, with UA and PA of 100% in both images. Agricultural areas were least accurately classified in the image of 2017 with UA and PA of 83% and 78%, respectively. Barren lands were the least accurate class in the image of 2021 with UA and PA of 77% and 82%, respectively.
+Figure 
+Changes in each LULC class from 2017 to 2021 are shown in Fig. 
+
+## Discussions ##
+LULC mapping and change detection analysis have generally been time-consuming and labor-intensive operations, and they are one of the primary research issues in RS applications. Recent developments in RS, along with the availability of open access data, have produced data that may be utilized for a variety of environmental monitoring applications. The GEE is becoming a more prominent tool for extracting and classifying open-access satellite imagery. Here, we presented a case study to quantify regional LULC change using GEE and Landsat satellite observations. This study supports the use of GEE to collect the imagery data easily and implement classification procedures with GEE's built-in functions. We used the RF algorithm to classify LULC classes using 1400 training and 600 validation pixels for two composite images, and the performance of the classification was good enough to generate the LULC maps (with kappa scores of more than 0.88). In this respect, we created LULC maps for the Akkuyu region near an NPP construction site for the years 2017 and 2021, demonstrating that the LULC in the region has altered drastically Vol:. ( 
+over the study period. The results indicated that the area covered by artificial surfaces showed an increasing trend during the study period.
+According to the quantitative results of the LULC mapping with the RS approach, the natural land cover has been lost, while built-up areas (larger roads, new development areas) have significantly increased since the beginning of the construction of the Akkuyu NPP. The increase in roads might have direct effects on habitats and ecosystems and fragment natural land cover 
+Even though NPPs may occupy a small amount of land, they can have far-reaching landscape effects 
+Expected policy outcomes should be to limit new development that may attract migration and keep the population density under a certain level around an NPP. However, the increase in artificial surfaces addresses new development areas and roads around rural villages. The authorities should preserve the rural characteristics of the region in order to enable rural communities to sustain their productivity. On the other hand, as Nero et al.   Nonetheless, according to our quantitative analysis, the new NPP construction seems to accelerate urbanization in the area. As Aydın (2020) states, since the need for the service sector has increased with the increase in the population, the number of people coming to this region to work has also increased. The increase in the population and number of residences around NPPs show us that the people in this region do not see NPPs as a risk and do not refrain from living around them. A similar finding was found by 
+The CEO of the APC states that the Akkuyu NPP is going to be the largest nuclear energy production site in the world and it will become fully operational by 2026 (World Nuclear News, 2021a). Even though the IAEA found that Turkish institutions and the APC implemented an adequate and satisfactory framework for nuclear security (World Nuclear News, 2021b), the Akkuyu Project will cause more people to accumulate in the study area and to live there permanently. However, there is no clear policy on how to protect the new settlements and how to evacuate the people living there in the event of a possible emergency. Thanks to this study, it is seen that the project site and the surrounding areas were opened to settlements in an uncontrolled manner and lost their natural characteristics. The ELUP supports this urban sprawl in the region. This plan does not contain any action, idea, or thought regarding the protection of natural habitats around the NPP. Turkey needs to review its land use and population density control policies and implement land use plans in line with the standards. This revision should be made for both the first NPP in Akkuyu and the other two NPP projects Turkey plans to build in the future.
+This study highlights the importance of monitoring LULC changes around NPPs and recommends the use of satellite images in this regard. The LULC monitoring using satellite images gave valuable information to manage the post-disaster LULC changes after the Fukushima Daiichi NPP disaster 
+Certainly, this study has some limitations. Firstly, this study neither covers natural hazard scenarios nor physical or cyber security of the Akkuyu NPP. Some recent studies clarified these issues 
+
+## Conclusions ##
+LULC change analysis of the construction site and its surroundings of the Akkuyu Nuclear Power Plant project in southern Turkey was undertaken in this case study, which was supported by remotely sensed Landsat 8 images. Five LULC classes (agricultural lands, artificial surfaces, barren lands, water bodies, and forests) were selected for the classification of satellite images on the study site. The composite images compiled in Vol.: (0123456789) 2017 for the period before the construction of the project and the composite image compiled for 2021 reflecting the recent past were prepared on the Google Earth Engine platform, which enables easy management of open-access satellite images. For both images, 2000 sample pixels belonging to five LULC classes were created. Seventy percent of these sample pixels were used to train the classifier model, and the remaining 30% were used to assess the performance of the model. The Random Forest algorithm, which has given very successful results in the remote sensing literature, was used as the classifier model. As a result of training and validating the model, high classification performance was obtained for both images (kappa > 0.88). After the classification process, LULC maps for the years 2017 and 2021 were generated. In order to understand the LULC change between these two maps, statistical calculations for the LULC change were computed using the Semi-Automatic Classification Plugin on QGIS. While making these LULC change computations, both the entire study area (15 × 25 km) and a buffer zone with a radius of 1 km, which is the heart of the NPP construction, were taken into consideration. From 2017 to 2021 in the whole study area, the artificial surface class saw the greatest rise (78.46%), whereas forests (-8.31%) and barren lands experienced considerable decreases (-6.11%). When the 1 km buffer perimeter of the power plant was examined, it was determined that the LULC change followed a distinct trend, with artificial surfaces increasing greatly (113.94%), while the regions covered by forests and barren lands fell dramatically 
+As a result of this analysis, it was determined that in the last 4 years, built-up areas in the close vicinity of the Akkuyu NPP construction had increased, the forest areas had been severely damaged, the sea areas had been filled to a certain extent, and the agricultural lands had not been significantly affected. The figures and tables provided throughout the study show how the LULC classes have evolved on the construction site and in the region. The construction of the Akkuyu NPP has caused a serious LULC conversion in its immediate vicinity. The main concern of this article is to examine the potential LULC change and population growth that this project will create in the region. Such analyses need to be sustained until the Akkuyu NPP is fully operational, with more ground-truthing and perhaps with different datasets with better spatial resolution. However, the construction site is restricted to the public and researchers, and the extent of the construction site is still unknown.
+The number of studies conducted on the monitoring of population density and land use around NPPs is very limited. At the same time, few studies have been conducted on operating power plants. In countries that do not have experience in nuclear energy production, such as Turkey, it is important to research on this subject, to ensure that the country in question can monitor the environmental and social indicators around NPPs and determine how ready it is for possible emergency scenarios in accordance with the literature and international documents.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Multicriteria decision analysis based on analytic hierarchy process in GIS environment for siting nuclear power plant in Egypt
+   Authors: , , 
+   Date: 2015. 2014
+
+2. Land use and land cover dynamics with special emphasis on shifting cultivation in Eastern Ghats Highlands of India using remote sensing data and GIS
+   Authors: , , , , , , , , 
+   Date: 2019
+
+3. The history of greenhouse gas emissions and relation with the nuclear energy policy for Turkey
+   Authors: , , , 
+   Date: 2019
+
+4. Urban change analysis and future growth of Istanbul
+   Authors: , , 
+   Date: 2015
+
+5. Considerations on the land management system approach in Turkey by the experiences of a case study
+   Authors: , 
+   Date: 2019
+
+6. Nuclear energy debate in Turkey: Stakeholders, policy alternatives, and governance issues
+   Authors: 
+   Date: 2020. January 2019. 2019. 111041
+
+7. Impacts of entrainment and impingement on fish populations: A review of the scientific evidence
+   Authors: 
+   Date: 2013. 2013
+
+8. Thinking multiculturality in the age of hybrid threats: Converging cyber and physical security in Akkuyu nuclear power plant
+   Authors: , 
+   Date: 2022
+
+9. Site selection for radioactive waste disposal facility by GIS based multi criteria decision making
+   Authors: 
+   Date: 2022
+
+10. Public participation in EIA of nuclear power plant decommissioning projects: A case study analysis
+   Authors: , , 
+   Date: 2004. 2004
+
+11. Forest cover change and fragmentation using Landsat data in Maçka State Forest Enterprise in Turkey
+   Authors: , , 
+   Date: 2008
+
+12. Unsupervised change detection in satellite images using principal component analysis and k-means clustering
+   Authors: 
+   Date: 2009. 2009. 20250
+
+13. A meta-analysis and review of the literature on the k-nearest neighbors technique for forestry applications that use remotely sensed data
+   Authors: , , , , , , , 
+   Date: 2016. 2016
+
+14. Nuclear power plants and residential housing prices
+   Authors: , , , 
+   Date: 1997
+
+15. The use of Sentinel 1/2 vegetation indexes with GEE time series data in detecting land cover changes in the Sinop nuclear power plant construction site. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XLIII-B3-2021
+   Authors: , , 
+   Date: 2021
+
+16. Semi-Automatic Classification Plugin: A Python tool for the download and processing of remote sensing images in QGIS
+   Authors: 
+   Date: 2021
+
+17. Exploring impacts of road transportation on environment: A spatial approach
+   Authors: , , , 
+   Date: 2008
+
+18. Using remote sensing and GIS to detect and monitor land use and land cover change in Dhaka Metropolitan of Bangladesh during 1960-2005
+   Authors: , 
+   Date: 2009
+
+19. Monitoring urbanization of Iskenderun, Turkey, and its negative implications
+   Authors: , 
+   Date: 2006
+
+20. Spatio-temporal analyses of cropland degradation in the irrigated lowlands of Uzbekistan using remote-sensing and logistic regression modeling
+   Authors: , , , , , 
+   Date: 2013
+
+21. Land cover mapping based on random forest classification of multitemporal spectral and thermal images
+   Authors: , , , 
+   Date: 2015
+
+22. A fuzzy multi-criteria SWOT analysis: An application to nuclear power plant site selection
+   Authors: , , 
+   Date: 2011
+
+23. A combined fuzzy approach to determine the best region for a nuclear power plant in Turkey
+   Authors: , 
+   Date: 2016
+
+24. Land use and land cover (LULC) of the Republic of the Maldives: First national map and LULC change analysis using remote-sensing data
+   Authors: , , , 
+   Date: 2017
+
+25. Global consequences of land use
+   Authors: 
+   Date: 2005
+
+26. Are vegetation dynamics impacted from a nuclear disaster? The case of Chernobyl using remotely sensed NDVI and land cover data
+   Authors: 
+   Date: 2020
+
+27. Random forest classification of urban landscape using Landsat archive and ancillary data: Combining seasonal maps with decision level fusion
+   Authors: , , 
+   Date: 2014
+
+28. Google Earth Engine: Planetary-scale geospatial analysis for everyone
+   Authors: , , , , , 
+   Date: 2017. 2016
+
+29. Assessing land use and land cover changes in the direct influence zone of the Braço Norte Hydropower Complex
+   Authors: , , , , , , , , 
+   Date: 2020. 1109
+
+30. Using Landsat data to determine land use/land cover changes in Samsun
+   Authors: , , 
+   Date: 2007
+
+31. Change detection and urban expansion of Port Sudan, Red Sea, using remote sensing and GIS
+   Authors: , , , , 
+   Date: 2021
+
+32. Solar energy development impacts on land cover change and protected areas
+   Authors: , , , , 
+   Date: 2015. 15176
+
+33. Nuclear power in the Middle East: Financing and geopolitics in the state nuclear power programs of Turkey, Egypt, Jordan and the United Arab Emirates
+   Authors: , , 
+   Date: 2021
+
+34. Impact of land use and land cover changes on ecosystem services in Menglun, Xishuangbanna. Southwest China
+   Authors: , , 
+   Date: 2008
+
+35. An assessment of support vector machines for land cover classification
+   Authors: , , 
+   Date: 2002. 2015
+
+36. Country nuclear power profiles: Turkey
+   Authors: 
+   Date: 2020. September 3, 2022
+
+37. A model for big spatial rural data infrastructure in Turkey: Sensor-driven and integrative approach
+   Authors: , 
+   Date: 2020. 2019. 104376
+
+38. Land cover changes induced by the great east Japan earthquake in 2011
+   Authors: , 
+   Date: 2017
+
+39. Nuclear power and land-use planning in the Netherlands
+   Authors: 
+   Date: 1984
+
+40. Accuracy of land use change detection using support vector machine and maximum likelihood techniques for open-cast coal mining areas
+   Authors: , 
+   Date: 2016
+
+41. A kernel functions analysis for support vector machines for land cover classification
+   Authors: , 
+   Date: 2009. 2009
+
+42. Monitoring and assessment of seasonal land cover changes using remote sensing: A 30-year (1987-2016) case study of Hamoun Wetland
+   Authors: , , , , , , , , 
+   Date: 2018. 2012
+
+43. Drivers of land use/land cover changes in Munessa-Shashemene landscape of the south-central highlands of Ethiopia
+   Authors: , , , 
+   Date: 2015
+
+44. A case history of nuclear power plant site selection
+   Authors: 
+   Date: 1982. 1982
+
+45. A priori association rule and K-means clustering algorithms for interpretation of pre-event landslide areas and landslide inventory mapping
+   Authors: , , , , 
+   Date: 2021
+
+46. Multiple criteria decision making methods nuclear power plant site selection in Turkey
+   Authors: 
+   Date: 2020
+
+47. Change of NDVI by surface reflectance based on KOMPSAT-3/3A images at a zone around the Fukushima Daiichi Nuclear Power Plant
+   Authors: , , , 
+   Date: 2021
+
+48. Preparation of radiological environmental impact assessment for the decommissioning of nuclear power plant in Korea
+   Authors: , , 
+   Date: 2018
+
+49. Analyzing deforestation rates, spatial forest cover changes and identifying critical areas of forest cover changes in North-East India during 1972-1999
+   Authors: , 
+   Date: 2009
+
+50. Cross-comparison of vegetation indices derived from Landsat-7 enhanced thematic mapper plus (ETM+) and Landsat-8 operational land imager (OLI) sensors
+   Authors: , , 
+   Date: 2013
+
+51. Change detection techniques
+   Authors: , , , 
+   Date: 2004
+
+52. Novel land cover change detection method based on k-means Vol:. (1234567890) clustering and adaptive majority voting using bitemporal remote sensing images
+   Authors: , , , , 
+   Date: 2019. 2019. 28926
+
+53. Detecting the development stages of natural forests in northern Iran with different algorithms and highresolution data from GeoEye-1
+   Authors: , , 
+   Date: 2020
+
+54. Urban settlements and road network analysis on the surrounding area of the Almirante Alvaro Alberto Nuclear Complex
+   Authors: , , 
+   Date: 2020
+
+55. Normalized difference enhanced sand index for desert sand dunes detection using Sentinel-2 and Landsat 8 OLI data, application to the north of Figuig. Morocco
+   Authors: , 
+   Date: 2022
+
+56. Monitoring land-cover changes: A comparison of change detection techniques
+   Authors: 
+   Date: 1999
+
+57. The role of renewables and nuclear energy in Turkeys Vision 2023 energy targets: Economic and technical scrutiny
+   Authors: 
+   Date: 2016
+
+58. Land needs for wind, solar dwarf nuclear plant's footprint
+   Authors: 
+   Date: 2015. September 3, 2022
+
+59. Control of population densities surrounding nuclear power plants
+   Authors: , , 
+   Date: 1977. September 3, 2022
+
+60. The ecosystem approach
+   Authors: 
+   Date: 1976
+
+61. Random forest classifier for remote sensing classification
+   Authors: 
+   Date: 2005
+
+62. Unsiting nuclear power plants: Decommissioning risks and their land use context
+   Authors: , 
+   Date: 1996
+
+63. Land cover classification using Google Earth Engine and random forest classifier-The role of image composition
+   Authors: , , 
+   Date: 2020
+
+64. Land-use/cover change in Coimbatore urban area (Tamil Nadu, India)-A remote sensing and GIS-based study
+   Authors: , 
+   Date: 2018
+
+65. Modeling land use and land cover changes in a vulnerable coastal region using artificial neural networks and cellular automata
+   Authors: , 
+   Date: 2015
+
+66. Application of remote sensing tools to assess the land use and land cover change in Coatzacoalcos
+   Authors: , , , , 
+   Date: 2022
+
+67. Application of geographical information system in disposal site selection for hazardous wastes
+   Authors: , , , , 
+   Date: 2014
+
+68. Monitoring deforestation by multitemporal data using remote sensing technologies: A case study of Sinop-Turkey
+   Authors: 
+   Date: 2020
+
+69. A multi-temporal analysis approach for land cover mapping in support of nuclear incident response
+   Authors: , , , 
+   Date: 2012
+
+70. Environmental impacts and assessment in nuclear power programmes
+   Authors: , , , 
+   Date: 2012
+
+71. Land cover mapping of the tropical savanna region in Brazil
+   Authors: , , , 
+   Date: 2010
+
+72. Leveraging the Google Earth Engine for drought assessment using global soil moisture data
+   Authors: , , 
+   Date: 2018
+
+73. The acquisition of impervious surface area from LANDSAT 8 satellite sensor data using urban indices: A comparative analysis
+   Authors: , , 
+   Date: 2018
+
+74. Satellite-based detection of evacuation-induced land cover changes following the Fukushima Daiichi nuclear disaster
+   Authors: , , 
+   Date: 2015
+
+75. Monitoring the changing position of coastlines using aerial and satellite image data: An example from the eastern coast of Trabzon
+   Authors: , , , 
+   Date: 2009
+
+76. Comparison of support vector machine, neural network, and CART algorithms for the land-cover classification using limited training data points
+   Authors: , 
+   Date: 2012. 2012
+
+77. Exploring Google Earth Engine platform for big data processing: Classification of multitemporal satellite imagery for crop mapping
+   Authors: , , , , 
+   Date: 2017. 0123456789
+
+78. Earth Science
+   Date: February
+
+79. Analysis of machine learning classifiers for LULC classification on Google Earth Engine analysis of machine learning classifiers for LULC classification on
+   Authors: 
+   Date: 2019
+
+80. Bird rookery nutrient over-enrichment as a potential accelerant of mangrove cay decline in Belize
+   Authors: , , , , , 
+   Date: 2021
+
+81. Relationships between leaf pigment content and spectral reflectance across a wide range of species, leaf structures and developmental stages
+   Authors: , 
+   Date: 2002
+
+82. Digital change detection techniques using remotely-sensed data
+   Authors: 
+   Date: 1989
+
+83. Monitoring the impact of coal mining and thermal power industry on land use pattern in and around Singrauli Coalfield using remote sensing data and GIS
+   Authors: , , 
+   Date: 1997
+
+84. Global land change from 1982 to 2016
+   Authors: , , , , , , 
+   Date: 2018
+
+85. Google Earth Engine for geo-big data applications: A meta-analysis and systematic review
+   Authors: , , , , , 
+   Date: 2020. 2020
+
+86. Object-oriented LULC classification in Google Earth Engine combining SNIC, GLCM, and machine learning algorithms
+   Authors: , 
+   Date: 2020
+
+87. Russia's nuclear export programme
+   Authors: 
+   Date: 2018. 2018
+
+88. The Three Mile Island experience: Ten lessons in emergency management
+   Authors: 
+   Date: 1987
+
+89. Turkish Ministry of Interior-Disaster and Emergency Management Presidency
+   Date: 2019
+
+90. The emergence of land change science for global environmental change and sustainability
+   Authors: , , 
+   Date: 2007. 19104
+
+91. Land use for United States power generation: A critical review of existing metrics with suggestions for going forward
+   Authors: , 
+   Date: 2021
+
+92. Ecological environment changes
+   Authors: , , , 
+   Date: 2008. 1982 to 2004. 2008
+
+93. opera tional-by-2026,-says-proje ct World Nuclear News. (2021b)
+   Date: September 3, 2022
+
+94. Monitoring urban expansion and its effects on land use and land cover changes in Guangzhou City
+   Authors: , , 
+   Date: 2016
+
+95. New safety strategies for nuclear power plants: A review
+   Authors: , , 
+   Date: 2021
+
+96. Mapping aboveground woody biomass using forest inventory, remote sensing and geostatistical techniques
+   Authors: , 
+   Date: 2015
+
+97. Nuclear-to-nature land conversion
+   Authors: , , 
+   Date: 2020
+
+98. Distinctive stochastic tsunami hazard and environmental risk assessment of Akkuyu nuclear power plant by Monte Carlo simulations
+   Authors: 
+   Date: 2022
+
+99. Monitoring urban expansion and land use/land cover changes of Shanghai metropolitan area during the transitional economy
+   Authors: , , , , , , 
+   Date: 2011. 1979-2009
+
+100. Accuracy assessment of land cover/land use classifiers in dry and humid areas of Iran
+   Authors: , , , , , 
+   Date: 2015
+
+101. Modeling land use/land cover change using remote sensing and geographic information systems: Case study of the Seyhan Basin
+   Authors: , , 
+   Date: 2018
+

@@ -1,0 +1,468 @@
+================================================================================
+TITLE: Assessing the Effect of Land-Use and Land-Cover Changes on Discharge and Sediment Yield in a Rural Coal-Mine Dominated Watershed in Kentucky, USA
+================================================================================
+
+AUTHORS:
+- Buddhi Gyawali
+- Sandesh Shrestha
+- Aman Bhatta
+- Bijay Pokhr
+- Richard Cristan
+- George Antonious
+- Swagata Banerjee
+- Krishna Paudel
+
+ABSTRACT:
+The Appalachian Mountain region of eastern Kentucky is unique and contains high proportions of forestland along with coal and natural gas depositaries. Landscape changes due to extreme mining activities can eventually threaten the downstream ecosystems, including soil and water quality, resulting in excessive runoff and sedimentation. The purpose of this study is to assess the impacts of land-use and land-cover (LULC) changes in streamflow and sediment yield in Yellow Creek Watershed, Kentucky, USA, between 1992 and 2016. LULC, digital elevation model, soil, and weather data were inputted into the Soil and Water Assessment Tool (SWAT) to simulate discharge and sediment yield. The model output was evaluated on several statistical parameters, such as the Nash-Sutcliffe efficiency coefficient (NSE), RMSE-observations standard deviation ratio (RSR), percent bias (PBIAS), and the coefficient of determination (R 2 ). In addition, two indices, P-factor and R-factor, were used to measure the prediction uncertainty. The calibrated model showed an increase in surface runoff and sediment yield due to changes in LULC in the Yellow Creek Watershed. The results provided important insights for studying water management strategies to make more informed land management decisions and adaptive practices.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land-use and land-cover (hereafter LULC) change is a phenomenon that has been taking place since the beginning of humankind. It has long been considered a factor affecting the global environment 
+Various anthropogenic activities have played an important role in landscape changes in the Appalachian Mountains region. Surface mining has been one of the major activities since World War II, resulting in a significant alteration in the mountain landscapes with the transformation of native forests and their associated soils into heavily disturbed mine lands 
+It has become necessary to study the temporal and spatial variations in hydrological balance and to understand the mechanisms of influence behind LULC change impacts. However, it is impossible to measure every component of the hydrological system due mainly to watershed heterogeneity and inadequate measuring tools 
+In the United States, SWAT is increasingly being used to study in-stream processes 
+Considering the void that exists in the literature, this study provides a case study from the Yellow Creek Watershed, a small critical watershed in eastern Kentucky that has been heavily impacted by coal-mining activities but supports local livelihoods and the ecosystem within and around the Appalachian Mountains region. The purpose of this study is to assess the impact of LULC changes on streamflow and sediment yield between 1992 and 2016. The Yellow Creek Watershed is particularly of interest to this study due to past and ongoing surface mining and reclamation activities as a major LULC change in the region (See Figure 
+
+## Materials and Methods ##
+
+
+## Description of the Study Region ##
+The Yellow Creek Watershed falls within the Upper Cumberland River basin. The watershed is primarily located in Bell County, Kentucky, but extends into Claiborne County, Tennessee. The outlet of this watershed corresponds to the point where a monitoring station (USGS 03402000) is installed, which is at Yellow Creek near Middlesboro (latitude: 36 • 40 05 , longitude: 83 • 41 19 ) (Figure 
+
+## The SWAT Model ##
+The SWAT model is a physically based, watershed-scale simulation model jointly developed by the USDA Agricultural Research Service and Texas A&M AgriLife Research, part of the Texas A&M University System 
+where SW t is the final soil water content on day i, SW 0 is the initial soil water content on day i, t is the time in days, R day is the amount of rainfall on day i, Q surf is the amount of surface runoff on day i, E a is the amount of evapotranspiration on day i, W seep is the amount of water entering the vadose zone from the soil profile on day i, and Q gw is the amount of base flow or return flow on day i.
+The surface runoff was estimated by using the United States Department of Agriculture (USDA) Soil Conservation Services (SCS) runoff curve number (CN) approach 
+where Q surf is the accumulated runoff or rainfall access, R day is the rainfall depth of the day (mm H 2 O), I a is the initial abstractions, which includes surface storage, interception and infiltration prior to runoff (mm H 2 O), and S is the retention parameter (mm H 2 O). The retention parameter (S) is dependent spatially to changes in soils, land use, management, and slope, and temporarily to changes in soil water content 
+where CN is the curve number for the day. The initial abstraction, I a , is usually approximated as 0.2S, so equation 2 can be rewritten as
+The SWAT offers three methods to estimate potential evapotranspiration (PET): the Penman-Monteith method, the Priestley-Taylor method, and the Hargreaves method 
+where λE is the latent heat flux density (MJ m -2 d -1 ), E is the depth rate evaporation (mm d -1 ), ∆ is the slope of the saturation vapor pressure-temperature curve, de/dT (kPa • C -1 ), H net is the net radiation (MJ m -2 d -1 ), G is the heat flux density to the ground (MJ m -2 d -1 ), ρ air is the air density (kg m -3 ), c p is the specific heat at constant pressure (MJ kg -1 • C -1 ), e 0 z is the saturation vapor pressure of air at height z (kPa), e z is the water vapor pressure of air at height z (kPa), γ is the psychometric constant (kPa • C -1 ), r c is the plant canopy resistance (s m -1 ), and r a is the diffusion resistance of the air layer (aerodynamic resistance) (s m -1 ) 
+The sediment component for each HRU was calculated using the modified universal soil loss equation (MUSLE). The MUSLE [51] is
+where sed is the sediment yield on a given day (metric tons), Q surf is the surface runoff volume (mm H 2 O/ha), q peak is the peak runoff rate (m 3 /s), area hru is the area of HRU (ha), K USLE is the USLE soil erodibility factor (0.013 metric ton m 2 hr/m 3   
+
+## Hydro-Climatic Data ##
+Table 
+LOADEST uses three statistical estimation methods for the calibration 
+
+## SWAT Model Setup ##
+ArcSWAT 2012, an ArcGIS extension and interface for SWAT, was used to simulate the SWAT model. ArcSWAT interface is a public domain software, and as such may be used freely 
+A threshold critical source area of 350 ha (between the suggested range by ArcGIS watershed delineation interface) was used for this study, which divided the watershed into 21 sub-basins (Figure 
+
+## SWAT-CUP Premium and SWAT Parameter Estimator (SPE) Algorithm ##
+We used SWAT-CUP Premium (SWAT-CUPP), a computer program developed for calibration of the SWAT model (https://www.2w2e.com/home/SwatCupPremium; accessed on 17 February 2021). SWAT-CUPP is an improved version of SWAT-CUP, which allows for behavioral and multi-objective calibration 
+SWAT-CUPP offers two algorithms, SWAT Parameter Estimator (SPE) and Particle Swarm Optimization (PSO). We used the SPE algorithm (previously Sequential Uncertainty Fitting (SUFI-2)) for model sensitivity analysis, calibration, uncertainty analysis, and validation 
+where Y obs i is the ith observation for the constituent being evaluated, Y sim i is the ith simulated value for the constituent being evaluated, Y mean i is the mean of observed data for the constituent being evaluated, and n is the total number of observations 
+
+## Model Sensitivity Analysis ##
+Sensitivity analysis is the foremost step in the calibration and validation process in SWAT-CUPP, which determines the most sensitive parameters for a given watershed 
+One-at-a-time sensitivity analysis was conducted for each parameter while keeping other parameter values constant 
+where g denotes the objective function, b is the parameter, α is the regression constant, β corresponds to the technical coefficient attached to the variable b, and m is the number of parameters 
+In addition, statistical measurements t-stat and p-value were used to identify the sensitive parameters, with larger t-stats and smaller p-values representing greater sensitivity. Based on one-at-a-time sensitivity analysis, Abbaspour et al. 
+The results of global sensitivity analysis after the first iteration are listed in Table 
+
+## Model Calibration and Uncertainty Analysis ##
+The second step is model calibration, in which parameter value ranges are adjusted to improve the fit between model predictions and real-world observations 
+Calibration is characteristically subjective and, therefore, closely linked to model output uncertainty 
+where k is the number of observed data points, l is a counter and X L (2.5th) and X U (97.5th) represent the lower and upper boundaries of the 95PPU 
+where σ X is the standard deviation of the measured variable X. The P-factor value of >0.7 (at least 70%) and R-factor value of <1.5 (at most 150%) are desirable and recommended to be adequate 
+
+## Model Validation ##
+After calibration, the model is validated with the calibrated parameter ranges and by comparing predictions to additional observed data, which is not used for calibration. Based on the level of agreement between predictions and the additional observations, the model is validated for further use, or model inputs and parameters are revisited for further calibration 
+The initial model obtained from ArcSWAT was divided into two periods, 1990-1997 for calibration and 1998-2004 for validation in SWAT-CUPP. Discharge was calibrated first since it is the primary controlling variable 
+Parallel processing was utilized to speed up the calibration process. The parallel processing module utilized all eight CPUs where, for each iteration, 600 simulations were divided into eight simultaneous runs of 75 each per CPU. This substantially improved the runtime of the calibration and validation process 
+
+## Model Performance Indices ##
+In addition to two indices used for prediction uncertainty analysis, P-factor and R-factor, multiple indices are made available to check the performance of the SWAT model 
+
+## Results ##
+
+
+## Model Calibration, Uncertainty Analysis, and Validation ##
+After performing three iterations (600 simulations in each) with modifications to the parameters, the model was observed to have a good fit between the observed and simulated discharge and between the LOADEST-simulated and SWAT-simulated sediment. The statistical results of the model performance for discharge and sediment during both calibration and validation periods are summarized in Table 
+
+## Impact of LULC Change on the Water Balance Components in Yellow Creek Watershed ##
+The annual summaries of water balance components between 1992 and 2016 are listed in Table 
+
+## Sediment Yield and LULC Change in Yellow Creek Watershed ##
+The spatial distribution of sediment yield in 1992 and 2016 within the Yellow Creek Watershed is illustrated in Figure 
+As illustrated in Table 
+Figure 
+
+## Discussion ##
+The resulting statistics of our study were acceptable based on the guidelines 
+The results from this study imply that LULC modification might have a significant impact on the annual water balance in the watershed. The decline in percolation, lateral flow, and groundwater might be mainly due to changes in LULC and altered soil properties due to coal-mining activities in the watershed. Similarly, increased runoff indicated the lower infiltration capacity of the surface. Evidence from previous studies also suggests the historical LULC change impact in basin-scale water balance, such as with the Raccoon River Watershed in Iowa 
+Our findings are consistent with previous studies that suggest increasing sediment yields, water quality degradation, and increasing flood events pertaining to LULC changes 
+Several studies show higher peak and total storm runoff from mined lands compared to forested lands in the Appalachian region 
+SWAT is an effective and widely accepted tool in predicting the impact of LULC changes 
+
+## Conclusions ##
+This study was successful in simulating sediment yield and quantifying the impact of LULC change on the hydrology of the watershed. The results showed a very good agreement between observed and predicted discharge and sediment at the outlet. The results showed that the Yellow Creek Watershed experienced LULC changes over 25 years between 1992 and 2016. It consisted primarily of a decrease in forest cover which mostly converted into coal-mine lands, urban development, and growth in pastureland. Similarly, the comparison of the distribution of water balance components, sediment yield, and LULC changes in the watershed implied that LULC changes, specifically ongoing surface mining activities, increasing pastureland, and urban development, have contributed to augmenting the sediment yield in the watershed.
+This study contributes to studying land management practices in watersheds impaired by coal-mine operations. Addressing impacts of LULC change issues strategically and timely is essential for the effective management of coal-mine lands and water resources. Identifying critical areas and selecting best management practices (BMPs) in watershed scale are necessary for reducing sedimentation. The BMPs in watershed scale, for example, should focus on approaches for reducing the environmental footprints of mining by implementing reclamation practices that are feasible in the watershed.
+Despite model and data limitations, this study fills the gap that exists in modeling LULC impacts on water and land management in the coal-mine lands of the Appalachian region in Kentucky. The findings presented provide a plethora of information on LULC changes and their impact on hydrology. The maps and tables produced in this study provide essential spatial information on the sub-basin scale to researchers in identifying and implementing appropriate land management practices.
+There is a dearth of systematic research and data to quantify the effects of coal-mine lands on increased surface runoff and sediment yield. This research is a case study modeling impacts of LULC on runoff and sediment yield. We recommend continuing similar studies in the other watersheds to discern the role of change in LULC on runoff and sediment yield using high-resolution land cover data and integrating such data with human populations and infrastructure changes such as access roads to coal mine areas. Future studies should include local rainfall characteristics and evapotranspiration data. Rainfall patterns and their impacts on coal-field areas will be important to study in this region.
+In future studies, this approach can further be utilized in other similar watersheds to explore the impacts of surface-mining activities on the hydrological properties and to evaluate the effectiveness of best management practices (BMPs) in managing sediment yields for environmental stewardship at the watershed level. We will expand this research to include other watersheds from the Appalachian region to explore the impacts of land-use change on water discharge, as well as the effects of current agricultural and forestry-related BMPs in sediment control and management. 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. 524521 Ha Hartsells (muskingum) stony fine sandy loam
+
+2. Js Jefferson stony fine sandy loam
+   Date: 524523
+
+3. Jsx Jefferson stony fine sandy loam, sloping phase
+
+4. 5 524532 Md Mine dumps (Bethesda)
+
+5. Mf Muskingum stony fine sandy loam
+   Date: 524533
+
+6. Mfd Muskingum stony fine sandy loam, deep phase
+
+7. Pf Philo fine sandy loam (sl)
+   Date: 524540
+
+8. Ps Philo (Potomac) stony fine sandy loam
+   Date: 524542
+
+9. RsM Rough stony land: muskingum soil material 11 524550 ScM Stony colluvium: muskingum soil material 12 552107 AgB Allegheny fine sandy loam, 2 to 6 percent slopes 13 552108 AtF Alticrest-Ramsey-Wallen complex, 20 to 55 percent slopes, rocky 14 552109 Bo Bonnie silt loam, occasionally flooded 15 552110 CgF Cloverlick-Guyandotte-Highsplint complex, 20 to 80 percent slopes, very stony 16 552111 Cr Craigsville-Philo complex, occasionally flooded 17 552114 Du Dumps, Mine; tailings; and Tipples 18 552115 FbC Fairpoint and Bethesda soils, 2 to 20 percent slopes 19 552116 FbF Fairpoint and Bethesda soils, 20 to 70 percent slopes, stony 20 552117 GsC Gilpin-Shelocta silt loams, 3 to 12 percent slopes 21 552118 GsD Gilpin-Shelocta silt loams, 12 to 20 percent slopes 22 552119 GtF Gilpin-Rayne-Sequoia complex, 25 to 55 percent slopes, very stony 23 552120 HeF Helechawa-Varilla-Jefferson complex, 35 to 75 percent slopes, very rocky 24 552121 HgD Highsplint very flaggy silt loam, 5 to 20 percent slopes, extremely bouldery 25 552122 HsF Highsplint-Shelocta-Dekalb complex, 35 to 80 percent slopes, very stony 26 552123 JfD Jefferson gravelly silt loam, 12 to 20 percent slopes 27 552126 Ph Philo fine sandy loam, occasionally flooded 28 552127 Po Pope fine sandy loam, occasionally flooded 29 552128 Sb Shelbiana loam, occasionally flooded 30 552129 SeB Shelocta gravelly silt loam, 2 to 6 percent slopes 31 552130 SeC Shelocta channery silt loam, 6 to 12 percent slopes 32 552131 SgE Shelocta-Gilpin silt loams, 20 to 35 percent slopes 33 552132 ShF Shelocta-Highsplint-Gilpin complex, 20 to 70 percent slopes, very stony 34 552133 SkF Shelocta-Kimper-Cloverlick complex
+
+10. The Causes of Land-Use and Land-Cover Change: Moving beyond the Myths
+   Authors: , , , , , , , , , 
+   Date: 2001
+
+11. Local Faces, Global Flows: The Role of Land Use and Land Cover in Global Environmental Change. Land Degrad
+   Authors: 
+   Date: 1994
+
+12. Long-Term Hydrological Impacts of Land Use/Land Cover Change From 1984 to 2010 in the Little River Watershed
+   Authors: , 
+   Date: 2014
+
+13. Impact of Land Use Change on Flow and Sediment Yields in the Khokana Outlet of the Bagmati River
+   Authors: 
+   Date: 2018
+
+14. Assessing the Potential Impact of Rising Production of Industrial Wood Pellets on Streamflow in the Presence of Projected Changes in Land Use and Climate: A Case Study from the Oconee River Basin in Georgia, United States
+   Authors: , , , 
+   Date: 2019
+
+15. De Urioste-Stone, S. Probing Recent Environmental Changes and Resident Perceptions in Upper Himalaya
+   Authors: , 
+   Date: 2020. 100315
+
+16. Systematic Modeling of Impacts of Land Use and Land Cover Changes on Regional Climate: A Review
+   Authors: , , 
+   Date: 2013. 2013. 317678
+
+17. Land Use/Land Cover Changes and Climate: Modeling Analysis and Observational Evidence
+   Authors: , , , , , , , , , 
+   Date: 2011
+
+18. Assessing Ecosystem Services from the Forestry-Based Reclamation of Surface Mined Areas in the North Fork of the Kentucky River Watershed
+   Authors: , , 
+   Date: 2018
+
+19. Impact of Land Cover Change on Ecosystem Services in a Tropical Forested Landscape
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+20. Geo-Spatial Analysis of Land Use/Land Cover Change and Its Impact on the Food Security in District Anantnag of Kashmir Valley
+   Authors: , 
+   Date: 2019
+
+21. Understanding the Impact of Land Use and Land Cover Change on Water-Energy-Food Nexus in the Gidabo Watershed, East African Rift Valley
+   Authors: , , , , 
+   Date: 2021
+
+22. Impact of Land Use and Land Cover Change on the Water Balance of a Large Agricultural Watershed: Historical Effects and Future Directions
+   Authors: , , , , 
+   Date: 2008
+
+23. Effects of Dynamic Land Use Inputs on Improvement of SWAT Model Performance and Uncertainty Analysis of Outputs
+   Authors: , , , , 
+   Date: 2018
+
+24. Hydrologic Effects of Surface Coal Mining in Appalachia
+   Authors: , , , 
+   Date: 2015
+
+25. Local Residents' Views of Surface Mining: Perceived Impacts, Subjective Well-Being, and Support for Regulations in Southern Appalachia
+   Authors: , , 
+   Date: 2019
+
+26. Changes in the Extent of Surface Mining and Reclamation in the Central Appalachians Detected Using a 1976-2006
+   Authors: , , , , , 
+   Date: 2009
+
+27. Surface Mining Control and Reclamation Act of
+   Date: 1977. 1977
+
+28. Impacts of Large-Scale Rare Earth Mining on Surface Runoff, Groundwater, and Evapotranspiration: A Case Study Using SWAT for the Taojiang River Basin in Southern China
+   Authors: , , , , , , 
+   Date: 2019
+
+29. Catchment Scale Hydrological Modelling: A Review of Model Types, Calibration Approaches and Uncertainty Analysis Methods in the Context of Recent Developments in Technology and Applications
+   Authors: , , , 
+   Date: 2011
+
+30. Modeling Agricultural Watersheds with the Soil and Water Assessment Tool (SWAT): Calibration and Validation with a Novel Procedure for Spatially Explicit HRUs. Environ. Manag
+   Authors: , , , , 
+   Date: 2016
+
+31. Large Area Hydrologic Modeling and Assessment Part I: Model Development1
+   Authors: , , , 
+   Date: 1998
+
+32. Soil and Water Assessment Tool Theoretical Documentation Version
+   Authors: , , , 
+   Date: 2009. 2009
+
+33. A Continental-Scale Hydrology and Water Quality Model for Europe: Calibration and Uncertainty of a High-Resolution Large-Scale SWAT Model
+   Authors: , , , , , 
+   Date: 2015
+
+34. Using Modeled Runoff to Study DOC Dynamics in Stream and River Flow: A Case Study of an Urban Watershed Southeast of Boston
+   Authors: , , , 
+   Date: 2012
+
+35. Simulating Potential Weekly Stream and Pond Water Available for Irrigation in the Big Sunflower River Watershed of Mississippi Delta
+   Authors: , , , , 
+   Date: 2019. 1271
+
+36. Comparing CMIP-3 and CMIP-5 Climate Projections on Flooding Estimation of Devils Lake of North Dakota, USA
+   Authors: , 
+   Date: 2018
+
+37. Combined and Synergistic Effects of Climate Change and Urbanization on Water Quality in the Wolf Bay Watershed, Southern Alabama
+   Authors: , 
+   Date: 2018
+
+38. Effects of Urbanization and Climate Change on Stream Health in North-Central Texas
+   Authors: , , 
+   Date: 2014
+
+39. Water Resources Response to Climate and Land-Cover Changes in a Semi-Arid Watershed
+   Authors: , , , 
+   Date: 2015
+
+40. Individual and Combined Effects of Land Use/Cover and Climate Change on Wolf Bay Watershed Streamflow in Southern Alabama
+   Authors: , , , 
+   Date: 2014
+
+41. Use of SWAT to Model Impact of Climate Change on Sediment Yield and Agricultural Productivity in Western Oregon
+   Authors: , , 
+   Date: 2019
+
+42. Assessment of Total Maximum Daily Load Implementation Strategies for Nitrate Impairment of the Raccoon River
+   Authors: , , , 
+   Date: 2010
+
+43. Reducing High Flows and Sediment Loading through Increased Water Storage in an Agricultural Watershed of the Upper Midwest, USA
+   Authors: , , , , , 
+   Date: 2018. 1053
+
+44. Assessing the Efficiency of Alternative Best Management Practices to Reduce Nonpoint Source Pollution in a Rural Watershed Located in Louisiana, USA
+   Authors: , 
+   Date: 2019. 1714
+
+45. Calibration of a Field-Scale Soil and Water Assessment Tool (SWAT) Model with Field Placement of Best Management Practices in Alger Creek
+   Authors: , , , , , , 
+   Date: 2018
+
+46. A Modeling Approach to Evaluate the Impacts of Water Quality Management Plans Implemented in a Watershed in Texas
+   Authors: , , , 
+   Date: 2006
+
+47. Watershed-Scale Impacts of Bioenergy Crops on Hydrology and Water Quality Using Improved SWAT Model
+   Authors: , , , , 
+   Date: 2016
+
+48. The Modified SWAT Model for Predicting Fecal Coliforms in the Wachusett Reservoir Watershed
+   Authors: , , , , 
+   Date: 2012
+
+49. A SWAT Model Validation of Nested-Scale Contemporaneous Stream Flow, Suspended Sediment and Nutrients from a Multiple-Land-Use Watershed of the Central USA
+   Authors: , 
+   Date: 2016
+
+50. Modeling of Discharge and Sediment Transport through the SWAT Model in the Basin of Harraza (Northwest of Algeria)
+   Authors: , , , , 
+   Date: 2018
+
+51. Simulating Streamflow in an Ungauged Catchment of Tonlesap Lake Basin
+   Authors: , 
+   Date: 2018
+
+52. Impacts of Dem Source, Resolution and Area Threshold Values on SWAT Generated Stream Network and Streamflow in Two Distinct Nepalese Catchments
+   Authors: , , 
+   Date: 2019
+
+53. Impacts of Land Use Land Cover Change on Runoff and Sediment Yield of Upper Tapi River Sub-Basin, India
+   Authors: , 
+   Date: 2020
+
+54. Simulation of Daily and Monthly Stream Discharge from Small Watersheds Using the SWAT Model
+   Authors: , , 
+   Date: 2000
+
+55. An Assessment of Climate Change Impacts on Future Water Availability and Droughts in the
+   Authors: , , , 
+   Date: 2017
+
+56. SWAT: Model Use, Calibration, and Validation
+   Authors: , , , , , , , , , 
+   Date: 2012
+
+57. Soil Conservation Service
+   Authors: 
+   Date: 1972
+
+58. Evaporation and Environment
+   Authors: 
+   Date: 1965
+
+59. Model for Predicting Evaporation from a Row Crop with Incomplete Cover
+   Authors: 
+   Date: 1972
+
+60. Model for Predicting Sediment, Phosphorus, and Nitrogen Yields from Agricultural Basins
+   Authors: , 
+   Date: 1980
+
+61. A FORTRAN Program for Estimating Constituent Loads in Streams and Rivers; Techniques and Methods; USGS Numbered Series 4-A5; U.S. Geological Survey
+   Authors: , , , 
+   Date: 2004
+
+62. GIS Techniques for Watershed Delineation of SWAT Model in Plain Polders
+   Authors: , , , , 
+   Date: 2011
+
+63. SWAT-CUP Premium 2020: SWAT Calibration and Uncertainty Programs (Premium Version): A User Manual
+   Authors: 
+   Date: 2020
+
+64. A Guideline for Successful Calibration and Uncertainty Analysis for Soil and Water Assessment: A Review of Papers from the 2016 International SWAT Conference
+   Authors: , , 
+   Date: 2018
+
+65. Selection of Calibration Objective Fonctions in the Context of Rainfall-Ronoff Modelling in a Sudanese Savannah Area
+   Authors: , 
+   Date: 1991
+
+66. Criteria for Evaluation of Watershed Models
+   Authors: 
+   Date: 1993
+
+67. River Flow Forecasting through Conceptual Models Part I-A Discussion of Principles
+   Authors: , 
+   Date: 1970
+
+68. Model Evaluation Guidelines for Systematic Quantification of Accuracy in Watershed Simulations
+   Authors: , , , , , 
+   Date: 2007
+
+69. Modelling Hydrology and Water Quality in the Pre-Alpine/Alpine Thur Watershed Using SWAT
+   Authors: , , , , , , , 
+   Date: 2007
+
+70. Parameter Sensitivity and Uncertainty in SWAT: A Comparison across Five USDA-ARS Watersheds. Trans. ASABE 2010
+   Authors: , , , 
+
+71. Estimating Uncertain Flow and Transport Parameters Using a Sequential Uncertainty Fitting Procedure
+   Authors: , , 
+   Date: 2004
+
+72. Status of Automatic Calibration for Hydrologic Models: Comparison with Multilevel Expert Calibration
+   Authors: , , 
+   Date: 1999
+
+73. Validation of the Swat Model on a Large Rwer Basin with Point and Nonpoint Sources1
+   Authors: , , , , , 
+   Date: 2001
+
+74. Hydrologic and Water Quality Models: Performance Measures and Evaluation Criteria
+   Authors: , , , 
+   Date: 2015
+
+75. 
+   Authors: , , , 
+   Date: 1987
+
+76. Effects of Surface Mining and Residential Land Use on Headwater Stream Biotic Integrity in the Eastern Kentucky Coalfield Region Eastern Kentucky Coalfield Region
+   Authors: 
+   Date: 2004
+
+77. Water-Quality Assessment of the Kentucky River Basin
+   Authors: , , , 
+   Date: 1995
+
+78. Flora of the Fonde Surface Mine Demonstration Area, Bell County
+   Authors: , 
+   Date: 2002. June 2002
+
+79. Quality of Surface Water in Bell County
+   Authors: , 
+   Date: 1981
+
+80. Soil Erosion and Surface Runoff on Different Vegetation Covers and Slope Gradients: A Field Experiment in Southern Shaanxi Province
+   Authors: , , , 
+   Date: 2013
+
+81. Effects of Topographic Factors on Runoff and Soil Loss in Southwest China
+   Authors: , , , , , 
+   Date: 2018
+
+82. Assessing the Impact of Land-Use Land-Cover Change on Stream Water and Sediment Yields at a Watershed Level Using SWAT
+   Authors: , , , 
+   Date: 2015
+
+83. Climate Change Impacts on Streamflow, Water Quality, and Best Management Practices for the Shell and Logan Creek Watersheds in Nebraska, USA
+   Authors: , , 
+   Date: 2012
+
+84. Modeling the Impacts of Climate Change on Crop Yield and Irrigation in the Monocacy River Watershed, USA
+   Authors: , , , , , 
+
+85. Impact of Global Climate Change on Stream Low Flows: A Case Study of the Great Miami River Watershed
+   Authors: , , , 
+   Date: 2019
+
+86. Comparison of Three Regionalization Techniques for Predicting Streamflow in Ungaged Watersheds in Nebraska, USA Using SWAT Model
+   Authors: , 
+   Date: 2018
+
+87. Statistical Procedures for Evaluating Daily and Monthly Hydrologic Model Predictions
+   Authors: , , , 
+   Date: 2004
+
+88. Estimation of Water Balance and Water Yield in the Reedy Fork-Buffalo Creek Watershed in North Carolina Using SWAT
+   Authors: , 
+   Date: 2018
+
+89. An Overview of the Coal Economy in Appalachia; Working Paper Research Paper
+   Authors: , , 
+   Date: 2018. 2018
+
+90. Cumulative Impacts of Mountaintop Mining on an Appalachian Watershed
+   Authors: , , , , , , 
+   Date: 2011
+
+91. Impact of Coal Surface Mining on Three Ohio Watersheds -Surface-Water Hydrology1
+   Authors: , , , 
+   Date: 1997
+
+92. Comparison of Stormflow Responses of Surface-Mined and Forested Watersheds in the Appalachian Mountains
+   Authors: , 
+   Date: 2006
+
+93. The Soil and Water Assessment Tool: Historical Development, Applications, and Future Research Directions
+   Authors: , , , 
+   Date: 200701010800001020. 2007
+
+94. Soil and Water Assessment Tool (SWAT) Model: Current Developments and Applications. Trans. ASABE 2010
+   Authors: , , 
+

@@ -1,0 +1,314 @@
+================================================================================
+TITLE: Spatio-Temporal Changes of Land-Use/Land Cover Change and the Effects on Ecosystem Service Values in Derong County, China, from 1992-2018
+================================================================================
+
+AUTHORS:
+- Yanru Wang
+- Xiaojuan Zhang
+- Peihao Peng
+
+ABSTRACT:
+Monitoring the spatio-temporal variation of the land-use/land cover change (LULC) and ecosystem service value (ESV) changes will help achieve regional sustainable development and management. Derong County is a part of the Hengduan Mountains area, the most crucial ecological functional area in China, and LULC has changed tremendously in the past 30 years. However, the effects of LULC changes on ecosystem services is not well understood. Based on 1992Based on  , 1995Based on  , 2005Based on  ,  2013Based on  , and 2018   remote sensing images, we used visual interpretation to obtain LULC data and used global value coefficients and modified local value coefficients to assess the spatial-temporal changes of ESV and LULC from 1992 to 2018. The results showed that: (1) From 1992 to 2018, shrubland and grassland decreased, while built-up land, snow, forestland, water body, and cropland area increased. (2) The ESV with an overall decrease of 0.25 × 10 8 yuan, ecological projects have played a positive role in improving ESV. In contrast, the main decrease factor of ESV was the increase in agricultural economic development and urban expansion from 1992 to 2018. (3) The ESV spatial distribution indicated the value density of ESV was on the decline, and with the greatest deterioration in Dianyagong. The highest density of ESV area is distributed in Waka, and the lowest density of ESV area is distributed in Bari. This research points out the important role of Derong County in the regional life support system and provides a scientific reference for the sustainable management of dry-hot valley regions' land resources and ecosystem services.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Ecosystem services are closely related to human well-being, are essential to human life, and involve all the benefits that humans obtain from natural ecosystems 
+Globally, land-use/land cover change (LULC) is an extremely dominant factor affecting the ESV changes 
+As a part of the Hengduan Mountains, Derong County is the most representative dry-hot valley region in China 
+Based on the research gap identified above and remote sensing data, this study used the revised equivalent factor method, quantitatively evaluated the LULC changes, ESV changes and analyzed the effects of LULC on ESV of Derong County from 1992 to 2018. There are two specific goals:
+(1) reveal the temporal and spatial variations of the LULC in Derong County from 1992 to 2018; (2) evaluate the temporal and spatial changes of the ESV in response to LULC. This research is essential for the rational use, protection, and management of land resources in Derong County, promotion of the sustainable development of ecosystem services, and the realization of the coordinated development of economic and ecological protection. These results will provide a scientific reference for scientifically formulating ecological protection measures in the Hengduan Mountains region and dry-hot valley regions of other countries.
+
+## Materials and Methods ##
+
+
+## Study Area ##
+Derong County (99 • 07 E to 99 • 34 E, 28 • 09 N to 29 • 10 N) located in the southeastern edge of the Qinghai-Tibet Plateau and southwestern part of Sichuan Province, China (Figure 
+
+## Remote Sensing Data and Data Processing ##
+The Landsat TM/OLI remote sensing image data were derived from the U.S. Geological Survey (https://www.usgs.gov/). The five remote sensing data years were: 1992, 1995, 2005, 2013, and 2018. First, ENVI5.3 software was used to perform the atmospheric correction, geometric correction, band synthesis, image enhancement, and other data preprocessing. According to GB/T 21010-2017 "Land-Use Status Classification," the national ecosystem classification system and the national ecological remote sensing survey classification plan were combined with the natural and economic development characteristics of the Hengduan Mountain region in Derong County 
+
+## Remote Sensing Data and Data Processing ##
+The Landsat TM/OLI remote sensing image data were derived from the U.S. Geological Survey (https://www.usgs.gov/). The five remote sensing data years were: 1992, 1995, 2005, 2013, and 2018. First, ENVI5.3 software was used to perform the atmospheric correction, geometric correction, band synthesis, image enhancement, and other data preprocessing. According to GB/T 21010-2017 "Land-Use Status Classification," the national ecosystem classification system and the national ecological remote sensing survey classification plan were combined with the natural and economic development characteristics of the Hengduan Mountain region in Derong County 
+
+## LULC Change Dynamics ##
+The single land-use dynamics (M) refers to the annual variability rate of a certain type of land-use area within a concrete time range, which can better analyze land-use changes 
+where V0 and V1 were the area (hm 2 ) of a given type of land-use in the starting and end years of the study period, and T0 and T1 were the starting and end years of the study time, respectively.
+
+## ESVs Assessment ##
+Based on the ESV assessment system and historical literature, each land-use type included 11 ecosystem service function types 
+
+## LULC Change Dynamics ##
+The single land-use dynamics (M) refers to the annual variability rate of a certain type of land-use area within a concrete time range, which can better analyze land-use changes 
+where V 0 and V 1 were the area (hm 2 ) of a given type of land-use in the starting and end years of the study period, and T 0 and T 1 were the starting and end years of the study time, respectively.
+
+## ESVs Assessment ##
+Based on the ESV assessment system and historical literature, each land-use type included 11 ecosystem service function types 
+where ESV is the value of ecosystem services, i is a land-use type, j is ecosystem service type, A i is the area of the class i land-use type (hm 2 ), VC i is the ESV per unit area of class i land-use type (yuan/hm 2 a), EC j is the value equivalent of item j ecosystem services of a definite type of land-use, E a is the economic value of a unit ecosystem service value equivalent factor as 2112.03 (yuan/hm 2 a).
+
+## Elasticity of ESV Response to LULC ##
+To eliminate the uncertainty caused by land-use type in ESV assessment, this study uses the conception of elasticity coefficient in economics to calculate the coefficient sensitivity (CS) of ESV to ensuring the reliability of research results. The ESV changes in response to 50% adjustments of the ESV coefficients for each LULC type were assessed 
+where ESV is the estimated total value of ecosystem services, VC is the value coefficient, and "i," "j" and "k" represent the initial, adjusted values, and LUCC categories, respectively. If CS > 1, the estimated ESV is elastic concerning that coefficient. If CS ≤ 1, the estimated ESV is inelastic. Thus, when CS < 1, even if the accuracy of VC values used as proxy biomes is low, the results of the estimation are credible.
+
+## Results ##
+
+
+## Changes of LULC ##
+The spatial distribution of LULC in Derong County from 1992 to 2018 was shown in Figure 
+
+## Results ##
+
+
+## Changes of LULC ##
+The spatial distribution of LULC in Derong County from 1992 to 2018 was shown in Figure 
+From 1992 to 2018, forestland, water body, built-up land, cropland, and snow increased, while shrubland and grassland decreased. With agricultural economic development and urban expansion, the built-up land and cropland increased significantly. The built-up land has changed the most, increasing by 2679.68 hm 2 and with an increase rate of 294.09% by 1992. The cropland also increased by 2061.26 hm 2 and with an increase rate of 45.57% by 1992. The shrubland decreased most by 21403.66 hm 2 and with a decrease rate of 20.45% by 1992.
+The results of land-use dynamics from 1992 to 2018 showed that shrubland and grassland decreased, with dynamics of -0.79% and -0.22%, respectively. The other landuse types increased, and the order of increasing speed was: Built-up land > cropland > snow > forestland > water body, with dynamic degrees of 11.31%, 1.75%, 0.94%, 0.44%, and 0.39%, respectively.
+
+## Changes of ESV ##
+LULC change causes the variation of ecosystem service value. As can be seen from Table 
+Soil and water conservation, the implementation of forest projects, and comprehensive ecological management have promoted the restoration of forestland and water body, and the increase in the ESV of forestland and water body. Agricultural economic development and urban expansion have led to the reduction of shrubland and grassland areas and associated ESVs.
+As can be seen from Table 
+As can be seen from Table 
+
+## Ecosystem Sensitivity Analysis ##
+After adjusting the value factors of ecosystem services for each land-use type by 50%, respectively (Table 
+This study conducts a temporal and spatial quantitative study on the ESV of Derong County, which has certain theoretical and practical significance for restoring and protecting the ecosystem of Derong County and accelerating the comprehensive management of the ecological environment in Derong County. The research results help people more intuitively understand the importance of ecosystem services in Derong County, and at the same time, provides a scientific reference for the effective protection and management of ecosystems in the area and the sustainable use of land resources. The intuitive monetary value highlights the importance of Derong County's land resources to the regional economy and ecology and also provides a scientific theoretical basis for the protection and management of land ecosystems in countries around the world.
+
+## Limitations and Future Work ##
+The ESV assessment methods used in this study can be used for rapid spatial analysis, assessment, and quantification of long-term ecological benefit restoration. This research is of great significance to the optimization of regional land-use patterns, maintenance of regional ecological security, and sustainable development. It is of enormous meaning for the ecological protection and construction of the upper reaches of the Yangtze River, especially for the ecological construction of dry-hot valley regions. Meanwhile, this study provides a case for assessing the impacts of the LULU on ESV, which has a certain reference value for the formulation of land-use policies. Next, we will conduct research on the impact of other factors (such as altitude, climate change) on the ESV. The shortcomings of the current research are as follows: 
+
+## Conclusions ##
+With the support of Landsat TM/OLI remote sensing data and GIS technology, this study conducted a quantitative analysis of the temporal and spatial changes in ESV caused by LULC in Derong County from 1992 to 2018. The major study results showed as follows: (1) From 1992 to 2018, the ESV with an overall decrease of 0.25 × 10 8 yuan, and the most severe decline in the value density of ESV was in Dianyagong. (2) Ecological projects have played a positive role in improving ESV in Derong county. (3) Of the 11 individual ecosystem service values, the value contribution rate of climate regulation was the largest. (4) The sensitivity indexes were all less than 1, and the results were reliable. To continue to improve the ecological restoration in the upper reaches of the Yangtze River and achieve sustainable development in the dry-hot valley area, it is necessary to strengthen soil and water conservation, natural forest protection projects, and other ecological restoration measures, and to provide better ecological well-being for local communities.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. 
+
+2. The value of the world's ecosystem services and natural capital
+   Authors: , , , , , , , , , 
+   Date: 1997
+
+3. The value of the world's ecosystem services and natural capital
+   Authors: , , , , , , , , , 
+   Date: 1998
+
+4. Changes in the global value of ecosystem services
+   Authors: , , , , , , , 
+   Date: 2014
+
+5. Evaluation of forest ecosystem services in Mediterranean areas. A regional case study in South Spain
+   Authors: , , , 
+   Date: 2016
+
+6. Estimating the impacts of land use/land cover changes on Ecosystem Service Values: The case of the Andassa watershed in the Upper Blue Nile basin of Ethiopia
+   Authors: , , , , , 
+   Date: 2018
+
+7. Assessing regulating and provisioning ecosystem services in a contrasting tropical forest landscape
+   Authors: , , , 
+   Date: 2016
+
+8. Ecological Forecasts: An Emerging Imperative
+   Authors: , , , , , , , , , 
+   Date: 2001
+
+9. Spatial scales, stakeholders and the valuation of ecosystem services
+   Authors: , , , 
+   Date: 2006
+
+10. Study on Land Use/Cover Change and Ecosystem Services in Harbin
+   Authors: , , , , 
+
+11. 
+   Authors: , , , , , , , , , 
+   Date: 2001
+
+12. Modeling multiple ecosystem services, biodiversity conservation, commodity production, and tradeoffs at landscape scales
+   Authors: , , , , , , , , , 
+   Date: 2009
+
+13. Challenges in integrating the concept of ecosystem services and values in landscape planning, management and decision making
+   Authors: , , , , 
+   Date: 2010
+
+14. A multi-criteria approach for an integrated land-cover-based assessment of ecosystem services provision to support landscape planning
+   Authors: , , , 
+   Date: 2012
+
+15. 
+   Authors: , , , , , , 
+   Date: 2020
+
+16. Mapping recreation and ecotourism as a cultural ecosystem service: An application at the local level in Southern Chile
+   Authors: , , , , 
+   Date: 2013
+
+17. Assessing uncertainty dimensions in land-use change models: Using swap and multiplicative error models for injecting attribute and positional errors in spatial data
+   Authors: , , 
+   Date: 2014
+
+18. Land Use and Land Cover Dynamics and Assessing the Ecosystem Service Values in the Trans-Boundary Gandaki River Basin, Central Himalayas
+   Authors: , , , , 
+   Date: 2018
+
+19. Land-Use Choices: Balancing Human Needs and Ecosystem Function
+   Authors: , , 
+   Date: 2004
+
+20. Evaluation of ecosystem service value of riparian zone using land use data from 1986 to 2012
+   Authors: , , , , , , 
+   Date: 2016
+
+21. Land-use change impacts on ecosystem services value: Incorporating the scarcity effects of supply and demand dynamics
+   Authors: , , , 
+   Date: 2018
+
+22. Assessment of Ecosystem Services Value Based on Land Use and Land Cover Changes in the Transboundary Karnali River Basin, Central Himalayas. Sustainability
+   Authors: , , 
+   Date: 2019
+
+23. Global land use change, economic globalization, and the looming land scarcity
+   Authors: , 
+   Date: 2011
+
+24. Impact of Land Use/Cover Change on Ecosystem Service Values in the Kilombero Valley Floodplain, Southeastern Tanzania. Forests
+   Authors: , , , 
+   Date: 2020
+
+25. Evolution of natural and social science interactions in global change research programs
+   Authors: , , 
+   Date: 2013
+
+26. Mapping ecosystem services bundles to detect high-and low-value ecosystem services areas for land use management
+   Authors: , , , , , 
+   Date: 2019
+
+27. Impacts of land-use change on valued ecosystem service in rapidly urbanized North China Plain
+   Authors: , , , , 
+   Date: 2015
+
+28. Delphi-based change assessment in ecosystem service values to support strategic spatial planning in Italian landscapes
+   Authors: , , 
+   Date: 2012
+
+29. Impacts of Land Change on Ecosystem Services in the San Antonio River Basin
+   Authors: , , , , 
+   Date: 1984 to 2010. 2017
+
+30. Integrating ecosystem services value for sustainable land-use management in semi-arid region
+   Authors: , , , , , , , 
+   Date: 2018
+
+31. Spatio-temporal variation of land use and ecosystem service values and their impact factors in an urbanized agricultural basin since the reform and opening of China
+   Authors: , , , , 
+   Date: 2019
+
+32. The Impact of Land-Use Change on Ecosystem Services, Biodiversity and Returns to Landowners: A Case Study in the State of Minnesota
+   Authors: , , , 
+   Date: 2010
+
+33. Valuing map validation: The need for rigorous land cover map accuracy assessment in economic valuations of ecosystem services
+   Authors: 
+   Date: 2015
+
+34. Land use and ecosystem services value in the dry-hot valley region: A case study in Yuanmou County
+   Authors: , , 
+   Date: 2018
+
+35. Valuing ecosystem and economic services across land-use scenarios in the Prairie Pothole Region of the Dakotas
+   Authors: , , , , , 
+   Date: 2011
+
+36. Spatial characteristics of land uses and ecological compensations based on payment for ecosystem services model from 2000 to 2015 in Sichuan Province
+   Authors: , 
+   Date: 2019
+
+37. Spatial assessment of the impact of land use and land cover change on supply of ecosystem services in Phewa watershed
+   Authors: , , , , 
+   Date: 2019. 100895
+
+38. Land use/land cover change and the effects on ecosystem services in the Hengduan Mountain region
+   Authors: , , , 
+   Date: 2018
+
+39. Characterizing landscape pattern and ecosystem service value changes for urbanization impacts at an eco-regional scale
+   Authors: , , , 
+   Date: 2012
+
+40. The Distribution Regularity of Geohazard in the Dry-Hot Valley of Jinsha River: Case Study in Derong County
+   Authors: , , 
+   Date: 2012
+
+41. Landslide Susceptibility Mapping Using Logistic Regression Analysis along the Jinsha River and Its Tributaries Close to Derong and Deqin County, Southwestern China
+   Authors: , , , , , 
+   Date: 2018
+
+42. Spatio-temporal analysis of the human footprint in the Hengduan Mountain region: Assessing the effectiveness of nature reserves in reducing human impacts
+   Authors: , , , , , 
+   Date: 2020
+
+43. Spatial-temporal changes in ecosystem services and the trade-off relationship in mountain regions: A case study of Hengduan Mountain region in Southwest China
+   Authors: , 
+
+44. What drives the vegetation dynamics in the Hengduan Mountain region, southwest China: Climate change or human activity?
+   Authors: , , , , , 
+   Date: 2020. 106013
+
+45. Spatial and Temporal Variation of Ecosystem Service Value in the Nature Reserves of Bailongjiang Watershed from 1975 to
+   Authors: , , , , , 
+   Date: 2015. 2019
+
+46. Expert Knowledge Based Valuation Method of Ecosystem Services in China
+   Authors: , , , , 
+   Date: 2008
+
+47. Collect Earth: Land Use and Land Cover Assessment through Augmented Visual Interpretation
+   Authors: , , , , , , , , , 
+
+48. Monitoring land use and land cover changes due to extensive gold mining, urban expansion, and agriculture in the Pra River Basin of Ghana
+   Authors: , , , 
+   Date: 1986-2025. 2018
+
+49. Improvement of the Evaluation Method for Ecosystem Service Value Based on Per Unit Area
+   Authors: , , , , 
+   Date: 2015
+
+50. The value of ecosystem services in China
+   Authors: , , , , 
+   Date: 2015
+
+51. Land use change and evolution of ecosystem service value in Maduo County of source region of the Yellow River
+   Authors: , , , , , 
+   Date: 2020
+
+52. Risk management for optimal land use planning integrating ecosystem services values: A case study in Changsha, Middle China
+   Authors: , , , , , , , , 
+   Date: 2017
+
+53. Effect of land-use change and optimization on the ecosystem service values of Jiangsu province
+   Authors: , , , 
+   Date: 2020. 106507
+
+54. Landscape's capacities to supply ecosystem services in Bangladesh: A mapping assessment for Lawachara National Park
+   Authors: , , 
+   Date: 2015
+
+55. Biodiversity and ecosystem services: A multilayered relationship
+   Authors: , , 
+   Date: 2012
+
+56. High plant diversity is needed to maintain ecosystem services
+   Authors: , , , , , , , , , 
+   Date: 2011
+
+57. Dynamics of global forest area: Results from the FAO Global Forest Resources Assessment
+   Authors: , , , , , 
+   Date: 2015. 2015
+
+58. Aspirations and realities of polycentric development: Insights from multi-source data into the emerging urban form of Shanghai
+   Authors: , , , 
+   Date: 2019
+

@@ -1,0 +1,154 @@
+================================================================================
+TITLE: Prediction of Land Cover Model for Central Ambon City in 2041 Using the Cellular Automata Markov Chains Method
+================================================================================
+
+AUTHORS:
+- Heinrich Rakuasa
+- Daniel Sihasale
+- Glendy Somae
+- Philia Latue
+
+ABSTRACT:
+The Ambon city center area based on the 2021-2041 RDTR is a center of economic, educational and cultural activities, this makes economic and population growth focused in this region. This also triggers the arrival of residents from other areas to Ambon City and will have an impact on increasing the provision of land for settlements. This condition is expected to trigger land conversion in this area. This study aims to analyze land cover changes in Ambon City in 2001, 2011, 2021 and predict land cover in 2041. This study uses Cellular Automata Markov Chains modeling to predict land cover in the central area of Ambon City in 2041. The results show that the type of built-up land cover and open land continued to increase in area, while agricultural and non-agricultural areas continued to experience a decrease in area and water bodies did not experience a decrease in area. The results of this study are expected to be used as a reference in managing the development of sustainable residential areas and as an effort to arrange land use in the Ambon City center area in the future based on ecological aspects.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## INTRODUCTION ##
+Land cover changes are landscape phenomena that play a very important role in environmental changes at the local, national, and global levels 
+Each region has a variety of different types of land cover that vary 
+Changes in land cover have a significant effect on regional development planning and also on ecosystem functions at all spatial scales, from global to local 
+The central area of Ambon City based on the Spatial Detail Plan (RDTR) 2021-2041 is a center of economic, educational and cultural activities, this makes economic growth and population focused in this region. It also triggers the arrival of residents from other regions to Ambon City to settle and have economic activity in Ambon City and will have an impact on increasing the provision of land for settlements. This condition is expected to trigger the transfer of land functions in this area 
+Cellular Automata Markov Chains method used to make a model of prediction of land cover in the central area of Ambon City in 2041 which will be compared to the RDTR of the central area of Ambon City in 2041 and the results of this modeling are expected to provide solutions in the structuring of land use in Ambon city in the future that are sustainable based on ecological aspects and can support land use planning and proper land use allocation in addition to conducting conservative activities as a preventive effort in ecologically based land use. Therefore, it is necessary to handle and manage land wisely and sustainably. The study aims to spatially determine land cover changes in the central area of Ambon City in 2012, 2017, 2021 and predict land cover by 2041.
+
+## RESEARCH MATERIALS AND METHODS ##
+This research was conducted in the central area of Ambon City, Maluku Province, Indonesia which has a total area based on the spatial detail plan (RDTR) 2021-2041 which is an area of 2,168.89 ha.
+(Figure 
+
+## Figure 1. Research Location ##
+The Markov Chain model produces a Transition Probability Matrix which is a transition matrix of changes from the previous year to the projected year 
+After that, the model accuracy test using K -Standard (Kappa Coefficient) calculations until the value reaches >70% or passes the accuracy test and can be predicted for 2041. Then the results of the simulation in 2041 compared to using RDTR data of central area of Ambon city in 2021-2041 are seen how many matches from the simulation data and RDTR data expected by the Ambon city government. More details of this research workflow described in Figure 
+
+## RESULTS AND DISCUSSION ##
+
+
+## Land Cover Development in downtown ##
+Ambon City area in 2001, 2011 and 2021 Built-up land and open land in the central area of Ambon City in the 2001-2021 period continued to experience a significant increase in area, in contrast to types of non-agricultural and agricultural land cover which experienced a reduction in area. This is influenced by the increase in the number of residents in Ambon City in line with the increase in human activities in various sectors, especially the economic sector, so that the need for land resources will also continue to increase. The high population increase in the central area of Ambon city can increase the need for land that is realized in the form of physical development, economic facilities or social facilities. Spatially the area of land cover changes in the central area of Ambon city in 2001, 2011 and 2021 can be seen in Figure 
+
+## Land Cover Simulation Model 2021 ##
+Modeling the prediction of land cover change in Ambon City in this study was carried out twice, the first modeling was carried out to see the accuracy of the driving factors given to the 2021 land cover model which aims to see the selection of driving factors. The first modeling will produce (Kappa value), where if the kappa value is ≥70% then the modeling can be done for the second modeling. For the second modeling is done to predict land cover in 2041 using the same driving factors as the first modeling. The Transition Probability Matrix (TPM) in table 4 is the possibility of changing one land cover class to another. 
+
+## Rows in the probability matrix in Table ##
+The results of the 2021 land cover model are then tested for accuracy. The model accuracy test is very important to do to find out whether the first generated model can be applied to produce the second predictive model. Accuracy tests were carried out using existing land cover data for 2021 as reference data 
+
+## Land Cover Simulation Model 2041 ##
+The complete transition probability matrix to 2041 can be seen in Table 
+Based on the results of land cover modeling of the central area of Ambon City in 2041 using the Cellular Automata Markov Chains method can be seen in Figure 
+Predictions of land cover changes in the central area of Ambon City in 2041 were made to compare with RDTR land cover of the central Ambon city area in 2021-2041 (Figure 
+Increasing the area of residential land in the Central Region of Ambon City from year to year will cause a decrease in the carrying capacity of the environment 
+
+## CONCLUSION ##
+It can be concluded that spatially the land cover in the Central Area of Ambon City has undergone significant changes. From 2001, 2011 and 2021, built-up land has continued to increase and increase in area, as well as open land which has increased in area. The direction of development of built-up land tends to follow the topography and road network. In contrast to the cover of agricultural and non-agricultural land, it continues to change into built-up land due to the increasing need for land every year. The prediction results in 2041 show that built-up land will continue to increase in area along with increasing population and demand for land, therefore the results of this study are very useful and can be used as material and input in making policies related to spatial planning and use in the central area of Ambon City in the future.
+
+## ACKNOWLEDGMENT ##
+The author is grateful to the Geography Education Study Program which has facilitated researchers in completing research.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Remote Sensing-Based Urban Sprawl Modeling Using Multilayer Perceptron Neural Network Markov Chain in Baghdad, Iraq
+   Authors: , , , , , , , 
+   Date: 2021
+
+2. SNI 7645-2010 tentang Klasifikasi Penutup Lahan
+   Authors: , 
+   Date: 2010
+
+3. Modeling the Impact of Urbanization on Land-Use Change in Bahir Dar City
+   Authors: , , , , , 
+   Date: 2020
+
+4. 
+   Authors: 
+
+5. Application of Cellular automata and Markov-chain model in geospatial environmental modeling-A review
+   Authors: , , , , , , , , , , 
+   Date: 2017
+
+6. The impact of urban growth patterns on urban vitality in newly built-up areas based on an association rules analysis using geographical 'big data
+   Authors: , , , , , 
+   Date: 2018. July
+
+7. Analisis Spasial Kesesuaian dan Evaluasi Lahan Permukiman di Kota Ambon
+   Authors: 
+   Date: 2022
+
+8. Land use and land cover change and its impact on river morphology in Johor River Basin, Malaysia
+   Authors: , 
+   Date: 2022
+
+9. Land use change and ecosystem services in mountainous watersheds: Predicting the consequences of environmental policies with cellular automata and hydrological modeling
+   Authors: , , , , , , 
+   Date: 2019
+
+10. Monitoring and predicting land use and land cover changes using remote sensing and GIS techniques-A case study of a hilly area
+   Authors: , , 
+   Date: 2018
+
+11. Land-use Simulation and Decision-Support system (LandSDS): Seamlessly integrating system dynamics, agent-based model, and cellular automata
+   Authors: , , 
+   Date: 2020. 2019.108924
+
+12. Prediction-Adaptation-Resilience (PAR) approach-A new pathway towards future resilience and sustainable development of urban landscape
+   Authors: 
+   Date: 2021
+
+13. Global land characterisation using land cover fractions at 100 m resolution. Remote Sensing of Environment
+   Authors: , , , , , 
+   Date: 2021
+
+14. Simulating urban land use and cover dynamics using cellular automata and Markov chain approach in Addis Ababa and the surrounding. Urban Climate
+   Authors: , 
+   Date: 2020
+
+15. Dinamika Spasial Wilayah Rawan Tsunami di Kecamatan Nusaniwe
+   Authors: , 
+   Date: 2022
+
+16. Analisis dan Prediksi Perubahan Tutupan Lahan Menggunakan Model Celular Automata-Markov Chain di DAS Wae Ruhu Kota Ambon
+   Authors: , , 
+   Date: 2022
+
+17. Prediksi perubahan tutupan lahan di DAS Wae Batu Merah, Kota Ambon menggunakan Cellular Automata Markov Chain
+   Authors: , , 
+   Date: 2022
+
+18. Spatial Dynamics Model of Earthquake Prone Area in Ambon City
+   Authors: , , , , , , 
+   Date: 2022
+
+19. Modelling the spatial impact of regional planning and climate change prevention strategies on land consumption in the Rhine-Ruhr Metropolitan Area 2017-2030
+   Authors: , , , , , , 
+   Date: 2022
+
+20. Modeling of Cellular Automata Markov Chain for predicting the carrying capacity of Ambon City
+   Authors: , 
+   Date: 2022
+
+21. Computers , Environment and Urban Systems Analysis of land use / land cover spatio-temporal metrics and population dynamics for urban growth characterization
+   Authors: , 
+   Date: 2019. August 2018. 2018
+
+22. Prediksi Perubahan Tutupan Lahan di Kecamatan Sirimau
+   Authors: , , , 
+   Date: 2022
+
+23. An urban hierarchy-based approach integrating ecosystem services into multiscale sustainable land use planning: The case of China. Resources, Conservation and Recycling
+   Authors: , , , 
+   Date: 2022
+
+24. Modeling fragmentation probability of land-use and land-cover using the bagging, random
+   Authors: , , , , , 
+   Date: 2021
+
