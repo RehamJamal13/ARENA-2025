@@ -1,0 +1,21 @@
+sentence_id,ground_truth_entities,model_entities,correct_predictions,missed_entities,false_predictions
+0,"['droughts', 'desertification']","['droughts', 'desertification']","[""GT:'droughts' Model:'droughts'"", ""GT:'desertification' Model:'desertification'""]",[],[]
+1,[],[],[],[],[]
+2,[],[],[],[],[]
+3,['production'],"['cotton production', 'Agriculture']",[],['production'],"['cotton production', 'Agriculture']"
+4,[],[],[],[],[]
+5,[],[],[],[],[]
+6,[],[],[],[],[]
+7,"['grazing', 'fire']","['grazing', 'fire']","[""GT:'grazing' Model:'grazing'"", ""GT:'fire' Model:'fire'""]",[],[]
+8,"['irrigation', 'low investment trap']","['agriculture', 'irrigated']",[],"['irrigation', 'low investment trap']","['agriculture', 'irrigated']"
+9,['weeding practice'],['weeding'],[],['weeding practice'],['weeding']
+10,['grazing '],[],[],['grazing '],[]
+11,[],[],[],[],[]
+12,"['cultivation', 'agricultural cycle']","['cultivation', 'agricultural cycle']","[""GT:'cultivation' Model:'cultivation'"", ""GT:'agricultural cycle' Model:'agricultural cycle'""]",[],[]
+13,[],[],[],[],[]
+14,"['out-migration', 'fallow cycles']",['out-migration'],"[""GT:'out-migration' Model:'out-migration'""]",['fallow cycles'],[]
+15,['Irrigation'],['Irrigation'],"[""GT:'Irrigation' Model:'Irrigation'""]",[],[]
+16,['Agroforestry'],"['tree growth', 'agroforestry']","[""GT:'Agroforestry' Model:'agroforestry'""]",[],['tree growth']
+17,"['Grazing', 'harvest']","['grazing', 'crop harvest']","[""GT:'Grazing' Model:'grazing'""]",['harvest'],['crop harvest']
+18,['bushfallow'],[],[],['bushfallow'],[]
+19,"['cultivation', 'Regular cultivation ']",['cultivation'],"[""GT:'cultivation' Model:'cultivation'""]",['Regular cultivation '],[]

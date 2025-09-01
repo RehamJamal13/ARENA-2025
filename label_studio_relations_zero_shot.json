@@ -1,0 +1,94 @@
+[
+  {
+    "data": {
+      "text": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%)."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "id": "entity_0",
+            "type": "labels",
+            "value": {
+              "start": 17,
+              "end": 23,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 30,
+              "end": 38,
+              "text": "declined",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_2",
+            "type": "labels",
+            "value": {
+              "start": 52,
+              "end": 58,
+              "text": "15.25%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_3",
+            "type": "labels",
+            "value": {
+              "start": 72,
+              "end": 83,
+              "text": "agriculture",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_4",
+            "type": "labels",
+            "value": {
+              "start": 85,
+              "end": 90,
+              "text": "1.01%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "relation_5",
+            "type": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_1",
+              "type": "undergoes"
+            },
+            "to_name": "label",
+            "from_name": "relation"
+          }
+        ]
+      }
+    ]
+  }
+]

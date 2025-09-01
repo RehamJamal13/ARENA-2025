@@ -1,0 +1,701 @@
+article_id,original_sentence,prompt_text,llm_raw_output,event_found,from_lulc,to_lulc,change_type,magnitude,error
+Article_1,Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.,"You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.""
+
+","from_lulc: ""Thimphu city"" change_type: changed",False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,"The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.","You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.""
+
+","from_lulc: ""2002""; ""to_null:"" "", ""2018"" - ""65.5%"", ""built-up area:12,77%, bare ground:0""",False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,"On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).","You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).""
+
+",from_lulc: forest cover declined drastically (15.25%) followed by agriculture (1.01%),False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.,"You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.""
+
+","population_growth_triggered_by_rural_urban_migration, hasty socio-economic development, post_democracy",False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,"Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.","You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.""
+
+","from_lulc: ""built up area"" - ""to_rural_area"": 73.21% forest",False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,"Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.","You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.""
+
+","from_lulc: ""terraced agricultural fields""",False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,"Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.","You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.""
+
+",expansion_of_Thimphu_city_in_2002,False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,"The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.","You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.""
+
+","from_lulc: ""city"" - ""expanded""",False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,"These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.","You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.""
+
+","Bhutan, transition_to_democracy, 2008",False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,"The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.","You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.""
+
+","land_use_change_type ""increased""",False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,"Although small, agriculture land shows a significant probability to transition to built-up area which has been the trend in many cities The findings indicate that rapid development of urban built will lead to sharp declines in forest and agriculture and increase in urban population.","You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""Although small, agriculture land shows a significant probability to transition to built-up area which has been the trend in many cities The findings indicate that rapid development of urban built will lead to sharp declines in forest and agriculture and increase in urban population.""
+
+","from_lulc: ""agriculture land""; ""to_built-up area""",False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,Results clearly confirm significant changes in LULC from the start of expansion to current area in 2002 to 2018.,"You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""Results clearly confirm significant changes in LULC from the start of expansion to current area in 2002 to 2018.""
+
+","from_lulc: ""expanded"" , ""to_census:""",False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,Significant increase in built-up areas were associated with parallel loss of important land cover types such as forest and agriculture.,"You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""Significant increase in built-up areas were associated with parallel loss of important land cover types such as forest and agriculture.""
+
+","from_lulc: land cover before the change, ""forest"", ""agriculture""",False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,Significant changes in Thimphu's landscapes are correlated with the government's decision to expand the city northwards and southwards.,"You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""Significant changes in Thimphu's landscapes are correlated with the government's decision to expand the city northwards and southwards.""
+
+","change_type_of_land_cover_in_Thimphu: ""expanded""",False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,"The results of prediction for 2050 also did not bear well for Thimphu city, with forest cover diminishing to a mere 4.28km 2 (16.32%) which are also highly fragmented.","You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""The results of prediction for 2050 also did not bear well for Thimphu city, with forest cover diminishing to a mere 4.28km 2 (16.32%) which are also highly fragmented.""
+
+",from_lulc: forest cover diminishing to a mere 4.28km 2 (16.32%) forest,False,,,,,No parsable JSON or recognized no-event pattern
+Article_1,"Loss of forest cover will degrade important ecological services and increase vulnerability of the city to landslides, gulley erosion, drying of water sources, worsened air pollution, and loss of important biodiversity.","You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""Loss of forest cover will degrade important ecological services and increase vulnerability of the city to landslides, gulley erosion, drying of water sources, worsened air pollution, and loss of important biodiversity.""
+
+",Loss of forest cover,False,,,,,No parsable JSON or recognized no-event pattern
+Article_2,"However, we do not know how the land transition in Vietnam has been proceeding recently.","You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""However, we do not know how the land transition in Vietnam has been proceeding recently.""
+
+","Vietnam, land_transition, ""recently""",False,,,,,No parsable JSON or recognized no-event pattern
+Article_2,Research results show that the land transition in Vietnam has been similar to the world trend.,"You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""Research results show that the land transition in Vietnam has been similar to the world trend.""
+
+",Vietnam,False,,,,,No parsable JSON or recognized no-event pattern
+Article_2,"The highest land conversion rate occurs in the North Central and Central Coast regions, but conversion of agricultural land for urbanization is mainly in the Red River Delta and Southeast.","You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""The highest land conversion rate occurs in the North Central and Central Coast regions, but conversion of agricultural land for urbanization is mainly in the Red River Delta and Southeast.""
+
+","land_converted_rate_highest, ""North Central and Central Coast""",False,,,,,No parsable JSON or recognized no-event pattern
+Article_2,Land use is also a manifestation of various human activities to exploit the landscape.,"You are an expert in environmental land change detection.
+
+Your task is to extract a single land use or land cover (LULC) change event described in the sentence below. 
+A change may involve:
+- a land cover type being lost, gained, or converted,
+- a land use process such as deforestation, reforestation, urbanization, mining, etc.,
+- optional magnitude or location.
+
+Return the information as a **valid JSON object** and nothing else.
+
+📝 Required JSON keys (with values in double quotes):
+- ""from_lulc"": land cover before the change
+- ""to_lulc"": land cover after the change (or """" if not specified)
+- ""process"": the process name like ""deforestation"" or ""urbanization"" (or """")
+- ""change_type"": one of ""converted"", ""increased"", or ""decreased""
+- ""magnitude"": numeric or descriptive change amount (or """")
+- ""event_found"": true or false
+
+📦 Example output:
+{
+  
+  ""from_lulc"": """",
+  ""to_lulc"": ""city"",
+  ""change_type"": ""expanded"",
+  ""process"": ""deforestation"",
+  ""magnitude"": """",
+  ""event_found"": true
+
+
+}
+
+📚 Sentence:
+""Land use is also a manifestation of various human activities to exploit the landscape.""
+
+",Land use,False,,,,,No parsable JSON or recognized no-event pattern

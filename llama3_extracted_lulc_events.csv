@@ -1,0 +1,106 @@
+article_id,original_sentence,llm_raw_output,event_found,from_lulc,to_lulc,change_indicator,lulc_process,magnitude_percent,magnitude_area,date_range,start_date,end_date,num_entities,processing_timestamp,error
+Article_1,Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.,"FROM: forest
+TO: 
+CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020",True,forest,"CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020",declined,deforestation,15%,,2010 to 2020,2010,2020,6,2025-05-23T13:51:08.961145,
+Article_1,"The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.","FROM: built-up area
+TO: built-up area
+CHANGE: increased
+PROCESS: urbanization
+MAGNITUDE: 12.77%
+DATE_RANGE: 2002 to 2018
+START_DATE: 2002
+END_DATE: 2018",True,built-up area,built-up area,increased,urbanization,12.77%,,2002 to 2018,2002,2018,7,2025-05-23T13:51:19.752318,
+Article_1,"On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).","FROM: forest
+TO: 
+CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020",True,forest,"CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020",declined,deforestation,15%,,2010 to 2020,2010,2020,5,2025-05-23T13:51:35.757807,
+Article_1,Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.,"FROM: agricultural land
+TO: urban areas
+CHANGE: converted
+PROCESS: urbanization
+MAGNITUDE: 
+DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:",True,agricultural land,urban areas,converted,urbanization,,"DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:",2015,2015,,4,2025-05-23T13:51:51.738695,
+Article_1,"Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.","FROM: built-up area
+TO: built-up area
+CHANGE: increased
+PROCESS: urbanization
+MAGNITUDE: 12.77%
+DATE_RANGE: 2002 to 2018
+START_DATE: 2002
+END_DATE: 2018",True,built-up area,built-up area,increased,urbanization,12.77%,,2002 to 2018,2002,2018,6,2025-05-23T13:52:07.630784,
+Article_1,"Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.","FROM: agricultural land
+TO: urban areas
+CHANGE: converted
+PROCESS: urbanization
+MAGNITUDE: 
+DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:",True,agricultural land,urban areas,converted,urbanization,,"DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:",2015,2015,,1,2025-05-23T13:52:23.452740,
+Article_1,"Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.","FROM: agricultural land
+TO: urban areas
+CHANGE: converted
+PROCESS: urbanization
+MAGNITUDE: 
+DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:",True,agricultural land,urban areas,converted,urbanization,,"DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:",2015,2015,,8,2025-05-23T13:52:39.229594,
+Article_1,"The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.","FROM: forest
+TO: 
+CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020",True,forest,"CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020",declined,deforestation,15%,,2010 to 2020,2010,2020,5,2025-05-23T13:52:42.339042,
+Article_1,"These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.","FROM: agricultural land
+TO: urban areas
+CHANGE: converted
+PROCESS: urbanization
+MAGNITUDE: 
+DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:",True,agricultural land,urban areas,converted,urbanization,,"DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:",2015,2015,,8,2025-05-23T13:52:53.104386,
+Article_1,"The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.","FROM: agricultural land
+TO: urban areas
+CHANGE: converted
+PROCESS: urbanization
+MAGNITUDE: 
+DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:",True,agricultural land,urban areas,converted,urbanization,,"DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:",2015,2015,,3,2025-05-23T13:52:56.140326,

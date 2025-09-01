@@ -1,0 +1,847 @@
+{
+  "overall": {
+    "entities": {
+      "precision": 0.5238095238095238,
+      "recall": 0.5116279069767442,
+      "f1": 0.5176470588235295,
+      "tp": 22,
+      "fp": 20,
+      "fn": 21
+    },
+    "relations": {
+      "precision": 0.3793103448275862,
+      "recall": 0.3142857142857143,
+      "f1": 0.34375,
+      "tp": 11,
+      "fp": 18,
+      "fn": 24
+    }
+  },
+  "relation_metrics": {
+    "CHANGE_TO": {
+      "precision": 0.5,
+      "recall": 0.4166666666666667,
+      "f1": 0.45454545454545453,
+      "tp": 5,
+      "fp": 5,
+      "fn": 7,
+      "support": 12
+    },
+    "DECREASE": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 10,
+      "support": 10
+    },
+    "DECREASES_BY": {
+      "precision": 0.25,
+      "recall": 1.0,
+      "f1": 0.4,
+      "tp": 3,
+      "fp": 9,
+      "fn": 0,
+      "support": 3
+    },
+    "INCREASES_BY": {
+      "precision": 0.42857142857142855,
+      "recall": 0.6,
+      "f1": 0.5,
+      "tp": 3,
+      "fp": 4,
+      "fn": 2,
+      "support": 5
+    },
+    "INCREASED_BY": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "support": 2
+    },
+    "INCREASE": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "support": 1
+    },
+    "DECREASES_by": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "support": 2
+    }
+  },
+  "per_sentence": [
+    {
+      "sentence_id": NaN,
+      "entity_precision": 0.0,
+      "entity_recall": 0.0,
+      "entity_f1": 0.0,
+      "entity_tp": 0,
+      "entity_fp": 2,
+      "entity_fn": 0,
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 1,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S003442571730041X-main_50",
+      "entity_precision": 0.0,
+      "entity_recall": 0.0,
+      "entity_f1": 0.0,
+      "entity_tp": 0,
+      "entity_fp": 2,
+      "entity_fn": 2,
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 1,
+      "relation_fn": 1
+    },
+    {
+      "sentence_id": "s10113-015-0891-1_304",
+      "entity_precision": 1.0,
+      "entity_recall": 1.0,
+      "entity_f1": 1.0,
+      "entity_tp": 2,
+      "entity_fp": 0,
+      "entity_fn": 0,
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 1,
+      "relation_fn": 1
+    },
+    {
+      "sentence_id": "1-s2.0-S2214581823000575-main_146",
+      "entity_precision": 1.0,
+      "entity_recall": 0.8,
+      "entity_f1": 0.888888888888889,
+      "entity_tp": 4,
+      "entity_fp": 0,
+      "entity_fn": 1,
+      "relation_precision": 1.0,
+      "relation_recall": 0.75,
+      "relation_f1": 0.8571428571428571,
+      "relation_tp": 3,
+      "relation_fp": 0,
+      "relation_fn": 1
+    },
+    {
+      "sentence_id": "s10980-017-0553-4_46",
+      "entity_precision": 0.0,
+      "entity_recall": 0.0,
+      "entity_f1": 0.0,
+      "entity_tp": 0,
+      "entity_fp": 2,
+      "entity_fn": 3,
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 1,
+      "relation_fn": 2
+    },
+    {
+      "sentence_id": "1-s2.0-S016788090800131X-main.pdf.tei_30",
+      "entity_precision": 0.0,
+      "entity_recall": 0.0,
+      "entity_f1": 0.0,
+      "entity_tp": 0,
+      "entity_fp": 2,
+      "entity_fn": 2,
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 1,
+      "relation_fn": 1
+    },
+    {
+      "sentence_id": "1-s2.0-S0264837715302131-main.pdf.tei_76",
+      "entity_precision": 1.0,
+      "entity_recall": 1.0,
+      "entity_f1": 1.0,
+      "entity_tp": 9,
+      "entity_fp": 0,
+      "entity_fn": 0,
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 5,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S0140196310000893-main.pdf.tei_39",
+      "entity_precision": 0.0,
+      "entity_recall": 0.0,
+      "entity_f1": 0.0,
+      "entity_tp": 0,
+      "entity_fp": 0,
+      "entity_fn": 3,
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 0,
+      "relation_fn": 2
+    },
+    {
+      "sentence_id": "Kouassi et al. - 2021 - Assessing Land Use and Land Cover Change and Farme_121",
+      "entity_precision": 0.0,
+      "entity_recall": 0.0,
+      "entity_f1": 0.0,
+      "entity_tp": 0,
+      "entity_fp": 2,
+      "entity_fn": 2,
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 1,
+      "relation_fn": 1
+    },
+    {
+      "sentence_id": "remotesensing-07-04048-v2_73",
+      "entity_precision": 0.6666666666666666,
+      "entity_recall": 0.5,
+      "entity_f1": 0.5714285714285715,
+      "entity_tp": 2,
+      "entity_fp": 1,
+      "entity_fn": 2,
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 2,
+      "relation_fn": 2
+    },
+    {
+      "sentence_id": "1-s2.0-S0264837715302131-main.pdf.tei_104",
+      "entity_precision": 0.0,
+      "entity_recall": 0.0,
+      "entity_f1": 0.0,
+      "entity_tp": 0,
+      "entity_fp": 3,
+      "entity_fn": 5,
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 2,
+      "relation_fn": 6
+    },
+    {
+      "sentence_id": "remotesensing-12-03817-v2_162",
+      "entity_precision": 1.0,
+      "entity_recall": 1.0,
+      "entity_f1": 1.0,
+      "entity_tp": 3,
+      "entity_fp": 0,
+      "entity_fn": 0,
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 2,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S0140196313000608-main_165",
+      "entity_precision": 0.3333333333333333,
+      "entity_recall": 0.5,
+      "entity_f1": 0.4,
+      "entity_tp": 1,
+      "entity_fp": 2,
+      "entity_fn": 1,
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 2,
+      "relation_fn": 1
+    },
+    {
+      "sentence_id": "Asenso Barnieh et al. - 2020 - Mapping Land Use Land Cover Transitions at Differe_302",
+      "entity_precision": 0.3333333333333333,
+      "entity_recall": 0.3333333333333333,
+      "entity_f1": 0.3333333333333333,
+      "entity_tp": 1,
+      "entity_fp": 2,
+      "entity_fn": 2,
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 2,
+      "relation_fn": 2
+    },
+    {
+      "sentence_id": "1-s2.0-S0304387816300670-main.pdf.tei_31",
+      "entity_precision": 0.0,
+      "entity_recall": 0.0,
+      "entity_f1": 0.0,
+      "entity_tp": 0,
+      "entity_fp": 2,
+      "entity_fn": 2,
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 1,
+      "relation_fn": 1
+    },
+    {
+      "sentence_id": "1-s2.0-S016788090800131X-main.pdf.tei_31",
+      "entity_precision": 0.7142857142857143,
+      "entity_recall": 0.7142857142857143,
+      "entity_f1": 0.7142857142857143,
+      "entity_tp": 5,
+      "entity_fp": 2,
+      "entity_fn": 2,
+      "relation_precision": 0.25,
+      "relation_recall": 0.25,
+      "relation_f1": 0.25,
+      "relation_tp": 1,
+      "relation_fp": 3,
+      "relation_fn": 3
+    }
+  ],
+  "error_analysis": {
+    "missing_sentences": [
+      "1-s2.0-S0140196310000893-main.pdf.tei_39"
+    ],
+    "extra_sentences": [
+      NaN
+    ],
+    "entity_errors": {
+      "false_positives": [
+        "crop lands",
+        "Sahel",
+        "over 80%",
+        "Forest land",
+        "nearly by half",
+        "4%",
+        "0.8% per year",
+        "degraded land",
+        "0.45 percent",
+        "other cash crops",
+        "urban share",
+        "Sahelian savanna",
+        "0.2% per year",
+        "nearly 50%",
+        "to about 67% of the land",
+        "largely eroded agricultural agroforestry parkland",
+        "natural vegetation",
+        "food crop fallow areas",
+        "original forest cover",
+        "80% of the land"
+      ],
+      "false_negatives": [
+        "0,80%",
+        "26 and 31%",
+        "cash crops",
+        "from 47% to 64%",
+        "food crop fallow",
+        "0,20%",
+        "from 74% to 70%",
+        "fragmented agriculture forest mosaic",
+        "crop",
+        "0,45%",
+        "50%",
+        "cropped fields",
+        "agricultural agroforestry",
+        "farmland and degraded savanna",
+        "80% of the land to 67% of the land",
+        "from 17% to 21%",
+        "urban area",
+        "half",
+        "urban",
+        "from 40% to 51.3%",
+        "80%"
+      ]
+    },
+    "relation_errors": {
+      "false_positives": [
+        [
+          "cultivated area",
+          "DECREASES_BY",
+          "to about 67% of the land"
+        ],
+        [
+          "forest land",
+          "DECREASES_BY",
+          "nearly 50%"
+        ],
+        [
+          "water bodies",
+          "DECREASES_BY",
+          "0.8% per year"
+        ],
+        [
+          "Sahel",
+          "CHANGE_TO",
+          "degraded land"
+        ],
+        [
+          "water bodies",
+          "DECREASES_BY",
+          "0.2% per year"
+        ],
+        [
+          "crop lands",
+          "INCREASES_BY",
+          "9%"
+        ],
+        [
+          "cropland",
+          "INCREASES_BY",
+          "4%"
+        ],
+        [
+          "gallery forests",
+          "DECREASES_BY",
+          "nearly 50%"
+        ],
+        [
+          "Forest land",
+          "DECREASES_BY",
+          "nearly by half"
+        ],
+        [
+          "natural vegetation",
+          "CHANGE_TO",
+          "farmland"
+        ],
+        [
+          "forest",
+          "DECREASES_BY",
+          "40%"
+        ],
+        [
+          "natural vegetation",
+          "CHANGE_TO",
+          "degraded savanna"
+        ],
+        [
+          "Sahelian savanna",
+          "CHANGE_TO",
+          "largely eroded agricultural agroforestry parkland"
+        ],
+        [
+          "other cash crops",
+          "CHANGE_TO",
+          "food crop fallow areas"
+        ],
+        [
+          "original forest cover",
+          "DECREASES_BY",
+          "over 80%"
+        ],
+        [
+          "savanna",
+          "DECREASES_BY",
+          "4%"
+        ],
+        [
+          "urban share",
+          "INCREASES_BY",
+          "0.45 percent"
+        ],
+        [
+          "cultivated area",
+          "INCREASES_BY",
+          "80% of the land"
+        ]
+      ],
+      "false_negatives": [
+        [
+          "forest",
+          "CHANGE_TO",
+          "farmland and degraded savanna"
+        ],
+        [
+          "urban",
+          "INCREASES_BY",
+          "0,45%"
+        ],
+        [
+          "gallery forests",
+          "DECREASES_by",
+          "50%"
+        ],
+        [
+          "forest",
+          "DECREASE",
+          "26 and 31%"
+        ],
+        [
+          "savanna",
+          "CHANGE_TO",
+          "agricultural agroforestry"
+        ],
+        [
+          "savanna",
+          "DECREASE",
+          "from 74% to 70%"
+        ],
+        [
+          "forest",
+          "CHANGE_TO",
+          "fragmented agriculture forest mosaic"
+        ],
+        [
+          "woodland",
+          "CHANGE_TO",
+          "farmland and degraded savanna"
+        ],
+        [
+          "forest land",
+          "DECREASE",
+          "half"
+        ],
+        [
+          "water bodies",
+          "DECREASE",
+          "0,20%"
+        ],
+        [
+          "other vegetation",
+          "CHANGE_TO",
+          "urban area"
+        ],
+        [
+          "woodland",
+          "DECREASE",
+          "26 and 31%"
+        ],
+        [
+          "cultivated area",
+          "DECREASE",
+          "80% of the land to 67% of the land"
+        ],
+        [
+          "cropland",
+          "INCREASE",
+          "from 17% to 21%"
+        ],
+        [
+          "cropped fields",
+          "INCREASED_BY",
+          "from 40% to 51.3%"
+        ],
+        [
+          "forest",
+          "DECREASE",
+          "40%"
+        ],
+        [
+          "forest",
+          "DECREASE",
+          "80%"
+        ],
+        [
+          "tree savanna",
+          "CHANGE_TO",
+          "farmland and degraded savanna"
+        ],
+        [
+          "cropped fields",
+          "INCREASED_BY",
+          "from 47% to 64%"
+        ],
+        [
+          "forest land",
+          "DECREASES_by",
+          "50%"
+        ],
+        [
+          "water bodies",
+          "DECREASE",
+          "0,80%"
+        ],
+        [
+          "crop",
+          "INCREASES_BY",
+          "9%"
+        ],
+        [
+          "tree savanna",
+          "DECREASE",
+          "26 and 31%"
+        ],
+        [
+          "cash crops",
+          "CHANGE_TO",
+          "food crop fallow"
+        ]
+      ],
+      "by_type": {
+        "DECREASES_BY": {
+          "fp": [
+            [
+              "cultivated area",
+              "DECREASES_BY",
+              "to about 67% of the land"
+            ],
+            [
+              "forest land",
+              "DECREASES_BY",
+              "nearly 50%"
+            ],
+            [
+              "water bodies",
+              "DECREASES_BY",
+              "0.8% per year"
+            ],
+            [
+              "water bodies",
+              "DECREASES_BY",
+              "0.2% per year"
+            ],
+            [
+              "gallery forests",
+              "DECREASES_BY",
+              "nearly 50%"
+            ],
+            [
+              "Forest land",
+              "DECREASES_BY",
+              "nearly by half"
+            ],
+            [
+              "forest",
+              "DECREASES_BY",
+              "40%"
+            ],
+            [
+              "original forest cover",
+              "DECREASES_BY",
+              "over 80%"
+            ],
+            [
+              "savanna",
+              "DECREASES_BY",
+              "4%"
+            ]
+          ],
+          "fn": []
+        },
+        "CHANGE_TO": {
+          "fp": [
+            [
+              "Sahel",
+              "CHANGE_TO",
+              "degraded land"
+            ],
+            [
+              "natural vegetation",
+              "CHANGE_TO",
+              "farmland"
+            ],
+            [
+              "natural vegetation",
+              "CHANGE_TO",
+              "degraded savanna"
+            ],
+            [
+              "Sahelian savanna",
+              "CHANGE_TO",
+              "largely eroded agricultural agroforestry parkland"
+            ],
+            [
+              "other cash crops",
+              "CHANGE_TO",
+              "food crop fallow areas"
+            ]
+          ],
+          "fn": [
+            [
+              "forest",
+              "CHANGE_TO",
+              "farmland and degraded savanna"
+            ],
+            [
+              "savanna",
+              "CHANGE_TO",
+              "agricultural agroforestry"
+            ],
+            [
+              "forest",
+              "CHANGE_TO",
+              "fragmented agriculture forest mosaic"
+            ],
+            [
+              "woodland",
+              "CHANGE_TO",
+              "farmland and degraded savanna"
+            ],
+            [
+              "other vegetation",
+              "CHANGE_TO",
+              "urban area"
+            ],
+            [
+              "tree savanna",
+              "CHANGE_TO",
+              "farmland and degraded savanna"
+            ],
+            [
+              "cash crops",
+              "CHANGE_TO",
+              "food crop fallow"
+            ]
+          ]
+        },
+        "INCREASES_BY": {
+          "fp": [
+            [
+              "crop lands",
+              "INCREASES_BY",
+              "9%"
+            ],
+            [
+              "cropland",
+              "INCREASES_BY",
+              "4%"
+            ],
+            [
+              "urban share",
+              "INCREASES_BY",
+              "0.45 percent"
+            ],
+            [
+              "cultivated area",
+              "INCREASES_BY",
+              "80% of the land"
+            ]
+          ],
+          "fn": [
+            [
+              "urban",
+              "INCREASES_BY",
+              "0,45%"
+            ],
+            [
+              "crop",
+              "INCREASES_BY",
+              "9%"
+            ]
+          ]
+        },
+        "DECREASES_by": {
+          "fp": [],
+          "fn": [
+            [
+              "gallery forests",
+              "DECREASES_by",
+              "50%"
+            ],
+            [
+              "forest land",
+              "DECREASES_by",
+              "50%"
+            ]
+          ]
+        },
+        "DECREASE": {
+          "fp": [],
+          "fn": [
+            [
+              "forest",
+              "DECREASE",
+              "26 and 31%"
+            ],
+            [
+              "savanna",
+              "DECREASE",
+              "from 74% to 70%"
+            ],
+            [
+              "forest land",
+              "DECREASE",
+              "half"
+            ],
+            [
+              "water bodies",
+              "DECREASE",
+              "0,20%"
+            ],
+            [
+              "woodland",
+              "DECREASE",
+              "26 and 31%"
+            ],
+            [
+              "cultivated area",
+              "DECREASE",
+              "80% of the land to 67% of the land"
+            ],
+            [
+              "forest",
+              "DECREASE",
+              "40%"
+            ],
+            [
+              "forest",
+              "DECREASE",
+              "80%"
+            ],
+            [
+              "water bodies",
+              "DECREASE",
+              "0,80%"
+            ],
+            [
+              "tree savanna",
+              "DECREASE",
+              "26 and 31%"
+            ]
+          ]
+        },
+        "INCREASE": {
+          "fp": [],
+          "fn": [
+            [
+              "cropland",
+              "INCREASE",
+              "from 17% to 21%"
+            ]
+          ]
+        },
+        "INCREASED_BY": {
+          "fp": [],
+          "fn": [
+            [
+              "cropped fields",
+              "INCREASED_BY",
+              "from 40% to 51.3%"
+            ],
+            [
+              "cropped fields",
+              "INCREASED_BY",
+              "from 47% to 64%"
+            ]
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+article_id,original_sentence,llm_raw_output,event_found,from_lulc,to_lulc,change_indicator,lulc_process,magnitude_percent,magnitude_area,error
+Article_1,"The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.","FROM: built-up area
+TO: built-up area
+CHANGE: increased
+PROCESS: urbanization
+MAGNITUDE: 12.77%",True,built-up area,built-up area,increased,urbanization,12.77%,,

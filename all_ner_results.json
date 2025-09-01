@@ -1,0 +1,787 @@
+[
+  {
+    "article_id": "1",
+    "original_sentence": "Agricultural expansion occurred in the Miombo area.",
+    "entities": [
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start_char": 13,
+        "end_char": 22
+      },
+      {
+        "text": "Miombo area",
+        "label": "LOC",
+        "start_char": 39,
+        "end_char": 50
+      }
+    ]
+  },
+  {
+    "article_id": "2",
+    "original_sentence": "Agricultural expansion occurred in the Congo Basin Rainforest area.",
+    "entities": [
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start_char": 13,
+        "end_char": 22
+      },
+      {
+        "text": "Congo Basin Rainforest area",
+        "label": "LOC",
+        "start_char": 39,
+        "end_char": 66
+      }
+    ]
+  },
+  {
+    "article_id": "3",
+    "original_sentence": "Deforestation has affected the Savanna ecosystem substantially.",
+    "entities": [
+      {
+        "text": "Deforestation",
+        "label": "PROCESS",
+        "start_char": 0,
+        "end_char": 13
+      },
+      {
+        "text": "Savanna ecosystem",
+        "label": "LOC",
+        "start_char": 31,
+        "end_char": 48
+      }
+    ]
+  },
+  {
+    "article_id": "4",
+    "original_sentence": "Land cover analysis in the Sahel areas showed decreasing forest cover.",
+    "entities": [
+      {
+        "text": "Sahel areas",
+        "label": "LOC",
+        "start_char": 27,
+        "end_char": 38
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 57,
+        "end_char": 63
+      }
+    ]
+  },
+  {
+    "article_id": "5",
+    "original_sentence": "The Fynbos region has experienced significant land use changes.",
+    "entities": [
+      {
+        "text": "Fynbos region",
+        "label": "LOC",
+        "start_char": 4,
+        "end_char": 17
+      }
+    ]
+  },
+  {
+    "article_id": "6",
+    "original_sentence": "Land cover analysis in the Sahara Desert areas showed decreasing forest cover.",
+    "entities": [
+      {
+        "text": "Sahara Desert areas",
+        "label": "LOC",
+        "start_char": 27,
+        "end_char": 46
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 65,
+        "end_char": 71
+      }
+    ]
+  },
+  {
+    "article_id": "7",
+    "original_sentence": "Agricultural expansion occurred in the Kalahari Desert area.",
+    "entities": [
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start_char": 13,
+        "end_char": 22
+      },
+      {
+        "text": "Kalahari Desert area",
+        "label": "LOC",
+        "start_char": 39,
+        "end_char": 59
+      }
+    ]
+  },
+  {
+    "article_id": "8",
+    "original_sentence": "Remote sensing data showed changes in Namib Desert vegetation.",
+    "entities": [
+      {
+        "text": "Namib Desert vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 61
+      }
+    ]
+  },
+  {
+    "article_id": "9",
+    "original_sentence": "The African Mangroves region has experienced significant land use changes.",
+    "entities": [
+      {
+        "text": "African Mangroves region",
+        "label": "LOC",
+        "start_char": 4,
+        "end_char": 28
+      }
+    ]
+  },
+  {
+    "article_id": "10",
+    "original_sentence": "Remote sensing data showed changes in Amazon Rainforest vegetation.",
+    "entities": [
+      {
+        "text": "Amazon Rainforest vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 66
+      }
+    ]
+  },
+  {
+    "article_id": "11",
+    "original_sentence": "Remote sensing data showed changes in Cerrado vegetation.",
+    "entities": [
+      {
+        "text": "Cerrado vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 56
+      }
+    ]
+  },
+  {
+    "article_id": "12",
+    "original_sentence": "The Atlantic Forest region has experienced significant land use changes.",
+    "entities": [
+      {
+        "text": "Atlantic Forest region",
+        "label": "LOC",
+        "start_char": 4,
+        "end_char": 26
+      }
+    ]
+  },
+  {
+    "article_id": "13",
+    "original_sentence": "Remote sensing data showed changes in Pampas vegetation.",
+    "entities": [
+      {
+        "text": "Pampas vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 55
+      }
+    ]
+  },
+  {
+    "article_id": "14",
+    "original_sentence": "Remote sensing data showed changes in Caatinga vegetation.",
+    "entities": [
+      {
+        "text": "Caatinga vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 57
+      }
+    ]
+  },
+  {
+    "article_id": "15",
+    "original_sentence": "Remote sensing data showed changes in Pantanal vegetation.",
+    "entities": [
+      {
+        "text": "Pantanal vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 57
+      }
+    ]
+  },
+  {
+    "article_id": "16",
+    "original_sentence": "Land cover analysis in the Gran Chaco areas showed decreasing forest cover.",
+    "entities": [
+      {
+        "text": "Gran Chaco areas",
+        "label": "LOC",
+        "start_char": 27,
+        "end_char": 43
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 62,
+        "end_char": 68
+      }
+    ]
+  },
+  {
+    "article_id": "17",
+    "original_sentence": "Remote sensing data showed changes in Mediterranean Forest vegetation.",
+    "entities": [
+      {
+        "text": "Mediterranean Forest vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 69
+      }
+    ]
+  },
+  {
+    "article_id": "18",
+    "original_sentence": "The Maquis region has experienced significant land use changes.",
+    "entities": [
+      {
+        "text": "Maquis region",
+        "label": "LOC",
+        "start_char": 4,
+        "end_char": 17
+      }
+    ]
+  },
+  {
+    "article_id": "19",
+    "original_sentence": "Remote sensing data showed changes in Garrigue vegetation.",
+    "entities": [
+      {
+        "text": "Garrigue vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 57
+      }
+    ]
+  },
+  {
+    "article_id": "20",
+    "original_sentence": "Remote sensing data showed changes in Heathlands vegetation.",
+    "entities": [
+      {
+        "text": "Heathlands vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 59
+      }
+    ]
+  },
+  {
+    "article_id": "21",
+    "original_sentence": "The Moorlands region has experienced significant land use changes.",
+    "entities": [
+      {
+        "text": "Moorlands region",
+        "label": "LOC",
+        "start_char": 4,
+        "end_char": 20
+      }
+    ]
+  },
+  {
+    "article_id": "22",
+    "original_sentence": "Remote sensing data showed changes in Pontic Steppe vegetation.",
+    "entities": [
+      {
+        "text": "Pontic Steppe vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 62
+      }
+    ]
+  },
+  {
+    "article_id": "23",
+    "original_sentence": "Remote sensing data showed changes in Taiga (Europe) vegetation.",
+    "entities": [
+      {
+        "text": "Taiga (Europe) vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 63
+      }
+    ]
+  },
+  {
+    "article_id": "24",
+    "original_sentence": "Remote sensing data showed changes in Eurasian Steppe vegetation.",
+    "entities": [
+      {
+        "text": "Eurasian Steppe vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 64
+      }
+    ]
+  },
+  {
+    "article_id": "25",
+    "original_sentence": "Remote sensing data showed changes in Sundarbans Mangroves vegetation.",
+    "entities": [
+      {
+        "text": "Sundarbans Mangroves vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 69
+      }
+    ]
+  },
+  {
+    "article_id": "26",
+    "original_sentence": "Remote sensing data showed changes in Borneo Rainforest vegetation.",
+    "entities": [
+      {
+        "text": "Borneo Rainforest vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 66
+      }
+    ]
+  },
+  {
+    "article_id": "27",
+    "original_sentence": "Remote sensing data showed changes in Monsoon Dry Forest vegetation.",
+    "entities": [
+      {
+        "text": "Monsoon Dry Forest vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 67
+      }
+    ]
+  },
+  {
+    "article_id": "28",
+    "original_sentence": "Remote sensing data showed changes in Gobi Desert vegetation.",
+    "entities": [
+      {
+        "text": "Gobi Desert vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 60
+      }
+    ]
+  },
+  {
+    "article_id": "29",
+    "original_sentence": "Remote sensing data showed changes in Karakum Desert vegetation.",
+    "entities": [
+      {
+        "text": "Karakum Desert vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 63
+      }
+    ]
+  },
+  {
+    "article_id": "30",
+    "original_sentence": "Remote sensing data showed changes in Kyzylkum Desert vegetation.",
+    "entities": [
+      {
+        "text": "Kyzylkum Desert vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 64
+      }
+    ]
+  },
+  {
+    "article_id": "31",
+    "original_sentence": "Remote sensing data showed changes in Arabian Desert vegetation.",
+    "entities": [
+      {
+        "text": "Arabian Desert vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 63
+      }
+    ]
+  },
+  {
+    "article_id": "32",
+    "original_sentence": "Remote sensing data showed changes in Taiga (Siberia) vegetation.",
+    "entities": [
+      {
+        "text": "Taiga (Siberia) vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 64
+      }
+    ]
+  },
+  {
+    "article_id": "33",
+    "original_sentence": "Remote sensing data showed changes in Tallgrass Prairie vegetation.",
+    "entities": [
+      {
+        "text": "Tallgrass Prairie vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 66
+      }
+    ]
+  },
+  {
+    "article_id": "34",
+    "original_sentence": "Remote sensing data showed changes in Mixed-grass Prairie vegetation.",
+    "entities": [
+      {
+        "text": "Mixed-grass Prairie vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 68
+      }
+    ]
+  },
+  {
+    "article_id": "35",
+    "original_sentence": "Remote sensing data showed changes in Shortgrass Prairie vegetation.",
+    "entities": [
+      {
+        "text": "Shortgrass Prairie vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 67
+      }
+    ]
+  },
+  {
+    "article_id": "36",
+    "original_sentence": "Remote sensing data showed changes in Eastern Deciduous Forest vegetation.",
+    "entities": [
+      {
+        "text": "Eastern Deciduous Forest vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 73
+      }
+    ]
+  },
+  {
+    "article_id": "37",
+    "original_sentence": "Remote sensing data showed changes in Chaparral vegetation.",
+    "entities": [
+      {
+        "text": "Chaparral vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 58
+      }
+    ]
+  },
+  {
+    "article_id": "38",
+    "original_sentence": "Remote sensing data showed changes in Sonoran Desert vegetation.",
+    "entities": [
+      {
+        "text": "Sonoran Desert vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 63
+      }
+    ]
+  },
+  {
+    "article_id": "39",
+    "original_sentence": "Remote sensing data showed changes in Chihuahuan Desert vegetation.",
+    "entities": [
+      {
+        "text": "Chihuahuan Desert vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 66
+      }
+    ]
+  },
+  {
+    "article_id": "40",
+    "original_sentence": "Remote sensing data showed changes in Mojave Desert vegetation.",
+    "entities": [
+      {
+        "text": "Mojave Desert vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 62
+      }
+    ]
+  },
+  {
+    "article_id": "41",
+    "original_sentence": "Remote sensing data showed changes in Great Basin Desert vegetation.",
+    "entities": [
+      {
+        "text": "Great Basin Desert vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 67
+      }
+    ]
+  },
+  {
+    "article_id": "42",
+    "original_sentence": "Remote sensing data showed changes in Everglades vegetation.",
+    "entities": [
+      {
+        "text": "Everglades vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 59
+      }
+    ]
+  },
+  {
+    "article_id": "43",
+    "original_sentence": "Remote sensing data showed changes in Taiga (Canada) vegetation.",
+    "entities": [
+      {
+        "text": "Taiga (Canada) vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 63
+      }
+    ]
+  },
+  {
+    "article_id": "44",
+    "original_sentence": "Remote sensing data showed changes in Australian Tropical Savanna vegetation.",
+    "entities": [
+      {
+        "text": "Australian Tropical Savanna vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 76
+      }
+    ]
+  },
+  {
+    "article_id": "45",
+    "original_sentence": "Remote sensing data showed changes in Mallee vegetation.",
+    "entities": [
+      {
+        "text": "Mallee vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 55
+      }
+    ]
+  },
+  {
+    "article_id": "46",
+    "original_sentence": "Remote sensing data showed changes in Mulga vegetation.",
+    "entities": [
+      {
+        "text": "Mulga vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 54
+      }
+    ]
+  },
+  {
+    "article_id": "47",
+    "original_sentence": "Remote sensing data showed changes in Spinifex Desert vegetation.",
+    "entities": [
+      {
+        "text": "Spinifex Desert vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 64
+      }
+    ]
+  },
+  {
+    "article_id": "48",
+    "original_sentence": "Remote sensing data showed changes in New Guinea Rainforest vegetation.",
+    "entities": [
+      {
+        "text": "New Guinea Rainforest vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 70
+      }
+    ]
+  },
+  {
+    "article_id": "49",
+    "original_sentence": "Remote sensing data showed changes in New Zealand Temperate Forest vegetation.",
+    "entities": [
+      {
+        "text": "New Zealand Temperate Forest vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 77
+      }
+    ]
+  },
+  {
+    "article_id": "50",
+    "original_sentence": "Remote sensing data showed changes in Arctic Tundra vegetation.",
+    "entities": [
+      {
+        "text": "Arctic Tundra vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 62
+      }
+    ]
+  },
+  {
+    "article_id": "51",
+    "original_sentence": "Remote sensing data showed changes in Taiga vegetation.",
+    "entities": [
+      {
+        "text": "Taiga vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 54
+      }
+    ]
+  },
+  {
+    "article_id": "52",
+    "original_sentence": "Remote sensing data showed changes in Polar Desert vegetation.",
+    "entities": [
+      {
+        "text": "Polar Desert vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 61
+      }
+    ]
+  },
+  {
+    "article_id": "53",
+    "original_sentence": "Remote sensing data showed changes in Ice Cap vegetation.",
+    "entities": [
+      {
+        "text": "Ice Cap vegetation",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 56
+      }
+    ]
+  },
+  {
+    "article_id": "54",
+    "original_sentence": "I visited Paris and Berlin in the summer for forest conservation.",
+    "entities": [
+      {
+        "text": "Paris",
+        "label": "LOC",
+        "start_char": 10,
+        "end_char": 15
+      },
+      {
+        "text": "Berlin",
+        "label": "LOC",
+        "start_char": 20,
+        "end_char": 26
+      },
+      {
+        "text": "the summer",
+        "label": "DATE",
+        "start_char": 30,
+        "end_char": 40
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 45,
+        "end_char": 51
+      }
+    ]
+  },
+  {
+    "article_id": "55",
+    "original_sentence": "New York urban development has impacted agricultural areas.",
+    "entities": [
+      {
+        "text": "New York",
+        "label": "LOC",
+        "start_char": 0,
+        "end_char": 8
+      },
+      {
+        "text": "urban development",
+        "label": "PROCESS",
+        "start_char": 9,
+        "end_char": 26
+      }
+    ]
+  },
+  {
+    "article_id": "56",
+    "original_sentence": "Deforestation in the Amazon rainforest affects global climate.",
+    "entities": [
+      {
+        "text": "Deforestation",
+        "label": "PROCESS",
+        "start_char": 0,
+        "end_char": 13
+      },
+      {
+        "text": "Amazon rainforest",
+        "label": "LOC",
+        "start_char": 21,
+        "end_char": 38
+      }
+    ]
+  },
+  {
+    "article_id": "57",
+    "original_sentence": "Tokyo has excellent wetland restoration projects.",
+    "entities": [
+      {
+        "text": "Tokyo",
+        "label": "LOC",
+        "start_char": 0,
+        "end_char": 5
+      },
+      {
+        "text": "wetland",
+        "label": "LULC",
+        "start_char": 20,
+        "end_char": 27
+      }
+    ]
+  },
+  {
+    "article_id": "58",
+    "original_sentence": "Agricultural expansion in California requires careful planning.",
+    "entities": [
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start_char": 13,
+        "end_char": 22
+      },
+      {
+        "text": "California",
+        "label": "LOC",
+        "start_char": 26,
+        "end_char": 36
+      }
+    ]
+  },
+  {
+    "article_id": "59",
+    "original_sentence": "This sentence has no relevant entities to extract.",
+    "entities": []
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "config": "\n    <View>\n      <Relations name=\"relation\" toName=\"text\">\n        <Label value=\"causes\" background=\"#9a1d10\"/>\n        <Label value=\"affects\" background=\"#c0a5e9\"/>\n        <Label value=\"located_in\" background=\"#10692d\"/>\n        <Label value=\"part_of\" background=\"#cf801a\"/>\n        <Label value=\"temporal\" background=\"#b2cdc2\"/>\n        <Label value=\"converts_to\" background=\"#03af42\"/>\n      </Relations>\n      <Labels name=\"label\" toName=\"text\">\n        <Label value=\"FROM_LULC\" background=\"#8A2BE2\"/>\n        <Label value=\"TO_LULC\" background=\"#FF6347\"/>\n        <Label value=\"CHANGE\" background=\"#6495ED\"/>\n        <Label value=\"PROCESS\" background=\"#32CD32\"/>\n        <Label value=\"MAGNITUDE\" background=\"#FFD700\"/>\n      </Labels>\n      <Text name=\"text\" value=\"$text\"/>\n    </View>\n    ",
+  "items": [
+    {
+      "id": 2,
+      "data": {
+        "text": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground."
+      },
+      "annotations": [
+        {
+          "id": "2-annotation",
+          "result": [
+            {
+              "id": "from-1",
+              "from_name": "label",
+              "to_name": "text",
+              "type": "labels",
+              "value": {
+                "start": 54,
+                "end": 67,
+                "text": "built-up area",
+                "labels": [
+                  "FROM_LULC"
+                ]
+              }
+            },
+            {
+              "id": "to-2",
+              "from_name": "label",
+              "to_name": "text",
+              "type": "labels",
+              "value": {
+                "start": 54,
+                "end": 67,
+                "text": "built-up area",
+                "labels": [
+                  "TO_LULC"
+                ]
+              }
+            },
+            {
+              "id": "magnitude-3",
+              "from_name": "label",
+              "to_name": "text",
+              "type": "labels",
+              "value": {
+                "start": 43,
+                "end": 49,
+                "text": "12.77%",
+                "labels": [
+                  "MAGNITUDE"
+                ]
+              }
+            },
+            {
+              "id": "relation-1",
+              "from_name": "relation",
+              "to_name": "text",
+              "type": "relation",
+              "value": {
+                "from_id": "from-1",
+                "to_id": "to-2",
+                "direction": "right",
+                "labels": [
+                  "converts_to"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

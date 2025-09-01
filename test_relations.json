@@ -1,0 +1,119 @@
+[
+  {
+    "data": {
+      "text": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050."
+    },
+    "predictions": [
+      {
+        "model_version": "auto-extraction-1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 11,
+              "end": 18,
+              "text": "results",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "id": "change_1"
+          },
+          {
+            "value": {
+              "start": 48,
+              "end": 55,
+              "text": "Thimphu",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "id": "loc_2"
+          },
+          {
+            "value": {
+              "start": 56,
+              "end": 60,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "id": "lulc_3"
+          },
+          {
+            "value": {
+              "start": 65,
+              "end": 72,
+              "text": "changed",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "id": "change_4"
+          },
+          {
+            "value": {
+              "start": 161,
+              "end": 165,
+              "text": "2050",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "id": "date_5"
+          },
+          {
+            "value": {
+              "from": "lulc_3",
+              "to": "change_4",
+              "type": "undergoes"
+            },
+            "from_name": "relation",
+            "to_name": "text",
+            "type": "relation",
+            "id": "rel_0"
+          },
+          {
+            "value": {
+              "from": "change_4",
+              "to": "date_5",
+              "type": "occurs_during"
+            },
+            "from_name": "relation",
+            "to_name": "text",
+            "type": "relation",
+            "id": "rel_1"
+          },
+          {
+            "value": {
+              "from": "lulc_3",
+              "to": "loc_2",
+              "type": "located_in"
+            },
+            "from_name": "relation",
+            "to_name": "text",
+            "type": "relation",
+            "id": "rel_2"
+          }
+        ]
+      }
+    ],
+    "id": 1
+  }
+]

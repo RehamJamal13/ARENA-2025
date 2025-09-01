@@ -1,0 +1,146 @@
+[
+    {
+        "article_id": "test_001",
+        "original_sentence": "The tropical forest experienced severe land degradation due to urban expansion.",
+        "entities": [
+            {
+                "text": "tropical forest",
+                "label": "LULC",
+                "start_char": 4,
+                "end_char": 19
+            },
+            {
+                "text": "land degradation",
+                "label": "PROCESS",
+                "start_char": 39,
+                "end_char": 55
+            },
+            {
+                "text": "urban expansion",
+                "label": "PROCESS",
+                "start_char": 63,
+                "end_char": 78
+            }
+        ]
+    },
+    {
+        "article_id": "test_002",
+        "original_sentence": "Agricultural land was converted through forest fragmentation and soil erosion.",
+        "entities": [
+            {
+                "text": "Agricultural land",
+                "label": "LULC",
+                "start_char": 0,
+                "end_char": 17
+            },
+            {
+                "text": "converted",
+                "label": "CHANGE",
+                "start_char": 22,
+                "end_char": 31
+            },
+            {
+                "text": "forest fragmentation",
+                "label": "PROCESS",
+                "start_char": 40,
+                "end_char": 60
+            },
+            {
+                "text": "soil erosion",
+                "label": "PROCESS",
+                "start_char": 65,
+                "end_char": 77
+            }
+        ]
+    },
+    {
+        "article_id": "test_003",
+        "original_sentence": "Primary forest showed natural regeneration after agricultural intensification stopped.",
+        "entities": [
+            {
+                "text": "Primary forest",
+                "label": "LULC",
+                "start_char": 0,
+                "end_char": 14
+            },
+            {
+                "text": "natural regeneration",
+                "label": "PROCESS",
+                "start_char": 22,
+                "end_char": 42
+            },
+            {
+                "text": "agricultural intensification",
+                "label": "PROCESS",
+                "start_char": 49,
+                "end_char": 77
+            }
+        ]
+    },
+    {
+        "article_id": "test_004",
+        "original_sentence": "Land use change from mixed forest to built-up area affected 200 hectares.",
+        "entities": [
+            {
+                "text": "Land use change",
+                "label": "PROCESS",
+                "start_char": 0,
+                "end_char": 15
+            },
+            {
+                "text": "mixed forest",
+                "label": "LULC",
+                "start_char": 21,
+                "end_char": 33
+            },
+            {
+                "text": "built-up area",
+                "label": "LULC",
+                "start_char": 37,
+                "end_char": 50
+            },
+            {
+                "text": "200 hectares",
+                "label": "SURFACE_UNIT",
+                "start_char": 60,
+                "end_char": 72
+            }
+        ]
+    },
+    {
+        "article_id": "test_005",
+        "original_sentence": "Bare soil increased due to deforestation and habitat loss in the wetland.",
+        "entities": [
+            {
+                "text": "Bare soil",
+                "label": "LULC",
+                "start_char": 0,
+                "end_char": 9
+            },
+            {
+                "text": "increased",
+                "label": "CHANGE",
+                "start_char": 10,
+                "end_char": 19
+            },
+            {
+                "text": "deforestation",
+                "label": "PROCESS",
+                "start_char": 27,
+                "end_char": 40
+            },
+            {
+                "text": "habitat loss",
+                "label": "PROCESS",
+                "start_char": 45,
+                "end_char": 57
+            },
+            {
+                "text": "wetland",
+                "label": "LULC",
+                "start_char": 65,
+                "end_char": 72
+            }
+        ]
+    }
+]

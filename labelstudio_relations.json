@@ -1,0 +1,74 @@
+{
+  "config": "\n<View>\n  <Labels name=\"label\" toName=\"text\">\n    <Label value=\"FROM_LULC\" background=\"#8A2BE2\"/>\n    <Label value=\"TO_LULC\" background=\"#FF6347\"/>\n    <Label value=\"CHANGE\" background=\"#6495ED\"/>\n    <Label value=\"PROCESS\" background=\"#32CD32\"/>\n  </Labels>\n  <Relations name=\"relation\" toName=\"text\">\n        <Relation value=\"causes\" background=\"#8bb016\"/>\n        <Relation value=\"affects\" background=\"#f78e3a\"/>\n        <Relation value=\"located_in\" background=\"#8852ce\"/>\n        <Relation value=\"part_of\" background=\"#5af84d\"/>\n        <Relation value=\"temporal\" background=\"#570f0a\"/>\n  </Relations>\n  <Text name=\"text\" value=\"$text\"/>\n</View>\n",
+  "items": [
+    {
+      "id": 2,
+      "data": {
+        "text": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground."
+      },
+      "annotations": [
+        {
+          "id": "2-annotation",
+          "result": [
+            {
+              "id": "from-1",
+              "from_name": "label",
+              "to_name": "text",
+              "type": "labels",
+              "value": {
+                "start": 54,
+                "end": 67,
+                "text": "built-up area",
+                "labels": [
+                  "FROM_LULC"
+                ]
+              }
+            },
+            {
+              "id": "to-2",
+              "from_name": "label",
+              "to_name": "text",
+              "type": "labels",
+              "value": {
+                "start": 54,
+                "end": 67,
+                "text": "built-up area",
+                "labels": [
+                  "TO_LULC"
+                ]
+              }
+            },
+            {
+              "id": "relation-1",
+              "from_name": "relation",
+              "to_name": "text",
+              "type": "relation",
+              "value": {
+                "from_id": "from-1",
+                "to_id": "to-2",
+                "direction": "right",
+                "labels": [
+                  "located_in"
+                ]
+              }
+            },
+            {
+              "id": "relation-2",
+              "from_name": "relation",
+              "to_name": "text",
+              "type": "relation",
+              "value": {
+                "from_id": "to-2",
+                "to_id": "from-1",
+                "direction": "right",
+                "labels": [
+                  "located_in"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

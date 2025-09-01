@@ -1,0 +1,24 @@
+venv/
+notebook/grobid/grobid-home/models/patent/citation/model.wapiti
+roberta_ner_model/
+bert_ner_model/
+output_*/
+output_*/
+# Ignore big models and datasets
+roberta_ner_model/
+bert_ner_model/
+output_*/
+notebook/
+papers/
+final_ner_model/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore OS junk
+.DS_Store
+*.lnk

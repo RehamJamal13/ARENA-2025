@@ -1,0 +1,264 @@
+[
+  {
+    "data": {
+      "text": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050."
+    },
+    "annotations": [
+      {
+        "id": "annotation_0",
+        "created_username": "AI_Assistant",
+        "created_ago": "1 minute",
+        "result": []
+      }
+    ],
+    "id": 1
+  },
+  {
+    "data": {
+      "text": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground."
+    },
+    "annotations": [
+      {
+        "id": "annotation_1",
+        "created_username": "AI_Assistant",
+        "created_ago": "1 minute",
+        "result": [
+          {
+            "id": "entity_0",
+            "type": "labels",
+            "value": {
+              "start": 54,
+              "end": 67,
+              "text": "built-up area",
+              "labels": [
+                "FROM_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 54,
+              "end": 67,
+              "text": "built-up area",
+              "labels": [
+                "TO_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_2",
+            "type": "labels",
+            "value": {
+              "start": 43,
+              "end": 49,
+              "text": "12.77%",
+              "labels": [
+                "MAGNITUDE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_3",
+            "type": "labels",
+            "value": {
+              "start": 73,
+              "end": 77,
+              "text": "2002",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_4",
+            "type": "labels",
+            "value": {
+              "start": 90,
+              "end": 94,
+              "text": "2018",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "relation_5",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_1",
+              "type": "converts_to"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 2
+  },
+  {
+    "data": {
+      "text": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%)."
+    },
+    "annotations": [
+      {
+        "id": "annotation_2",
+        "created_username": "AI_Assistant",
+        "created_ago": "1 minute",
+        "result": [
+          {
+            "id": "entity_0",
+            "type": "labels",
+            "value": {
+              "start": 17,
+              "end": 23,
+              "text": "forest",
+              "labels": [
+                "FROM_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 30,
+              "end": 38,
+              "text": "declined",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "relation_2",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_1",
+              "type": "causes"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 3
+  },
+  {
+    "data": {
+      "text": "Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes."
+    },
+    "annotations": [
+      {
+        "id": "annotation_3",
+        "created_username": "AI_Assistant",
+        "created_ago": "1 minute",
+        "result": []
+      }
+    ],
+    "id": 4
+  },
+  {
+    "data": {
+      "text": "Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city."
+    },
+    "annotations": [
+      {
+        "id": "annotation_4",
+        "created_username": "AI_Assistant",
+        "created_ago": "1 minute",
+        "result": []
+      }
+    ],
+    "id": 5
+  },
+  {
+    "data": {
+      "text": "Prior to this, the area was occupied by terraced agricultural fields and some 13 villages."
+    },
+    "annotations": [
+      {
+        "id": "annotation_5",
+        "created_username": "AI_Assistant",
+        "created_ago": "1 minute",
+        "result": []
+      }
+    ],
+    "id": 6
+  },
+  {
+    "data": {
+      "text": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig."
+    },
+    "annotations": [
+      {
+        "id": "annotation_6",
+        "created_username": "AI_Assistant",
+        "created_ago": "1 minute",
+        "result": []
+      }
+    ],
+    "id": 7
+  },
+  {
+    "data": {
+      "text": "The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape."
+    },
+    "annotations": [
+      {
+        "id": "annotation_7",
+        "created_username": "AI_Assistant",
+        "created_ago": "1 minute",
+        "result": []
+      }
+    ],
+    "id": 8
+  },
+  {
+    "data": {
+      "text": "These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008."
+    },
+    "annotations": [
+      {
+        "id": "annotation_8",
+        "created_username": "AI_Assistant",
+        "created_ago": "1 minute",
+        "result": []
+      }
+    ],
+    "id": 9
+  },
+  {
+    "data": {
+      "text": "The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses."
+    },
+    "annotations": [
+      {
+        "id": "annotation_9",
+        "created_username": "AI_Assistant",
+        "created_ago": "1 minute",
+        "result": []
+      }
+    ],
+    "id": 10
+  }
+]

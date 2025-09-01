@@ -1,0 +1,95 @@
+[
+  {
+    "id": 2,
+    "data": {
+      "text": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%)."
+    },
+    "annotations": [
+      {
+        "id": 2002,
+        "result": [
+          {
+            "id": "16f46d1c-b473-4054-b907-0ec2f1099e3e",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 17,
+              "end": 29,
+              "text": "forest cover",
+              "labels": [
+                "FROM_LULC"
+              ]
+            }
+          },
+          {
+            "id": "aa7f3d9e-0cd3-4445-9681-d7a0578c2a93",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 72,
+              "end": 83,
+              "text": "agriculture",
+              "labels": [
+                "TO_LULC"
+              ]
+            }
+          },
+          {
+            "id": "2466b659-6a8b-4216-8209-4d37940b1dff",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 30,
+              "end": 38,
+              "text": "declined",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "id": "f391ebd3-69af-4ec1-a3c8-86cf693d0c70",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 52,
+              "end": 58,
+              "text": "15.25%",
+              "labels": [
+                "MAGNITUDE"
+              ]
+            }
+          },
+          {
+            "type": "relation",
+            "from_id": "16f46d1c-b473-4054-b907-0ec2f1099e3e",
+            "to_id": "2466b659-6a8b-4216-8209-4d37940b1dff",
+            "labels": [
+              "causes"
+            ]
+          },
+          {
+            "type": "relation",
+            "from_id": "16f46d1c-b473-4054-b907-0ec2f1099e3e",
+            "to_id": "aa7f3d9e-0cd3-4445-9681-d7a0578c2a93",
+            "labels": [
+              "converts_to"
+            ]
+          },
+          {
+            "type": "relation",
+            "from_id": "2466b659-6a8b-4216-8209-4d37940b1dff",
+            "to_id": "f391ebd3-69af-4ec1-a3c8-86cf693d0c70",
+            "labels": [
+              "affects"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

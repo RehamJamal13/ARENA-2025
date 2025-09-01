@@ -1,0 +1,14 @@
+sentence_id,sentence,source,relationship,target,confidence
+0,"After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g",droughts,CAUSES,loss,HIGH
+0,"After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g",loss,OCCURS_DURING,"1970s:DATE, 1980s",HIGH
+0,"After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g",loss,CAUSES,degraded_land,HIGH
+0,"After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g",Sahel,LOCATED_IN,Africa,MEDIUM
+0,"After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g",degradation,ENABLES,loss,MEDIUM
+1,Pastoral production has often existed in some sort of symbiotic interaction with the [agriculture],pastoral production,CAUSES,agriculture,HIGH
+4,"(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in national rainfall of 1 percent",increase,CAUSES,urban,MEDIUM
+4,"(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in national rainfall of 1 percent",decrease,CAUSES,rainfall,MEDIUM
+4,"(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in national rainfall of 1 percent",(2006),OCCURS_DURING,study_period,MEDIUM
+4,"(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in national rainfall of 1 percent",urban,LOCATED_IN,country,LOW
+4,"(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in national rainfall of 1 percent",increase,MEASURES,0.45,HIGH
+4,"(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in national rainfall of 1 percent",urban,AFFECTS,forest,MEDIUM
+4,"(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in national rainfall of 1 percent",decrease,FROM_TO,rainfall,MEDIUM

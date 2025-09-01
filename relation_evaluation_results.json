@@ -1,0 +1,795 @@
+{
+  "overall_relations": {
+    "precision": 0.8301886792452831,
+    "recall": 0.7457627118644068,
+    "f1": 0.7857142857142858,
+    "tp": 44,
+    "fp": 9,
+    "fn": 15,
+    "total_gt_relations": 59,
+    "total_pred_relations": 53
+  },
+  "relation_metrics": {
+    "DECREASE": {
+      "precision": 0.8333333333333334,
+      "recall": 0.7692307692307693,
+      "f1": 0.8,
+      "tp": 10,
+      "fp": 2,
+      "fn": 3,
+      "support": 13
+    },
+    "INCREASE": {
+      "precision": 0.8333333333333334,
+      "recall": 0.9090909090909091,
+      "f1": 0.8695652173913043,
+      "tp": 10,
+      "fp": 2,
+      "fn": 1,
+      "support": 11
+    },
+    "CHANGE_TO": {
+      "precision": 0.9090909090909091,
+      "recall": 0.8333333333333334,
+      "f1": 0.8695652173913043,
+      "tp": 10,
+      "fp": 1,
+      "fn": 2,
+      "support": 12
+    },
+    "INCREASES_BY": {
+      "precision": 0.8333333333333334,
+      "recall": 0.625,
+      "f1": 0.7142857142857143,
+      "tp": 5,
+      "fp": 1,
+      "fn": 3,
+      "support": 8
+    },
+    "DECREASES_BY": {
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.6666666666666665,
+      "tp": 9,
+      "fp": 3,
+      "fn": 6,
+      "support": 15
+    }
+  },
+  "per_sentence": [
+    {
+      "sentence_id": NaN,
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 1,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S0169204617300270-main.pdf.tei_132",
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 0,
+      "relation_fn": 1
+    },
+    {
+      "sentence_id": "Kouassi et al. - 2021 - Assessing Land Use and Land Cover Change and Farme_121",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 1,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "remotesensing-12-03817-v2_162",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 2,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S0006320709005400-main.pdf.tei_109",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 1,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S0140196310000893-main.pdf.tei_39",
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 1,
+      "relation_fn": 3
+    },
+    {
+      "sentence_id": "s10980-017-0553-4_46",
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 2,
+      "relation_fn": 2
+    },
+    {
+      "sentence_id": "1-s2.0-S0140196313000608-main_165",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 1,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S0301479717300713-main.pdf.tei_139",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 1,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "Asenso Barnieh et al. - 2020 - Mapping Land Use Land Cover Transitions at Differe_302",
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 2,
+      "relation_fn": 2
+    },
+    {
+      "sentence_id": "1-s2.0-S016788090800131X-main.pdf.tei_30",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 1,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S003442571730041X-main.pdf.tei_9",
+      "relation_precision": 0.5,
+      "relation_recall": 1.0,
+      "relation_f1": 0.6666666666666666,
+      "relation_tp": 1,
+      "relation_fp": 1,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "Asenso Barnieh et al. - 2020 - Mapping Land Use Land Cover Transitions at Differe_237",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 2,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S0140196313000608-main.pdf.tei_110",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 1,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "remotesensing-07-04048-v2_73",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 2,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S003442571730041X-main_50",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 1,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S0264837715302131-main.pdf.tei_76",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 5,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "010074873_180b",
+      "relation_precision": 0.6,
+      "relation_recall": 0.75,
+      "relation_f1": 0.6666666666666665,
+      "relation_tp": 3,
+      "relation_fp": 2,
+      "relation_fn": 1
+    },
+    {
+      "sentence_id": "1-s2.0-S0264837715302131-main.pdf.tei_104",
+      "relation_precision": 1.0,
+      "relation_recall": 0.5,
+      "relation_f1": 0.6666666666666666,
+      "relation_tp": 3,
+      "relation_fp": 0,
+      "relation_fn": 3
+    },
+    {
+      "sentence_id": "1-s2.0-S0303243414001718-main.pdf.tei_42",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 2,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "s10113-015-0891-1_304",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 1,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S0304387816300670-main.pdf.tei_31",
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 1,
+      "relation_fn": 1
+    },
+    {
+      "sentence_id": "1-s2.0-S2214581823000575-main_146",
+      "relation_precision": 0.75,
+      "relation_recall": 0.75,
+      "relation_f1": 0.75,
+      "relation_tp": 3,
+      "relation_fp": 1,
+      "relation_fn": 1
+    },
+    {
+      "sentence_id": "1-s2.0-S0140196314000536-main.pdf.tei_53",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 2,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "010076607_252",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 1,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S0140196313000608-main.pdf.tei_80",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 2,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S0303243414001718-main.pdf.tei_34",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 1,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S016788090800131X-main.pdf.tei_31",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 4,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S0006320709005400-main.pdf.tei_3",
+      "relation_precision": 0.5,
+      "relation_recall": 1.0,
+      "relation_f1": 0.6666666666666666,
+      "relation_tp": 1,
+      "relation_fp": 1,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S0169204617300270-main.pdf.tei_88",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 1,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "science.abm9267_210",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 1,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S0140196322000143-main.pdf.tei_89",
+      "relation_precision": 0.5,
+      "relation_recall": 1.0,
+      "relation_f1": 0.6666666666666666,
+      "relation_tp": 1,
+      "relation_fp": 1,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "010074873_289",
+      "relation_precision": 1.0,
+      "relation_recall": 1.0,
+      "relation_f1": 1.0,
+      "relation_tp": 1,
+      "relation_fp": 0,
+      "relation_fn": 0
+    },
+    {
+      "sentence_id": "1-s2.0-S016788090800131X-main.pdf.tei_34",
+      "relation_precision": 0.0,
+      "relation_recall": 0.0,
+      "relation_f1": 0.0,
+      "relation_tp": 0,
+      "relation_fp": 1,
+      "relation_fn": 1
+    }
+  ],
+  "error_analysis": {
+    "missing_sentences": [
+      "1-s2.0-S0169204617300270-main.pdf.tei_132"
+    ],
+    "extra_sentences": [],
+    "relation_errors": {
+      "false_positives": [
+        {
+          "relation": [
+            "urban",
+            "INCREASES_BY",
+            "45%"
+          ],
+          "sentence": "(2006), who estimate an increase in the national urban share of 0.45 percent with a reduction in national rainfall of 1 percent"
+        },
+        {
+          "relation": [
+            "cropland",
+            "INCREASE",
+            "nan"
+          ],
+          "sentence": "Several local scale studies showed a general increase in cropped areas since the 1950s  and in recent years, a few studies have indicated that cropland has a higher annual NDVI than savanna in Sahelian areas, supporting a possible link between cropland expansion/ cropping intensification and the observed positive trends in NDVI "
+        },
+        {
+          "relation": [
+            "herbaceous standing crop",
+            "DECREASE",
+            "nan"
+          ],
+          "sentence": "Conversely the decrease in the herbaceous standing crop due to the shortening of the fallow period, the extension of cultivated and cleared fields, the grazing by cattle, and more generally the increment in landscape discontinuities limit the spread of fire and the size of burnt areas "
+        },
+        {
+          "relation": [
+            "forest cover",
+            "DECREASES_BY",
+            "80%"
+          ],
+          "sentence": "The Upper Guinean forest is a global biodiversity hotspot and has become one of the most human modified forest ecosystems in the tropics having lost over 80% of its original forest cover with the remainder distributed in a fragmented agriculture forest mosaic"
+        },
+        {
+          "relation": [
+            "forest cover",
+            "CHANGE_TO",
+            "fragmented agriculture forest mosaic"
+          ],
+          "sentence": "The Upper Guinean forest is a global biodiversity hotspot and has become one of the most human modified forest ecosystems in the tropics having lost over 80% of its original forest cover with the remainder distributed in a fragmented agriculture forest mosaic"
+        },
+        {
+          "relation": [
+            "water bodies",
+            "DECREASES_BY",
+            "20%"
+          ],
+          "sentence": "The annual rate i.e. 0.8% of water bodies loss per year was higher in 2000 2013 i.e. the postdrought era and recent period than in 1975 2000 which was 0.2% per year in the drought era and soon after the severe drought"
+        },
+        {
+          "relation": [
+            "water bodies",
+            "DECREASES_BY",
+            "80%"
+          ],
+          "sentence": "The annual rate i.e. 0.8% of water bodies loss per year was higher in 2000 2013 i.e. the postdrought era and recent period than in 1975 2000 which was 0.2% per year in the drought era and soon after the severe drought"
+        },
+        {
+          "relation": [
+            "urban",
+            "INCREASE",
+            "urban area"
+          ],
+          "sentence": "The major LULC changes in LCB from 1975 to 2013 stated by were the transition of water bodies and wetland around the Lake to cropland the loss of water bodies to other vegetation and an increase in urban area at the expense of other vegetation"
+        },
+        {
+          "relation": [
+            "savanna",
+            "DECREASE",
+            "nan"
+          ],
+          "sentence": "The result reveals that the Mono basin Table land cover presents an increase in built up agricultural land and water bodies while the vegetative clusters such as forest savanna and herbaceous savanna have declined for the three study periods"
+        }
+      ],
+      "false_negatives": [
+        {
+          "relation": [
+            "urban",
+            "INCREASES_BY",
+            "0.45%"
+          ],
+          "sentence": "(2006), who estimate an increase in the national urban share of 0.45 percent with a reduction in national rainfall of 1 percent"
+        },
+        {
+          "relation": [
+            "grazing land",
+            "DECREASE",
+            "nan"
+          ],
+          "sentence": "In 1986, the grazing land had much higher proportion of the total regional area than other land use types while the size of croplands was substantially high after 16 years (Table )"
+        },
+        {
+          "relation": [
+            "city",
+            "INCREASE",
+            "nan"
+          ],
+          "sentence": "In the case of Ghana, that statement might be true for Kumasi as expanding city in the hinterlands, but not for Bolgatanga"
+        },
+        {
+          "relation": [
+            "cropped fields",
+            "INCREASES_BY",
+            "from 40% to 51.3%"
+          ],
+          "sentence": "From 1996 to 2017, the area covered by cropped fields, C, has increased from 40% to 51.3% over the study site area, and from 47% to 64% of the arable lands in the study site due to the loss fallows"
+        },
+        {
+          "relation": [
+            "cropped fields",
+            "INCREASES_BY",
+            "from 47% to 64%"
+          ],
+          "sentence": "From 1996 to 2017, the area covered by cropped fields, C, has increased from 40% to 51.3% over the study site area, and from 47% to 64% of the arable lands in the study site due to the loss fallows"
+        },
+        {
+          "relation": [
+            "herbaceous standing crop]",
+            "DECREASE",
+            "nan"
+          ],
+          "sentence": "From 1996 to 2017, the area covered by cropped fields, C, has increased from 40% to 51.3% over the study site area, and from 47% to 64% of the arable lands in the study site due to the loss fallows"
+        },
+        {
+          "relation": [
+            "tree savanna",
+            "DECREASES_BY",
+            "26 and 31%"
+          ],
+          "sentence": "About 26 and 31% of the total area of natural vegetation (forest, woodland and tree savanna) will be converted to farmland and degraded savanna by 2050 if we assume the dynamics recorded from 1975 to 1990 and 1990-2010, respectively"
+        },
+        {
+          "relation": [
+            "forest",
+            "DECREASES_BY",
+            "26 and 31%"
+          ],
+          "sentence": "About 26 and 31% of the total area of natural vegetation (forest, woodland and tree savanna) will be converted to farmland and degraded savanna by 2050 if we assume the dynamics recorded from 1975 to 1990 and 1990-2010, respectively"
+        },
+        {
+          "relation": [
+            "woodland",
+            "DECREASES_BY",
+            "26 and 31%"
+          ],
+          "sentence": "About 26 and 31% of the total area of natural vegetation (forest, woodland and tree savanna) will be converted to farmland and degraded savanna by 2050 if we assume the dynamics recorded from 1975 to 1990 and 1990-2010, respectively"
+        },
+        {
+          "relation": [
+            "forest",
+            "DECREASES_BY",
+            "80%"
+          ],
+          "sentence": "The Upper Guinean forest is a global biodiversity hotspot and has become one of the most human modified forest ecosystems in the tropics having lost over 80% of its original forest cover with the remainder distributed in a fragmented agriculture forest mosaic"
+        },
+        {
+          "relation": [
+            "forest",
+            "CHANGE_TO",
+            "fragmented agriculture forest mosaic"
+          ],
+          "sentence": "The Upper Guinean forest is a global biodiversity hotspot and has become one of the most human modified forest ecosystems in the tropics having lost over 80% of its original forest cover with the remainder distributed in a fragmented agriculture forest mosaic"
+        },
+        {
+          "relation": [
+            "water bodies",
+            "DECREASES_BY",
+            "0.80%"
+          ],
+          "sentence": "The annual rate i.e. 0.8% of water bodies loss per year was higher in 2000 2013 i.e. the postdrought era and recent period than in 1975 2000 which was 0.2% per year in the drought era and soon after the severe drought"
+        },
+        {
+          "relation": [
+            "water bodies",
+            "DECREASES_BY",
+            "0.20%"
+          ],
+          "sentence": "The annual rate i.e. 0.8% of water bodies loss per year was higher in 2000 2013 i.e. the postdrought era and recent period than in 1975 2000 which was 0.2% per year in the drought era and soon after the severe drought"
+        },
+        {
+          "relation": [
+            "other vegetation",
+            "CHANGE_TO",
+            "urban area"
+          ],
+          "sentence": "The major LULC changes in LCB from 1975 to 2013 stated by were the transition of water bodies and wetland around the Lake to cropland the loss of water bodies to other vegetation and an increase in urban area at the expense of other vegetation"
+        },
+        {
+          "relation": [
+            "forest savanna",
+            "DECREASE",
+            "nan"
+          ],
+          "sentence": "The result reveals that the Mono basin Table land cover presents an increase in built up agricultural land and water bodies while the vegetative clusters such as forest savanna and herbaceous savanna have declined for the three study periods"
+        }
+      ],
+      "by_type": {
+        "INCREASES_BY": {
+          "fp": [
+            {
+              "relation": [
+                "urban",
+                "INCREASES_BY",
+                "45%"
+              ],
+              "sentence": "(2006), who estimate an increase in the national urban share of 0.45 percent with a reduction in national rainfall of 1 percent"
+            }
+          ],
+          "fn": [
+            {
+              "relation": [
+                "urban",
+                "INCREASES_BY",
+                "0.45%"
+              ],
+              "sentence": "(2006), who estimate an increase in the national urban share of 0.45 percent with a reduction in national rainfall of 1 percent"
+            },
+            {
+              "relation": [
+                "cropped fields",
+                "INCREASES_BY",
+                "from 40% to 51.3%"
+              ],
+              "sentence": "From 1996 to 2017, the area covered by cropped fields, C, has increased from 40% to 51.3% over the study site area, and from 47% to 64% of the arable lands in the study site due to the loss fallows"
+            },
+            {
+              "relation": [
+                "cropped fields",
+                "INCREASES_BY",
+                "from 47% to 64%"
+              ],
+              "sentence": "From 1996 to 2017, the area covered by cropped fields, C, has increased from 40% to 51.3% over the study site area, and from 47% to 64% of the arable lands in the study site due to the loss fallows"
+            }
+          ]
+        },
+        "INCREASE": {
+          "fp": [
+            {
+              "relation": [
+                "cropland",
+                "INCREASE",
+                "nan"
+              ],
+              "sentence": "Several local scale studies showed a general increase in cropped areas since the 1950s  and in recent years, a few studies have indicated that cropland has a higher annual NDVI than savanna in Sahelian areas, supporting a possible link between cropland expansion/ cropping intensification and the observed positive trends in NDVI "
+            },
+            {
+              "relation": [
+                "urban",
+                "INCREASE",
+                "urban area"
+              ],
+              "sentence": "The major LULC changes in LCB from 1975 to 2013 stated by were the transition of water bodies and wetland around the Lake to cropland the loss of water bodies to other vegetation and an increase in urban area at the expense of other vegetation"
+            }
+          ],
+          "fn": [
+            {
+              "relation": [
+                "city",
+                "INCREASE",
+                "nan"
+              ],
+              "sentence": "In the case of Ghana, that statement might be true for Kumasi as expanding city in the hinterlands, but not for Bolgatanga"
+            }
+          ]
+        },
+        "DECREASE": {
+          "fp": [
+            {
+              "relation": [
+                "herbaceous standing crop",
+                "DECREASE",
+                "nan"
+              ],
+              "sentence": "Conversely the decrease in the herbaceous standing crop due to the shortening of the fallow period, the extension of cultivated and cleared fields, the grazing by cattle, and more generally the increment in landscape discontinuities limit the spread of fire and the size of burnt areas "
+            },
+            {
+              "relation": [
+                "savanna",
+                "DECREASE",
+                "nan"
+              ],
+              "sentence": "The result reveals that the Mono basin Table land cover presents an increase in built up agricultural land and water bodies while the vegetative clusters such as forest savanna and herbaceous savanna have declined for the three study periods"
+            }
+          ],
+          "fn": [
+            {
+              "relation": [
+                "grazing land",
+                "DECREASE",
+                "nan"
+              ],
+              "sentence": "In 1986, the grazing land had much higher proportion of the total regional area than other land use types while the size of croplands was substantially high after 16 years (Table )"
+            },
+            {
+              "relation": [
+                "herbaceous standing crop]",
+                "DECREASE",
+                "nan"
+              ],
+              "sentence": "From 1996 to 2017, the area covered by cropped fields, C, has increased from 40% to 51.3% over the study site area, and from 47% to 64% of the arable lands in the study site due to the loss fallows"
+            },
+            {
+              "relation": [
+                "forest savanna",
+                "DECREASE",
+                "nan"
+              ],
+              "sentence": "The result reveals that the Mono basin Table land cover presents an increase in built up agricultural land and water bodies while the vegetative clusters such as forest savanna and herbaceous savanna have declined for the three study periods"
+            }
+          ]
+        },
+        "DECREASES_BY": {
+          "fp": [
+            {
+              "relation": [
+                "forest cover",
+                "DECREASES_BY",
+                "80%"
+              ],
+              "sentence": "The Upper Guinean forest is a global biodiversity hotspot and has become one of the most human modified forest ecosystems in the tropics having lost over 80% of its original forest cover with the remainder distributed in a fragmented agriculture forest mosaic"
+            },
+            {
+              "relation": [
+                "water bodies",
+                "DECREASES_BY",
+                "20%"
+              ],
+              "sentence": "The annual rate i.e. 0.8% of water bodies loss per year was higher in 2000 2013 i.e. the postdrought era and recent period than in 1975 2000 which was 0.2% per year in the drought era and soon after the severe drought"
+            },
+            {
+              "relation": [
+                "water bodies",
+                "DECREASES_BY",
+                "80%"
+              ],
+              "sentence": "The annual rate i.e. 0.8% of water bodies loss per year was higher in 2000 2013 i.e. the postdrought era and recent period than in 1975 2000 which was 0.2% per year in the drought era and soon after the severe drought"
+            }
+          ],
+          "fn": [
+            {
+              "relation": [
+                "tree savanna",
+                "DECREASES_BY",
+                "26 and 31%"
+              ],
+              "sentence": "About 26 and 31% of the total area of natural vegetation (forest, woodland and tree savanna) will be converted to farmland and degraded savanna by 2050 if we assume the dynamics recorded from 1975 to 1990 and 1990-2010, respectively"
+            },
+            {
+              "relation": [
+                "forest",
+                "DECREASES_BY",
+                "26 and 31%"
+              ],
+              "sentence": "About 26 and 31% of the total area of natural vegetation (forest, woodland and tree savanna) will be converted to farmland and degraded savanna by 2050 if we assume the dynamics recorded from 1975 to 1990 and 1990-2010, respectively"
+            },
+            {
+              "relation": [
+                "woodland",
+                "DECREASES_BY",
+                "26 and 31%"
+              ],
+              "sentence": "About 26 and 31% of the total area of natural vegetation (forest, woodland and tree savanna) will be converted to farmland and degraded savanna by 2050 if we assume the dynamics recorded from 1975 to 1990 and 1990-2010, respectively"
+            },
+            {
+              "relation": [
+                "forest",
+                "DECREASES_BY",
+                "80%"
+              ],
+              "sentence": "The Upper Guinean forest is a global biodiversity hotspot and has become one of the most human modified forest ecosystems in the tropics having lost over 80% of its original forest cover with the remainder distributed in a fragmented agriculture forest mosaic"
+            },
+            {
+              "relation": [
+                "water bodies",
+                "DECREASES_BY",
+                "0.80%"
+              ],
+              "sentence": "The annual rate i.e. 0.8% of water bodies loss per year was higher in 2000 2013 i.e. the postdrought era and recent period than in 1975 2000 which was 0.2% per year in the drought era and soon after the severe drought"
+            },
+            {
+              "relation": [
+                "water bodies",
+                "DECREASES_BY",
+                "0.20%"
+              ],
+              "sentence": "The annual rate i.e. 0.8% of water bodies loss per year was higher in 2000 2013 i.e. the postdrought era and recent period than in 1975 2000 which was 0.2% per year in the drought era and soon after the severe drought"
+            }
+          ]
+        },
+        "CHANGE_TO": {
+          "fp": [
+            {
+              "relation": [
+                "forest cover",
+                "CHANGE_TO",
+                "fragmented agriculture forest mosaic"
+              ],
+              "sentence": "The Upper Guinean forest is a global biodiversity hotspot and has become one of the most human modified forest ecosystems in the tropics having lost over 80% of its original forest cover with the remainder distributed in a fragmented agriculture forest mosaic"
+            }
+          ],
+          "fn": [
+            {
+              "relation": [
+                "forest",
+                "CHANGE_TO",
+                "fragmented agriculture forest mosaic"
+              ],
+              "sentence": "The Upper Guinean forest is a global biodiversity hotspot and has become one of the most human modified forest ecosystems in the tropics having lost over 80% of its original forest cover with the remainder distributed in a fragmented agriculture forest mosaic"
+            },
+            {
+              "relation": [
+                "other vegetation",
+                "CHANGE_TO",
+                "urban area"
+              ],
+              "sentence": "The major LULC changes in LCB from 1975 to 2013 stated by were the transition of water bodies and wetland around the Lake to cropland the loss of water bodies to other vegetation and an increase in urban area at the expense of other vegetation"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

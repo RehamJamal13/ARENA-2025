@@ -1,0 +1,3346 @@
+[
+  {
+    "id": 0,
+    "data": {
+      "text": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050."
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_0",
+        "result": [
+          {
+            "value": {
+              "start": 11,
+              "end": 18,
+              "text": "results",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_0_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 48,
+              "end": 55,
+              "text": "Thimphu",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "grammar_ent_0_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "PROPN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 56,
+              "end": 60,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "grammar_ent_0_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 65,
+              "end": 72,
+              "text": "changed",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_0_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "VERB",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 118,
+              "end": 124,
+              "text": "change",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_0_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "VERB",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 161,
+              "end": 165,
+              "text": "2050",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "grammar_ent_0_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NUM",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 35,
+              "end": 44,
+              "text": "landscape",
+              "labels": [
+                "DISCOVERED_SUBJECT"
+              ]
+            },
+            "id": "grammar_ent_0_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8500000000000001,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_subject",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 125,
+              "end": 130,
+              "text": "trend",
+              "labels": [
+                "DISCOVERED_SUBJECT"
+              ]
+            },
+            "id": "grammar_ent_0_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8500000000000001,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_subject",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 103,
+              "end": 109,
+              "text": "period",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_0_8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 31,
+              "end": 44,
+              "text": "the landscape",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_0_9",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "value": {
+              "start": 114,
+              "end": 130,
+              "text": "the change trend",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_0_10",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "from_id": "grammar_ent_0_3",
+            "to_id": "grammar_ent_0_8",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "changes_to"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.5900000000000001,
+              "grammar_justification": "passive voice, subject-predicate-object structure",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.7,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_0_0",
+            "to_id": "grammar_ent_0_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "results_in"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.6499999999999999,
+              "grammar_justification": "active voice, subject-verb-object structure",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.8999999999999999,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_0_1",
+            "to_id": "grammar_ent_0_7",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "occurred_during"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "quality_score": 0.6499999999999999,
+              "grammar_justification": "temporal prepositional phrase",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.8999999999999999,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_0_1",
+            "to_id": "grammar_ent_0_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "precedes"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.5,
+            "meta": {
+              "confidence": "LOW",
+              "quality_score": 0.5700000000000001,
+              "grammar_justification": "no clear justification but both are in the same clause and \"change\" implies a temporal relationship",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.5,
+              "grammar_alignment": 0.6
+            }
+          },
+          {
+            "from_id": "grammar_ent_0_9",
+            "to_id": "grammar_ent_0_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "located_in"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.6799999999999999,
+              "grammar_justification": "\"landscape of Thimphu city\" indicates a spatial relationship",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 1.0,
+              "grammar_alignment": 0.5
+            }
+          }
+        ],
+        "model_version": "grammar-aware-mistral-v1.0",
+        "score": 0,
+        "created_ago": "now",
+        "cluster": null,
+        "neighbors": null,
+        "mislabeling": 0,
+        "created_at": "2025-06-17T16:11:06.355626",
+        "updated_at": "2025-06-17T16:11:06.355631",
+        "model": "grammar_aware_extraction",
+        "task": 0,
+        "project": 1
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "data": {
+      "text": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground."
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_1",
+        "result": [
+          {
+            "value": {
+              "start": 33,
+              "end": 41,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_1_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 43,
+              "end": 49,
+              "text": "12.77%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "grammar_ent_1_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NUM",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 73,
+              "end": 77,
+              "text": "2002",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "grammar_ent_1_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NUM",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 79,
+              "end": 85,
+              "text": "52.88%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "grammar_ent_1_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.73,
+            "meta": {
+              "grammatical_role": "modifier",
+              "syntactic_pos": "NUM",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 90,
+              "end": 94,
+              "text": "2018",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "grammar_ent_1_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NUM",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 96,
+              "end": 101,
+              "text": "65.5%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "grammar_ent_1_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.73,
+            "meta": {
+              "grammatical_role": "modifier",
+              "syntactic_pos": "NUM",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 125,
+              "end": 133,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_1_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 4,
+              "end": 9,
+              "text": "study",
+              "labels": [
+                "DISCOVERED_SUBJECT"
+              ]
+            },
+            "id": "grammar_ent_1_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8500000000000001,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_subject",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 63,
+              "end": 67,
+              "text": "area",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_1_8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 141,
+              "end": 146,
+              "text": "cover",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_1_9",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 155,
+              "end": 161,
+              "text": "ground",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_1_10",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 54,
+              "end": 67,
+              "text": "built-up area",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_1_11",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "value": {
+              "start": 137,
+              "end": 146,
+              "text": "the cover",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_1_12",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "from_id": "grammar_ent_1_6",
+            "to_id": "grammar_ent_1_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "comprises"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.54,
+              "grammar_justification": "\"cover of ground\" is the object that is being increased, so it is a part of the \"built-up area\"",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.5,
+              "grammar_alignment": 0.6
+            }
+          },
+          {
+            "from_id": "grammar_ent_1_6",
+            "to_id": "grammar_ent_1_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "precedes"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "quality_score": 0.54,
+              "grammar_justification": "\"followed by\" indicates a sequence of events, so the increase in bare ground comes after the increase in built-up area",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.5,
+              "grammar_alignment": 0.6
+            }
+          },
+          {
+            "from_id": "grammar_ent_1_1",
+            "to_id": "grammar_ent_1_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "measures"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.54,
+              "grammar_justification": "\"an increase of 12.77%\" indicates that the measurement is associated with the change in the built-up area.",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.5,
+              "grammar_alignment": 0.6
+            }
+          }
+        ],
+        "model_version": "grammar-aware-mistral-v1.0",
+        "score": 0,
+        "created_ago": "now",
+        "cluster": null,
+        "neighbors": null,
+        "mislabeling": 0,
+        "created_at": "2025-06-17T16:11:06.355689",
+        "updated_at": "2025-06-17T16:11:06.355691",
+        "model": "grammar_aware_extraction",
+        "task": 1,
+        "project": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "data": {
+      "text": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%)."
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_2",
+        "result": [
+          {
+            "value": {
+              "start": 17,
+              "end": 23,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "grammar_ent_2_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 30,
+              "end": 38,
+              "text": "declined",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_2_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "VERB",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 52,
+              "end": 58,
+              "text": "15.25%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "grammar_ent_2_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.78,
+            "meta": {
+              "grammatical_role": "predicate",
+              "syntactic_pos": "NUM",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 72,
+              "end": 83,
+              "text": "agriculture",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "grammar_ent_2_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 85,
+              "end": 90,
+              "text": "1.01%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "grammar_ent_2_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NUM",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 24,
+              "end": 29,
+              "text": "cover",
+              "labels": [
+                "DISCOVERED_SUBJECT"
+              ]
+            },
+            "id": "grammar_ent_2_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8500000000000001,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_subject",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 7,
+              "end": 15,
+              "text": "contrary",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_2_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 17,
+              "end": 29,
+              "text": "forest cover",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_2_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          }
+        ],
+        "model_version": "grammar-aware-mistral-v1.0",
+        "score": 0,
+        "created_ago": "now",
+        "cluster": null,
+        "neighbors": null,
+        "mislabeling": 0,
+        "created_at": "2025-06-17T16:11:06.355738",
+        "updated_at": "2025-06-17T16:11:06.355740",
+        "model": "grammar_aware_extraction",
+        "task": 2,
+        "project": 1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "data": {
+      "text": "Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes."
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_3",
+        "result": [
+          {
+            "value": {
+              "start": 17,
+              "end": 23,
+              "text": "growth",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_3_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 43,
+              "end": 48,
+              "text": "urban",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "grammar_ent_3_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.73,
+            "meta": {
+              "grammatical_role": "modifier",
+              "syntactic_pos": "ADJ",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 133,
+              "end": 140,
+              "text": "drivers",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_3_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 150,
+              "end": 157,
+              "text": "changes",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_3_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 49,
+              "end": 58,
+              "text": "migration",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_3_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 110,
+              "end": 119,
+              "text": "democracy",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_3_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 23,
+              "text": "Rapid population growth",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_3_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "value": {
+              "start": 37,
+              "end": 58,
+              "text": "rural urban migration",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_3_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "value": {
+              "start": 144,
+              "end": 157,
+              "text": "these changes",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_3_8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "from_id": "grammar_ent_3_0",
+            "to_id": "grammar_ent_3_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "results_in"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.81,
+              "grammar_justification": "subject-verb-object structure, \"these changes are the result of\"",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 1.0,
+              "grammar_alignment": 0.9
+            }
+          },
+          {
+            "from_id": "grammar_ent_3_0",
+            "to_id": "grammar_ent_3_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "triggers"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.6,
+              "grammar_justification": "subject-verb-object structure, \"growth triggered by\" is a causal phrase",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.7,
+              "grammar_alignment": 0.6
+            }
+          },
+          {
+            "from_id": "grammar_ent_3_1",
+            "to_id": "grammar_ent_3_0",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "modifies"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.64,
+              "grammar_justification": "adjective-noun relationship, \"rapid population growth\" describes \"growth\"",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.7,
+              "grammar_alignment": 0.7
+            }
+          },
+          {
+            "from_id": "grammar_ent_3_4",
+            "to_id": "grammar_ent_3_0",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "is_a_factor_of"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "quality_score": 0.56,
+              "grammar_justification": "\"rural urban migration is a factor in\" \"growth\", implicit causal relationship from context",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.7,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_3_5",
+            "to_id": "grammar_ent_3_0",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "is_a_factor_of"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "quality_score": 0.56,
+              "grammar_justification": "\"hasty socio-economic development post democracy is a factor in\" \"growth\", implicit causal relationship from context",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.7,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_3_4",
+            "to_id": "grammar_ent_3_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "is_associated_with"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "quality_score": 0.62,
+              "grammar_justification": "\"rural urban migration is associated with\" \"urban\"",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.8999999999999999,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_3_5",
+            "to_id": "grammar_ent_3_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "is_associated_with"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "quality_score": 0.62,
+              "grammar_justification": "\"hasty socio-economic development post democracy is associated with\" \"urban\"",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.8999999999999999,
+              "grammar_alignment": 0.5
+            }
+          }
+        ],
+        "model_version": "grammar-aware-mistral-v1.0",
+        "score": 0,
+        "created_ago": "now",
+        "cluster": null,
+        "neighbors": null,
+        "mislabeling": 0,
+        "created_at": "2025-06-17T16:11:06.355766",
+        "updated_at": "2025-06-17T16:11:06.355767",
+        "model": "grammar_aware_extraction",
+        "task": 3,
+        "project": 1
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "data": {
+      "text": "Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city."
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_4",
+        "result": [
+          {
+            "value": {
+              "start": 62,
+              "end": 70,
+              "text": "the year",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "grammar_ent_4_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 131,
+              "end": 135,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "grammar_ent_4_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.73,
+            "meta": {
+              "grammatical_role": "modifier",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 142,
+              "end": 148,
+              "text": "73.21%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "grammar_ent_4_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NUM",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 155,
+              "end": 161,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "grammar_ent_4_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 205,
+              "end": 219,
+              "text": "only about 16%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "grammar_ent_4_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.73,
+            "meta": {
+              "grammatical_role": "modifier",
+              "syntactic_pos": "ADV",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 227,
+              "end": 231,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "grammar_ent_4_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 49,
+              "end": 57,
+              "text": "analysis",
+              "labels": [
+                "DISCOVERED_SUBJECT"
+              ]
+            },
+            "id": "grammar_ent_4_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8500000000000001,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_subject",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 95,
+              "end": 99,
+              "text": "area",
+              "labels": [
+                "DISCOVERED_SUBJECT"
+              ]
+            },
+            "id": "grammar_ent_4_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8500000000000001,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_subject",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 10,
+              "end": 18,
+              "text": "business",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_4_8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 28,
+              "end": 36,
+              "text": "scenario",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_4_9",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 66,
+              "end": 70,
+              "text": "year",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_4_10",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 120,
+              "end": 123,
+              "text": "all",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_4_11",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 136,
+              "end": 140,
+              "text": "area",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_4_12",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 187,
+              "end": 194,
+              "text": "patches",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_4_13",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 86,
+              "end": 99,
+              "text": "built up area",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_4_14",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "value": {
+              "start": 127,
+              "end": 140,
+              "text": "the city area",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_4_15",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "from_id": "grammar_ent_4_8",
+            "to_id": "grammar_ent_4_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "changes_to"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.53,
+              "grammar_justification": "active verb \"will consume\" indicating transformation",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.5,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_4_0",
+            "to_id": "grammar_ent_4_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "precedes"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.53,
+              "grammar_justification": "temporal sequence implied by \"for the year 2050\"",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.5,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_4_5",
+            "to_id": "grammar_ent_4_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "comprises"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.53,
+              "grammar_justification": "quantitative \"making up only about 16 % of the city\"",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.5,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_4_5",
+            "to_id": "grammar_ent_4_8",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "encompasses"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.53,
+              "grammar_justification": "spatial relationship \"of the city area\"",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.5,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_4_8",
+            "to_id": "grammar_ent_4_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "located_in"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.6799999999999999,
+              "grammar_justification": "spatial relationship \"city\" is the location of \"forest\"",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 1.0,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_4_5",
+            "to_id": "grammar_ent_4_12",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "measures"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.5900000000000001,
+              "grammar_justification": "quantitative \"making up only about 16 % of the city\"",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.7,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_4_5",
+            "to_id": "grammar_ent_4_6",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "transforms_into"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.6499999999999999,
+              "grammar_justification": "transformation from \"area\" to \"patches\" indicated by \"significantly reduced to patches\"",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.8999999999999999,
+              "grammar_alignment": 0.5
+            }
+          }
+        ],
+        "model_version": "grammar-aware-mistral-v1.0",
+        "score": 0,
+        "created_ago": "now",
+        "cluster": null,
+        "neighbors": null,
+        "mislabeling": 0,
+        "created_at": "2025-06-17T16:11:06.355807",
+        "updated_at": "2025-06-17T16:11:06.355809",
+        "model": "grammar_aware_extraction",
+        "task": 4,
+        "project": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "data": {
+      "text": "Prior to this, the area was occupied by terraced agricultural fields and some 13 villages."
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_5",
+        "result": [
+          {
+            "value": {
+              "start": 73,
+              "end": 80,
+              "text": "some 13",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "grammar_ent_5_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "DET",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 19,
+              "end": 23,
+              "text": "area",
+              "labels": [
+                "DISCOVERED_SUBJECT"
+              ]
+            },
+            "id": "grammar_ent_5_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8500000000000001,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_subject",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 9,
+              "end": 13,
+              "text": "this",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_5_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 62,
+              "end": 68,
+              "text": "fields",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_5_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 15,
+              "end": 23,
+              "text": "the area",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_5_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          }
+        ],
+        "model_version": "grammar-aware-mistral-v1.0",
+        "score": 0,
+        "created_ago": "now",
+        "cluster": null,
+        "neighbors": null,
+        "mislabeling": 0,
+        "created_at": "2025-06-17T16:11:06.355863",
+        "updated_at": "2025-06-17T16:11:06.355865",
+        "model": "grammar_aware_extraction",
+        "task": 5,
+        "project": 1
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "data": {
+      "text": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig."
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_6",
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 9,
+              "text": "Expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_6_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 21,
+              "end": 25,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "grammar_ent_6_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 29,
+              "end": 33,
+              "text": "2002",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "grammar_ent_6_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NUM",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 55,
+              "end": 65,
+              "text": "Lanjophaka",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "grammar_ent_6_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "PROPN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 99,
+              "end": 103,
+              "text": "Taba",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "grammar_ent_6_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.73,
+            "meta": {
+              "grammatical_role": "modifier",
+              "syntactic_pos": "PROPN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 108,
+              "end": 121,
+              "text": "Dechencholing",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "grammar_ent_6_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.73,
+            "meta": {
+              "grammatical_role": "modifier",
+              "syntactic_pos": "PROPN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 139,
+              "end": 148,
+              "text": "Changjiji",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "grammar_ent_6_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.73,
+            "meta": {
+              "grammatical_role": "modifier",
+              "syntactic_pos": "PROPN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 150,
+              "end": 160,
+              "text": "Lungtenphu",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "grammar_ent_6_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.73,
+            "meta": {
+              "grammatical_role": "modifier",
+              "syntactic_pos": "PROPN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 46,
+              "end": 51,
+              "text": "areas",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_6_8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 129,
+              "end": 134,
+              "text": "north",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_6_9",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 190,
+              "end": 195,
+              "text": "south",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_6_10",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 40,
+              "end": 51,
+              "text": "local areas",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_6_11",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          }
+        ],
+        "model_version": "grammar-aware-mistral-v1.0",
+        "score": 0,
+        "created_ago": "now",
+        "cluster": null,
+        "neighbors": null,
+        "mislabeling": 0,
+        "created_at": "2025-06-17T16:11:06.355881",
+        "updated_at": "2025-06-17T16:11:06.355883",
+        "model": "grammar_aware_extraction",
+        "task": 6,
+        "project": 1
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "data": {
+      "text": "The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape."
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_7",
+        "result": [
+          {
+            "value": {
+              "start": 12,
+              "end": 21,
+              "text": "2002-2018",
+              "labels": [
+                "COORDINATES"
+              ]
+            },
+            "id": "grammar_ent_7_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.73,
+            "meta": {
+              "grammatical_role": "modifier",
+              "syntactic_pos": "NUM",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 41,
+              "end": 50,
+              "text": "expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_7_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 58,
+              "end": 62,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "grammar_ent_7_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 140,
+              "end": 147,
+              "text": "changes",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_7_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 155,
+              "end": 159,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "grammar_ent_7_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 4,
+              "end": 10,
+              "text": "period",
+              "labels": [
+                "DISCOVERED_SUBJECT"
+              ]
+            },
+            "id": "grammar_ent_7_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8500000000000001,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_subject",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 17,
+              "end": 21,
+              "text": "2018",
+              "labels": [
+                "DISCOVERED_SUBJECT"
+              ]
+            },
+            "id": "grammar_ent_7_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8500000000000001,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_subject",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 116,
+              "end": 120,
+              "text": "that",
+              "labels": [
+                "DISCOVERED_SUBJECT"
+              ]
+            },
+            "id": "grammar_ent_7_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8500000000000001,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_subject",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 104,
+              "end": 115,
+              "text": "development",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_7_8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 162,
+              "end": 171,
+              "text": "landscape",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_7_9",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 33,
+              "end": 50,
+              "text": "a rapid expansion",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_7_10",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "value": {
+              "start": 128,
+              "end": 147,
+              "text": "significant changes",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_7_11",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "value": {
+              "start": 151,
+              "end": 171,
+              "text": "the city's landscape",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_7_12",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "from_id": "grammar_ent_7_5",
+            "to_id": "grammar_ent_7_7",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "occurs_during"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.6499999999999999,
+              "grammar_justification": "The period [7] represents the time frame during which the expansion [4] occurred.",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.8999999999999999,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_7_4",
+            "to_id": "grammar_ent_7_6",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "results_in"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.6499999999999999,
+              "grammar_justification": "The expansion [4] led to significant changes [6].",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.8999999999999999,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_7_4",
+            "to_id": "grammar_ent_7_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "is_a"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "quality_score": 0.6299999999999999,
+              "grammar_justification": "Expansion [4] is a type of development [3].",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.7,
+              "grammar_alignment": 0.6
+            }
+          },
+          {
+            "from_id": "grammar_ent_7_3",
+            "to_id": "grammar_ent_7_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "affects"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.6299999999999999,
+              "grammar_justification": "Development [3] caused significant changes [1].",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.7,
+              "grammar_alignment": 0.6
+            }
+          },
+          {
+            "from_id": "grammar_ent_7_7",
+            "to_id": "grammar_ent_7_8",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "precedes"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "quality_score": 0.53,
+              "grammar_justification": "The period [7] preceded the changes [8] in the city's landscape.",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.5,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_7_0",
+            "to_id": "grammar_ent_7_7",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "encompasses"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "quality_score": 0.53,
+              "grammar_justification": "The period [0] includes the time frame represented by [7].",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.5,
+              "grammar_alignment": 0.5
+            }
+          }
+        ],
+        "model_version": "grammar-aware-mistral-v1.0",
+        "score": 0,
+        "created_ago": "now",
+        "cluster": null,
+        "neighbors": null,
+        "mislabeling": 0,
+        "created_at": "2025-06-17T16:11:06.355916",
+        "updated_at": "2025-06-17T16:11:06.355918",
+        "model": "grammar_aware_extraction",
+        "task": 7,
+        "project": 1
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "data": {
+      "text": "These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008."
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_8",
+        "result": [
+          {
+            "value": {
+              "start": 17,
+              "end": 24,
+              "text": "changes",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_8_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 75,
+              "end": 84,
+              "text": "expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_8_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 92,
+              "end": 96,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "grammar_ent_8_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 100,
+              "end": 104,
+              "text": "2002",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "grammar_ent_8_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NUM",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 147,
+              "end": 151,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "grammar_ent_8_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 172,
+              "end": 178,
+              "text": "Bhutan",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "grammar_ent_8_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.73,
+            "meta": {
+              "grammatical_role": "modifier",
+              "syntactic_pos": "PROPN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 181,
+              "end": 191,
+              "text": "transition",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_8_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 208,
+              "end": 212,
+              "text": "2008",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "grammar_ent_8_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NUM",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 62,
+              "end": 70,
+              "text": "approval",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_8_8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 131,
+              "end": 143,
+              "text": "construction",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_8_9",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 195,
+              "end": 204,
+              "text": "democracy",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_8_10",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 24,
+              "text": "These expediated changes",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_8_11",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "from_id": "grammar_ent_8_0",
+            "to_id": "grammar_ent_8_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "results_in"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.81,
+              "grammar_justification": "\"can be attributed to\" implies a causal relationship",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 1.0,
+              "grammar_alignment": 0.9
+            }
+          },
+          {
+            "from_id": "grammar_ent_8_5",
+            "to_id": "grammar_ent_8_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "precedes"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.54,
+              "grammar_justification": "passive voice, \"approval for\" implies a previous event",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.5,
+              "grammar_alignment": 0.6
+            }
+          },
+          {
+            "from_id": "grammar_ent_8_4",
+            "to_id": "grammar_ent_8_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "happens_by"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.6,
+              "grammar_justification": "\"post Bhutan's transition to democracy in\" indicates a temporal relationship",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.7,
+              "grammar_alignment": 0.6
+            }
+          },
+          {
+            "from_id": "grammar_ent_8_1",
+            "to_id": "grammar_ent_8_8",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "occurs_during"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.65,
+              "grammar_justification": "\"in 2002\" indicates a temporal relationship",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 1.0,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_8_1",
+            "to_id": "grammar_ent_8_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "follows"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.6,
+              "grammar_justification": "\"followed by\" implies a temporal relationship",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.7,
+              "grammar_alignment": 0.6
+            }
+          },
+          {
+            "from_id": "grammar_ent_8_3",
+            "to_id": "grammar_ent_8_9",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "occurs_during"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "quality_score": 0.62,
+              "grammar_justification": "\"construction of city infrastructure post\" implies a temporal relationship",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 0.8999999999999999,
+              "grammar_alignment": 0.5
+            }
+          },
+          {
+            "from_id": "grammar_ent_8_3",
+            "to_id": "grammar_ent_8_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "transforms_into"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "quality_score": 0.6900000000000001,
+              "grammar_justification": "\"hastened construction\" suggests a change from normal pace to faster pace",
+              "extraction_method": "grammar_aware",
+              "semantic_coherence": 1.0,
+              "grammar_alignment": 0.6
+            }
+          }
+        ],
+        "model_version": "grammar-aware-mistral-v1.0",
+        "score": 0,
+        "created_ago": "now",
+        "cluster": null,
+        "neighbors": null,
+        "mislabeling": 0,
+        "created_at": "2025-06-17T16:11:06.355962",
+        "updated_at": "2025-06-17T16:11:06.355964",
+        "model": "grammar_aware_extraction",
+        "task": 8,
+        "project": 1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "data": {
+      "text": "The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses."
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_9",
+        "result": [
+          {
+            "value": {
+              "start": 161,
+              "end": 167,
+              "text": "cities",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "grammar_ent_9_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.73,
+            "meta": {
+              "grammatical_role": "modifier",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 169,
+              "end": 176,
+              "text": "causing",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_9_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.73,
+            "meta": {
+              "grammatical_role": "modifier",
+              "syntactic_pos": "VERB",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 251,
+              "end": 258,
+              "text": "changes",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "grammar_ent_9_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "NOUN",
+              "discovery_method": "original_ner",
+              "confidence_level": "HIGH"
+            }
+          },
+          {
+            "value": {
+              "start": 14,
+              "end": 25,
+              "text": "improvement",
+              "labels": [
+                "DISCOVERED_SUBJECT"
+              ]
+            },
+            "id": "grammar_ent_9_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8500000000000001,
+            "meta": {
+              "grammatical_role": "subject",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_subject",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 35,
+              "end": 45,
+              "text": "facilities",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_9_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 60,
+              "end": 68,
+              "text": "creation",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_9_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 83,
+              "end": 87,
+              "text": "jobs",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_9_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 111,
+              "end": 122,
+              "text": "immigration",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_9_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 134,
+              "end": 139,
+              "text": "areas",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_9_8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 179,
+              "end": 183,
+              "text": "boom",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_9_9",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 192,
+              "end": 198,
+              "text": "estate",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_9_10",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 267,
+              "end": 271,
+              "text": "uses",
+              "labels": [
+                "DISCOVERED_OBJECT"
+              ]
+            },
+            "id": "grammar_ent_9_11",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.8300000000000001,
+            "meta": {
+              "grammatical_role": "object",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_object",
+              "confidence_level": "MEDIUM"
+            }
+          },
+          {
+            "value": {
+              "start": 128,
+              "end": 139,
+              "text": "rural areas",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_9_12",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "value": {
+              "start": 239,
+              "end": 258,
+              "text": "significant changes",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_9_13",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          },
+          {
+            "value": {
+              "start": 262,
+              "end": 271,
+              "text": "land uses",
+              "labels": [
+                "DISCOVERED_LULC"
+              ]
+            },
+            "id": "grammar_ent_9_14",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.5,
+            "meta": {
+              "grammatical_role": "noun_phrase",
+              "syntactic_pos": "unknown",
+              "discovery_method": "grammar_noun_phrase",
+              "confidence_level": "LOW"
+            }
+          }
+        ],
+        "model_version": "grammar-aware-mistral-v1.0",
+        "score": 0,
+        "created_ago": "now",
+        "cluster": null,
+        "neighbors": null,
+        "mislabeling": 0,
+        "created_at": "2025-06-17T16:11:06.356008",
+        "updated_at": "2025-06-17T16:11:06.356010",
+        "model": "grammar_aware_extraction",
+        "task": 9,
+        "project": 1
+      }
+    ]
+  }
+]

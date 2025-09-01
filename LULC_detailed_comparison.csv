@@ -1,0 +1,21 @@
+sentence_id,ground_truth_entities,model_entities,correct_predictions,missed_entities,false_predictions
+0,"['woody vegetation', 'degraded land']","['degraded land', 'woody vegetation cover']","[""GT:'degraded land' Model:'degraded land'""]",['woody vegetation'],['woody vegetation cover']
+1,['forests'],['forests'],"[""GT:'forests' Model:'forests'""]",[],[]
+2,"['fallows', 'cropped fields', 'arable lands']","['fallows', 'cropped fields', 'arable lands']","[""GT:'fallows' Model:'fallows'"", ""GT:'cropped fields' Model:'cropped fields'"", ""GT:'arable lands' Model:'arable lands'""]",[],[]
+3,['Agriculture'],[],[],['Agriculture'],[]
+4,['Forest land'],"['Forest land', 'gallery forest']","[""GT:'Forest land' Model:'Forest land'""]",[],['gallery forest']
+5,"[' savanna', 'tree', 'woodland', 'farmland', 'natural vegetation']","['tree savanna', 'woodland', 'farmland', 'forest', 'natural vegetation', 'degraded savanna']","[""GT:'woodland' Model:'woodland'"", ""GT:'farmland' Model:'farmland'"", ""GT:'natural vegetation' Model:'natural vegetation'""]","[' savanna', 'tree']","['tree savanna', 'forest', 'degraded savanna']"
+6,"['woodland', 'tree', 'farmland']","['tree savanna', 'woodland', 'farmland', 'forest', 'degraded savanna']","[""GT:'woodland' Model:'woodland'"", ""GT:'farmland' Model:'farmland'""]",['tree'],"['tree savanna', 'forest', 'degraded savanna']"
+7,"['landscape ', 'herbaceous ', ' fields', 'burnt areas']","['burnt areas', 'fallow period', 'herbaceous standing crop', 'landscape discontinuities', 'cultivated fields', 'cleared fields']","[""GT:'burnt areas' Model:'burnt areas'""]","['herbaceous ', 'landscape ', ' fields']","['fallow period', 'herbaceous standing crop', 'landscape discontinuities', 'cultivated fields', 'cleared fields']"
+8,['cropland'],['cropland'],"[""GT:'cropland' Model:'cropland'""]",[],[]
+9,"['herbaceous vegetation', 'fallows', 'cropped fields', 'rangelands', 'bare soil']","['herbaceous vegetation', 'fallows', 'cropped fields', 'rangelands', 'bare soil']","[""GT:'herbaceous vegetation' Model:'herbaceous vegetation'"", ""GT:'fallows' Model:'fallows'"", ""GT:'cropped fields' Model:'cropped fields'"", ""GT:'rangelands' Model:'rangelands'"", ""GT:'bare soil' Model:'bare soil'""]",[],[]
+10,"['croplands', 'grazing land']","['croplands', 'grazing land']","[""GT:'croplands' Model:'croplands'"", ""GT:'grazing land' Model:'grazing land'""]",[],[]
+11,"['woodland', ' tree savanna']","['woodland', 'tree savanna']","[""GT:'woodland' Model:'woodland'"", ""GT:' tree savanna' Model:'tree savanna'""]",[],[]
+12,"['baobab', 'Vitellaria paradoxa', 'Adansonia digitata', 'fallows', 'shea tree', 'NTFP-providing trees']","['baobab', 'fallows', 'shea tree', 'NTFP-providing trees']","[""GT:'baobab' Model:'baobab'"", ""GT:'fallows' Model:'fallows'"", ""GT:'shea tree' Model:'shea tree'"", ""GT:'NTFP-providing trees' Model:'NTFP-providing trees'""]","['Vitellaria paradoxa', 'Adansonia digitata']",[]
+13,"['woody vegetation', 'wood resources', 'rangelands']","['woody vegetation', 'wood resources', 'rangelands']","[""GT:'woody vegetation' Model:'woody vegetation'"", ""GT:'wood resources' Model:'wood resources'"", ""GT:'rangelands' Model:'rangelands'""]",[],[]
+14,"['cultivated land', 'soils', 'fallow land']","['cultivated land', 'soils', 'fallow cycles', 'fallow land']","[""GT:'cultivated land' Model:'cultivated land'"", ""GT:'soils' Model:'soils'"", ""GT:'fallow land' Model:'fallow land'""]",[],['fallow cycles']
+15,"['rivers', 'LULCC']",[],[],"['rivers', 'LULCC']",[]
+16,"['agroforestry', 'Tree ', 'Woody cover']","['woody cover', 'fields']","[""GT:'Woody cover' Model:'woody cover'""]","['Tree ', 'agroforestry']",['fields']
+17,"['Cropped fields', 'Fallow', 'Rangelands']","['cropped fields', 'fallows', 'Rangelands']","[""GT:'Fallow' Model:'fallows'"", ""GT:'Cropped fields' Model:'cropped fields'"", ""GT:'Rangelands' Model:'Rangelands'""]",[],[]
+18,"['bush', 'available land', 'Fallow', 'cultivated area', 'land']","['available land', 'cultivated area', 'bush-fallow', 'bushfallow system']","[""GT:'available land' Model:'available land'"", ""GT:'cultivated area' Model:'cultivated area'""]","['Fallow', 'land', 'bush']","['bush-fallow', 'bushfallow system']"
+19,"['Trees', 'Soil']","['trees', 'soil']","[""GT:'Trees' Model:'trees'"", ""GT:'Soil' Model:'soil'""]",[],[]

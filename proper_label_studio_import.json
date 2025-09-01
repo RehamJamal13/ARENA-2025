@@ -1,0 +1,32 @@
+[
+  {
+    "data": {
+      "text": "Forest cover declined by 15% in the region between 2010 and 2020 due to deforestation."
+    },
+    "id": 1
+  },
+  {
+    "data": {
+      "text": "Agricultural land was converted to urban areas during the study period."
+    },
+    "id": 2
+  },
+  {
+    "data": {
+      "text": "Wetlands decreased significantly from 2005 to 2015 in the coastal region."
+    },
+    "id": 3
+  },
+  {
+    "data": {
+      "text": "Built-up area increased from 52.88% in 2002 to 65.5% in 2018."
+    },
+    "id": 4
+  },
+  {
+    "data": {
+      "text": "Grassland area showed a substantial decline over the past decade."
+    },
+    "id": 5
+  }
+]

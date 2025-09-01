@@ -1,0 +1,14 @@
+Metric,Value
+Total Sentences,20
+Total Entities,109
+Sentences with Entities,20
+Sentences without Entities,0
+Entities: DATE,16
+Entities: CHANGE,22
+Entities: PROCESS,3
+Entities: LULC,39
+Entities: LOC,9
+Entities: SURFACE_UNIT,2
+Entities: CARDINAL,9
+Entities: PERCENT,7
+Entities: COORDINATES,2

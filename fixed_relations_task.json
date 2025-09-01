@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "data": {
+      "text": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050."
+    },
+    "annotations": [
+      {
+        "id": 21,
+        "result": [
+          {
+            "id": "entity_0",
+            "type": "labels",
+            "value": {
+              "start": 11,
+              "end": 18,
+              "text": "results",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 48,
+              "end": 55,
+              "text": "Thimphu",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_2",
+            "type": "labels",
+            "value": {
+              "start": 56,
+              "end": 60,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_3",
+            "type": "labels",
+            "value": {
+              "start": 65,
+              "end": 72,
+              "text": "changed",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_4",
+            "type": "labels",
+            "value": {
+              "start": 118,
+              "end": 124,
+              "text": "change",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_5",
+            "type": "labels",
+            "value": {
+              "start": 161,
+              "end": 165,
+              "text": "2050",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "relation_0",
+            "type": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_3",
+              "type": "undergoes"
+            },
+            "to_name": "label",
+            "from_name": "relation"
+          },
+          {
+            "id": "relation_1",
+            "type": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_5",
+              "type": "occurs_during"
+            },
+            "to_name": "label",
+            "from_name": "relation"
+          },
+          {
+            "id": "relation_2",
+            "type": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_1",
+              "type": "located_in"
+            },
+            "to_name": "label",
+            "from_name": "relation"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,981 @@
+{
+  "nodes": [
+    {
+      "id": "Article_1_FROM_LULC_0",
+      "name": "forest",
+      "group": "FROM_LULC"
+    },
+    {
+      "id": "Article_1_TO_LULC_0",
+      "name": "CHANGE: declined\nPROCESS: deforestation\nMAGNITUDE: 15%\nDATE_RANGE: 2010 to 2020\nSTART_DATE: 2010\nEND_DATE: 2020",
+      "group": "TO_LULC"
+    },
+    {
+      "id": "Article_1_CHANGE_0",
+      "name": "declined",
+      "group": "CHANGE"
+    },
+    {
+      "id": "Article_1_PROCESS_0",
+      "name": "deforestation",
+      "group": "PROCESS"
+    },
+    {
+      "id": "Article_1_MAGNITUDE_0",
+      "name": "15%",
+      "group": "MAGNITUDE"
+    },
+    {
+      "id": "Article_1_DATE_RANGE_0",
+      "name": "2010 to 2020",
+      "group": "DATE_RANGE"
+    },
+    {
+      "id": "Article_1_START_DATE_0",
+      "name": "2010",
+      "group": "START_DATE"
+    },
+    {
+      "id": "Article_1_END_DATE_0",
+      "name": "2020",
+      "group": "END_DATE"
+    },
+    {
+      "id": "Article_1_FROM_LULC_1",
+      "name": "built-up area",
+      "group": "FROM_LULC"
+    },
+    {
+      "id": "Article_1_TO_LULC_1",
+      "name": "built-up area",
+      "group": "TO_LULC"
+    },
+    {
+      "id": "Article_1_CHANGE_1",
+      "name": "increased",
+      "group": "CHANGE"
+    },
+    {
+      "id": "Article_1_PROCESS_1",
+      "name": "urbanization",
+      "group": "PROCESS"
+    },
+    {
+      "id": "Article_1_MAGNITUDE_1",
+      "name": "12.77%",
+      "group": "MAGNITUDE"
+    },
+    {
+      "id": "Article_1_DATE_RANGE_1",
+      "name": "2002 to 2018",
+      "group": "DATE_RANGE"
+    },
+    {
+      "id": "Article_1_START_DATE_1",
+      "name": "2002",
+      "group": "START_DATE"
+    },
+    {
+      "id": "Article_1_END_DATE_1",
+      "name": "2018",
+      "group": "END_DATE"
+    },
+    {
+      "id": "Article_1_FROM_LULC_2",
+      "name": "forest",
+      "group": "FROM_LULC"
+    },
+    {
+      "id": "Article_1_TO_LULC_2",
+      "name": "CHANGE: declined\nPROCESS: deforestation\nMAGNITUDE: 15%\nDATE_RANGE: 2010 to 2020\nSTART_DATE: 2010\nEND_DATE: 2020",
+      "group": "TO_LULC"
+    },
+    {
+      "id": "Article_1_CHANGE_2",
+      "name": "declined",
+      "group": "CHANGE"
+    },
+    {
+      "id": "Article_1_PROCESS_2",
+      "name": "deforestation",
+      "group": "PROCESS"
+    },
+    {
+      "id": "Article_1_MAGNITUDE_2",
+      "name": "15%",
+      "group": "MAGNITUDE"
+    },
+    {
+      "id": "Article_1_DATE_RANGE_2",
+      "name": "2010 to 2020",
+      "group": "DATE_RANGE"
+    },
+    {
+      "id": "Article_1_START_DATE_2",
+      "name": "2010",
+      "group": "START_DATE"
+    },
+    {
+      "id": "Article_1_END_DATE_2",
+      "name": "2020",
+      "group": "END_DATE"
+    },
+    {
+      "id": "Article_1_FROM_LULC_3",
+      "name": "agricultural land",
+      "group": "FROM_LULC"
+    },
+    {
+      "id": "Article_1_TO_LULC_3",
+      "name": "urban areas",
+      "group": "TO_LULC"
+    },
+    {
+      "id": "Article_1_CHANGE_3",
+      "name": "converted",
+      "group": "CHANGE"
+    },
+    {
+      "id": "Article_1_PROCESS_3",
+      "name": "urbanization",
+      "group": "PROCESS"
+    },
+    {
+      "id": "Article_1_MAGNITUDE_3",
+      "name": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:",
+      "group": "MAGNITUDE"
+    },
+    {
+      "id": "Article_1_DATE_RANGE_3",
+      "name": "2015",
+      "group": "DATE_RANGE"
+    },
+    {
+      "id": "Article_1_START_DATE_3",
+      "name": "2015",
+      "group": "START_DATE"
+    },
+    {
+      "id": "Article_1_FROM_LULC_4",
+      "name": "built-up area",
+      "group": "FROM_LULC"
+    },
+    {
+      "id": "Article_1_TO_LULC_4",
+      "name": "built-up area",
+      "group": "TO_LULC"
+    },
+    {
+      "id": "Article_1_CHANGE_4",
+      "name": "increased",
+      "group": "CHANGE"
+    },
+    {
+      "id": "Article_1_PROCESS_4",
+      "name": "urbanization",
+      "group": "PROCESS"
+    },
+    {
+      "id": "Article_1_MAGNITUDE_4",
+      "name": "12.77%",
+      "group": "MAGNITUDE"
+    },
+    {
+      "id": "Article_1_DATE_RANGE_4",
+      "name": "2002 to 2018",
+      "group": "DATE_RANGE"
+    },
+    {
+      "id": "Article_1_START_DATE_4",
+      "name": "2002",
+      "group": "START_DATE"
+    },
+    {
+      "id": "Article_1_END_DATE_4",
+      "name": "2018",
+      "group": "END_DATE"
+    },
+    {
+      "id": "Article_1_FROM_LULC_5",
+      "name": "agricultural land",
+      "group": "FROM_LULC"
+    },
+    {
+      "id": "Article_1_TO_LULC_5",
+      "name": "urban areas",
+      "group": "TO_LULC"
+    },
+    {
+      "id": "Article_1_CHANGE_5",
+      "name": "converted",
+      "group": "CHANGE"
+    },
+    {
+      "id": "Article_1_PROCESS_5",
+      "name": "urbanization",
+      "group": "PROCESS"
+    },
+    {
+      "id": "Article_1_MAGNITUDE_5",
+      "name": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:",
+      "group": "MAGNITUDE"
+    },
+    {
+      "id": "Article_1_DATE_RANGE_5",
+      "name": "2015",
+      "group": "DATE_RANGE"
+    },
+    {
+      "id": "Article_1_START_DATE_5",
+      "name": "2015",
+      "group": "START_DATE"
+    },
+    {
+      "id": "Article_1_FROM_LULC_6",
+      "name": "agricultural land",
+      "group": "FROM_LULC"
+    },
+    {
+      "id": "Article_1_TO_LULC_6",
+      "name": "urban areas",
+      "group": "TO_LULC"
+    },
+    {
+      "id": "Article_1_CHANGE_6",
+      "name": "converted",
+      "group": "CHANGE"
+    },
+    {
+      "id": "Article_1_PROCESS_6",
+      "name": "urbanization",
+      "group": "PROCESS"
+    },
+    {
+      "id": "Article_1_MAGNITUDE_6",
+      "name": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:",
+      "group": "MAGNITUDE"
+    },
+    {
+      "id": "Article_1_DATE_RANGE_6",
+      "name": "2015",
+      "group": "DATE_RANGE"
+    },
+    {
+      "id": "Article_1_START_DATE_6",
+      "name": "2015",
+      "group": "START_DATE"
+    },
+    {
+      "id": "Article_1_FROM_LULC_7",
+      "name": "forest",
+      "group": "FROM_LULC"
+    },
+    {
+      "id": "Article_1_TO_LULC_7",
+      "name": "CHANGE: declined\nPROCESS: deforestation\nMAGNITUDE: 15%\nDATE_RANGE: 2010 to 2020\nSTART_DATE: 2010\nEND_DATE: 2020",
+      "group": "TO_LULC"
+    },
+    {
+      "id": "Article_1_CHANGE_7",
+      "name": "declined",
+      "group": "CHANGE"
+    },
+    {
+      "id": "Article_1_PROCESS_7",
+      "name": "deforestation",
+      "group": "PROCESS"
+    },
+    {
+      "id": "Article_1_MAGNITUDE_7",
+      "name": "15%",
+      "group": "MAGNITUDE"
+    },
+    {
+      "id": "Article_1_DATE_RANGE_7",
+      "name": "2010 to 2020",
+      "group": "DATE_RANGE"
+    },
+    {
+      "id": "Article_1_START_DATE_7",
+      "name": "2010",
+      "group": "START_DATE"
+    },
+    {
+      "id": "Article_1_END_DATE_7",
+      "name": "2020",
+      "group": "END_DATE"
+    },
+    {
+      "id": "Article_1_FROM_LULC_8",
+      "name": "agricultural land",
+      "group": "FROM_LULC"
+    },
+    {
+      "id": "Article_1_TO_LULC_8",
+      "name": "urban areas",
+      "group": "TO_LULC"
+    },
+    {
+      "id": "Article_1_CHANGE_8",
+      "name": "converted",
+      "group": "CHANGE"
+    },
+    {
+      "id": "Article_1_PROCESS_8",
+      "name": "urbanization",
+      "group": "PROCESS"
+    },
+    {
+      "id": "Article_1_MAGNITUDE_8",
+      "name": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:",
+      "group": "MAGNITUDE"
+    },
+    {
+      "id": "Article_1_DATE_RANGE_8",
+      "name": "2015",
+      "group": "DATE_RANGE"
+    },
+    {
+      "id": "Article_1_START_DATE_8",
+      "name": "2015",
+      "group": "START_DATE"
+    },
+    {
+      "id": "Article_1_FROM_LULC_9",
+      "name": "agricultural land",
+      "group": "FROM_LULC"
+    },
+    {
+      "id": "Article_1_TO_LULC_9",
+      "name": "urban areas",
+      "group": "TO_LULC"
+    },
+    {
+      "id": "Article_1_CHANGE_9",
+      "name": "converted",
+      "group": "CHANGE"
+    },
+    {
+      "id": "Article_1_PROCESS_9",
+      "name": "urbanization",
+      "group": "PROCESS"
+    },
+    {
+      "id": "Article_1_MAGNITUDE_9",
+      "name": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:",
+      "group": "MAGNITUDE"
+    },
+    {
+      "id": "Article_1_DATE_RANGE_9",
+      "name": "2015",
+      "group": "DATE_RANGE"
+    },
+    {
+      "id": "Article_1_START_DATE_9",
+      "name": "2015",
+      "group": "START_DATE"
+    }
+  ],
+  "links": [
+    {
+      "source": "Article_1_FROM_LULC_0",
+      "target": "Article_1_CHANGE_0",
+      "value": 1,
+      "type": "causes"
+    },
+    {
+      "source": "Article_1_FROM_LULC_0",
+      "target": "Article_1_TO_LULC_0",
+      "value": 1,
+      "type": "converts_to"
+    },
+    {
+      "source": "Article_1_FROM_LULC_0",
+      "target": "Article_1_PROCESS_0",
+      "value": 1,
+      "type": "undergoes"
+    },
+    {
+      "source": "Article_1_CHANGE_0",
+      "target": "Article_1_PROCESS_0",
+      "value": 1,
+      "type": "part_of"
+    },
+    {
+      "source": "Article_1_CHANGE_0",
+      "target": "Article_1_MAGNITUDE_0",
+      "value": 1,
+      "type": "has_magnitude"
+    },
+    {
+      "source": "Article_1_PROCESS_0",
+      "target": "Article_1_MAGNITUDE_0",
+      "value": 1,
+      "type": "measured_by"
+    },
+    {
+      "source": "Article_1_CHANGE_0",
+      "target": "Article_1_DATE_RANGE_0",
+      "value": 1,
+      "type": "occurs_during"
+    },
+    {
+      "source": "Article_1_PROCESS_0",
+      "target": "Article_1_DATE_RANGE_0",
+      "value": 1,
+      "type": "happens_in"
+    },
+    {
+      "source": "Article_1_START_DATE_0",
+      "target": "Article_1_END_DATE_0",
+      "value": 1,
+      "type": "precedes"
+    },
+    {
+      "source": "Article_1_START_DATE_0",
+      "target": "Article_1_DATE_RANGE_0",
+      "value": 1,
+      "type": "starts"
+    },
+    {
+      "source": "Article_1_END_DATE_0",
+      "target": "Article_1_DATE_RANGE_0",
+      "value": 1,
+      "type": "ends"
+    },
+    {
+      "source": "Article_1_FROM_LULC_1",
+      "target": "Article_1_CHANGE_1",
+      "value": 1,
+      "type": "causes"
+    },
+    {
+      "source": "Article_1_FROM_LULC_1",
+      "target": "Article_1_TO_LULC_1",
+      "value": 1,
+      "type": "converts_to"
+    },
+    {
+      "source": "Article_1_FROM_LULC_1",
+      "target": "Article_1_PROCESS_1",
+      "value": 1,
+      "type": "undergoes"
+    },
+    {
+      "source": "Article_1_CHANGE_1",
+      "target": "Article_1_PROCESS_1",
+      "value": 1,
+      "type": "part_of"
+    },
+    {
+      "source": "Article_1_CHANGE_1",
+      "target": "Article_1_MAGNITUDE_1",
+      "value": 1,
+      "type": "has_magnitude"
+    },
+    {
+      "source": "Article_1_PROCESS_1",
+      "target": "Article_1_MAGNITUDE_1",
+      "value": 1,
+      "type": "measured_by"
+    },
+    {
+      "source": "Article_1_CHANGE_1",
+      "target": "Article_1_DATE_RANGE_1",
+      "value": 1,
+      "type": "occurs_during"
+    },
+    {
+      "source": "Article_1_PROCESS_1",
+      "target": "Article_1_DATE_RANGE_1",
+      "value": 1,
+      "type": "happens_in"
+    },
+    {
+      "source": "Article_1_START_DATE_1",
+      "target": "Article_1_END_DATE_1",
+      "value": 1,
+      "type": "precedes"
+    },
+    {
+      "source": "Article_1_START_DATE_1",
+      "target": "Article_1_DATE_RANGE_1",
+      "value": 1,
+      "type": "starts"
+    },
+    {
+      "source": "Article_1_END_DATE_1",
+      "target": "Article_1_DATE_RANGE_1",
+      "value": 1,
+      "type": "ends"
+    },
+    {
+      "source": "Article_1_FROM_LULC_2",
+      "target": "Article_1_CHANGE_2",
+      "value": 1,
+      "type": "causes"
+    },
+    {
+      "source": "Article_1_FROM_LULC_2",
+      "target": "Article_1_TO_LULC_2",
+      "value": 1,
+      "type": "converts_to"
+    },
+    {
+      "source": "Article_1_FROM_LULC_2",
+      "target": "Article_1_PROCESS_2",
+      "value": 1,
+      "type": "undergoes"
+    },
+    {
+      "source": "Article_1_CHANGE_2",
+      "target": "Article_1_PROCESS_2",
+      "value": 1,
+      "type": "part_of"
+    },
+    {
+      "source": "Article_1_CHANGE_2",
+      "target": "Article_1_MAGNITUDE_2",
+      "value": 1,
+      "type": "has_magnitude"
+    },
+    {
+      "source": "Article_1_PROCESS_2",
+      "target": "Article_1_MAGNITUDE_2",
+      "value": 1,
+      "type": "measured_by"
+    },
+    {
+      "source": "Article_1_CHANGE_2",
+      "target": "Article_1_DATE_RANGE_2",
+      "value": 1,
+      "type": "occurs_during"
+    },
+    {
+      "source": "Article_1_PROCESS_2",
+      "target": "Article_1_DATE_RANGE_2",
+      "value": 1,
+      "type": "happens_in"
+    },
+    {
+      "source": "Article_1_START_DATE_2",
+      "target": "Article_1_END_DATE_2",
+      "value": 1,
+      "type": "precedes"
+    },
+    {
+      "source": "Article_1_START_DATE_2",
+      "target": "Article_1_DATE_RANGE_2",
+      "value": 1,
+      "type": "starts"
+    },
+    {
+      "source": "Article_1_END_DATE_2",
+      "target": "Article_1_DATE_RANGE_2",
+      "value": 1,
+      "type": "ends"
+    },
+    {
+      "source": "Article_1_FROM_LULC_3",
+      "target": "Article_1_CHANGE_3",
+      "value": 1,
+      "type": "causes"
+    },
+    {
+      "source": "Article_1_FROM_LULC_3",
+      "target": "Article_1_TO_LULC_3",
+      "value": 1,
+      "type": "converts_to"
+    },
+    {
+      "source": "Article_1_FROM_LULC_3",
+      "target": "Article_1_PROCESS_3",
+      "value": 1,
+      "type": "undergoes"
+    },
+    {
+      "source": "Article_1_CHANGE_3",
+      "target": "Article_1_PROCESS_3",
+      "value": 1,
+      "type": "part_of"
+    },
+    {
+      "source": "Article_1_CHANGE_3",
+      "target": "Article_1_MAGNITUDE_3",
+      "value": 1,
+      "type": "has_magnitude"
+    },
+    {
+      "source": "Article_1_PROCESS_3",
+      "target": "Article_1_MAGNITUDE_3",
+      "value": 1,
+      "type": "measured_by"
+    },
+    {
+      "source": "Article_1_CHANGE_3",
+      "target": "Article_1_DATE_RANGE_3",
+      "value": 1,
+      "type": "occurs_during"
+    },
+    {
+      "source": "Article_1_PROCESS_3",
+      "target": "Article_1_DATE_RANGE_3",
+      "value": 1,
+      "type": "happens_in"
+    },
+    {
+      "source": "Article_1_START_DATE_3",
+      "target": "Article_1_DATE_RANGE_3",
+      "value": 1,
+      "type": "starts"
+    },
+    {
+      "source": "Article_1_FROM_LULC_4",
+      "target": "Article_1_CHANGE_4",
+      "value": 1,
+      "type": "causes"
+    },
+    {
+      "source": "Article_1_FROM_LULC_4",
+      "target": "Article_1_TO_LULC_4",
+      "value": 1,
+      "type": "converts_to"
+    },
+    {
+      "source": "Article_1_FROM_LULC_4",
+      "target": "Article_1_PROCESS_4",
+      "value": 1,
+      "type": "undergoes"
+    },
+    {
+      "source": "Article_1_CHANGE_4",
+      "target": "Article_1_PROCESS_4",
+      "value": 1,
+      "type": "part_of"
+    },
+    {
+      "source": "Article_1_CHANGE_4",
+      "target": "Article_1_MAGNITUDE_4",
+      "value": 1,
+      "type": "has_magnitude"
+    },
+    {
+      "source": "Article_1_PROCESS_4",
+      "target": "Article_1_MAGNITUDE_4",
+      "value": 1,
+      "type": "measured_by"
+    },
+    {
+      "source": "Article_1_CHANGE_4",
+      "target": "Article_1_DATE_RANGE_4",
+      "value": 1,
+      "type": "occurs_during"
+    },
+    {
+      "source": "Article_1_PROCESS_4",
+      "target": "Article_1_DATE_RANGE_4",
+      "value": 1,
+      "type": "happens_in"
+    },
+    {
+      "source": "Article_1_START_DATE_4",
+      "target": "Article_1_END_DATE_4",
+      "value": 1,
+      "type": "precedes"
+    },
+    {
+      "source": "Article_1_START_DATE_4",
+      "target": "Article_1_DATE_RANGE_4",
+      "value": 1,
+      "type": "starts"
+    },
+    {
+      "source": "Article_1_END_DATE_4",
+      "target": "Article_1_DATE_RANGE_4",
+      "value": 1,
+      "type": "ends"
+    },
+    {
+      "source": "Article_1_FROM_LULC_5",
+      "target": "Article_1_CHANGE_5",
+      "value": 1,
+      "type": "causes"
+    },
+    {
+      "source": "Article_1_FROM_LULC_5",
+      "target": "Article_1_TO_LULC_5",
+      "value": 1,
+      "type": "converts_to"
+    },
+    {
+      "source": "Article_1_FROM_LULC_5",
+      "target": "Article_1_PROCESS_5",
+      "value": 1,
+      "type": "undergoes"
+    },
+    {
+      "source": "Article_1_CHANGE_5",
+      "target": "Article_1_PROCESS_5",
+      "value": 1,
+      "type": "part_of"
+    },
+    {
+      "source": "Article_1_CHANGE_5",
+      "target": "Article_1_MAGNITUDE_5",
+      "value": 1,
+      "type": "has_magnitude"
+    },
+    {
+      "source": "Article_1_PROCESS_5",
+      "target": "Article_1_MAGNITUDE_5",
+      "value": 1,
+      "type": "measured_by"
+    },
+    {
+      "source": "Article_1_CHANGE_5",
+      "target": "Article_1_DATE_RANGE_5",
+      "value": 1,
+      "type": "occurs_during"
+    },
+    {
+      "source": "Article_1_PROCESS_5",
+      "target": "Article_1_DATE_RANGE_5",
+      "value": 1,
+      "type": "happens_in"
+    },
+    {
+      "source": "Article_1_START_DATE_5",
+      "target": "Article_1_DATE_RANGE_5",
+      "value": 1,
+      "type": "starts"
+    },
+    {
+      "source": "Article_1_FROM_LULC_6",
+      "target": "Article_1_CHANGE_6",
+      "value": 1,
+      "type": "causes"
+    },
+    {
+      "source": "Article_1_FROM_LULC_6",
+      "target": "Article_1_TO_LULC_6",
+      "value": 1,
+      "type": "converts_to"
+    },
+    {
+      "source": "Article_1_FROM_LULC_6",
+      "target": "Article_1_PROCESS_6",
+      "value": 1,
+      "type": "undergoes"
+    },
+    {
+      "source": "Article_1_CHANGE_6",
+      "target": "Article_1_PROCESS_6",
+      "value": 1,
+      "type": "part_of"
+    },
+    {
+      "source": "Article_1_CHANGE_6",
+      "target": "Article_1_MAGNITUDE_6",
+      "value": 1,
+      "type": "has_magnitude"
+    },
+    {
+      "source": "Article_1_PROCESS_6",
+      "target": "Article_1_MAGNITUDE_6",
+      "value": 1,
+      "type": "measured_by"
+    },
+    {
+      "source": "Article_1_CHANGE_6",
+      "target": "Article_1_DATE_RANGE_6",
+      "value": 1,
+      "type": "occurs_during"
+    },
+    {
+      "source": "Article_1_PROCESS_6",
+      "target": "Article_1_DATE_RANGE_6",
+      "value": 1,
+      "type": "happens_in"
+    },
+    {
+      "source": "Article_1_START_DATE_6",
+      "target": "Article_1_DATE_RANGE_6",
+      "value": 1,
+      "type": "starts"
+    },
+    {
+      "source": "Article_1_FROM_LULC_7",
+      "target": "Article_1_CHANGE_7",
+      "value": 1,
+      "type": "causes"
+    },
+    {
+      "source": "Article_1_FROM_LULC_7",
+      "target": "Article_1_TO_LULC_7",
+      "value": 1,
+      "type": "converts_to"
+    },
+    {
+      "source": "Article_1_FROM_LULC_7",
+      "target": "Article_1_PROCESS_7",
+      "value": 1,
+      "type": "undergoes"
+    },
+    {
+      "source": "Article_1_CHANGE_7",
+      "target": "Article_1_PROCESS_7",
+      "value": 1,
+      "type": "part_of"
+    },
+    {
+      "source": "Article_1_CHANGE_7",
+      "target": "Article_1_MAGNITUDE_7",
+      "value": 1,
+      "type": "has_magnitude"
+    },
+    {
+      "source": "Article_1_PROCESS_7",
+      "target": "Article_1_MAGNITUDE_7",
+      "value": 1,
+      "type": "measured_by"
+    },
+    {
+      "source": "Article_1_CHANGE_7",
+      "target": "Article_1_DATE_RANGE_7",
+      "value": 1,
+      "type": "occurs_during"
+    },
+    {
+      "source": "Article_1_PROCESS_7",
+      "target": "Article_1_DATE_RANGE_7",
+      "value": 1,
+      "type": "happens_in"
+    },
+    {
+      "source": "Article_1_START_DATE_7",
+      "target": "Article_1_END_DATE_7",
+      "value": 1,
+      "type": "precedes"
+    },
+    {
+      "source": "Article_1_START_DATE_7",
+      "target": "Article_1_DATE_RANGE_7",
+      "value": 1,
+      "type": "starts"
+    },
+    {
+      "source": "Article_1_END_DATE_7",
+      "target": "Article_1_DATE_RANGE_7",
+      "value": 1,
+      "type": "ends"
+    },
+    {
+      "source": "Article_1_FROM_LULC_8",
+      "target": "Article_1_CHANGE_8",
+      "value": 1,
+      "type": "causes"
+    },
+    {
+      "source": "Article_1_FROM_LULC_8",
+      "target": "Article_1_TO_LULC_8",
+      "value": 1,
+      "type": "converts_to"
+    },
+    {
+      "source": "Article_1_FROM_LULC_8",
+      "target": "Article_1_PROCESS_8",
+      "value": 1,
+      "type": "undergoes"
+    },
+    {
+      "source": "Article_1_CHANGE_8",
+      "target": "Article_1_PROCESS_8",
+      "value": 1,
+      "type": "part_of"
+    },
+    {
+      "source": "Article_1_CHANGE_8",
+      "target": "Article_1_MAGNITUDE_8",
+      "value": 1,
+      "type": "has_magnitude"
+    },
+    {
+      "source": "Article_1_PROCESS_8",
+      "target": "Article_1_MAGNITUDE_8",
+      "value": 1,
+      "type": "measured_by"
+    },
+    {
+      "source": "Article_1_CHANGE_8",
+      "target": "Article_1_DATE_RANGE_8",
+      "value": 1,
+      "type": "occurs_during"
+    },
+    {
+      "source": "Article_1_PROCESS_8",
+      "target": "Article_1_DATE_RANGE_8",
+      "value": 1,
+      "type": "happens_in"
+    },
+    {
+      "source": "Article_1_START_DATE_8",
+      "target": "Article_1_DATE_RANGE_8",
+      "value": 1,
+      "type": "starts"
+    },
+    {
+      "source": "Article_1_FROM_LULC_9",
+      "target": "Article_1_CHANGE_9",
+      "value": 1,
+      "type": "causes"
+    },
+    {
+      "source": "Article_1_FROM_LULC_9",
+      "target": "Article_1_TO_LULC_9",
+      "value": 1,
+      "type": "converts_to"
+    },
+    {
+      "source": "Article_1_FROM_LULC_9",
+      "target": "Article_1_PROCESS_9",
+      "value": 1,
+      "type": "undergoes"
+    },
+    {
+      "source": "Article_1_CHANGE_9",
+      "target": "Article_1_PROCESS_9",
+      "value": 1,
+      "type": "part_of"
+    },
+    {
+      "source": "Article_1_CHANGE_9",
+      "target": "Article_1_MAGNITUDE_9",
+      "value": 1,
+      "type": "has_magnitude"
+    },
+    {
+      "source": "Article_1_PROCESS_9",
+      "target": "Article_1_MAGNITUDE_9",
+      "value": 1,
+      "type": "measured_by"
+    },
+    {
+      "source": "Article_1_CHANGE_9",
+      "target": "Article_1_DATE_RANGE_9",
+      "value": 1,
+      "type": "occurs_during"
+    },
+    {
+      "source": "Article_1_PROCESS_9",
+      "target": "Article_1_DATE_RANGE_9",
+      "value": 1,
+      "type": "happens_in"
+    },
+    {
+      "source": "Article_1_START_DATE_9",
+      "target": "Article_1_DATE_RANGE_9",
+      "value": 1,
+      "type": "starts"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+id,type,text,sentence,article_id,event_id
+Article_1_FROM_LULC_0,FROM_LULC,forest,Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.,Article_1,0
+Article_1_TO_LULC_0,TO_LULC,"CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020",Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.,Article_1,0
+Article_1_CHANGE_0,CHANGE,declined,Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.,Article_1,0
+Article_1_PROCESS_0,PROCESS,deforestation,Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.,Article_1,0
+Article_1_MAGNITUDE_0,MAGNITUDE,15%,Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.,Article_1,0
+Article_1_DATE_RANGE_0,DATE_RANGE,2010 to 2020,Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.,Article_1,0
+Article_1_START_DATE_0,START_DATE,2010,Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.,Article_1,0
+Article_1_END_DATE_0,END_DATE,2020,Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.,Article_1,0
+Article_1_FROM_LULC_1,FROM_LULC,built-up area,"The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",Article_1,1
+Article_1_TO_LULC_1,TO_LULC,built-up area,"The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",Article_1,1
+Article_1_CHANGE_1,CHANGE,increased,"The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",Article_1,1
+Article_1_PROCESS_1,PROCESS,urbanization,"The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",Article_1,1
+Article_1_MAGNITUDE_1,MAGNITUDE,12.77%,"The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",Article_1,1
+Article_1_DATE_RANGE_1,DATE_RANGE,2002 to 2018,"The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",Article_1,1
+Article_1_START_DATE_1,START_DATE,2002,"The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",Article_1,1
+Article_1_END_DATE_1,END_DATE,2018,"The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",Article_1,1
+Article_1_FROM_LULC_2,FROM_LULC,forest,"On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",Article_1,2
+Article_1_TO_LULC_2,TO_LULC,"CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020","On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",Article_1,2
+Article_1_CHANGE_2,CHANGE,declined,"On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",Article_1,2
+Article_1_PROCESS_2,PROCESS,deforestation,"On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",Article_1,2
+Article_1_MAGNITUDE_2,MAGNITUDE,15%,"On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",Article_1,2
+Article_1_DATE_RANGE_2,DATE_RANGE,2010 to 2020,"On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",Article_1,2
+Article_1_START_DATE_2,START_DATE,2010,"On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",Article_1,2
+Article_1_END_DATE_2,END_DATE,2020,"On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",Article_1,2
+Article_1_FROM_LULC_3,FROM_LULC,agricultural land,Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.,Article_1,3
+Article_1_TO_LULC_3,TO_LULC,urban areas,Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.,Article_1,3
+Article_1_CHANGE_3,CHANGE,converted,Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.,Article_1,3
+Article_1_PROCESS_3,PROCESS,urbanization,Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.,Article_1,3
+Article_1_MAGNITUDE_3,MAGNITUDE,"DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:",Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.,Article_1,3
+Article_1_DATE_RANGE_3,DATE_RANGE,2015,Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.,Article_1,3
+Article_1_START_DATE_3,START_DATE,2015,Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.,Article_1,3
+Article_1_FROM_LULC_4,FROM_LULC,built-up area,"Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",Article_1,4
+Article_1_TO_LULC_4,TO_LULC,built-up area,"Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",Article_1,4
+Article_1_CHANGE_4,CHANGE,increased,"Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",Article_1,4
+Article_1_PROCESS_4,PROCESS,urbanization,"Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",Article_1,4
+Article_1_MAGNITUDE_4,MAGNITUDE,12.77%,"Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",Article_1,4
+Article_1_DATE_RANGE_4,DATE_RANGE,2002 to 2018,"Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",Article_1,4
+Article_1_START_DATE_4,START_DATE,2002,"Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",Article_1,4
+Article_1_END_DATE_4,END_DATE,2018,"Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",Article_1,4
+Article_1_FROM_LULC_5,FROM_LULC,agricultural land,"Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.",Article_1,5
+Article_1_TO_LULC_5,TO_LULC,urban areas,"Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.",Article_1,5
+Article_1_CHANGE_5,CHANGE,converted,"Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.",Article_1,5
+Article_1_PROCESS_5,PROCESS,urbanization,"Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.",Article_1,5
+Article_1_MAGNITUDE_5,MAGNITUDE,"DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:","Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.",Article_1,5
+Article_1_DATE_RANGE_5,DATE_RANGE,2015,"Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.",Article_1,5
+Article_1_START_DATE_5,START_DATE,2015,"Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.",Article_1,5
+Article_1_FROM_LULC_6,FROM_LULC,agricultural land,"Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",Article_1,6
+Article_1_TO_LULC_6,TO_LULC,urban areas,"Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",Article_1,6
+Article_1_CHANGE_6,CHANGE,converted,"Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",Article_1,6
+Article_1_PROCESS_6,PROCESS,urbanization,"Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",Article_1,6
+Article_1_MAGNITUDE_6,MAGNITUDE,"DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:","Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",Article_1,6
+Article_1_DATE_RANGE_6,DATE_RANGE,2015,"Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",Article_1,6
+Article_1_START_DATE_6,START_DATE,2015,"Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",Article_1,6
+Article_1_FROM_LULC_7,FROM_LULC,forest,"The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",Article_1,7
+Article_1_TO_LULC_7,TO_LULC,"CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020","The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",Article_1,7
+Article_1_CHANGE_7,CHANGE,declined,"The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",Article_1,7
+Article_1_PROCESS_7,PROCESS,deforestation,"The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",Article_1,7
+Article_1_MAGNITUDE_7,MAGNITUDE,15%,"The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",Article_1,7
+Article_1_DATE_RANGE_7,DATE_RANGE,2010 to 2020,"The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",Article_1,7
+Article_1_START_DATE_7,START_DATE,2010,"The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",Article_1,7
+Article_1_END_DATE_7,END_DATE,2020,"The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",Article_1,7
+Article_1_FROM_LULC_8,FROM_LULC,agricultural land,"These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.",Article_1,8
+Article_1_TO_LULC_8,TO_LULC,urban areas,"These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.",Article_1,8
+Article_1_CHANGE_8,CHANGE,converted,"These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.",Article_1,8
+Article_1_PROCESS_8,PROCESS,urbanization,"These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.",Article_1,8
+Article_1_MAGNITUDE_8,MAGNITUDE,"DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:","These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.",Article_1,8
+Article_1_DATE_RANGE_8,DATE_RANGE,2015,"These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.",Article_1,8
+Article_1_START_DATE_8,START_DATE,2015,"These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.",Article_1,8
+Article_1_FROM_LULC_9,FROM_LULC,agricultural land,"The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.",Article_1,9
+Article_1_TO_LULC_9,TO_LULC,urban areas,"The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.",Article_1,9
+Article_1_CHANGE_9,CHANGE,converted,"The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.",Article_1,9
+Article_1_PROCESS_9,PROCESS,urbanization,"The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.",Article_1,9
+Article_1_MAGNITUDE_9,MAGNITUDE,"DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:","The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.",Article_1,9
+Article_1_DATE_RANGE_9,DATE_RANGE,2015,"The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.",Article_1,9
+Article_1_START_DATE_9,START_DATE,2015,"The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.",Article_1,9

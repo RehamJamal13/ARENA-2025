@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "data": {
+      "text": "Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city."
+    },
+    "annotations": [
+      {
+        "id": 1001,
+        "result": []
+      }
+    ]
+  }
+]

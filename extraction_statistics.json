@@ -1,0 +1,53 @@
+{
+  "extraction_summary": {
+    "total_sentences": 1986,
+    "successful_extractions": 1396,
+    "total_relations": 7010,
+    "success_rate": "70.3%",
+    "avg_relations_per_sentence": 3.53
+  },
+  "method_distribution": {
+    "rule_basic": 936,
+    "llama_zero_shot": 782,
+    "skipped": 268
+  },
+  "relation_type_distribution": {
+    "undergoes": 3065,
+    "occurs_during": 2000,
+    "located_in": 1328,
+    "affects": 301,
+    "causes": 244,
+    "dominated": 2,
+    "followed by": 1,
+    "expands": 1,
+    "CHANGE": 14,
+    "decrease": 18,
+    "EXPANDS": 8,
+    "LULC": 2,
+    "OCCURS_DURING": 1,
+    "PROCESS": 1,
+    "2025": 2,
+    "23 thousand ha": 1,
+    "transition": 2,
+    "decline": 3,
+    "increased": 2,
+    "accelerating": 1,
+    "CAUSE": 1,
+    "LOC": 1,
+    "during": 2,
+    "declines": 4,
+    "increases": 1,
+    "increase": 1,
+    "transitioned": 1,
+    "occurred_during": 1,
+    "caused": 1
+  },
+  "confidence_distribution": {
+    "rule_basic": 4391,
+    "llama_zero_shot": 2619
+  },
+  "files_created": [
+    "extracted_relations_complete.json",
+    "label_studio_predictions_output.json"
+  ]
+}

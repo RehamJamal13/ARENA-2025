@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "data": {
+      "text": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground."
+    },
+    "annotations": [
+      {
+        "id": 1001,
+        "result": [
+          {
+            "id": "1618f230-360d-48c9-b820-94337b1da860",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 54,
+              "end": 67,
+              "text": "built-up area",
+              "labels": [
+                "FROM_LULC"
+              ]
+            }
+          },
+          {
+            "id": "6d6fbc6a-42ac-453c-a4d0-e817f3b4a525",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 54,
+              "end": 67,
+              "text": "built-up area",
+              "labels": [
+                "TO_LULC"
+              ]
+            }
+          },
+          {
+            "id": "d90c34c1-3877-4d36-bd90-4f4029075a2e",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 43,
+              "end": 49,
+              "text": "12.77%",
+              "labels": [
+                "MAGNITUDE"
+              ]
+            }
+          },
+          {
+            "type": "relation",
+            "from_id": "1618f230-360d-48c9-b820-94337b1da860",
+            "to_id": "6d6fbc6a-42ac-453c-a4d0-e817f3b4a525",
+            "labels": [
+              "converts_to"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1761 @@
+article_id,original_sentence,prompt_text,llm_raw_output,event_found,from_lulc,to_lulc,change_type,magnitude,error
+Article_1,Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.,"Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.""
+Identified Entities in the sentence:
+- ""results"" (Type: CHANGE)
+- ""Thimphu"" (Type: LOC)
+- ""city"" (Type: LULC)
+- ""changed"" (Type: CHANGE)
+- ""change"" (Type: CHANGE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,"The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.","Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.""
+Identified Entities in the sentence:
+- ""increase"" (Type: CHANGE)
+- ""12.77%"" (Type: PERCENT)
+- ""2002"" (Type: DATE)
+- ""52.88%"" (Type: PERCENT)
+- ""2018"" (Type: DATE)
+- ""65.5%"" (Type: PERCENT)
+- ""increase"" (Type: CHANGE)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,"On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).","Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).""
+Identified Entities in the sentence:
+- ""forest"" (Type: LULC)
+- ""declined"" (Type: CHANGE)
+- ""15.25%"" (Type: PERCENT)
+- ""agriculture"" (Type: LULC)
+- ""1.01%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.,"Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.""
+Identified Entities in the sentence:
+- ""growth"" (Type: CHANGE)
+- ""urban"" (Type: LULC)
+- ""drivers"" (Type: CHANGE)
+- ""changes"" (Type: CHANGE)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,"Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.","Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.""
+Identified Entities in the sentence:
+- ""the year"" (Type: DATE)
+- ""city"" (Type: LULC)
+- ""73.21%"" (Type: PERCENT)
+- ""forest"" (Type: LULC)
+- ""only about 16%"" (Type: PERCENT)
+- ""city"" (Type: LULC)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,"Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.","Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.""
+Identified Entities in the sentence:
+- ""some 13"" (Type: CARDINAL)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,"Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.","Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.""
+Identified Entities in the sentence:
+- ""Expansion"" (Type: CHANGE)
+- ""city"" (Type: LULC)
+- ""2002"" (Type: DATE)
+- ""Lanjophaka"" (Type: LOC)
+- ""Taba"" (Type: LOC)
+- ""Dechencholing"" (Type: LOC)
+- ""Changjiji"" (Type: LOC)
+- ""Lungtenphu"" (Type: LOC)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,"The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.","Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.""
+Identified Entities in the sentence:
+- ""2002-2018"" (Type: COORDINATES)
+- ""expansion"" (Type: CHANGE)
+- ""city"" (Type: LULC)
+- ""changes"" (Type: CHANGE)
+- ""city"" (Type: LULC)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,"These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.","Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.""
+Identified Entities in the sentence:
+- ""changes"" (Type: CHANGE)
+- ""expansion"" (Type: CHANGE)
+- ""city"" (Type: LULC)
+- ""2002"" (Type: DATE)
+- ""city"" (Type: LULC)
+- ""Bhutan"" (Type: LOC)
+- ""transition"" (Type: CHANGE)
+- ""2008"" (Type: DATE)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,"The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.","Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.""
+Identified Entities in the sentence:
+- ""cities"" (Type: LULC)
+- ""causing"" (Type: CHANGE)
+- ""changes"" (Type: CHANGE)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,"Although small, agriculture land shows a significant probability to transition to built-up area which has been the trend in many cities The findings indicate that rapid development of urban built will lead to sharp declines in forest and agriculture and increase in urban population.","Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""Although small, agriculture land shows a significant probability to transition to built-up area which has been the trend in many cities The findings indicate that rapid development of urban built will lead to sharp declines in forest and agriculture and increase in urban population.""
+Identified Entities in the sentence:
+- ""agriculture"" (Type: LULC)
+- ""transition"" (Type: CHANGE)
+- ""cities"" (Type: LULC)
+- ""urban"" (Type: LULC)
+- ""declines"" (Type: CHANGE)
+- ""forest"" (Type: LULC)
+- ""agriculture"" (Type: LULC)
+- ""increase"" (Type: CHANGE)
+- ""urban"" (Type: LULC)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,Results clearly confirm significant changes in LULC from the start of expansion to current area in 2002 to 2018.,"Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""Results clearly confirm significant changes in LULC from the start of expansion to current area in 2002 to 2018.""
+Identified Entities in the sentence:
+- ""Results"" (Type: CHANGE)
+- ""changes"" (Type: CHANGE)
+- ""LULC"" (Type: LOC)
+- ""expansion"" (Type: CHANGE)
+- ""2002"" (Type: DATE)
+- ""2018"" (Type: DATE)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,Significant increase in built-up areas were associated with parallel loss of important land cover types such as forest and agriculture.,"Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""Significant increase in built-up areas were associated with parallel loss of important land cover types such as forest and agriculture.""
+Identified Entities in the sentence:
+- ""increase"" (Type: CHANGE)
+- ""loss"" (Type: CHANGE)
+- ""forest"" (Type: LULC)
+- ""agriculture"" (Type: LULC)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,Significant changes in Thimphu's landscapes are correlated with the government's decision to expand the city northwards and southwards.,"Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""Significant changes in Thimphu's landscapes are correlated with the government's decision to expand the city northwards and southwards.""
+Identified Entities in the sentence:
+- ""changes"" (Type: CHANGE)
+- ""Thimphu"" (Type: LOC)
+- ""expand"" (Type: CHANGE)
+- ""city"" (Type: LULC)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,"The results of prediction for 2050 also did not bear well for Thimphu city, with forest cover diminishing to a mere 4.28km 2 (16.32%) which are also highly fragmented.","Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""The results of prediction for 2050 also did not bear well for Thimphu city, with forest cover diminishing to a mere 4.28km 2 (16.32%) which are also highly fragmented.""
+Identified Entities in the sentence:
+- ""results"" (Type: CHANGE)
+- ""2050"" (Type: DATE)
+- ""Thimphu"" (Type: LOC)
+- ""city"" (Type: LULC)
+- ""forest"" (Type: LULC)
+- ""4.28km"" (Type: SURFACE_UNIT)
+- ""16.32%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_1,"Loss of forest cover will degrade important ecological services and increase vulnerability of the city to landslides, gulley erosion, drying of water sources, worsened air pollution, and loss of important biodiversity.","Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""Loss of forest cover will degrade important ecological services and increase vulnerability of the city to landslides, gulley erosion, drying of water sources, worsened air pollution, and loss of important biodiversity.""
+Identified Entities in the sentence:
+- ""Loss"" (Type: CHANGE)
+- ""forest"" (Type: LULC)
+- ""increase"" (Type: CHANGE)
+- ""city"" (Type: LULC)
+- ""erosion"" (Type: PROCESS)
+- ""water"" (Type: LULC)
+- ""loss"" (Type: CHANGE)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_2,"However, we do not know how the land transition in Vietnam has been proceeding recently.","Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""However, we do not know how the land transition in Vietnam has been proceeding recently.""
+Identified Entities in the sentence:
+- ""transition"" (Type: CHANGE)
+- ""Vietnam"" (Type: LOC)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_2,Research results show that the land transition in Vietnam has been similar to the world trend.,"Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""Research results show that the land transition in Vietnam has been similar to the world trend.""
+Identified Entities in the sentence:
+- ""results"" (Type: CHANGE)
+- ""transition"" (Type: CHANGE)
+- ""Vietnam"" (Type: LOC)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_2,"The highest land conversion rate occurs in the North Central and Central Coast regions, but conversion of agricultural land for urbanization is mainly in the Red River Delta and Southeast.","Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""The highest land conversion rate occurs in the North Central and Central Coast regions, but conversion of agricultural land for urbanization is mainly in the Red River Delta and Southeast.""
+Identified Entities in the sentence:
+- ""the North Central"" (Type: LOC)
+- ""Central Coast"" (Type: LOC)
+- ""urbanization"" (Type: PROCESS)
+- ""the Red River Delta"" (Type: LOC)
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output
+Article_2,Land use is also a manifestation of various human activities to exploit the landscape.,"Instruction: You are an expert in Land Use Land Cover (LULC) and land use land cover process yu also familiar with  change analysis.
+Your primary task is to identify a SINGLE or multi , clear LULC change event from the provided sentence.
+A change event involves a specific LULC type either decreasing, increasing, or converting FROM one LULC type TO another.
+Extract the details of this single event. If multiple distinct events are clearly described for different LULC types, focus on extracting the details for the first one mentioned or the most prominent one.
+Use only the information explicitly present or very strongly implied in the sentence for the event.
+
+Desired JSON Output Format:
+{
+  ""from_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""to_lulc"": ""LULC_TYPE_NAME_OR_DESCRIPTION"",
+  ""change_type"": ""decreased | increased | converted"" etc,
+  ""magnitude"": ""NUMERICAL_VALUE_WITH_percentage"",
+  ""SURFACE_UNIT"": ""NUMERICAL_VALUE_WITH_measurement_unit""
+  
+}
+For any field where information is not specified or not applicable for the identified single event, use an empty string """".
+If no single, clear LULC change event fitting this structure (with at least a change_type and one of from_lulc or to_lulc identified) is described, output exactly: {""event_found"": false}
+
+--- Example 1 ---
+Sentence: ""Loss of forest cover will degrade important ecological services.""
+Identified Entities in Example 1:
+- ""Loss"" (Type: CHANGE)
+- ""forest cover"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": ""forest cover"",
+  ""to_lulc"": """",
+  ""change_type"": ""decreased"", 
+  ""magnitude"": """"
+}
+--- End Example 1 ---
+
+--- Example 2 ---
+Sentence: ""Built-up land occupied a relatively small area in 2005, but it is expected to increase to about 260 to 420 million hectares by 2050.""
+Identified Entities in Example 2:
+- ""Built-up land"" (Type: LULC) 
+- ""increase"" (Type: CHANGE)
+- ""260 to 420 million hectares"" (Type: SURFACE_UNIT) 
+- ""2005"" (Type: DATE)
+- ""2050"" (Type: DATE)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Built-up land"",
+  ""change_type"": ""increased"",
+  ""SURFACE_UNIT"": ""260 to 420 million hectares""
+}
+--- End Example 2 ---
+
+--- Example 3 ---
+Sentence: ""The country has a total surface area of about 241,500 km 2 of which land occupies 194,000 km 2 and the rest is open water and wetlands .""
+Identified Entities in Example 3:
+- ""area of about 241,500 km"" (Type: SURFACE_UNIT)
+- ""194,000 km"" (Type: SURFACE_UNIT)
+- ""2"" (Type: CARDINAL) 
+- ""water"" (Type: LULC)
+- ""wetlands"" (Type: LULC)
+Extracted LULC Change Event JSON:
+{""event_found"": false}
+--- End Example 3 ---
+--- Example 4 (Handling Multiple Changes) ---
+Sentence: ""Urban areas grew by 5% while nearby forests shrunk by 2%.""
+Identified Entities in Example 4:
+- ""Urban areas"" (Type: LULC)
+- ""grew"" (Type: CHANGE)
+- ""5%"" (Type: PERCENT)
+- ""forests"" (Type: LULC)
+- ""shrunk"" (Type: CHANGE)
+- ""2%"" (Type: PERCENT)
+Extracted LULC Change Event JSON:
+{
+  ""from_lulc"": """",
+  ""to_lulc"": ""Urban areas"",
+  ""change_type"": ""increased"",
+  ""magnitude"": ""5%""
+}
+--- End Example 4 ---
+Now, analyze the following:
+
+Sentence: ""Land use is also a manifestation of various human activities to exploit the landscape.""
+Identified Entities in the sentence:
+No specific entities pre-identified for this sentence.
+Extracted LULC Change Event JSON:
+",""""", ""to_lulc"": ""Urban areas"", change_type: increased, magnitude: 5%",False,,,,,No JSON object found in output

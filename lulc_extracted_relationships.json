@@ -1,0 +1,2032 @@
+[
+  {
+    "article_id": "Article_1",
+    "sentence_index": 0,
+    "original_sentence": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.",
+    "extracted_entities": [
+      {
+        "text": "results",
+        "label": "CHANGE",
+        "start_char": 11,
+        "end_char": 18
+      },
+      {
+        "text": "Thimphu",
+        "label": "LOC",
+        "start_char": 48,
+        "end_char": 55
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 56,
+        "end_char": 60
+      },
+      {
+        "text": "changed",
+        "label": "CHANGE",
+        "start_char": 65,
+        "end_char": 72
+      },
+      {
+        "text": "change",
+        "label": "CHANGE",
+        "start_char": 118,
+        "end_char": 124
+      },
+      {
+        "text": "2050",
+        "label": "DATE",
+        "start_char": 161,
+        "end_char": 165
+      }
+    ],
+    "date_context": {
+      "dates": [
+        "2050"
+      ],
+      "date_range": "",
+      "start_date": "2050",
+      "count": 1,
+      "end_date": ""
+    },
+    "llm_raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+    "parsed_result": {
+      "relationship_found": true,
+      "transformation": {
+        "from_lulc": "original land use/cover type",
+        "to_lulc": "resulting land use/cover type",
+        "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+        "magnitude": "quantitative measure (area, percentage, rate)"
+      },
+      "spatial_context": {
+        "location": "specific geographic location where change occurs",
+        "spatial_scale": "scale of change (local, regional, national, global)",
+        "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+      },
+      "temporal_context": {
+        "start_date": "beginning of change period",
+        "end_date": "end of change period",
+        "duration": "length of change period",
+        "change_rate": "speed/rate of transformation",
+        "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+      },
+      "causal_mechanisms": {
+        "primary_drivers": "main causes of change (urbanization, agriculture, climate, policy)",
+        "secondary_drivers": "contributing factors",
+        "human_factors": "anthropogenic influences",
+        "natural_factors": "environmental/climatic influences",
+        "policy_factors": "regulatory or governance influences"
+      },
+      "transformation_rules": {
+        "conditions": "circumstances that enable/trigger transformation",
+        "prerequisites": "required conditions for change to occur",
+        "constraints": "factors that limit or prevent change",
+        "thresholds": "critical points that trigger transformation"
+      },
+      "effects_and_impacts": {
+        "environmental_effects": "ecological consequences",
+        "socioeconomic_effects": "human/economic impacts",
+        "ecosystem_services": "changes in natural services",
+        "cascading_effects": "secondary impacts triggered by primary change"
+      },
+      "relationships": {
+        "causal_chain": "sequence of cause-effect relationships",
+        "feedback_loops": "circular relationships between factors",
+        "spatial_dependencies": "how location influences transformation",
+        "temporal_dependencies": "how timing affects transformation"
+      },
+      "raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+      "magnitude_breakdown": {
+        "magnitude_percent": "",
+        "magnitude_area": "",
+        "magnitude_rate": "",
+        "magnitude_absolute": ""
+      },
+      "location_hierarchy": {
+        "countries": [],
+        "regions": [],
+        "cities": [
+          "specific geographic location where change occurs"
+        ],
+        "landmarks": [],
+        "coordinates": []
+      }
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "lulc_original_land_use/cover_type",
+          "type": "LULC",
+          "label": "original land use/cover type",
+          "role": "source"
+        },
+        {
+          "id": "lulc_resulting_land_use/cover_type",
+          "type": "LULC",
+          "label": "resulting land use/cover type",
+          "role": "target"
+        },
+        {
+          "id": "location_specific_geographic_location_where_change_occurs",
+          "type": "LOCATION",
+          "label": "specific geographic location where change occurs",
+          "scale": "scale of change (local, regional, national, global)"
+        },
+        {
+          "id": "driver_main_causes_of_change_(urbanization",
+          "type": "DRIVER",
+          "label": "main causes of change (urbanization"
+        },
+        {
+          "id": "driver_agriculture",
+          "type": "DRIVER",
+          "label": "agriculture"
+        },
+        {
+          "id": "driver_climate",
+          "type": "DRIVER",
+          "label": "climate"
+        },
+        {
+          "id": "driver_policy)",
+          "type": "DRIVER",
+          "label": "policy)"
+        },
+        {
+          "id": "driver_contributing_factors",
+          "type": "DRIVER",
+          "label": "contributing factors"
+        }
+      ],
+      "edges": [
+        {
+          "source": "lulc_original_land_use/cover_type",
+          "target": "lulc_resulting_land_use/cover_type",
+          "type": "TRANSFORMS_TO",
+          "properties": {
+            "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+            "magnitude": "quantitative measure (area, percentage, rate)",
+            "temporal_context": {
+              "start_date": "beginning of change period",
+              "end_date": "end of change period",
+              "duration": "length of change period",
+              "change_rate": "speed/rate of transformation",
+              "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+            }
+          }
+        }
+      ],
+      "relationship_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+      "metadata": {
+        "spatial_context": {
+          "location": "specific geographic location where change occurs",
+          "spatial_scale": "scale of change (local, regional, national, global)",
+          "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+        },
+        "temporal_context": {
+          "start_date": "beginning of change period",
+          "end_date": "end of change period",
+          "duration": "length of change period",
+          "change_rate": "speed/rate of transformation",
+          "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+        },
+        "effects": {
+          "environmental_effects": "ecological consequences",
+          "socioeconomic_effects": "human/economic impacts",
+          "ecosystem_services": "changes in natural services",
+          "cascading_effects": "secondary impacts triggered by primary change"
+        }
+      }
+    },
+    "processing_metadata": {
+      "timestamp": "2025-05-27T11:43:18.308218",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "sentence_length": 166,
+      "num_entities": 6,
+      "error": null
+    }
+  },
+  {
+    "article_id": "Article_1",
+    "sentence_index": 1,
+    "original_sentence": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",
+    "extracted_entities": [
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start_char": 33,
+        "end_char": 41
+      },
+      {
+        "text": "12.77%",
+        "label": "PERCENT",
+        "start_char": 43,
+        "end_char": 49
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 73,
+        "end_char": 77
+      },
+      {
+        "text": "52.88%",
+        "label": "PERCENT",
+        "start_char": 79,
+        "end_char": 85
+      },
+      {
+        "text": "2018",
+        "label": "DATE",
+        "start_char": 90,
+        "end_char": 94
+      },
+      {
+        "text": "65.5%",
+        "label": "PERCENT",
+        "start_char": 96,
+        "end_char": 101
+      },
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start_char": 125,
+        "end_char": 133
+      }
+    ],
+    "date_context": {
+      "dates": [
+        "2002",
+        "2018"
+      ],
+      "date_range": "2002 to 2018",
+      "start_date": "2002",
+      "count": 2,
+      "end_date": "2018"
+    },
+    "llm_raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+    "parsed_result": {
+      "relationship_found": true,
+      "transformation": {
+        "from_lulc": "original land use/cover type",
+        "to_lulc": "resulting land use/cover type",
+        "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+        "magnitude": "quantitative measure (area, percentage, rate)"
+      },
+      "spatial_context": {
+        "location": "specific geographic location where change occurs",
+        "spatial_scale": "scale of change (local, regional, national, global)",
+        "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+      },
+      "temporal_context": {
+        "start_date": "beginning of change period",
+        "end_date": "end of change period",
+        "duration": "length of change period",
+        "change_rate": "speed/rate of transformation",
+        "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+      },
+      "causal_mechanisms": {
+        "primary_drivers": "main causes of change (urbanization, agriculture, climate, policy)",
+        "secondary_drivers": "contributing factors",
+        "human_factors": "anthropogenic influences",
+        "natural_factors": "environmental/climatic influences",
+        "policy_factors": "regulatory or governance influences"
+      },
+      "transformation_rules": {
+        "conditions": "circumstances that enable/trigger transformation",
+        "prerequisites": "required conditions for change to occur",
+        "constraints": "factors that limit or prevent change",
+        "thresholds": "critical points that trigger transformation"
+      },
+      "effects_and_impacts": {
+        "environmental_effects": "ecological consequences",
+        "socioeconomic_effects": "human/economic impacts",
+        "ecosystem_services": "changes in natural services",
+        "cascading_effects": "secondary impacts triggered by primary change"
+      },
+      "relationships": {
+        "causal_chain": "sequence of cause-effect relationships",
+        "feedback_loops": "circular relationships between factors",
+        "spatial_dependencies": "how location influences transformation",
+        "temporal_dependencies": "how timing affects transformation"
+      },
+      "raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+      "magnitude_breakdown": {
+        "magnitude_percent": "",
+        "magnitude_area": "",
+        "magnitude_rate": "",
+        "magnitude_absolute": ""
+      },
+      "location_hierarchy": {
+        "countries": [],
+        "regions": [],
+        "cities": [
+          "specific geographic location where change occurs"
+        ],
+        "landmarks": [],
+        "coordinates": []
+      }
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "lulc_original_land_use/cover_type",
+          "type": "LULC",
+          "label": "original land use/cover type",
+          "role": "source"
+        },
+        {
+          "id": "lulc_resulting_land_use/cover_type",
+          "type": "LULC",
+          "label": "resulting land use/cover type",
+          "role": "target"
+        },
+        {
+          "id": "location_specific_geographic_location_where_change_occurs",
+          "type": "LOCATION",
+          "label": "specific geographic location where change occurs",
+          "scale": "scale of change (local, regional, national, global)"
+        },
+        {
+          "id": "driver_main_causes_of_change_(urbanization",
+          "type": "DRIVER",
+          "label": "main causes of change (urbanization"
+        },
+        {
+          "id": "driver_agriculture",
+          "type": "DRIVER",
+          "label": "agriculture"
+        },
+        {
+          "id": "driver_climate",
+          "type": "DRIVER",
+          "label": "climate"
+        },
+        {
+          "id": "driver_policy)",
+          "type": "DRIVER",
+          "label": "policy)"
+        },
+        {
+          "id": "driver_contributing_factors",
+          "type": "DRIVER",
+          "label": "contributing factors"
+        }
+      ],
+      "edges": [
+        {
+          "source": "lulc_original_land_use/cover_type",
+          "target": "lulc_resulting_land_use/cover_type",
+          "type": "TRANSFORMS_TO",
+          "properties": {
+            "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+            "magnitude": "quantitative measure (area, percentage, rate)",
+            "temporal_context": {
+              "start_date": "beginning of change period",
+              "end_date": "end of change period",
+              "duration": "length of change period",
+              "change_rate": "speed/rate of transformation",
+              "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+            }
+          }
+        }
+      ],
+      "relationship_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+      "metadata": {
+        "spatial_context": {
+          "location": "specific geographic location where change occurs",
+          "spatial_scale": "scale of change (local, regional, national, global)",
+          "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+        },
+        "temporal_context": {
+          "start_date": "beginning of change period",
+          "end_date": "end of change period",
+          "duration": "length of change period",
+          "change_rate": "speed/rate of transformation",
+          "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+        },
+        "effects": {
+          "environmental_effects": "ecological consequences",
+          "socioeconomic_effects": "human/economic impacts",
+          "ecosystem_services": "changes in natural services",
+          "cascading_effects": "secondary impacts triggered by primary change"
+        }
+      }
+    },
+    "processing_metadata": {
+      "timestamp": "2025-05-27T11:43:41.333351",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "sentence_length": 162,
+      "num_entities": 7,
+      "error": null
+    }
+  },
+  {
+    "article_id": "Article_1",
+    "sentence_index": 2,
+    "original_sentence": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",
+    "extracted_entities": [
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 17,
+        "end_char": 23
+      },
+      {
+        "text": "declined",
+        "label": "CHANGE",
+        "start_char": 30,
+        "end_char": 38
+      },
+      {
+        "text": "15.25%",
+        "label": "PERCENT",
+        "start_char": 52,
+        "end_char": 58
+      },
+      {
+        "text": "agriculture",
+        "label": "LULC",
+        "start_char": 72,
+        "end_char": 83
+      },
+      {
+        "text": "1.01%",
+        "label": "PERCENT",
+        "start_char": 85,
+        "end_char": 90
+      }
+    ],
+    "date_context": {
+      "dates": [],
+      "date_range": "",
+      "start_date": "",
+      "count": 0,
+      "end_date": ""
+    },
+    "llm_raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+    "parsed_result": {
+      "relationship_found": true,
+      "transformation": {
+        "from_lulc": "original land use/cover type",
+        "to_lulc": "resulting land use/cover type",
+        "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+        "magnitude": "quantitative measure (area, percentage, rate)"
+      },
+      "spatial_context": {
+        "location": "specific geographic location where change occurs",
+        "spatial_scale": "scale of change (local, regional, national, global)",
+        "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+      },
+      "temporal_context": {
+        "start_date": "beginning of change period",
+        "end_date": "end of change period",
+        "duration": "length of change period",
+        "change_rate": "speed/rate of transformation",
+        "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+      },
+      "causal_mechanisms": {
+        "primary_drivers": "main causes of change (urbanization, agriculture, climate, policy)",
+        "secondary_drivers": "contributing factors",
+        "human_factors": "anthropogenic influences",
+        "natural_factors": "environmental/climatic influences",
+        "policy_factors": "regulatory or governance influences"
+      },
+      "transformation_rules": {
+        "conditions": "circumstances that enable/trigger transformation",
+        "prerequisites": "required conditions for change to occur",
+        "constraints": "factors that limit or prevent change",
+        "thresholds": "critical points that trigger transformation"
+      },
+      "effects_and_impacts": {
+        "environmental_effects": "ecological consequences",
+        "socioeconomic_effects": "human/economic impacts",
+        "ecosystem_services": "changes in natural services",
+        "cascading_effects": "secondary impacts triggered by primary change"
+      },
+      "relationships": {
+        "causal_chain": "sequence of cause-effect relationships",
+        "feedback_loops": "circular relationships between factors",
+        "spatial_dependencies": "how location influences transformation",
+        "temporal_dependencies": "how timing affects transformation"
+      },
+      "raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+      "magnitude_breakdown": {
+        "magnitude_percent": "",
+        "magnitude_area": "",
+        "magnitude_rate": "",
+        "magnitude_absolute": ""
+      },
+      "location_hierarchy": {
+        "countries": [],
+        "regions": [],
+        "cities": [
+          "specific geographic location where change occurs"
+        ],
+        "landmarks": [],
+        "coordinates": []
+      }
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "lulc_original_land_use/cover_type",
+          "type": "LULC",
+          "label": "original land use/cover type",
+          "role": "source"
+        },
+        {
+          "id": "lulc_resulting_land_use/cover_type",
+          "type": "LULC",
+          "label": "resulting land use/cover type",
+          "role": "target"
+        },
+        {
+          "id": "location_specific_geographic_location_where_change_occurs",
+          "type": "LOCATION",
+          "label": "specific geographic location where change occurs",
+          "scale": "scale of change (local, regional, national, global)"
+        },
+        {
+          "id": "driver_main_causes_of_change_(urbanization",
+          "type": "DRIVER",
+          "label": "main causes of change (urbanization"
+        },
+        {
+          "id": "driver_agriculture",
+          "type": "DRIVER",
+          "label": "agriculture"
+        },
+        {
+          "id": "driver_climate",
+          "type": "DRIVER",
+          "label": "climate"
+        },
+        {
+          "id": "driver_policy)",
+          "type": "DRIVER",
+          "label": "policy)"
+        },
+        {
+          "id": "driver_contributing_factors",
+          "type": "DRIVER",
+          "label": "contributing factors"
+        }
+      ],
+      "edges": [
+        {
+          "source": "lulc_original_land_use/cover_type",
+          "target": "lulc_resulting_land_use/cover_type",
+          "type": "TRANSFORMS_TO",
+          "properties": {
+            "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+            "magnitude": "quantitative measure (area, percentage, rate)",
+            "temporal_context": {
+              "start_date": "beginning of change period",
+              "end_date": "end of change period",
+              "duration": "length of change period",
+              "change_rate": "speed/rate of transformation",
+              "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+            }
+          }
+        }
+      ],
+      "relationship_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+      "metadata": {
+        "spatial_context": {
+          "location": "specific geographic location where change occurs",
+          "spatial_scale": "scale of change (local, regional, national, global)",
+          "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+        },
+        "temporal_context": {
+          "start_date": "beginning of change period",
+          "end_date": "end of change period",
+          "duration": "length of change period",
+          "change_rate": "speed/rate of transformation",
+          "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+        },
+        "effects": {
+          "environmental_effects": "ecological consequences",
+          "socioeconomic_effects": "human/economic impacts",
+          "ecosystem_services": "changes in natural services",
+          "cascading_effects": "secondary impacts triggered by primary change"
+        }
+      }
+    },
+    "processing_metadata": {
+      "timestamp": "2025-05-27T11:44:04.242615",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "sentence_length": 92,
+      "num_entities": 5,
+      "error": null
+    }
+  },
+  {
+    "article_id": "Article_1",
+    "sentence_index": 3,
+    "original_sentence": "Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.",
+    "extracted_entities": [
+      {
+        "text": "growth",
+        "label": "CHANGE",
+        "start_char": 17,
+        "end_char": 23
+      },
+      {
+        "text": "urban",
+        "label": "LULC",
+        "start_char": 43,
+        "end_char": 48
+      },
+      {
+        "text": "drivers",
+        "label": "CHANGE",
+        "start_char": 133,
+        "end_char": 140
+      },
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 150,
+        "end_char": 157
+      }
+    ],
+    "date_context": {
+      "dates": [],
+      "date_range": "",
+      "start_date": "",
+      "count": 0,
+      "end_date": ""
+    },
+    "llm_raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+    "parsed_result": {
+      "relationship_found": true,
+      "transformation": {
+        "from_lulc": "original land use/cover type",
+        "to_lulc": "resulting land use/cover type",
+        "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+        "magnitude": "quantitative measure (area, percentage, rate)"
+      },
+      "spatial_context": {
+        "location": "specific geographic location where change occurs",
+        "spatial_scale": "scale of change (local, regional, national, global)",
+        "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+      },
+      "temporal_context": {
+        "start_date": "beginning of change period",
+        "end_date": "end of change period",
+        "duration": "length of change period",
+        "change_rate": "speed/rate of transformation",
+        "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+      },
+      "causal_mechanisms": {
+        "primary_drivers": "main causes of change (urbanization, agriculture, climate, policy)",
+        "secondary_drivers": "contributing factors",
+        "human_factors": "anthropogenic influences",
+        "natural_factors": "environmental/climatic influences",
+        "policy_factors": "regulatory or governance influences"
+      },
+      "transformation_rules": {
+        "conditions": "circumstances that enable/trigger transformation",
+        "prerequisites": "required conditions for change to occur",
+        "constraints": "factors that limit or prevent change",
+        "thresholds": "critical points that trigger transformation"
+      },
+      "effects_and_impacts": {
+        "environmental_effects": "ecological consequences",
+        "socioeconomic_effects": "human/economic impacts",
+        "ecosystem_services": "changes in natural services",
+        "cascading_effects": "secondary impacts triggered by primary change"
+      },
+      "relationships": {
+        "causal_chain": "sequence of cause-effect relationships",
+        "feedback_loops": "circular relationships between factors",
+        "spatial_dependencies": "how location influences transformation",
+        "temporal_dependencies": "how timing affects transformation"
+      },
+      "raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+      "magnitude_breakdown": {
+        "magnitude_percent": "",
+        "magnitude_area": "",
+        "magnitude_rate": "",
+        "magnitude_absolute": ""
+      },
+      "location_hierarchy": {
+        "countries": [],
+        "regions": [],
+        "cities": [
+          "specific geographic location where change occurs"
+        ],
+        "landmarks": [],
+        "coordinates": []
+      }
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "lulc_original_land_use/cover_type",
+          "type": "LULC",
+          "label": "original land use/cover type",
+          "role": "source"
+        },
+        {
+          "id": "lulc_resulting_land_use/cover_type",
+          "type": "LULC",
+          "label": "resulting land use/cover type",
+          "role": "target"
+        },
+        {
+          "id": "location_specific_geographic_location_where_change_occurs",
+          "type": "LOCATION",
+          "label": "specific geographic location where change occurs",
+          "scale": "scale of change (local, regional, national, global)"
+        },
+        {
+          "id": "driver_main_causes_of_change_(urbanization",
+          "type": "DRIVER",
+          "label": "main causes of change (urbanization"
+        },
+        {
+          "id": "driver_agriculture",
+          "type": "DRIVER",
+          "label": "agriculture"
+        },
+        {
+          "id": "driver_climate",
+          "type": "DRIVER",
+          "label": "climate"
+        },
+        {
+          "id": "driver_policy)",
+          "type": "DRIVER",
+          "label": "policy)"
+        },
+        {
+          "id": "driver_contributing_factors",
+          "type": "DRIVER",
+          "label": "contributing factors"
+        }
+      ],
+      "edges": [
+        {
+          "source": "lulc_original_land_use/cover_type",
+          "target": "lulc_resulting_land_use/cover_type",
+          "type": "TRANSFORMS_TO",
+          "properties": {
+            "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+            "magnitude": "quantitative measure (area, percentage, rate)",
+            "temporal_context": {
+              "start_date": "beginning of change period",
+              "end_date": "end of change period",
+              "duration": "length of change period",
+              "change_rate": "speed/rate of transformation",
+              "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+            }
+          }
+        }
+      ],
+      "relationship_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+      "metadata": {
+        "spatial_context": {
+          "location": "specific geographic location where change occurs",
+          "spatial_scale": "scale of change (local, regional, national, global)",
+          "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+        },
+        "temporal_context": {
+          "start_date": "beginning of change period",
+          "end_date": "end of change period",
+          "duration": "length of change period",
+          "change_rate": "speed/rate of transformation",
+          "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+        },
+        "effects": {
+          "environmental_effects": "ecological consequences",
+          "socioeconomic_effects": "human/economic impacts",
+          "ecosystem_services": "changes in natural services",
+          "cascading_effects": "secondary impacts triggered by primary change"
+        }
+      }
+    },
+    "processing_metadata": {
+      "timestamp": "2025-05-27T11:44:27.166456",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "sentence_length": 158,
+      "num_entities": 4,
+      "error": null
+    }
+  },
+  {
+    "article_id": "Article_1",
+    "sentence_index": 4,
+    "original_sentence": "Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",
+    "extracted_entities": [
+      {
+        "text": "the year",
+        "label": "DATE",
+        "start_char": 62,
+        "end_char": 70
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 131,
+        "end_char": 135
+      },
+      {
+        "text": "73.21%",
+        "label": "PERCENT",
+        "start_char": 142,
+        "end_char": 148
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 155,
+        "end_char": 161
+      },
+      {
+        "text": "only about 16%",
+        "label": "PERCENT",
+        "start_char": 205,
+        "end_char": 219
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 227,
+        "end_char": 231
+      }
+    ],
+    "date_context": {
+      "dates": [
+        "the year"
+      ],
+      "date_range": "",
+      "start_date": "the year",
+      "count": 1,
+      "end_date": ""
+    },
+    "llm_raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+    "parsed_result": {
+      "relationship_found": true,
+      "transformation": {
+        "from_lulc": "original land use/cover type",
+        "to_lulc": "resulting land use/cover type",
+        "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+        "magnitude": "quantitative measure (area, percentage, rate)"
+      },
+      "spatial_context": {
+        "location": "specific geographic location where change occurs",
+        "spatial_scale": "scale of change (local, regional, national, global)",
+        "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+      },
+      "temporal_context": {
+        "start_date": "beginning of change period",
+        "end_date": "end of change period",
+        "duration": "length of change period",
+        "change_rate": "speed/rate of transformation",
+        "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+      },
+      "causal_mechanisms": {
+        "primary_drivers": "main causes of change (urbanization, agriculture, climate, policy)",
+        "secondary_drivers": "contributing factors",
+        "human_factors": "anthropogenic influences",
+        "natural_factors": "environmental/climatic influences",
+        "policy_factors": "regulatory or governance influences"
+      },
+      "transformation_rules": {
+        "conditions": "circumstances that enable/trigger transformation",
+        "prerequisites": "required conditions for change to occur",
+        "constraints": "factors that limit or prevent change",
+        "thresholds": "critical points that trigger transformation"
+      },
+      "effects_and_impacts": {
+        "environmental_effects": "ecological consequences",
+        "socioeconomic_effects": "human/economic impacts",
+        "ecosystem_services": "changes in natural services",
+        "cascading_effects": "secondary impacts triggered by primary change"
+      },
+      "relationships": {
+        "causal_chain": "sequence of cause-effect relationships",
+        "feedback_loops": "circular relationships between factors",
+        "spatial_dependencies": "how location influences transformation",
+        "temporal_dependencies": "how timing affects transformation"
+      },
+      "raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+      "magnitude_breakdown": {
+        "magnitude_percent": "",
+        "magnitude_area": "",
+        "magnitude_rate": "",
+        "magnitude_absolute": ""
+      },
+      "location_hierarchy": {
+        "countries": [],
+        "regions": [],
+        "cities": [
+          "specific geographic location where change occurs"
+        ],
+        "landmarks": [],
+        "coordinates": []
+      }
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "lulc_original_land_use/cover_type",
+          "type": "LULC",
+          "label": "original land use/cover type",
+          "role": "source"
+        },
+        {
+          "id": "lulc_resulting_land_use/cover_type",
+          "type": "LULC",
+          "label": "resulting land use/cover type",
+          "role": "target"
+        },
+        {
+          "id": "location_specific_geographic_location_where_change_occurs",
+          "type": "LOCATION",
+          "label": "specific geographic location where change occurs",
+          "scale": "scale of change (local, regional, national, global)"
+        },
+        {
+          "id": "driver_main_causes_of_change_(urbanization",
+          "type": "DRIVER",
+          "label": "main causes of change (urbanization"
+        },
+        {
+          "id": "driver_agriculture",
+          "type": "DRIVER",
+          "label": "agriculture"
+        },
+        {
+          "id": "driver_climate",
+          "type": "DRIVER",
+          "label": "climate"
+        },
+        {
+          "id": "driver_policy)",
+          "type": "DRIVER",
+          "label": "policy)"
+        },
+        {
+          "id": "driver_contributing_factors",
+          "type": "DRIVER",
+          "label": "contributing factors"
+        }
+      ],
+      "edges": [
+        {
+          "source": "lulc_original_land_use/cover_type",
+          "target": "lulc_resulting_land_use/cover_type",
+          "type": "TRANSFORMS_TO",
+          "properties": {
+            "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+            "magnitude": "quantitative measure (area, percentage, rate)",
+            "temporal_context": {
+              "start_date": "beginning of change period",
+              "end_date": "end of change period",
+              "duration": "length of change period",
+              "change_rate": "speed/rate of transformation",
+              "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+            }
+          }
+        }
+      ],
+      "relationship_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+      "metadata": {
+        "spatial_context": {
+          "location": "specific geographic location where change occurs",
+          "spatial_scale": "scale of change (local, regional, national, global)",
+          "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+        },
+        "temporal_context": {
+          "start_date": "beginning of change period",
+          "end_date": "end of change period",
+          "duration": "length of change period",
+          "change_rate": "speed/rate of transformation",
+          "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+        },
+        "effects": {
+          "environmental_effects": "ecological consequences",
+          "socioeconomic_effects": "human/economic impacts",
+          "ecosystem_services": "changes in natural services",
+          "cascading_effects": "secondary impacts triggered by primary change"
+        }
+      }
+    },
+    "processing_metadata": {
+      "timestamp": "2025-05-27T11:44:49.995082",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "sentence_length": 232,
+      "num_entities": 6,
+      "error": null
+    }
+  },
+  {
+    "article_id": "Article_1",
+    "sentence_index": 5,
+    "original_sentence": "Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.",
+    "extracted_entities": [
+      {
+        "text": "some 13",
+        "label": "CARDINAL",
+        "start_char": 73,
+        "end_char": 80
+      }
+    ],
+    "date_context": {
+      "dates": [],
+      "date_range": "",
+      "start_date": "",
+      "count": 0,
+      "end_date": ""
+    },
+    "llm_raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+    "parsed_result": {
+      "relationship_found": true,
+      "transformation": {
+        "from_lulc": "original land use/cover type",
+        "to_lulc": "resulting land use/cover type",
+        "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+        "magnitude": "quantitative measure (area, percentage, rate)"
+      },
+      "spatial_context": {
+        "location": "specific geographic location where change occurs",
+        "spatial_scale": "scale of change (local, regional, national, global)",
+        "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+      },
+      "temporal_context": {
+        "start_date": "beginning of change period",
+        "end_date": "end of change period",
+        "duration": "length of change period",
+        "change_rate": "speed/rate of transformation",
+        "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+      },
+      "causal_mechanisms": {
+        "primary_drivers": "main causes of change (urbanization, agriculture, climate, policy)",
+        "secondary_drivers": "contributing factors",
+        "human_factors": "anthropogenic influences",
+        "natural_factors": "environmental/climatic influences",
+        "policy_factors": "regulatory or governance influences"
+      },
+      "transformation_rules": {
+        "conditions": "circumstances that enable/trigger transformation",
+        "prerequisites": "required conditions for change to occur",
+        "constraints": "factors that limit or prevent change",
+        "thresholds": "critical points that trigger transformation"
+      },
+      "effects_and_impacts": {
+        "environmental_effects": "ecological consequences",
+        "socioeconomic_effects": "human/economic impacts",
+        "ecosystem_services": "changes in natural services",
+        "cascading_effects": "secondary impacts triggered by primary change"
+      },
+      "relationships": {
+        "causal_chain": "sequence of cause-effect relationships",
+        "feedback_loops": "circular relationships between factors",
+        "spatial_dependencies": "how location influences transformation",
+        "temporal_dependencies": "how timing affects transformation"
+      },
+      "raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+      "magnitude_breakdown": {
+        "magnitude_percent": "",
+        "magnitude_area": "",
+        "magnitude_rate": "",
+        "magnitude_absolute": ""
+      },
+      "location_hierarchy": {
+        "countries": [],
+        "regions": [],
+        "cities": [
+          "specific geographic location where change occurs"
+        ],
+        "landmarks": [],
+        "coordinates": []
+      }
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "lulc_original_land_use/cover_type",
+          "type": "LULC",
+          "label": "original land use/cover type",
+          "role": "source"
+        },
+        {
+          "id": "lulc_resulting_land_use/cover_type",
+          "type": "LULC",
+          "label": "resulting land use/cover type",
+          "role": "target"
+        },
+        {
+          "id": "location_specific_geographic_location_where_change_occurs",
+          "type": "LOCATION",
+          "label": "specific geographic location where change occurs",
+          "scale": "scale of change (local, regional, national, global)"
+        },
+        {
+          "id": "driver_main_causes_of_change_(urbanization",
+          "type": "DRIVER",
+          "label": "main causes of change (urbanization"
+        },
+        {
+          "id": "driver_agriculture",
+          "type": "DRIVER",
+          "label": "agriculture"
+        },
+        {
+          "id": "driver_climate",
+          "type": "DRIVER",
+          "label": "climate"
+        },
+        {
+          "id": "driver_policy)",
+          "type": "DRIVER",
+          "label": "policy)"
+        },
+        {
+          "id": "driver_contributing_factors",
+          "type": "DRIVER",
+          "label": "contributing factors"
+        }
+      ],
+      "edges": [
+        {
+          "source": "lulc_original_land_use/cover_type",
+          "target": "lulc_resulting_land_use/cover_type",
+          "type": "TRANSFORMS_TO",
+          "properties": {
+            "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+            "magnitude": "quantitative measure (area, percentage, rate)",
+            "temporal_context": {
+              "start_date": "beginning of change period",
+              "end_date": "end of change period",
+              "duration": "length of change period",
+              "change_rate": "speed/rate of transformation",
+              "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+            }
+          }
+        }
+      ],
+      "relationship_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+      "metadata": {
+        "spatial_context": {
+          "location": "specific geographic location where change occurs",
+          "spatial_scale": "scale of change (local, regional, national, global)",
+          "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+        },
+        "temporal_context": {
+          "start_date": "beginning of change period",
+          "end_date": "end of change period",
+          "duration": "length of change period",
+          "change_rate": "speed/rate of transformation",
+          "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+        },
+        "effects": {
+          "environmental_effects": "ecological consequences",
+          "socioeconomic_effects": "human/economic impacts",
+          "ecosystem_services": "changes in natural services",
+          "cascading_effects": "secondary impacts triggered by primary change"
+        }
+      }
+    },
+    "processing_metadata": {
+      "timestamp": "2025-05-27T11:45:12.889365",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "sentence_length": 90,
+      "num_entities": 1,
+      "error": null
+    }
+  },
+  {
+    "article_id": "Article_1",
+    "sentence_index": 6,
+    "original_sentence": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",
+    "extracted_entities": [
+      {
+        "text": "Expansion",
+        "label": "CHANGE",
+        "start_char": 0,
+        "end_char": 9
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 21,
+        "end_char": 25
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 29,
+        "end_char": 33
+      },
+      {
+        "text": "Lanjophaka",
+        "label": "LOC",
+        "start_char": 55,
+        "end_char": 65
+      },
+      {
+        "text": "Taba",
+        "label": "LOC",
+        "start_char": 99,
+        "end_char": 103
+      },
+      {
+        "text": "Dechencholing",
+        "label": "LOC",
+        "start_char": 108,
+        "end_char": 121
+      },
+      {
+        "text": "Changjiji",
+        "label": "LOC",
+        "start_char": 139,
+        "end_char": 148
+      },
+      {
+        "text": "Lungtenphu",
+        "label": "LOC",
+        "start_char": 150,
+        "end_char": 160
+      }
+    ],
+    "date_context": {
+      "dates": [
+        "2002"
+      ],
+      "date_range": "",
+      "start_date": "2002",
+      "count": 1,
+      "end_date": ""
+    },
+    "llm_raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+    "parsed_result": {
+      "relationship_found": true,
+      "transformation": {
+        "from_lulc": "original land use/cover type",
+        "to_lulc": "resulting land use/cover type",
+        "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+        "magnitude": "quantitative measure (area, percentage, rate)"
+      },
+      "spatial_context": {
+        "location": "specific geographic location where change occurs",
+        "spatial_scale": "scale of change (local, regional, national, global)",
+        "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+      },
+      "temporal_context": {
+        "start_date": "beginning of change period",
+        "end_date": "end of change period",
+        "duration": "length of change period",
+        "change_rate": "speed/rate of transformation",
+        "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+      },
+      "causal_mechanisms": {
+        "primary_drivers": "main causes of change (urbanization, agriculture, climate, policy)",
+        "secondary_drivers": "contributing factors",
+        "human_factors": "anthropogenic influences",
+        "natural_factors": "environmental/climatic influences",
+        "policy_factors": "regulatory or governance influences"
+      },
+      "transformation_rules": {
+        "conditions": "circumstances that enable/trigger transformation",
+        "prerequisites": "required conditions for change to occur",
+        "constraints": "factors that limit or prevent change",
+        "thresholds": "critical points that trigger transformation"
+      },
+      "effects_and_impacts": {
+        "environmental_effects": "ecological consequences",
+        "socioeconomic_effects": "human/economic impacts",
+        "ecosystem_services": "changes in natural services",
+        "cascading_effects": "secondary impacts triggered by primary change"
+      },
+      "relationships": {
+        "causal_chain": "sequence of cause-effect relationships",
+        "feedback_loops": "circular relationships between factors",
+        "spatial_dependencies": "how location influences transformation",
+        "temporal_dependencies": "how timing affects transformation"
+      },
+      "raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+      "magnitude_breakdown": {
+        "magnitude_percent": "",
+        "magnitude_area": "",
+        "magnitude_rate": "",
+        "magnitude_absolute": ""
+      },
+      "location_hierarchy": {
+        "countries": [],
+        "regions": [],
+        "cities": [
+          "specific geographic location where change occurs"
+        ],
+        "landmarks": [],
+        "coordinates": []
+      }
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "lulc_original_land_use/cover_type",
+          "type": "LULC",
+          "label": "original land use/cover type",
+          "role": "source"
+        },
+        {
+          "id": "lulc_resulting_land_use/cover_type",
+          "type": "LULC",
+          "label": "resulting land use/cover type",
+          "role": "target"
+        },
+        {
+          "id": "location_specific_geographic_location_where_change_occurs",
+          "type": "LOCATION",
+          "label": "specific geographic location where change occurs",
+          "scale": "scale of change (local, regional, national, global)"
+        },
+        {
+          "id": "driver_main_causes_of_change_(urbanization",
+          "type": "DRIVER",
+          "label": "main causes of change (urbanization"
+        },
+        {
+          "id": "driver_agriculture",
+          "type": "DRIVER",
+          "label": "agriculture"
+        },
+        {
+          "id": "driver_climate",
+          "type": "DRIVER",
+          "label": "climate"
+        },
+        {
+          "id": "driver_policy)",
+          "type": "DRIVER",
+          "label": "policy)"
+        },
+        {
+          "id": "driver_contributing_factors",
+          "type": "DRIVER",
+          "label": "contributing factors"
+        }
+      ],
+      "edges": [
+        {
+          "source": "lulc_original_land_use/cover_type",
+          "target": "lulc_resulting_land_use/cover_type",
+          "type": "TRANSFORMS_TO",
+          "properties": {
+            "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+            "magnitude": "quantitative measure (area, percentage, rate)",
+            "temporal_context": {
+              "start_date": "beginning of change period",
+              "end_date": "end of change period",
+              "duration": "length of change period",
+              "change_rate": "speed/rate of transformation",
+              "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+            }
+          }
+        }
+      ],
+      "relationship_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+      "metadata": {
+        "spatial_context": {
+          "location": "specific geographic location where change occurs",
+          "spatial_scale": "scale of change (local, regional, national, global)",
+          "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+        },
+        "temporal_context": {
+          "start_date": "beginning of change period",
+          "end_date": "end of change period",
+          "duration": "length of change period",
+          "change_rate": "speed/rate of transformation",
+          "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+        },
+        "effects": {
+          "environmental_effects": "ecological consequences",
+          "socioeconomic_effects": "human/economic impacts",
+          "ecosystem_services": "changes in natural services",
+          "cascading_effects": "secondary impacts triggered by primary change"
+        }
+      }
+    },
+    "processing_metadata": {
+      "timestamp": "2025-05-27T11:45:35.727396",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "sentence_length": 202,
+      "num_entities": 8,
+      "error": null
+    }
+  },
+  {
+    "article_id": "Article_1",
+    "sentence_index": 7,
+    "original_sentence": "The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",
+    "extracted_entities": [
+      {
+        "text": "2002-2018",
+        "label": "COORDINATES",
+        "start_char": 12,
+        "end_char": 21
+      },
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start_char": 41,
+        "end_char": 50
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 58,
+        "end_char": 62
+      },
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 140,
+        "end_char": 147
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 155,
+        "end_char": 159
+      }
+    ],
+    "date_context": {
+      "dates": [],
+      "date_range": "",
+      "start_date": "",
+      "count": 0,
+      "end_date": ""
+    },
+    "llm_raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+    "parsed_result": {
+      "relationship_found": true,
+      "transformation": {
+        "from_lulc": "original land use/cover type",
+        "to_lulc": "resulting land use/cover type",
+        "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+        "magnitude": "quantitative measure (area, percentage, rate)"
+      },
+      "spatial_context": {
+        "location": "specific geographic location where change occurs",
+        "spatial_scale": "scale of change (local, regional, national, global)",
+        "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+      },
+      "temporal_context": {
+        "start_date": "beginning of change period",
+        "end_date": "end of change period",
+        "duration": "length of change period",
+        "change_rate": "speed/rate of transformation",
+        "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+      },
+      "causal_mechanisms": {
+        "primary_drivers": "main causes of change (urbanization, agriculture, climate, policy)",
+        "secondary_drivers": "contributing factors",
+        "human_factors": "anthropogenic influences",
+        "natural_factors": "environmental/climatic influences",
+        "policy_factors": "regulatory or governance influences"
+      },
+      "transformation_rules": {
+        "conditions": "circumstances that enable/trigger transformation",
+        "prerequisites": "required conditions for change to occur",
+        "constraints": "factors that limit or prevent change",
+        "thresholds": "critical points that trigger transformation"
+      },
+      "effects_and_impacts": {
+        "environmental_effects": "ecological consequences",
+        "socioeconomic_effects": "human/economic impacts",
+        "ecosystem_services": "changes in natural services",
+        "cascading_effects": "secondary impacts triggered by primary change"
+      },
+      "relationships": {
+        "causal_chain": "sequence of cause-effect relationships",
+        "feedback_loops": "circular relationships between factors",
+        "spatial_dependencies": "how location influences transformation",
+        "temporal_dependencies": "how timing affects transformation"
+      },
+      "raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+      "magnitude_breakdown": {
+        "magnitude_percent": "",
+        "magnitude_area": "",
+        "magnitude_rate": "",
+        "magnitude_absolute": ""
+      },
+      "location_hierarchy": {
+        "countries": [],
+        "regions": [],
+        "cities": [
+          "specific geographic location where change occurs"
+        ],
+        "landmarks": [],
+        "coordinates": []
+      }
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "lulc_original_land_use/cover_type",
+          "type": "LULC",
+          "label": "original land use/cover type",
+          "role": "source"
+        },
+        {
+          "id": "lulc_resulting_land_use/cover_type",
+          "type": "LULC",
+          "label": "resulting land use/cover type",
+          "role": "target"
+        },
+        {
+          "id": "location_specific_geographic_location_where_change_occurs",
+          "type": "LOCATION",
+          "label": "specific geographic location where change occurs",
+          "scale": "scale of change (local, regional, national, global)"
+        },
+        {
+          "id": "driver_main_causes_of_change_(urbanization",
+          "type": "DRIVER",
+          "label": "main causes of change (urbanization"
+        },
+        {
+          "id": "driver_agriculture",
+          "type": "DRIVER",
+          "label": "agriculture"
+        },
+        {
+          "id": "driver_climate",
+          "type": "DRIVER",
+          "label": "climate"
+        },
+        {
+          "id": "driver_policy)",
+          "type": "DRIVER",
+          "label": "policy)"
+        },
+        {
+          "id": "driver_contributing_factors",
+          "type": "DRIVER",
+          "label": "contributing factors"
+        }
+      ],
+      "edges": [
+        {
+          "source": "lulc_original_land_use/cover_type",
+          "target": "lulc_resulting_land_use/cover_type",
+          "type": "TRANSFORMS_TO",
+          "properties": {
+            "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+            "magnitude": "quantitative measure (area, percentage, rate)",
+            "temporal_context": {
+              "start_date": "beginning of change period",
+              "end_date": "end of change period",
+              "duration": "length of change period",
+              "change_rate": "speed/rate of transformation",
+              "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+            }
+          }
+        }
+      ],
+      "relationship_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+      "metadata": {
+        "spatial_context": {
+          "location": "specific geographic location where change occurs",
+          "spatial_scale": "scale of change (local, regional, national, global)",
+          "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+        },
+        "temporal_context": {
+          "start_date": "beginning of change period",
+          "end_date": "end of change period",
+          "duration": "length of change period",
+          "change_rate": "speed/rate of transformation",
+          "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+        },
+        "effects": {
+          "environmental_effects": "ecological consequences",
+          "socioeconomic_effects": "human/economic impacts",
+          "ecosystem_services": "changes in natural services",
+          "cascading_effects": "secondary impacts triggered by primary change"
+        }
+      }
+    },
+    "processing_metadata": {
+      "timestamp": "2025-05-27T11:45:58.641013",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "sentence_length": 172,
+      "num_entities": 5,
+      "error": null
+    }
+  },
+  {
+    "article_id": "Article_1",
+    "sentence_index": 8,
+    "original_sentence": "These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.",
+    "extracted_entities": [
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 17,
+        "end_char": 24
+      },
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start_char": 75,
+        "end_char": 84
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 92,
+        "end_char": 96
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 100,
+        "end_char": 104
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 147,
+        "end_char": 151
+      },
+      {
+        "text": "Bhutan",
+        "label": "LOC",
+        "start_char": 172,
+        "end_char": 178
+      },
+      {
+        "text": "transition",
+        "label": "CHANGE",
+        "start_char": 181,
+        "end_char": 191
+      },
+      {
+        "text": "2008",
+        "label": "DATE",
+        "start_char": 208,
+        "end_char": 212
+      }
+    ],
+    "date_context": {
+      "dates": [
+        "2002",
+        "2008"
+      ],
+      "date_range": "2002 to 2008",
+      "start_date": "2002",
+      "count": 2,
+      "end_date": "2008"
+    },
+    "llm_raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+    "parsed_result": {
+      "relationship_found": true,
+      "transformation": {
+        "from_lulc": "original land use/cover type",
+        "to_lulc": "resulting land use/cover type",
+        "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+        "magnitude": "quantitative measure (area, percentage, rate)"
+      },
+      "spatial_context": {
+        "location": "specific geographic location where change occurs",
+        "spatial_scale": "scale of change (local, regional, national, global)",
+        "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+      },
+      "temporal_context": {
+        "start_date": "beginning of change period",
+        "end_date": "end of change period",
+        "duration": "length of change period",
+        "change_rate": "speed/rate of transformation",
+        "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+      },
+      "causal_mechanisms": {
+        "primary_drivers": "main causes of change (urbanization, agriculture, climate, policy)",
+        "secondary_drivers": "contributing factors",
+        "human_factors": "anthropogenic influences",
+        "natural_factors": "environmental/climatic influences",
+        "policy_factors": "regulatory or governance influences"
+      },
+      "transformation_rules": {
+        "conditions": "circumstances that enable/trigger transformation",
+        "prerequisites": "required conditions for change to occur",
+        "constraints": "factors that limit or prevent change",
+        "thresholds": "critical points that trigger transformation"
+      },
+      "effects_and_impacts": {
+        "environmental_effects": "ecological consequences",
+        "socioeconomic_effects": "human/economic impacts",
+        "ecosystem_services": "changes in natural services",
+        "cascading_effects": "secondary impacts triggered by primary change"
+      },
+      "relationships": {
+        "causal_chain": "sequence of cause-effect relationships",
+        "feedback_loops": "circular relationships between factors",
+        "spatial_dependencies": "how location influences transformation",
+        "temporal_dependencies": "how timing affects transformation"
+      },
+      "raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+      "magnitude_breakdown": {
+        "magnitude_percent": "",
+        "magnitude_area": "",
+        "magnitude_rate": "",
+        "magnitude_absolute": ""
+      },
+      "location_hierarchy": {
+        "countries": [],
+        "regions": [],
+        "cities": [
+          "specific geographic location where change occurs"
+        ],
+        "landmarks": [],
+        "coordinates": []
+      }
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "lulc_original_land_use/cover_type",
+          "type": "LULC",
+          "label": "original land use/cover type",
+          "role": "source"
+        },
+        {
+          "id": "lulc_resulting_land_use/cover_type",
+          "type": "LULC",
+          "label": "resulting land use/cover type",
+          "role": "target"
+        },
+        {
+          "id": "location_specific_geographic_location_where_change_occurs",
+          "type": "LOCATION",
+          "label": "specific geographic location where change occurs",
+          "scale": "scale of change (local, regional, national, global)"
+        },
+        {
+          "id": "driver_main_causes_of_change_(urbanization",
+          "type": "DRIVER",
+          "label": "main causes of change (urbanization"
+        },
+        {
+          "id": "driver_agriculture",
+          "type": "DRIVER",
+          "label": "agriculture"
+        },
+        {
+          "id": "driver_climate",
+          "type": "DRIVER",
+          "label": "climate"
+        },
+        {
+          "id": "driver_policy)",
+          "type": "DRIVER",
+          "label": "policy)"
+        },
+        {
+          "id": "driver_contributing_factors",
+          "type": "DRIVER",
+          "label": "contributing factors"
+        }
+      ],
+      "edges": [
+        {
+          "source": "lulc_original_land_use/cover_type",
+          "target": "lulc_resulting_land_use/cover_type",
+          "type": "TRANSFORMS_TO",
+          "properties": {
+            "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+            "magnitude": "quantitative measure (area, percentage, rate)",
+            "temporal_context": {
+              "start_date": "beginning of change period",
+              "end_date": "end of change period",
+              "duration": "length of change period",
+              "change_rate": "speed/rate of transformation",
+              "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+            }
+          }
+        }
+      ],
+      "relationship_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+      "metadata": {
+        "spatial_context": {
+          "location": "specific geographic location where change occurs",
+          "spatial_scale": "scale of change (local, regional, national, global)",
+          "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+        },
+        "temporal_context": {
+          "start_date": "beginning of change period",
+          "end_date": "end of change period",
+          "duration": "length of change period",
+          "change_rate": "speed/rate of transformation",
+          "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+        },
+        "effects": {
+          "environmental_effects": "ecological consequences",
+          "socioeconomic_effects": "human/economic impacts",
+          "ecosystem_services": "changes in natural services",
+          "cascading_effects": "secondary impacts triggered by primary change"
+        }
+      }
+    },
+    "processing_metadata": {
+      "timestamp": "2025-05-27T11:46:21.435796",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "sentence_length": 213,
+      "num_entities": 8,
+      "error": null
+    }
+  },
+  {
+    "article_id": "Article_1",
+    "sentence_index": 9,
+    "original_sentence": "The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.",
+    "extracted_entities": [
+      {
+        "text": "cities",
+        "label": "LULC",
+        "start_char": 161,
+        "end_char": 167
+      },
+      {
+        "text": "causing",
+        "label": "CHANGE",
+        "start_char": 169,
+        "end_char": 176
+      },
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 251,
+        "end_char": 258
+      }
+    ],
+    "date_context": {
+      "dates": [],
+      "date_range": "",
+      "start_date": "",
+      "count": 0,
+      "end_date": ""
+    },
+    "llm_raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+    "parsed_result": {
+      "relationship_found": true,
+      "transformation": {
+        "from_lulc": "original land use/cover type",
+        "to_lulc": "resulting land use/cover type",
+        "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+        "magnitude": "quantitative measure (area, percentage, rate)"
+      },
+      "spatial_context": {
+        "location": "specific geographic location where change occurs",
+        "spatial_scale": "scale of change (local, regional, national, global)",
+        "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+      },
+      "temporal_context": {
+        "start_date": "beginning of change period",
+        "end_date": "end of change period",
+        "duration": "length of change period",
+        "change_rate": "speed/rate of transformation",
+        "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+      },
+      "causal_mechanisms": {
+        "primary_drivers": "main causes of change (urbanization, agriculture, climate, policy)",
+        "secondary_drivers": "contributing factors",
+        "human_factors": "anthropogenic influences",
+        "natural_factors": "environmental/climatic influences",
+        "policy_factors": "regulatory or governance influences"
+      },
+      "transformation_rules": {
+        "conditions": "circumstances that enable/trigger transformation",
+        "prerequisites": "required conditions for change to occur",
+        "constraints": "factors that limit or prevent change",
+        "thresholds": "critical points that trigger transformation"
+      },
+      "effects_and_impacts": {
+        "environmental_effects": "ecological consequences",
+        "socioeconomic_effects": "human/economic impacts",
+        "ecosystem_services": "changes in natural services",
+        "cascading_effects": "secondary impacts triggered by primary change"
+      },
+      "relationships": {
+        "causal_chain": "sequence of cause-effect relationships",
+        "feedback_loops": "circular relationships between factors",
+        "spatial_dependencies": "how location influences transformation",
+        "temporal_dependencies": "how timing affects transformation"
+      },
+      "raw_output": "TRANSFORMATION:\nFROM: original land use/cover type\nTO: resulting land use/cover type\nCHANGE_TYPE: nature of change (conversion, expansion, degradation, restoration, fragmentation)\nMAGNITUDE: quantitative measure (area, percentage, rate)\n\nSPATIAL_CONTEXT:\nLOCATION: specific geographic location where change occurs\nSPATIAL_SCALE: scale of change (local, regional, national, global)\nSPATIAL_PATTERN: pattern of change (scattered, clustered, linear, radial)\n\nTEMPORAL_CONTEXT:\nSTART_DATE: beginning of change period\nEND_DATE: end of change period\nDURATION: length of change period\nCHANGE_RATE: speed/rate of transformation\nTEMPORAL_PATTERN: pattern over time (gradual, rapid, cyclical, episodic)\n\nCAUSAL_MECHANISMS:\nPRIMARY_DRIVERS: main causes of change (urbanization, agriculture, climate, policy)\nSECONDARY_DRIVERS: contributing factors\nHUMAN_FACTORS: anthropogenic influences\nNATURAL_FACTORS: environmental/climatic influences\nPOLICY_FACTORS: regulatory or governance influences\n\nTRANSFORMATION_RULES:\nCONDITIONS: circumstances that enable/trigger transformation\nPREREQUISITES: required conditions for change to occur\nCONSTRAINTS: factors that limit or prevent change\nTHRESHOLDS: critical points that trigger transformation\n\nEFFECTS_AND_IMPACTS:\nENVIRONMENTAL_EFFECTS: ecological consequences\nSOCIOECONOMIC_EFFECTS: human/economic impacts\nECOSYSTEM_SERVICES: changes in natural services\nCASCADING_EFFECTS: secondary impacts triggered by primary change\n\nRELATIONSHIPS:\nCAUSAL_CHAIN: sequence of cause-effect relationships\nFEEDBACK_LOOPS: circular relationships between factors\nSPATIAL_DEPENDENCIES: how location influences transformation\nTEMPORAL_DEPENDENCIES: how timing affects transformation",
+      "magnitude_breakdown": {
+        "magnitude_percent": "",
+        "magnitude_area": "",
+        "magnitude_rate": "",
+        "magnitude_absolute": ""
+      },
+      "location_hierarchy": {
+        "countries": [],
+        "regions": [],
+        "cities": [
+          "specific geographic location where change occurs"
+        ],
+        "landmarks": [],
+        "coordinates": []
+      }
+    },
+    "knowledge_graph": {
+      "nodes": [
+        {
+          "id": "lulc_original_land_use/cover_type",
+          "type": "LULC",
+          "label": "original land use/cover type",
+          "role": "source"
+        },
+        {
+          "id": "lulc_resulting_land_use/cover_type",
+          "type": "LULC",
+          "label": "resulting land use/cover type",
+          "role": "target"
+        },
+        {
+          "id": "location_specific_geographic_location_where_change_occurs",
+          "type": "LOCATION",
+          "label": "specific geographic location where change occurs",
+          "scale": "scale of change (local, regional, national, global)"
+        },
+        {
+          "id": "driver_main_causes_of_change_(urbanization",
+          "type": "DRIVER",
+          "label": "main causes of change (urbanization"
+        },
+        {
+          "id": "driver_agriculture",
+          "type": "DRIVER",
+          "label": "agriculture"
+        },
+        {
+          "id": "driver_climate",
+          "type": "DRIVER",
+          "label": "climate"
+        },
+        {
+          "id": "driver_policy)",
+          "type": "DRIVER",
+          "label": "policy)"
+        },
+        {
+          "id": "driver_contributing_factors",
+          "type": "DRIVER",
+          "label": "contributing factors"
+        }
+      ],
+      "edges": [
+        {
+          "source": "lulc_original_land_use/cover_type",
+          "target": "lulc_resulting_land_use/cover_type",
+          "type": "TRANSFORMS_TO",
+          "properties": {
+            "change_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+            "magnitude": "quantitative measure (area, percentage, rate)",
+            "temporal_context": {
+              "start_date": "beginning of change period",
+              "end_date": "end of change period",
+              "duration": "length of change period",
+              "change_rate": "speed/rate of transformation",
+              "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+            }
+          }
+        }
+      ],
+      "relationship_type": "nature of change (conversion, expansion, degradation, restoration, fragmentation)",
+      "metadata": {
+        "spatial_context": {
+          "location": "specific geographic location where change occurs",
+          "spatial_scale": "scale of change (local, regional, national, global)",
+          "spatial_pattern": "pattern of change (scattered, clustered, linear, radial)"
+        },
+        "temporal_context": {
+          "start_date": "beginning of change period",
+          "end_date": "end of change period",
+          "duration": "length of change period",
+          "change_rate": "speed/rate of transformation",
+          "temporal_pattern": "pattern over time (gradual, rapid, cyclical, episodic)"
+        },
+        "effects": {
+          "environmental_effects": "ecological consequences",
+          "socioeconomic_effects": "human/economic impacts",
+          "ecosystem_services": "changes in natural services",
+          "cascading_effects": "secondary impacts triggered by primary change"
+        }
+      }
+    },
+    "processing_metadata": {
+      "timestamp": "2025-05-27T11:46:44.241956",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "sentence_length": 272,
+      "num_entities": 3,
+      "error": null
+    }
+  }
+]

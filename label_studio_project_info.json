@@ -1,0 +1,44 @@
+{
+  "project_name": "Grammar-Aware LULC Relation Extraction",
+  "description": "Annotation and validation of grammar-aware entity-relation extraction for LULC analysis",
+  "data_file": "grammar_label_studio_20250627_143229.json",
+  "config_file": "grammar_label_studio_config_20250627_143229.xml",
+  "setup_instructions": [
+    "1. Create new project in Label Studio",
+    "2. Upload the configuration from: grammar_label_studio_config_20250627_143229.xml",
+    "3. Import data from: grammar_label_studio_20250627_143229.json",
+    "4. Start annotating and validating the predictions",
+    "5. Focus on relation accuracy and grammatical correctness"
+  ],
+  "annotation_guidelines": {
+    "entities": {
+      "verify_boundaries": "Check if entity boundaries are correct",
+      "verify_labels": "Confirm entity labels match the content",
+      "grammar_discoveries": "Validate grammar-discovered entities"
+    },
+    "relations": {
+      "semantic_correctness": "Ensure relations make semantic sense",
+      "direction_accuracy": "Check if relation direction is correct",
+      "grammar_alignment": "Verify relations align with sentence grammar"
+    },
+    "quality_assessment": {
+      "overall": "Rate the overall extraction quality",
+      "grammar": "Assess grammar analysis accuracy",
+      "relations": "Evaluate relation semantic correctness"
+    }
+  },
+  "entity_types": [
+    "COORDINATES",
+    "PROCESS",
+    "CHANGE",
+    "DISCOVERED_SUBJECT",
+    "DATE",
+    "CARDINAL",
+    "DISCOVERED_LULC",
+    "LOC",
+    "DISCOVERED_OBJECT",
+    "PERCENT",
+    "LULC"
+  ],
+  "relation_types": []
+}

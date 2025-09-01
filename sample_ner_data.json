@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "data": {
+      "text": "The expansion of urban areas led to a 25% reduction in agricultural land near Berlin."
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 17,
+              "end": 28,
+              "text": "urban areas",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "value": {
+              "start": 38,
+              "end": 41,
+              "text": "25%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "value": {
+              "start": 42,
+              "end": 51,
+              "text": "reduction",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "value": {
+              "start": 55,
+              "end": 72,
+              "text": "agricultural land",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "value": {
+              "start": 78,
+              "end": 84,
+              "text": "Berlin",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "data": {
+      "text": "Forest coverage increased by 15% while build up area expanded rapidly."
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": 2,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 15,
+              "text": "Forest coverage",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "value": {
+              "start": 16,
+              "end": 25,
+              "text": "increased",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "value": {
+              "start": 29,
+              "end": 32,
+              "text": "15%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "value": {
+              "start": 39,
+              "end": 52,
+              "text": "build up area",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "value": {
+              "start": 53,
+              "end": 61,
+              "text": "expanded",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "data": {
+      "text": "The conversion of wetlands to residential zones affected 500 hectares."
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": 3,
+        "result": [
+          {
+            "value": {
+              "start": 4,
+              "end": 14,
+              "text": "conversion",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          },
+          {
+            "value": {
+              "start": 18,
+              "end": 26,
+              "text": "wetlands",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "value": {
+              "start": 30,
+              "end": 47,
+              "text": "residential zones",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "value": {
+              "start": 57,
+              "end": 60,
+              "text": "500",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          },
+          {
+            "value": {
+              "start": 61,
+              "end": 69,
+              "text": "hectares",
+              "labels": [
+                "SURFACE_UNIT"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,2872 @@
+[
+  {
+    "data": {
+      "text": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050."
+    },
+    "annotations": [
+      {
+        "id": "annotation_1",
+        "created_username": "AI_Extractor",
+        "created_ago": "0 minutes",
+        "result": [
+          {
+            "id": "entity_0",
+            "type": "labels",
+            "value": {
+              "start": 160,
+              "end": 166,
+              "text": "forest",
+              "labels": [
+                "FROM_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 55,
+              "end": 166,
+              "text": "CHANGE: declined\nPROCESS: deforestation\nMAGNITUDE: 15%\nDATE_RANGE: 2010 to 2020\nSTART_DATE: 2010\nEND_DATE: 2020",
+              "labels": [
+                "TO_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_2",
+            "type": "labels",
+            "value": {
+              "start": 158,
+              "end": 166,
+              "text": "declined",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_3",
+            "type": "labels",
+            "value": {
+              "start": 153,
+              "end": 166,
+              "text": "deforestation",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_4",
+            "type": "labels",
+            "value": {
+              "start": 163,
+              "end": 166,
+              "text": "15%",
+              "labels": [
+                "MAGNITUDE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_5",
+            "type": "labels",
+            "value": {
+              "start": 154,
+              "end": 166,
+              "text": "2010 to 2020",
+              "labels": [
+                "DATE_RANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_6",
+            "type": "labels",
+            "value": {
+              "start": 162,
+              "end": 166,
+              "text": "2010",
+              "labels": [
+                "START_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_7",
+            "type": "labels",
+            "value": {
+              "start": 162,
+              "end": 166,
+              "text": "2020",
+              "labels": [
+                "END_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "relation_0",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_2",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_1",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_1",
+              "type": "converts_to"
+            }
+          },
+          {
+            "id": "relation_2",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_3",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_4",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_4",
+              "type": "affects"
+            }
+          },
+          {
+            "id": "relation_5",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_5",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_6",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_4",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_7",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_1",
+              "type": "results_in"
+            }
+          },
+          {
+            "id": "relation_8",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_7",
+              "type": "temporal_relation"
+            }
+          },
+          {
+            "id": "relation_9",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_10",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_7",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_11",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_2",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_12",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_3",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_13",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_2",
+              "type": "measured_by"
+            }
+          },
+          {
+            "id": "relation_14",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_3",
+              "type": "measured_by"
+            }
+          }
+        ]
+      }
+    ],
+    "predictions": [],
+    "id": 1,
+    "meta": {
+      "article_id": "Article_1",
+      "sentence_index": 0,
+      "extraction_confidence": "AI_Generated",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "event_summary": {
+        "from_lulc": "forest",
+        "to_lulc": "CHANGE: declined\nPROCESS: deforestation\nMAGNITUDE: 15%\nDATE_RANGE: 2010 to 2020\nSTART_DATE: 2010\nEND_DATE: 2020",
+        "process": "deforestation",
+        "magnitude": "15%"
+      }
+    }
+  },
+  {
+    "data": {
+      "text": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground."
+    },
+    "annotations": [
+      {
+        "id": "annotation_2",
+        "created_username": "AI_Extractor",
+        "created_ago": "0 minutes",
+        "result": [
+          {
+            "id": "entity_0",
+            "type": "labels",
+            "value": {
+              "start": 54,
+              "end": 67,
+              "text": "built-up area",
+              "labels": [
+                "FROM_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 54,
+              "end": 67,
+              "text": "built-up area",
+              "labels": [
+                "TO_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_2",
+            "type": "labels",
+            "value": {
+              "start": 153,
+              "end": 162,
+              "text": "increased",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_3",
+            "type": "labels",
+            "value": {
+              "start": 150,
+              "end": 162,
+              "text": "urbanization",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_4",
+            "type": "labels",
+            "value": {
+              "start": 43,
+              "end": 49,
+              "text": "12.77%",
+              "labels": [
+                "MAGNITUDE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_5",
+            "type": "labels",
+            "value": {
+              "start": 73,
+              "end": 77,
+              "text": "2002",
+              "labels": [
+                "DATE_RANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_6",
+            "type": "labels",
+            "value": {
+              "start": 73,
+              "end": 77,
+              "text": "2002",
+              "labels": [
+                "START_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_7",
+            "type": "labels",
+            "value": {
+              "start": 90,
+              "end": 94,
+              "text": "2018",
+              "labels": [
+                "END_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "relation_0",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_2",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_1",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_1",
+              "type": "converts_to"
+            }
+          },
+          {
+            "id": "relation_2",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_3",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_4",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_4",
+              "type": "affects"
+            }
+          },
+          {
+            "id": "relation_5",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_5",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_6",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_4",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_7",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_1",
+              "type": "results_in"
+            }
+          },
+          {
+            "id": "relation_8",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_7",
+              "type": "temporal_relation"
+            }
+          },
+          {
+            "id": "relation_9",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_10",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_7",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_11",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_2",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_12",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_3",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_13",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_2",
+              "type": "measured_by"
+            }
+          },
+          {
+            "id": "relation_14",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_3",
+              "type": "measured_by"
+            }
+          }
+        ]
+      }
+    ],
+    "predictions": [],
+    "id": 2,
+    "meta": {
+      "article_id": "Article_1",
+      "sentence_index": 0,
+      "extraction_confidence": "AI_Generated",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "event_summary": {
+        "from_lulc": "built-up area",
+        "to_lulc": "built-up area",
+        "process": "urbanization",
+        "magnitude": "12.77%"
+      }
+    }
+  },
+  {
+    "data": {
+      "text": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%)."
+    },
+    "annotations": [
+      {
+        "id": "annotation_3",
+        "created_username": "AI_Extractor",
+        "created_ago": "0 minutes",
+        "result": [
+          {
+            "id": "entity_0",
+            "type": "labels",
+            "value": {
+              "start": 17,
+              "end": 23,
+              "text": "forest",
+              "labels": [
+                "FROM_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 30,
+              "end": 38,
+              "text": "declined",
+              "labels": [
+                "TO_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_2",
+            "type": "labels",
+            "value": {
+              "start": 30,
+              "end": 38,
+              "text": "declined",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_3",
+            "type": "labels",
+            "value": {
+              "start": 79,
+              "end": 92,
+              "text": "deforestation",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_4",
+            "type": "labels",
+            "value": {
+              "start": 89,
+              "end": 92,
+              "text": "15%",
+              "labels": [
+                "MAGNITUDE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_5",
+            "type": "labels",
+            "value": {
+              "start": 80,
+              "end": 92,
+              "text": "2010 to 2020",
+              "labels": [
+                "DATE_RANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_6",
+            "type": "labels",
+            "value": {
+              "start": 88,
+              "end": 92,
+              "text": "2010",
+              "labels": [
+                "START_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_7",
+            "type": "labels",
+            "value": {
+              "start": 88,
+              "end": 92,
+              "text": "2020",
+              "labels": [
+                "END_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "relation_0",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_2",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_1",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_1",
+              "type": "converts_to"
+            }
+          },
+          {
+            "id": "relation_2",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_3",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_4",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_4",
+              "type": "affects"
+            }
+          },
+          {
+            "id": "relation_5",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_5",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_6",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_4",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_7",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_1",
+              "type": "results_in"
+            }
+          },
+          {
+            "id": "relation_8",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_7",
+              "type": "temporal_relation"
+            }
+          },
+          {
+            "id": "relation_9",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_10",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_7",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_11",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_2",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_12",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_3",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_13",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_2",
+              "type": "measured_by"
+            }
+          },
+          {
+            "id": "relation_14",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_3",
+              "type": "measured_by"
+            }
+          }
+        ]
+      }
+    ],
+    "predictions": [],
+    "id": 3,
+    "meta": {
+      "article_id": "Article_1",
+      "sentence_index": 0,
+      "extraction_confidence": "AI_Generated",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "event_summary": {
+        "from_lulc": "forest",
+        "to_lulc": "CHANGE: declined\nPROCESS: deforestation\nMAGNITUDE: 15%\nDATE_RANGE: 2010 to 2020\nSTART_DATE: 2010\nEND_DATE: 2020",
+        "process": "deforestation",
+        "magnitude": "15%"
+      }
+    }
+  },
+  {
+    "data": {
+      "text": "Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes."
+    },
+    "annotations": [
+      {
+        "id": "annotation_4",
+        "created_username": "AI_Extractor",
+        "created_ago": "0 minutes",
+        "result": [
+          {
+            "id": "entity_0",
+            "type": "labels",
+            "value": {
+              "start": 141,
+              "end": 158,
+              "text": "agricultural land",
+              "labels": [
+                "FROM_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 43,
+              "end": 48,
+              "text": "urban",
+              "labels": [
+                "TO_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_2",
+            "type": "labels",
+            "value": {
+              "start": 149,
+              "end": 158,
+              "text": "converted",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_3",
+            "type": "labels",
+            "value": {
+              "start": 146,
+              "end": 158,
+              "text": "urbanization",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_4",
+            "type": "labels",
+            "value": {
+              "start": 115,
+              "end": 158,
+              "text": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:",
+              "labels": [
+                "MAGNITUDE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_5",
+            "type": "labels",
+            "value": {
+              "start": 154,
+              "end": 158,
+              "text": "2015",
+              "labels": [
+                "DATE_RANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_6",
+            "type": "labels",
+            "value": {
+              "start": 154,
+              "end": 158,
+              "text": "2015",
+              "labels": [
+                "START_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "relation_0",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_2",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_1",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_1",
+              "type": "converts_to"
+            }
+          },
+          {
+            "id": "relation_2",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_3",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_4",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_4",
+              "type": "affects"
+            }
+          },
+          {
+            "id": "relation_5",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_5",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_6",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_4",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_7",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_1",
+              "type": "results_in"
+            }
+          },
+          {
+            "id": "relation_8",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_9",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_2",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_10",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_3",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_11",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_2",
+              "type": "measured_by"
+            }
+          },
+          {
+            "id": "relation_12",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_3",
+              "type": "measured_by"
+            }
+          }
+        ]
+      }
+    ],
+    "predictions": [],
+    "id": 4,
+    "meta": {
+      "article_id": "Article_1",
+      "sentence_index": 0,
+      "extraction_confidence": "AI_Generated",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "event_summary": {
+        "from_lulc": "agricultural land",
+        "to_lulc": "urban areas",
+        "process": "urbanization",
+        "magnitude": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:"
+      }
+    }
+  },
+  {
+    "data": {
+      "text": "Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city."
+    },
+    "annotations": [
+      {
+        "id": "annotation_5",
+        "created_username": "AI_Extractor",
+        "created_ago": "0 minutes",
+        "result": [
+          {
+            "id": "entity_0",
+            "type": "labels",
+            "value": {
+              "start": 95,
+              "end": 99,
+              "text": "area",
+              "labels": [
+                "FROM_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 95,
+              "end": 99,
+              "text": "area",
+              "labels": [
+                "TO_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_2",
+            "type": "labels",
+            "value": {
+              "start": 223,
+              "end": 232,
+              "text": "increased",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_3",
+            "type": "labels",
+            "value": {
+              "start": 220,
+              "end": 232,
+              "text": "urbanization",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_4",
+            "type": "labels",
+            "value": {
+              "start": 226,
+              "end": 232,
+              "text": "12.77%",
+              "labels": [
+                "MAGNITUDE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_5",
+            "type": "labels",
+            "value": {
+              "start": 220,
+              "end": 232,
+              "text": "2002 to 2018",
+              "labels": [
+                "DATE_RANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_6",
+            "type": "labels",
+            "value": {
+              "start": 228,
+              "end": 232,
+              "text": "2002",
+              "labels": [
+                "START_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_7",
+            "type": "labels",
+            "value": {
+              "start": 228,
+              "end": 232,
+              "text": "2018",
+              "labels": [
+                "END_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "relation_0",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_2",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_1",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_1",
+              "type": "converts_to"
+            }
+          },
+          {
+            "id": "relation_2",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_3",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_4",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_4",
+              "type": "affects"
+            }
+          },
+          {
+            "id": "relation_5",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_5",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_6",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_4",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_7",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_1",
+              "type": "results_in"
+            }
+          },
+          {
+            "id": "relation_8",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_7",
+              "type": "temporal_relation"
+            }
+          },
+          {
+            "id": "relation_9",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_10",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_7",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_11",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_2",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_12",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_3",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_13",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_2",
+              "type": "measured_by"
+            }
+          },
+          {
+            "id": "relation_14",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_3",
+              "type": "measured_by"
+            }
+          }
+        ]
+      }
+    ],
+    "predictions": [],
+    "id": 5,
+    "meta": {
+      "article_id": "Article_1",
+      "sentence_index": 0,
+      "extraction_confidence": "AI_Generated",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "event_summary": {
+        "from_lulc": "built-up area",
+        "to_lulc": "built-up area",
+        "process": "urbanization",
+        "magnitude": "12.77%"
+      }
+    }
+  },
+  {
+    "data": {
+      "text": "Prior to this, the area was occupied by terraced agricultural fields and some 13 villages."
+    },
+    "annotations": [
+      {
+        "id": "annotation_6",
+        "created_username": "AI_Extractor",
+        "created_ago": "0 minutes",
+        "result": [
+          {
+            "id": "entity_0",
+            "type": "labels",
+            "value": {
+              "start": 49,
+              "end": 61,
+              "text": "agricultural",
+              "labels": [
+                "FROM_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 79,
+              "end": 90,
+              "text": "urban areas",
+              "labels": [
+                "TO_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_2",
+            "type": "labels",
+            "value": {
+              "start": 81,
+              "end": 90,
+              "text": "converted",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_3",
+            "type": "labels",
+            "value": {
+              "start": 78,
+              "end": 90,
+              "text": "urbanization",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_4",
+            "type": "labels",
+            "value": {
+              "start": 47,
+              "end": 90,
+              "text": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:",
+              "labels": [
+                "MAGNITUDE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_5",
+            "type": "labels",
+            "value": {
+              "start": 86,
+              "end": 90,
+              "text": "2015",
+              "labels": [
+                "DATE_RANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_6",
+            "type": "labels",
+            "value": {
+              "start": 86,
+              "end": 90,
+              "text": "2015",
+              "labels": [
+                "START_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "relation_0",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_2",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_1",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_1",
+              "type": "converts_to"
+            }
+          },
+          {
+            "id": "relation_2",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_3",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_4",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_4",
+              "type": "affects"
+            }
+          },
+          {
+            "id": "relation_5",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_5",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_6",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_4",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_7",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_1",
+              "type": "results_in"
+            }
+          },
+          {
+            "id": "relation_8",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_9",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_2",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_10",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_3",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_11",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_2",
+              "type": "measured_by"
+            }
+          },
+          {
+            "id": "relation_12",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_3",
+              "type": "measured_by"
+            }
+          }
+        ]
+      }
+    ],
+    "predictions": [],
+    "id": 6,
+    "meta": {
+      "article_id": "Article_1",
+      "sentence_index": 0,
+      "extraction_confidence": "AI_Generated",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "event_summary": {
+        "from_lulc": "agricultural land",
+        "to_lulc": "urban areas",
+        "process": "urbanization",
+        "magnitude": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:"
+      }
+    }
+  },
+  {
+    "data": {
+      "text": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig."
+    },
+    "annotations": [
+      {
+        "id": "annotation_7",
+        "created_username": "AI_Extractor",
+        "created_ago": "0 minutes",
+        "result": [
+          {
+            "id": "entity_0",
+            "type": "labels",
+            "value": {
+              "start": 185,
+              "end": 202,
+              "text": "agricultural land",
+              "labels": [
+                "FROM_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 46,
+              "end": 51,
+              "text": "areas",
+              "labels": [
+                "TO_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_2",
+            "type": "labels",
+            "value": {
+              "start": 193,
+              "end": 202,
+              "text": "converted",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_3",
+            "type": "labels",
+            "value": {
+              "start": 190,
+              "end": 202,
+              "text": "urbanization",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_4",
+            "type": "labels",
+            "value": {
+              "start": 159,
+              "end": 202,
+              "text": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:",
+              "labels": [
+                "MAGNITUDE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_5",
+            "type": "labels",
+            "value": {
+              "start": 198,
+              "end": 202,
+              "text": "2015",
+              "labels": [
+                "DATE_RANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_6",
+            "type": "labels",
+            "value": {
+              "start": 198,
+              "end": 202,
+              "text": "2015",
+              "labels": [
+                "START_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "relation_0",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_2",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_1",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_1",
+              "type": "converts_to"
+            }
+          },
+          {
+            "id": "relation_2",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_3",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_4",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_4",
+              "type": "affects"
+            }
+          },
+          {
+            "id": "relation_5",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_5",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_6",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_4",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_7",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_1",
+              "type": "results_in"
+            }
+          },
+          {
+            "id": "relation_8",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_9",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_2",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_10",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_3",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_11",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_2",
+              "type": "measured_by"
+            }
+          },
+          {
+            "id": "relation_12",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_3",
+              "type": "measured_by"
+            }
+          }
+        ]
+      }
+    ],
+    "predictions": [],
+    "id": 7,
+    "meta": {
+      "article_id": "Article_1",
+      "sentence_index": 0,
+      "extraction_confidence": "AI_Generated",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "event_summary": {
+        "from_lulc": "agricultural land",
+        "to_lulc": "urban areas",
+        "process": "urbanization",
+        "magnitude": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:"
+      }
+    }
+  },
+  {
+    "data": {
+      "text": "The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape."
+    },
+    "annotations": [
+      {
+        "id": "annotation_8",
+        "created_username": "AI_Extractor",
+        "created_ago": "0 minutes",
+        "result": [
+          {
+            "id": "entity_0",
+            "type": "labels",
+            "value": {
+              "start": 166,
+              "end": 172,
+              "text": "forest",
+              "labels": [
+                "FROM_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 61,
+              "end": 172,
+              "text": "CHANGE: declined\nPROCESS: deforestation\nMAGNITUDE: 15%\nDATE_RANGE: 2010 to 2020\nSTART_DATE: 2010\nEND_DATE: 2020",
+              "labels": [
+                "TO_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_2",
+            "type": "labels",
+            "value": {
+              "start": 164,
+              "end": 172,
+              "text": "declined",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_3",
+            "type": "labels",
+            "value": {
+              "start": 159,
+              "end": 172,
+              "text": "deforestation",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_4",
+            "type": "labels",
+            "value": {
+              "start": 169,
+              "end": 172,
+              "text": "15%",
+              "labels": [
+                "MAGNITUDE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_5",
+            "type": "labels",
+            "value": {
+              "start": 160,
+              "end": 172,
+              "text": "2010 to 2020",
+              "labels": [
+                "DATE_RANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_6",
+            "type": "labels",
+            "value": {
+              "start": 168,
+              "end": 172,
+              "text": "2010",
+              "labels": [
+                "START_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_7",
+            "type": "labels",
+            "value": {
+              "start": 168,
+              "end": 172,
+              "text": "2020",
+              "labels": [
+                "END_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "relation_0",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_2",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_1",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_1",
+              "type": "converts_to"
+            }
+          },
+          {
+            "id": "relation_2",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_3",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_4",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_4",
+              "type": "affects"
+            }
+          },
+          {
+            "id": "relation_5",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_5",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_6",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_4",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_7",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_1",
+              "type": "results_in"
+            }
+          },
+          {
+            "id": "relation_8",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_7",
+              "type": "temporal_relation"
+            }
+          },
+          {
+            "id": "relation_9",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_10",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_7",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_11",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_2",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_12",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_3",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_13",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_2",
+              "type": "measured_by"
+            }
+          },
+          {
+            "id": "relation_14",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_3",
+              "type": "measured_by"
+            }
+          }
+        ]
+      }
+    ],
+    "predictions": [],
+    "id": 8,
+    "meta": {
+      "article_id": "Article_1",
+      "sentence_index": 0,
+      "extraction_confidence": "AI_Generated",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "event_summary": {
+        "from_lulc": "forest",
+        "to_lulc": "CHANGE: declined\nPROCESS: deforestation\nMAGNITUDE: 15%\nDATE_RANGE: 2010 to 2020\nSTART_DATE: 2010\nEND_DATE: 2020",
+        "process": "deforestation",
+        "magnitude": "15%"
+      }
+    }
+  },
+  {
+    "data": {
+      "text": "These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008."
+    },
+    "annotations": [
+      {
+        "id": "annotation_9",
+        "created_username": "AI_Extractor",
+        "created_ago": "0 minutes",
+        "result": [
+          {
+            "id": "entity_0",
+            "type": "labels",
+            "value": {
+              "start": 196,
+              "end": 213,
+              "text": "agricultural land",
+              "labels": [
+                "FROM_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 202,
+              "end": 213,
+              "text": "urban areas",
+              "labels": [
+                "TO_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_2",
+            "type": "labels",
+            "value": {
+              "start": 204,
+              "end": 213,
+              "text": "converted",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_3",
+            "type": "labels",
+            "value": {
+              "start": 201,
+              "end": 213,
+              "text": "urbanization",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_4",
+            "type": "labels",
+            "value": {
+              "start": 170,
+              "end": 213,
+              "text": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:",
+              "labels": [
+                "MAGNITUDE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_5",
+            "type": "labels",
+            "value": {
+              "start": 209,
+              "end": 213,
+              "text": "2015",
+              "labels": [
+                "DATE_RANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_6",
+            "type": "labels",
+            "value": {
+              "start": 209,
+              "end": 213,
+              "text": "2015",
+              "labels": [
+                "START_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "relation_0",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_2",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_1",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_1",
+              "type": "converts_to"
+            }
+          },
+          {
+            "id": "relation_2",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_3",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_4",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_4",
+              "type": "affects"
+            }
+          },
+          {
+            "id": "relation_5",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_5",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_6",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_4",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_7",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_1",
+              "type": "results_in"
+            }
+          },
+          {
+            "id": "relation_8",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_9",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_2",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_10",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_3",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_11",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_2",
+              "type": "measured_by"
+            }
+          },
+          {
+            "id": "relation_12",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_3",
+              "type": "measured_by"
+            }
+          }
+        ]
+      }
+    ],
+    "predictions": [],
+    "id": 9,
+    "meta": {
+      "article_id": "Article_1",
+      "sentence_index": 0,
+      "extraction_confidence": "AI_Generated",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "event_summary": {
+        "from_lulc": "agricultural land",
+        "to_lulc": "urban areas",
+        "process": "urbanization",
+        "magnitude": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:"
+      }
+    }
+  },
+  {
+    "data": {
+      "text": "The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses."
+    },
+    "annotations": [
+      {
+        "id": "annotation_10",
+        "created_username": "AI_Extractor",
+        "created_ago": "0 minutes",
+        "result": [
+          {
+            "id": "entity_0",
+            "type": "labels",
+            "value": {
+              "start": 262,
+              "end": 266,
+              "text": "land",
+              "labels": [
+                "FROM_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 134,
+              "end": 139,
+              "text": "areas",
+              "labels": [
+                "TO_LULC"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_2",
+            "type": "labels",
+            "value": {
+              "start": 263,
+              "end": 272,
+              "text": "converted",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_3",
+            "type": "labels",
+            "value": {
+              "start": 260,
+              "end": 272,
+              "text": "urbanization",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_4",
+            "type": "labels",
+            "value": {
+              "start": 229,
+              "end": 272,
+              "text": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:",
+              "labels": [
+                "MAGNITUDE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_5",
+            "type": "labels",
+            "value": {
+              "start": 268,
+              "end": 272,
+              "text": "2015",
+              "labels": [
+                "DATE_RANGE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "entity_6",
+            "type": "labels",
+            "value": {
+              "start": 268,
+              "end": 272,
+              "text": "2015",
+              "labels": [
+                "START_DATE"
+              ]
+            },
+            "to_name": "text",
+            "from_name": "label"
+          },
+          {
+            "id": "relation_0",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_2",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_1",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_1",
+              "type": "converts_to"
+            }
+          },
+          {
+            "id": "relation_2",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_0",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_3",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_3",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_4",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_4",
+              "type": "affects"
+            }
+          },
+          {
+            "id": "relation_5",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_2",
+              "to": "entity_5",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_6",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_4",
+              "type": "causes"
+            }
+          },
+          {
+            "id": "relation_7",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_3",
+              "to": "entity_1",
+              "type": "results_in"
+            }
+          },
+          {
+            "id": "relation_8",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_6",
+              "to": "entity_5",
+              "type": "part_of"
+            }
+          },
+          {
+            "id": "relation_9",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_2",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_10",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_5",
+              "to": "entity_3",
+              "type": "occurs_during"
+            }
+          },
+          {
+            "id": "relation_11",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_2",
+              "type": "measured_by"
+            }
+          },
+          {
+            "id": "relation_12",
+            "type": "relation",
+            "to_name": "label",
+            "from_name": "relation",
+            "value": {
+              "from": "entity_4",
+              "to": "entity_3",
+              "type": "measured_by"
+            }
+          }
+        ]
+      }
+    ],
+    "predictions": [],
+    "id": 10,
+    "meta": {
+      "article_id": "Article_1",
+      "sentence_index": 0,
+      "extraction_confidence": "AI_Generated",
+      "model_used": "meta-llama/Meta-Llama-3-8B",
+      "event_summary": {
+        "from_lulc": "agricultural land",
+        "to_lulc": "urban areas",
+        "process": "urbanization",
+        "magnitude": "DATE_RANGE: 2015\nSTART_DATE: 2015\nEND_DATE:"
+      }
+    }
+  }
+]
