@@ -1,31 +1,55 @@
-Research Goals & Approach
+# ARENA-2025: Automated Entity & Relation Extraction for LULC
 
-The main goal of this project is to automate the extraction of relations between entities in scientific literature related to Land Use and Land Cover (LULC).
+## 📌 Project Overview
+This repository contains research code, datasets, and experiments for **automated extraction of entities and relations** from scientific literature on **Land Use and Land Cover (LULC) change**.  
+The project is part of the **ARENA 2025 initiative**, focusing on **Natural Language Processing (NLP)** and **Knowledge Graph construction** to support environmental and climate research.
 
-To achieve this, we explored two complementary strategies:
+---
 
-1. Pipeline Approach
+##  Research Goals & Approach
 
-Entity Extraction
+The **main goal** of this project is to **automate the extraction of relations between entities** in LULC-related texts.
 
-Rule-based: SpaCy + custom vocabulary
+We explored two complementary strategies:
 
-Transformer-based: fine-tuned RoBERTa model for improved NER
+### 1. **Pipeline Approach**
+- **Entity Extraction**
+  - Rule-based: **SpaCy + custom vocabulary**
+  - Transformer-based: **fine-tuned RoBERTa model** for improved NER
+- **Relation Extraction**
+  - Tested multiple models:
+    - **Mistral AI**
+    - **LLaMA 3 (8B)**
+    - **Claude Sonnet (decoder-only) with Chain-of-Thought (CoT) prompting**
 
-Relation Extraction
+### 2. **Joint Entity + Relation Extraction**
+- Unified models to simultaneously extract both entities and relations.  
+- Evaluated several **decoder-only LLMs** with different prompting strategies:
+  - **LLaMA 3 (8B)** and **LLaMA 3 + CoT**
+  - **Gemini AI 2.5 Pro** and **Gemini AI 2.5 Pro + CoT**
+  - **Claude Sonnet 4 (Zero-shot and CoT prompting)**
 
-Tested multiple models, including Mistral AI and LLaMA 3, to link extracted entities with appropriate relation types
+ **Results**:  
+Claude Sonnet 4 + CoT prompting achieved the **best performance** with a **Micro-F1 score of 0.786**, outperforming other models.
 
-2. Joint Entity + Relation Extraction
+![Model Performance on RE](assets/model_performance_RE.png)
 
-Unified models to simultaneously extract both entities and their relations in one step
+### 3. **Relevant Sentence Extraction**
+- To narrow down to sentences that likely contain relations, two approaches were tested:
+  - **Sentence Classification**: fine-tuned **BERT model**
+  - **Information Retrieval**: embeddings with **all-MiniLM-L6-v2**
 
-Goal: reduce error propagation from pipeline design and improve consistency
+---
 
-3. Relevant Sentence Extraction
+##  Dataset for Relation Extraction
+- **233 queries** were defined to capture possible LULC entity–relation pairs.  
+- For each query, we collected **relevant sentences** from scientific papers.  
+- Relevant sentences were extracted using both:
+  - **BERT classification model**
+  - **Embedding-based retrieval (all-MiniLM-L6-v2)**  
 
-To focus only on sentences likely to contain LULC information, two methods were tested:
+This dataset was then used to evaluate both pipeline and joint extraction methods.
 
-Sentence Classification: fine-tuned BERT model for sentence-level relevance detection
+---
 
-Information Retrieval: embedding-based retrieval using all-MiniLM-L6-v2
+## 🗂 Repository Structure
