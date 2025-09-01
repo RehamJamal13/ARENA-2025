@@ -1,0 +1,12 @@
+{
+  "article_id": "48",
+  "original_sentence": "Remote sensing data showed changes in New Guinea Rainforest vegetation.",
+  "entities": [
+    {
+      "text": "New Guinea Rainforest vegetation",
+      "label": "LOC",
+      "start_char": 38,
+      "end_char": 70
+    }
+  ]
+}

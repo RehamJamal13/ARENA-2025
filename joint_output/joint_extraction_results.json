@@ -1,0 +1,2383 @@
+[
+  {
+    "sentence_id": 0,
+    "sentence": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.",
+    "entities": [
+      {
+        "text": "Simulation results",
+        "label": "TEXT",
+        "start_char": 0,
+        "end_char": 18
+      },
+      {
+        "text": "Thimphu city",
+        "label": "LOC",
+        "start_char": 48,
+        "end_char": 60
+      },
+      {
+        "text": "study period",
+        "label": "DATE",
+        "start_char": 97,
+        "end_char": 109
+      },
+      {
+        "text": "change trend",
+        "label": "PROCESS",
+        "start_char": 118,
+        "end_char": 130
+      },
+      {
+        "text": "2050",
+        "label": "DATE",
+        "start_char": 161,
+        "end_char": 165
+      }
+    ],
+    "relations": [
+      {
+        "source": "simulation results",
+        "relationship": "OCCURS_DURING",
+        "target": "study period",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "Thimphu city",
+        "relationship": "OCCURS_DURING",
+        "target": "study period",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "change trend",
+        "relationship": "OCCURS_DURING",
+        "target": "study period",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "change trend",
+        "relationship": "PREDICTED_TO_OCCUR",
+        "target": "2050",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- Simulation results | TEXT\n- Thimphu city | LOC\n- study period | DATE\n- change trend | PROCESS\n- 2050 | DATE\n\nRELATIONS:\n- simulation results --OCCURS_DURING-- study period | CONF: HIGH\n- Thimphu city --OCCURS_DURING-- study period | CONF: HIGH\n- change trend --OCCURS_DURING-- study period | CONF: HIGH\n- change trend --PREDICTED_TO_OCCUR-- 2050 | CONF: MEDIUM\n\nThis analysis focuses on the temporal relationships between the entities mentioned in the text. The simulation results, Thimphu city, and the study period are all occurring during the study period. The change trend is predicted to occur during the study period and continue into 2050. However, since no information about land use/land cover changes is provided, it is not possible to determine any transformations or causal relationships between LULC types.",
+    "entity_count": 5,
+    "relation_count": 4
+  },
+  {
+    "sentence_id": 1,
+    "sentence": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",
+    "entities": [
+      {
+        "text": "built-up area",
+        "label": "LULC",
+        "start_char": 54,
+        "end_char": 67
+      },
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start_char": 33,
+        "end_char": 41
+      },
+      {
+        "text": "12.77%",
+        "label": "PERCENT",
+        "start_char": 43,
+        "end_char": 49
+      },
+      {
+        "text": "52.88%",
+        "label": "PERCENT",
+        "start_char": 79,
+        "end_char": 85
+      },
+      {
+        "text": "65.5%",
+        "label": "PERCENT",
+        "start_char": 96,
+        "end_char": 101
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 73,
+        "end_char": 77
+      },
+      {
+        "text": "2018",
+        "label": "DATE",
+        "start_char": 90,
+        "end_char": 94
+      }
+    ],
+    "relations": [
+      {
+        "source": "built-up area",
+        "relationship": "INCREASES_BY",
+        "target": "12.77%",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "52.88%",
+        "relationship": "FROM_TO",
+        "target": "65.5%",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "increase",
+        "relationship": "OCCURS_DURING",
+        "target": "2002",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "increase",
+        "relationship": "OCCURS_DURING",
+        "target": "2018",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- built-up area | LULC\n- increase | CHANGE\n- 12.77% | PERCENT\n- 52.88% | CARDINAL\n- 65.5% | CARDINAL\n- 2002 | DATE\n- 2018 | DATE\n\nRELATIONS:\n- built-up area --INCREASES_BY-- 12.77% | CONF: HIGH\n- 52.88% --FROM_TO-- 65.5% | CONF: HIGH\n- increase --OCCURS_DURING-- 2002 | CONF: HIGH\n- increase --OCCURS_DURING-- 2018 | CONF: HIGH\n\nThis analysis is correct because we have identified two entities, both being LULC types, and a change in percentage for one of them. The relationship \"built-up area increases by 12.77%\" makes logical sense as it describes a quantitative change within the same LULC type. The relationship \"52.88% from 2002 to 65.5% in 2018\" also makes logical sense as it represents a value change over time.",
+    "entity_count": 7,
+    "relation_count": 4
+  },
+  {
+    "sentence_id": 2,
+    "sentence": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",
+    "entities": [
+      {
+        "text": "forest cover",
+        "label": "LULC",
+        "start_char": 17,
+        "end_char": 29
+      },
+      {
+        "text": "declined",
+        "label": "CHANGE",
+        "start_char": 30,
+        "end_char": 38
+      },
+      {
+        "text": "15.25%",
+        "label": "PERCENT",
+        "start_char": 52,
+        "end_char": 58
+      },
+      {
+        "text": "agriculture",
+        "label": "LULC",
+        "start_char": 72,
+        "end_char": 83
+      },
+      {
+        "text": "1.01%",
+        "label": "PERCENT",
+        "start_char": 85,
+        "end_char": 90
+      }
+    ],
+    "relations": [
+      {
+        "source": "forest cover",
+        "relationship": "DECREASES_BY",
+        "target": "15.25%",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "agriculture",
+        "relationship": "INCREASES_BY",
+        "target": "1.01%",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- forest cover | LULC\n- declined | CHANGE\n- 15.25% | PERCENT\n- agriculture | LULC\n- 1.01% | PERCENT\n\nRELATIONS:\n- forest cover --DECREASES_BY-- 15.25% | CONF: HIGH\n- agriculture --INCREASES_BY-- 1.01% | CONF: HIGH\n\nExplanation:\nThe sentence states that \"forest cover declined drastically\" which indicates a decrease in forest cover. The percentage value \"15.25%\" measures the extent of this decrease. There is no mention of any transformation from one land type to another, so there is no TRANSFORMS\\_TO relationship. Similarly, there is no causal relationship stated in the sentence. The sentence also mentions a decrease in forest cover followed by an increase in agriculture, but these are separate events and should be treated as independent entities. Therefore, the only valid relations are DECREASES\\_BY for forest cover and INCREASES\\_BY for agriculture.",
+    "entity_count": 5,
+    "relation_count": 2
+  },
+  {
+    "sentence_id": 3,
+    "sentence": "Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.",
+    "entities": [
+      {
+        "text": "population growth",
+        "label": "CHANGE",
+        "start_char": 6,
+        "end_char": 23
+      },
+      {
+        "text": "rural urban migration",
+        "label": "PROCESS",
+        "start_char": 37,
+        "end_char": 58
+      },
+      {
+        "text": "hasty socio-economic development",
+        "label": "PROCESS",
+        "start_char": 72,
+        "end_char": 104
+      },
+      {
+        "text": "democracy",
+        "label": "EVENT",
+        "start_char": 110,
+        "end_char": 119
+      }
+    ],
+    "relations": [
+      {
+        "source": "population growth",
+        "relationship": "CAUSES",
+        "target": "changes",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "rural urban migration, hasty socio-economic development",
+        "relationship": "CAUSES",
+        "target": "changes",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "changes",
+        "relationship": "ENABLES",
+        "target": "urbanization",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "democracy",
+        "relationship": "PRECEDED_BY",
+        "target": "post democracy",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "raw_response": "Based on the given sentence, no explicit entities or relations can be extracted as there are no mentions of specific land use/land cover types, locations, dates, or changes. However, we can infer some possible entities and relations based on the context:\n\nENTITIES:\n- population growth | CHANGE\n- rural urban migration | PROCESS\n- hasty socio-economic development | PROCESS\n- democracy | EVENT\n\nRELATIONS:\n- population growth --CAUSES-- changes | CONF: MEDIUM\n- rural urban migration, hasty socio-economic development --CAUSES-- changes | CONF: MEDIUM\n- changes --ENABLES-- urbanization | CONF: MEDIUM\n- democracy --PRECEDED_BY-- post democracy | CONF: MEDIUM\n\nNote: These entities and relations are not definitive and may vary depending on the specific context of the land use/land cover changes discussed in the sentence.",
+    "entity_count": 4,
+    "relation_count": 4
+  },
+  {
+    "sentence_id": 4,
+    "sentence": "Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",
+    "entities": [
+      {
+        "text": "built-up area",
+        "label": "LULC",
+        "start_char": -1,
+        "end_char": -1
+      },
+      {
+        "text": "73.21%",
+        "label": "PERCENT",
+        "start_char": 142,
+        "end_char": 148
+      },
+      {
+        "text": "city",
+        "label": "LOC",
+        "start_char": 131,
+        "end_char": 135
+      },
+      {
+        "text": "year 2050",
+        "label": "DATE",
+        "start_char": 66,
+        "end_char": 75
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 155,
+        "end_char": 161
+      },
+      {
+        "text": "16%",
+        "label": "PERCENT",
+        "start_char": 216,
+        "end_char": 219
+      }
+    ],
+    "relations": [
+      {
+        "source": "built-up area",
+        "relationship": "CONSUMES",
+        "target": "city area",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "73.21%",
+        "relationship": "MEASURES",
+        "target": "built-up area",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "forest",
+        "relationship": "REDUCED_TO",
+        "target": "patches",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "16%",
+        "relationship": "MEASURES",
+        "target": "forest",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "year 2050",
+        "relationship": "OCCURS_DURING",
+        "target": "future",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- built-up area | LULC\n- 73.21% | PERCENT\n- city | LOC\n- year 2050 | DATE\n- forest | LULC\n- 16% | PERCENT\n\nRELATIONS:\n- built-up area --CONSUMES-- city area | CONF: HIGH (built-up area covers more area than city)\n- 73.21% --MEASURES-- built-up area | CONF: HIGH\n- forest --REDUCED_TO-- patches | CONF: MEDIUM (not clear if this is a transformation, but it seems likely given the context)\n- 16% --MEASURES-- forest | CONF: HIGH\n- year 2050 --OCCURS_DURING-- future | CONF: MEDIUM (the scenario refers to a prediction for the year 2050)\n\nThis analysis assumes that the text implies a transformation from forest to built-up area, which may not be the case. The text states that \"forest significantly reduced,\" but it doesn't explicitly say that the forest is being transformed into built-up area. Therefore, the relation between forest and built-up area should be considered uncertain. However, given the context and common trends in urban development, it's a reasonable assumption.",
+    "entity_count": 6,
+    "relation_count": 5
+  },
+  {
+    "sentence_id": 5,
+    "sentence": "Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.",
+    "entities": [],
+    "relations": [],
+    "raw_response": "Based on the given sentence, no entities or relations can be extracted as there is no mention of any transformation, process, or quantitative change. The sentence only describes the previous state of the area, which was occupied by agricultural fields and villages.",
+    "entity_count": 0,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 6,
+    "sentence": "Planned development for Thimphu started in 1985 with the establishment of National Urban Development Commission.",
+    "entities": [
+      {
+        "text": "Planned development for Thimphu",
+        "label": "PROCESS",
+        "start_char": 0,
+        "end_char": 31
+      },
+      {
+        "text": "started",
+        "label": "CHANGE",
+        "start_char": 32,
+        "end_char": 39
+      },
+      {
+        "text": "1985",
+        "label": "DATE",
+        "start_char": 43,
+        "end_char": 47
+      },
+      {
+        "text": "National Urban Development Commission",
+        "label": "ORGANIZATION",
+        "start_char": 74,
+        "end_char": 111
+      }
+    ],
+    "relations": [
+      {
+        "source": "planned development for Thimphu",
+        "relationship": "STARTED_BY",
+        "target": "National Urban Development Commission",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "started",
+        "relationship": "OCCURS_DURING",
+        "target": "1985",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- Planned development for Thimphu | PROCESS\n- started | CHANGE\n- 1985 | DATE\n- National Urban Development Commission | ORGANIZATION\n\nRELATIONS:\n- planned development for Thimphu --STARTED_BY-- National Urban Development Commission | CONF: HIGH\n- started --OCCURS_DURING-- 1985 | CONF: HIGH",
+    "entity_count": 4,
+    "relation_count": 2
+  },
+  {
+    "sentence_id": 7,
+    "sentence": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",
+    "entities": [
+      {
+        "text": "Expansion of Thimphu city",
+        "label": "PROCESS",
+        "start_char": 0,
+        "end_char": 25
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 29,
+        "end_char": 33
+      },
+      {
+        "text": "Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba, Dechencholing, Changjiji, Lungtenphu, Simtokha, Babesa",
+        "label": "LOC",
+        "start_char": -1,
+        "end_char": -1
+      }
+    ],
+    "relations": [
+      {
+        "source": "Expansion of Thimphu city",
+        "relationship": "AFFECTS",
+        "target": "Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba, Dechencholing, Changjiji, Lungtenphu, Simtokha, Babesa",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "2002",
+        "relationship": "OCCURS_DURING",
+        "target": "Expansion of Thimphu city",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- Expansion of Thimphu city | PROCESS\n- 2002 | DATE\n- Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba, Dechencholing, Changjiji, Lungtenphu, Simtokha, Babesa | LOC\n\nRELATIONS:\n- Expansion of Thimphu city --AFFECTS-- Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba, Dechencholing, Changjiji, Lungtenphu, Simtokha, Babesa | CONF: HIGH\n- 2002 --OCCURS_DURING-- Expansion of Thimphu city | CONF: HIGH\n\nThis analysis assumes that the expansion of Thimphu city led to the development or growth of the listed areas, rather than simply being located near them. The expansion process could involve various activities such as construction of buildings, infrastructure development, and population growth, which would affect the named locations.",
+    "entity_count": 3,
+    "relation_count": 2
+  },
+  {
+    "sentence_id": 8,
+    "sentence": "The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",
+    "entities": [
+      {
+        "text": "city",
+        "label": "LOC: LOCATION NAME",
+        "start_char": 58,
+        "end_char": 62
+      },
+      {
+        "text": "period, 2002-2018",
+        "label": "DATE: TIME PERIOD",
+        "start_char": 4,
+        "end_char": 21
+      }
+    ],
+    "relations": [],
+    "raw_response": "ENTITIES:\n- city | LOC: LOCATION NAME\n- period, 2002-2018 | DATE: TIME PERIOD\n\nRELATIONS:\n- None identified with high confidence based on given information.\n\nExplanation:\nThe sentence describes a time period during which there were significant changes in a city's landscape and socio-economic development. However, it doesn't provide enough detail to determine specific land use/land cover changes or their relationships. To extract meaningful relations, we would need more information about the types of changes that occurred in the city's landscape during this period.",
+    "entity_count": 2,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 9,
+    "sentence": "The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.",
+    "entities": [
+      {
+        "text": "real estate",
+        "label": "PROCESS (or: built-up area",
+        "start_char": 187,
+        "end_char": 198
+      },
+      {
+        "text": "immigration",
+        "label": "PROCESS",
+        "start_char": 111,
+        "end_char": 122
+      },
+      {
+        "text": "rural areas",
+        "label": "LOC",
+        "start_char": 128,
+        "end_char": 139
+      },
+      {
+        "text": "lesser developed cities",
+        "label": "LOC",
+        "start_char": 144,
+        "end_char": 167
+      },
+      {
+        "text": "jobs",
+        "label": "QUANTITY",
+        "start_char": 83,
+        "end_char": 87
+      }
+    ],
+    "relations": [
+      {
+        "source": "real estate",
+        "relationship": "AFFECTS",
+        "target": "changes in land uses",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "immigration",
+        "relationship": "CAUSES",
+        "target": "boom in real estate",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "jobs",
+        "relationship": "CAUSES",
+        "target": "immigration",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "rural areas",
+        "relationship": "LOCATED_IN",
+        "target": "(unspecified)",
+        "confidence": "LOW"
+      },
+      {
+        "source": "lesser developed cities",
+        "relationship": "LOCATED_IN",
+        "target": "(unspecified)",
+        "confidence": "LOW"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- real estate | PROCESS (or: built-up area, urban area)\n- immigration | PROCESS\n- rural areas | LOC\n- lesser developed cities | LOC\n- jobs | QUANTITY\n\nRELATIONS:\n- real estate --AFFECTS-- changes in land uses | CONF: MEDIUM (real estate development can lead to changes in land use)\n- immigration --CAUSES-- boom in real estate | CONF: HIGH (immigration drives demand for housing and infrastructure, leading to real estate development)\n- jobs --CAUSES-- immigration | CONF: HIGH (jobs attract people to move to new locations)\n- rural areas --LOCATED_IN-- (unspecified) | CONF: LOW (no explicit mention of location)\n- lesser developed cities --LOCATED_IN-- (unspecified) | CONF: LOW (no explicit mention of location)\n\nNo clear TRANSFORMS_TO, INCREASES_BY/DECREASES_BY, CAUSES, or MEASURES relations can be determined from the given sentence. The sentence describes causal relationships between processes, but it doesn't provide enough detail to determine specific transformations or measurements.",
+    "entity_count": 5,
+    "relation_count": 5
+  },
+  {
+    "sentence_id": 10,
+    "sentence": "Although small, agriculture land shows a significant probability to transition to built-up area which has been the trend in many cities The findings indicate that rapid development of urban built will lead to sharp declines in forest and agriculture and increase in urban population.",
+    "entities": [
+      {
+        "text": "agriculture land",
+        "label": "LULC",
+        "start_char": 16,
+        "end_char": 32
+      },
+      {
+        "text": "built-up area",
+        "label": "LULC",
+        "start_char": 82,
+        "end_char": 95
+      },
+      {
+        "text": "significant probability",
+        "label": "CHANGE",
+        "start_char": 41,
+        "end_char": 64
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 227,
+        "end_char": 233
+      },
+      {
+        "text": "trends",
+        "label": "PROCESS",
+        "start_char": -1,
+        "end_char": -1
+      },
+      {
+        "text": "many cities",
+        "label": "LOC",
+        "start_char": 124,
+        "end_char": 135
+      },
+      {
+        "text": "urban population",
+        "label": "QUANTITY",
+        "start_char": 266,
+        "end_char": 282
+      }
+    ],
+    "relations": [
+      {
+        "source": "agriculture land",
+        "relationship": "HAS_SIGNIFICANT_PROBABILITY",
+        "target": "transitions to built-up area",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "trends",
+        "relationship": "LEADS_TO",
+        "target": "sharp declines in forest",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "trends",
+        "relationship": "LEADS_TO",
+        "target": "decrease in agriculture",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "trends",
+        "relationship": "LEADS_TO",
+        "target": "increase in urban population",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "urban population",
+        "relationship": "IS_AFFECTED_BY",
+        "target": "sharp declines in forest",
+        "confidence": "LOW"
+      },
+      {
+        "source": "urban population",
+        "relationship": "IS_AFFECTED_BY",
+        "target": "decrease in agriculture",
+        "confidence": "LOW"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- agriculture land | LULC\n- built-up area | LULC\n- significant probability | CHANGE\n- forest | LULC\n- trends | PROCESS\n- many cities | LOC\n- urban population | QUANTITY\n\nRELATIONS:\n- agriculture land --HAS_SIGNIFICANT_PROBABILITY-- transitions to built-up area | CONF: MEDIUM\n- trends --LEADS_TO-- sharp declines in forest | CONF: MEDIUM\n- trends --LEADS_TO-- decrease in agriculture | CONF: MEDIUM\n- trends --LEADS_TO-- increase in urban population | CONF: MEDIUM\n- urban population --IS_AFFECTED_BY-- sharp declines in forest | CONF: LOW\n- urban population --IS_AFFECTED_BY-- decrease in agriculture | CONF: LOW\n\nExplanation:\nThe sentence mentions \"agriculture land shows a significant probability to transition to built-up area\". This implies a transformation from one land use type to another, so we can infer a TRANSFORMS_TO relationship between agriculture land and built-up area. However, the sentence doesn't provide enough information to determine the exact cause of this transformation or the percentage of change, so these relationships cannot be determined with high confidence. Additionally, the sentence mentions \"rapid development of urban built will lead to sharp declines in forest and agriculture and increase in urban population\", indicating causal relationships between urban development, forest decline, agriculture decrease, and urban population increase. These relationships also have medium confidence as there is no explicit mention of causality in the sentence. Finally, the sentence mentions \"many cities\" and \"urban population\", but it doesn't specify which cities or the size of the urban population increase, so these entities and their relationships cannot be determined with high confidence.",
+    "entity_count": 7,
+    "relation_count": 6
+  },
+  {
+    "sentence_id": 11,
+    "sentence": "Significant increase in built-up areas were associated with parallel loss of important land cover types such as forest and agriculture.",
+    "entities": [
+      {
+        "text": "significant increase",
+        "label": "CHANGE",
+        "start_char": 0,
+        "end_char": 20
+      },
+      {
+        "text": "built-up areas",
+        "label": "LULC",
+        "start_char": 24,
+        "end_char": 38
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start_char": 69,
+        "end_char": 73
+      },
+      {
+        "text": "important land cover types",
+        "label": "LULC (aggregate entity: forest and agriculture)",
+        "start_char": 77,
+        "end_char": 103
+      }
+    ],
+    "relations": [
+      {
+        "source": "significant increase",
+        "relationship": "INCREASES_BY",
+        "target": "built-up areas",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "loss",
+        "relationship": "OCCURS_AT_SAME_TIME_AS",
+        "target": "significant increase",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "loss",
+        "relationship": "AFFECTS",
+        "target": "forest and agriculture",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "forest and agriculture",
+        "relationship": "TRANSFORMS_INTO",
+        "target": "built-up areas | UNSURE (This might not be a direct transformation, but rather a loss leading to urban expansion which then leads to built-up areas)",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- significant increase | CHANGE\n- built-up areas | LULC\n- loss | CHANGE\n- important land cover types | LULC (aggregate entity: forest and agriculture)\n\nRELATIONS:\n- significant increase --INCREASES_BY-- built-up areas | CONF: HIGH\n- loss --OCCURS_AT_SAME_TIME_AS-- significant increase | CONF: MEDIUM\n- loss --AFFECTS-- forest and agriculture | CONF: HIGH\n- forest and agriculture --TRANSFORMS_INTO-- built-up areas | UNSURE (This might not be a direct transformation, but rather a loss leading to urban expansion which then leads to built-up areas)\n\nExplanation:\nThe sentence describes an association between an increase in built-up areas and a loss of important land cover types. The increase is described as \"significant,\" implying a quantitative change. The loss is described as affecting both forest and agriculture, making it an aggregate entity. The relationship between the increase and loss is stated to occur at the same time. However, the sentence does not directly state that the forest and agriculture transformed into built-up areas. Instead, it suggests that the loss led to urban expansion, which then resulted in built-up areas. Therefore, the relationship between forest/agriculture and built-up areas is uncertain and may require further context to determine if it is a direct transformation or not.",
+    "entity_count": 4,
+    "relation_count": 4
+  },
+  {
+    "sentence_id": 12,
+    "sentence": "Significant changes in Thimphu's landscapes are correlated with the government's decision to expand the city northwards and southwards.",
+    "entities": [
+      {
+        "text": "Significant changes",
+        "label": "CHANGE",
+        "start_char": 0,
+        "end_char": 19
+      },
+      {
+        "text": "Thimphu's landscapes",
+        "label": "LOC",
+        "start_char": 23,
+        "end_char": 43
+      },
+      {
+        "text": "government's decision",
+        "label": "PROCESS",
+        "start_char": 68,
+        "end_char": 89
+      },
+      {
+        "text": "northwards",
+        "label": "DIRECTION",
+        "start_char": 109,
+        "end_char": 119
+      },
+      {
+        "text": "southwards",
+        "label": "DIRECTION",
+        "start_char": 124,
+        "end_char": 134
+      }
+    ],
+    "relations": [
+      {
+        "source": "significant changes",
+        "relationship": "CAUSES",
+        "target": "government's decision",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "government's decision",
+        "relationship": "ENABLES",
+        "target": "expansion northwards, expansion southwards",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "expansion northwards, expansion southwards",
+        "relationship": "TRANSFORMS_TO",
+        "target": "unspecified LULC change",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- Significant changes | CHANGE\n- Thimphu's landscapes | LOC\n- government's decision | PROCESS\n- northwards | DIRECTION\n- southwards | DIRECTION\n\nRELATIONS:\n- significant changes --CAUSES-- government's decision | CONF: HIGH\n- government's decision --ENABLES-- expansion northwards, expansion southwards | CONF: HIGH\n- expansion northwards, expansion southwards --TRANSFORMS_TO-- unspecified LULC change | CONF: MEDIUM (The text doesn't specify which LULC types are being transformed)\n\nNote: The text doesn't provide enough information to determine the exact LULC types involved in the transformation or their locations.",
+    "entity_count": 5,
+    "relation_count": 3
+  },
+  {
+    "sentence_id": 13,
+    "sentence": "This expansion received a boost after the institution of constitutional democracy in 2008 which brought in expediated development in the city.",
+    "entities": [
+      {
+        "text": "expansion",
+        "label": "PROCESS",
+        "start_char": 5,
+        "end_char": 14
+      },
+      {
+        "text": "city",
+        "label": "LOC",
+        "start_char": 137,
+        "end_char": 141
+      },
+      {
+        "text": "constitutional democracy",
+        "label": "EVENT",
+        "start_char": 57,
+        "end_char": 81
+      },
+      {
+        "text": "2008",
+        "label": "DATE",
+        "start_char": 85,
+        "end_char": 89
+      }
+    ],
+    "relations": [],
+    "raw_response": "ENTITIES:\n- expansion | PROCESS\n- city | LOC\n- constitutional democracy | EVENT\n- 2008 | DATE\n\nRELATIONS:\n- None identified as there is no clear transformation, measurement, or causality stated in the sentence.",
+    "entity_count": 4,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 14,
+    "sentence": "The results of prediction for 2050 also did not bear well for Thimphu city, with forest cover diminishing to a mere 4.28km 2 (16.32%) which are also highly fragmented.",
+    "entities": [
+      {
+        "text": "forest cover",
+        "label": "LULC",
+        "start_char": 81,
+        "end_char": 93
+      },
+      {
+        "text": "diminished",
+        "label": "CHANGE",
+        "start_char": -1,
+        "end_char": -1
+      },
+      {
+        "text": "4.28km²",
+        "label": "SURFACE_UNIT",
+        "start_char": -1,
+        "end_char": -1
+      },
+      {
+        "text": "16.32%",
+        "label": "PERCENT",
+        "start_char": 126,
+        "end_char": 132
+      },
+      {
+        "text": "Thimphu city",
+        "label": "LOC",
+        "start_char": 62,
+        "end_char": 74
+      }
+    ],
+    "relations": [
+      {
+        "source": "forest cover",
+        "relationship": "DECREASES_BY",
+        "target": "16.32%",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "forest cover",
+        "relationship": "LOCATED_IN",
+        "target": "Thimphu city",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- forest cover | LULC\n- diminished | CHANGE\n- 4.28km² | SURFACE_UNIT\n- 16.32% | PERCENT\n- Thimphu city | LOC\n\nRELATIONS:\n- forest cover --DECREASES_BY-- 16.32% | CONF: HIGH\n- forest cover --LOCATED_IN-- Thimphu city | CONF: HIGH",
+    "entity_count": 5,
+    "relation_count": 2
+  },
+  {
+    "sentence_id": 15,
+    "sentence": "Loss of forest cover will degrade important ecological services and increase vulnerability of the city to landslides, gulley erosion, drying of water sources, worsened air pollution, and loss of important biodiversity.",
+    "entities": [
+      {
+        "text": "forest cover",
+        "label": "LULC",
+        "start_char": 8,
+        "end_char": 20
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start_char": 0,
+        "end_char": 4
+      }
+    ],
+    "relations": [],
+    "raw_response": "ENTITIES:\n- forest cover | LULC\n- loss | CHANGE\n\nRELATIONS:\n- None identified in the given sentence.\n\nExplanation:\nThe sentence describes the consequences of losing forest cover, but it doesn't mention any transformation of forest cover into another land use/land cover type or any quantitative changes. Therefore, no TRANSFORMS_TO, INCREASES_BY/DECREASES_BY, or other relations can be identified based on the provided information.",
+    "entity_count": 2,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 16,
+    "sentence": "The highest land conversion rate occurs in the North Central and Central Coast regions, but conversion of agricultural land for urbanization is mainly in the Red River Delta and Southeast.",
+    "entities": [
+      {
+        "text": "highest land conversion rate",
+        "label": "QUANTITY",
+        "start_char": 4,
+        "end_char": 32
+      },
+      {
+        "text": "North Central region",
+        "label": "LOC",
+        "start_char": -1,
+        "end_char": -1
+      },
+      {
+        "text": "Central Coast region",
+        "label": "LOC",
+        "start_char": 65,
+        "end_char": 85
+      },
+      {
+        "text": "Red River Delta",
+        "label": "LOC",
+        "start_char": 158,
+        "end_char": 173
+      },
+      {
+        "text": "Southeast",
+        "label": "LOC",
+        "start_char": 178,
+        "end_char": 187
+      },
+      {
+        "text": "agricultural land",
+        "label": "LULC",
+        "start_char": 106,
+        "end_char": 123
+      },
+      {
+        "text": "urbanization",
+        "label": "PROCESS",
+        "start_char": 128,
+        "end_char": 140
+      }
+    ],
+    "relations": [
+      {
+        "source": "highest land conversion rate",
+        "relationship": "MEASURES",
+        "target": "rate of change",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "North Central region",
+        "relationship": "LOCATED_IN",
+        "target": "North Central and Central Coast regions",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "Central Coast region",
+        "relationship": "LOCATED_IN",
+        "target": "North Central and Central Coast regions",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "Red River Delta",
+        "relationship": "LOCATED_IN",
+        "target": "North Central and Central Coast regions",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "Southeast",
+        "relationship": "LOCATED_IN",
+        "target": "North Central and Central Coast regions",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "agricultural land",
+        "relationship": "TRANSFORMS_TO",
+        "target": "urban area | CAUSES: urbanization, ENABLES: urbanization",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "urbanization",
+        "relationship": "OCCURS_DURING",
+        "target": "conversion of agricultural land",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- highest land conversion rate | QUANTITY\n- North Central region | LOC\n- Central Coast region | LOC\n- Red River Delta | LOC\n- Southeast | LOC\n- agricultural land | LULC\n- urbanization | PROCESS\n\nRELATIONS:\n- highest land conversion rate --MEASURES-- rate of change | CONF: HIGH\n- North Central region --LOCATED_IN-- North Central and Central Coast regions | CONF: HIGH\n- Central Coast region --LOCATED_IN-- North Central and Central Coast regions | CONF: HIGH\n- Red River Delta --LOCATED_IN-- North Central and Central Coast regions | CONF: MEDIUM\n- Southeast --LOCATED_IN-- North Central and Central Coast regions | CONF: MEDIUM\n- agricultural land --TRANSFORMS_TO-- urban area | CAUSES: urbanization, ENABLES: urbanization\n- urbanization --OCCURS_DURING-- conversion of agricultural land | CONF: HIGH",
+    "entity_count": 7,
+    "relation_count": 7
+  },
+  {
+    "sentence_id": 17,
+    "sentence": "Land use is also a manifestation of various human activities to exploit the landscape.",
+    "entities": [],
+    "relations": [],
+    "raw_response": "This sentence describes a general concept rather than a specific transformation or relationship between entities. It doesn't provide enough information to extract any entities or relationships according to the given requirements. Therefore, there will be no output for this sentence.",
+    "entity_count": 0,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 18,
+    "sentence": "Therefore, landuse change is seen as a human activity to change the natural landscape and emphasize the role and function of land for socio-economic activities Urbanization is a socio-economic process manifested by a rapid increase in the number and size of urban population characteristics.",
+    "entities": [],
+    "relations": [],
+    "raw_response": "Based on the given sentence, there are no explicit entities or relations related to LULC change mentioned. Therefore, no entities or relations can be extracted from this sentence. The sentence only discusses the concept of land use change and urbanization as a socio-economic process.",
+    "entity_count": 0,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 19,
+    "sentence": "It is also defined as urban expansion, as the process of concentrating the population into cities, or as the rapid formation of urban population points based on production and life development Scientists also examine and observe urbanization from many different angles | Land use change in the World: a literature review: Land area of the world is estimated at 13 billion hectares, of which agricultural land accounts for 37.6%, equivalent to 4.9 billion hectares Built-up land occupied a relatively small area of about 1-3% in 2005, but it is expected to increase to about 260 to 420 million hectares (about 4-5%) by 2050 .",
+    "entities": [
+      {
+        "text": "agricultural land",
+        "label": "LULC",
+        "start_char": 391,
+        "end_char": 408
+      },
+      {
+        "text": "built-up land",
+        "label": "LULC",
+        "start_char": 464,
+        "end_char": 477
+      },
+      {
+        "text": "37.6%",
+        "label": "PERCENT",
+        "start_char": 422,
+        "end_char": 427
+      },
+      {
+        "text": "4.9 billion hectares",
+        "label": "CARDINAL",
+        "start_char": 443,
+        "end_char": 463
+      },
+      {
+        "text": "1-3%",
+        "label": "PERCENT",
+        "start_char": 520,
+        "end_char": 524
+      },
+      {
+        "text": "260 to 420 million hectares",
+        "label": "CARDINAL",
+        "start_char": 574,
+        "end_char": 601
+      },
+      {
+        "text": "about 4-5%",
+        "label": "PERCENT",
+        "start_char": 603,
+        "end_char": 613
+      },
+      {
+        "text": "Land area of the world",
+        "label": "LOC",
+        "start_char": 322,
+        "end_char": 344
+      },
+      {
+        "text": "urban expansion",
+        "label": "PROCESS",
+        "start_char": 22,
+        "end_char": 37
+      },
+      {
+        "text": "scientists",
+        "label": "PERSON",
+        "start_char": 193,
+        "end_char": 203
+      }
+    ],
+    "relations": [
+      {
+        "source": "agricultural land",
+        "relationship": "IS_A",
+        "target": "LULC",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "built-up land",
+        "relationship": "IS_A",
+        "target": "LULC",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "37.6%",
+        "relationship": "MEASURES",
+        "target": "agricultural land",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "4.9 billion hectares",
+        "relationship": "IS_A",
+        "target": "CARDINAL_VALUE",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "1-3%",
+        "relationship": "MEASURES",
+        "target": "built-up land (2005)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "260 to 420 million hectares",
+        "relationship": "IS_A",
+        "target": "CARDINAL_VALUE",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "4-5%",
+        "relationship": "MEASURES",
+        "target": "built-up land (expected 2050)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "Land area of the world",
+        "relationship": "IS_A",
+        "target": "LOC",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "urban expansion",
+        "relationship": "IS_A",
+        "target": "PROCESS",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "scientists",
+        "relationship": "PERFORMS",
+        "target": "> examine and observe urbanization",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- agricultural land | LULC\n- built-up land | LULC\n- 37.6% | PERCENT\n- 4.9 billion hectares | CARDINAL\n- 1-3% | PERCENT\n- 260 to 420 million hectares | CARDINAL\n- about 4-5% | PERCENT\n- Land area of the world | LOC\n- urban expansion | PROCESS\n- scientists | PERSON\n\nRELATIONS:\n- agricultural land --IS_A-- LULC | CONF: HIGH\n- built-up land --IS_A-- LULC | CONF: HIGH\n- 37.6% --MEASURES-- agricultural land | CONF: HIGH\n- 4.9 billion hectares --IS_A-- CARDINAL_VALUE | CONF: HIGH\n- 1-3% --MEASURES-- built-up land (2005) | CONF: MEDIUM\n- 260 to 420 million hectares --IS_A-- CARDINAL_VALUE | CONF: HIGH\n- 4-5% --MEASURES-- built-up land (expected 2050) | CONF: MEDIUM\n- Land area of the world --IS_A-- LOC | CONF: HIGH\n- urban expansion --IS_A-- PROCESS | CONF: HIGH\n- scientists --PERFORMS--> examine and observe urbanization | CONF: MEDIUM\n\nNo TRANSFORMS_TO, DECREASES_BY, INCREASES_BY, CAUSES, LOCATED_IN, OCCURS_DURING, AFFECTS, FROM_TO, or ENABLES relations can be determined from the given sentence with certainty.",
+    "entity_count": 10,
+    "relation_count": 10
+  },
+  {
+    "sentence_id": 20,
+    "sentence": "As for urban land, this area could expand from 40 to 143 million hectares in about 45 years, from 2007 to 2050 .",
+    "entities": [
+      {
+        "text": "urban land",
+        "label": "LULC",
+        "start_char": 7,
+        "end_char": 17
+      },
+      {
+        "text": "expand",
+        "label": "CHANGE",
+        "start_char": 35,
+        "end_char": 41
+      },
+      {
+        "text": "143 million hectares",
+        "label": "CARDINAL",
+        "start_char": 53,
+        "end_char": 73
+      },
+      {
+        "text": "45 years",
+        "label": "TIME",
+        "start_char": 83,
+        "end_char": 91
+      },
+      {
+        "text": "2007",
+        "label": "DATE",
+        "start_char": 98,
+        "end_char": 102
+      },
+      {
+        "text": "2050",
+        "label": "DATE",
+        "start_char": 106,
+        "end_char": 110
+      }
+    ],
+    "relations": [
+      {
+        "source": "urban land",
+        "relationship": "INCREASES_BY",
+        "target": "103 million hectares",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "expansion",
+        "relationship": "OCCURS_DURING",
+        "target": "2007",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "expansion",
+        "relationship": "OCCURS_DURING",
+        "target": "2050",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- urban land | LULC\n- expand | CHANGE\n- 143 million hectares | CARDINAL\n- 45 years | TIME\n- 2007 | DATE\n- 2050 | DATE\n\nRELATIONS:\n- urban land --INCREASES_BY-- 103 million hectares | CONF: HIGH\n- expansion --OCCURS_DURING-- 2007 | CONF: MEDIUM\n- expansion --OCCURS_DURING-- 2050 | CONF: MEDIUM\n\nExplanation:\nThe text states that \"urban land could expand,\" which indicates a quantitative change rather than a transformation between different land types. Therefore, the relationship between \"urban land\" and \"expand\" is labeled as \"INCREASES\\_BY\". The expansion is said to occur \"from 2007 to 2050\", so the temporal relationships are also established with medium confidence since the text doesn't specify any particular transformation or cause of the expansion.",
+    "entity_count": 6,
+    "relation_count": 3
+  },
+  {
+    "sentence_id": 21,
+    "sentence": "The annual increase in built-up land in developing countries is about 3.6%, while 2.9% is the average increase in industrial countries.",
+    "entities": [
+      {
+        "text": "annual increase",
+        "label": "CHANGE",
+        "start_char": 4,
+        "end_char": 19
+      },
+      {
+        "text": "built-up land",
+        "label": "LULC",
+        "start_char": 23,
+        "end_char": 36
+      },
+      {
+        "text": "developing countries",
+        "label": "LOC",
+        "start_char": 40,
+        "end_char": 60
+      },
+      {
+        "text": "3.6%",
+        "label": "PERCENT",
+        "start_char": 70,
+        "end_char": 74
+      },
+      {
+        "text": "industrial countries",
+        "label": "LOC",
+        "start_char": 114,
+        "end_char": 134
+      },
+      {
+        "text": "2.9%",
+        "label": "PERCENT",
+        "start_char": 82,
+        "end_char": 86
+      }
+    ],
+    "relations": [
+      {
+        "source": "annual increase",
+        "relationship": "INCREASES_BY",
+        "target": "3.6%",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "annual increase",
+        "relationship": "INCREASES_BY",
+        "target": "2.9%",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "built-up land",
+        "relationship": "LOCATED_IN",
+        "target": "developing countries",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "built-up land",
+        "relationship": "LOCATED_IN",
+        "target": "industrial countries",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- annual increase | CHANGE\n- built-up land | LULC\n- developing countries | LOC\n- 3.6% | PERCENT\n- industrial countries | LOC\n- 2.9% | PERCENT\n\nRELATIONS:\n- annual increase --INCREASES_BY-- 3.6% | CONF: HIGH\n- annual increase --INCREASES_BY-- 2.9% | CONF: HIGH\n- built-up land --LOCATED_IN-- developing countries | CONF: HIGH\n- built-up land --LOCATED_IN-- industrial countries | CONF: HIGH\n\nThis analysis focuses on identifying entities and their relationships related to the given sentence, which describes statistical data about the percentage increase in built-up land in two different locations. No transformation between land types occurs in this sentence.",
+    "entity_count": 6,
+    "relation_count": 4
+  },
+  {
+    "sentence_id": 22,
+    "sentence": "The Pacific and Southeast Asia regions have witnessed considerable land conversion rates from 1990 to 2000, at 7.2% and 6.4%, respectively (ANGEL Along with labour and capital, the land is a crucial factor for production in classical economics, and land use is considered the agricultural economy's backbone Although land-use conversion is essential to promote social progress and economic development, it also has many undesirable effects.",
+    "entities": [
+      {
+        "text": "Pacific and Southeast Asia regions",
+        "label": "LOC",
+        "start_char": 4,
+        "end_char": 38
+      },
+      {
+        "text": "1990",
+        "label": "DATE",
+        "start_char": 94,
+        "end_char": 98
+      },
+      {
+        "text": "2000",
+        "label": "DATE",
+        "start_char": 102,
+        "end_char": 106
+      },
+      {
+        "text": "land conversion rates",
+        "label": "QUANTITY",
+        "start_char": 67,
+        "end_char": 88
+      },
+      {
+        "text": "7.2%",
+        "label": "PERCENT",
+        "start_char": 111,
+        "end_char": 115
+      },
+      {
+        "text": "6.4%",
+        "label": "PERCENT",
+        "start_char": 120,
+        "end_char": 124
+      }
+    ],
+    "relations": [
+      {
+        "source": "Pacific and Southeast Asia regions",
+        "relationship": "OCCURS_DURING",
+        "target": "1990, 2000",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "7.2%",
+        "relationship": "MEASURES",
+        "target": "land conversion rates in Pacific region",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "6.4%",
+        "relationship": "MEASURES",
+        "target": "land conversion rates in Southeast Asia region",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- Pacific and Southeast Asia regions | LOC\n- 1990 | DATE\n- 2000 | DATE\n- land conversion rates | QUANTITY\n- 7.2% | PERCENT\n- 6.4% | PERCENT\n\nRELATIONS:\n- Pacific and Southeast Asia regions --OCCURS_DURING-- 1990, 2000 | CONF: HIGH\n- 7.2% --MEASURES-- land conversion rates in Pacific region | CONF: HIGH\n- 6.4% --MEASURES-- land conversion rates in Southeast Asia region | CONF: HIGH\n\nThis analysis focuses on identifying entities and their relationships related to land use and land cover change during the specified time frame in the Pacific and Southeast Asia regions. The given text provides information about the occurrence of land conversion rates during the time period from 1990 to 2000. The entities identified are the Pacific and Southeast Asia regions and the land conversion rates with their respective percentages. The relationship between these entities is measured using the percentage values, which indicate the extent of land conversion that took place during this time frame. No explicit transformation or causal relationships were mentioned in the text, so no further relations can be established based on the provided context.",
+    "entity_count": 6,
+    "relation_count": 3
+  },
+  {
+    "sentence_id": 23,
+    "sentence": "In the north, Vietnam borders China; and in the west Laos and Cambodia.",
+    "entities": [],
+    "relations": [],
+    "raw_response": "No land use/land cover change entities or relationships can be extracted from the given sentence as it does not contain any information related to land transformation processes. The sentence only describes geographical locations and their relationships.",
+    "entity_count": 0,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 24,
+    "sentence": "The length of the country from north to south is 1,650 km, while the narrowest position, east to west, is nearly 50 km.",
+    "entities": [],
+    "relations": [],
+    "raw_response": "No land use/land cover (LULC) change entities or relationships can be extracted from the given sentence as it does not contain any information related to LULC transformation processes. The sentence only provides descriptive information about the size and dimensions of a country.",
+    "entity_count": 0,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 25,
+    "sentence": "It is a tropical country, with most of the area being hilly (accounting for half of the territory), and where the terrain is mainly low mountains.",
+    "entities": [],
+    "relations": [],
+    "raw_response": "Based on the given sentence, there are no entities or relations that can be extracted as it does not contain any information related to land use/land cover change or transformation processes. The sentence only describes the geographical characteristics of a tropical country.",
+    "entity_count": 0,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 26,
+    "sentence": "Almost all of the population lives in rural areas and works in the agricultural sector, so one-third of the land is used for agriculture (FAO 2019).",
+    "entities": [
+      {
+        "text": "one-third of the land",
+        "label": "CARDINAL",
+        "start_char": 91,
+        "end_char": 112
+      },
+      {
+        "text": "agricultural sector",
+        "label": "PROCESS",
+        "start_char": 67,
+        "end_char": 86
+      },
+      {
+        "text": "population",
+        "label": "PERSON",
+        "start_char": 18,
+        "end_char": 28
+      },
+      {
+        "text": "lives",
+        "label": "VERB",
+        "start_char": 29,
+        "end_char": 34
+      },
+      {
+        "text": "rural areas",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 49
+      }
+    ],
+    "relations": [
+      {
+        "source": "one-third of the land",
+        "relationship": "IS_USED_FOR",
+        "target": "agricultural sector",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "population",
+        "relationship": "LIVES_IN",
+        "target": "rural areas",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- one-third of the land | CARDINAL\n- agricultural sector | PROCESS\n- population | PERSON\n- lives | VERB\n- rural areas | LOC\n\nRELATIONS:\n- one-third of the land --IS_USED_FOR-- agricultural sector | CONF: HIGH\n- population --LIVES_IN-- rural areas | CONF: HIGH\n\nThis analysis focuses on identifying entities and their relationships related to land use and land cover change. The given sentence describes the distribution of population and their occupation in rural areas and the usage of one-third of the land for agriculture. No transformation or change in land use or land cover is mentioned in the sentence. Therefore, no TRANSFORMS\\_TO, INCREASES\\_BY/DECREASES\\_BY, CAUSES, or other relations are applicable here.",
+    "entity_count": 5,
+    "relation_count": 2
+  },
+  {
+    "sentence_id": 27,
+    "sentence": "According to land use purposes, the land is divided into three main land groups: non-agricultural, agricultural, and unused land.",
+    "entities": [
+      {
+        "text": "land",
+        "label": "LOC",
+        "start_char": 13,
+        "end_char": 17
+      },
+      {
+        "text": "land use purposes",
+        "label": "PROCESS",
+        "start_char": 13,
+        "end_char": 30
+      },
+      {
+        "text": "non-agricultural",
+        "label": "LULC",
+        "start_char": 81,
+        "end_char": 97
+      },
+      {
+        "text": "agricultural",
+        "label": "LULC",
+        "start_char": 85,
+        "end_char": 97
+      },
+      {
+        "text": "unused land",
+        "label": "LULC",
+        "start_char": 117,
+        "end_char": 128
+      }
+    ],
+    "relations": [],
+    "raw_response": "ENTITIES:\n- land | LOC\n- land use purposes | PROCESS\n- non-agricultural | LULC\n- agricultural | LULC\n- unused land | LULC\n\nRELATIONS:\n- None applicable in this sentence as it describes the initial division of land into categories rather than any transformation or change over time.",
+    "entity_count": 5,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 28,
+    "sentence": "Agricultural land is divided into ground for production agriculture, forestry land, aquaculture land, salt-making, and other agriculture.",
+    "entities": [
+      {
+        "text": "agricultural land",
+        "label": "LULC",
+        "start_char": 0,
+        "end_char": 17
+      }
+    ],
+    "relations": [],
+    "raw_response": "ENTITIES:\n- agricultural land | LULC\n\nRELATIONS:\nNone identified in the given sentence.",
+    "entity_count": 1,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 29,
+    "sentence": "Land for production agriculture includes annual cropland (paddy land and other short-term cropland) and perennial cropland.",
+    "entities": [
+      {
+        "text": "land for production agriculture",
+        "label": "LULC",
+        "start_char": 0,
+        "end_char": 31
+      },
+      {
+        "text": "production agriculture",
+        "label": "PROCESS",
+        "start_char": 9,
+        "end_char": 31
+      }
+    ],
+    "relations": [],
+    "raw_response": "ENTITIES:\n- land for production agriculture | LULC\n- production agriculture | PROCESS\n\nRELATIONS:\n- None applicable in this sentence as it only describes a type of land use and a process, but no transformation or change occurs.",
+    "entity_count": 2,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 30,
+    "sentence": "The forest land is divided into protection, production, and special-use forest land.",
+    "entities": [
+      {
+        "text": "forest land",
+        "label": "LULC",
+        "start_char": 4,
+        "end_char": 15
+      }
+    ],
+    "relations": [],
+    "raw_response": "ENTITIES:\n- forest land | LULC\n\nRELATIONS:\nNone identified in the given sentence.",
+    "entity_count": 1,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 31,
+    "sentence": "Paddy land in Vietnam is concentrated in two main areas, the Mekong Delta and Red River Delta Delta (Fig.",
+    "entities": [
+      {
+        "text": "paddy land",
+        "label": "LULC",
+        "start_char": 0,
+        "end_char": 10
+      },
+      {
+        "text": "concentrated",
+        "label": "CHANGE",
+        "start_char": 25,
+        "end_char": 37
+      },
+      {
+        "text": "Mekong Delta",
+        "label": "LOC",
+        "start_char": 61,
+        "end_char": 73
+      },
+      {
+        "text": "Red River Delta Delta",
+        "label": "LOC",
+        "start_char": 78,
+        "end_char": 99
+      }
+    ],
+    "relations": [],
+    "raw_response": "ENTITIES:\n- paddy land | LULC\n- concentrated | CHANGE\n- Mekong Delta | LOC\n- Red River Delta Delta | LOC\n\nRELATIONS:\n- paddy land | NO RELATIONSHIP\n\nThis sentence describes the location of paddy land, not any transformation or relationship between entities.",
+    "entity_count": 4,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 32,
+    "sentence": "While non-agricultural land is reported to have increased, the area of this GIS layer showed a 21.5% decrease when verified by the land cover map.",
+    "entities": [
+      {
+        "text": "non-agricultural land",
+        "label": "LULC",
+        "start_char": 6,
+        "end_char": 27
+      },
+      {
+        "text": "reported",
+        "label": "CHANGE",
+        "start_char": 31,
+        "end_char": 39
+      },
+      {
+        "text": "21.5%",
+        "label": "PERCENT",
+        "start_char": 95,
+        "end_char": 100
+      },
+      {
+        "text": "GIS layer",
+        "label": "LOC",
+        "start_char": 76,
+        "end_char": 85
+      }
+    ],
+    "relations": [
+      {
+        "source": "non-agricultural land",
+        "relationship": "DECREASES_BY",
+        "target": "21.5%",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "reported",
+        "relationship": "OCCURS_DURING",
+        "target": "unspecified",
+        "confidence": "LOW"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- non-agricultural land | LULC\n- reported | CHANGE\n- 21.5% | PERCENT\n- GIS layer | LOC\n\nRELATIONS:\n- non-agricultural land --DECREASES_BY-- 21.5% | CONF: HIGH\n- reported --OCCURS_DURING-- unspecified | CONF: LOW (as no specific date or period is given)\n\nExplanation:\nThe sentence describes a discrepancy between two sources of information regarding the change in non-agricultural land. The first change, \"reported,\" is not well defined in terms of its type or the time it occurred. However, the second change, \"decrease,\" is clearly stated as a percentage decrease in the area covered by non-agricultural land based on the comparison of two maps. Therefore, the relation between non-agricultural land and the decrease is established with high confidence. The relation between the reported change and the decrease is less certain since no clear causality can be determined from the sentence alone.",
+    "entity_count": 4,
+    "relation_count": 2
+  },
+  {
+    "sentence_id": 33,
+    "sentence": "By 2019, Vietnam had established 373 industrial zones with a total area of 114.4 thousand hectares, accounting for 56.9% of the total planned land area.",
+    "entities": [
+      {
+        "text": "Vietnam",
+        "label": "LOC",
+        "start_char": 9,
+        "end_char": 16
+      },
+      {
+        "text": "373 industrial zones",
+        "label": "CARDINAL",
+        "start_char": 33,
+        "end_char": 53
+      },
+      {
+        "text": "total area",
+        "label": "QUANTITY",
+        "start_char": 61,
+        "end_char": 71
+      },
+      {
+        "text": "114.4 thousand hectares",
+        "label": "CARDINAL",
+        "start_char": 75,
+        "end_char": 98
+      },
+      {
+        "text": "56.9%",
+        "label": "PERCENT",
+        "start_char": 115,
+        "end_char": 120
+      },
+      {
+        "text": "total planned land area",
+        "label": "QUANTITY",
+        "start_char": 128,
+        "end_char": 151
+      }
+    ],
+    "relations": [
+      {
+        "source": "373 industrial zones",
+        "relationship": "HAS",
+        "target": "114.4 thousand hectares",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "56.9%",
+        "relationship": "OF",
+        "target": "total planned land area",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- Vietnam | LOC\n- 373 industrial zones | CARDINAL\n- total area | QUANTITY\n- 114.4 thousand hectares | CARDINAL\n- 56.9% | PERCENT\n- total planned land area | QUANTITY\n\nRELATIONS:\n- 373 industrial zones --HAS-- 114.4 thousand hectares | CONF: HIGH\n- 56.9% --OF-- total planned land area | CONF: HIGH\n\nThis analysis focuses on describing the given information rather than identifying any transformations or changes. The text describes the existence and size of industrial zones in Vietnam, so no transformations or changes are mentioned. Instead, we identify the entities involved and their relationships. The first relation indicates that there are 373 industrial zones, and they collectively occupy 114.4 thousand hectares. The second relation states that this total area covers 56.9% of the total planned land area. These relations are straightforward and do not require further consideration regarding the rules provided.",
+    "entity_count": 6,
+    "relation_count": 2
+  },
+  {
+    "sentence_id": 34,
+    "sentence": "According to the statistics, the evolution of land use purpose is occurring in all localities (Fig.",
+    "entities": [],
+    "relations": [],
+    "raw_response": "Based on the given sentence, there are no explicit transformations, locations, dates, or percentages mentioned. Therefore, no entities or relations can be extracted according to the provided requirements. The sentence only mentions the general concept of \"land use purpose evolution\" without specifying any particular transformation or change.",
+    "entity_count": 0,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 35,
+    "sentence": "Moreover, rapid urbanization has been a significant highlight in the development process of Vietnam in recent decades.",
+    "entities": [
+      {
+        "text": "urbanization",
+        "label": "PROCESS",
+        "start_char": 16,
+        "end_char": 28
+      },
+      {
+        "text": "development process of Vietnam",
+        "label": "PROCESS",
+        "start_char": 69,
+        "end_char": 99
+      },
+      {
+        "text": "recent decades",
+        "label": "TIME_PERIOD",
+        "start_char": 103,
+        "end_char": 117
+      }
+    ],
+    "relations": [
+      {
+        "source": "urbanization",
+        "relationship": "IS_A",
+        "target": "development process of Vietnam",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "recent decades",
+        "relationship": "OCCURS_DURING",
+        "target": "development process of Vietnam",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- urbanization | PROCESS\n- development process of Vietnam | PROCESS\n- recent decades | TIME_PERIOD\n\nRELATIONS:\n- urbanization --IS_A-- development process of Vietnam | CONF: HIGH\n- recent decades --OCCURS_DURING-- development process of Vietnam | CONF: HIGH",
+    "entity_count": 3,
+    "relation_count": 2
+  },
+  {
+    "sentence_id": 36,
+    "sentence": "In 1990, the number of urban areas in Vietnam was about 500 and the urbanization rate was about 17%.",
+    "entities": [
+      {
+        "text": "number of urban areas",
+        "label": "CARDINAL",
+        "start_char": 13,
+        "end_char": 34
+      },
+      {
+        "text": "1990",
+        "label": "DATE",
+        "start_char": 3,
+        "end_char": 7
+      },
+      {
+        "text": "Vietnam",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 45
+      },
+      {
+        "text": "urban areas",
+        "label": "LULC",
+        "start_char": 23,
+        "end_char": 34
+      },
+      {
+        "text": "about 500",
+        "label": "CARDINAL",
+        "start_char": 50,
+        "end_char": 59
+      },
+      {
+        "text": "urbanization rate",
+        "label": "PERCENT",
+        "start_char": 68,
+        "end_char": 85
+      },
+      {
+        "text": "about 17%",
+        "label": "PERCENT",
+        "start_char": 90,
+        "end_char": 99
+      }
+    ],
+    "relations": [],
+    "raw_response": "ENTITIES:\n- number of urban areas | CARDINAL\n- 1990 | DATE\n- Vietnam | LOC\n- urban areas | LULC\n- about 500 | CARDINAL\n- urbanization rate | PERCENT\n- about 17% | PERCENT\n\nNo relations are applicable here as there is no mention of any transformation or change between entities. The given information only describes the state of urban areas in Vietnam during the year 1990.",
+    "entity_count": 7,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 37,
+    "sentence": "By 2019, the number of urban areas in Vietnam had increased to 846 .",
+    "entities": [
+      {
+        "text": "number of urban areas",
+        "label": "QUANTITY",
+        "start_char": 13,
+        "end_char": 34
+      },
+      {
+        "text": "846",
+        "label": "CARDINAL",
+        "start_char": 63,
+        "end_char": 66
+      },
+      {
+        "text": "Vietnam",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 45
+      },
+      {
+        "text": "2019",
+        "label": "DATE",
+        "start_char": 3,
+        "end_char": 7
+      }
+    ],
+    "relations": [
+      {
+        "source": "number of urban areas",
+        "relationship": "INCREASES_BY",
+        "target": "846",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "846",
+        "relationship": "MEASURES",
+        "target": "number of urban areas",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "urban areas",
+        "relationship": "LOCATED_IN",
+        "target": "Vietnam",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "2019",
+        "relationship": "OCCURS_DURING",
+        "target": "end state",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- number of urban areas | QUANTITY\n- 846 | CARDINAL\n- Vietnam | LOC\n- 2019 | DATE\n\nRELATIONS:\n- number of urban areas --INCREASES_BY-- 846 | CONF: HIGH\n- 846 --MEASURES-- number of urban areas | CONF: HIGH\n- urban areas --LOCATED_IN-- Vietnam | CONF: HIGH\n- 2019 --OCCURS_DURING-- end state | CONF: MEDIUM (Assuming 'end state' refers to the year when the count was taken)",
+    "entity_count": 4,
+    "relation_count": 4
+  },
+  {
+    "sentence_id": 38,
+    "sentence": "In 1986, Vietnam's urban population was under 13 million, but by 2019, that number was 37 million (WORLD BANK, 2020a).",
+    "entities": [
+      {
+        "text": "Vietnam",
+        "label": "LOC",
+        "start_char": 9,
+        "end_char": 16
+      },
+      {
+        "text": "urban population",
+        "label": "QUANTITY",
+        "start_char": 19,
+        "end_char": 35
+      },
+      {
+        "text": "13 million",
+        "label": "CARDINAL",
+        "start_char": 46,
+        "end_char": 56
+      },
+      {
+        "text": "1986",
+        "label": "DATE",
+        "start_char": 3,
+        "end_char": 7
+      },
+      {
+        "text": "37 million",
+        "label": "CARDINAL",
+        "start_char": 87,
+        "end_char": 97
+      },
+      {
+        "text": "2019",
+        "label": "DATE",
+        "start_char": 65,
+        "end_char": 69
+      },
+      {
+        "text": "WORLD BANK",
+        "label": "ORGANIZATION",
+        "start_char": 99,
+        "end_char": 109
+      }
+    ],
+    "relations": [
+      {
+        "source": "urban population",
+        "relationship": "INCREASES_BY",
+        "target": "24 million",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "1986",
+        "relationship": "OCCURS_DURING",
+        "target": "before 2019",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "13 million",
+        "relationship": "OCCURS_DURING",
+        "target": "1986",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "37 million",
+        "relationship": "OCCURS_DURING",
+        "target": "2019",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "WORLD BANK",
+        "relationship": "PROVIDES",
+        "target": "data",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- Vietnam | LOC\n- urban population | QUANTITY\n- 13 million | CARDINAL\n- 1986 | DATE\n- 37 million | CARDINAL\n- 2019 | DATE\n- WORLD BANK | ORGANIZATION\n\nRELATIONS:\n- urban population --INCREASES_BY-- 24 million | CONF: HIGH\n- 1986 --OCCURS_DURING-- before 2019 | CONF: HIGH\n- 13 million --OCCURS_DURING-- 1986 | CONF: HIGH\n- 37 million --OCCURS_DURING-- 2019 | CONF: HIGH\n- WORLD BANK --PROVIDES-- data | CONF: MEDIUM\n\nThis analysis assumes that the text refers to the urban population of Vietnam, which increases over time. No land use/land cover transformation occurs in this text.",
+    "entity_count": 7,
+    "relation_count": 5
+  },
+  {
+    "sentence_id": 39,
+    "sentence": "Urban economic growth is twice the national average, contributing over half of the gross domestic product ( According to the objective rule, urbanization must originate from non-agricultural economic development such as industry, commerce, and services  to replace the agricultural economy gradually.",
+    "entities": [
+      {
+        "text": "urban economic growth",
+        "label": "CHANGE",
+        "start_char": 0,
+        "end_char": 21
+      },
+      {
+        "text": "national average",
+        "label": "PERCENT",
+        "start_char": 35,
+        "end_char": 51
+      },
+      {
+        "text": "over half",
+        "label": "PERCENT",
+        "start_char": 66,
+        "end_char": 75
+      },
+      {
+        "text": "gross domestic product",
+        "label": "QUANTITY",
+        "start_char": 83,
+        "end_char": 105
+      },
+      {
+        "text": "urbanization",
+        "label": "PROCESS",
+        "start_char": 141,
+        "end_char": 153
+      },
+      {
+        "text": "non-agricultural economic development",
+        "label": "PROCESS",
+        "start_char": 174,
+        "end_char": 211
+      },
+      {
+        "text": "industry, commerce, and services",
+        "label": "PROCESS",
+        "start_char": 220,
+        "end_char": 252
+      }
+    ],
+    "relations": [
+      {
+        "source": "urban economic growth",
+        "relationship": "IS_GREATER_THAN",
+        "target": "national average",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "urban economic growth",
+        "relationship": "CONTRIBUTES_TO",
+        "target": "gross domestic product",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "urbanization",
+        "relationship": "ORIGINATES_FROM",
+        "target": "non-agricultural economic development",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "non-agricultural economic development",
+        "relationship": "REPLACES",
+        "target": "agricultural economy",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- urban economic growth | CHANGE\n- national average | PERCENT\n- over half | PERCENT\n- gross domestic product | QUANTITY\n- urbanization | PROCESS\n- non-agricultural economic development | PROCESS\n- industry, commerce, and services | PROCESS\n\nRELATIONS:\n- urban economic growth --IS_GREATER_THAN-- national average | CONF: HIGH\n- urban economic growth --CONTRIBUTES_TO-- gross domestic product | CONF: HIGH\n- urbanization --ORIGINATES_FROM-- non-agricultural economic development | CONF: MEDIUM\n- non-agricultural economic development --REPLACES-- agricultural economy | CONF: MEDIUM\n\nThis analysis assumes that urbanization refers to the transformation of agricultural land into urban areas, which is a reasonable interpretation given the context. However, it's important to note that the text doesn't explicitly state that urbanization replaces agricultural land, so the confidence level for this relation is medium. Additionally, the text mentions that urbanization originates from non-agricultural economic development, which could also imply that urbanization occurs in existing urban areas rather than replacing agricultural land. This interpretation would result in a different set of relations, and the confidence level for the relation between urbanization and agricultural land would be low. Ultimately, the exact interpretation depends on the specific context and intent of the text.",
+    "entity_count": 7,
+    "relation_count": 4
+  },
+  {
+    "sentence_id": 40,
+    "sentence": "However, unlike other countries in the region and the world, urbanization in Vietnam is characterized by rural urbanization.",
+    "entities": [
+      {
+        "text": "urbanization",
+        "label": "PROCESS",
+        "start_char": 61,
+        "end_char": 73
+      },
+      {
+        "text": "Vietnam",
+        "label": "LOC",
+        "start_char": 77,
+        "end_char": 84
+      }
+    ],
+    "relations": [],
+    "raw_response": "ENTITIES:\n- urbanization | PROCESS\n- Vietnam | LOC\n\nRELATIONS:\n- No valid relations based on given information.\n\nExplanation:\nThe sentence describes a characteristic of urbanization in Vietnam, but it doesn't provide enough details about any transformations, changes, or relationships between entities. It only mentions the country and the process of urbanization.",
+    "entity_count": 2,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 41,
+    "sentence": "Urban developments and growth in Vietnam are late and slower than in some regional countries The trend of changing land use purposes in urban areas is to reduce agricultural land, unused land and increase non-agricultural land.",
+    "entities": [
+      {
+        "text": "urban developments and growth",
+        "label": "PROCESS",
+        "start_char": 0,
+        "end_char": 29
+      },
+      {
+        "text": "Vietnam",
+        "label": "LOC",
+        "start_char": 33,
+        "end_char": 40
+      },
+      {
+        "text": "urban areas",
+        "label": "LULC",
+        "start_char": 136,
+        "end_char": 147
+      },
+      {
+        "text": "reducing",
+        "label": "CHANGE",
+        "start_char": -1,
+        "end_char": -1
+      },
+      {
+        "text": "agricultural land",
+        "label": "LULC",
+        "start_char": 161,
+        "end_char": 178
+      },
+      {
+        "text": "unused land",
+        "label": "LULC",
+        "start_char": 180,
+        "end_char": 191
+      },
+      {
+        "text": "increasing",
+        "label": "CHANGE",
+        "start_char": -1,
+        "end_char": -1
+      },
+      {
+        "text": "non-agricultural land",
+        "label": "LULC",
+        "start_char": 205,
+        "end_char": 226
+      }
+    ],
+    "relations": [
+      {
+        "source": "urban developments and growth",
+        "relationship": "CAUSES",
+        "target": "reducing agricultural land",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "urban developments and growth",
+        "relationship": "CAUSES",
+        "target": "increasing non-agricultural land",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "reducing agricultural land",
+        "relationship": "TRANSFORMS_TO",
+        "target": "non-agricultural land",
+        "confidence": "LOW"
+      },
+      {
+        "source": "reducing agricultural land",
+        "relationship": "DECREASES_BY",
+        "target": "CARDINAL (Quantity of agricultural land decreases)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "increasing non-agricultural land",
+        "relationship": "INCREASES_BY",
+        "target": "CARDINAL (Quantity of non-agricultural land increases)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "urban areas",
+        "relationship": "LOCATED_IN",
+        "target": "Vietnam",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- urban developments and growth | PROCESS\n- Vietnam | LOC\n- urban areas | LULC\n- reducing | CHANGE\n- agricultural land | LULC\n- unused land | LULC\n- increasing | CHANGE\n- non-agricultural land | LULC\n\nRELATIONS:\n- urban developments and growth --CAUSES-- reducing agricultural land | CONF: MEDIUM (Urban development can lead to reduction of agricultural land)\n- urban developments and growth --CAUSES-- increasing non-agricultural land | CONF: MEDIUM (Urban development leads to expansion of non-agricultural land)\n- reducing agricultural land --TRANSFORMS_TO-- non-agricultural land | CONF: LOW (Reducing agricultural land doesn't directly mean it becomes non-agricultural land, it just loses its agricultural status)\n- reducing agricultural land --DECREASES_BY-- CARDINAL (Quantity of agricultural land decreases)\n- increasing non-agricultural land --INCREASES_BY-- CARDINAL (Quantity of non-agricultural land increases)\n- urban areas --LOCATED_IN-- Vietnam | CONF: HIGH\n\nNote: Since no specific numbers or percentages were given, we cannot determine exact measurement relations.",
+    "entity_count": 8,
+    "relation_count": 6
+  },
+  {
+    "sentence_id": 42,
+    "sentence": "Growth in the non-agricultural land area is mainly due to expanding urban land, land for industrial zones, and construction activities.",
+    "entities": [
+      {
+        "text": "non-agricultural land area",
+        "label": "LULC",
+        "start_char": 14,
+        "end_char": 40
+      },
+      {
+        "text": "growth",
+        "label": "CHANGE",
+        "start_char": 0,
+        "end_char": 6
+      },
+      {
+        "text": "expanding urban land",
+        "label": "PROCESS",
+        "start_char": 58,
+        "end_char": 78
+      },
+      {
+        "text": "land for industrial zones",
+        "label": "PROCESS",
+        "start_char": 80,
+        "end_char": 105
+      },
+      {
+        "text": "construction activities",
+        "label": "PROCESS",
+        "start_char": 111,
+        "end_char": 134
+      }
+    ],
+    "relations": [
+      {
+        "source": "non-agricultural land area",
+        "relationship": "INCREASES_BY",
+        "target": "growth",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "growth",
+        "relationship": "CAUSES",
+        "target": "expanding urban land, land for industrial zones, construction activities",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "expanding urban land, land for industrial zones, construction activities",
+        "relationship": "TRANSFORMS_TO",
+        "target": "non-agricultural land area",
+        "confidence": "LOW"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- non-agricultural land area | LULC\n- growth | CHANGE\n\nRELATIONS:\n- non-agricultural land area --INCREASES_BY-- growth | CONF: HIGH\n\nAdditional potential entities and relations based on context:\n\nENTITIES:\n- expanding urban land | PROCESS\n- land for industrial zones | PROCESS\n- construction activities | PROCESS\n\nRELATIONS:\n- growth --CAUSES-- expanding urban land, land for industrial zones, construction activities | CONF: MEDIUM\n- expanding urban land, land for industrial zones, construction activities --TRANSFORMS_TO-- non-agricultural land area | CONF: LOW (These processes can lead to changes in non-agricultural land area, but they don't directly become non-agricultural land)\n\nExplanation:\nThe given sentence describes a growth in the non-agricultural land area, which is caused by expanding urban land, land for industrial zones, and construction activities. However, it doesn't explicitly state that these processes transformed the land into non-agricultural land. Instead, they might have led to an increase in the area covered by non-agricultural land. Therefore, the relation between the processes and non-agricultural land area has a lower confidence level compared to the relation between the growth and non-agricultural land area.",
+    "entity_count": 5,
+    "relation_count": 3
+  },
+  {
+    "sentence_id": 43,
+    "sentence": "The size of urban land increased due to the conversion from agricultural land, of which rice land was the primary type.",
+    "entities": [
+      {
+        "text": "urban land",
+        "label": "built-up area",
+        "start_char": 12,
+        "end_char": 22
+      },
+      {
+        "text": "size",
+        "label": "QUANTITY",
+        "start_char": 4,
+        "end_char": 8
+      },
+      {
+        "text": "conversion",
+        "label": "CHANGE",
+        "start_char": 44,
+        "end_char": 54
+      },
+      {
+        "text": "agricultural land",
+        "label": "LULC",
+        "start_char": 60,
+        "end_char": 77
+      },
+      {
+        "text": "rice land",
+        "label": "LULC",
+        "start_char": 88,
+        "end_char": 97
+      }
+    ],
+    "relations": [
+      {
+        "source": "agricultural land",
+        "relationship": "TRANSFORMS_TO",
+        "target": "urban land",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "size",
+        "relationship": "INCREASES_BY",
+        "target": "conversion",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "rice land",
+        "relationship": "IS_A",
+        "target": "agricultural land",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- urban land | built-up area\n- size | QUANTITY\n- conversion | CHANGE\n- agricultural land | LULC\n- rice land | LULC\n\nRELATIONS:\n- agricultural land --TRANSFORMS_TO-- urban land | CONF: HIGH\n- size --INCREASES_BY-- conversion | CONF: MEDIUM (Note: Increase in size doesn't necessarily mean transformation, but since the text states \"due to the conversion,\" it implies a transformation)\n- rice land --IS_A-- agricultural land | CONF: HIGH\n\nThis analysis assumes that the text implies a direct transformation from rice land to urban land, which may not always be the case. The text could also mean that the majority of agricultural land, including rice land, was transformed into urban land. To ensure accuracy, it would be best to consider the context of the entire document or dataset.",
+    "entity_count": 5,
+    "relation_count": 3
+  },
+  {
+    "sentence_id": 44,
+    "sentence": "In 2011-2015, following the data from MoNRE, Vietnam converted 89.4 thousand hectares of rice land to urban land.",
+    "entities": [
+      {
+        "text": "89.4 thousand hectares",
+        "label": "CARDINAL",
+        "start_char": 63,
+        "end_char": 85
+      },
+      {
+        "text": "rice land",
+        "label": "LULC",
+        "start_char": 89,
+        "end_char": 98
+      },
+      {
+        "text": "converted",
+        "label": "CHANGE",
+        "start_char": 53,
+        "end_char": 62
+      },
+      {
+        "text": "urban land",
+        "label": "LULC",
+        "start_char": 102,
+        "end_char": 112
+      },
+      {
+        "text": "2011-2015",
+        "label": "DATE",
+        "start_char": 3,
+        "end_char": 12
+      },
+      {
+        "text": "MoNRE",
+        "label": "LOC",
+        "start_char": 38,
+        "end_char": 43
+      }
+    ],
+    "relations": [
+      {
+        "source": "rice land",
+        "relationship": "TRANSFORMS_TO",
+        "target": "urban land",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "89.4 thousand hectares",
+        "relationship": "MEASURES",
+        "target": "converted",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "converted",
+        "relationship": "OCCURS_DURING",
+        "target": "2011-2015",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "MoNRE",
+        "relationship": "PROVIDES",
+        "target": "data",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- 89.4 thousand hectares | CARDINAL\n- rice land | LULC\n- converted | CHANGE\n- urban land | LULC\n- 2011-2015 | DATE\n- MoNRE | LOC\n\nRELATIONS:\n- rice land --TRANSFORMS_TO-- urban land | CONF: HIGH\n- 89.4 thousand hectares --MEASURES-- converted | CONF: HIGH\n- converted --OCCURS_DURING-- 2011-2015 | CONF: HIGH\n- MoNRE --PROVIDES-- data | CONF: MEDIUM (Assuming MoNRE is the source of the data)",
+    "entity_count": 6,
+    "relation_count": 4
+  },
+  {
+    "sentence_id": 45,
+    "sentence": "In a broader view for the 2007-2017 period, the converted area is estimated at 125.9 thousand ha (data calculated by the author through the land cover maps).",
+    "entities": [
+      {
+        "text": "converted area",
+        "label": "CHANGE",
+        "start_char": 48,
+        "end_char": 62
+      },
+      {
+        "text": "125.9 thousand ha",
+        "label": "CARDINAL",
+        "start_char": 79,
+        "end_char": 96
+      },
+      {
+        "text": "2007-2017 period",
+        "label": "DATE",
+        "start_char": 26,
+        "end_char": 42
+      }
+    ],
+    "relations": [],
+    "raw_response": "Based on the given sentence, here's the analysis:\n\nENTITIES:\n- converted area | CHANGE\n- 125.9 thousand ha | CARDINAL\n- 2007-2017 period | DATE\n\nRELATIONS:\n- No valid relations can be determined based on the provided sentence alone. The sentence only mentions the size of the converted area during a certain period, but it doesn't specify which land type was transformed into what. To determine the relationship, we would need more context about the nature of the conversion.",
+    "entity_count": 3,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 46,
+    "sentence": "This transition is mainly concentrated in three regions: the Southeast, the Red River Delta, and the Mekong River Delta.",
+    "entities": [],
+    "relations": [],
+    "raw_response": "ENTITIES:\n- three regions: LOC\n- Southeast: LOC\n- Red River Delta: LOC\n- Mekong River Delta: LOC\n\nNo explicit CHANGE, LULC, DATE, PERCENT, or PROCESS entities are mentioned in the sentence. Therefore, no RELATIONS can be extracted with high confidence.",
+    "entity_count": 0,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 47,
+    "sentence": "Conversion of agricultural land for investment in urban, industrial, and economic zone projects occurs in major urban areas like Binh The current status of such land conversion has a significant impact on people's lives, especially those living in peri-urban areas.",
+    "entities": [
+      {
+        "text": "agricultural land",
+        "label": "LULC",
+        "start_char": 14,
+        "end_char": 31
+      },
+      {
+        "text": "conversion",
+        "label": "CHANGE",
+        "start_char": 0,
+        "end_char": 10
+      },
+      {
+        "text": "urban, industrial, and economic zones",
+        "label": "PROCESS",
+        "start_char": -1,
+        "end_char": -1
+      },
+      {
+        "text": "major urban areas",
+        "label": "LOC",
+        "start_char": 106,
+        "end_char": 123
+      },
+      {
+        "text": "Binh",
+        "label": "LOC (specific name of cities)",
+        "start_char": 129,
+        "end_char": 133
+      },
+      {
+        "text": "people",
+        "label": "PERSON",
+        "start_char": 205,
+        "end_char": 211
+      },
+      {
+        "text": "peri-urban areas",
+        "label": "LOC",
+        "start_char": 248,
+        "end_char": 264
+      }
+    ],
+    "relations": [
+      {
+        "source": "agricultural land",
+        "relationship": "TRANSFORMS_TO",
+        "target": "(new_LULC)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "conversion",
+        "relationship": "ENABLES",
+        "target": "urban, industrial, and economic zones",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "urban, industrial, and economic zones",
+        "relationship": "LOCATED_IN",
+        "target": "major urban areas",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "major urban areas",
+        "relationship": "LOCATED_IN",
+        "target": "(unspecified location)",
+        "confidence": "LOW"
+      },
+      {
+        "source": "people",
+        "relationship": "AFFECTS",
+        "target": "lives",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "peri-urban areas",
+        "relationship": "AFFECTS",
+        "target": "people",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "ENTITIES:\n- agricultural land | LULC\n- conversion | CHANGE\n- urban, industrial, and economic zones | PROCESS\n- major urban areas | LOC\n- Binh | LOC (specific name of cities)\n- people | PERSON\n- peri-urban areas | LOC\n\nRELATIONS:\n- agricultural land --TRANSFORMS_TO-- (new_LULC) | CONF: MEDIUM (We don't have enough information to determine the exact new LULC type)\n- conversion --ENABLES-- urban, industrial, and economic zones | CONF: HIGH\n- urban, industrial, and economic zones --LOCATED_IN-- major urban areas | CONF: HIGH\n- major urban areas --LOCATED_IN-- (unspecified location) | CONF: LOW (Assuming 'major urban areas' refers to multiple locations, not a single one)\n- people --AFFECTS-- lives | CONF: HIGH\n- peri-urban areas --AFFECTS-- people | CONF: HIGH\n\nNote: Since we cannot determine the exact new LULC type, the TRANSFORMS_TO relation is marked as medium confidence. However, if more context is provided, it could potentially be upgraded to high confidence.",
+    "entity_count": 7,
+    "relation_count": 6
+  },
+  {
+    "sentence_id": 48,
+    "sentence": "Land use change has also created social conflicts and intensified violence due to land contention and because the land is the primary source of livelihood for many peri-urban farming households.",
+    "entities": [
+      {
+        "text": "land use change",
+        "label": "PROCESS",
+        "start_char": 0,
+        "end_char": 15
+      }
+    ],
+    "relations": [],
+    "raw_response": "ENTITIES:\n- land use change | PROCESS\n\nNo explicit LULC entities or CHANGE entities mentioned, so no new entities can be extracted based on this sentence alone.\n\nRELATIONS:\nNone. This sentence describes a social impact of land use change rather than describing the change itself.",
+    "entity_count": 1,
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 49,
+    "sentence": "Land in the peri-urban area is becoming increasingly scarce, leading to higher land prices in this area, inadvertently creating psychological pressure on people.",
+    "entities": [
+      {
+        "text": "land in the peri-urban area",
+        "label": "LOC",
+        "start_char": 0,
+        "end_char": 27
+      }
+    ],
+    "relations": [],
+    "raw_response": "ENTITIES:\n- land in the peri-urban area | LOC\n\nRELATIONS:\n- None identified in the given sentence.",
+    "entity_count": 1,
+    "relation_count": 0
+  }
+]

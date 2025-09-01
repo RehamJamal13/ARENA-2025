@@ -1,0 +1,30 @@
+{
+  "total_sentences_processed": 5,
+  "sentences_with_entities": 3,
+  "sentences_with_relations": 3,
+  "total_entities_extracted": 20,
+  "total_relations_extracted": 13,
+  "entity_types": {
+    "EVENT": 1,
+    "DATE": 2,
+    "LOC": 2,
+    "QUANTITY": 1,
+    "LULC": 3,
+    "PROCESS": 3,
+    "CARDINAL": 2,
+    "CHANGE": 1,
+    "PERIODIC_VERB": 1,
+    "VERB": 1,
+    "INDEX": 2,
+    "OR": 1
+  },
+  "relation_types": {
+    "CAUSES": 5,
+    "OCCURS_DURING": 2,
+    "LOCATED_IN": 2,
+    "ENABLES": 1,
+    "MEASURES": 1,
+    "AFFECTS": 1,
+    "FROM_TO": 1
+  }
+}

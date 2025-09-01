@@ -1,0 +1,346 @@
+================================================================================
+TITLE: Dynamics and Drivers of Land Use and Land Cover Changes in Migori River Watershed, Western Kenya Region
+================================================================================
+
+AUTHORS:
+- Stephen Opiyo
+- Godwin Opinde
+- Sammy Letema
+- Stephen Balaka
+
+ABSTRACT:
+Understanding land use and land cover (LULC) change dynamics and their contributing factors are critical for developing sustainable land management strategies. Therefore, this paper assesses the trends and patterns of LULC changes and their drivers in the Migori River watershed in Kenya from 1980 to 2020. The spatial analysis is based on remote sensing data based on the maximum likelihood classifier algorithm; whereas the analysis of the drivers is based on index-based ranking and logistic regression of 318 households' survey data. The results show that between 1980 and 2020, the watershed experienced a considerable decline in shrub lands by 40.63% (À235.97 km 2 ), grasslands by 84.86% (À59.14 km 2 ), forests by 52.90% (À98.36 km 2 ), water by 82.03% (À39.27 km 2 ) and wetlands by 38.44% (À3.69 km 2 ); whereas cultivated land, bare land and built-up areas expanded over the same period by 34.25% (+347.42 km 2 ), 132.28% (+60.95 km 2 ) and 461.20% (+25.32 km 2 ), respectively. The results of the household survey revealed that the perceptions of the locals tended to corroborate these observed LULC patterns obtained from spatial analysis, with 60.50% (n = 192) of the respondents reporting a significant expansion in agricultural land use (at p < 0.05), and 75.80% (n = 241) observing a significant decline in forest areas in the watershed (at p < 0.05). Fuel wood collection, timber/poles production, agricultural expansion, population pressure, and high poverty are the major drivers of these LULC changes. The findings also revealed that educational level significantly influenced the survey participants' perceptions concerning these drivers. The paper concludes that the watershed's natural landscapes have been undergoing destruction at the expense of human settlement and infrastructural developments driven by anthropogenic activities. Therefore, there is a need, among others, for land use zoning to regulate conflicting land uses on the watershed between settlement, conservation, and agricultural lands.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Since the 1970s, land use and land cover (LULC) change has been an important research topic, receiving significant attention from the scientific world 
+Land use and land cover change have significant effects on the functioning of socio-economic and ecosystems with important tradeoffs for sustainability, biodiversity, food security, and socio-economic vulnerability of communities and ecological systems 
+The present study focuses on the Migori River watershed, one of the hotspots of biodiversity situated in the Kenyan Lake Victoria basin. This region has been continuously experiencing extensive vegetation loss and fragmentation of its natural landscapes over the last few decades due to agricultural expansion, infrastructural development, and increased occurrence of natural hazards such as floods and landslides 
+
+## Materials and methods ##
+
+
+## Description of the study area ##
+The Migori River watershed (Fig. 
+The watershed is divided into six agro-ecological areas, ranging from Upper Midland 1-3, which covers sections of Rongo, Uriri, Kuria East, and Kuria West Sub-Counties, to Lower Midland 1-5, which covers sections of Rongo, Uriri, Nyatike and Suna East Sub-Counties 
+
+## Satellite imagery data acquisition ##
+A combination of remote sensing and geographical information system (GIS) is used to assess the trends and patterns of land use and land cover changes in the Migori River watershed between 1980 and 2020 at the recommended 10-year intervals 
+
+## Data pre-processing ##
+After the acquisition, the raw satellite images were imported into ERDAS Imagine 2020 Version by Hexagon Geospatial for standard pre-processing procedures undertaken before classification to improve their visualization and interpretability. First, radiometric/atmospheric correction was performed to reduce the effects of haze captured on the Landsat images following the approach described by 
+
+## Data processing and analysis ##
+After successful pre-processing and prior to classification, the training and validation datasets of different periods used for classification and accuracy assessment, respectively, were collected from the Google Earth desktop application as described  by 
+
+## Post-processing analysis ##
+Accuracy assessment was done through the generation of confusion/error matrices in which the data from LULC classification are compared to the ground-truthing data acquired from fieldwork. This study used 160 ground reference points (20 reference points for each LULC class) and reference data extracted from Google Earth images for accuracy assessment. The positions of the reference points were automatically identified on the classified images and their class values were defined to determine the accuracy of a pixel. The statistical components of the confusion matrix namely, producer's accuracy, user's accuracy, overall accuracy, kappa statistics, and overall kappa coefficient were calculated for all the classified LULC images based on the algorithms provided in 
+where r is the annual rate of change for each LULC category (in percentage), and A 2 and A 1 are areas of each LULC category at the end (t 2 ) and the beginning (t 1 ), respectively, for the period under review.
+
+## Household survey ##
+Sample size and sampling procedure A descriptive cross-sectional survey was conducted between January and February 2022, among 318 randomly selected households in the Migori River watershed, using pre-tested, intervieweradministered semi-structured questionnaires. The household questionnaires consisted of various questions designed to get information on the perceptions of the local communities on LULC changes and the drivers in the Migori River watershed from 1980 to 2020. The questionnaire was initially pretested in 30 households in the Awendo Sub-county, which neighbors the watershed and isn't part of the actual survey after which the adjustments were effected before the actual household survey. Prior to the survey, village elders and local administration officials were consulted to explain the purpose of the study, understand the local realities (which helped in developing questionnaire items), and obtain permission to visit the selected households. During the exercise, the questionnaires were administered to household heads or other senior members of the selected households who had lived in the watershed for at least ten years, upon obtaining verbal consent. Cultural norms dictated that the male be interviewed as the head of the household unless absent then the spouse or adult (over 21 years) family member who understands the family and area well. Each interview lasted about 35 min on average.
+
+## Characteristics of the sampled households ##
+A summary of the socio-economic characteristics of the respondents is presented in Table 
+
+## Statistical analyses ##
+The LULC change analysis was conducted using ArcGIS Desktop by Esri (Version 10.2) and ERDAS Imagine 2020 by Hexagon Geospatial, in a process that combined GIS and remote sensing techniques. The socio-economic survey data was analyzed using the IBM SPSS Statistics for Windows (Version 24.0) in which both descriptive statistics and regression analyses were conducted. After obtaining the descriptive statistics, ranking the LULC change drivers for the watershed based on the weighted average was computed using the Relative Importance Index (RII) equation (2) adopted by previous studies 
+where R n = value of the lowest/last rank e.g. if the lowest/last rank is 5 in the Likert-scale used, then R n = 5 and R n À 1 = 4; R 1 = value of the highest/first rank in the Likert-scale used, usually 1; C n = counts/number of observations on lowest/last rank; C 1 = counts/number of observations on highest/first rank; A = the highest value in the overall ranking scale, and N = total number of respondents. Logistic regression analysis is carried out using equation (3) to determine the drivers of LULC changes at the household level in the Migori River watershed. In this model, the independent variables comprised the socio-economic attributes whereas the dependent variables are the respondent's perceptions of the driving forces of LULC change. The logistic regression analysis at the household level approximated the probability of the effects of the independent variables on the dependent variables 
+where Y = dependent variable indicating the likelihood that Y = 1, a = the intercept, b 1 . . . b n n = coefficients of associated independent variables, and X 1 . . . X n = independent variables.
+
+## Results and discussion ##
+
+
+## Accuracy assessment of the LULC classification ##
+The classified imageries have an overall accuracy of over 86.00% (Table 
+LULC change dynamics in Migori River watershed from 1980 to 2020 LULC changes have been investigated for the years 
+Overall trend analysis of LULC changes  The proportionate coverage area of each of the eight classes extracted in the watershed from 1980 to 2020 of LULC change trends is summarized in Table 
+Forest cover in the watershed seems to have declined by about 52.90% (1.48 km 2 /year) notwithstanding the forest conservation efforts since the 1980s championed by the Permanent Presidential Commission on Soil Conservation and Afforestation. This can be attributed to the expansion of rural and urban settlements and farmlands, weak enforcement of conservation laws, and increased demand for timber as raw materials for construction and fuel wood for household usage. Although grasslands exhibited an irregular pattern of spatio-temporal changes across the five reference periods, it has experienced a decline of approximately 84.86% (1.48 km 2 /year) over the past 40 years. This substantial decline in grasslands is an indication of the increasing demand for agricultural lands and the development of forests in some of the grasslands. Moreover, the irregular pattern of changes observed in grasslands from 1980 to 2020 can be attributed to the destruction by constant incidences of fire outbreaks that usually occur in the area during periods of droughts 
+Similar to grasslands, the patterns of spatio-temporal changes in shrub lands showed that it has declined by 40.63% (5.90 km 2 / year) over the four-decade period, which was largely attributed to the conversion to cultivated lands and settlements due to population pressure. Since 1980, water declined by 82.03% (0.98 km 2 /year) while the wetlands shrunk by 38.44% (0.1 km 2 / year). This declining trend in areas under water and wetlands could be attributed to the emergence and growth of aquatic vegetation and invasive species in these areas, frequent occurrence of droughts in the area 
+
+## Decadal trend analysis of LULC changes ##
+A decade-by-decade analysis of the rates of change in LULC between 1980 and 2020 in the watershed revealed specific net changes in the form of gains and losses for each class during the 1st period 
+(I) The pattern of LULC changes between 1980 and 1990.
+From 1980 to 1990, the watershed experienced considerable positive and negative transformations in the LULC coverage (Table 
+During the same period, shrub land continued to show a negative trend with a 58.38% net loss while built-up lands continued to experience a positive trend with a net gain of 51.23%. These environmental transformations could generally be attributed to the high rate of population growth observed in Kenya from the late 1980s towards the new millennium, which was estimated to be between 3.20 and 3.60% per annum (UN Department of Economic and Social Affairs, 2019). During the same period, the population growth rate of the entire Lake Victoria basin, under which the watershed is located, was touted to be among the highest in the country at 2.85% per year 
+(III) The pattern of LULC changes between 2000 and 2010. Fig. 
+(IV) The pattern of LULC changes between 2010 and 2020.
+Between 2010 and 2020, grasslands declined by 86.95%, forests by 17.91%, and water by 50.09% unlike other categories that increased -shrub land by 47.56%, bare land by 69.15%, built-up area by 272.55%, and wetlands by 10.67%, with cultivated land remaining fairly constant (Table 
+
+## Land use and land cover change matrix ##
+Table 
+
+## Watershed community perceptions on trends and drivers of LULC changes ##
+Local community perceptions concerning the trends of LULC changes and distances to infrastructure Survey participants' perceptions of LULC trends in the Migori River watershed are presented in Fig. 
+In general, the study observed that the watershed communities are sufficiently aware of changes in natural resources and changes related to infrastructure development. Moreover, the usage of older respondents (!21 years), of which half had lived in the watershed throughout the period under review for LULC changes, yielded an accurate historical account of LULC changes in the watershed, corroborating the observed LULC trends interpreted from remotely sensed data in the period of 1980-2020. This local attention to LULC changes including infrastructure development can provide valuable input for government strategies to execute a suitable spatial plan for the watershed. Combining LULC maps with local perceptions of LULC changes enables enhanced interpre- Note: The bold and italicized entries along the diagonal represent the LULC areal coverages that remained unchanged between 1980 and 2020. tation of the land use information, which can help the government to develop a spatial plan that considers socio-economic and ecological circumstances and engages local people in decision-making.
+
+## Ranked drivers of land use and land cover changes in the watershed ##
+The survey identified 11 major proximate/direct drivers of LULC change in the watershed (Table 
+Concerning the underlying/indirect drivers, that is the forces that indirectly trigger the proximate causes 
+In the survey, approximately 95% agreed that the population of the area has increased over the period under review, which corroborated with population data that indicate that the population of the Migori County where the watershed is situated has grown by 
+Poverty is pervasive in the Kenyan Lake Victoria Basin in which the Migori River watershed occurs, as most households live below the poverty line 
+Due to the high poverty levels, about 93% of the watershed households use three-stone open fire for cooking (Table 
+Although weak government policies regarding natural resources conservation didn't come out strongly among the top underlying drivers of LULC changes in the watershed identified by the survey, weak law enforcement did; which implies that appropriate government policies are in place but their enforcement is weak and ineffective and therefore may not curtail unsustainable land management practices. The various protected areas such as forest blocks, wetlands, cultural sites, and water sources in the watershed are governed by various government policies developed over the years such as the Environmental Management and Conservation Act 1999 (which mandates environmental management with the goal of attaining sustainable land-based natural resources like forests, wetlands, and water catchment landscapes), Forest Conservation and Management Act 2016 (which provides for the establishment, protection, conservation, and sustainable utilization and management of forests and forest resources for maintenance and conservation of water catchment areas), Water Act 2016 (which tackles the. utilization of water resources to meet human and animal needs, the sustainable management protection of watershed ecosystems), and Land Act 2012 (which emphasizes sustainable conservation, management, and protection of land resources including critical biodiversity, forests, and fragile ecosystems), and Wildlife Conservation and Management Act 2013 (provides for the sustainable protection, conservation, and management of water catchment areas including forests and wetlands existing within the game parks, reserves and protected areas). These government policies generally prohibit logging for timber or deforestation for fuel wood collection, settlement, or agricultural expansion within these protected areas, the government has been lax in providing the enforcement required to curtail such practices from continuing in the watershed, which may be due to the recognition of the high poverty levels experienced by the rapidly growing population. Therefore law enforcement continues to be an important trigger for these anthropogenic-induced causes of LULC changes.
+
+## Household-level logistic regression of perceived drivers of land use and land cover changes ##
+Logistic regression analysis was carried out to determine the drivers of LULC changes at the household level in the Migori River watershed (Table 
+
+## Conclusions and recommendations ##
+The study established that the major land use in the watershed during the period under review is cultivated land with an average of 61.44% overall coverage of the total land area during the entire period hence the livelihoods of the watershed inhabitants have been historically agriculture-dependent. The decline in shrub lands by 40.63%, grasslands by 84.86%, forests by 52.90%, water by 82.03%, and wetlands by 38.44%; coupled with increased cultivated land by 34.25%, bare land by 132.28%, and built-up areas by 461.20% over the period under review indicate that the natural landscapes in the watershed are undergoing destruction at the expense of human settlement and infrastructural developments. Fuel wood collection, timber/pole production, shifting cultivation, agricultural expansion, charcoal production, population pressure, and high poverty level are the topmost drivers perceived by the watershed communities to be contributing to the land use and land cover changes in the watershed. Since all these identified drivers are still active in the watershed, the natural landscapes are likely to decline further, with negative implications on watershed ecosystem services, biodiversity, and community livelihoods. Gen- erally, the study observed that the watershed communities are sufficiently aware of changes in natural resources and changes related to infrastructure development. This local attention to land use and land cover changes including infrastructure development can provide valuable input for government strategies to execute a suitable spatial plan for the watershed. Integration of spatial LULC analysis with local perceptions of LULC changes enables enhanced interpretation of the land use information, which can help the government to develop a spatial plan that considers socio-economic and ecological circumstances and engages local people in decision-making.
+The paper recommends land use zoning on the watershed area to demarcate land areas into settlement areas, conservation, and protected areas, and agricultural lands as well as regulate physical development and use of fragile conservation areas like forests, wetlands, and water sources. Efforts should be directed towards the adoption of alternative cooking energy types by watershed households to reduce the overall demand for fuel wood and consequently ease pressure on forests. The government should also harmonize the existing conservation policies to align them with the interests and priorities of the local watershed communities to balance competing goals for effective management and conservation of the watershed.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Detecting and analyzing land use and land cover changes in the region of Al-Jabal Al-Akhdar, Libya using time-series landsat data from 1985 to 2017
+   Authors: , , , , , 
+   Date: 2020
+
+2. Assessing the trends and drivers of land use land cover change in district Abbottabad lower Himalayan Region Pakistan
+   Authors: , , , 
+   Date: 2022
+
+3. Land-use and land-cover changes in the Central Rift Valley of Ethiopia: Assessment of perception and adaptation of stakeholders
+   Authors: , , 
+   Date: 2015
+
+4. Relative importance index (RII) in ranking of procrastination factors among university students
+   Authors: , , , , , 
+   Date: 2016. August
+
+5. Land use and the carbon cycle: advances in integrated science, management, and policy
+   Authors: , , , 
+   Date: 2013
+
+6. Effects of land use and land cover changes on the Hydrology of Weruweru-Kiladeda sub-catchment in Pangani River basin
+   Authors: 
+   Date: 2012
+
+7. Assessing the Accuracy Of Remotely Sensed Data: Principles And Practices
+   Authors: , 
+   Date: 2019
+
+8. Biodiversity consequences of land-use change and forest disturbance in the Amazon: A multi-scale assessment using ant communities
+   Authors: , , , , , , , 
+   Date: 2016
+
+9. Dynamics of land use/cover changes and the analysis of landscape fragmentation in Dhaka Metropolitan
+   Authors: , , 
+   Date: 2012
+
+10. Monitoring of land use and land cover changes in Mt. Pulag national park using landsat and sentinel imageries
+   Authors: , , 
+   Date: 2021
+
+11. Spatial pattern of land use change and its driving force in Jiangsu Province
+   Authors: , , , , 
+   Date: 2014
+
+12. Land cover classification in complex and fragmented agricultural landscapes of the Ethiopian highlands
+   Authors: , , , 
+   Date: 2016
+
+13. Proximate causes and underlying driving forces of tropical deforestation
+   Authors: , 
+   Date: 2002
+
+14. Land use and land cover change in a tropical mountain landscape of northern Ecuador: Altitudinal patterns and driving forces
+   Authors: , , 
+   Date: 2022
+
+15. Impacts of land use and land cover change on surface runoff, discharge and low flows: Evidence from East Africa
+   Authors: , , , , 
+   Date: 2018
+
+16. Land use/cover dynamics and its drivers in Gelda catchment, Lake Tana watershed
+   Authors: , 
+   Date: 2018
+
+17. Remote sensing and GIS-based integrated analysis of land cover change in Duzce plain and its surroundings (north western Turkey)
+   Authors: , , , 
+   Date: 2013
+
+18. Introductory Digital Image Processing: A Remote Sensing Perspective
+   Authors: 
+   Date: 2007
+
+19. Understanding the driving forces and actors of land change due to forestry and agricultural practices in Sumatra and Kalimantan: A systematic review
+   Authors: , , , 
+   Date: 2021
+
+20. Livelihoods, land use and land cover change in the Zambezi Region
+   Authors: , , , , 
+   Date: 2015
+
+21. Phenological dynamics of irrigated and natural drylands in Central Asia before and after the USSR collapse
+   Authors: , 
+   Date: 2012
+
+22. The 2019 Kenya Population and Housing Census
+   Date: 2019
+
+23. Drivers of land use/land cover changes in Munessa-Shashemene landscape of the south-central highlands of Ethiopia
+   Authors: , , , 
+   Date: 2015
+
+24. Factors Influencing Performance Dairy Projects in Cherengani Sub-County
+   Authors: 
+   Date: 2017
+
+25. Towards sustainable production and use of charcoal in Kenya: exploring the potential in life cycle management approach
+   Authors: 
+   Date: 2004
+
+26. Assessing driving forces of land use and land cover change by a mixed-method approach in north-eastern Ghana, West Africa
+   Authors: , , , 
+   Date: 2017
+
+27. Global land use change, economic globalization, and the looming land scarcity
+   Authors: , 
+   Date: 2011
+
+28. The measurement of observer agreement for categorical data
+   Authors: , 
+   Date: 1977
+
+29. Remote Sensing and Image Interpretation
+   Authors: , , 
+   Date: 2015
+
+30. Monitoring and predicting land use and land cover changes using remote sensing and GIS techniques-A case study of a hilly area
+   Authors: , , 
+   Date: 2018
+
+31. Impacts of Tobacco Farming on Forest Cover in Bukira West/ Bukira East Location, Migori County
+   Authors: 
+   Date: 2014
+
+32. Dynamics of land use and land cover changes in the Pugu and Kazimzumbwi Forest Reserves
+   Authors: , , , , , , 
+   Date: 2012
+
+33. Evaluating sediment storage dams: structural off-site sediment trapping measures in northwest Ethiopia
+   Authors: , , , , 
+   Date: 2015
+
+34. Land-use and land-cover changes and their drivers in rangeland-dependent pastoral communities in the southern Afar Region of Ethiopia
+   Authors: , , 
+   Date: 2018
+
+35. Analyses of land use and land cover change dynamics using GIS and remote sensing during 1984 and 2015 in the Beressa Watershed Northern Central Highland of Ethiopia
+   Authors: , , 
+   Date: 2016
+
+36. Mapping land cover change over continental Africa using Landsat and Google Earth Engine cloud computing
+   Authors: , , , , , , 
+   Date: 2017
+
+37. Local perception of drivers of land-use and land-cover change dynamics across Dedza District
+   Authors: , , , , , , 
+   Date: 2019
+
+38. Land use and land cover (LULC) changes in semi-arid subwatersheds of Laikipia and Athi River basins, Kenya, as influenced by expanding intensive commercial horticulture
+   Authors: 
+   Date: 2016
+
+39. On farm characterization of Butana and Kenana cattle breed production systems in Sudan
+   Authors: , , 
+   Date: 2006. 2006
+
+40. Ecological Roots of Social Conflict in Kenya: Pastoralism, Land, and the Development Paradox
+   Authors: 
+   Date: 2012
+
+41. Toward a sustainable city of tomorrow: a hybrid Markov-Cellular Automata modeling for urban landscape evolution in the Hanoi city (Vietnam) during 1990-2030
+   Authors: , , , , , , 
+   Date: 2019
+
+42. Quality of charcoal produced using micro gasification and how the new cook stove works in rural Kenya
+   Authors: , , , , , , 
+   Date: 2017
+
+43. Drivers of ecosystem change and their impacts on human well-being in Lake Victoria basin
+   Authors: , , 
+   Date: 2009
+
+44. Kenya: Migori Forest Cover Threatened By Fires
+   Authors: 
+   Date: 2015
+
+45. Multielemental analysis of Migori (Southwest, Kenya) artisanal gold mine ores and sediments by EDXray fluorescence technique: Implications of occupational exposure and environmental impact
+   Authors: , , , 
+   Date: 2011
+
+46. Interactions between climate change and land use change on biodiversity: attribution problems, risks, and opportunities
+   Authors: , 
+   Date: 2014
+
+47. Riparian community perceptions of the extent and potential impacts of watershed degradation in Lake Victoria Basin
+   Authors: , 
+   Date: 2021
+
+48. Monitoring the extent and impacts of watershed urban development in the Lake Victoria Basin, Kenya, using a combination of population dynamics, remote sensing and GIS techniques
+   Authors: , , , 
+   Date: 2021
+
+49. Detection of historical landscape changes in Lake Victoria Basin, Kenya, using remote sensing multi-spectral indices
+   Authors: , 
+   Date: 2022
+
+50. An Evaluation of the Effects of Agro-meteorological Information on Maize Enterprise Management among Smallholder Farmers in Migori
+   Authors: 
+   Date: 2016
+
+51. Standardizing the calculation of the annual rate of deforestation
+   Authors: 
+   Date: 2003
+
+52. Evaluation of land use change pattern of Kajulu-Riat hill peri-urban area near Kisumu City
+   Authors: , , 
+   Date: 2017
+
+53. Forest biodiversity and deforestation in Bangladesh: The latest update
+   Authors: , 
+   Date: 2019
+
+54. Land use dynamics, climate change, and food security in Vietnam: a global-to-local modeling approach
+   Authors: , , , 
+   Date: 2014
+
+55. Forest land cover changes and its socioeconomic consequences on south-eastern part of Bangladesh
+   Authors: , , 
+   Date: 2022
+
+56. Using Google Earth Engine to detect land cover change: Singapore as a use case
+   Authors: , , 
+   Date: 2018
+
+57. Modelling Land Degradation in Migori County
+   Authors: , , 
+   Date: 2018
+
+58. Global land change from 1982 to 2016
+   Authors: , , , , , , 
+   Date: 2018
+
+59. Spatial and temporal dynamics of land use pattern response to urbanization in Kastamonu
+   Authors: , 
+   Date: 2010
+
+60. World Population Prospects: The 2019 Revision
+   Date: April 21, 2022
+
+61. Mapping, Remote Sensing, and Geospatial Data
+   Date: 2020
+
+62. 
+   Authors: , , , , , 
+   Date: 2020
+
+63. The influence of rapid urbanization and land use changes on terrestrial carbon sources/sinks in Guangzhou
+   Authors: , , , , 
+   Date: 2016
+

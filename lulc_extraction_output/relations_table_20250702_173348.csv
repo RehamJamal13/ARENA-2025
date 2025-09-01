@@ -1,0 +1,537 @@
+sentence_id,sentence,source,relationship,target,confidence
+0,"After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often con...",droughts,CAUSES,loss,HIGH
+0,"After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often con...",loss,DECREASES_BY,woody_vegetation_cover,MEDIUM
+0,"After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often con...",large_parts,LOCATED_IN,Sahel,HIGH
+2,The forests of West and Central Africa probably originally covered a combined area of about 3 millio...,forests,LOCATED_IN,West and Central Africa,HIGH
+2,The forests of West and Central Africa probably originally covered a combined area of about 3 millio...,forests,MEASURES,area of about 3 million km,MEDIUM
+3,"(1993)'}], '#text': ""An increase of land under [cultivation] can be in the form of either (a) cleari...",increase,INCREASES_BY,cultivation,HIGH
+4,"(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in n...",(2006),OCCURS_DURING,[study],HIGH
+4,"(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in n...",[study],ENABLES,(estimation),MEDIUM
+5,").'}]}, {'@xmlns': 'http://www.tei-c.org/ns/1.0', 'head': {'@n': '4.2.', '#text': '[Land use ]change...",1996 to 2017,OCCURS_DURING,change,HIGH
+5,").'}]}, {'@xmlns': 'http://www.tei-c.org/ns/1.0', 'head': {'@n': '4.2.', '#text': '[Land use ]change...",change,INCREASES_BY,11.3% --FROM_TO-- 40% --TO-- 51.3%,HIGH
+5,").'}]}, {'@xmlns': 'http://www.tei-c.org/ns/1.0', 'head': {'@n': '4.2.', '#text': '[Land use ]change...",change,INCREASES_BY,17% --FROM_TO-- 47% --TO-- 64%,HIGH
+5,").'}]}, {'@xmlns': 'http://www.tei-c.org/ns/1.0', 'head': {'@n': '4.2.', '#text': '[Land use ]change...",loss,CAUSES,change,MEDIUM
+5,").'}]}, {'@xmlns': 'http://www.tei-c.org/ns/1.0', 'head': {'@n': '4.2.', '#text': '[Land use ]change...",study_site,LOCATED_IN,study_site_area,HIGH
+7,"[Forest] land was decreased nearly by half in 2002 compared to its coverage in 1984, while the size ...",forest (1984),DECREASES_BY,forest (2002),HIGH
+8,"About 26 and 31% of the total area of natural vegetation ([forest], woodland and tree [savanna]) wil...",26%,DECREASES_BY,forest,HIGH
+8,"About 26 and 31% of the total area of natural vegetation ([forest], woodland and tree [savanna]) wil...",farmland,LOCATED_IN,> total area,MEDIUM
+8,"About 26 and 31% of the total area of natural vegetation ([forest], woodland and tree [savanna]) wil...",2050,OCCURS_DURING,> future,HIGH
+8,"About 26 and 31% of the total area of natural vegetation ([forest], woodland and tree [savanna]) wil...",1975,OCCURS_DURING,> past,HIGH
+8,"About 26 and 31% of the total area of natural vegetation ([forest], woodland and tree [savanna]) wil...",1990,OCCURS_DURING,> past,HIGH
+9,"Although such schemes clearly have the potential to benefit biodiversity and the wider environment, ...",West_Africa,LOCATED_IN,tropical_zone,HIGH
+9,"Although such schemes clearly have the potential to benefit biodiversity and the wider environment, ...",centuries_of_human_modification,CAUSES,substantial_decline,HIGH
+10,Another variance analysis using GLM was conducted for the variable means of all recorded trees and [...,variable means of all recorded trees and shrubs,MEASURES,differences in woody vegetation between land use types,HIGH
+10,Another variance analysis using GLM was conducted for the variable means of all recorded trees and [...,another variance analysis using GLM,ENABLES,assessment of contribution of size of individual trees and shrubs,MEDIUM
+10,Another variance analysis using GLM was conducted for the variable means of all recorded trees and [...,variable means of all recorded trees and shrubs,AFFECTS,differences in woody vegetation between land use types,HIGH
+10,Another variance analysis using GLM was conducted for the variable means of all recorded trees and [...,assessment of contribution of size of individual trees and shrubs,CAUSES,variation analysis using GLM,HIGH
+11,"Assuming the dynamics recorded in the second period , the amounts of land covered by [forest], woodl...",forest,DECREASES_BY,5%,HIGH
+11,"Assuming the dynamics recorded in the second period , the amounts of land covered by [forest], woodl...",forest,DECREASES_BY,17%,HIGH
+11,"Assuming the dynamics recorded in the second period , the amounts of land covered by [forest], woodl...",woodland,DECREASES_BY,9%,HIGH
+11,"Assuming the dynamics recorded in the second period , the amounts of land covered by [forest], woodl...",savanna,DECREASES_BY,5%,HIGH
+11,"Assuming the dynamics recorded in the second period , the amounts of land covered by [forest], woodl...",savanna,DECREASES_BY,17%,HIGH
+11,"Assuming the dynamics recorded in the second period , the amounts of land covered by [forest], woodl...",savanna,INCREASES_BY,9%,HIGH
+11,"Assuming the dynamics recorded in the second period , the amounts of land covered by [forest], woodl...",farmland,INCREASES_BY,22%,HIGH
+11,"Assuming the dynamics recorded in the second period , the amounts of land covered by [forest], woodl...",degraded_savanna,INCREASES_BY,9%,HIGH
+12,"Conversely the decrease in the herbaceous standing [crop], due to the shortening of the [fallow] per...",decrease in herbaceous standing,CAUSES,limitation in fire spread,HIGH
+12,"Conversely the decrease in the herbaceous standing [crop], due to the shortening of the [fallow] per...",decrease in herbaceous standing,CAUSES,limitation in burnt areas size,HIGH
+12,"Conversely the decrease in the herbaceous standing [crop], due to the shortening of the [fallow] per...",shortening of fallow period,CAUSES,decrease in herbaceous standing,MEDIUM
+12,"Conversely the decrease in the herbaceous standing [crop], due to the shortening of the [fallow] per...",extension of cultivated and cleared fields,CAUSES,decrease in herbaceous standing,MEDIUM
+12,"Conversely the decrease in the herbaceous standing [crop], due to the shortening of the [fallow] per...",grazing by cattle,CAUSES,decrease in herbaceous standing,MEDIUM
+12,"Conversely the decrease in the herbaceous standing [crop], due to the shortening of the [fallow] per...",increase in landscape discontinuities,CAUSES,limitation in fire spread,MEDIUM
+12,"Conversely the decrease in the herbaceous standing [crop], due to the shortening of the [fallow] per...",increase in landscape discontinuities,CAUSES,limitation in burnt areas size,MEDIUM
+13,"Coping capacities were therefore assumed to be lower for the Bolgatanga area, which could lead to lo...",urban sprawl,CAUSES,local food crises,HIGH
+13,"Coping capacities were therefore assumed to be lower for the Bolgatanga area, which could lead to lo...",Bolgatanga,LOCATED_IN,area,HIGH
+13,"Coping capacities were therefore assumed to be lower for the Bolgatanga area, which could lead to lo...",urban development,ENABLES,> urban sprawl,HIGH
+13,"Coping capacities were therefore assumed to be lower for the Bolgatanga area, which could lead to lo...",urban development,OCCURS_DURING,> both study areas,HIGH
+14,"describes Rwandan [agriculture] as caught in a ""low investment trap""; less than 10% of cropland is i...",less_than_10_percent,CAUSES,low_irrigation,LOW
+15,"Due to the weeding practice, [bare soil] dominates in cropped fields in the early growing season whi...",weeding practice,CAUSES,change in LULC,HIGH
+16,"From the expert interviews, we learned that migration is a driver and a consequence of [LULCC] and p...",labour_shortage,CAUSES,> [LULCC],HIGH
+17,"In 1986, the grazing land had much higher proportion of the total regional area than other [land use...",1986,OCCURS_DURING,[event],HIGH
+17,"In 1986, the grazing land had much higher proportion of the total regional area than other [land use...",croplands,INCREASES_BY,[quantity],MEDIUM
+18,"In 1990, woodland and tree [savanna] were still the dominant [land cover] types",1990,OCCURS_DURING,"""In 1990""",HIGH
+19,"In fact, some NTFP-providing trees, such as the baobab (Adansonia digitata) and the shea tree (Vitel...",cultivation,OCCURS_DURING,agricultural cycle,HIGH
+19,"In fact, some NTFP-providing trees, such as the baobab (Adansonia digitata) and the shea tree (Vitel...",fallows,LOCATED_IN,agricultural cycle,MEDIUM
+20,"In his study of the ICRISAT villages, he argues that, except in Sayero, all ""have passed or are appr...",bush-[fallow] rotation,AFFECTS,soil fertility,HIGH
+21,"In northern Burkina Faso, temporary migration is also one of the diversification strategies observed...",[Land use conflicts],OCCURS_DURING,[last few years],HIGH
+21,"In northern Burkina Faso, temporary migration is also one of the diversification strategies observed...",[Sahel region],LOCATED_IN,[northern Burkina Faso],HIGH
+21,"In northern Burkina Faso, temporary migration is also one of the diversification strategies observed...",[Global climate change],CAUSES,[land use conflicts],MEDIUM
+22,"In rangelands, the main cause of woody vegetation decrease is the increasing pressure on wood resour...",increasing pressure,CAUSES,decrease in woody vegetation,HIGH
+23,"In Saloum Senegal, with the increase of cultivated land and shortening of [fallow] cycles, soils hav...",increase,CAUSES,> decrease,HIGH
+23,"In Saloum Senegal, with the increase of cultivated land and shortening of [fallow] cycles, soils hav...",decrease,INCREASES_BY,> gain,MEDIUM
+23,"In Saloum Senegal, with the increase of cultivated land and shortening of [fallow] cycles, soils hav...",fallow,LOCATED_IN,> Saloum,HIGH
+23,"In Saloum Senegal, with the increase of cultivated land and shortening of [fallow] cycles, soils hav...",fallow,LOCATED_IN,> Senegal,HIGH
+23,"In Saloum Senegal, with the increase of cultivated land and shortening of [fallow] cycles, soils hav...",fallow,CAUSES,> less_fertile,MEDIUM
+23,"In Saloum Senegal, with the increase of cultivated land and shortening of [fallow] cycles, soils hav...",out-migration,CAUSES,> gain,MEDIUM
+24,"In the case of Ghana, that statement might be true for Kumasi as expanding [city] in the hinterlands...",Ghana,LOCATED_IN,Africa,HIGH
+25,"In the past, missing or low fertilizer input was compensated by the [crop]-[fallow] practice, but la...",population_growth,CAUSES,land_pressure,HIGH
+26,"In Yale ´, the size of [crop] and grazing lands increased by 9 and 18% in 2002 compared to the sizes...",crop,INCREASES_BY,9%,HIGH
+26,"In Yale ´, the size of [crop] and grazing lands increased by 9 and 18% in 2002 compared to the sizes...",crop,INCREASES_BY,18%,HIGH
+26,"In Yale ´, the size of [crop] and grazing lands increased by 9 and 18% in 2002 compared to the sizes...",forest,DECREASES_BY,nearly 50%,HIGH
+26,"In Yale ´, the size of [crop] and grazing lands increased by 9 and 18% in 2002 compared to the sizes...",1984,OCCURS_DURING,past,HIGH
+26,"In Yale ´, the size of [crop] and grazing lands increased by 9 and 18% in 2002 compared to the sizes...",2002,OCCURS_DURING,past,HIGH
+27,Ineffective [land use] planning can contribute to an increase in land fragmentation resulting in los...,Ineffective [land use] planning,CAUSES,increase | CHANGE,HIGH
+28,Interviews and literature review showed that biophysical factors as drivers of [LULCC] were frequent...,drivers,CAUSES,LULCC,HIGH
+30,It is well known that the availability of [fallow] land and hence the duration of [fallow] periods d...,population density,INCREASES_BY,increasing,HIGH
+31,"On the one hand, the shallow soils were not able to temper droughts, leading to a massive dying of t...",droughts,CAUSES,dying,HIGH
+31,"On the one hand, the shallow soils were not able to temper droughts, leading to a massive dying of t...",dying,AFFECTS,trees,HIGH
+31,"On the one hand, the shallow soils were not able to temper droughts, leading to a massive dying of t...",dying,AFFECTS,shrubs,HIGH
+32,"On the one hand, tree growth and [agroforestry] on fields have led to an increase of woody cover in ...",[tree growth],INCREASES_BY,[woody cover],HIGH
+32,"On the one hand, tree growth and [agroforestry] on fields have led to an increase of woody cover in ...",[agroforestry],CAUSES,[tree growth],MEDIUM
+33,"One explanation could be the indistinct influence of indirect drivers on [LULCC], for example, chang...",drivers,CAUSES,changes,HIGH
+33,"One explanation could be the indistinct influence of indirect drivers on [LULCC], for example, chang...",religious_patterns,CAUSES,changes,MEDIUM
+34,One of the fundamental factors has been demographic growth and the growth in [urban] food demands,demographic_growth,CAUSES,growth,HIGH
+35,Other areas have experienced a decrease in [crop] land despite a population increase,population_increase,CAUSES,increase_in_demand_for_resources,HIGH
+35,Other areas have experienced a decrease in [crop] land despite a population increase,decrease_in_crop_land,DECREASES_BY,population_growth,MEDIUM
+36,"P9: We know that [urbanisation] is coming, it\'s growing",urbanisation,AFFECTS,,HIGH
+37,"Rangelands are grazed year-round under communal access but grazing also extends to fallows, year-rou...",rangelands,LOCATED_IN,communal_access,HIGH
+37,"Rangelands are grazed year-round under communal access but grazing also extends to fallows, year-rou...",grazing,AFFECTS,rangelands,MEDIUM
+37,"Rangelands are grazed year-round under communal access but grazing also extends to fallows, year-rou...",year-round,OCCURS_DURING,grazing,MEDIUM
+37,"Rangelands are grazed year-round under communal access but grazing also extends to fallows, year-rou...",dry_season,OCCURS_DURING,grazing,MEDIUM
+37,"Rangelands are grazed year-round under communal access but grazing also extends to fallows, year-rou...",accessibility,AFFECTS,grazing_on_fallow,MEDIUM
+39,Regular [cultivation] keeps the soil penetrable and farmers are aware of the benefits of trees in th...,cultivation,LOCATED_IN,fields,HIGH
+39,Regular [cultivation] keeps the soil penetrable and farmers are aware of the benefits of trees in th...,trees,LOCATED_IN,fields,HIGH
+46,The actual size and proportion of the different [land use] types changed during the study period,study_period,OCCURS_DURING,change,HIGH
+47,The available evidence suggests that [forest] loss and degradation has been caused primarily by agri...,forest_loss,CAUSES,deforestation,HIGH
+47,The available evidence suggests that [forest] loss and degradation has been caused primarily by agri...,deforestation,ENABLES,agricultural_expansion,MEDIUM
+48,The dependent variable is growth in the [urbanization] rate,growth,INCREASES_BY,urbanization_rate,MEDIUM
+48,The dependent variable is growth in the [urbanization] rate,urbanization,CAUSES,growth,LOW
+49,The majority (94%) of the households keep livestock which plays an important role as a saving and se...,94%,MEASURES,majority (of households),HIGH
+50,"The plots were only cropped one year and with little success, after which irreversible soil [erosion...",agricultural land,DECREASES_BY,productivity,HIGH
+50,"The plots were only cropped one year and with little success, after which irreversible soil [erosion...",agricultural land,CAUSES,soil erosion,MEDIUM
+51,The reasons for the decline described by the authors are droughts and declining rainfall in the past...,droughts and declining rainfall,CAUSES,decline,HIGH
+51,The reasons for the decline described by the authors are droughts and declining rainfall in the past...,the past 30 years,OCCURS_DURING,decline,HIGH
+51,The reasons for the decline described by the authors are droughts and declining rainfall in the past...,risk,AFFECTS,rain-fed cultivation,MEDIUM
+56,"Thus, changes in [land use] strategies result not only in a simple expansion of fields to new and le...",changes_in_land_use_strategies,CAUSES,expansion_of_fields,HIGH
+58,"Thus, the coherence between spatially related socio-economic characteristics of the households, agri...",Yomboli,LOCATED_IN,{unspecified},HIGH
+59,To investigate and quantify [land cover] changes over 44 years including aspects of degradation and ...,CHANGE,OCCURS_DURING,44 years,HIGH
+61,"Tree cover, in both dense [forest] and the agricultural mosaics, is lost as a result",forest,DECREASES_BY,> Tree cover,HIGH
+61,"Tree cover, in both dense [forest] and the agricultural mosaics, is lost as a result",agricultural mosaics,CAUSES,> Loss of tree cover,MEDIUM
+63,"We then turn to evidence on the migration channel itself.'}}, {'@xmlns': 'http://www.tei-c.org/ns/1....",conflict,AFFECTS,urbanization,HIGH
+63,"We then turn to evidence on the migration channel itself.'}}, {'@xmlns': 'http://www.tei-c.org/ns/1....",urbanization,LOCATED_IN,7.1,MEDIUM
+63,"We then turn to evidence on the migration channel itself.'}}, {'@xmlns': 'http://www.tei-c.org/ns/1....",conflict,CAUSES,urbanization_change,MEDIUM
+63,"We then turn to evidence on the migration channel itself.'}}, {'@xmlns': 'http://www.tei-c.org/ns/1....",urbanization_change,TRANSFORMS_TO,urbanization,HIGH
+63,"We then turn to evidence on the migration channel itself.'}}, {'@xmlns': 'http://www.tei-c.org/ns/1....",urbanization,OCCURS_DURING,study_period,MEDIUM
+63,"We then turn to evidence on the migration channel itself.'}}, {'@xmlns': 'http://www.tei-c.org/ns/1....",urbanization,INCREASES_BY,urban_growth_rate,HIGH
+63,"We then turn to evidence on the migration channel itself.'}}, {'@xmlns': 'http://www.tei-c.org/ns/1....",urban_growth_rate,MEASURES,urbanization_expansion,HIGH
+63,"We then turn to evidence on the migration channel itself.'}}, {'@xmlns': 'http://www.tei-c.org/ns/1....",urbanization_expansion,LOCATED_IN,study_area,HIGH
+64,"Whereas most [shrubs] are annually coppiced in fields prior to [cultivation], they are left to grow ...",coppicing,CAUSES,shrubs_in_fields,HIGH
+65,"(2004)'}], '#text': 'With regard to population growth, the literature analysis revealed that only ru...",population_growth,CAUSES,LULCC,HIGH
+65,"(2004)'}], '#text': 'With regard to population growth, the literature analysis revealed that only ru...",urban_population_growth,CAUSES,LULCC,MEDIUM
+65,"(2004)'}], '#text': 'With regard to population growth, the literature analysis revealed that only ru...",LULCC,OCCURS_DURING,(2004),HIGH
+66,Falling precipitation and rising temperatures would likely worsen agricultural growing conditions in...,falling precipitation,CAUSES,agricultural growing conditions --DEGRADES-- (growing conditions are degraded by falling precipitation),HIGH
+66,Falling precipitation and rising temperatures would likely worsen agricultural growing conditions in...,large parts of Africa,LOCATED_IN,(Africa),HIGH
+66,Falling precipitation and rising temperatures would likely worsen agricultural growing conditions in...,coastal West Africa,LOCATED_IN,Africa,MEDIUM
+66,Falling precipitation and rising temperatures would likely worsen agricultural growing conditions in...,Southern Africa,LOCATED_IN,Africa,MEDIUM
+66,Falling precipitation and rising temperatures would likely worsen agricultural growing conditions in...,agricultural growing conditions,AFFECTS,large parts of Africa,HIGH
+66,Falling precipitation and rising temperatures would likely worsen agricultural growing conditions in...,rising temperatures,CAUSES,agricultural growing conditions --DEGRADES-- (growing conditions are degraded by rising temperatures),HIGH
+67,"The population density has increased during the past decades, which has had a significant impact on ...",population density,INCREASES_BY,unspecified,MEDIUM
+67,"The population density has increased during the past decades, which has had a significant impact on ...",population density,AFFECTS,land cover,HIGH
+68,"[Land use] and [land cover] in West African savannas are mainly driven by population pressure, infra...",population_pressure,CAUSES,land_use_change,HIGH
+68,"[Land use] and [land cover] in West African savannas are mainly driven by population pressure, infra...",infrastructure_drivers,CAUSES,land_cover_change,HIGH
+68,"[Land use] and [land cover] in West African savannas are mainly driven by population pressure, infra...",West_African_savannas,LOCATED_IN,West_Africa,HIGH
+69,"Furthermore, the general infrastructural develop-ment of electricity and hospitals, for example, as ...",urban_development,CAUSES,urban_development,HIGH
+69,"Furthermore, the general infrastructural develop-ment of electricity and hospitals, for example, as ...",electricity_and_hospitals,ENABLES,urban_development,MEDIUM
+69,"Furthermore, the general infrastructural develop-ment of electricity and hospitals, for example, as ...",urban_development,AFFECTS,urban,HIGH
+69,"Furthermore, the general infrastructural develop-ment of electricity and hospitals, for example, as ...",urban,LOCATED_IN,development,LOW
+70,"Conversely, climate change as one of the emerging drivers of [LULCC] is difficult to detect and quan...",EMERGING_DRIVER,CAUSES,LULCC,HIGH
+71,"Furthermore, issues such as state politics, market incentives, climate variations, and access to lan...",issues,AFFECTS,trajectory_of_land_use,HIGH
+71,"Furthermore, issues such as state politics, market incentives, climate variations, and access to lan...",state_politics,CAUSES,trajectory_of_land_use,MEDIUM
+71,"Furthermore, issues such as state politics, market incentives, climate variations, and access to lan...",market_incentives,CAUSES,trajectory_of_land_use,MEDIUM
+71,"Furthermore, issues such as state politics, market incentives, climate variations, and access to lan...",climate_variations,CAUSES,trajectory_of_land_use,MEDIUM
+71,"Furthermore, issues such as state politics, market incentives, climate variations, and access to lan...",access_to_land_resources,CAUSES,trajectory_of_land_use,MEDIUM
+71,"Furthermore, issues such as state politics, market incentives, climate variations, and access to lan...",trajectory_of_land_use,OCCURS_DURING,unspecified_time_period,LOW
+71,"Furthermore, issues such as state politics, market incentives, climate variations, and access to lan...",land_use,LOCATED_IN,location,LOW
+72,"P6: From my perspective, the [[land use]] aspect that is degrading the land is including the fire … ...",fire,CAUSES,land_degradation,HIGH
+72,"P6: From my perspective, the [[land use]] aspect that is degrading the land is including the fire … ...",bush_fires,AFFECTS,reforestation,MEDIUM
+73,"As quoted by the higher the [[land use]] intensity, the lower the fire frequency: indeed our results...",high_land_use_intensity,AFFECTS,low_fire_frequency,HIGH
+73,"As quoted by the higher the [[land use]] intensity, the lower the fire frequency: indeed our results...",protected_areas,LOCATED_IN,areas_with_high_fire_frequency,MEDIUM
+73,"As quoted by the higher the [[land use]] intensity, the lower the fire frequency: indeed our results...",gravelly_soils,LOCATED_IN,areas_with_high_fire_frequency,MEDIUM
+73,"As quoted by the higher the [[land use]] intensity, the lower the fire frequency: indeed our results...",hardpan_complexes,LOCATED_IN,areas_with_high_fire_frequency,MEDIUM
+73,"As quoted by the higher the [[land use]] intensity, the lower the fire frequency: indeed our results...",high_fire_frequency,LOCATED_IN,protected_areas,HIGH
+75,"As expected, plant species statistically linked with frequent fire landscape units are typical of su...",savanna,LOCATED_IN,sudanian area,HIGH
+76,The interrelations between [savanna] fire regimes and vegetation dynamics are indeed complex; they a...,savanna_fire_regimes,AFFECTS,vegetation_dynamics,HIGH
+77,"In a small Sahelian catchment in Niger, the increase in cultivated land from 1950 to 1998 was associ...",increase (in cultivated land),INCREASES_BY,9% (to 16%),HIGH
+77,"In a small Sahelian catchment in Niger, the increase in cultivated land from 1950 to 1998 was associ...",increase (in extent of eroded land),INCREASES_BY,9% (from 7% to 16%),HIGH
+77,"In a small Sahelian catchment in Niger, the increase in cultivated land from 1950 to 1998 was associ...",savanna,LOCATED_IN,Sahelian catchment in Niger,HIGH
+77,"In a small Sahelian catchment in Niger, the increase in cultivated land from 1950 to 1998 was associ...",increase (in extent of eroded land),CAUSES,decrease (in savanna),MEDIUM
+78,New settlements caused an initial decrease of the vegetation due to [[land use]] change (bushland to...,new_settlements,CAUSES,> change,HIGH
+79,"Apparently, the proximity of Yale ´to the road made influx of people higher than Boala, which is in ...",road,INCREASES_BY,population,HIGH
+79,"Apparently, the proximity of Yale ´to the road made influx of people higher than Boala, which is in ...",population,CAUSES,agricultural_expansion,MEDIUM
+79,"Apparently, the proximity of Yale ´to the road made influx of people higher than Boala, which is in ...",agricultural_expansion,ENABLES,deforestation,HIGH
+79,"Apparently, the proximity of Yale ´to the road made influx of people higher than Boala, which is in ...",deforestation,OCCURS_DURING,tropical,MEDIUM
+79,"Apparently, the proximity of Yale ´to the road made influx of people higher than Boala, which is in ...",Boala,LOCATED_IN,tropical,HIGH
+80,"Recently, obtained a [deforestation] rate of 11% in the [grassland] areas and a degradation of 17% i...",deforestation,CAUSES,forest_loss,HIGH
+80,"Recently, obtained a [deforestation] rate of 11% in the [grassland] areas and a degradation of 17% i...",grassland,DECREASES_BY,11%,HIGH
+80,"Recently, obtained a [deforestation] rate of 11% in the [grassland] areas and a degradation of 17% i...",woodlands,DECREASES_BY,17%,HIGH
+80,"Recently, obtained a [deforestation] rate of 11% in the [grassland] areas and a degradation of 17% i...",northern_region_of_Ghana,LOCATED_IN,Ghana,HIGH
+81,During this time the land required for [agriculture] increased significantly so that large areas of ...,agriculture,INCREASES_BY,> significant amount,HIGH
+81,During this time the land required for [agriculture] increased significantly so that large areas of ...,agriculture,CAUSES,> deforestation,MEDIUM
+81,During this time the land required for [agriculture] increased significantly so that large areas of ...,deforestation,TRANSFORMS_TO,> cultivation,HIGH
+81,During this time the land required for [agriculture] increased significantly so that large areas of ...,large areas of natural bushland,TRANSFORMS_TO,> deforested land,HIGH
+82,The capacity of some of these so-called dry [forest] species to colonize unburnt areas has also been...,forest,LOCATED_IN,wooded areas,HIGH
+83,"However, conflicting hypotheses have been reported: on the one hand an expansion (into native [savan...",expansion,CAUSES,into native savanna,HIGH
+83,"However, conflicting hypotheses have been reported: on the one hand an expansion (into native [savan...",abandonment,CAUSES,caused by,MEDIUM
+83,"However, conflicting hypotheses have been reported: on the one hand an expansion (into native [savan...",civil war in Sudan,CAUSES,abandonment,HIGH
+83,"However, conflicting hypotheses have been reported: on the one hand an expansion (into native [savan...",conflicting hypotheses,OCCURS_DURING,,LOW
+84,National and local management policies are currently addressing the decrease in woody vegetation and...,sustainable_practices,CAUSES,increase_in_woody_vegetation,MEDIUM
+84,National and local management policies are currently addressing the decrease in woody vegetation and...,decrease_in_woody_vegetation,CAUSES,erosion,HIGH
+84,National and local management policies are currently addressing the decrease in woody vegetation and...,erosion,AFFECTS,soil,HIGH
+84,National and local management policies are currently addressing the decrease in woody vegetation and...,decrease_in_woody_vegetation,CAUSES,decrease,HIGH
+84,National and local management policies are currently addressing the decrease in woody vegetation and...,deforestation,TRANSFORMS_TO,non_woody_vegetation,LOW
+84,National and local management policies are currently addressing the decrease in woody vegetation and...,non_woody_vegetation,ENABLES,urbanization,MEDIUM
+84,National and local management policies are currently addressing the decrease in woody vegetation and...,urbanization,TRANSFORMS_TO,built_up_area,HIGH
+84,National and local management policies are currently addressing the decrease in woody vegetation and...,built_up_area,LOCATED_IN,location,MEDIUM
+85,The decrease in rainfall has been associated with a concentration of the [cultivation] of the sandy ...,decrease,CAUSES,concentration,HIGH
+86,The decrease in rainfall has been associated with a concentration of the [cultivation] of the sandy ...,decrease,CAUSES,concentration,HIGH
+87,Disturbance on different [[land use]] types in Boala and Yale ´villages: (A) cutting for fuelwood an...,(A) human_activity,CAUSES,disturbance,HIGH
+87,Disturbance on different [[land use]] types in Boala and Yale ´villages: (A) cutting for fuelwood an...,disturbance,AFFECTS,croplands,MEDIUM
+87,Disturbance on different [[land use]] types in Boala and Yale ´villages: (A) cutting for fuelwood an...,disturbance,AFFECTS,forest,MEDIUM
+87,Disturbance on different [[land use]] types in Boala and Yale ´villages: (A) cutting for fuelwood an...,disturbance,AFFECTS,grasslands,MEDIUM
+87,Disturbance on different [[land use]] types in Boala and Yale ´villages: (A) cutting for fuelwood an...,(B) human_activity,CAUSES,disturbance,HIGH
+87,Disturbance on different [[land use]] types in Boala and Yale ´villages: (A) cutting for fuelwood an...,disturbance,AFFECTS,croplands,MEDIUM
+87,Disturbance on different [[land use]] types in Boala and Yale ´villages: (A) cutting for fuelwood an...,disturbance,AFFECTS,gallery_forests,LOW
+87,Disturbance on different [[land use]] types in Boala and Yale ´villages: (A) cutting for fuelwood an...,(C) elephant_damage,CAUSES,disturbance,HIGH
+87,Disturbance on different [[land use]] types in Boala and Yale ´villages: (A) cutting for fuelwood an...,disturbance,AFFECTS,croplands,MEDIUM
+87,Disturbance on different [[land use]] types in Boala and Yale ´villages: (A) cutting for fuelwood an...,disturbance,AFFECTS,forest,MEDIUM
+87,Disturbance on different [[land use]] types in Boala and Yale ´villages: (A) cutting for fuelwood an...,disturbance,AFFECTS,grasslands,MEDIUM
+87,Disturbance on different [[land use]] types in Boala and Yale ´villages: (A) cutting for fuelwood an...,(D) livestock_grazing,CAUSES,disturbance,HIGH
+87,Disturbance on different [[land use]] types in Boala and Yale ´villages: (A) cutting for fuelwood an...,disturbance,AFFECTS,croplands,MEDIUM
+87,Disturbance on different [[land use]] types in Boala and Yale ´villages: (A) cutting for fuelwood an...,disturbance,AFFECTS,grasslands,MEDIUM
+88,"In fact, a major reason why farmers grow [cotton] is to gain access to fertilisers for their subsist...",farmers,CAUSES,> cotton_growth,HIGH
+88,"In fact, a major reason why farmers grow [cotton] is to gain access to fertilisers for their subsist...",cotton_growth,INCREASES_BY,> fertiliser_access,MEDIUM
+90,"In the period 1975-1990, 1.28 million ha (26%) of natural vegetation was converted to degraded [sava...",1975-1990,OCCURS_DURING,period,HIGH
+90,"In the period 1975-1990, 1.28 million ha (26%) of natural vegetation was converted to degraded [sava...",1990-2010,OCCURS_DURING,period,HIGH
+90,"In the period 1975-1990, 1.28 million ha (26%) of natural vegetation was converted to degraded [sava...",1.28 million ha,DECREASES_BY,26%,HIGH
+90,"In the period 1975-1990, 1.28 million ha (26%) of natural vegetation was converted to degraded [sava...",2.23 million ha,DECREASES_BY,53%,HIGH
+91,"At the local scale, the size of [crop] and grazing lands increased at the expense of shrinking of [f...",forest,DECREASES_BY,> crop,HIGH
+91,"At the local scale, the size of [crop] and grazing lands increased at the expense of shrinking of [f...",1. forest,DECREASES_BY,> crop: The decrease in forest cover is related to the increase in crop size.,MEDIUM
+92,"The decrease in woodland, [shrub] savannas, grass savannas and [water] body occurred mainly between ...",decrease,OCCURS_DURING,between 1984 and 2001,HIGH
+92,"The decrease in woodland, [shrub] savannas, grass savannas and [water] body occurred mainly between ...",decrease,OCCURS_DURING,between 2001 and 2013,HIGH
+92,"The decrease in woodland, [shrub] savannas, grass savannas and [water] body occurred mainly between ...",woodland,DECREASES_BY,,MEDIUM
+92,"The decrease in woodland, [shrub] savannas, grass savannas and [water] body occurred mainly between ...",shrub savannas,DECREASES_BY,,MEDIUM
+92,"The decrease in woodland, [shrub] savannas, grass savannas and [water] body occurred mainly between ...",grass savannas,DECREASES_BY,,MEDIUM
+92,"The decrease in woodland, [shrub] savannas, grass savannas and [water] body occurred mainly between ...",water body,DECREASES_BY,,MEDIUM
+92,"The decrease in woodland, [shrub] savannas, grass savannas and [water] body occurred mainly between ...",tree savannas,DECREASES_BY,,MEDIUM
+92,"The decrease in woodland, [shrub] savannas, grass savannas and [water] body occurred mainly between ...",gallery forest,DECREASES_BY,,MEDIUM
+93,The main finding of this study is the loss of vegetation cover over a 29 year period which is the re...,loss,CAUSES,vegetation_cover_loss,HIGH
+93,The main finding of this study is the loss of vegetation cover over a 29 year period which is the re...,vegetation_cover_change,OCCURS_DURING,29_year_period,HIGH
+94,"From 1984 to 2001, [tree] savannas, bare soils and agricultural lands increased by 17.55%, 18.79% an...",agricultural lands,INCREASES_BY,21778.79%,HIGH
+94,"From 1984 to 2001, [tree] savannas, bare soils and agricultural lands increased by 17.55%, 18.79% an...",tree savannas,DECREASES_BY,22.02%,HIGH
+94,"From 1984 to 2001, [tree] savannas, bare soils and agricultural lands increased by 17.55%, 18.79% an...",bare soils,INCREASES_BY,18.79%,HIGH
+94,"From 1984 to 2001, [tree] savannas, bare soils and agricultural lands increased by 17.55%, 18.79% an...",woodland,DECREASES_BY,22.02%,HIGH
+94,"From 1984 to 2001, [tree] savannas, bare soils and agricultural lands increased by 17.55%, 18.79% an...",gallery forests,DECREASES_BY,5.03%,HIGH
+94,"From 1984 to 2001, [tree] savannas, bare soils and agricultural lands increased by 17.55%, 18.79% an...",shrub savannas,DECREASES_BY,40.08%,HIGH
+94,"From 1984 to 2001, [tree] savannas, bare soils and agricultural lands increased by 17.55%, 18.79% an...",water bodies,DECREASES_BY,31.2%,HIGH
+95,"At regional scale, the annual rate of change in [forest] land, grazing land, gallery [forest] and cr...",annual_rate_of_change,OCCURS_DURING,[region],HIGH
+95,"At regional scale, the annual rate of change in [forest] land, grazing land, gallery [forest] and cr...",forest,DECREASES_BY,0.4%,HIGH
+95,"At regional scale, the annual rate of change in [forest] land, grazing land, gallery [forest] and cr...",grazing_land,DECREASES_BY,0.9%,HIGH
+95,"At regional scale, the annual rate of change in [forest] land, grazing land, gallery [forest] and cr...",gallery_forest,DECREASES_BY,1.6%,HIGH
+95,"At regional scale, the annual rate of change in [forest] land, grazing land, gallery [forest] and cr...",cropland,INCREASES_BY,3.8%,HIGH
+97,"During independence, informal [urban] sprawl increased considerably, and public hygiene as well as e...",urban,INCREASES_BY,considerable,HIGH
+97,"During independence, informal [urban] sprawl increased considerably, and public hygiene as well as e...",public hygiene,DECREASES_BY,,MEDIUM
+97,"During independence, informal [urban] sprawl increased considerably, and public hygiene as well as e...",environmental quality,DECREASES_BY,,MEDIUM
+98,"Even though the geo-statistical analysis cannot prove a change in [urban] area, 62% of the experts s...",62%,MEASURES,increase,HIGH
+98,"Even though the geo-statistical analysis cannot prove a change in [urban] area, 62% of the experts s...",urban,INCREASES_BY,increase,MEDIUM
+98,"Even though the geo-statistical analysis cannot prove a change in [urban] area, 62% of the experts s...",62%,CAUSES,increase,LOW
+98,"Even though the geo-statistical analysis cannot prove a change in [urban] area, 62% of the experts s...",increase,CAUSES,urban --CHANGE_TO-- cropland,MEDIUM
+99,This latest expansion has come at a high environmental cost as cocoa farmers have encroached on the ...,expansion,CAUSES,deforestation,HIGH
+99,This latest expansion has come at a high environmental cost as cocoa farmers have encroached on the ...,deforestation,AFFECTS,forest,HIGH
+99,This latest expansion has come at a high environmental cost as cocoa farmers have encroached on the ...,forest,LOCATED_IN,Guinea Forests,MEDIUM
+100,"While natural [forest] has declined across West Africa, plantations, often but not always of non-nat...",forest,DECREASES_BY,> natural,HIGH
+100,"While natural [forest] has declined across West Africa, plantations, often but not always of non-nat...",natural,CAUSES,> forest --DECLINE,MEDIUM
+100,"While natural [forest] has declined across West Africa, plantations, often but not always of non-nat...",West Africa,LOCATED_IN,> region,HIGH
+100,"While natural [forest] has declined across West Africa, plantations, often but not always of non-nat...",increased_demand,CAUSES,> establishment,MEDIUM
+101,"2013), and only 4 percent of [agricultural land] is irrigated compared to 18 percent globally (You e...",agricultural land,MEASURES,4%,HIGH
+102,"In Burkina Faso, supposedly more ""secure"" land inherited from within the lineage receives more hired...",Burkina,LOCATED_IN,Burkina Faso,HIGH
+103,"Bush farms normally receive less fertilizer and regenerate under a bush-[fallow] system, but shorten...",bush-fallow system,DECREASES_BY,soil fertility,HIGH
+103,"Bush farms normally receive less fertilizer and regenerate under a bush-[fallow] system, but shorten...",fallow period,CAUSES,decreased soil fertility,MEDIUM
+103,"Bush farms normally receive less fertilizer and regenerate under a bush-[fallow] system, but shorten...",bush-fallow system,LOCATED_IN,farms,HIGH
+103,"Bush farms normally receive less fertilizer and regenerate under a bush-[fallow] system, but shorten...",decreased soil fertility,AFFECTS,bush farms,HIGH
+105,"In the regularly manured [crop] fields close to villages and camps, the species diversity of scatter...",increase_in_species_diversity,AFFECTS,scattered_trees,HIGH
+106,"So during the dry season, you have a lot of big groups of people during the dry season cultivating [...",dry season,OCCURS_DURING,[during the dry season],HIGH
+107,Manure is therefore not more easily available to the farmers and it becomes beneficial for the farme...,cultivation,CAUSES,manure loss,HIGH
+107,Manure is therefore not more easily available to the farmers and it becomes beneficial for the farme...,farmers,ENABLES,livestock raising,MEDIUM
+110,"According to it was assumed .'}, {'ref': {'@type': 'table', '@target': '#tab_0', '#text': '1'}, '#te...",non-cropped bush-grass-[savanna],DECREASES_BY,75% [fallow],HIGH
+112,Similarly and found that chopping did not reduce recruitment density of other tree species,chopping,AFFECTS,tree species,MEDIUM
+113,Strengthening and enforcing forest protection laws supplemented by a large and effective awareness c...,agricultural_encroachment,CAUSES,deforestation,HIGH
+113,Strengthening and enforcing forest protection laws supplemented by a large and effective awareness c...,forest_loss,AFFECTS,biodiversity,HIGH
+113,Strengthening and enforcing forest protection laws supplemented by a large and effective awareness c...,protected_areas,LOCATED_IN,geographical_location,HIGH
+114,When the local agricultural sector is competing for labor with an urban sector engaged in production...,declines,CAUSES,urbanization,HIGH
+114,When the local agricultural sector is competing for labor with an urban sector engaged in production...,competition,CAUSES,decline,HIGH
+116,These two countries are the world s largest cocoa producers and are in a post forest transition stag...,two_countries,LOCATED_IN,world,HIGH
+117,The net gain of dense forest over the 29 year period was lower than the net loss and this resulted i...,forest,DECREASES_BY,> deforestation,HIGH
+117,The net gain of dense forest over the 29 year period was lower than the net loss and this resulted i...,deforestation,CAUSES,> loss,HIGH
+117,The net gain of dense forest over the 29 year period was lower than the net loss and this resulted i...,forest,DECREASES_BY,> deforestation,HIGH
+117,The net gain of dense forest over the 29 year period was lower than the net loss and this resulted i...,deforestation,CAUSES,> loss,HIGH
+118,It resulted from an increase in the cultivated area and a reduction of the forest cover and the numb...,cultivated_area,INCREASES_BY,area,HIGH
+118,It resulted from an increase in the cultivated area and a reduction of the forest cover and the numb...,forest_cover,DECREASES_BY,area,HIGH
+118,It resulted from an increase in the cultivated area and a reduction of the forest cover and the numb...,number_of_trees,DECREASES_BY,number,HIGH
+120,In the surroundings of the cities in the north of Nigeria for example in 2000 patches of grassland a...,cities,LOCATED_IN,Nigeria,HIGH
+121,The size of other land use types decreased during the study period particularly the decrease was mor...,forest,DECREASES_BY,other_land_use_types,HIGH
+122,In second hand the increase in shrubs The evergreen forest and forest cover mainly the south eastern...,increase,INCREASES_BY,shrubs,HIGH
+122,In second hand the increase in shrubs The evergreen forest and forest cover mainly the south eastern...,shrubs,LOCATED_IN,Volta basin,MEDIUM
+122,In second hand the increase in shrubs The evergreen forest and forest cover mainly the south eastern...,forest,LOCATED_IN,Volta basin,HIGH
+122,In second hand the increase in shrubs The evergreen forest and forest cover mainly the south eastern...,forest,INCREASES_BY,shrubs,MEDIUM
+122,In second hand the increase in shrubs The evergreen forest and forest cover mainly the south eastern...,forest,LOCATED_IN,[south eastern and south western part],LOW
+122,In second hand the increase in shrubs The evergreen forest and forest cover mainly the south eastern...,forest cover,LOCATED_IN,Volta basin,HIGH
+122,In second hand the increase in shrubs The evergreen forest and forest cover mainly the south eastern...,forest cover,INCREASES_BY,shrubs,MEDIUM
+122,In second hand the increase in shrubs The evergreen forest and forest cover mainly the south eastern...,[south eastern and south western part],LOCATED_IN,Volta basin,HIGH
+122,In second hand the increase in shrubs The evergreen forest and forest cover mainly the south eastern...,[years 1988 and 2002],OCCURS_DURING,study period,LOW
+123,Savanna cluster represents grassland with scattered trees grading into either open plain or woodland...,savanna,LOCATED_IN,grassland,HIGH
+124,Settlements bare soil dry grass continued to increase despite the decline in cultivation within the ...,settlements,INCREASES_BY,bare soil,HIGH
+124,Settlements bare soil dry grass continued to increase despite the decline in cultivation within the ...,settlements,INCREASES_BY,dry grass,HIGH
+124,Settlements bare soil dry grass continued to increase despite the decline in cultivation within the ...,increase in settlements,CAUSES,decrease in cultivation,MEDIUM
+124,Settlements bare soil dry grass continued to increase despite the decline in cultivation within the ...,within_the_reserves,LOCATED_IN,context,HIGH
+125,Changing ethnic dominance could therefore be an important driver for change in land use strategies. ...,ethnic_dominance,CAUSES,change,HIGH
+126,Consequently changes in RUE have been suggested as an integral measure for evaluating land degradati...,changes,OCCURS_DURING,time series,HIGH
+127,Additionally trees are long lived and therefore changes in tree populations are an indicator of long...,changes,OCCURS_DURING,long term,HIGH
+128,2007a What is the amount of crop residue needed to improve and maintain soil properties and processe...,crop_residue_removal,AFFECTS,soil_quality,HIGH
+128,2007a What is the amount of crop residue needed to improve and maintain soil properties and processe...,soil_quality,INCREASES_BY,reduced_water_runoff_erosion,MEDIUM
+128,2007a What is the amount of crop residue needed to improve and maintain soil properties and processe...,soil_quality,DECREASES_BY,adverse_effects_on_soil_yields,MEDIUM
+128,2007a What is the amount of crop residue needed to improve and maintain soil properties and processe...,50_to_70_percent_crop_residue_removal,CAUSES,adequate_benefits_to_the_soil,HIGH
+128,2007a What is the amount of crop residue needed to improve and maintain soil properties and processe...,50_percent_or_more_crop_residue_removal,CAUSES,adversely_affected_soil_quality_crop_yields,HIGH
+128,2007a What is the amount of crop residue needed to improve and maintain soil properties and processe...,2007a,OCCURS_DURING,study,HIGH
+128,2007a What is the amount of crop residue needed to improve and maintain soil properties and processe...,US,LOCATED_IN,North_America,HIGH
+129,As detailed below this range reflects uncertainties in how much of the TCL attributable to shifting ...,shifting agriculture,CAUSES,deforestation,MEDIUM
+129,As detailed below this range reflects uncertainties in how much of the TCL attributable to shifting ...,deforestation,AFFECTS,agriculture,HIGH
+129,As detailed below this range reflects uncertainties in how much of the TCL attributable to shifting ...,uncertainty,AFFECTS,TCL,MEDIUM
+130,reported a moderate land cover change from 1965 to 2000 a decrease in savanna from 74% to 70% concur...,change,OCCURS_DURING,1965 to 2000,HIGH
+130,reported a moderate land cover change from 1965 to 2000 a decrease in savanna from 74% to 70% concur...,decrease,FROM_TO,74%,HIGH
+130,reported a moderate land cover change from 1965 to 2000 a decrease in savanna from 74% to 70% concur...,decrease,FROM_TO,70%,HIGH
+130,reported a moderate land cover change from 1965 to 2000 a decrease in savanna from 74% to 70% concur...,expansion,FROM_TO,17%,HIGH
+130,reported a moderate land cover change from 1965 to 2000 a decrease in savanna from 74% to 70% concur...,expansion,FROM_TO,21%,HIGH
+130,reported a moderate land cover change from 1965 to 2000 a decrease in savanna from 74% to 70% concur...,savanna,DECREASES_BY,4%,MEDIUM
+130,reported a moderate land cover change from 1965 to 2000 a decrease in savanna from 74% to 70% concur...,cropland,INCREASES_BY,4%,MEDIUM
+131,Large scale cropland was the third highest driver of forest loss in Africa 9% with the highest propo...,large_scale_cropland,CAUSES,forest_loss,HIGH
+131,Large scale cropland was the third highest driver of forest loss in Africa 9% with the highest propo...,Africa,LOCATED_IN,continent,HIGH
+131,Large scale cropland was the third highest driver of forest loss in Africa 9% with the highest propo...,Cape Verde,LOCATED_IN,country,HIGH
+131,Large scale cropland was the third highest driver of forest loss in Africa 9% with the highest propo...,Gambia,LOCATED_IN,country,HIGH
+131,Large scale cropland was the third highest driver of forest loss in Africa 9% with the highest propo...,Niger,LOCATED_IN,country,HIGH
+131,Large scale cropland was the third highest driver of forest loss in Africa 9% with the highest propo...,Sudan,LOCATED_IN,country,HIGH
+131,Large scale cropland was the third highest driver of forest loss in Africa 9% with the highest propo...,Nigeria,LOCATED_IN,country,HIGH
+133,This is why tree cover here has increased by 10 20% whereas tree cover further away decreased by up ...,tree cover,INCREASES_BY,10 20%,HIGH
+133,This is why tree cover here has increased by 10 20% whereas tree cover further away decreased by up ...,tree cover,DECREASES_BY,up to 30%,HIGH
+134,Thicket patches that burned in the 2008 extreme fire quickly established a savanna fire regime with ...,thicket patches,OCCURS_DURING,2008,HIGH
+134,Thicket patches that burned in the 2008 extreme fire quickly established a savanna fire regime with ...,savanna,INCREASES_BY,fires,MEDIUM
+134,Thicket patches that burned in the 2008 extreme fire quickly established a savanna fire regime with ...,extreme fires,CAUSES,forests_burning,HIGH
+135,The transition of natural vegetation to water bodies may indicate natural flooding or anthropogenic ...,natural_vegetation,CAUSES,transition,MEDIUM
+136,Similar observations were made in Guinean and Sudano Guinean savannas where suppression or alleviati...,savannas,LOCATED_IN,"Guinean, Sudano Guinean regions",HIGH
+136,Similar observations were made in Guinean and Sudano Guinean savannas where suppression or alleviati...,suppression_or_alleviation_of_fire,CAUSES,favouring_of_exotic_species,MEDIUM
+137,Historically and today fires burn frequently in most savannas at a rate of several per decade but ra...,savannas,LOCATED_IN,historical context,HIGH
+137,Historically and today fires burn frequently in most savannas at a rate of several per decade but ra...,fires,OCCURS_DURING,most savannas,MEDIUM
+137,Historically and today fires burn frequently in most savannas at a rate of several per decade but ra...,fires,AFFECTS,forest margins,MEDIUM
+139,The West Africa region s basins are under different land use practices due to their trans boundary f...,West Africa region,LOCATED_IN,West Africa,HIGH
+140,Some gallery forests occur along riverbeds,forests,LOCATED_IN,riverbeds,HIGH
+141,2009 The disadvantage of the short term improved fallow systems is that land is taken out of product...,The short term improved fallow systems,AFFECTS,> land,MEDIUM
+141,2009 The disadvantage of the short term improved fallow systems is that land is taken out of product...,2009,OCCURS_DURING,> The disadvantage,HIGH
+143,From 1955 to 1986 the area on the dune above Mare Yomboli was cleared and used for cultivation and f...,PERIOD(1955-1986),OCCURS_DURING,EVENT(area_clearing_and_cultivation),HIGH
+143,From 1955 to 1986 the area on the dune above Mare Yomboli was cleared and used for cultivation and f...,EVENT(area_clearing_and_cultivation),CAUSES,CHANGE(dune_above_Mare_Yomboli),HIGH
+143,From 1955 to 1986 the area on the dune above Mare Yomboli was cleared and used for cultivation and f...,LAND_USE(fields_on_pediplain),DECREASES_BY,CHANGE(abandonment),HIGH
+144,This credit is the main determinant in the allocation of land to cotton production,credit,CAUSES,> cotton production,HIGH
+145,The severe droughts which prevailed in the region in early 1970s and again in 1983 84 have had a sig...,droughts,CAUSES,impact,HIGH
+145,The severe droughts which prevailed in the region in early 1970s and again in 1983 84 have had a sig...,impact,AFFECTS,role_of_livestock,HIGH
+146,West Africa has rapid population growth rate associated with an increase in urbanization,Africa,LOCATED_IN,West Africa,HIGH
+146,West Africa has rapid population growth rate associated with an increase in urbanization,population_growth_rate,CAUSES,increase,MEDIUM
+146,West Africa has rapid population growth rate associated with an increase in urbanization,increase,ENABLES,urbanization,HIGH
+147,used NDVI from AVHRR 1 km and SPOT VEGETATION VGT to assess land cover performance in Senegal from 1...,NDVI,FROM_TO,> used NDVI,HIGH
+147,used NDVI from AVHRR 1 km and SPOT VEGETATION VGT to assess land cover performance in Senegal from 1...,assessment,OCCURS_DURING,> from 1992 to 2001,HIGH
+147,used NDVI from AVHRR 1 km and SPOT VEGETATION VGT to assess land cover performance in Senegal from 1...,researcher,LOCATED_IN,> Senegal,HIGH
+151,For example expansion of agricultural land is related to the distance to irrigation by dams to settl...,agricultural_expansion,CAUSES,expansion,HIGH
+152,Overall the gain of severe and extremely severe desertification land was less than the loss area and...,gain_of_desertification_land,DECREASES_BY,loss_area,HIGH
+152,Overall the gain of severe and extremely severe desertification land was less than the loss area and...,gain_of_non_desertification_and_light_desertification_land,INCREASES_BY,gain_area,HIGH
+153,With the exception of Eastern Africa area in forest declined in all regions with the most pronounced...,forest,DECREASES_BY,> 40%,HIGH
+153,With the exception of Eastern Africa area in forest declined in all regions with the most pronounced...,Northern Africa,LOCATED_IN,> Eastern Africa,MEDIUM
+153,With the exception of Eastern Africa area in forest declined in all regions with the most pronounced...,forest,CAUSES,> decline,MEDIUM
+153,With the exception of Eastern Africa area in forest declined in all regions with the most pronounced...,decline,OCCURS_DURING,> all regions,HIGH
+153,With the exception of Eastern Africa area in forest declined in all regions with the most pronounced...,decline,AFFECTS,> forest,HIGH
+154,Secondly we provide rare direct support for the long standing hypothesis that runaway fire feedbacks...,fire_feedbacks,CAUSES,savannization,HIGH
+155,Accordingly sites 1 4 fall within land cover types that account for almost 75 % of land with some tr...,"{1, 4}",LOCATED_IN,{sites},HIGH
+156,1998 The issue of field expansion and reallocation in semiarid regions can serve to throw light on w...,changing_opportunities,CAUSES,land_use_development,HIGH
+156,1998 The issue of field expansion and reallocation in semiarid regions can serve to throw light on w...,conditions_of_changing_opportunities,ENABLES,land_use_development,HIGH
+156,1998 The issue of field expansion and reallocation in semiarid regions can serve to throw light on w...,semiarid_regions,LOCATED_IN,regions_under_study,MEDIUM
+156,1998 The issue of field expansion and reallocation in semiarid regions can serve to throw light on w...,climatic_modifications,CAUSES,changing_opportunities,HIGH
+157,Indirectly population growth leads to changes in agricultural land use practices due to land pressur...,population_growth,CAUSES,changes,HIGH
+157,Indirectly population growth leads to changes in agricultural land use practices due to land pressur...,changes,AFFECTS,agricultural_land_use,MEDIUM
+158,These data suggest that the potential for international supply chain measures to help reduce tropica...,deforestation,CAUSES,forest_loss,HIGH
+158,These data suggest that the potential for international supply chain measures to help reduce tropica...,sustainable_rural_development,ENABLES,reduction_of_deforestation,MEDIUM
+158,These data suggest that the potential for international supply chain measures to help reduce tropica...,territorial_governance,ENABLES,reduction_of_deforestation,MEDIUM
+158,These data suggest that the potential for international supply chain measures to help reduce tropica...,reduction_of_deforestation,AFFECTS,tropical_deforestation,HIGH
+158,These data suggest that the potential for international supply chain measures to help reduce tropica...,interventions,OCCURS_DURING,deforestation_risk_areas,MEDIUM
+158,These data suggest that the potential for international supply chain measures to help reduce tropica...,strengthening_sustainable_rural_development_and_territorial_governance,AFFECTS,potential_for_international_supply_chain_measures,MEDIUM
+160,The increase in urban jobs accelerated urban population growth and by pulling rural people off of th...,urban_growth,CAUSES,agricultural_expansion,HIGH
+160,The increase in urban jobs accelerated urban population growth and by pulling rural people off of th...,urban_jobs,INCREASES_BY,number,HIGH
+161,The transhumance shed provides a useful geographic scale between the individual village territory an...,transhumance_shed,LOCATED_IN,West_Africa,HIGH
+161,The transhumance shed provides a useful geographic scale between the individual village territory an...,herd_mobility,AFFECTS,crop_damage,MEDIUM
+162,The man made LULC changes had a crucial contribution to the increase of actual ET and SURQ mainly by...,man_made_changes,CAUSES,LULC_changes,HIGH
+162,The man made LULC changes had a crucial contribution to the increase of actual ET and SURQ mainly by...,LULC_changes,INCREASES_BY,actual_ET_and_SURQ,MEDIUM
+164,However the amount of forest cover had decreased while the amount of farmland had increased,forest,DECREASES_BY,amount,HIGH
+164,However the amount of forest cover had decreased while the amount of farmland had increased,farmland,INCREASES_BY,amount,HIGH
+165,Afforestation and natural regeneration of forests and woodlands in some countries have reduced the l...,afforestation,CAUSES,reduction,HIGH
+165,Afforestation and natural regeneration of forests and woodlands in some countries have reduced the l...,reduction,DECREASES_BY,forest_loss,HIGH
+165,Afforestation and natural regeneration of forests and woodlands in some countries have reduced the l...,forest_loss,AFFECTS,forests,HIGH
+165,Afforestation and natural regeneration of forests and woodlands in some countries have reduced the l...,forests,LOCATED_IN,some_countries,MEDIUM
+167,Herders on the other hand see the steady expansion of agricultural fields into their grazing areas a...,herders,AFFECTS,agricultural fields,HIGH
+167,Herders on the other hand see the steady expansion of agricultural fields into their grazing areas a...,expansion,CAUSES,change_in_grazing_areas,MEDIUM
+169,Within a distance of 300 km patterns of transitions approached those of the entire region and involv...,transitions,OCCURS_DURING,entire region,HIGH
+170,Some singularities stood out on the dry margin Savanna to steppe transitions emerged as a commonly o...,savanna,LOCATED_IN,sahel,HIGH
+170,Some singularities stood out on the dry margin Savanna to steppe transitions emerged as a commonly o...,tree_cover,TRANSFORMS_TO,loss,MEDIUM
+171,Based on an analysis of long term rainfall measurements in major cocoa growing areas of Co te d Ivoi...,climate,CAUSES,migrations,HIGH
+171,Based on an analysis of long term rainfall measurements in major cocoa growing areas of Co te d Ivoi...,forests,LOCATED_IN,Co te d Ivoire,HIGH
+171,Based on an analysis of long term rainfall measurements in major cocoa growing areas of Co te d Ivoi...,climate,AFFECTS,migrations,MEDIUM
+173,Here we synthesize available palaeo proxies and historical maps to reconstruct forest extent in trop...,forest_extent_around_1900,LOCATED_IN,tropical_Africa,HIGH
+174,The contribution of forests declined in Northern and Western Africa from 21 to 15 % and 13 to 11 % i...,forests,DECREASES_BY,6% (total HANPP),HIGH
+174,The contribution of forests declined in Northern and Western Africa from 21 to 15 % and 13 to 11 % i...,forests,DECREASES_BY,6% (Northern Africa),HIGH
+174,The contribution of forests declined in Northern and Western Africa from 21 to 15 % and 13 to 11 % i...,forests,DECREASES_BY,6% (Western Africa),HIGH
+174,The contribution of forests declined in Northern and Western Africa from 21 to 15 % and 13 to 11 % i...,forests,INCREASES_BY,0.57% (Eastern Africa),HIGH
+174,The contribution of forests declined in Northern and Western Africa from 21 to 15 % and 13 to 11 % i...,forests,INCREASES_BY,1.5% (Central Africa),HIGH
+174,The contribution of forests declined in Northern and Western Africa from 21 to 15 % and 13 to 11 % i...,forests,INCREASES_BY,5.5% (Southern Africa),HIGH
+174,The contribution of forests declined in Northern and Western Africa from 21 to 15 % and 13 to 11 % i...,total HANPP,FROM_TO,72.5 to 66%,MEDIUM
+174,The contribution of forests declined in Northern and Western Africa from 21 to 15 % and 13 to 11 % i...,forests,CAUSES,deforestation,MEDIUM
+174,The contribution of forests declined in Northern and Western Africa from 21 to 15 % and 13 to 11 % i...,deforestation,ENABLES,urbanization,MEDIUM
+174,The contribution of forests declined in Northern and Western Africa from 21 to 15 % and 13 to 11 % i...,urbanization,AFFECTS,forests,MEDIUM
+175,shows the spatial distribution of different desertification levels in 2000 2005 2010 2015 and 2020 r...,desertification_process,OCCURS_DURING,2000_to_2020,HIGH
+175,shows the spatial distribution of different desertification levels in 2000 2005 2010 2015 and 2020 r...,desertification_process,AFFECTS,Sahara_loc,HIGH
+175,shows the spatial distribution of different desertification levels in 2000 2005 2010 2015 and 2020 r...,desertification_process,AFFECTS,Danakil_loc,HIGH
+176,The average annual rate of change between two periods was computed by a slightly modified formula us...,average_annual_rate_of_change_percent,FROM_TO,amount_of_land_cover_type_in_time_1,HIGH
+176,The average annual rate of change between two periods was computed by a slightly modified formula us...,amount_of_land_cover_type_in_time_1,MEASURES,average_annual_rate_of_change_percent,HIGH
+176,The average annual rate of change between two periods was computed by a slightly modified formula us...,amount_of_land_cover_type_in_time_2,MEASURES,average_annual_rate_of_change_percent,HIGH
+176,The average annual rate of change between two periods was computed by a slightly modified formula us...,modified_formula,ENABLES,computation_of_average_annual_rate_of_change_percent,HIGH
+176,The average annual rate of change between two periods was computed by a slightly modified formula us...,time_1,OCCURS_DURING,[unspecified],LOW
+176,The average annual rate of change between two periods was computed by a slightly modified formula us...,time_2,OCCURS_DURING,[unspecified],LOW
+177,The most prominent example of this is pasture expansion which is tightly linked to soy expansion and...,pasture_expansion,CAUSES,pasture --EXPANDS_TO--> pasture,MEDIUM
+178,Using both seedlings provided by APAF and their usual plantlets farmers established combinations of ...,farmers,CAUSES,combinations,HIGH
+179,The principal environmental factors causing early herd arrival were identified by local informants a...,local_informants,CAUSES,identification,HIGH
+179,The principal environmental factors causing early herd arrival were identified by local informants a...,environmental_factors,CAUSES,early_herd_arrival,HIGH
+179,The principal environmental factors causing early herd arrival were identified by local informants a...,changes,AFFECTS,rainfall,MEDIUM
+179,The principal environmental factors causing early herd arrival were identified by local informants a...,changes,AFFECTS,land_cover,HIGH
+179,The principal environmental factors causing early herd arrival were identified by local informants a...,changes,AFFECTS,savanna,HIGH
+179,The principal environmental factors causing early herd arrival were identified by local informants a...,changes,AFFECTS,fire_regimes,MEDIUM
+179,The principal environmental factors causing early herd arrival were identified by local informants a...,changes,AFFECTS,pasture_species_composition,HIGH
+179,The principal environmental factors causing early herd arrival were identified by local informants a...,key_parts,LOCATED_IN,agro_pastoral_landscape,HIGH
+179,The principal environmental factors causing early herd arrival were identified by local informants a...,agro_pastoral_landscape,LOCATED_IN,landscape,HIGH
+182,Finally five of the six Congo basin countries that contain almost all of the continent s humid fores...,six | COUNTRIES,LOCATED_IN,Congo,HIGH
+182,Finally five of the six Congo basin countries that contain almost all of the continent s humid fores...,political_economy,AFFECTS,> forest_cover,MEDIUM
+183,Anthropogenic activities such as agricultural reclamation and overgrazing may be primary driver of t...,anthropogenic_activities,CAUSES,desertification_patterns,HIGH
+183,Anthropogenic activities such as agricultural reclamation and overgrazing may be primary driver of t...,desertification_patterns,AFFECTS,these_regions,MEDIUM
+184,Human activities have degraded about 85% of Ghana s Guinea Forest Region,human_activities,CAUSES,deforestation,HIGH
+184,Human activities have degraded about 85% of Ghana s Guinea Forest Region,deforestation,DECREASES_BY,85% --OF--> forest,HIGH
+184,Human activities have degraded about 85% of Ghana s Guinea Forest Region,Ghana,LOCATED_IN,> Guinea Forest Region,MEDIUM
+185,This strategy coupled with the regeneration of logged forest and the maturity of tree crops deforest...,deforestation,CAUSES,forest_loss,HIGH
+185,This strategy coupled with the regeneration of logged forest and the maturity of tree crops deforest...,forest_loss,INCREASES_BY,dense_canopy,MEDIUM
+185,This strategy coupled with the regeneration of logged forest and the maturity of tree crops deforest...,increase,OCCURS_DURING,13year_period,HIGH
+186,Field monitoring of matric potentials did not indicate downward flow at 10 m depth for the millet si...,transition,OCCURS_DURING,5 years ago,HIGH
+187,Actually present day cultivation cycles in southwestern Niger could be considered to consist of 10 y...,cultivation_cycles,OCCURS_DURING,10_years_under_millet,HIGH
+187,Actually present day cultivation cycles in southwestern Niger could be considered to consist of 10 y...,cultivation_cycles,OCCURS_DURING,5_years_of_fallow,HIGH
+187,Actually present day cultivation cycles in southwestern Niger could be considered to consist of 10 y...,southwestern_Niger,LOCATED_IN,Niger,HIGH
+188,and Hausermann confirm that the expansion of water bodies we detected in the Tain District see Figur...,expansion,CAUSES,detection,HIGH
+188,and Hausermann confirm that the expansion of water bodies we detected in the Tain District see Figur...,water bodies,LOCATED_IN,Tain District,HIGH
+188,and Hausermann confirm that the expansion of water bodies we detected in the Tain District see Figur...,Ghana,LOCATED_IN,Tain District,MEDIUM
+188,and Hausermann confirm that the expansion of water bodies we detected in the Tain District see Figur...,Bui dam,CAUSES,expansion,HIGH
+188,and Hausermann confirm that the expansion of water bodies we detected in the Tain District see Figur...,Ghana,LOCATED_IN,Ghana,TAUTOLOGY
+188,and Hausermann confirm that the expansion of water bodies we detected in the Tain District see Figur...,construction,CAUSES,expansion,HIGH
+188,and Hausermann confirm that the expansion of water bodies we detected in the Tain District see Figur...,hydro power generation,ENABLES,expansion,MEDIUM
+189,The annual rate i.e. 0.8% of water bodies loss per year was higher in 2000 2013 i.e. the postdrought...,1975_2000_era,OCCURS_DURING,drought_era,HIGH
+189,The annual rate i.e. 0.8% of water bodies loss per year was higher in 2000 2013 i.e. the postdrought...,2000_2013_era,OCCURS_DURING,postdrought_era,HIGH
+190,2020 The major LULC changes in LCB from 1975 to 2013 stated by were the transition of water bodies a...,changes,OCCURS_DURING,1975-to-2013,HIGH
+190,2020 The major LULC changes in LCB from 1975 to 2013 stated by were the transition of water bodies a...,loss,CAUSES,water_bodies --CHANGE_TO-- other_vegetation,MEDIUM
+190,2020 The major LULC changes in LCB from 1975 to 2013 stated by were the transition of water bodies a...,urban_area,INCREASES_BY,,MEDIUM
+191,Specifically in countries such as the Ivory Coast Ghana and Eastern regions of Tanzania and Mozambiq...,"Ivory Coast, Ghana, Tanzania, Mozambique",LOCATED_IN,countries,HIGH
+192,c Proportions of persistence and change trajectories along the rainfall gradient show steep increase...,human_dominated_land_cover,INCREASES_BY,> fewerest_natural_land_cover,MEDIUM
+192,c Proportions of persistence and change trajectories along the rainfall gradient show steep increase...,recent_2000_2013,OCCURS_DURING,> earlier_1975_2000,HIGH
+193,The increase of crop and bared areas can be explained by the exponential growth of the human populat...,human_population_growth,CAUSES,increase_in_crop_areas,HIGH
+193,The increase of crop and bared areas can be explained by the exponential growth of the human populat...,human_population_growth,CAUSES,increase_in_bared_areas,HIGH
+194,During 2000 2010 the level of desertification has reduced whereas from 2010 to 2015 most areas have ...,2000 2010,OCCURS_DURING,[desertification reduction],HIGH
+194,During 2000 2010 the level of desertification has reduced whereas from 2010 to 2015 most areas have ...,[desertification reduction],FROM_TO,[increase in desertification levels],MEDIUM
+194,During 2000 2010 the level of desertification has reduced whereas from 2010 to 2015 most areas have ...,[increase in desertification levels],OCCURS_DURING,2010 2015,HIGH
+194,During 2000 2010 the level of desertification has reduced whereas from 2010 to 2015 most areas have ...,[2012 drought],CAUSES,[increase in desertification levels],MEDIUM
+195,Agricultural intensification on existing farmlands may reduce farm expansion into the remaining fore...,agricultural intensification,CAUSES,reduction,HIGH
+195,Agricultural intensification on existing farmlands may reduce farm expansion into the remaining fore...,existing farmlands,LOCATED_IN,agricultural area,HIGH
+195,Agricultural intensification on existing farmlands may reduce farm expansion into the remaining fore...,remaining forest areas,LOCATED_IN,forested area,HIGH
+196,In contrast to the short rotation fallows intercropping with coppicing species increases grain yield...,intercropping,CAUSES,increases,HIGH
+196,In contrast to the short rotation fallows intercropping with coppicing species increases grain yield...,fallows,ENABLES,increases,MEDIUM
+196,In contrast to the short rotation fallows intercropping with coppicing species increases grain yield...,increases,AFFECTS,grain,HIGH
+196,In contrast to the short rotation fallows intercropping with coppicing species increases grain yield...,many years,OCCURS_DURING,increases,HIGH
+197,Shorter fallow periods have led to the expansion of cropping systems into ever more marginal dryland...,fallow,CAUSES,shorter_periods,HIGH
+198,The acceleration of transhumance movements which contribute directly to incidents of crop damage is ...,transhumance_movements,CAUSES,incidents_of_crop_damage,HIGH
+198,The acceleration of transhumance movements which contribute directly to incidents of crop damage is ...,two_principal_landscape_changes,CAUSES,incidents_of_crop_damage,MEDIUM
+198,The acceleration of transhumance movements which contribute directly to incidents of crop damage is ...,long_term_effects_of_the_great_drought_of_1984,CAUSES,expansion_of_short_fallow_agriculture,HIGH
+198,The acceleration of transhumance movements which contribute directly to incidents of crop damage is ...,incidents_of_crop_damage,AFFECTS,crops,HIGH
+198,The acceleration of transhumance movements which contribute directly to incidents of crop damage is ...,landscape_changes,OCCURS_DURING,two_principal_landscape_changes,HIGH
+198,The acceleration of transhumance movements which contribute directly to incidents of crop damage is ...,two_principal_landscape_changes,OCCURS_DURING,time_period,MEDIUM
+199,Nevertheless the shrubs cluster has increased over time within Volta basin and this could be attribu...,shrubs_cluster,INCREASES_BY,size,HIGH
+199,Nevertheless the shrubs cluster has increased over time within Volta basin and this could be attribu...,agroforestry,CAUSES,shrubs_cluster_growth,MEDIUM
+199,Nevertheless the shrubs cluster has increased over time within Volta basin and this could be attribu...,Volta_basin,LOCATED_IN,Volta,HIGH
+199,Nevertheless the shrubs cluster has increased over time within Volta basin and this could be attribu...,time,OCCURS_DURING,sentence,LOW
+200,Despite the government s effort s to maint ain and protect Ghana s forest reserves deforestation con...,government,CAUSES,deforestation,HIGH
+200,Despite the government s effort s to maint ain and protect Ghana s forest reserves deforestation con...,Ghana,LOCATED_IN,Africa,HIGH
+200,Despite the government s effort s to maint ain and protect Ghana s forest reserves deforestation con...,forest,DECREASES_BY,deforestation,MEDIUM
+201,In addition the increase in population growth rate has also led to an increase in food consumption a...,population_growth_rate,CAUSES,increase,HIGH
+201,In addition the increase in population growth rate has also led to an increase in food consumption a...,increase,INCREASES_BY,food_consumption,MEDIUM
+201,In addition the increase in population growth rate has also led to an increase in food consumption a...,food_consumption,INCREASES_BY,food_production,MEDIUM
+201,In addition the increase in population growth rate has also led to an increase in food consumption a...,decline,DECREASES_BY,vegetative_areas,HIGH
+202,We observed deforestation patterns in the Ashanti region of Ghana from 1986 to 2015 using Landsat im...,deforestation,CAUSES,forest_loss,HIGH
+202,We observed deforestation patterns in the Ashanti region of Ghana from 1986 to 2015 using Landsat im...,observation,OCCURS_DURING,1986-to-2015,HIGH
+203,Perhaps the most relevant aspect of the relationships between climate change and peasant agriculture...,climate change,CAUSES,crop failure,HIGH
+203,Perhaps the most relevant aspect of the relationships between climate change and peasant agriculture...,use of drought tolerant local varieties,INCREASES_BY,coping ability,MEDIUM
+203,Perhaps the most relevant aspect of the relationships between climate change and peasant agriculture...,climate change,AFFECTS,peasant agriculture,HIGH
+203,Perhaps the most relevant aspect of the relationships between climate change and peasant agriculture...,coping with climate change,ENABLES,minimizing crop failure,MEDIUM
+204,5 Land cover change associated with population pressure,population_pressure,CAUSES,land_cover_change,HIGH
+205,. Agriculture along this route has been expanding rapidly for two decades as rural populations have ...,Rural populations,CAUSES,expansion of agriculture,HIGH
+205,. Agriculture along this route has been expanding rapidly for two decades as rural populations have ...,Expansion of agriculture,OCCURS_DURING,last two decades,HIGH
+206,The savanna cluster presents an increasing trend during 2002 2016 period probably due to agroforestr...,savanna_cluster,OCCURS_DURING,2002_to_2016,HIGH
+206,The savanna cluster presents an increasing trend during 2002 2016 period probably due to agroforestr...,agroforestry_practice,CAUSES,increasing_trend,MEDIUM
+208,The majority of other cash crops was converted to food crop fallow areas 1067.98 km 2,converted,CAUSES,crops ---> fallow,MEDIUM
+208,The majority of other cash crops was converted to food crop fallow areas 1067.98 km 2,1067.98 km²,MEASURES,extent_of -->(crops --> fallow),HIGH
+210,. We present the first wall to wall map of land use following deforestation across Africa covering f...,deforestation,CAUSES,forest_loss,HIGH
+210,. We present the first wall to wall map of land use following deforestation across Africa covering f...,forest_loss,OCCURS_DURING,"""the year 2001 to 2020""",MEDIUM
+210,. We present the first wall to wall map of land use following deforestation across Africa covering f...,Africa,LOCATED_IN,continent,HIGH
+211,These differences are often related to different soils and climates crop types and rotations intensi...,soils,AFFECTS,crops,HIGH
+211,These differences are often related to different soils and climates crop types and rotations intensi...,climates,AFFECTS,crops,HIGH
+213,According to respondents the effects of deforestation could be either positive 51.34% or negative 48...,deforestation,CAUSES,effects,HIGH
+214,It is common to observe pastoral activities in the far north and crop farming in the southern part,pastoral_activities,LOCATED_IN,far_north,HIGH
+214,It is common to observe pastoral activities in the far north and crop farming in the southern part,crop_farming,LOCATED_IN,southern_part,HIGH
+215,In contrast relative net gain in open water bodies was observed in the humid region during the perio...,period_of_1975_2000,OCCURS_DURING,[open_water_bodies_gain],HIGH
+215,In contrast relative net gain in open water bodies was observed in the humid region during the perio...,period_of_1975_2000,OCCURS_DURING,[humid_region],HIGH
+215,In contrast relative net gain in open water bodies was observed in the humid region during the perio...,[period_of_2000_2013],OCCURS_DURING,[open_water_bodies_loss],HIGH
+216,Deforestation can also be followed by several successive agricultural land uses,deforestation,CAUSES,forest_loss,HIGH
+218,We identify three remote tropical regions that are affected by the deforestation in this month Figur...,deforestation,CAUSES,forest loss,HIGH
+218,We identify three remote tropical regions that are affected by the deforestation in this month Figur...,this month,OCCURS_DURING,figure,MEDIUM
+219,In Fakara the landscape was converted from a Sahelian savanna to largely eroded agricultural agrofor...,Fakara,LOCATED_IN,[Sahelian],HIGH
+219,In Fakara the landscape was converted from a Sahelian savanna to largely eroded agricultural agrofor...,[the 20th century],OCCURS_DURING,conversion,MEDIUM
+220,The result reveals that the Mono basin Table land cover presents an increase in built up agricultura...,built up agricultural land,INCREASES_BY,built up,HIGH
+220,The result reveals that the Mono basin Table land cover presents an increase in built up agricultura...,forest savanna,DECREASES_BY,vegetative clusters,MEDIUM
+221,However the current global land use change involves extensive loss of vegetation cover around the re...,loss,CAUSES,decrease,HIGH
+221,However the current global land use change involves extensive loss of vegetation cover around the re...,vegetation_cover,DECREASES_BY,loss,MEDIUM
+221,However the current global land use change involves extensive loss of vegetation cover around the re...,reserves,LOCATED_IN,global_land,HIGH
+221,However the current global land use change involves extensive loss of vegetation cover around the re...,change,OCCURS_DURING,current_global,HIGH
+221,However the current global land use change involves extensive loss of vegetation cover around the re...,loss,AFFECTS,vulnerability,MEDIUM
+221,However the current global land use change involves extensive loss of vegetation cover around the re...,loss,AFFECTS,ecological_isolation,MEDIUM
+221,However the current global land use change involves extensive loss of vegetation cover around the re...,loss,INCREASES_BY,extent,LOW
+222,In the Peanut Basin West Central eco region in Senegal cultivated area peaked to 80% of the land in ...,Peanut Basin West Central eco region,LOCATED_IN,Senegal,HIGH
+222,In the Peanut Basin West Central eco region in Senegal cultivated area peaked to 80% of the land in ...,Cultivated area,DECREASES_BY,13%,MEDIUM
+222,In the Peanut Basin West Central eco region in Senegal cultivated area peaked to 80% of the land in ...,Farmers,CAUSES,agricultural subsidies,LOW
+222,In the Peanut Basin West Central eco region in Senegal cultivated area peaked to 80% of the land in ...,Agricultural subsidies,ENABLES,high cultivation,MEDIUM
+222,In the Peanut Basin West Central eco region in Senegal cultivated area peaked to 80% of the land in ...,Cultivated area,OCCURS_DURING,mid 1980s,MEDIUM
+222,In the Peanut Basin West Central eco region in Senegal cultivated area peaked to 80% of the land in ...,Cultivated area,OCCURS_DURING,2000,MEDIUM
+222,In the Peanut Basin West Central eco region in Senegal cultivated area peaked to 80% of the land in ...,Cultivated area,FROM_TO,80% to 67%,HIGH
+223,A high increase occurred for farm fallow land rising from 0.022% of the protected area in 1984 to 12...,farm_fallow,INCREASES_BY,percentage_2013,HIGH
+223,A high increase occurred for farm fallow land rising from 0.022% of the protected area in 1984 to 12...,percentage_1984,FROM_TO,percentage_2013,HIGH
+223,A high increase occurred for farm fallow land rising from 0.022% of the protected area in 1984 to 12...,protected_area,LOCATED_IN,space,MEDIUM
+224,Although early herd arrival in 2009 was attributed to low rainfall in the Sahel rains recovered in 2...,2009,OCCURS_DURING,early herd arrival,HIGH
+224,Although early herd arrival in 2009 was attributed to low rainfall in the Sahel rains recovered in 2...,low rainfall,CAUSES,early herd arrival,MEDIUM
+224,Although early herd arrival in 2009 was attributed to low rainfall in the Sahel rains recovered in 2...,2010,OCCURS_DURING,rains recovery,HIGH
+224,Although early herd arrival in 2009 was attributed to low rainfall in the Sahel rains recovered in 2...,ephemeral surface water,LOCATED_IN,northern zone,MEDIUM
+224,Although early herd arrival in 2009 was attributed to low rainfall in the Sahel rains recovered in 2...,grazing resources,AFFECTS,herders,HIGH
+224,Although early herd arrival in 2009 was attributed to low rainfall in the Sahel rains recovered in 2...,inadequate grazing resources,CAUSES,early herd arrival,MEDIUM
+225,In West Africa the land cover category settlement made up 0.3% and 0.7% of the total study region in...,West Africa,LOCATED_IN,study region,HIGH
+225,In West Africa the land cover category settlement made up 0.3% and 0.7% of the total study region in...,0.3%,MEASURES,percentage_of_settlement_in_1975,HIGH
+225,In West Africa the land cover category settlement made up 0.3% and 0.7% of the total study region in...,0.7%,MEASURES,percentage_of_settlement_in_2013,HIGH
+227,The ancient dunes are the most important areas of millet cultivation,ancient_dunes,LOCATED_IN,millet_cultivation,HIGH
+229,Thus farmland persists and increases each year at the expense of forest woodland and tree savanna . ,forest,DECREASES_BY,> farmland,HIGH
+230,The area of natural vegetation forest woodland and tree savanna that was considered degraded increas...,natural vegetation,INCREASES_BY,degraded forest woodland and tree savanna,HIGH
+230,The area of natural vegetation forest woodland and tree savanna that was considered degraded increas...,area,MEASURES,4.1%,HIGH
+230,The area of natural vegetation forest woodland and tree savanna that was considered degraded increas...,first,OCCURS_DURING,time_period_1,HIGH
+230,The area of natural vegetation forest woodland and tree savanna that was considered degraded increas...,second,OCCURS_DURING,time_period_2,HIGH
+231,At the basin level the major transition in the three watersheds was from bare land and forest to nat...,major_transition,AFFECTS,three_watersheds,HIGH
+232,estimate is thus a metric of deforestation occurring in landscapes where agriculture is the dominant...,deforestation,CAUSES,forest_loss,HIGH
+232,estimate is thus a metric of deforestation occurring in landscapes where agriculture is the dominant...,deforestation,CAUSES,> forest_loss,HIGH

@@ -1,0 +1,5613 @@
+[
+  {
+    "id": 0,
+    "sentence": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.",
+    "entities": [
+      {
+        "text": "results",
+        "label": "CHANGE",
+        "start_char": 11,
+        "end_char": 18,
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "reveal",
+          "full_phrase": "Simulation results"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NNS",
+          "dep": "nsubj",
+          "head": "reveal",
+          "head_pos": "VERB",
+          "children": [
+            "Simulation"
+          ],
+          "lemma": "result"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "Simulation results",
+            "root": "results",
+            "root_dep": "nsubj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "Simulation results reveal",
+          "clause_type": "main",
+          "connector": "that"
+        }
+      },
+      {
+        "text": "Thimphu",
+        "label": "LOC",
+        "start_char": 48,
+        "end_char": 55,
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "changed",
+          "full_phrase": "the landscape of"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "PROPN",
+          "tag": "NNP",
+          "dep": "compound",
+          "head": "city",
+          "head_pos": "NOUN",
+          "children": [],
+          "lemma": "Thimphu"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "Thimphu city",
+            "root": "city",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 1,
+          "clause_text": "that the landscape of Thimphu city has changed considerably during the study period",
+          "clause_type": "subordinate",
+          "connector": "and"
+        }
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 56,
+        "end_char": 60,
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "changed",
+          "full_phrase": "the landscape of"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "pobj",
+          "head": "of",
+          "head_pos": "ADP",
+          "children": [
+            "Thimphu"
+          ],
+          "lemma": "city"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "Thimphu city",
+            "root": "city",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 1,
+          "clause_text": "that the landscape of Thimphu city has changed considerably during the study period",
+          "clause_type": "subordinate",
+          "connector": "and"
+        }
+      },
+      {
+        "text": "changed",
+        "label": "CHANGE",
+        "start_char": 65,
+        "end_char": 72,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "of",
+          "full_phrase": "Thimphu city"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "VERB",
+          "tag": "VBN",
+          "dep": "ccomp",
+          "head": "reveal",
+          "head_pos": "VERB",
+          "children": [
+            "that",
+            "landscape",
+            "has",
+            "considerably",
+            "during",
+            "and",
+            "predicted"
+          ],
+          "lemma": "change"
+        },
+        "related_phrases": [],
+        "clause_info": {
+          "clause_index": 1,
+          "clause_text": "that the landscape of Thimphu city has changed considerably during the study period",
+          "clause_type": "subordinate",
+          "connector": "and"
+        }
+      },
+      {
+        "text": "change",
+        "label": "CHANGE",
+        "start_char": 118,
+        "end_char": 124,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "during",
+          "full_phrase": "the study period"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "VERB",
+          "tag": "VBN",
+          "dep": "ccomp",
+          "head": "reveal",
+          "head_pos": "VERB",
+          "children": [
+            "that",
+            "landscape",
+            "has",
+            "considerably",
+            "during",
+            "and",
+            "predicted"
+          ],
+          "lemma": "change"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "the change trend",
+            "root": "trend",
+            "root_dep": "nsubjpass"
+          }
+        ],
+        "clause_info": {
+          "found": false
+        }
+      },
+      {
+        "text": "2050",
+        "label": "DATE",
+        "start_char": 161,
+        "end_char": 165,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "into",
+          "full_phrase": "2050"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NUM",
+          "tag": "CD",
+          "dep": "pobj",
+          "head": "into",
+          "head_pos": "ADP",
+          "children": [],
+          "lemma": "2050"
+        },
+        "related_phrases": [],
+        "clause_info": {
+          "found": false
+        }
+      },
+      {
+        "text": "landscape",
+        "label": "DISCOVERED_SUBJECT",
+        "start_char": 35,
+        "end_char": 44,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_subject",
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "changed",
+          "full_phrase": "the landscape of"
+        }
+      },
+      {
+        "text": "trend",
+        "label": "DISCOVERED_SUBJECT",
+        "start_char": 125,
+        "end_char": 130,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_subject",
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubjpass",
+          "head_verb": "predicted",
+          "full_phrase": "the change trend"
+        }
+      },
+      {
+        "text": "period",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 103,
+        "end_char": 109,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "during",
+          "full_phrase": "the study period"
+        }
+      },
+      {
+        "text": "the landscape",
+        "label": "DISCOVERED_LULC",
+        "start_char": 31,
+        "end_char": 44,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "landscape",
+          "root_dep": "nsubj"
+        }
+      },
+      {
+        "text": "the change trend",
+        "label": "DISCOVERED_LULC",
+        "start_char": 114,
+        "end_char": 130,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "trend",
+          "root_dep": "nsubjpass"
+        }
+      }
+    ],
+    "relations": [
+      {
+        "source": "changed",
+        "source_entity": {
+          "text": "changed",
+          "label": "CHANGE",
+          "start_char": 65,
+          "end_char": 72,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "of",
+            "full_phrase": "Thimphu city"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "VERB",
+            "tag": "VBN",
+            "dep": "ccomp",
+            "head": "reveal",
+            "head_pos": "VERB",
+            "children": [
+              "that",
+              "landscape",
+              "has",
+              "considerably",
+              "during",
+              "and",
+              "predicted"
+            ],
+            "lemma": "change"
+          },
+          "related_phrases": [],
+          "clause_info": {
+            "clause_index": 1,
+            "clause_text": "that the landscape of Thimphu city has changed considerably during the study period",
+            "clause_type": "subordinate",
+            "connector": "and"
+          }
+        },
+        "relationship": "changes_to",
+        "target": "period",
+        "target_entity": {
+          "text": "period",
+          "label": "DISCOVERED_OBJECT",
+          "start_char": 103,
+          "end_char": 109,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_object",
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "during",
+            "full_phrase": "the study period"
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "passive voice, subject-verb-object structure, dependency: nsubjpass",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.7,
+          "structural_validity": 0.6,
+          "overall_quality": 0.5900000000000001
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "results",
+        "source_entity": {
+          "text": "results",
+          "label": "CHANGE",
+          "start_char": 11,
+          "end_char": 18,
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "reveal",
+            "full_phrase": "Simulation results"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NNS",
+            "dep": "nsubj",
+            "head": "reveal",
+            "head_pos": "VERB",
+            "children": [
+              "Simulation"
+            ],
+            "lemma": "result"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "Simulation results",
+              "root": "results",
+              "root_dep": "nsubj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "Simulation results reveal",
+            "clause_type": "main",
+            "connector": "that"
+          }
+        },
+        "relationship": "reveals_information_about",
+        "target": "Thimphu",
+        "target_entity": {
+          "text": "Thimphu",
+          "label": "LOC",
+          "start_char": 48,
+          "end_char": 55,
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "changed",
+            "full_phrase": "the landscape of"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "PROPN",
+            "tag": "NNP",
+            "dep": "compound",
+            "head": "city",
+            "head_pos": "NOUN",
+            "children": [],
+            "lemma": "Thimphu"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "Thimphu city",
+              "root": "city",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 1,
+            "clause_text": "that the landscape of Thimphu city has changed considerably during the study period",
+            "clause_type": "subordinate",
+            "connector": "and"
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "main clause, subject-predicate relationship",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.8999999999999999,
+          "structural_validity": 0.6,
+          "overall_quality": 0.6499999999999999
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "Thimphu",
+        "source_entity": {
+          "text": "Thimphu",
+          "label": "LOC",
+          "start_char": 48,
+          "end_char": 55,
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "changed",
+            "full_phrase": "the landscape of"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "PROPN",
+            "tag": "NNP",
+            "dep": "compound",
+            "head": "city",
+            "head_pos": "NOUN",
+            "children": [],
+            "lemma": "Thimphu"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "Thimphu city",
+              "root": "city",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 1,
+            "clause_text": "that the landscape of Thimphu city has changed considerably during the study period",
+            "clause_type": "subordinate",
+            "connector": "and"
+          }
+        },
+        "relationship": "has_undergone_change",
+        "target": "landscape",
+        "target_entity": {
+          "text": "landscape",
+          "label": "DISCOVERED_SUBJECT",
+          "start_char": 35,
+          "end_char": 44,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_subject",
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "changed",
+            "full_phrase": "the landscape of"
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "active voice, subject-verb-object structure, dependency: dobj",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.7,
+          "structural_validity": 0.6,
+          "overall_quality": 0.5900000000000001
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "Thimphu",
+        "source_entity": {
+          "text": "Thimphu",
+          "label": "LOC",
+          "start_char": 48,
+          "end_char": 55,
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "changed",
+            "full_phrase": "the landscape of"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "PROPN",
+            "tag": "NNP",
+            "dep": "compound",
+            "head": "city",
+            "head_pos": "NOUN",
+            "children": [],
+            "lemma": "Thimphu"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "Thimphu city",
+              "root": "city",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 1,
+            "clause_text": "that the landscape of Thimphu city has changed considerably during the study period",
+            "clause_type": "subordinate",
+            "connector": "and"
+          }
+        },
+        "relationship": "is_located_in",
+        "target": "the landscape",
+        "target_entity": {
+          "text": "the landscape",
+          "label": "DISCOVERED_LULC",
+          "start_char": 31,
+          "end_char": 44,
+          "confidence": "LOW",
+          "discovery_method": "grammar_noun_phrase",
+          "grammatical_role": {
+            "role": "noun_phrase",
+            "root": "landscape",
+            "root_dep": "nsubj"
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "preposition \"of\" in subordinate clause, spatial relationship",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 1.0,
+          "structural_validity": 0.6,
+          "overall_quality": 0.6799999999999999
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "results",
+        "source_entity": {
+          "text": "results",
+          "label": "CHANGE",
+          "start_char": 11,
+          "end_char": 18,
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "reveal",
+            "full_phrase": "Simulation results"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NNS",
+            "dep": "nsubj",
+            "head": "reveal",
+            "head_pos": "VERB",
+            "children": [
+              "Simulation"
+            ],
+            "lemma": "result"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "Simulation results",
+              "root": "results",
+              "root_dep": "nsubj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "Simulation results reveal",
+            "clause_type": "main",
+            "connector": "that"
+          }
+        },
+        "relationship": "affects",
+        "target": "period",
+        "target_entity": {
+          "text": "period",
+          "label": "DISCOVERED_OBJECT",
+          "start_char": 103,
+          "end_char": 109,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_object",
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "during",
+            "full_phrase": "the study period"
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "passive voice, subject-verb-object structure, dependency: nsubjpass",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.8,
+          "semantic_coherence": 0.5,
+          "structural_validity": 0.6,
+          "overall_quality": 0.6500000000000001
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "2050",
+        "source_entity": {
+          "text": "2050",
+          "label": "DATE",
+          "start_char": 161,
+          "end_char": 165,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "into",
+            "full_phrase": "2050"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NUM",
+            "tag": "CD",
+            "dep": "pobj",
+            "head": "into",
+            "head_pos": "ADP",
+            "children": [],
+            "lemma": "2050"
+          },
+          "related_phrases": [],
+          "clause_info": {
+            "found": false
+          }
+        },
+        "relationship": "happened_during",
+        "target": "trend",
+        "target_entity": {
+          "text": "trend",
+          "label": "DISCOVERED_SUBJECT",
+          "start_char": 125,
+          "end_char": 130,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_subject",
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubjpass",
+            "head_verb": "predicted",
+            "full_phrase": "the change trend"
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "temporal prepositional phrase \"during the study period\"",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.8999999999999999,
+          "structural_validity": 0.6,
+          "overall_quality": 0.6499999999999999
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "period",
+        "source_entity": {
+          "text": "period",
+          "label": "DISCOVERED_OBJECT",
+          "start_char": 103,
+          "end_char": 109,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_object",
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "during",
+            "full_phrase": "the study period"
+          }
+        },
+        "relationship": "will_continue_into",
+        "target": "city",
+        "target_entity": {
+          "text": "city",
+          "label": "LULC",
+          "start_char": 56,
+          "end_char": 60,
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "changed",
+            "full_phrase": "the landscape of"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "pobj",
+            "head": "of",
+            "head_pos": "ADP",
+            "children": [
+              "Thimphu"
+            ],
+            "lemma": "city"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "Thimphu city",
+              "root": "city",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 1,
+            "clause_text": "that the landscape of Thimphu city has changed considerably during the study period",
+            "clause_type": "subordinate",
+            "connector": "and"
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "continuation clause, future tense \"is predicted to continue\"",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.8999999999999999,
+          "structural_validity": 0.6,
+          "overall_quality": 0.6499999999999999
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      }
+    ],
+    "quality_metrics": {
+      "total_extracted": 7,
+      "total_accepted": 7,
+      "average_quality": 0.6371428571428571
+    }
+  },
+  {
+    "id": 1,
+    "sentence": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",
+    "entities": [
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start_char": 33,
+        "end_char": 41,
+        "grammatical_role": {
+          "role": "object",
+          "type": "dobj",
+          "head_verb": "observed",
+          "full_phrase": "a significant increase"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "dobj",
+          "head": "observed",
+          "head_pos": "VERB",
+          "children": [
+            "a",
+            "significant",
+            "(",
+            "%",
+            ")"
+          ],
+          "lemma": "increase"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "a significant increase",
+            "root": "increase",
+            "root_dep": "dobj"
+          },
+          {
+            "type": "noun_phrase",
+            "text": "a slight increase",
+            "root": "increase",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "12.77%",
+        "label": "PERCENT",
+        "start_char": 43,
+        "end_char": 49,
+        "grammatical_role": {
+          "role": "object",
+          "type": "dobj",
+          "head_verb": "observed",
+          "full_phrase": "a significant increase"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NUM",
+          "tag": "CD",
+          "dep": "nummod",
+          "head": "%",
+          "head_pos": "NOUN",
+          "children": [],
+          "lemma": "12.77"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "12.77%",
+            "root": "%",
+            "root_dep": "appos"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 73,
+        "end_char": 77,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "in",
+          "full_phrase": "built area from"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NUM",
+          "tag": "CD",
+          "dep": "pobj",
+          "head": "from",
+          "head_pos": "ADP",
+          "children": [],
+          "lemma": "2002"
+        },
+        "related_phrases": [],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "52.88%",
+        "label": "PERCENT",
+        "start_char": 79,
+        "end_char": 85,
+        "grammatical_role": {
+          "role": "modifier",
+          "type": "unknown",
+          "description": "Entity does not match major grammatical roles"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NUM",
+          "tag": "CD",
+          "dep": "nummod",
+          "head": "%",
+          "head_pos": "NOUN",
+          "children": [],
+          "lemma": "52.88"
+        },
+        "related_phrases": [],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "2018",
+        "label": "DATE",
+        "start_char": 90,
+        "end_char": 94,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "to",
+          "full_phrase": "2018"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NUM",
+          "tag": "CD",
+          "dep": "pobj",
+          "head": "to",
+          "head_pos": "ADP",
+          "children": [
+            "(",
+            "%",
+            ")"
+          ],
+          "lemma": "2018"
+        },
+        "related_phrases": [],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "65.5%",
+        "label": "PERCENT",
+        "start_char": 96,
+        "end_char": 101,
+        "grammatical_role": {
+          "role": "modifier",
+          "type": "unknown",
+          "description": "Entity does not match major grammatical roles"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NUM",
+          "tag": "CD",
+          "dep": "nummod",
+          "head": "%",
+          "head_pos": "NOUN",
+          "children": [],
+          "lemma": "65.5"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "65.5%",
+            "root": "%",
+            "root_dep": "appos"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start_char": 125,
+        "end_char": 133,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "by",
+          "full_phrase": "a slight increase in"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "dobj",
+          "head": "observed",
+          "head_pos": "VERB",
+          "children": [
+            "a",
+            "significant",
+            "(",
+            "%",
+            ")"
+          ],
+          "lemma": "increase"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "a significant increase",
+            "root": "increase",
+            "root_dep": "dobj"
+          },
+          {
+            "type": "noun_phrase",
+            "text": "a slight increase",
+            "root": "increase",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "study",
+        "label": "DISCOVERED_SUBJECT",
+        "start_char": 4,
+        "end_char": 9,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_subject",
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "observed",
+          "full_phrase": "The study"
+        }
+      },
+      {
+        "text": "area",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 63,
+        "end_char": 67,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "in",
+          "full_phrase": "built area from"
+        }
+      },
+      {
+        "text": "cover",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 141,
+        "end_char": 146,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "in",
+          "full_phrase": "the cover of"
+        }
+      },
+      {
+        "text": "ground",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 155,
+        "end_char": 161,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "of",
+          "full_phrase": "bare ground"
+        }
+      },
+      {
+        "text": "built-up area",
+        "label": "DISCOVERED_LULC",
+        "start_char": 54,
+        "end_char": 67,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "area",
+          "root_dep": "pobj"
+        }
+      },
+      {
+        "text": "the cover",
+        "label": "DISCOVERED_LULC",
+        "start_char": 137,
+        "end_char": 146,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "cover",
+          "root_dep": "pobj"
+        }
+      }
+    ],
+    "relations": [
+      {
+        "source": "2002",
+        "source_entity": {
+          "text": "2002",
+          "label": "DATE",
+          "start_char": 73,
+          "end_char": 77,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "in",
+            "full_phrase": "built area from"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NUM",
+            "tag": "CD",
+            "dep": "pobj",
+            "head": "from",
+            "head_pos": "ADP",
+            "children": [],
+            "lemma": "2002"
+          },
+          "related_phrases": [],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "relationship": "changes_to",
+        "target": "65.5%",
+        "target_entity": {
+          "text": "65.5%",
+          "label": "PERCENT",
+          "start_char": 96,
+          "end_char": 101,
+          "grammatical_role": {
+            "role": "modifier",
+            "type": "unknown",
+            "description": "Entity does not match major grammatical roles"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NUM",
+            "tag": "CD",
+            "dep": "nummod",
+            "head": "%",
+            "head_pos": "NOUN",
+            "children": [],
+            "lemma": "65.5"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "65.5%",
+              "root": "%",
+              "root_dep": "appos"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "object is affected by change described in verb",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.6,
+          "semantic_coherence": 0.5,
+          "structural_validity": 0.5,
+          "overall_quality": 0.54
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "2002",
+        "source_entity": {
+          "text": "2002",
+          "label": "DATE",
+          "start_char": 73,
+          "end_char": 77,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "in",
+            "full_phrase": "built area from"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NUM",
+            "tag": "CD",
+            "dep": "pobj",
+            "head": "from",
+            "head_pos": "ADP",
+            "children": [],
+            "lemma": "2002"
+          },
+          "related_phrases": [],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "relationship": "measures",
+        "target": "2018",
+        "target_entity": {
+          "text": "2018",
+          "label": "DATE",
+          "start_char": 90,
+          "end_char": 94,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "to",
+            "full_phrase": "2018"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NUM",
+            "tag": "CD",
+            "dep": "pobj",
+            "head": "to",
+            "head_pos": "ADP",
+            "children": [
+              "(",
+              "%",
+              ")"
+            ],
+            "lemma": "2018"
+          },
+          "related_phrases": [],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "quantitative relationship indicated by \"an increase of\"",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.6,
+          "semantic_coherence": 0.5,
+          "structural_validity": 0.5,
+          "overall_quality": 0.54
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "2002",
+        "source_entity": {
+          "text": "2002",
+          "label": "DATE",
+          "start_char": 73,
+          "end_char": 77,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "in",
+            "full_phrase": "built area from"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NUM",
+            "tag": "CD",
+            "dep": "pobj",
+            "head": "from",
+            "head_pos": "ADP",
+            "children": [],
+            "lemma": "2002"
+          },
+          "related_phrases": [],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "relationship": "precedes",
+        "target": "study",
+        "target_entity": {
+          "text": "study",
+          "label": "DISCOVERED_SUBJECT",
+          "start_char": 4,
+          "end_char": 9,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_subject",
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "observed",
+            "full_phrase": "The study"
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "different clauses imply temporal relationship",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.5,
+          "structural_validity": 0.5,
+          "overall_quality": 0.5
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "increase",
+        "source_entity": {
+          "text": "increase",
+          "label": "CHANGE",
+          "start_char": 125,
+          "end_char": 133,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "by",
+            "full_phrase": "a slight increase in"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "dobj",
+            "head": "observed",
+            "head_pos": "VERB",
+            "children": [
+              "a",
+              "significant",
+              "(",
+              "%",
+              ")"
+            ],
+            "lemma": "increase"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "a significant increase",
+              "root": "increase",
+              "root_dep": "dobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "a slight increase",
+              "root": "increase",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "relationship": "results_in",
+        "target": "2002",
+        "target_entity": {
+          "text": "2002",
+          "label": "DATE",
+          "start_char": 73,
+          "end_char": 77,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "in",
+            "full_phrase": "built area from"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NUM",
+            "tag": "CD",
+            "dep": "pobj",
+            "head": "from",
+            "head_pos": "ADP",
+            "children": [],
+            "lemma": "2002"
+          },
+          "related_phrases": [],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "passive voice implies result relationship",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.6,
+          "semantic_coherence": 0.8999999999999999,
+          "structural_validity": 0.5,
+          "overall_quality": 0.66
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "12.77%",
+        "source_entity": {
+          "text": "12.77%",
+          "label": "PERCENT",
+          "start_char": 43,
+          "end_char": 49,
+          "grammatical_role": {
+            "role": "object",
+            "type": "dobj",
+            "head_verb": "observed",
+            "full_phrase": "a significant increase"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NUM",
+            "tag": "CD",
+            "dep": "nummod",
+            "head": "%",
+            "head_pos": "NOUN",
+            "children": [],
+            "lemma": "12.77"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "12.77%",
+              "root": "%",
+              "root_dep": "appos"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "relationship": "comprises",
+        "target": "65.5%",
+        "target_entity": {
+          "text": "65.5%",
+          "label": "PERCENT",
+          "start_char": 96,
+          "end_char": 101,
+          "grammatical_role": {
+            "role": "modifier",
+            "type": "unknown",
+            "description": "Entity does not match major grammatical roles"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NUM",
+            "tag": "CD",
+            "dep": "nummod",
+            "head": "%",
+            "head_pos": "NOUN",
+            "children": [],
+            "lemma": "65.5"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "65.5%",
+              "root": "%",
+              "root_dep": "appos"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "\"cover of\" suggests quantitative relationship",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.6,
+          "semantic_coherence": 0.5,
+          "structural_validity": 0.5,
+          "overall_quality": 0.54
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "12.77%",
+        "source_entity": {
+          "text": "12.77%",
+          "label": "PERCENT",
+          "start_char": 43,
+          "end_char": 49,
+          "grammatical_role": {
+            "role": "object",
+            "type": "dobj",
+            "head_verb": "observed",
+            "full_phrase": "a significant increase"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NUM",
+            "tag": "CD",
+            "dep": "nummod",
+            "head": "%",
+            "head_pos": "NOUN",
+            "children": [],
+            "lemma": "12.77"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "12.77%",
+              "root": "%",
+              "root_dep": "appos"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "relationship": "adjacent_to",
+        "target": "52.88%",
+        "target_entity": {
+          "text": "52.88%",
+          "label": "PERCENT",
+          "start_char": 79,
+          "end_char": 85,
+          "grammatical_role": {
+            "role": "modifier",
+            "type": "unknown",
+            "description": "Entity does not match major grammatical roles"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NUM",
+            "tag": "CD",
+            "dep": "nummod",
+            "head": "%",
+            "head_pos": "NOUN",
+            "children": [],
+            "lemma": "52.88"
+          },
+          "related_phrases": [],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The study observed a significant increase ( 12.77 % ) in built - up area from 2002 ( 52.88 % ) to 2018 ( 65.5 % ) , followed by a slight increase in the cover of bare ground .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "confidence": "LOW",
+        "grammar_justification": "no clear justification for this relationship based on given text.",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.6,
+          "semantic_coherence": 0.5,
+          "structural_validity": 0.5,
+          "overall_quality": 0.54
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      }
+    ],
+    "quality_metrics": {
+      "total_extracted": 6,
+      "total_accepted": 6,
+      "average_quality": 0.5533333333333333
+    }
+  },
+  {
+    "id": 2,
+    "sentence": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",
+    "entities": [
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 17,
+        "end_char": 23,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "On",
+          "full_phrase": "the contrary"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "compound",
+          "head": "cover",
+          "head_pos": "NOUN",
+          "children": [],
+          "lemma": "forest"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "forest cover",
+            "root": "cover",
+            "root_dep": "nsubj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "On the contrary , forest cover declined drastically ( 15.25 % ) followed by agriculture ( 1.01 % ) .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "declined",
+        "label": "CHANGE",
+        "start_char": 30,
+        "end_char": 38,
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "declined",
+          "full_phrase": "forest cover"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "VERB",
+          "tag": "VBD",
+          "dep": "ROOT",
+          "head": "declined",
+          "head_pos": "VERB",
+          "children": [
+            "On",
+            ",",
+            "cover",
+            "drastically",
+            "(",
+            "%",
+            "followed",
+            "."
+          ],
+          "lemma": "decline"
+        },
+        "related_phrases": [],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "On the contrary , forest cover declined drastically ( 15.25 % ) followed by agriculture ( 1.01 % ) .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "15.25%",
+        "label": "PERCENT",
+        "start_char": 52,
+        "end_char": 58,
+        "grammatical_role": {
+          "role": "predicate",
+          "type": "ROOT",
+          "tense": "past",
+          "full_phrase": "declined drastically"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NUM",
+          "tag": "CD",
+          "dep": "nummod",
+          "head": "%",
+          "head_pos": "NOUN",
+          "children": [],
+          "lemma": "15.25"
+        },
+        "related_phrases": [],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "On the contrary , forest cover declined drastically ( 15.25 % ) followed by agriculture ( 1.01 % ) .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "agriculture",
+        "label": "LULC",
+        "start_char": 72,
+        "end_char": 83,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "by",
+          "full_phrase": "agriculture"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "pobj",
+          "head": "by",
+          "head_pos": "ADP",
+          "children": [
+            "(",
+            "%",
+            ")"
+          ],
+          "lemma": "agriculture"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "agriculture",
+            "root": "agriculture",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "On the contrary , forest cover declined drastically ( 15.25 % ) followed by agriculture ( 1.01 % ) .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "1.01%",
+        "label": "PERCENT",
+        "start_char": 85,
+        "end_char": 90,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "by",
+          "full_phrase": "agriculture"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NUM",
+          "tag": "CD",
+          "dep": "nummod",
+          "head": "%",
+          "head_pos": "NOUN",
+          "children": [],
+          "lemma": "1.01"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "1.01%",
+            "root": "%",
+            "root_dep": "appos"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "On the contrary , forest cover declined drastically ( 15.25 % ) followed by agriculture ( 1.01 % ) .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "cover",
+        "label": "DISCOVERED_SUBJECT",
+        "start_char": 24,
+        "end_char": 29,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_subject",
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "declined",
+          "full_phrase": "forest cover"
+        }
+      },
+      {
+        "text": "contrary",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 7,
+        "end_char": 15,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "On",
+          "full_phrase": "the contrary"
+        }
+      },
+      {
+        "text": "forest cover",
+        "label": "DISCOVERED_LULC",
+        "start_char": 17,
+        "end_char": 29,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "cover",
+          "root_dep": "nsubj"
+        }
+      }
+    ],
+    "relations": [],
+    "quality_metrics": {
+      "total_extracted": 0,
+      "total_accepted": 0,
+      "average_quality": 0
+    }
+  },
+  {
+    "id": 3,
+    "sentence": "Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.",
+    "entities": [
+      {
+        "text": "growth",
+        "label": "CHANGE",
+        "start_char": 17,
+        "end_char": 23,
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "are",
+          "full_phrase": "Rapid population growth"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "nsubj",
+          "head": "are",
+          "head_pos": "AUX",
+          "children": [
+            "Rapid",
+            "population",
+            "triggered"
+          ],
+          "lemma": "growth"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "Rapid population growth",
+            "root": "growth",
+            "root_dep": "nsubj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "Rapid population growth triggered by rural urban migration coupled with hasty socio - economic development post democracy are the main drivers of these changes .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "urban",
+        "label": "LULC",
+        "start_char": 43,
+        "end_char": 48,
+        "grammatical_role": {
+          "role": "modifier",
+          "type": "unknown",
+          "description": "Entity does not match major grammatical roles"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "ADJ",
+          "tag": "JJ",
+          "dep": "amod",
+          "head": "migration",
+          "head_pos": "NOUN",
+          "children": [],
+          "lemma": "urban"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "rural urban migration",
+            "root": "migration",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "Rapid population growth triggered by rural urban migration coupled with hasty socio - economic development post democracy are the main drivers of these changes .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "drivers",
+        "label": "CHANGE",
+        "start_char": 133,
+        "end_char": 140,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "with",
+          "full_phrase": "economic development post democracy"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NNS",
+          "dep": "attr",
+          "head": "are",
+          "head_pos": "AUX",
+          "children": [
+            "the",
+            "main",
+            "of"
+          ],
+          "lemma": "driver"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "the main drivers",
+            "root": "drivers",
+            "root_dep": "attr"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "Rapid population growth triggered by rural urban migration coupled with hasty socio - economic development post democracy are the main drivers of these changes .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 150,
+        "end_char": 157,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "of",
+          "full_phrase": "these changes"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NNS",
+          "dep": "pobj",
+          "head": "of",
+          "head_pos": "ADP",
+          "children": [
+            "these"
+          ],
+          "lemma": "change"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "these changes",
+            "root": "changes",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "Rapid population growth triggered by rural urban migration coupled with hasty socio - economic development post democracy are the main drivers of these changes .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "migration",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 49,
+        "end_char": 58,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "by",
+          "full_phrase": "rural urban migration"
+        }
+      },
+      {
+        "text": "democracy",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 110,
+        "end_char": 119,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "with",
+          "full_phrase": "economic development post democracy"
+        }
+      },
+      {
+        "text": "Rapid population growth",
+        "label": "DISCOVERED_LULC",
+        "start_char": 0,
+        "end_char": 23,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "growth",
+          "root_dep": "nsubj"
+        }
+      },
+      {
+        "text": "rural urban migration",
+        "label": "DISCOVERED_LULC",
+        "start_char": 37,
+        "end_char": 58,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "migration",
+          "root_dep": "pobj"
+        }
+      },
+      {
+        "text": "these changes",
+        "label": "DISCOVERED_LULC",
+        "start_char": 144,
+        "end_char": 157,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "changes",
+          "root_dep": "pobj"
+        }
+      }
+    ],
+    "relations": [],
+    "quality_metrics": {
+      "total_extracted": 0,
+      "total_accepted": 0,
+      "average_quality": 0
+    }
+  },
+  {
+    "id": 4,
+    "sentence": "Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",
+    "entities": [
+      {
+        "text": "the year",
+        "label": "DATE",
+        "start_char": 62,
+        "end_char": 70,
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "show",
+          "full_phrase": "prediction analysis for"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "pobj",
+          "head": "for",
+          "head_pos": "ADP",
+          "children": [
+            "the"
+          ],
+          "lemma": "year"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "the business",
+            "root": "business",
+            "root_dep": "pobj"
+          },
+          {
+            "type": "noun_phrase",
+            "text": "the year",
+            "root": "year",
+            "root_dep": "pobj"
+          },
+          {
+            "type": "noun_phrase",
+            "text": "the city area",
+            "root": "area",
+            "root_dep": "pobj"
+          },
+          {
+            "type": "noun_phrase",
+            "text": "the city",
+            "root": "city",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "Under the business as usual scenario , prediction analysis for the year 2050 show",
+          "clause_type": "main",
+          "connector": "that"
+        }
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 131,
+        "end_char": 135,
+        "grammatical_role": {
+          "role": "modifier",
+          "type": "unknown",
+          "description": "Entity does not match major grammatical roles"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "compound",
+          "head": "area",
+          "head_pos": "NOUN",
+          "children": [],
+          "lemma": "city"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "the city area",
+            "root": "area",
+            "root_dep": "pobj"
+          },
+          {
+            "type": "noun_phrase",
+            "text": "the city",
+            "root": "city",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 1,
+          "clause_text": "that built up area will consume almost all of the city area ( 73.21 % ) with forest significantly reduced to patches making up only about 16 % of the city .",
+          "clause_type": "continuation",
+          "connector": null
+        }
+      },
+      {
+        "text": "73.21%",
+        "label": "PERCENT",
+        "start_char": 142,
+        "end_char": 148,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "of",
+          "full_phrase": "the city area"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NUM",
+          "tag": "CD",
+          "dep": "nummod",
+          "head": "%",
+          "head_pos": "NOUN",
+          "children": [],
+          "lemma": "73.21"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "73.21%",
+            "root": "%",
+            "root_dep": "appos"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 1,
+          "clause_text": "that built up area will consume almost all of the city area ( 73.21 % ) with forest significantly reduced to patches making up only about 16 % of the city .",
+          "clause_type": "continuation",
+          "connector": null
+        }
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 155,
+        "end_char": 161,
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "reduced",
+          "full_phrase": "forest"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "nsubj",
+          "head": "reduced",
+          "head_pos": "VERB",
+          "children": [],
+          "lemma": "forest"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "forest",
+            "root": "forest",
+            "root_dep": "nsubj"
+          }
+        ],
+        "clause_info": {
+          "found": false
+        }
+      },
+      {
+        "text": "only about 16%",
+        "label": "PERCENT",
+        "start_char": 205,
+        "end_char": 219,
+        "grammatical_role": {
+          "role": "modifier",
+          "type": "unknown",
+          "description": "Entity does not match major grammatical roles"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "ADV",
+          "tag": "RB",
+          "dep": "advmod",
+          "head": "16",
+          "head_pos": "NUM",
+          "children": [],
+          "lemma": "about"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "only about 16%",
+            "root": "%",
+            "root_dep": "dobj"
+          }
+        ],
+        "clause_info": {
+          "found": false
+        }
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 227,
+        "end_char": 231,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "of",
+          "full_phrase": "the city"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "compound",
+          "head": "area",
+          "head_pos": "NOUN",
+          "children": [],
+          "lemma": "city"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "the city area",
+            "root": "area",
+            "root_dep": "pobj"
+          },
+          {
+            "type": "noun_phrase",
+            "text": "the city",
+            "root": "city",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "found": false
+        }
+      },
+      {
+        "text": "analysis",
+        "label": "DISCOVERED_SUBJECT",
+        "start_char": 49,
+        "end_char": 57,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_subject",
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "show",
+          "full_phrase": "prediction analysis for"
+        }
+      },
+      {
+        "text": "area",
+        "label": "DISCOVERED_SUBJECT",
+        "start_char": 95,
+        "end_char": 99,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_subject",
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "consume",
+          "full_phrase": "built area"
+        }
+      },
+      {
+        "text": "business",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 10,
+        "end_char": 18,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "Under",
+          "full_phrase": "the business as"
+        }
+      },
+      {
+        "text": "scenario",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 28,
+        "end_char": 36,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "as",
+          "full_phrase": "usual scenario"
+        }
+      },
+      {
+        "text": "year",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 66,
+        "end_char": 70,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "for",
+          "full_phrase": "the year"
+        }
+      },
+      {
+        "text": "all",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 120,
+        "end_char": 123,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "dobj",
+          "head_verb": "consume",
+          "full_phrase": "all of"
+        }
+      },
+      {
+        "text": "area",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 136,
+        "end_char": 140,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "of",
+          "full_phrase": "the city area"
+        }
+      },
+      {
+        "text": "patches",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 187,
+        "end_char": 194,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "to",
+          "full_phrase": "patches"
+        }
+      },
+      {
+        "text": "built up area",
+        "label": "DISCOVERED_LULC",
+        "start_char": 86,
+        "end_char": 99,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "area",
+          "root_dep": "nsubj"
+        }
+      },
+      {
+        "text": "the city area",
+        "label": "DISCOVERED_LULC",
+        "start_char": 127,
+        "end_char": 140,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "area",
+          "root_dep": "pobj"
+        }
+      }
+    ],
+    "relations": [
+      {
+        "source": "the year",
+        "source_entity": {
+          "text": "the year",
+          "label": "DATE",
+          "start_char": 62,
+          "end_char": 70,
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "show",
+            "full_phrase": "prediction analysis for"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "pobj",
+            "head": "for",
+            "head_pos": "ADP",
+            "children": [
+              "the"
+            ],
+            "lemma": "year"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "the business",
+              "root": "business",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "the year",
+              "root": "year",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "the city area",
+              "root": "area",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "the city",
+              "root": "city",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "Under the business as usual scenario , prediction analysis for the year 2050 show",
+            "clause_type": "main",
+            "connector": "that"
+          }
+        },
+        "relationship": "results_in",
+        "target": "business",
+        "target_entity": {
+          "text": "business",
+          "label": "DISCOVERED_OBJECT",
+          "start_char": 10,
+          "end_char": 18,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_object",
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "Under",
+            "full_phrase": "the business as"
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "Not provided",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.8,
+          "semantic_coherence": 0.8999999999999999,
+          "structural_validity": 0.6,
+          "overall_quality": 0.77
+        },
+        "quality_assessment": {
+          "high_quality": true,
+          "medium_quality": false,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "the year",
+        "source_entity": {
+          "text": "the year",
+          "label": "DATE",
+          "start_char": 62,
+          "end_char": 70,
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "show",
+            "full_phrase": "prediction analysis for"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "pobj",
+            "head": "for",
+            "head_pos": "ADP",
+            "children": [
+              "the"
+            ],
+            "lemma": "year"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "the business",
+              "root": "business",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "the year",
+              "root": "year",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "the city area",
+              "root": "area",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "the city",
+              "root": "city",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "Under the business as usual scenario , prediction analysis for the year 2050 show",
+            "clause_type": "main",
+            "connector": "that"
+          }
+        },
+        "relationship": "changes_to",
+        "target": "city",
+        "target_entity": {
+          "text": "city",
+          "label": "LULC",
+          "start_char": 131,
+          "end_char": 135,
+          "grammatical_role": {
+            "role": "modifier",
+            "type": "unknown",
+            "description": "Entity does not match major grammatical roles"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "compound",
+            "head": "area",
+            "head_pos": "NOUN",
+            "children": [],
+            "lemma": "city"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "the city area",
+              "root": "area",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "the city",
+              "root": "city",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 1,
+            "clause_text": "that built up area will consume almost all of the city area ( 73.21 % ) with forest significantly reduced to patches making up only about 16 % of the city .",
+            "clause_type": "continuation",
+            "connector": null
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "Not provided",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.5,
+          "structural_validity": 0.6,
+          "overall_quality": 0.53
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "city",
+        "source_entity": {
+          "text": "city",
+          "label": "LULC",
+          "start_char": 131,
+          "end_char": 135,
+          "grammatical_role": {
+            "role": "modifier",
+            "type": "unknown",
+            "description": "Entity does not match major grammatical roles"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "compound",
+            "head": "area",
+            "head_pos": "NOUN",
+            "children": [],
+            "lemma": "city"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "the city area",
+              "root": "area",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "the city",
+              "root": "city",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 1,
+            "clause_text": "that built up area will consume almost all of the city area ( 73.21 % ) with forest significantly reduced to patches making up only about 16 % of the city .",
+            "clause_type": "continuation",
+            "connector": null
+          }
+        },
+        "relationship": "comprises_of",
+        "target": "analysis",
+        "target_entity": {
+          "text": "analysis",
+          "label": "DISCOVERED_SUBJECT",
+          "start_char": 49,
+          "end_char": 57,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_subject",
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "show",
+            "full_phrase": "prediction analysis for"
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "Not provided",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.5,
+          "structural_validity": 0.6,
+          "overall_quality": 0.53
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "city",
+        "source_entity": {
+          "text": "city",
+          "label": "LULC",
+          "start_char": 131,
+          "end_char": 135,
+          "grammatical_role": {
+            "role": "modifier",
+            "type": "unknown",
+            "description": "Entity does not match major grammatical roles"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "compound",
+            "head": "area",
+            "head_pos": "NOUN",
+            "children": [],
+            "lemma": "city"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "the city area",
+              "root": "area",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "the city",
+              "root": "city",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 1,
+            "clause_text": "that built up area will consume almost all of the city area ( 73.21 % ) with forest significantly reduced to patches making up only about 16 % of the city .",
+            "clause_type": "continuation",
+            "connector": null
+          }
+        },
+        "relationship": "measures",
+        "target": "area",
+        "target_entity": {
+          "text": "area",
+          "label": "DISCOVERED_SUBJECT",
+          "start_char": 95,
+          "end_char": 99,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_subject",
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "consume",
+            "full_phrase": "built area"
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "Not provided",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.7,
+          "structural_validity": 0.6,
+          "overall_quality": 0.5900000000000001
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "city",
+        "source_entity": {
+          "text": "city",
+          "label": "LULC",
+          "start_char": 131,
+          "end_char": 135,
+          "grammatical_role": {
+            "role": "modifier",
+            "type": "unknown",
+            "description": "Entity does not match major grammatical roles"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "compound",
+            "head": "area",
+            "head_pos": "NOUN",
+            "children": [],
+            "lemma": "city"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "the city area",
+              "root": "area",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "the city",
+              "root": "city",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 1,
+            "clause_text": "that built up area will consume almost all of the city area ( 73.21 % ) with forest significantly reduced to patches making up only about 16 % of the city .",
+            "clause_type": "continuation",
+            "connector": null
+          }
+        },
+        "relationship": "reduces",
+        "target": "business",
+        "target_entity": {
+          "text": "business",
+          "label": "DISCOVERED_OBJECT",
+          "start_char": 10,
+          "end_char": 18,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_object",
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "Under",
+            "full_phrase": "the business as"
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "Not provided",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.5,
+          "structural_validity": 0.6,
+          "overall_quality": 0.53
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "business",
+        "source_entity": {
+          "text": "business",
+          "label": "DISCOVERED_OBJECT",
+          "start_char": 10,
+          "end_char": 18,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_object",
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "Under",
+            "full_phrase": "the business as"
+          }
+        },
+        "relationship": "is_a",
+        "target": "73.21%",
+        "target_entity": {
+          "text": "73.21%",
+          "label": "PERCENT",
+          "start_char": 142,
+          "end_char": 148,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "of",
+            "full_phrase": "the city area"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NUM",
+            "tag": "CD",
+            "dep": "nummod",
+            "head": "%",
+            "head_pos": "NOUN",
+            "children": [],
+            "lemma": "73.21"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "73.21%",
+              "root": "%",
+              "root_dep": "appos"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 1,
+            "clause_text": "that built up area will consume almost all of the city area ( 73.21 % ) with forest significantly reduced to patches making up only about 16 % of the city .",
+            "clause_type": "continuation",
+            "connector": null
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "Not provided",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.5,
+          "structural_validity": 0.6,
+          "overall_quality": 0.53
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "business",
+        "source_entity": {
+          "text": "business",
+          "label": "DISCOVERED_OBJECT",
+          "start_char": 10,
+          "end_char": 18,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_object",
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "Under",
+            "full_phrase": "the business as"
+          }
+        },
+        "relationship": "located_in",
+        "target": "city",
+        "target_entity": {
+          "text": "city",
+          "label": "LULC",
+          "start_char": 131,
+          "end_char": 135,
+          "grammatical_role": {
+            "role": "modifier",
+            "type": "unknown",
+            "description": "Entity does not match major grammatical roles"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "compound",
+            "head": "area",
+            "head_pos": "NOUN",
+            "children": [],
+            "lemma": "city"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "the city area",
+              "root": "area",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "the city",
+              "root": "city",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 1,
+            "clause_text": "that built up area will consume almost all of the city area ( 73.21 % ) with forest significantly reduced to patches making up only about 16 % of the city .",
+            "clause_type": "continuation",
+            "connector": null
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "Not provided",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.8999999999999999,
+          "structural_validity": 0.6,
+          "overall_quality": 0.6499999999999999
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "business",
+        "source_entity": {
+          "text": "business",
+          "label": "DISCOVERED_OBJECT",
+          "start_char": 10,
+          "end_char": 18,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_object",
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "Under",
+            "full_phrase": "the business as"
+          }
+        },
+        "relationship": "has_percentage",
+        "target": "area",
+        "target_entity": {
+          "text": "area",
+          "label": "DISCOVERED_SUBJECT",
+          "start_char": 95,
+          "end_char": 99,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_subject",
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "consume",
+            "full_phrase": "built area"
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "Not provided",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.7,
+          "structural_validity": 0.6,
+          "overall_quality": 0.5900000000000001
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      }
+    ],
+    "quality_metrics": {
+      "total_extracted": 8,
+      "total_accepted": 8,
+      "average_quality": 0.59
+    }
+  },
+  {
+    "id": 5,
+    "sentence": "Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.",
+    "entities": [
+      {
+        "text": "some 13",
+        "label": "CARDINAL",
+        "start_char": 73,
+        "end_char": 80,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "by",
+          "full_phrase": "terraced agricultural fields"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "DET",
+          "tag": "DT",
+          "dep": "det",
+          "head": "villages",
+          "head_pos": "NOUN",
+          "children": [],
+          "lemma": "some"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "some 13 villages",
+            "root": "villages",
+            "root_dep": "conj"
+          }
+        ],
+        "clause_info": {
+          "found": false
+        }
+      },
+      {
+        "text": "area",
+        "label": "DISCOVERED_SUBJECT",
+        "start_char": 19,
+        "end_char": 23,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_subject",
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubjpass",
+          "head_verb": "occupied",
+          "full_phrase": "the area"
+        }
+      },
+      {
+        "text": "this",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 9,
+        "end_char": 13,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "to",
+          "full_phrase": "this"
+        }
+      },
+      {
+        "text": "fields",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 62,
+        "end_char": 68,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "by",
+          "full_phrase": "terraced agricultural fields"
+        }
+      },
+      {
+        "text": "the area",
+        "label": "DISCOVERED_LULC",
+        "start_char": 15,
+        "end_char": 23,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "area",
+          "root_dep": "nsubjpass"
+        }
+      }
+    ],
+    "relations": [
+      {
+        "source": "area",
+        "source_entity": {
+          "text": "area",
+          "label": "DISCOVERED_SUBJECT",
+          "start_char": 19,
+          "end_char": 23,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_subject",
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubjpass",
+            "head_verb": "occupied",
+            "full_phrase": "the area"
+          }
+        },
+        "relationship": "occupied_by",
+        "target": "this",
+        "target_entity": {
+          "text": "this",
+          "label": "DISCOVERED_OBJECT",
+          "start_char": 9,
+          "end_char": 13,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_object",
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "to",
+            "full_phrase": "this"
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "passive voice, subject-verb-object structure",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.8999999999999999,
+          "structural_validity": 0.5,
+          "overall_quality": 0.62
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "area",
+        "source_entity": {
+          "text": "area",
+          "label": "DISCOVERED_SUBJECT",
+          "start_char": 19,
+          "end_char": 23,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_subject",
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubjpass",
+            "head_verb": "occupied",
+            "full_phrase": "the area"
+          }
+        },
+        "relationship": "comprises_of",
+        "target": "fields",
+        "target_entity": {
+          "text": "fields",
+          "label": "DISCOVERED_OBJECT",
+          "start_char": 62,
+          "end_char": 68,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_object",
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "by",
+            "full_phrase": "terraced agricultural fields"
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "\"terraced agricultural fields\" is a modifying phrase of \"area\", indicating that the area consists of these fields.",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.7,
+          "structural_validity": 0.5,
+          "overall_quality": 0.56
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "area",
+        "source_entity": {
+          "text": "area",
+          "label": "DISCOVERED_SUBJECT",
+          "start_char": 19,
+          "end_char": 23,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_subject",
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubjpass",
+            "head_verb": "occupied",
+            "full_phrase": "the area"
+          }
+        },
+        "relationship": "adjacent_to",
+        "target": "the area",
+        "target_entity": {
+          "text": "the area",
+          "label": "DISCOVERED_LULC",
+          "start_char": 15,
+          "end_char": 23,
+          "confidence": "LOW",
+          "discovery_method": "grammar_noun_phrase",
+          "grammatical_role": {
+            "role": "noun_phrase",
+            "root": "area",
+            "root_dep": "nsubjpass"
+          }
+        },
+        "confidence": "LOW",
+        "grammar_justification": "\"villages\" are mentioned after \"fields,\" but no clear indication of spatial relationship exists.",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.7,
+          "structural_validity": 0.5,
+          "overall_quality": 0.56
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "fields",
+        "source_entity": {
+          "text": "fields",
+          "label": "DISCOVERED_OBJECT",
+          "start_char": 62,
+          "end_char": 68,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_object",
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "by",
+            "full_phrase": "terraced agricultural fields"
+          }
+        },
+        "relationship": "located_in",
+        "target": "area",
+        "target_entity": {
+          "text": "area",
+          "label": "DISCOVERED_SUBJECT",
+          "start_char": 19,
+          "end_char": 23,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_subject",
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubjpass",
+            "head_verb": "occupied",
+            "full_phrase": "the area"
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "\"the area\" is the subject of the sentence, and \"fields\" are described as being in this area.",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 1.0,
+          "structural_validity": 0.5,
+          "overall_quality": 0.65
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "fields",
+        "source_entity": {
+          "text": "fields",
+          "label": "DISCOVERED_OBJECT",
+          "start_char": 62,
+          "end_char": 68,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_object",
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "by",
+            "full_phrase": "terraced agricultural fields"
+          }
+        },
+        "relationship": "contains",
+        "target": "the area",
+        "target_entity": {
+          "text": "the area",
+          "label": "DISCOVERED_LULC",
+          "start_char": 15,
+          "end_char": 23,
+          "confidence": "LOW",
+          "discovery_method": "grammar_noun_phrase",
+          "grammatical_role": {
+            "role": "noun_phrase",
+            "root": "area",
+            "root_dep": "nsubjpass"
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "\"the area\" is the subject of the sentence, and \"fields\" are described as occupying this area.",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 1.0,
+          "structural_validity": 0.5,
+          "overall_quality": 0.65
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "the area",
+        "source_entity": {
+          "text": "the area",
+          "label": "DISCOVERED_LULC",
+          "start_char": 15,
+          "end_char": 23,
+          "confidence": "LOW",
+          "discovery_method": "grammar_noun_phrase",
+          "grammatical_role": {
+            "role": "noun_phrase",
+            "root": "area",
+            "root_dep": "nsubjpass"
+          }
+        },
+        "relationship": "has_component",
+        "target": "fields",
+        "target_entity": {
+          "text": "fields",
+          "label": "DISCOVERED_OBJECT",
+          "start_char": 62,
+          "end_char": 68,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_object",
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "by",
+            "full_phrase": "terraced agricultural fields"
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "\"the area\" is described as having \"terraced agricultural fields\" as a component.",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.7,
+          "structural_validity": 0.5,
+          "overall_quality": 0.56
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      }
+    ],
+    "quality_metrics": {
+      "total_extracted": 6,
+      "total_accepted": 6,
+      "average_quality": 0.6
+    }
+  },
+  {
+    "id": 6,
+    "sentence": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",
+    "entities": [
+      {
+        "text": "Expansion",
+        "label": "CHANGE",
+        "start_char": 0,
+        "end_char": 9,
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "added",
+          "full_phrase": "Expansion of in"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "nsubj",
+          "head": "added",
+          "head_pos": "VERB",
+          "children": [
+            "of",
+            "in"
+          ],
+          "lemma": "expansion"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "Expansion",
+            "root": "Expansion",
+            "root_dep": "nsubj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka , Heo - Samteling , Jungshi - Pamtsho , Taba",
+          "clause_type": "main",
+          "connector": "and"
+        }
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 21,
+        "end_char": 25,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "of",
+          "full_phrase": "Thimphu city"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "pobj",
+          "head": "of",
+          "head_pos": "ADP",
+          "children": [
+            "Thimphu"
+          ],
+          "lemma": "city"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "Thimphu city",
+            "root": "city",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka , Heo - Samteling , Jungshi - Pamtsho , Taba",
+          "clause_type": "main",
+          "connector": "and"
+        }
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 29,
+        "end_char": 33,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "of",
+          "full_phrase": "Thimphu city"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NUM",
+          "tag": "CD",
+          "dep": "pobj",
+          "head": "in",
+          "head_pos": "ADP",
+          "children": [],
+          "lemma": "2002"
+        },
+        "related_phrases": [],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka , Heo - Samteling , Jungshi - Pamtsho , Taba",
+          "clause_type": "main",
+          "connector": "and"
+        }
+      },
+      {
+        "text": "Lanjophaka",
+        "label": "LOC",
+        "start_char": 55,
+        "end_char": 65,
+        "grammatical_role": {
+          "role": "object",
+          "type": "dobj",
+          "head_verb": "added",
+          "full_phrase": "local areas of in"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "PROPN",
+          "tag": "NNP",
+          "dep": "pobj",
+          "head": "of",
+          "head_pos": "ADP",
+          "children": [
+            ",",
+            "Samteling"
+          ],
+          "lemma": "Lanjophaka"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "Lanjophaka",
+            "root": "Lanjophaka",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka , Heo - Samteling , Jungshi - Pamtsho , Taba",
+          "clause_type": "main",
+          "connector": "and"
+        }
+      },
+      {
+        "text": "Taba",
+        "label": "LOC",
+        "start_char": 99,
+        "end_char": 103,
+        "grammatical_role": {
+          "role": "modifier",
+          "type": "unknown",
+          "description": "Entity does not match major grammatical roles"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "PROPN",
+          "tag": "NNP",
+          "dep": "conj",
+          "head": "Pamtsho",
+          "head_pos": "PROPN",
+          "children": [
+            "and",
+            "Dechencholing"
+          ],
+          "lemma": "Taba"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "Taba",
+            "root": "Taba",
+            "root_dep": "conj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka , Heo - Samteling , Jungshi - Pamtsho , Taba",
+          "clause_type": "main",
+          "connector": "and"
+        }
+      },
+      {
+        "text": "Dechencholing",
+        "label": "LOC",
+        "start_char": 108,
+        "end_char": 121,
+        "grammatical_role": {
+          "role": "modifier",
+          "type": "unknown",
+          "description": "Entity does not match major grammatical roles"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "PROPN",
+          "tag": "NNP",
+          "dep": "conj",
+          "head": "Taba",
+          "head_pos": "PROPN",
+          "children": [],
+          "lemma": "Dechencholing"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "Dechencholing",
+            "root": "Dechencholing",
+            "root_dep": "conj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 1,
+          "clause_text": "and Dechencholing in the north",
+          "clause_type": "subordinate",
+          "connector": "and"
+        }
+      },
+      {
+        "text": "Changjiji",
+        "label": "LOC",
+        "start_char": 139,
+        "end_char": 148,
+        "grammatical_role": {
+          "role": "modifier",
+          "type": "unknown",
+          "description": "Entity does not match major grammatical roles"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "PROPN",
+          "tag": "NNP",
+          "dep": "conj",
+          "head": "north",
+          "head_pos": "PROPN",
+          "children": [],
+          "lemma": "Changjiji"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "Changjiji",
+            "root": "Changjiji",
+            "root_dep": "conj"
+          }
+        ],
+        "clause_info": {
+          "found": false
+        }
+      },
+      {
+        "text": "Lungtenphu",
+        "label": "LOC",
+        "start_char": 150,
+        "end_char": 160,
+        "grammatical_role": {
+          "role": "modifier",
+          "type": "unknown",
+          "description": "Entity does not match major grammatical roles"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "PROPN",
+          "tag": "NNP",
+          "dep": "conj",
+          "head": "areas",
+          "head_pos": "NOUN",
+          "children": [
+            ",",
+            "Simtokha"
+          ],
+          "lemma": "Lungtenphu"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "Lungtenphu",
+            "root": "Lungtenphu",
+            "root_dep": "conj"
+          }
+        ],
+        "clause_info": {
+          "found": false
+        }
+      },
+      {
+        "text": "areas",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 46,
+        "end_char": 51,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "dobj",
+          "head_verb": "added",
+          "full_phrase": "local areas of in"
+        }
+      },
+      {
+        "text": "north",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 129,
+        "end_char": 134,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "in",
+          "full_phrase": "the north"
+        }
+      },
+      {
+        "text": "south",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 190,
+        "end_char": 195,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "in",
+          "full_phrase": "the south"
+        }
+      },
+      {
+        "text": "local areas",
+        "label": "DISCOVERED_LULC",
+        "start_char": 40,
+        "end_char": 51,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "areas",
+          "root_dep": "dobj"
+        }
+      }
+    ],
+    "relations": [],
+    "quality_metrics": {
+      "total_extracted": 0,
+      "total_accepted": 0,
+      "average_quality": 0
+    }
+  },
+  {
+    "id": 7,
+    "sentence": "The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",
+    "entities": [
+      {
+        "text": "2002-2018",
+        "label": "COORDINATES",
+        "start_char": 12,
+        "end_char": 21,
+        "grammatical_role": {
+          "role": "modifier",
+          "type": "unknown",
+          "description": "Entity does not match major grammatical roles"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NUM",
+          "tag": "CD",
+          "dep": "nummod",
+          "head": "2018",
+          "head_pos": "PROPN",
+          "children": [],
+          "lemma": "2002"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "2002-2018",
+            "root": "2018",
+            "root_dep": "nsubj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "The period , 2002 - 2018 represents a rapid expansion of the city accompanied by expediated socio - economic development that led to significant changes in the city 's landscape .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start_char": 41,
+        "end_char": 50,
+        "grammatical_role": {
+          "role": "object",
+          "type": "dobj",
+          "head_verb": "represents",
+          "full_phrase": "a rapid expansion of"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "dobj",
+          "head": "represents",
+          "head_pos": "VERB",
+          "children": [
+            "a",
+            "rapid",
+            "of"
+          ],
+          "lemma": "expansion"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "a rapid expansion",
+            "root": "expansion",
+            "root_dep": "dobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "The period , 2002 - 2018 represents a rapid expansion of the city accompanied by expediated socio - economic development that led to significant changes in the city 's landscape .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 58,
+        "end_char": 62,
+        "grammatical_role": {
+          "role": "object",
+          "type": "dobj",
+          "head_verb": "represents",
+          "full_phrase": "a rapid expansion of"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "pobj",
+          "head": "of",
+          "head_pos": "ADP",
+          "children": [
+            "the",
+            "accompanied"
+          ],
+          "lemma": "city"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "the city",
+            "root": "city",
+            "root_dep": "pobj"
+          },
+          {
+            "type": "noun_phrase",
+            "text": "the city's landscape",
+            "root": "landscape",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "The period , 2002 - 2018 represents a rapid expansion of the city accompanied by expediated socio - economic development that led to significant changes in the city 's landscape .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 140,
+        "end_char": 147,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "by",
+          "full_phrase": "expediated - economic development"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NNS",
+          "dep": "pobj",
+          "head": "to",
+          "head_pos": "ADP",
+          "children": [
+            "significant",
+            "in"
+          ],
+          "lemma": "change"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "significant changes",
+            "root": "changes",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "The period , 2002 - 2018 represents a rapid expansion of the city accompanied by expediated socio - economic development that led to significant changes in the city 's landscape .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 155,
+        "end_char": 159,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "to",
+          "full_phrase": "significant changes in"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "pobj",
+          "head": "of",
+          "head_pos": "ADP",
+          "children": [
+            "the",
+            "accompanied"
+          ],
+          "lemma": "city"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "the city",
+            "root": "city",
+            "root_dep": "pobj"
+          },
+          {
+            "type": "noun_phrase",
+            "text": "the city's landscape",
+            "root": "landscape",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "The period , 2002 - 2018 represents a rapid expansion of the city accompanied by expediated socio - economic development that led to significant changes in the city 's landscape .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "period",
+        "label": "DISCOVERED_SUBJECT",
+        "start_char": 4,
+        "end_char": 10,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_subject",
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "represents",
+          "full_phrase": "The period"
+        }
+      },
+      {
+        "text": "2018",
+        "label": "DISCOVERED_SUBJECT",
+        "start_char": 17,
+        "end_char": 21,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_subject",
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "represents",
+          "full_phrase": "2002 2018"
+        }
+      },
+      {
+        "text": "that",
+        "label": "DISCOVERED_SUBJECT",
+        "start_char": 116,
+        "end_char": 120,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_subject",
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "led",
+          "full_phrase": "that"
+        }
+      },
+      {
+        "text": "development",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 104,
+        "end_char": 115,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "by",
+          "full_phrase": "expediated - economic development"
+        }
+      },
+      {
+        "text": "landscape",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 162,
+        "end_char": 171,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "in",
+          "full_phrase": "the city landscape"
+        }
+      },
+      {
+        "text": "a rapid expansion",
+        "label": "DISCOVERED_LULC",
+        "start_char": 33,
+        "end_char": 50,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "expansion",
+          "root_dep": "dobj"
+        }
+      },
+      {
+        "text": "significant changes",
+        "label": "DISCOVERED_LULC",
+        "start_char": 128,
+        "end_char": 147,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "changes",
+          "root_dep": "pobj"
+        }
+      },
+      {
+        "text": "the city's landscape",
+        "label": "DISCOVERED_LULC",
+        "start_char": 151,
+        "end_char": 171,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "landscape",
+          "root_dep": "pobj"
+        }
+      }
+    ],
+    "relations": [
+      {
+        "source": "period",
+        "source_entity": {
+          "text": "period",
+          "label": "DISCOVERED_SUBJECT",
+          "start_char": 4,
+          "end_char": 10,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_subject",
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "represents",
+            "full_phrase": "The period"
+          }
+        },
+        "relationship": "occurs_during",
+        "target": "that",
+        "target_entity": {
+          "text": "that",
+          "label": "DISCOVERED_SUBJECT",
+          "start_char": 116,
+          "end_char": 120,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_subject",
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "led",
+            "full_phrase": "that"
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "subject is the time frame for the expansion and development to occur",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.8999999999999999,
+          "structural_validity": 0.6,
+          "overall_quality": 0.6499999999999999
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "city",
+        "source_entity": {
+          "text": "city",
+          "label": "LULC",
+          "start_char": 155,
+          "end_char": 159,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "to",
+            "full_phrase": "significant changes in"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "pobj",
+            "head": "of",
+            "head_pos": "ADP",
+            "children": [
+              "the",
+              "accompanied"
+            ],
+            "lemma": "city"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "the city",
+              "root": "city",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "the city's landscape",
+              "root": "landscape",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The period , 2002 - 2018 represents a rapid expansion of the city accompanied by expediated socio - economic development that led to significant changes in the city 's landscape .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "relationship": "results_in",
+        "target": "2018",
+        "target_entity": {
+          "text": "2018",
+          "label": "DISCOVERED_SUBJECT",
+          "start_char": 17,
+          "end_char": 21,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_subject",
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "represents",
+            "full_phrase": "2002 2018"
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "expansion leads to changes in the landscape",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.8999999999999999,
+          "structural_validity": 0.6,
+          "overall_quality": 0.6499999999999999
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "changes",
+        "source_entity": {
+          "text": "changes",
+          "label": "CHANGE",
+          "start_char": 140,
+          "end_char": 147,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "by",
+            "full_phrase": "expediated - economic development"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NNS",
+            "dep": "pobj",
+            "head": "to",
+            "head_pos": "ADP",
+            "children": [
+              "significant",
+              "in"
+            ],
+            "lemma": "change"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "significant changes",
+              "root": "changes",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The period , 2002 - 2018 represents a rapid expansion of the city accompanied by expediated socio - economic development that led to significant changes in the city 's landscape .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "relationship": "precedes",
+        "target": "city",
+        "target_entity": {
+          "text": "city",
+          "label": "LULC",
+          "start_char": 155,
+          "end_char": 159,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "to",
+            "full_phrase": "significant changes in"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "pobj",
+            "head": "of",
+            "head_pos": "ADP",
+            "children": [
+              "the",
+              "accompanied"
+            ],
+            "lemma": "city"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "the city",
+              "root": "city",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "the city's landscape",
+              "root": "landscape",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The period , 2002 - 2018 represents a rapid expansion of the city accompanied by expediated socio - economic development that led to significant changes in the city 's landscape .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "expansion is the cause of the development",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.6,
+          "semantic_coherence": 0.7,
+          "structural_validity": 0.6,
+          "overall_quality": 0.6299999999999999
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "expansion",
+        "source_entity": {
+          "text": "expansion",
+          "label": "CHANGE",
+          "start_char": 41,
+          "end_char": 50,
+          "grammatical_role": {
+            "role": "object",
+            "type": "dobj",
+            "head_verb": "represents",
+            "full_phrase": "a rapid expansion of"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "dobj",
+            "head": "represents",
+            "head_pos": "VERB",
+            "children": [
+              "a",
+              "rapid",
+              "of"
+            ],
+            "lemma": "expansion"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "a rapid expansion",
+              "root": "expansion",
+              "root_dep": "dobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The period , 2002 - 2018 represents a rapid expansion of the city accompanied by expediated socio - economic development that led to significant changes in the city 's landscape .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "relationship": "happens_by",
+        "target": "changes",
+        "target_entity": {
+          "text": "changes",
+          "label": "CHANGE",
+          "start_char": 140,
+          "end_char": 147,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "by",
+            "full_phrase": "expediated - economic development"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NNS",
+            "dep": "pobj",
+            "head": "to",
+            "head_pos": "ADP",
+            "children": [
+              "significant",
+              "in"
+            ],
+            "lemma": "change"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "significant changes",
+              "root": "changes",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The period , 2002 - 2018 represents a rapid expansion of the city accompanied by expediated socio - economic development that led to significant changes in the city 's landscape .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "expedited socio-economic development is a reason for the rapid expansion",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.6,
+          "semantic_coherence": 0.8999999999999999,
+          "structural_validity": 0.6,
+          "overall_quality": 0.69
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "2002-2018",
+        "source_entity": {
+          "text": "2002-2018",
+          "label": "COORDINATES",
+          "start_char": 12,
+          "end_char": 21,
+          "grammatical_role": {
+            "role": "modifier",
+            "type": "unknown",
+            "description": "Entity does not match major grammatical roles"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NUM",
+            "tag": "CD",
+            "dep": "nummod",
+            "head": "2018",
+            "head_pos": "PROPN",
+            "children": [],
+            "lemma": "2002"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "2002-2018",
+              "root": "2018",
+              "root_dep": "nsubj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "The period , 2002 - 2018 represents a rapid expansion of the city accompanied by expediated socio - economic development that led to significant changes in the city 's landscape .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "relationship": "encompasses",
+        "target": "period",
+        "target_entity": {
+          "text": "period",
+          "label": "DISCOVERED_SUBJECT",
+          "start_char": 4,
+          "end_char": 10,
+          "confidence": "MEDIUM",
+          "discovery_method": "grammar_subject",
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubj",
+            "head_verb": "represents",
+            "full_phrase": "The period"
+          }
+        },
+        "confidence": "LOW",
+        "grammar_justification": "\"city's landscape\" is a part of the broader context but not directly related to the expansion and development",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.5,
+          "semantic_coherence": 0.5,
+          "structural_validity": 0.6,
+          "overall_quality": 0.53
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      }
+    ],
+    "quality_metrics": {
+      "total_extracted": 5,
+      "total_accepted": 5,
+      "average_quality": 0.6299999999999999
+    }
+  },
+  {
+    "id": 8,
+    "sentence": "These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.",
+    "entities": [
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 17,
+        "end_char": 24,
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubjpass",
+          "head_verb": "attributed",
+          "full_phrase": "These expediated changes"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NNS",
+          "dep": "nsubjpass",
+          "head": "attributed",
+          "head_pos": "VERB",
+          "children": [
+            "These",
+            "expediated"
+          ],
+          "lemma": "change"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "These expediated changes",
+            "root": "changes",
+            "root_dep": "nsubjpass"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start_char": 75,
+        "end_char": 84,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "for",
+          "full_phrase": "expansion of"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "pobj",
+          "head": "for",
+          "head_pos": "ADP",
+          "children": [
+            "of"
+          ],
+          "lemma": "expansion"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "expansion",
+            "root": "expansion",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 92,
+        "end_char": 96,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "for",
+          "full_phrase": "expansion of"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "pobj",
+          "head": "of",
+          "head_pos": "ADP",
+          "children": [
+            "the"
+          ],
+          "lemma": "city"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "the city",
+            "root": "city",
+            "root_dep": "pobj"
+          },
+          {
+            "type": "noun_phrase",
+            "text": "city infrastructure post Bhutan's transition",
+            "root": "transition",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 100,
+        "end_char": 104,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "of",
+          "full_phrase": "the city"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NUM",
+          "tag": "CD",
+          "dep": "pobj",
+          "head": "in",
+          "head_pos": "ADP",
+          "children": [],
+          "lemma": "2002"
+        },
+        "related_phrases": [],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 147,
+        "end_char": 151,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "by",
+          "full_phrase": "the hastened construction of"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "pobj",
+          "head": "of",
+          "head_pos": "ADP",
+          "children": [
+            "the"
+          ],
+          "lemma": "city"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "the city",
+            "root": "city",
+            "root_dep": "pobj"
+          },
+          {
+            "type": "noun_phrase",
+            "text": "city infrastructure post Bhutan's transition",
+            "root": "transition",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "Bhutan",
+        "label": "LOC",
+        "start_char": 172,
+        "end_char": 178,
+        "grammatical_role": {
+          "role": "modifier",
+          "type": "unknown",
+          "description": "Entity does not match major grammatical roles"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "PROPN",
+          "tag": "NNP",
+          "dep": "poss",
+          "head": "transition",
+          "head_pos": "NOUN",
+          "children": [
+            "'s"
+          ],
+          "lemma": "Bhutan"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "city infrastructure post Bhutan's transition",
+            "root": "transition",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "transition",
+        "label": "CHANGE",
+        "start_char": 181,
+        "end_char": 191,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "of",
+          "full_phrase": "Bhutan transition to"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NN",
+          "dep": "pobj",
+          "head": "of",
+          "head_pos": "ADP",
+          "children": [
+            "post",
+            "Bhutan",
+            "to"
+          ],
+          "lemma": "transition"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "city infrastructure post Bhutan's transition",
+            "root": "transition",
+            "root_dep": "pobj"
+          }
+        ],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "2008",
+        "label": "DATE",
+        "start_char": 208,
+        "end_char": 212,
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "to",
+          "full_phrase": "democracy"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NUM",
+          "tag": "CD",
+          "dep": "pobj",
+          "head": "in",
+          "head_pos": "ADP",
+          "children": [],
+          "lemma": "2008"
+        },
+        "related_phrases": [],
+        "clause_info": {
+          "clause_index": 0,
+          "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+          "clause_type": "main",
+          "connector": null
+        }
+      },
+      {
+        "text": "approval",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 62,
+        "end_char": 70,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "dobj",
+          "head_verb": "governments",
+          "full_phrase": "approval for"
+        }
+      },
+      {
+        "text": "construction",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 131,
+        "end_char": 143,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "by",
+          "full_phrase": "the hastened construction of"
+        }
+      },
+      {
+        "text": "democracy",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 195,
+        "end_char": 204,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "to",
+          "full_phrase": "democracy"
+        }
+      },
+      {
+        "text": "These expediated changes",
+        "label": "DISCOVERED_LULC",
+        "start_char": 0,
+        "end_char": 24,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "changes",
+          "root_dep": "nsubjpass"
+        }
+      }
+    ],
+    "relations": [
+      {
+        "source": "transition",
+        "source_entity": {
+          "text": "transition",
+          "label": "CHANGE",
+          "start_char": 181,
+          "end_char": 191,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "of",
+            "full_phrase": "Bhutan transition to"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "pobj",
+            "head": "of",
+            "head_pos": "ADP",
+            "children": [
+              "post",
+              "Bhutan",
+              "to"
+            ],
+            "lemma": "transition"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "city infrastructure post Bhutan's transition",
+              "root": "transition",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "relationship": "causes",
+        "target": "expansion",
+        "target_entity": {
+          "text": "expansion",
+          "label": "CHANGE",
+          "start_char": 75,
+          "end_char": 84,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "for",
+            "full_phrase": "expansion of"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "pobj",
+            "head": "for",
+            "head_pos": "ADP",
+            "children": [
+              "of"
+            ],
+            "lemma": "expansion"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "expansion",
+              "root": "expansion",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "Not provided",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.6,
+          "semantic_coherence": 0.7,
+          "structural_validity": 0.5,
+          "overall_quality": 0.6
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "Bhutan",
+        "source_entity": {
+          "text": "Bhutan",
+          "label": "LOC",
+          "start_char": 172,
+          "end_char": 178,
+          "grammatical_role": {
+            "role": "modifier",
+            "type": "unknown",
+            "description": "Entity does not match major grammatical roles"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "PROPN",
+            "tag": "NNP",
+            "dep": "poss",
+            "head": "transition",
+            "head_pos": "NOUN",
+            "children": [
+              "'s"
+            ],
+            "lemma": "Bhutan"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "city infrastructure post Bhutan's transition",
+              "root": "transition",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "relationship": "precedes",
+        "target": "city",
+        "target_entity": {
+          "text": "city",
+          "label": "LULC",
+          "start_char": 92,
+          "end_char": 96,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "for",
+            "full_phrase": "expansion of"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "pobj",
+            "head": "of",
+            "head_pos": "ADP",
+            "children": [
+              "the"
+            ],
+            "lemma": "city"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "the city",
+              "root": "city",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "city infrastructure post Bhutan's transition",
+              "root": "transition",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "confidence": "HIGH",
+        "grammar_justification": "\"followed by\" indicates a temporal relationship",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.6,
+          "semantic_coherence": 0.5,
+          "structural_validity": 0.5,
+          "overall_quality": 0.54
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "city",
+        "source_entity": {
+          "text": "city",
+          "label": "LULC",
+          "start_char": 92,
+          "end_char": 96,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "for",
+            "full_phrase": "expansion of"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "pobj",
+            "head": "of",
+            "head_pos": "ADP",
+            "children": [
+              "the"
+            ],
+            "lemma": "city"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "the city",
+              "root": "city",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "city infrastructure post Bhutan's transition",
+              "root": "transition",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "relationship": "happens_by",
+        "target": "city",
+        "target_entity": {
+          "text": "city",
+          "label": "LULC",
+          "start_char": 147,
+          "end_char": 151,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "by",
+            "full_phrase": "the hastened construction of"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "pobj",
+            "head": "of",
+            "head_pos": "ADP",
+            "children": [
+              "the"
+            ],
+            "lemma": "city"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "the city",
+              "root": "city",
+              "root_dep": "pobj"
+            },
+            {
+              "type": "noun_phrase",
+              "text": "city infrastructure post Bhutan's transition",
+              "root": "transition",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "confidence": "MEDIA",
+        "grammar_justification": "\"post\" indicates a temporal relationship, but the exact relationship is not clear without additional context",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.6,
+          "semantic_coherence": 0.7,
+          "structural_validity": 0.5,
+          "overall_quality": 0.6
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      },
+      {
+        "source": "changes",
+        "source_entity": {
+          "text": "changes",
+          "label": "CHANGE",
+          "start_char": 17,
+          "end_char": 24,
+          "grammatical_role": {
+            "role": "subject",
+            "type": "nsubjpass",
+            "head_verb": "attributed",
+            "full_phrase": "These expediated changes"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NNS",
+            "dep": "nsubjpass",
+            "head": "attributed",
+            "head_pos": "VERB",
+            "children": [
+              "These",
+              "expediated"
+            ],
+            "lemma": "change"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "These expediated changes",
+              "root": "changes",
+              "root_dep": "nsubjpass"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "relationship": "comprises",
+        "target": "expansion",
+        "target_entity": {
+          "text": "expansion",
+          "label": "CHANGE",
+          "start_char": 75,
+          "end_char": 84,
+          "grammatical_role": {
+            "role": "object",
+            "type": "pobj",
+            "head_verb": "for",
+            "full_phrase": "expansion of"
+          },
+          "syntactic_info": {
+            "found": true,
+            "pos": "NOUN",
+            "tag": "NN",
+            "dep": "pobj",
+            "head": "for",
+            "head_pos": "ADP",
+            "children": [
+              "of"
+            ],
+            "lemma": "expansion"
+          },
+          "related_phrases": [
+            {
+              "type": "noun_phrase",
+              "text": "expansion",
+              "root": "expansion",
+              "root_dep": "pobj"
+            }
+          ],
+          "clause_info": {
+            "clause_index": 0,
+            "clause_text": "These expediated changes can be attributed to : i ) governments approval for expansion of the city in 2002 , followed by the hastened construction of city infrastructure post Bhutan 's transition to democracy in 2008 .",
+            "clause_type": "main",
+            "connector": null
+          }
+        },
+        "confidence": "MEDIUM",
+        "grammar_justification": "Not provided",
+        "extraction_method": "grammar_aware",
+        "quality_scores": {
+          "grammar_alignment": 0.6,
+          "semantic_coherence": 0.7,
+          "structural_validity": 0.5,
+          "overall_quality": 0.6
+        },
+        "quality_assessment": {
+          "high_quality": false,
+          "medium_quality": true,
+          "low_quality": false
+        }
+      }
+    ],
+    "quality_metrics": {
+      "total_extracted": 4,
+      "total_accepted": 4,
+      "average_quality": 0.5850000000000001
+    }
+  },
+  {
+    "id": 9,
+    "sentence": "The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.",
+    "entities": [
+      {
+        "text": "cities",
+        "label": "LULC",
+        "start_char": 161,
+        "end_char": 167,
+        "grammatical_role": {
+          "role": "modifier",
+          "type": "unknown",
+          "description": "Entity does not match major grammatical roles"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NNS",
+          "dep": "conj",
+          "head": "areas",
+          "head_pos": "NOUN",
+          "children": [
+            "lesser",
+            "developed"
+          ],
+          "lemma": "city"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "lesser developed cities",
+            "root": "cities",
+            "root_dep": "conj"
+          }
+        ],
+        "clause_info": {
+          "found": false
+        }
+      },
+      {
+        "text": "causing",
+        "label": "CHANGE",
+        "start_char": 169,
+        "end_char": 176,
+        "grammatical_role": {
+          "role": "modifier",
+          "type": "unknown",
+          "description": "Entity does not match major grammatical roles"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "VERB",
+          "tag": "VBG",
+          "dep": "advcl",
+          "head": "attracted",
+          "head_pos": "VERB",
+          "children": [
+            "boom",
+            "and",
+            "triggering"
+          ],
+          "lemma": "cause"
+        },
+        "related_phrases": [],
+        "clause_info": {
+          "found": false
+        }
+      },
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 251,
+        "end_char": 258,
+        "grammatical_role": {
+          "role": "object",
+          "type": "dobj",
+          "head_verb": "triggering",
+          "full_phrase": "significant changes in"
+        },
+        "syntactic_info": {
+          "found": true,
+          "pos": "NOUN",
+          "tag": "NNS",
+          "dep": "dobj",
+          "head": "triggering",
+          "head_pos": "VERB",
+          "children": [
+            "significant",
+            "in"
+          ],
+          "lemma": "change"
+        },
+        "related_phrases": [
+          {
+            "type": "noun_phrase",
+            "text": "significant changes",
+            "root": "changes",
+            "root_dep": "dobj"
+          }
+        ],
+        "clause_info": {
+          "found": false
+        }
+      },
+      {
+        "text": "improvement",
+        "label": "DISCOVERED_SUBJECT",
+        "start_char": 14,
+        "end_char": 25,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_subject",
+        "grammatical_role": {
+          "role": "subject",
+          "type": "nsubj",
+          "head_verb": "attracted",
+          "full_phrase": "The resultant improvement in"
+        }
+      },
+      {
+        "text": "facilities",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 35,
+        "end_char": 45,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "in",
+          "full_phrase": "basic facilities"
+        }
+      },
+      {
+        "text": "creation",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 60,
+        "end_char": 68,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "with",
+          "full_phrase": "creation of"
+        }
+      },
+      {
+        "text": "jobs",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 83,
+        "end_char": 87,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "of",
+          "full_phrase": "additional jobs"
+        }
+      },
+      {
+        "text": "immigration",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 111,
+        "end_char": 122,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "dobj",
+          "head_verb": "attracted",
+          "full_phrase": "more immigration from"
+        }
+      },
+      {
+        "text": "areas",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 134,
+        "end_char": 139,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "from",
+          "full_phrase": "rural areas"
+        }
+      },
+      {
+        "text": "boom",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 179,
+        "end_char": 183,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "dobj",
+          "head_verb": "causing",
+          "full_phrase": "a boom in"
+        }
+      },
+      {
+        "text": "estate",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 192,
+        "end_char": 198,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "in",
+          "full_phrase": "real estate"
+        }
+      },
+      {
+        "text": "uses",
+        "label": "DISCOVERED_OBJECT",
+        "start_char": 267,
+        "end_char": 271,
+        "confidence": "MEDIUM",
+        "discovery_method": "grammar_object",
+        "grammatical_role": {
+          "role": "object",
+          "type": "pobj",
+          "head_verb": "in",
+          "full_phrase": "land uses"
+        }
+      },
+      {
+        "text": "rural areas",
+        "label": "DISCOVERED_LULC",
+        "start_char": 128,
+        "end_char": 139,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "areas",
+          "root_dep": "pobj"
+        }
+      },
+      {
+        "text": "significant changes",
+        "label": "DISCOVERED_LULC",
+        "start_char": 239,
+        "end_char": 258,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "changes",
+          "root_dep": "dobj"
+        }
+      },
+      {
+        "text": "land uses",
+        "label": "DISCOVERED_LULC",
+        "start_char": 262,
+        "end_char": 271,
+        "confidence": "LOW",
+        "discovery_method": "grammar_noun_phrase",
+        "grammatical_role": {
+          "role": "noun_phrase",
+          "root": "uses",
+          "root_dep": "pobj"
+        }
+      }
+    ],
+    "relations": [],
+    "quality_metrics": {
+      "total_extracted": 0,
+      "total_accepted": 0,
+      "average_quality": 0
+    }
+  }
+]

@@ -1,0 +1,24 @@
+<View>
+  <Text name="text" value="$text"/>
+  
+  <!-- Entity Labels -->
+  <Labels name="label" toName="text">
+    <Label value="FROM_LULC" background="red" alias="From Land Use"/>
+    <Label value="TO_LULC" background="blue" alias="To Land Use"/>
+    <Label value="CHANGE" background="green" alias="Change Word"/>
+    <Label value="PROCESS" background="orange" alias="Process"/>
+    <Label value="MAGNITUDE" background="purple" alias="Magnitude"/>
+    <Label value="DATE" background="brown" alias="Date/Time"/>
+    <Label value="LOCATION" background="yellow" alias="Location"/>
+  </Labels>
+  
+  <!-- Relations -->
+  <Relations name="relation" toName="label">
+    <Relation value="causes" background="red"/>
+    <Relation value="converts_to" background="blue"/>
+    <Relation value="part_of" background="green"/>
+    <Relation value="affects" background="orange"/>
+    <Relation value="occurs_during" background="purple"/>
+    <Relation value="measured_by" background="brown"/>
+  </Relations>
+</View>

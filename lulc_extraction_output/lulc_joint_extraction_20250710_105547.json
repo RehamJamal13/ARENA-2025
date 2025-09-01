@@ -1,0 +1,76 @@
+[
+  {
+    "sentence_id": 0,
+    "sentence": "After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible and large parts of the Sahel were designated as degraded land (e.g",
+    "original_entities": [
+      {
+        "text": "the 1970s and 1980s",
+        "label": "DATE",
+        "start": 30,
+        "end": 49
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start": 64,
+        "end": 68
+      }
+    ],
+    "extracted_entities": [],
+    "extracted_relations": [],
+    "num_entities": 0,
+    "num_relations": 0,
+    "filtered_entities": 0,
+    "filtered_relations": 0,
+    "model_response": "ERROR: 'max_new_tokens'",
+    "processing_timestamp": "2025-07-10T10:55:47.053197",
+    "success": false,
+    "error": "'max_new_tokens'"
+  },
+  {
+    "sentence_id": 1,
+    "sentence": "The forests of West and Central Africa probably originally covered a combined area of about 3 million km 2",
+    "original_entities": [
+      {
+        "text": "forests",
+        "label": "LULC",
+        "start": 12,
+        "end": 19
+      },
+      {
+        "text": "West",
+        "label": "LOC",
+        "start": 23,
+        "end": 27
+      },
+      {
+        "text": "Central Africa",
+        "label": "LOC",
+        "start": 32,
+        "end": 46
+      },
+      {
+        "text": "area of about 3 million km",
+        "label": "SURFACE_UNIT",
+        "start": 86,
+        "end": 112
+      },
+      {
+        "text": "2",
+        "label": "CARDINAL",
+        "start": 113,
+        "end": 114
+      }
+    ],
+    "extracted_entities": [],
+    "extracted_relations": [],
+    "num_entities": 0,
+    "num_relations": 0,
+    "filtered_entities": 0,
+    "filtered_relations": 0,
+    "model_response": "ERROR: 'max_new_tokens'",
+    "processing_timestamp": "2025-07-10T10:55:47.057984",
+    "success": false,
+    "error": "'max_new_tokens'"
+  }
+]

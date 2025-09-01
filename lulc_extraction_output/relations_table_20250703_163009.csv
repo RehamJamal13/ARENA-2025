@@ -1,0 +1,4 @@
+sentence_id,sentence,source,relationship,target,confidence
+0,"After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g",droughts,CAUSES,loss,HIGH
+0,"After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g",loss,DECREASES_BY,woody_vegetation_cover,MEDIUM
+0,"After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g",large_parts,LOCATED_IN,Sahel,HIGH

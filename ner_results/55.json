@@ -1,0 +1,18 @@
+{
+  "article_id": "55",
+  "original_sentence": "New York urban development has impacted agricultural areas.",
+  "entities": [
+    {
+      "text": "New York",
+      "label": "LOC",
+      "start_char": 0,
+      "end_char": 8
+    },
+    {
+      "text": "urban development",
+      "label": "PROCESS",
+      "start_char": 9,
+      "end_char": 26
+    }
+  ]
+}

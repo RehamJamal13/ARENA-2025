@@ -1,0 +1,1571 @@
+[
+  {
+    "id": 0,
+    "data": {
+      "text": "After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g"
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_0",
+        "result": [
+          {
+            "value": {
+              "start": 31,
+              "end": 50,
+              "text": "the 1970s and 1980s",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_0_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 65,
+              "end": 69,
+              "text": "loss",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "ent_0_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 10,
+              "end": 18,
+              "text": "droughts",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_0_new_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_0_new_2",
+            "to_id": "ent_0_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "CAUSES"
+            ]
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 22,
+              "text": "woody_vegetation_cover",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_0_new_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_0_1",
+            "to_id": "ent_0_new_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "DECREASES_BY"
+            ]
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 11,
+              "text": "large_parts",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_0_new_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 165,
+              "end": 170,
+              "text": "Sahel",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_0_new_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_0_new_4",
+            "to_id": "ent_0_new_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ]
+          }
+        ],
+        "model_version": "lulc-relation-extraction-v1.0",
+        "score": 0.85,
+        "created_at": "2025-07-03T09:59:31.144868",
+        "updated_at": "2025-07-03T09:59:31.144874",
+        "task": 0
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "data": {
+      "text": "Pastoral production has often existed in some sort of symbiotic interaction with the [agriculture]"
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_1",
+        "result": [
+          {
+            "value": {
+              "start": 95,
+              "end": 106,
+              "text": "agriculture",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_1_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          }
+        ],
+        "model_version": "lulc-relation-extraction-v1.0",
+        "score": 0.85,
+        "created_at": "2025-07-03T09:59:31.144903",
+        "updated_at": "2025-07-03T09:59:31.144905",
+        "task": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "data": {
+      "text": "The forests of West and Central Africa probably originally covered a combined area of about 3 million km 2"
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_2",
+        "result": [
+          {
+            "value": {
+              "start": 13,
+              "end": 20,
+              "text": "forests",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_2_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 24,
+              "end": 28,
+              "text": "West",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "ent_2_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 33,
+              "end": 47,
+              "text": "Central Africa",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "ent_2_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 87,
+              "end": 113,
+              "text": "area of about 3 million km",
+              "labels": [
+                "SURFACE_UNIT"
+              ]
+            },
+            "id": "ent_2_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 114,
+              "end": 115,
+              "text": "2",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "ent_2_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 15,
+              "end": 38,
+              "text": "West and Central Africa",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_2_new_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_2_0",
+            "to_id": "ent_2_new_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ]
+          },
+          {
+            "from_id": "ent_2_0",
+            "to_id": "ent_2_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "MEASURES"
+            ]
+          }
+        ],
+        "model_version": "lulc-relation-extraction-v1.0",
+        "score": 0.85,
+        "created_at": "2025-07-03T09:59:31.144917",
+        "updated_at": "2025-07-03T09:59:31.144919",
+        "task": 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "data": {
+      "text": "(1993)'}], '#text': \"An increase of land under [cultivation] can be in the form of either (a) clearing more land within the present territory, or (b) migrating to other areas to develop new land for [cultivation]"
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_3",
+        "result": [
+          {
+            "value": {
+              "start": 1,
+              "end": 5,
+              "text": "1993",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_3_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 24,
+              "end": 32,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "ent_3_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 48,
+              "end": 59,
+              "text": "cultivation",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "ent_3_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 200,
+              "end": 211,
+              "text": "cultivation",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "ent_3_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_3_1",
+            "to_id": "ent_3_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "INCREASES_BY"
+            ]
+          }
+        ],
+        "model_version": "lulc-relation-extraction-v1.0",
+        "score": 0.85,
+        "created_at": "2025-07-03T09:59:31.144941",
+        "updated_at": "2025-07-03T09:59:31.144942",
+        "task": 3
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "data": {
+      "text": "(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in national rainfall of 1 percent"
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_4",
+        "result": [
+          {
+            "value": {
+              "start": 1,
+              "end": 5,
+              "text": "2006",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_4_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 24,
+              "end": 32,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "ent_4_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 50,
+              "end": 55,
+              "text": "urban",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_4_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 66,
+              "end": 78,
+              "text": "0.45 percent",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "ent_4_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 86,
+              "end": 95,
+              "text": "reduction",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "ent_4_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 120,
+              "end": 129,
+              "text": "1 percent",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "ent_4_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 6,
+              "text": "(2006)",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_4_new_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 7,
+              "text": "[study]",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_4_new_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_4_new_6",
+            "to_id": "ent_4_new_7",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ]
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 12,
+              "text": "(estimation)",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_4_new_8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_4_new_7",
+            "to_id": "ent_4_new_8",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "ENABLES"
+            ]
+          }
+        ],
+        "model_version": "lulc-relation-extraction-v1.0",
+        "score": 0.85,
+        "created_at": "2025-07-03T09:59:31.144963",
+        "updated_at": "2025-07-03T09:59:31.144965",
+        "task": 4
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "data": {
+      "text": ").'}]}, {'@xmlns': 'http://www.tei-c.org/ns/1.0', 'head': {'@n': '4.2.', '[Land use ]change in the study site'}, 'p': {'ref': [{'@type': 'figure', '@target': '#fig_1', '2a'}, {'@type': 'figure', '@target': '#fig_1', '2b'}], 'From 1996 to 2017, the area covered by cropped fields, C, has increased from 40% to 51.3% over the study site area, and from 47% to 64% of the arable lands in the study site due to the loss fallows"
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_5",
+        "result": [
+          {
+            "value": {
+              "start": 66,
+              "end": 69,
+              "text": "4.2",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "ent_5_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 94,
+              "end": 100,
+              "text": "change",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "ent_5_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 266,
+              "end": 278,
+              "text": "1996 to 2017",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_5_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 323,
+              "end": 332,
+              "text": "increased",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "ent_5_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 338,
+              "end": 350,
+              "text": "40% to 51.3%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "ent_5_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 386,
+              "end": 392,
+              "text": "47% to",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "ent_5_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 393,
+              "end": 396,
+              "text": "64%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "ent_5_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 446,
+              "end": 450,
+              "text": "loss",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "ent_5_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 451,
+              "end": 458,
+              "text": "fallows",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_5_8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_5_2",
+            "to_id": "ent_5_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ]
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 34,
+              "text": "11.3% --FROM_TO-- 40% --TO-- 51.3%",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_5_new_9",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_5_1",
+            "to_id": "ent_5_new_9",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "INCREASES_BY"
+            ]
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 30,
+              "text": "17% --FROM_TO-- 47% --TO-- 64%",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_5_new_10",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_5_1",
+            "to_id": "ent_5_new_10",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "INCREASES_BY"
+            ]
+          },
+          {
+            "from_id": "ent_5_7",
+            "to_id": "ent_5_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "CAUSES"
+            ]
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 10,
+              "text": "study_site",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_5_new_11",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 15,
+              "text": "study_site_area",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_5_new_12",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_5_new_11",
+            "to_id": "ent_5_new_12",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ]
+          }
+        ],
+        "model_version": "lulc-relation-extraction-v1.0",
+        "score": 0.85,
+        "created_at": "2025-07-03T09:59:31.144999",
+        "updated_at": "2025-07-03T09:59:31.145001",
+        "task": 5
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "data": {
+      "text": "[Agriculture] in this region has been dominated over the past three decades by [cotton] production"
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_6",
+        "result": [
+          {
+            "value": {
+              "start": 1,
+              "end": 12,
+              "text": "Agriculture",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_6_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 53,
+              "end": 75,
+              "text": "the past three decades",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_6_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 80,
+              "end": 86,
+              "text": "cotton",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_6_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          }
+        ],
+        "model_version": "lulc-relation-extraction-v1.0",
+        "score": 0.85,
+        "created_at": "2025-07-03T09:59:31.145054",
+        "updated_at": "2025-07-03T09:59:31.145056",
+        "task": 6
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "data": {
+      "text": "[Forest] land was decreased nearly by half in 2002 compared to its coverage in 1984, while the size of the gallery [forest] did not change much"
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_7",
+        "result": [
+          {
+            "value": {
+              "start": 1,
+              "end": 7,
+              "text": "Forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_7_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 18,
+              "end": 27,
+              "text": "decreased",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "ent_7_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 38,
+              "end": 42,
+              "text": "half",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "ent_7_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 46,
+              "end": 50,
+              "text": "2002",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_7_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 79,
+              "end": 83,
+              "text": "1984",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_7_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 116,
+              "end": 122,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_7_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 132,
+              "end": 138,
+              "text": "change",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "ent_7_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 13,
+              "text": "forest (1984)",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_7_new_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 13,
+              "text": "forest (2002)",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_7_new_8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_7_new_7",
+            "to_id": "ent_7_new_8",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "DECREASES_BY"
+            ]
+          }
+        ],
+        "model_version": "lulc-relation-extraction-v1.0",
+        "score": 0.85,
+        "created_at": "2025-07-03T09:59:31.145070",
+        "updated_at": "2025-07-03T09:59:31.145072",
+        "task": 7
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "data": {
+      "text": "About 26 and 31% of the total area of natural vegetation ([forest], woodland and tree [savanna]) will be converted to farmland and degraded [savanna] by 2050 if we assume the dynamics recorded from 1975 to 1990 and 1990-2010, respectively"
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_8",
+        "result": [
+          {
+            "value": {
+              "start": 6,
+              "end": 8,
+              "text": "26",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "ent_8_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 13,
+              "end": 16,
+              "text": "31%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "ent_8_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 59,
+              "end": 65,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_8_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 81,
+              "end": 85,
+              "text": "tree",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_8_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 87,
+              "end": 94,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_8_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 105,
+              "end": 114,
+              "text": "converted",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "ent_8_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 141,
+              "end": 148,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_8_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 153,
+              "end": 157,
+              "text": "2050",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_8_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 198,
+              "end": 202,
+              "text": "1975",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_8_8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 206,
+              "end": 210,
+              "text": "1990",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_8_9",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 215,
+              "end": 224,
+              "text": "1990-2010",
+              "labels": [
+                "COORDINATES"
+              ]
+            },
+            "id": "ent_8_10",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 3,
+              "text": "26%",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_8_new_10",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_8_new_10",
+            "to_id": "ent_8_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "DECREASES_BY"
+            ]
+          },
+          {
+            "value": {
+              "start": 118,
+              "end": 126,
+              "text": "farmland",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_8_new_11",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 12,
+              "text": "> total area",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_8_new_12",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_8_new_11",
+            "to_id": "ent_8_new_12",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ]
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 8,
+              "text": "> future",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_8_new_13",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_8_7",
+            "to_id": "ent_8_new_13",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ]
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 6,
+              "text": "> past",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_8_new_14",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_8_8",
+            "to_id": "ent_8_new_14",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ]
+          },
+          {
+            "from_id": "ent_8_9",
+            "to_id": "ent_8_new_14",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ]
+          }
+        ],
+        "model_version": "lulc-relation-extraction-v1.0",
+        "score": 0.85,
+        "created_at": "2025-07-03T09:59:31.145107",
+        "updated_at": "2025-07-03T09:59:31.145109",
+        "task": 8
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "data": {
+      "text": "Although such schemes clearly have the potential to benefit biodiversity and the wider environment, further research is required to quantify the benefits and risks, assess the scales over which benefits are being and are likely to be delivered, and to assess the socio-economic implications for livelihoods and land-use .'}]}, {'@xmlns': 'http://www.tei-c.org/ns/1.0', 'head': {'@n': '4.3.', 'Wider implications'}, 'p': {'ref': [{'@type': 'figure', '@target': '#fig_0', '1'}, {'@type': 'bibr', '@target': '#b54', '(Laporte et al., 2007)'}, {'@type': 'bibr', '(Laurance et al., 2006a,b;'}, {'@type': 'bibr', '@target': '#b89', 'Wilkie et al., 2000;'}, {'@type': 'bibr', '@target': '#b92', 'Zhang et al., 2006)'}, {'@type': 'bibr', '@target': '#b16', '(Butler and Laurance, 2008)'}], 'The tropical [forest] zone in West Africa has experienced centuries of human modification, leading to a substantial decline in [forest] cover and loss of [forest] biodiversity"
+    },
+    "annotations": [],
+    "predictions": [
+      {
+        "id": "prediction_9",
+        "result": [
+          {
+            "value": {
+              "start": 385,
+              "end": 388,
+              "text": "4.3",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "ent_9_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 489,
+              "end": 490,
+              "text": "1",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "ent_9_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 558,
+              "end": 562,
+              "text": "2007",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_9_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 613,
+              "end": 617,
+              "text": "2006",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_9_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 687,
+              "end": 691,
+              "text": "2000",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_9_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 743,
+              "end": 748,
+              "text": "Zhang",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "ent_9_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 757,
+              "end": 761,
+              "text": "2006",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_9_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 835,
+              "end": 839,
+              "text": "2008",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "ent_9_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 869,
+              "end": 875,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_9_8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 885,
+              "end": 896,
+              "text": "West Africa",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "ent_9_9",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 971,
+              "end": 978,
+              "text": "decline",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "ent_9_10",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 983,
+              "end": 989,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_9_11",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 1001,
+              "end": 1005,
+              "text": "loss",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "ent_9_12",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 1010,
+              "end": 1016,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "ent_9_13",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 11,
+              "text": "West_Africa",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_9_new_11",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 13,
+              "text": "tropical_zone",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_9_new_12",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_9_new_11",
+            "to_id": "ent_9_new_12",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ]
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 31,
+              "text": "centuries_of_human_modification",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_9_new_13",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 19,
+              "text": "substantial_decline",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "id": "ent_9_new_14",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "from_id": "ent_9_new_13",
+            "to_id": "ent_9_new_14",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "CAUSES"
+            ]
+          }
+        ],
+        "model_version": "lulc-relation-extraction-v1.0",
+        "score": 0.85,
+        "created_at": "2025-07-03T09:59:31.145156",
+        "updated_at": "2025-07-03T09:59:31.145158",
+        "task": 9
+      }
+    ]
+  }
+]

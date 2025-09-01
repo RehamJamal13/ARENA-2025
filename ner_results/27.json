@@ -1,0 +1,12 @@
+{
+  "article_id": "27",
+  "original_sentence": "Remote sensing data showed changes in Monsoon Dry Forest vegetation.",
+  "entities": [
+    {
+      "text": "Monsoon Dry Forest vegetation",
+      "label": "LOC",
+      "start_char": 38,
+      "end_char": 67
+    }
+  ]
+}

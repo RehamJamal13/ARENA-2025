@@ -1,0 +1,88 @@
+{
+  "LULC": {
+    "count": 10,
+    "entities": [
+      "built up area",
+      "built-up area",
+      "city's landscape",
+      "cover of bare ground",
+      "forest",
+      "forest cover",
+      "informal settlements",
+      "land uses",
+      "landscape of Thimphu city",
+      "terraced agricultural fields"
+    ]
+  },
+  "LOC": {
+    "count": 4,
+    "entities": [
+      "Some 13 villages",
+      "Thimphu",
+      "Thimphu city",
+      "lesser developed cities"
+    ]
+  },
+  "CHANGE": {
+    "count": 5,
+    "entities": [
+      "changed considerably",
+      "predicted to continue into 2050",
+      "rapid expansion",
+      "significant changes",
+      "slight increase"
+    ]
+  },
+  "DATE": {
+    "count": 5,
+    "entities": [
+      "1985",
+      "2002",
+      "2002-2018",
+      "2018",
+      "study period"
+    ]
+  },
+  "PERCENT": {
+    "count": 5,
+    "entities": [
+      "1.01%",
+      "12.77%",
+      "15.25%",
+      "16%",
+      "73.21%"
+    ]
+  },
+  "CARDINAL": {
+    "count": 1,
+    "entities": [
+      "52.88%"
+    ]
+  },
+  "-": {
+    "count": 1,
+    "entities": [
+      "followed by agriculture"
+    ]
+  },
+  "SURFACE_UNIT": {
+    "count": 1,
+    "entities": [
+      "city area"
+    ]
+  },
+  "PROCESS": {
+    "count": 3,
+    "entities": [
+      "Planned development",
+      "expedited socio-economic development",
+      "real estate"
+    ]
+  },
+  "ORGANIZATION": {
+    "count": 1,
+    "entities": [
+      "National Urban Development Commission"
+    ]
+  }
+}

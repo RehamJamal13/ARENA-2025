@@ -1,0 +1,266 @@
+================================================================================
+TITLE: Assessment of land use and land cover changes in Kenya's Mt. Elgon forest ecosystem
+================================================================================
+
+AUTHORS:
+- Nelly Nambande Masayi
+- | Omondi
+- | Tsingalia
+- Nelly Masayi
+
+ABSTRACT:
+Current land-use trends in Kenya's montane forest ecosystems show that land uses are changing fast due to natural and anthropogenic factors and these changes could have devastating effects on the environment. One such montane forest is the transboundary Mt. Elgon forest located in western Kenya. This study analysed trends in land use-land cover changes in Mt. Elgon forest ecosystem over the last 45 years. Landsat imageries downloaded from the United States Geological Survey archives were used to assess land use-land cover changes between 1973 and 2019 by applying supervised classification using Arc GIS 10.5. The IDRISI Selva 17.0 was used to calculate area under different land uses and generate change maps. The major Land Use-Land Cover (LULC) classified were mixed farming, natural forests, planted for-
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Untitled ##
+ests, bamboo forest, fallow land, tea plantation. The landsat images had an average overall classification accuracy of 87.12% and kappa coefficient (K) of 0.84. The kappa coefficient was rated as substantial and the classified images qualified for further analysis. Results established that there was an 18% decline in the natural forest cover between 1977 and 2019. There was a similar decline of 15.19% in bamboo forest cover. Plantation forests established in the 1990's also showed a 15.6% decline between 1999 and 2019. There was, however, a 29% increase in mixed farming, a 10% increase in fallow land and a 0.13% increase in tea plantations. These changes in land uses and land cover call for an urgent need to develop sustainable management plans to protect and conserve the Mt. Elgon forest ecosystem. Sustainable land management strategies to be used in the future may include education on the significance of the forest ecosystem, community participation in sustainable utilisation of forest eco-services and the introduction of sustainable alternative sources of livelihoods, such as bee farming.
+
+## K E Y W O R D S ##
+ecosystem changes, indigenous forests, land cover, land-use changes, Mt. Elgon
+
+## Résumé ##
+Les tendances actuelles d'utilisation des terres au sein des écosystèmes forestiers de montagne du Kenya montrent que l'utilisation des terres change rapidement en raison de facteurs naturels et anthropiques et que ces changements pourraient avoir des effets dévastateurs sur l'environnement. La forêt du mont transfrontalier Elgon, située
+
+## | INTRODUC TI ON ##
+Land-use change involves the arrangements, activities and inputs people make in a particular land cover type to produce and maintain change. The negative impacts often associated with land-use changes worldwide have become a global concern 
+Dynamics of Land use and land cover (LULC) change have not been uniform in all parts of the world as a result of different driving forces 
+Although land use change to modern agriculture has been effective in increasing food production, it has also extensively degraded the environment thus gaining a lot of interest because of its role in driving environmental changes 
+
+## Les images ##
+worrying land-use changes is the conversion of forests to other uses. 
+Land scarcity in the highlands of East Africa has converted forested lands to agriculture, reducing forest cover. 
+(3,467,000 ha) 
+Unsustainable land-use changes in this region may result in the drying up of rivers which could impact disastrously, the agricultural sector, leading to serious food insecurity challenges. Majority of people in sub-Saharan Africa depend on natural resources for their livelihoods and therefore understanding land use change (LUC) dynamics is crucial for sustainable land resource management 
+
+## | ME THODS ##
+The Mt. Elgon forest is a transboundary ecosystem in Northwestern Kenya and Eastern Uganda. In Kenya, it is surrounded by Bungoma County to the south and Transnzoia County to the east.
+On the Ugandan side, Mbale district is to the south-eastern part, Sironko district to the west and Kapchorwa district to the north.
+The study was carried out in the Kenya's Mt. Elgon forest ecosystem and the adjacent regions 
+Mount Elgon Ecosystem is located approximately 150 km northeast of Lake Victoria, at latitude 1° 08' N and 34°45'E. The climate of the area is mainly tropically humid, with mean annual rainfall of 1400-1800 mm and an average temperature range of 14-24°C, though both climate parameters vary strongly with elevation. The annual rainfall pattern is bimodally distributed, with long rains between March and June, and short rains from September to November.
+Mean temperature is lowest in June to September 
+
+## | Data collection and analysis ##
+Change analysis was run between 
+
+## | RE SULTS ##
+Analyses revealed that in 1977, there were five major land uses which included natural forests, bamboo forests, grasslands, mixed farming and fallow land (Figure 
+In 1977, natural forest was the dominant land use/ land cover in the Mt. Elgon forest ecosystem accounting for 36.08% (671.37 km 2 ) of the total land area. Grasslands were the second most dominant land use with 28.23% (525.35 km 2 ). Bamboo forest accounted for 16.60% (309.7 km 2 ) of the land use while fallow land and mixed farming accounted for 17.68% (328.9 km 2 ) and 1.37% (25.39 km 2 ), respectively.
+In 1986, the region still had five major land uses which included natural forests, bamboo forests, grasslands, mixed farming and fallow land (Figure 
+Grasslands covered some 29.38% (546.52 km 2 ) that were mainly used for grazing domestic animals in the forest. Fallow land and mixed farming occupied 21.4% (398 km 2 ) and 12.65% (235.42 km 2 ) of the Mt. Elgon forest ecosystem, respectively. Bamboo forests covered some 5.46% (101.79 km 2 ).
+Analyses further revealed major changes in sizes of the various land use and land cover types. Between 1977 and 1986, there was Tea plantation covered some 0.10% (1.81 km 2 ) of the total land area. Previous studies further revealed that tea plantation was cultivated by the Kenyan government as a buffer around the natural forest by the Nyayo Tea Zone Corporation 
+
+## F I G U R E 2 ##
+Land Use Land Cover Changes in Mt. Elgon forest ecosystem and adjacent areas (1977) There were further changes in land use/land cover changes between 1986 and 1999. There was a decline of 18.09% in fallow land, 11.16% in natural forest, 10.9% in grasslands and a 0.89% decline in bamboo. The area under mixed farming expanded by 17.48% over the same period (Figure 
+
+## F I G U R E 3 Land use land cover changes in Mt. Elgon forest and adjacent regions (1986) ##
+Between 1977 and 2019, the size of land under natural forest also declined by 18%, bamboo forests declined by 15.19%, while grasslands declined by 13% (Figure 
+
+## | DISCUSS ION ##
+Results of this analysis on trends of land use/land cover changes between 1973 and 2019 clearly show that there were notable changes Fallow Land Planted Forest Tea with an annual average decline of 1.24%. The introduction of the first phase of Chepyuk settlement scheme in the region that was predominantly covered by bamboo could explain the major decline in bamboo during this period. On the contrary, the study revealed a 0.69% annual average increase in mixed farming, 0.24% annual average increase in fallow land and a 0.15% annual average increase in plantation forest.
+The result imply that increase in the size of land under agriculture is the major contributor to a decline in natural forests, grasslands and bamboo forests in the Mt. Elgon forest ecosystem.
+The study revealed that land use change from natural forests to mixed farming and fallow land could explain the decline in the size of natural forest of the study area. Secondary data indicated that increase in population and change in livelihoods sources from nomadic pastoralism to crop farming could explain the increase in land under mixed farming. In the 1973, the government agreed to resettle the Elgon Dorobos to an area covering 3686 ha at the lower slopes in an area currently known as Chepyuk through legal notice no 51 of 1974 
+This change in the lifestyle of the people has led to encroachment of the forest for cultivation and exploitation of the forest products 
+The results of this study are in agreement with the findings of 
+In Tanzania, 
+Findings differ from MEICDP (2001) findings who reported an increase in grasslands over this period. 
+In Myanmar, 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. 
+   Authors: , 
+
+2. Exploring landsat 8
+   Authors: , 
+   Date: 2015
+
+3. Mapping recent deforestation and forest disturbance in Northeastern Madagascar
+   Authors: , , , 
+   Date: 2013. 2013
+
+4. The underlying causes of forest decline. Centre for International forestry research
+   Authors: 
+   Date: 2000
+
+5. Global forest resources: history and dynamics
+   Authors: 
+   Date: 2001
+
+6. Exploring land use/land cover changes, drivers and their implications in contrasting agro-ecological environments of Ethiopia
+   Authors: , , , , , , , , , 
+   Date: 2019. 2019.104052
+
+7. Central bureau of statistics economic survey
+   Authors: 
+   Date: 2004. 2003
+
+8. Public private partnerships opportunities for forestry sector development in Kenya: Synthesis of primary and secondary production actors, and trade
+   Authors: , , , 
+   Date: 2018
+
+9. Assessing the accuracy of remotely sensed data: Principles and practises
+   Authors: , 
+   Date: 1999. 1999
+
+10. Deforestation and forest degradation monitoring and assessment of biomass and carbon stock of lowland rainforest in the Analanjirofo region
+   Authors: , , , , 
+   Date: 2011. 1996-2007
+
+11. Nairobi: National Council for Law Reporting with the Authority of the Attorney-General
+   Authors: 
+   Date: 1999. 1993
+
+12. Food and agricultural organization of the united nation global forest assessment
+   Authors: 
+   Date: 2010
+
+13. Global consequences of land use change
+   Authors: , , , , , , , , , 
+   Date: 2005. 2005
+
+14. Tropical forests were the primary sources of new agricultural land in the 1980s and
+   Authors: , , , , , , 
+   Date: 2009. 1990. 2010
+
+15. Legal report. forest governance, REDD+ and sustainable development in Kenya
+   Authors: 
+   Date: 2010
+
+16. Report of the consideration of a petition by the executive regarding the variation of the boundaries of Mt
+   Authors: 
+   Date: 2019
+
+17. Detecting forest degradation in Marakwet district, Kenya, using remote sensing and
+   Authors: , , , 
+   Date: 2011
+
+18. High-resolution global maps of 21st-century forest cover change
+   Authors: , , , , , , , , , , , , , , 
+   Date: 2013
+
+19. Disturbance indicators and population decline of logged species in Mt
+   Authors: , , , 
+   Date: 2009
+
+20. Characterizing the intensity and dynamics of land-use change in the Mara river basin
+   Authors: , , , , , 
+   Date: 2017
+
+21. Protected areas in Kenya: The case of Mount Elgon in Northwest Kenya: A review of Kenya's implementation of the CBD programme of work on protected areas
+   Date: 2008
+
+22. Introductory digital image processing: a remote sensing perspective
+   Authors: 
+   Date: 2005
+
+23. Land-use and land-cover changes in rural areas during different political systems: a case study of Slovakia from 1782-2006
+   Authors: , , , 
+   Date: 2014
+
+24. Land use changes during the past 300 years. Land use, land cover and soil sciences
+   Authors: , 
+   Date: 2010
+
+25. Policy brief. Mt Elgon water towers
+   Date: 2016
+
+26. Global land use change, economic globalization, and the looming land scarcity
+   Authors: , 
+   Date: 2011
+
+27. Remote sensing and image interpretation
+   Authors: , , 
+   Date: 2004
+
+28. Effects of household dynamics on resource consumption and biodiversity
+   Authors: , , , 
+   Date: 2003
+
+29. Kenya wildlife service forest law enforcement and governance in Kenya: A paper prepared for the East African Community, led regional process in the framework of the ministerial declaration
+   Authors: , , 
+   Date: 2004. July 2004. 2007. Oct 16 2003
+
+30. Aerial photography and land cover mapping of Mt. Elgon: Technical report
+   Authors: 
+   Date: 2001
+
+31. Population and deforestation
+   Authors: , 
+   Date: 1993
+
+32. Hydrological response to climate change in Mt. Elgon water sheds
+   Authors: , , , 
+   Date: 2015
+
+33. State of the forests of Eastern Africa, EUR 29251 EN. Publications Office of the European Union
+   Authors: , , 
+   Date: 2018
+
+34. The causes of tropical deforestation. The economic and statistical analysis of factors giving rise to the loss of the tropical forest
+   Authors: 
+   Date: 1994
+
+35. Review of the management of Mt
+   Authors: , , 
+   Date: 2000
+
+36. Economic analysis of deforestation in Enugu State
+   Authors: , 
+   Date: 2012
+
+37. An East African perspective of the anthropocene
+   Authors: , , 
+   Date: 2020
+
+38. The spatial patterns and roots causes of land use changes in East Africa
+   Authors: , , , , 
+   Date: 2004
+
+39. Forests, communities and urban markets: can they co-exist in a devolved structure
+   Authors: , , 
+   Date: 2001
+
+40. A review of Kenya's national policies relevant to climate change adaptation and mitigation
+   Authors: , , , , , , , 
+   Date: 2014
+
+41. Common property and Forest Resource Management in Kenya
+   Authors: , 
+   Date: 1996. 26th-28th March 1996
+
+42. Hawaiian honeycreeper home range size varies with habitat: implications for native Acacia koa forestry
+   Authors: , , 
+   Date: 2005
+
+43. Sustainable development under competing claims on land: Three pathways between land-use changes, ecosystem services and human well-being
+   Authors: , , , , , , , , , , 
+   Date: 2020
+
+44. Militanization of resource conflict.The case of land based conflict in Mt. Elgon region of Western Kenya
+   Authors: 
+   Date: 2008
+
+45. In Climate change. Contribution of working group III to the fifth assessment report of the intergovernmental panel on climate change
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+46. Distribution and causes of global forest fragmentation
+   Authors: , , , 
+   Date: 2003
+
+47. Understanding the drivers of agricultural land use change in central Senegal
+   Authors: , , 
+   Date: 2004. 2004
+
+48. Revealing regional deforestation dynamics in north-eastern madagascar-insights from multi-temporal land cover change analysis
+   Authors: , , 
+   Date: 2015
+
+49. Coproducing knowledge for sustainable development in telecoupled land systems. Telecoupling, Palgrave Studies in Natural Resource Management
+   Authors: , , , , , , 
+   Date: 2019. 2021
+

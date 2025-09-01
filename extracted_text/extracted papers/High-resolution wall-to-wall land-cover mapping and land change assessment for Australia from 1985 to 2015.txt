@@ -1,0 +1,3 @@
+Title: Remote Sensing of Environment
+
+Abstract: High-resolution wall-to-wall land-cover mapping and land change assessment for Australia from 1985 to 2015

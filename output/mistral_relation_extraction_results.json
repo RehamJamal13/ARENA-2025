@@ -1,0 +1,227 @@
+[
+  {
+    "sentence_id": 0,
+    "sentence": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.",
+    "entities": [
+      {
+        "text": "results",
+        "label": "CHANGE",
+        "start_char": 11,
+        "end_char": 18
+      },
+      {
+        "text": "Thimphu",
+        "label": "LOC",
+        "start_char": 48,
+        "end_char": 55
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 56,
+        "end_char": 60
+      },
+      {
+        "text": "changed",
+        "label": "CHANGE",
+        "start_char": 65,
+        "end_char": 72
+      },
+      {
+        "text": "change",
+        "label": "CHANGE",
+        "start_char": 118,
+        "end_char": 124
+      },
+      {
+        "text": "2050",
+        "label": "DATE",
+        "start_char": 161,
+        "end_char": 165
+      }
+    ],
+    "relations": [
+      {
+        "source": "results",
+        "relationship": "[reveals]",
+        "target": "changed",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "changed",
+        "relationship": "[affects]",
+        "target": "Thimphu",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "change",
+        "relationship": "[is_part_of]",
+        "target": "changed",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "changed",
+        "relationship": "[will_happen_before]",
+        "target": "2050",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "raw_response": "results (CHANGE) --[reveals]-- changed (CHANGE) | confidence: HIGH\nchanged (CHANGE) --[affects]-- Thimphu (LOC) --[is_located_in]-- city (LULC) | confidence: HIGH\nchange (CHANGE) --[is_part_of]-- changed (CHANGE) | confidence: HIGH\nchanged (CHANGE) --[will_happen_before]-- 2050 (DATE) | confidence: MEDIUM",
+    "relation_count": 4,
+    "spacy_context_added": true
+  },
+  {
+    "sentence_id": 1,
+    "sentence": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",
+    "entities": [
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start_char": 33,
+        "end_char": 41
+      },
+      {
+        "text": "12.77%",
+        "label": "PERCENT",
+        "start_char": 43,
+        "end_char": 49
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 73,
+        "end_char": 77
+      },
+      {
+        "text": "52.88%",
+        "label": "PERCENT",
+        "start_char": 79,
+        "end_char": 85
+      },
+      {
+        "text": "2018",
+        "label": "DATE",
+        "start_char": 90,
+        "end_char": 94
+      },
+      {
+        "text": "65.5%",
+        "label": "PERCENT",
+        "start_char": 96,
+        "end_char": 101
+      },
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start_char": 125,
+        "end_char": 133
+      }
+    ],
+    "relations": [
+      {
+        "source": "increase",
+        "relationship": "[is_composed_of]",
+        "target": "12.77%",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "increase",
+        "relationship": "[happens_between]",
+        "target": "2002",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "2002",
+        "relationship": "[has_percentage]",
+        "target": "52.88%",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "2002",
+        "relationship": "[has_change]",
+        "target": "increase",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "increase",
+        "relationship": "[results_in]",
+        "target": "2018",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "2018",
+        "relationship": "[has_percentage]",
+        "target": "65.5%",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "increase",
+        "relationship": "[followed_by]",
+        "target": "increase",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "raw_response": "study --[observes]-- increase(12.77%) | confidence: HIGH\nincrease(12.77%) --[is_composed_of]-- 12.77% | confidence: HIGH\nincrease(12.77%) --[happens_between]-- 2002 (52.88%) | confidence: HIGH\nbuilt_area_2002 --[has_percentage]-- 52.88% | confidence: HIGH\nbuilt_area_2002 --[has_change]-- increase(12.77%) | confidence: HIGH\nincrease(12.77%) --[results_in]-- built_area_2018 (65.5%) | confidence: HIGH\nbuilt_area_2018 --[has_percentage]-- 65.5% | confidence: HIGH\nincrease(12.77%) --[followed_by]-- increase | confidence: MEDIUM\nincrease --[affects]-- bare_ground | confidence: LOW",
+    "relation_count": 7,
+    "spacy_context_added": true
+  },
+  {
+    "sentence_id": 2,
+    "sentence": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",
+    "entities": [
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 17,
+        "end_char": 23
+      },
+      {
+        "text": "declined",
+        "label": "CHANGE",
+        "start_char": 30,
+        "end_char": 38
+      },
+      {
+        "text": "15.25%",
+        "label": "PERCENT",
+        "start_char": 52,
+        "end_char": 58
+      },
+      {
+        "text": "agriculture",
+        "label": "LULC",
+        "start_char": 72,
+        "end_char": 83
+      },
+      {
+        "text": "1.01%",
+        "label": "PERCENT",
+        "start_char": 85,
+        "end_char": 90
+      }
+    ],
+    "relations": [
+      {
+        "source": "15.25%",
+        "relationship": "[represented_as_percentage_of]",
+        "target": "forest",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "forest",
+        "relationship": "[preceded_by_in_time]",
+        "target": "agriculture",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "agriculture",
+        "relationship": "[gained]",
+        "target": "1.01%",
+        "confidence": "HIGH"
+      }
+    ],
+    "raw_response": "forest (LULC) --[decline]-- declared (CHANGE) | confidence: HIGH\ndeclared (CHANGE) --[caused]-- forest (LULC) --[lost]-- 15.25% (PERCENT) | confidence: HIGH\n15.25% (PERCENT) --[represented_as_percentage_of]-- forest (LULC) | confidence: HIGH\nforest (LULC) --[preceded_by_in_time]-- agriculture (LULC) | confidence: MEDIUM\nagriculture (LULC) --[gained]-- 1.01% (PERCENT) | confidence: HIGH",
+    "relation_count": 3,
+    "spacy_context_added": true
+  }
+]

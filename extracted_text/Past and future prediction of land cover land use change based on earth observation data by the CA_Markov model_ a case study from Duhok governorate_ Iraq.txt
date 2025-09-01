@@ -1,0 +1,365 @@
+================================================================================
+TITLE: Past and future prediction of land cover land use change based on earth observation data by the CA-Markov model: a case study from Duhok governorate, Iraq
+================================================================================
+
+AUTHORS:
+- Nabaz Khwarahm
+- Peshawa Najmaddin
+- Korsh Ararat
+- Sarchil Qader
+- Lulc Ca-Markov
+- Gis Iraq
+- Rs
+
+ABSTRACT:
+Understanding land use land cover change (LULCC) dynamics is crucial for sustaining the integrity of structure and function of ecosystems. As such, frequent measuring and monitoring of LULCC are necessary. Over the last four decades, Duhok governorate in the north of Iraq has undergone sweeping changes caused mainly by anthropogenic factors (e.g. population growth). This study used geospatial techniques and the synergy Cellular Automata (CA)-Markov approach to quantify past, current and model the future changes of LULC. The maximum likelihood classifier (MLC) was employed to conduct classification for three consecutive-year Landsat imagery (i.e. 1988, 2008 and 2017). From the classified imageries, three LULC maps with several classes were created and then, change detection analysis was implied. The classified (1988-2008) and (2008-2017)  LULC maps were incorporated into the hybrid model to predict LULC maps for 2017 and 2060, respectively. The classified 2017 LULC maps were used as a reference to validate the model output for 2017.
+Relatively high accuracy agreements were achieved between the classified and the modelled maps (Kno= 0.8315, Klocation= 0.8267, Kstandard = 0.7978). The model classes estimated for 2060 compared to the classified 2017 LULC classes revealed that dense forest, sparse forest, agricultural land and barren area would decrease by -26.26% (from 327.08 to 241.08 km 2 ), -0.76% (from 2372.29 to 2355.82 km 2 ), -5.86% (from 973.21 to 916.27 km 2 ) and -10.03% (from 2918.9-2626.19 km 2 ), respectively. In contrast, the urban area would significantly increase by 271.19%, (from 161.99 to 602.19.8 km 2 ).
+Dense forest in Duhok governorate has seen remarkable decline from 1988 to 2017, and future predictions demonstrated that the declining trend would continue. Dense forest would predominantly convert to sparse forest and barren areas, suggesting forest thinning and clearing. Urban areas were the most dynamic cover types that increased significantly between 1998 and 2017. This trend would continue to increase from 2.36% (2017) to 8.76% (2060). Urbanization would be predominantly at the cost of agricultural land and barren area. Information on spatiotemporal dynamics of LULCC has been proved as an effective measure for maintaining the integrity of the ecosystem components through sustainable planning and management actions.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land use land cover (LULC) is an important component of the environmental systems. Any changes to LULC can cause many environmental and ecological problems at various spatial scales 
+Geospatial technologies, remote sensing (RS) data and geographic information system (GIS) are currently considered to be the most cost-effective and accurate source of information for the detection of changes in LULC 
+In addition, there are different models that can be used for LULCC simulation and modelling, such as statistical models 
+According to the Intergovernmental Panel on Climate Change (IPCC) Report 2019 
+Tracing the impact of urban change on sustainability through time can supply vital information required for sustainable urban progress, particularly in areas where anthropogenic and natural factors are a constant risk 
+
+## Materials and methods ##
+
+
+## Study area ##
+Duhok governorate is located in the north of Iraq, bordering Syria and Turkey, situated between latitudes 36°-37.5°N and longitudes 42°-44°E, with elevations >580 m above sea level (Fig. 
+
+## Historical satellite imagery ##
+Satellite images (30 m spatial resolution and the least cloud cover) from Landsat 5 Thematic Mapper (TM) and Landsat 8 (OLI TIRS) of three historical years 
+Dataset pre-processing and classification 
+
+## Classification assessment and change analysis ##
+Accuracy assessment between automated classification data with reference data/ground control points is essential 
+
+## flow chart part A). ##
+Markov Chain model, cellular automata (CA) model and CA-Markov models
+The Markov chain model (MCM) depends on stochastic process which means that how random variable changes over time 
+The CA-Markov is an effective combination between the MCM to predict temporal changes in LULC and cellular automata models to predict spatial LULCC, hence, the integrated CA-Markov model can be used effectively to predict spatiotemporal changes in LULCC 
+
+## Model validation ##
+Model validation is a crucial step to evaluate the accuracy of predicted data. In this study, the validation was completed by using the classified 2017 LULC map as reference data against the predicted 2017 LULC map based on the standard Kappa index of agreement variations, which have been widely used to validate LULC predictions 
+(IV) for no information (Kno) ( 
+
+## Results ##
+
+
+## Land cover maps and accuracy assessment of the classification ##
+The 
+
+## Spatial analysis of LULC change classification ##
+The LULC changes were spatially analysed. As shown in  . During that period, the sparse forest has slightly increased by 1.47% whilst, agricultural land and urban area have significantly increased by 223.2% (300 km 2 to 973 km 2 ), and 448.84% (29 km 2 to 161 km 2 ) respectively. In contrast, the dense forest, barren area and waterbody have decreased by -33.43%, -18.69% and -3.35%, respectively (Table 
+
+## Comparison between actual LULC and modelled LULC map of 2017 ##
+The degree of agreement between the actual LULC map and the modelled LULC map for the 2017 was R 2 = 0.98 (coefficient of determination) (Fig. 
+
+## Discussion ##
+In the study of environmental change, ecosystem integrity (e.g. structure and function), urban planning and sustainability, LULCC has become a key subject that needs to be   
+Interesting trends can be seen in the change statistics 
+Oppositely, the area of sparse forest slightly increased as this class, in some circumstances, can be a transition stage between dense forest and other classes. Respectively, agricultural lands were increased with a clear jump in 2017. This is likely due to the influence of a recent policy that was implemented by the central government which have encouraged local farmers to increase agricultural production particularly wheat. Across Iraq, the central government has allocated silos to buy wheat from farmers for a pre-declared price above the market price 
+The land use type that increased the most over the last four decades is urban area, which increased by six times from 0.37 to 2. 
+Increasing the population and development of infrastructure can result in accelerating urban expansion 
+
+## Conclusion ##
+Quantifying and predicting spatiotemporal dynamics of LULCCs have become a prerequisite for planning decisions and conserving the integrity of the ecosystems, particularly urban ecosystem as human population grows. Geospatial technologies together with land surface modellers (e.g. CA-Markov) are effective tools in providing invaluable information on the patterns of LCLCs over space and time. Understanding the patterns of changes would supply guidance to various scientific disciplines, for example, biodiversity conservation, sustainable urban systems and environmental management actions.
+Dense forest in the Duhok governorate has seen remarkable decline from 1988 to 2017, and future predictions demonstrated that this trend would continue (i.e. from 2017 to 2060). Dense forest cover would predominantly convert to sparse forest and barren areas, suggesting forest thinning and clearing. Therefore, management actions should focus on protecting the forest areas as part of the sustainable development. Moreover, the most dynamic land use type that increased the most over the last four decades was urban area, which increased by six times from 0.37 to 2. 
+
+## References ##
+
+
+================================================================================
+REFERENCES:
+================================================================================
+1. KlocationStrata = 0.8267 and Kstandard = 0.7978, respectively. Predicting and mapping LULC changes
+
+2. Land use change mapping and analysis using Remote Sensing and GIS: a case study of Simly watershed
+   Authors: , , , 
+   Date: 2015
+
+3. Notes on forestry in Iraq Empire Forestry Review
+   Authors: 
+   Date: 1950
+
+4. Rapid urbanization in China: a real challenge to soil protection and food security
+   Authors: 
+   Date: 2007
+
+5. Stimulating implementation of sustainable development goals and conservation action: predicting future land use/cover change in Virunga National Park
+   Authors: , , 
+   Date: 2020
+
+6. Assessing the accuracy of remotely sensed data: principles and practices
+   Authors: , 
+   Date: 2019
+
+7. Monitoring and prediction of land-use and land-cover (LULC) change. Dhaka megacity
+   Authors: , , 
+   Date: 2014
+
+8. Modelling and analyzing the watershed dynamics using Cellular Automata (CA)-Markov model-a geo-information based approach
+   Authors: , , , , 
+   Date: 2012
+
+9. Land use and land cover change in Greater Dhaka, Bangladesh: using remote sensing to promote sustainable urbanization
+   Authors: , 
+   Date: 2009
+
+10. An optimal approach for land-use/land-cover mapping by integration and fusion of multispectral landsat OLI images: case study in Baghdad
+   Authors: , , , , 
+   Date: 2020
+
+11. IDRISI selva: guide to GIS and image processing Clark Labratories
+   Authors: 
+   Date: 2012. 2002
+
+12. Sociopolitical influences on cropland area change in Iraq
+   Authors: , , 
+   Date: 2015. 2001. 2012
+
+13. Optical remotely sensed time series data for land cover classification: a review ISPRS
+   Authors: , , 
+   Date: 2016
+
+14. Modeling urban land use change by the integration of cellular automaton and Markov model
+   Authors: , , , , , 
+   Date: 2011
+
+15. The state of Asian and Pacific cities 2015: urban transformations shifting from quantity to quality UN Habitat
+   Authors: , 
+   Date: 2015
+
+16. Environmental change monitoring in the arid and semi-arid regions: a case study Al-Basrah Province
+   Authors: , , 
+   Date: 2010
+
+17. Modelling LULC for the period 2010-2030 using GIS and Remote sensing: a case study of Tikrit, Iraq
+   Authors: , , 
+   Date: 2014
+
+18. A sub-pixel multiple change detection approach for hyperspectral imagery
+   Authors: , , 
+   Date: 2018
+
+19. A Framework for measuring urban sustainability in an emerging region: the City of Duhok as a case study
+   Authors: , 
+   Date: 2019
+
+20. An integrated CAmarkov model for dynamic simulation of land use change in Lake Dianchi watershed
+   Authors: , , , , , 
+   Date: 2014
+
+21. GIS and logit regression model applications in land use/land cover change and distribution in Usangu catchment
+   Authors: , , 
+   Date: 2015
+
+22. A Markovian and cellular automata landuse change predictive model of the Usangu Catchment
+   Authors: , 
+   Date: 2017
+
+23. Urban land use land cover changes and their effect on land surface temperature: case study using Dohuk City in the
+   Authors: , 
+   Date: 2017
+
+24. Introductory digital image processing: a remote sensing perspective
+   Authors: 
+   Date: 1996
+
+25. The politics of agricultural development in Iraq and the Kurdistan Region in Iraq (KRI)
+   Authors: , , , , 
+   Date: 2019
+
+26. Impact of land use land cover change on ecosystem services: a comparative analysis on observed data and people's perception in Inle Lake
+   Authors: , , , , , , , 
+   Date: 2018
+
+27. Mapping current and potential future distributions of the oak tree (Quercus aegilops) in the Kurdistan Region
+   Authors: 
+   Date: 2020
+
+28. Spatial modeling of land use and land cover change in Sulaimani, Iraq, using multitemporal satellite data
+   Authors: 
+   Date: 2021
+
+29. Modelling habitat suitability for the breeding Egyptian vulture (Neophron percnopterus) in the Kurdistan Region of
+   Authors: , , , 
+   Date: 2021
+
+30. Modeling the distribution of the Near Eastern fire salamander (Salamandra infraimmaculata) and Kurdistan newt (Neurergus derjugini) under current and future climate conditions in Iraq
+   Authors: , , , 
+   Date: 2021b
+
+31. Predicting and mapping land cover/land use changes in Erbil/Iraq using CA-Markov synergy model
+   Authors: , , , 
+   Date: 2020
+
+32. Land-use modelling in planning practice
+   Authors: , 
+   Date: 2011
+
+33. Global land use change, economic globalization, and the looming land scarcity
+   Authors: , 
+   Date: 2011
+
+34. The measurement of observer agreement for categorical data biometrics
+   Authors: , 
+   Date: 1977
+
+35. Politics, economy, and ideology in Iraqi Kurdistan since 2003: enduring trends and novel challenges
+   Authors: 
+   Date: 2015
+
+36. Integrating Google Earth imagery with Landsat data to improve 30-m resolution land cover mapping
+   Authors: , , , , , 
+   Date: 2020
+
+37. Atmospheric correction of Landsat ETM+ land surface imagery. II Validation and applications
+   Authors: , , , , , , 
+   Date: 2002
+
+38. Monitoring and predicting land use and land cover changes using remote sensing and GIS techniquesa case study of a hilly area
+   Authors: , , 
+   Date: 2018
+
+39. Syria and Iraq ISIS and other actors in historical context. Feisal al-Istrabadi and Sumit Ganguly (2018) The future of ISIS: Regional …, Mishra VN, Rai PK (2016) A remote sensing aided multi-layer perceptron-Markov chain analysis for land use and land cover change prediction in Patna district (Bihar)
+   Authors: 
+   Date: 2018
+
+40. Rapid urban growth in the city of Duhok, Iraqi Kurdistan Region: an integrated approach of GIS, remote sensing and Shannon entropy application
+   Authors: 
+   Date: 2013
+
+41. Forest cover change and migration in Iraqi Kurdistan: a case study from Zawita Sub-district
+   Authors: 
+   Date: 2016
+
+42. Modelling land use and land cover dynamics of Dedza district of Malawi using hybrid Cellular Automata and Markov model
+   Authors: , , , , , 
+
+43. Simulating river runoff and terrestrial water storage variability in data-scarce semi-arid catchments using remote sensing
+   Authors: 
+   Date: 2017. 2013
+
+44. Urban built-up areas in transitional economies of Southeast Asia: spatial extent and dynamics
+   Authors: , , 
+   Date: 2016
+
+45. Analyzing and modeling of a large river basin dynamics applying integrated cellular automata and Markov model
+   Authors: , 
+   Date: 2017
+
+46. Spatio-temporal analysis of land use/land cover pattern changes in Arasbaran Biosphere Reserve: Iran Modeling Earth Systems and Environment
+   Authors: , , 
+   Date: 2016
+
+47. Mapping pan-European land cover using Landsat spectral-temporal metrics and the European LUCAS survey
+   Authors: , , , 
+   Date: 2019
+
+48. Comparison of the structure and accuracy of two land change models
+   Authors: , 
+   Date: 2005
+
+49. Comparison of categorical maps
+   Authors: 
+   Date: 2000
+
+50. Statistical methods to partition effects of quantity and location during comparison of categorical maps at multiple resolutions
+   Authors: 
+   Date: 2002
+
+51. A generalized cross-tabulation matrix to compare soft-classified maps at multiple resolutions
+   Authors: , 
+   Date: 2006
+
+52. Death to Kappa: birth of quantity disagreement and allocation disagreement for accuracy assessment
+   Authors: , 
+   Date: 2011
+
+53. Classification of vegetation type in Iraq using satellite-based phenological parameters
+   Authors: , , , 
+   Date: 2016
+
+54. Estimating historical changes in global land cover: Croplands from 1700 to
+   Authors: , 
+   Date: 1999. 1992
+
+55. Land use/land cover dynamics and modeling of urban land expansion by the integration of cellular automata and markov chain
+   Authors: , , , , , 
+   Date: 2018
+
+56. Monitoring and modeling of spatiotemporal urban expansion and land-use/land-cover change using integrated Markov chain cellular automata model
+   Authors: , , , , 
+   Date: 2017
+
+57. Analysis of thematic map classification error matrices
+   Authors: 
+   Date: 1986
+
+58. Modeling of future land cover land use change in North Carolina using Markov chain and cellular automata model
+   Authors: , 
+   Date: 2014
+
+59. A new end-to-end multidimensional CNN framework for land cover/land use change detection in multi-source remote sensing datasets
+   Authors: , , 
+   Date: 2020. 2010
+
+60. Modelling of land use land cover change using earth observation data-sets of Tons River Basin
+   Authors: , , , , 
+   Date: 2018
+
+61. Characterizing landscape pattern and ecosystem service value changes for urbanization impacts at an eco-regional scale
+   Authors: , , , 
+   Date: 2012
+
+62. Urban land expansion and arable land loss in China-a case study of Beijing-Tianjin-Hebei region
+   Authors: , , , 
+   Date: 2005
+
+63. The impact of land use/land cover change on ecosystem services in the central highlands of Ethiopia Ecosystem services
+   Authors: , , 
+   Date: 2017
+
+64. Displacement as challenge and opportunity Urban profile: Refugees, internally displaced persons and host community Duhok Governorate, Kurdistan Region of Iraq
+   Authors: 
+   Date: 2017. 2016. August 2016. 2020
+
+65. Interpreting the change detection error matrix
+   Authors: 
+   Date: 2007
+
+66. Land use and land cover change detection and prediction in the Kathmandu District of Nepal using remote sensing and GIS
+   Authors: , , , , 
+   Date: 2020
+
+67. Quantifying spatiotemporal patterns of urbanization: the case of the two fastest growing metropolitan regions in the
+   Authors: , , , 
+   Date: 2011
+
+68. A comparative study of urban expansion in Beijing, Tianjin and Shijiazhuang over the past three decades
+   Authors: , , , 
+   Date: 2015
+
+69. Automatic land-cover mapping using Landsat time-series data based on Google Earth Engine
+   Authors: , , , , , 
+   Date: 2019
+
+70. Overwhelming farmland conversion for urban development in transitional China: case study of Shanghai
+   Authors: , , 
+   Date: 2015
+
+71. A spatiotemporal model of land use change based on ant colony optimization
+   Authors: , , 
+   Date: 2012
+
+72. Continuous change detection and classification of land cover using all available Landsat data Remote sensing of Environment
+   Authors: , 
+   Date: 2014
+

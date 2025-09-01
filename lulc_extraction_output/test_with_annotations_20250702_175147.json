@@ -1,0 +1,503 @@
+[
+  {
+    "data": {
+      "text": "After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g"
+    },
+    "annotations": [
+      {
+        "id": "annotation_0",
+        "completed_by": 1,
+        "result": [
+          {
+            "id": "ent_0_0",
+            "type": "labels",
+            "value": {
+              "start": 31,
+              "end": 50,
+              "text": "the 1970s and 1980s",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_0_1",
+            "type": "labels",
+            "value": {
+              "start": 65,
+              "end": 69,
+              "text": "loss",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_0_2",
+            "type": "labels",
+            "value": {
+              "start": 10,
+              "end": 18,
+              "text": "droughts",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "from_id": "ent_0_2",
+            "to_id": "ent_0_1",
+            "type": "relation",
+            "labels": [
+              "CAUSES"
+            ],
+            "direction": "right"
+          },
+          {
+            "id": "ent_0_3",
+            "type": "labels",
+            "value": {
+              "start": 0,
+              "end": 22,
+              "text": "woody_vegetation_cover",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "from_id": "ent_0_1",
+            "to_id": "ent_0_3",
+            "type": "relation",
+            "labels": [
+              "DECREASES_BY"
+            ],
+            "direction": "right"
+          },
+          {
+            "id": "ent_0_4",
+            "type": "labels",
+            "value": {
+              "start": 0,
+              "end": 11,
+              "text": "large_parts",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_0_5",
+            "type": "labels",
+            "value": {
+              "start": 165,
+              "end": 170,
+              "text": "Sahel",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "from_id": "ent_0_4",
+            "to_id": "ent_0_5",
+            "type": "relation",
+            "labels": [
+              "LOCATED_IN"
+            ],
+            "direction": "right"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Pastoral production has often existed in some sort of symbiotic interaction with the [agriculture]"
+    },
+    "annotations": [
+      {
+        "id": "annotation_1",
+        "completed_by": 1,
+        "result": [
+          {
+            "id": "ent_1_0",
+            "type": "labels",
+            "value": {
+              "start": 95,
+              "end": 106,
+              "text": "agriculture",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "The forests of West and Central Africa probably originally covered a combined area of about 3 million km 2"
+    },
+    "annotations": [
+      {
+        "id": "annotation_2",
+        "completed_by": 1,
+        "result": [
+          {
+            "id": "ent_2_0",
+            "type": "labels",
+            "value": {
+              "start": 13,
+              "end": 20,
+              "text": "forests",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_2_1",
+            "type": "labels",
+            "value": {
+              "start": 24,
+              "end": 28,
+              "text": "West",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_2_2",
+            "type": "labels",
+            "value": {
+              "start": 33,
+              "end": 47,
+              "text": "Central Africa",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_2_3",
+            "type": "labels",
+            "value": {
+              "start": 87,
+              "end": 113,
+              "text": "area of about 3 million km",
+              "labels": [
+                "SURFACE_UNIT"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_2_4",
+            "type": "labels",
+            "value": {
+              "start": 114,
+              "end": 115,
+              "text": "2",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_2_5",
+            "type": "labels",
+            "value": {
+              "start": 15,
+              "end": 38,
+              "text": "West and Central Africa",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "from_id": "ent_2_0",
+            "to_id": "ent_2_5",
+            "type": "relation",
+            "labels": [
+              "LOCATED_IN"
+            ],
+            "direction": "right"
+          },
+          {
+            "from_id": "ent_2_0",
+            "to_id": "ent_2_3",
+            "type": "relation",
+            "labels": [
+              "MEASURES"
+            ],
+            "direction": "right"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "(1993)'}], '#text': \"An increase of land under [cultivation] can be in the form of either (a) clearing more land within the present territory, or (b) migrating to other areas to develop new land for [cultivation]"
+    },
+    "annotations": [
+      {
+        "id": "annotation_3",
+        "completed_by": 1,
+        "result": [
+          {
+            "id": "ent_3_0",
+            "type": "labels",
+            "value": {
+              "start": 1,
+              "end": 5,
+              "text": "1993",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_3_1",
+            "type": "labels",
+            "value": {
+              "start": 24,
+              "end": 32,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_3_2",
+            "type": "labels",
+            "value": {
+              "start": 48,
+              "end": 59,
+              "text": "cultivation",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_3_3",
+            "type": "labels",
+            "value": {
+              "start": 200,
+              "end": 211,
+              "text": "cultivation",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "from_id": "ent_3_1",
+            "to_id": "ent_3_3",
+            "type": "relation",
+            "labels": [
+              "INCREASES_BY"
+            ],
+            "direction": "right"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in national rainfall of 1 percent"
+    },
+    "annotations": [
+      {
+        "id": "annotation_4",
+        "completed_by": 1,
+        "result": [
+          {
+            "id": "ent_4_0",
+            "type": "labels",
+            "value": {
+              "start": 1,
+              "end": 5,
+              "text": "2006",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_4_1",
+            "type": "labels",
+            "value": {
+              "start": 24,
+              "end": 32,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_4_2",
+            "type": "labels",
+            "value": {
+              "start": 50,
+              "end": 55,
+              "text": "urban",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_4_3",
+            "type": "labels",
+            "value": {
+              "start": 66,
+              "end": 78,
+              "text": "0.45 percent",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_4_4",
+            "type": "labels",
+            "value": {
+              "start": 86,
+              "end": 95,
+              "text": "reduction",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_4_5",
+            "type": "labels",
+            "value": {
+              "start": 120,
+              "end": 129,
+              "text": "1 percent",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_4_6",
+            "type": "labels",
+            "value": {
+              "start": 0,
+              "end": 6,
+              "text": "(2006)",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "ent_4_7",
+            "type": "labels",
+            "value": {
+              "start": 0,
+              "end": 7,
+              "text": "[study]",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "from_id": "ent_4_6",
+            "to_id": "ent_4_7",
+            "type": "relation",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "direction": "right"
+          },
+          {
+            "id": "ent_4_8",
+            "type": "labels",
+            "value": {
+              "start": 0,
+              "end": 12,
+              "text": "(estimation)",
+              "labels": [
+                "ENTITY"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "from_id": "ent_4_7",
+            "to_id": "ent_4_8",
+            "type": "relation",
+            "labels": [
+              "ENABLES"
+            ],
+            "direction": "right"
+          }
+        ]
+      }
+    ]
+  }
+]

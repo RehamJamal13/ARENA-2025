@@ -1,0 +1,14 @@
+<View>
+    <Text name="text" value="$text" />
+    <Labels name="label" toName="text">
+        <Label value="CHANGE" background="#FF6B6B"/>
+        <Label value="LULC" background="#4ECDC4"/>
+        <Label value="LOC" background="#45B7D1"/>
+        <Label value="DATE" background="#96CEB4"/>
+    </Labels>
+    <Relations>
+      <Relation value="undergoes" smart="true"/>
+      <Relation value="occurs_during" smart="true"/>
+      <Relation value="located_in" smart="true"/>
+    </Relations>
+</View>

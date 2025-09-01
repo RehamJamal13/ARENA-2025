@@ -1,0 +1,25 @@
+<View>
+  <Text name="text" value="$text"/>
+  <Labels name="label" toName="text">
+    <Label value="CHANGE" background="#FF6B6B"/>
+    <Label value="DATE" background="#4ECDC4"/>
+    <Label value="LOC" background="#45B7D1"/>
+    <Label value="LULC" background="#96CEB4"/>
+    <Label value="PERCENT" background="#FECA57"/>
+  </Labels>
+  <Relations name="relation" toName="label">
+    <Relation value="[affects]" background="#FF6B6B"/>
+    <Relation value="[followed_by]" background="#4ECDC4"/>
+    <Relation value="[gained]" background="#45B7D1"/>
+    <Relation value="[happens_between]" background="#96CEB4"/>
+    <Relation value="[has_change]" background="#FECA57"/>
+    <Relation value="[has_percentage]" background="#FF9FF3"/>
+    <Relation value="[is_composed_of]" background="#A55EEA"/>
+    <Relation value="[is_part_of]" background="#54A0FF"/>
+    <Relation value="[preceded_by_in_time]" background="#5F27CD"/>
+    <Relation value="[represented_as_percentage_of]" background="#00D2D3"/>
+    <Relation value="[results_in]" background="#FF9F43"/>
+    <Relation value="[reveals]" background="#10AC84"/>
+    <Relation value="[will_happen_before]" background="#EE5A24"/>
+  </Relations>
+</View>

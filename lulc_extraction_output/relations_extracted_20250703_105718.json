@@ -1,0 +1,662 @@
+{
+  "metadata": {
+    "extraction_date": "2025-07-03T10:57:18.660544",
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "statistics": {
+      "total_sentences": 10,
+      "total_entities": 62,
+      "total_relations": 21,
+      "relation_types": {
+        "CAUSES": 3,
+        "DECREASES_BY": 3,
+        "LOCATED_IN": 5,
+        "MEASURES": 1,
+        "INCREASES_BY": 3,
+        "OCCURS_DURING": 5,
+        "ENABLES": 1
+      },
+      "confidence_distribution": {
+        "HIGH": 16,
+        "MEDIUM": 5
+      }
+    }
+  },
+  "results": [
+    {
+      "sentence_id": 0,
+      "sentence": "After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g",
+      "entities": [
+        {
+          "text": "the 1970s and 1980s",
+          "label": "DATE",
+          "start_char": 31,
+          "end_char": 50
+        },
+        {
+          "text": "loss",
+          "label": "CHANGE",
+          "start_char": 65,
+          "end_char": 69
+        }
+      ],
+      "relations": [
+        {
+          "source": "droughts",
+          "relationship": "CAUSES",
+          "target": "loss",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "loss",
+          "relationship": "DECREASES_BY",
+          "target": "woody_vegetation_cover",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "large_parts",
+          "relationship": "LOCATED_IN",
+          "target": "Sahel",
+          "confidence": "HIGH"
+        }
+      ],
+      "raw_response": "\n\nRELATIONS:\n- droughts --CAUSES-- loss | CONF: HIGH\n- loss --DECREASES_BY-- woody_vegetation_cover | CONF: MEDIUM\n- woody_vegetation_cover --IS_CONSIDERED_AS-- irreversible_loss | CONF: MEDIUM\n- irreversible_loss --IS_ASSIGNED_AS-- desertification | CONF: HIGH\n- large_parts --LOCATED_IN-- Sahel | CONF: HIGH\n- large_parts --ARE_DESIGNATED_AS-- degraded_land | CONF: HIGH",
+      "metadata": {
+        "timestamp": "2025-07-03T09:56:46.961579",
+        "num_entities": 2,
+        "num_relations": 3
+      }
+    },
+    {
+      "sentence_id": 1,
+      "sentence": "Pastoral production has often existed in some sort of symbiotic interaction with the [agriculture]",
+      "entities": [
+        {
+          "text": "agriculture",
+          "label": "LULC",
+          "start_char": 95,
+          "end_char": 106
+        }
+      ],
+      "relations": [],
+      "raw_response": "\n\nSENTENCE: \"Pastoral production has often existed in some sort of symbiotic interaction with the agriculture.\"\n\nRELATIONS:\n- pastoral_production --INTERACTS_WITH-- agriculture | CONF: HIGH\n\nThis relation indicates that pastoral production and agriculture interact with each other in a symbiotic manner. The exact nature of this interaction is not specified in the sentence, but it implies some form of mutual benefit or interdependence. This relationship is considered high confidence because it is explicitly stated in the sentence.",
+      "metadata": {
+        "timestamp": "2025-07-03T09:56:55.163807",
+        "num_entities": 1,
+        "num_relations": 0
+      }
+    },
+    {
+      "sentence_id": 2,
+      "sentence": "The forests of West and Central Africa probably originally covered a combined area of about 3 million km 2",
+      "entities": [
+        {
+          "text": "forests",
+          "label": "LULC",
+          "start_char": 13,
+          "end_char": 20
+        },
+        {
+          "text": "West",
+          "label": "LOC",
+          "start_char": 24,
+          "end_char": 28
+        },
+        {
+          "text": "Central Africa",
+          "label": "LOC",
+          "start_char": 33,
+          "end_char": 47
+        },
+        {
+          "text": "area of about 3 million km",
+          "label": "SURFACE_UNIT",
+          "start_char": 87,
+          "end_char": 113
+        },
+        {
+          "text": "2",
+          "label": "CARDINAL",
+          "start_char": 114,
+          "end_char": 115
+        }
+      ],
+      "relations": [
+        {
+          "source": "forests",
+          "relationship": "LOCATED_IN",
+          "target": "West and Central Africa",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "forests",
+          "relationship": "MEASURES",
+          "target": "area of about 3 million km",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "raw_response": "\n\nRELATIONS:\n- forests --LOCATED_IN-- West and Central Africa | CONF: HIGH\n- forests --MEASURES-- area of about 3 million km | CONF: MEDIUM\n- area of about 3 million km --IS_EQUAL_TO-- 3 million km^2 | CONF: HIGH\n- West and Central Africa --IS_COMPOSITE_OF-- West + Central Africa | CONF: HIGH\n- West --IS_PART_OF-- West and Central Africa | CONF: HIGH\n- Central Africa --IS_PART_OF-- West and Central Africa | CONF: HIGH\n\nNo transformation or change relations can be extracted from the sentence as it only describes the original state of the forests in terms of location and size.",
+      "metadata": {
+        "timestamp": "2025-07-03T09:57:07.336388",
+        "num_entities": 5,
+        "num_relations": 2
+      }
+    },
+    {
+      "sentence_id": 3,
+      "sentence": "(1993)'}], '#text': \"An increase of land under [cultivation] can be in the form of either (a) clearing more land within the present territory, or (b) migrating to other areas to develop new land for [cultivation]",
+      "entities": [
+        {
+          "text": "1993",
+          "label": "DATE",
+          "start_char": 1,
+          "end_char": 5
+        },
+        {
+          "text": "increase",
+          "label": "CHANGE",
+          "start_char": 24,
+          "end_char": 32
+        },
+        {
+          "text": "cultivation",
+          "label": "PROCESS",
+          "start_char": 48,
+          "end_char": 59
+        },
+        {
+          "text": "cultivation",
+          "label": "PROCESS",
+          "start_char": 200,
+          "end_char": 211
+        }
+      ],
+      "relations": [
+        {
+          "source": "increase",
+          "relationship": "INCREASES_BY",
+          "target": "cultivation",
+          "confidence": "HIGH"
+        }
+      ],
+      "raw_response": "\n\nRELATIONS:\n- increase --INCREASES_BY-- cultivation | CONF: HIGH\n- cultivation --CAN_TRANSFORM_INTO-- cultivation | CONF: LOW\n- cultivation --CAN_BE_LOCATED_WITHIN-- present_territory | CONF: MEDIUM\n- present_territory --CAN_HAVE_AREA_CHANGED_BY-- cultivation | CONF: MEDIUM\n- cultivation --CAN_MIGRATE_TO-- other_areas | CONF: MEDIUM\n- other_areas --CAN_HAVE_NEW_LAND_DEVELOPED_FOR-- cultivation | CONF: MEDIUM",
+      "metadata": {
+        "timestamp": "2025-07-03T09:57:19.009811",
+        "num_entities": 4,
+        "num_relations": 1
+      }
+    },
+    {
+      "sentence_id": 4,
+      "sentence": "(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in national rainfall of 1 percent",
+      "entities": [
+        {
+          "text": "2006",
+          "label": "DATE",
+          "start_char": 1,
+          "end_char": 5
+        },
+        {
+          "text": "increase",
+          "label": "CHANGE",
+          "start_char": 24,
+          "end_char": 32
+        },
+        {
+          "text": "urban",
+          "label": "LULC",
+          "start_char": 50,
+          "end_char": 55
+        },
+        {
+          "text": "0.45 percent",
+          "label": "PERCENT",
+          "start_char": 66,
+          "end_char": 78
+        },
+        {
+          "text": "reduction",
+          "label": "CHANGE",
+          "start_char": 86,
+          "end_char": 95
+        },
+        {
+          "text": "1 percent",
+          "label": "PERCENT",
+          "start_char": 120,
+          "end_char": 129
+        }
+      ],
+      "relations": [
+        {
+          "source": "(2006)",
+          "relationship": "OCCURS_DURING",
+          "target": "[study]",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "[study]",
+          "relationship": "ENABLES",
+          "target": "(estimation)",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "raw_response": "\n\nSENTENCE: \"(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in national rainfall of 1 percent\"\n\nRELATIONS:\n- (2006) --OCCURS_DURING-- [study] | CONF: HIGH\n- [study] --ENABLES-- (estimation) | CONF: MEDIUM\n- (estimation) --HAS_VALUE--> 0.45% --MEASURES--> increase | CONF: HIGH\n- (estimation) --HAS_VALUE--> -1% --MEASURES--> reduction | CONF: HIGH\n- [national] --PROPERTY_OF--> urban | CONF: HIGH\n- urban --IS_TYPE_OF--> LULC | CONF: HIGH\n- [national] --PROPERTY_OF--> LULC | CONF: HIGH\n- increase --IS_TYPE_OF--> CHANGE | CONF: HIGH\n- reduction --IS_TYPE_OF--> CHANGE | CONF: HIGH\n- 0.45% --IS_TYPE_OF--> PERCENT | CONF: HIGH\n- 1% --IS_TYPE_OF--> PERCENT | CONF: HIGH\n\nNo explicit or implied relations between entities regarding LULC transformation were found in the sentence.",
+      "metadata": {
+        "timestamp": "2025-07-03T09:57:40.960222",
+        "num_entities": 6,
+        "num_relations": 2
+      }
+    },
+    {
+      "sentence_id": 5,
+      "sentence": ").'}]}, {'@xmlns': 'http://www.tei-c.org/ns/1.0', 'head': {'@n': '4.2.', '#text': '[Land use ]change in the study site'}, 'p': {'ref': [{'@type': 'figure', '@target': '#fig_1', '#text': '2a'}, {'@type': 'figure', '@target': '#fig_1', '#text': '2b'}], '#text': 'From 1996 to 2017, the area covered by cropped fields, C, has increased from 40% to 51.3% over the study site area, and from 47% to 64% of the arable lands in the study site due to the loss fallows",
+      "entities": [
+        {
+          "text": "4.2",
+          "label": "CARDINAL",
+          "start_char": 66,
+          "end_char": 69
+        },
+        {
+          "text": "change",
+          "label": "CHANGE",
+          "start_char": 94,
+          "end_char": 100
+        },
+        {
+          "text": "1996 to 2017",
+          "label": "DATE",
+          "start_char": 266,
+          "end_char": 278
+        },
+        {
+          "text": "increased",
+          "label": "CHANGE",
+          "start_char": 323,
+          "end_char": 332
+        },
+        {
+          "text": "40% to 51.3%",
+          "label": "PERCENT",
+          "start_char": 338,
+          "end_char": 350
+        },
+        {
+          "text": "47% to",
+          "label": "PERCENT",
+          "start_char": 386,
+          "end_char": 392
+        },
+        {
+          "text": "64%",
+          "label": "PERCENT",
+          "start_char": 393,
+          "end_char": 396
+        },
+        {
+          "text": "loss",
+          "label": "CHANGE",
+          "start_char": 446,
+          "end_char": 450
+        },
+        {
+          "text": "fallows",
+          "label": "LULC",
+          "start_char": 451,
+          "end_char": 458
+        }
+      ],
+      "relations": [
+        {
+          "source": "1996 to 2017",
+          "relationship": "OCCURS_DURING",
+          "target": "change",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "change",
+          "relationship": "INCREASES_BY",
+          "target": "11.3% --FROM_TO-- 40% --TO-- 51.3%",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "change",
+          "relationship": "INCREASES_BY",
+          "target": "17% --FROM_TO-- 47% --TO-- 64%",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "loss",
+          "relationship": "CAUSES",
+          "target": "change",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "study_site",
+          "relationship": "LOCATED_IN",
+          "target": "study_site_area",
+          "confidence": "HIGH"
+        }
+      ],
+      "raw_response": "\n\nRELATIONS:\n- 1996 to 2017 --OCCURS_DURING-- change | CONF: HIGH\n- change --INCREASES_BY-- 11.3% --FROM_TO-- 40% --TO-- 51.3% | CONF: HIGH\n- change --INCREASES_BY-- 17% --FROM_TO-- 47% --TO-- 64% | CONF: HIGH\n- loss --CAUSES-- change | CONF: MEDIUM\n- fallows --IS_A-- LULC | CONF: HIGH\n- cropped_fields --IS_A-- LULC | CONF: HIGH\n- arable_lands --IS_A-- LULC | CONF: HIGH\n- study_site --LOCATED_IN-- study_site_area | CONF: HIGH\n- study_site_area --HAS_AREA-- study_site | CONF: HIGH\n- study_site_area --HAS_AREA-- cropped_fields | CONF: HIGH\n- study_site_area --HAS_AREA-- arable_lands | CONF: HIGH\n- figure_1 --REFERS_TO-- 2a | CONF: HIGH\n- figure_1 --REFERS_TO-- 2b | CONF: HIGH",
+      "metadata": {
+        "timestamp": "2025-07-03T09:58:03.096776",
+        "num_entities": 9,
+        "num_relations": 5
+      }
+    },
+    {
+      "sentence_id": 6,
+      "sentence": "[Agriculture] in this region has been dominated over the past three decades by [cotton] production",
+      "entities": [
+        {
+          "text": "Agriculture",
+          "label": "LULC",
+          "start_char": 1,
+          "end_char": 12
+        },
+        {
+          "text": "the past three decades",
+          "label": "DATE",
+          "start_char": 53,
+          "end_char": 75
+        },
+        {
+          "text": "cotton",
+          "label": "LULC",
+          "start_char": 80,
+          "end_char": 86
+        }
+      ],
+      "relations": [],
+      "raw_response": "\n\nRELATIONS:\n- Agriculture --DOMINATED_BY-- cotton | CONF: HIGH\n- Past_three_decades --TIME_PERIOD-- last_thirty_years | CONF: MEDIUM (implied)\n\nNote: The given sentence does not provide enough information to determine any transformation or change in land use.",
+      "metadata": {
+        "timestamp": "2025-07-03T09:58:08.822653",
+        "num_entities": 3,
+        "num_relations": 0
+      }
+    },
+    {
+      "sentence_id": 7,
+      "sentence": "[Forest] land was decreased nearly by half in 2002 compared to its coverage in 1984, while the size of the gallery [forest] did not change much",
+      "entities": [
+        {
+          "text": "Forest",
+          "label": "LULC",
+          "start_char": 1,
+          "end_char": 7
+        },
+        {
+          "text": "decreased",
+          "label": "CHANGE",
+          "start_char": 18,
+          "end_char": 27
+        },
+        {
+          "text": "half",
+          "label": "CARDINAL",
+          "start_char": 38,
+          "end_char": 42
+        },
+        {
+          "text": "2002",
+          "label": "DATE",
+          "start_char": 46,
+          "end_char": 50
+        },
+        {
+          "text": "1984",
+          "label": "DATE",
+          "start_char": 79,
+          "end_char": 83
+        },
+        {
+          "text": "forest",
+          "label": "LULC",
+          "start_char": 116,
+          "end_char": 122
+        },
+        {
+          "text": "change",
+          "label": "CHANGE",
+          "start_char": 132,
+          "end_char": 138
+        }
+      ],
+      "relations": [
+        {
+          "source": "forest (1984)",
+          "relationship": "DECREASES_BY",
+          "target": "forest (2002)",
+          "confidence": "HIGH"
+        }
+      ],
+      "raw_response": "\n\nRELATIONS:\n- forest (1984) --DECREASES_BY-- forest (2002) | CONF: HIGH\n- forest (1984) --LOCATED_AT-- location_X | CONF: MEDIUM\n- forest (2002) --LOCATED_AT-- location_X | CONF: MEDIUM\n\nNote: The exact locations were not mentioned in the sentence, so we can only assume a medium confidence level for their being located at the same place.",
+      "metadata": {
+        "timestamp": "2025-07-03T09:58:17.247489",
+        "num_entities": 7,
+        "num_relations": 1
+      }
+    },
+    {
+      "sentence_id": 8,
+      "sentence": "About 26 and 31% of the total area of natural vegetation ([forest], woodland and tree [savanna]) will be converted to farmland and degraded [savanna] by 2050 if we assume the dynamics recorded from 1975 to 1990 and 1990-2010, respectively",
+      "entities": [
+        {
+          "text": "26",
+          "label": "CARDINAL",
+          "start_char": 6,
+          "end_char": 8
+        },
+        {
+          "text": "31%",
+          "label": "PERCENT",
+          "start_char": 13,
+          "end_char": 16
+        },
+        {
+          "text": "forest",
+          "label": "LULC",
+          "start_char": 59,
+          "end_char": 65
+        },
+        {
+          "text": "tree",
+          "label": "LULC",
+          "start_char": 81,
+          "end_char": 85
+        },
+        {
+          "text": "savanna",
+          "label": "LULC",
+          "start_char": 87,
+          "end_char": 94
+        },
+        {
+          "text": "converted",
+          "label": "CHANGE",
+          "start_char": 105,
+          "end_char": 114
+        },
+        {
+          "text": "savanna",
+          "label": "LULC",
+          "start_char": 141,
+          "end_char": 148
+        },
+        {
+          "text": "2050",
+          "label": "DATE",
+          "start_char": 153,
+          "end_char": 157
+        },
+        {
+          "text": "1975",
+          "label": "DATE",
+          "start_char": 198,
+          "end_char": 202
+        },
+        {
+          "text": "1990",
+          "label": "DATE",
+          "start_char": 206,
+          "end_char": 210
+        },
+        {
+          "text": "1990-2010",
+          "label": "COORDINATES",
+          "start_char": 215,
+          "end_char": 224
+        }
+      ],
+      "relations": [
+        {
+          "source": "26%",
+          "relationship": "DECREASES_BY",
+          "target": "forest",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "farmland",
+          "relationship": "LOCATED_IN",
+          "target": "> total area",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "2050",
+          "relationship": "OCCURS_DURING",
+          "target": "> future",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "1975",
+          "relationship": "OCCURS_DURING",
+          "target": "> past",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "1990",
+          "relationship": "OCCURS_DURING",
+          "target": "> past",
+          "confidence": "HIGH"
+        }
+      ],
+      "raw_response": "\n\nRELATIONS:\n- 26% --DECREASES_BY-- forest | CONF: HIGH\n- 31% --DECREases_BY-- savanna | CONF: HIGH\n- forest, woodland, tree savanna --CHANGE_TO--> farmland | CONF: HIGH\n- farmland --LOCATED_IN--> total area | CONF: MEDIUM\n- 2050 --OCCURS_DURING--> future | CONF: HIGH\n- 1975 --OCCURS_DURING--> past | CONF: HIGH\n- 1990 --OCCURS_DURING--> past | CONF: HIGH\n- 1990-2010 --COORDINATES--> period | CONF: HIGH",
+      "metadata": {
+        "timestamp": "2025-07-03T09:58:30.406697",
+        "num_entities": 11,
+        "num_relations": 5
+      }
+    },
+    {
+      "sentence_id": 9,
+      "sentence": "Although such schemes clearly have the potential to benefit biodiversity and the wider environment, further research is required to quantify the benefits and risks, assess the scales over which benefits are being and are likely to be delivered, and to assess the socio-economic implications for livelihoods and land-use .'}]}, {'@xmlns': 'http://www.tei-c.org/ns/1.0', 'head': {'@n': '4.3.', '#text': 'Wider implications'}, 'p': {'ref': [{'@type': 'figure', '@target': '#fig_0', '#text': '1'}, {'@type': 'bibr', '@target': '#b54', '#text': '(Laporte et al., 2007)'}, {'@type': 'bibr', '#text': '(Laurance et al., 2006a,b;'}, {'@type': 'bibr', '@target': '#b89', '#text': 'Wilkie et al., 2000;'}, {'@type': 'bibr', '@target': '#b92', '#text': 'Zhang et al., 2006)'}, {'@type': 'bibr', '@target': '#b16', '#text': '(Butler and Laurance, 2008)'}], '#text': 'The tropical [forest] zone in West Africa has experienced centuries of human modification, leading to a substantial decline in [forest] cover and loss of [forest] biodiversity",
+      "entities": [
+        {
+          "text": "4.3",
+          "label": "CARDINAL",
+          "start_char": 385,
+          "end_char": 388
+        },
+        {
+          "text": "1",
+          "label": "CARDINAL",
+          "start_char": 489,
+          "end_char": 490
+        },
+        {
+          "text": "2007",
+          "label": "DATE",
+          "start_char": 558,
+          "end_char": 562
+        },
+        {
+          "text": "2006",
+          "label": "DATE",
+          "start_char": 613,
+          "end_char": 617
+        },
+        {
+          "text": "2000",
+          "label": "DATE",
+          "start_char": 687,
+          "end_char": 691
+        },
+        {
+          "text": "Zhang",
+          "label": "LOC",
+          "start_char": 743,
+          "end_char": 748
+        },
+        {
+          "text": "2006",
+          "label": "DATE",
+          "start_char": 757,
+          "end_char": 761
+        },
+        {
+          "text": "2008",
+          "label": "DATE",
+          "start_char": 835,
+          "end_char": 839
+        },
+        {
+          "text": "forest",
+          "label": "LULC",
+          "start_char": 869,
+          "end_char": 875
+        },
+        {
+          "text": "West Africa",
+          "label": "LOC",
+          "start_char": 885,
+          "end_char": 896
+        },
+        {
+          "text": "decline",
+          "label": "CHANGE",
+          "start_char": 971,
+          "end_char": 978
+        },
+        {
+          "text": "forest",
+          "label": "LULC",
+          "start_char": 983,
+          "end_char": 989
+        },
+        {
+          "text": "loss",
+          "label": "CHANGE",
+          "start_char": 1001,
+          "end_char": 1005
+        },
+        {
+          "text": "forest",
+          "label": "LULC",
+          "start_char": 1010,
+          "end_char": 1016
+        }
+      ],
+      "relations": [
+        {
+          "source": "West_Africa",
+          "relationship": "LOCATED_IN",
+          "target": "tropical_zone",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "centuries_of_human_modification",
+          "relationship": "CAUSES",
+          "target": "substantial_decline",
+          "confidence": "HIGH"
+        }
+      ],
+      "raw_response": "\n\nRELATIONS:\n- further research --REQUIRED_FOR-- quantifying_benefits | CONF: HIGH\n- further research --REQUIRED_FOR-- assessing_risks | CONF: HIGH\n- further research --REQUIRED_FOR-- assessing_scales | CONF: HIGH\n- assessing_scales --IMPACTS-- delivering_benefits | CONF: MEDIUM\n- assessing_scales --IMPACTS-- delivering_risks | CONF: MEDIUM\n- assessing_livelihoods_and_land-use --IMPACTS-- socio-economic_implications | CONF: HIGH\n- West_Africa --LOCATED_IN-- tropical_zone | CONF: HIGH\n- centuries_of_human_modification --CAUSES-- substantial_decline | CONF: HIGH\n- substantial_decline --RESULTS_IN-- forest_cover_loss | CONF: HIGH\n- forest_cover_loss --RESULTS_IN-- loss_of_forest_biodiversity | CONF: HIGH\n- Laporte_et_al._--PUBLISHED_-- 2007 | CONF: HIGH\n- Laurance_et_al._--PUBLISHED_-- 2006a,b | CONF: HIGH\n- Wilkie_et_al._--PUBLISHED_-- 2000 | CONF: HIGH\n- Zhang_et_al._--PUBLISHED_-- 2006 | CONF: HIGH\n- Butler_and_Laurance--PUBLISHED_-- 2008 | CONF: HIGH\n- forest --EXISTED_PREVIOUSLY_AT-- substantial_area | CONF: MEDIUM\n- forest --EXISTS_AT-- West_Africa | CONF: HIGH\n- forest --LOST-- forest_cover | CONF: HIGH\n- forest_cover --REDUCED_TO--> less_cover | CONF: HIGH\n- less_cover --HAS_AREA--> smaller_area | CONF: HIGH",
+      "metadata": {
+        "timestamp": "2025-07-03T09:59:05.082625",
+        "num_entities": 14,
+        "num_relations": 2
+      }
+    }
+  ]
+}

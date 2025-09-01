@@ -1,0 +1,191 @@
+[
+  {
+    "sentence_id": 0,
+    "sentence": "After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible and large parts of the Sahel were designated as degraded land (e.g",
+    "original_entities": [
+      {
+        "text": "the 1970s and 1980s",
+        "label": "DATE",
+        "start": 30,
+        "end": 49
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start": 64,
+        "end": 68
+      }
+    ],
+    "extracted_entities": [],
+    "extracted_relations": [],
+    "num_entities": 0,
+    "num_relations": 0,
+    "filtered_entities": 0,
+    "filtered_relations": 0,
+    "model_response": "You are an expert in Land Use Land Cover (LULC) analysis. Perform joint entity recognition and relation extraction from the given sentence LETS DO THAT USING STEP BY STEP RESONING.\n\nSENTENCE: \"After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible and large parts of the Sahel were designated as degraded land (e.g\"\n\n**STRICT ENTITY TYPES (ONLY USE THESE - NO EXCEPTIONS):**\n- CHANGE: Transformation words (increased, decreased, converted, expanded, reduced, grew, declined, lost, gained, loss)\n- LOC: Location names (countries, cities, specific name of districts, specific name of provinces)\n- LULC: Land Use/Land Cover types (forest, cropland, urban area, built-up area, grassland, wetland, water body, bare ground, agricultural land, residential area, degraded land, woody vegetation)\n- DATE: Temporal references (years, months, periods, seasons, decades, 1970s, 1980s)\n- PERCENT: Percentage values (25%, 10.5%, thirty percent)\n- CARDINAL: Numeric values without % (1000, 2.5 million, three, 500 hectares)\n- COORDINATES: Geographic coordinates (40.7°N, latitude 23.5)\n- SURFACE_UNIT: Area measurements (100 hectares, 50 km², 1000 acres)\n- PROCESS: Environmental processes (deforestation, urbanization, expansion, drought, flooding, desertification, degradation)\n- QUANTITY: Other quantities (rate of change, annual loss, total area, large parts)\nTHERE IS NO ENTITY CALLED EVENT \n**ENTITY EXTRACTION RULES:**\n1. Extract entities as concise as possible (e.g., \"loss\" not \"observed loss of woody vegetation\")\n2. List each date separately (e.g., \"1970s\" and \"1980s\" as two entities)\n3. \"desertification\" is a PROCESS (the process of becoming desert), not LULC\n4. \"woody vegetation\" or \"woody vegetation cover\" is LULC\n**STRICT RELATIONSHIP TYPES (ONLY USE THESE - NO EXCEPTIONS):**\n**CHANGE_TO**: Indicates a direct transformation from one LULC type to another LULC type (2 diffrent LULC).\n- ✅ CORRECT: forest --CHANGE_TO-- cropland (trees cut, land converted to farming)\n- ✅ CORRECT: agricultural land --CHANGE_TO-- urban area (farmland developed into city)\n- ✅ CORRECT: grassland --CHANGE_TO-- built-up area (grass removed, buildings constructed)\n- ❌ WRONG: built-up area --CHANGE_TO-- built-up area (same type, just quantity change)\n- ❌ WRONG: forest --CHANGE_TO-- forest (same type, just area change)\n\n**INCREASES_BY/DECREASES_BY**: For quantitative changes within same LULC type (lulc and percentage )\n- ✅ CORRECT: built-up area --INCREASES_BY-- 12.77% (more built-up area, not transformation)\n- ✅ CORRECT: forest --DECREASES_BY-- 25% (less forest area, not transformation)\n\n**Other Relations:**\n- CAUSES: Process entity causes a change (deforestation --CAUSES-- forest loss)\n- LOCATED_IN: Spatial relationships between one entity and loc (forest --LOCATED_IN-- Brazil)\n- OCCURS_DURING: Temporal relationships between one entity and date (change --OCCURS_DURING-- 2018)\n- MEASURES: Quantitative relationships between change and percentage or quality (12.77% --MEASURES-- increase)\n- AFFECTS: Impact relationships between process and lulc they must be a real impact  (urbanization --AFFECTS-- forest)\n- FROM_TO: Value changes between 2 persentage entity or 2 SURFACE_UNIT entity (52.88% --FROM_TO-- 65.5%)\n- ENABLES: One process enables another process (deforestation --ENABLES-- urbanization)\n\n**Relationship Types - BE VERY THOUGHTFUL:**\n...\n- OCCURS_DURING: Temporal relationships where a **change, process** takes place or is observed within a specific time period. (e.g., change --OCCURS_DURING-- 2018, urbanization --OCCURS_DURING-- decade)\n❌ WRONG: simulation results --OCCURS_DURING-- study period (results don't 'occur' in time, they are 'from' or 'valid for' a period)\n\n**CRITICAL THINKING RULES:**\n1. **Ask yourself**: Is this ACTUALLY a transformation between different land types?\n2. **Think about the process**: What physical change occurred? Was it a change in LULC type or only in quantity?\n3. **Think about what happened**: Did a new LULC appear? Or did existing LULC expand/shrink?\n4. **Think about the data source**: Is there any evidence that the LULC actually changed?\n5. **Think about the semantics**: Does the text describe a change over time? Or does it simply describe the current situation?\n\n**Example sentences:**\n\n\n*The forest --CHANGE_TO-- grassland*\n\n*The forest --CHANGE_TO-- forest*\n\n*The forest --DECREASES_BY-- 45%*\n\n*The forest --DECREASES_BY-- 45%*\n\n*The urban area --INCREASES_BY-- 13.9%*\n\n*The forest --CAUSED_BY-- deforestation*\n\n*The urban area --AFFECTED_BY-- urbanization*",
+    "processing_timestamp": "2025-07-10T10:51:22.879750",
+    "success": false
+  },
+  {
+    "sentence_id": 1,
+    "sentence": "The forests of West and Central Africa probably originally covered a combined area of about 3 million km 2",
+    "original_entities": [
+      {
+        "text": "forests",
+        "label": "LULC",
+        "start": 12,
+        "end": 19
+      },
+      {
+        "text": "West",
+        "label": "LOC",
+        "start": 23,
+        "end": 27
+      },
+      {
+        "text": "Central Africa",
+        "label": "LOC",
+        "start": 32,
+        "end": 46
+      },
+      {
+        "text": "area of about 3 million km",
+        "label": "SURFACE_UNIT",
+        "start": 86,
+        "end": 112
+      },
+      {
+        "text": "2",
+        "label": "CARDINAL",
+        "start": 113,
+        "end": 114
+      }
+    ],
+    "extracted_entities": [],
+    "extracted_relations": [],
+    "num_entities": 0,
+    "num_relations": 0,
+    "filtered_entities": 0,
+    "filtered_relations": 0,
+    "model_response": "You are an expert in Land Use Land Cover (LULC) analysis. Perform joint entity recognition and relation extraction from the given sentence LETS DO THAT USING STEP BY STEP RESONING.\n\nSENTENCE: \"The forests of West and Central Africa probably originally covered a combined area of about 3 million km 2\"\n\n**STRICT ENTITY TYPES (ONLY USE THESE - NO EXCEPTIONS):**\n- CHANGE: Transformation words (increased, decreased, converted, expanded, reduced, grew, declined, lost, gained, loss)\n- LOC: Location names (countries, cities, specific name of districts, specific name of provinces)\n- LULC: Land Use/Land Cover types (forest, cropland, urban area, built-up area, grassland, wetland, water body, bare ground, agricultural land, residential area, degraded land, woody vegetation)\n- DATE: Temporal references (years, months, periods, seasons, decades, 1970s, 1980s)\n- PERCENT: Percentage values (25%, 10.5%, thirty percent)\n- CARDINAL: Numeric values without % (1000, 2.5 million, three, 500 hectares)\n- COORDINATES: Geographic coordinates (40.7°N, latitude 23.5)\n- SURFACE_UNIT: Area measurements (100 hectares, 50 km², 1000 acres)\n- PROCESS: Environmental processes (deforestation, urbanization, expansion, drought, flooding, desertification, degradation)\n- QUANTITY: Other quantities (rate of change, annual loss, total area, large parts)\nTHERE IS NO ENTITY CALLED EVENT \n**ENTITY EXTRACTION RULES:**\n1. Extract entities as concise as possible (e.g., \"loss\" not \"observed loss of woody vegetation\")\n2. List each date separately (e.g., \"1970s\" and \"1980s\" as two entities)\n3. \"desertification\" is a PROCESS (the process of becoming desert), not LULC\n4. \"woody vegetation\" or \"woody vegetation cover\" is LULC\n**STRICT RELATIONSHIP TYPES (ONLY USE THESE - NO EXCEPTIONS):**\n**CHANGE_TO**: Indicates a direct transformation from one LULC type to another LULC type (2 diffrent LULC).\n- ✅ CORRECT: forest --CHANGE_TO-- cropland (trees cut, land converted to farming)\n- ✅ CORRECT: agricultural land --CHANGE_TO-- urban area (farmland developed into city)\n- ✅ CORRECT: grassland --CHANGE_TO-- built-up area (grass removed, buildings constructed)\n- ❌ WRONG: built-up area --CHANGE_TO-- built-up area (same type, just quantity change)\n- ❌ WRONG: forest --CHANGE_TO-- forest (same type, just area change)\n\n**INCREASES_BY/DECREASES_BY**: For quantitative changes within same LULC type (lulc and percentage )\n- ✅ CORRECT: built-up area --INCREASES_BY-- 12.77% (more built-up area, not transformation)\n- ✅ CORRECT: forest --DECREASES_BY-- 25% (less forest area, not transformation)\n\n**Other Relations:**\n- CAUSES: Process entity causes a change (deforestation --CAUSES-- forest loss)\n- LOCATED_IN: Spatial relationships between one entity and loc (forest --LOCATED_IN-- Brazil)\n- OCCURS_DURING: Temporal relationships between one entity and date (change --OCCURS_DURING-- 2018)\n- MEASURES: Quantitative relationships between change and percentage or quality (12.77% --MEASURES-- increase)\n- AFFECTS: Impact relationships between process and lulc they must be a real impact  (urbanization --AFFECTS-- forest)\n- FROM_TO: Value changes between 2 persentage entity or 2 SURFACE_UNIT entity (52.88% --FROM_TO-- 65.5%)\n- ENABLES: One process enables another process (deforestation --ENABLES-- urbanization)\n\n**Relationship Types - BE VERY THOUGHTFUL:**\n...\n- OCCURS_DURING: Temporal relationships where a **change, process** takes place or is observed within a specific time period. (e.g., change --OCCURS_DURING-- 2018, urbanization --OCCURS_DURING-- decade)\n❌ WRONG: simulation results --OCCURS_DURING-- study period (results don't 'occur' in time, they are 'from' or 'valid for' a period)\n\n**CRITICAL THINKING RULES:**\n1. **Ask yourself**: Is this ACTUALLY a transformation between different land types?\n2. **Think about the process**: What physical change happened to the land?\n3. **Consider causality**: What caused what? Don't create meaningless loops\n4. **Don't overthink**: Entities and relations should be concise\n5. **Be precise**: Entities should describe exactly what is being discussed\n6. **Be realistic**: The world doesn't transform instantly\n\n**Example:**\n\nSENTENCE: \"Deforestation has been observed since the late 1990s in the southwestern part of the Amazon region.\"\n\n**Entities:** deforestation, late 1990s, southwestern part of the Amazon region\n\n**Relations:** deforestation --AFFECTS--> late 1990s, deforestation --CAUSES--> southwestern part of the Amazon region",
+    "processing_timestamp": "2025-07-10T10:51:30.575254",
+    "success": false
+  },
+  {
+    "sentence_id": 2,
+    "sentence": ").',, 'p': 'ref':, ' text': 'From 1996 to 2017, the area covered by cropped fields, C, has increased from 40% to 51.3% over the study site area, and from 47% to 64% of the arable lands in the study site due to the loss fallows",
+    "original_entities": [
+      {
+        "text": "1996 to 2017",
+        "label": "DATE",
+        "start": 34,
+        "end": 46
+      },
+      {
+        "text": "increased",
+        "label": "CHANGE",
+        "start": 91,
+        "end": 100
+      },
+      {
+        "text": "40% to 51.3%",
+        "label": "PERCENT",
+        "start": 106,
+        "end": 118
+      },
+      {
+        "text": "47% to 64%",
+        "label": "PERCENT",
+        "start": 154,
+        "end": 164
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start": 214,
+        "end": 218
+      },
+      {
+        "text": "fallows",
+        "label": "LULC",
+        "start": 219,
+        "end": 226
+      }
+    ],
+    "extracted_entities": [],
+    "extracted_relations": [],
+    "num_entities": 0,
+    "num_relations": 0,
+    "filtered_entities": 0,
+    "filtered_relations": 0,
+    "model_response": "alue of the change in LULC.\n- GEOGRAPHIC COORDINATE: The geographic",
+    "processing_timestamp": "2025-07-10T10:51:49.590282",
+    "success": false
+  },
+  {
+    "sentence_id": 3,
+    "sentence": "in this region has been dominated over the past three decades by production",
+    "original_entities": [
+      {
+        "text": "the past three decades",
+        "label": "DATE",
+        "start": 39,
+        "end": 61
+      }
+    ],
+    "extracted_entities": [],
+    "extracted_relations": [],
+    "num_entities": 0,
+    "num_relations": 0,
+    "filtered_entities": 0,
+    "filtered_relations": 0,
+    "model_response": "was all transformed.\n\n**INCREASES_BY/DECREASES_BY Relation:**\n1. Check if the word \"by\" is present and used correctly.\n2. If there's no mention of change amount, you can assume it was a change by the full amount.\n\n**Other Relations:**\n1. Use common sense",
+    "processing_timestamp": "2025-07-10T10:52:08.344176",
+    "success": false
+  },
+  {
+    "sentence_id": 4,
+    "sentence": "land was decreased nearly by half in 2002 compared to its coverage in 1984, while the size of the gallery did not change much",
+    "original_entities": [
+      {
+        "text": "decreased",
+        "label": "CHANGE",
+        "start": 9,
+        "end": 18
+      },
+      {
+        "text": "half",
+        "label": "CARDINAL",
+        "start": 29,
+        "end": 33
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start": 37,
+        "end": 41
+      },
+      {
+        "text": "1984",
+        "label": "DATE",
+        "start": 70,
+        "end": 74
+      },
+      {
+        "text": "change",
+        "label": "CHANGE",
+        "start": 114,
+        "end": 120
+      }
+    ],
+    "extracted_entities": [],
+    "extracted_relations": [],
+    "num_entities": 0,
+    "num_relations": 0,
+    "filtered_entities": 0,
+    "filtered_relations": 0,
+    "model_response": "energy sources and improving efficiency in transportation systems. Another option is planting trees across countries affected by deforestation. By doing these things, we'll help slow down global warming and save lives around the world.\n\n**Example of Incorrectly extracted data:**\n❌ WRONG: Urbanization led to deforestation, which resulted in increased temperatures over the past few years. Deforestation occurs mainly due to human activities like agriculture and urban development. The process of deforestation has been ongoing since the Industrial Revolution, but its effects have become more apparent in recent years. In fact",
+    "processing_timestamp": "2025-07-10T10:52:27.111199",
+    "success": false
+  }
+]

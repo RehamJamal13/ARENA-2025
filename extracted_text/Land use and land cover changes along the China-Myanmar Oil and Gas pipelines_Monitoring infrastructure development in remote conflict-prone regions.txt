@@ -1,0 +1,384 @@
+================================================================================
+TITLE: Land use and land cover changes along the China-Myanmar Oil and Gas pipelines -Monitoring infrastructure development in remote conflict-prone regions
+================================================================================
+
+AUTHORS:
+- Thiri Shwesin Aung
+- Thomas Fischer
+- John Buchanan
+
+ABSTRACT:
+Energy infrastructures can have negative impacts on the environment. In remote and / or sparsely populated as well as in conflict-prone regions, these can be difficult to assess, in particular when they are of a large scale. Analyzing land use and land cover changes can be an important initial step towards establishing the quantity and quality of impacts. Drawing from very-high-resolution-multi-temporal-satellite-imagery, this paper reports on a study which employed the Random Forest Classifier and Land Change Modeler to derive detailed information of the spatial patterns and temporal variations of land-use and land-cover changes resulting from the China-Myanmar Oil and Gas Pipelines in Ann township in Myanmar's Rakhine State of Myanmar. Deforestation and afforestation conversion processes during pre-and post-construction periods (2010 to 2012) are compared. Whilst substantial forest areas were lost along the pipelines, this is only part of the story, as afforestation has also happened in parallel. However, afforestation areas can be of a lower value, and in order to be able to take quality of forests into account, it is of crucial importance to accompany satellite-imagery based techniques with field observation. Findings have important implications for future infrastructure development projects in conflict-affected regions in Myanmar and elsewhere.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Energy development has various potential environmental and social challenges. While coal, oil and gas generation have been the primary focus of research on how landscapes may change, pipeline operations have received less attention. However, over recent years, oil and gas pipelines have undergone substantial expansion globally 
+With demand for energy growing very rapidly in China and India, Myanmar, sandwiched between them, has become both, a significant energy source and a transit corridor for energy, in particular fossil fuels. As a result, deals on oil and gas exploration and transmission pipelines are made between Myanmar and the two countries 
+While offering multiple economic benefits, there are many environmental (along with social) concerns about oil and gas pipelines as they can affect forest, farmland, and residential areas during construction and operation 
+While both, the Myanmar and Chinese governments believe that oil and gas extraction and pipeline projects have the potential to benefit both nations substantially, contributing to significant economic opportunities, there are some grave concerns over their impacts on forests and cultivated lands, as well as on water and wildlife. This can significantly affect the livelihood of local communities 
+Environmental governance of large-scale infrastructure projects in this region is often criticized for being weak and projects in Myanmar have been associated with wide-ranging ecological destruction and human rights violations 
+Motivated by these concerns, in this paper the authors seek to address critical issues, such as the rate and pattern of LULCC along the pipelines, the extent of forest loss during the study period and the pattern of afforestation in the study area. Adverse impacts of pipelines on Land-Use-Land-Cover (LULC), with a particular focus on forest cover, and the pattern of Land-Use-Land-Cover-Change (LULCC) are reported on.
+Myanmar possesses some of the largest remaining forest areas in Asia. Bhagwat et al. (2017) found that 63% of Myanmar was covered by forests in 2014. Nevertheless, the country is suffering from significant annual forest loss due to infrastructure development, firewood overexploitation, illegal logging, shifting cultivation, and an expansion of agricultural lands 
+in this context, the country has been said to suffer from limited institutional capacity to deal with these issues 
+
+## Study region ##
+The study region is located along the China-Myanmar Oil and Gas Pipelines in Ann township of Kyaukpyu District in Myanmar's western-most state of Rakhine (See Fig 
+Land use in the Kyaukpyu District consists of forested and cultivated land, scrubland, nonforested land and cultivable wasteland, as well as protected land area. Some of the land has never been used for cultivation and may or may not be covered by forests. This type of land occupies approximately 53% of the region. Rural, urban, and industrial land use constitutes only 1% of total land use. Over 85% of the households rely on firewood for cooking, and a significant amount of firewood comes from natural forest resources 
+Geographically, the area examined in this paper extends from 19˚49'41.63" N (elevation 64m) to 19˚52'26.77" N (elevation 198m) latitude and 94˚03'20.57" E (elevation 333m) to 940 6 
+
+## Data and image processing ##
+Diverse datasets are used, including geospatial, socio-economic, demographic, and biophysical data to represent land use and forest cover changes to assess the impact of pipelines on both, ecosystems and livelihoods. The main satellite data used for the classification of Land-Use-Land-Cover-Change (LULCC) are commercial VHRI orthorectified multispectral satellite images, GeoEye-1 and Worldview-2. The satellites are two of the world's highest resolution commercial earth-imaging satellites and offer imageries with 0.5m resolution. GeoEye-1 satellite's positional accuracy is the best of all available satellites today 
+Spatial data obtained from the CNPC were used as reference data to manually identify the exact location and route of the pipelines. These were digitized, using Google Earth. In addition, we collected images from Landsat 5, 7, and 8 for 2005, 2010, and 2012 for four representative scenarios in three districts (Kyaukphyu, Mandalay, and Minbu) to validate the pipeline route and the year of construction (see 
+Concurrent with the digitization, we conducted field visits to selected sites, during February 2019, for verification and the collection of training samples (Fig 
+The training sample covers a total of five land cover and land use categories; (1) forest, (2) scrubland, (3) infrastructure development, (4) residential areas, and (5) agricultural land. This method assures the representation of the samples for each land category 
+To quantify Land-Use-Land-Cover-Change (LULCC) associated with the pipelines' operation, primary data from the existing time series from the two commercial VHRI orthorectified satellite images, GeoEye-1 (GeoProfessional) and Worldview-2 were collected 
+Finally, land cover land-use change was calculated, and maps were generated, using the Land Change Modeler (LCM) in TerrSet. LCM is the land planning and decision support system that simplifies the complexities of change analysis and allows for rapid analysis of land cover change and model relationships between variables of interest. LCM is an established methodology widely applied in spatially explicit LULCC modeling, trend change analysis, and scenario analysis 
+A wide range of geospatial information, such as the pipelines' geographical location, road network, other physical features, affected villages and the geographic boundaries of villages and townships were derived from the databanks of The Humanitarian Data Exchange and Myanmar Information Management Unit's GIS resources.
+For the accuracy assessment of the model, RF classification internally estimates accuracy during the bootstrapping process 
+In addition, we followed the method developed by 
+Where n = number of units, Sð ÔÞ is the standard error of the estimated overall accuracy, Wi is the mapped proportion of the area of class i and S i is the standard deviation of i. S i = ffi ffi ffi ffi ffi ffi ffi ffi ffi ffi ffi ffi ffi ffi ffi ffi ffi ffi ffi ffi ffi
+We specify a target standard error for overall accuracy of 0.01. Using proportional approach, we allocated sample size of 10-50 for each change strata. A small overall testing sample size allows for only 10 sample units for some stratum. The estimated variances are them computed based on the sample size allocation.
+
+## Results ##
+
+
+## Accuracy assessment ##
+The aim of an accuracy assessment was to evaluate the ability of a model for detecting and delineating LULCC within a study area. Tables 
+
+## Land use and land cover change along the pipelines ##
+Maps of the study area from two points in time were analyzed, including pre-(2010) and postconstruction (2012) periods. This way LULCC along the China-Myanmar Oil and Gas Pipelines were established. The maps include designations of five major land cover classes; forests, agriculture, infrastructure development, residential /non-forest areas, and scrubland. The resulting maps for the land-cover classification of pre-and post-construction periods, using  
+
+## LULCC modelling results ##
+The increase and decrease of each land use and land cover class can be established more accurately with land change analysis results obtained through the Land Change Modeler (LCM) in TerrSet. Table 
+The LULCC map with major land conversion classes, depicting land cover conversion and non-conversion between 2010 and 2012 along the pipelines is shown in Fig 6 . The map identifies a few specific characteristics of LULCC for each land cover and land use type. Table 
+Conversely, the transformation of scrubland was mostly associated with forests, accounting to 238 hectares. Additionally, 59 ha of agricultural land, 44.5 ha of infrastructure development  areas, and 19.5 ha of residential areas were converted into forests. This can be attributed to the recent reforestation efforts by the forest department in order to achieve the country's goal of restoring 12 million hectares of forests by 2030 
+Fig 
+Accordingly, substantial forest conversions took place mainly within the center of the study area where concentrated infrastructure development activities are located, indicating a direct link between the location of the pipelines and the large-scale forest decline. In the center of the study area, surrounding the pipelines, forests to infrastructure development conversion spread more southward, and forest to residential area conversion occurred in the northern part of the study area. Forest to agricultural land and forest to scrubland alterations are concentrated in the center of the map. Meanwhile, the diagrams for overall forest change to all other LULC types and other land types to forests show similar trends with the majority of change happening in the immediate proximity to the pipelines. In the outermost parts of the study area, significantly fewer LULC changes have occurred compared with the center part where the pipelines are located. These results confirm that the magnitude of the impact of infrastructure development by the pipeline are apparent within a 2 km distance / radius. Although the intensity of change can be different given the diverse ecosystem conditions and land cover types across Myanmar, similar occurrence of LULCC can be predicted in other areas along the pipelines. However, future scenarios can change depending on the planning and implementation of mitigation measures to protect forests.
+
+## Discussion ##
+Very-high-resolution satellite data were used in the RF classification method and land change modeler to derive detailed LULCC information for analyzing deforestation and afforestation conversion patterns along the China-Myanmar Oil and Gas pipelines between pre-construction (2010) and post-construction (2012) periods. Over the two years, the five investigated land-use types underwent substantial changes along the pipelines. Notably, forests experienced a rapid decline and several conversion patterns. From 2010 to 2012, a large area of forests was converted into anthropogenic use, agricultural land, and scrubland (deforestation) and an extensive area of scrubland and agricultural lands was converted into forests (due to afforestation efforts). The deforestation process mostly resulted from the expansion of infrastructure development (i.e., the construction of pipelines and related activities). Previous studies on the impact of pipelines on forests also found that pipelines contributed to forest losses, although the extent of the impact is likely to depend on the route and the width of the ROW ( 
+Anthropogenic drivers, such as the construction of large-scale pipeline projects, are bound to create significant LULC transitions for all land cover classes 
+Afforestation at the expense of scrublands and croplands is connected with several forest protection regulations. During the past few years, in a bid to restore forested areas, several regulations were launched in Myanmar, including the National Forest Master Plan, National REDD+ Strategy, and the Myanmar Reforestation and Rehabilitation Program (MRRP). These programs promoted large-scale plantations over the last decade throughout the country, with an estimated 567,000 ha of private commercial plantations. Plantations offer attractive investment opportunities and contribute to meeting the country's reforestation targets. However, it is important that most of these forests constitute lower-value fast-growing wood such as eucalyptus, acacias, fuelwood, and pulp 
+As shown in Fig 
+Although Myanmar's forests continue to decline, the country does not have appropriate forest management practices for forest restoration and sustainable agricultural use of 
+
+## Conclusions ##
+Over recent years, owing to unprecedented region wide economic development, Myanmar's land use and land cover have experienced substantial changes and dramatic forest loss 
+The paper addressed three critical questions: (1) What is the rate and pattern of LULCC along the pipelines? (2) How much forests have been lost during the study period? (3) What is the pattern of afforestation in the study area? Analysis reveals that forests have undergone continuous change and have witnessed a dramatic decline leading to the loss of 16.9 hectares of (-2.45% net decline) forest during this two-year period. LULCC included an expansion of anthropogenic disturbances in the form of pipelines construction and residential areas as well as a reduction in forests and scrublands. The transition from forests and scrublands into human development areas is the usual LULCC pattern. Although both, deforestation and afforestation occurred in the area, large-scale development of fast-growing trees appears to dominate forest restoration, i.e. the creation of lower quality ecosystems. Sustainable forest management should emphasize that mitigation of forest fragmentation is needed. According to the classification calculation, most of the forest changes take place infrastructure development. Changes in forested areas were very high near the pipelines, but this dropped off to virtually nil at the edge of the study area, indicating a linear relationship between forest loss and the construction of pipelines.
+It can be concluded that over the two-year study period, the LULC rate of change, gains and losses as well as transfer rates are all high, suggesting that the LULC transition is intense along the pipelines given that all changes are related to infrastructure development. The LULCC results from Myanmar offer useful insights for other countries with oil and gas pipelines and transboundary infrastructure. The development of transnational energy projects triggers significant human and environmental security issues throughout the region. Although the discovery of new energy resources can be beneficial, the risks of serious ecosystem degradation from exploration and transportation of energy is high. Future research should assess the impacts of various scenarios of energy development on other environmental changes, such as water contamination, biodiversity depletion, and soil erosion, and harm to human health due to pipeline incidents. What will be of particular importance is to map not just total gains and losses of e.g. forested and agricultural areas, but the differential effects, for example with regards to the creation of lower quality forests.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Erosion from a Cross-Country Natural Gas Pipeline Corridor: The Critical First Year
+   Authors: , , , 
+   Date: 2017
+
+2. New Approaches to Building Markets in Asia Working Paper Series
+   Authors: 
+   Date: 2012
+
+3. There is no benefit, they destroyed our farmland
+   Date: 2011
+
+4. EIA Guidelines for Transboundary Natural Gas Pipelines in the Context of Pakistan
+   Authors: , , 
+   Date: 2014
+
+5. Oil and Gas Pipeline Construction-Induced Forest Fragmentation and Biodiversity Loss in the Niger Delta
+   Authors: , 
+   Date: 2014
+
+6. Earth Rights International
+   Date: 2010
+
+7. Crude investment: the case of the Yadana Pipeline in Burma
+   Authors: 
+   Date: 1998
+
+8. China-Myanmar Energy Cooperation and Its Regional Implications
+   Authors: 
+   Date: 2011
+
+9. Another Yadana: The Shwe Natural Gas Pipeline Project (Burma-Bangladesh-Another Yadana: The Shwe Natural Gas Pipeline Project Writing Team: Naing Htoo, Ken MacLean, Ann Putnam
+   Authors: 
+   Date: 2018
+
+10. Natural gas pipelines
+   Authors: 
+   Date: 2011
+
+11. Troubled Pipelines in Burma
+   Authors: 
+   Date: 2014
+
+12. Challenging hydropower development in Myanmar (Burma): cross-border activism under a regime in transition
+   Authors: 
+   Date: 2013
+
+13. Environment and Peacebuilding UN Environment Programme' s Experience with Postconflict Assessment
+   Authors: , 
+   Date: 2009
+
+14. Rights Groups Call for China to Halt Construction of Pipeline in Burma China must halt oil and gas pipeline projects in Burma
+   Date: 2009
+
+15. Drawing the Line
+   Authors: , 
+   Date: 2013
+
+16. Evaluation of the environmental impact assessment system and implementation in Myanmar: Its signi fi cance in oil and gas industry
+   Authors: 
+   Date: May, 2017
+
+17. Evaluation of the environmental impact assessment (EIA) of Chinese EIA in Myanmar: Myitsone Dam, the Lappadaung Copper Mine and the Sino-Myanmar oil and gas pipelines
+   Authors: , , 
+   Date: 2019
+
+18. Rapid forest clearing in a Myanmar proposed national park threatens two newly discovered species of geckos (Gekkonidae: Cyrtodactylus)
+   Authors: 
+   Date: 2017
+
+19. Untangling the proximate causes and underlying drivers of deforestation and forest degradation in Myanmar
+   Authors: , , , , 
+   Date: 2017
+
+20. Myanmar Oil Palm Plantations
+   Authors: 
+   Date: January. 2016
+
+21. Political transition and emergent forest-conservation issues in Myanmar
+   Authors: 
+   Date: 2017
+
+22. Community Forestry in Myanmar: Some field realities
+   Authors: 
+   Date: 2011
+
+23. Ministry of Agriculture, Livestock and Irrigation Formulation and Operationalization of National Action Plan for Poverty Alleviation and Rural Development through Agriculture (NAPA) Working Paper -9
+   Authors: 
+   Date: 2016
+
+24. Forest cover change patterns in Myanmar (Burma) 1990-2000
+   Authors: , , , , , 
+   Date: 2005
+
+25. Analysis of forest deforestation and its driving factors in Myanmar from 1988 to 2017
+   Authors: , , , , 
+   Date: 2019
+
+26. Climate Profile: Climate Variabilities, Extremes and Trends in Central Dry, Coastal and Hilly Zones
+   Authors: 
+   Date: 2018
+
+27. Township environmental assessment 2017
+   Date: 2017
+
+28. On the road to Kyaukphyu
+   Authors: 
+   Date: 2018
+
+29. A Comprehensive Report to better understand the Shwe Project
+   Authors: 
+   Date: 2013
+
+30. The Burma-China Pipelines: Human Rights Violations, Applicable Law, and Revenue Secrecy
+   Date: 2011
+
+31. In search for social justice along the Myanmar-China Oil and Gas Pipelines
+   Date: 2016
+
+32. Satellite imagery
+   Authors: 
+   Date: 2018. Jun. 11, 2020
+
+33. Land-cover classification of coastal wetlands using the RF algorithm for Worldview-2 and Landsat 8 images
+   Authors: 
+   Date: 2019
+
+34. Losing a jewel-Rapid declines in Myanmar ' s intact forests from 2002-2014
+   Authors: 
+   Date: 2017
+
+35. A novel participatory and remote-sensing-based approach to mapping annual land use change on forest frontiers in Laos, Myanmar, and Madagascar
+   Authors: , , , , 
+   Date: 2018
+
+36. Improved estimates of mangrove cover and change reveal catastrophic deforestation in Myanmar
+   Authors: , , , , 
+   Date: 2020
+
+37. Regional mapping of plantation extent using multisensor imagery
+   Authors: , , , 
+   Date: 2016
+
+38. Combined Landsat and L-band SAR data improves land cover classification and change detection in dynamic tropical landscapes
+   Authors: , , , 
+   Date: 2018
+
+39. The assessment of deforestation, forest degradation, and carbon release in myanmar 2000-2010
+   Authors: , , 
+   Date: 2019
+
+40. Estimating Mediterranean forest parameters using multi seasonal Landsat 8 OLI imagery and an ensemble learning method
+   Authors: , , , 
+   Date: 2017
+
+41. Improved estimates of mangrove cover and change reveal catastrophic deforestation in Myanmar
+   Authors: , , , , 
+   Date: 2020
+
+42. GeoEye-1
+   Authors: 
+   Date: 2019. Jun. 14, 2020
+
+43. WorldView-2 Pan-sharpening and Geometric Correction
+   Authors: , 
+   Date: June. 2010
+
+44. Classification and Regression by randomForest
+   Authors: , 
+   Date: December. 2002
+
+45. Rohingya Refugee Crisis and Forest Cover Change in
+   Authors: , , , , 
+   Date: 2018
+
+46. Random forests for land cover classification
+   Authors: , , 
+   Date: 2006
+
+47. Random Forests: An algorithm for image classification and generation of continuous fields data sets
+   Authors: 
+   Date: 2010
+
+48. An assessment of the effectiveness of a random forest classifier for land-cover classification
+   Authors: , , , , 
+   Date: 2012
+
+49. Mapping Sub-Antarctic Cushion Plants Using Random Forests to Combine Very High Resolution Satellite Imagery and Terrain Modelling
+   Authors: , , , , 
+   Date: 2013
+
+50. Random Forests for Classification in Ecology
+   Authors: , , , 
+   Date: December, 2007
+
+51. ISPRS Journal of Photogrammetry and Remote Sensing Random forest in remote sensing: A review of applications and future directions ˘gut
+   Authors: , 
+   Date: 2016
+
+52. The multispectral separability of Costa Rican rainforest types with support vector machines and Random Forest decision trees
+   Authors: 
+   Date: 2010
+
+53. Decision-tree, rule-based, and random forest classification of high-resolution multispectral imagery for wetland mapping and inventory
+   Authors: 
+   Date: 2018
+
+54. Springer Series in Statistics The Elements of
+   Authors: , , 
+   Date: 2017
+
+55. Classification of Multispectral Images Using Random Forest Algorithm Classification of multispectral images using Random Forest algorithm
+   Authors: , 
+   Date: August, 2015
+
+56. Land Use Change Detection of Yamuna River Flood Plain Using Geospatial Technique
+   Authors: , , 
+   Date: 2019
+
+57. Predicting Land Use Changes in Philadelphia Following Green Infrastructure Policies
+   Authors: , 
+   Date: 2019
+
+58. Assessing trade: An evaluation of the Commission for Environmental Cooperation's analytic framework for assessing the environmental effects of the North American Free Trade Agreement
+   Authors: , 
+   Date: 2001
+
+59. Modeling Future Urban Sprawl and Landscape Change in the Laguna de Bay Area
+   Authors: , , , , 
+   Date: 2017
+
+60. Forest cover dynamics analysis and prediction modelling using logistic regression model (case study: forest cover at Indragiri Hulu Regency, Riau Province) Forest cover dynamics analysis and prediction modelling using logistic regression model (case
+   Authors: 
+   Date: 2017
+
+61. Good practices for estimating area and assessing accuracy of land change
+   Authors: , , , , , 
+   Date: 2014
+
+62. A Machine Learning and Cross-Validation Approach for the Discrimination of Vegetation Physiognomic Types Using Satellite Based Multispectral and Multitemporal Data
+   Authors: , , 
+   Date: 2017
+
+63. The performance of random forests in an operational setting for large area sclerophyll forest classification
+   Authors: , , , 
+   Date: 2013
+
+64. Impacts of patch size and land-cover heterogeneity on thematic image classification accuracy
+   Authors: , , , 
+   Date: 2002
+
+65. Search of Social Justice along the Myanmar-China Oil and Gas Pipeline A Follow-up Report
+   Authors: , , , , , , 
+   Date: 2017
+
+66. The Potential Threat of China-Myanmar Gas Pipeline
+   Authors: 
+   Date: 2017
+
+67. Deciding the Fate of Myanmar's Forests
+   Authors: 
+   Date: 2018
+
+68. Monitoring and predicting land use and land cover changes using remote sensing and GIS techniques-A case study of a hilly area
+   Authors: , , 
+   Date: 2018
+
+69. Environment, Energy, and Economy: Impacts of Natural Gas Pipelines in 9 Watersheds of North-Central Pennsylvania
+   Authors: 
+   Date: 2012
+
+70. Myanmar Country Policy
+   Date: 2017
+
+71. Fast-wood forestry: myths and realities
+   Authors: , 
+   Date: 2005
+
+72. Assessment of Land-Use and Land-Cover Change in Guangxi, China
+   Authors: , , 
+   Date: 2019
+
+73. Rise and fall of forest loss and industrial plantations in Borneo
+   Authors: , , , , , 
+   Date: 2000-2017. June 2018. 2018
+
+74. The cash crop boom in southern Myanmar: tracing land use regime shifts through participatory mapping
+   Authors: 
+   Date: 2020. 2019.1699164
+
+75. Oil palm concessions in southern Myanmar consist mostly of unconverted forest
+   Authors: , , , , , 
+   Date: 2019
+
+76. Restoring from experience in Myanmar
+   Authors: 
+   Date: 2018
+
+77. The exceptional value of intact forest ecosystems
+   Authors: , , 
+   Date: 2018
+
+78. Monitoring rice agriculture across myanmar using time series Sentinel-1 assisted by Landsat-8 and PALSAR-2
+   Authors: , , , 
+   Date: 2017
+
+79. in Landscape Ecology in Forest Management and Conservation: Challenges and Solutions for Global Change, Li C
+   Authors: 
+   Date: 2011
+

@@ -1,0 +1,12 @@
+{
+  "article_id": "35",
+  "original_sentence": "Remote sensing data showed changes in Shortgrass Prairie vegetation.",
+  "entities": [
+    {
+      "text": "Shortgrass Prairie vegetation",
+      "label": "LOC",
+      "start_char": 38,
+      "end_char": 67
+    }
+  ]
+}

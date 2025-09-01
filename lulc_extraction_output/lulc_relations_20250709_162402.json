@@ -1,0 +1,256 @@
+[
+  {
+    "sentence_id": 0,
+    "sentence": "After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible and large parts of the Sahel were designated as degraded land (e.g",
+    "entities": [
+      {
+        "text": "the 1970s and 1980s",
+        "label": "DATE",
+        "start_char": 30,
+        "end_char": 49
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start_char": 64,
+        "end_char": 68
+      }
+    ],
+    "model_response": "\n\nRELATIONS:\n- droughts:DATE --CAUSES-- loss:CHANGE | CONF: HIGH\n- loss:CHANGE --OCCURS_DURING-- 1970s and 1980s:DATE | CONF: HIGH\n- loss:CHANGE --AFFECTS-- woody vegetation cover:LULC_TYPE | CONF: HIGH\n- woody vegetation cover:LULC_TYPE --DECREASES_BY--> irreversible:ADJECTIVE | CONF: MEDIUM\n- irreversible:ADJECTIVE --LOCATED_IN-- large parts:QUANTITY | CONF: MEDIUM\n- large parts:QUANTITY --DESIGNATED_AS-- degraded land:LULC_TYPE | CONF: HIGH",
+    "extracted_relations": [
+      {
+        "source": "droughts",
+        "source_type": "DATE",
+        "relationship": "CAUSES",
+        "target": "loss",
+        "target_type": "CHANGE",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "loss",
+        "source_type": "CHANGE",
+        "relationship": "OCCURS_DURING",
+        "target": "1970s and 1980s",
+        "target_type": "DATE",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "loss",
+        "source_type": "CHANGE",
+        "relationship": "AFFECTS",
+        "target": "woody vegetation cover",
+        "target_type": "LULC_TYPE",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "woody vegetation cover",
+        "source_type": "LULC_TYPE",
+        "relationship": "DECREASES_BY",
+        "target": "irreversible",
+        "target_type": "ADJECTIVE",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "irreversible",
+        "source_type": "ADJECTIVE",
+        "relationship": "LOCATED_IN",
+        "target": "large parts",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "large parts",
+        "source_type": "QUANTITY",
+        "relationship": "DESIGNATED_AS",
+        "target": "degraded land",
+        "target_type": "LULC_TYPE",
+        "confidence": "HIGH"
+      }
+    ],
+    "num_relations": 6,
+    "processing_timestamp": "2025-07-09T16:23:22.317165"
+  },
+  {
+    "sentence_id": 1,
+    "sentence": "The forests of West and Central Africa probably originally covered a combined area of about 3 million km 2",
+    "entities": [
+      {
+        "text": "forests",
+        "label": "LULC",
+        "start_char": 12,
+        "end_char": 19
+      },
+      {
+        "text": "West",
+        "label": "LOC",
+        "start_char": 23,
+        "end_char": 27
+      },
+      {
+        "text": "Central Africa",
+        "label": "LOC",
+        "start_char": 32,
+        "end_char": 46
+      },
+      {
+        "text": "area of about 3 million km",
+        "label": "SURFACE_UNIT",
+        "start_char": 86,
+        "end_char": 112
+      },
+      {
+        "text": "2",
+        "label": "CARDINAL",
+        "start_char": 113,
+        "end_char": 114
+      }
+    ],
+    "model_response": "\n\nRELATIONS:\n- forests:LULC_TYPE --LOCATED_IN-- West:LOCATION --AND--> Central Africa:LOCATION | CONF: HIGH\n- forests:LULC_TYPE --HAS_AREA-- 3 million km^2:SURFACE_UNIT | CONF: HIGH",
+    "extracted_relations": [],
+    "num_relations": 0,
+    "processing_timestamp": "2025-07-09T16:23:27.413696"
+  },
+  {
+    "sentence_id": 2,
+    "sentence": ").',, 'p': 'ref':, ' text': 'From 1996 to 2017, the area covered by cropped fields, C, has increased from 40% to 51.3% over the study site area, and from 47% to 64% of the arable lands in the study site due to the loss fallows",
+    "entities": [
+      {
+        "text": "1996 to 2017",
+        "label": "DATE",
+        "start_char": 34,
+        "end_char": 46
+      },
+      {
+        "text": "increased",
+        "label": "CHANGE",
+        "start_char": 91,
+        "end_char": 100
+      },
+      {
+        "text": "40% to 51.3%",
+        "label": "PERCENT",
+        "start_char": 106,
+        "end_char": 118
+      },
+      {
+        "text": "47% to 64%",
+        "label": "PERCENT",
+        "start_char": 154,
+        "end_char": 164
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start_char": 214,
+        "end_char": 218
+      },
+      {
+        "text": "fallows",
+        "label": "LULC",
+        "start_char": 219,
+        "end_char": 226
+      }
+    ],
+    "model_response": "\n\nRELATIONS:\n- 1996 to 2017:DATE --OCCURS_DURING-- change:PROCESS | CONF: HIGH\n- change:PROCESS --INCREASES_BY-- 11.3%:PERCENT | CONF: HIGH\n- arable_lands:LULC_TYPE --DECREASES_BY-- 17%:PERCENT | CONF: HIGH\n- loss:CHANGE --CAUSES-- fallows:LULC_TYPE | CONF: HIGH\n- fallows:LULC_TYPE --TRANSFORMS_INTO-- cropped_fields:LULC_TYPE | CONF: HIGH\n- cropped_fields:LULC_TYPE --INCREASES_BY-- 13.3%:PERCENT | CONF: HIGH\n- study_site:AREA --LOCATED_IN-- study_site:AREA | CONF: LOW (This is a tautology and should not be included)",
+    "extracted_relations": [
+      {
+        "source": "1996 to 2017",
+        "source_type": "DATE",
+        "relationship": "OCCURS_DURING",
+        "target": "change",
+        "target_type": "PROCESS",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "change",
+        "source_type": "PROCESS",
+        "relationship": "INCREASES_BY",
+        "target": "11.3%",
+        "target_type": "PERCENT",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "arable_lands",
+        "source_type": "LULC_TYPE",
+        "relationship": "DECREASES_BY",
+        "target": "17%",
+        "target_type": "PERCENT",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "loss",
+        "source_type": "CHANGE",
+        "relationship": "CAUSES",
+        "target": "fallows",
+        "target_type": "LULC_TYPE",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "cropped_fields",
+        "source_type": "LULC_TYPE",
+        "relationship": "INCREASES_BY",
+        "target": "13.3%",
+        "target_type": "PERCENT",
+        "confidence": "HIGH"
+      }
+    ],
+    "num_relations": 5,
+    "processing_timestamp": "2025-07-09T16:23:43.687035"
+  },
+  {
+    "sentence_id": 3,
+    "sentence": "in this region has been dominated over the past three decades by production",
+    "entities": [
+      {
+        "text": "the past three decades",
+        "label": "DATE",
+        "start_char": 39,
+        "end_char": 61
+      }
+    ],
+    "model_response": "\n\nSENTENCE: \"in this region has been dominated over the past three decades by production\"\n\nRELATIONS:\n- production:PROCESS --HAS_BEEN_DOMINATED_BY-- region:REGION | CONF: HIGH\n- past_three_decades:DATE_RANGE --OCCURS_DURING-- production:PROCESS | CONF: HIGH\n\nConfidence: 95%",
+    "extracted_relations": [],
+    "num_relations": 0,
+    "processing_timestamp": "2025-07-09T16:23:50.395262"
+  },
+  {
+    "sentence_id": 4,
+    "sentence": "land was decreased nearly by half in 2002 compared to its coverage in 1984, while the size of the gallery did not change much",
+    "entities": [
+      {
+        "text": "decreased",
+        "label": "CHANGE",
+        "start_char": 9,
+        "end_char": 18
+      },
+      {
+        "text": "half",
+        "label": "CARDINAL",
+        "start_char": 29,
+        "end_char": 33
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 37,
+        "end_char": 41
+      },
+      {
+        "text": "1984",
+        "label": "DATE",
+        "start_char": 70,
+        "end_char": 74
+      },
+      {
+        "text": "change",
+        "label": "CHANGE",
+        "start_char": 114,
+        "end_char": 120
+      }
+    ],
+    "model_response": "\n\nRELATIONS:\n- land:ENTITY --DECREASES_BY-- 50%:PERCENTAGE | CONF: HIGH\n- 1984:DATE --LOCATED_IN-- past:TIME_PERIOD | CONF: HIGH\n- 2002:DATE --LOCATED_IN-- past:TIME_PERIOD | CONF: HIGH\n- land:ENTITY --COMPARED_WITH-- 1984:DATE | CONF: MEDIUM\n- land:ENTITY --COMPARED_WITH-- 2002:DATE | CONF: MEDIUM\n- size:QUANTITY --STAYED_THE_SAME-- gallery:ENTITY | CONF: HIGH",
+    "extracted_relations": [],
+    "num_relations": 0,
+    "processing_timestamp": "2025-07-09T16:24:02.393956"
+  }
+]

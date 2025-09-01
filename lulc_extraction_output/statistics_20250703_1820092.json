@@ -1,0 +1,17 @@
+{
+  "total_sentences_processed": 228,
+  "sentences_with_relations": 157,
+  "total_relations_extracted": 360,
+  "relation_types": {
+    "DECREASES_BY": 46,
+    "LOCATED_IN": 64,
+    "MEASURES": 9,
+    "INCREASES_BY": 39,
+    "OCCURS_DURING": 50,
+    "CAUSES": 83,
+    "CHANGE_TO": 22,
+    "AFFECTS": 32,
+    "ENABLES": 8,
+    "FROM_TO": 7
+  }
+}

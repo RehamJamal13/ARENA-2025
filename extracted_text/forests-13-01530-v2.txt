@@ -1,0 +1,397 @@
+================================================================================
+TITLE: Land Use Land Cover Change Analysis for Urban Growth Prediction Using Landsat Satellite Data and Markov Chain Model for Al Baha Region Saudi Arabia
+================================================================================
+
+AUTHORS:
+- Augusto Santos
+- Richarde Marques
+- Da Silva
+- Chunhui Li
+- Mohammad Alsharif
+- Abdulrhman Alzandi
+- Raid Shrahily
+- Babikir Mobarak
+
+ABSTRACT:
+Land Use Land Cover Change (LULCC) and urban growth prediction and analysis are two of the best methods that can help decision-makers for better sustainable management and planning of socioeconomic development in the countries. In the present paper, the growth of urban land use was analyzed and predicted in all districts of the El Baha region (Kingdom of Saudi Arabia) based on high-resolution Landsat, 5, 7, and 8 satellite imagery during the period of study between 1985-2021. Using remote sensing techniques, the LULCC were obtained based on the maximum likelihood classification (MLC), where the geographic information system (GIS) had been used for mapping LULCC classes. Furthermore, Markov cellular automata (MCA) in Idrisi TerrSet was applied for assessing the future growth of urban land use between 2021-2047. The findings of the LULCC analysis based on the MLC indicate great socioeconomic development during the study period and that the urban expansion was at the expense of rangeland, forest and shrubland, and barren land and sand areas, with the contribution of each in the built-up area estimated to be around 9.1% (179.7 km 2 ), 33.4% (656.3 km 2 ) and 57.5% (1131.5 km 2 ), respectively. The simulation of the future LULCC period 2021-2047 revealed a loss in rangeland, forest and shrubland, and barren land and sand by 565, 144 and 105 km 2 , respectively, where rangeland is the most influenced, its land cover will decrease from 4002 to 3437 km 2 . From the obtained results based on MCA, urban growth is predicted to be large and it is estimated at around 2607 km 2 until the year 2047 with a net increase of 811 km 2 . The results obtained from this study may provide information to help decision-makers to implement efficient practices for future planning and management of the growth of urban land use, especially Saudi vision 2030.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land Use Land Cover Change (LULCC) is the modification of the Earth's surface by humans. Work to find the solution to the negative effects of such changes is ongoing despite humans being the root of the problems caused. LULCC is one of the primary contributors of greenhouse gas stocks resulting from direct human use of lands for commercial uses, settlements, and forestry activities 
+Saudi Vision 2030 is a development plan started by the Saudi government in 2016 which aims to bring the country out of its historical oil rent by diversifying its economy and resorting to various privatizations 
+
+## Study Area ##
+The Al-Baha region is one of the thirteen administrative regions that make up the Kingdom of Saudi Arabia, the most important of which are al-Mandaq, e Buljurshi, al-Qara, alAqiq, al-Makhwah, Qelwah and al-Baha City (Figure 
+
+## Study Area ##
+The Al-Baha region is one of the thirteen administrative regions that make up the Kingdom of Saudi Arabia, the most important of which are al-Mandaq, e Buljurshi, al-Qara, alAqiq, al-Makhwah, Qelwah and al-Baha City (Figure 
+The topography of the region is mostly mountains known as the Hijaz Mountains, and the mountainous areas are covered almost entirely by local coniferous juniper trees, in addition to many types of fruit trees, bushes, small shrubs, forests and flowers such as candi, basil, jasmine, Hijazi rose (Aqsh, raspberry) and Arfaj. Spreading on its slopes are terraces and agricultural terraces in which the residents grow the plants of the region that they rely on for food, such as sorghum, barley, wheat, millet, sesame, lentils, and local vegetables such as pumpkin, potatoes, carrots, tomatoes, peppers, and others. Figure 
+The topography of the region is mostly mountains known as the Hijaz Mountains, and the mountainous areas are covered almost entirely by local coniferous juniper trees, in addition to many types of fruit trees, bushes, small shrubs, forests and flowers such as candi, basil, jasmine, Hijazi rose (Aqsh, raspberry) and Arfaj. Spreading on its slopes are terraces and agricultural terraces in which the residents grow the plants of the region that they rely on for food, such as sorghum, barley, wheat, millet, sesame, lentils, and local vegetables such as pumpkin, potatoes, carrots, tomatoes, peppers, and others. Figure 
+
+## Materials and Methods ##
+
+
+## Remote Sensing Databases ##
+In this study, the normalized difference vegetation index (NDVI) was applied to various Landsat imagery between 1985-2021 in order to assess LULCC in the framework of urban sprawl or urban growth. The different Landsat imagery: Thematic Mapper (TM), Enhanced Thematic Mapper (ETM) and Operational Land Imager (OLI) used in this analysis are represented in Table 
+The Landsat 8 satellite includes two types of sensors: OLI (Operational Earth Imager) and TIRS (Thermal Infrared Sensor). OLI includes all ETM+ domains. In order to avoid some characteristics of atmospheric absorption, OLI reset the bands, with relatively large modifications. The databases of LANSAT databases used in this analysis were obtained from 
+
+## The Normalized Difference Vegetation Index ##
+The Normalized difference vegetation index (NDVI) is a standard indicator that allows for the creation of an image that displays greenness or relative biomass. This indicator benefits from the strong absorption by chlorophyll in the red band and the high reflectance from plant materials in the near-infrared (NIR) band 
+This index defines values from -1.0 to 1.0, and represents mainly the vegetation, negative values are formed mainly from clouds, water and snow, and values close to zero are formed mainly by rocks and bare soil. Very small values (0.1 or less) correspond to empty areas of rock, sand, or snow. Medium values (from 0.2 to 0.3) represent shrubs and meadows. Values from 0.3 to 0.6 explain moderate vegetation, while large values (from 0.6 to 0.8) indicate temperate and tropical forests [43].
+
+## The Maximum Likelihood Classification ##
+The maximum likelihood classification (MLC) is one of the most frequently used supervised classifications, which states that every spectral class can be defined by a multivariate normal distribution and is founded on Bayes' theorem 
+i: is the class x: n is the number of bands p(ω i ): is the probability that class ω i occurs in the image and is assumed the same for all classes
+|∑ i|: is a factor of the covariance matrix related to the data in ω i Σ i -1 : is the reverse matrix m i is the mean vector Further details regarding the theoretical and mathematical implementation of MLC are provided in 
+
+## The Cellular Automata Markov Chain Model ##
+A Markov chain (MC) is a term in mathematics that took the name of its Russian innovator, Andrea Markov. It is a stochastic process with a Markovian property. In such a process, the future is predicted from the present and does not need to know the past. A Markov chain follows a conditional probability distribution called the probability transition by-step in the process. The probability of transition in two, three or more steps is obtained from the probability of transition in one step 
+where, S(t) and S(t + 1) are the status of the system at the time t and t + 1, respectively and P ij is the matrix of transition probability in a state, it is given as follows 
+Pij: explains the probability of changing from the present state i to the next time state j. e. The low and high transition have a probability close to '0 and 1', respectively 
+Forests 2022, 13, 1530
+where, S(t + 1) is the status of the system at the time t + 1, operated by the state probability at all times.
+In the first stage of elaborating the model, land-use maps of 
+where, 𝑆(𝑡 + 1) is the status of the system at the time 𝑡 + 1, operated by the state probability at all times.
+In the first stage of elaborating the model, land-use maps of 
+1.
+The first stage was the download of the Landsat databases and SRTM imageries from the USGS site.
+
+## 2. ##
+Imported Landsat databases to the ENVI 5.1 software and opened radiometric calibration for atmospheric correction of satellite imageries using Fast Line-of-sight Atmospheric Analysis of Spectral Hypercubes (Flaash), which is a tool in ENVI 5.1 that corrects wavelengths in the visible through to near-infrared and shortwave infrared areas.
+Forests 2022, 13, 1530 9 of 24 3.
+After atmospheric correction, the maximum likelihood classification method was applied to produce LULCC results and mapping (net change, gain, loss and, persistence). 4.
+The obtained results from ENVI 5.1 of LULCC were exported to Arcgis to improve the mapping observation and to improve the results management. 5.
+Produced DEM, slope, aspect, hill shades, contours, distance from the road and distance from river maps using Arcgis based on SRTM imagery and used them as input in the prediction process. 6.
+Opened land change modeler of TerrSet software, imported and inserted the LULCC maps of the years 1985 and 2021 and maps that were produced from STRM imagery 7.
+Finally, transition potential and change prediction tools were run for the year 2047 to obtain a future LULCC map.
+
+## Results ##
+The results of LULCC obtained from MLC of the years 1985, 1990, 1995, 2000, 2015 and 2021 are represented in Figure 
+The LULCC map analysis of the year 1985 revealed that the rangeland area was estimated to be around 5082 km 2 (47.55%). This area has increased by 689 km 2 to an area of 5772 km 2 (Figures 
+The forest and shrubland area maps analysis illustrated high temporal variability in this class during the study period which had been estimated to be 5399 (48%), 4672 (42%), 5163 (45%), 5103 (46%), 4342 (39%), 4477 km 2 (40%) in the years 
+One of the specific aims of the present study was to analyze and assess the built-up area or the urban area at the scale of each district of the study (Qelwah, Elmelkhwah, Elmandaq, ELBahah, Baljurish, Alatawlah and Alaqiq). Further to the results of Figures 
+The results of Figure 
+Cellular Automata-Markov Chain (CA-MC) is the most used model for LULCC and urban growth prediction for better sustainable management and planning of socioeconomic development 
+
+## Discussion ##
+The Kingdom of Saudi Arabia has divided the urban planning process into three main stages. The first stage is the policy formulation and planning stage which was determined between the years 
+Figure 
+
+## Discussion ##
+The Kingdom of Saudi Arabia has divided the urban planning process into three main stages. The first stage is the policy formulation and planning stage which was determined between the years (2001-2005), most of the discussions that took place during this time period were related to the general perception of the project and its planning aspects. The second phase is the design phase where the technical aspects and design elements were to be determined in this time period 
+In addition, During the period 1961-2017, global emission increases were governed by the three highest-emitting areas (sub-Saharan Africa, Latin America, and Southeast Asia) resulting from land-use change and by the extensive and rapid increase in agricultural production 
+
+## Conclusions ##
+In this paper, Landsat satellite imagery of the El Baha region has been used during the periods of 1985-2021 and 2021-2047 for LULCC analysis and urban growth prediction. The obtained results have been summarized in the following points:
+
+## • ##
+The results revealed a great socioeconomic development. The urban expansion was at the expense of rangeland, forest and shrubland, and barren land and sand areas, where the contribution of each one in the built-up areas was estimated at around 9.1% (179.7 km 2 ), 33.4% (656.3 km 2 ) and 57.5% (1131.5 km 2 ), respectively.
+
+## • ##
+The simulation of the future LULCC period 2021-2047 revealed a loss in rangeland, forest and shrubland, and barren land and sand by 565, 144 and 105 km 2 , respectively.
+
+## • ##
+The rangeland cover land is the most influenced, it will decrease from 4002 to 3437 km 2 .
+
+## • ##
+Based on MCA, it seems that urban growth will be extensive, it is estimated at around 2607 km 2 until the year 2047 with a net increase of 811 km 2 .
+
+## • ##
+The urban growth has been observed in the northern parts (districts) of the study area explaining an urban growth toward the north (Alaqiq, Baljurish and Alatawlah).
+
+## • ##
+The future simulation for the year 2047 shows that the Alaqiq district will have a great increase in the built-up areas by 471 km 2 from 661 and 1132 km 2 , followed by Baljurish, Qelwah and Elmandaq with a relatively non-significant increase of 77, 24, and 14 km 2 , respectively.
+The results obtained from this study may provide information to help decision-makers to make efficient practices for future planning and management of the growth of urban land use, especially in Saudi vision 2030 for the different sectors (water resources mobilization, environment, energy, construction, agriculture and other sectors). The main strength of this study is the use of a relatively long period that allowed us to make a good assessment of LULCC in the study area, especially with the insufficient reports in this framework. The aims of sustainable development goals (SDGs) at restoring, protecting, and promoting sustainable use of terrestrial ecosystems, combating desertification, sustainably managing forests, and halting biodiversity loss degradation. Thus, one of the limitations of this study is that it cannot contribute to resolving SDGs problems. Further to the scope of this study, an investigation of current and future urban growth will be conducted at the scale of each district of the study area, focusing on the forest and urban green spaces assessment for better sustainable urbanization planning.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. The effect of land-use change on the net exchange rates of greenhouse gases: A compilation of estimates
+   Authors: , 
+   Date: 2015
+
+2. Greenhouse gas assessment of soybean production: Implications of land use change and different cultivation systems
+   Authors: , 
+   Date: 2013
+
+3. IPCC Special Report on Land Use, Land-Use Change, and Forestry
+   Authors: , , , , , 
+   Date: 2000
+
+4. Amazonia as a carbon source linked to deforestation and climate change
+   Authors: , , , , , , , , , 
+   Date: 2021
+
+5. What Are the Advantages and Disadvantages of Urbanization? Available online
+   Date: 10 May 2022
+
+6. Examining the "Urban Advantage" in Maternal Health Care in Developing Countries
+   Authors: , , , , , 
+   Date: 2010, 7, e1000327
+
+7. Dynamics among economic growth, urbanization, and environmental sustainability in IEA countries: The role of industry value-added
+   Authors: , 
+
+8. Urbanization, economic growth and environmental pollution: Evidence from China
+   Authors: , 
+   Date: 2019
+
+9. Moving towards a sustainable environment: The dynamic linkage between natural resources, human capital, urbanization, economic growth, and ecological footprint in China
+   Authors: , , , 
+   Date: 2020. 101677
+
+10. The relationship between urbanization and economic growth
+   Authors: , 
+   Date: 2018
+
+11. Assessing nonlinear impact of urbanization, economic growth, technology, and trade on environment: Evidence from African and Asian emerging economies
+   Authors: , 
+   Date: 2021
+
+12. Does urbanization redefine the environmental Kuznets curve? An empirical analysis of 134 Countries
+   Authors: , , 
+   Date: 2021. 103382
+
+13. Impact of urbanization on agriculture in India and China
+   Authors: , , 
+   Date: 2020
+
+14. Impact of urbanization trends on production of key staple crops
+   Authors: , , , , , , 
+   Date: 2021
+
+15. Study on sustainable urbanization literature based on Web of Science, scopus, and China national knowledge infrastructure: A scientometric analysis in CiteSpace
+   Authors: , , , , , 
+
+16. Investigating Relationships between Runoff-Erosion Processes and Land Use and Land Cover Using Remote Sensing Multiple Gridded Datasets
+   Authors: , , , , , , 
+   Date: 2022
+
+17. Spatiotemporal patterns of urbanization in three Swiss urban agglomerations: Insights from landscape metrics, growth modes and fractal analysis
+   Authors: , , 
+   Date: 2020
+
+18. A multiscale analysis of urbanization effects on ecosystem services supply in an urban megaregion
+   Authors: , , , , 
+   Date: 2019
+
+19. Investigating the non-linear relationship between urbanization and CO 2 emissions: An empirical analysis
+   Authors: , , 
+   Date: 2019
+
+20. Analysis on the urban land resources carrying capacity during urbanization-A case study of Chinese YRD
+   Authors: , , 
+   Date: 2020. 102170
+
+21. Simulating Urban Land Use and Cover Dynamics Using Cellular Automata and Markov Chain ApproaEnerh in Addis Ababa and the Surrounding. Urban Clim
+   Authors: , 
+   Date: 2020. 100545
+
+22. Spatiotemporal urbanization processes in the megacity of Mumbai, India: A Markov chains-cellular automata urban growth model
+   Authors: , 
+   Date: 2013
+
+23. Land Use/Land Cover Dynamics and Modeling of Urban Land Expansion by the Integration of Cellular Automata and Markov Chain
+   Authors: , , , , , 
+   Date: 2018
+
+24. Geospatial Modelling of Changes in Land Use/Land Cover Dynamics Using Multi-Layer Perception Markov Chain Model in Rajshahi City
+   Authors: , , , 
+   Date: 2021, 4, 100148
+
+25. Spatio-temporal simulation of future urban growth trends using an integrated CA-Markov model
+   Authors: , , , , 
+
+26. Simulating spatial-temporal urban growth of a Moroccan metropolitan using CA-Markov model
+   Authors: , , , , 
+   Date: 2020
+
+27. Saudi vision 2030': A viable response to youth aspirations and concerns? Asian Affa
+   Authors: 
+   Date: 2017. 2022
+
+28. The Kingdom of Saudi Arabia: Achieving the Aspirations of the National Transformation Program 2020 and Saudi Vision 2030 Through Education
+   Authors: , 
+   Date: 2018
+
+29. Transformation from an Oil-based Economy to a Knowledge-based Economy in Saudi Arabia: The Direction of Saudi Vision 2030
+   Authors: 
+   Date: 2017
+
+30. A Fuzzy Cellular Automata Urban Growth Model (FCAUGM) for the City of Riyadh
+   Authors: , , , 
+   Date: 2009
+
+31. Spatial and decadal prediction of land use/land cover using multi-layer perceptron-neural network (MLP-NN) algorithm for a semi-arid region of Asir, Saudi Arabia
+   Authors: , , , , , 
+   Date: 2021
+
+32. Using multisource data and the V-I-S model in assessing the urban expansion of Riyadh city, Saudi Arabia
+   Authors: , , , , 
+   Date: 2019
+
+33. Land Use and Land Cover Change Detection in the Saudi Arabian Desert Cities of Makkah and Al-Taif Using Satellite Data
+   Authors: , 
+   Date: 2014
+
+34. Assessment of land use/land cover changes induced by Jizan Dam, Saudi Arabia, and their effect on soil organic carbon
+   Authors: , , , 
+   Date: 2019
+
+35. Modeling Future Land Cover Changes and Their Effects on the Land Surface Temperatures in the Saudi Arabian Eastern Coastal City of Dammam
+   Authors: , , 
+   Date: 2017
+
+36. Spatial-temporal analysis of urban growth and transportation in Jeddah City, Saudi Arabia
+   Authors: , , , 
+   Date: 2013
+
+37. An assessment of the impact of urbanization and land use changes in the fast-growing cities of Saudi Arabia
+   Authors: , 
+   Date: 2019
+
+38. Predicting urban growth of Arriyadh city, capital of the Kingdom of Saudi Arabia, using Markov cellular automata in TerrSet geospatial system
+   Authors: , , , 
+   Date: 2019
+
+39. Cost of dams in Al-Baha Province, Kingdom of Saudi Arabia
+   Authors: 
+   Date: 2013
+
+40. Optimum water storage in Al-Baha, Kingdom of Saudi Arabia
+   Authors: 
+   Date: 2014
+
+41. United States Geological Survey
+   Authors: 
+   Date: 1 October 2021
+
+42. Red and photographic infrared linear combinations for monitoring vegetation
+   Authors: 
+   Date: 1979
+
+43. 
+   Authors: 
+   Date: March 2022
+
+44. Analysis of Supervised Maximum Likelihood Classification for Remote Sensing Image
+   Authors: , , 
+   Date: 2014. 1 February 2022
+
+45. Mapping Changes in the Occupancy of the Soil in the Mitidja Plain from Images Landsat
+   Authors: 
+   Date: 2017
+
+46. Remote Sensing Digital Image Analysis
+   Authors: 
+   Date: 1999
+
+47. Rapid maximum likelihood classification
+   Authors: , 
+   Date: 1991
+
+48. Analysis of maximum likelihood classification on multispectral data
+   Authors: , 
+   Date: 2012
+
+49. Investigation on Land Cover Mapping Capability of Maximum Likelihood Classifier: A Case Study on North Canara, India
+   Authors: , 
+   Date: 2018
+
+50. From Theory to Implementation and Experimentation
+   Authors: , 
+   Date: 2017
+
+51. Propagation et Réduction des Incertitudes Dans les Modèles de Changement D'occupation des Sols
+   Authors: 
+   Date: 2017
+
+52. Applicability of the CA-Markov Model in Land-use/Land cover Change Prediction for Urban Sprawling in Batticaloa Municipal Council, Sri Lanka
+   Authors: , , 
+   Date: 2021
+
+53. Predicting Land Use/Land Cover Changes Using a CA-Markov Model under Two Different Scenarios
+   Authors: , , 
+   Date: 2018
+
+54. Dynamic simulation of urban expansion based on Cellular Automata and Markov Chain Model: A case study in Siliguri Metropolitan Area
+   Authors: , 
+   Date: 2019
+
+55. The impact of the green Middle East initiative on sustainable development in the Kingdom of Saudi Arabia
+   Authors: , 
+   Date: 2022
+
+56. Towards an eco-friendly future: A corpus-based analysis of media discourse on "Saudi Green Initiative
+   Authors: , , 
+
+57. Saudi Arabia-China-Pakistan Economic Corridor: Intergovernmental green initiatives
+   Authors: , , , , , 
+   Date: 2019
+
+58. Urban sprawl on the natural environment in Al-Baha region in the Kingdom of Saudi Arabia
+   Authors: , 
+   Date: 28 March 2019
+
+59. Road Projects Enhance the Commercial, Economic and Tourism Movement in the Region
+   Authors: 
+   Date: 1 February 2022
+
+60. Assessing land use and land cover of the Marikina sub-watershed
+   Authors: , , , , , 
+   Date: 2014
+
+61. Integrating ANNs and Cellular Automata-Markov Chain to Simulate Urban Expansion with Annual Land Use Data
+   Authors: , , 
+   Date: 2022. 1074
+
+62. Applying Multi-Temporal Landsat Satellite Data and Markov-Cellular Automata to Predict Forest Cover Change and Forest Degradation of Sundarban Reserve Forest
+   Authors: , , , , , , , , , 
+
+63. Modeling the Impact of Urbanization on Land-Use Change in Bahir Dar City, Ethiopia: An Integrated Cellular Automata-Markov Chain Approach
+   Authors: , , , , , 
+   Date: 2020
+
+64. Monitoring and Predicting Spatio-Temporal Land Use/Land Cover Changes in Zaria City, Nigeria, through an Integrated Cellular Automata and Markov Chain Model (CA-Markov)
+   Authors: , , , , 
+
+65. Current Population Problems in ALBAHA Area
+   Authors: 
+   Date: 2016. 1 February 2022
+
+66. Global and regional drivers of land-use emissions in 1961-2017
+   Authors: , , , , , , 
+   Date: 2021
+
+67. Urban Planning Process in Saudi Arabia
+   Date: 1 February 2022
+
+68. The New Urban Agenda
+   Date: 2017. 1 February 2022
+
+69. Land Cover Mapping Using GIS and Remote Sensing Databases for Al Baha Region Saudi Arabia
+   Authors: , , , 
+
+70. Detection of Land Use/Land Cover Changes and Urban Sprawl in Al-Khobar, Saudi Arabia: An Analysis of Multi-Temporal Remote Sensing Data
+   Authors: 
+   Date: 2016, 5, 15
+
+71. Mangrove deforestation and CO 2 emissions in Indonesia
+   Authors: , , 
+   Date: 2021. 012006
+
+72. Sustainable Land Management, Food Security, and Greenhouse Gas Fluxes in Terrestrial Ecosystems
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+73. Impact of Urbanization and Economic Growth on CO 2 Emission: A Case of Far East Asian Countries
+   Authors: , , 
+   Date: 2020. 2531
+
+74. Impact of urbanization, economic growth, and population size on residential carbon emissions in the SAARC countries
+   Authors: , , , 
+   Date: 2020
+

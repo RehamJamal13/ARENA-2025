@@ -1,0 +1,12 @@
+{
+  "article_id": "52",
+  "original_sentence": "Remote sensing data showed changes in Polar Desert vegetation.",
+  "entities": [
+    {
+      "text": "Polar Desert vegetation",
+      "label": "LOC",
+      "start_char": 38,
+      "end_char": 61
+    }
+  ]
+}

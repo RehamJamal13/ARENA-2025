@@ -1,0 +1,394 @@
+================================================================================
+TITLE: Environmental and Sustainability Indicators
+================================================================================
+
+AUTHORS:
+- Demelash Malede
+- Tena Alamirew
+- Job Kosgie
+- Gebrie Tesfa
+- Andualem
+
+ABSTRACT:
+Changes in land use/land cover (LULC) are a global environmental concern that has a significant impact on sustainable land and water resource management and development as well as hydrological processes. The primary driving forces of LULC changes in developing countries are population pressure, demand for firewood collection and construction material, shortage of cultivated land, land tenure insecurity, and deforestation. Focusing on the Ethiopian Birr river watershed, the study investigates changes in LULC trends, extents, and magnitudes over the last 32 years using geospatial technologies such as Landsat images of 1986, 2001, and 2018. The supervised land use land cover classification technique was applied to classify the LULC classes using the maximum likelihood algorithm technique. Between 1986 and 2018, agricultural land increased significantly from 56.39% to 70.19%, while settlements increased from 0.73%) to 1.42%. On the other hand, bushlands, forest areas, and grasslands LULC classes in the study area decreased from 26.18% to 19.30%, 4.94%-1.92%, and 11.77%-7.16%, respectively. The findings suggest that integrated watershed management and land use planning should be concerned and implemented in the Birr River watershed.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Changes in land use/land cover (LULC) are the conversion of different land-use classes to the earth's terrestrial surface, which are typically the outcome of complicated interactions between the natural environment and anthropogenic processes 
+Agricultural expansion is responsible for almost 90% of global ☆ All authors have approved the manuscript and agree with its submission to the journal. All authors approved the final version of the manuscript and agree to be accountable for all aspects of this work.
+deforestation, which has a much greater impact than previously believed 
+LULC changes have a variety of negative socio-economic and environmental consequences, including decreased agricultural yield, increased vulnerability to natural hazards (flood, drought, fires), altered ecosystem services, and surface runoff trends 
+Deforestation and agricultural land encouragement are the primary causes of land degradation, particularly in Ethiopian highlands and marginal land 
+The dynamics of LULC change extent, magnitude, and trends are changing and are strongly linked to natural resource overexploitation; this process is governed by climate, soil characteristics, vegetation density, topography, and natural hazards 
+
+## Materials and methods ##
+
+
+## Study area ##
+The Birr River watershed is situated in the northwestern highlands of Ethiopia. Geographically, the Birr watershed is located between the longitude of 37 • 10ʹ and 38 • 50ʹ E and the latitude of 10 • 30ʹ and 11 • 10ʹ N. The watershed's elevation ranges between 1691 and 4084 m above the mean sea level (Fig. 
+There are six major soil types found in the Birr River watershed, which include Haplic Alisols, Eutric Fluvisols, Haplic Luvisols, Eutrc Leptosols, Haplic Nitisols, and Eutric Vertisols (Fig. 
+
+## Data acquisition and processing ##
+Satellite imagery from 1986, 2001, and 2018 was used to identify the changing pattern of LULC in the Birr River watershed (Fig. 
+Each Landsat image is processed using the earth resource data analysis system (ERDAS) imagine 2015 software. The ERDAS imagine 2015 software is important by increasing the productivity of simplifying for classifications, orthorectification, mosaicking, reprojection, map production, and change detection 
+
+## The LULC classes ##
+Because of the prevalent land covers, the spectral responses of features on Landsat images, extensive field observation, and a literature review, the Birr River watershed was divided into five major LULC classes or types that were generated namely; agricultural, bushland, forest, grassland, and settlement (Table 
+
+## Accuracy assessment of LULC classification ##
+The accuracy assessment of a classified image is important for analyzing LULC changes and determining the classification process's acceptability. A total of 250 reference data points were used to ensure that all five LULC classes were adequately represented based on their proportional area. The reference ground truth data was chosen in such a way that it appears in both the Landsat images for the respective period of 1986, 20021, and 2018 and the google earth map. Additionally, the validation of land use types with local datasets, and visual inspections were used and adapted to retrieve the reference data. The producer's accuracy (PA), user's accuracy (UA), overall accuracy (OA), and kappa coefficient (K) was used to evaluate the LULC classification accuracy, which is comprised of a 'confusion matrix' or 'error matrix' 
+
+## Overall Accuracy = ##
+Total Number of Correctly Classified Pixels (Diagonal) Total Number of Reference pixels × 100
+(1) Kappa coefficient statistics criteria agreements are as follows: poor when Kappa <0.4, good when 0.4 < kappa <0.7, and excellent when k > 0.75 
+A post-classification was performed using each classified Landsat image. Then, each classified LULC map from 
+
+## Trends of LULC change analysis ##
+The significance of LULC change trend analysis is that determines which land use class or type is transitioning to other land uses 
+
+## Rate of change ##
+where A2 is the area of LULC (km 2 ) in period 2, A1 is the area of LULC (km 2 ) in period 1, and Z is the period interval in years between A2 and A1.
+
+## Results ##
+
+
+## Analysis of LULC classification ##
+In the Birr River watershed, five major LULC types (agricultural land, bushland, forest, grassland, and settlements) were used during the   
+Similarly, in 2001 the majority of LULC classes were agriculture and Bushland, which covered an area of 849.90 km 2 (61.99%) and 326.35 km 2 (23.80%), respectively. Forest, grassland, and settlements occupied an area of 24.23 km 2 (1.77%), 154.26 km 2 (11.25%), and 16.25 km 2 (1.19%), respectively, during the same period. Furthermore, 2018 LULC classification types also indicate that agriculture and bushland comprise the greatest share of all other LULC classes, which occupied 962.34 km 2 (70.19%) and 154.26 km 2 (19.30%), respectively, while forest, grassland, and settlements LULC classes occupied an area of 26.39 km 2 (1.92%), 98.22 km 2 (7.16%), and 19.40 km 2 (1.42%), respectively (Table 
+Agriculture and bushland covered the largest area in the watershed than the other LULC types in all three years 
+The LULC map from 1986, 2001, and 2018 were used to assess the classified accuracy. Based on the accuracy of 1986, 2001, and 2018 LULC maps, the overall accuracies were 90.69, 91.01, and 92.22% respectively, while kappa coefficients were 0.87, 0.88, and 0.89 respectively. Therefore, these results indicate that the classified map and ground truth LULC classes were agreed upon. The classified map also established the minimum accuracy required for the subsequent postclassification operations 
+
+## Extent and rate of LULC change ##
+For three time periods, the extent and rates of changes for each LULC were summarized below: 1986, 2001, and 2018 (Tables 
+In addition, the extent and rate of change in LULC between 201 and 2018 were presented in (Table 
+The extent and rate of LULC change patterns from 1986 to 2018 are also presented in (Table 
+
+## Trend of LULC changes ##
+The agricultural land and settlements revealed an increasing trend increasing from 79.86 km 2 to 189.30 km 2 and 6.29 km 2 -9.44 km 2 for    the period 1986 to 2018, respectively. On the other hand, forest, bushland, and grasslands showed a decreasing trend from 1986 to 2018 (Fig. 
+
+## LULC change matrix ##
+The LULC change matrix depicts the distribution of main transitions in the five LULC classes used in the study area over the study period (1986-2018) (Table 
+
+## Discussion ##
+This study showed five major LULC classes (i.e., agricultural land, bushland, forest land, grassland, and settlements) in the Birr River watershed (Fig. 
+The findings of the study revealed that LULC has changed over the last 32 years  in the BirrRiver watershed. Agricultural and settlements have grown significant expansion in the study watershed, increasing by 24.49% and 54.78%, respectively during this period . In contrast, for this period, bushland, forest, and grassland have decreased by 26.27%, 61.01%, and 39.14%, respectively (Table 
+Changes in LULC and their dynamics are directly related to biodiversity and land productivity and have huge environmental and societal effects 
+Thus, from the grassroots to government levels, sustainable integrated watershed planning, management, and development should be applied and implemented, with close supervision of area afforestation, reforestation, and conservation of the existing watersheds forest, bushland, and grasslands. Furthermore, soil and water conservation on the degraded land, controlling the further expansion of cultivated land, and fuelwood and charcoal production demands.
+
+## Conclusion ##
+This study investigated how LULC changed and its dynamics in the Birr River watershed in the last 3 decades (1986-2018) using geospatial technologies. The changing pattern of LULC was used to identify using satellite imagery 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Analysing land use/land cover changes and its dynamics using remote sensing and GIS in Gubalafito district
+   Authors: , , 
+   Date: 2022
+
+2. Impact of resettlement scheme on vegetation cover and its implications on conservation in Chewaka district of Ethiopia
+   Authors: , , 
+   Date: 2020
+
+3. Analysis of land use/land cover change and its implication on natural resources of the Dedo watershed, Southwest Ethiopia
+   Authors: 
+   Date: 2022. 2022
+
+4. Land use/land cover dynamics in upper Ribb Watershed, Lake Tana Sub basin
+   Authors: , 
+   Date: 2020
+
+5. Land use/ land cover change analysis using geospatial techniques : a case of Geba watershed
+   Authors: , , , , , 
+   Date: 2022
+
+6. Anthropogenic disturbance in tropical forests can double biodiversity loss from deforestation
+   Authors: , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+   Date: 2016. 2016
+
+7. Dynamics of land use change in a mining area: a case study of Nadowli District
+   Authors: , , , 
+   Date: 2016
+
+8. Birr Integrated Model Watershed Development Community Service Project
+   Date: 2017
+
+9. Modelling and analyzing the watershed dynamics using Cellular Automata (CA)-Markov model -a geo-information based approach
+   Authors: , , , , 
+   Date: 2012
+
+10. Impact of climate change on surface water availability and crop water demand for the sub-watershed of Abbay Basin
+   Authors: , , , 
+   Date: 2019
+
+11. Land use and land cover dynamics and drivers in the Muga watershed
+   Authors: , , 
+   Date: 2019. 2019
+
+12. Assessing the Extent, Cost and Impact of Land Degradation at the National Level: Findings and Lessons Learned from Seven Pilots
+   Authors: , , , 
+   Date: 2003
+
+13. Trends and drivers of land use/land cover change in Western Ethiopia
+   Authors: , , , 
+   Date: 2019
+
+14. Land cover dynamics since the 1950s in Chemoga watershed
+   Authors: 
+   Date: 2002. 2002
+
+15. Application of the Kineros model for predicting the effect of land use on the surface run-off case study in Brantas sub-watershed, Klojen district, Malang City, East Java Province of Indonesia
+   Authors: , , , 
+   Date: 2017
+
+16. Land use/land cover change and its driving forces in Shenkolla watershed, south Central Ethiopia
+   Authors: , 
+   Date: 2021. 2021
+
+17. Land use change mapping and analysis using Remote Sensing and GIS: a case study of Simly watershed, Islamabad, Pakistan
+   Authors: , , , 
+   Date: 2015. 1984
+
+18. Land use and forest cover dynamics in the Northeastern Addis Ababa, central highlands of Ethiopia
+   Authors: , 
+   Date: 2019
+
+19. Finchaa catchment, northwestern Ethiopia. undefined, 2020 Land 9
+   Authors: , , 
+   Date: 2020
+
+20. Analysing decadal land use/cover dynamics of the Lake Basaka catchment (Main Ethiopian Rift) using LANDSAT imagery and GIS
+   Authors: 
+   Date: 2012
+
+21. Analysis of land use/land cover change in Adei watershed, Central Highlands of Ethiopia
+   Authors: , 
+   Date: 2019
+
+22. Land cover change in the blue nile river headwaters: farmers' perceptions, pressures, and satellite-based mapping
+   Authors: , , , 
+   Date: 2021. 2021 10
+
+23. FAO Remote Sensing Survey Reveals Tropical Rainforests under Pressure as Agricultural. Food and Agricultural Organizations of the United Nations
+   Authors: 
+   Date: 2018
+
+24. Mapping of landscape structure and forest cover change detection in the mountain chains around Addis Ababa: the case of Wechecha Mountain
+   Authors: , 
+   Date: 2018
+
+25. Analysis of land use/land cover changes and their causes using landsat data in hangar watershed, Abay basin
+   Authors: 
+   Date: 2020
+
+26. Evaluation and prediction of land use/land cover changes in the Andassa watershed
+   Authors: , , , 
+   Date: 2017
+
+27. Performance of highresolution satellite rainfall products over data-scarce parts of eastern Ethiopia
+   Authors: , , , 
+   Date: 2015
+
+28. Deforestation in Ethiopia: causes, impacts and Remedy 1 Tigabu Dinkayoh Gebru 1 Master of science in production forestry
+   Authors: 
+   Date: 2016
+
+29. Rapid diversity and structure degradation over time through continued coffee cultivation in remnant Ethiopian Afromontane forests
+   Authors: , , , , , 
+   Date: 2019
+
+30. Proximate Causes and Underlying Driving Forces of Tropical DeforestationTropical forests are disappearing as the result of many pressures, both local and regional
+   Authors: , 
+   Date: 2002
+
+31. Drivers and implications of land use and land cover change in the central highlands of Ethiopia: evidence from remote sensing and sociodemographic data integration
+   Authors: , 
+   Date: 2014
+
+32. Satellite data classification accuracy assessment based from reference dataset
+   Authors: , 
+   Date: 2008
+
+33. Evaluation of land use/land cover changes and Eucalyptus expansion in Meja watershed
+   Authors: , , , 
+   Date: 2016
+
+34. Remote sensing of urban/suburban infrastructure and socioeconomic attributes
+   Authors: , 
+   Date: 1999
+
+35. Land use/land cover change and its impacts on protected areas in Mengla County
+   Authors: , 
+   Date: 2018. 190
+
+36. Analysis of land use land cover change detection of Bostanlik district
+   Authors: , , , 
+   Date: 2019
+
+37. Modelling future land use land cover changes and their impacts on land surface temperatures in Rajshahi
+   Authors: , , , , 
+   Date: 2020. 100314
+
+38. Changes of ecosystem service values in response to land use/land cover dynamics in Munessa-Shashemene landscape of the Ethiopian highlands
+   Authors: , , , 
+   Date: 2016
+
+39. Land use/land cover change analysis using object-based classification approach in Munessa-Shashemene landscape of the ethiopian highlands
+   Authors: , , , 
+   Date: 2013
+
+40. Land use/land cover change analysis using object-based classification approach in Munessa-Shashemene landscape of the Ethiopian highlands. undefined
+   Authors: , , , 
+   Date: 2013. 2013
+
+41. Land-use/land-cover changes and implications in Southern Ethiopia: evidence from remote sensing and informants
+   Authors: , , 
+   Date: 2022
+
+42. Comparative Assessment of the Measures of Thematic Classification Accuracy
+   Authors: , , , , , , 
+   Date: 2006
+
+43. Analysis of rainfall and streamflow trend and variability over Birr River watershed
+   Authors: , , , , 
+   Date: 2022. 100528
+
+44. Remote sensing application for exploring changes in land-use and land-cover over a district in Northern India
+   Authors: , 
+   Date: 2020
+
+45. Evaluating impact of land-use/land-cover change on surface runoff using arc SWAT model in sore and Geba watershed
+   Authors: 
+   Date: 2019
+
+46. Land use and land cover dynamics in Dendi-Jeldu hilly-mountainous areas in the central Ethiopian highlands
+   Authors: , , , , 
+   Date: 2018
+
+47. Birr Watershed Integrated Natural Resource Management
+   Authors: 
+   Date: 2014
+
+48. Current remote sensing approaches to monitoring forest degradation in support of countries measurement , reporting and verification (MRV) systems for REDD +
+   Authors: , , 
+   Date: 2017
+
+49. Impact of deforestation on soil erosion in the highland areas of western Ethiopia using geospatial techniques: a case study of the Upper Anger watershed
+   Authors: , , , 
+   Date: 2022
+
+50. Multi-temporal analysis of land use and land cover change detection for dedza district of Malawi using geospatial techniques
+   Authors: , , , 
+   Date: 2019
+
+51. The impact of land use/land cover change (LULCC) on water resources in a tropical catchment in Tanzania under different climate change scenarios
+   Authors: , , , , , 
+   Date: 2019. 2019 11
+
+52. Forest cover change detection using Geographic Information Systems and remote sensing techniques: a spatio-temporal study on Komto Protected forest priority area
+   Authors: , , 
+   Date: 2020
+
+53. Land use and land cover dynamics in Dendi-Jeldu hilly-mountainous areas in the central Ethiopian highlands
+   Authors: , , , , , , 
+   Date: 2010
+
+54. Dynamics of land use and land cover changes in Huluka watershed of Oromia Regional State
+   Authors: , , 
+   Date: 2021
+
+55. Land use/land cover changes and climate: modeling analysis and observational evidence
+   Authors: , , , , , , , , , , , , 
+   Date: 2011
+
+56. Multi-Decadal Forest-Cover Dynamics in the Tropical Realm : Past Trends and Policy Insights for Forest Conservation in Dry Zone of Sri Lanka
+   Authors: , , , , , , 
+   Date: 2020
+
+57. Past and future land use/land cover changes in the Ethiopian Fincha Sub-Basin. Land 11
+   Authors: , 
+   Date: 2022
+
+58. A review on land use and land cover change in Ethiopian basins
+   Authors: , , , 
+   Date: 2021
+
+59. The Conservation Atlas of Tropical Forests
+   Authors: , , 
+   Date: 1992
+
+60. Evaluating the land use and land cover dynamics in Borena Woreda of South Wollo highlands
+   Authors: 
+   Date: 2011
+
+61. Evaluating the land use and land cover dynamics in Borena Woreda south Wollo highlands
+   Authors: , 
+   Date: 2015
+
+62. Detecting forest changes using dense landsat 8 and Sentinel-1 time series data in tropical seasonal forests
+   Authors: , , 
+   Date: 2019. 2019 11
+
+63. Future scenarios of land change based on empirical data and demographic trends. undefined
+   Authors: , , , , 
+   Date: 2017. 2017
+
+64. Effect of LULC change on surface runoff in urbanization area
+   Authors: , , , , 
+   Date: 2011
+
+65. Mapping of land-use/land-cover changes and its dynamics in Awash River Basin using remote sensing and GIS
+   Authors: , , , 
+   Date: 2020. 100352
+
+66. Does the recent afforestation program in Ethiopia influenced vegetation cover and hydrology? A case study in the upper awash basin
+   Authors: , , 
+   Date: 2022
+
+67. Assessment of land use/land cover change impact on streamflow: a case study over upper Guder Catchment
+   Authors: , 
+   Date: 2022
+
+68. Understanding recent land use and land cover dynamics in the source region of the Upper Blue Nile, Ethiopia: spatially explicit statistical modeling of systematic transitions
+   Authors: , , , 
+   Date: 2013
+
+69. Soil quality indicators response to land use and soil management systems in northern Ethiopia's catchment. Land Degrad. Dev
+   Authors: 
+   Date: 2016
+
+70. Assessing land use and land cover change detection using remote sensing in the Lake Tana Basin , Northwest Ethiopia Assessing land use and land cover change detection using remote sensing in the Lake Tana Basin , Northwest Ethiopia
+   Authors: , 
+   Date: 2020
+
+71. Accuracy assessment of land use land cover classification using Google Earth
+   Authors: , 
+   Date: 2015
+
+72. The impact of land use/land cover change on ecosystem services in the central highlands of Ethiopia
+   Authors: , , 
+   Date: 2017
+
+73. Land-use and land-cover (LULC) change detection in Wami river basin
+   Authors: , 
+   Date: 2019
+
+74. Determinants of land-use change patterns in The Netherlands
+   Authors: , , , , 
+   Date: 2004
+
+75. Changes in Land Use Influenced by Anthropogenic Activity
+   Authors: , 
+   Date: 2020
+
+76. D. candidate in the Department of Hydrology and Water resource management at Africa Center of Excellence for Water Management, Addis Ababa University. He initiated the idea, collected, and prepared the data. Conceived the study
+   Authors: , 
+
+77. is working as an associate professor in the department of land and water resources center
+   Authors: 
+
+78. is working as an assistant professor in the department of hydraulic and water resources engineering
+   Authors: 
+

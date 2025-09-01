@@ -1,0 +1,23 @@
+{
+  "total_sentences": 233,
+  "total_entities": 1080,
+  "total_relations": 536,
+  "relation_types": {
+    "CAUSES": 146,
+    "DECREASES_BY": 60,
+    "LOCATED_IN": 91,
+    "MEASURES": 12,
+    "INCREASES_BY": 53,
+    "OCCURS_DURING": 75,
+    "ENABLES": 18,
+    "AFFECTS": 65,
+    "TRANSFORMS_TO": 6,
+    "FROM_TO": 10
+  },
+  "confidence_distribution": {
+    "HIGH": 364,
+    "MEDIUM": 155,
+    "LOW": 16,
+    "TAUTOLOGY": 1
+  }
+}

@@ -1,0 +1,422 @@
+================================================================================
+TITLE: Survey on Land Use/Land Cover (LU/LC) change analysis in remote sensing and GIS environment: Techniques and Challenges
+================================================================================
+
+AUTHORS:
+- Sam Navin Mohanrajan
+- Agilandeeswari Loganathan
+- Prabukumar Manoharan
+- Philippe Garrigues
+
+ABSTRACT:
+The surface of the earth is rapidly changing every day due to certain natural reasons and other impacts by society. Over the last few decades, the hottest topics in the field of remote sensing and GIS (geographic information system) environments have evolved from observing the nature of the earth. Owing to the enlargement of several worldwide modifications related to the nature of the earth, land use/land cover (LU/LC) change is considered as the matter of utmost importance in the natural atmosphere, and it has also become an interesting area to be studied by the researchers. As there is a lack of review articles in the land use/land cover change analysis process, we presented a comprehensive review which may help the researchers to proceed further. This paper deals with the most frequent methods used by researchers on various processes like pre-processing, classification, and prediction of time series satellite images for analyzing the LU/LC changes using satellite images. The generic flow of the LU/LC change analysis process and the challenges faced during each process by the researchers are discussed. Varied resolutions of the environmental image captured by remote sensing satellites for analyzing the LU/LC changes are discussed. Various LU/LC classes depending on change in the earth's surface are also studied and the constraint used in each application is stated. The importance of this review lies in the motivation for future researchers to work on the LU/LC change analysis problem effectively.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+The significance of timely and precise information relating to the nature and scope of land possessions and changes over time is increasing rapidly, particularly in metropolitan areas. Inspecting the Earth from space is crucial for understanding the influence of man's actions on natural resources over different time intervals. The information from the remote sensing satellites in mapping the earth's features and infrastructures has become dynamic. Map-to-map comparisons and imageto-image comparisons are observed in the variations caused by the factors of the LU/LC change process. Land use and land cover are the terms with different degrees of significance in the field of scientific remote sensing. Natural and biological landscapes such as forests, marshlands, grasslands, water lands, and urbanized and built areas denote the land cover area detected from the surface of the earth. The events that take place in the land represent the current use of the properties such as built-up institutions, shopping centers, parks, and reservoirs are described as land use categories 
+Remote sensing is also regarded as an essential cause of thematic maps, depicting land cover as it affords a map-like representation of the specific surface of the earth that is spatially constant and extremely reliable, as well as accessible at a range of spatial and temporal measures. Thematic presentation or mapping from remotely detected or sensed images is naturally based on image classification which is attained by computer-aided or visual analysis. The main use of image classification is the labeling of the pixels in the images captured with meaningful information of the real world for enhanced and advantageous information extraction. Thematic maps holding information such as cadastral information, vegetation, and the land cover type could be obtained through the classification of satellite images 
+From the broad analysis, we observed many researchers describe the problem of LU/LC change analysis for different regions across the world in the field of remote sensing. Some of the research articles are summarized and explained as follows: Zagros forest preservation plan was made for the protection of forest-covered regions in Iran against destruction. A study of the LU/LC change analysis process for a different time interval between 1992 and 2016 was made by using the Landsat images for the Zagros forest region. Atmospheric and geometric corrections were made for the removal of errors seen in the Landsat images. The supervised maximum likelihood algorithm was used for classifying the images into different classes like the forest, agriculture, rangeland, and builtup areas. Post-processing was done to enhance the image for attaining good classification accuracy. Suitability map was extracted using a Markov chain model. The LCM (Land Change Modeler) using a multi-layer perceptron (MLP) neural network helped in calibrating the dependent and the independent variables for predicting the future LU/LC changes in the year 2024 
+The spatial and temporal pattern of LU/LC change was observed in the forest-covered area of Ningxia Hui Autonomous Region (NHAR), China, from 1991 to 2015. Cloud shadows were removed from the Landsat images and the landscape brightness effects on the DEM (digital elevation model) data were reduced using the topographic correction method. The maximum likelihood classification map was used for further post-processing and LU/LC change analysis process 
+Changes in the Savannah River Basin for four-time intervals during the period 
+The Random Forest, k-nearest neighbor (k-NN), and support vector machine (SVM) non-parametric classifiers were in the classification of the Sentinel-2 satellite data for the region of the Red River Delta (RRD), Vietnam. The performance of machine learning methods is compared and analyzed. Google Earth images were used as the training datasets during the process of accuracy assessment. The results revealed that the high overall accuracy by support vector machine followed by Random Forest and k-nearest neighbor (Thanh Noi and Kappas 2018). Many researchers have worked on the LU/ LC change prediction problem for different regions across the world. The hybrid model of cellular automata and Markov chain has been broadly used for LU/LC prediction in the built-up area, forest-covered area, watershed area, mountainous region, and desert region 
+Using the hybrid classification methods provides good accuracy during the LU/LC classification process. The unsupervised ISODATA clustering method with the pixel-based supervised maximum likelihood classification method was used for classifying the Landsat imageries for the region of Andassa watershed, Blue Nile Basin, Ethiopia. The LU/LC changes were analyzed and calculated from 1985 to 2015. Cellular automata with Markov model is used to predict the LU/ LC condition for the year 2030 and 2045 
+
+## Motivation ##
+From the above study, we infer that none of the existing literature reviews on LU/LC presents the complete review on land use/land cover change analysis process. They focused only on a specific stage, i.e., either LU/LC classification 
+
+## Objective ##
+The main objective of this paper is listed as follows:
+i. The utmost purpose of this review paper is to provide a road map for the researchers who are interested to work on the land use/land cover change analysis to predict the future land cover. ii. This paper presents a comprehensive review of detailed techniques and benefits in various stages of the land use/ land cover change analysis process that starts from the image acquisition stage to the prediction and validation stage. iii. This paper provides a generic flow and the possible framework of the LU/LC change analysis process. iv. The challenges in each stage of LU/LC change analysis have been identified and briefed which might guide future researchers to work effortlessly on the LU/LC change prediction problem.
+The observations of many researchers have helped us to model the generic flow of the LU/LC change process, which is shown in Fig. 
+
+## Organization of the paper ##
+The rest of the paper provides detailed information and is organized as follows: The "Satellite image acquisition" section describes the datasets and their sources. The "Image processing software types and its key features" section explains the software tools used for processing an image. The "Image pre-processing techniques" section explains the image preprocessing techniques. The "LU/LC classification methods" section illustrates a few LU/LC classification methods, the "Post-classification and LU/LC change analysis" section describes the use of post-classification and change detection or dependent variables, the "LU/LC classes and its factors" section explains the different LU/LC classes and their corresponding factors or independent variables, and the "LU/LC prediction models" section informs the few environmental models used for predicting the future LU/LC changes. In the "Commonly used metrics" section, the commonly used metrics are presented, the "Conceptual framework" section depicts the conceptual framework of the study, the "Discussions" section provides the discussion, the "Challenges" section presents the challenges faced during LU/LC change analysis, and the "Conclusions" section enlightens the conclusions of the study.
+
+## Satellite image acquisition ##
+The selection of a suitable dataset is the most significant process in the LU/LC change analysis. The image was collected through aerial photographs, satellite imageries, ancillary data, Google maps, forest department, land resource management, and urban planners. The datasets from different time intervals require careful collection for further processing in remote sensing environment. From various studies, we observed that there were many datasets used by the researchers in the analysis of the LU/LC change. Some of them are shown in Table 
+
+## Image processing software types and its key features ##
+In the precise study of remote sensing, we identified the different geospatial software tools used by the researchers for various stages such as pre-processing, classifying, analyzing, and predicting the LU/LC changes using the multispectral satellite images. Some of them are described in Table 
+
+## Image pre-processing techniques ##
+The image pre-processing techniques are used for improving the quality and visibility of the satellite images. It is considered as an initial stage where the image enhancement, geometric, radiometric, atmospheric, and topographic corrections are made to improve the quality of the satellite image. Table 
+
+## LU/LC classification methods ##
+LU/LC classification is the method of labeling the pixels in the pre-processed satellite image for obtaining the classified images. Every pixel is considered as a unique entity and assigned to a particular class through pixel-based classification. Objectbased classification is the collection of information from a group of related pixels, i.e., it grabs the pixels into graphical shapes, sizes, and other spatial properties. The normally distributed data is assumed under parametric classifiers. The nonparametric classifiers do not consider the classification of statistical parameters or normal assumptions. Fuzzy methodology and spectral mixture analysis are considered as effective methods for sub-pixel-based image classification as they help in sorting out the land cover types in the particular region 
+
+## Post-classification and LU/LC change analysis ##
+Post-classification is an improvement process, which improves the quality of the classified LU/LC map through the removal of noise and misclassification errors. This process helps in the enhancement of the overall accuracy by removing the single and scattered pixels present in the LU/LC classified image. Post-classification processing assists in solving the misclassification error that occurs due to substantial spectral confusion between the LU/LC classes, (i.e., confusion between the agricultural land and the barren land). This process holds the advantage of reclassifying the pixels that are misclassified 
+The LU/LC classified image will be processed for validating the change analysis for different time intervals over a particular region. LU/LC change analysis is done for the determination of the changes that occurred in some specific areas and for helping in making useful decisions relating to the protection of an environment. The percentage and rate of change are calculated for identifying the magnitude of changes that occurred between different time intervals 
+
+## LU/LC classes and its factors ##
+The LU/LC classified classes include areas like built-up area, agricultural land, forest area, vegetation land, water bodies, wasteland, mountain area, and desert area. We collected the LU/LC information of India in the year 2015 to 2016 from Bhuvan-Thematic Services of the National Remote Sensing Centre (NRSC), Indian Space Research Organization (ISRO), for getting a good understanding of LU/LC classes. The LU/ LC classified classes in India, for the year 2015 to 2016, are Google Earth provides the multi-temporal time series data and it helps during the process of accuracy assessment.
+shown in Fig. 
+Based on the development of land transformation in a specific area, the suitability map provides the information needed for the specific LU/LC classes. For instance, forest suitability maps provide information on the different species of trees grown in a specific location of the forest-covered region. The suitability of areas is mapped with the consideration of weighted factors like slope, elevation, and distance from the forest edge, road, water bodies, wasteland, grassland, agricultural land, and settlements 
+Table 
+Statistical tests were conducted for finding the association between the dependent variable (LU/LC change map) and the independent variables (slope, elevation, and distance from the river, forest edge, barren land, built-up area, and agriculture area). The Cramer's V coefficient test is widely used by the researchers for enabling observation of the association between the dependent and independent variables. The Cramer's V coefficient value always lies between zero (no association between the variables) and one (complete association between the variables). These independent variables are considered as the key factors in analyzing the future LU/LC changes 
+
+## LU/LC prediction models ##
+Different environmental models are used by the researchers for forecasting future LU/LC changes. It is necessary for every researcher to work on LU/LC change prediction problem considering the provision of the predicted results to the land resource management and to urban planners to help them in taking suitable actions for protecting the land cover environment. Table 
+THE Markov chain (MC) model is used for analyzing the time-based changing landscapes among the LU/LC classes based on the transition probabilities 
+
+## Commonly used metrics ##
+We identified the most commonly used metrics for analyzing the satellite images and they are listed as follows: NDVI, NDWI, confusion matrix (used to equate the classified image with the reference image), the kappa coefficient, and overall accuracy. The percentage of change and rate of change is calculated for determining the number of changes experienced between a certain time interval. 
+
+## H-p H-p H-p ##
+Environ Sci Pollut Res 
+
+## NDVI ##
+The probability of having lower or higher vegetation is identified by the NDVI values 
+where NIR represents the Near-Infrared Band and RED represents the Red Band.     
+
+## NDWI ##
+The probability of having lower or higher water content is identified by the NDWI (Normalized Difference Water Index) values 
+where NIR represents the Near-Infrared Band and SWIR represents the Short Wave Infrared Band.
+
+## Confusion matrix, accuracy assessment, and kappa coefficient ##
+Accuracy assessment is an indispensable and decisive measure in the remotely sensed image classification for detecting the LU/LC change. The reference images are compared with the classified images employing the confusion matrix. Table 
+The confidence of the classified images largely depends on accuracy assessment. The analysis of various studies shows the computation of the overall accuracy as the basic need and the kappa coefficient for testing the correctness of the classification process. 
+where KS represents kappa statistics; N signifies the matrix r signifies number of rows in the confusion matrix; x ii denotes row i and column i observations; x i+ denotes row i observations; x +i represents column i observations.
+
+## Rate percentage of change ##
+For demonstrating the magnitude of the LU/LC change for the different time intervals in a modest way, the rate of change and the percentage of change are calculated.
+where POC represents the percentage of change; ROC represents the rate of change; T 1 represents the area (ha) of LU/LC for the time interval 1; T 2 represents the area (ha) of LU/LC for the time interval 2; T i represents the time interval between the T 1 and T 2 in years (yr).
+
+## Conceptual framework ##
+The utmost purpose of this review paper is to provide a conceptual framework for the comprehensive land use/ land cover change analysis process and it is shown in Fig. 
+
+## Discussions ##
+The natural reasons and the significant changes over the earth's surface for a long time interval have led to the process of LU/LC change analysis. In a remote sensing and GIS environment, several images from different satellites have been deliberated as the important data source where numerous kinds of land cover changes like deforestation, expansion of agricultural land, increase in urban growth, and loss of wetlands over the different time interval is recognized. Steps involved in the analysis of LU/LC change are, acquisition of satellite images, image pre-processing, LU/LC classification, post-classification, accuracy assessment, change analysis, validating dependent and independent variables, and LU/LC change prediction. The different datasets and their sources have been discussed and defined in this paper. The commonly used software programs for processing the different satellite images have also been discussed in this study. Among them, ENVI, ArcGIS, ERDAS Imagine, and IDRISI are frequently used by researchers. Image pre-processing is considered the most important stage, and therefore it should be performed before the LU/LC change analysis process. A few image pre-processing techniques used by researchers help in correcting the atmospheric, radiometric, geometric, and topographic errors in the satellite image. Pre-processing of satellite images should be processed carefully since it is the initial process following data collection. The LU/ LC classification is the strongly focused part in remote sensing environment. Different classification algorithms were used by researchers for classifying the preprocessed satellite image into different classes. We observed that the hybrid classification algorithms provide good accuracy for the pre-processed satellite image. The process of post-classification should be carefully made for removing the misclassification errors in the LU/LC classification map. The Google Earth Engine is the widely used geospatial software for analyzing and obtaining the reference data during the process of accuracy assessment. The classified LU/LC map is analyzed  
+
+## 2015) ##
+by calculating the area of change that happened for different time intervals. Dependent (LU/LC map) and independent variables (slope, elevation, and distance variables) are the important factors in predicting the LU/LC change. Hence, most of the researchers tend to prefer an effective hybrid prediction method for monitoring and predicting the land cover changes for certain time series in a particular region. Among the performance metrics, the accuracy assessment and kappa statistics were considered as the efficient and required metrics for every LU/LC classification and prediction problem to validate the performance of the results.
+
+## Challenges ##
+This paper provides a few research challenges faced during every stage of the LU/LC change analysis process. The challenges are summarized as:
+& Acquisition: During the image acquisition process, extracting the region of interest from the study area through datum coordinates from the suitable satellite system is a challenging task for researchers. & Pre-processing: During satellite image pre-processing, geo-referencing the unknown coordinates of   The challenges focused in this paper could be a fertile source for future researchers to do their work actively in LU/ LC remote sensing environment.
+
+## Conclusions ##
+This paper evidently presents the generic flow of the LU/LC change analysis process and also provides a detailed discussion on techniques and the challenges faced during each stage of the LU/LC process. The importance of finding the future LU/LC change today employing prediction methods is in the provision of judgments to the land resource management. Moreover, this information will help the government officials, namely, urban planners and forest department, to take necessary actions over the protection of a LU/LC environment. graphic gradients in Hugumburda national forest priority area, Fig. 
+
+================================================================================
+REFERENCES:
+================================================================================
+
+1. Parameter investigation of artificial neural network and support vector machine for image classification
+   Authors: A Abbas
+   Date: 2017. 2017
+
+2. Modeling of urban growth in tsunami-prone city using logistic regression: analysis of Banda Aceh
+   Authors: A Achmad, S Hasyim, B Dahlan, D Aulia
+   Date: 2015
+
+3. Proximate causes of land-use and land-cover change in Bannerghatta National Park: a spatial statistical model
+   Authors: S Adhikari, T Fik, P Dwivedi
+   Date: 2017
+
+4. Using multivariate adaptive regression spline and artificial neural network to simulate urbanization in Mumbai, India. The International Archives of Photogrammetry
+   Authors: M Ahmadlou, M Delavar, A Basiri, M ; Karimi, M Ahmadlou, M Delavar, A Tayyebi, H Shafizadeh-Moghadam
+   Date: 2018. 2015
+
+5. Evaluation of land use & land cover change using multi-temporal landsat imagery: a case study Sulaimaniyah Governorate
+   Authors: K Alkaradaghi, S Ali, N Al-Ansari, J Laue
+   Date: 2018
+
+6. Assessing the spatiotemporal pattern of land use and land cover changes in Osun Drainage Basin, Nigeria
+   Authors: E Ashaolu, J Olorunfemi, I Ifabiyi
+   Date: 2019
+
+7. Effects of tree-crop farming on land-cover transitions in a mosaic landscape in the eastern region of Ghana
+   Authors: Asubonteng
+   Date: 2018
+
+8. Semi-supervised learning for the classification of remote sensing images: a literature review
+   Authors: Pss Aydav, S Minz
+   Date: 2017
+
+9. Geometric correction in recent high resolution satellite imagery: a case study in Coimbatore, Tamil Nadu
+   Authors: S Baboo, M Devi
+   Date: 2011
+
+10. Sensitivity of the subspace method for land cover classification
+   Authors: H Bagan, H Li, Y Yang, W Takeuchi, Y Yamagata
+   Date: 2018
+
+11. Quantifying land use/land cover change and its potential impact on rice production in the Northern Nile Delta
+   Authors: N Bakr, A Afifi
+   Date: 2019. 2019
+
+12. A novel semi-supervised land cover classification technique of remotely sensed images
+   Authors: B Banerjee, K Buddhiraju
+   Date: 2015
+
+13. Land use land cover changes along topo-Northern Ethiopia
+   Authors: E Birhane, H Ashfare, A Fenta, H Hishe, M Gebremedhin, G Solomon, N
+   Date: 2019
+
+14. Prediction of land use/land cover change methods: a study
+   Authors: O Bounouh, H Essid, I Farah
+   Date: 2017. 2017
+
+15. Semisupervised pixel classification of remote sensing imagery using transductive SVM
+   Authors: D Chakraborty, U Maulik
+   Date: 2011
+
+16. Geospatial assessment of agricultural drought (a case study of Bankura District, West Bengal)
+   Authors: S Das, M Choudhury, S Nanda
+   Date: 2013
+
+17. Remote sensing and GIS techniques for prediction of land use land cover change effects on soil erosion in the high basin of the Oum Er Rbia River (Morocco)
+   Authors: El Jazouli, A
+   Date: 2019
+
+18. Land use change assessment in coastal mangrove forests of Iran utilizing satellite imagery and CA-Markov algorithms to monitor and predict future change
+   Authors: H Etemadi, J Smoak, J Karami
+   Date: 2018
+
+19. Using satellite data to monitor land-use landcover change in North-eastern Latvia
+   Authors: S Fonji, G Taff
+   Date: 2014
+
+20. Evaluation of IRS1D-LISS-III and Landsat 8-OLI Images for Mapping in Maroon Riparian Forest
+   Authors: M Firoozynejad, A Torahi
+   Date: 2017
+
+21. Study of land use/land cover dynamics through classification algorithms for Harangi catchment area
+   Authors: B Ganasri, G Dwarakish
+   Date: 2015
+
+22. Evaluation and prediction of land use/land cover changes in the Andassa watershed
+   Authors: T Gashaw, T Tulu, M Argaw, A Worqlul
+   Date: 2017
+
+23. Google Earth Engine: planetary-scale geospatial analysis for everyone
+   Authors: N Gorelick, M Hancher, M Dixon, S Ilyushchenko, D Thau, R Moore
+   Date: 2017
+
+24. Land use/land cover change detection and prediction in the north-western coastal desert of Egypt using Markov-CA
+   Authors: Mwa Halmy, P Gessler, J Hicke, B Salem
+   Date: 2015
+
+25. Scenario simulation and the prediction of land use and land cover change in Beijing
+   Authors: H Han, C Yang, J Song
+   Date: 2015
+
+26. Landslide susceptibility mapping using logistic regression model (a case study in Badulla District, Sri Lanka)
+   Authors: H Hemasinghe, Rss Rangali, N Deshapriya, L Samarakoon
+   Date: 2018
+
+27. Effects of preservation policy on land use changes in Iranian Northern Zagros forests
+   Authors: H Heidarlou
+   Date: 2019
+
+28. Remote sensing classification using fuzzy C-means clustering with spatial constraints based on Markov random field
+   Authors: Y Honglei, P Junhuan, X Bairu, Z Dingxuan
+   Date: 2013. 20134617
+
+29. An automatic approach for land-change detection and land updates based on integrated NDVI timing analysis and the CVAPS method with GEE support
+   Authors: Y Hu, D Yu
+   Date: 2018
+
+30. Assessing and modeling the impact of land use and changes in land cover related to carbon storage in a western basin in Mexico
+   Authors: R Hernández-Guzmán, A Ruiz-Luna, C González
+   Date: 2019
+
+31. A novel co-training approach for urban land cover mapping with unclear Landsat time-series imagery
+   Authors: T Hu, X Huang, J Li, L Zhang
+   Date: 2018. 2018
+
+32. Prediction of land use/cover change in the Bharathapuzha river basin, India using geospatial techniques
+   Authors: J John, N Chithra, S Thampi
+   Date: 2019
+
+33. A multisensor and multi-temporal remote sensing approach to detect land cover change dynamics in heterogeneous urban landscapes
+   Authors: N Kabisch, P Selsam, T Kirsten, A Lausch, J Bumberger
+   Date: 2019
+
+34. Monitoring and prediction of land use/land cover changes using CA-Markov model: a case study of Ravansar County in Iran
+   Authors: H Karimi
+   Date: 2018
+
+35. Automated forgery detection in multispectral document images using fuzzy clustering. 2018 13th IAPR International Workshop on Document Analysis Systems (DAS)
+   Authors: M Khan
+   Date: 2018
+
+36. Forest cover dynamics analysis and prediction modeling using logistic regression model
+   Authors: R Kumar, S Nandy, R Agarwal, Sps Kushwaha
+   Date: 2014. 2014
+
+37. Artificial neural network model for prediction of land surface temperature from land use/cover images
+   Authors: S Kusuma
+   Date: 2013
+
+38. A review of remote sensing image classification techniques: the role of spatio-contextual information
+   Authors: M Li, S Zang, B Zhang, S Li, C Wu
+   Date: 2014
+
+39. Analysis of spatiotemporal land cover changes in Inner Mongolia using self-organizing map neural network and grid cells method
+   Authors: Z Li, H Bagan, Y Yamagata
+   Date: 2018
+
+40. Monitoring and predicting land use and land cover changes using remote sensing and GIS techniquesa case study of a hilly area
+   Authors: C Liping, S Yujun, S Saeed
+   Date: 2018
+
+41. A self-trained semisupervised SVM approach to the remote sensing land cover classification
+   Authors: Y Liu, B Zhang, L Wang, N Wang
+   Date: 2013
+
+42. Analysis of land use/land cover changes using remote sensing data and GIS at an Urban Area, Tirupati, India
+   Authors: P Mallupattu, Jrs Reddy
+   Date: 2013. 2013
+
+43. Learning with transductive SVM for semisupervised pixel classification of remote sensing imagery
+   Authors: U Maulik, D Chakraborty
+   Date: 2013
+
+44. A self-trained ensemble with semisupervised SVM: an application to pixel classification of remote sensing imagery
+   Authors: U Maulik, D Chakraborty
+   Date: 2011
+
+45. Analysis of land use and land cover spatial pattern based on Markov chains modelling
+   Authors: J Mirkatouli, A Hosseini, A Neshat
+   Date: 2015
+
+46. Land use/land cover changes monitoring and analysis of Dubai Emirate, UAE using multi-temporal remote sensing data
+   Authors: M Mohamed, S Elmahdy
+   Date: 2018
+
+47. Determining the suitability and accuracy of various statistical algorithms for satellite data classification
+   Authors: K Murtaza, S Romshoo
+   Date: 2014
+
+48. Predicting urban expansion in Arak Metropolitan Area using two land change models
+   Authors: M Nadoushan, A Soffianian, A Alebrahim
+   Date: 2012. 2012
+
+49. Discriminating native and plantation forests in a Landsat timeseries for land use policy design
+   Authors: T Nery, R Sadler, M Solis Aulestia, B White, M Polyakov
+   Date: 2019
+
+50. Analysis of land cover changes and landscape fragmentation in Batanghari Regency, Jambi Province
+   Authors: A Nurwanda, Afm Zain, E Rustiadi
+   Date: 2016
+
+51. Prediction models for landscape development in GIS
+   Authors: C Nwaogu, A Benc, V Pechanec
+   Date: 2017
+
+52. Study of land use classification in an arid region using multispectral satellite images
+   Authors: C Pande, K Moharir, Sfr Khadri, S Patil
+   Date: 2018
+
+53. Data mining algorithms for land cover change detection: a review
+   Authors: S Panigrahi, K Verma, P Tripathi
+   Date: 2017
+
+54. Remote sensing data and SLEUTH urban growth model: as decision support tools for urban planning
+   Authors: Iss Pathiranage, L Kantakumar, S Sundaramoorthy
+   Date: 2018
+
+55. Developments in Landsat land cover classification methods: a review
+   Authors: D Phiri, J Morgenroth
+   Date: 2017
+
+56. A comparative study of advanced land use/ land cover classification algorithms using Sentinel-2 data. International Archives of the Photogrammetry
+   Authors: K Priyadarshini
+   Date: 2018
+
+57. Topographic imaging simulation of optical remote sensing based on Landsat TM data
+   Authors: H-P Q
+   Date: 2013
+
+58. Geospatial analysis of land use land cover change predictive modeling at Phewa Lake Watershed of Nepal
+   Authors: R Regmi, S Saha, M Balla
+   Date: 2014
+
+59. Fuzzy C-means algorithm based satellite image segmentation
+   Authors: S Rehman, M Hussain
+   Date: 2018
+
+60. Land cover change during a period of extensive landscape restoration in Ningxia Hui Autonomous Region, China
+   Authors: Amc Restrepo
+   Date: 2017
+
+61. Prediction of land use and land cover changes for North Sumatra, Indonesia, using an artificial-neural-networkbased cellular automaton
+   Authors: M Saputra, H Lee
+   Date: 2019
+
+62. Semi-supervised techniques based hyper-spectral image classification: a survey
+   Authors: S Sawant, M Prabukumar
+   Date: 2017
+
+63. 
+   Authors: Ieee
+
+64. Mapping of Krau Wildlife Reserve (KWR) protected area using Landsat 8 and supervised classification algorithms
+   Authors: Nsn Shaharum, Hzm Shafri, J Gambo, Faz Abidin
+   Date: 2018. 2018
+
+65. Predicting spatial and decadal LULC changes through cellular automata Markov chain models using earth observation datasets and geo-information
+   Authors: S Singh, S Mustak, P Srivastava, S Szabó, T Islam
+   Date: 2015
+
+66. Analysis of supervised maximum likelihood classification for remote sensing image. Recent Advances and Innovations in Engineering (ICRAIE)
+   Authors: P Sisodia, V Tiwari, A Kumar
+   Date: 2014
+
+67. Classification of Landsat 8 satellite data using unsupervised methods. Intelligent and Interactive Computing
+   Authors: A Taufik, Sss Ahmad, E Azmi
+   Date: 2019
+
+68. Comparison of random forest, k-nearest neighbor, and support vector machine classifiers for land cover classification using Sentinel-2 imagery
+   Authors: Thanh Noi, P Kappas, M
+   Date: 2018
+
+69. Striping noise detection and correction of remote sensing images
+   Authors: F Tsai, W Chen
+   Date: 2008
+
+70. Satellite imagery land cover classification using Kmeans clustering algorithm: computer vision for environmental information extraction
+   Authors: B Usman
+   Date: 2013
+
+71. Comparative analysis of different supervised classification techniques for spatial land use/land cover pattern mapping using RS and GIS
+   Authors: A Vibhute
+   Date: 2013
+
+72. Suomi NPP VIIRS prelaunch and on-orbit geometric calibration and characterization
+   Authors: R Wolfe, G Lin, M Nishihama, K Tewari, J Tilton, A Isaacman
+   Date: 2013
+
+73. Prediction of land cover change using Markov and cellular automata models: case of Al-Ain, UAE, 1992-2030
+   Authors: M Yagoub, Aaa Bizreh
+   Date: 2014
+
+74. Graph-based semi-supervised classification on very high resolution remote sensing images
+   Authors: Y Yan
+   Date: 2017
+
+75. Assessing climate impact on forest cover in areas undergoing substantial land cover change using Landsat imagery
+   Authors: Q Yang, H Zhang, W Peng, Y Lan, S Luo, J Shao, D Chen, G Wang
+   Date: 2018
+
+76. Land use/land cover change modeling and the prediction of subsequent changes in ecosystem service values in a coastal area of China, the Su-Xi-Chang Region
+   Authors: E Yirsaw, W Wu, X Shi, H Temesgen, B Bekele
+   Date: 2017
+
+77. Joint Deep Learning for land cover and land use classification
+   Authors: Z Ce
+   Date: 2019
+
+78. Continuous change detection and classification of land cover using all available Landsat data
+   Authors: Z Zhu, C Woodcock
+   Date: 2014
+
+79. Geospatial analysis of land use change in the Savannah River Basin using Google Earth Engine
+   Authors: H Zurqani, C Post, E Mikhailova, M Schlautman, J Sharp
+   Date: 2018
+

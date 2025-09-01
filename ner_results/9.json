@@ -1,0 +1,12 @@
+{
+  "article_id": "9",
+  "original_sentence": "The African Mangroves region has experienced significant land use changes.",
+  "entities": [
+    {
+      "text": "African Mangroves region",
+      "label": "LOC",
+      "start_char": 4,
+      "end_char": 28
+    }
+  ]
+}

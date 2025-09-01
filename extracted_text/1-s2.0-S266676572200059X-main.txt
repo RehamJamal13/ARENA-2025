@@ -1,0 +1,698 @@
+================================================================================
+TITLE: Integrated modeling of hydrological processes and groundwater recharge based on land use land cover, and climate changes: A systematic review
+================================================================================
+
+AUTHORS:
+- Jacob Mensah
+- Eric Ofosu
+- Mark Yidana
+- Komlavi Akpoti
+- Amos Kabo-Bah
+
+ABSTRACT:
+Groundwater is the main available freshwater resource and therefore its use, management and sustainability are closely related to the Sustainable Development Goals (SDGs). However, Land Use Land Cover (LULC) and climate change are among the factors impacting groundwater recharge. The use of land-use and climate data in conjunction with hydrological models are valuable tools for assessing these impacts on river basins. This systematic review aimed at assessing the integrated modeling approach for evaluating hydrological processes and groundwater recharge based on LULC and climate change. The analysis is based on 200 peer-reviewed articles indexed in Scopus, and the Web of Science. Continuous research and the development of context-specific groundwater recharge models are essential to increase the long-term viability of water resources in any basin. The long-term impacts of natural and anthropogenic drivers on river basin interactions require integrating knowledge and modeling capabilities across biophysical responses, environmental problems, policies, economics, social, and data.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Global freshwater extraction was estimated at 3.99 trillion m 3 in 2014 
+Groundwater recharge and sustainability are critical challenges for the world's fastest-growing population areas, particularly the arid and semi-arid regions that depend on the resource for domestic, industrial, and agricultural needs. Therefore, the establishment of good groundwater management systems is crucial to achieving the SDGs. However, the effects of urbanization have been experiential in numerous ways such as runoff changes and drought, recharge of groundwater, scarcity of water due to increasing demand and others 
+Climate change is one of the recent key hydrological research problems 
+A detailed understanding of groundwater inputs and outputs is required to guide water management choices for future planning and policy. In addition to analytical regression equations 
+Using a bibliometric review technique, Castillero et al. ( 
+Groundwater recharge is controlled by a variety of elements including climate, vegetation, unsaturated area, flow mechanism and thickness of the aquifer 
+
+## Materials and methods ##
+
+
+## Design of the study ##
+A systematic literature review was conducted to determine the usefulness of an integrated modeling strategy for predicting groundwater recharge under changing climate and land use land cover changes. The Preferred Reporting Items for Systematic reviews and Meta-Analysis (PRISMA) was employed based on 
+
+## Summary of literature selection ##
+The systematic review process captured articles through some of the main repositories including, the Web of Science and Scopus. For the preliminary investigation, Boolean search in scientific research engines and platforms were utilized, with an emphasis on keywords such as integrated modeling, land use and land cover change, hydrological responses, climate change, groundwater recharge, and other specific known techniques (GIS, SWAT, MODFLOW, WETSPAS, and so on) at the local, regional, national, and global levels. In all, 3282 articles were obtained because of the searches executed through all sources. After excluding 1235 duplicate articles, a total of 2047 articles were left for screening, and a further 1347 articles were deleted after filtering titles and abstracts. The complete texts of 700 possibly suitable articles were reviewed to determine their relevance. After this stage of filtering, 500 papers were eliminated, allowing 200 for inclusion in the review. Articles that were more than 10 years of age were largely omitted from the list, with a focus on those connecting future land use and land cover changes and groundwater recharge to climate change, in keeping with the objectives of the review. The PRISMA flow chart (Fig. 
+A random selection of review articles released in the last decade  were those considered for the analyses, it does not however include conference proceedings. The search was restricted to English-language peer-reviewed journal papers. The journals chosen had enough material regarding GW recharge modeling in connection to LULC, the majority of which indicated the possibility of modeling GW recharge or surface-groundwater interactions, as well as hydrological modeling. The collection included a total of 200 scholarly articles as shown in (Fig. 
+
+## Summary and development of a catalogue ##
+The number of scientific articles reviewed for this publication is from America, Africa, and Asia. Over 50 countries contributed 180 peerreviewed publications, with 61 from Africa, 49 from Asia, 43 from America, 24 from Europe, and 2 from Australia. Furthermore, there were 11 publications examined from Ghana, with 24, 21, 10, and 14 from the United States, China, Ethiopia, and India respectively. Fig. 
+Between 2000 and 2021, the sum of published literature on the use of hydrological models to estimate land use land cover and climate change impact on the recharge of groundwater has seen an exponential rise (Fig. 
+
+## Results and discussions ##
+
+
+## Impact of Land Use Land Cover (LULC) and climate changes on hydrological processes ##
+The two most important occurrences impacting water regimes globally are land-use and climatic changes 
+Climate change may affect watershed hydrologic systems by altering temperature and precipitation regimes 
+Climate change impacts on hydrologic processes such as surface runoff, streamflow, baseflow, and evapotranspiration have been documented in most parts of the world. 
+Integrated modeling is needed to better understand how future climate and land-cover changes may affect watersheds in different regions. Most urban watersheds might benefit greatly from the use of finescale urban development predictions, downscaled climate projections, and process-based hydrologic models to produce insights for water resource managers. Simplified and integrated hydrological modeling, or distributed and theoretical modeling, are the integral parts of these approaches. 
+The MIKE-SHE model was used by 
+Existing information on LULC's long-term consequences on hydrology has been revealed by the use of hydrological models 
+
+## Groundwater recharge under changing LULC and climate ##
+Climate patterns and land-use changes have the potential to significantly alter hydrological processes, hence affecting groundwater supply and quality. While hydrological conditions will be modified by climate change, it will also affect groundwater resources indirectly via their interaction with surface water bodies 
+Groundwater recharge can be estimated experimentally using isotope tracers 
+Globally, remote sensing and GIS, and other approaches for groundwater assessment have been used for groundwater flow, and quantity 
+Martínez-Retureta et al. ( 
+
+## Change of LULC and their impact on hydrologic characteristics ##
+Rainfall and groundwater base-flow influence streamflow, which is crucial for flood management 
+Li and Fang (2021) used the Delta downscaling approach to examine climate change impacts on streamflow. Calibration of the model predicts projected minimum monthly temperature rises of 1.5 • C, 2 • C, and 3 • C for all RCPs (2.6, 4.5, and 8.5) respectively. Rainfall is expected to decline in the 2030s and then rise to 8.9%, 12.89%, and 13.9% in the three scenarios, while streamflow is anticipated to increase by 10.5%, 20.1%, and 23.2% from 2020 to 2093 under the three RCP scenarios. The authors reiterated dry season streamflow is also expected to decline by 1.1% and rise by 3.2% in the rainy season. 
+Streamflow is anticipated to rise 0.5-4 times due to early snowmelt, and snow cover will be declining at lower altitudes and increasing at higher elevations by the end of the century. The water cycle is known to be affected by LULC processes and climate change. These findings   
+Changes in Land Use and Land Cover (LULC) may greatly affect a drainage basin's runoff characteristics, which in turn affects the area's surface and groundwater availability. It is noteworthy to estimate the influence of LULC change on runoff characteristics of the northern region in general and minor watershed levels (sub-basin levels) on groundwater hydrology. The SWAT model has also shown promise in analyzing the consequences of LULC change on hydrology. In East Africa, Ethiopian researchers 
+
+## Conclusion ##
+The systematic review examined a total of 200 papers on integrated modeling approaches and highlighted research trends, as well as the effects of LULC and climate change on groundwater recharge. This review has demonstrated that over the last few decades, advances in research have shown that groundwater recharge may be simulated using a variety of approaches and instruments. The systematic review revealed significant information on the effects of LULC, and climate change on groundwater recharge, which has implications for LULC planning. It demonstrates that the effect of climate change on aquifer recharging is reflected in declines in the water table because of temperature increases, rainfall variability, and increased evapotranspiration.
+Several of the research examined used hydrological or hydrogeological models, as well as empirical statistical models and evapotranspiration models. Other researchers employed ecohydrological models to determine the relationship between climatic factors and groundwater levels. Numerous studies have been conducted that consider severe occurrences, such as the repercussions of harmful anthropogenic effects. Recent research has demonstrated the value of an integrated modeling strategy for evaluating the effect of land-use changes on water resources. The papers reviewed advocated for the use of a spatially explicit land-use simulation model in conjunction with a hydrological model as a useful tool for assessing the influence of landuse change and climate change on groundwater recharge. The reactions to LULC changes vary, indicating the need of conducting site-specific research to fully understand the consequences of LULC changes. Such research must measure the combined effects of several stressors, such as LULC, climate, landscape, and soil qualities. Finally, the findings of this research emphasize the need for integrated modeling for assessing changes in groundwater resources. 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Human domination of the global water cycle absent from depictions and perceptions
+   Authors: , , , , , , , , , , , , , , , , , , , 
+   Date: 2019
+
+2. Groundwater recharge processes in the Nasia sub-catchment of the White Volta Basin: Analysis of porewater characteristics in the unsaturated zone
+   Authors: , , , , 
+   Date: 2016
+
+3. Geo-spatial analysis of land use and land cover changes in the Lake Bosomtwe Basin of Ghana
+   Authors: , , 
+   Date: 2014. April
+
+4. Impacts of rainfall variability, land use and land cover change on stream flow of the Black Volta basin
+   Authors: , , 
+   Date: 2016
+
+5. Agricultural land suitability analysis: Stateof-the-art and outlooks for integration of climate change analysis
+   Authors: , , 
+   Date: 2019. February
+
+6. Predicted impacts of land use change on groundwater recharge of the upper Berg catchment
+   Authors: , , 
+   Date: 2013
+
+7. Approaches and methods of quantifying natural groundwater rechargea review
+   Authors: , 
+   Date: 2017
+
+8. Estimating groundwater recharge using land use and soil data: a case study in South India
+   Authors: , , , , 
+   Date: 2006
+
+9. Probable streamflow changes and its associated risk to the water resources of Abuan watershed, Philippines caused by climate change and land use changes
+   Authors: , , , , 
+   Date: 2021
+
+10. Sustainable water demand management in the face of rapid urbanization and ground water depletion for social-ecological resilience building
+   Authors: , 
+   Date: 2017
+
+11. The impacts of climate change on river flood risk at the global scale
+   Authors: , 
+   Date: 2016
+
+12. Input/output documentation soil & water assessment tool
+   Authors: , , , , , 
+   Date: 2012
+
+13. Climate change and its impact on the projected values of groundwater recharge: a review
+   Authors: , , 
+   Date: June
+
+14. Climate change impact on streamflow in a tropical basin of Ghana
+   Authors: , , , , , , , , 
+   Date: 2021
+
+15. Assessing the impact of land cover changes on water balance components of White Volta Basin in West Africa
+   Authors: , , 
+   Date: 2015
+
+16. Impact of land use on river systems in Ghana. West Afr
+   Authors: , 
+   Date: 2012
+
+17. A SWAT model for a cocoa growing region in Ghana
+   Authors: 
+   Date: 2014
+
+18. Regional groundwater discharge: Phreatophyte mapping, groundwater modelling and impact analysis of land-use change
+   Authors: , , 
+   Date: 2003
+
+19. Hydrologic impact evaluation of land use and land cover change in Palico Watershed, Batangas, Philippines Using the SWAT model
+   Authors: , , 
+   Date: 2016
+
+20. Land use and land cover change. Climate Change Impacts in the United States: The Third National Climate Assessment
+   Authors: , , , , , , , 
+   Date: 2014
+
+21. Hydrological sensitivity of the Adour-Garonne river basin to climate change
+   Authors: , , , , , , 
+   Date: 2007
+
+22. Urban Remote Sensing: Monitoring, Synthesis and Modeling in the Urban Environment
+   Authors: , , , , 
+   Date: 2011
+
+23. Spatio-temporal analysis of potential aquifer recharge: application to the Basin of Mexico
+   Authors: , 
+   Date: 2008
+
+24. Analyses of precipitation, temperature and evapotranspiration in a French Mediterranean region in the context of climate change
+   Authors: , , , , , , , 
+   Date: 2010
+
+25. Urbanization impacts on surface runoff of the contiguous United States
+   Authors: , , , , 
+   Date: 2017
+
+26. Modeling the potential impacts of climate change on streamflow in agricultural watersheds of the Midwestern United States
+   Authors: , , 
+   Date: 2013
+
+27. Assessing hydrological impact of potential land use change through hydrological and land use change modeling for the Kishwaukee River basin (USA)
+   Authors: , 
+   Date: 2008
+
+28. The relative impacts of climate change and urbanization on the hydrological response of a Korean urban watershed
+   Authors: , , 
+   Date: 2011. June 2010
+
+29. Multi-model approach to assess the impact of climate change on runoff
+   Authors: , , , , 
+   Date: 2015
+
+30. Predicting land-use change and its impact on the groundwater system of the Kleine Nete catchment
+   Authors: , , 
+   Date: 2008
+
+31. Application of remote sensing for evaluation of land use change responses on hydrology of muga watershed, abbay river basin
+   Authors: , 
+   Date: 2018
+
+32. How to conduct a bibliometric analysis: an overview and guidelines
+   Authors: , , , , 
+   Date: 2021. March
+
+33. Climate change and groundwater : a short review
+   Authors: , 
+   Date: 2008
+
+34. Techniques for mapping suburban sprawl
+   Authors: , , 
+   Date: 2002
+
+35. Evaluating the impact of climate change on groundwater resources in a small Mediterranean watershed
+   Authors: , , , , , 
+   Date: 2014
+
+36. Sensitivity of groundwater recharge under irrigated agriculture to changes in climate, CO2 concentrations and canopy structure
+   Authors: , , 
+   Date: 2010
+
+37. Understanding, management and modelling of urban hydrology and its consequences for receiving waters: a state of the art review
+   Authors: , , 
+   Date: 2013
+
+38. Hydrologic response to land use changes on the catchment scale
+   Authors: , , , 
+   Date: 2005
+
+39. Land cover change in Europe between 1950 and 2000 determined employing aerial photography
+   Authors: , , , , , , , , , , , , , , , , , , , 
+   Date: 2010
+
+40. Modeling projected impacts of climate and land use/land cover changes on hydrological responses in the Lake Tana Basin, upper Blue Nile River Basin
+   Authors: , , 
+   Date: 2021
+
+41. Climate change vulnerability assessment and adaptation strategies through best management practices
+   Authors: , , 
+   Date: 2020. July 2019. 124311
+
+42. Environmental Modelling with GIS
+   Authors: , , 
+   Date: 1993
+
+43. A comparative analysis of projected impacts of climate change on river runoff from global and catchment-scale hydrological models
+   Authors: , , , 
+   Date: 2011
+
+44. The role of groundwater recharge and baseflow in integrated models
+   Authors: , , , 
+   Date: 2008
+
+45. Impacts of land use and land cover change on surface runoff, discharge and low flows: evidence from East Africa
+   Authors: , , , , 
+   Date: 2018. May 2017
+
+46. A model integration framework for linking SWAT and MODFLOW
+   Authors: , , , , , , 
+   Date: 2015
+
+47. Alterations to groundwater recharge due to anthropogenic landscape change
+   Authors: , , , 
+   Date: 2017
+
+48. Determining effective impervious area for urban hydrologic modeling
+   Authors: , 
+   Date: 2009. 2009
+
+49. Regional climate change projections for Chicago and the US Great Lakes
+   Authors: , , , , 
+   Date: 2010
+
+50. Towards best practice for assessing the impacts of climate change on groundwater
+   Authors: , , , 
+   Date: 2012
+
+51. Conservation potential of agricultural water conservation subsidies
+   Authors: 
+   Date: 2008
+
+52. Assessing the impacts of land use changes on watershed hydrology using MIKE SHE
+   Authors: , , , 
+   Date: 2009
+
+53. Climate Change 2014 Synthesis Report
+   Authors: 
+   Date: 2014
+
+54. Integrated groundwater management: concepts, approaches and challenges
+   Authors: , , , , 
+   Date: 2016. January
+
+55. Urbanization and its impact on groundwater: a remote sensing and GIS-based assessment approach
+   Authors: , , 
+   Date: 2009
+
+56. Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part a: Global and Sectoral Aspects. Contribution of Working Group
+   Authors: , , , , , , , 
+   Date: 2014
+
+57. Impacts of climate change on hydrology and water resources in the boise and spokane river basins
+   Authors: , 
+   Date: 2012
+
+58. Assessing climate change impact on hydrological components of a small forest watershed through swat calibration of evapotranspiration and soil moisture
+   Authors: , , , , , , , 
+   Date: 2011
+
+59. The impact of climate change on spatially varying groundwater recharge in the grand river watershed (Ontario)
+   Authors: , 
+   Date: 2007
+
+60. Impact of climate change on streamflow in selected river basins in Ghana
+   Authors: , , , 
+   Date: 2013
+
+61. Application of soil and water assessment tool (SWAT) to evaluate the impact of land use and climate variability on the kaptagat catchment river discharge
+   Authors: , , 
+   Date: 2021
+
+62. Development and application of the integrated SWAT-MODFLOW model
+   Authors: , , , 
+   Date: 2008
+
+63. Climate change impacts on groundwater and dependent ecosystems
+   Authors: , , , , , , , , , , , , 
+   Date: 2014
+
+64. Mapping runoff and erosion to reduce urban flooding and sediment flow towards sea A case study on the Playa catchment
+   Authors: 
+   Date: 2013. May
+
+65. Evaluating two GIS-based semi-distributed hydrological models in the Bhagirathi-Alkhnanda River catchment in India
+   Authors: , 
+   Date: 2020
+
+66. Urban growth dynamics and modelling using remote sensing data and multivariate statistical techniques
+   Authors: , , , , , 
+   Date: 2018
+
+67. Alteration of groundwater recharge areas due to land use/cover change in Kathmandu Valley
+   Authors: , 
+   Date: 2019. July 2019
+
+68. Assessment of climate change impacts on the streamflow for the Mun River in the Mekong Basin
+   Authors: , 
+   Date: 2021
+
+69. Monitoring and predicting land-use changes and the hydrology of the urbanized Paochiao watershed in Taiwan using remote sensing data, urban growth models and a hydrological model
+   Authors: , , , , 
+   Date: 2008
+
+70. Long-term groundwater dynamics affected by intense agricultural activities in oasis areas of arid inland river basins
+   Authors: , , , , , 
+   Date: 2018. September 2017
+
+71. Identifying climate change impacts on surface water supply in the southern Central Valley
+   Authors: , , , , 
+   Date: 2021
+
+72. Climate Change in the Midwest: A Synthesis Report for the National Climate Assessment
+   Authors: , 
+   Date: 2014
+
+73. Hydrological regime, water availability and land use/land cover change impact on the water balance in a large agriculture basin in the Southern Brazilian Amazon
+   Authors: , , , , , , , , 
+   Date: 2021. 103224
+
+74. The role of hydrological model complexity and uncertainty in climate change impact assessment
+   Authors: , , , , , , , , , , , 
+   Date: 2009
+
+75. Land use and climate change impacts on the hydrology of the upper Mara River Basin, Kenya: results of a modeling study to support better resource management
+   Authors: , , , , 
+   Date: 2011
+
+76. Spatial and temporal variability of groundwater recharge in a sandstone aquifer in a semiarid region
+   Authors: , , , , , 
+   Date: 2019. April
+
+77. Groundwater and urbanisation, risks and mitigation: the case for the city of Windhoek
+   Authors: 
+   Date: 2005
+
+78. Effect of land use/cover change on the hydrological response of a southern center basin of Chile
+   Authors: , , , , , , 
+   Date: 2020
+
+79. Spatial patterns of urban development from optimization of flood peaks and imperviousness-based measures
+   Authors: , 
+   Date: 2009
+
+80. Conceptual hydrogeological and numerical groundwater flow modelling around the Moab Khutsong deep gold mine
+   Authors: , , , , 
+   Date: 2019. February
+
+81. Assessing the impact of urbanization on storm runoff in a peri-urban catchment using historical change in impervious cover
+   Authors: , , , , , 
+   Date: 2014
+
+82. Impact of land use change on groundwater -a review
+   Authors: , , , , 
+   Date: 2014
+
+83. The use of CMIP5 data to simulate climate change impacts on flow regime within the Lake Champlain Basin
+   Authors: , , 
+   Date: 2015
+
+84. 
+   Authors: , , 
+   Date: 2020
+
+85. Impact of water resource exploitation on the hydrology and water storage in Baiyangdian Lake
+   Authors: , , , , 
+   Date: 2010
+
+86. Impact of land-use patterns on distributed groundwater recharge and discharge -a case study of western Jilin
+   Authors: 
+   Date: 2006
+
+87. Hydrological and water quality impact assess-ment of a Mediterranean limnoreservoir under climate change and land use change scenarios
+   Authors: , , , , 
+   Date: 2014
+
+88. Statistical analysis of hydrographs and water-table fluctuation to estimate groundwater recharge
+   Authors: , , 
+   Date: 2004
+
+89. Land-use impacts on storm-runoff generation: scenarios of land-use change and simulation of hydrological response in a meso-scale catchment in SW-Germany
+   Authors: , , 
+   Date: 2002
+
+90. Runoff Simulation in the Canagagigue Creek Watershed using the MIKE SHE Model
+   Authors: 
+   Date: 2006
+
+91. Impacts of climate change under CMIP5 RCP scenarios on streamflow in the huangnizhuang catchment
+   Authors: , , , , , , 
+   Date: 2015
+
+92. Groundwater recharge rates and surface runoff response to land use and land cover changes in semi-arid environments
+   Authors: , , , , , , 
+   Date: 2016
+
+93. Climate Change
+   Authors: , 
+   Date: 2007. 2007
+
+94. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews
+   Authors: , , , , , , , , , , , , , , , , , , , 
+   Date: 2021
+
+95. Impact of land use change on groundwater recharge in Guishui River Basin
+   Authors: , , , , 
+   Date: 2011
+
+96. An integrated novel approach to understand the process of groundwater recharge in mountain and riparian zone aquifer system of Tamil Nadu
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+97. Streams in the urban landscape
+   Authors: , 
+   Date: 2001
+
+98. Integrated modelling to assess climate change impacts on groundwater and surface water in the Great Lakes Basin using diverse climate forcing
+   Authors: , , , , , , 
+   Date: 2020. September 2019. 124682
+
+99. A review of hydrological modelling of basin-scale climate change and urban development impacts
+   Authors: , 
+   Date: 2009
+
+100. Integrated assessment of the impact of climate and land use changes on groundwater quantity and quality in the Mancha Oriental system (Spain)
+   Authors: , , , , , , 
+   Date: 2015
+
+101. Hydrologic responses of watershed assessment to land cover and climate change using soil and water assessment tool model
+   Authors: , , 
+   Date: 2019
+
+102. Climate change impacts on groundwater hydrologywhere are the main uncertainties and can they be reduced?
+   Authors: , , , , , , , , , , , , , 
+   Date: 2016
+
+103. Parameterisation, calibration and validation of distributed hydrological models
+   Authors: 
+   Date: 1997
+
+104. Uncertainty in global groundwater storage estimates in a total groundwater stress framework
+   Authors: , , , , , 
+   Date: 2015
+
+105. Quantifying renewable groundwater stress with GRACE
+   Authors: , , , , , , , 
+   Date: 2015
+
+106. Climate change impacts in the United States: the third national climate assessment. U.S. global change research program
+   Authors: , 
+   Date: 2014
+
+107. and implementation coordinating lead authors: lead authors: contributing authors: review editors
+   Authors: , , , , , , , , , 
+   Date: 2017. 2014
+
+108. Dominant influencing factors of groundwater recharge spatial patterns in Ergene river catchment
+   Authors: , 
+   Date: 2019
+
+109. On projected hydrological scenarios under the influence of bias-corrected climatic variables and LULC
+   Authors: , , , , 
+   Date: 2019. May 2018. 105440
+
+110. Impact of land cover and land use change on runoff characteristics
+   Authors: , 
+   Date: 2015
+
+111. Modeling of urban growth dynamics and its impact on surface runoff characteristics
+   Authors: , , 
+   Date: 2013
+
+112. Global evaluation of new GRACE mascon products for hydrologic applications
+   Authors: , , , , , , , 
+   Date: 2016
+
+113. Is impervious cover still Important? Review of recent research
+   Authors: , , 
+   Date: 2009
+
+114. Use of remote sensing and GIS to determine recharge potential zones: the case of Occidental Lebanon
+   Authors: , , 
+   Date: 2006
+
+115. Ground water assessment and management within typical laterites around Salboni, District Midnapur (WB)
+   Authors: , , 
+   Date: 2000
+
+116. Impact of climate change on sediment yield in the Mekong River basin: a case study of the Nam Ou basin
+   Authors: , , , , , , 
+   Date: 2013
+
+117. A participatory approach to assessing groundwater recharge under future climate and land-cover scenarios
+   Authors: , , 
+   Date: 2021. September 2020
+
+118. Statistical downscaling of global circulation models to assess future climate changes in the Black Volta basin of Ghana
+   Authors: , , , , , 
+   Date: 2021. 100299
+
+119. A SWAT evaluation of the effect of climate change on the hydrology of the Volta River basin
+   Authors: , , 
+   Date: 2013
+
+120. Delineation of groundwater potential zones and zones of groundwater quality suitable for domestic purposes using remote sensing and GIS
+   Authors: , 
+   Date: 2003
+
+121. Analysis of the impact of climate change on groundwater related hydrological fluxes: a multi-model approach including different downscaling methods
+   Authors: , , , 
+   Date: 2011
+
+122. Urban sprawl: Metrics, dynamics and modelling using GIS
+   Authors: , , 
+   Date: 2004
+
+123. Improved simulation of river water and groundwater exchange in an alluvial plain using the SWAT model
+   Authors: , , , , , , , 
+   Date: 2016
+
+124. Forecasting streamflow response to increased imperviousness in an urbanizing Midwestern watershed using a coupled modeling approach
+   Authors: , , , 
+   Date: 2016
+
+125. Assessment of urbanization impact on groundwater resources in Hanoi
+   Authors: , 
+   Date: 2018. August
+
+126. Spatial and temporal land use change and occupation over the last half century in a peri-urban area
+   Authors: , , 
+   Date: 2012
+
+127. Spatiotemporal modelling of water balance components in response to climate and landuse changes in a heterogeneous mountainous catchment
+   Authors: , , , , 
+   Date: 2021
+
+128. Effects of landuse change on the hydrologic regime of the Mae Chaem river basin
+   Authors: , , , , , 
+   Date: 2007
+
+129. Estimation of groundwater recharge using a GIS-based distributed water balance model in Dire Dawa
+   Authors: , 
+   Date: 2009
+
+130. Arid zone groundwater recharge and salinisation processes ; an example from the Lake Eyre Basin
+   Authors: , , , , 
+   Date: 2011
+
+131. Numerical modelling and remote sensing based approaches for investigating groundwater dynamics under changing land-use and climate in the agricultural region of Pakistan
+   Authors: , , , , , 
+   Date: 2020
+
+132. Modeling global water use for the 21st century: the water futures and solutions (WFaS) initiative and its approaches
+   Authors: , , , , , , , , , , , 
+   Date: 2016
+
+133. An assessment of land use change impacts on the water resources of the Mula and Mutha Rivers catchment upstream of Pune
+   Authors: , , 
+   Date: 2013
+
+134. Analysis of urban growth and assessment of impact of urbanization on water resources-a case study of Hyderabad, India
+   Authors: 
+   Date: 2016
+
+135. Insights from a multi-method recharge estimation comparison study
+   Authors: , , , , , , 
+   Date: 2019
+
+136. Our changing climate
+   Authors: , , , , , , 
+   Date: 2014
+
+137. Estimating groundwater recharge in Hebei Plain, China under varying land use practices using tritium and bromide tracers
+   Authors: , , , , 
+   Date: 2008
+
+138. Hydrological effect of urbanization in Yitong River Basin
+   Authors: , , , 
+   Date: 2021
+
+139. Evolution characteristics of groundwater and its response to climate and land-cover changes in the oasis of dried-up river in Tarim Basin
+   Authors: , , , , , 
+   Date: 2020. 125644
+
+140. Effect of land use land cover dynamics on hydrological response of watershed: Case study of Tekeze Dam watershed
+   Authors: , 
+   Date: 2017
+
+141. Soil-Water-Balance Recharge Estimates for the Upper Colorado River Basin under Climate Change
+   Authors: , , , 
+   Date: 2016
+
+142. The Impact of Climate Change on the Water Resources of the Amu Darya Basin in Central Asia
+   Authors: , , 
+   Date: 2014
+
+143. The effect of watershed urbanisation on stream hydrology and riparian vegetation of Los Penasquitos Creek
+   Authors: , 
+   Date: 2006
+
+144. Assessing the impact of future land-use changes on hydrological processes in the Elbow River watershed in southern Alberta
+   Authors: , , , , , , 
+   Date: 2012
+
+145. Effects of climate change on the groundwater system in the Grote-Nete catchment
+   Authors: , , 
+   Date: 2007
+
+146. Multi-dimensional evaluation of simulated smallscale irrigation intervention: a case study in Dimbasinia watershed
+   Authors: , , , , , , , 
+   Date: 2018
+
+147. Present and future of urban water balance in the rapidly urbanizing Heihe River Basin, Northwest China
+   Authors: , , 
+   Date: 2015
+
+148. Quantifying uncertainty in the impacts of climate change on river discharge in sub-catchments of the Yangtze and Yellow River Basins
+   Authors: , , 
+   Date: 2011
+
+149. Effects of land use on groundwater recharge of a loess terrace under long-term irrigation
+   Authors: , , , , 
+   Date: 2021. 142340
+
+150. Impact of climate change on hydrology of upper reaches of qiantang river basin, east
+   Authors: , , , 
+   Date: 2013
+
+151. Impact of urbanization on rainfall-runoff processes: case study in the liangshui river basin in Beijing
+   Authors: , 
+   Date: 2016
+
+152. Assessing climate change projections in the Volta Basin using the CORDEX-Africa climate simulations and statistical bias-correction
+   Authors: , , , , , , 
+   Date: 2021. 100439
+
+153. Assessing the effect of land/use land cover and climate change on water yield and groundwater recharge in east African rift valley using integrated model
+   Authors: , , , 
+   Date: 2021
+
+154. Assessment of groundwater recharge in agro-urban watersheds using integrated SWAT-MODFLOW model
+   Authors: , , , 
+   Date: 2020
+
+155. A dynamic land use/land cover input helps in picturing the Sahelian paradox: assessing variability and attribution of changes in surface runoff in a Sahelian watershed
+   Authors: , , , , , , , , 
+   Date: 2021
+
+156. Quantifying the impacts of land use /land cover change on groundwater depletion in Northwestern China -A case study of the Dunhuang oasis
+   Authors: , , , , 
+   Date: 2014
+
+157. Trajectory analysis of land use and land cover maps to improve spatial-temporal patterns, and impact assessment on groundwater recharge
+   Authors: , , , 
+   Date: 2017
+

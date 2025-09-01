@@ -1,0 +1,304 @@
+================================================================================
+TITLE: Dynamic change of land use/land cover patterns and driving factors of Nansihu Lake Basin in Shandong Province, China
+================================================================================
+
+AUTHORS:
+- Fang Wang
+- Xingzhong Yuan
+- Xiaoping Xie
+
+ABSTRACT:
+Anthropogenic activities and natural factors have a significant effect on land use/land cover (LULC) patterns of Nansihu Lake basin. Understanding the LULC change is essential for regional sustainable development. Based on LULC change detection methods, we characterized the spatial-temporal change of LULC patterns. Logistic regression model and the Conversion of Land Use and its Effects at Small regional extent (CLUE-S) model were used in driving factors analysis and scenario simulation. The results showed that cultivated land and construction land were the dominant LULC types. As construction land gradually expanded to the surrounding areas, a large amount of cultivated land was occupied, especially in the peripheral areas of the central cities. During 1987During  -2017, 4109, 4109.22 km 2 of cultivated land was converted into construction land, accounting for 86.38% of cultivated land change, and the contribution rate to construction land was 95.24%. Because of the severe drought in 2002, waters first decreased and then increased. The dynamic degree of waters reached 2.11%, and the increment of waters was mainly converted from cultivated land and unused land. The degree of LULC fragmentation was strengthened, and the distribution showed a diversified trend. The LULC changes were deeply influenced by natural environment and socio-economic factors. Under different scenarios, the expansion of construction land and occupation of cultivated land will continue to be the main features of LULC changes in the future. The LULC patterns will become more regular and more aggregated. This study can help address the interwoven challenges of urbanization development and ecological protection.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land use is one of the key forms of human impacts on the natural environment, thereby resulting in changes of land cover which provide fundamental information related to the biophysical properties of the earth's land surfaces 
+Many LULC pattern metrics have been developed to reflect the LULC structural composition and spatial configuration characteristics 
+The Nansihu Lake basin of Shandong Province is a crucial production base of grain, fisheries, coal and energy in both Shandong Province and China as a whole. Some mining activities in the basin started in the 1980s and continue today 
+The scale effect of LULC patterns is a prerequisite for accurately understanding its characteristic 
+However, LULC change detection methods rarely used at grid scale. We introduce the LULC gradient method, which is based on a grid, can effectively compare the regional differences in LULC patterns change. Therefore, by combining the LULC pattern index, dynamic change index, LULC transfer matrix and LULC gradient, this paper aims to reveal the dynamic change of LULC patterns in Shandong Nansihu Lake basin from 1987 to 2017. The driving factors of LULC patterns were analysed using a logistic regression model. Based on CLUE-S model, the differences in LULC patterns evolution under different simulated scenarios from 2017 to 2047 were further analysed. This study can provide theory support for land management decision-making and urban planning. It can also provide a reference to resolve the contradiction between economic development and land-use balance.
+
+## Materials and methods ##
+
+
+## Study area ##
+The Nansihu Lake basin of Shandong Province contains 28 counties and districts of Jining, Zaozhuang, Heze and Tai'an Cities (Fig. 
+
+## Data source and processing ##
+Landsat Thematic Mapper (TM) and Operational Land Imager (OLI) images of 1987, 2002 and 2017 were obtained from the Geo-spatial Data Cloud Platform (http://www.gsclo ud.cn/). All the images were acquired from April to September during the vigorous growing season of vegetation, with low cloud cover (Table 
+
+## Methods ##
+The structure framework of the methodology used in this research is summarized in Fig. 
+
+## LULC change detection methods ##
+On the basis of previous studies 
+With reference to the related studies 
+where K denotes the dynamic degree, U a and U b denote the area of LULC type in the beginning and at the end of the study period, respectively.
+(1)
+where LC denotes the comprehensive LULC dynamic degree, LU denotes the area of the study area, and △LU i-j denotes the absolute value of the area that was converted from one type to another type.
+To further analyse the transfer between different LULC types and identify the number and direction of change during a period 
+The LULC gradient was used to intuitively reflect the regional differences 
+where DI denotes the LULC gradient, CA denotes the area of a certain LULC type in a grid, and CA i denotes the total area of different LULC types in a grid.
+
+## Logistic regression model ##
+Logistic regression is designed to estimate the parameters of a multivariate explanatory model in situations where the dependent variables are binary and the independent variables are continuous or mixed variables 
+where P denotes the occurrence probability of the event, x denotes the independent variable, α denotes the constant,
+(3)
+and β denotes the regression coefficient. The goodness-of-fit of the logistic regression model was evaluated by the relative operating characteristic (ROC) 
+
+## CLUE-S model ##
+The CLUE-S model is composed of non-spatial and spatial modules. The non-spatial module is used to calculate the LULC demands by the Markov model. The spatial module translates these demands into LULC changes at different locations within the study area 
+The NS was formulated based on the historical LULC changes trends. The LULC demand was simulated using the Markov model at a simulation step of 15 years based on the actual percentages of different LULC types in 2017 and the initial transition probability matrix from 2002 to 2017. The ES and CS were policy-based scenarios, and their LULC demand were calculated using the modified Markov transition matrix 
+The conversion elasticity (ELAS) is related to the reversibility of LULC changes, which reflects the ease or difficulty of LULC conversion 
+
+## Results ##
+
+
+## Spatial-temporal change of LULC patterns ##
+
+
+## LULC pattern index analysis ##
+At the patch level (Table 
+On the whole basin, the ED and PAFRAC displayed a continuous growing trend (Table 
+
+## LULC dynamic transfer analysis ##
+As seen in Table 
+
+## Regional differences analysis ##
+According to the preliminary analysis, the two main LULC types in the basin were cultivated land and construction land, and waters were the most typical LULC in Shandong Nansihu Lake basin. Therefore, this section used cultivated land, construction land and waters as examples and analysed the regional differences in LULC changes on the basis of LULC gradient (Fig. 
+In 1987, cultivated land was densely distributed in most of the basin, except for the central areas of cities, the eastern mountains and Nansihu Lake. The cultivated land with a high DI (80 < DI ≤ 100) reached 19,455.61 km 2 , covering 67.13%. The largest distribution area of construction land was the region with DI varying from 10 to 20. The construction land with DI ranging from 50 to 100 accounted for only 0.99%. The waters with a high DI (80 < DI ≤ 100) covered 306.2 km 2 , with a distribution mainly in Nansihu Lake. The waters with DI ranging from 50 to 100 covered 631.36 km 2 and were distributed along the Yellow River, Si River, Zhuzhaoxin River and Dongyu River.
+In 2002, cultivated land showed an overall decreasing trend. The cultivated land with DI ranging from 80 to 100 decreased by 1915.21 km 2 . The construction land with a high DI (80 < DI ≤ 100) gradually emerged in Juancheng, Dongming, Dingtao, Chengwu, Caoxian and other counties. The construction land with DI ranging from 50 to 100 reached 593.24 km 2 , with the areal proportion increasing to 2.05%. A large amount of cultivated land surrounding cities was occupied, and the decrement in cultivated land Fig. 
+In 2017, construction land increased significantly, while cultivated land tended to decline. The cultivated land with a high DI (80 < DI ≤ 100) decreased by 8166.05 km 2 , and the areal proportion decreased from 67.13% to 38.96%. The construction land with DI ranging from 50 to 100 increased from 287.24 km 2 to 2494.91 km 2 , and the areal proportion increased to 8.61%. The change was more prominent in Mudan District of Heze, downtown Jining and Tengzhou City, where the decrement in cultivated land reached 0.57 km 2 to 1 km 2 within a grid and the increment in construction land reached 0.67-1 km 2 . The waters with a high DI (80 < DI ≤ 100) increased significantly, reaching 688.96 km 2 , with a maximum increment in a grid of 1 km 2 , especially in Weishan Lake, Liangji Canal and the junction of Qufu, Yanzhou and Zoucheng Cities.
+
+## Driving factors analysis ##
+The Wald statistic represents the relative weight per variable, and it evaluates the contribution of each variable to the event prediction. According to the Wald statistics shown in Table 
+
+## Simulation of LULC patterns under different scenarios ##
+The simulations exhibited similar change trends of cultivated land and construction land under different scenarios, i.e., the expansion of construction land generally would mainly occur at the edges of original cities and at the expense of cultivated land. However, there would be marked differences in the magnitude and position of areal change. Under the NS, the change in construction land would be the largest. The conversion would occur mainly in Mudan District, Dingtao and Juye Counties of Heze, Jiaxiang County, Rencheng District, Yanzhou, Qufu and Zoucheng Cities of Jining, Tengzhou City of Zaozhuang and other regions with greater development potential along the main railways and highways. Under the ES, the increase range of construction land would decrease. The most significant change would be observed in Mudan District, downtown Jining and Rencheng District. Under the CS, the rangeability of cultivated land and construction land would decrease drastically. This result revealed that the cultivated land would receive effective protection.
+Under the NS and CS, the forestland and grassland would decrease in the eastern mountains, the reduction under the CS would be more variable. The waters would have an increasing tendency, the increment under the CS would be slightly lower. Under the ES, these ecological lands would have an ascending tendency. Among them, the grassland would have the largest increase mainly at the expense of cultivated land, which would sharply increase by 1247.61 km 2 , especially in Juye County, Zoucheng City, Sishui and Ningyang Counties. The forestland would increase mainly in the eastern mountains, such as southern Sishui County, eastern Zoucheng City and Shanting District. Compared to the other two scenarios, the increase range of waters would be the largest under the ES, reaching 291.96 km 2 , focused primarily in Weishan County and western Dongming County. Under the three different scenarios, the change trend of unused land would be basically the same. There would be a decreasing trend mainly on the bank of Nansihu Lake and in the eastern mountains for the tendency of unused land.
+
+## Discussion ##
+
+
+## Spatial-temporal dynamic change of LULC patterns ##
+Our results revealed that construction land increased sharply and cultivated land decreased dramatically from 1987 to 2017 in Nansihu Lake basin, waters fluctuated with climate and anthropogenic factors. As a result, cultivated land and construction land were the dominant LULC types. Urbanization and the reclaiming of cultivated land increased fragmentation, heterogeneity and shape complexity of LULC patterns. The rivers and lakes were invaded and replaced by grassland on the river bank and lakeshore due to the severe drought in 2002. Because of the increasing of agricultural irrigation and imperfect urban planning systems, waters decreased from 1987 to 2002. With the promulgation of the water laws of the People's Republic of China in 2002, the occurrence of an abrupt drought-flood transition during the flood season of 2003, the establishment of the Nansihu Nature Reserve, the introduction of the overall land use planning in 2006 and the increase in coal mining subsidence areas, waters showed an increasing tendency between 2002 and 2017.
+A novelty of this study is that it reflects the regional differences based on gradient analysis. Our results demonstrated that during 1987-2017, the main change direction involved in cultivated land reduction was the conversion to construction land, and 4109.22 km 2 was converted into construction land, accounting for 86.38% of the cultivated land change; finally, the contribution rate to the construction land was 95.24%. Due to the forms of urban growth, the construction land expanded outward from the original city centre and along the main lines of communication. The largest transformation to construction land occurred in the areas surrounding cities and towns, especially in Mudan District of Heze, downtown Jining and downtown Zaozhuang. These change trends were similar to the findings of 
+
+## Driving factors of LULC changes ##
+Generally, LULC changes in Nansihu Lake basin were strongly influenced by natural environment and socio-economic factors. Altitude and slope were negative explanatory variables for cultivated land, construction land and waters, suggesting that the areas with higher altitude and steeper slope were not suitable for the requirements of agricultural production and livelihood. However, the higher distribution probability of forestland and grassland were found at higher altitude and steeper slope. Temperature and precipitation as climatic factors had important impacts on vegetation and waters. A negative correlation was found between temperature and cultivated land, which is consistent with the study of 
+GDP, POP and distance to cities were the most important explanatory variables for the construction land distribution. GDP and POP to some extent reflected the regional economic and social development. With the acceleration of urbanization, the urban land demand for infrastructure driving by population growth and economic development increased gradually. The scale of construction land expanded rapidly, which led to a serious loss of cultivated land and a significant LULC change in the peripheral areas of cities. Influenced by the radiating and driving effects of the city centre, with the decrease in the distance to cities, the distribution probability of construction land was increased. The areas surrounding the main roads had become active economic growth areas because of the convenient traffic conditions; moreover, the increase in distribution probability of residential area, township and other construction land led to a remarkable LULC change. Similar studies found that areas with good transport access experience a higher probability of LULC changes 
+Coal mining induced surface subsidence and waterlogging in the late 1980s and continue today. The surrounding areas of the coal mines were not suitable for production and livelihood. In addition, policy planning had been considered the important driving factor for LULC changes 
+
+## LULC change prediction ##
+The Overall Land Use Planning of Jining, Zaozhuang, Heze and Tai'an Cities emphasize the clusterization of cities, land consolidation and ecological space protection. Compared with the historical LULC patterns and the future development orientation and strategies outlined in the planning, the LULC patterns would become more regular, simpler and more aggregated in 2047, evidenced by the reduction in ED, PAFRAC and SPLIT, and the increase in AI (Fig. 
+
+## Conclusions ##
+This study demonstrated the effectiveness of the combined method of LULC pattern index, dynamic change index, LULC transfer matrix and gradient analysis for deciphering the dynamic change of LULC patterns in response to natural environmental and anthropogenic activities. Based on logistic regression model and CLUE-S model, the driving factors analysis and scenario simulation analysis were conducted. The results showed that the basin was dominated by cultivated land and construction land. The areas surrounding counties, cities, districts and main roads became hotspots of LULC changes, which led a large amount of cultivated land to be occupied by construction land. LULC changes were driven by the complex interactions of natural environment and socio-economic factors. Under different scenarios, the expansion of construction land and occupation of cultivated land will continue to be the main characteristics of LULC changes in the future. The LULC patterns will become more regular and more aggregated and the distribution will show a uniform trend. Overall, this study can help identify the characteristics of historical LULC changes and near-future critical locations in the face of the continuous pressure on environment. The results can assist decision-makers in implementing effective protection strategies and sustainable land-use management.
+This paper analysed the dynamic change of LULC patterns from the perspective of the grid method, which can compensate for the shortage of expressing the LULC distribution of the study area by using the average value. However, the results will vary with patch sizes. In the future, the scale effect should be fully explored through transforming the grid size in the spatial dimension. Additionally, the accuracy and comprehensiveness of the driving factors should be improved. Determining how to integrate policy implementation, values and other dynamic driving factors quantitatively and spatially to construct the driving forces model of LULC changes should be the focus of further research.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. 2 LULC type maps of Shandong Nansihu Lake basin References
+   Authors: , , 
+   Date: 2019
+
+2. Modeling of urban growth in tsunami-prone city using logistic regression: Analysis of Banda Aceh
+   Authors: , , , 
+   Date: 2015
+
+3. Mediterranean drylands: the effect of grain size and domain of scale on landscape metrics
+   Authors: , , , 
+   Date: 2011
+
+4. Land-use change and land degradation on the Mongolian Plateau from 1975 to 2015-a case study from Xilingol
+   Authors: , , 
+   Date: 2018
+
+5. Identifying change trajectories and evolutive phases on coastal landscapes. Case study: São Sebastião Island
+   Authors: , , 
+   Date: 2012
+
+6. A coefficient of agreement for nominal scales
+   Authors: 
+   Date: 1960
+
+7. Urban land use change and its effect on social metabolism: an empirical study in Shanghai
+   Authors: , 
+   Date: 2015
+
+8. A method for the selection of relevant pattern indices for monitoring of spatial forest cover pattern at a regional scale
+   Authors: , , , , 
+   Date: 2006
+
+9. The effects of landscape patterns on ecosystem services: metaanalyses of landscape services
+   Authors: , , , , 
+   Date: 2018
+
+10. Spatiotemporal variation of landscape patterns and their spatial determinants in Shanghai, China
+   Authors: , , 
+   Date: 2018
+
+11. Scenario analysis of ecosystem service changes and interactions in a Page 15 of 15 180 mountain-oasis-desert system: a case study in Altay Prefecture
+   Authors: , , , , , 
+   Date: 2018
+
+12. The spatial characteristics and relationships between landscape pattern and ecosystem service value along an urban-rural gradient in Xi'an city
+   Authors: , , 
+   Date: 2020. 2019.10572 0
+
+13. Evaluation of historical and future wetland degradation using remote sensing imagery and land use modeling
+   Authors: , , , , 
+   Date: 2020
+
+14. Simulation of land-use scenarios for Beijing using CLUE-S and Markov composite models
+   Authors: , , 
+   Date: 2013
+
+15. Analysis and simulation of land-use change in the central Arizona -Phoenix region
+   Authors: , 
+   Date: 2001
+
+16. Simulating urban land use change by incorporating an autologistic regression model into a CLUE-S model
+   Authors: , , , , 
+   Date: 2015
+
+17. Land use and cover change assessment and dynamic spatial modeling in the Ghara-su Basin, Northeastern Iran
+   Authors: , , , , , 
+   Date: 2020
+
+18. Urbanization impact on landscape patterns in Beijing City, China: a spatial heterogeneity perspective
+   Authors: , , , 
+   Date: 2017
+
+19. Simulation of non-point source pollution of nitrogen and phosphorus in lake Nansi watershed using SWAT model
+   Authors: , , 
+   Date: 2013
+
+20. Land use change and its driving forces toward mutual conversion in Zhangjiakou City, a farming-pastoral ecotone in Northern China
+   Authors: , , , , 
+   Date: 2017
+
+21. A gradient analysis of urban landscape pattern: a case study from the Phoenix metropolitan region
+   Authors: , 
+   Date: 2002
+
+22. Patterns and drivers of forest landscape change in the Apennines range
+   Authors: , , , , 
+   Date: 2019
+
+23. Investigating the causality of changes in the landscape pattern of Lake Urmia basin, Iran using remote sensing and time series analysis
+   Authors: , , , , 
+   Date: 2016
+
+24. Drivers of land use/ land cover changes in Munessa-Shashemene landscape of the southcentral highlands of Ethiopia
+   Authors: , , , 
+   Date: 2015
+
+25. Land use and land cover dynamics in Dendi-Jeldu hilly-mountainous areas in the central Ethiopian highlands
+   Authors: , , , , 
+   Date: 2018
+
+26. Land use change and population growth in the Morobe Province of Papua New Guinea between 1975 and 2000
+   Authors: , , 
+   Date: 2008
+
+27. Spatio-temporal analyses of cropland degradation in the irrigated lowlands of Uzbekistan using remote-sensing and logistic regression modeling
+   Authors: , , , , , 
+   Date: 2013
+
+28. Comparison of a deductive and an inductive approach to specify land suitability in a spatially explicit land use model
+   Authors: , , 
+   Date: 2007
+
+29. Spatial-temporal dynamics and associated driving forces of urban ecological land: a case study in Shenzhen City
+   Authors: , , , , 
+   Date: 2017
+
+30. Selecting landscape metrics as indicators of spatial heterogeneity-a comparison among Greek landscapes
+   Authors: , , , 
+   Date: 2014
+
+31. Quantification error versus location error in comparison of categorical maps
+   Authors: 
+   Date: 2000
+
+32. Statistical methods to partition effects of quantity and location during comparison of categorical maps at multiple resolutions
+   Authors: 
+   Date: 2002
+
+33. Land-cover change model validation by an ROC method for the Ipswich watershed
+   Authors: , 
+   Date: 2001
+
+34. Modeling land-use change in the Ipswich watershed
+   Authors: , 
+   Date: 2001
+
+35. Scenario-based land cover change modeling and its implications for landscape pattern analysis in the Neka Watershed
+   Authors: , 
+   Date: 2015
+
+36. Spatial context of urbanization: Landscape pattern and changes between 1950 and 1990 in the Warsaw metropolitan area
+   Authors: 
+   Date: 2009
+
+37. GIS-based analysis of temporal evolution of rural landscape: a case study in Southern Italy
+   Authors: , , 
+   Date: 2019
+
+38. Emergy evaluation of a swamp dike-pond complex: a new ecological restoration mode of coal-mining subsidence areas in China
+   Authors: , , , , 
+   Date: 2019. 2019
+
+39. Scenario simulation and landscape pattern dynamic changes of land use in the Poverty Belt around Beijing and Tianjin: a case study of Zhangjiakou city, Hebei Province
+   Authors: , , , , , 
+   Date: 2016
+
+40. Accessibility and land-use patterns at the forest fringe in the northeastern part of the Philippines
+   Authors: , , 
+   Date: 2004
+
+41. Modeling the spatial dynamics of regional land use: the CLUE-S model
+   Authors: , , , , , 
+   Date: 2002
+
+42. Monitoring and predicting land use changes in the Huai Thap Salao Watershed area, Uthaithani Province, Thailand, using the CLUE-s model
+   Authors: , , 
+   Date: 2016
+
+43. Comparison of land use/ land cover change and landscape patterns in Honghe national nature reserve and the surrounding Jiansanjiang Region
+   Authors: , , , , 
+   Date: 2015
+
+44. Dynamic evolution of landscape spatial pattern in Taihu Lake basin, China
+   Authors: , , 
+   Date: 2017
+
+45. Spatiotemporal changes of landscape pattern in response to urbanization
+   Authors: 
+   Date: 2007
+
+46. Effects of changing scale on landscape pattern analysis: scaling relations
+   Authors: 
+   Date: 2004
+
+47. Prediction of land-use change and its driving forces in an ecological restoration watershed of the Loess hilly region
+   Authors: , , 
+   Date: 2018
+
+48. Wetland Landscape change in Daliaohe River basin and the driving factors analysis
+   Authors: , , , 
+   Date: 2010
+
+49. Ecosystem health assessment based on DPSIRM framework and health distance model in Nansi Lake
+   Authors: , , , , 
+   Date: 2016
+
+50. Multiscale analysis of patch and landscape characteristics of forest fragmentation in Liaoning Province
+   Authors: , , , , , 
+   Date: 2019
+

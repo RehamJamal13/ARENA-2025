@@ -1,0 +1,355 @@
+================================================================================
+TITLE: Spatio-temporal impact assessment of land use / land cover (LU-LC) change on land surface temperatures over Jaipur city in India
+================================================================================
+
+AUTHORS:
+- Neha Gupta
+- Aneesh Mathew
+- Sumit Khandelwal
+- Aneesh Contact
+- Mathew
+
+ABSTRACT:
+Urban development has consequently given rise to the empirically observed phenomenon of the urban heat island (UHI). The article aims to determine the change in land surface temperature (LST) over Jaipur study area during the period from 2008 to 2011 and analyzes the spatial variation of LST in the context of changes in land use/ land cover (LU-LC). The LST has been retrieved from Moderate Resolution Imaging Spectroradiometer (MODIS) images for the years 2008 and 2011 to find the variation of LST as per the LU-LC classes. Results show a significant rise in temperature for all LU-LC categories during the study period. The percentage impervious surface area (ISA) pattern of these classes has also been analyzed for both the years, and a rising trend in ISA for different LU-LC categories has been observed; showing that Jaipur city has witnessed substantial growth in built-up area at the cost of greener patches and open land at a fast pace having a clear impact on LST variation. The average rise in temperature during winter season was found to be around 2.6 °C while 1.47 °C rise was observed during summers. Inter-seasonal variations of LST on different LU-LC over Jaipur have been analyzed.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Urbanization causes various environmental issues like air pollution, global warming, an increase in energy demand and environmental degradation, which negatively affect the comfort and quality of urban living of the inhabitants 
+LST is one of the important parameters for SUHI assessment 
+Urbanization is one of the primary driving factors of LC changes and subsequently increases LST 
+A lot of research has been carried out for analyzing the association of LST with various surface and other physical characteristics of urban areas. Most of this research has been carried out for developed countries as well as for cities in cold climates and limited research is available for cities of hot and arid regions. The reference literature available for Indian conditions is also limited.
+In the present times, when the entire globe is reeling under the impacts of climate change, studies of such nature might prove to be helpful in generating substantial knowledge about the UHI phenomenon, which might be further used in developing strategies for mitigating its effects on the global climate. Hence, it is very important to explore the relationship of LST with various parameters representing vegetation, urbanization, soil, and water. The proposed research is a step towards increasing the understanding of the UHI and the factors responsible for it. The study will also help in the quantification of the effect of these factors on UHI effect.
+
+## Scientific relevance of this research ##
+LU-LC change and its temperature analysis have always revealed interesting information about the major heat contributing landform. Integration of methods and techniques from multi-disciplinary fields like Geographic Information System (GIS), Remote Sensing, Urban Geography and Computer Science and remote sensing data along with collateral data help in analyzing the LU-LC change and temperature corresponding to the individual landform. Present work is aimed to form LU-LC change map and assessment of temperature related to various LC seasonally and over the span of time. Major cities have witnessed and are still foreseeing a large-scale development due to infrastructural growth, industrial settlement, and tourism. These rapid changes have therefore resulted in increased land consumption, which causes the modification and alterations in the status of LU-LC and the temperature pattern associated with them. Hence, the imperviousness associated with different landform are analyzed as %ISA and are associated with LST of various LC. No detailed and comprehensive study has been done to study inter-seasonal variations of surface temperature of different LU-LC. This article is a preliminary attempt to fill this research gap. Night-time images are advantageous for LST prediction as there is no direct solar interaction and thus no dependence on the solar zenith angle 
+
+## Materials and methodology ##
+
+
+## Study area ##
+Jaipur (capital of the Rajasthan state in Northern India) is the 10 th largest city in India with geographical coordinates as 26°25ʹ to 27°51ʹ north latitude and 74°55ʹ to 76°10ʹ east longitude. In 2001, the urban population of Jaipur city was 2.3 million which has increased to 3.07 million in 2011 (Census of India 2011). Being heading to a metropolitan from developing city, Jaipur has been selected as the study area (Figure 
+With varied topography; having Nahargarh hills in the north and Jhalana (a part of Aravalli hills) in the East, the growth of built-up area has been boosted mainly in the south, southwest and west.
+
+## Input data ##
+
+
+## For lands use/land cover classification ##
+The multispectral cloud-free satellite imagery used for the present study has been procured from the website of United States Geological Survey (USGS). Land cloud coverage of the images is less than 10%. Table 
+
+## For land surface temperature calculation ##
+Available MODIS (Aqua) data for the year 2008 and 2011 for Jaipur have been downloaded from the website of LP DACC with the following specification 
+The MODIS data are in HDF-EOS format and in Sinusoidal Projection System. Images were pre-processed using MODIS Re-Projection Tools (MRT) and are re-projected from Sinusoidal projection to UTM Zone 43N projection system with WGS84 as datum and reformatted from HDF-EOS to GeoTIFF format. A total of 40 images of night-time LST of summer (mid of March to June end) and winter season (November to February) with less than 10% cloud cover for two different stretches of time 
+
+## For ISA calculation ##
+Landsat TM image of June 2008 and February 2011 have been selected for %ISA calculation. These images have been geometrically rectified to the Universal Traverse Mercator (UTM) projection system (datum WGS 84, Zone 43). The ground control points have been carefully selected to make sure that the RMS errors lies below 0.5 pixels.
+
+## Methodology ##
+
+
+## Data acquisition and scanning ##
+Cloud free remote sensing data has been collected from various sources. Hard copy maps such as SOI topo sheet and Master plan of the three cities have been converted to digital maps by scanning in Joint Photographic Expert Group (JPEG) format.  
+
+## LU-LC classification system ##
+There are generally two kinds of classifications (1) Unsupervised Classification (2) Supervised Classification. The first type of classification involves just giving the number of classes to the software in which one wants to classify the land use classes. It is an experimental approach to classification. On the other hand, supervised classification requires some kind of supervision from users in the form of training samples. In this method, training samples are collected by the user for the training of classification algorithm. Supervised classification using Maximum Likelihood Classifier has been performed on a combination of bands on both images to map the land cover of the study area during both the years using ERDAS Imagine (Leica Geosystems Inc.).
+2.3.4.1. Satellite imageries processing. Image rectification, data layer stacking to prepare false color composites (FCC) and resolution merge have been used to pre-process all the satellite imageries. Spectral profiles were generated to identify the differentiable LU-LC classes and separability of these classes in different spectral bands. Seven broad LU-LC types so identified are residential, commercial, industrial, roads, vegetation, soil (barren and loose soil), and water bodies.
+
+## Training of classification algorithm. ##
+Supervised classification requires training of classification algorithm for which training samples also known as signatures are needed to be collected for each targeted LU-LC class based on the prior knowledge of these classes. After selecting pixels for each class, separability matrix has been generated to find the optimum band combination in which all the LU-LC classes are separable for all the satellite imageries. Separability matrix evaluates the TD (Transformed Divergence) values for each class in different band combinations. Band combination with maximum TD value indicates the highest separability between the various LU-LC classes. Contingency matrix is generated and analyzed to check the misclassification among selected training pixels. It checks whether pixels selected for any particular class falls in other classes or not. If the percentage of error in the matrix is high, then signatures need to be refined. Histogram plotting is another way of examining the training samples for all the classes.
+
+## Evaluating impervious surfaces of the study area ##
+Extraction of impervious surfaces at the subpixel level can be done by using the linear spectral mixture analysis 
+2.3.5.1. Water body masking. Modified Normalized difference water indices (MNDWI) have been used to extract water bodies from remote sensing data 
+Where, R GREEN = reflectance in green band R MIR = reflectance in mid infrared band 2.3.5.2. MNF transform. The maximum noise fraction (MNF) transformation places most of the variances of the spectral bands into the first two or three resultant components. It is an improved variant of Principle Component Analysis (PCA) by ordering components according to Signal-to-Noise Ratios (SNR) 
+2.3.5.3. Linear spectral unmixing. In order to perform linear unmixing model for the LMSA, four types of end members are selected in the present study: vegetation, low albedo, high albedo and soil by composing a scatter plot using the first two MNF components. Finally, constrained mixture spectral analysis has been used to process the pixel values of the masked image with the end member spectra. In the linear spectral unmixing model, the spectral value of an image pixel can be treated as a linear combination of different types of end members.  
+
+## Result and discussion ##
+
+
+## Image classification ##
+Since the kappa value of the images lies between 0.80-0.85; the classification results have been accepted for further analysis. 
+
+## Spatial patterns of LU-LC ##
+
+
+## LST pattern and UHI intensity of Jaipur study area ##
+
+
+## Temperature variations for different land cover types ##
+The best way to understand the influence and contribution of LU-LC on LST is to investigate the connection between the thermal signatures (i.e., the LST profile of the study area) and individual land cover type, 
+In this study, it has been observed that LST is showing higher values even with an increment in vegetation coverage. It is also observed that vegetation increment mainly observed in the Eastern part of the study area (Aravalli hill ranges). Aravalli hill ranges comprise of exposed rocks. Even the Aravalli hill ranges covered with vegetation cover, the exposed rocks  which have caused direct exposure of rocky area to sunlight. This will result in higher LST over the area due to the presence of exposed rocks which increase the ISA over the area also. During night, water bodies' thermal characteristics are similar to built-up areas.
+Water bodies show higher LST especially during night because whatever the thermal energy absorbed during day period will emit during the night period to maintain the thermal equilibrium. In this aspect, water features showed increased LSTs, also as the water area increased, LST range also increased.  The overall absolute maximum and minimum value obtained are 100 and 0% while the range between 0 and 100 shows imperviousness increasing from 0 to 100. The area with blue color represents the high imperviousness within the urban boundary, which seems to have enhanced over the period of time. The imperviousness in the form of % ISA has been obtained for both the years, since the scale value for both the LU-LC map and imperviousness map are same; the extraction of information could be easily carried out. Table 
+Figure 
+
+## Conclusion ##
+Major studies regarding UHI relationship with LU-LC tell us the growth pattern of the individual LU-LC type but not about their individual contribution on enhanced surface temperature or resulting phenomenon of UHI. The present study documents this gap and shows some specific contributing temperature values. It also helps in  
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Simulating land cover changes and their impacts on land surface temperature in
+   Authors: , , , , 
+   Date: 2013
+
+2. Calculating energy-saving potentials of heat-island reduction strategies
+   Authors: , 
+   Date: 2005
+
+3. Space applications for drought assessment in wadi-dama (West Tabouk)
+   Authors: 
+   Date: 2015
+
+4. Urban heat evolution in a tropical area utilizing Landsat imagery
+   Authors: , , , 
+   Date: 2016
+
+5. Change detection in land surface temperature and land use land cover over lagos metropolis
+   Authors: , 
+   Date: 2016
+
+6. Assessment of urban heat island based on the relationship between land surface temperature and land use/land cover in Tehran
+   Authors: , , , 
+   Date: 2016
+
+7. Comparison between surface and canopy layer urban heat island using MODIS data
+   Authors: , , 
+   Date: 2015
+
+8. Summertime urban heat island study for Guwahati city
+   Authors: , 
+   Date: 2014
+
+9. District census handbook, Town directory of Jaipur, Directorate of Census Operations
+   Date: 2011
+
+10. Remote sensing imagebased analysis of the relationship between urban heat island and land use/cover changes
+   Authors: , , , 
+   Date: 2006
+
+11. MODIS detected surface urban heat islands and sinks: global locations and controls
+   Authors: , 
+   Date: 2013
+
+12. Relationship among land surface temperature and LUCC
+   Authors: , , , , , , , 
+   Date: 2018
+
+13. Satellite multi-sensor data analysis of urban surface temperatures and land cover
+   Authors: , 
+   Date: 2003
+
+14. New features of land and sea surface temperature anomalies
+   Authors: , , , 
+   Date: 2011
+
+15. Statistical methods for rates and proportions
+   Authors: 
+   Date: 1981
+
+16. A transformation for ordering multispectral data in terms of images quality with implications for noise removal
+   Authors: , , , 
+   Date: 1988
+
+17. Impacts of urban biophysical composition on land surface temperature in urban heat island clusters
+   Authors: , , , , , 
+   Date: 2015
+
+18. Assessment with satellite data of the urban heat island effects in Asian mega cities
+   Authors: , , , 
+   Date: 2006
+
+19. Remote sensing of the urban heat island effect across biomes in the continental USA
+   Authors: , , , 
+   Date: 2010
+
+20. Spatio-temporal assessment of land use/land cover dynamics and urban heat island of Jaipur city using satellite data. The International Archives of the Photogrammetry
+   Authors: , 
+   Date: 2014. Dec 09-12. 2011
+
+21. the footprint of urban areas on global climate as characterized by MODIS
+   Authors: , , 
+   Date: 2005
+
+22. The surface heat island of rotterdam and its relationship with urban surface characteristics. Resources, Conservation and Recycling
+   Authors: , , , 
+   Date: 2012
+
+23. The urban climate
+   Authors: 
+   Date: 1981
+
+24. 
+   Authors: 
+
+25. How has Shenzhen been heated up during the rapid urban build-up process?
+   Authors: , , 
+   Date: 2013
+
+26. Monitoring patterns of urban heat islands of the fast-growing Shanghai metropolis, China: using time-series of landsat TM/ETM+ data
+   Authors: , , 
+   Date: 2012
+
+27. Assessing urban environmental quality change of Indianapolis (1998) United States, by the remote sensing and GIS integration
+   Authors: , 
+   Date: 2011
+
+28. MODIS overview, USGS website
+   Authors: 
+   Date: 2015
+
+29. Remotely sensing the cooling effects of city scale efforts to reduce urban heat island
+   Authors: , , 
+   Date: 2012
+
+30. Spatial and temporal variations of urban heat island effect and the effect of percentage impervious surface area and elevation on land surface temperature: study of Chandigarh city
+   Authors: , , 
+   Date: 2016
+
+31. Analysis of diurnal surface temperature variations for the assessment of surface urban heat island effect over Indian cities
+   Authors: , , 
+   Date: 2017
+
+32. Investigating spatio-temporal surface urban heat island growth over Jaipur city using geospatial techniques
+   Authors: , , 
+   Date: 2018
+
+33. Climate change and human health: present and future risks
+   Authors: , , 
+   Date: 2006
+
+34. Dynamics of urbanization and its impact on land-use/ land-cover: a case study of megacity Delhi
+   Authors: , , , , 
+   Date: 2011
+
+35. A study of the urban heat island of Granada
+   Authors: , , 
+   Date: 2000
+
+36. Detection of land use and land cover change and land surface temperature in english bazar urban centre
+   Authors: , 
+   Date: 2016
+
+37. Study of influence of land cover on urban heat islands in pune using remote sensing
+   Authors: , 
+   Date: 2008
+
+38. Surface urban heat island across 419 global big cities
+   Authors: , , , , , , , , 
+   Date: 2012
+
+39. Diurnal and seasonal impacts of urbanization on the urban thermal environment: a case study of Beijing using MODIS data
+   Authors: , , 
+   Date: 2013
+
+40. Thermal infrared remote sensing for analysis of landscape ecological processes: methods and applications
+   Authors: , 
+   Date: 1999
+
+41. Urban heat island monitoring and analysis using a non-parametric model: a case study of Indianapolis
+   Authors: , 
+   Date: 2009
+
+42. The role of local land-use on the urban heat island effect of Tel Aviv as assessed from satellite remote sensing
+   Authors: , , , 
+   Date: 2015
+
+43. Global urban land-use trends and climate impacts
+   Authors: , 
+   Date: 2009
+
+44. Inter-seasonal variations of surface temperature in the urbanized environment of Delhi using landsat thermal data
+   Authors: , , 
+   Date: 2014
+
+45. Improved land-use/ land-cover classification of semi-arid deciduous forest landscape using thermal remote sensing
+   Authors: , , 
+   Date: 2015
+
+46. Local climate zones for urban temperature studies
+   Authors: , 
+   Date: 2012
+
+47. A remote sensing study of the urban heat island of
+   Authors: 
+   Date: 2002
+
+48. Assessment with satellite data of the urban heat island effects in Asian mega cities
+   Authors: , , , 
+   Date: 2006
+
+49. Department of economic and social affairs, population division
+   Date: 2010. 2009
+
+50. Spatio-temporal variability in remotely sensed land surface temperature, and its relationship with physiographic variables in the Russian Altay Mountains
+   Authors: , , , 
+   Date: 2013
+
+51. Thermal remote sensing of urban climates
+   Authors: , 
+   Date: 2003
+
+52. Collection-5, MODIS land surface temperature products users' guide, (ICESS, university of California
+   Authors: 
+   Date: 2007
+
+53. A remote sensing-GIS evaluation of urban expansion and its impact on surface temperature in Zhujiang Delta, China
+   Authors: 
+   Date: 2001
+
+54. Assessing the effects of land use and land cover patterns on thermal conditions using landscape metrics in city of Indianapolis
+   Authors: , , 
+   Date: 2007
+
+55. Modeling diurnal land temperature cycles over Los Angeles using downscaled GOES imagery
+   Authors: , 
+   Date: 2014
+
+56. The spatial variations of urban land surface temperatures: pertinent factors zoning effect, and seasonal variability
+   Authors: , , , 
+   Date: 2008
+
+57. A sub-pixel analysis of urbanization effect on land surface temperature and its interplay with impervious surface and vegetation coverage in Indianapolis United States
+   Authors: , 
+   Date: 2008
+
+58. Centre for health development, united nations human settlements programme
+   Date: 2010
+
+59. Estimating impervious surface distribution by spectral mixture analysis
+   Authors: , 
+   Date: 2003
+
+60. Assessing the effects of land use spatial structure on urban heat islands using HJ-1B remote sensing imagery in Wuhan, China
+   Authors: , , , 
+   Date: 2014
+
+61. The impact of land use and land cover changes on land surface temperature in a karst area of China
+   Authors: , 
+   Date: 2007
+
+62. Modification of Normalized Difference Water Index (NDWI) to enhance open water features in remotely sensed imagery
+   Authors: 
+   Date: 2006
+
+63. Comparison of impervious surface area and normalized difference vegetation index as indicators of surface urban heat island effects in Landsat imagery
+   Authors: , 
+   Date: 2007
+
+64. The relationship between land surface temperature and NDVI with remote sensing: application to Shanghai Landsat 7 ETM+ data
+   Authors: , , , 
+   Date: 2007
+
+65. Analysis of land use/land cover change, population shift, and their effects on spatiotemporal patterns of urban heat islands in metropolitan Shanghai
+   Authors: , , , , , 
+   Date: 2013
+
+66. Bi-temporal characterization of land surface temperature in relation to impervious surface area, NDVI and NDBI, using a sub-pixel image analysis
+   Authors: , , , 
+   Date: 2009
+
+67. Change detection in land use and land cover using Remote Sensing data and GIS (A case study of Ilorin and its environs in Kwara State
+   Authors: 
+   Date: 2006
+

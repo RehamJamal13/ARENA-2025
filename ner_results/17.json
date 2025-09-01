@@ -1,0 +1,12 @@
+{
+  "article_id": "17",
+  "original_sentence": "Remote sensing data showed changes in Mediterranean Forest vegetation.",
+  "entities": [
+    {
+      "text": "Mediterranean Forest vegetation",
+      "label": "LOC",
+      "start_char": 38,
+      "end_char": 69
+    }
+  ]
+}

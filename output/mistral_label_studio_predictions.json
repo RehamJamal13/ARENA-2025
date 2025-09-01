@@ -1,0 +1,590 @@
+[
+  {
+    "data": {
+      "text": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-relation-discovery-v1.0",
+        "score": 1.0,
+        "result": [
+          {
+            "value": {
+              "start": 11,
+              "end": 18,
+              "text": "results",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "mistral_ent_0_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 48,
+              "end": 55,
+              "text": "Thimphu",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "mistral_ent_0_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 56,
+              "end": 60,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "mistral_ent_0_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 65,
+              "end": 72,
+              "text": "changed",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "mistral_ent_0_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 118,
+              "end": 124,
+              "text": "change",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "mistral_ent_0_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 161,
+              "end": 165,
+              "text": "2050",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "mistral_ent_0_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "mistral_ent_0_0",
+            "to_id": "mistral_ent_0_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "[reveals]"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "mistral",
+              "original_source": "results",
+              "original_target": "changed"
+            }
+          },
+          {
+            "from_id": "mistral_ent_0_3",
+            "to_id": "mistral_ent_0_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "[affects]"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "mistral",
+              "original_source": "changed",
+              "original_target": "Thimphu"
+            }
+          },
+          {
+            "from_id": "mistral_ent_0_4",
+            "to_id": "mistral_ent_0_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "[is_part_of]"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "mistral",
+              "original_source": "change",
+              "original_target": "changed"
+            }
+          },
+          {
+            "from_id": "mistral_ent_0_3",
+            "to_id": "mistral_ent_0_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "[will_happen_before]"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "mistral",
+              "original_source": "changed",
+              "original_target": "2050"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 0,
+    "meta": {
+      "method_used": "mistral_open_discovery",
+      "num_entities": 6,
+      "num_relations": 4,
+      "num_relations_mapped": 4,
+      "num_relations_skipped": 0,
+      "mapping_success_rate": "100.0%"
+    }
+  },
+  {
+    "data": {
+      "text": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-relation-discovery-v1.0",
+        "score": 1.0,
+        "result": [
+          {
+            "value": {
+              "start": 33,
+              "end": 41,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "mistral_ent_1_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 43,
+              "end": 49,
+              "text": "12.77%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "mistral_ent_1_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 73,
+              "end": 77,
+              "text": "2002",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "mistral_ent_1_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 79,
+              "end": 85,
+              "text": "52.88%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "mistral_ent_1_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 90,
+              "end": 94,
+              "text": "2018",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "mistral_ent_1_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 96,
+              "end": 101,
+              "text": "65.5%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "mistral_ent_1_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 125,
+              "end": 133,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "mistral_ent_1_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "mistral_ent_1_6",
+            "to_id": "mistral_ent_1_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "[is_composed_of]"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "mistral",
+              "original_source": "increase",
+              "original_target": "12.77%"
+            }
+          },
+          {
+            "from_id": "mistral_ent_1_6",
+            "to_id": "mistral_ent_1_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "[happens_between]"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "mistral",
+              "original_source": "increase",
+              "original_target": "2002"
+            }
+          },
+          {
+            "from_id": "mistral_ent_1_2",
+            "to_id": "mistral_ent_1_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "[has_percentage]"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "mistral",
+              "original_source": "2002",
+              "original_target": "52.88%"
+            }
+          },
+          {
+            "from_id": "mistral_ent_1_2",
+            "to_id": "mistral_ent_1_6",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "[has_change]"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "mistral",
+              "original_source": "2002",
+              "original_target": "increase"
+            }
+          },
+          {
+            "from_id": "mistral_ent_1_6",
+            "to_id": "mistral_ent_1_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "[results_in]"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "mistral",
+              "original_source": "increase",
+              "original_target": "2018"
+            }
+          },
+          {
+            "from_id": "mistral_ent_1_4",
+            "to_id": "mistral_ent_1_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "[has_percentage]"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "mistral",
+              "original_source": "2018",
+              "original_target": "65.5%"
+            }
+          },
+          {
+            "from_id": "mistral_ent_1_6",
+            "to_id": "mistral_ent_1_6",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "[followed_by]"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "mistral",
+              "original_source": "increase",
+              "original_target": "increase"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 1,
+    "meta": {
+      "method_used": "mistral_open_discovery",
+      "num_entities": 7,
+      "num_relations": 7,
+      "num_relations_mapped": 7,
+      "num_relations_skipped": 0,
+      "mapping_success_rate": "100.0%"
+    }
+  },
+  {
+    "data": {
+      "text": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%)."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-relation-discovery-v1.0",
+        "score": 1.0,
+        "result": [
+          {
+            "value": {
+              "start": 17,
+              "end": 23,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "mistral_ent_2_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 30,
+              "end": 38,
+              "text": "declined",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "mistral_ent_2_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 52,
+              "end": 58,
+              "text": "15.25%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "mistral_ent_2_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 72,
+              "end": 83,
+              "text": "agriculture",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "mistral_ent_2_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 85,
+              "end": 90,
+              "text": "1.01%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "mistral_ent_2_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "mistral_ent_2_2",
+            "to_id": "mistral_ent_2_0",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "[represented_as_percentage_of]"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "mistral",
+              "original_source": "15.25%",
+              "original_target": "forest"
+            }
+          },
+          {
+            "from_id": "mistral_ent_2_0",
+            "to_id": "mistral_ent_2_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "[preceded_by_in_time]"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "mistral",
+              "original_source": "forest",
+              "original_target": "agriculture"
+            }
+          },
+          {
+            "from_id": "mistral_ent_2_3",
+            "to_id": "mistral_ent_2_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "[gained]"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "mistral",
+              "original_source": "agriculture",
+              "original_target": "1.01%"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 2,
+    "meta": {
+      "method_used": "mistral_open_discovery",
+      "num_entities": 5,
+      "num_relations": 3,
+      "num_relations_mapped": 3,
+      "num_relations_skipped": 0,
+      "mapping_success_rate": "100.0%"
+    }
+  }
+]

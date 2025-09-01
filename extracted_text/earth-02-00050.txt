@@ -1,0 +1,428 @@
+================================================================================
+TITLE: Analyzing and Predicting Land Use and Land Cover Changes in New Jersey Using Multi-Layer Perceptron-Markov Chain Model
+================================================================================
+
+AUTHORS:
+- Ilunga Kikombo
+- Ngoy
+- Feng Qi
+- Daniela Shebitz
+
+ABSTRACT:
+This study analyzed the changes of land use and land cover (LULC) in New Jersey in the United States from 2007 to 2012. The goal was to identify the driving factors of these changes and to project the five-year trend to 2100. LULC data was obtained from the New Jersey Department of Environmental Protection. The original 86 classes were reclassified to 11 classes. Data analysis and projection were performed using TerrSet 2020. Results from 2007 to 2012 showed that the rate of LULC changes was relatively small. Most changes happened to brush/grasslands, mixed forest lands, farmlands and urban/developed lands. Urban/developed lands and the mixed-forest cover gained while farmlands lost. Using a multi-layer perceptron-Markov chain (MLP-MC) model, we projected the 2015 LULC and validated by actual data to produce a 2100 LULC. Changes from 2012 to 2100 showed that urban/developed lands, as well as brush/grasslands, would continue to gain, while farmlands would lose, although the projected landscape texture would likely be identical to the 2012 landscape. Human and natural factors were discussed. It was concluded that the MLP-MC model could be a useful model to predict short-term LULC change. Unexpected factors are likely to interfere in a long-term projection.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land use and land cover are two closely related concepts. Land cover consists of natural or human-related physical features, such as vegetation, soil, water bodies and urbanization identifiable on the Earth's surface. Land use characterizes how humans utilize these features for the purpose of development and/or conservation. Due to the variability in the land cover types, the management or usage of one type of land cover can be handled differently from area to another within the same country or between different countries 
+Scientists have attempted to develop a universal classification scheme of land use and land cover (LULC) with no success due to the diversity and complexity of the LULC types worldwide. It has been a general practice to establish classification schemes and attach meanings to the classes at the national, regional or local scales 
+Utilizing available remote sensing data, much research has been conducted to monitor LULC changes at different scales around the world and analyze the spatial patterns to study the controlling factors. These factors could be environmental, economic and/or political/administrative, and the results provide useful information to planners and decisionmakers. For instance, a global study analyzed the impacts of humans on LULC change 
+Analyses of LULC using remote-sensing data have covered a wide range of areas. For example, using daytime and nighttime remote sensing, a study in China found that over 20 years, rapid urbanization and human migration have shown an overall improvement on the coastal eco-environment conditions 
+In recent years, the application of machine-learning methods on LULC modeling has enhanced the modeling capabilities and allowed for predictions of future LULC changes 
+Many studies have also used hybrid models to combine strengths of the individual methods. For example, cellular automata (CA)-Markov chain models take advantage of the spatial modeling capability of CA and temporal prediction capability of the Markov chain to predict future LULC changes. In the United States, it was used in a study to predict future distribution of land use in Minneapolis-St. Paul, Minnesota 
+As the interest of studying LULC with hybrid models such as the MLP-Markov model grows worldwide, it has been relatively less applied in local regions in the United States (US). We believe it is worth extending such study in the many states in the US to study the impact of LULC management where laws and regulations are very different from most other countries. For instance, any change to LULC in the US may be subjected to stricter environmental impact assessments, public hearings or even voting through ballot boxes that could hinder many human-led changes.
+Our study extended such applications in a highly urbanized US state to analyze recent LULC change patterns and project into the future. The main difference between our study and the aforementioned studies is that it illustrated a case where strict land use regulations, regional land use planning and sound policies will likely result in balanced land development, protection of natural resources and minimal LULC changes. Additionally, the majority of previous studies that simulated future LULC changes were restricted to relatively smaller areas. Ours covered the entire state and benefitted statewide decision-making regarding land use management and planning. Specific objectives of this study included: 
+
+## Materials and Methods ##
+
+
+## Study Area ##
+The state of New Jersey is located on the east coast of the United States of America along the Atlantic Ocean (Figure 
+The New Jersey 2020 census results revealed that the population has increased to 9,288,994 
+
+## Data ##
+We downloaded LULC datasets from the New Jersey Department of Environmental Protection (NJDEP) through its Bureau of GIS data portal (https://gisdata-njdep.opendata. arcgis.com/, accessed on 1 July 2021). Three years were of interest for this study, including 2007 (Figure 
+An initial examination of the downloaded data layers with ArcGIS Pro [47] revealed that the eastern boundaries of the state extended too far into the Atlantic Ocean. We clipped out the extra ocean water to include only the barrier islands along the east coast and a relatively small part of the bay in the south. Further, we grouped the 86 classes into 11 larger classes. The reclassification process consisted of grouping together closely related original classes and creating classes that align with the objectives of this study, which is to study land use change in the context of land development, farm and forest land changes. None of the original classes was excluded except the ocean water that was clipped out. We finally rasterized the data layers and exported to TerrSet 2020 
+
+## Method ##
+MLP-Markov chain modeling is integrated in the Land Change Modeler (LCM) module of the TerrSet software 
+(
+
+## 1) Change Analysis ##
+We analyzed the LULC changes between 2007 and 2012 using the LCM task related to change analysis. First, we overviewed the gains and losses and derived the net change for each class. Next, we focused on the classes with detectable changes. For each of them, we identified the major contributors to these changes. We then used the third order polynomial equation option to analyze the spatial trend of changes. The classes that underwent the most changes were used to generate spatial trend maps. This step was mostly for visualization purposes, so not only the scientific community, but also the decision makers could eventually take appropriate actions to mitigate any potential trend that would likely negatively affect the wellbeing of the entire state's land system. We also created a map of areas that have remained unchanged between 2007 and 2012.
+(
+
+## 2) Transition potential modeling ##
+The changes identified were transitions from one land cover type to another. We used transition potential modeling in LCM to model the potential of a given land to transition or not to transition from one type to another. To explain the change that occurred from 2007 and 2012, we selected three explanatory variables: distance from disturbed areas, distance away from urban areas and a dummy variable of evidence likelihood transformation. Each variable is captured with a map of the same extent as the study area. The last map was created by determining the relative frequency with which different land cover type occurred within the state that transitioned from 2007 to 2012.
+We used the MLP neural network to model the transition potential, which was recommended by the LCM developer as the most robust 
+where f is the activation function, N is the number of the neurons, W are the ANN model weights and b is the bias vector.
+A binary classification MLP's output is a value between 0 and 1, which could be considered as the probability of the positive target class. Model selection was performed by optimizing the number of hidden layers and the number of hidden neurons per layer of the MLP using training data (Figure 
+(3) Change prediction Finally, based on the rates of change from 2007 and 2012 and the transition probabilities, we predicted the land cover in 2015 and 2100 using a MLP-Markov chain model 
+The MLP-Markov chain formulas to predict land use change were based on the following equations (Equations ( 
+where L(t) and L(t + 1) represent land use status at time t and t + 1 respectively. (0
+
+## m) ) is the transition probability matrix. (4) Model validation ##
+We validated the model by comparing the predicted 2015 land cover to the 2015 classified land use map obtained from NJDEP. We used the built-in validation tool provided in TerrSet (Table 
+
+## Name of Component Definition ##
+Disagreement due to quantity P(p) -P(m) The seven mathematical expressions, N(n), N(m), H(m), M(m), K(m), P(m) and P(p), represent the measures of agreement between two maps (2015 LULC classified map and 2015 LULC predicted map). Usually 0
+This sequence partitions the interval (0,1) into components of the agreement and disagreement between the reference map and the comparison map. M(m) is the total proportion correct; thus, 1 -M(m) is the total proportion of disagreement between the reference map and the comparison map 
+Table 
+Overall accuracy (OvAc):
+Producer's accuracy (PrAc): Example for class A in Table 
+User's accuracy (UsAc): Example for class A in Table 
+The Kappa index of agreement is calculated using Equation 
+where P(A) is the number of times the k raters agree and P(E) is the number of times the k raters are expected to agree only by chance 
+(5) Land cover analysis
+We analyzed the predicted 2100 LULC using four landscape metrics, including fragmentation index, relative richness, diversity and dominance.
+Fragmentation index is computed using the following Equation ( 
+where M is the number of map regions and N is the number of places. This index ranges from 0.0, for a pattern in which all areal units have been assigned to a single class, to 1.0, when no two contiguous places have been allocated to the same mapping category. Formulas for calculating dominance (Equation ( 
+Dominance (D o )
+where s = number of habitats observed, P k , = the proportion of the landscape in habitat k and H max = ln(s) is the maximum diversity when habitats occur in equal proportions.
+Relative richness (R) R = s s max + 100 
+where s = number of habitats observed and P k , = the proportion of the landscape in habitat k.
+
+## Results ##
+
+
+## Land Cover Change between 2007 and 2012 ##
+From 2007 to 2012, the total LULC types expanded by 12.16 ha and about the same area was lost in the state of New Jersey (Figure 
+Contributions to the net gain by mixed-forest cover was from three classes (Figure 
+Three maps were generated from our analyses showing the generalized trends of classes with the most changes from 2007 to 2012. The likelihood of changing from farmlands to urban/developed lands (Figure 
+
+## Transition Model ##
+Using the three explanatory variables and the LULC maps of 2007 and 2012, we trained a MLP neural network model using the transition sub-model within LCM. Table 
+
+## Predictions of Land Use Change in 2015 and Model Validation ##
+Using the derived transition model, we proceeded to predict a 2015 LULC map (Figure 
+
+## Information of Quantity ##
+
+
+## Information of Allocation No(n) Medium(m) Perfect(p) ##
+Perfect[P(x)] P(n) = 0.5235 P(m) = 0.9982  
+Table 
+Table 
+The other two validation methods showed a similar high degree of accuracy between the two maps. The overall accuracy measured using the confusion matrix is 0.91 (or 91%) (Table 
+
+## Prediction of Land Use Change in 2100 ##
+Figure 
+
+## Discussion and Conclusions ##
+Our results from the analysis of 2007-2012 LULC change show that the rate of change in New Jersey in this five-year period is rather small considering the size of our study area. Only two classes had notable spatial expansions. They include urban/developed lands and mixed forest. In many developing countries, such as Kenya or Nepal, the rate is much higher 
+In other parts of the world, the rate of LULC change can be extensive. This is especially true in Africa where the population growth rate and the rate of urbanization are very high 
+In New Jersey, the office of Land Use Management administers programs that protect and enhance New Jersey's environment through the implementation of state land use regulations, regional land use planning, coastal resource management and funds projects that result in improvements to the quality of the state's environment 
+Additionally, two other reasons may explain the slow pace of change. One of them is the slowdown of urban expansion. Gentrification is the process of bringing new residents of a higher socioeconomic status into a low-income neighborhood 
+It is important to note that the model captured changes and the drivers of changes in the five-year period from 2007 to 2012 but did not capture other indirect changes ,such as climate change and invasive species that will inevitably have a significant impact on diversity at the species and ecosystem levels during the next century. Our model showed a net decrease in farmland, as well as coniferous and deciduous forests, but an expansion of the mixed forest (with both conifers and deciduous trees). The direct causes of these trends include the abandonment of farms and rapid rural development and urban expansion into the New Jersey Pine Barrens and deciduous forest areas in the northern region of the state 
+Our prediction from 2012 to 2100 shows that any increase in the mixed-forest cover is short-lived, and there will be an overall decrease in this habitat type, but an increase in brush/grassland. While our model did not incorporate specific environmental factors that will likely affect habitats throughout the state in the next century, we are able to make assumptions based on conditions that existed during the five-year period from 2007 to 2012. For example, invasive insects have become more prevalent in the past few decades, causing extensive loss of many trees, including hardwoods, such as ash and chestnut, and conifers, including hemlock and pine 
+Another important factor that will be intricately linked to ecological shifts that will inevitably occur across the landscape is climate change 
+We used a MLP-Markov chain model to predict the future LULC. We predicted the 2015 LULC to validate our model, and it showed high accuracy. It was based on the assumption that the conditions that prevailed in 2012 will continue the same way in the future. Many studies have used similar models to predict short-term LULC change, as there are not many other variables likely to impede in a short period. When projecting a long-term situation, many other unexpected variables will likely interfere. From 2012 to 2100, factors, such as climate change, will likely completely change the environment in New Jersey 
+We hope that a similar study will be undertaken in other states in the United States of America. We expect that results may not be the same as in New Jersey. Each state has its own land-use laws that are likely to be different from New Jersey laws [85]. Some states are experiencing higher immigration rates of the population, while others are experiencing out-migration 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Contradiction or Complement
+   Authors: , , , , 
+   Date: 2005
+
+2. Land Cover Classification System-Classification Concepts and User Manual; Environment and Natural Resources Series
+   Authors: , , 
+   Date: 2005
+
+3. What Is the Difference between Land Cover and Land Use? Available online
+   Date: 13 August 2021
+
+4. FAO Methodologies for Land Cover Classification and Mapping
+   Authors: , , , , 
+   Date: 2002
+
+5. Human Population Growth and Global Land-Use/Cover Change
+   Authors: , 
+   Date: 1992
+
+6. Correlates of Forest-Cover Change in European Russia
+   Authors: , , , , , 
+   Date: 1989-2012. 2020. 104648
+
+7. Land-Cover Changes in a Remote Area of Central Apennines (Italy) and Management Directions
+   Authors: , , 
+   Date: 2012
+
+8. Agricultural Landscape Change and Stability in Northeast Thailand: Historical Patch-Level Analysis
+   Authors: 
+   Date: 2004
+
+9. Exploration of Eco-Environment and Urbanization Changes in Coastal Zones: A Case Study in China over the Past 20 Years
+   Authors: , , , , 
+   Date: 2020. 106847
+
+10. Physical Landscape Correlates of the Expansion of Mechanized Agriculture in Mato Grosso
+   Authors: , , , , , 
+   Date: 2005
+
+11. Dynamics of Land Use, Land Cover Change Trend and Its Drivers in Jimma Geneti District, Western Ethiopia. Land Use Policy
+   Authors: , , 
+   Date: 2020. 105011
+
+12. Land Use and Land Cover Change Detection in the Western Nile Delta of Egypt Using Remote Sensing Data
+   Authors: , , , , , 
+   Date: 2011
+
+13. Remote Sensing of Complex Land Use Change Trajectories-A Case Study from the Highlands of Madagascar
+   Authors: 
+   Date: 2006
+
+14. Land Use/Land Cover Change Analysis Using Object-Based Classification Approach in Munessa-Shashemene Landscape of the Ethiopian Highlands
+   Authors: , , , 
+
+15. Land Use/Land Cover Changes and Their Causes in Libokemkem District of South Gonder
+   Authors: , , , 
+   Date: 2017
+
+16. Mapping Land Use Land Cover Transitions at Different Spatiotemporal Scales in West Africa
+   Authors: , , , , , 
+
+17. Assessment of Land Use/Cover Change and Urban Expansion Using Remote Sensing and GIS: A Case Study in Phuentsholing Municipality
+   Authors: , , 
+   Date: 2017
+
+18. Land Use/Land Cover Changes Impact on Groundwater Level and Quality in the Northern Part of the United Arab Emirates
+   Authors: , , 
+
+19. Worldwide Research on Land Use and Land Cover in the Amazon Region. Sustainability 2021
+   Authors: , , , , 
+
+20. Land-Use Land-Cover Classification by Machine Learning Classifiers for Satellite Observations-A Review
+   Authors: , , , , , 
+
+21. Implementation of Machine-Learning Classification in Remote Sensing: An Applied Review
+   Authors: , , 
+   Date: 2018
+
+22. Assessing Application of Markov Chain Analysis in Predicting Land Cover Change: A Case Study of Nakuru Municipality
+   Authors: , , 
+   Date: 2011
+
+23. Land Use Change Prediction in Dhaka City Using Gis Aided Markov Chain Modeling
+   Authors: , 
+   Date: 2011
+
+24. Chain Model of Land Use Change
+   Authors: , , , , 
+   Date: 2015
+
+25. Application Of CA-Markov Model and Land Use/Land Cover Changes in Malacca River Watershed
+   Authors: 
+   Date: 2017
+
+26. Monitoring and Modeling of Spatiotemporal Urban Expansion and Land-Use/Land-Cover Change Using Integrated Markov Chain Cellular Automata Model
+   Authors: , , , , 
+   Date: 2017
+
+27. CA Markov Modeling of Land Use Land Cover Dynamics And Sensitivity Analysis To Identify Sensitive Parameter(S)
+   Authors: , , , 
+   Date: 2019
+
+28. Land Use Dynamics and Optimization from 2000 to 2020 in East Guangdong Province
+   Authors: , , , , , 
+   Date: 2021
+
+29. A Regression-Based Procedure for Markov Transition Probability Estimation in Land Change Modeling
+   Authors: , 
+   Date: 2020
+
+30. Monitoring and Simulation of Dynamic Spatiotemporal Land Use/Cover Changes
+   Authors: , , 
+   Date: 2020. 2020
+
+31. Multi-Layer Perceptron Neural Network and Markov Chain Based Geospatial Analysis of Land Use and Land Cover Change
+   Authors: , , , , 
+   Date: 2020
+
+32. Markov Method Integration with Multi-Layer Perceptron Classifier for Simulation of Urban Growth of Jaipur City
+   Authors: , 
+   Date: October 2010
+
+33. Modeling Future Urban Sprawl and Landscape Change in the Laguna de Bay Area
+   Authors: , , , , , 
+   Date: 2017
+
+34. Modeling Land Cover Change Based on an Artificial Neural Network for a Semiarid River Basin in Northeastern Brazil
+   Authors: , , , 
+
+35. Growth Simulation of Atakum (Samsun, Turkey) Using Cellular Automata-Markov Chain and Multi-Layer Perceptron-Markov Chain Models
+   Authors: , 
+   Date: 2015
+
+36. The Geography of New Jersey. Available online
+   Date: 28 July 2021
+
+37. New Jersey State, United States. Available online
+   Authors: 
+   Date: 28 July 2021
+
+38. The Physical Geography of New Jersey
+   Authors: 
+   Date: 1808
+
+39. New Jersey-New World Encyclopedia
+   Date: 28 July 2021
+
+40. What New Jersey 2020 Census Results Reveal About State's Population
+   Authors: 
+   Date: 19 September 2021
+
+41. Population Density in the U.S., by State
+   Date: 2020. 30 July 2021
+
+42. State Population Totals: 2010-2020
+   Date: 27 July 2021
+
+43. Population of Counties in New Jersey
+   Date: 2021. July 2021
+
+44. Population Density: New Jersey Counties. 2021. Available online
+   Date: 2020. August 2021
+
+45. Land Use/Land Cover Update and Impervious Surface Mapping Project
+   Date: 2012. August 2021
+
+46. TerrSet 2020 Software Features. Available online
+   Date: August 2021
+
+47. Machine Learning Approach Using MLP and SVM Algorithms for the Fault Prediction of a Centrifugal Pump in the Oil and Gas Industry
+   Authors: , , , , , 
+
+48. The Elements of Statistical Learning: Data Mining, Inference, and Prediction
+   Authors: , , 
+   Date: 2017. August 2021
+
+49. CA-Markov Analysis of Constrained Coastal Urban Growth Modeling
+   Authors: , , , 
+   Date: 2013
+
+50. Application of a Hybrid Cellular Automaton-Markov (CA-Markov) Model in Land-Use Change Prediction: A Case Study of Saddle Creek Drainage Basin
+   Authors: , , 
+   Date: 2013
+
+51. Quantification Error Versus Location Error in Comparison of Categorical Maps. Photogramm. Remote Sens
+   Authors: 
+   Date: 2000
+
+52. Statistical Methods to Partition Effects of Quantity and Location During Comparison of Categorical Maps at Multiple Resolutions
+   Authors: 
+   Date: 2002
+
+53. Using the Relative Operating Characteristic to Quantify Certainty in Prediction of Location of Land Cover Change in India
+   Authors: , 
+   Date: 2003
+
+54. Complete Control of an Observed Confusion Matrix
+   Authors: , , 
+   Date: July 2018
+
+55. 
+   Authors: 
+   Date: 2016. August 2021
+
+56. A Generalized Confusion Matrix for Assessing Area Estimates from Remotely Sensed Data
+   Authors: , 
+   Date: 2001
+
+57. Confusion Matrix-Based Feature Selection
+   Authors: , , , 
+   Date: 2011. April 2011
+
+58. Measures of Pattern Complexity for Choropleth Maps
+   Authors: 
+   Date: 1974
+
+59. Landscape Ecology: The Effect of Pattern on Process
+   Authors: 
+   Date: 1989
+
+60. Accounting for Training Data Error in Machine Learning Applied to Earth Observations
+   Authors: , , , , , , , , , 
+
+61. Urbanization in Sub-Saharan Africa: Meeting Challenges by Bridging Stakeholders. Center for Strategic and International Studies. 2018. Available online
+   Authors: , 
+   Date: 19 September 2021
+
+62. Impacts of Simulated Shifting Cultivation on Deforestation and the Carbon Stocks of the Forests of Central Africa
+   Authors: , , 
+   Date: 2002
+
+63. The Environmental, Socioeconomic, and Health Impacts of Woodfuel Value Chains in Sub-Saharan Africa: A Systematic Map
+   Authors: , , , , , , , , , 
+
+64. Land Use Analysis from Spatial and Field Data Capture in Southern Burkina Faso, West Africa
+   Authors: , , , 
+   Date: 2008
+
+65. Land-related conflicts in Sub-Saharan Africa
+   Authors: 
+   Date: 19 September 2021
+
+66. Inequality and Social Conflict Over Land in Africa
+   Authors: 
+   Date: 2004
+
+67. Division of Land Resource Protection-Home
+   Authors: 
+   Date: 19 August 2021
+
+68. NJDEP|Land Use Management
+   Date: 19 August 2021
+
+69. Division of Land Use Regulation-Home
+   Authors: 
+   Date: 19 August 2021
+
+70. Gentrification of Two New Jersey Cities
+   Authors: 
+   Date: 38e09f5c5a045 abae1571e9b7cb769. 19 August 2021
+
+71. Four Centuries of Change in Northeastern United States Forests
+   Authors: , , , 
+   Date: 2013. 72540
+
+72. A Mobile Aviary to Enhance Translocation Success of Red-Cockaded Woodpeckers
+   Authors: , , 
+   Date: 5 October 2021
+
+73. NJ Tops Nation for Addressing the Loss of Farmland
+   Authors: 
+   Date: 15 October 2021
+
+74. Species Fluctuations Sustained by a Cyclic Succession at the Edge of Chaos
+   Authors: , , , 
+   Date: 2015
+
+75. New Jersey Prepares for Possible Invasion of Tree-Destroying Bug, the Spotted Lanternfly
+   Authors: 
+   Date: 27 August 2021
+
+76. NJ Advance Media for NJ.com. The 12 Grossest Living Things That are Killing N
+   Authors: 
+   Date: 15 October 2021
+
+77. Regional Climate Change Projections for the Northeast USA
+   Authors: , , , , , , , , , 
+   Date: 2008
+
+78. Climate Change in New Jersey: Impacts and Responses, Rutgers, The State University of New Jersey
+   Date: 2020. 5 October 2021
+
+79. New England and Northern New York Forest Ecosystem Vulnerability Assessment and Synthesis: A Report from the New England Climate Change Response Framework Project; NRS-GTR-173
+   Authors: , , , , , , , , , 
+   Date: 2018
+
+80. Restoration and Resilience in New Jersey's Forests
+   Authors: , 
+   Date: 2014. 7 October 2021
+
+81. Potential Impacts of Climate Change on Areas Suitable to Grow Some Key Crops in New Jersey
+   Authors: , 
+   Date: 2020
+
+82. Where Did Americans Move in 2020? 2021. Available online
+   Authors: 
+   Date: 7 October 2021
+
+83. Forests and Logging in the United States
+   Authors: 
+   Date: 15 October 2021
+

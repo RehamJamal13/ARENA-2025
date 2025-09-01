@@ -1,0 +1,18 @@
+{
+  "article_id": "3",
+  "original_sentence": "Deforestation has affected the Savanna ecosystem substantially.",
+  "entities": [
+    {
+      "text": "Deforestation",
+      "label": "PROCESS",
+      "start_char": 0,
+      "end_char": 13
+    },
+    {
+      "text": "Savanna ecosystem",
+      "label": "LOC",
+      "start_char": 31,
+      "end_char": 48
+    }
+  ]
+}

@@ -1,0 +1,1498 @@
+{
+  "metadata": {
+    "extraction_date": "2025-07-09T16:40:14.445218",
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "statistics": {
+      "total_sentences_processed": 20,
+      "sentences_with_relations": 10,
+      "total_relations_extracted": 46,
+      "relation_types": {
+        "DECREASES_BY": 8,
+        "AFFECTS": 4,
+        "OCCURS_DURING": 6,
+        "LOCATED_IN": 2,
+        "CAUSES": 10,
+        "ENABLES": 2,
+        "MEASURES": 2,
+        "INCREASES_BY": 5,
+        "CHANGE_TO": 7
+      },
+      "entity_types": {
+        "CHANGE": 13,
+        "LULC": 32,
+        "DATE": 7,
+        "LOC": 9,
+        "PROCESS": 15,
+        "QUANTITY": 14,
+        "PERCENT": 2
+      }
+    }
+  },
+  "results": [
+    {
+      "sentence_id": 0,
+      "sentence": "After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g",
+      "original_entities": [
+        {
+          "text": "the 1970s and 1980s",
+          "label": "DATE",
+          "start_char": 31,
+          "end_char": 50
+        },
+        {
+          "text": "loss",
+          "label": "CHANGE",
+          "start_char": 65,
+          "end_char": 69
+        }
+      ],
+      "extracted_entities": [
+        {
+          "text": "1970s, 1980s",
+          "label": "DATE"
+        },
+        {
+          "text": "Sahel",
+          "label": "LOC"
+        },
+        {
+          "text": "large parts",
+          "label": "QUANTITY"
+        },
+        {
+          "text": "degraded land",
+          "label": "LULC"
+        }
+      ],
+      "model_response": "\n\nENTITIES:\n- droughts | EVENT\n- 1970s, 1980s | DATE\n- Sahel | LOC\n- large parts | QUANTITY\n- degraded land | LULC\n\nRELATIONS:\n- droughts:EVENT --CAUSES-- loss:CHANGE | CONF: HIGH\n- loss:CHANGE --DECREASES_BY-- woody_vegetation:LULC | CONF: HIGH\n- loss:CHANGE --AFFECTS-- degraded_land:LULC | CONF: HIGH\n- 1970s, 1980s:DATE --OCCURS_DURING-- loss:CHANGE | CONF: MEDIUM\n- Sahel:LOC --LOCATED_IN-- Africa:LOC | CONF: HIGH\n- loss:CHANGE --OCCURS_DURING-- 1970s, 1980s:DATE | CONF: HIGH\n- loss:CHANGE --CAUSES-- degradation:PROCESS | CONF: HIGH\n- degradation:PROCESS --ENABLES-- desertification:PROCESS | CONF: MEDIUM\n- degraded_land:LULC --IS_A-- degraded_area:LULC | CONF: HIGH\n- degraded_land:LULC --IS_A-- degraded_area:LULC | CONF: HIGH\n\nNote: The last two relations are added because the sentence mentions \"designated as degraded land (e.g)\" which implies that degraded land is a subtype of degraded area.",
+      "extracted_relations": [
+        {
+          "source": "loss",
+          "source_type": "CHANGE",
+          "relationship": "DECREASES_BY",
+          "target": "woody_vegetation",
+          "target_type": "LULC",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "loss",
+          "source_type": "CHANGE",
+          "relationship": "AFFECTS",
+          "target": "degraded_land",
+          "target_type": "LULC",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "1970s, 1980s",
+          "source_type": "DATE",
+          "relationship": "OCCURS_DURING",
+          "target": "loss",
+          "target_type": "CHANGE",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "Sahel",
+          "source_type": "LOC",
+          "relationship": "LOCATED_IN",
+          "target": "Africa",
+          "target_type": "LOC",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "loss",
+          "source_type": "CHANGE",
+          "relationship": "OCCURS_DURING",
+          "target": "1970s, 1980s",
+          "target_type": "DATE",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "loss",
+          "source_type": "CHANGE",
+          "relationship": "CAUSES",
+          "target": "degradation",
+          "target_type": "PROCESS",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "degradation",
+          "source_type": "PROCESS",
+          "relationship": "ENABLES",
+          "target": "desertification",
+          "target_type": "PROCESS",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "num_entities": 4,
+      "num_relations": 7,
+      "processing_timestamp": "2025-07-09T14:01:14.929541"
+    },
+    {
+      "sentence_id": 1,
+      "sentence": "Pastoral production has often existed in some sort of symbiotic interaction with the [agriculture]",
+      "original_entities": [
+        {
+          "text": "agriculture",
+          "label": "LULC",
+          "start_char": 95,
+          "end_char": 106
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- pastoral production:PROCESS\n- agriculture:LULC\n\nRELATIONS:\n- agriculture:LULC --INTERACTS_WITH-- pastoral production:PROCESS | CONF: HIGH\n- agriculture:LULC --IS_SYMBIOTIC_WITH-- pastoral production:PROCESS | CONF: MEDIUM\n\nNote: The term \"interacts with\" is used here to represent the symbiotic relationship mentioned in the sentence. It does not imply a transformation between different land types.",
+      "extracted_relations": [],
+      "num_entities": 0,
+      "num_relations": 0,
+      "processing_timestamp": "2025-07-09T14:01:23.518683"
+    },
+    {
+      "sentence_id": 2,
+      "sentence": "The forests of West and Central Africa probably originally covered a combined area of about 3 million km 2",
+      "original_entities": [
+        {
+          "text": "forests",
+          "label": "LULC",
+          "start_char": 13,
+          "end_char": 20
+        },
+        {
+          "text": "West",
+          "label": "LOC",
+          "start_char": 24,
+          "end_char": 28
+        },
+        {
+          "text": "Central Africa",
+          "label": "LOC",
+          "start_char": 33,
+          "end_char": 47
+        },
+        {
+          "text": "area of about 3 million km",
+          "label": "SURFACE_UNIT",
+          "start_char": 87,
+          "end_char": 113
+        },
+        {
+          "text": "2",
+          "label": "CARDINAL",
+          "start_char": 114,
+          "end_char": 115
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- forests:LULC\n- West and Central Africa:LOC\n- about 3 million km 2:SURFACE_UNIT\n\nRELATIONS:\n- forests:LULC --ORIGINALLY_COVERED-- West and Central Africa:LOC | CONF: HIGH\n- West and Central Africa:LOC --PROBABLY_HAD-- about 3 million km 2:SURFACE_UNIT | CONF: HIGH\n\nNo explicit relations can be extracted from the sentence based on the given rules.",
+      "extracted_relations": [],
+      "num_entities": 0,
+      "num_relations": 0,
+      "processing_timestamp": "2025-07-09T14:01:32.250790"
+    },
+    {
+      "sentence_id": 3,
+      "sentence": "(1993)'}], '#text': \"An increase of land under [cultivation] can be in the form of either (a) clearing more land within the present territory, or (b) migrating to other areas to develop new land for [cultivation]",
+      "original_entities": [
+        {
+          "text": "1993",
+          "label": "DATE",
+          "start_char": 1,
+          "end_char": 5
+        },
+        {
+          "text": "increase",
+          "label": "CHANGE",
+          "start_char": 24,
+          "end_char": 32
+        },
+        {
+          "text": "cultivation",
+          "label": "PROCESS",
+          "start_char": 48,
+          "end_char": 59
+        },
+        {
+          "text": "cultivation",
+          "label": "PROCESS",
+          "start_char": 200,
+          "end_char": 211
+        }
+      ],
+      "extracted_entities": [
+        {
+          "text": "(1993)",
+          "label": "DATE"
+        },
+        {
+          "text": "An increase",
+          "label": "CHANGE"
+        },
+        {
+          "text": "[cultivation]",
+          "label": "LULC"
+        },
+        {
+          "text": "either",
+          "label": "CARDINAL"
+        },
+        {
+          "text": "clearing more land within the present territory",
+          "label": "PROCESS"
+        },
+        {
+          "text": "migrating to other areas to develop new land for",
+          "label": "PROCESS"
+        }
+      ],
+      "model_response": "\n\nENTITIES:\n- (1993) | DATE\n- An increase | CHANGE\n- of land under | PERIODIC_VERB\n- [cultivation] | LULC:agricultural_land\n- can be in the form of | VERB\n- either | CARDINAL:two\n- (a) | INDEX\n- clearing more land within the present territory | PROCESS:deforestation\n- or | OR\n- (b) | INDEX\n- migrating to other areas to develop new land for | PROCESS:urbanization\n\nRELATIONS:\n- (1993):DATE --OCCURS_DURING-- : | CONF: HIGH\n- An increase:CHANGE --CAUSES-- : | CONF: MEDIUM\n- of land under:PERIODIC_VERB --TRANSFORMS_INTO-- agricultural_land:LULC:agricultural_land | CONF: HIGH\n- agricultural_land:LULC:agricultural_land --CHANGE_TO-- : | CONF: LOW (not explicitly stated or directly implied)\n- : --LOCATED_IN--> present_territory:LOC | CONF: MEDIUM\n- : --CAUSES--> deforestation:PROCESS:deforestation | CONF: HIGH\n- : --CAUSES--> urbanization:PROCESS:urbanization | CONF: HIGH\n- (a):INDEX --LOCATED_IN--> present_territory:LOC | CONF: MEDIUM\n- (b):INDEX --LOCATED_IN--> other_areas:LOC | CONF: MEDIUM\n- clearing more land within the present territory:PROCESS:deforestation --AFFECTS--> agricultural_land:LULC:agricultural_land | CONF: HIGH\n- migrating to other areas:PROCESS:urbanization --ENABLES--> developing_new_land:PROCESS:urbanization | CONF: MEDIUM\n- developing_new_land:PROCESS:urbanization --CHANGE_TO--> new_land:LULC:built_up_area | CONF:",
+      "extracted_relations": [],
+      "num_entities": 6,
+      "num_relations": 0,
+      "processing_timestamp": "2025-07-09T14:02:05.860446"
+    },
+    {
+      "sentence_id": 4,
+      "sentence": "(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in national rainfall of 1 percent",
+      "original_entities": [
+        {
+          "text": "2006",
+          "label": "DATE",
+          "start_char": 1,
+          "end_char": 5
+        },
+        {
+          "text": "increase",
+          "label": "CHANGE",
+          "start_char": 24,
+          "end_char": 32
+        },
+        {
+          "text": "urban",
+          "label": "LULC",
+          "start_char": 50,
+          "end_char": 55
+        },
+        {
+          "text": "0.45 percent",
+          "label": "PERCENT",
+          "start_char": 66,
+          "end_char": 78
+        },
+        {
+          "text": "reduction",
+          "label": "CHANGE",
+          "start_char": 86,
+          "end_char": 95
+        },
+        {
+          "text": "1 percent",
+          "label": "PERCENT",
+          "start_char": 120,
+          "end_char": 129
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- (2006):DATE\n- who:PERSON\n- estimate:PROCESS\n- an increase:QUANTITY\n- in the national:DETERMINER\n- [urban]:LULC\n- share:QUANTITY\n- of 0.45 percent:PERCENT\n- with a reduction:CONJUNCTION\n- in national:DETERMINER\n- rainfall:QUANTITY\n- of 1 percent:PERCENT\n\nRELATIONS:\n- estimate:PROCESS --CAUSES-- an increase:QUANTITY | CONF: HIGH\n- an increase:QUANTITY --INCREASES_BY-- in the national:DETERMINER --LOCATED_IN--> national:DETERMINER | CONF: MEDIUM\n- in the national:DETERMINER --CHANGE_TO--> [urban]:LULC | CONF: HIGH\n- who:PERSON --CAUSES-- estimate:PROCESS | CONF: HIGH\n- an increase:QUANTITY --MEASURES-- of 0.45 percent:PERCENT | CONF: HIGH\n- in national:DETERMINER --CHANGE_TO--> urban:LULC | CONF: HIGH\n- a reduction:CHANGE --CAUSES-- in national:DETERMINER --LOCATED_IN--> national:DETERMINER | CONF: HIGH\n- in national:DETERMINER --CHANGE_TO--> rainfall:QUANTITY | CONF: LOW\n- in national:DETERMINER --DECREASES_BY-- 1 percent:PERCENT | CONF: HIGH\n\nThe output shows that there is an increase in the urban share by 0.45% which is caused by a person named 'who'. This increase is located in the national level. The urbanization process causes a decrease in national rainfall by 1%.",
+      "extracted_relations": [
+        {
+          "source": "estimate",
+          "source_type": "PROCESS",
+          "relationship": "CAUSES",
+          "target": "an increase",
+          "target_type": "QUANTITY",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "an increase",
+          "source_type": "QUANTITY",
+          "relationship": "MEASURES",
+          "target": "of 0.45 percent",
+          "target_type": "PERCENT",
+          "confidence": "HIGH"
+        }
+      ],
+      "num_entities": 0,
+      "num_relations": 2,
+      "processing_timestamp": "2025-07-09T14:02:35.329987"
+    },
+    {
+      "sentence_id": 5,
+      "sentence": ").'}]}, {'@xmlns': 'http://www.tei-c.org/ns/1.0', 'head': {'@n': '4.2.', '#text': '[Land use ]change in the study site'}, 'p': {'ref': [{'@type': 'figure', '@target': '#fig_1', '#text': '2a'}, {'@type': 'figure', '@target': '#fig_1', '#text': '2b'}], '#text': 'From 1996 to 2017, the area covered by cropped fields, C, has increased from 40% to 51.3% over the study site area, and from 47% to 64% of the arable lands in the study site due to the loss fallows",
+      "original_entities": [
+        {
+          "text": "4.2",
+          "label": "CARDINAL",
+          "start_char": 66,
+          "end_char": 69
+        },
+        {
+          "text": "change",
+          "label": "CHANGE",
+          "start_char": 94,
+          "end_char": 100
+        },
+        {
+          "text": "1996 to 2017",
+          "label": "DATE",
+          "start_char": 266,
+          "end_char": 278
+        },
+        {
+          "text": "increased",
+          "label": "CHANGE",
+          "start_char": 323,
+          "end_char": 332
+        },
+        {
+          "text": "40% to 51.3%",
+          "label": "PERCENT",
+          "start_char": 338,
+          "end_char": 350
+        },
+        {
+          "text": "47% to",
+          "label": "PERCENT",
+          "start_char": 386,
+          "end_char": 392
+        },
+        {
+          "text": "64%",
+          "label": "PERCENT",
+          "start_char": 393,
+          "end_char": 396
+        },
+        {
+          "text": "loss",
+          "label": "CHANGE",
+          "start_char": 446,
+          "end_char": 450
+        },
+        {
+          "text": "fallows",
+          "label": "LULC",
+          "start_char": 451,
+          "end_char": 458
+        }
+      ],
+      "extracted_entities": [
+        {
+          "text": "[Land use ]change",
+          "label": "CHANGE"
+        },
+        {
+          "text": "study site",
+          "label": "LOC"
+        },
+        {
+          "text": "1996",
+          "label": "DATE"
+        },
+        {
+          "text": "2017",
+          "label": "DATE"
+        },
+        {
+          "text": "arable lands",
+          "label": "LULC"
+        },
+        {
+          "text": "40%",
+          "label": "PERCENT"
+        },
+        {
+          "text": "47%",
+          "label": "PERCENT"
+        },
+        {
+          "text": "51.3%",
+          "label": "PERCENT"
+        },
+        {
+          "text": "64%",
+          "label": "PERCENT"
+        },
+        {
+          "text": "cropped fields",
+          "label": "LULC"
+        },
+        {
+          "text": "C",
+          "label": "PERCENT"
+        },
+        {
+          "text": "40%",
+          "label": "PERCENT"
+        },
+        {
+          "text": "51.3%",
+          "label": "PERCENT"
+        },
+        {
+          "text": "500 hectares",
+          "label": "SURFACE_UNIT"
+        },
+        {
+          "text": "1000 acres",
+          "label": "SURFACE_UNIT"
+        }
+      ],
+      "model_response": "\n\nENTITIES:\n- [Land use ]change | CHANGE\n- study site | LOC\n- 1996 | DATE\n- 2017 | DATE\n- from 1996 to 2017 | TIME_PERIOD\n- arable lands | LULC\n- 40% | PERCENT\n- 47% | PERCENT\n- 51.3% | PERCENT\n- 64% | PERCENT\n- cropped fields | LULC\n- C | PERCENT\n- 40% | PERCENT\n- 51.3% | PERCENT\n- 500 hectares | SURFACE_UNIT\n- 1000 acres | SURFACE_UNIT\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017 | TIME_PERIOD\n- 1996-2017",
+      "extracted_relations": [],
+      "num_entities": 15,
+      "num_relations": 0,
+      "processing_timestamp": "2025-07-09T14:03:08.834380"
+    },
+    {
+      "sentence_id": 6,
+      "sentence": "[Agriculture] in this region has been dominated over the past three decades by [cotton] production",
+      "original_entities": [
+        {
+          "text": "Agriculture",
+          "label": "LULC",
+          "start_char": 1,
+          "end_char": 12
+        },
+        {
+          "text": "the past three decades",
+          "label": "DATE",
+          "start_char": 53,
+          "end_char": 75
+        },
+        {
+          "text": "cotton",
+          "label": "LULC",
+          "start_char": 80,
+          "end_char": 86
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- [\"Agriculture\"]: LULC\n- [\"this region\"]: LOC\n- [\"has been dominated\"]: CHANGE\n- [\"over the past three decades\"]: TIME\n- [\"by cotton production\"]: PROCESS\n\nRELATIONS:\n- Agriculture:LULC --HAS_BEEN_DOMINATED_BY-- cotton production:PROCESS | CONF: HIGH\n- this region:LOC --DOMAINS-- Agriculture:LULC | CONF: MEDIUM\n- Agriculture:LULC --TRANSFORMS_TO-- cotton production:PROCESS | CONF: LOW (incorrect, no transformation)\n- Agriculture:LULC --INCREASES_BY-- cotton production:PROCESS | CONF: LOW (incorrect, no increase)\n- Agriculture:LULC --CAUSES--> cotton production:PROCESS | CONF: MEDIUM\n- Agriculture:LULC --OCCURS_DURING-- [past three decades]:TIME | CONF: HIGH\n- cotton production:PROCESS --AFFECTS-- Agriculture:LULC | CONF: HIGH\n\nThis output indicates that agriculture has been dominated by cotton production for the past three decades, causing changes to the agricultural land. The relationship between 'Agriculture' and 'cotton production' is labeled as 'CAUSES', indicating that the process of cotton production led to the dominance of agriculture by it. This is a valid relation as it represents the causality between the two entities. The other relations, such as 'HAS_BEEN_DOMINATED_BY' and 'AFFECTS', are also valid as they represent the semantic meaning of the sentence. The confidence level for all relations is set to 'HIGH' except for the incorrect 'TRANSFORMS_TO' relation which is set to 'LOW'.",
+      "extracted_relations": [
+        {
+          "source": "Agriculture",
+          "source_type": "LULC",
+          "relationship": "INCREASES_BY",
+          "target": "cotton production",
+          "target_type": "PROCESS",
+          "confidence": "LOW"
+        },
+        {
+          "source": "Agriculture",
+          "source_type": "LULC",
+          "relationship": "CAUSES",
+          "target": "cotton production",
+          "target_type": "PROCESS",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "cotton production",
+          "source_type": "PROCESS",
+          "relationship": "AFFECTS",
+          "target": "Agriculture",
+          "target_type": "LULC",
+          "confidence": "HIGH"
+        }
+      ],
+      "num_entities": 0,
+      "num_relations": 3,
+      "processing_timestamp": "2025-07-09T14:03:37.925311"
+    },
+    {
+      "sentence_id": 7,
+      "sentence": "[Forest] land was decreased nearly by half in 2002 compared to its coverage in 1984, while the size of the gallery [forest] did not change much",
+      "original_entities": [
+        {
+          "text": "Forest",
+          "label": "LULC",
+          "start_char": 1,
+          "end_char": 7
+        },
+        {
+          "text": "decreased",
+          "label": "CHANGE",
+          "start_char": 18,
+          "end_char": 27
+        },
+        {
+          "text": "half",
+          "label": "CARDINAL",
+          "start_char": 38,
+          "end_char": 42
+        },
+        {
+          "text": "2002",
+          "label": "DATE",
+          "start_char": 46,
+          "end_char": 50
+        },
+        {
+          "text": "1984",
+          "label": "DATE",
+          "start_char": 79,
+          "end_char": 83
+        },
+        {
+          "text": "forest",
+          "label": "LULC",
+          "start_char": 116,
+          "end_char": 122
+        },
+        {
+          "text": "change",
+          "label": "CHANGE",
+          "start_char": 132,
+          "end_char": 138
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- [\"Forest\"]:LULC\n- [\"land\"]:LOC\n- [\"was decreased nearly by half\"]:CHANGE\n- [\"in 2002\"]:DATE\n- [\"compared to its coverage in 1984\"]:CHANGE\n- [\"while the size of the gallery [forest] did not change much\"]:CHANGE\n\nRELATIONS:\n- [\"Forest\"]:LULC --DECREASES_BY-- [\"land\"]:LOC | CONF: HIGH\n- [\"land\"]:LOC --HAS_LULC-- [\"Forest\"]:LULC | CONF: HIGH\n- [\"Forest\"]:LULC --OCCURS_DURING-- [\"in 1984\"]:DATE | CONF: MEDIUM\n- [\"Forest\"]:LULC --OCCURS_DURING-- [\"in 2002\"]:DATE | CONF: MEDIUM\n- [\"Forest\"]:LULC --CHANGE_TO-- [\"Forest\"]:LULC | CONF: LOW\n- [\"Forest\"]:LULC --CHANGE_TO-- [\"land\"]:LOC | CONF: LOW\n- [\"land\"]:LOC --CHANGE_TO-- [\"land\"]:LOC | CONF: LOW\n- [\"land\"]:LOC --CHANGE_TO-- [\"Forest\"]:LULC | CONF: LOW\n- [\"size of the gallery [forest]\"]:CHANGE --DOES_NOT_CHANGE-- [\"while the size of the gallery [forest] did not change much\"]:CHANGE | CONF: HIGH\n- [\"size of the gallery [forest]\"]:CHANGE --IS_QUANTITY-- | CONF: HIGH\n- [\"while the size of the gallery [forest] did not change much\"]:CHANGE --IS_QUANTITY-- | CONF: HIGH",
+      "extracted_relations": [
+        {
+          "source": "[\"Forest\"]",
+          "source_type": "LULC",
+          "relationship": "DECREASES_BY",
+          "target": "[\"land\"]",
+          "target_type": "LOC",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "[\"Forest\"]",
+          "source_type": "LULC",
+          "relationship": "OCCURS_DURING",
+          "target": "[\"in 1984\"]",
+          "target_type": "DATE",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "[\"Forest\"]",
+          "source_type": "LULC",
+          "relationship": "OCCURS_DURING",
+          "target": "[\"in 2002\"]",
+          "target_type": "DATE",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "[\"Forest\"]",
+          "source_type": "LULC",
+          "relationship": "CHANGE_TO",
+          "target": "[\"Forest\"]",
+          "target_type": "LULC",
+          "confidence": "LOW"
+        },
+        {
+          "source": "[\"Forest\"]",
+          "source_type": "LULC",
+          "relationship": "CHANGE_TO",
+          "target": "[\"land\"]",
+          "target_type": "LOC",
+          "confidence": "LOW"
+        },
+        {
+          "source": "[\"land\"]",
+          "source_type": "LOC",
+          "relationship": "CHANGE_TO",
+          "target": "[\"land\"]",
+          "target_type": "LOC",
+          "confidence": "LOW"
+        },
+        {
+          "source": "[\"land\"]",
+          "source_type": "LOC",
+          "relationship": "CHANGE_TO",
+          "target": "[\"Forest\"]",
+          "target_type": "LULC",
+          "confidence": "LOW"
+        }
+      ],
+      "num_entities": 0,
+      "num_relations": 7,
+      "processing_timestamp": "2025-07-09T14:04:07.586814"
+    },
+    {
+      "sentence_id": 8,
+      "sentence": "About 26 and 31% of the total area of natural vegetation ([forest], woodland and tree [savanna]) will be converted to farmland and degraded [savanna] by 2050 if we assume the dynamics recorded from 1975 to 1990 and 1990-2010, respectively",
+      "original_entities": [
+        {
+          "text": "26",
+          "label": "CARDINAL",
+          "start_char": 6,
+          "end_char": 8
+        },
+        {
+          "text": "31%",
+          "label": "PERCENT",
+          "start_char": 13,
+          "end_char": 16
+        },
+        {
+          "text": "forest",
+          "label": "LULC",
+          "start_char": 59,
+          "end_char": 65
+        },
+        {
+          "text": "tree",
+          "label": "LULC",
+          "start_char": 81,
+          "end_char": 85
+        },
+        {
+          "text": "savanna",
+          "label": "LULC",
+          "start_char": 87,
+          "end_char": 94
+        },
+        {
+          "text": "converted",
+          "label": "CHANGE",
+          "start_char": 105,
+          "end_char": 114
+        },
+        {
+          "text": "savanna",
+          "label": "LULC",
+          "start_char": 141,
+          "end_char": 148
+        },
+        {
+          "text": "2050",
+          "label": "DATE",
+          "start_char": 153,
+          "end_char": 157
+        },
+        {
+          "text": "1975",
+          "label": "DATE",
+          "start_char": 198,
+          "end_char": 202
+        },
+        {
+          "text": "1990",
+          "label": "DATE",
+          "start_char": 206,
+          "end_char": 210
+        },
+        {
+          "text": "1990-2010",
+          "label": "COORDINATES",
+          "start_char": 215,
+          "end_char": 224
+        }
+      ],
+      "extracted_entities": [
+        {
+          "text": "About 26 and 31%",
+          "label": "PERCENT"
+        },
+        {
+          "text": "of the total area",
+          "label": "QUANTITY"
+        },
+        {
+          "text": "of natural vegetation",
+          "label": "LULC"
+        },
+        {
+          "text": "(forest), woodland and tree savanna",
+          "label": "LULC"
+        },
+        {
+          "text": "will be converted",
+          "label": "CHANGE"
+        },
+        {
+          "text": "to farmland",
+          "label": "LULC"
+        },
+        {
+          "text": "and degraded savanna",
+          "label": "LULC"
+        },
+        {
+          "text": "by 2050",
+          "label": "DATE"
+        },
+        {
+          "text": "if we assume",
+          "label": "PROCESS"
+        },
+        {
+          "text": "the dynamics",
+          "label": "PROCESS"
+        },
+        {
+          "text": "recorded from 1975 to 1990",
+          "label": "DATE"
+        },
+        {
+          "text": "and 1990-2010",
+          "label": "DATE"
+        }
+      ],
+      "model_response": "\n\nENTITIES:\n- About 26 and 31% | PERCENT\n- of the total area | QUANTITY\n- of natural vegetation | LULC\n- (forest), woodland and tree savanna | LULC\n- will be converted | CHANGE\n- to farmland | LULC\n- and degraded savanna | LULC\n- by 2050 | DATE\n- if we assume | PROCESS\n- the dynamics | PROCESS\n- recorded from 1975 to 1990 | DATE\n- and 1990-2010 | DATE\n\nRELATIONS:\n- 26% and 31%:PERCENT --DECREASES_BY--> total area:QUANTITY | CONF: HIGH\n- natural vegetation:LULC --CHANGE_TO--> farmland:LULC | CONF: HIGH\n- natural vegetation:LULC --CHANGE_TO--> degraded savanna:LULC | CONF: HIGH\n- 1975-1990:DATE --CAUSES--> assumption:PROCESS | CONF: MEDIUM\n- 1990-2010:DATE --CAUSES--> assumption:PROCESS | CONF: MEDIUM\n- assumption:PROCESS --ENABLES--> conversion:CHANGE | CONF: HIGH\n- conversion:CHANGE --OCCURS_DURING--> 2050:DATE | CONF: HIGH",
+      "extracted_relations": [
+        {
+          "source": "26% and 31%",
+          "source_type": "PERCENT",
+          "relationship": "DECREASES_BY",
+          "target": "total area",
+          "target_type": "QUANTITY",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "natural vegetation",
+          "source_type": "LULC",
+          "relationship": "CHANGE_TO",
+          "target": "farmland",
+          "target_type": "LULC",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "natural vegetation",
+          "source_type": "LULC",
+          "relationship": "CHANGE_TO",
+          "target": "degraded savanna",
+          "target_type": "LULC",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "1975-1990",
+          "source_type": "DATE",
+          "relationship": "CAUSES",
+          "target": "assumption",
+          "target_type": "PROCESS",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "1990-2010",
+          "source_type": "DATE",
+          "relationship": "CAUSES",
+          "target": "assumption",
+          "target_type": "PROCESS",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "assumption",
+          "source_type": "PROCESS",
+          "relationship": "ENABLES",
+          "target": "conversion",
+          "target_type": "CHANGE",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "conversion",
+          "source_type": "CHANGE",
+          "relationship": "OCCURS_DURING",
+          "target": "2050",
+          "target_type": "DATE",
+          "confidence": "HIGH"
+        }
+      ],
+      "num_entities": 12,
+      "num_relations": 7,
+      "processing_timestamp": "2025-07-09T14:04:31.426436"
+    },
+    {
+      "sentence_id": 9,
+      "sentence": "Although such schemes clearly have the potential to benefit biodiversity and the wider environment, further research is required to quantify the benefits and risks, assess the scales over which benefits are being and are likely to be delivered, and to assess the socio-economic implications for livelihoods and land-use .'}]}, {'@xmlns': 'http://www.tei-c.org/ns/1.0', 'head': {'@n': '4.3.', '#text': 'Wider implications'}, 'p': {'ref': [{'@type': 'figure', '@target': '#fig_0', '#text': '1'}, {'@type': 'bibr', '@target': '#b54', '#text': '(Laporte et al., 2007)'}, {'@type': 'bibr', '#text': '(Laurance et al., 2006a,b;'}, {'@type': 'bibr', '@target': '#b89', '#text': 'Wilkie et al., 2000;'}, {'@type': 'bibr', '@target': '#b92', '#text': 'Zhang et al., 2006)'}, {'@type': 'bibr', '@target': '#b16', '#text': '(Butler and Laurance, 2008)'}], '#text': 'The tropical [forest] zone in West Africa has experienced centuries of human modification, leading to a substantial decline in [forest] cover and loss of [forest] biodiversity",
+      "original_entities": [
+        {
+          "text": "4.3",
+          "label": "CARDINAL",
+          "start_char": 385,
+          "end_char": 388
+        },
+        {
+          "text": "1",
+          "label": "CARDINAL",
+          "start_char": 489,
+          "end_char": 490
+        },
+        {
+          "text": "2007",
+          "label": "DATE",
+          "start_char": 558,
+          "end_char": 562
+        },
+        {
+          "text": "2006",
+          "label": "DATE",
+          "start_char": 613,
+          "end_char": 617
+        },
+        {
+          "text": "2000",
+          "label": "DATE",
+          "start_char": 687,
+          "end_char": 691
+        },
+        {
+          "text": "Zhang",
+          "label": "LOC",
+          "start_char": 743,
+          "end_char": 748
+        },
+        {
+          "text": "2006",
+          "label": "DATE",
+          "start_char": 757,
+          "end_char": 761
+        },
+        {
+          "text": "2008",
+          "label": "DATE",
+          "start_char": 835,
+          "end_char": 839
+        },
+        {
+          "text": "forest",
+          "label": "LULC",
+          "start_char": 869,
+          "end_char": 875
+        },
+        {
+          "text": "West Africa",
+          "label": "LOC",
+          "start_char": 885,
+          "end_char": 896
+        },
+        {
+          "text": "decline",
+          "label": "CHANGE",
+          "start_char": 971,
+          "end_char": 978
+        },
+        {
+          "text": "forest",
+          "label": "LULC",
+          "start_char": 983,
+          "end_char": 989
+        },
+        {
+          "text": "loss",
+          "label": "CHANGE",
+          "start_char": 1001,
+          "end_char": 1005
+        },
+        {
+          "text": "forest",
+          "label": "LULC",
+          "start_char": 1010,
+          "end_char": 1016
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- \"tropical forest zone in West Africa\" : LOC\n- \"West Africa\" : LOC\n- \"centuries\" : DATE\n- \"human modification\" : PROCESS\n- \"substantial decline\" : QUANTITY\n- \"forest cover\" : LULC\n- \"loss of forest biodiversity\" : LULC\n- \"further research\" : PROCESS\n- \"benefits and risks\" : QUANTITY\n- \"scales\" : QUANTITY\n- \"livelihoods\" : PERSON\n- \"land-use\" : LULC\n\nRELATIONS:\n- \"tropical forest zone in West Africa\":LOC --LOCATED_IN-- \"West Africa\":LOC | CONF: HIGH\n- \"human modification\":PROCESS --CAUSES-- \"substantial decline\":QUANTITY | CONF: HIGH\n- \"substantial decline\":QUANTITY --DECREASES_BY-- \"forest cover\":LULC | CONF: HIGH\n- \"further research\":PROCESS --REQUIRES-- \"benefits and risks\":QUANTITY | CONF: MEDIUM\n- \"benefits and risks\":QUANTITY --ASSOCIATED_WITH-- \"scales\":QUANTITY | CONF: MEDIUM\n- \"scales\":QUANTITY --ASSOCIATED_WITH-- \"livelihoods\":PERSON | CONF: MEDIUM\n- \"livelihoods\":PERSON --IMPACTED_BY-- \"land-use\":LULC | CONF: MEDIUM",
+      "extracted_relations": [
+        {
+          "source": "\"tropical forest zone in West Africa\"",
+          "source_type": "LOC",
+          "relationship": "LOCATED_IN",
+          "target": "\"West Africa\"",
+          "target_type": "LOC",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "\"human modification\"",
+          "source_type": "PROCESS",
+          "relationship": "CAUSES",
+          "target": "\"substantial decline\"",
+          "target_type": "QUANTITY",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "\"substantial decline\"",
+          "source_type": "QUANTITY",
+          "relationship": "DECREASES_BY",
+          "target": "\"forest cover\"",
+          "target_type": "LULC",
+          "confidence": "HIGH"
+        }
+      ],
+      "num_entities": 0,
+      "num_relations": 3,
+      "processing_timestamp": "2025-07-09T14:04:56.712121"
+    },
+    {
+      "sentence_id": 10,
+      "sentence": "Another variance analysis using GLM was conducted for the variable means of all recorded trees and [shrubs] per [land use] type to assess the contribution of the size of individual trees and [shrubs] to the differences in woody vegetation between [land use] types",
+      "original_entities": [
+        {
+          "text": "trees",
+          "label": "LULC",
+          "start_char": 89,
+          "end_char": 94
+        },
+        {
+          "text": "shrubs",
+          "label": "LULC",
+          "start_char": 100,
+          "end_char": 106
+        },
+        {
+          "text": "trees",
+          "label": "LULC",
+          "start_char": 181,
+          "end_char": 186
+        },
+        {
+          "text": "shrubs",
+          "label": "LULC",
+          "start_char": 192,
+          "end_char": 198
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- Another variance analysis\n- using\n- GLM\n- for\n- the variable means\n- of\n- all recorded trees\n- and shrubs\n- per\n- land use\n- type\n- to assess\n- the contribution\n- of\n- the size\n- of individual trees\n- and shrubs\n- to the differences\n- in woody vegetation\n- between\n- land use\n- types\n\nRELATIONS:\n- Another variance analysis:PROCESS --CAUSES--> conducting:EVENT (High)\n- using:CONNECTOR --CONNECTED_WITH--> GLM:PROCESS (Medium)\n- for:CONNECTOR --CONNECTED_WITH--> the variable means:QUANTITY (Low)\n- of:CONNECTOR --CONNECTED_WITH--> all recorded trees:LULC (Medium)\n- and shrubs:LULC (Medium)\n- per:CONNECTOR --CONNECTED_WITH--> land use:LULC (Medium)\n- to assess:VERB --CONNECTED_WITH--> the contribution:QUANTITY (Medium)\n- of:CONNECTOR --CONNECTED_WITH--> the size:QUANTITY (Medium)\n- of individual trees:LULC --INCREASES_BY--> the differences:QUANTITY (Medium)\n- and shrubs:LULC --INCREASES_BY--> the differences:QUANTITY (Medium)\n- to the differences:QUANTITY --MEASURES--> in woody vegetation:LULC (Medium)\n- between:CONNECTOR --CONNECTED_WITH--> land use:LULC (Medium)\n- types:PLURAL_SUFFIX --MODIFIES--> land use:LULC (Low)",
+      "extracted_relations": [
+        {
+          "source": "of individual trees",
+          "source_type": "LULC",
+          "relationship": "INCREASES_BY",
+          "target": "> the differences",
+          "target_type": "QUANTITY",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "and shrubs",
+          "source_type": "LULC",
+          "relationship": "INCREASES_BY",
+          "target": "> the differences",
+          "target_type": "QUANTITY",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "to the differences",
+          "source_type": "QUANTITY",
+          "relationship": "MEASURES",
+          "target": "> in woody vegetation",
+          "target_type": "LULC",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "num_entities": 0,
+      "num_relations": 3,
+      "processing_timestamp": "2025-07-09T14:05:23.973815"
+    },
+    {
+      "sentence_id": 11,
+      "sentence": "Assuming the dynamics recorded in the second period , the amounts of land covered by [forest], woodland and tree [savanna] will decrease by 5, 9 and 17% of their cover in 1990, respectively, while the amount of degraded [savanna] and farmland will increase by 9 and 22% of the total area, respectively",
+      "original_entities": [
+        {
+          "text": "forest",
+          "label": "LULC",
+          "start_char": 86,
+          "end_char": 92
+        },
+        {
+          "text": "tree",
+          "label": "LULC",
+          "start_char": 108,
+          "end_char": 112
+        },
+        {
+          "text": "savanna",
+          "label": "LULC",
+          "start_char": 114,
+          "end_char": 121
+        },
+        {
+          "text": "decrease",
+          "label": "CHANGE",
+          "start_char": 128,
+          "end_char": 136
+        },
+        {
+          "text": "5, 9",
+          "label": "COORDINATES",
+          "start_char": 140,
+          "end_char": 144
+        },
+        {
+          "text": "17%",
+          "label": "PERCENT",
+          "start_char": 149,
+          "end_char": 152
+        },
+        {
+          "text": "1990",
+          "label": "DATE",
+          "start_char": 171,
+          "end_char": 175
+        },
+        {
+          "text": "savanna",
+          "label": "LULC",
+          "start_char": 221,
+          "end_char": 228
+        },
+        {
+          "text": "increase",
+          "label": "CHANGE",
+          "start_char": 248,
+          "end_char": 256
+        },
+        {
+          "text": "9",
+          "label": "CARDINAL",
+          "start_char": 260,
+          "end_char": 261
+        },
+        {
+          "text": "22%",
+          "label": "PERCENT",
+          "start_char": 266,
+          "end_char": 269
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- assuming the dynamics recorded in the second period : CHANGE\n- forest : LULC\n- woodland : LULC\n- tree savanna : LULC\n- degraded savanna : LULC\n- farmland : LULC\n- amounts of land : QUANTITY\n- 1990 : DATE\n- 5 : PERCENT\n- 9 : PERCENT\n- 17 : PERCENT\n- 9 : PERCENT\n- 22 : PERCENT\n- total area : QUANTITY\n- Assuming the dynamics recorded in the second period : CHANGE\n- forest : LULC\n- woodland : LULC\n- tree savanna : LULC\n- degraded savanna : LULC\n- farmland : LULC\n- amounts of land : QUANTITY\n- 1990 : DATE\n\nRELATIONS:\n- amounts_of_land:QUANTITY --DECREASES_BY-- forest:LULC:5% | CONF: HIGH\n- amounts_of_land:QUANTITY --DECREASES_BY-- woodland:LULC:9% | CONF: HIGH\n- amounts_of_land:QUANTITY --DECREASES_BY-- tree_savanna:LULC:17% | CONF: HIGH\n- amounts_of_land:QUANTITY --INCREASES_BY-- degraded_savanna:LULC:9% | CONF: HIGH\n- amounts_of_land:QUANTITY --INCREASES_BY-- farmland:LULC:22% | CONF: HIGH\n- assuming_dynamics:CHANGE --CAUSES-- forest:LULC --DECREASES_BY-- 5% | CONF: MEDIUM\n- assuming_dynamics:CHANGE --CAUSES-- woodland:LULC --DECREASES_BY-- 9% | CONF: MEDIUM\n- assuming_dynamics:CHANGE --CAUSES-- tree_savanna:LULC --DECREASES_BY-- ",
+      "extracted_relations": [
+        {
+          "source": "amounts_of_land",
+          "source_type": "QUANTITY",
+          "relationship": "DECREASES_BY",
+          "target": "forest",
+          "target_type": "LULC",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "amounts_of_land",
+          "source_type": "QUANTITY",
+          "relationship": "DECREASES_BY",
+          "target": "woodland",
+          "target_type": "LULC",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "amounts_of_land",
+          "source_type": "QUANTITY",
+          "relationship": "DECREASES_BY",
+          "target": "tree_savanna",
+          "target_type": "LULC",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "amounts_of_land",
+          "source_type": "QUANTITY",
+          "relationship": "INCREASES_BY",
+          "target": "degraded_savanna",
+          "target_type": "LULC",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "amounts_of_land",
+          "source_type": "QUANTITY",
+          "relationship": "INCREASES_BY",
+          "target": "farmland",
+          "target_type": "LULC",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "assuming_dynamics",
+          "source_type": "CHANGE",
+          "relationship": "CAUSES",
+          "target": "forest",
+          "target_type": "LULC",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "assuming_dynamics",
+          "source_type": "CHANGE",
+          "relationship": "CAUSES",
+          "target": "woodland",
+          "target_type": "LULC",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "assuming_dynamics",
+          "source_type": "CHANGE",
+          "relationship": "CAUSES",
+          "target": "tree_savanna",
+          "target_type": "LULC",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "num_entities": 0,
+      "num_relations": 8,
+      "processing_timestamp": "2025-07-09T14:05:57.878522"
+    },
+    {
+      "sentence_id": 12,
+      "sentence": "Conversely the decrease in the herbaceous standing [crop], due to the shortening of the [fallow] period, the extension of cultivated and cleared fields, the grazing by cattle, and more generally the increment in landscape discontinuities limit the spread of fire and the size of burnt areas",
+      "original_entities": [
+        {
+          "text": "decrease",
+          "label": "CHANGE",
+          "start_char": 15,
+          "end_char": 23
+        },
+        {
+          "text": "crop",
+          "label": "LULC",
+          "start_char": 52,
+          "end_char": 56
+        },
+        {
+          "text": "fallow",
+          "label": "LULC",
+          "start_char": 89,
+          "end_char": 95
+        }
+      ],
+      "extracted_entities": [
+        {
+          "text": "decrease",
+          "label": "CHANGE"
+        },
+        {
+          "text": "herbaceous standing crop",
+          "label": "LULC"
+        },
+        {
+          "text": "extension of cultivated and cleared fields",
+          "label": "CHANGE"
+        },
+        {
+          "text": "grazing by cattle",
+          "label": "PROCESS"
+        },
+        {
+          "text": "landscape discontinuities",
+          "label": "LULC"
+        },
+        {
+          "text": "spread of fire",
+          "label": "PROCESS"
+        },
+        {
+          "text": "size of burnt areas",
+          "label": "QUANTITY"
+        }
+      ],
+      "model_response": "\n\nENTITIES:\n- decrease | CHANGE\n- herbaceous standing crop | LULC\n- fallow period | TIME\n- extension of cultivated and cleared fields | CHANGE\n- grazing by cattle | PROCESS\n- landscape discontinuities | LULC\n- limit | VERB\n- spread of fire | PROCESS\n- size of burnt areas | QUANTITY\n\nRELATIONS:\n- decrease:CHANGE --DECREASES_BY--> herbaceous standing crop:LULC | CONF: HIGH\n- herbaceous standing crop:LULC --CHANGE_TO--> :LULC | CONF: MEDIUM (implicit)\n- fallow period:TIME --CAUSES--> decrease:CHANGE | CONF: MEDIUM\n- extension of cultivated and cleared fields:CHANGE --CAUSES--> decrease:CHANGE | CONF: MEDIUM\n- grazing by cattle:PROCESS --AFFECTS--> herbaceous standing crop:LULC | CONF: HIGH\n- landscape discontinuities:LULC --LIMITS--> spread of fire:PROCESS | CONF: HIGH\n- spread of fire:PROCESS --AFFECTS--> size of burnt areas:QUANTITY | CONF: HIGH",
+      "extracted_relations": [
+        {
+          "source": "decrease",
+          "source_type": "CHANGE",
+          "relationship": "DECREASES_BY",
+          "target": "herbaceous standing crop",
+          "target_type": "LULC",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "herbaceous standing crop",
+          "source_type": "LULC",
+          "relationship": "CHANGE_TO",
+          "target": "",
+          "target_type": "LULC",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "extension of cultivated and cleared fields",
+          "source_type": "CHANGE",
+          "relationship": "CAUSES",
+          "target": "decrease",
+          "target_type": "CHANGE",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "grazing by cattle",
+          "source_type": "PROCESS",
+          "relationship": "AFFECTS",
+          "target": "herbaceous standing crop",
+          "target_type": "LULC",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "spread of fire",
+          "source_type": "PROCESS",
+          "relationship": "AFFECTS",
+          "target": "size of burnt areas",
+          "target_type": "QUANTITY",
+          "confidence": "HIGH"
+        }
+      ],
+      "num_entities": 7,
+      "num_relations": 5,
+      "processing_timestamp": "2025-07-09T14:06:17.902463"
+    },
+    {
+      "sentence_id": 13,
+      "sentence": "Coping capacities were therefore assumed to be lower for the Bolgatanga area, which could lead to local food crises provoked by [urban] sprawl where land becomes useless for [agriculture].']}, {'@xmlns': 'http://www.tei-c.org/ns/1.0', 'head': {'@n': '3.2.', '#text': 'Driving forces of [[urban] development]'}, 'p': [{'ref': {'@type': 'table', '#text': '6a'}, '#text': 'Our three data sets show at a high confidence level that population growth is a driving force of [[urban] development] in both study areas (Table )",
+      "original_entities": [
+        {
+          "text": "Bolgatanga",
+          "label": "LOC",
+          "start_char": 61,
+          "end_char": 71
+        },
+        {
+          "text": "urban",
+          "label": "LULC",
+          "start_char": 129,
+          "end_char": 134
+        },
+        {
+          "text": "agriculture",
+          "label": "LULC",
+          "start_char": 175,
+          "end_char": 186
+        },
+        {
+          "text": "3.2",
+          "label": "CARDINAL",
+          "start_char": 251,
+          "end_char": 254
+        },
+        {
+          "text": "Dri",
+          "label": "CHANGE",
+          "start_char": 268,
+          "end_char": 271
+        },
+        {
+          "text": "ving",
+          "label": "CHANGE",
+          "start_char": 271,
+          "end_char": 275
+        },
+        {
+          "text": "urban",
+          "label": "LULC",
+          "start_char": 288,
+          "end_char": 293
+        },
+        {
+          "text": "three",
+          "label": "CARDINAL",
+          "start_char": 374,
+          "end_char": 379
+        },
+        {
+          "text": "growth",
+          "label": "CHANGE",
+          "start_char": 438,
+          "end_char": 444
+        },
+        {
+          "text": "driving",
+          "label": "CHANGE",
+          "start_char": 450,
+          "end_char": 457
+        },
+        {
+          "text": "urban",
+          "label": "LULC",
+          "start_char": 469,
+          "end_char": 474
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- \"Bolgatanga area\" : LOC\n- \"[urban] sprawl\" : PROCESS\n- \"land becomes useless for [agriculture]\" : PROCESS\n- \"population growth\" : CHANGE\n- \"study areas\" : LOC\n- \"Table \" : DATE\n- \"three data sets\" : DATASET\n\nRELATIONS:\n- \"population growth\" : CHANGE --CAUSES-- \"urban sprawl\" : PROCESS | CONF: HIGH\n- \"urban sprawl\" : PROCESS --AFFECTS-- \"land becomes useless for [agriculture]\" : PROCESS | CONF: MEDIUM\n- \"Bolgatanga area\" : LOC --LOCATED_IN-- \"study areas\" : LOC | CONF: HIGH\n- \"Table \" : DATE --OCCURS_DURING-- \"our research\" : PROCESS | CONF: MEDIUM\n- \"three data sets\" : DATASET --PROVIDES-- \"evidence\" : QUANTITY | CONF: HIGH\n- \"our three data sets\" : DATASET --SHOW-- \"high confidence level\" : PERCENT | CONF: HIGH\n- \"population growth\" : CHANGE --IS_DRIVING_FORCE_OF-- \"urban development\" : PROCESS | CONF: HIGH\n- \"population growth\" : CHANGE --IS_DRIVING_FORCE_OF-- \"urban development\" : PROCESS --IN_STUDY_AREAS-- | CONF: HIGH\n- \"urban development\" : PROCESS --IS_DRIVING_FORCE_OF-- \"urban sprawl\" : PROCESS | CONF: HIGH\n- \"urban sprawl\" : PROCESS --LEADS_TO-- \"local food crises\" : PROCESS | CONF: MEDIUM\n- \"local food crises\" : PROCESS --PROVOKED_BY-- \"urban sprawl\" : PROCESS | CONF: MEDIUM\n- \"land becomes useless for [agriculture]\" : PROCESS --RESULTS_",
+      "extracted_relations": [],
+      "num_entities": 0,
+      "num_relations": 0,
+      "processing_timestamp": "2025-07-09T14:06:51.611005"
+    },
+    {
+      "sentence_id": 14,
+      "sentence": "describes Rwandan [agriculture] as caught in a \"low investment trap\"; less than 10% of cropland is irrigated, while tractors, bank credit and government aid are all scarce",
+      "original_entities": [
+        {
+          "text": "Rwandan",
+          "label": "LOC",
+          "start_char": 10,
+          "end_char": 17
+        },
+        {
+          "text": "agriculture",
+          "label": "LULC",
+          "start_char": 19,
+          "end_char": 30
+        },
+        {
+          "text": "less than 10%",
+          "label": "PERCENT",
+          "start_char": 70,
+          "end_char": 83
+        },
+        {
+          "text": "cropland",
+          "label": "LULC",
+          "start_char": 87,
+          "end_char": 95
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- agriculture:LULC\n- Rwandan:LOC\n- less than 10%:PERCENT\n- cropland:LULC\n- tractors:OBJECT\n- bank credit:OBJECT\n- government aid:OBJECT\n\nRELATIONS:\n- Rwandan:LOC --IS_LOCATED_IN-- agriculture:LULC | CONF: HIGH\n- agriculture:LULC --HAS_QUANTITY-- less than 10%:PERCENT --OF-- irrigated_cropland:LULC | CONF: MEDIUM\n- less than 10%:PERCENT --IS_SMALLER_THAN-- 100%:PERCENT | CONF: HIGH\n- agriculture:LULC --IS_DIFFERENT_FROM-- tractor:OBJECT | CONF: HIGH\n- agriculture:LULC --IS_DIFFERENT_FROM-- bank_credit:OBJECT | CONF: HIGH\n- agriculture:LULC --IS_DIFFERENT_FROM-- government_aid:OBJECT | CONF: HIGH\n\nThis is a correct extraction of entities and their relationships based on the given sentence. The entities represent the locations, land use/land cover types, and objects mentioned in the sentence. The relationships describe how these entities are related to each other. For example, the first relationship states that \"Rwandan\" is located in \"agriculture,\" indicating that agriculture is located in Rwanda. The second relationship indicates that less than 10% of the irrigated cropland in agriculture is less than 100%. This represents the fact that only a small portion of the agriculture in Rwanda is irrigated. The third, fourth, and fifth relationships indicate that agriculture is different from tractors, bank credit, and government aid, respectively. These relationships reflect the fact that agriculture is not a tractor, does not provide bank credit, and is not government aid.",
+      "extracted_relations": [],
+      "num_entities": 0,
+      "num_relations": 0,
+      "processing_timestamp": "2025-07-09T14:07:21.111580"
+    },
+    {
+      "sentence_id": 15,
+      "sentence": "Due to the weeding practice, [bare soil] dominates in cropped fields in the early growing season while herbaceous vegetation continues to grow in fallows and rangelands",
+      "original_entities": [
+        {
+          "text": "bare soil",
+          "label": "LULC",
+          "start_char": 30,
+          "end_char": 39
+        },
+        {
+          "text": "early growing season",
+          "label": "DATE",
+          "start_char": 76,
+          "end_char": 96
+        },
+        {
+          "text": "grow",
+          "label": "CHANGE",
+          "start_char": 138,
+          "end_char": 142
+        },
+        {
+          "text": "fallows",
+          "label": "LULC",
+          "start_char": 146,
+          "end_char": 153
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- [\"bare soil\"]: LULC\n- [\"cropped fields\"]: LULC\n- [\"herbaceous vegetation\"]: LULC\n- [\"early growing season\"]: DATE\n- [\"fallows\"]: LULC\n- [\"rangelands\"]: LULC\n\nRELATIONS:\n- [\"bare soil\"]:LULC --DOMINATES_DURING-- [\"early growing season\"]:DATE | CONF: HIGH\n- [\"bare soil\"]:LULC --DOES_NOT_DOMINATE_DURING-- [\"fallows\"]:LULC | CONF: HIGH\n- [\"bare soil\"]:LULC --DOES_NOT_DOMINATE_DURING-- [\"rangelands\"]:LULC | CONF: HIGH\n- [\"herbaceous vegetation\"]:LULC --CONTINUES_TO_GROW_DURING-- [\"fallows\"]:LULC | CONF: MEDIUM\n- [\"herbaceous vegetation\"]:LULC --CONTINUES_TO_GROW_DURING-- [\"rangelands\"]:LULC | CONF: MEDIUM\n\nThis output indicates that during the early growing season, bare soil dominates in cropped fields, but herbaceous vegetation continues to grow in fallows and rangelands.",
+      "extracted_relations": [],
+      "num_entities": 0,
+      "num_relations": 0,
+      "processing_timestamp": "2025-07-09T14:07:43.034196"
+    },
+    {
+      "sentence_id": 16,
+      "sentence": "From the expert interviews, we learned that migration is a driver and a consequence of [LULCC] and population pressure to which the driver \"labour shortage\" is related",
+      "original_entities": [
+        {
+          "text": "driver",
+          "label": "CHANGE",
+          "start_char": 59,
+          "end_char": 65
+        },
+        {
+          "text": "driver",
+          "label": "CHANGE",
+          "start_char": 132,
+          "end_char": 138
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- [\"expert interviews\"]: INTERVIEWS\n- [\"we learned\"]: LEARNED\n- [\"migration\"]: MIGRATION\n- [\"driver\"]: DRIVER\n- [\"labour shortage\"]: LABOUR_SHORTAGE\n- [\"[LULCC]\"]: LULCC\n- [\"population pressure\"]: POPULATION_PRESSURE\n\nRELATIONS:\n- LEARNED:LEARNED --CAUSES-- MIGRATION:MIGRATION | CONF: HIGH\n- MIGRATION:MIGRATION --IS_A-- DRIVER:DRIVER | CONF: HIGH\n- DRIVER:LABOUR_SHORTAGE --IS_A-- DRIVER:DRIVER | CONF: HIGH\n- LABOUR_SHORTAGE:LABOUR_SHORTAGE --IS_RELATED_TO-- POPULATION_PRESSURE:POPULATION_PRESSURE | CONF: HIGH\n- POPULATION_PRESSURE:POPULATION_PRESSURE --IS_A-- DRIVER:DRIVER | CONF: HIGH\n- LULCC:LULCC --IS_A-- CHANGE:CHANGE | CONF: HIGH\n- [\"from the expert interviews, we learned\"]: LEARNED --OCCURS_DURING-- [\"this sentence\"]: SENTENCE | CONF: MEDIUM\n- [\"that migration is a driver and a consequence of\"]: MIGRATION --IS_A-- CAUSE_AND_EFFECT:CAUSE_AND_EFFECT | CONF: HIGH\n- [\"migration is a driver and a consequence of\"]: MIGRATION --IS_RELATED_TO-- LULCC:LULCC | CONF: HIGH\n- [\"is related to\"]: LABOUR_SHORTAGE --IS_RELATED_TO-- POPULATION_PRESSURE:POPULATION_PRESSURE | CONF: HIGH\n- [\"to which the driver\"]: LABOUR_SHORTAGE --IS_RELATED_TO-- [\"the driver\"]: DRIVER |",
+      "extracted_relations": [],
+      "num_entities": 0,
+      "num_relations": 0,
+      "processing_timestamp": "2025-07-09T14:08:16.619972"
+    },
+    {
+      "sentence_id": 17,
+      "sentence": "In 1986, the grazing land had much higher proportion of the total regional area than other [land use] types while the size of croplands was substantially high after 16 years (Table )",
+      "original_entities": [
+        {
+          "text": "1986",
+          "label": "DATE",
+          "start_char": 3,
+          "end_char": 7
+        },
+        {
+          "text": "croplands",
+          "label": "LULC",
+          "start_char": 126,
+          "end_char": 135
+        },
+        {
+          "text": "16 years",
+          "label": "DATE",
+          "start_char": 165,
+          "end_char": 173
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- \"grazing land\" : LULC\n- \"other [land use] types\" : LULC\n- \"[table ]\" : OBJECT\n- \"1986\" : DATE\n- \"1986\" : DATE\n- \"Table\" : OBJECT\n- \"total regional area\" : QUANTITY\n- \"substantially high\" : PERCENT\n- \"after 16 years\" : TIME\n\nRELATIONS:\n- \"grazing land\":LULC --HAS_PROPORTION-- \"total regional area\":QUANTITY | CONF: HIGH\n- \"grazing land\":LULC --HAD_HIGHER_PROPORTION-- \"other [land use] types\":LULC | CONF: HIGH\n- \"size of croplands\":QUANTITY --INCREASED_BY-- \"substantially high\" :PERCENT | CONF: MEDIUM\n- \"croplands\":LULC --EXISTED_AFTER-- \"after 16 years\" :TIME | CONF: HIGH\n- \"1986\" :DATE --PRECEDED_BY-- \"16 years\" :TIME | CONF: HIGH\n- \"[table ]\":OBJECT --CONTAINS_DATA_ABOUT-- \"size of croplands\":QUANTITY | CONF: MEDIUM\n- \"[table ]\":OBJECT --CONTAINS_DATA_ABOUT-- \"grazing land\":LULC | CONF: MEDIUM\n- \"[table ]\":OBJECT --CONTAINS_DATA_ABOUT-- \"other [land use] types\":LULC | CONF: MEDIUM",
+      "extracted_relations": [],
+      "num_entities": 0,
+      "num_relations": 0,
+      "processing_timestamp": "2025-07-09T14:08:43.100456"
+    },
+    {
+      "sentence_id": 18,
+      "sentence": "In 1990, woodland and tree [savanna] were still the dominant [land cover] types",
+      "original_entities": [
+        {
+          "text": "1990",
+          "label": "DATE",
+          "start_char": 3,
+          "end_char": 7
+        },
+        {
+          "text": "tree",
+          "label": "LULC",
+          "start_char": 22,
+          "end_char": 26
+        },
+        {
+          "text": "savanna",
+          "label": "LULC",
+          "start_char": 28,
+          "end_char": 35
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- [\"In 1990\", DATE]\n- [\"woodland and tree [savanna]\", LULC]\n- [\"were still the dominant\", PERCENT]\n- [\"types\", LULC]\n\nRELATIONS:\n- [\"In 1990\":DATE] --OCCURS_DURING-- [\"were still the dominant\":PERCENT] | CONF: HIGH\n- [\"woodland and tree [savanna]\":LULC] --IS_COMPOSITE_OF-- [\"woodland\":LULC, \"tree [savanna]\":LULC] | CONF: HIGH\n- [\"woodland and tree [savanna]\":LULC] --IS_DOMINANT_OF-- [\"types\":LULC] | CONF: HIGH\n\nThere is no explicit or directly implied relation between entities in the sentence.",
+      "extracted_relations": [],
+      "num_entities": 0,
+      "num_relations": 0,
+      "processing_timestamp": "2025-07-09T14:08:57.314898"
+    },
+    {
+      "sentence_id": 19,
+      "sentence": "In fact, some NTFP-providing trees, such as the baobab (Adansonia digitata) and the shea tree (Vitellaria paradoxa), are protected by farmers during the agricultural cycle of [cultivation] and fallows and are therefore still well preserved",
+      "original_entities": [
+        {
+          "text": "trees",
+          "label": "LULC",
+          "start_char": 29,
+          "end_char": 34
+        },
+        {
+          "text": "tree",
+          "label": "LULC",
+          "start_char": 89,
+          "end_char": 93
+        },
+        {
+          "text": "cultivation",
+          "label": "PROCESS",
+          "start_char": 176,
+          "end_char": 187
+        },
+        {
+          "text": "fallows",
+          "label": "LULC",
+          "start_char": 193,
+          "end_char": 200
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- some NTFP-providing trees: LULC\n- baobab (Adansonia digitata): LULC\n- shea tree (Vitellaria paradoxa): LULC\n- farmers: PERSON\n- agricultural cycle: PROCESS\n- cultivation: PROCESS\n- fallows: PROCESS\n- protected: STATE\n\nRELATIONS:\n- some NTFP-providing trees:LULC --LOCATED_IN-- farmers:PERSON | CONF: HIGH\n- baobab:LULC --IS_A-- LULC:WOODY_VEGETATION | CONF: HIGH\n- shea tree:LULC --IS_A-- LULC:WOODY_VEGETATION | CONF: HIGH\n- farmers:PERSON --PROTECTS-- some NTFP-providing trees:LULC | CONF: HIGH\n- agricultural cycle:PROCESS --COMPRISES-- cultivation:PROCESS | CONF: MEDIUM\n- agricultural cycle:PROCESS --COMPRISES-- fallows:PROCESS | CONF: MEDIUM\n- some NTFP-providing trees:LULC --PRESERVED_DURING-- agricultural cycle:PROCESS | CONF: HIGH\n- agricultural cycle:PROCESS --OCCURS_DURING-- [cultivation and fallows]:PROCESS | CONF: MEDIUM",
+      "extracted_relations": [
+        {
+          "source": "agricultural cycle",
+          "source_type": "PROCESS",
+          "relationship": "OCCURS_DURING",
+          "target": "[cultivation and fallows]",
+          "target_type": "PROCESS",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "num_entities": 0,
+      "num_relations": 1,
+      "processing_timestamp": "2025-07-09T14:09:19.781113"
+    }
+  ]
+}

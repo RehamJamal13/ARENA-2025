@@ -1,0 +1,14 @@
+{
+  "total_sentences_processed": 5,
+  "sentences_with_relations": 3,
+  "total_relations_extracted": 13,
+  "relation_types": {
+    "CAUSES": 5,
+    "OCCURS_DURING": 2,
+    "LOCATED_IN": 2,
+    "ENABLES": 1,
+    "MEASURES": 1,
+    "AFFECTS": 1,
+    "FROM_TO": 1
+  }
+}

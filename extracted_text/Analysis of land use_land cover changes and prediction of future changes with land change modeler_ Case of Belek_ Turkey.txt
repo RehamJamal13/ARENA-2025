@@ -1,0 +1,330 @@
+================================================================================
+TITLE: Analysis of Land Use/land Cover Changes and Prediction of Future Changes With Land Change Modeler: Case of Belek, Turkey
+================================================================================
+
+AUTHORS:
+- Halil Akdeniz
+
+ABSTRACT:
+In the areas declared to be a tourism center, a rapid tourism-related development occurs depending on the investments in tourism, which causes a dramatic land use and land cover changes. Determining, monitoring, and modeling of land use and land cover changes are required in order to ensure the conservation-use balance and sustainability within such vulnerable areas that are under the development pressure. This study consists of four steps. In the rst step, the Landsat images dated 1985, 2000, and 2021 were classi ed using the maximum likelihood method and the land use and land cover of Belek Tourism Center located in Turkey were determined. The second step included the identi cation of areal and spatial changes between the land use and land cover classes for the periods between 1985 and 2000, 2000 and 2021, and 1985 and 2021.  In the third step, the land use and land cover changes in Belek Tourism Center for 2040 were modeled using the Land Change Modeler. Last step evaluated the relationship between the modeled spatial development pattern and the current planning decisions. According to the results obtained through a 36-year research, the rates of settlement, forest, and water body areas have increased by 11.91%, 13.67%, and 0.82%, respectively whereas the rates of barren land and agricultural areas have reduced by 22.25% and 4.15%, respectively. The land use map modeled for 2040 predicts the settlement areas to expand by 5.46% and the agricultural areas to shrink by 4.21% by comparison with 2021.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Changes of the land use and land cover consist of a complex and dynamic process that occurs under the in uence of natural or anthropogenic activities, affecting the entire ecosystem. Constituting an important part of the ecosystem and being one of the primary scarce resources, coastal areas require planned development to ensure their sustainability and conservation-use balance. These ecologically vulnerable areas should be monitored for their change process over time and their land use models for future should be generated.
+A sustainable development requires settlement systems to be comprehensively analyzed and modeled 
+In this regard, management and land use policies should be developed for the sustainability of the areas, depending on the urbanization-oriented land use changes 
+Numerous studies addressing the inclusion of spatial planning policies into land use change models exist in the literature 
+Recently, understanding the concept of the land use system and modeling the changes in the LULC to take necessary measures against potential future problems have been among the most commonly discussed topics. Using the previous classi cation maps, it is possible to form a model to predict the trends regarding the changes in the LULC for a certain period of time. Formation of these change models is a necessity to predict the classes that have a dominant role in the future changes in land use and land cover and in sustainable planning studies that create visions for the urbanization process. These models simplify the group of complex socioeconomic and biophysical factors affecting the rate of changes in the LULC and provide the prediction of the effects of these changes 
+A number of studies used the Geographic Information Systems (GIS) and Remote Sensing This study aims to discuss the policies for spatial planning by examining the relationship between current planning decisions and the spatial development pattern created by the future simulation that is formed based on the monitoring of the changes in land use and the current trends. It also aims to determine the potential e ciency of the land use modeling in terms of sustainable urban development and, through contributing to the planning process, to underline the effects of the plans on the space's environmental sustainability potential. Therefore, this study differs from other similar studies as it combines different perspectives from different disciplines.
+In Turkey, a "Tourism Center" and the "Culture and Tourism Conservation and Development Regions (CTCDR)" are the regions whose borders are identi ed to conserve and use the areas where historical, natural, and cultural values exist intensively or that have a high potential of tourism potential, and to ensure sectoral and planned development in these areas. In the determination process of these regions, the country's natural, historical, archaeological, and socio-cultural values, winter and water sports, health tourism, and other tourism-related potentials are considered. Investors are provided with support and promotions to ensure the development of tourism in these regions. In the areas declared to be a tourism center, a rapid tourism-related development occurs depending on the investments in tourism, which causes a dramatic land use and land cover (LULC) changes. Being a barren area at rst, the coast has been opened to settlement through investments in tourism. It has also triggered urban development in the coast and the areas behind the coast to meet the service needs of tourism facilities. The development of the second housing concept that is increased due to the need for shelter of the employees working at the tourism facilities and the attractiveness of the area depending on and the investments for infrastructure has also escalated the changes in the LULC. It is critical for decision-makers, planners, practitioners, and researchers to monitor the changes in the LULC in order to ensure the conservation-use balance in such vulnerable areas that are under the pressure of development.
+This study determined the changes in the land use and land cover of the Belek region after being declared to be a tourism center, modeled the changes in the LULC for 2040, and assessed the relationship between this model and planning decisions.
+
+## Materials And Methods ##
+
+
+## Study steps ##
+This study consisted of four steps and aimed to determine the changes in the LULC of Belek Tourism Center, to simulate the land use and land cover model for 2040, and to assess the relationship between the model and the planning decisions. -The fourth step included the comparison between the planning decisions for Belek Tourism Center, the changes in the LULC from past to present, and the model for 2040, and the assessment of the relationship between the spatial development pattern which was formed through this comparison and the current planning decisions.
+
+## Study area ##
+Belek Tourism Center, which is determined to be the study area, is located in the district of Serik in Antalya, Turkey. There are a total of 170 tourism centers declared by the Ministry of Culture and Tourism in Turkey. With its twenty-two tourism centers, Antalya has the highest number of tourism centers in Turkey. Belek Tourism Center is thirty kilometers away from the center of Antalya and is one of the tourism centers with the oldest date of declaration in the region (Declaration Date: 
+Belek Tourism Center is located in the south of Turkey between the north latitude of 36° 54' 3" -36° 50' 28" and the east longitude of 30° 55' 34" -31° 07' 08". Tourism center has Aksu River on the west, Acısu River on the east, Mediterranean on the south, and the Antalya-Alanya highway on the north (Fig. 
+Belek Tourism Center is 6,336.7 hectares and its length of coastline is approximately twenty kilometers. The built-up areas of Kadriye and Belek are located in this tourism center. The total population of these built-up areas is 16,191 for 2020. Belek Tourism Center has forty-seven hotels, fteen golf courses, and various social and cultural facilities. It hosts approximately 1.5 million visitors from different regions of the world every year and is the leading tourism center that attracts the highest number of tourists in Turkey.
+Belek Tourism Center is one of the most important seventeen nesting sites in Turkey for loggerheads (caretta caretta) which are classi ed as an endangered species by the International Union for Conservation of Natura (IUCN). One study performed by the Belek Tourism Investors Union (BETUYAB) with several universities has indicated that Belek Tourism Center has 109 bird species, one endemic sh species (Aphanius anatoliae), and a total of 574 plant species belonging to 104 families including twenty-nine endemic families and one relict endemic family (Serik Pear) 
+The study area has low values of altitude and slope, ranging from zero meter to thirty-seven meters and from 0% to 5%. It has a Mediterranean climate with hot and dry in summers and warm and rainy in winters. The mean yearly temperature of the study area is 18.8 ºC. Belek Tourism Center has a total of 285 sunny days in one year and welcomes its visitors every season thanks to its climate. The dominant vegetation in the study region is dune vegetation and stone pine forests along the coasts and maquis and shrubs in the inland areas.
+Forests, especially stone pine trees (Pinus pinea) and Turkish pine trees (Pinus buritia), are created to prevent sand dunes in the eastern and western parts of the study region and cover a large area 
+
+## Determination of the land use and land cover of Belek Tourism Center from past to present ##
+
+
+## Data acqusition ##
+Data used in this study were acquired through various resources. In order to determine the land use/land cover of the study area, satellite images from the Landsat 5 TM dated 1985, the Landsat 7 ETM dated 2000, and the Landsat 8 OLI dated 2021 were used (Table 
+The LULC classes in this study were determined considering the land cover classi cation system identi ed by the Europe Environment Agency (EEA) and the characteristics of the region. The LULC was classi ed into ve groups as agriculture, barren, built-up area, forest, and water body. Table 
+For each sub-model, driver variables were identi ed as inputs to predict LC maps 
+variable was included in this study because regions that are surrounded by built-up areas but have not been opened for settlement yet have higher probability to turn into a built-up area within years. The distance to river limits the urban sprawl. The distance to road networks has a key role in urban sprawl as it facilitates the access to daily needs. Distance to built-up area and distance to road networks are modeled as a dynamic variable because they change and develop in the course of time.
+
+## Change prediction ##
+Change prediction is analyzed using the Markov Chain model and the Cellular Automata (CA) algorithm. The Markov Chain model is a stochastic model used to predict land use and land cover. This model predicts the LULC starting from a t=1 time to another t+1 time depending on the transition area matrix and the transition probability matrix between the LULC classes. The Markov Chain does not solely su ce by itself to predict the LULC changes because it does not take the spatial distribution of the LULC classes and the spatial aspect of growth into consideration 
+The CA includes a regular grid of cells that manage how each cell's neighbors affect the future class of each cell 
+The LULC data belonging to two different periods of time,
+The transition area matrix generated using the Markov Chain model,
+The transition potential map created using the MCA method,   
+
+## Change analysis ##
+The LULC changes of Belek Tourism Center were grouped into three periods as 
+It was found that the expansion in the built-up areas were mostly arisen from the agricultural and barren areas, whereas the expansion in the forests were mostly arisen from the barren area. In this period, 392.78 hectares from agricultural areas and 201.2 hectares from barren areas were transformed into built-up areas. A total of 569.31 hectares from barren areas was transformed into forests. No changes were observed in the area with 6,517.67 hectares.
+-During the 36-year period (1985-2021), the biggest change was detected in barren areas. Barren areas shrunk by 22.25% in this period. Agricultural areas also shrunk by 4.15%. An expansion was noted in forests by 13.67%, in built-up areas by 11.91%, and in water body areas by 0.82% during this 36-year period. Of the expansion in the built-up areas, 452.73 hectares were arisen from agricultural areas and 503.86 hectares were arisen from barren areas. Similarly, the expansion in the forests were mostly arisen from barren areas Table 
+Following the selection of the driver variables, the determined land class transitions were modeled in a single transition sub-model and transition potential maps were generated. The accuracy of the transition potential maps ranged from 40% to 95%.
+This study created transition probability matrices for 2021 (using the LULC maps from 1985 and 2000) and 2040 years (using the LULC maps from 2000 and 2021). Table 
+A model validation was performed to assess the reliability of the prediction regarding the LULC changes for 2040. During the accuracy analysis of the model, the actual LULC map for 2021 and the simulated LULC map for the same year were compared. The accuracy analysis was conducted using the Kappa statistics and overall accuracy. This analysis calculated the Kappa value as 0.79 and the overall accuracy of classi cation as 0.83. These results indicate that this model may be utilized for the LULC projection of Belek Tourism
+Center for 2040 (Kappa coe cient>0.60). Figure 
+The statistics for 2040 year predict that of the total area, 30.11% will be agricultural area, 25.25% water body area, 24.78% forest, 19.18% built-up area, and 0.68% barren area. Within the period of 2021 and 2040, it is expected that built-up areas and forests will expand by 5.46% and 1.28%, whereas agricultural areas and barren areas will shrink by 4.21% and 2.56%, respectively. The future changes in the water body areas (0.03%) are predicted to be insigni cant. The results of the transition probability matrix show that the trend of change is expected to be mostly from barren areas to forests and from agricultural areas to built-up areas (Table 
+To summarize, this study indicated that the built-up areas in the inland and coastal zones would continue to expand within the next 20 years in the event that the LULC pattern and trend of Belek Tourism Center from to 2021 would be sustained.
+
+## Relationship between the LULC modeling for 2040 and planning decisions ##
+The rst planning in the region was conducted by the Scandinavian and Development Associates on behalf of the State Planning Organization within the scope of the West Mediterranean (an international project) in 1967. Being known as the Ole Helweg Plan or the Western Antalya Project, this planning is considered the rst tourism master plan in Turkey and covers a 1,000-kilometer part of the coastal area in Muğla and Antalya. This planning assessed the analysis of the tourism potential of the coastal areas in Antalya and Muğla, the infrastructure and superstructure studies, determination of the development areas, and preparation of the master plans. The Belek region was chosen as one of the primary development areas within the plan. Its total number of beds was determined to be 5,000 
+The Law for the Encouragement of Tourism (law no: 2634) that was put into force in 1982 in Turkey allowed the ongoing developments in the tourism industry to be supported with the legislation, the terms "tourism area, tourism region, and tourism center" to be added in the tourism planning terminology, and the mass tourism to rapidly increase. In accordance with this law, Belek was declared to be a tourism center in 1984.
+The border of the tourism center was determined by excluding the built-up areas (Kumköy, Kadriye, Belekköy) in 1984. After being declared to be a tourism center, the region raised its bed capacity to 13,000 (Acar İnam, 2009). Belek Tourism Center was announced to be a tourism investment area in 1986. Within the same year, the Belek Tourism Center Land Use Plan (1/25,000) was approved. This plan separated Belek Tourism Center into two regions as east and west 
+The land use plan dated 1986 showed that land uses were arranged for their intended purpose, zoning method was used to determine the borders of tourism-related development, natural values were conserved, and the needs of the local community were taken into consideration (regional park).
+The Serik-Manavgat-Antalya Environmental Plan (1/25,000), the rst environmental plan for this region, was approved in 1981. In 1990, the Serik-Manavgat-Antalya Environmental Plan was revised, and the Eastern Antalya Environmental Plan (1/25,000) was approved. In 2002, a planning revision was made for Belek Tourism Center and its surroundings through the Eastern Antalya Environmental Plan Belek Revision (1/25,000). A number of revisions were performed on the same plan in 
+The latest arrangement regarding Belek Tourism Center and its surroundings is the Antalya-Burdur-Isparta
+Planning Region Environmental Plan in 2014 (1/100,000) and the revisions made on this plan in 2019 and 2022 (Fig. 
+
+## Discussion ##
+When the reasons for the changes given in Table 
+-Within the aforementioned period, changes in the water body areas (0.82%) were determined to be insigni cant. This partial expansion in the water body areas was due to the construction of arti cial ponds with landscape in golf courses.
+-The forests were the land use class with the highest rate of growth between 1985 and 2021 (13.67%). The planting works which were conducted by the Ministry of Agriculture and Forestry to prevent sand and coastal erosions were effective in the expansion of the forests. A transformation from barren areas to forests occurred through these planting works. The state-owned area in the Kumköy coast was declared to be a "strictly protected sensitive area" and was not opened to be a tourism facility. The predicted LULC map of the study area for 2040 shows that the entire coastline except for the conserved areas will be opened to settlement through tourism. The predicted LULC map for 2040 indicates that a large part of the urban growth expected to occur between 2021 and 2040 will serve as an extension of the built-up areas in 2021, and that this growth will be in the core of the built-up areas (Belek, Kadriye).
+The planning decisions and land use changes regarding Belek Tourism Center and the model for 2040 were compared; then, the relationship between trends and planning decisions was assessed. Integrating the land use simulations into the planning process will guide the decision-makers, practitioners, and planners to assess the accuracy of the decisions made for ensuring the sustainable urban development. The comparison between the planning decisions for Belek Tourism Region and the simulation for 2040 introduced the necessity to limit the current trends in terms of the conservation of the agricultural areas. This output will help manage the urban growth and ensure the conservation-use balance regarding the spatial planning decisions.
+
+## Conclusion ##
+The planning decisions and land use changes regarding Belek Tourism Center and the model for 2040 were compared; then, the relationship between trends and planning decisions was assessed. Integrating the land use simulations into the planning process will guide the decision-makers, practitioners, and planners to assess the accuracy of the decisions made for ensuring the sustainable urban development. The comparison between the planning decisions for Belek Tourism Region and the simulation for 2040 introduced the necessity to limit the current trends in terms of the conservation of the agricultural areas. This output will help manage the urban growth and ensure the conservation-use balance regarding the spatial planning decisions.  
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Spatio-temporal simulation and prediction of land use change using conventional and machine learning models: a review
+   Authors: , , 
+   Date: 2019
+
+2. Regional image in the context of sustainable tourism: Antalya-Belek tourism center model (Unpublished doctoral dissertation)
+   Authors: 
+   Date: 2009
+
+3. Land-use/land-cover change analysis and urban growth modelling in the Greater Accra Metropolitan Area (GAMA)
+   Authors: , 
+   Date: 2019
+
+4. Land use change and habitat fragmentation of wildland ecosystems of the North Central United States. Landscape and Urban Planning
+   Authors: , 
+   Date: 2018
+
+5. Predicting future urban growth scenarios and potential urban ood exposure using Arti cial Neural Network-Markov Chain model in Miami Metropolitan Area
+   Authors: , 
+   Date: 2022
+
+6. Tourism development and spatial organisation: Antalya -Belek case
+   Authors: 
+   Date: 2005
+
+7. Using neural networks and cellular automata for modelling intra-urban land-use dynamics
+   Authors: , , , 
+   Date: 2008
+
+8. Monitoring and predicting land use change in Tripoli Metropolitan City using an integrated Markov chain and cellular automata models in GIS
+   Authors: , 
+   Date: 2014
+
+9. Prediction of land use changes based on Land Change Modeler and attribution of changes in the water balance of Ganga basin to land use change using the SWAT model
+   Authors: , , 
+   Date: 2018
+
+10. Non-uniform cellular automata: Evolution in rule space and formation of complex structures
+   Authors: , 
+   Date: 1994
+
+11. Prediction of spatial land use changes based on LCM in a GIS environment for Desert Wetlands-A case study: Meighan Wetland
+   Authors: , 
+   Date: 2019
+
+12. Land use changes modelling using advanced methods: Cellular automata and arti cial neural networks. The spatial and explicit representation of land cover dynamics at the cross-border region scale
+   Authors: , , , , 
+   Date: 2014
+
+13. Urban growth and form: scaling, fractal geometry, and diffusion-limited aggregation
+   Authors: , , 
+   Date: 1989
+
+14. Geosimulation: Object-based modeling of urban phenomena
+   Authors: , 
+   Date: 2004
+
+15. Modeling land use and land cover change. In Land Change Science
+   Authors: , , , 
+   Date: 2012
+
+16. Land use change mapping and analysis using Remote Sensing and GIS: A case study of Simly watershed
+   Authors: , , , 
+   Date: 2015
+
+17. T.C. Kültür ve Turizm Bakanlığı Yatırım ve İşletmeler Genel Müdürlüğü
+   Authors: 
+   Date: 2008
+
+18. A coe cient of agreement for nominal scales
+   Authors: 
+   Date: 1960
+
+19. Arazi kullanımında simülasyon modelleri ve entegre kullanımları. TÜCAÜM VIII
+   Authors: , 
+   Date: 2015
+
+20. Golf Sahalarının Çevresel Etkilerinin Belek Örneğinde İrdelenmesi, Doktora Tezi, Fen Bilimleri Enstitüsü
+   Authors: 
+   Date: 2002
+
+21. Effect of zoning plans on urban land-use change: A multi scenario simulation for supporting sustainable urban growth
+   Authors: , , 
+   Date: 2021
+
+22. TerrSet Tutorial
+   Authors: 
+   Date: 2015
+
+23. A short presentation of the Land Change Modeler (LCM)
+   Authors: , 
+   Date: 2018
+
+24. An integrated modelling system to predict hydrological processes under climate and land-use/cover change scenarios
+   Authors: , , , , 
+   Date: 2017
+
+25. Application of cellular automata and Markov-chain model in geospatial environmental modeling-a review
+   Authors: , , , , , 
+   Date: 2017
+
+26. Modeling urban land use change by the integration of cellular automaton and Markov model
+   Authors: , , , , , 
+   Date: 2011
+
+27. Marmara Gölü yakın çevresindeki arazi kullanım faaliyetlerinin zamansal değişimi
+   Authors: 
+   Date: 2013. 1975 2011
+
+28. Dynamics of land use and land cover change (LULCC) using geospatial techniques: a case study of Islamabad Pakistan
+   Authors: , , , , , , 
+   Date: 2016
+
+29. Future simulation of land use changes in rapidly urbanizing South China based on land change modeler and remote sensing data
+   Authors: , , , , 
+   Date: 2020
+
+30. Correct formulation of the kappa coe cient of agreement
+   Authors: , 
+   Date: 1987
+
+31. Land use classi cation and change detection by using multi-temporal remotely sensed imagery: The case of Chunati wildlife sanctuary
+   Authors: , , , 
+   Date: 2018
+
+32. Comprehensive change detection method for updating the National Land Cover Database to circa 2011
+   Authors: , , , , , 
+   Date: 2013
+
+33. Determination of land use/cover changes and land use potentials of Sivas city and its surroundings using geographical information systems (GIS) and remote sensing (RS)
+   Authors: , , 
+   Date: 2015
+
+34. The measurement of observer agreement for categorical data
+   Authors: , 
+   Date: 1977
+
+35. Guiding SLEUTH land-use/land-cover change modeling using multicriteria evaluation: towards dynamic sustainable land-use planning
+   Authors: , 
+   Date: 2012
+
+36. Monitoring land use and land cover changes in the mountainous cities of Oman using GIS and CA-Markov modelling techniques
+   Authors: , , 
+   Date: 2020
+
+37. Assessing land use cover changes and modelling change scenarios in two mountain Spanish National Parks
+   Authors: , , , , 
+   Date: 2017
+
+38. Computer processing of remotely-sensed images: an introduction
+   Authors: , 
+   Date: 2011
+
+39. Land cover mapping analysis and urban growth modelling using remote sensing techniques in Greater Cairo Region-Egypt
+   Authors: , , , 
+   Date: 2015
+
+40. Can strategic spatial planning contribute to land degradation reduction in urban regions? State of the art and future research
+   Authors: , , 
+   Date: 2018
+
+41. Analysis and prediction of land cover changes using the land change modeler (LCM) in a semiarid river basin
+   Authors: , , , , , 
+   Date: 2021
+
+42. Does zoning matter? A comparative analysis of landscape change in Redland, Florida using cellular automata
+   Authors: , 
+   Date: 2014
+
+43. Urban growth simulation of Atakum (Samsun, Turkey) using cellular automata Markov chain and multi-layer perceptron-Markov chain models
+   Authors: 
+   Date: 2015
+
+44. An assessment of water reserve changes in Salt Lake, Turkey, through multi temporal Landsat imagery and real-time ground surveys
+   Authors: , 
+   Date: 2007
+
+45. Comparing two approaches to land use/cover change modeling and their implications for the assessment of biodiversity loss in a deciduous tropical forest
+   Authors: , , 
+   Date: 2012
+
+46. Methods for land use impact assessment: A review
+   Authors: , , , , 
+   Date: 2016
+
+47. Predicting land use change: comparison of models based on landowner surveys and historical land cover trends
+   Authors: , , , , , , , 
+   Date: 2008
+
+48. Comparison of the structure and accuracy of two land change models
+   Authors: , 
+   Date: 2005
+
+49. Monitoring land use/cover change using remote sensing and GIS techniques: A case study of Hawalbagh block, district Almora
+   Authors: , 
+   Date: 2015
+
+50. Simulating urban expansion and scenario prediction using a cellular automata urban growth model, SLEUTH, through a case study of Karaj City, Iran
+   Authors: , , , , 
+   Date: 2015
+
+51. Application of a hybrid cellular automaton-Markov (CA Markov) model in land-use change prediction: a case study of Saddle Creek Drainage Basin
+   Authors: , , 
+   Date: 2013
+
+52. Mapping ecosystem services for land use planning, the case of Central Kalimantan
+   Authors: , 
+   Date: 2014
+
+53. Land use and land cover change detection and urban sprawl analysis of Vijayawada city using multitemporal landsat data
+   Authors: , , , , 
+   Date: 2012
+
+54. Land use and land cover changes soil erosion in Yezat Watershed
+   Authors: , , , 
+   Date: 2017
+
+55. Golf turizmi: Belek örneği. Ankara: T.C. Kültür ve Turizm Bakanlığı Yatırım ve İşletmeler Genel Müdürlüğü
+   Authors: 
+   Date: 2008
+
+56. Spatio-temporal urban growth dynamics of Lagos Metropolitan Region of Nigeria based on Hybrid methods for LULC modeling and prediction
+   Authors: , 
+   Date: 2018
+
+57. A comparative assessment of support vector regression, arti cial neural networks, and random forests for predicting and mapping soil organic carbon stocks across an Afromontane landscape
+   Authors: , , , 
+   Date: 2015
+
+58. The in uence of rapid urbanization and land use changes on terrestrial carbon sources/sinks in Guangzhou
+   Authors: , , , , 
+   Date: 2016
+
+59. Simulation of land-use pattern evolution in hilly mountainous areas of North China: A case study in Jincheng
+   Authors: , , 
+   Date: 2022
+
+60. A spatiotemporal model of land use change based on ant colony optimization, Markov chain and cellular automata
+   Authors: , , 
+   Date: 2012
+
+61. Multi-scenario simulation of urban land change in Shanghai by random forest and CA-Markov model
+   Authors: , , , 
+   Date: 2020
+

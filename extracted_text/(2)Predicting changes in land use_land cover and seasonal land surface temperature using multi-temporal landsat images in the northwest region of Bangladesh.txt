@@ -1,0 +1,402 @@
+================================================================================
+TITLE: Predicting changes in land use/land cover and seasonal land surface temperature using multi-temporal landsat images in the northwest region of Bangladesh
+================================================================================
+
+AUTHORS:
+- Abdulla -Al Kafy
+- Abdullah Al-Faisal
+- Abdullah Al Rakib
+- Sumita Roy
+- Jannatul Ferdousi
+- Vinay Raikwar
+- Marium Kona
+- S Abdullah
+- Al Fatin
+- H I G H L I G H T S
+
+ABSTRACT:
+Configurations of LULC and seasonal LST change in the Northwest region of Bangladesh were analyzed. Built-up area expansion contributed to increased summer and winter LST by 0.55 C and 2.54 C per decade from 1999-2019. Temperature increases have resulted in a significant decline in agricultural productivity over the last 30 years. Summer and winter LST simulations indicate that more than 50 % and 13 % will likely be in >35 C by 2039. Prediction of LULC change and seasonal LST variation needs to be considered during urban development plans.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Urbanization is a challenge for any country. Developed countries face fewer daunting challenges than developing countries because of rapid and unplanned urbanization 
+Bangladesh is facing rapid urbanization for the last three decades 
+The application of Remote Sensing (RS) and the Geographic Information System (GIS) have provided opportunities to estimate LULC changes and the LST distribution in a particular region 
+Located in the Northeastern region of Bangladesh, Rajshahi District is an agricultural-based region and well-connected with all over Bangladesh. In the last decade, industrial growth, availability of better educational institutions and job opportunities have attracted people to migrate to this region. The growing pressure of the population accelerates the unplanned expansion in this region. Methods comprising the use of the CA and ANN algorithms can demonstrate useful findings in studying the short and long-term consequences of the LULC and LST change in this region. It can also support decision-makers and urban planners in abating the UHI effect. The current study is a regional scale study and the first of its kind in Bangladesh's northwest region, to determine the past 
+
+## Study area profile ##
+Rajshahi district located in the northwestern region of Bangladesh, between 24 12 0 to 24 42 0 N latitude and 88 15 0 to 88 50 0 E longitude (Figure 
+Various monsoons define this region's climate, bringing moderate rainfall, high humidity and temperature. Seasons in the region are divided into four distinct groups: winter (with low rainfall, high temperatures, and high humidity) from October to February; summer (with minimal rainfall, high temperatures, and high humidity) from March to June; and monsoon (with heavy rainfall, moderate temperatures, and high humidity) from July to September 
+However, despite the fact that the district is known as an agrarian region, industrialization reaches a high point in this region following the completion of the Jamuna Bridge in 1998 
+
+## Data & methodology ##
+
+
+## Data set and processing approach ##
+The study was directed based on primary and secondary data. Primary data collected from field visits, Focus Group Discussions (FGDs), and Key Informants Interviews (KIIs). The secondary data comprise of multi-temporal Landsat 4-5 Thematic Mapper (TM) and Landsat 8 Operational Land Imager (OLI) satellite images obtained from US Geological Survey (USGS) website (https://earthexplorer.usgs.gov)  
+
+## Impacts iof iLULC iChange ##
+Observed iany ichange iin iland iUses iduring ithe ilast i20 iyears? i i i i i i i Yes No i i i i i i I i don't i know In iyour iopinion, iis ithe ichange isignificant iin iRajshahi iregion? i i i i i i i Yes i i i i i i No i i i i i i I i don't i know What iare ithe ichanges iin iland iuse iyou ihave inoticed iin ipast itwo iyears i(check iall ithe iapply)? i i i i i Decreasei ini agricultural i landi i i i i i Increase i of i roads i i i i i i Increase i of buildings i i i i i i iIncrease iof iindustries i i i i iIncrease iin iagricultural iland i i i i i i i No i change i in i infrastructures i i i i i i i Demolition i of i infrastructures In iyour iopinion, iwhat iwill ibe ithe iimpact iof ithis ichange iin iland iuse? i i i i iPositive i i i i iNegative i i i i i iI ihave ino iidea ground truth data for accuracy assessment of classified LULC maps. In addition, 10 FGDs (Table 
+The questionnaires of FGDs and KIIs were demonstrated in Table 
+Based on the output of the discussion, a sustainable future land use management plan was proposed for the study area. The KIIs and FGDs (8-10 participants) consisted of urban planners, agricultural officers, environmental engineers, policymakers, local community leaders, and decisionmakers. Information and opinions regarding the impacts of LULC change on seasonal LST, influences of seasonal LST variations on the agricultural sector and climate change, and preparation of proposed land use management plan were collected during the FGDs and KIIs. The outputs from FGDs and KIIs have been discussed in section 4.8 and 4.9.
+
+## Classification of LULC maps ##
+Imagery from the Landsat satellite was classified into four broad LULC classes, including i) built-up area (industrial/residential/commercial area and transportation network); (b) agriculture land (green lands, agricultural lands, and vegetation); (c) water bodies (rivers, wetlands, reservoirs, canals, and streams; (d) bare land (fallow land, sand, playground, landfill sites, and vacant soil) for 1999, 2009, and 2019 using the SVM algorithm in ENVI 5.3 software. The SVM is a sophisticated supervised classification technique based on statistical learning theory which mostly results in accurate classification if the data are complex or noisy 
+
+## Validation of classified LULC maps ##
+Around 40 samples were collected for each LULC class in order to produce the LULC maps. The accuracy of the classified maps was evaluated through 100 field level and 300 Google Earth image random sampling ground truth data. For accuracy assessment, the overall accuracy (equation 
+
+## Estimation of seasonal LST ##
+The seasonal (summer and winter) LST was estimated using Landsat thermal band images from 1999, 2009, and 2019. Landsat sensors accumulate thermal data and Digital Numbers (DN). For the available data, these DN were converted to LST with four steps process illustrated in Figure 
+The Landsat 8 has two thermal bands (band 10 and band 11) centred at 10.9 μm and 12 μm. Therefore, LST for Landsat 8 was estimated from both bands and then combined by using cell statistics to determine the final LST.
+
+## Variation of seasonal LST over LULC classes ##
+For estimating the summer and winter season LST distribution over different LULC categories, "zonal statistics tool as table" under spatial analyst tools was used in ArcGIS 10.6 software. This tool summarizes LULC classes' values within the zones of the seasonal LST dataset and reports the results into a table. After adding zone layers (Figure 
+
+## Predicting LULC change for the years 2029 and 2039 ##
+The CA model was used to identify the future LULC changing pattern in the study region using QGIS's MOLUSCE plugin. During prediction, the CA model considers all the static and dynamic aspects of changes in every LULC category and provides an excellent accurate result 
+
+## Predicting LST change for years 2029 and 2039 ##
+The seasonal LST was predicted for the years 2029 and 2039 using the ANN algorithm in MATLAB software. The ANN is an effective approach that helps in time series prediction using previous year datasets 
+For LST prediction, five layers (LULC images, NDBI, NDBSI, latitude, and longitude) were used as input supporting parameters, and LST images were used as output parameters. These supportive layers are essential as because they influence outcomes by allowing the network to manifest non-linear behavior. During this analysis, the initial learning rate (μ) was set at 0.1, and the rate of decay (β) was used to monitor it. The standard rate of decay ranges between 0 and 1 (0 < β < 1) 
+
+## Ethics ##
+Consent was obtained from respondents prior to the FGDs and KIIs, and they remained anonymous. All contributors were informed of the study's specific objectives before beginning to complete the KIIs and FGDs questionnaire. Participants were only required to complete the questionnaire once, and they were free to stop it whenever they wanted. The relevant authority approved this study's ethical credentials (Rajshahi City Corporation, Rajshahi, Bangladesh). The privacy and confidentiality of the data were ensured. These KIIs and FGDs interviews were conducted according to established ethical guidelines of the concerned authority and the authors confirm that the respondents were informed of the study's specific objectives before beginning to answer the FGDs and KIIs questions.
+
+## Result and discussion ##
+This section describes the results estimated from the methodology presented in section 3. The LULC changes, seasonal LST variations, distribution of LST over different LULC classes, prediction of future LULC and seasonal LST, and LST change impacts on agricultural productivity, and future sustainable land use management plan will be discussed in the following section 4.
+
+## Variation of past patterns of LULC (1999-2019) ##
+The trend of changes in LULC classes estimated from Landsat images using the SVM algorithm for the years 1999 (Figure 
+In addition, to understand the extent of LULC changes, the area-wise distribution of LULC classes are presented in Table 
+The data showed an unprecedented increase in the built-up area while a noticeable decrease in the amount of agricultural land and water bodies available for use. The primary reason for this is the rapid and unplanned urbanization that has taken place. Agriculture lands and water bodies were dynamically transformed into impervious infrastructures in order to meet the demands of a rapidly expanding population. Farmers are forced to cultivate their land more intensively as a result of the reduction in agricultural land, which increases the use of chemical fertilizers and pesticides, which contributes to pollution of the air, water, land, and other elements of the environment 
+
+## Changing pattern of seasonal LST ##
+Thermal bands of Landsat images were used to estimate the seasonal (summer and winter) variation in LST distribution in the study region from 1999 to 2019. The illustration of summer and winter LST are shown in Figures 
+The summer season's LSTs distribution in the study area is shown in Figure 
+The Winter season's LST distribution in the study area is illustrated in Figure 
+
+## Validation of estimated seasonal LST ##
+LST estimation using RS techniques requires weather-free and cloudfree images. The LST estimation of summer and winter seasons was performed using Landsat 4-5 TM and 8 OLI thermal bands for the years 1999, 2009 and 2019. Well-established equations were used to retrieve LST, however, it agonizes with certain limitations. Cloud coverage in an image can cause the values of LST analysis to be overestimated or underestimated. Additionally, none of the surface materials have a unique emissivity value in a particular area 
+In order to validate the estimated LST summer and winter values from RS data, the maximum and minimum temperature data for 1999, 2009 and 2019 were collected from BMD (Tables 
+The highest and lowest deviation was observed in the summer season for 1999's maximum and minimum temperatures: -3.27 C and 1.13 C. Besides, the deviated maximum and minimum values were -2.81 C and -0.2 C for 2009. For 2019, the maximum and minimum values were -0.52 C and 1.17 C, respectively. Overall, the summer season's average maximum and minimum deviations were -1.07 C, -1.505 C, and 0.325 C for 1999, 2009, and 2019, as shown in Table 
+In the winter season, the highest and lowest deviations were also observed for 1999's maximum and minimum temperatures, which were þ0.46 C and -0.7 C. Hence, these maximum and minimum deviated values were -8.15 C and -2.15 C for 2009. For 2019, the maximum and minimum values were -1.07 C and -6.69 C, respectively. Overall, the winter season's average deviation was -0.12 C, -5.15 C, and -3.88 C for 1999, 2009, and 2019, as shown in Table 
+Taking all the limitations of RS-derived LST data into account, the small difference between estimated and recorded in LST can be accepted and used for further analysis, as well as the prediction of LST in the area of the study.
+
+## Variation of seasonal LST in different LULC class ##
+Estimated mean seasonal LST distribution in different LULC classes were calculated using the zonal statistics tool in ArcGIS 10.6 software (Figure 
+The variation of the winter season's mean LST in different LULC classes is also demonstrated a significant change (Figure 
+The variation of seasonal mean LST over different LULC types provides better insights about the contribution of the built-up area in LST increase by replacing the agricultural and water bodies into hardscape areas. Rapid urban development, climate change, and global warming significantly contribute to the temperature rise. Massive infrastructural development increases the proportion of impervious and paved surfaces, which retained more energy and radiated more heat 
+
+## Prediction of future LULC scenarios ##
+The CA algorithm was used to predict the LULC change for 2029 (Figure 
+Comparing the predicted LULC scenarios (2029 and 2039) to the 2019 result, it was revealed that almost 58.03 km 2 (2.44 %) and 79.90 km 2 (3.35 %) of the study area will be turned into built-up areas in 2029 and 2039, respectively. Hence, a significant decrease in agricultural land (-1.50 % and -5.93 %) and water bodies (-0.47 % and -2.24 %) were also identified in 2029 and 2039, respectively. The highest positive net change was estimated in built-up (þ1.16 % and þ1.53 %) areas, where the largest negative change was identified in water bodies (-0.98 % and -7.40 %) for the year 2029 and 2039, respectively (Table 
+Figures 
+The increasing LST trend will affect the thermal capacity of LULC categories and contribute to the UHI effect 
+
+## Limitations of the CA and ANN models ##
+While CA and ANN models provide an effective framework for evaluating and forecasting LULC and LST situations, the models are more accurate when the previous LULC and LST dynamics pattern remains consistent or stable. Therefore, the CA model is not always enough to make explicit spatial LULC predictions 
+Regardless of their shortcomings, dynamic models effectively establish assumptions of land cover and surface temperature changes in any location. As a result, techniques such as LULC, LST change, and prediction mapping are rapidly gaining recognition as highly effective tools for managing critical natural resources and mitigating environmental consequences, particularly in the developing world. Significant LULC changes have occurred in the Rajshahi region during the past 20 years. The total area of agricultural lands was decreased by 8.27 % from 1999 to 2019, while the built-up area was increased by 7.81 %. From the FGDs and KIIs, it was found that the changes in LULC classes create substantial negative impacts on socio-economic and environmental aspects in the study area. Considering the socio-economic impacts, conversion of farmland or agricultural land to infrastructure development decreases the number of lands available for food production. Soil erosion, desertification, and other soil degradation associated with intensive agriculture productivity reduce land resource quality and hamper food productivity. Categories of LULC changes, especially the loss of natural resources (agricultural land and water bodies), create environmental effects by adding loss in biodiversity, destroy habitats that support biodiversity, increase greenhouse effects and surface temperature, disturbs the hydrological cycle and increase surface runoff, soil erosion, and flooding. During the FGDs, participants also mentioned that one of the primary causes of water pollution in the study region is runoff from agricultural land, which contains fertilizer used by farmers during agricultural production. The participants suggested an effective policy measure while preparing the land use management plan (discussed in 4.9) to control water pollution for the increment of food productivity in the future.
+
+## Impacts of temperature change ##
+The study area is an agrarian-based region, and variations in seasonal temperature have significant negative and positive impacts on crop yields. Seasonal temperature change have increased the atmospheric CO 2 and frequency/intensity of extreme weather events. The participants from FGDs and KIIs stated that crop productivity due to the fertilization effect induced by an increase in the concentration of CO 2 in the atmosphere, expansion of the available areas for growing the tropical and subtropical crops, development of two-crop farming due to an extended cultivation time and reduction of damage to winter crops by low temperatures are the main positive impacts of temperature rise. Besides, negative impacts of seasonal temperature rise include a decline in the number and quality of crops as a consequence of the low growth cycle for high-temperature rises, decrease in the sugar content and fruit store stability, poor coloring, rising weeds, and harmful insects in crops and decreasing soil productivity (Figure 
+According to the Bangladesh Agricultural Development Corporation, "Boro rice" production will significantly be decreased from 13.5 % to 2.6 % in upcoming years, with an increase of 2 C mean temperature in the study region. Due to the impact of climate change, Bangladesh is facing a 4 C temperature increase in the last decades, resulting 28 % and 68 % reduction in rice and wheat production 
+
+## Impacts of climate change ##
+Climate change is causing organic changes in the study area, such as fertilization and breeding in the livestock sector as well as influencing the growing pattern of pastures. During the FGDs and KIIs, a significant relationship was established between the regional economy (mainly depends on agricultural products) and climate change in the study area mentioned in Figure 
+
+## Future sustainable land use management plan ##
+Effective land management is a proactive strategy for mitigating the negative consequences of natural land cover change and unplanned regional development. Government officials and policymakers must conduct an extensive study of current conditions and trend analysis of LULC changes on both spatial and temporal scales in order to develop a sustainable land use management plan. Measuring effective land use management practices frequently necessitates an accurate understanding of current and historical trends in LULC change. The trend analysis of LULC changes would aid in conserving natural resources and mitigating the adverse effects of these transformation in the study region. The following issues should be considered when preparing a regional-level land use management plan, based on the discussion during FGDs. The issues are as follows: i. Ensuring the best possible use with restricting misuse and inappropriate use of bare land and water bodies. ii. Safeguarding the gradual decreasing trend of agricultural land with strict rules and regulations to feed up the growing population, increase economic enlargement, and conserve biodiversity. iii. Introducing and monitoring the zoning technique in order to make demarcation of natural resources (agricultural land and water bodies) according to rational criteria for effective utilization in various purposes. iv. Preventing water and soil pollution for ensuring better agricultural productivity and environmental friendly land utilization. v. Ensuring sustainable urban development by preparing a regional level master plan for planned and inclusive urbanization. vi. Increasing plantation, green cover, and established artificial leaks to mitigate the seasonal heat weaves.
+
+## Conclusion ##
+This study's main focus is to estimate and predict the land use transformation and their impacts on seasonal surface temperature variations in the agricultural-based region Rajshahi, Bangladesh. The analysis revealed that the study region has been going through a significant loss in agricultural land and expecting more in upcoming years. This study also identified the impacts of land cover change, temperature increase, and climate change on the agricultural sector using FGDs and KIIs. Finally, based on experts' opinions and considering the consequences of unplanned infrastructural development, reduction in green cover, and climate change, this study proposed a sustainable land use management plan for Bangladesh's northwest region.
+The LULC analysis demonstrates a significant increase in the built-up area with a net increase of þ7.81 % from 1999 to 2019. Meanwhile, agricultural land and water bodies were decreased by -8.27 % and -4.75 % from 1999 to 2019. More than 29 % and 28 % of the total area were recorded in the temperature range of 32 C -< 35 C and 29 C -< 32 C in 2019 in winter season, which was 3.64 % and 0 % in year 1999, respectively. The seasonal LST distribution over different LULC classes revealed that the highest temperature was recorded in the built-up area while the lowest temperature was recorded in water bodies and agricultural land for the studied years. The prediction of LULC and LST changes indicates alarming results for 2029 and 2039. More than 23 % (2029) and 50 % (2039) of the total area will likely be experienced high temperatures in the summer season of greater than 35 C. For predicted winter LST, more than 3 % and 13 % of the area will likely be experienced in the high-temperature zone (! 35 C) for 2029 and 2039, respectively, which is comparatively high considering the winter season.
+Based on this study's results and discussion, Rajshahi's local government and urban planners can consider unplanned and haphazard development in and out of the city area and formulation of increasing LST as a burning issue of this region. The inclusion of these study outputs in a regional level master/development plan will make Rajshahi District ecologically and environmentally sustainable and able to mitigate the possible impacts of climate change and global warming on agricultural productivity and food security in this region. The study also focuses on the importance of agricultural land, green cover, and natural resources and conservation approach by proposed land use management plan to minimize the UHI effect to reduce the climate change impact. Further research may focus on human-environment interactions to better understanding the causes and consequences associated with urban growth, LULC transformation, and LST change. Urban growth, changes in land cover, and surface temperature in other Bangladesh cities should be reviewed and predicted for future sustainable development. The results will improve the understanding of city planners and policymakers in making a district-level sustainable land use management and development plan for ensuring environmental sustainability at the regional level.
+
+## Declarations ##
+for proofreading the manuscript. The authors also like to express their heartiest gratitude to group discussion participants from different professional and community levels.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. The prediction of city expansion and land surface temperature in Bogor City
+   Authors: , 
+   Date: 2020
+
+2. Classification of cities in Bangladesh based on remote sensing derived spatial characteristics
+   Authors: , , , , 
+   Date: 2018
+
+3. 
+   Authors: 
+   Date: 2019
+
+4. Detection of land use and land cover change and land surface temperature in English Bazar urban centre
+   Authors: , 
+   Date: 2017
+
+5. Cellular Automata Approach in Dynamic Modeling of Land Cover Changes Using RapidEye Images in
+   Authors: , , , , , 
+   Date: 2021
+
+6. Assessment of Urban Thermal Field Variance Index and Defining the Relationship between Land Cover and Surface Temperature in Chattogram City: A Remote Sensing and Statistical Approach
+   Authors: , 
+   Date: 2021
+
+7. Impact of LULC changes on LST in Rajshahi district of Bangladesh: a remote sensing approach
+   Authors: , , , , , 
+
+8. Monitoring the Effects of Vegetation Cover Losses on Land Surface Temperature Dynamics Using Geospatial Approach in Rajshahi City
+   Authors: , , , , , 
+   Date: 2021
+
+9. Estimation of land use change to identify urban heat island effect on climate change: a remote sensing based approach
+   Authors: , , , , , 
+   Date: 2019
+
+10. Prediction of seasonal urban thermal field variance index using machine learning algorithms in Cumilla
+   Authors: , , , , , 
+   Date: 2020
+
+11. Geospatial Modelling of Changes in Land Use/land Cover Dynamics Using Multi-Layer Perception Markov Chain Model in Rajshahi City
+   Authors: , , , 
+   Date: 2021
+
+12. Responses of urban heat island in Atlanta to different land-use scenarios
+   Authors: , 
+   Date: 2018
+
+13. Remote sensing-based quantification of the relationships between land use land cover changes and surface temperature over the lower Himalayan region
+   Authors: , , , , , 
+   Date: 2019
+
+14. Modelling Future Land Use Land Cover Changes and Their Impacts on Land Surface Temperatures in Rajshahi
+   Authors: , , , , 
+   Date: 2020
+
+15. Monitoring land use and land cover changes in the mountainous cities of Oman using GIS and CA-Markov modelling techniques
+   Authors: , , 
+   Date: 2020
+
+16. Assessment and Prediction of Seasonal Land Surface Temperature Change Using Multi-Temporal Landsat Images and Their Impacts on Agricultural Yields in Rajshahi
+   Authors: , , , , , 
+   Date: 2021
+
+17. Urban land cover change modelling using timeseries satellite images: a case study of urban growth in five cities of Saudi Arabia
+   Authors: , , 
+   Date: 2016
+
+18. Land use and climate change impacts on distribution of plant species of conservation value in Eastern Ghats, India: a simulation study
+   Authors: , , , , 
+   Date: 2020
+
+19. District Statistics, Ministry of Planning, Government of The People's Republic of Bangladesh
+   Authors: 
+   Date: 2013. 2011
+
+20. Warmer winter Again
+   Authors: 
+   Date: 2019
+
+21. Land use changing pattern and challenges for agricultural land: a study on Rajshahi district
+   Authors: , 
+   Date: 2012
+
+22. Prediction of Urban Expansion and Identifying its Impacts on the Degradation of Agricultural Land
+   Authors: , , , , , 
+   Date: 2021
+
+23. Assessing and Predicting Land Use/land Cover, Land Surface Temperature and Urban thermal Field Variance index Using Landsat Imagery for Dhaka Metropolitan Area
+   Authors: , , , , , 
+   Date: 2021
+
+24. Remote Sensing-Based Approach to Identify the Influence of Land Use/land Cover Change on the Urban thermal Environment: A Case Study in Chattogram City
+   Authors: , , , , , 
+   Date: 2020
+
+25. Integration of remote sensing and GIS techniques for flood monitoring and damage assessment: a case study of naogaon district
+   Authors: , , 
+   Date: 2018
+
+26. Application of GIS and remote sensing in disaster management: a critical review of flood management
+   Authors: , 
+   Date: 2018
+
+27. Pond filling locations identification using landsat-8 images in Comilla district
+   Authors: , 
+   Date: Ncwre 2018. 2018
+
+28. Geospatial Approach for Developing an Integrated Water Resource Management Plan in Rajshahi
+   Authors: , , , , , 
+   Date: 2021
+
+29. Surface urban heat island analysis of Shanghai (China) based on the change of land use and land cover
+   Authors: , , , 
+   Date: 2017
+
+30. Remote Sensing Approach to Simulate the Land Use/land Cover and Seasonal Land Surface Temperature Change Using Machine Learning Algorithms in a Fastest-Growing Megacity of Bangladesh
+   Authors: , , , , , 
+   Date: 2020
+
+31. Land use/land cover change detection and prediction in the north-western coastal desert of Egypt using Markov-CA
+   Authors: , , , 
+   Date: 2015
+
+32. Modeling urban expansion in Bangkok Metropolitan region using demographic-economic data through cellular automata-Markov chain and multi-Layer perceptron-Markov chain models
+   Authors: , , , 
+   Date: 2016
+
+33. Urban growth simulation of Atakum (Samsun, Turkey) using cellular automata-Markov chain and multi-layer perceptron-Markov chain models
+   Authors: 
+   Date: 2015
+
+34. A novel approach for predicting the spatial patterns of urban expansion by combining the chi-squared automatic integration detection decision tree, Markov chain and cellular automata models in GIS
+   Authors: , 
+   Date: 2015
+
+35. Projection of future changes in landuse/landcover using cellular automata/markov model over Akure city
+   Authors: , 
+   Date: 2017
+
+36. Integration of logistic regression, Markov chain and cellular automata models to simulate urban expansion
+   Authors: , , , 
+   Date: 2013
+
+37. The application of artificial neural networks to the analysis of remotely sensed data
+   Authors: , 
+   Date: 2008
+
+38. Simulating land cover changes and their impacts on land surface temperature in
+   Authors: , , , , 
+   Date: 2013
+
+39. A spatiotemporal model of land use change based on ant colony optimization, Markov chain and cellular automata
+   Authors: , , 
+   Date: 2012
+
+40. Simulation and prediction of land surface temperature (LST) dynamics within Ikom City in Nigeria using artificial neural network (ANN)
+   Authors: , , 
+   Date: 2016
+
+41. Mapping urban land surface temperature using remote sensing techniques and artificial neural network modelling
+   Authors: , 
+   Date: 2019
+
+42. Artificial neural networks for land-cover classification and mapping
+   Authors: 
+   Date: 1993
+
+43. Analyzing the pattern of land use land cover change and its impact on land surface temperature: a remote sensing approach in mymensingh
+   Authors: , , , , 
+   Date: 2020
+
+44. Cerm ak, Prediction of surface air temperatures by neural network, example based on three-year temperature monitoring at spo rilov station
+   Authors: , 
+   Date: 2003
+
+45. Artificial neural networks as models of neural information processing
+   Authors: , 
+   Date: 2017
+
+46. Evolving artificial neural networks
+   Authors: 
+   Date: 1999
+
+47. Modelling the Relationship between Land Use/land Cover and Land Surface Temperature in Dhaka
+   Authors: , , , , , 
+   Date: 2021
+
+48. Background Information for Rajshahi City
+   Authors: , , , 
+   Date: 2006
+
+49. Application of Modified Managed Aquifer Recharge Model for Groundwater Management in Drought-Prone Water-Stressed Barind Tract
+   Authors: , , , , 
+   Date: 2021
+
+50. Exploring the association of surface water body change and rapid urbanization in Rajshahi city Corporation (RCC) area using RS and GIS
+   Authors: , , 
+   Date: 2018
+
+51. Country report: Bangladesh meteorological department (BMD)
+   Authors: 
+
+52. Landscape configuration and urban heat island effects: assessing the relationship between landscape characteristics and land surface temperature in Phoenix
+   Authors: , , 
+   Date: 2013
+
+53. Assessment of the relationship between land use/cover changes and land surface temperatures: a case study of thermal remote sensing, FEB-FRESENIUS Environ
+   Authors: , , , 
+   Date: 2019
+
+54. Cellular automata models for the simulation of real-world urban processes: a review and analysis
+   Authors: , , , 
+   Date: 2010
+
+55. Remote sensing of forest change using artificial neural networks
+   Authors: , 
+   Date: 1996
+
+56. Modeling urban growth in Atlanta using logistic regression
+   Authors: , 
+   Date: 2007
+
+57. Factors determining conversion of agricultural land use in Bangladesh: farmers' perceptions and perspectives of climate change
+   Authors: , , , 
+   Date: 2019
+
+58. Evaluating severity-area-frequency (SAF) of seasonal droughts in Bangladesh under climate change scenarios
+   Authors: , , , , , 
+   Date: 2020
+
+59. 
+   Authors: 
+   Date: 2016
+
+60. Mitigation of climate change
+   Authors: 
+   Date: 2014
+
+61. Economic impact of climate change on crop farming in Bangladesh: an application of Ricardian method
+   Authors: , , , , , 
+   Date: 2019
+
+62. 
+   Authors: , , , , , 
+   Date: 2000
+
+63. Estimation of LST from multi-sensor thermal remote sensing data and evaluating the influence of sensor characteristics
+   Authors: , , 
+   Date: 2019
+
+64. Estimating daily land surface temperatures in mountainous environments by reconstructed MODIS LST data
+   Authors: 
+   Date: 2010
+
+65. Regional changes of precipitation and temperature over Bangladesh using biascorrected multi-model ensemble projections considering high-emission pathways
+   Authors: , , , , , , 
+   Date: 2018
+
+66. Green-house gas mitigation capacity of a small scale rural biogas plant calculations for Bangladesh through a general life cycle assessment
+   Authors: , , , 
+   Date: 2017
+
+67. The study of effects of greenery on temperature reduction in urban areas
+   Authors: , , , , , , 
+   Date: 2018
+
+68. Death to Kappa: birth of quantity disagreement and allocation disagreement for accuracy assessment
+   Authors: , 
+   Date: 2011
+
+69. Sustainable strategies for smart cities: analysis of the town development effect on surface urban heat island through remote sensing methodologies
+   Authors: , , 
+   Date: 2017
+
+70. Landsat-8: science and product vision for terrestrial global change research
+   Authors: , , , , , 
+   Date: 2014
+

@@ -1,0 +1,276 @@
+[
+  {
+    "sentence_id": 0,
+    "sentence": "After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible and large parts of the Sahel were designated as degraded land (e.g",
+    "original_entities": [
+      {
+        "text": "the 1970s and 1980s",
+        "label": "DATE",
+        "start": 30,
+        "end": 49
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start": 64,
+        "end": 68
+      }
+    ],
+    "extracted_entities": [],
+    "extracted_relations": [
+      {
+        "source": "loss",
+        "source_type": "QUANTITY",
+        "relationship": "AFFECTS",
+        "target": "woody",
+        "target_type": "LULC",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "loss",
+        "source_type": "QUANTITY",
+        "relationship": "AFFECTS",
+        "target": "vegetation",
+        "target_type": "LULC",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "woody",
+        "source_type": "LULC",
+        "relationship": "LOCATED_IN",
+        "target": "Sahel",
+        "target_type": "LULC",
+        "confidence": "HIGH"
+      },
+      {
+        "source": "vegetation",
+        "source_type": "LULC",
+        "relationship": "LOCATED_IN",
+        "target": "Sahel",
+        "target_type": "LULC",
+        "confidence": "HIGH"
+      }
+    ],
+    "num_entities": 0,
+    "num_relations": 4,
+    "filtered_entities": 0,
+    "filtered_relations": 19,
+    "model_response": "- land | LOC\n- Sahel | LULC\n- after | CHANGE\n- 1970s | DATE\n- 1980s | DATE\n- observed | EVENT\n- loss | QUANTITY\n- woody | LULC\n- vegetation | LULC\n- cover | QUANTITY\n- often | PERCENT\n- considered | EVENT\n- as | CHANGE\n- irreversible | EVENT\n- large | CARDINAL\n- parts | CARDINAL\n- degraded | LULC\n- land | LOC\n\nRELATIONS:\n- 1970s:DATE --CHANGE-- after:CHANGE | CONF: HIGH\n- 1980s:DATE --CHANGE-- after:CHANGE | CONF: HIGH\n- after:CHANGE --CHANGE-- observed:EVENT | CONF: HIGH\n- observed:EVENT --QUANTITY-- loss:QUANTITY | CONF: HIGH\n- loss:QUANTITY --AFFECTS-- woody:LULC | CONF: HIGH\n- loss:QUANTITY --AFFECTS-- vegetation:LULC | CONF: HIGH\n- woody:LULC --QUANTITY-- cover:QUANTITY | CONF: HIGH\n- woody:LULC --LOCATED_IN-- Sahel:LULC | CONF: HIGH\n- vegetation:LULC --QUANTITY-- cover:QUANTITY | CONF: HIGH\n- vegetation:LULC --LOCATED_IN-- Sahel:LULC | CONF: HIGH\n- Sahel:LULC --CHANGE-- often:PERCENT | CONF: HIGH\n- Sahel:LULC --CHANGE-- considered:EVENT | CONF: HIGH\n- Sahel:LULC --CHANGE-- as:CHANGE | CONF: HIGH\n- Sahel:LULC --CHANGE-- irreversible:EVENT | CONF: HIGH\n- Sahel:LULC --CHANGE-- large:CARDINAL | CONF: HIGH\n- Sahel:LULC --CHANGE-- parts:CARDINAL | CONF: HIGH\n- Sahel:LULC --CHANGE-- degraded:LULC | CONF: HIGH\n- Sahel:LULC --LOC-- land:LOC | CONF: HIGH\n- considered:EVENT --EVENT-- as:CHANGE | CONF: HIGH\n- considered:EVENT --EVENT-- irreversible:EVENT | CONF: HIGH\n- considered:EVENT --EVENT-- large:CARDINAL | CONF: HIGH\n- considered:EVENT --EVENT-- parts:CARDINAL | CONF: HIGH\n- considered:EVENT --EVENT-- degraded:LUL",
+    "processing_timestamp": "2025-07-10T10:30:24.057839",
+    "success": true
+  },
+  {
+    "sentence_id": 1,
+    "sentence": "The forests of West and Central Africa probably originally covered a combined area of about 3 million km 2",
+    "original_entities": [
+      {
+        "text": "forests",
+        "label": "LULC",
+        "start": 12,
+        "end": 19
+      },
+      {
+        "text": "West",
+        "label": "LOC",
+        "start": 23,
+        "end": 27
+      },
+      {
+        "text": "Central Africa",
+        "label": "LOC",
+        "start": 32,
+        "end": 46
+      },
+      {
+        "text": "area of about 3 million km",
+        "label": "SURFACE_UNIT",
+        "start": 86,
+        "end": 112
+      },
+      {
+        "text": "2",
+        "label": "CARDINAL",
+        "start": 113,
+        "end": 114
+      }
+    ],
+    "extracted_entities": [],
+    "extracted_relations": [
+      {
+        "source": "forest",
+        "source_type": "LOC",
+        "relationship": "LOCATED_IN",
+        "target": "West",
+        "target_type": "LOC",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "forest",
+        "source_type": "LOC",
+        "relationship": "LOCATED_IN",
+        "target": "Central",
+        "target_type": "LOC",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "forest",
+        "source_type": "LOC",
+        "relationship": "LOCATED_IN",
+        "target": "Africa",
+        "target_type": "LOC",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "forest",
+        "source_type": "LOC",
+        "relationship": "CAUSES",
+        "target": "covered",
+        "target_type": "PROCESS",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "forest",
+        "source_type": "LOC",
+        "relationship": "MEASURES",
+        "target": "3",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "forest",
+        "source_type": "LOC",
+        "relationship": "MEASURES",
+        "target": "million",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "forest",
+        "source_type": "LOC",
+        "relationship": "MEASURES",
+        "target": "2",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "3",
+        "source_type": "QUANTITY",
+        "relationship": "MEASURES",
+        "target": "million",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "3",
+        "source_type": "QUANTITY",
+        "relationship": "MEASURES",
+        "target": "2",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "million",
+        "source_type": "QUANTITY",
+        "relationship": "MEASURES",
+        "target": "2",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "covered",
+        "source_type": "PROCESS",
+        "relationship": "MEASURES",
+        "target": "3",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "covered",
+        "source_type": "PROCESS",
+        "relationship": "MEASURES",
+        "target": "million",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "covered",
+        "source_type": "PROCESS",
+        "relationship": "MEASURES",
+        "target": "2",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "originally",
+        "source_type": "PROCESS",
+        "relationship": "MEASURES",
+        "target": "3",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "originally",
+        "source_type": "PROCESS",
+        "relationship": "MEASURES",
+        "target": "million",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "originally",
+        "source_type": "PROCESS",
+        "relationship": "MEASURES",
+        "target": "2",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "covered",
+        "source_type": "PROCESS",
+        "relationship": "AFFECTS",
+        "target": "3",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "covered",
+        "source_type": "PROCESS",
+        "relationship": "AFFECTS",
+        "target": "million",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "covered",
+        "source_type": "PROCESS",
+        "relationship": "AFFECTS",
+        "target": "2",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "originally",
+        "source_type": "PROCESS",
+        "relationship": "AFFECTS",
+        "target": "3",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      },
+      {
+        "source": "originally",
+        "source_type": "PROCESS",
+        "relationship": "AFFECTS",
+        "target": "million",
+        "target_type": "QUANTITY",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "num_entities": 0,
+    "num_relations": 21,
+    "filtered_entities": 0,
+    "filtered_relations": 7,
+    "model_response": "- forest:LOC\n- 3:QUANTITY\n- km:UNIT\n- 2:QUANTITY\n- million:QUANTITY\n- West:LOC\n- Central:LOC\n- Africa:LOC\n- originally:PROCESS\n- covered:PROCESS\n- a:QUANTITY\n- combined:QUANTITY\n- area:QUANTITY\n- 3:QUANTITY\n- million:QUANTITY\n- km:UNIT\n- 2:QUANTITY\n\nRELATIONS:\n- forest:LOC --LOCATED_IN-- West:LOC\n- forest:LOC --LOCATED_IN-- Central:LOC\n- forest:LOC --LOCATED_IN-- Africa:LOC\n- forest:LOC --CAUSES-- covered:PROCESS\n- forest:LOC --MEASURES-- 3:QUANTITY\n- forest:LOC --MEASURES-- million:QUANTITY\n- forest:LOC --MEASURES-- km:UNIT\n- forest:LOC --MEASURES-- 2:QUANTITY\n- 3:QUANTITY --MEASURES-- million:QUANTITY\n- 3:QUANTITY --MEASURES-- km:UNIT\n- 3:QUANTITY --MEASURES-- 2:QUANTITY\n- million:QUANTITY --MEASURES-- km:UNIT\n- million:QUANTITY --MEASURES-- 2:QUANTITY\n- km:UNIT --MEASURES-- 2:QUANTITY\n- covered:PROCESS --MEASURES-- 3:QUANTITY\n- covered:PROCESS --MEASURES-- million:QUANTITY\n- covered:PROCESS --MEASURES-- km:UNIT\n- covered:PROCESS --MEASURES-- 2:QUANTITY\n- originally:PROCESS --MEASURES-- 3:QUANTITY\n- originally:PROCESS --MEASURES-- million:QUANTITY\n- originally:PROCESS --MEASURES-- km:UNIT\n- originally:PROCESS --MEASURES-- 2:QUANTITY\n- covered:PROCESS --AFFECTS-- 3:QUANTITY\n- covered:PROCESS --AFFECTS-- million:QUANTITY\n- covered:PROCESS --AFFECTS-- km:UNIT\n- covered:PROCESS --AFFECTS-- 2:QUANTITY\n- originally:PROCESS --AFFECTS-- 3:QUANTITY\n- originally:PROCESS --AFFECTS-- million:QUANTITY\n- originally:PROCESS --AFFECTS--",
+    "processing_timestamp": "2025-07-10T10:30:55.559524",
+    "success": true
+  }
+]

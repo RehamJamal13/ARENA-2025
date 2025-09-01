@@ -1,0 +1,296 @@
+[
+  {
+    "sentence_id": 0,
+    "sentence": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.",
+    "entities": [
+      {
+        "text": "landscape of Thimphu city",
+        "label": "LULC",
+        "start_char": 35,
+        "end_char": 60
+      },
+      {
+        "text": "Thimphu city",
+        "label": "LOC",
+        "start_char": 48,
+        "end_char": 60
+      },
+      {
+        "text": "changed considerably",
+        "label": "CHANGE",
+        "start_char": 65,
+        "end_char": 85
+      },
+      {
+        "text": "study period",
+        "label": "DATE",
+        "start_char": 97,
+        "end_char": 109
+      },
+      {
+        "text": "predicted to continue into 2050",
+        "label": "CHANGE",
+        "start_char": 134,
+        "end_char": 165
+      }
+    ],
+    "raw_response": "ENTITIES:\n- landscape of Thimphu city | LULC (assuming \"landscape\" refers to LULC)\n- Thimphu city | LOC\n- changed considerably | CHANGE\n- study period | DATE (implicit, contextually understood)\n- predicted to continue into 2050 | CHANGE",
+    "method": "zero-shot-entities"
+  },
+  {
+    "sentence_id": 1,
+    "sentence": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",
+    "entities": [
+      {
+        "text": "built-up area",
+        "label": "LULC",
+        "start_char": 54,
+        "end_char": 67
+      },
+      {
+        "text": "12.77%",
+        "label": "PERCENT",
+        "start_char": 43,
+        "end_char": 49
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 73,
+        "end_char": 77
+      },
+      {
+        "text": "52.88%",
+        "label": "CARDINAL",
+        "start_char": 79,
+        "end_char": 85
+      },
+      {
+        "text": "2018",
+        "label": "DATE",
+        "start_char": 90,
+        "end_char": 94
+      },
+      {
+        "text": "cover of bare ground",
+        "label": "LULC",
+        "start_char": 141,
+        "end_char": 161
+      },
+      {
+        "text": "slight increase",
+        "label": "CHANGE",
+        "start_char": 118,
+        "end_char": 133
+      }
+    ],
+    "raw_response": "ENTITIES:\n- built-up area | LULC\n- 12.77% | PERCENT\n- 2002 | DATE\n- 52.88% | CARDINAL (percent)\n- 2018 | DATE\n- cover of bare ground | LULC\n- slight increase | CHANGE",
+    "method": "zero-shot-entities"
+  },
+  {
+    "sentence_id": 2,
+    "sentence": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",
+    "entities": [
+      {
+        "text": "forest cover",
+        "label": "LULC",
+        "start_char": 17,
+        "end_char": 29
+      },
+      {
+        "text": "15.25%",
+        "label": "PERCENT",
+        "start_char": 52,
+        "end_char": 58
+      },
+      {
+        "text": "followed by agriculture",
+        "label": "-",
+        "start_char": 60,
+        "end_char": 83
+      },
+      {
+        "text": "1.01%",
+        "label": "PERCENT",
+        "start_char": 85,
+        "end_char": 90
+      }
+    ],
+    "raw_response": "ENTITIES:\n- forest cover | LULC\n- 15.25% | PERCENT\n- followed by agriculture | -\n- 1.01% | PERCENT",
+    "method": "zero-shot-entities"
+  },
+  {
+    "sentence_id": 3,
+    "sentence": "Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.",
+    "entities": [],
+    "raw_response": "No explicit entities are mentioned in the given sentence. Therefore, there are no entities to extract based on the provided rules.",
+    "method": "zero-shot-entities"
+  },
+  {
+    "sentence_id": 4,
+    "sentence": "Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",
+    "entities": [
+      {
+        "text": "built up area",
+        "label": "LULC",
+        "start_char": 86,
+        "end_char": 99
+      },
+      {
+        "text": "city area",
+        "label": "SURFACE_UNIT",
+        "start_char": 131,
+        "end_char": 140
+      },
+      {
+        "text": "73.21%",
+        "label": "PERCENT",
+        "start_char": 142,
+        "end_char": 148
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 155,
+        "end_char": 161
+      },
+      {
+        "text": "16%",
+        "label": "PERCENT",
+        "start_char": 216,
+        "end_char": 219
+      }
+    ],
+    "raw_response": "ENTITIES:\n- built up area | LULC (built-up area)\n- city area | SURFACE_UNIT (not explicitly stated but can be inferred as a surface unit)\n- 73.21% | PERCENT\n- forest | LULC (forest)\n- 16% | PERCENT",
+    "method": "zero-shot-entities"
+  },
+  {
+    "sentence_id": 5,
+    "sentence": "Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.",
+    "entities": [
+      {
+        "text": "Some 13 villages",
+        "label": "LOC",
+        "start_char": 73,
+        "end_char": 89
+      },
+      {
+        "text": "terraced agricultural fields",
+        "label": "LULC",
+        "start_char": 40,
+        "end_char": 68
+      }
+    ],
+    "raw_response": "- Some 13 villages | LOC (assuming villages are locations)\n- terraced agricultural fields | LULC (assuming fields are agricultural land)",
+    "method": "zero-shot-entities"
+  },
+  {
+    "sentence_id": 6,
+    "sentence": "Planned development for Thimphu started in 1985 with the establishment of National Urban Development Commission.",
+    "entities": [
+      {
+        "text": "Planned development",
+        "label": "PROCESS",
+        "start_char": 0,
+        "end_char": 19
+      },
+      {
+        "text": "Thimphu",
+        "label": "LOC",
+        "start_char": 24,
+        "end_char": 31
+      },
+      {
+        "text": "1985",
+        "label": "DATE",
+        "start_char": 43,
+        "end_char": 47
+      },
+      {
+        "text": "National Urban Development Commission",
+        "label": "ORGANIZATION",
+        "start_char": 74,
+        "end_char": 111
+      }
+    ],
+    "raw_response": "ENTITIES:\n- Planned development | PROCESS\n- Thimphu | LOC\n- 1985 | DATE\n- National Urban Development Commission | ORGANIZATION",
+    "method": "zero-shot-entities"
+  },
+  {
+    "sentence_id": 7,
+    "sentence": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",
+    "entities": [],
+    "raw_response": "Expansion of Thimphu city | Urban area, built-up area | LOC, LULC\nThimphu city | Urban area, built-up area | LOC\n2002 | DATE\nLanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba, Dechencholing | LOC\nnorth | DIRECTION\nChangjiji, Lungtenphu, Simtokha, Babesa | LOC\nsouth | DIRECTION",
+    "method": "zero-shot-entities"
+  },
+  {
+    "sentence_id": 8,
+    "sentence": "The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",
+    "entities": [
+      {
+        "text": "city's landscape",
+        "label": "LULC",
+        "start_char": 155,
+        "end_char": 171
+      },
+      {
+        "text": "2002-2018",
+        "label": "DATE",
+        "start_char": 12,
+        "end_char": 21
+      },
+      {
+        "text": "rapid expansion",
+        "label": "CHANGE",
+        "start_char": 35,
+        "end_char": 50
+      },
+      {
+        "text": "expedited socio-economic development",
+        "label": "PROCESS",
+        "start_char": -1,
+        "end_char": -1
+      }
+    ],
+    "raw_response": "- city's landscape | LULC (implicit: changed)\n- 2002-2018 | DATE (implicit: period)\n- rapid expansion | CHANGE\n- expedited socio-economic development | PROCESS",
+    "method": "zero-shot-entities"
+  },
+  {
+    "sentence_id": 9,
+    "sentence": "The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.",
+    "entities": [
+      {
+        "text": "real estate",
+        "label": "PROCESS",
+        "start_char": 187,
+        "end_char": 198
+      },
+      {
+        "text": "informal settlements",
+        "label": "LULC",
+        "start_char": 203,
+        "end_char": 223
+      },
+      {
+        "text": "lesser developed cities",
+        "label": "LOC",
+        "start_char": 144,
+        "end_char": 167
+      },
+      {
+        "text": "significant changes",
+        "label": "CHANGE",
+        "start_char": 239,
+        "end_char": 258
+      },
+      {
+        "text": "land uses",
+        "label": "LULC",
+        "start_char": 262,
+        "end_char": 271
+      }
+    ],
+    "raw_response": "- real estate | PROCESS (boom)\n- informal settlements | LULC (settlements)\n- lesser developed cities | LOC\n- significant changes | CHANGE\n- land uses | LULC",
+    "method": "zero-shot-entities"
+  }
+]

@@ -1,0 +1,337 @@
+================================================================================
+TITLE: Vegetation Trends, Drought Severity and Land Use-Land Cover Change during the Growing Season in Semi-Arid Contexts
+================================================================================
+
+AUTHORS:
+- Felicia Akinyemi
+
+ABSTRACT:
+Drought severity and impact assessments are necessary to effectively monitor droughts in semi-arid contexts. However, little is known about the influence land use-land cover (LULC) has-in terms of the differences in annual sizes and configurations-on drought effects. Coupling remote sensing and Geographic Information System techniques, drought evolution was assessed and mapped. During the growing season, drought severity and the effects on LULC were examined and whether these differed between areas of land change and persistence. This study used areas of economic importance to Botswana as case studies. Vegetation Condition Index, derived from Normalised Difference Vegetation Index time series for the growing seasons (2000-2018 in  comparison to 2020-2021), was used to assess droughts for 17 constituencies (Botswana's fourth administrative level) in the Central District of Botswana. Further analyses by LULC types and land change highlighted the vulnerability of both human and natural systems to drought. Identified drought periods in the time series correspond to declared drought years by the Botswana government. Drought severity (extreme, severe, moderate and mild) and the percentage of land areas affected varied in both space and time. The growing seasons of 2002-2003, 2003-2004 and 2015-2016  were the most drought-stricken in the entire time series, coinciding with the El Niño southern oscillation (ENSO). The lower-than-normal vegetation productivity during these growing seasons was evident from the analysis. With the above-normal vegetation productivity in the ongoing season (2020-2021), the results suggest the reversal of the negative vegetation trends observed in the preceding growing seasons. However, the extent of this reversal cannot be confidently ascertained with the season still ongoing. Relating drought severity and intensities to LULC and change in selected drought years revealed that most lands affected by extreme and severe drought (in descending order) were in tree-covered areas (forests and woodlands), grassland/rangelands and croplands. These LULC types were the most affected as extreme drought intersected vegetation productivity decline. The most impacted constituencies according to drought severity and the number of drought events were Mahalapye west (eight), Mahalapye east (seven) and Boteti west (seven). Other constituencies experienced between six and two drought events of varying durations throughout the time series. Since not all constituencies were affected similarly during declared droughts, studies such as this contribute to devising appropriate context-specific responses aimed at minimising drought impacts on social-ecological systems. The methodology utilised can apply to other drylands where climatic and socioeconomic contexts are similar to those of Botswana.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Drought as a slow-onset event is increasingly an environmental hazard due to its negative impacts on natural and human systems, including livelihoods 
+
+## Materials and Methods ##
+
+
+## Description of the Study Location ##
+Seventeen constituencies in the Central District of Botswana (CDB) in the eastern part of the country were used as case studies (Figure 
+based resources upon which much of livelihoods are dependent would either be exacerbated or ameliorated depending on how the land is put to use and the land management practices. To better demonstrate RS capabilities for assessing drought severity at a finer, sub-national scale, the assessment was conducted in 17 constituencies (a constituency is the fourth administrative level in Botswana).
+
+## Materials and Methods ##
+
+
+## Description of the Study Location ##
+Seventeen constituencies in the Central District of Botswana (CDB) in the eastern part of the country were used as case studies (Figure 
+The district is of great economic importance to Botswana, with 23% (31,634 holdings) of all traditional agricultural holdings in Botswana 
+
+## Data Sources ##
+Variability in vegetation condition and drought severity in the CDB were examined over 18 years using the 1 km Normalised Difference Vegetation Index (NDVI) decadal (i.e., 10-day composite) image time series from the Copernicus Land Monitoring Service (https://land.copernicus.eu/global/products/ndvi, accessed on 8 January 2021). These images were made available through the European Union-African Union-funded project on Monitoring for environment and security in Africa (MESA). The MESA was implemented for the Southern African Development Community (SADC) region comprising 15 countries and included Madagascar and the Democratic Republic of Congo. The dekadal NDVI datasets from October 2000 to 2014 were derived from SPOT VGT, and data from June 2014 to 2018 are from the PROBA-V 
+The land cover datasets were from the European Space Agency (ESA-LC) Climate Change Initiative (CCI-LC v.2.0.7) ESA CCI and Copernicus Climate Change Service (C3S-LC Mv52 https://cds.climate.copernicus.eu/cdsapp#!/dataset/satellite-land-cover?tab= form, accessed on 8 January 2021). These datasets are a consistent series of multi-sensor annual maps from 1992 to 2018 
+
+## Methods ##
+
+
+## Indicators of Vegetation Variability ##
+Indices used for measuring vegetation variability and drought severity are based on the NDVI. NDVI is widely utilised for assessing and monitoring vegetation greenness, net primary productivity, plant phenology and land degradation in natural and human systems 
+Three indicators of vegetation variability utilised in this study were derived from NDVI-NDVI difference, NDVI anomaly and NDVI trends. Other derived metrics to gauge seasonal vegetation productivity include the NDVI mean, maximum and cumulative values computed for each month in the growing season within the time series.
+
+## NDVI Difference ##
+To analyse the variability of vegetation during the vegetation growing season over the 18-year study period, the NDVI Difference (NDVI diff ) function implemented in the MESA Drought Monitoring Services (DMS) software was utilised. NDVI diff is widely used to get an indication of vegetation state over a specific period by comparing vegetation productivity between two dekads or relative to the long-term average for the same period. This indicator highlights areas where vegetation is under stress as well as those performing well. For this study, seasonal NDVI diff was calculated for every growing season (i.e., annually) as the difference between the start dekad (i.e., first 10-day period) in October (D1) in a certain year i to the end dekad (i.e., last 10-day period) in March (D3) of the following year i + 1 in the time series data of 2000 to 2018 (Equation (2)):
+Standardised NDVI Anomalies NDVI anomaly captures how vegetation productivity for a certain period deviates from the long-term average dynamics. It is calculated by subtracting the considered month NDVI from the month's long-term average and dividing it by the monthly standard deviation for that period. By distinguishing areas that are normal from those that are above or below normal vegetation productivity, NDVI anomaly is helpful to identify outliers, isolate the variability in the vegetation signal and consider the reviewed period within a meaningful historical context 
+
+## NDVI Trend ##
+Using the NDVI time series of 2000 to 2020 as input, we computed vegetation change as trends and their significance based on the Mann-Kendall (MK) non-parametric test. Non-parametric approaches estimate trends in a time series by quantifying the rate of change in vegetation greenness for each pixel and characterises trends in the data using the median slope 
+
+## Drought Indicators Vegetation Condition Index ##
+Drought severity during the growing season was measured using the NDVI-based Vegetation Condition Index (VCI) as in Equation (3) 
+VCI is particularly useful for agriculture, as it assesses changes in NDVI through time since vegetation is water-stressed due to water deficiency such as during drought. VCI for the vegetation growing season was calculated between 2000-2001 and 2017-2018 starting with the first dekad of October in the previous year to the third dekad in March of the following year. VCI is measured as a percentage with values ranging between 0 (lowest) and 100 (highest), with values equal to or below 40% considered as drought to varying degrees of severity (Table 
+
+## Drought Intensity ##
+Drought intensities for each growing season were calculated through the 18-year study period. These are percentages of pixels (a proxy for the surface land area) whose VCI values fell within the different drought severity and non-drought categories 
+
+## Drought Frequency ##
+To relate the pixel-level VCI to each of the 17 constituencies in the CDB, the zonal statistics function in GIS was used. The median VCI value within each constituency was utilised because there is the tendency for more years in drylands to have rainfall below the mean, with the median value deviating more from the mean. Due to the sensitivity of the mean to outliers, the median is a better data distribution measure to gain further insight regarding the frequency of droughts in each constituency. Drought severity was compared to the official declarations of drought years by the government. Drought frequency was computed as the count of the number of drought years in the entire time series (growing seasons 2000-2001 to 2017-2018). A year with an annual VCI value of 40 or less is identified as drought-stricken and the sum of such drought years per constituency in the entire time series amounts to the frequency of drought 
+
+## Land Use-Land Cover Change ##
+In addition to vegetation trends, drought severity was examined according to LULC types. It was also examined at the constituency level, to take into cognisance the environmental and administrative basis of drought impacts, respectively. For each drought year, drought severity effects on each LULC type were assessed based on the intersection of VCI and LULC values for that particular year. Drought intensity is expressed as a percentage of the area under each LULC type affected by varying drought severity and non-drought conditions. Percentages of the surface land area affected were then normalised by the size of the LULC type for each year. Since LULC configurations and sizes vary from one year to another, the annual LULC map for each identified drought year was utilised. Only for the land change analysis aspect was the maps of the years 2000 and 2018 used for post-classification change detection.
+
+## Results ##
+
+
+## Vegetation Variability and Trend ##
+The spatial and temporal variations in vegetation productivity were presented based on analyses during the growing seasons, i.e., October to March, of the 18 years. Providing insights regarding each growing season throughout the entire time series, NDVI diff maps (Figure 
+
+## Spatio-Temporal Evolution of Drought Severity during Vegetation Growing Seasons ##
+Drought negatively impacts vegetation growth, the supply of water for nature's needs (e.g., to sustain wildlife) and human needs (e.g., for livelihoods and food security). Seasonal maps depicting spatial and temporal variations in drought severity for the CDB were produced (Figure 
+
+## Spatio-Temporal Evolution of Drought Severity during Vegetation Growing Seasons ##
+Drought negatively impacts vegetation growth, the supply of water for nature's needs (e.g., to sustain wildlife) and human needs (e.g., for livelihoods and food security). Seasonal maps depicting spatial and temporal variations in drought severity for the CDB were produced (Figure 
+
+## Area of Land Use-Land Cover Change and Persistence ##
+In the CDB, areas of LULC persistence, i.e., unchanged, between 2000 to 2018 amounted to 88% (130,166 km 2 ). Figure 
+
+## Area of Land Use-Land Cover Change and Persistence ##
+In the CDB, areas of LULC persistence, i.e., unchanged, between 2000 to 2018 amounted to 88% (130,166 km 2 ). Figure 
+
+## Land Change and Associated Vegetation Trends ##
+With about 90% of the land area in the CDB experiencing negative vegetation trends, we investigated how changes in vegetation productivity (i.e., increasing, stable and decreasing) are associated with land change. The focus is on major LULC types (tree-covered area, cropland, otherland and grassland), as these made up over 95% of the study area as of 2018. Figure 
+
+## Land Change and Associated Vegetation Trends ##
+With about 90% of the land area in the CDB experiencing negative vegetation trends, we investigated how changes in vegetation productivity (i.e., increasing, stable and decreasing) are associated with land change. The focus is on major LULC types (tree-covered area, cropland, otherland and grassland), as these made up over 95% of the study area as of 2018. Figure 
+
+## Drought Severity by Land Use-Land Cover Type ##
+Focusing on the drought years identified earlier in the time series analysis of vegetation variability and drought severity (refer to Figures 
+
+## Drought Severity by Land Use-Land Cover Type ##
+Focusing on the drought years identified earlier in the time series analysis of vegetation variability and drought severity (refer to Figures 
+
+## Characterising Drought in the Constituencies Drought Severity in Constituencies in Comparison with Drought Declaration ##
+Drought and household food security vulnerability assessments are conducted annually during the mid-growing season in Botswana 
+Remote Sens. 2021, 13, x FOR PEER REVIEW 14 of 20
+
+## Characterising Drought in the Constituencies ##
+
+
+## Drought Severity in Constituencies in Comparison with Drought Declaration ##
+Drought and household food security vulnerability assessments are conducted annually during the mid-growing season in Botswana 
+
+## Discussion ##
+
+
+## Vegetation Condition Change and Drought Severity ##
+There was high spatial and temporal variability in vegetation productivity during the growing seasons in the 18-year study period. This is typical of dryland ecosystems which are often non-equilibrium and dynamic in response to both climatic and anthropogenic perturbations 
+Comparing vegetation productivity in the CDB during drought and non-drought years with the mean for the entire time series revealed the impacts droughts have on vegetation. For example, when compared to the mean, vegetation productivity was very limited in 2002-2003 (the worst drought episode in the time series). Drought occurrence was evident during the growing seasons of eight declared drought years in line with 
+The lower than normal vegetation productivity during some of the drought-stricken growing seasons can be attributed to droughts linked to El Niño southern oscillation (ENSO). For example, the prolonged droughts in the growing seasons of 2002-2004 and 2015-2016 coincided with the El Niño years in the recent records 
+Comparing the ongoing growing season (2020-2021) with the mean for the entire time series, we found above-normal vegetation productivity after mid-October 2020 until February 2021. Thus, this suggests the full recovery of vegetation productivity during this season from the impacts of the prolonged droughts in the last couple of growing seasons. However, this observation is somewhat fraught with uncertainty judging from the below-normal vegetation productivity at the start of the season. Moreover, the growing season has not ended yet. The growing season spanning the first dekad in October to the third dekad in March was chosen to align the cropping and the raining season in Botswana, which enabled the exclusion of the dry season from the drought analyses.
+
+## Vegetation Trend and Drought Severity by Land Use-Land Cover and Change ##
+Many studies on droughts have not examined how drought effects differ between LULC types. For those that have land use incorporated, little is known of the influence of drought severity on LULC-in terms of the differences in annual sizes and configurationseither in changing and/or persistent areas. Processes driving decreasing vegetation trends, either climatic or anthropogenic, are better identified when LULC and change are incorporated in the examination of drought severity. For example, in CDB between 2000 and 2018, vegetation productivity declined in most forests, woodlands, croplands and grasslands. In land change areas, the trend of declining vegetation was equally high. In areas of persistence, the greatest percentage of improved vegetation productivity was in wetlands, settlements, and otherlands. Minimal improvement of vegetation trends in forested areas can be attributed to the overall increase in tree-covered areas during the study period.
+Previous studies in dryland contexts such as Botswana and elsewhere associate the improvement in vegetation productivity partly to bush-encroachment which remote sensing vegetation indices capture as vegetation greening but bush-encroachment is undesirable in cattle-based systems 
+Relating LULC change to land degradation, conversion of tree-covered areas to grassland, otherland and cropland, is degrading. This is because these land transitions drive the removal of vegetation cover and contribute to land degradation processes. Similarly considered as degrading land transitions are those involving the conversion of grasslands into croplands, artificial surface areas and otherlands. For example, in Palapye, the authors of 
+Drought impacts on grasslands, forests and wetlands imply negative impacts on the cattle system and biodiversity, including wildlife in savannas with the associated tourism and hospitality sector, whereas effects on croplands impact food production. For example, the water crisis of 2015-2016 resulting from relatively low, erratic rainfalls reduced water levels and water inflows into dams drastically across the country 
+
+## Drought Severity in the Constituencies ##
+Relating drought severity to the years declared as drought-stricken by the government, the results reveal that not all constituencies were equally affected by drought, as severity differed from severe to mild drought. Moreover, drought severities in some declared drought years were not as widespread in the CDB as in other parts of the country. For example, the growing season of the year 2009-2010 had improved vegetation productivity in response to above-normal rainfall recorded in previous months, which resulted in flooding events in five sub-districts in the CDB (Serowe/Palapye, Tutume, Boteti, Mahalapye and Bobirwa) 
+Drought severity was further gauged by the frequency at the constituency level. Over the study period, the constituencies experienced between eight to two drought events. Examples are Mahalapye west and east, with eight and seven drought occurrences, respectively, ranging from moderate to mild drought. Boteti west experienced seven drought events with severity ranging from severe to mild. Confirming these drought frequencies in the CDB, the authors of 
+
+## Conclusions ##
+This study proposed a spatial and temporal analysis of drought evolution in the Central District in eastern Botswana from 2000 to 2018. The results highlight the usefulness of incorporating land use-land cover and change in assessing the spatio-temporal variability of drought severity in drylands. Remote Sensing-based vegetation time series metrics were used, as complementary to climatological indices. Indicators characterising changes in vegetation conditions and drought severity during the growing seasons (October to March) from 2000-2001 to 2017-2018 were used. These indicators are NDVI difference-NDVI diff , NDVI anomaly, NDVI trends, Vegetation Condition Index-VCI, Drought intensity and frequency. The use of these different NDVI-based indicators, which might seem redundant, are useful as complementary measures since they differ computation-wise. The NDVI difference as utilised in this study captured the in-season variability in vegetation productivity, whereas the VCI compared each growing season with the long-term minimum and maximum conditions. For example, limited vegetation productivity found during the growing seasons of 2002-2004 and 2015-2016, which was based on both NDVI difference and NDVI anomalies, agreed with the heightened levels of drought severity over the same periods as derived from the VCI.
+Results further showed high temporal and spatial variability in vegetation productivity between drought and non-drought conditions in our case studies. The associated negative impact of droughts on vegetation resulting in limited vegetation productivity was further confirmed by results from this study. Drought effects on vegetation productivity during the study period were characterised by decreasing vegetation trends in most parts of the district. Although varying intensities of drought severity (severe, moderate and mild) occurred in the constituencies, the 2002-2003 and 2003-2004 growing seasons were found to be the worst drought periods in the entire series, as most parts of the district were affected. Assessing drought severity and intensities by LULC in selected drought years revealed varying drought effects. We found that drought effects differed between LULC types as well as whether these were areas of land change or persistence. Further examination of drought impacts in areas of no change is required, as our understanding of drought effects in areas with no change is still limited. More empirical studies in this regard will provide useful insights. Using the example of the 2002-2003 drought-stricken growing season, the highest percentage of land impacted by extreme and severe droughts were found in tree-covered areas, croplands and grasslands, whereas improved vegetation trends were found mostly in wetlands and some instances in otherland areas including barelands. Moreover, the results suggest that even in declared drought years, droughts severity varied, and the effects differed between constituencies. A further insight provided is that the magnitude of drought severity in some declared drought years was not as widespread in the CDB. For example, no other severe drought levels were recorded in the CDB after the extended drought which affected the growing seasons of 
+Remote Sensing-based time series enabled us to extend the analysis up to the ongoing season, demonstrating its usefulness for better characterisation of drought events. Remote Sensing-based results such as those obtained in this study, when provided at multiple administrative scales in a timely and cost-effective manner, have the potential to aid decision-makers to better plan and respond to drought situations. Scientific evidence is needed as input into the decision-making process to aid national resource mobilisation for drought management. Botswana requires both proactive and reactive approaches for drought management, for which remote sensing-based assessment and monitoring foster the implementation of drought early warning systems.
+
+## Supplementary Materials: ##
+The following are available online at https://www.mdpi.com/2072-4 292/13/5/836/s1, Table 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Evaluating the impact of drought using Remote Sensing in a Mediterranean, semi-arid region
+   Authors: 
+   Date: 2007
+
+2. Understanding the complex impacts of drought: A key to enhancing drought mitigation and preparedness
+   Authors: , , 
+   Date: 2007
+
+3. The role of drought among agro-pastoral communities in a semi-arid environment: The case of Botswana
+   Authors: , , 
+   Date: 2013
+
+4. Investigating relationship between drought severity in Botswana and ENSO
+   Authors: , , , , 
+   Date: 2020
+
+5. Potential impacts of global warming levels 1.5 • C and above on climate extremes in Botswana
+   Authors: , 
+   Date: 2019
+
+6. Drought Characteristics Assessment in Europe over the Past 50 Years
+   Authors: , , , , 
+   Date: 2020
+
+7. Global analysis of bioclimatic controls on ecosystem productivity using satellite observations of solar-induced chlorophyll fluorescence
+   Authors: , , , , 
+
+8. Consequences of widespread tree mortality triggered by drought and temperature stress
+   Authors: , , 
+   Date: 2013
+
+9. Drought severity in a changing climate
+   Authors: , , 
+   Date: 2017
+
+10. Assessing the response of vegetation photosynthesis to meteorological drought across northern China
+   Authors: , , , 
+   Date: 2021
+
+11. Positive feedback between future climate change and the carbon cycle
+   Authors: , , , , , , , 
+   Date: 2001
+
+12. Global warming and changes in drought
+   Authors: , , , , , , 
+   Date: 2014
+
+13. Observed drought indices show increasing divergence across
+   Authors: , , , 
+   Date: 2017, 7, 14045
+
+14. Pan-European seasonal trends and recent changes of drought frequency and severity
+   Authors: , , 
+   Date: 2017
+
+15. The southern African climate under 1.5 • C and 2 • C of global warming as simulated by CORDEX regional climate models
+   Authors: , , , , , , , 
+   Date: 2018
+
+16. Impacts of the 2017 flash drought in the US Northern Plains informed by satellite-based evapotranspiration and solar-induced fluorescence
+   Authors: , , , , , , , , 
+   Date: 2019
+
+17. Geosystems: An Introduction to Physical Geography
+   Authors: 
+   Date: 2013
+
+18. Rising temperatures and changing rainfall patterns in South Africa's national parks
+   Authors: , , , , 
+   Date: 2016
+
+19. Projections of rapidly rising surface temperatures over Africa under low mitigation
+   Authors: , , , , , , 
+   Date: 2015
+
+20. The effects of 1.5 and 2 degrees of global warming on Africa in the CORDEX ensemble
+   Authors: , , , , , , , , , 
+   Date: 2018
+
+21. Climate change and variability in semi-arid Palapye; Eastern Botswana: An assessment from smallholder farmers' perspective
+   Authors: 
+   Date: 2017
+
+22. Rainfall variability and trends in semi-arid Botswana: Implications for climate change adaptation policy
+   Authors: , 
+   Date: 2010
+
+23. Relating the dynamics of climatological and hydrological droughts in semiarid Botswana
+   Authors: , , 
+   Date: 2018
+
+24. Prediction of onset and cessation of austral summer rainfall and dry spell frequency analysis in semiarid Botswana
+   Authors: , , , 
+   Date: 2018
+
+25. Temperature and precipitation extremes under current, 1.5 • C and 2.0 • C global warming above pre-industrial levels over Botswana, and implications for climate change vulnerability
+   Authors: , , 
+   Date: 2018
+
+26. Drought hazard in Kazakhstan in 2000-2016: A remote sensing perspective
+   Authors: , , , , , 
+   Date: 2019
+
+27. Global Drought Watch from space
+   Authors: 
+   Date: 1997
+
+28. Remote Sensing of Drought: Progress, Challenges and Opportunities
+   Authors: , , , , , , 
+   Date: 2015. 2014
+
+29. Remote Sensing of Drought: Vegetation, Soil Moisture, and Data Assimilation
+   Authors: , , , 
+   Date: 2017
+
+30. Effects of Droughts on Vegetation Condition and Ecosystem Service Delivery in Data-Poor Areas: A Case of Bobirwa Sub-District; Limpopo Basin and Botswana
+   Authors: , , 
+
+31. 
+   Date: 2014. 2016. 31 December 2020
+
+32. Vegetation dynamics in African drylands: An assessment based on the Vegetation Degradation Index in an agro-pastoral region of Botswana
+   Authors: , 
+   Date: 2019
+
+33. Operation of the Global Land Component: Algorithm Theoretical Basis. Issue I2.11 GIO-GL Lot1 Consortium
+   Date: 2015. 31 December 2020
+
+34. 
+   Authors: , , , , , , , , , 
+   Date: 2017. January 2020
+
+35. Assessing UN indicators of Land Degradation Neutrality and proportion of degraded land over Botswana using Remote Sensing based national level metrics. Land Degrad
+   Authors: , , 
+   Date: 2021
+
+36. Enhancing National Forest Monitoring System for the Promotion of Sustainable Natural Resource Management Project Report
+   Authors: 
+   Date: 2017. 1 January 2021
+
+37. Using classification and NDVI differencing methods for monitoring sparse vegetation coverage: A case study of Saltcedar in Nevada; USA
+   Authors: , , , , , 
+   Date: 2008
+
+38. Vegetation greenness in Northeastern Brazil and its relation to ENSO warm events
+   Authors: , , , 
+   Date: 2014
+
+39. Analysis of monotonic greening and browning trends from global NDVI time-series
+   Authors: , , , , , 
+   Date: 2011
+
+40. A contextual Mann-Kendall approach for the assessment of trend significance in image time series
+   Authors: , 
+   Date: 2011
+
+41. Sixteen years of agricultural drought assessment of the BioBío region in Chile using a 250 m resolution Vegetation Condition Index (VCI)
+   Authors: , , , 
+
+42. Gaborone: Botswana Vulnerability Assessment Committee; Ministry of Local Government and Rural Development
+   Date: 2018/19. 2019. January 2021
+
+43. Drought management strategies among agro-pastoral communities in nonequilibrium Kalahari ecosystems
+   Authors: , , 
+   Date: 2011
+
+44. Delayed Onset of Seasonal Rains in Parts of Southern Africa Raises Serious Concern for Crop and Livestock Production in 2016. FAO Special Alert for Southern Africa
+   Authors: 
+   Date: 2015. 25 December 2017
+
+45. Rural Development Council. Drought and Household Food Security Outlook
+   Date: 2016. 2017
+
+46. Azorin-Molina, C. A multiscalar global evaluation of the impact of ENSO on droughts
+   Authors: , , , , , , 
+   Date: 2011. 016039
+
+47. Re-greening Sahel: 30 years of remote sensing data and field observations
+   Authors: , , , , , 
+
+48. Woody vegetation die off and regeneration in response to rainfall variability in the West African Sahel
+   Authors: , , , , , 
+
+49. Analysis of land change in the dryland agricultural landscapes of eastern Botswana
+   Authors: , 
+   Date: 2018
+
+50. Sahel Atlas of Changing Landscapes: Tracing Trends and Variations in Vegetation Cover and Soil Condition
+   Date: 2012. 7 February 2021
+
+51. Management of water supply reservoirs under uncertainties in arid and urbanized Environments
+   Authors: , , 
+   Date: 2016
+
+52. DREF Operation n • MDRBW001 GLIDE n • FL-2009-000120-BWA
+   Date: 2009. January 2021
+
+53. Remote sensing based drought monitoring in Zimbabwe
+   Authors: , 
+   Date: 2014
+
+54. Impact of land management practices on water use strategy for a dryland tree plantation and subsequent responses to drought
+   Authors: , , 
+   Date: 2020
+

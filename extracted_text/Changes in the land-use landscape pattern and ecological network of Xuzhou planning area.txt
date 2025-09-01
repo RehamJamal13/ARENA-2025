@@ -1,0 +1,365 @@
+================================================================================
+TITLE: Changes in the land-use landscape pattern and ecological network of Xuzhou planning area
+================================================================================
+
+AUTHORS:
+- Xi Zhou
+- Zuoyong Chu
+- Xiang Ji
+
+ABSTRACT:
+Ongoing rapid urbanization has triggered significant changes in land use, rendering landscape patterns adversely impacted and certain habitat patches degraded. Ecological networks have consequently contracted overall. As such, an investigation into how land-use landscape patterns and ecological networks change over time and space is of major significance for ecological restoration and regional sustainability. Taking Xuzhou Planning Area as a case study, we examined spatiotemporal changes and features of the landscape pattern by employing the land-use change degree, the landuse transition matrix, and quantified landscape pattern indices. An ecological network analysis, which studies the changes in network connectivity and robustness, as well as their causes and contributors, was undertaken to probe into the features and trends of spatiotemporal changes in the land-use landscape pattern and ecological network amid expeditious urbanization. Analysis results unveiled the following: (1) From 1985 to 2020, there was a decline in the area of farmland, forest, and grassland, accompanied by an increase in land for construction, water bodies, and unused land. The southwestern research area witnessed farmland substantially give way to land for construction for this period, and the most dramatic change in land use occurred between 2000 and 2010. (2) The area of dominant patches in the research area shrank, along with more fragmented, complex landscapes. The land for construction was emerging as the dominant landscape by area, whereas patches of farmland, forest, grassland, and water bodies became less connected. (3) The ecological network was densely linked in the northeast, with sparser connections in the southwest. Spatial shrinkage was observed in the research area's southwestern and central ecological corridors. Overall, the number of ecological sources and corridors rose and subsequently dropped before a rebound. (4) The ecological network grew more connected and robust from 1985 through 1990, as portions of farmland were converted into water bodies, which led to an increase in ecological sources. Given a reduction in ecological sources and corridors in the southwestern and central regions between 1990 and 2010, network connectivity and robustness declined, which was reversed from 2010 onward with the addition of two ecological sources-Pan'an Lake and Dugong Lake. With an optimal ecological network in 1990, however, it deteriorated significantly by 2010. The research area saw the minimum value of its network connectivity indices of network stability index (α), evenness index (β), and connectivity index (γ), in 2010, when its ecological network was highly fragmented and vulnerable, attributing to a strong contrast between the maximal connected subgraph's relative size and connectivity robustness. The research findings can lay scientific groundwork for addressing ecological issues, restoring landscape patterns, and developing ecological networks amid urbanization. Keywords Landscape pattern and ecological network, Spatiotemporal change, Land-use transition matrix, Landscape pattern indices, Network robustness
+Rapid urbanization takes a toll on land use and its resulting landscape pattern, which, in turn, holds back sustainable urban growth 
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Untitled ##
+Presently, a large majority of global research efforts on land use landscape patterns and ecological networks have been made from individual perspectives. On landscape patterns, prior studies focused on examining either the features of spatiotemporal changes concerning all types of the land use landscape through the dynamic degree of land use and land-use transition matrix, metrics derived from land use change 
+Employing the Landsat program's remote sensing data spanning from 1985 to 2020, we endeavored to elucidate the trends and features of spatiotemporal changes in the landscape pattern and ecological network of the Xuzhou Planning Area. The effort was facilitated by analyzing land-use change and landscape pattern indices and applying ecological network research methods. Commencing with a rigorous exploration of land-use change, this study adopted quantitative measures, including the land-use change degree, the land-use transition matrix, and landscape pattern indices, to discern the intricate spatiotemporal changing trends and characteristics encompassing the urban landscape pattern. Subsequently, the MSPA-InVEST-Conefor model was harnessed to identify ecological sources, before developing an ecological network grounded on the MCR model and under circuit theory. Through the lens of network stability index (α), evenness index (β), and connectivity index (γ) 
+
+## Research area overview and data sources ##
+
+
+## Research area overview ##
+Situated in the northwest of Jiangsu Province and the southeast of the North China Plain, Xuzhou represents a strategically significant city in the China-proposed Belt and Road Initiative and a national innovation demonstration zone for sustainable development. Plains and hills account for about 90% and 10% of the city's total area, respectively. The hilly area's altitude ranges from 100 to 200 m, with the highest peak represented by Dadong Mountain nestled at the heart of Jiawang District, at 361 m. Home to a permanent population of 9.03 million, Xuzhou fosters a robust urbanization rate of 66.19%, and its GDP stood impressively at Renminbi 811.74 billion as of the end of 2021. Factoring in the city's overarching developmental imperatives and the spatial layout of its landscape pattern and ecological network, we took the Xuzhou Planning Area as our research area, which included downtown Xuzhou and Shuanggou Town in Suining County, as illustrated in Fig. 
+
+## Data sources and processing ##
+The data sources utilized in this research are detailed in Table 
+
+## Research methods ##
+
+
+## Analysis of land-use change ##
+
+
+## Dynamic degree of land use ##
+The dynamic degree of land use reflects the change in the area of land-use types and its intensity for a given time period of research 
+where K is the dynamic degree index of land use; U i and U j are the areas of a particular land-use type in the early and late periods of research, respectively; T represents a given time period of research. A larger absolute value of K suggests a greater change in land use.
+
+## Land-use transition matrix ##
+The land-use transition matrix shows information (including about the transitional direction and area) on the mutual conversion of different land-use types during a specific research period (early and late stages) 
+where B ij denotes the area of land type j converted from land type i in the early and late periods of research; n is the total number of land-use types.
+
+## Analysis of landscape pattern indices ##
+Landscape pattern indices directly reflect the landscape ecological status of land-use types 
+
+## Analysis of ecological network changes ##
+
+
+## Identification of ecological sources ##
+With the land-use data of Xuzhou Planning Area for 1985, 1990, 2000, 2010, and 2020, we considered forest, grassland, and water areas as foreground classes and other land-use types as background classes under MSPA 
+The eight-neighborhood method was employed to establish seven landscape types, namely cores, islets, perforations, edges, loops, bridges, and branches, of which cores are integral to ecological sources 
+
+## Development of the resistance surface and ecological network ##
+Drawing from relevant literature 
+
+## Analysis of structural features of the ecological network ##
+Network connectivity An abstract concept derived from topological space, network connectivity measures the spatial coupling relationship between urban landscape ecological networks and its overall ecological effectiveness 
+
+## Network robustness ##
+The robustness of a network is the ability of an ecological network to withstand and survive natural and manmade disasters 
+
+## Results and analyses ##
+
+
+## Features of spatiotemporal changes in land use ##
+
+
+## Area change and dynamic degree of land use ##
+The areas of land-use types in the Xuzhou Planning Area in 1985, 1990, 2000, 2010, and 2020 and their respective proportions are presented in Table 
+
+## Evaluation index Equation Description ##
+, where α is the number of circuits created by existing nodes. The higher the value, the greater the number of circuits in the network
+, where β describes how difficult a node is connected to another node. The higher the value, the more complex the entire network
+0 ≤ γ ≤ 1, where γ reflects the extent to which nodes connect to each other and the resulting ecological effectiveness. The higher the value, the more connected and ecologically effective the network Table 
+
+## Parameter Equation Description ##
+Relative size of the maximal connected subgraph S = Cmax N S represents the relative size of a maximal connected subgraph; N is the number of nodes in the original network; C max denotes the number of nodes in a maximal connected subgraph
+R implies connectivity robustness; C max is the number of ecological nodes in a network's maximal connected subgraph after some nodes are removed; N expresses the total number of nodes in a network; N r denotes the number of nodes removed
+The dynamic degrees of all land-use types for four specified time periods are illustrated in Figure 
+
+## Land-use transitions ##
+In ArcGIS 10.8, maps showing the transitions between land-use types in the research area were generated, as illustrated in Fig. 
+Over the period from 1985 to 2020, a discernible trend of farmland continuously giving way to urban land for construction was observed. Concurrently, farmland progressively diminished, predominantly converting into land for construction; both forest and grassland areas exhibited a declining trajectory, with conversions mainly directed toward farmland and land for construction; the water bodies expanded before contracted, typically reflecting transitions from and to farmland; the area of unused land experienced a consistent increase, chiefly   
+
+## Features of spatiotemporal changes in the landscape pattern ##
+Landscape-oriented evaluation Variations in landscape-oriented landscape pattern indices in the Xuzhou Planning Area during the period from 1985 to 2020, as depicted in Table 
+
+## Patch-oriented evaluation ##
+The variations in patch-based landscape pattern indices for the period 1985-2020 in Xuzhou Planning Area are illustrated in Fig. 
+
+## Features of spatiotemporal changes in land use ##
+
+
+## Area change and dynamic degree of land use ##
+Based on the MSPA-InVEST analysis outcomes depicted in Figures 
+By putting six resistance factors, namely habitat quality, land-use type, NDVI, elevation, slope, and topographic relief amplitude, under overlay analysis, we derived a comprehensive resistance surface for each time period (1985, 1990, 2000, 2010, and 2020). On this basis, the MCR model and the circuit theory-inspired Linkage Mapper tool were leveraged to mark out the important and general ecological corridors in Xuzhou Planning Area in each specific year, as displayed in Figure 
+Upon a deeper analysis that included changes in ecological sources and their corresponding land-use types for each time period, as illustrated in Figure 
+
+## Analyses of changes in structural features of the ecological network ##
+Network connectivity analysis. Variations in network connectivity indices for each particular year of research (namely 1985, 1990, 2000, 2010, and 2020) were presented in Fig. 
+
+## Conclusions and discussions ##
+
+
+## Conclusions ##
+Built on multi-source remote sensing imagery for the years 1985, 1990, 2000, 2010, and 2020, the paper investigated the features and trends of spatiotemporal changes in the landscape pattern and ecological network of Xuzhou Planning Area by leveraging the land-use model, landscape pattern indices, and ecological network analysis. Research findings offer guidance for addressing the issue of urban eco-space shrinkage and fragmentation, better preserving ecological resources in the research area, and promoting sustainable urban development.
+Major conclusions were drawn as follows:
+(1) Xuzhou Planning Area has undergone a dramatic transformation in the land-use landscape pattern amid urbanization. Between 1985 and 2020, the continuous expansion of land for construction notably encroached upon surrounding farmland, resulting in the conversion of certain ecological land, including forests and grasslands, into construction areas. Over the 35-year period, there was a significant increase in the area of land for construction by 303.08 km The indices of SHDI and SHEI, however, increased throughout the research period, from 0.92 and 0.51 up to 1.02 and 0.57, respectively. These readings suggested that the dominant patch area in landscapes is on a declining trend, accompanied by enhanced ecological spatial heterogeneity and increased fragmentation and complexity of landscapes. At the patch level, the land for construction is steadily enhancing its role as the largest dominant landscape type, and the fragmented invasion of land for construction in the suburbs of cities has caused a reduction and fragmentation of farmland, posing a threat to the quality of habitats and landscape layout such as forests, grasslands, and water bodies.This trend leads to loosely connected patches of these land types. (3) The overall ecological network in the research area grew dense in the northeast and sparse in the southwest characterized by intense human activity. Between 1985 and 2020, the number of ecological sources and corridors rose and subsequently dropped before a rebound. The total area of ecological sources decreased by 8.06 km 2 , despite an increase in number, from 19 to 20. At the same time, the number of corridors rose from 47 to 49, but despite this increase, the combined length was shortened by 120.23 km. Landscapes became better connected for the period from 1985 to 1990, with potions of farmland converted into water areas and an addition of three ecological sources and eight corridors. With an expansion of land for construction in the southwest during the period from 1990 to 2010, the overall number of ecological patches became smaller, thus compromising landscape connectivity and disrupting the ecological landscape pattern. From 2010 onward, landscape connectivity was enhanced as attention was paid to restoring ecosystems, together with a conversion of some farmland portions into water areas and the addition of two ecological sources and seven corridors. On the whole, the northeastern region with dense forest patches had stronger landscape connectivity. The strength of landscape connectivity was correlated with changes in ecological sources, as the expansion of land for construction led to a shrinkage of ecological source areas and corridors in the densely populated southwest, which was unfavorable for material and information exchange and biodiversity conservation in the research area. (4) Over the period from 1985 to 1990, three ecological sources and eight corridors were added, enhancing the connectivity of ecological patches and complicating the ecological network. However, between 1990 and 2010, the spatial distribution of corridors in the southwestern and central research area shrank, resulting in a decline in network connectivity and robustness. Starting from 2010, the addition of two ecological sources, namely Dugong Lake and Pan'an Lake, increased the density of corridors in the central and northeastern research area, thus changing network connectivity and robustness for the better. Overall, the ecological network was most optimal in 1990, with a more even spatial distribution between its source areas, better ensuring the resilience of the ecological network to external disruptions. Followed by 2000, 2020, 1985, and 2010. By 2010, the maximal connected subgraph's relative size and connectivity robustness exhibited significant fluctuations and differences. And the α, β, and γ indices hit their minimum values of 0.81, 2.33, and 0.875, respectively, indicating that during this period, the period witnessed the most fragmented ecological network, characterized by heightened vulnerability upon disruptions.
+
+## Discussions ##
+In this paper, we delved into land-use landscape patterns changes and transitions in the Xuzhou Planning Area spanning from 1985 through 2020 and produced an ecological network of the research area. Subsequently, we conducted a thorough assessment of network connectivity and resilience, examining the dynamic evolution attributes of the ecological network structure through a prolonged temporal lens and identifying key recovery zones within the landscape schema. Analysis results showed that there were pronounced differences between southwestern and northeastern research regions in terms of the number of ecological corridors and nodes.
+Another observation was that the ecological network in the northeastern Jiawang District was denser than that in the southwestern research area characterized by intense human activity. This was attributed to the continuous expansion of land for construction in the central urban areas of the southwestern region, with fragmentation encroaching on surrounding farmland and core ecological patches of forest, grassland, and water bodies.
+Consequently, this has resulted in the contraction of ecological patches and corridors in the southwestern area, propelling the overall landscape towards a trajectory of increased fragmentation and complexity. The inadequate connectivity among patches impedes the exchange of substrates, information, and biodiversity conservation within the study domain. Authorities should avoid allowing uncontrolled construction in these areas if they are to meet the national goal of maintaining habitat connectivity and fostering sustainable urban-rural development. There should be a focus on amplifying ecological restoration and protection initiatives in the southwestern region, rigorously controlling the unplanned expansion and sprawl of construction land, while also intensifying efforts to conserve and connect farmland and core ecological patches of forest, grassland, and water bodies. This includes the establishment of ecological corridors amidst patches, thereby enhancing ecosystem stability and bolstering landscape integration. Nonetheless, certain limitations in this paper warrant consideration. First, different topographic and geomorphic features in the research area were not factored in during the creation of the complex network, which impeded a further exploration of the interplay between network robustness with ecological nodes under attack and the impact of natural elements in the research area. Second, the processes of extracting ecological sources and weighting ecological resistance factors were primarily drawn from prior research and findings, which entails a qualitative analysis framework. For now, a comprehensive and unified quantitative analytical paradigm for research on ecological networks remains absent. Overcoming these limitations would be instrumental in further complementing the research literature on the structures and features of spatial ecological networks.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. (1234567890) Scientific Reports |
+   Date: 2024
+
+2. Evolution of natural and social science interactions in global change research programs
+   Authors: , , 
+   Date: 2013
+
+3. Water balance responses to land-use/land-cover changes in the Pra River Basin of Ghana
+   Authors: 
+   Date: 1986-2025. 2019
+
+4. Temporal and spatial evolution characteristics and ecological risk assessment of land use landscape patterns in central Zhejiang urban agglomeration
+   Authors: 
+   Date: 2020
+
+5. Green areas management and bioengineering techniques for improving urban ecological sustainability
+   Authors: 
+   Date: 2017
+
+6. Construction and optimization of green space ecological networks in urban fringe areas: A case study with the urban fringe area of Tongzhou district in Beijing
+   Authors: , , , 
+   Date: 2020
+
+7. Ecological network construction of the heterogeneous agro-pastoral areas in the upper Yellow River basin
+   Authors: 
+   Date: 2020
+
+8. Ecological network construction and corridor optimization in Guangdong-Hong Kong-Macao Greater Bay Area
+   Authors: 
+   Date: 2022
+
+9. Dynamic changes and transformation of agricultural landscape pattern in mountainous areas: A case study in the hinterland of the Three Gorges Reservoir Area
+   Authors: , , , 
+   Date: 2021. 1234567890. 2024
+
+10. Comparison of land use/land cover change and landscape patterns in Honghe National Nature Reserve and the surrounding Jiansanjiang Region
+   Authors: , , , , 
+   Date: 2015
+
+11. Analysis of land use conversion and landscape pattern change in Taiping lake national wetland park
+   Authors: , , , , 
+   Date: 2023
+
+12. Land use transition in coastal area and its associated eco-environmental effect: A case study of coastal area in Fujian Province
+   Authors: , , , 
+   Date: 2021
+
+13. Detecting the dynamic linkage between landscape characteristics and water quality in a subtropical coastal watershed
+   Authors: , , , , 
+   Date: 2013
+
+14. Response of vegetation cover to drought in the northern slope of the Tianshan Mountains during 2001-2015 based on the land-use and land-cover change
+   Authors: , , , 
+   Date: 2019
+
+15. Spatiotemporal change of landscape pattern and its eco-environmental response in the Yangtze River economic belt
+   Authors: 
+   Date: 2022
+
+16. Temporal and spatial evolution of regional cultural landscape under the influence of construction land expansion: A case study of Hanjiang delta in Guangdong China
+   Authors: , , 
+   Date: 2022
+
+17. Cultivated land change, driving forces and its impact on landscape pattern changes in the Dongting lake basin
+   Authors: , , , 
+   Date: 2020
+
+18. The relationship of urban expansion, landscape patterns and ecological processes in Denizli
+   Authors: , , 
+   Date: 2018
+
+19. Influence of volcanic eruptions on the climate of the Asian monsoon region
+   Authors: 
+   Date: 2010
+
+20. The relationship of urban expansion, landscape patterns and ecological processes in Denizli
+   Authors: , , 
+   Date: 2018
+
+21. Construction and optimization of green infrastructure network based on space syntax: A case study of Suining County Jiangsu province
+   Authors: , , , , 
+   Date: 2022
+
+22. Evaluation of ecological network in surface coal mine: A case study of Shengli open pit mining area
+   Authors: , , , , 
+   Date: 2019
+
+23. Identification of key areas of ecological protection and restoration based on the pattern of ecological security: A case of Songyuan city, Jilin province
+   Authors: 
+   Date: 2022
+
+24. Spatial network of urban heat environment in Beijing-Tianjin-Hebei urban agglomeration based on MSPA and circuit theory
+   Authors: 
+   Date: 2023
+
+25. Constructing the urban ecological security pattern of Anqing city by circuit theory
+   Authors: , , 
+   Date: 2020
+
+26. Landscape pattern analysis and ecological network planning of Tianjin City
+   Authors: , , , 
+   Date: 2019
+
+27. Error and attack tolerance of complex networks
+   Authors: , , 
+   Date: 2000
+
+28. Investigation on complex spatial ecological network structure based on complex network analysis method
+   Authors: 
+   Date: 2018
+
+29. Developing ecological networks based on MSPA and the least-cost path method: A case study in Bazhong western new district
+   Authors: , , , 
+   Date: 2015
+
+30. Characteristics of spatial ecological network in the Yellow River Basin of northern China
+   Authors: 
+   Date: 2022
+
+31. Comprehensive evaluation of the evolution of ecological network structure in Tianjin, China from a multi-dimensional perspective
+   Authors: , , , 
+   Date: 2021
+
+32. Construction and optimization of urban green space network: A case of pu' er city in Yunnan Province
+   Authors: , 
+   Date: 2022
+
+33. Study on national resources & environment surveyand dynamic monitoring using remote sensing
+   Authors: 
+   Date: 1997
+
+34. Regional characteristics and spatial-temporal distribution of cultivated land change in China during 2009-2018
+   Authors: , , , 
+   Date: 2021
+
+35. Analysis of arable land loss and its impact on rural sustainability in southern Jiangsu Province of China
+   Authors: , , 
+   Date: 2019
+
+36. Influence of human disturbance on the change of vegetation cover in the Tibetan Plateau
+   Authors: , , , 
+   Date: 2021
+
+37. Land use/cover in China's land areas: Spatio-temporal pattern change and driving forces analysis
+   Authors: , , 
+   Date: 2020
+
+38. Landscape metrics for assessment of landscape destruction and rehabilitation
+   Authors: 
+   Date: 2001
+
+39. Analysis of landscape ecological pattern evolution and ecological network structure optimization for Shanghai
+   Authors: , , , , 
+   Date: 2019
+
+40. Analysis of the temporal and spatial pattern of the green infrastructure network in Nanjing, based on MSPA
+   Authors: , , , , 
+   Date: 2016
+
+41. Construction and optimization of an ecological network based on morphological spatial pattern analysis and circuit theory
+   Authors: , , , , 
+   Date: 2021
+
+42. Spatial assessment of habitat conservation status in a Macaronesian island based on the InVEST model: A case study of Pico Island
+   Authors: , , , , 
+   Date: 2018
+
+43. Spatial-temporal pattern and optimization of the green space ecological networks in the Ningshao plain
+   Authors: , 
+   Date: 2022
+
+44. Ecological network construction of Sea-Island city based on MSPA and MCR Model
+   Authors: , , , 
+   Date: 2023
+
+45. Spatiotemporal evolution and multi-scenario prediction of habitat quality in the Yellow River Basin
+   Authors: , , , , 
+   Date: 2023
+
+46. Changes and protections of urban habitat quality in Shanghai of China
+   Authors: , , , , 
+   Date: 2023
+
+47. Spatio-temporal evolution and driving forces of habitat quality inGuizhou Province
+   Authors: , 
+   Date: 2023
+
+48. Constructing and optimizing ecological network at county and town scale: The case of Anji County
+   Authors: 
+   Date: 2021
+
+49. Construction of rural multifunctional landscape corridor based on MSPA and MCR model-taking Liukeng cultural and ecological tourism area as an example
+   Authors: , , , 
+   Date: 2023
+
+50. Construction and optimization of ecological security pattern in the Loess Plateau of China based on the minimum cumulative resistance (MCR) mode
+   Authors: 
+   Date: 2022
+
+51. Spatial and temporal pattern evolution of county green infrastructure network based on MSPA and spatial syntax: A case study of Suining county in Xuzhou City
+   Authors: , , , 
+   Date: 2022
+
+52. Analysis of the wetland ecological pattern in Wuhan City from the perspective of ecological network
+   Authors: , , 
+   Date: 2020
+
+53. Linking ecosystem services and circuit theory to identify ecological security patterns
+   Authors: 
+   Date: 2018
+
+54. Optimization and management of the connectivity of ecological red lines at regional scale: A case study of Yangtze River Delta
+   Authors: , 
+   Date: 2022
+
+55. Construction and optimization of ecological network for protected areas in Qinghai Province
+   Authors: 
+   Date: 2018
+
+56. The connectivity evaluation of Shanghai urban landscape Econetwork
+   Authors: 
+   Date: 2009
+
+57. Construction of green space ecological network in Dongting Lake region with comprehensive evaluation method
+   Authors: , , , , 
+   Date: 2020
+
+58. Ecological corridor construction based on important ecological nodes in Duliujian River basin
+   Authors: 
+   Date: 2018
+
+59. Landscape pattern analysis and ecological network planning of Tianjin City
+   Authors: , , , 
+
+60. Robustness analysis of wetland ecosystem network models
+   Authors: , , 
+   Date: 2023
+
+61. Optimization of ecological spatial network in typical mining areas of the Yellow River Basin: take Ordos and Yulin areas of the Yellow River Basin as examples
+   Authors: 
+   Date: 2021
+
+62. Study on the construction and optimization of ecological network in the northeastern margin of Ulanbuhe Desert
+   Authors: 
+   Date: 2019
+

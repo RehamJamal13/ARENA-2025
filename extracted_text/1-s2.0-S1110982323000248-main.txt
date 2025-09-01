@@ -1,0 +1,229 @@
+================================================================================
+TITLE: Development of a map for land use and land cover classification of the Northern Border Region using remote sensing and GIS
+================================================================================
+
+AUTHORS:
+- Abdulbasit Darem
+- Asma Alhashmi
+- Aloyoun Almadani
+- Ali Alanazi
+- Geraldine Sutantra
+
+ABSTRACT:
+The land use and land cover study (LULC) play an essential role in regional socio-economic development and natural resource management to develop sustainable development in vegetation changes, water quantity and quality, land resources, and coastal management. This study uses remote sensing data to investigate LULC in the Northern Border Region (NBR) in the Kingdom of Saudi Arabia. The purpose of this study is to obtain a better understanding of the patterns and drivers of changes in LULC in the NBR over the past three decades. Remote sensing data from Landsat imagery between 1990 and 2022 were used to classify LULC types, and a time series analysis was performed using Landsat imagery to detect changes over time. The classification finds four main classes: bare land, built-up area, rocks, and vegetation. The results indicate a significant increase in urban development. The outcomes revealed that most urbanization occurred in the outskirts of the cities, where previously there were bare soil lands. The main drivers of urbanization were population growth and economic development. These findings have important implications for city planning, the management of green spaces, and the sustainable development of cities. Maximum Likelihood classifier was used to perform the classification. The accuracy assessment demonstrated satisfactory results, with an overall accuracy of 92.6%. The study paves the way for further monitoring LULC changes in the NBR geographic location. The technique used was adequate to address the objectives of this study.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+LULC is a source of information for countries to make appropriate decisions based on remote sensing (RS) data. This knowledge and detection of land change are considered essential factors for planning land conservation, management, and development. Understanding the dynamics of environmental change to ensure sustainable development and formulate policies for the optimal future use of these lands. LULC classification is an important technique to assess the relationship between the environment and human activities 
+This research study is significant because the growing population and the increasing socio-economic had created pressure on LULC, which led to unplanned and uncontrolled changes. The Northern Border Region is a critical ecological and economic zone that encompasses a variety of land uses and covers, including urban areas, agricultural lands that has not been used, and natural ecosystems. However, the region is undergoing rapid and extensive land-use changes, resulting in significant impacts on local communities, natural resources, and the environment. Therefore, it is essential to develop accurate and efficient tools to monitor and manage land use and land cover changes in the region. Remote sensing and GIS technologies offer a powerful means to quantify and analyze LULC changes, but their application requires a specific method tailored to the unique characteristics of the study site. Our study aimed to develop a map for land use and land cover classification of the Northern Border Region using remote sensing and GIS, which can provide a reliable and efficient tool to monitor and manage land use and land cover changes in the region. The study's results can contribute to the development of effective land management policies and practices, promote sustainable land use and resource conservation, and provide critical information for urban planning, agricultural management, and biodiversity conservation. The KSA plays a crucial role in global efforts to preserve the future of the Earth, as it launched the Green Saudi Initiative to renew its belief in a sustainable future for all. From this point of view, there was a need to study the environment and topography of the Kingdom from several points of view to delineate the maps of LULC. Information and data are needed to help decision-makers detect the change in the LULC of the NBR and understand the dynamics of environmental change to ensure sustainable development and formulate policies for the optimal future use of these lands. There are no previous studies covering the LULC of the Northern Border region. The generated and processed maps that will result from this study will be significant for the future planning of the NBR. In this study, RS techniques will be used to map the land use and cover of NBR, one of the most critical regions of the Kingdom in terms of environmental diversity, in addition to the presence of many essential minerals. Decision-makers can use the results of this study to manage natural resources in the region, help in socio-economic development, plan the appropriate use of land (agriculture, construction, and urban expansion), and know the size and type of vegetation in the northern border area. The maps from this study will help find suitable places for mining essential minerals in the northern border region.
+The rest of this paper is structured as follows: Section 2 provides background information on the topic, followed by a review of relevant literature in Section 3. Section 4 describes the research design, including the deadest materials and procedures. Section 5 presents the study findings, including the statistical analyses and data classes. Section 6 presents the Challenges and Limitations, followed by the conclusion to summarize the main findings and their implications.
+
+## Background ##
+LULC classification is a fundamental tool for understanding the spatial distribution of land features and their associated character-istics. Accurate LULC classification is essential for various land management, natural resource management, and urban planning applications. Due to the rapid advancement of RS technology, high-resolution images are now available with a wide range of spectral and spatial resolutions, allowing for accurate and timely land cover classification. However, due to the complexity of land features, the classification of LULC remains challenging. A key factor affecting the accuracy of LULC classification is the selection of features for classification. There are many classification methods. The following sections briefly describe the classification and feature selection methods.
+The three main methods for classifying LULC objects using RS and GIS are satellite imagery, spectral analysis, and digital terrain analysis. First, satellite imagery involves using satellites to acquire images of land surfaces from different angles. These images are then processed and analyzed to identify and classify LULC objects. The data collected can include details such as elevation, vegetation, and soil type. Second, spectral analysis is used to identify and classify LULC objects using electromagnetic radiation (EMR) emitted from these objects. This technique uses different wavelengths of EMR, such as infrared, visible light, and thermal imaging, to detect and characterize different LULC objects. Third, digital terrain analysis involves using computer algorithms and GIS software to analyze and classify LULC objects. This technique is used to create detailed contour maps and 3D models of terrain in order to classify and identify LULC objects accurately.
+
+## Literature review ##
+Various studies have been conducted to classify and update LULC information in different regions using RS and GIS technology with varying levels of success 
+
+## Materials and methods ##
+The workflow diagram of this study can be illustrated in Fig. 
+
+## Study area ##
+The study area is in Saudi Arabia's Northern Border Region (NBR), along the borders with Iraq and Jordan. It consists of several towns, villages, land, and semi-arid areas. The elevation of the area is 536 m above sea level. The GPS coordinates of NBR are 30.975 and 41.038, and its longitude is 41.016666. 30°59 0 0.0024 00 N and 41°0 0 59.9976 00 E (https://en.wikipedia.org/wiki/Arar,_Saudi_ Arabia). Its population is 395,000 (the year 2014 census). It is recognized for its fertile grazing plains. The Saudi Arabian Highway 85 passes through NBR, a significant supply stop connecting Iraq and Saudi Arabia. Fig. 
+
+## Dataset collection ##
+The dataset consists of RS imageries of NBR's maps from 1990 to 2022. It was extracted using Landsat 5 and Landsat 8 from various satellite images repository like Google Earth Pro, the United States Geological Survey (USGS) 1 and (diva) 2 website. These images were clear of cloud cover. Table 
+
+## Pre-processing ##
+Data pre-processing is an essential part of LULC classification, as it affects the accuracy of the resulting classification outputs. Data pre-processing is a method used prior to LULC classification to optimize the accuracy of the classification results. It helps the data to be improved to provide better results. Data pre-processing encompasses various stages, such as radiometric corrections, data enhancement, and spatial filtering, which are essential for obtaining more accurate classifications. Radiometric corrections are performed to compensate for sensor gain and offset effects, which can adversely affect the LULC classification results. The primary radiometric corrections used in LULC classification are signal-to-noise ratio adjustment and histogram equalization. The signal-to-noise ratio adjustment minimizes the variation so that the output image has a more even signal distribution. Histogram equalization compensates for the non-uniform luminance distribution in regions with varying illumination intensity by redistributing the pixel values across the entire dataset.
+It is crucial to pre-process the RS data to correct the radiometric and geometric inaccuracy that occurs during acquisition, scanning, and transmission. The pre-processing steps include clipping maps, image registration, geo-referencing, radiometric correction, image enhancement, campsite bands, and layout maps. These steps improve image quality and remove noise sources, providing a more reliable dataset. The steps are described as follows: i) Clipping maps are used to cut out specific regions of interest from the original images. It is done by cutting out unneeded background information, allowing images to be analyzed more precisely. ii) Image registration is a process of aligning images of different areas together, allowing similar features to be compared. It can also match the coordinate systems of two images taken at the exact location 
+
+## No. Class Description ##
+
+
+## 1. ##
+Bare land Bare soil and land do not contain the population of people like the desert.
+
+## Built-up Area ##
+The built area can be a large or small building.
+
+## Rocks ##
+Mountains or bare rocks 4.
+Vegetation Space containing sparse grasslands. 1 https://www.usgs.gov/. 2 https://www.diva-gis.org/.
+images to be compared, helping to identify detailed changes in the LULC features over time. Figures 
+
+## Results & discussion ##
+To classify the re-travel segmented images. We used maximum likelihood classification (MLC) to classify images based on specific features. Eq. ( 
+Where: x = n-dimensional data (where n is the number of bands); i = class; p(x i ) = probability that class x i occurs in the image and is assumed the same for all classes; |R i | = determinant of the covariance matrix of the data in class x i ; R i -1 = its inverse matrix; m i = mean vector.
+This study recognized four classes: bare land, Built-up area, rocks, and vegetation. The classes' details are described in Table 
+All LULC classes in the northern border region from year to year have changed. The built-up area increased from 1990 with 21 km 2 wide to 2022 with 132 km 2 wide area. Vegetation also increased from 1990 at 1 km 2 wide to 2022 at 23 km 2 wide. Changes that happened to Rocks and Bare Land are not increased or decreased constantly. The possibility that made it happen is because the satellite captured rocks covered by sand or vice versa.
+The built-up area class experienced the most significant change in NBR. The results showed that urban areas increased by approximately 628% between 1990 and 2022. It is a predictable situation because the increment of human activity, such as construction and urban development, will continue to drive growth. The built-up area in NBR is shown in Fig. 
+Our work on developing a map for land use and land cover classification of the Northern Border Region using remote sensing and GIS is an important contribution to the field of environmental monitoring and natural resource management. Our approach utilizes advanced remote sensing and GIS techniques to achieve a higher accuracy of land use and land cover classification, which is essential for sustainable land management, natural resource conservation, and environmental monitoring.
+Our approach has several potential applications in different fields, such as urban planning, agricultural management, and biodiversity conservation. In urban planning, accurate land use and land cover classification maps can be used to identify areas suitable for development, estimate population density, and monitor changes in the built environment. In agricultural management, such maps can be used to identify land use patterns and estimate crop yields, which can inform decisions on land use planning and resource allocation. In biodiversity conservation, our approach can be used to identify areas with high ecological value and potential threats to biodiversity, which can inform conservation strategies.
+This work also contributes to the ongoing efforts to monitor and understand the land use and land cover changes in the Northern Border Region. Such information is essential for policymakers, land managers, and researchers to develop effective strategies to promote sustainable land use practices and natural resource conservation.
+
+## Accuracy assessment ##
+The confusion matrix of ground truth data and the Kappa coefficient were used to assess accuracy. Ground-truth data were gathered from fieldwork carried out in NBR. A confusion matrix is a popular tool for evaluating LULC classification techniques' accuracy 
+The accuracy assessment with the confusion matrix often offers more profound insights into the results of the classification pro- Main Cities Towns and villages cess, making it a valuable tool for LULC classification tasks. Additionally, it can be used to compare the performance of different techniques or assess the accuracy of a particular technique concerning a reference classifier. The confusion matrix results are described in Tables 
+Where: N is the total number of classified values compared to truth values; i is the class number; m i,i is the number of values belonging to the truth class i that have also been classified as class i; G i is the total number of truth values belonging to class i; C i is the total number of predicted values belonging to class i.
+Table 
+
+## Challenges and limitations ##
+While the current developments in RS and GIS LULC classification are promising, there are still limitations and challenges. First, the accuracy of collected data can vary depending on the type of equipment used and the environment in which the data was collected. Due to the nature of the classification process and the challenges of detecting small-scale land-use changes, there is a need to improve the accuracy of the classification process. It can be achieved by deploying more sophisticated RS platforms and algorithms. For example, one future direction is combining many machine learning and deep learning algorithms to improve the accuracy of LULC classification. Furthermore, multimodal data fusion can be applied to improve the quality of classification algorithms, and pixel-based classification techniques can be used to analyze subtle changes in LULC at a fine scale. Second, data acquisition and processing costs can be high, making it difficult for smaller organizations or researchers to obtain the resources needed to carry out the analysis. Finally, the resolution of the imagery can be limited, making it difficult to detect small LULC objects accurately.
+
+## Conclusions ##
+This study aimed to investigate LULC changes in NBR over the past three decades to understand the patterns and drivers of LULC. The study utilized RS data from Landsat imagery between 1990 and 2022 and conducted a time-series analysis to detect changes over time. Four classes were identified: bare land, built-up area, rocks, and vegetation. The results showed that there had been a significant increase in urbanization and a decrease in bare soil and green spaces during this period. Most of the urbanization occurred in the outskirts of the cities, where previously there was bare soil. The main driver of urbanization was population growth and economic development. The finding showed how human factors and processes have greatly affected the shapes and disappearance of many forms of the Earth's surface between 1990 and 2022. The study provides a reliable baseline for monitoring changes in the LULC of the study area and can be used as a starting point in other studies that involve a change in land cover in the NBR. The outcomes show that the classification scheme accurately mapped the NBR's LULC classes, with an overall accuracy of 92.6% and a Kappa coefficient of 0.90. This study demonstrated the usefulness of remote sensing and GIS techniques for mapping and monitoring LULC change dynamics in the Northern Border Region over an extended period of time. However, the limitations and challenges identified in this study also highlight the need for more advanced techniques to predict LULC change dynamics in the future. Therefore, it is recommended that future studies in the region should explore more advanced machine learning and artificial intelligence techniques, such as deep learning, to improve the accuracy and efficiency of LULC classification and prediction. In addition, incorporating ancillary data sources, such as socioeconomic and environmental variables, could provide a more comprehensive understanding of the driving factors of LULC change in the region. Such studies would not only advance our knowledge of LULC dynamics in the region but also inform effective land management and planning strategies for sustainable development.
+
+## Declaration of Competing Interest ##
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Assessment of land use/land cover changes induced by Jizan Dam, Saudi Arabia, and their effect on soil organic carbon
+   Authors: , , , 
+   Date: 2019
+
+2. Detecting and analyzing land use and land cover changes in the region of Al-Jabal Al-Akhdar, Libya using time-series Landsat data from 1985 to 2017
+   Authors: , , , , , 
+   Date: 2020
+
+3. Spatial and decadal prediction of land use/land cover using multi-layer perceptron-neural network (MLP-NN) algorithm for a semi-arid region of Asir, Saudi Arabia
+   Authors: , , , , , 
+   Date: 2021
+
+4. Land Use and Land Cover Change Detection in the Saudi Arabian Desert Cities of Makkah and Al-Taif Using Satellite Data
+   Authors: , 
+   Date: 2014
+
+5. Development of a classification system for LULC using remote sensing and GIS
+   Authors: , 
+   Date: 2021
+
+6. Developing a science of land change: challenges and methodological issues
+   Authors: , 
+   Date: 2021
+
+7. Analysis of Machine Learning Techniques for Sentinel-2A Satellite Images
+   Authors: , , 
+   Date: 2022
+
+8. Comparing artificial neural network, support vector machine, and object-based methods in preparation land use/cover maps using landSat-8 images
+   Authors: , , , 
+   Date: 2015
+
+9. LULC Image Classification with Convolutional Neural Network
+   Authors: , 
+   Date: 2021
+
+10. Land use and land cover change and its resultant erosion susceptible level: An appraisal using RUSLE and Logistic Regression in a tropical plateau basin of West Bengal
+   Authors: , , 
+   Date: 2021
+
+11. An optimal approach for land-use/land-cover mapping by integration and fusion of multispectral Landsat OLI images: a case study in Baghdad
+   Authors: , , , 
+   Date: 2020
+
+12. Performance evaluation of sentinel-2 and Landsat 8 OLI data for land cover/use classification using a comparison between machine learning algorithms
+   Authors: , , , , , , , , , , , 
+   Date: 2021
+
+13. An Assessment of Artificial Neural Networks, Support Vector Machines, and Decision Trees for Land Cover Classification Using Sentinel-2A Data
+   Authors: 
+   Date: 2020
+
+14. Land cover classification analysis of volcanic island in Aleutian Arc using an artificial neural network (ANN) and a support vector machine (SVM) from Landsat imagery
+   Authors: , 
+   Date: 2018
+
+15. Land use and land cover change monitoring in Bandırma (Turkey) using remote sensing and geographic information systems
+   Authors: , 
+   Date: 2020
+
+16. Spatial modeling of land use and land cover change in Sulaimani, Iraq, using multitemporal satellite data
+   Authors: 
+   Date: 2021
+
+17. Predicting and mapping land cover/land use changes in Erbil/Iraq using CA-Markov synergy model
+   Authors: , , , , 
+   Date: 2021
+
+18. Challenges and opportunities in mapping land use intensity globally
+   Authors: , , , , , , , , , , , , , , , 
+   Date: 2013
+
+19. SelvakumarComparison of land use/landcover classifier for monitoring urban dynamics using spatially enhanced Landsat dataset
+   Authors: , , 
+   Date: 2022
+
+20. Urban Land Use and Land Cover Classification Using Remotely Sensed SAR Data through Deep Belief Networks
+   Authors: , , , , , 
+   Date: 2015
+
+21. A coupled remote sensing and the Surface Energy Balance based algorithms to estimate actual evapotranspiration over the western and southern regions of Saudi Arabia
+   Authors: , 
+   Date: 2016
+
+22. Detection of land use/land cover changes and urban sprawl in Al-Khobar, Saudi Arabia: an analysis of multi-temporal remote sensing data
+   Authors: 
+   Date: 2016
+
+23. An Artificial Neural Network Approach to Predict the Future Land Use Land Cover of Great Malang Region
+   Authors: , , , 
+   Date: 2021
+
+24. Comparison of ANN and SVM methods in extraction Land Use/Land Cover maps from Landsat 8 satellite image (Case Study: Sufi Chay Basin)
+   Authors: , , , 
+   Date: 2015
+
+25. Strength prediction models for recycled aggregate concrete using Random Forests, ANN, and LASSO
+   Authors: , 
+   Date: 2022
+
+26. Quantifying the impacts of land use/land cover change on the water balance in the afforested River Basin
+   Authors: , , 
+   Date: 2020
+
+27. Classification and mapping of land cover types and attributes in Al-Ahsaa Oasis, Eastern Region, Saudi Arabia using Landsat-7 data
+   Authors: 
+   Date: 2018
+
+28. The Effect of DEM on the Land Use/Cover Classification Accuracy of Landsat OLI Images
+   Authors: , , , , , , , , 
+   Date: 2021
+
+29. Change detection based on artificial intelligence: State-of-the-art and challenges
+   Authors: , , , , 
+   Date: 2020
+
+30. 
+   Authors: , , 
+   Date: 2023
+
+31. A multinomial logistic modelbased land use and land cover classification for the South Asian Association for Regional Cooperation nations using Moderate Resolution Imaging Spectroradiometer product
+   Authors: , , , 
+   Date: 2021
+
+32. MLAs Land cover mapping performance across varying geomorphology with Landsat OLI-8 and minimum human intervention
+   Authors: , , , , , 
+   Date: 2021
+
+33. Challenges in using land use and land cover data for global change studies
+   Authors: , , 
+   Date: 2011
+
+34. Land Use and Land Cover Classification Using Deep Belief Network for LISS-III Multispectral Satellite Images
+   Authors: , 
+   Date: 2019
+
+35. The impact of land use and spatial changes on desertification risk in degraded areas in Thailand
+   Authors: 
+   Date: 2016
+
+36. 
+   Authors: , , 
+   Date: 2023
+

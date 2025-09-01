@@ -1,0 +1,2985 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_151dca5b7d9bba5be68cdfc1b22c1131 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+        <div style="position: fixed; 
+                    bottom: 50px; left: 50px; width: 200px; height: 120px; 
+                    background-color: white; border:2px solid grey; z-index:9999; 
+                    font-size:12px; padding: 10px">
+        <p><b>Location Distribution</b></p>
+        <p>🔴 High frequency (7+ mentions)</p>
+        <p>🟠 Medium frequency (4-7 mentions)</p>
+        <p>🔵 Low frequency (1-4 mentions)</p>
+        <p>Circle size ∝ Frequency</p>
+        <p>Total locations: 100</p>
+        </div>
+        
+    
+            <div class="folium-map" id="map_151dca5b7d9bba5be68cdfc1b22c1131" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_151dca5b7d9bba5be68cdfc1b22c1131 = L.map(
+                "map_151dca5b7d9bba5be68cdfc1b22c1131",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_daea2c9341a06afe32fe9ccacae76002 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_daea2c9341a06afe32fe9ccacae76002.addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+            var circle_marker_20315c3aaf81bda549f16b5df08a98d7 = L.circleMarker(
+                [27.4713546, 89.6336729],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_c779551dcb14e49306fdf2f58832c4fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3ebeca525deaa2965db46c8d14f8376 = $(`<div id="html_c3ebeca525deaa2965db46c8d14f8376" style="width: 100.0%; height: 100.0%;"><b>Thimphu</b><br>Mentions: 2<br>Address: ཐིམ་ཕུ, Chang Gewog, ཐིམ་ཕུ, ཐིམ་ཕུ་རྫོང་ཁག་, 11001, འབྲུགཡུལ་</div>`)[0];
+                popup_c779551dcb14e49306fdf2f58832c4fe.setContent(html_c3ebeca525deaa2965db46c8d14f8376);
+            
+        
+
+        circle_marker_20315c3aaf81bda549f16b5df08a98d7.bindPopup(popup_c779551dcb14e49306fdf2f58832c4fe)
+        ;
+
+        
+    
+    
+            circle_marker_20315c3aaf81bda549f16b5df08a98d7.bindTooltip(
+                `<div>
+                     Thimphu (2 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0a6bfe365f93d3564fa550b127d2b364 = L.circleMarker(
+                [27.549511, 90.5119273],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_e1f1726e08d666b4e724681881989144 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed9ac64b544ceaa68307c064e076942b = $(`<div id="html_ed9ac64b544ceaa68307c064e076942b" style="width: 100.0%; height: 100.0%;"><b>Bhutan</b><br>Mentions: 2<br>Address: འབྲུགཡུལ་</div>`)[0];
+                popup_e1f1726e08d666b4e724681881989144.setContent(html_ed9ac64b544ceaa68307c064e076942b);
+            
+        
+
+        circle_marker_0a6bfe365f93d3564fa550b127d2b364.bindPopup(popup_e1f1726e08d666b4e724681881989144)
+        ;
+
+        
+    
+    
+            circle_marker_0a6bfe365f93d3564fa550b127d2b364.bindTooltip(
+                `<div>
+                     Bhutan (2 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e4cb0a8cc27115345910c408b507ebbe = L.circleMarker(
+                [34.9845285, 102.9105878],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_3d67a63ce391dc6d81c7747c1fde3ac9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3aa697e040fef5daa2c5093c79481881 = $(`<div id="html_3aa697e040fef5daa2c5093c79481881" style="width: 100.0%; height: 100.0%;"><b>Gannan Prefecture</b><br>Mentions: 1<br>Address: 甘南州, 合作市 གཙོས།, 合作市 གཙོས་གྲོང་ཁྱེར།, 甘南藏族自治州 ཀན་ལྷོ་བོད་རིགས་རང་སྐྱོང་ཁུལ།, 甘肃省, 747000, 中国</div>`)[0];
+                popup_3d67a63ce391dc6d81c7747c1fde3ac9.setContent(html_3aa697e040fef5daa2c5093c79481881);
+            
+        
+
+        circle_marker_e4cb0a8cc27115345910c408b507ebbe.bindPopup(popup_3d67a63ce391dc6d81c7747c1fde3ac9)
+        ;
+
+        
+    
+    
+            circle_marker_e4cb0a8cc27115345910c408b507ebbe.bindTooltip(
+                `<div>
+                     Gannan Prefecture (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_39dae1d3172cbde18561a4e37b53e33d = L.circleMarker(
+                [19.333333, -96.666667],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_25566c4aec9e488e62a255a540c6da3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed4e640cff4abf16047cbca289a3e5a9 = $(`<div id="html_ed4e640cff4abf16047cbca289a3e5a9" style="width: 100.0%; height: 100.0%;"><b>Veracruz</b><br>Mentions: 1<br>Address: Veracruz, México</div>`)[0];
+                popup_25566c4aec9e488e62a255a540c6da3e.setContent(html_ed4e640cff4abf16047cbca289a3e5a9);
+            
+        
+
+        circle_marker_39dae1d3172cbde18561a4e37b53e33d.bindPopup(popup_25566c4aec9e488e62a255a540c6da3e)
+        ;
+
+        
+    
+    
+            circle_marker_39dae1d3172cbde18561a4e37b53e33d.bindTooltip(
+                `<div>
+                     Veracruz (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d2bad8a80a94e30fe9eff9d5dee0a9ff = L.circleMarker(
+                [23.6585116, -102.0077097],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_ef79451980bae29fcfcecc2aed44f417 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ab868567c1369cf9be26cdd74263f10 = $(`<div id="html_4ab868567c1369cf9be26cdd74263f10" style="width: 100.0%; height: 100.0%;"><b>Mexico</b><br>Mentions: 1<br>Address: México</div>`)[0];
+                popup_ef79451980bae29fcfcecc2aed44f417.setContent(html_4ab868567c1369cf9be26cdd74263f10);
+            
+        
+
+        circle_marker_d2bad8a80a94e30fe9eff9d5dee0a9ff.bindPopup(popup_ef79451980bae29fcfcecc2aed44f417)
+        ;
+
+        
+    
+    
+            circle_marker_d2bad8a80a94e30fe9eff9d5dee0a9ff.bindTooltip(
+                `<div>
+                     Mexico (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6069f5f74fc635b1f8c1e0b1940d9e2a = L.circleMarker(
+                [18.1405019, -94.4344003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_13a097de0041c030acfa13d3dda0551a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fa8af9a5b8f5e986ba992cd3e6117e3 = $(`<div id="html_6fa8af9a5b8f5e986ba992cd3e6117e3" style="width: 100.0%; height: 100.0%;"><b>Coatzacoalcos</b><br>Mentions: 1<br>Address: Coatzacoalcos, Veracruz, 96576, México</div>`)[0];
+                popup_13a097de0041c030acfa13d3dda0551a.setContent(html_6fa8af9a5b8f5e986ba992cd3e6117e3);
+            
+        
+
+        circle_marker_6069f5f74fc635b1f8c1e0b1940d9e2a.bindPopup(popup_13a097de0041c030acfa13d3dda0551a)
+        ;
+
+        
+    
+    
+            circle_marker_6069f5f74fc635b1f8c1e0b1940d9e2a.bindTooltip(
+                `<div>
+                     Coatzacoalcos (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_782c500f36333746357adeb1b02c90e8 = L.circleMarker(
+                [37.5726028, -85.1551411],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_6e90f33e4f721016e02f00d0c6ee617e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_135d83555c435af2f9df81664c680acd = $(`<div id="html_135d83555c435af2f9df81664c680acd" style="width: 100.0%; height: 100.0%;"><b>Kentucky</b><br>Mentions: 1<br>Address: Kentucky, United States</div>`)[0];
+                popup_6e90f33e4f721016e02f00d0c6ee617e.setContent(html_135d83555c435af2f9df81664c680acd);
+            
+        
+
+        circle_marker_782c500f36333746357adeb1b02c90e8.bindPopup(popup_6e90f33e4f721016e02f00d0c6ee617e)
+        ;
+
+        
+    
+    
+            circle_marker_782c500f36333746357adeb1b02c90e8.bindTooltip(
+                `<div>
+                     Kentucky (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1b48bb8f87ef493997110af4f5f5cacf = L.circleMarker(
+                [39.7837304, -100.445882],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_dda6161acb9206fec2b6c1a9a2563376 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09cedafc77681235acb338da87fd5b9a = $(`<div id="html_09cedafc77681235acb338da87fd5b9a" style="width: 100.0%; height: 100.0%;"><b>USA</b><br>Mentions: 1<br>Address: United States</div>`)[0];
+                popup_dda6161acb9206fec2b6c1a9a2563376.setContent(html_09cedafc77681235acb338da87fd5b9a);
+            
+        
+
+        circle_marker_1b48bb8f87ef493997110af4f5f5cacf.bindPopup(popup_dda6161acb9206fec2b6c1a9a2563376)
+        ;
+
+        
+    
+    
+            circle_marker_1b48bb8f87ef493997110af4f5f5cacf.bindTooltip(
+                `<div>
+                     USA (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_459bc7e5cef335b4a4ff4ebb2a28a0fc = L.circleMarker(
+                [1.5333554, 32.2166578],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.666666666666666, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_74e2012e6a1cdfeec9c18dd27a776157 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30ef2539b19bf53b4a6a1f481b94976c = $(`<div id="html_30ef2539b19bf53b4a6a1f481b94976c" style="width: 100.0%; height: 100.0%;"><b>Uganda</b><br>Mentions: 4<br>Address: Uganda</div>`)[0];
+                popup_74e2012e6a1cdfeec9c18dd27a776157.setContent(html_30ef2539b19bf53b4a6a1f481b94976c);
+            
+        
+
+        circle_marker_459bc7e5cef335b4a4ff4ebb2a28a0fc.bindPopup(popup_74e2012e6a1cdfeec9c18dd27a776157)
+        ;
+
+        
+    
+    
+            circle_marker_459bc7e5cef335b4a4ff4ebb2a28a0fc.bindTooltip(
+                `<div>
+                     Uganda (4 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_56eb0fc9d53c27f24b22dbdb43fa18cb = L.circleMarker(
+                [48.4307406, -89.2302264],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_1038dd3bf62eee2e3b49f50b6c0d4112 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1ad060abc7edb673dd5dd703ec436f9 = $(`<div id="html_d1ad060abc7edb673dd5dd703ec436f9" style="width: 100.0%; height: 100.0%;"><b>the Growing Season</b><br>Mentions: 2<br>Address: The Growing Season, Algoma Street South, Port Arthur, Thunder Bay, Thunder Bay District, Northwestern Ontario, Ontario, P7B 2X1, Canada</div>`)[0];
+                popup_1038dd3bf62eee2e3b49f50b6c0d4112.setContent(html_d1ad060abc7edb673dd5dd703ec436f9);
+            
+        
+
+        circle_marker_56eb0fc9d53c27f24b22dbdb43fa18cb.bindPopup(popup_1038dd3bf62eee2e3b49f50b6c0d4112)
+        ;
+
+        
+    
+    
+            circle_marker_56eb0fc9d53c27f24b22dbdb43fa18cb.bindTooltip(
+                `<div>
+                     the Growing Season (2 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_23b95d9b38f7b3a7811684e5509d34c7 = L.circleMarker(
+                [22.3511148, 78.6677428],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.555555555555557, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_ec8b9caeab7507e6d95f6a9fa0be0abb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05661ad8b966e41fd984a7bbf92dde24 = $(`<div id="html_05661ad8b966e41fd984a7bbf92dde24" style="width: 100.0%; height: 100.0%;"><b>India</b><br>Mentions: 8<br>Address: India</div>`)[0];
+                popup_ec8b9caeab7507e6d95f6a9fa0be0abb.setContent(html_05661ad8b966e41fd984a7bbf92dde24);
+            
+        
+
+        circle_marker_23b95d9b38f7b3a7811684e5509d34c7.bindPopup(popup_ec8b9caeab7507e6d95f6a9fa0be0abb)
+        ;
+
+        
+    
+    
+            circle_marker_23b95d9b38f7b3a7811684e5509d34c7.bindTooltip(
+                `<div>
+                     India (8 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2997358bebb52530b47676e478f55153 = L.circleMarker(
+                [39.294076, 35.2316631],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_c45c056bc063aebe18a34095b0ccdde1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16efd6cf16af9a055a72559c41e0bd2d = $(`<div id="html_16efd6cf16af9a055a72559c41e0bd2d" style="width: 100.0%; height: 100.0%;"><b>Turkey</b><br>Mentions: 2<br>Address: Türkiye</div>`)[0];
+                popup_c45c056bc063aebe18a34095b0ccdde1.setContent(html_16efd6cf16af9a055a72559c41e0bd2d);
+            
+        
+
+        circle_marker_2997358bebb52530b47676e478f55153.bindPopup(popup_c45c056bc063aebe18a34095b0ccdde1)
+        ;
+
+        
+    
+    
+            circle_marker_2997358bebb52530b47676e478f55153.bindTooltip(
+                `<div>
+                     Turkey (2 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_65fb656bfd87b9db1ab5493fbc92f64f = L.circleMarker(
+                [17.8495919, 79.1151663],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_957d2a4cd3ce596cd7b78091e9efcc5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aadbed92db7770aa15a2fec334073400 = $(`<div id="html_aadbed92db7770aa15a2fec334073400" style="width: 100.0%; height: 100.0%;"><b>Telangana</b><br>Mentions: 1<br>Address: Telangana, India</div>`)[0];
+                popup_957d2a4cd3ce596cd7b78091e9efcc5f.setContent(html_aadbed92db7770aa15a2fec334073400);
+            
+        
+
+        circle_marker_65fb656bfd87b9db1ab5493fbc92f64f.bindPopup(popup_957d2a4cd3ce596cd7b78091e9efcc5f)
+        ;
+
+        
+    
+    
+            circle_marker_65fb656bfd87b9db1ab5493fbc92f64f.bindTooltip(
+                `<div>
+                     Telangana (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3832521d28dfc56c1e8f7f47d816a14a = L.circleMarker(
+                [-15.7862543, 35.0035694],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_c2c062c348004b4e4aeedad99ac28872 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f541e5a624547a4ec25680415c3fc0ec = $(`<div id="html_f541e5a624547a4ec25680415c3fc0ec" style="width: 100.0%; height: 100.0%;"><b>Blantyre City</b><br>Mentions: 1<br>Address: Blantyre, Southern Region, Malawi</div>`)[0];
+                popup_c2c062c348004b4e4aeedad99ac28872.setContent(html_f541e5a624547a4ec25680415c3fc0ec);
+            
+        
+
+        circle_marker_3832521d28dfc56c1e8f7f47d816a14a.bindPopup(popup_c2c062c348004b4e4aeedad99ac28872)
+        ;
+
+        
+    
+    
+            circle_marker_3832521d28dfc56c1e8f7f47d816a14a.bindTooltip(
+                `<div>
+                     Blantyre City (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_34ed0bee6407afac385f6329185d58ab = L.circleMarker(
+                [24.4769288, 90.2934413],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.666666666666666, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_f79b82fed64091ea2f6b19aac745e792 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c199cbdd00fde0c04bc3dc6381984d0 = $(`<div id="html_3c199cbdd00fde0c04bc3dc6381984d0" style="width: 100.0%; height: 100.0%;"><b>Bangladesh</b><br>Mentions: 4<br>Address: বাংলাদেশ</div>`)[0];
+                popup_f79b82fed64091ea2f6b19aac745e792.setContent(html_3c199cbdd00fde0c04bc3dc6381984d0);
+            
+        
+
+        circle_marker_34ed0bee6407afac385f6329185d58ab.bindPopup(popup_f79b82fed64091ea2f6b19aac745e792)
+        ;
+
+        
+    
+    
+            circle_marker_34ed0bee6407afac385f6329185d58ab.bindTooltip(
+                `<div>
+                     Bangladesh (4 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d1b9015d0f289ca400dea73fca3e655e = L.circleMarker(
+                [36.8633459, 31.0578184],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_360fa18b0581fb0f4b9fdb21a8e6d98d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e8145aec93954d201ff4d84e8d7d649 = $(`<div id="html_9e8145aec93954d201ff4d84e8d7d649" style="width: 100.0%; height: 100.0%;"><b>Belek</b><br>Mentions: 1<br>Address: Belek Mahallesi, Serik, Antalya, Akdeniz Bölgesi, 07506, Türkiye</div>`)[0];
+                popup_360fa18b0581fb0f4b9fdb21a8e6d98d.setContent(html_9e8145aec93954d201ff4d84e8d7d649);
+            
+        
+
+        circle_marker_d1b9015d0f289ca400dea73fca3e655e.bindPopup(popup_360fa18b0581fb0f4b9fdb21a8e6d98d)
+        ;
+
+        
+    
+    
+            circle_marker_d1b9015d0f289ca400dea73fca3e655e.bindTooltip(
+                `<div>
+                     Belek (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_88083880e843f4fdd2ac39598a8e2336 = L.circleMarker(
+                [26.2540493, 29.2675469],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.666666666666666, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_59c2130f78e754e5f34d78a1f6131743 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91ea4720174439afedcc813ec4857fc1 = $(`<div id="html_91ea4720174439afedcc813ec4857fc1" style="width: 100.0%; height: 100.0%;"><b>Egypt</b><br>Mentions: 4<br>Address: مصر</div>`)[0];
+                popup_59c2130f78e754e5f34d78a1f6131743.setContent(html_91ea4720174439afedcc813ec4857fc1);
+            
+        
+
+        circle_marker_88083880e843f4fdd2ac39598a8e2336.bindPopup(popup_59c2130f78e754e5f34d78a1f6131743)
+        ;
+
+        
+    
+    
+            circle_marker_88083880e843f4fdd2ac39598a8e2336.bindTooltip(
+                `<div>
+                     Egypt (4 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_60a9dd9b787b1f0c2b2dbd258dd3766d = L.circleMarker(
+                [5.3356587, 100.2389496],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_9134e564720611018a59b65b89ffa86f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11a6e4b921568e301ed958b11d0da583 = $(`<div id="html_11a6e4b921568e301ed958b11d0da583" style="width: 100.0%; height: 100.0%;"><b>South west</b><br>Mentions: 2<br>Address: Barat Daya, George Town, Pulau Pinang, Malaysia</div>`)[0];
+                popup_9134e564720611018a59b65b89ffa86f.setContent(html_11a6e4b921568e301ed958b11d0da583);
+            
+        
+
+        circle_marker_60a9dd9b787b1f0c2b2dbd258dd3766d.bindPopup(popup_9134e564720611018a59b65b89ffa86f)
+        ;
+
+        
+    
+    
+            circle_marker_60a9dd9b787b1f0c2b2dbd258dd3766d.bindTooltip(
+                `<div>
+                     South west (2 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7978911be8a748a2070cb391e7da84e8 = L.circleMarker(
+                [10.2116702, 38.6521203],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_616fc03b1b2f3386c531576bc34ad942 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99961b334e39f49558cdaa04addfdbc3 = $(`<div id="html_99961b334e39f49558cdaa04addfdbc3" style="width: 100.0%; height: 100.0%;"><b>Ethiopia</b><br>Mentions: 10<br>Address: ኢትዮጵያ إثيوبيا</div>`)[0];
+                popup_616fc03b1b2f3386c531576bc34ad942.setContent(html_99961b334e39f49558cdaa04addfdbc3);
+            
+        
+
+        circle_marker_7978911be8a748a2070cb391e7da84e8.bindPopup(popup_616fc03b1b2f3386c531576bc34ad942)
+        ;
+
+        
+    
+    
+            circle_marker_7978911be8a748a2070cb391e7da84e8.bindTooltip(
+                `<div>
+                     Ethiopia (10 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6ad22071c2db072107c49ade9c96c95f = L.circleMarker(
+                [35.0000663, 104.999955],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.11111111111111, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_bb729a93abc88674d43332907d4380c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50699622fdd094f3ed70811808311f91 = $(`<div id="html_50699622fdd094f3ed70811808311f91" style="width: 100.0%; height: 100.0%;"><b>China</b><br>Mentions: 6<br>Address: 中国</div>`)[0];
+                popup_bb729a93abc88674d43332907d4380c1.setContent(html_50699622fdd094f3ed70811808311f91);
+            
+        
+
+        circle_marker_6ad22071c2db072107c49ade9c96c95f.bindPopup(popup_bb729a93abc88674d43332907d4380c1)
+        ;
+
+        
+    
+    
+            circle_marker_6ad22071c2db072107c49ade9c96c95f.bindTooltip(
+                `<div>
+                     China (6 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_eb90c5a2fb9f0a44edf9431e28db1bf7 = L.circleMarker(
+                [40.0757384, -74.4041622],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_a66d39a08199165c0516b824dc968635 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8926a41d0296bb2ef0a9ddda7da322d = $(`<div id="html_c8926a41d0296bb2ef0a9ddda7da322d" style="width: 100.0%; height: 100.0%;"><b>New Jersey</b><br>Mentions: 1<br>Address: New Jersey, United States</div>`)[0];
+                popup_a66d39a08199165c0516b824dc968635.setContent(html_c8926a41d0296bb2ef0a9ddda7da322d);
+            
+        
+
+        circle_marker_eb90c5a2fb9f0a44edf9431e28db1bf7.bindPopup(popup_a66d39a08199165c0516b824dc968635)
+        ;
+
+        
+    
+    
+            circle_marker_eb90c5a2fb9f0a44edf9431e28db1bf7.bindTooltip(
+                `<div>
+                     New Jersey (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8ad0a3298cb0fc61c56bb1e6364dd0dd = L.circleMarker(
+                [26.9154576, 75.8189817],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_449944b81ad533068a7478df91efc4ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a337bdbf4a55246618a6b5787c4053e4 = $(`<div id="html_a337bdbf4a55246618a6b5787c4053e4" style="width: 100.0%; height: 100.0%;"><b>Jaipur</b><br>Mentions: 1<br>Address: Jaipur, Jaipur Municipal Corporation, Jaipur Tehsil, Jaipur, Rajasthan, 302001, India</div>`)[0];
+                popup_449944b81ad533068a7478df91efc4ba.setContent(html_a337bdbf4a55246618a6b5787c4053e4);
+            
+        
+
+        circle_marker_8ad0a3298cb0fc61c56bb1e6364dd0dd.bindPopup(popup_449944b81ad533068a7478df91efc4ba)
+        ;
+
+        
+    
+    
+            circle_marker_8ad0a3298cb0fc61c56bb1e6364dd0dd.bindTooltip(
+                `<div>
+                     Jaipur (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3f70e726645d192a4b3153fe352f1cb1 = L.circleMarker(
+                [-23.2335499, 17.3231107],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_57f4190c5f53da6346c6ef6b9f82077d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c48fc1dadf927a8d1a23541ad3b8ef88 = $(`<div id="html_c48fc1dadf927a8d1a23541ad3b8ef88" style="width: 100.0%; height: 100.0%;"><b>Namibia</b><br>Mentions: 3<br>Address: Namibia</div>`)[0];
+                popup_57f4190c5f53da6346c6ef6b9f82077d.setContent(html_c48fc1dadf927a8d1a23541ad3b8ef88);
+            
+        
+
+        circle_marker_3f70e726645d192a4b3153fe352f1cb1.bindPopup(popup_57f4190c5f53da6346c6ef6b9f82077d)
+        ;
+
+        
+    
+    
+            circle_marker_3f70e726645d192a4b3153fe352f1cb1.bindTooltip(
+                `<div>
+                     Namibia (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_572b8bf56c00bd45940a28c19eaca82c = L.circleMarker(
+                [16.0000552, -24.0083947],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_fc865831f1f41f6533085ce37d65a507 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c7b21b5b8159f087abb1dd091754f70 = $(`<div id="html_1c7b21b5b8159f087abb1dd091754f70" style="width: 100.0%; height: 100.0%;"><b>Cabo Verde</b><br>Mentions: 3<br>Address: Cabo Verde</div>`)[0];
+                popup_fc865831f1f41f6533085ce37d65a507.setContent(html_1c7b21b5b8159f087abb1dd091754f70);
+            
+        
+
+        circle_marker_572b8bf56c00bd45940a28c19eaca82c.bindPopup(popup_fc865831f1f41f6533085ce37d65a507)
+        ;
+
+        
+    
+    
+            circle_marker_572b8bf56c00bd45940a28c19eaca82c.bindTooltip(
+                `<div>
+                     Cabo Verde (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4633900072f4ce20ed5cd8872af0968e = L.circleMarker(
+                [7.8699431, 29.6667897],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_24170f8b8b017ec4018eec5792e16c8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e175ea51fbef4d8ecbdc49b90621a48 = $(`<div id="html_2e175ea51fbef4d8ecbdc49b90621a48" style="width: 100.0%; height: 100.0%;"><b>South Sudan</b><br>Mentions: 3<br>Address: South Sudan جنوب السودان</div>`)[0];
+                popup_24170f8b8b017ec4018eec5792e16c8a.setContent(html_2e175ea51fbef4d8ecbdc49b90621a48);
+            
+        
+
+        circle_marker_4633900072f4ce20ed5cd8872af0968e.bindPopup(popup_24170f8b8b017ec4018eec5792e16c8a)
+        ;
+
+        
+    
+    
+            circle_marker_4633900072f4ce20ed5cd8872af0968e.bindTooltip(
+                `<div>
+                     South Sudan (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_61a7a5ba125aef32663b469f6c5787b9 = L.circleMarker(
+                [15.6134137, 19.0156172],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_946b613c03cf0e7885cbdce8ea9dfa63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff34a53e86b2d1a0fbf8f944d8014148 = $(`<div id="html_ff34a53e86b2d1a0fbf8f944d8014148" style="width: 100.0%; height: 100.0%;"><b>Chad</b><br>Mentions: 3<br>Address: Tchad تشاد</div>`)[0];
+                popup_946b613c03cf0e7885cbdce8ea9dfa63.setContent(html_ff34a53e86b2d1a0fbf8f944d8014148);
+            
+        
+
+        circle_marker_61a7a5ba125aef32663b469f6c5787b9.bindPopup(popup_946b613c03cf0e7885cbdce8ea9dfa63)
+        ;
+
+        
+    
+    
+            circle_marker_61a7a5ba125aef32663b469f6c5787b9.bindTooltip(
+                `<div>
+                     Chad (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8c47ac9ef5e32bc09ef39f9e242745b1 = L.circleMarker(
+                [-26.5624806, 31.3991317],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_1a6fbbc41029c8d575bc01202428bfc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9918ece3d12a7dd7139df658e2c6fbc2 = $(`<div id="html_9918ece3d12a7dd7139df658e2c6fbc2" style="width: 100.0%; height: 100.0%;"><b>Eswatini</b><br>Mentions: 3<br>Address: Eswatini</div>`)[0];
+                popup_1a6fbbc41029c8d575bc01202428bfc0.setContent(html_9918ece3d12a7dd7139df658e2c6fbc2);
+            
+        
+
+        circle_marker_8c47ac9ef5e32bc09ef39f9e242745b1.bindPopup(popup_1a6fbbc41029c8d575bc01202428bfc0)
+        ;
+
+        
+    
+    
+            circle_marker_8c47ac9ef5e32bc09ef39f9e242745b1.bindTooltip(
+                `<div>
+                     Eswatini (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_848dd8917f7f2f35ff7d0d7740b872d7 = L.circleMarker(
+                [11.815215, -15.2351044],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_01cd50b09f88a7c10b850f9a46291e26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3637b9ace395076f88db7560c1515a0c = $(`<div id="html_3637b9ace395076f88db7560c1515a0c" style="width: 100.0%; height: 100.0%;"><b>Guinea-Bissau</b><br>Mentions: 3<br>Address: Guiné-Bissau</div>`)[0];
+                popup_01cd50b09f88a7c10b850f9a46291e26.setContent(html_3637b9ace395076f88db7560c1515a0c);
+            
+        
+
+        circle_marker_848dd8917f7f2f35ff7d0d7740b872d7.bindPopup(popup_01cd50b09f88a7c10b850f9a46291e26)
+        ;
+
+        
+    
+    
+            circle_marker_848dd8917f7f2f35ff7d0d7740b872d7.bindTooltip(
+                `<div>
+                     Guinea-Bissau (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a3b9d4936db5d551819271ae32c5dca6 = L.circleMarker(
+                [-6.5247123, 35.7878438],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_eda6d3394b8709b055d5ec6d9ca65f59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_383e2d2806e845f5a6bf14dd774845d8 = $(`<div id="html_383e2d2806e845f5a6bf14dd774845d8" style="width: 100.0%; height: 100.0%;"><b>Tanzania</b><br>Mentions: 3<br>Address: Tanzania</div>`)[0];
+                popup_eda6d3394b8709b055d5ec6d9ca65f59.setContent(html_383e2d2806e845f5a6bf14dd774845d8);
+            
+        
+
+        circle_marker_a3b9d4936db5d551819271ae32c5dca6.bindPopup(popup_eda6d3394b8709b055d5ec6d9ca65f59)
+        ;
+
+        
+    
+    
+            circle_marker_a3b9d4936db5d551819271ae32c5dca6.bindTooltip(
+                `<div>
+                     Tanzania (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_767869e26bafb881bc5a3bf0ef49d849 = L.circleMarker(
+                [-11.8775768, 17.5691241],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_fa98417edd0722e232e8a4c4cfd8229b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed64cca9753639cc89f8e421b606681a = $(`<div id="html_ed64cca9753639cc89f8e421b606681a" style="width: 100.0%; height: 100.0%;"><b>Angola</b><br>Mentions: 3<br>Address: Angola</div>`)[0];
+                popup_fa98417edd0722e232e8a4c4cfd8229b.setContent(html_ed64cca9753639cc89f8e421b606681a);
+            
+        
+
+        circle_marker_767869e26bafb881bc5a3bf0ef49d849.bindPopup(popup_fa98417edd0722e232e8a4c4cfd8229b)
+        ;
+
+        
+    
+    
+            circle_marker_767869e26bafb881bc5a3bf0ef49d849.bindTooltip(
+                `<div>
+                     Angola (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6c3a678888336b701917a6fe924c060d = L.circleMarker(
+                [-18.4554963, 29.7468414],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.666666666666666, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_3f421720b8a7bf5fba0b11d4591460c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b27ec813dbd205c5b136f99237180568 = $(`<div id="html_b27ec813dbd205c5b136f99237180568" style="width: 100.0%; height: 100.0%;"><b>Zimbabwe</b><br>Mentions: 4<br>Address: Zimbabwe</div>`)[0];
+                popup_3f421720b8a7bf5fba0b11d4591460c3.setContent(html_b27ec813dbd205c5b136f99237180568);
+            
+        
+
+        circle_marker_6c3a678888336b701917a6fe924c060d.bindPopup(popup_3f421720b8a7bf5fba0b11d4591460c3)
+        ;
+
+        
+    
+    
+            circle_marker_6c3a678888336b701917a6fe924c060d.bindTooltip(
+                `<div>
+                     Zimbabwe (4 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fbeb3f115b7cc5a3005c57c60c74e852 = L.circleMarker(
+                [17.7356214, 9.3238432],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_ba14eb92625116006c6ebb89b2774e5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c65213933edfce2e102d182e627cd97 = $(`<div id="html_7c65213933edfce2e102d182e627cd97" style="width: 100.0%; height: 100.0%;"><b>Niger</b><br>Mentions: 3<br>Address: Niger</div>`)[0];
+                popup_ba14eb92625116006c6ebb89b2774e5d.setContent(html_7c65213933edfce2e102d182e627cd97);
+            
+        
+
+        circle_marker_fbeb3f115b7cc5a3005c57c60c74e852.bindPopup(popup_ba14eb92625116006c6ebb89b2774e5d)
+        ;
+
+        
+    
+    
+            circle_marker_fbeb3f115b7cc5a3005c57c60c74e852.bindTooltip(
+                `<div>
+                     Niger (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0f385d636e636f01d2f5e1c8f8c1dca9 = L.circleMarker(
+                [-13.2687204, 33.9301963],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_a768949976404c52f83a6252d16b8da0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fb230c48842c5da5aa1039ce2a9039a = $(`<div id="html_3fb230c48842c5da5aa1039ce2a9039a" style="width: 100.0%; height: 100.0%;"><b>Malawi</b><br>Mentions: 3<br>Address: Malawi</div>`)[0];
+                popup_a768949976404c52f83a6252d16b8da0.setContent(html_3fb230c48842c5da5aa1039ce2a9039a);
+            
+        
+
+        circle_marker_0f385d636e636f01d2f5e1c8f8c1dca9.bindPopup(popup_a768949976404c52f83a6252d16b8da0)
+        ;
+
+        
+    
+    
+            circle_marker_0f385d636e636f01d2f5e1c8f8c1dca9.bindTooltip(
+                `<div>
+                     Malawi (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_681d8a5e85a5acec9d7ca83f37456e8c = L.circleMarker(
+                [9.6000359, 7.9999721],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_6f5ca431ddf508ab9646fe6e58deee40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd607cca1fb2a31561420b71fdf602f1 = $(`<div id="html_dd607cca1fb2a31561420b71fdf602f1" style="width: 100.0%; height: 100.0%;"><b>Nigeria</b><br>Mentions: 3<br>Address: Nigeria</div>`)[0];
+                popup_6f5ca431ddf508ab9646fe6e58deee40.setContent(html_dd607cca1fb2a31561420b71fdf602f1);
+            
+        
+
+        circle_marker_681d8a5e85a5acec9d7ca83f37456e8c.bindPopup(popup_6f5ca431ddf508ab9646fe6e58deee40)
+        ;
+
+        
+    
+    
+            circle_marker_681d8a5e85a5acec9d7ca83f37456e8c.bindTooltip(
+                `<div>
+                     Nigeria (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4cc737d8dc19f8b5d3ada9dcff548b33 = L.circleMarker(
+                [0.9713095, 7.02255],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_f0cdd414650a585f8fbd14657c56c221 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28ee1840676b78534353b5bbe52c9698 = $(`<div id="html_28ee1840676b78534353b5bbe52c9698" style="width: 100.0%; height: 100.0%;"><b>Sao Tome and Principe</b><br>Mentions: 3<br>Address: São Tomé e Príncipe</div>`)[0];
+                popup_f0cdd414650a585f8fbd14657c56c221.setContent(html_28ee1840676b78534353b5bbe52c9698);
+            
+        
+
+        circle_marker_4cc737d8dc19f8b5d3ada9dcff548b33.bindPopup(popup_f0cdd414650a585f8fbd14657c56c221)
+        ;
+
+        
+    
+    
+            circle_marker_4cc737d8dc19f8b5d3ada9dcff548b33.bindTooltip(
+                `<div>
+                     Sao Tome and Principe (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_46d89c681b24cb98813794cda30d7f04 = L.circleMarker(
+                [-23.1681782, 24.5928742],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_fd06f90ff0b4f53991a16e08a72e59af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f7d722d9f7a7e11cec7ba5352d6bf0e = $(`<div id="html_7f7d722d9f7a7e11cec7ba5352d6bf0e" style="width: 100.0%; height: 100.0%;"><b>Botswana</b><br>Mentions: 3<br>Address: Botswana</div>`)[0];
+                popup_fd06f90ff0b4f53991a16e08a72e59af.setContent(html_7f7d722d9f7a7e11cec7ba5352d6bf0e);
+            
+        
+
+        circle_marker_46d89c681b24cb98813794cda30d7f04.bindPopup(popup_fd06f90ff0b4f53991a16e08a72e59af)
+        ;
+
+        
+    
+    
+            circle_marker_46d89c681b24cb98813794cda30d7f04.bindTooltip(
+                `<div>
+                     Botswana (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d491c5d0c56996ba916d2285b6d2cf61 = L.circleMarker(
+                [4.6125522, 13.1535811],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_c342c3a768069315a683d68645bc8981 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_476760ae4dbcd39635bb9bce0d48dd4f = $(`<div id="html_476760ae4dbcd39635bb9bce0d48dd4f" style="width: 100.0%; height: 100.0%;"><b>Cameroon</b><br>Mentions: 3<br>Address: Cameroun</div>`)[0];
+                popup_c342c3a768069315a683d68645bc8981.setContent(html_476760ae4dbcd39635bb9bce0d48dd4f);
+            
+        
+
+        circle_marker_d491c5d0c56996ba916d2285b6d2cf61.bindPopup(popup_c342c3a768069315a683d68645bc8981)
+        ;
+
+        
+    
+    
+            circle_marker_d491c5d0c56996ba916d2285b6d2cf61.bindTooltip(
+                `<div>
+                     Cameroon (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_92dab6917b21db9245dbf022bd1e3d2c = L.circleMarker(
+                [10.7226226, -10.7083587],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_ace79f90541270d020628b54740c9f72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e5b3d10a17e0931cfa083b0cfeec6e0 = $(`<div id="html_1e5b3d10a17e0931cfa083b0cfeec6e0" style="width: 100.0%; height: 100.0%;"><b>Guinea</b><br>Mentions: 3<br>Address: Guinée</div>`)[0];
+                popup_ace79f90541270d020628b54740c9f72.setContent(html_1e5b3d10a17e0931cfa083b0cfeec6e0);
+            
+        
+
+        circle_marker_92dab6917b21db9245dbf022bd1e3d2c.bindPopup(popup_ace79f90541270d020628b54740c9f72)
+        ;
+
+        
+    
+    
+            circle_marker_92dab6917b21db9245dbf022bd1e3d2c.bindTooltip(
+                `<div>
+                     Guinea (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f5364f9799f8d4fb8b351baad2454d70 = L.circleMarker(
+                [28.3347722, -10.3713379],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_2ef920c4da83317934c4b3cb81ef5c0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adbc55261ec31cf647476ef160978c48 = $(`<div id="html_adbc55261ec31cf647476ef160978c48" style="width: 100.0%; height: 100.0%;"><b>Morocco</b><br>Mentions: 3<br>Address: Maroc ⵍⵎⵖⵔⵉⴱ المغرب</div>`)[0];
+                popup_2ef920c4da83317934c4b3cb81ef5c0e.setContent(html_adbc55261ec31cf647476ef160978c48);
+            
+        
+
+        circle_marker_f5364f9799f8d4fb8b351baad2454d70.bindPopup(popup_2ef920c4da83317934c4b3cb81ef5c0e)
+        ;
+
+        
+    
+    
+            circle_marker_f5364f9799f8d4fb8b351baad2454d70.bindTooltip(
+                `<div>
+                     Morocco (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1f6f56ba49569154a4eb5ace1d8dd1b9 = L.circleMarker(
+                [9.5293472, 2.2584408],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_ab7096973420e0df0ca66acacc06b9d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c3baa632e206ab595184e2a5f1948e6 = $(`<div id="html_1c3baa632e206ab595184e2a5f1948e6" style="width: 100.0%; height: 100.0%;"><b>Benin</b><br>Mentions: 3<br>Address: Bénin</div>`)[0];
+                popup_ab7096973420e0df0ca66acacc06b9d9.setContent(html_1c3baa632e206ab595184e2a5f1948e6);
+            
+        
+
+        circle_marker_1f6f56ba49569154a4eb5ace1d8dd1b9.bindPopup(popup_ab7096973420e0df0ca66acacc06b9d9)
+        ;
+
+        
+    
+    
+            circle_marker_1f6f56ba49569154a4eb5ace1d8dd1b9.bindTooltip(
+                `<div>
+                     Benin (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_55c4168fb80d7943cfe6fe69fa7b029b = L.circleMarker(
+                [-2.9814344, 23.8222636],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_e1ffeac16410661e8a6b2d73f51f6b20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae4615ac62c2269fd04845d125742a1b = $(`<div id="html_ae4615ac62c2269fd04845d125742a1b" style="width: 100.0%; height: 100.0%;"><b>Democratic Republic of the Congo</b><br>Mentions: 3<br>Address: République démocratique du Congo</div>`)[0];
+                popup_e1ffeac16410661e8a6b2d73f51f6b20.setContent(html_ae4615ac62c2269fd04845d125742a1b);
+            
+        
+
+        circle_marker_55c4168fb80d7943cfe6fe69fa7b029b.bindPopup(popup_e1ffeac16410661e8a6b2d73f51f6b20)
+        ;
+
+        
+    
+    
+            circle_marker_55c4168fb80d7943cfe6fe69fa7b029b.bindTooltip(
+                `<div>
+                     Democratic Republic of the Congo (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d7c5b20c33541c948df425cafb5c2712 = L.circleMarker(
+                [8.0300284, -1.0800271],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.88888888888889, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_1d9b18e5358383fc80a4383c4b4d7129 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a684698838f1aaa99e7c40d93bb2999a = $(`<div id="html_a684698838f1aaa99e7c40d93bb2999a" style="width: 100.0%; height: 100.0%;"><b>Ghana</b><br>Mentions: 5<br>Address: Ghana</div>`)[0];
+                popup_1d9b18e5358383fc80a4383c4b4d7129.setContent(html_a684698838f1aaa99e7c40d93bb2999a);
+            
+        
+
+        circle_marker_d7c5b20c33541c948df425cafb5c2712.bindPopup(popup_1d9b18e5358383fc80a4383c4b4d7129)
+        ;
+
+        
+    
+    
+            circle_marker_d7c5b20c33541c948df425cafb5c2712.bindTooltip(
+                `<div>
+                     Ghana (5 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_975a89628aa6481ae1919ce63a5dd935 = L.circleMarker(
+                [-4.6574977, 55.4540146],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_1d2a56e0317fb25f7dfc5b9f3668d9e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18c60de293aff4649d35350e23ca9f3a = $(`<div id="html_18c60de293aff4649d35350e23ca9f3a" style="width: 100.0%; height: 100.0%;"><b>Seychelles</b><br>Mentions: 3<br>Address: Sesel</div>`)[0];
+                popup_1d2a56e0317fb25f7dfc5b9f3668d9e7.setContent(html_18c60de293aff4649d35350e23ca9f3a);
+            
+        
+
+        circle_marker_975a89628aa6481ae1919ce63a5dd935.bindPopup(popup_1d2a56e0317fb25f7dfc5b9f3668d9e7)
+        ;
+
+        
+    
+    
+            circle_marker_975a89628aa6481ae1919ce63a5dd935.bindTooltip(
+                `<div>
+                     Seychelles (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6b405c262beb80aef75b2b0161a056a5 = L.circleMarker(
+                [8.3676771, 49.083416],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_c2641244cac642c45f5be59a931606fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bef754377efe3fed7fe44d6be1476d4 = $(`<div id="html_5bef754377efe3fed7fe44d6be1476d4" style="width: 100.0%; height: 100.0%;"><b>Somalia</b><br>Mentions: 3<br>Address: Soomaaliya الصومال</div>`)[0];
+                popup_c2641244cac642c45f5be59a931606fd.setContent(html_5bef754377efe3fed7fe44d6be1476d4);
+            
+        
+
+        circle_marker_6b405c262beb80aef75b2b0161a056a5.bindPopup(popup_c2641244cac642c45f5be59a931606fd)
+        ;
+
+        
+    
+    
+            circle_marker_6b405c262beb80aef75b2b0161a056a5.bindTooltip(
+                `<div>
+                     Somalia (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8cbcb8d0d320b30003a229b6c6a8ab7a = L.circleMarker(
+                [-12.2045176, 44.2832964],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_a38778447bfe5eda0f1490360b963313 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6866e8bdf9445f24532d80fa47d727e0 = $(`<div id="html_6866e8bdf9445f24532d80fa47d727e0" style="width: 100.0%; height: 100.0%;"><b>Comoros</b><br>Mentions: 3<br>Address: Comores Komori جزر القمر</div>`)[0];
+                popup_a38778447bfe5eda0f1490360b963313.setContent(html_6866e8bdf9445f24532d80fa47d727e0);
+            
+        
+
+        circle_marker_8cbcb8d0d320b30003a229b6c6a8ab7a.bindPopup(popup_a38778447bfe5eda0f1490360b963313)
+        ;
+
+        
+    
+    
+            circle_marker_8cbcb8d0d320b30003a229b6c6a8ab7a.bindTooltip(
+                `<div>
+                     Comoros (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d07459da25123c731d377813798a12bd = L.circleMarker(
+                [-19.302233, 34.9144977],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_2e245d7e44989865cccbb5972c9f79f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50952432a13c622fa725727e85bc7a01 = $(`<div id="html_50952432a13c622fa725727e85bc7a01" style="width: 100.0%; height: 100.0%;"><b>Mozambique</b><br>Mentions: 3<br>Address: Moçambique</div>`)[0];
+                popup_2e245d7e44989865cccbb5972c9f79f7.setContent(html_50952432a13c622fa725727e85bc7a01);
+            
+        
+
+        circle_marker_d07459da25123c731d377813798a12bd.bindPopup(popup_2e245d7e44989865cccbb5972c9f79f7)
+        ;
+
+        
+    
+    
+            circle_marker_d07459da25123c731d377813798a12bd.bindTooltip(
+                `<div>
+                     Mozambique (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3f965442e2e31a092fa0d96196e13349 = L.circleMarker(
+                [-0.7264327, 15.6419155],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_9a3c77d4468de40f92c9257e04faf614 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9adb9b5dc47fe0cb91a4dc33c697eeb8 = $(`<div id="html_9adb9b5dc47fe0cb91a4dc33c697eeb8" style="width: 100.0%; height: 100.0%;"><b>Republic of the Congo</b><br>Mentions: 3<br>Address: Congo</div>`)[0];
+                popup_9a3c77d4468de40f92c9257e04faf614.setContent(html_9adb9b5dc47fe0cb91a4dc33c697eeb8);
+            
+        
+
+        circle_marker_3f965442e2e31a092fa0d96196e13349.bindPopup(popup_9a3c77d4468de40f92c9257e04faf614)
+        ;
+
+        
+    
+    
+            circle_marker_3f965442e2e31a092fa0d96196e13349.bindTooltip(
+                `<div>
+                     Republic of the Congo (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e143da4ecf8150fba3835e0ee0471005 = L.circleMarker(
+                [-20.2759451, 57.5703566],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_eabb19fd6150dfe8ea71b89f9f96b1e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92f3132062ec637332f9135450153473 = $(`<div id="html_92f3132062ec637332f9135450153473" style="width: 100.0%; height: 100.0%;"><b>Mauritius</b><br>Mentions: 3<br>Address: Mauritius / Maurice</div>`)[0];
+                popup_eabb19fd6150dfe8ea71b89f9f96b1e8.setContent(html_92f3132062ec637332f9135450153473);
+            
+        
+
+        circle_marker_e143da4ecf8150fba3835e0ee0471005.bindPopup(popup_eabb19fd6150dfe8ea71b89f9f96b1e8)
+        ;
+
+        
+    
+    
+            circle_marker_e143da4ecf8150fba3835e0ee0471005.bindTooltip(
+                `<div>
+                     Mauritius (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bb2de0c8e31103894a66b4799afa0bbd = L.circleMarker(
+                [1.4419683, 38.4313975],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.666666666666666, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_02220ca37a6bd3f1ebabd74fff9f3733 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7905afe51589705e37996ca016e77eb = $(`<div id="html_c7905afe51589705e37996ca016e77eb" style="width: 100.0%; height: 100.0%;"><b>Kenya</b><br>Mentions: 4<br>Address: Kenya</div>`)[0];
+                popup_02220ca37a6bd3f1ebabd74fff9f3733.setContent(html_c7905afe51589705e37996ca016e77eb);
+            
+        
+
+        circle_marker_bb2de0c8e31103894a66b4799afa0bbd.bindPopup(popup_02220ca37a6bd3f1ebabd74fff9f3733)
+        ;
+
+        
+    
+    
+            circle_marker_bb2de0c8e31103894a66b4799afa0bbd.bindTooltip(
+                `<div>
+                     Kenya (4 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_05bfaca2b28e923bf677deb918e58300 = L.circleMarker(
+                [14.5844444, 29.4917691],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_19651482b3922eb86a8259a69a45aeda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ddeafc4a632ad72854b05688cdd95ea = $(`<div id="html_6ddeafc4a632ad72854b05688cdd95ea" style="width: 100.0%; height: 100.0%;"><b>Sudan</b><br>Mentions: 3<br>Address: السودان</div>`)[0];
+                popup_19651482b3922eb86a8259a69a45aeda.setContent(html_6ddeafc4a632ad72854b05688cdd95ea);
+            
+        
+
+        circle_marker_05bfaca2b28e923bf677deb918e58300.bindPopup(popup_19651482b3922eb86a8259a69a45aeda)
+        ;
+
+        
+    
+    
+            circle_marker_05bfaca2b28e923bf677deb918e58300.bindTooltip(
+                `<div>
+                     Sudan (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8cb072c24941cfc082ed058f0bc9b388 = L.circleMarker(
+                [8.7800265, 1.0199765],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_18d3912aa6e223341fd92fd7665a40da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7654766ebf8f3e666b135f4ff2d8bba = $(`<div id="html_c7654766ebf8f3e666b135f4ff2d8bba" style="width: 100.0%; height: 100.0%;"><b>Togo</b><br>Mentions: 3<br>Address: Togo</div>`)[0];
+                popup_18d3912aa6e223341fd92fd7665a40da.setContent(html_c7654766ebf8f3e666b135f4ff2d8bba);
+            
+        
+
+        circle_marker_8cb072c24941cfc082ed058f0bc9b388.bindPopup(popup_18d3912aa6e223341fd92fd7665a40da)
+        ;
+
+        
+    
+    
+            circle_marker_8cb072c24941cfc082ed058f0bc9b388.bindTooltip(
+                `<div>
+                     Togo (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2563de7a265f02a4ed240f9800241259 = L.circleMarker(
+                [11.8145966, 42.8453061],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_d79b43ec128b2e69074d226f4792c538 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_caf7e31015a98df4ec7598e47b05256d = $(`<div id="html_caf7e31015a98df4ec7598e47b05256d" style="width: 100.0%; height: 100.0%;"><b>Djibouti</b><br>Mentions: 3<br>Address: Djibouti جيبوتي</div>`)[0];
+                popup_d79b43ec128b2e69074d226f4792c538.setContent(html_caf7e31015a98df4ec7598e47b05256d);
+            
+        
+
+        circle_marker_2563de7a265f02a4ed240f9800241259.bindPopup(popup_d79b43ec128b2e69074d226f4792c538)
+        ;
+
+        
+    
+    
+            circle_marker_2563de7a265f02a4ed240f9800241259.bindTooltip(
+                `<div>
+                     Djibouti (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ba82c9539628de09336f8d3156c6ba9e = L.circleMarker(
+                [-18.9249604, 46.4416422],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_375d67cc575e8c61a73131345f9c94ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5b1cf266fdfc5ba0267d63fb7053ccf = $(`<div id="html_f5b1cf266fdfc5ba0267d63fb7053ccf" style="width: 100.0%; height: 100.0%;"><b>Madagascar</b><br>Mentions: 3<br>Address: Madagasikara / Madagascar</div>`)[0];
+                popup_375d67cc575e8c61a73131345f9c94ac.setContent(html_f5b1cf266fdfc5ba0267d63fb7053ccf);
+            
+        
+
+        circle_marker_ba82c9539628de09336f8d3156c6ba9e.bindPopup(popup_375d67cc575e8c61a73131345f9c94ac)
+        ;
+
+        
+    
+    
+            circle_marker_ba82c9539628de09336f8d3156c6ba9e.bindTooltip(
+                `<div>
+                     Madagascar (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e7b0bde020be504ef69349f4309b30c2 = L.circleMarker(
+                [28.0000272, 2.9999825],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_255d37c0d452169ae73c41a80b52acd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a9bdfe2b6d02afb8315a4a81adc75ab = $(`<div id="html_3a9bdfe2b6d02afb8315a4a81adc75ab" style="width: 100.0%; height: 100.0%;"><b>Algeria</b><br>Mentions: 3<br>Address: Algérie ⵍⵣⵣⴰⵢⴻⵔ الجزائر</div>`)[0];
+                popup_255d37c0d452169ae73c41a80b52acd2.setContent(html_3a9bdfe2b6d02afb8315a4a81adc75ab);
+            
+        
+
+        circle_marker_e7b0bde020be504ef69349f4309b30c2.bindPopup(popup_255d37c0d452169ae73c41a80b52acd2)
+        ;
+
+        
+    
+    
+            circle_marker_e7b0bde020be504ef69349f4309b30c2.bindTooltip(
+                `<div>
+                     Algeria (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f031dc90877387be031d52cf7180d228 = L.circleMarker(
+                [26.8234472, 18.1236723],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.88888888888889, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_ada3ed0a4af578d874aee4aacd9109e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69c4726d6d1f0d20874e99986ad8e289 = $(`<div id="html_69c4726d6d1f0d20874e99986ad8e289" style="width: 100.0%; height: 100.0%;"><b>Libya</b><br>Mentions: 5<br>Address: ليبيا</div>`)[0];
+                popup_ada3ed0a4af578d874aee4aacd9109e7.setContent(html_69c4726d6d1f0d20874e99986ad8e289);
+            
+        
+
+        circle_marker_f031dc90877387be031d52cf7180d228.bindPopup(popup_ada3ed0a4af578d874aee4aacd9109e7)
+        ;
+
+        
+    
+    
+            circle_marker_f031dc90877387be031d52cf7180d228.bindTooltip(
+                `<div>
+                     Libya (5 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_991041690240bf94018462b20b9bf11b = L.circleMarker(
+                [7.9897371, -5.5679458],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_45b86e6d6d12e89033593c9301ca5618 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_665c477c43498ec3fc28d2410ef4fd17 = $(`<div id="html_665c477c43498ec3fc28d2410ef4fd17" style="width: 100.0%; height: 100.0%;"><b>Ivory Coast</b><br>Mentions: 3<br>Address: Côte d’Ivoire</div>`)[0];
+                popup_45b86e6d6d12e89033593c9301ca5618.setContent(html_665c477c43498ec3fc28d2410ef4fd17);
+            
+        
+
+        circle_marker_991041690240bf94018462b20b9bf11b.bindPopup(popup_45b86e6d6d12e89033593c9301ca5618)
+        ;
+
+        
+    
+    
+            circle_marker_991041690240bf94018462b20b9bf11b.bindTooltip(
+                `<div>
+                     Ivory Coast (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_54c9ec8f51cbfd2e2da55cd3b913a36f = L.circleMarker(
+                [-28.8166236, 24.991639],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_373f6dfe0760ac27a0bdf5894a14abf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab5dc52f0b3346d33c278fdedf998f5b = $(`<div id="html_ab5dc52f0b3346d33c278fdedf998f5b" style="width: 100.0%; height: 100.0%;"><b>South Africa</b><br>Mentions: 3<br>Address: South Africa</div>`)[0];
+                popup_373f6dfe0760ac27a0bdf5894a14abf9.setContent(html_ab5dc52f0b3346d33c278fdedf998f5b);
+            
+        
+
+        circle_marker_54c9ec8f51cbfd2e2da55cd3b913a36f.bindPopup(popup_373f6dfe0760ac27a0bdf5894a14abf9)
+        ;
+
+        
+    
+    
+            circle_marker_54c9ec8f51cbfd2e2da55cd3b913a36f.bindTooltip(
+                `<div>
+                     South Africa (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d6185e35b148323a5007ce9c43e86e6a = L.circleMarker(
+                [-3.426449, 29.9324519],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_8d9dc941eb861ef205ae24e45ff5b2ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5388002a1dda7ef39f903810b9200243 = $(`<div id="html_5388002a1dda7ef39f903810b9200243" style="width: 100.0%; height: 100.0%;"><b>Burundi</b><br>Mentions: 3<br>Address: Burundi</div>`)[0];
+                popup_8d9dc941eb861ef205ae24e45ff5b2ba.setContent(html_5388002a1dda7ef39f903810b9200243);
+            
+        
+
+        circle_marker_d6185e35b148323a5007ce9c43e86e6a.bindPopup(popup_8d9dc941eb861ef205ae24e45ff5b2ba)
+        ;
+
+        
+    
+    
+            circle_marker_d6185e35b148323a5007ce9c43e86e6a.bindTooltip(
+                `<div>
+                     Burundi (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6cdac6c6daa2ee58a69ee093a42ba6b4 = L.circleMarker(
+                [14.4750607, -14.4529612],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_33616de5c3c15952a640e49f52bff0f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1211be218edc519c0c7a6831f6b2ceeb = $(`<div id="html_1211be218edc519c0c7a6831f6b2ceeb" style="width: 100.0%; height: 100.0%;"><b>Senegal</b><br>Mentions: 3<br>Address: Sénégal</div>`)[0];
+                popup_33616de5c3c15952a640e49f52bff0f0.setContent(html_1211be218edc519c0c7a6831f6b2ceeb);
+            
+        
+
+        circle_marker_6cdac6c6daa2ee58a69ee093a42ba6b4.bindPopup(popup_33616de5c3c15952a640e49f52bff0f0)
+        ;
+
+        
+    
+    
+            circle_marker_6cdac6c6daa2ee58a69ee093a42ba6b4.bindTooltip(
+                `<div>
+                     Senegal (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a97ce447657d12cbe3b02dd9457583df = L.circleMarker(
+                [-29.6039267, 28.3350193],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_fc8c91d56feb01701713db11f94e69e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd8831507be5c694149cef22f287b1d3 = $(`<div id="html_cd8831507be5c694149cef22f287b1d3" style="width: 100.0%; height: 100.0%;"><b>Lesotho</b><br>Mentions: 3<br>Address: Lesotho</div>`)[0];
+                popup_fc8c91d56feb01701713db11f94e69e2.setContent(html_cd8831507be5c694149cef22f287b1d3);
+            
+        
+
+        circle_marker_a97ce447657d12cbe3b02dd9457583df.bindPopup(popup_fc8c91d56feb01701713db11f94e69e2)
+        ;
+
+        
+    
+    
+            circle_marker_a97ce447657d12cbe3b02dd9457583df.bindTooltip(
+                `<div>
+                     Lesotho (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_47a2ace731b38c063ed2e973d7cfee1e = L.circleMarker(
+                [-1.9646631, 30.0644358],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_1c8a00e9f6ab00821bd5874f251a88aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9797dca4f6f58a54f82f496f8bd7b4dd = $(`<div id="html_9797dca4f6f58a54f82f496f8bd7b4dd" style="width: 100.0%; height: 100.0%;"><b>Rwanda</b><br>Mentions: 3<br>Address: Rwanda</div>`)[0];
+                popup_1c8a00e9f6ab00821bd5874f251a88aa.setContent(html_9797dca4f6f58a54f82f496f8bd7b4dd);
+            
+        
+
+        circle_marker_47a2ace731b38c063ed2e973d7cfee1e.bindPopup(popup_1c8a00e9f6ab00821bd5874f251a88aa)
+        ;
+
+        
+    
+    
+            circle_marker_47a2ace731b38c063ed2e973d7cfee1e.bindTooltip(
+                `<div>
+                     Rwanda (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_483ab30d492a4056289b338339ece91a = L.circleMarker(
+                [7.0323598, 19.9981227],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_e1435a6db75010a88edb60e691ef6171 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56789479a11b6c52482b5a73af190508 = $(`<div id="html_56789479a11b6c52482b5a73af190508" style="width: 100.0%; height: 100.0%;"><b>Central African Republic</b><br>Mentions: 3<br>Address: Ködörösêse tî Bêafrîka / République centrafricaine</div>`)[0];
+                popup_e1435a6db75010a88edb60e691ef6171.setContent(html_56789479a11b6c52482b5a73af190508);
+            
+        
+
+        circle_marker_483ab30d492a4056289b338339ece91a.bindPopup(popup_e1435a6db75010a88edb60e691ef6171)
+        ;
+
+        
+    
+    
+            circle_marker_483ab30d492a4056289b338339ece91a.bindTooltip(
+                `<div>
+                     Central African Republic (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_83d0247145ae4eb928566218ea582d8f = L.circleMarker(
+                [20.2540382, -9.2399263],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_cb60798498f4982cf5f4a5d6e4c363df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f65abb59c1c8a65cb18aad2f6f409775 = $(`<div id="html_f65abb59c1c8a65cb18aad2f6f409775" style="width: 100.0%; height: 100.0%;"><b>Mauritania</b><br>Mentions: 3<br>Address: Mauritanie موريتانيا</div>`)[0];
+                popup_cb60798498f4982cf5f4a5d6e4c363df.setContent(html_f65abb59c1c8a65cb18aad2f6f409775);
+            
+        
+
+        circle_marker_83d0247145ae4eb928566218ea582d8f.bindPopup(popup_cb60798498f4982cf5f4a5d6e4c363df)
+        ;
+
+        
+    
+    
+            circle_marker_83d0247145ae4eb928566218ea582d8f.bindTooltip(
+                `<div>
+                     Mauritania (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ca4b78f472a0becda1913b74361cbc2f = L.circleMarker(
+                [1.613172, 10.5170357],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_c076ac8949a24f18c2c858e0abb3e899 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1870bb53ea7ca696eab2436db5c13a97 = $(`<div id="html_1870bb53ea7ca696eab2436db5c13a97" style="width: 100.0%; height: 100.0%;"><b>Equatorial Guinea</b><br>Mentions: 3<br>Address: Guinea Ecuatorial</div>`)[0];
+                popup_c076ac8949a24f18c2c858e0abb3e899.setContent(html_1870bb53ea7ca696eab2436db5c13a97);
+            
+        
+
+        circle_marker_ca4b78f472a0becda1913b74361cbc2f.bindPopup(popup_c076ac8949a24f18c2c858e0abb3e899)
+        ;
+
+        
+    
+    
+            circle_marker_ca4b78f472a0becda1913b74361cbc2f.bindTooltip(
+                `<div>
+                     Equatorial Guinea (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ec91958612e36b4cbce982d5337d4359 = L.circleMarker(
+                [33.8439408, 9.400138],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_866a3b034b1e224b8f65f13b9e07ef7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0742f4314dbb720ee5fba0ab2afa1656 = $(`<div id="html_0742f4314dbb720ee5fba0ab2afa1656" style="width: 100.0%; height: 100.0%;"><b>Tunisia</b><br>Mentions: 3<br>Address: تونس</div>`)[0];
+                popup_866a3b034b1e224b8f65f13b9e07ef7b.setContent(html_0742f4314dbb720ee5fba0ab2afa1656);
+            
+        
+
+        circle_marker_ec91958612e36b4cbce982d5337d4359.bindPopup(popup_866a3b034b1e224b8f65f13b9e07ef7b)
+        ;
+
+        
+    
+    
+            circle_marker_ec91958612e36b4cbce982d5337d4359.bindTooltip(
+                `<div>
+                     Tunisia (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_618e703f358767d8e13336f09f85a5a1 = L.circleMarker(
+                [47.3138746, 5.0488196],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_869ea3b44a950ddc153e6e7a393b4391 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_affe2fd56140e43750a9d2802b023f9e = $(`<div id="html_affe2fd56140e43750a9d2802b023f9e" style="width: 100.0%; height: 100.0%;"><b>West Africa</b><br>Mentions: 1<br>Address: West Africa, Rue d'Auxonne, Faubourg Saint-Pierre, Université, Dijon, Côte-d'Or, Bourgogne-Franche-Comté, France métropolitaine, 21000, France</div>`)[0];
+                popup_869ea3b44a950ddc153e6e7a393b4391.setContent(html_affe2fd56140e43750a9d2802b023f9e);
+            
+        
+
+        circle_marker_618e703f358767d8e13336f09f85a5a1.bindPopup(popup_869ea3b44a950ddc153e6e7a393b4391)
+        ;
+
+        
+    
+    
+            circle_marker_618e703f358767d8e13336f09f85a5a1.bindTooltip(
+                `<div>
+                     West Africa (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9334700ec504933686a7fd8ce4aba2c9 = L.circleMarker(
+                [13.470062, -15.4900464],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_40d8755578f202cb77d2d79988b3d40a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b39e98cea2a5f09b4842665da615c9c8 = $(`<div id="html_b39e98cea2a5f09b4842665da615c9c8" style="width: 100.0%; height: 100.0%;"><b>Gambia</b><br>Mentions: 3<br>Address: Gambia</div>`)[0];
+                popup_40d8755578f202cb77d2d79988b3d40a.setContent(html_b39e98cea2a5f09b4842665da615c9c8);
+            
+        
+
+        circle_marker_9334700ec504933686a7fd8ce4aba2c9.bindPopup(popup_40d8755578f202cb77d2d79988b3d40a)
+        ;
+
+        
+    
+    
+            circle_marker_9334700ec504933686a7fd8ce4aba2c9.bindTooltip(
+                `<div>
+                     Gambia (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8431d41053b325e092e353c20146bafc = L.circleMarker(
+                [5.7499721, -9.3658524],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_ea453e431a48e695b15f24637f92f2bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec22fca69f69937e0ea79bcc3c6538f1 = $(`<div id="html_ec22fca69f69937e0ea79bcc3c6538f1" style="width: 100.0%; height: 100.0%;"><b>Liberia</b><br>Mentions: 3<br>Address: Liberia</div>`)[0];
+                popup_ea453e431a48e695b15f24637f92f2bd.setContent(html_ec22fca69f69937e0ea79bcc3c6538f1);
+            
+        
+
+        circle_marker_8431d41053b325e092e353c20146bafc.bindPopup(popup_ea453e431a48e695b15f24637f92f2bd)
+        ;
+
+        
+    
+    
+            circle_marker_8431d41053b325e092e353c20146bafc.bindTooltip(
+                `<div>
+                     Liberia (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4f9baa6738b56305d61a3007bfaa01f3 = L.circleMarker(
+                [-0.8999695, 11.6899699],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_058195d68282810e254457d699183ec6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f43bbff9d410d121811a12a6635c397 = $(`<div id="html_1f43bbff9d410d121811a12a6635c397" style="width: 100.0%; height: 100.0%;"><b>Gabon</b><br>Mentions: 3<br>Address: Gabon</div>`)[0];
+                popup_058195d68282810e254457d699183ec6.setContent(html_1f43bbff9d410d121811a12a6635c397);
+            
+        
+
+        circle_marker_4f9baa6738b56305d61a3007bfaa01f3.bindPopup(popup_058195d68282810e254457d699183ec6)
+        ;
+
+        
+    
+    
+            circle_marker_4f9baa6738b56305d61a3007bfaa01f3.bindTooltip(
+                `<div>
+                     Gabon (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4b57d2e5b20f8d39b23097f0e9a2f975 = L.circleMarker(
+                [8.6400349, -11.8400269],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_1974a9a7255a0addd5f1fb07126e9276 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d0808f4d469d09b2780abcde22405ea = $(`<div id="html_6d0808f4d469d09b2780abcde22405ea" style="width: 100.0%; height: 100.0%;"><b>Sierra Leone</b><br>Mentions: 3<br>Address: Sierra Leone</div>`)[0];
+                popup_1974a9a7255a0addd5f1fb07126e9276.setContent(html_6d0808f4d469d09b2780abcde22405ea);
+            
+        
+
+        circle_marker_4b57d2e5b20f8d39b23097f0e9a2f975.bindPopup(popup_1974a9a7255a0addd5f1fb07126e9276)
+        ;
+
+        
+    
+    
+            circle_marker_4b57d2e5b20f8d39b23097f0e9a2f975.bindTooltip(
+                `<div>
+                     Sierra Leone (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_522de519adfee73336b5bee57ca4e495 = L.circleMarker(
+                [15.9500319, 37.9999668],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_4faad78e3158c9bbda6645047fb089f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a84cc397d4d5f26733d7999c1382963 = $(`<div id="html_1a84cc397d4d5f26733d7999c1382963" style="width: 100.0%; height: 100.0%;"><b>Eritrea</b><br>Mentions: 3<br>Address: ኤርትራ Eritrea إرتريا</div>`)[0];
+                popup_4faad78e3158c9bbda6645047fb089f6.setContent(html_1a84cc397d4d5f26733d7999c1382963);
+            
+        
+
+        circle_marker_522de519adfee73336b5bee57ca4e495.bindPopup(popup_4faad78e3158c9bbda6645047fb089f6)
+        ;
+
+        
+    
+    
+            circle_marker_522de519adfee73336b5bee57ca4e495.bindTooltip(
+                `<div>
+                     Eritrea (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_db800fd0a9c345ab81298cc49aa3560f = L.circleMarker(
+                [-14.5189121, 27.5589884],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_f52046da2a16b244e7613c121c85c707 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36d11fc53c449a5d3f678d19188b241a = $(`<div id="html_36d11fc53c449a5d3f678d19188b241a" style="width: 100.0%; height: 100.0%;"><b>Zambia</b><br>Mentions: 3<br>Address: Zambia</div>`)[0];
+                popup_f52046da2a16b244e7613c121c85c707.setContent(html_36d11fc53c449a5d3f678d19188b241a);
+            
+        
+
+        circle_marker_db800fd0a9c345ab81298cc49aa3560f.bindPopup(popup_f52046da2a16b244e7613c121c85c707)
+        ;
+
+        
+    
+    
+            circle_marker_db800fd0a9c345ab81298cc49aa3560f.bindTooltip(
+                `<div>
+                     Zambia (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_38854802f81b6a7244b2e54745edfe4b = L.circleMarker(
+                [16.3700359, -2.2900239],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_a35e7a700e97aba48a5194dbf9098f0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cff1312d0e23abc21a88f4e24300e8d9 = $(`<div id="html_cff1312d0e23abc21a88f4e24300e8d9" style="width: 100.0%; height: 100.0%;"><b>Mali</b><br>Mentions: 3<br>Address: Mali</div>`)[0];
+                popup_a35e7a700e97aba48a5194dbf9098f0d.setContent(html_cff1312d0e23abc21a88f4e24300e8d9);
+            
+        
+
+        circle_marker_38854802f81b6a7244b2e54745edfe4b.bindPopup(popup_a35e7a700e97aba48a5194dbf9098f0d)
+        ;
+
+        
+    
+    
+            circle_marker_38854802f81b6a7244b2e54745edfe4b.bindTooltip(
+                `<div>
+                     Mali (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0919ce2b4870a3a57f5d2baeddabf8c2 = L.circleMarker(
+                [12.0753083, -1.6880314],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.444444444444445, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_065bff9bdd6c3be96e46879aef68b232 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40034cee79a4173dc9013ced15bcd49b = $(`<div id="html_40034cee79a4173dc9013ced15bcd49b" style="width: 100.0%; height: 100.0%;"><b>Burkina Faso</b><br>Mentions: 3<br>Address: Burkina Faso</div>`)[0];
+                popup_065bff9bdd6c3be96e46879aef68b232.setContent(html_40034cee79a4173dc9013ced15bcd49b);
+            
+        
+
+        circle_marker_0919ce2b4870a3a57f5d2baeddabf8c2.bindPopup(popup_065bff9bdd6c3be96e46879aef68b232)
+        ;
+
+        
+    
+    
+            circle_marker_0919ce2b4870a3a57f5d2baeddabf8c2.bindTooltip(
+                `<div>
+                     Burkina Faso (3 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1b96e0d88c8d7051c408937fc62ae598 = L.circleMarker(
+                [10.3528744, 76.5120396],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_7160798352962e233fec82a964783c9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1366bb3e4f92a3a347e2c7543b1375d = $(`<div id="html_e1366bb3e4f92a3a347e2c7543b1375d" style="width: 100.0%; height: 100.0%;"><b>Kerala</b><br>Mentions: 1<br>Address: Kerala, India</div>`)[0];
+                popup_7160798352962e233fec82a964783c9b.setContent(html_e1366bb3e4f92a3a347e2c7543b1375d);
+            
+        
+
+        circle_marker_1b96e0d88c8d7051c408937fc62ae598.bindPopup(popup_7160798352962e233fec82a964783c9b)
+        ;
+
+        
+    
+    
+            circle_marker_1b96e0d88c8d7051c408937fc62ae598.bindTooltip(
+                `<div>
+                     Kerala (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_af7d5f618dd007c06957e954d111d058 = L.circleMarker(
+                [9.9837257, 76.2740001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_9b55c698271b86906da90496b9a5aebb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e02f28fd99f788a21b1aceb723e66e82 = $(`<div id="html_e02f28fd99f788a21b1aceb723e66e82" style="width: 100.0%; height: 100.0%;"><b>Ernakulam</b><br>Mentions: 1<br>Address: Ernakulam, Kanayannur, Ernakulam, Kerala, 682035, India</div>`)[0];
+                popup_9b55c698271b86906da90496b9a5aebb.setContent(html_e02f28fd99f788a21b1aceb723e66e82);
+            
+        
+
+        circle_marker_af7d5f618dd007c06957e954d111d058.bindPopup(popup_9b55c698271b86906da90496b9a5aebb)
+        ;
+
+        
+    
+    
+            circle_marker_af7d5f618dd007c06957e954d111d058.bindTooltip(
+                `<div>
+                     Ernakulam (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c53e3c91a2799d429d07caf8f0ecfbc2 = L.circleMarker(
+                [-10.3333333, -53.2],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_3e1513fdfda19e215e2d00dce1f9539b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79c15d0fef1d97794ce18c2f496f31b6 = $(`<div id="html_79c15d0fef1d97794ce18c2f496f31b6" style="width: 100.0%; height: 100.0%;"><b>Brazil</b><br>Mentions: 1<br>Address: Brasil</div>`)[0];
+                popup_3e1513fdfda19e215e2d00dce1f9539b.setContent(html_79c15d0fef1d97794ce18c2f496f31b6);
+            
+        
+
+        circle_marker_c53e3c91a2799d429d07caf8f0ecfbc2.bindPopup(popup_3e1513fdfda19e215e2d00dce1f9539b)
+        ;
+
+        
+    
+    
+            circle_marker_c53e3c91a2799d429d07caf8f0ecfbc2.bindTooltip(
+                `<div>
+                     Brazil (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_93482e59083ea9c55b1ae5f490acf131 = L.circleMarker(
+                [4.3635118, 18.5835913],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_fdb9ce81bf5bb49125865ab3af492a03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a28360f9dd3015f1a03cf8f7f6366ff = $(`<div id="html_7a28360f9dd3015f1a03cf8f7f6366ff" style="width: 100.0%; height: 100.0%;"><b>Bangui</b><br>Mentions: 2<br>Address: Bangui, Ködörösêse tî Bêafrîka / République centrafricaine</div>`)[0];
+                popup_fdb9ce81bf5bb49125865ab3af492a03.setContent(html_7a28360f9dd3015f1a03cf8f7f6366ff);
+            
+        
+
+        circle_marker_93482e59083ea9c55b1ae5f490acf131.bindPopup(popup_fdb9ce81bf5bb49125865ab3af492a03)
+        ;
+
+        
+    
+    
+            circle_marker_93482e59083ea9c55b1ae5f490acf131.bindTooltip(
+                `<div>
+                     Bangui (2 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3922a52f547ca90d3a01d56d9c9b140c = L.circleMarker(
+                [51.2086975, 89.2343748],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_0365210c4c79a9f02d88b2fdf168b6c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29d4750b0e7e7eeef857e7c42af523cb = $(`<div id="html_29d4750b0e7e7eeef857e7c42af523cb" style="width: 100.0%; height: 100.0%;"><b>Asia</b><br>Mentions: 1<br>Address: Asia</div>`)[0];
+                popup_0365210c4c79a9f02d88b2fdf168b6c8.setContent(html_29d4750b0e7e7eeef857e7c42af523cb);
+            
+        
+
+        circle_marker_3922a52f547ca90d3a01d56d9c9b140c.bindPopup(popup_0365210c4c79a9f02d88b2fdf168b6c8)
+        ;
+
+        
+    
+    
+            circle_marker_3922a52f547ca90d3a01d56d9c9b140c.bindTooltip(
+                `<div>
+                     Asia (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_27ae321efb64c0b372b6a011c1f09e64 = L.circleMarker(
+                [43.0757424, 18.1363398],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_d2ad890c443e4342cf536f46a2b04c4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4a7f748ae9b5c73184a019b7d128fbb = $(`<div id="html_c4a7f748ae9b5c73184a019b7d128fbb" style="width: 100.0%; height: 100.0%;"><b>karst</b><br>Mentions: 1<br>Address: Karst, Suzina, Општина Бертковићи / Opština Berkovići, Република Српска / Republika Srpska, 88363, Bosna i Hercegovina / Босна и Херцеговина</div>`)[0];
+                popup_d2ad890c443e4342cf536f46a2b04c4f.setContent(html_c4a7f748ae9b5c73184a019b7d128fbb);
+            
+        
+
+        circle_marker_27ae321efb64c0b372b6a011c1f09e64.bindPopup(popup_d2ad890c443e4342cf536f46a2b04c4f)
+        ;
+
+        
+    
+    
+            circle_marker_27ae321efb64c0b372b6a011c1f09e64.bindTooltip(
+                `<div>
+                     karst (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b29615c07b64adfe89e9447481910ec8 = L.circleMarker(
+                [35.0000663, 104.999955],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_ad5ed99c98e681a9ef8d12397f38d2c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae0bfd3d691ed8917df30e5a39266ba9 = $(`<div id="html_ae0bfd3d691ed8917df30e5a39266ba9" style="width: 100.0%; height: 100.0%;"><b>china</b><br>Mentions: 1<br>Address: 中国</div>`)[0];
+                popup_ad5ed99c98e681a9ef8d12397f38d2c9.setContent(html_ae0bfd3d691ed8917df30e5a39266ba9);
+            
+        
+
+        circle_marker_b29615c07b64adfe89e9447481910ec8.bindPopup(popup_ad5ed99c98e681a9ef8d12397f38d2c9)
+        ;
+
+        
+    
+    
+            circle_marker_b29615c07b64adfe89e9447481910ec8.bindTooltip(
+                `<div>
+                     china (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f71cc1cf0807e867872049bd00665094 = L.circleMarker(
+                [28.8147417, 112.1968448],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_8bc7d2f9aa6f80da2247302fa4661843 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_150f0c862730ec74f9629b2400cccc5f = $(`<div id="html_150f0c862730ec74f9629b2400cccc5f" style="width: 100.0%; height: 100.0%;"><b>Dongting Lake</b><br>Mentions: 1<br>Address: 洞庭湖, 沅江市, 益阳市, 湖南省, 中国</div>`)[0];
+                popup_8bc7d2f9aa6f80da2247302fa4661843.setContent(html_150f0c862730ec74f9629b2400cccc5f);
+            
+        
+
+        circle_marker_f71cc1cf0807e867872049bd00665094.bindPopup(popup_8bc7d2f9aa6f80da2247302fa4661843)
+        ;
+
+        
+    
+    
+            circle_marker_f71cc1cf0807e867872049bd00665094.bindTooltip(
+                `<div>
+                     Dongting Lake (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_144742e6b387c1231c7cb9e8a6456419 = L.circleMarker(
+                [36.398987, 118.5055691],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.222222222222222, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_4bee4ea8cf1aa3c30eeb63753abf7196 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10b3e7767793e5d689c02b7532e7f382 = $(`<div id="html_10b3e7767793e5d689c02b7532e7f382" style="width: 100.0%; height: 100.0%;"><b>Shandong Province</b><br>Mentions: 2<br>Address: 山东省, 中国</div>`)[0];
+                popup_4bee4ea8cf1aa3c30eeb63753abf7196.setContent(html_10b3e7767793e5d689c02b7532e7f382);
+            
+        
+
+        circle_marker_144742e6b387c1231c7cb9e8a6456419.bindPopup(popup_4bee4ea8cf1aa3c30eeb63753abf7196)
+        ;
+
+        
+    
+    
+            circle_marker_144742e6b387c1231c7cb9e8a6456419.bindTooltip(
+                `<div>
+                     Shandong Province (2 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ff03133add45b7cd365b284e3a6b2213 = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_c7e23538e66b8ee60485b20b3de4966f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1de6055f2780e7f0bbc9ee57cc236307 = $(`<div id="html_1de6055f2780e7f0bbc9ee57cc236307" style="width: 100.0%; height: 100.0%;"><b>Iran</b><br>Mentions: 1<br>Address: ایران</div>`)[0];
+                popup_c7e23538e66b8ee60485b20b3de4966f.setContent(html_1de6055f2780e7f0bbc9ee57cc236307);
+            
+        
+
+        circle_marker_ff03133add45b7cd365b284e3a6b2213.bindPopup(popup_c7e23538e66b8ee60485b20b3de4966f)
+        ;
+
+        
+    
+    
+            circle_marker_ff03133add45b7cd365b284e3a6b2213.bindTooltip(
+                `<div>
+                     Iran (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bb1c1fdae739e0ce5c0ccdca633ff527 = L.circleMarker(
+                [30.3308401, 71.247499],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_42ae4fbd4640c68f414d88fecda069a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4556e69223b63d4c40875afd022f36c9 = $(`<div id="html_4556e69223b63d4c40875afd022f36c9" style="width: 100.0%; height: 100.0%;"><b>Pakistan</b><br>Mentions: 1<br>Address: پاکستان</div>`)[0];
+                popup_42ae4fbd4640c68f414d88fecda069a6.setContent(html_4556e69223b63d4c40875afd022f36c9);
+            
+        
+
+        circle_marker_bb1c1fdae739e0ce5c0ccdca633ff527.bindPopup(popup_42ae4fbd4640c68f414d88fecda069a6)
+        ;
+
+        
+    
+    
+            circle_marker_bb1c1fdae739e0ce5c0ccdca633ff527.bindTooltip(
+                `<div>
+                     Pakistan (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_61e91d0a04ea7bb3405849a4e052ff3f = L.circleMarker(
+                [0.9711257, 34.6014248],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_8392d728e5b31e6b4bb586409137a64a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40df3a930efde1930081652ef358eaab = $(`<div id="html_40df3a930efde1930081652ef358eaab" style="width: 100.0%; height: 100.0%;"><b>Mt. Elgon</b><br>Mentions: 1<br>Address: Mt Elgon, Bungoma, Western, Kenya</div>`)[0];
+                popup_8392d728e5b31e6b4bb586409137a64a.setContent(html_40df3a930efde1930081652ef358eaab);
+            
+        
+
+        circle_marker_61e91d0a04ea7bb3405849a4e052ff3f.bindPopup(popup_8392d728e5b31e6b4bb586409137a64a)
+        ;
+
+        
+    
+    
+            circle_marker_61e91d0a04ea7bb3405849a4e052ff3f.bindTooltip(
+                `<div>
+                     Mt. Elgon (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0a638b35aac2eb9e482bfd9bbd5233dd = L.circleMarker(
+                [9.6600005, -0.3943799],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_e2a28632998558509eb0c0a945730719 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a3ad566ac9d27e84b2164273fee26d4 = $(`<div id="html_4a3ad566ac9d27e84b2164273fee26d4" style="width: 100.0%; height: 100.0%;"><b>Northern</b><br>Mentions: 1<br>Address: Northern Region, Ghana</div>`)[0];
+                popup_e2a28632998558509eb0c0a945730719.setContent(html_4a3ad566ac9d27e84b2164273fee26d4);
+            
+        
+
+        circle_marker_0a638b35aac2eb9e482bfd9bbd5233dd.bindPopup(popup_e2a28632998558509eb0c0a945730719)
+        ;
+
+        
+    
+    
+            circle_marker_0a638b35aac2eb9e482bfd9bbd5233dd.bindTooltip(
+                `<div>
+                     Northern (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d7c0b30ad9475136d09c87a888b54e81 = L.circleMarker(
+                [38.9412037, -77.0669912],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_da63ce347daaa7ed0807417de9634c61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87639465fc4f36e9aa3fb78766e86253 = $(`<div id="html_87639465fc4f36e9aa3fb78766e86253" style="width: 100.0%; height: 100.0%;"><b>Northwest Ethiopia</b><br>Mentions: 1<br>Address: Embassy of Ethiopia, 3506, International Drive Northwest, Van Ness, Ward 3, Washington, District of Columbia, 20008, United States</div>`)[0];
+                popup_da63ce347daaa7ed0807417de9634c61.setContent(html_87639465fc4f36e9aa3fb78766e86253);
+            
+        
+
+        circle_marker_d7c0b30ad9475136d09c87a888b54e81.bindPopup(popup_da63ce347daaa7ed0807417de9634c61)
+        ;
+
+        
+    
+    
+            circle_marker_d7c0b30ad9475136d09c87a888b54e81.bindTooltip(
+                `<div>
+                     Northwest Ethiopia (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dcdca0840b56f85b60b604319279dc99 = L.circleMarker(
+                [0.3182017, 32.5753448],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_e731da5241eb1cff7c5e4202e8ab96bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfcc72ed77ff37eec425fb8aed579238 = $(`<div id="html_bfcc72ed77ff37eec425fb8aed579238" style="width: 100.0%; height: 100.0%;"><b>Nile Delta</b><br>Mentions: 1<br>Address: Delta, Buganda Road, Kikuubo, Central, Kampala Capital City, Kampala, Central Region, Uganda</div>`)[0];
+                popup_e731da5241eb1cff7c5e4202e8ab96bf.setContent(html_bfcc72ed77ff37eec425fb8aed579238);
+            
+        
+
+        circle_marker_dcdca0840b56f85b60b604319279dc99.bindPopup(popup_e731da5241eb1cff7c5e4202e8ab96bf)
+        ;
+
+        
+    
+    
+            circle_marker_dcdca0840b56f85b60b604319279dc99.bindTooltip(
+                `<div>
+                     Nile Delta (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_66266de08bd0fe8f7f7c6f3aeb504c87 = L.circleMarker(
+                [41.32373, 63.9528098],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_f4594e36408f73e5f1a2ad1a689473ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5d21579dd3ef9693edb3697f9d37adc = $(`<div id="html_f5d21579dd3ef9693edb3697f9d37adc" style="width: 100.0%; height: 100.0%;"><b>Uzbekistan</b><br>Mentions: 1<br>Address: Oʻzbekiston</div>`)[0];
+                popup_f4594e36408f73e5f1a2ad1a689473ea.setContent(html_f5d21579dd3ef9693edb3697f9d37adc);
+            
+        
+
+        circle_marker_66266de08bd0fe8f7f7c6f3aeb504c87.bindPopup(popup_f4594e36408f73e5f1a2ad1a689473ea)
+        ;
+
+        
+    
+    
+            circle_marker_66266de08bd0fe8f7f7c6f3aeb504c87.bindTooltip(
+                `<div>
+                     Uzbekistan (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7ba6dbc1bdaef88161eef2d89a36e722 = L.circleMarker(
+                [23.7643863, 90.3890144],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_696f1cc5e37d881de9731be28f757949 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46743d7dcee53307474479cabf3b37e1 = $(`<div id="html_46743d7dcee53307474479cabf3b37e1" style="width: 100.0%; height: 100.0%;"><b>Dhaka City</b><br>Mentions: 1<br>Address: ঢাকা, ঢাকা মহানগর, ঢাকা জেলা, ঢাকা বিভাগ, 1215, বাংলাদেশ</div>`)[0];
+                popup_696f1cc5e37d881de9731be28f757949.setContent(html_46743d7dcee53307474479cabf3b37e1);
+            
+        
+
+        circle_marker_7ba6dbc1bdaef88161eef2d89a36e722.bindPopup(popup_696f1cc5e37d881de9731be28f757949)
+        ;
+
+        
+    
+    
+            circle_marker_7ba6dbc1bdaef88161eef2d89a36e722.bindTooltip(
+                `<div>
+                     Dhaka City (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_40059551991bf2ee0173745eb52f3c83 = L.circleMarker(
+                [28.7340833, 99.3440046],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_3211063e8987adc4560359fa7e9a6916 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c297b37c8ea2d80b0886415850d572c = $(`<div id="html_8c297b37c8ea2d80b0886415850d572c" style="width: 100.0%; height: 100.0%;"><b>Derong County</b><br>Mentions: 1<br>Address: 得荣县 སྡེ་རོང་རྫོང།, 甘孜藏族自治州 དཀར་མཛེས་བོད་རིགས་རང་སྐྱོང་ཁུལ།, 四川省, 627900, 中国</div>`)[0];
+                popup_3211063e8987adc4560359fa7e9a6916.setContent(html_8c297b37c8ea2d80b0886415850d572c);
+            
+        
+
+        circle_marker_40059551991bf2ee0173745eb52f3c83.bindPopup(popup_3211063e8987adc4560359fa7e9a6916)
+        ;
+
+        
+    
+    
+            circle_marker_40059551991bf2ee0173745eb52f3c83.bindTooltip(
+                `<div>
+                     Derong County (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_93d34838cb3994c5f3064f34e7bec1b1 = L.circleMarker(
+                [28.6273928, 77.1716954],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_8faccfa07275c2260bad4639f0233aa8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddcd09b5435f0b29a86bc3898ae20442 = $(`<div id="html_ddcd09b5435f0b29a86bc3898ae20442" style="width: 100.0%; height: 100.0%;"><b>Delhi</b><br>Mentions: 1<br>Address: Delhi, India</div>`)[0];
+                popup_8faccfa07275c2260bad4639f0233aa8.setContent(html_ddcd09b5435f0b29a86bc3898ae20442);
+            
+        
+
+        circle_marker_93d34838cb3994c5f3064f34e7bec1b1.bindPopup(popup_8faccfa07275c2260bad4639f0233aa8)
+        ;
+
+        
+    
+    
+            circle_marker_93d34838cb3994c5f3064f34e7bec1b1.bindTooltip(
+                `<div>
+                     Delhi (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b82b251529b96616c816ec53faa302c3 = L.circleMarker(
+                [25.6242618, 42.3528328],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_e95191d9b79e728b3829d1aefd29883d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5e9739f3d7ea8749d28a83e73b0cc72 = $(`<div id="html_d5e9739f3d7ea8749d28a83e73b0cc72" style="width: 100.0%; height: 100.0%;"><b>Saudi Arabia</b><br>Mentions: 1<br>Address: السعودية</div>`)[0];
+                popup_e95191d9b79e728b3829d1aefd29883d.setContent(html_d5e9739f3d7ea8749d28a83e73b0cc72);
+            
+        
+
+        circle_marker_b82b251529b96616c816ec53faa302c3.bindPopup(popup_e95191d9b79e728b3829d1aefd29883d)
+        ;
+
+        
+    
+    
+            circle_marker_b82b251529b96616c816ec53faa302c3.bindTooltip(
+                `<div>
+                     Saudi Arabia (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_206461309c52fb65adebdfc82af20e3f = L.circleMarker(
+                [6.7866819, 38.4959435],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_bbbbad26ea88212c1cdae12e5e749641 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecc1605db30e8973f314e39dc8e2c0c1 = $(`<div id="html_ecc1605db30e8973f314e39dc8e2c0c1" style="width: 100.0%; height: 100.0%;"><b>Gidabo River</b><br>Mentions: 1<br>Address: ጊዳቦ / Gidabo River, ይርጋለም / Yirgalem, ሲዳማ ክልል Sidama سيداما, ኢትዮጵያ إثيوبيا</div>`)[0];
+                popup_bbbbad26ea88212c1cdae12e5e749641.setContent(html_ecc1605db30e8973f314e39dc8e2c0c1);
+            
+        
+
+        circle_marker_206461309c52fb65adebdfc82af20e3f.bindPopup(popup_bbbbad26ea88212c1cdae12e5e749641)
+        ;
+
+        
+    
+    
+            circle_marker_206461309c52fb65adebdfc82af20e3f.bindTooltip(
+                `<div>
+                     Gidabo River (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ee1e2570516805ce08f59242303f65cd = L.circleMarker(
+                [33.0955793, 44.1749775],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_288a7653a378df421d0630a6b735f0af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9be0fe211ebc7a528b268e0f0b770cc6 = $(`<div id="html_9be0fe211ebc7a528b268e0f0b770cc6" style="width: 100.0%; height: 100.0%;"><b>Iraq</b><br>Mentions: 1<br>Address: العراق</div>`)[0];
+                popup_288a7653a378df421d0630a6b735f0af.setContent(html_9be0fe211ebc7a528b268e0f0b770cc6);
+            
+        
+
+        circle_marker_ee1e2570516805ce08f59242303f65cd.bindPopup(popup_288a7653a378df421d0630a6b735f0af)
+        ;
+
+        
+    
+    
+            circle_marker_ee1e2570516805ce08f59242303f65cd.bindTooltip(
+                `<div>
+                     Iraq (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fa1e7e9c58c4090ebbdac35e623dd44c = L.circleMarker(
+                [15.9266657, 107.9650855],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_1c7d3090c5ecc5616847e89a67577544 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97c47696b151228842d7e20c5b0cc524 = $(`<div id="html_97c47696b151228842d7e20c5b0cc524" style="width: 100.0%; height: 100.0%;"><b>Vietnam</b><br>Mentions: 1<br>Address: Việt Nam</div>`)[0];
+                popup_1c7d3090c5ecc5616847e89a67577544.setContent(html_97c47696b151228842d7e20c5b0cc524);
+            
+        
+
+        circle_marker_fa1e7e9c58c4090ebbdac35e623dd44c.bindPopup(popup_1c7d3090c5ecc5616847e89a67577544)
+        ;
+
+        
+    
+    
+            circle_marker_fa1e7e9c58c4090ebbdac35e623dd44c.bindTooltip(
+                `<div>
+                     Vietnam (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b93f7a447dd8680ed07457eb04ff7089 = L.circleMarker(
+                [23.4659435, 116.6729801],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_8faa61152b6df31a6339ec6d26085b73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_762e3d7fcb17c228c65bc503f34c67a2 = $(`<div id="html_762e3d7fcb17c228c65bc503f34c67a2" style="width: 100.0%; height: 100.0%;"><b>Dong Trieu District</b><br>Mentions: 1<br>Address: 潮安区, 潮州市, 广东省, 中国</div>`)[0];
+                popup_8faa61152b6df31a6339ec6d26085b73.setContent(html_762e3d7fcb17c228c65bc503f34c67a2);
+            
+        
+
+        circle_marker_b93f7a447dd8680ed07457eb04ff7089.bindPopup(popup_8faa61152b6df31a6339ec6d26085b73)
+        ;
+
+        
+    
+    
+            circle_marker_b93f7a447dd8680ed07457eb04ff7089.bindTooltip(
+                `<div>
+                     Dong Trieu District (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2d792830b6dab47ca8ef42db00a6f990 = L.circleMarker(
+                [34.2665258, 117.1810431],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_7b3d0b35c0d2606ea32fb481bd440e8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_942ace64075f43dffc4a05865273fde0 = $(`<div id="html_942ace64075f43dffc4a05865273fde0" style="width: 100.0%; height: 100.0%;"><b>Xuzhou</b><br>Mentions: 1<br>Address: 徐州市, 江苏省, 221000, 中国</div>`)[0];
+                popup_7b3d0b35c0d2606ea32fb481bd440e8f.setContent(html_942ace64075f43dffc4a05865273fde0);
+            
+        
+
+        circle_marker_2d792830b6dab47ca8ef42db00a6f990.bindPopup(popup_7b3d0b35c0d2606ea32fb481bd440e8f)
+        ;
+
+        
+    
+    
+            circle_marker_2d792830b6dab47ca8ef42db00a6f990.bindTooltip(
+                `<div>
+                     Xuzhou (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0d134d4a25fdae16624aa6b598c5c850 = L.circleMarker(
+                [10.9342833, 39.2021182],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 2}
+            ).addTo(map_151dca5b7d9bba5be68cdfc1b22c1131);
+        
+    
+        var popup_e70f474eea4a4fc95fab4d1cefca0e3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee41af26118368e697cfb0ba23fa9e99 = $(`<div id="html_ee41af26118368e697cfb0ba23fa9e99" style="width: 100.0%; height: 100.0%;"><b>South Wollo</b><br>Mentions: 1<br>Address: South Wollo, አማራ ክልል Amhara أمحرة, 7714, ኢትዮጵያ إثيوبيا</div>`)[0];
+                popup_e70f474eea4a4fc95fab4d1cefca0e3e.setContent(html_ee41af26118368e697cfb0ba23fa9e99);
+            
+        
+
+        circle_marker_0d134d4a25fdae16624aa6b598c5c850.bindPopup(popup_e70f474eea4a4fc95fab4d1cefca0e3e)
+        ;
+
+        
+    
+    
+            circle_marker_0d134d4a25fdae16624aa6b598c5c850.bindTooltip(
+                `<div>
+                     South Wollo (1 mentions)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

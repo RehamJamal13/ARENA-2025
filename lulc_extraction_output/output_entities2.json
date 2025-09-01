@@ -1,0 +1,2725 @@
+[
+  {
+    "sentence": "#text: After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible desertification and large parts of the Sahel were designated as degraded land (e.g",
+    "entities": [
+      {
+        "text": "the 1970s and 1980s",
+        "label": "DATE",
+        "start": 29,
+        "end": 48
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start": 63,
+        "end": 67
+      },
+      {
+        "text": "desertification",
+        "label": "PROCESS",
+        "start": 131,
+        "end": 146
+      }
+    ]
+  },
+  {
+    "sentence": "#text: The forests of West and Central Africa probably originally covered a combined area of about 3 million km 2",
+    "entities": [
+      {
+        "text": "forests",
+        "label": "LULC",
+        "start": 11,
+        "end": 18
+      },
+      {
+        "text": "West",
+        "label": "LOC",
+        "start": 22,
+        "end": 26
+      },
+      {
+        "text": "Central Africa",
+        "label": "LOC",
+        "start": 31,
+        "end": 45
+      },
+      {
+        "text": "area of about 3 million km",
+        "label": "SURFACE_UNIT",
+        "start": 85,
+        "end": 111
+      },
+      {
+        "text": "2",
+        "label": "CARDINAL",
+        "start": 112,
+        "end": 113
+      }
+    ]
+  },
+  {
+    "sentence": ")., head: Land use change in the study site, p: ref: 2a, 2b, From 1996 to 2017, the area covered by cropped fields, C, has increased from 40% to 51.3% over the study site area, and from 47% to 64% of the arable lands in the study site due to the loss fallows",
+    "entities": [
+      {
+        "text": "change",
+        "label": "CHANGE",
+        "start": 19,
+        "end": 25
+      },
+      {
+        "text": "2a",
+        "label": "CARDINAL",
+        "start": 53,
+        "end": 55
+      },
+      {
+        "text": "1996 to 2017",
+        "label": "DATE",
+        "start": 66,
+        "end": 78
+      },
+      {
+        "text": "increased",
+        "label": "CHANGE",
+        "start": 123,
+        "end": 132
+      },
+      {
+        "text": "40% to",
+        "label": "PERCENT",
+        "start": 138,
+        "end": 144
+      },
+      {
+        "text": "51.3%",
+        "label": "PERCENT",
+        "start": 145,
+        "end": 150
+      },
+      {
+        "text": "47% to 64%",
+        "label": "PERCENT",
+        "start": 186,
+        "end": 196
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start": 246,
+        "end": 250
+      },
+      {
+        "text": "fallows",
+        "label": "LULC",
+        "start": 251,
+        "end": 258
+      }
+    ]
+  },
+  {
+    "sentence": "Agriculture in this region has been dominated over the past three decades by cotton production",
+    "entities": [
+      {
+        "text": "Agriculture",
+        "label": "LULC",
+        "start": 0,
+        "end": 11
+      },
+      {
+        "text": "the past three decades",
+        "label": "DATE",
+        "start": 51,
+        "end": 73
+      }
+    ]
+  },
+  {
+    "sentence": "Forest land was decreased nearly by half in 2002 compared to its coverage in 1984, while the size of the gallery forest did not change much",
+    "entities": [
+      {
+        "text": "Forest",
+        "label": "LULC",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "text": "decreased",
+        "label": "CHANGE",
+        "start": 16,
+        "end": 25
+      },
+      {
+        "text": "half",
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 40
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start": 44,
+        "end": 48
+      },
+      {
+        "text": "1984",
+        "label": "DATE",
+        "start": 77,
+        "end": 81
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 113,
+        "end": 119
+      },
+      {
+        "text": "change",
+        "label": "CHANGE",
+        "start": 128,
+        "end": 134
+      }
+    ]
+  },
+  {
+    "sentence": "About 26 and 31% of the total area of natural vegetation (forest, woodland and tree savanna) will be converted to farmland and degraded savanna by 2050 if we assume the dynamics recorded from 1975 to 1990 and 1990-2010, respectively",
+    "entities": [
+      {
+        "text": "About 26",
+        "label": "CARDINAL",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "text": "31%",
+        "label": "PERCENT",
+        "start": 13,
+        "end": 16
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 58,
+        "end": 64
+      },
+      {
+        "text": "tree",
+        "label": "LULC",
+        "start": 79,
+        "end": 83
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 84,
+        "end": 91
+      },
+      {
+        "text": "converted",
+        "label": "CHANGE",
+        "start": 101,
+        "end": 110
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 136,
+        "end": 143
+      },
+      {
+        "text": "2050",
+        "label": "DATE",
+        "start": 147,
+        "end": 151
+      },
+      {
+        "text": "1975 to",
+        "label": "DATE",
+        "start": 192,
+        "end": 199
+      },
+      {
+        "text": "1990",
+        "label": "DATE",
+        "start": 200,
+        "end": 204
+      },
+      {
+        "text": "1990-2010",
+        "label": "COORDINATES",
+        "start": 209,
+        "end": 218
+      }
+    ]
+  },
+  {
+    "sentence": "Assuming the dynamics recorded in the second period , the amounts of land covered by forest, woodland and tree savanna will decrease by 5, 9 and 17% of their cover in 1990, respectively, while the amount of degraded savanna and farmland will increase by 9 and 22% of the total area, respectively",
+    "entities": [
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 85,
+        "end": 91
+      },
+      {
+        "text": "tree",
+        "label": "LULC",
+        "start": 106,
+        "end": 110
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 111,
+        "end": 118
+      },
+      {
+        "text": "decrease",
+        "label": "CHANGE",
+        "start": 124,
+        "end": 132
+      },
+      {
+        "text": "5, 9",
+        "label": "COORDINATES",
+        "start": 136,
+        "end": 140
+      },
+      {
+        "text": "17%",
+        "label": "PERCENT",
+        "start": 145,
+        "end": 148
+      },
+      {
+        "text": "1990",
+        "label": "DATE",
+        "start": 167,
+        "end": 171
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 216,
+        "end": 223
+      },
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start": 242,
+        "end": 250
+      },
+      {
+        "text": "9",
+        "label": "CARDINAL",
+        "start": 254,
+        "end": 255
+      },
+      {
+        "text": "22%",
+        "label": "PERCENT",
+        "start": 260,
+        "end": 263
+      }
+    ]
+  },
+  {
+    "sentence": "Conversely the decrease in the herbaceous standing crop, due to the shortening of the fallow period, the extension of cultivated and cleared fields, the grazing by cattle, and more generally the increment in landscape discontinuities limit the spread of fire and the size of burnt areas",
+    "entities": [
+      {
+        "text": "decrease",
+        "label": "CHANGE",
+        "start": 15,
+        "end": 23
+      },
+      {
+        "text": "crop",
+        "label": "LULC",
+        "start": 51,
+        "end": 55
+      },
+      {
+        "text": "fallow",
+        "label": "LULC",
+        "start": 86,
+        "end": 92
+      },
+      {
+        "text": "burnt areas",
+        "label": "LULC",
+        "start": 275,
+        "end": 286
+      }
+    ]
+  },
+  {
+    "sentence": "describes Rwandan agriculture as caught in a \"low investment trap\"; less than 10% of cropland is irrigated, while tractors, bank credit and government aid are all scarce",
+    "entities": [
+      {
+        "text": "Rwandan",
+        "label": "LOC",
+        "start": 10,
+        "end": 17
+      },
+      {
+        "text": "agriculture",
+        "label": "LULC",
+        "start": 18,
+        "end": 29
+      },
+      {
+        "text": "less than 10%",
+        "label": "PERCENT",
+        "start": 68,
+        "end": 81
+      },
+      {
+        "text": "cropland",
+        "label": "LULC",
+        "start": 85,
+        "end": 93
+      }
+    ]
+  },
+  {
+    "sentence": "Due to the weeding practice, bare soil dominates in cropped fields in the early growing season while herbaceous vegetation continues to grow in fallows and rangelands",
+    "entities": [
+      {
+        "text": "bare soil",
+        "label": "LULC",
+        "start": 29,
+        "end": 38
+      },
+      {
+        "text": "cropped",
+        "label": "LULC",
+        "start": 52,
+        "end": 59
+      },
+      {
+        "text": "the early",
+        "label": "DATE",
+        "start": 70,
+        "end": 79
+      },
+      {
+        "text": "growing",
+        "label": "CHANGE",
+        "start": 80,
+        "end": 87
+      },
+      {
+        "text": "herbaceous vegetation",
+        "label": "LULC",
+        "start": 101,
+        "end": 122
+      },
+      {
+        "text": "grow",
+        "label": "CHANGE",
+        "start": 136,
+        "end": 140
+      },
+      {
+        "text": "fallows",
+        "label": "LULC",
+        "start": 144,
+        "end": 151
+      }
+    ]
+  },
+  {
+    "sentence": "In 1986, the grazing land had much higher proportion of the total regional area than other land use types while the size of croplands was substantially high after 16 years (Table )",
+    "entities": [
+      {
+        "text": "1986",
+        "label": "DATE",
+        "start": 3,
+        "end": 7
+      },
+      {
+        "text": "croplands",
+        "label": "LULC",
+        "start": 124,
+        "end": 133
+      },
+      {
+        "text": "16 years",
+        "label": "DATE",
+        "start": 163,
+        "end": 171
+      }
+    ]
+  },
+  {
+    "sentence": "In 1990, woodland and tree savanna were still the dominant land cover types",
+    "entities": [
+      {
+        "text": "1990",
+        "label": "DATE",
+        "start": 3,
+        "end": 7
+      },
+      {
+        "text": "tree",
+        "label": "LULC",
+        "start": 22,
+        "end": 26
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 27,
+        "end": 34
+      }
+    ]
+  },
+  {
+    "sentence": "In fact, some NTFP-providing trees, such as the baobab (Adansonia digitata) and the shea tree (Vitellaria paradoxa), are protected by farmers during the agricultural cycle of cultivation and fallows and are therefore still well preserved",
+    "entities": [
+      {
+        "text": "trees",
+        "label": "LULC",
+        "start": 29,
+        "end": 34
+      },
+      {
+        "text": "tree",
+        "label": "LULC",
+        "start": 89,
+        "end": 93
+      },
+      {
+        "text": "Vitellaria",
+        "label": "LOC",
+        "start": 95,
+        "end": 105
+      },
+      {
+        "text": "cultivation",
+        "label": "PROCESS",
+        "start": 175,
+        "end": 186
+      },
+      {
+        "text": "fallows",
+        "label": "LULC",
+        "start": 191,
+        "end": 198
+      }
+    ]
+  },
+  {
+    "sentence": "In rangelands, the main cause of woody vegetation decrease is the increasing pressure on wood resources to satisfy the demand for fuel and construction wood, not only from the local rural population, but also from the rapidly growing urban population of Niamey only 80 km away",
+    "entities": [
+      {
+        "text": "cause",
+        "label": "CHANGE",
+        "start": 24,
+        "end": 29
+      },
+      {
+        "text": "decrease",
+        "label": "CHANGE",
+        "start": 50,
+        "end": 58
+      },
+      {
+        "text": "increasing",
+        "label": "CHANGE",
+        "start": 66,
+        "end": 76
+      },
+      {
+        "text": "growing",
+        "label": "CHANGE",
+        "start": 226,
+        "end": 233
+      },
+      {
+        "text": "urban",
+        "label": "LULC",
+        "start": 234,
+        "end": 239
+      },
+      {
+        "text": "80 km",
+        "label": "SURFACE_UNIT",
+        "start": 266,
+        "end": 271
+      }
+    ]
+  },
+  {
+    "sentence": "In Saloum Senegal, with the increase of cultivated land and shortening of fallow cycles, soils have become less fertile close to the villages, although fallow land away from the settlement gained in size, mainly due to out-migration",
+    "entities": [
+      {
+        "text": "Saloum Senegal",
+        "label": "LOC",
+        "start": 3,
+        "end": 17
+      },
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start": 28,
+        "end": 36
+      },
+      {
+        "text": "fallow",
+        "label": "LULC",
+        "start": 74,
+        "end": 80
+      },
+      {
+        "text": "fallow",
+        "label": "LULC",
+        "start": 152,
+        "end": 158
+      },
+      {
+        "text": "gained",
+        "label": "CHANGE",
+        "start": 189,
+        "end": 195
+      }
+    ]
+  },
+  {
+    "sentence": "Irrigation from rivers is regarded as minor driver of LULCC",
+    "entities": [
+      {
+        "text": "driver",
+        "label": "CHANGE",
+        "start": 44,
+        "end": 50
+      }
+    ]
+  },
+  {
+    "sentence": "On the one hand, tree growth and agroforestry on fields have led to an increase of woody cover in proximity to the village",
+    "entities": [
+      {
+        "text": "tree",
+        "label": "LULC",
+        "start": 17,
+        "end": 21
+      },
+      {
+        "text": "growth",
+        "label": "CHANGE",
+        "start": 22,
+        "end": 28
+      },
+      {
+        "text": "agroforestry",
+        "label": "LULC",
+        "start": 33,
+        "end": 45
+      },
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start": 71,
+        "end": 79
+      }
+    ]
+  },
+  {
+    "sentence": "Rangelands are grazed year-round under communal access but grazing also extends to fallows, year-round or only in the dry season depending on accessibility, and to cropped fields after the crop harvest",
+    "entities": [
+      {
+        "text": "year-round",
+        "label": "DATE",
+        "start": 22,
+        "end": 32
+      },
+      {
+        "text": "fallows",
+        "label": "LULC",
+        "start": 83,
+        "end": 90
+      },
+      {
+        "text": "year-round",
+        "label": "DATE",
+        "start": 92,
+        "end": 102
+      },
+      {
+        "text": "the dry season",
+        "label": "DATE",
+        "start": 114,
+        "end": 128
+      },
+      {
+        "text": "crop",
+        "label": "LULC",
+        "start": 189,
+        "end": 193
+      }
+    ]
+  },
+  {
+    "sentence": "Ratios of fallow to cultivated area are 0.8 in Woure, where the bushfallow system is \"already defunct,\" 1.6 in Silgey and Kolbila, where bush-fallow \"would lead to a steady decline in fertility,\" 2 in Koho, where bush-fallow is \"marginal,\" and 5 in Sayero, where available land is still \"more than adequate.\"",
+    "entities": [
+      {
+        "text": "fallow",
+        "label": "LULC",
+        "start": 10,
+        "end": 16
+      },
+      {
+        "text": "0.8",
+        "label": "CARDINAL",
+        "start": 40,
+        "end": 43
+      },
+      {
+        "text": "1.6",
+        "label": "CARDINAL",
+        "start": 104,
+        "end": 107
+      },
+      {
+        "text": "Silgey",
+        "label": "LOC",
+        "start": 111,
+        "end": 117
+      },
+      {
+        "text": "Kolbila",
+        "label": "LOC",
+        "start": 122,
+        "end": 129
+      },
+      {
+        "text": "fallow",
+        "label": "LULC",
+        "start": 142,
+        "end": 148
+      },
+      {
+        "text": "decline",
+        "label": "CHANGE",
+        "start": 173,
+        "end": 180
+      },
+      {
+        "text": "2",
+        "label": "CARDINAL",
+        "start": 196,
+        "end": 197
+      },
+      {
+        "text": "Koho",
+        "label": "LOC",
+        "start": 201,
+        "end": 205
+      },
+      {
+        "text": "fallow",
+        "label": "LULC",
+        "start": 218,
+        "end": 224
+      },
+      {
+        "text": "5",
+        "label": "CARDINAL",
+        "start": 244,
+        "end": 245
+      },
+      {
+        "text": "Sayero",
+        "label": "LOC",
+        "start": 249,
+        "end": 255
+      }
+    ]
+  },
+  {
+    "sentence": "Regular cultivation keeps the soil penetrable and farmers are aware of the benefits of trees in their fields",
+    "entities": [
+      {
+        "text": "cultivation",
+        "label": "PROCESS",
+        "start": 8,
+        "end": 19
+      },
+      {
+        "text": "trees",
+        "label": "LULC",
+        "start": 87,
+        "end": 92
+      }
+    ]
+  },
+  {
+    "sentence": "Since the 1960s, the natural vegetation has been completely transformed and today many trees and shrubs have become rare or disappeared (Fig",
+    "entities": [
+      {
+        "text": "the 1960s",
+        "label": "DATE",
+        "start": 6,
+        "end": 15
+      },
+      {
+        "text": "transformed",
+        "label": "CHANGE",
+        "start": 60,
+        "end": 71
+      },
+      {
+        "text": "today",
+        "label": "DATE",
+        "start": 76,
+        "end": 81
+      },
+      {
+        "text": "trees",
+        "label": "LULC",
+        "start": 87,
+        "end": 92
+      },
+      {
+        "text": "shrubs",
+        "label": "LULC",
+        "start": 97,
+        "end": 103
+      }
+    ]
+  },
+  {
+    "sentence": "The available evidence suggests that forest loss and degradation has been caused primarily by agricultural expansion, sometimes facilitated by other human activities such as wood extraction",
+    "entities": [
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 37,
+        "end": 43
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start": 44,
+        "end": 48
+      },
+      {
+        "text": "caused",
+        "label": "CHANGE",
+        "start": 74,
+        "end": 80
+      },
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start": 107,
+        "end": 116
+      }
+    ]
+  },
+  {
+    "sentence": "Thus, changes in land use strategies result not only in a simple expansion of fields to new and less attractive land",
+    "entities": [
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start": 6,
+        "end": 13
+      },
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start": 65,
+        "end": 74
+      }
+    ]
+  },
+  {
+    "sentence": "Whereas most shrubs are annually coppiced in fields prior to cultivation, they are left to grow in fallowed fields, leading to a higher shrub/ woody plant cover",
+    "entities": [
+      {
+        "text": "shrubs",
+        "label": "LULC",
+        "start": 13,
+        "end": 19
+      },
+      {
+        "text": "annually",
+        "label": "DATE",
+        "start": 24,
+        "end": 32
+      },
+      {
+        "text": "cultivation",
+        "label": "PROCESS",
+        "start": 61,
+        "end": 72
+      },
+      {
+        "text": "grow",
+        "label": "CHANGE",
+        "start": 91,
+        "end": 95
+      },
+      {
+        "text": "shrub",
+        "label": "LULC",
+        "start": 136,
+        "end": 141
+      }
+    ]
+  },
+  {
+    "sentence": "In a small Sahelian catchment in Niger, the increase in cultivated land from 1950 to 1998 was associated with an increase in the extent of eroded land (from 7 to 16%) at the expense of the savanna",
+    "entities": [
+      {
+        "text": "Sahelian",
+        "label": "LOC",
+        "start": 11,
+        "end": 19
+      },
+      {
+        "text": "Niger",
+        "label": "LOC",
+        "start": 33,
+        "end": 38
+      },
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start": 44,
+        "end": 52
+      },
+      {
+        "text": "1950",
+        "label": "DATE",
+        "start": 77,
+        "end": 81
+      },
+      {
+        "text": "1998",
+        "label": "DATE",
+        "start": 85,
+        "end": 89
+      },
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start": 113,
+        "end": 121
+      },
+      {
+        "text": "7",
+        "label": "CARDINAL",
+        "start": 157,
+        "end": 158
+      },
+      {
+        "text": "16%)",
+        "label": "PERCENT",
+        "start": 162,
+        "end": 166
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 189,
+        "end": 196
+      }
+    ]
+  },
+  {
+    "sentence": "New settlements caused an initial decrease of the vegetation due to land use change (bushland to fields)",
+    "entities": [
+      {
+        "text": "caused",
+        "label": "CHANGE",
+        "start": 16,
+        "end": 22
+      },
+      {
+        "text": "decrease",
+        "label": "CHANGE",
+        "start": 34,
+        "end": 42
+      },
+      {
+        "text": "change",
+        "label": "CHANGE",
+        "start": 77,
+        "end": 83
+      },
+      {
+        "text": "bushland",
+        "label": "LULC",
+        "start": 85,
+        "end": 93
+      }
+    ]
+  },
+  {
+    "sentence": "Apparently, the proximity of Yale ´to the road made influx of people higher than Boala, which is in line with the important synergetic cause-effect relation between population-infrastructure and agricultural expansion on tropical deforestation",
+    "entities": [
+      {
+        "text": "road",
+        "label": "LULC",
+        "start": 42,
+        "end": 46
+      },
+      {
+        "text": "Boala",
+        "label": "LOC",
+        "start": 81,
+        "end": 86
+      },
+      {
+        "text": "cause",
+        "label": "CHANGE",
+        "start": 135,
+        "end": 140
+      },
+      {
+        "text": "effect",
+        "label": "CHANGE",
+        "start": 141,
+        "end": 147
+      },
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start": 208,
+        "end": 217
+      },
+      {
+        "text": "deforestation",
+        "label": "PROCESS",
+        "start": 230,
+        "end": 243
+      }
+    ]
+  },
+  {
+    "sentence": "Recently, obtained a deforestation rate of 11% in the grassland areas and a degradation of 17% in the woodlands of the northern region of Ghana for the period 1984-1999, which has a similar ecological zone as the southern Burkina Faso",
+    "entities": [
+      {
+        "text": "deforestation",
+        "label": "PROCESS",
+        "start": 21,
+        "end": 34
+      },
+      {
+        "text": "11%",
+        "label": "PERCENT",
+        "start": 43,
+        "end": 46
+      },
+      {
+        "text": "grassland",
+        "label": "LULC",
+        "start": 54,
+        "end": 63
+      },
+      {
+        "text": "17%",
+        "label": "PERCENT",
+        "start": 91,
+        "end": 94
+      },
+      {
+        "text": "northern region",
+        "label": "LOC",
+        "start": 119,
+        "end": 134
+      },
+      {
+        "text": "Ghana",
+        "label": "LOC",
+        "start": 138,
+        "end": 143
+      },
+      {
+        "text": "the period",
+        "label": "DATE",
+        "start": 148,
+        "end": 158
+      },
+      {
+        "text": "1984-1999",
+        "label": "COORDINATES",
+        "start": 159,
+        "end": 168
+      }
+    ]
+  },
+  {
+    "sentence": "However, conflicting hypotheses have been reported: on the one hand an expansion (into native savanna) and intensification (fertilizer) of cropland cultivation, and on the other hand agricultural land abandonment, caused by, e.g., the civil war in Sudan may both contribute to the observed positive trends",
+    "entities": [
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start": 71,
+        "end": 80
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 94,
+        "end": 101
+      },
+      {
+        "text": "cropland",
+        "label": "LULC",
+        "start": 139,
+        "end": 147
+      },
+      {
+        "text": "cultivation",
+        "label": "PROCESS",
+        "start": 148,
+        "end": 159
+      },
+      {
+        "text": "caused",
+        "label": "CHANGE",
+        "start": 214,
+        "end": 220
+      },
+      {
+        "text": "Sudan",
+        "label": "LOC",
+        "start": 248,
+        "end": 253
+      }
+    ]
+  },
+  {
+    "sentence": "The decrease in rainfall has been associated with a concentration of the cultivation of the sandy soils on the dune",
+    "entities": [
+      {
+        "text": "decrease",
+        "label": "CHANGE",
+        "start": 4,
+        "end": 12
+      },
+      {
+        "text": "cultivation",
+        "label": "PROCESS",
+        "start": 73,
+        "end": 84
+      }
+    ]
+  },
+  {
+    "sentence": "The decrease in rainfall has been associated with a concentration of the cultivation of the sandy soils on the dune",
+    "entities": [
+      {
+        "text": "decrease",
+        "label": "CHANGE",
+        "start": 4,
+        "end": 12
+      },
+      {
+        "text": "cultivation",
+        "label": "PROCESS",
+        "start": 73,
+        "end": 84
+      }
+    ]
+  },
+  {
+    "sentence": "In the period 1975-1990, 1.28 million ha (26%) of natural vegetation was converted to degraded savanna and farmland while 2.23 million ha (53%) of natural vegetation was converted to degraded savanna and farmland in the period 1990-2010",
+    "entities": [
+      {
+        "text": "the period",
+        "label": "DATE",
+        "start": 3,
+        "end": 13
+      },
+      {
+        "text": "1975-1990",
+        "label": "COORDINATES",
+        "start": 14,
+        "end": 23
+      },
+      {
+        "text": "1.28 million",
+        "label": "COORDINATES",
+        "start": 25,
+        "end": 37
+      },
+      {
+        "text": "ha",
+        "label": "SURFACE_UNIT",
+        "start": 38,
+        "end": 40
+      },
+      {
+        "text": "26%)",
+        "label": "PERCENT",
+        "start": 42,
+        "end": 46
+      },
+      {
+        "text": "converted",
+        "label": "CHANGE",
+        "start": 73,
+        "end": 82
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 95,
+        "end": 102
+      },
+      {
+        "text": "2.23 million",
+        "label": "COORDINATES",
+        "start": 122,
+        "end": 134
+      },
+      {
+        "text": "ha",
+        "label": "SURFACE_UNIT",
+        "start": 135,
+        "end": 137
+      },
+      {
+        "text": "53%)",
+        "label": "PERCENT",
+        "start": 139,
+        "end": 143
+      },
+      {
+        "text": "converted",
+        "label": "CHANGE",
+        "start": 170,
+        "end": 179
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 192,
+        "end": 199
+      },
+      {
+        "text": "1990-2010",
+        "label": "COORDINATES",
+        "start": 227,
+        "end": 236
+      }
+    ]
+  },
+  {
+    "sentence": "At the local scale, the size of crop and grazing lands increased at the expense of shrinking of forest cover with distinct variation in magnitude of change between villages",
+    "entities": [
+      {
+        "text": "crop",
+        "label": "LULC",
+        "start": 32,
+        "end": 36
+      },
+      {
+        "text": "increased",
+        "label": "CHANGE",
+        "start": 55,
+        "end": 64
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 96,
+        "end": 102
+      },
+      {
+        "text": "of change",
+        "label": "CHANGE",
+        "start": 146,
+        "end": 155
+      }
+    ]
+  },
+  {
+    "sentence": "The decrease in woodland, shrub savannas, grass savannas and water body occurred mainly between 1984 and 2001, while tree savannas and gallery forest decreased mainly between 2001 and 2013",
+    "entities": [
+      {
+        "text": "decrease",
+        "label": "CHANGE",
+        "start": 4,
+        "end": 12
+      },
+      {
+        "text": "shrub",
+        "label": "LULC",
+        "start": 26,
+        "end": 31
+      },
+      {
+        "text": "savannas",
+        "label": "LULC",
+        "start": 32,
+        "end": 40
+      },
+      {
+        "text": "grass",
+        "label": "LULC",
+        "start": 42,
+        "end": 47
+      },
+      {
+        "text": "savannas",
+        "label": "LULC",
+        "start": 48,
+        "end": 56
+      },
+      {
+        "text": "water body",
+        "label": "LULC",
+        "start": 61,
+        "end": 71
+      },
+      {
+        "text": "between 1984 and 2001",
+        "label": "DATE",
+        "start": 88,
+        "end": 109
+      },
+      {
+        "text": "tree",
+        "label": "LULC",
+        "start": 117,
+        "end": 121
+      },
+      {
+        "text": "savannas",
+        "label": "LULC",
+        "start": 122,
+        "end": 130
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 143,
+        "end": 149
+      },
+      {
+        "text": "decreased",
+        "label": "CHANGE",
+        "start": 150,
+        "end": 159
+      },
+      {
+        "text": "between 2001 and 2013",
+        "label": "DATE",
+        "start": 167,
+        "end": 188
+      }
+    ]
+  },
+  {
+    "sentence": "The main finding of this study is the loss of vegetation cover over a 29 year period which is the result of conversion for agriculture",
+    "entities": [
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start": 38,
+        "end": 42
+      },
+      {
+        "text": "29 year",
+        "label": "DATE",
+        "start": 70,
+        "end": 77
+      },
+      {
+        "text": "agriculture",
+        "label": "LULC",
+        "start": 123,
+        "end": 134
+      }
+    ]
+  },
+  {
+    "sentence": "From 1984 to 2001, tree savannas, bare soils and agricultural lands increased by 17.55%, 18.79% and 21778.79%, respectively, while woodland, gallery forest, shrub savannas and water bodies decreased by 22.02%, 5.03%, 40.08% and 31.2%, respectively",
+    "entities": [
+      {
+        "text": "1984 to 2001",
+        "label": "DATE",
+        "start": 5,
+        "end": 17
+      },
+      {
+        "text": "tree",
+        "label": "LULC",
+        "start": 19,
+        "end": 23
+      },
+      {
+        "text": "savannas",
+        "label": "LULC",
+        "start": 24,
+        "end": 32
+      },
+      {
+        "text": "bare soils",
+        "label": "LULC",
+        "start": 34,
+        "end": 44
+      },
+      {
+        "text": "increased",
+        "label": "CHANGE",
+        "start": 68,
+        "end": 77
+      },
+      {
+        "text": "17.55%,",
+        "label": "PERCENT",
+        "start": 81,
+        "end": 88
+      },
+      {
+        "text": "18.79% and",
+        "label": "PERCENT",
+        "start": 89,
+        "end": 99
+      },
+      {
+        "text": "21778.79%,",
+        "label": "PERCENT",
+        "start": 100,
+        "end": 110
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 149,
+        "end": 155
+      },
+      {
+        "text": "shrub",
+        "label": "LULC",
+        "start": 157,
+        "end": 162
+      },
+      {
+        "text": "savannas",
+        "label": "LULC",
+        "start": 163,
+        "end": 171
+      },
+      {
+        "text": "water bodies",
+        "label": "LULC",
+        "start": 176,
+        "end": 188
+      },
+      {
+        "text": "decreased",
+        "label": "CHANGE",
+        "start": 189,
+        "end": 198
+      },
+      {
+        "text": "22.02%,",
+        "label": "PERCENT",
+        "start": 202,
+        "end": 209
+      },
+      {
+        "text": "5.03%,",
+        "label": "PERCENT",
+        "start": 210,
+        "end": 216
+      },
+      {
+        "text": "40.08%",
+        "label": "PERCENT",
+        "start": 217,
+        "end": 223
+      },
+      {
+        "text": "31.2%,",
+        "label": "PERCENT",
+        "start": 228,
+        "end": 234
+      }
+    ]
+  },
+  {
+    "sentence": "At regional scale, the annual rate of change in forest land, grazing land, gallery forest and cropland was À0.4, À0.9, À1.6 and 3.8%, respectively",
+    "entities": [
+      {
+        "text": "annual",
+        "label": "DATE",
+        "start": 23,
+        "end": 29
+      },
+      {
+        "text": "of change",
+        "label": "CHANGE",
+        "start": 35,
+        "end": 44
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 48,
+        "end": 54
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 83,
+        "end": 89
+      },
+      {
+        "text": "cropland",
+        "label": "LULC",
+        "start": 94,
+        "end": 102
+      },
+      {
+        "text": "3.8%,",
+        "label": "PERCENT",
+        "start": 128,
+        "end": 133
+      }
+    ]
+  },
+  {
+    "sentence": "Most of the transformed forest converted to woodland (3.6%) and tree savanna (1.5%)",
+    "entities": [
+      {
+        "text": "transformed",
+        "label": "CHANGE",
+        "start": 12,
+        "end": 23
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 24,
+        "end": 30
+      },
+      {
+        "text": "converted",
+        "label": "CHANGE",
+        "start": 31,
+        "end": 40
+      },
+      {
+        "text": "3.6%)",
+        "label": "PERCENT",
+        "start": 54,
+        "end": 59
+      },
+      {
+        "text": "tree",
+        "label": "LULC",
+        "start": 64,
+        "end": 68
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 69,
+        "end": 76
+      },
+      {
+        "text": "1.5%)",
+        "label": "PERCENT",
+        "start": 78,
+        "end": 83
+      }
+    ]
+  },
+  {
+    "sentence": "#text: While natural forest has declined across West Africa, plantations, often but not always of non-native species, have been established to help meet increased demand for timber, fuelwood and pulp",
+    "entities": [
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 21,
+        "end": 27
+      },
+      {
+        "text": "declined",
+        "label": "CHANGE",
+        "start": 32,
+        "end": 40
+      },
+      {
+        "text": "West Africa",
+        "label": "LOC",
+        "start": 48,
+        "end": 59
+      },
+      {
+        "text": "increased",
+        "label": "CHANGE",
+        "start": 153,
+        "end": 162
+      }
+    ]
+  },
+  {
+    "sentence": "P11: (Interviewer: But if I\\m thinking of the Vea catchment, mainly here it\\s rice.) Cause there is a valley",
+    "entities": [
+      {
+        "text": "rice",
+        "label": "LULC",
+        "start": 78,
+        "end": 82
+      },
+      {
+        "text": "Cause",
+        "label": "CHANGE",
+        "start": 85,
+        "end": 90
+      }
+    ]
+  },
+  {
+    "sentence": "According to it was assumed ., ref: 1, that only 25% of the non-cropped bush-grass-savanna is available as fallow in the maize-fallow rotation",
+    "entities": [
+      {
+        "text": "1",
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 37
+      },
+      {
+        "text": "only 25%",
+        "label": "PERCENT",
+        "start": 44,
+        "end": 52
+      },
+      {
+        "text": "grass",
+        "label": "LULC",
+        "start": 77,
+        "end": 82
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 83,
+        "end": 90
+      },
+      {
+        "text": "fallow",
+        "label": "LULC",
+        "start": 107,
+        "end": 113
+      },
+      {
+        "text": "maize",
+        "label": "LULC",
+        "start": 121,
+        "end": 126
+      },
+      {
+        "text": "fallow",
+        "label": "LULC",
+        "start": 127,
+        "end": 133
+      }
+    ]
+  },
+  {
+    "sentence": "In the surroundings of the cities in the north of Nigeria for example in 2000 patches of grassland and shrubland were still visible whereas in 2015 these were converted to cropland Figure",
+    "entities": [
+      {
+        "text": "cities",
+        "label": "LULC",
+        "start": 27,
+        "end": 33
+      },
+      {
+        "text": "Nigeria",
+        "label": "LOC",
+        "start": 50,
+        "end": 57
+      },
+      {
+        "text": "2000",
+        "label": "DATE",
+        "start": 73,
+        "end": 77
+      },
+      {
+        "text": "grassland",
+        "label": "LULC",
+        "start": 89,
+        "end": 98
+      },
+      {
+        "text": "shrubland",
+        "label": "LULC",
+        "start": 103,
+        "end": 112
+      },
+      {
+        "text": "2015",
+        "label": "DATE",
+        "start": 143,
+        "end": 147
+      },
+      {
+        "text": "converted",
+        "label": "CHANGE",
+        "start": 159,
+        "end": 168
+      },
+      {
+        "text": "cropland",
+        "label": "LULC",
+        "start": 172,
+        "end": 180
+      }
+    ]
+  },
+  {
+    "sentence": "In second hand the increase in shrubs The evergreen forest and forest cover mainly the south eastern and south western part of Volta basin for the years 1988 and 2002",
+    "entities": [
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start": 19,
+        "end": 27
+      },
+      {
+        "text": "shrubs",
+        "label": "LULC",
+        "start": 31,
+        "end": 37
+      },
+      {
+        "text": "evergreen forest",
+        "label": "LULC",
+        "start": 42,
+        "end": 58
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 63,
+        "end": 69
+      },
+      {
+        "text": "Volta",
+        "label": "LOC",
+        "start": 127,
+        "end": 132
+      },
+      {
+        "text": "the years 1988",
+        "label": "DATE",
+        "start": 143,
+        "end": 157
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start": 162,
+        "end": 166
+      }
+    ]
+  },
+  {
+    "sentence": "reported a moderate land cover change from 1965 to 2000 a decrease in savanna from 74% to 70% concurring with an expansion of cropland from 17% to 21%",
+    "entities": [
+      {
+        "text": "change",
+        "label": "CHANGE",
+        "start": 31,
+        "end": 37
+      },
+      {
+        "text": "1965 to 2000",
+        "label": "DATE",
+        "start": 43,
+        "end": 55
+      },
+      {
+        "text": "decrease",
+        "label": "CHANGE",
+        "start": 58,
+        "end": 66
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 70,
+        "end": 77
+      },
+      {
+        "text": "74% to 70%",
+        "label": "PERCENT",
+        "start": 83,
+        "end": 93
+      },
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start": 113,
+        "end": 122
+      },
+      {
+        "text": "cropland",
+        "label": "LULC",
+        "start": 126,
+        "end": 134
+      },
+      {
+        "text": "17% to 21%",
+        "label": "PERCENT",
+        "start": 140,
+        "end": 150
+      }
+    ]
+  },
+  {
+    "sentence": "Large scale cropland was the third highest driver of forest loss in Africa 9% with the highest proportions by country found in Cape Verde 67% Gambia 53% Niger 50% Sudan 47% and Nigeria 44%",
+    "entities": [
+      {
+        "text": "cropland",
+        "label": "LULC",
+        "start": 12,
+        "end": 20
+      },
+      {
+        "text": "driver",
+        "label": "CHANGE",
+        "start": 43,
+        "end": 49
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 53,
+        "end": 59
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start": 60,
+        "end": 64
+      },
+      {
+        "text": "Africa",
+        "label": "LOC",
+        "start": 68,
+        "end": 74
+      },
+      {
+        "text": "9%",
+        "label": "PERCENT",
+        "start": 75,
+        "end": 77
+      },
+      {
+        "text": "67%",
+        "label": "PERCENT",
+        "start": 138,
+        "end": 141
+      },
+      {
+        "text": "53%",
+        "label": "PERCENT",
+        "start": 149,
+        "end": 152
+      },
+      {
+        "text": "50%",
+        "label": "PERCENT",
+        "start": 159,
+        "end": 162
+      },
+      {
+        "text": "Sudan",
+        "label": "LOC",
+        "start": 163,
+        "end": 168
+      },
+      {
+        "text": "47%",
+        "label": "PERCENT",
+        "start": 169,
+        "end": 172
+      },
+      {
+        "text": "Nigeria",
+        "label": "LOC",
+        "start": 177,
+        "end": 184
+      },
+      {
+        "text": "44%",
+        "label": "PERCENT",
+        "start": 185,
+        "end": 188
+      }
+    ]
+  },
+  {
+    "sentence": "From 1955 to 1986 the area on the dune above Mare Yomboli was cleared and used for cultivation and fields on the pediplain were abandoned",
+    "entities": [
+      {
+        "text": "1955 to 1986",
+        "label": "DATE",
+        "start": 5,
+        "end": 17
+      },
+      {
+        "text": "cultivation",
+        "label": "PROCESS",
+        "start": 83,
+        "end": 94
+      }
+    ]
+  },
+  {
+    "sentence": "The Upper Guinean forest is a global biodiversity hotspot and has become one of the most human modified forest ecosystems in the tropics having lost over 80% of its original forest cover with the remainder distributed in a fragmented agriculture forest mosaic",
+    "entities": [
+      {
+        "text": "Upper Guinean",
+        "label": "LOC",
+        "start": 4,
+        "end": 17
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 18,
+        "end": 24
+      },
+      {
+        "text": "modified",
+        "label": "CHANGE",
+        "start": 95,
+        "end": 103
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 104,
+        "end": 110
+      },
+      {
+        "text": "80%",
+        "label": "PERCENT",
+        "start": 154,
+        "end": 157
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 174,
+        "end": 180
+      },
+      {
+        "text": "agriculture",
+        "label": "LULC",
+        "start": 234,
+        "end": 245
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 246,
+        "end": 252
+      }
+    ]
+  },
+  {
+    "sentence": "With the exception of Eastern Africa area in forest declined in all regions with the most pronounced reduction in Northern Africa 40 %",
+    "entities": [
+      {
+        "text": "Eastern Africa",
+        "label": "LOC",
+        "start": 22,
+        "end": 36
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 45,
+        "end": 51
+      },
+      {
+        "text": "declined",
+        "label": "CHANGE",
+        "start": 52,
+        "end": 60
+      },
+      {
+        "text": "reduction",
+        "label": "CHANGE",
+        "start": 101,
+        "end": 110
+      },
+      {
+        "text": "Northern Africa",
+        "label": "LOC",
+        "start": 114,
+        "end": 129
+      },
+      {
+        "text": "40 %",
+        "label": "PERCENT",
+        "start": 130,
+        "end": 134
+      }
+    ]
+  },
+  {
+    "sentence": "Precipitation factors dominated the spatial distribution of desertification in the Sahel q value 0.9269",
+    "entities": [
+      {
+        "text": "desertification",
+        "label": "PROCESS",
+        "start": 60,
+        "end": 75
+      },
+      {
+        "text": "0.9269",
+        "label": "CARDINAL",
+        "start": 97,
+        "end": 103
+      }
+    ]
+  },
+  {
+    "sentence": "The most prominent example of this is pasture expansion which is tightly linked to soy expansion and land speculation across Latin America",
+    "entities": [
+      {
+        "text": "pasture",
+        "label": "LULC",
+        "start": 38,
+        "end": 45
+      },
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start": 46,
+        "end": 55
+      },
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start": 87,
+        "end": 96
+      },
+      {
+        "text": "Latin America",
+        "label": "LOC",
+        "start": 125,
+        "end": 138
+      }
+    ]
+  },
+  {
+    "sentence": "Finally five of the six Congo basin countries that contain almost all of the continent s humid forests have large extractive industries oil and mineral whose political economy may have had important indirect effects on forest cover",
+    "entities": [
+      {
+        "text": "five",
+        "label": "CARDINAL",
+        "start": 8,
+        "end": 12
+      },
+      {
+        "text": "six",
+        "label": "CARDINAL",
+        "start": 20,
+        "end": 23
+      },
+      {
+        "text": "Congo",
+        "label": "LOC",
+        "start": 24,
+        "end": 29
+      },
+      {
+        "text": "forests",
+        "label": "LULC",
+        "start": 95,
+        "end": 102
+      },
+      {
+        "text": "effects",
+        "label": "CHANGE",
+        "start": 208,
+        "end": 215
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 219,
+        "end": 225
+      }
+    ]
+  },
+  {
+    "sentence": "Human activities have degraded about 85% of Ghana s Guinea Forest Region",
+    "entities": [
+      {
+        "text": "about 85%",
+        "label": "PERCENT",
+        "start": 31,
+        "end": 40
+      },
+      {
+        "text": "Ghana",
+        "label": "LOC",
+        "start": 44,
+        "end": 49
+      },
+      {
+        "text": "Guinea",
+        "label": "LOC",
+        "start": 52,
+        "end": 58
+      },
+      {
+        "text": "Forest",
+        "label": "LULC",
+        "start": 59,
+        "end": 65
+      }
+    ]
+  },
+  {
+    "sentence": "Actually present day cultivation cycles in southwestern Niger could be considered to consist of 10 years under millet followed by 5 years of fallow conditions",
+    "entities": [
+      {
+        "text": "cultivation",
+        "label": "PROCESS",
+        "start": 21,
+        "end": 32
+      },
+      {
+        "text": "10 years",
+        "label": "DATE",
+        "start": 96,
+        "end": 104
+      },
+      {
+        "text": "millet",
+        "label": "LULC",
+        "start": 111,
+        "end": 117
+      },
+      {
+        "text": "5 years",
+        "label": "DATE",
+        "start": 130,
+        "end": 137
+      },
+      {
+        "text": "fallow",
+        "label": "LULC",
+        "start": 141,
+        "end": 147
+      }
+    ]
+  },
+  {
+    "sentence": "and Hausermann confirm that the expansion of water bodies we detected in the Tain District see Figure c2 of Ghana is due to a dam Bui dam constructed on Ghana s Black Volta for hydro power generation",
+    "entities": [
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start": 32,
+        "end": 41
+      },
+      {
+        "text": "water bodies",
+        "label": "LULC",
+        "start": 45,
+        "end": 57
+      },
+      {
+        "text": "the Tain District",
+        "label": "LOC",
+        "start": 73,
+        "end": 90
+      },
+      {
+        "text": "Ghana",
+        "label": "LOC",
+        "start": 108,
+        "end": 113
+      },
+      {
+        "text": "Ghana",
+        "label": "LOC",
+        "start": 153,
+        "end": 158
+      },
+      {
+        "text": "Black Volta",
+        "label": "LOC",
+        "start": 161,
+        "end": 172
+      }
+    ]
+  },
+  {
+    "sentence": "The annual rate i.e. 0.8% of water bodies loss per year was higher in 2000 2013 i.e. the postdrought era and recent period than in 1975 2000 which was 0.2% per year in the drought era and soon after the severe drought",
+    "entities": [
+      {
+        "text": "annual",
+        "label": "DATE",
+        "start": 4,
+        "end": 10
+      },
+      {
+        "text": "0.8%",
+        "label": "PERCENT",
+        "start": 21,
+        "end": 25
+      },
+      {
+        "text": "water bodies",
+        "label": "LULC",
+        "start": 29,
+        "end": 41
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start": 42,
+        "end": 46
+      },
+      {
+        "text": "2000 2013",
+        "label": "COORDINATES",
+        "start": 70,
+        "end": 79
+      },
+      {
+        "text": "1975 2000",
+        "label": "COORDINATES",
+        "start": 131,
+        "end": 140
+      },
+      {
+        "text": "0.2%",
+        "label": "PERCENT",
+        "start": 151,
+        "end": 155
+      }
+    ]
+  },
+  {
+    "sentence": "2020 The major LULC changes in LCB from 1975 to 2013 stated by were the transition of water bodies and wetland around the Lake to cropland the loss of water bodies to other vegetation and an increase in urban area at the expense of other vegetation",
+    "entities": [
+      {
+        "text": "2020",
+        "label": "DATE",
+        "start": 0,
+        "end": 4
+      },
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start": 20,
+        "end": 27
+      },
+      {
+        "text": "1975 to",
+        "label": "DATE",
+        "start": 40,
+        "end": 47
+      },
+      {
+        "text": "2013",
+        "label": "DATE",
+        "start": 48,
+        "end": 52
+      },
+      {
+        "text": "transition",
+        "label": "CHANGE",
+        "start": 72,
+        "end": 82
+      },
+      {
+        "text": "water bodies",
+        "label": "LULC",
+        "start": 86,
+        "end": 98
+      },
+      {
+        "text": "wetland",
+        "label": "LULC",
+        "start": 103,
+        "end": 110
+      },
+      {
+        "text": "cropland",
+        "label": "LULC",
+        "start": 130,
+        "end": 138
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start": 143,
+        "end": 147
+      },
+      {
+        "text": "water bodies",
+        "label": "LULC",
+        "start": 151,
+        "end": 163
+      },
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start": 191,
+        "end": 199
+      },
+      {
+        "text": "urban",
+        "label": "LULC",
+        "start": 203,
+        "end": 208
+      }
+    ]
+  },
+  {
+    "sentence": "During 2000 2010 the level of desertification has reduced whereas from 2010 to 2015 most areas have shifted towards an increase in desertification levels which likely driven by the 2012 drought in the Sahel",
+    "entities": [
+      {
+        "text": "2000 2010",
+        "label": "COORDINATES",
+        "start": 7,
+        "end": 16
+      },
+      {
+        "text": "desertification",
+        "label": "PROCESS",
+        "start": 30,
+        "end": 45
+      },
+      {
+        "text": "2010",
+        "label": "DATE",
+        "start": 71,
+        "end": 75
+      },
+      {
+        "text": "2015",
+        "label": "DATE",
+        "start": 79,
+        "end": 83
+      },
+      {
+        "text": "shifted",
+        "label": "CHANGE",
+        "start": 100,
+        "end": 107
+      },
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start": 119,
+        "end": 127
+      },
+      {
+        "text": "desertification",
+        "label": "PROCESS",
+        "start": 131,
+        "end": 146
+      },
+      {
+        "text": "driven",
+        "label": "CHANGE",
+        "start": 167,
+        "end": 173
+      },
+      {
+        "text": "2012",
+        "label": "DATE",
+        "start": 181,
+        "end": 185
+      }
+    ]
+  },
+  {
+    "sentence": "Nevertheless the shrubs cluster has increased over time within Volta basin and this could be attributed to the agroforestry practice in the basin",
+    "entities": [
+      {
+        "text": "shrubs",
+        "label": "LULC",
+        "start": 17,
+        "end": 23
+      },
+      {
+        "text": "increased",
+        "label": "CHANGE",
+        "start": 36,
+        "end": 45
+      },
+      {
+        "text": "Volta",
+        "label": "LOC",
+        "start": 63,
+        "end": 68
+      },
+      {
+        "text": "agroforestry",
+        "label": "LULC",
+        "start": 111,
+        "end": 123
+      }
+    ]
+  },
+  {
+    "sentence": "We observed deforestation patterns in the Ashanti region of Ghana from 1986 to 2015 using Landsat imagery to identify the main causes of deforestation",
+    "entities": [
+      {
+        "text": "deforestation",
+        "label": "PROCESS",
+        "start": 12,
+        "end": 25
+      },
+      {
+        "text": "Ghana",
+        "label": "LOC",
+        "start": 60,
+        "end": 65
+      },
+      {
+        "text": "1986 to 2015",
+        "label": "DATE",
+        "start": 71,
+        "end": 83
+      },
+      {
+        "text": "causes",
+        "label": "CHANGE",
+        "start": 127,
+        "end": 133
+      },
+      {
+        "text": "deforestation",
+        "label": "PROCESS",
+        "start": 137,
+        "end": 150
+      }
+    ]
+  },
+  {
+    "sentence": "The savanna cluster presents an increasing trend during 2002 2016 period probably due to agroforestry practice in the basin",
+    "entities": [
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 4,
+        "end": 11
+      },
+      {
+        "text": "increasing",
+        "label": "CHANGE",
+        "start": 32,
+        "end": 42
+      },
+      {
+        "text": "2002 2016",
+        "label": "COORDINATES",
+        "start": 56,
+        "end": 65
+      },
+      {
+        "text": "agroforestry",
+        "label": "LULC",
+        "start": 89,
+        "end": 101
+      }
+    ]
+  },
+  {
+    "sentence": "The majority of other cash crops was converted to food crop fallow areas 1067.98 km 2",
+    "entities": [
+      {
+        "text": "crops",
+        "label": "LULC",
+        "start": 27,
+        "end": 32
+      },
+      {
+        "text": "converted",
+        "label": "CHANGE",
+        "start": 37,
+        "end": 46
+      },
+      {
+        "text": "crop",
+        "label": "LULC",
+        "start": 55,
+        "end": 59
+      },
+      {
+        "text": "fallow",
+        "label": "LULC",
+        "start": 60,
+        "end": 66
+      },
+      {
+        "text": "1067.98 km",
+        "label": "SURFACE_UNIT",
+        "start": 73,
+        "end": 83
+      },
+      {
+        "text": "2",
+        "label": "CARDINAL",
+        "start": 84,
+        "end": 85
+      }
+    ]
+  },
+  {
+    "sentence": "In contrast relative net gain in open water bodies was observed in the humid region during the period of 1975 2000 with a slight loss in 2000 2013.",
+    "entities": [
+      {
+        "text": "gain",
+        "label": "CHANGE",
+        "start": 25,
+        "end": 29
+      },
+      {
+        "text": "water bodies",
+        "label": "LULC",
+        "start": 38,
+        "end": 50
+      },
+      {
+        "text": "the period of",
+        "label": "DATE",
+        "start": 91,
+        "end": 104
+      },
+      {
+        "text": "1975 2000",
+        "label": "COORDINATES",
+        "start": 105,
+        "end": 114
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start": 129,
+        "end": 133
+      },
+      {
+        "text": "2000 2013",
+        "label": "COORDINATES",
+        "start": 137,
+        "end": 146
+      }
+    ]
+  },
+  {
+    "sentence": "The land use is dominated by cultivation however cultivation intensity varies significantly within the region from 10% to 74% according to",
+    "entities": [
+      {
+        "text": "cultivation",
+        "label": "PROCESS",
+        "start": 29,
+        "end": 40
+      },
+      {
+        "text": "cultivation",
+        "label": "PROCESS",
+        "start": 49,
+        "end": 60
+      },
+      {
+        "text": "varies",
+        "label": "CHANGE",
+        "start": 71,
+        "end": 77
+      },
+      {
+        "text": "10% to 74%",
+        "label": "PERCENT",
+        "start": 115,
+        "end": 125
+      }
+    ]
+  },
+  {
+    "sentence": "In Fakara the landscape was converted from a Sahelian savanna to largely eroded agricultural agroforestry parkland during the 20th century",
+    "entities": [
+      {
+        "text": "converted",
+        "label": "CHANGE",
+        "start": 28,
+        "end": 37
+      },
+      {
+        "text": "Sahelian",
+        "label": "LOC",
+        "start": 45,
+        "end": 53
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 54,
+        "end": 61
+      },
+      {
+        "text": "agroforestry",
+        "label": "LULC",
+        "start": 93,
+        "end": 105
+      },
+      {
+        "text": "the 20th century",
+        "label": "DATE",
+        "start": 122,
+        "end": 138
+      }
+    ]
+  },
+  {
+    "sentence": "The result reveals that the Mono basin Table land cover presents an increase in built up agricultural land and water bodies while the vegetative clusters such as forest savanna and herbaceous savanna have declined for the three study periods",
+    "entities": [
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start": 68,
+        "end": 76
+      },
+      {
+        "text": "water bodies",
+        "label": "LULC",
+        "start": 111,
+        "end": 123
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 162,
+        "end": 168
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 169,
+        "end": 176
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 192,
+        "end": 199
+      },
+      {
+        "text": "declined",
+        "label": "CHANGE",
+        "start": 205,
+        "end": 213
+      },
+      {
+        "text": "three",
+        "label": "CARDINAL",
+        "start": 222,
+        "end": 227
+      }
+    ]
+  },
+  {
+    "sentence": "In the Peanut Basin West Central eco region in Senegal cultivated area peaked to 80% of the land in the mid 1980s when farmers still benefited from agricultural subsidies but this trend then reversed itself declining to about 67% of the land under cultivation in 2000",
+    "entities": [
+      {
+        "text": "the Peanut Basin West Central",
+        "label": "LOC",
+        "start": 3,
+        "end": 32
+      },
+      {
+        "text": "Senegal",
+        "label": "LOC",
+        "start": 47,
+        "end": 54
+      },
+      {
+        "text": "80%",
+        "label": "PERCENT",
+        "start": 81,
+        "end": 84
+      },
+      {
+        "text": "the mid 1980s",
+        "label": "DATE",
+        "start": 100,
+        "end": 113
+      },
+      {
+        "text": "declining",
+        "label": "CHANGE",
+        "start": 207,
+        "end": 216
+      },
+      {
+        "text": "about 67%",
+        "label": "PERCENT",
+        "start": 220,
+        "end": 229
+      },
+      {
+        "text": "cultivation",
+        "label": "PROCESS",
+        "start": 248,
+        "end": 259
+      },
+      {
+        "text": "2000",
+        "label": "DATE",
+        "start": 263,
+        "end": 267
+      }
+    ]
+  },
+  {
+    "sentence": "In West Africa the land cover category settlement made up 0.3% and 0.7% of the total study region in 1975 and 2013 respectively",
+    "entities": [
+      {
+        "text": "West Africa",
+        "label": "LOC",
+        "start": 3,
+        "end": 14
+      },
+      {
+        "text": "0.3%",
+        "label": "PERCENT",
+        "start": 58,
+        "end": 62
+      },
+      {
+        "text": "0.7%",
+        "label": "PERCENT",
+        "start": 67,
+        "end": 71
+      },
+      {
+        "text": "1975",
+        "label": "DATE",
+        "start": 101,
+        "end": 105
+      },
+      {
+        "text": "2013",
+        "label": "DATE",
+        "start": 110,
+        "end": 114
+      }
+    ]
+  }
+]

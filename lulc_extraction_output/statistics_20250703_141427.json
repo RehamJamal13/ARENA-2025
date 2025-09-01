@@ -1,0 +1,18 @@
+{
+  "total_sentences": 10,
+  "total_entities": 62,
+  "total_relations": 21,
+  "relation_types": {
+    "CAUSES": 3,
+    "DECREASES_BY": 3,
+    "LOCATED_IN": 5,
+    "MEASURES": 1,
+    "INCREASES_BY": 3,
+    "OCCURS_DURING": 5,
+    "ENABLES": 1
+  },
+  "confidence_distribution": {
+    "HIGH": 16,
+    "MEDIUM": 5
+  }
+}

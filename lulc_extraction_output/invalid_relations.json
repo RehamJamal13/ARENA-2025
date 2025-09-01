@@ -1,0 +1,147 @@
+[
+  {
+    "sentence_id": 3,
+    "relation": "cropped fields: LULC --INCREASES_BY-- 11.3% (from 40% to 51.3%) | CONF: HIGH",
+    "sentence": ").',, 'p': 'ref':, ' text': 'From 1996 to 2017, the area covered by cropped fields, C, has increased..."
+  },
+  {
+    "sentence_id": 3,
+    "relation": "cropped fields: LULC --INCREASES_BY-- 17.9% (from 47% to 64%) | CONF: HIGH",
+    "sentence": ").',, 'p': 'ref':, ' text': 'From 1996 to 2017, the area covered by cropped fields, C, has increased..."
+  },
+  {
+    "sentence_id": 3,
+    "relation": "fallows: LULC --LOSS-- | CONF: HIGH",
+    "sentence": ").',, 'p': 'ref':, ' text': 'From 1996 to 2017, the area covered by cropped fields, C, has increased..."
+  },
+  {
+    "sentence_id": 5,
+    "relation": "land: LULC --DECREASED_BY-- 50% | CONF: HIGH (nearly by half implies a significant decrease)",
+    "sentence": "land was decreased nearly by half in 2002 compared to its coverage in 1984, while the size of the ga..."
+  },
+  {
+    "sentence_id": 5,
+    "relation": "land: LULC --OCCURS_DURING-- 2002 | CONF: HIGH (mentioned as a specific year)",
+    "sentence": "land was decreased nearly by half in 2002 compared to its coverage in 1984, while the size of the ga..."
+  },
+  {
+    "sentence_id": 5,
+    "relation": "land: LULC --OCCURS_DURING-- 1984 | CONF: HIGH (mentioned as a specific year)",
+    "sentence": "land was decreased nearly by half in 2002 compared to its coverage in 1984, while the size of the ga..."
+  },
+  {
+    "sentence_id": 5,
+    "relation": "gallery: LOC --NO_CHANGE-- | CONF: HIGH (size did not change much implies no change)",
+    "sentence": "land was decreased nearly by half in 2002 compared to its coverage in 1984, while the size of the ga..."
+  },
+  {
+    "sentence_id": 6,
+    "relation": "26%: PERCENT --MEASURES-- proportion of natural vegetation | MEDIUM",
+    "sentence": "About 26 and 31% of the total area of natural vegetation (, woodland and tree) will be converted to ..."
+  },
+  {
+    "sentence_id": 6,
+    "relation": "31%: PERCENT --MEASURES-- proportion of natural vegetation | MEDIUM",
+    "sentence": "About 26 and 31% of the total area of natural vegetation (, woodland and tree) will be converted to ..."
+  },
+  {
+    "sentence_id": 6,
+    "relation": "1975-1990: DATE --OCCURS_DURING-- period of observation | MEDIUM",
+    "sentence": "About 26 and 31% of the total area of natural vegetation (, woodland and tree) will be converted to ..."
+  },
+  {
+    "sentence_id": 6,
+    "relation": "1990-2010: DATE --OCCURS_DURING-- period of observation | MEDIUM",
+    "sentence": "About 26 and 31% of the total area of natural vegetation (, woodland and tree) will be converted to ..."
+  },
+  {
+    "sentence_id": 6,
+    "relation": "2050: DATE --OCCURS_DURING-- predicted future year | MEDIUM",
+    "sentence": "About 26 and 31% of the total area of natural vegetation (, woodland and tree) will be converted to ..."
+  },
+  {
+    "sentence_id": 7,
+    "relation": "woodland: LULC --DECREASES_BY-- 5% | CONF: HIGH",
+    "sentence": "Assuming the dynamics recorded in the second period, the amounts of land covered by, woodland and tr..."
+  },
+  {
+    "sentence_id": 7,
+    "relation": "tree: LULC --DECREASES_BY-- 9% | CONF: HIGH",
+    "sentence": "Assuming the dynamics recorded in the second period, the amounts of land covered by, woodland and tr..."
+  },
+  {
+    "sentence_id": 7,
+    "relation": "woodland: LULC --DECREASES_BY-- 17% | CONF: HIGH",
+    "sentence": "Assuming the dynamics recorded in the second period, the amounts of land covered by, woodland and tr..."
+  },
+  {
+    "sentence_id": 7,
+    "relation": "degraded: LULC --INCREASES_BY-- 9% | CONF: HIGH",
+    "sentence": "Assuming the dynamics recorded in the second period, the amounts of land covered by, woodland and tr..."
+  },
+  {
+    "sentence_id": 7,
+    "relation": "farmland: LULC --INCREASES_BY-- 22% | CONF: HIGH",
+    "sentence": "Assuming the dynamics recorded in the second period, the amounts of land covered by, woodland and tr..."
+  },
+  {
+    "sentence_id": 14,
+    "relation": "woody vegetation:LULC --DECREASES_BY-- (no explicit mention, cannot extract)",
+    "sentence": "In rangelands, the main cause of woody vegetation decrease is the increasing pressure on wood resour..."
+  },
+  {
+    "sentence_id": 15,
+    "relation": "cultivated land: LULC --INCREASES_BY-- none | CONF: HIGH",
+    "sentence": "In Saloum Senegal, with the increase of cultivated land and shortening of cycles, soils have become ..."
+  },
+  {
+    "sentence_id": 15,
+    "relation": "cycles: none --SHORTENS-- none | CONF: HIGH",
+    "sentence": "In Saloum Senegal, with the increase of cultivated land and shortening of cycles, soils have become ..."
+  },
+  {
+    "sentence_id": 15,
+    "relation": "soil: LULC --BECOMES_LESS_FERTILE-- none | CONF: HIGH",
+    "sentence": "In Saloum Senegal, with the increase of cultivated land and shortening of cycles, soils have become ..."
+  },
+  {
+    "sentence_id": 15,
+    "relation": "land: LULC --GAINS_SIZE-- none | CONF: HIGH",
+    "sentence": "In Saloum Senegal, with the increase of cultivated land and shortening of cycles, soils have become ..."
+  },
+  {
+    "sentence_id": 15,
+    "relation": "settlement: LOC --HAS_OUT-MIGRATION-- none | CONF: HIGH",
+    "sentence": "In Saloum Senegal, with the increase of cultivated land and shortening of cycles, soils have become ..."
+  },
+  {
+    "sentence_id": 15,
+    "relation": "* The relation \"soil: LULC --BECOMES_LESS_FERTILE-- none\" implies a decrease in soil fertility, but it's not a transformation between different LULC types.",
+    "sentence": "In Saloum Senegal, with the increase of cultivated land and shortening of cycles, soils have become ..."
+  },
+  {
+    "sentence_id": 15,
+    "relation": "* The relation \"land: LULC --GAINS_SIZE-- none\" implies an increase in land size, but it's not a transformation between different LULC types.",
+    "sentence": "In Saloum Senegal, with the increase of cultivated land and shortening of cycles, soils have become ..."
+  },
+  {
+    "sentence_id": 15,
+    "relation": "* The relation \"settlement: LOC --HAS_OUT-M",
+    "sentence": "In Saloum Senegal, with the increase of cultivated land and shortening of cycles, soils have become ..."
+  },
+  {
+    "sentence_id": 17,
+    "relation": "Woody cover:LULC --INCREASES_BY-- (no explicit value mentioned) | CONF: LOW",
+    "sentence": "On the one hand, tree growth and on fields have led to an increase of woody cover in proximity to th..."
+  },
+  {
+    "sentence_id": 19,
+    "relation": "bush:LULC --IS-- marginal | LOW",
+    "sentence": "Ratios of to cultivated area are 0.8 in Woure, where the bushfallow system is \"already defunct,\" 1.6..."
+  },
+  {
+    "sentence_id": 19,
+    "relation": "available land:LULC --IS-- more than adequate | MEDIUM",
+    "sentence": "Ratios of to cultivated area are 0.8 in Woure, where the bushfallow system is \"already defunct,\" 1.6..."
+  }
+]

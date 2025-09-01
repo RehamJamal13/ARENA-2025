@@ -1,0 +1,12 @@
+{
+  "article_id": "32",
+  "original_sentence": "Remote sensing data showed changes in Taiga (Siberia) vegetation.",
+  "entities": [
+    {
+      "text": "Taiga (Siberia) vegetation",
+      "label": "LOC",
+      "start_char": 38,
+      "end_char": 64
+    }
+  ]
+}

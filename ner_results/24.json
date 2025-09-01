@@ -1,0 +1,12 @@
+{
+  "article_id": "24",
+  "original_sentence": "Remote sensing data showed changes in Eurasian Steppe vegetation.",
+  "entities": [
+    {
+      "text": "Eurasian Steppe vegetation",
+      "label": "LOC",
+      "start_char": 38,
+      "end_char": 64
+    }
+  ]
+}

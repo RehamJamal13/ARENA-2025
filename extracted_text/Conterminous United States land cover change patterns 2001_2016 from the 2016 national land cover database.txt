@@ -1,0 +1,328 @@
+================================================================================
+TITLE: ISPRS Journal of Photogrammetry and Remote Sensing
+================================================================================
+
+AUTHORS:
+- Collin Homer
+- Jon Dewitz
+- Suming Jin
+- George Xian
+- Catherine Costello
+- Patrick Danielson
+- Leila Gass
+- Michelle Funk
+- James Wickham
+- Stephen Stehman
+- Roger Auch
+- Kurt Riitters
+
+ABSTRACT:
+Products reveal that land cover change is significant across most land cover classes and time periods. The land cover product was validated using existing reference data from the legacy NLCD 2011 accuracy assessment, applied to the 2011 epoch of the NLCD 2016 product line. The legacy and new NLCD 2011 overall accuracies were 82% and 83%, respectively, (standard error (SE) was 0.5%), demonstrating a small but significant increase in overall accuracy. Between 2001 and 2016, the CONUS landscape experienced significant change, with almost 8% of the landscape having experienced a land cover change at least once during this period. Nearly 50% of that change involves forest, driven by change agents of harvest, fire, disease and pests that resulted in an overall forest decline, including increasing fragmentation and loss of interior forest. Agricultural change represented 15.9% of the change, with total agricultural spatial extent showing only a slight increase of 4778 km 2 , however there was a substantial decline (7.94%) in pasture/hay during this time, transitioning mostly to cultivated crop. Water and wetland change comprised 15.2% of change and represent highly dynamic land cover classes from epoch to epoch, heavily influenced by precipitation. Grass and shrub change comprise 14.5% of the total change, with most change resulting from fire. Developed change was the most persistent and permanent land change increase adding almost 29,000 km 2 over 15 years (5.6% of total CONUS change), with southern states exhibiting expansion much faster than most of the northern states. Temporal rates of developed change increased in 2001-2006 at twice the rate of 2011-2016, reflecting a slowdown in CONUS economic activity. Future NLCD plans include increasing monitoring frequency, reducing latency time between satellite imaging and product delivery, improving accuracy and expanding the variety of products available in an integrated database.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Change in land use and land cover type alters biophysical surface characteristics and can lead to major consequences including intensification of climate change, land degradation, and changes to biological diversity and ecosystem services 
+However, databases that support large area land system science monitoring are relatively rare. There are numerous initiatives to map land cover globally and regionally, but mapping is not always monitoring. Further, change detection is not monitoring unless it is developed into land cover data for more than two points in time. The complexity of developing a land change monitoring system able to support land system science for large areas (stable funding over long periods, considerable computing and storage capabilities, database management, research to support continued production and product development) perhaps explains why these land cover monitoring programs that cover large areas are rare. For example, 
+NLCD has been providing nationwide data on land cover and land cover change in the U.S. at the native 30 m spatial resolution of Landsat since 2001 with 
+The demand for longer temporal duration, more frequent, more accurate and consistent land cover classifications and corresponding change information continues to further drive the development of land system science monitoring. Improved data availability, computer technology innovation, and advanced science development have facilitated this trend 
+1. 15 years of categorical land cover and land cover for 7 epochs 
+The main objectives of this paper are: (1) to provide an overview of the NLCD 2016 product suite; (2) focus on the NLCD 2016 land cover product results; (3) report on the NLCD 2016 land cover accuracy; (4) analyze NLCD 2016 land cover change rates both spatially and thematically over the last 15 years; and (5) analyze land cover change patterns by land cover theme. Although this paper remains focused on the analysis of the NLCD land cover product, other related NLCD database products integral to the development of the land cover product are also described. The NLCD 2016 database provides a complete 15year record of spatially explicit change data for CONUS. The major patterns of CONUS land cover change described in this article are intended to provide summaries of change (i.e., area estimates) that are consistent with the spatially explicit patterns observable in the NLCD map products. Beyond this analysis, this database provides a wealth of opportunity for future assessments of land cover change at regional and local levels.
+
+## Methods ##
+NLCD 2016 provides a suite of national products including land cover and land cover change, fractional forest canopy percentage, fractional developed impervious percentage, and fractional shrub and
+
+## Table 1 ##
+Large-area land cover mapping efforts suitable for reporting trends (see 
+
+## Product development ##
+2.1.1. Land cover a. Data sources
+We produced land cover by Landsat Worldwide Reference System path/row geographies. Relevant Landsat 5, 7, and 8 images were obtained from the U.S Geological Survey (USGS) Landsat archive and processed to an Albers projection with Top of Atmosphere (TOA) reflectance. One leaf-on image was selected for each target year 
+We compiled and created ancillary data from different sources. The ancillary data included NLCD legacy data 2001, 2006, and 2011, U.S Department of Agriculture (USDA) Cropland Data Layer (CDL) and Cultivated Crop Layer derivatives, Natural Resources Conservation Service Soil Survey Geographic Database (SSURGO) hydric soil, National Wetland Inventory (NWI), Monitoring Trends in Burn Severity (MTBS) fire date and severity, Digital Elevation Models (DEM) and derivatives such as slope and aspect, LANDFIRE Vegetation Change Tracker and Existing Vegetation Type (https://www.landfire.gov/), and some in-house specifically designed ancillary data layers such as the Wetland Potential Index (WPI), fire recovery zone strata, wetland zone strata, and sagebrush-dominated region 
+Training data were derived for each land cover type for each epoch year using integrated information from the Landsat image of the target year, two spectral indices including Normalized Burn Ratio (NBR) and Normalized Difference Water Index (NDWI), multiple spectral change products from two-date and multi-date change detections and spectral trajectory analysis. The process relied on the original 2001 classification and the integrated information described above to identify spectrally stable land cover pixels for each land cover class. If a pixel for each land cover class stayed within a given spectral mean threshold identified for that class, across the entire timeframe, these pixels were assumed unchanged and comprised training data across the 15-year timeframe. Alternatively, changed areas were trained separately for each year with this given set of unchanged pixels which supplied a decision tree classification for each epoch. Results from this classification were combined with pixels that were spectrally stable and unchanged from the original 2001 classification to complete each epoch product. Training data were also additionally refined using image objects derived from the same Landsat image date to ensure that pixelbased training data were representative of the larger land cover patch they resided in 
+Decision tree classifications were performed with these training data using four primary independent variables that represented the temporal, spectral, spatial, and terrain dimensions. These included (a) 1986-target year disturbance year dataset at 2-3-year intervals, (b) Landsat image of the year, (c) compactness of Landsat image segmentation polygons, and (d) DEM and derivatives of slope and aspect. This classification was then further integrated with ancillary data and object-based information to produce the initial land cover map for each epoch. For further details, see 
+
+## c. Land cover post-processing ##
+The initial land cover map derived from the decision tree classification process (above) required additional postprocessing before being completed. This postprocessing focused on integrating the spatial coherence (patch uniformity) of land cover labels for each epoch, the temporal consistency of land cover labels over time, and the logic of the land cover change trajectory. The process utilized information from spectral and spatial data, temporal change trajectory, expert knowledge, and ancillary data to refine the initial land cover and change labels through sets of rules. The postprocessing was conducted for each land cover type in succession, with higher confidence land cover labels taking precedence over lower confidence land cover labels. Confidence orders were decided based on mapping confidence in accuracy and are:
+(1) water, (2) wetlands, (3) forest and forest transition classes, (4) permanent snow and ice, (5) agricultural lands, and (6) persistent shrubland and herbaceous 
+Final refinement emphasized the overall quality and compatibility of land cover labeling of all pixels across the seven epochs from 2001 to 2016. This was done in three primary steps after postprocessing. The first step analyzed all seven epochs as a succession of two-date paired change results in order to identify gross differences that were likely errors. The second step analyzed all seven epochs as a complete succession trajectory by creating spatial-temporal objects across all years to check for reasonable temporal change trajectories, and to ensure that relevant pixels remained consistent within an object. The third step corrected regional issues identified during review with specific models (e.g., vineyards in California misclassified as grassland or forest).
+
+## Fractional products required for NLCD land cover a. Imperviousness product generation and crosswalk to four developed classes ##
+Fractional impervious surface was used to define NLCD's four urban classes. This product was generated using high-resolution training data and Landsat spectral data in regression tree analysis. For NLCD 2016, several improvements were incorporated through all four dates of impervious surface, including removing inaccurate roads from previous generations, including newer, more spatially accurate road layers from Navteq, NavStreets (www.navmart.com), and incorporating areas of energy development with classified Landsat imagery over regions identified from FracTracker, an organization that provides geospatial data on oil and gas wells (www.fractracker.org). Additionally, all four epochs of imperviousness were visually assessed for omission and commission errors and corrected by hand editing if necessary.
+Fractional imperviousness products were converted to categorical NLCD-developed land cover classes by thresholding the impervious surface percentage as (< 20% for developed open space, 20-49% for developed low intensity, 50-79% for developed medium intensity, and 80-100% for developed high intensity 
+We quantified 9 rangeland components, including percent shrub, sagebrush, big sagebrush, herbaceous, annual herbaceous, litter, and bare ground cover, along with sagebrush and shrub heights, at 30 m resolution using regression trees (see 
+Fractional rangeland products were then converted into three categorical NLCD land cover classes (barren, grass and shrub). This crosswalking process is described in 
+
+## Land cover product accuracy assessment ##
+Accuracy assessment is standard practice for the NLCD project 
+Reference data collected for NLCD 2011 version 1 were compared to map labels from NLCD 2011 version 2 to determine agreement. User's accuracy (UA), producer's accuracy (PA) (100 -omission error), and overall accuracy (OA) served as the measures of agreement. These agreement measures and associated standard errors were estimated from the stratified sample data using the formulas documented in 
+
+## Land cover change evaluation ##
+The most critical part of land cover monitoring is measuring and understanding change patterns and trends. For the 2001-2016 land cover change results, we analyzed change trends for CONUS including change rate and change frequency, as well as temporal and spatial change patterns by land cover theme.
+For CONUS, the total 2001-2016 change rate was calculated in three ways. (1). A simple percentage of total change across time for all classes was calculated by dividing the entire spatial footprint of change across all years by the total area. (2). The change rate and location by land cover class theme was developed from the NLCD land cover change index. This index was developed to provide a simple and comprehensive way to understand change across all 7 dates of land cover, by summarizing change into 11 change classes. These classes were put into a hierarchical order to help communicate thematic change impact, and the order included water, developed, wetland (emergent herbaceous wetland, woody wetland), agriculture (cultivated crop, pasture hay), rangeland grass and shrub, and forest (with two additional forest regeneration classes). This priority order dictates the change category a change pixel is assigned across the 7 epochs. For example, a change pixel was assigned to the water change index if it converted "from or to water" across the 7 epochs, regardless of when the change occurred or other land cover changes that occurred. Assignment of a change pixel to an index then proceeded according to the hierarchy, such that pixels assigned to the agriculture change index included "from or to agriculture" but not "from or to water" (as these pixels were already assigned to the water index), and so on down the hierarchy. Change theme classes are typically organized at the Anderson 1 
+Land cover theme change was also analyzed to provide more specific change information, to demonstrate key land change results, and to examine patterns of land cover change. Analyzed land cover themes include forest, water, wetland, agricultural, shrub, herbaceous, and barren and are specified below.
+Forest change -We calculated forest areal coverages and change extents for 2001-2016 from the three forest classes (deciduous, evergreen and mixed). However, one additional class (woody wet) was used to analyze forest fragmentation change. NLCD has been used extensively for forest change and fragmentation analyses within the Montréal Process (MPLO, 2015) and for U.S Forest Service (USFS) international reporting of forest fragmentation 
+Water and wetland change -Water and wetlands are often closely connected, hence we analyzed both water and wetland extents and their changes within different drainage basins. The USGS Watershed Boundary Dataset (WBD) is a comprehensive aggregated collection of hydrologic unit data which defines the perimeters of drainage areas (hydrologic units), formed by the terrain and other landscape characteristics, at a 1:24,000 scale in the U.S. (https://www.usgs.gov/ core-science-systems/ngp/national-hydrography/). We used WBD 2digital Hydrologic Units at the HU2 hierarchical scale for 18 different watersheds across CONUS. NLCD 2016 datasets were then summarized for water extent, wetland extent, and their changes in each mapping years. We then focused on the connection between annual precipitation and water or wetland extent in every drainage basin using correlation analysis. Precipitation data were obtained from Daymet (https:// daymet.ornl.gov/). Total amounts of annual precipitation were calculated in these basins in each mapping epoch. A simple correlation between precipitation and water or wetland extent was calculated for the period from 2001 to 2016.
+Agricultural change -We calculated areal coverages of cultivated crop and pasture/hay. We also analyzed the cropland change from 2001 to 2016 by grouping the data into four "from and to" change classes including: crop or pasture/hay to non-cropland, non-crop pasture/hay to crop//pasture/hay, pasture/hay to cropland, and cropland to pasture/hay.
+Shrub, herbaceous, and barren change -Analysis for shrub, herbaceous, and barren class change was completed by examining spatial extent and abundance patterns across CONUS. These numbers were directly calculated from the CONUS raster files for each mapping period.
+
+## Results and discussion ##
+
+
+## Land cover change and distribution ##
+A total of 435 Landsat path rows were analyzed across the conterminous U.S. to produce 7 epochs of land cover with 16 thematic classes between 2001 and 2016. Nominal leaf-on base image acquisition dates for the seven periods were similar, with 2001 being 
+
+## Table 2 ##
+Land cover extent (km 2 ) by class across seven epochs from 2001 to 2016. Urban class extents in 
+During the 15-year time span, the frequency of change for each pixel across the seven land cover epochs also varies from one to six times (Fig. 
+
+## Land cover accuracy assessment ##
+We applied the reference data collected for the NLCD 2011 accuracy assessment to the new version of the 2011 data that accompanies the NLCD 2016 product suite. The new classification methods developed for NLCD 2016 produced a quantifiable improvement in classification accuracy, with a small but significant increase in overall accuracy (Table 
+A formal, statistically rigorous accuracy assessment of NLCD 2016 land cover and land cover change is underway. Accuracy for many of the loss and gain strata were reported for NLCD 2011 
+
+## Table 5 ##
+National and regional 2011 land cover classification accuracies for version 1 (V1) and version 2 (V2) of the NLCD 2011 land cover product. Cell entries are user's accuracy (UA) and producer's accuracy (PA) and their associated (standard errors) expressed as percent of area. Agreement is defined as a match between the map label and either the primary or alternate reference label (see 
+Overall accuracy (OA) is reported at the bottom of the UA panel.
+omission error but not for commission error, suggesting there was a moderate association between the spatial configuration of land cover change and the likelihood of accurately identifying change.
+
+## Land cover change analysis ##
+
+
+## Forests ##
+Overall, forest theme change was the most frequently changing class consisting of 48.67% of total CONUS change across the 15-year period (Table 
+The spatial extents of the three forest classes are different (Fig. 
+-3.04%, 39,599 km 2 or -4.11%, and 223 km 2 or -0.08%, respectively. The total forest extent declined about 63,537 km 2 or -3.12%. These patterns mirror the U.S. wood industry trends which are based primarily on soft-wood (evergreen) species such as Southern pines-led by loblolly pine-and Douglas fir in the Pacific Northwest. Overall, during the study period, about 70% of the U.S. wood production was from softwoods and 30% from hardwoods (deciduous forest), with domestic production peaking in 2005 and declining drastically with the recent deep economic recession (2009 the low point) and rebounding by 2016 but still considerably lower than the 2005 high 
+
+## Agriculture ##
+The total 2016 CONUS extent of pasture/hay was 507,568 km 2 and cultivated crops was 1,313,114 km 2 for a total cropland extent of 1,820,682 km 2 (Table 
+
+## Water and wetlands ##
+Water extent varies across time depending on different weather, climate, and land use conditions. Likewise, wetlands also have similar extent fluctuations from these change drivers. According to our results, the total surface water extent in CONUS was 424,962 km 2 in 2001 and 423,670 km 2 in 2016 (Table 
+Water and wetland variations can be influenced by many factors such as weather and climate conditions, land use intensity, and other external disturbances. For additional analysis we focused on the correlation between annual precipitation and water or wetland extent in every drainage basin. Precipitation data were obtained from Daymet (https://daymet.ornl.gov/), and total amounts of annual precipitation were calculated in these basins in each mapping epoch. A simple correlation between precipitation and water or wetland extent was calculated for the period of 2001 to 2016. Fig. 
+The wetland variations show negative correlations with annual precipitation for most regions. The correlation of annual precipitation in the New England Region was at the p < 0.05 significance level. Annual precipitation correlations in the Ohio, Texas-Gulf, Tennessee, and Great Lakes Regions were at the p < 0.10 significance levels. Similar to the correlation between water extent and precipitation, annual precipitation and wetland correlations in the Souris Red Rainy, Lower Colorado, Lower Mississippi, and Great Basin regions were negative but not significant. The negative correlation between wetland extent and annual precipitation suggests that precipitation can reduce wetland extent due to the increase in water extent along riparian areas. The regions where wetland extent had positive correlations with annual precipitation were the same regions where water extent was negatively correlated with precipitation. One exception was in the Upper Colorado Region where both wetland and water extents were negatively correlated with precipitation. Terrain, water use patterns and precipitation inputs from outside the region likely provided the major drivers of land cover change rather than precipitation inputs within the region. 
+
+## Shrub, grass and bare ground ##
+Total shrub extent in CONUS was 1,760,134 km 2 in 2016 and the change rate varies between 0.52% to -0.82% during the mapping period (Fig. 
+
+## Developed land ##
+With few exceptions, the U.S. developed footprint continues to expand (Figs. 
+Water and wetlands are highly dynamic land cover classes from period to period, heavily influenced by precipitation. Our analysis by major U.S. watershed boundaries further supports this conclusion, finding significant precipitation correlation to change in water and wetland extent over time. Spatially, water change is highest in the more arid western U.S. where the natural episodic influences of precipitation   
+and temperature are amplified. However, the change in wetland extent was greatest in the southeast U.S., driven by precipitation and the historical pattern of human caused land cover change influencing natural processes 
+The change in cropland footprint (including both classes of pasture/ hay and cultivated crop) was nearly static across the 15 years with only a slight increase of 4778 km 2 . However, there was a substantial decline (7.94%) in pasture/hay during this time, going mostly to cultivated crop. Driving this pasture/hay change was not only the normal crop cycling of agriculture in general, but the more notable permanent conversion of pasture and hay areas in the midwestern and eastern U.S. in part driven by changing climate and economic conditions 
+NLCD will continue to monitor the changing U.S. land cover landscape into the future. NLCD is developing new innovations and partnerships to increase monitoring frequency, reduce the turnaround time between satellite imaging and product delivery and expand the variety of products available in an integrated database to allow a more comprehensive understanding of the dynamics of U.S. land cover change.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. 2016 MEAN % of 2016CONUS Net Change
+   Date: 2001 2004 2006 2008 2011 2013
+
+2. 
+   Authors: 
+   Date: 296 16,296 18,039 18,039 19,419 19,419 20,260 18,252 0.23. 183 929,753 931,326 923,780 937,724 11.61 -39,599 Mixed Forest 293,390 292,688 291,654 290,842 290,813 292,996 293,167 292,221 3.62 -223 Shrub/Scrub 1,755,623 1,764,682 1,758,856 1,766,856 1,752,378 1,756,432 1,760,135 1,759,280 21.77 +3657 Grassland Herbaceous 1,092,991 1,115,338 1,129,833 1,131,729 1,140,488 1,125,422 1,118,412 1,122,030 13. 777 Cultivated Crops 1,264,559 1,268,928 1,275,151 1,281,122 1,290,360 1,299,517 1,313,114 1,284
+
+3. A land use and land cover classification system for use with remote sensor data
+   Authors: , , , 
+   Date: 1976
+
+4. Human drivers, biophysical changes, and climatic variation affecting contemporary cropping proportions in the northern prairie of the U.S
+   Authors: , , , , 
+   Date: 2018
+
+5. Biotic and abiotic effects of human settlements in the wildland-urban interface
+   Authors: , , 
+   Date: 2014
+
+6. Integrated climate and land use change scenarios for California rangeland ecosystem services: wildlife habitat, soil carbon, and water supply
+   Authors: , , , , , , , 
+   Date: 2015
+
+7. Habitat analysis of North American sand flies near veterans returning from leishmania-endemic war zones
+   Authors: , , , 
+   Date: 2008
+
+8. Forest disturbance across the conterminous United States from 1985-2012: the emerging dominance of forest decline
+   Authors: , , , , , , , 
+   Date: 2016
+
+9. Linking agricultural crop management and air quality models for regional to national-scale nitrogen assessments
+   Authors: , , , 
+   Date: 2012
+
+10. Mapping wildfire evacuation vulnerability in the western US: the limits of infrastructure
+   Authors: , , , 
+   Date: 2013
+
+11. Global consequences of land use
+   Authors: , , , , , , , , , , , , , , , , , , 
+   Date: 2005
+
+12. Solutions for a cultivated planet
+   Authors: , , , , , , , , , , 
+   Date: 2011
+
+13. Completion of the 2006 national land cover database for the conterminous United States
+   Authors: , , , , , , , , 
+   Date: 2011
+
+14. An overview of 21 global and 43 regional land-cover mapping projects
+   Authors: , , 
+   Date: 2015
+
+15. A review of large area monitoring of land cover change using Landsat data
+   Authors: , 
+   Date: 2012
+
+16. High-resolution global maps of 21st-century forest cover change
+   Authors: , , , , , , , , , , , , , , 
+   Date: 2013
+
+17. Wetland trends in the southeastern United States
+   Authors: , 
+   Date: 1984
+
+18. Completion of the 2001 national land cover database for the conterminous United States
+   Authors: , , , , , , , , , 
+   Date: 2007
+
+19. Completion of the 2011 National Land Cover Database for the conterminous United States -representing a decade of land cover change information
+   Authors: , , , , , , , , , 
+   Date: 2015
+
+20. U.S. timber production, trade, consumption, and price statistics, 1965-2013. Research Paper FPL-RP-679
+   Authors: , 
+   Date: 2016
+
+21. Overall methodology design for the United States national land cover database 2016 products
+   Authors: , , , , , , , , 
+   Date: 2019
+
+22. Automated cloud and shadow detection and filling using two-date Landsat imagery in the USA
+   Authors: , , , , , , 
+   Date: 2013
+
+23. A comprehensive change detection method for updating the National Land Cover Database to circa 2011
+   Authors: , , , , , 
+   Date: 2013
+
+24. HERA: a dynamic web application for visualizing community exposure to flood hazards based on storm and sea level rise scenarios
+   Authors: , , , , 
+   Date: 2017
+
+25. Effect of land use-based surface roughness on hydrologic model output
+   Authors: , , 
+   Date: 2010
+
+26. Middlerange theories of land system change
+   Authors: , , , , , , , , , , 
+   Date: 2018
+
+27. Montréal Process. Criteria and Indicators for the Conservation and Sustainable Management of Temperate and Boreal Forests
+   Authors: 
+   Date: 2015. 28 May 2019
+
+28. The Forest Inventory and Analysis Database: Database description and user guide version 7.0 for Phase 2. US Department of Agriculture
+   Authors: , , , , , , , , 
+   Date: 2017. February 2018
+
+29. Land use and climate change
+   Authors: 
+   Date: 2005
+
+30. The wildland-urban interface in the United States
+   Authors: , , , , , 
+   Date: 2005
+
+31. Quantifying Western US Rangelands as fractional components with multi-resolution remote sensing and in situ data
+   Authors: , , , , , , , , 
+   Date: 2020
+
+32. Methods for converting continuous shrubland ecosystem component values to thematic National Land Cover Database classes
+   Authors: , , , 
+   Date: 2017
+
+33. Fragmentation of continental United States forests
+   Authors: , , , , , , , 
+   Date: 2002
+
+34. Fragmentation of forest communities in the eastern United States
+   Authors: , , 
+   Date: 2012
+
+35. Decline of forest interior conditions in the conterminous United States
+   Authors: , 
+   Date: 2012
+
+36. Developing a science of land change: challenges and methodological issues
+   Authors: , , , , , 
+   Date: 2004
+
+37. 2011. National Report on Sustainable Forests-2010. Report FS-979. US Department of Agriculture
+   Authors: , , , , 
+
+38. Global forecasts of urban expansion to 2030 and direct impacts on biodiversity and carbon pools
+   Authors: , , 
+   Date: 2012
+
+39. Designing a multi-objective, multi-support accuracy assessment of the 2001 National Land Cover Data (NLCD 2001) of the conterminous United States
+   Authors: , , , 
+   Date: 2008
+
+40. The southern megalopolis: using the past to predict the future of urban sprawl in the Southeast US
+   Authors: , , , , , 
+   Date: 2014
+
+41. The emergence of land change science for global environmental change and sustainability
+   Authors: , , , 
+   Date: 2007
+
+42. The importance of land cover change across urban-rural typologies for climate modeling
+   Authors: , , 
+   Date: 2013
+
+43. Land system science: between global challenges and local realities
+   Authors: , , , 
+   Date: 2013
+
+44. Temporal change in forest fragmentation at multiple scales
+   Authors: , , , 
+   Date: 2007
+
+45. Thematic accuracy assessment of the 2011 National Land Cover Database (NLCD)
+   Authors: , , , , , , , 
+   Date: 2017
+
+46. Spatial patterns of the United States National Land Cover Dataset (NLCD) land-cover change thematic accuracy (2001-2011)
+   Authors: , , 
+   Date: 2018
+
+47. Cropland expansion and grassland loss in the eastern Dakotas: new insights from a farm-level survey. Land Use Pol
+   Authors: , , , , , 
+   Date: 2017
+
+48. Updating the 2001 National Land Cover Database impervious surface products to 2006 using Landsat imagery change detection methods
+   Authors: , 
+   Date: 2010
+
+49. An approach for characterizing the distribution of shrubland ecosystem components as continuous fields as part of NLCD
+   Authors: , , , 
+   Date: 2013
+
+50. Characterization of shrubland ecosystem components as continuous fields in the northwest United States
+   Authors: , , , , 
+   Date: 2015
+
+51. A new generation of the United States National Land Cover Database: requirements, research priorities, design, and implementation strategies
+   Authors: , , , , , , , , , , 
+   Date: 2018
+
+52. Implications of land use and land cover dynamics for mountain resource degradation in the Northwestern Ethiopian highlands
+   Authors: , 
+   Date: 2001
+
+53. A 2010 update of the national land use/cover database of China at 1:100000 scale using medium spatial resolution satellite images
+   Authors: , , , , , , , , , 
+   Date: 2014
+

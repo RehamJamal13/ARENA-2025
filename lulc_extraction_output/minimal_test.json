@@ -1,0 +1,66 @@
+[
+  {
+    "data": {
+      "text": "The forest area decreased by 25% in Brazil during 2018."
+    },
+    "annotations": [
+      {
+        "id": "test_annotation_1",
+        "completed_by": 1,
+        "result": [
+          {
+            "id": "entity_1",
+            "type": "labels",
+            "value": {
+              "start": 4,
+              "end": 15,
+              "text": "forest area",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "entity_2",
+            "type": "labels",
+            "value": {
+              "start": 29,
+              "end": 32,
+              "text": "25%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "id": "entity_3",
+            "type": "labels",
+            "value": {
+              "start": 36,
+              "end": 42,
+              "text": "Brazil",
+              "labels": [
+                "LOCATION"
+              ]
+            },
+            "from_name": "label",
+            "to_name": "text"
+          },
+          {
+            "from_id": "entity_1",
+            "to_id": "entity_2",
+            "type": "relation",
+            "labels": [
+              "DECREASES_BY"
+            ],
+            "direction": "right"
+          }
+        ]
+      }
+    ]
+  }
+]

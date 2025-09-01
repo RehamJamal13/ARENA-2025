@@ -1,0 +1,38 @@
+{
+  "total_sentences": 10,
+  "successful_extractions": 10,
+  "failed_extractions": 0,
+  "quality_metrics": {
+    "average_quality": 0.16499999999999998,
+    "median_quality": 0.15833333333333333,
+    "std_quality": 0.0521149903791819,
+    "min_quality": 0.08333333333333333,
+    "max_quality": 0.25
+  },
+  "entity_metrics": {
+    "average_entities": 6.1,
+    "median_entities": 6.0,
+    "total_entities_discovered": 8,
+    "sentences_with_discovery": 6
+  },
+  "relation_metrics": {
+    "average_relations": 0.0,
+    "median_relations": 0.0,
+    "total_relations": 0
+  },
+  "context_metrics": {
+    "average_context_utilization": 0.0,
+    "high_context_utilization": 0
+  },
+  "discovery_methods": {
+    "context_lulc": 36,
+    "context_temporal": 6,
+    "context_process": 24
+  },
+  "configuration": {
+    "entity_recovery_enabled": true,
+    "context_validation_enabled": true,
+    "max_iterations": 3,
+    "min_confidence_threshold": 0.5
+  }
+}

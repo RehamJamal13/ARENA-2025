@@ -1,0 +1,34 @@
+
+=== Joint Entity & Relation Extraction Summary ===
+Date: 2025-07-09 09:56:54
+Model: mistralai/Mistral-7B-Instruct-v0.2
+
+Sentences processed: 5
+Sentences with entities: 3
+Sentences with relations: 3
+
+Total entities extracted: 20
+Total relations extracted: 13
+
+Entity types distribution:
+  - LULC: 3
+  - PROCESS: 3
+  - DATE: 2
+  - LOC: 2
+  - CARDINAL: 2
+  - INDEX: 2
+  - EVENT: 1
+  - QUANTITY: 1
+  - CHANGE: 1
+  - PERIODIC_VERB: 1
+  - VERB: 1
+  - OR: 1
+
+Relation types distribution:
+  - CAUSES: 5
+  - OCCURS_DURING: 2
+  - LOCATED_IN: 2
+  - ENABLES: 1
+  - MEASURES: 1
+  - AFFECTS: 1
+  - FROM_TO: 1

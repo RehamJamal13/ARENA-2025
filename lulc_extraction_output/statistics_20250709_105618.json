@@ -1,0 +1,26 @@
+{
+  "total_sentences_processed": 20,
+  "sentences_with_entities": 8,
+  "sentences_with_relations": 13,
+  "total_entities_extracted": 65,
+  "total_relations_extracted": 46,
+  "entity_types": {
+    "DATE": 6,
+    "LOC": 4,
+    "QUANTITY": 7,
+    "LULC": 19,
+    "PROCESS": 10,
+    "CARDINAL": 4,
+    "CHANGE": 5,
+    "PERCENT": 10
+  },
+  "relation_types": {
+    "LOCATED_IN": 7,
+    "CAUSES": 13,
+    "INCREASES_BY": 2,
+    "CHANGE_TO": 5,
+    "DECREASES_BY": 10,
+    "OCCURS_DURING": 6,
+    "AFFECTS": 3
+  }
+}

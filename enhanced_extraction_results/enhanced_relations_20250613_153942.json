@@ -1,0 +1,472 @@
+[
+  {
+    "id": "unknown",
+    "sentence": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.",
+    "entities": [
+      {
+        "text": "results",
+        "label": "CHANGE",
+        "start_char": 11,
+        "end_char": 18
+      },
+      {
+        "text": "Thimphu",
+        "label": "LOC",
+        "start_char": 48,
+        "end_char": 55
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 56,
+        "end_char": 60
+      },
+      {
+        "text": "changed",
+        "label": "CHANGE",
+        "start_char": 65,
+        "end_char": 72
+      },
+      {
+        "text": "change",
+        "label": "CHANGE",
+        "start_char": 118,
+        "end_char": 124
+      },
+      {
+        "text": "2050",
+        "label": "DATE",
+        "start_char": 161,
+        "end_char": 165
+      }
+    ],
+    "relations": [],
+    "quality_score": 0.1875
+  },
+  {
+    "id": "unknown",
+    "sentence": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",
+    "entities": [
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start_char": 33,
+        "end_char": 41
+      },
+      {
+        "text": "12.77%",
+        "label": "PERCENT",
+        "start_char": 43,
+        "end_char": 49
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 73,
+        "end_char": 77
+      },
+      {
+        "text": "52.88%",
+        "label": "PERCENT",
+        "start_char": 79,
+        "end_char": 85
+      },
+      {
+        "text": "2018",
+        "label": "DATE",
+        "start_char": 90,
+        "end_char": 94
+      },
+      {
+        "text": "65.5%",
+        "label": "PERCENT",
+        "start_char": 96,
+        "end_char": 101
+      },
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start_char": 125,
+        "end_char": 133
+      },
+      {
+        "text": "built",
+        "label": "LULC",
+        "confidence": "MEDIUM",
+        "discovery_method": "context_lulc",
+        "start_char": -1,
+        "end_char": -1,
+        "discovered": true
+      }
+    ],
+    "relations": [],
+    "quality_score": 0.125
+  },
+  {
+    "id": "unknown",
+    "sentence": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",
+    "entities": [
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 17,
+        "end_char": 23
+      },
+      {
+        "text": "declined",
+        "label": "CHANGE",
+        "start_char": 30,
+        "end_char": 38
+      },
+      {
+        "text": "15.25%",
+        "label": "PERCENT",
+        "start_char": 52,
+        "end_char": 58
+      },
+      {
+        "text": "agriculture",
+        "label": "LULC",
+        "start_char": 72,
+        "end_char": 83
+      },
+      {
+        "text": "1.01%",
+        "label": "PERCENT",
+        "start_char": 85,
+        "end_char": 90
+      },
+      {
+        "text": "forest cover",
+        "label": "LULC",
+        "confidence": "MEDIUM",
+        "discovery_method": "context_lulc",
+        "start_char": -1,
+        "end_char": -1,
+        "discovered": true
+      }
+    ],
+    "relations": [],
+    "quality_score": 0.16666666666666666
+  },
+  {
+    "id": "unknown",
+    "sentence": "Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.",
+    "entities": [
+      {
+        "text": "growth",
+        "label": "CHANGE",
+        "start_char": 17,
+        "end_char": 23
+      },
+      {
+        "text": "urban",
+        "label": "LULC",
+        "start_char": 43,
+        "end_char": 48
+      },
+      {
+        "text": "drivers",
+        "label": "CHANGE",
+        "start_char": 133,
+        "end_char": 140
+      },
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 150,
+        "end_char": 157
+      },
+      {
+        "text": "development",
+        "label": "PROCESS",
+        "confidence": "MEDIUM",
+        "discovery_method": "context_process",
+        "start_char": -1,
+        "end_char": -1,
+        "discovered": true
+      }
+    ],
+    "relations": [],
+    "quality_score": 0.1875
+  },
+  {
+    "id": "unknown",
+    "sentence": "Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",
+    "entities": [
+      {
+        "text": "the year",
+        "label": "DATE",
+        "start_char": 62,
+        "end_char": 70
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 131,
+        "end_char": 135
+      },
+      {
+        "text": "73.21%",
+        "label": "PERCENT",
+        "start_char": 142,
+        "end_char": 148
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 155,
+        "end_char": 161
+      },
+      {
+        "text": "only about 16%",
+        "label": "PERCENT",
+        "start_char": 205,
+        "end_char": 219
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 227,
+        "end_char": 231
+      },
+      {
+        "text": "built",
+        "label": "LULC",
+        "confidence": "MEDIUM",
+        "discovery_method": "context_lulc",
+        "start_char": -1,
+        "end_char": -1,
+        "discovered": true
+      },
+      {
+        "text": "city area",
+        "label": "LULC",
+        "confidence": "MEDIUM",
+        "discovery_method": "context_lulc",
+        "start_char": -1,
+        "end_char": -1,
+        "discovered": true
+      },
+      {
+        "text": "2050",
+        "label": "TEMPORAL",
+        "confidence": "HIGH",
+        "discovery_method": "context_temporal",
+        "start_char": -1,
+        "end_char": -1,
+        "discovered": true
+      }
+    ],
+    "relations": [],
+    "quality_score": 0.25
+  },
+  {
+    "id": "unknown",
+    "sentence": "Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.",
+    "entities": [
+      {
+        "text": "some 13",
+        "label": "CARDINAL",
+        "start_char": 73,
+        "end_char": 80
+      },
+      {
+        "text": "agricultural",
+        "label": "LULC",
+        "confidence": "MEDIUM",
+        "discovery_method": "context_lulc",
+        "start_char": -1,
+        "end_char": -1,
+        "discovered": true
+      }
+    ],
+    "relations": [],
+    "quality_score": 0.08333333333333333
+  },
+  {
+    "id": "unknown",
+    "sentence": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",
+    "entities": [
+      {
+        "text": "Expansion",
+        "label": "CHANGE",
+        "start_char": 0,
+        "end_char": 9
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 21,
+        "end_char": 25
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 29,
+        "end_char": 33
+      },
+      {
+        "text": "Lanjophaka",
+        "label": "LOC",
+        "start_char": 55,
+        "end_char": 65
+      },
+      {
+        "text": "Taba",
+        "label": "LOC",
+        "start_char": 99,
+        "end_char": 103
+      },
+      {
+        "text": "Dechencholing",
+        "label": "LOC",
+        "start_char": 108,
+        "end_char": 121
+      },
+      {
+        "text": "Changjiji",
+        "label": "LOC",
+        "start_char": 139,
+        "end_char": 148
+      },
+      {
+        "text": "Lungtenphu",
+        "label": "LOC",
+        "start_char": 150,
+        "end_char": 160
+      }
+    ],
+    "relations": [],
+    "quality_score": 0.25
+  },
+  {
+    "id": "unknown",
+    "sentence": "The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",
+    "entities": [
+      {
+        "text": "2002-2018",
+        "label": "COORDINATES",
+        "start_char": 12,
+        "end_char": 21
+      },
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start_char": 41,
+        "end_char": 50
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 58,
+        "end_char": 62
+      },
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 140,
+        "end_char": 147
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 155,
+        "end_char": 159
+      },
+      {
+        "text": "development",
+        "label": "PROCESS",
+        "confidence": "MEDIUM",
+        "discovery_method": "context_process",
+        "start_char": -1,
+        "end_char": -1,
+        "discovered": true
+      }
+    ],
+    "relations": [],
+    "quality_score": 0.15
+  },
+  {
+    "id": "unknown",
+    "sentence": "These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.",
+    "entities": [
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 17,
+        "end_char": 24
+      },
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start_char": 75,
+        "end_char": 84
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 92,
+        "end_char": 96
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 100,
+        "end_char": 104
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 147,
+        "end_char": 151
+      },
+      {
+        "text": "Bhutan",
+        "label": "LOC",
+        "start_char": 172,
+        "end_char": 178
+      },
+      {
+        "text": "transition",
+        "label": "CHANGE",
+        "start_char": 181,
+        "end_char": 191
+      },
+      {
+        "text": "2008",
+        "label": "DATE",
+        "start_char": 208,
+        "end_char": 212
+      }
+    ],
+    "relations": [],
+    "quality_score": 0.125
+  },
+  {
+    "id": "unknown",
+    "sentence": "The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.",
+    "entities": [
+      {
+        "text": "cities",
+        "label": "LULC",
+        "start_char": 161,
+        "end_char": 167
+      },
+      {
+        "text": "causing",
+        "label": "CHANGE",
+        "start_char": 169,
+        "end_char": 176
+      },
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 251,
+        "end_char": 258
+      }
+    ],
+    "relations": [],
+    "quality_score": 0.125
+  }
+]

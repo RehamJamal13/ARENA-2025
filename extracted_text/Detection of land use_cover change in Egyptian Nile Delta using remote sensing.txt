@@ -1,0 +1,148 @@
+================================================================================
+TITLE: Detection of land use/cover change in Egyptian Nile Delta using remote sensing
+================================================================================
+
+AUTHORS:
+- M Elagouz
+- S Abou-Shleel
+- A Belal
+- M El-Mohandes
+
+ABSTRACT:
+The present study aims to assess the changes of different land use/land cover classes for Nile Delta of Egypt during the period from 1987 to 2015, to evaluate the impact of land cover change and urban sprawl, before, during and after the 25th of January 2011 using remote sensing and GIS techniques, as a result to unplanned urban sprawl which was done by people during the lack of general security of Egyptian revolution. The results indicated that there was a regular trend characterized in most classes and that the change in different land use/land cover classes ranged between increase and decrease areas. A continuous increase in agricultural, urban, fish farms and natural vegetation areas and a continuous decrease in water bodies and sand areas were detected in the studied area. The agricultural area recorded the highest increase during the period from 1987 to 2000 (305296.1 ha.) while it increased by 170578.1 ha., during the period from 2000 to 2015. However, in urban area, the highest increase was recorded during the period from 2000 to 2015 followed by the period 1987-2000 with mean values of 97940.8 and 53112.6 ha., respectively. The analysis of the results showed that most of Egyptian Delta governorates have been significantly affected by the different classes of land use/land cover change due to agriculture activities, urban growth as a result of human activities dynamic impact.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Egyptian Nile Delta is one of the oldest agricultural areas in the world as it is under continuous cultivation since thousands of years. The estimated cultivated area in the Delta was 1,828,840 ha. that representing 63.0% of Egyptian cultivated area 
+However, the inventory of cultivated area which conducted by traditional surveying methods is become difficult and inaccurate way due to urban encroachment on cultivated land 
+Remote sensing is very successful tools in agricultural field where digital data availability, for two decades minimum, in multiple wavebands of the spectrum and their large ground coverage makes it superior to field-based study 
+The present investigation aimed to assess the changes of land use/cover classes in Egyptian Nile Delta feature classes using remote sensing data in order to determine type as well as the conversion rate among different land use/land cover types in the studied area.
+
+## Materials and methods ##
+
+
+## Study area ##
+The Nile Delta is formed in Northern Egypt where the Nile River spreads out and drains into the Mediterranean Sea 
+
+## Data collection ##
+Three different types of Landsat images (Landsat 5 TM, Landsat 7 ETM+, and Landsat 8 OLI TIRS) were obtained from the USGS earth explorer website. Landsat 5 TM images, consist of seven spectral bands with wavelengths of 0.45 lm to 2.35 lm and the spatial resolution of 30 m for Bands 1 to 5 and 7, meanwhile spatial resolution for band 6 (thermal infrared) is 120 m. Landsat 7 ETM+, consist of eight bands with wavelengths of 0.45 lm to 2.35 lm and spatial resolution for bands 1,2,3,4,5,7 are 30 but bands 6 and 8 are 60 and15m respectively. Landsat 8 OLI TIRS, consists of eleven bands with a spatial resolution of 30 m for Bands 1-7, and 9 have a spatial resolution of 30 m, bands 10 and 11(thermal bands) (TIRS) has 100 m, meanwhile band 8 (panchromatic) has spatial resolution of 15 m. To achieve the study objectives three different dates for the images were used 14/7/1987, 11/7/2000 and 5/7/2015, respectively.
+
+## Image preprocessing ##
+Digital image preprocessing was manipulated by the used software. The scenes were selected to be geometrically corrected by using EVNVI 5.1 software, calibrated and removed from their dropouts. After that, the atmospheric correction was done for visible, near-infrared and shortwave infrared data in all different types of Landsat images. Atmospheric analysis of subtraction method (dark-object) model was used to correct the atmosphere effect on reflected data according to 
+
+## Image processing ##
+Image processing was carried out using ENVI 5.1 software. An unsupervised classification was performed using the iterative self-organizing data analysis (ISODATA) algorithms in order to identify the classes that could be found in the study area, ISODATA unsupervised classification calculates class means evenly distributed in the data space then iteratively clusters the remaining pixels using minimum distance techniques. The supervised classification was conducted based on the support vector machine technique by selected sigmoid model in ENVI 5.1 software according to 
+
+## Post classification change detection ##
+Comparison change detection was done after classifying the rectified images separately from three time periods 
+
+## Statistical analysis ##
+The significance of determined differences between calculated means values was done using ''SPSS software ver. 20" according to 
+
+## Results and discussion ##
+
+
+## Land use/land cover change detection in Nile Delta ##
+The obtained classified images, after pre-processing and supervised classification indicated the different land use and land cover patterns in the studied area (Fig. 
+As for agriculture activities the cultivated areas were significantly increased continuously during the period from 1987 to 2015 where the recorded rate of changes was 16.5% and 7.9% during 
+Concerning urban area, the year of 2015 recorded the highest value followed by the year of 2000 and 1987. The rate of urban ration was increased in the period 1987-2000 by 34.8% from the study area, while increased in the period 2000-2015 by 47.6%. The total change rate in the period from 1987 to 2015 by 99.0% (Table 
+The opposite trend was observed with water bodies' where the largest area was detected in the year 1987 and decreased the years in 2000 and 2015. The change detection results showed a decrease in waterlogged areas as the decrease rate was À15.2% in 1987-2000 and in the next period 2000-2015 the rate of decrease in the overall area reached À14.4%. The total change for the period from 1987 to 2015 was À57698.3 ha. with a rate of decrease by À27.4%.
+Regarding fish farms, the largest number was recorded in the year 2015 while the numbers were lower in 2000 and 1987. It was observed that the change in fish farms area increased by 71745.0 ha during the period 1987-2000, with a rate of 145.9%, while it increased by 59475.6 ha during the period 2000-2015, with a rate of 49.2%. The total change during the period from 1987 to 2015 was 131220.6 ha. recording increasing rate of 266.8%.
+Concerning the natural vegetation area, the results indicated that the year of 2015 recorded the largest area followed by the years 2000 and 1987. The results of change detection showed that the natural vegetation area was increased during the period 1987-2000 where the increasing rate was 21.6% while it increased by 3.4% during the period 2000-2015. The total change for the period from 1987 to 2015was 13165.7 ha. with increasing rate 25.8%.
+As for the sabkha, a continuous decrease was detected from 1987 to 2015. The decreasing rate recorded À39.1%, and À34.9% for the periods from 1987 to 2000 and from 2000 to 2015, respectively, with a total change rate of À60.3% for the whole period from 1987 to 2015.
+Salts and bare soils exhibited different patterns of change. As for salts, the area was decreased in 2000 compared to the area in 1987 with change rate of À34.7% whereas it increased in 2015 compared to 2000 recording change rate 1.1%. However, Salts area in 2015 remained lower compared to that in 1987. The total rate of change during the period from 1987 to 2015 was À34.0%. As for bare soils, the area was decreased in 2000 compared to 1987 with change rate of À13.4%. In 2015 the bare soils area was increased compared to the area in 2000 and 1987. The recorded change rate was 60.4% during the period from 2000 to 2015 whereas the total change rate during the whole period of study was 38.8%. The sand area followed the same change pattern that was recorded for both water bodies and sabkha area where it decreased continuously from 1987 to 2015 and recorded a total change rate of À36.4%.
+These results could be attributed to the evaporation due to high temperature besides converting some water bodies to agricultural lands and fish farms decreased the overall area of water bodies. Regard with to fish farms, this increase that occurred could be referred to the intensive reclamation of sabkha areas and converting these sabkha to fish farming activities. As for the sabkha, these results could be mainly due to the agricultural expansion and increased urban, which occurred during this period. Concerning with salts, this is due to converting some salts to agricultural lands and, increased urban and increased fish farms. Regarding with sand, this is due to the continuous human activities in the studied area which grow towards reclamation of more agricultural lands and increased urban. These results are in agreement with those obtained by 
+
+## Change detection in Nile Delta governorates during the period of 1987 up to 2015 ##
+This part monitors the land use/land cover change in the Nile Delta governorates during the study period from  by using change detection analysis, has been done for agriculture, urban, water bodies and sand feature classes through three periods; the first period from 1987 to 2000, the second from 2000 to 2015 and the third period was for the overall period from 1987 to 2015. As for changes in agricultural area, the eleven Nile Delta governorates showed three different patterns. The first pattern included six governorates (Sharkia, Monofiya, Ismailia, Kafr El-Sheikh, El-Behera and Alexandria) where the cultivated area recorded continuous increase from 1987 to 2015. In these governorates, the cultivated area represented 66.0, 72.0 and 74.0% of the total area cultivated in 1987, 2000 and 2015, respectively. The change percent recorded 24.5% and 12.4% for the periods from 1987 to 2000 and 2000 to 2015, respectively (Table 
+As for the second human activity, urban sprawl, it is clear that the urban area was increased in all Delta governorates through the overall period of study (Table 
+
+## Governorates ##
+Total agriculture area (ha.) Change area (ha.)
+area of urban sprawl detected through 1987-2015 was in Port Said represented 129.1 and 370.9%, respectively. However, change percent of urban sprawl followed a same trend in all over Delta governorates in the both studied periods 
+Water bodies were increased by 3.2% and 1.9% of the total area in five of eleven detected governorates through 
+Finally, sand area was decreased in all Delta governorate (Table 
+
+## Governorates ##
+Total area Urban (ha.) Change area (ha.)
+highest sand area was detected at El-Behera whereas the smallest area was detected at Gharbia. The change in sand area from 1987 to 2000 was highs compared to other governorates. This may be due mainly to the increase of agricultural land and the reclamation of more land in addition to the increase of urban sprawl.
+
+## Conclusion ##
+It could be concluded that satellite data is a good and quick technique to monitor the changes in land use/land cover with low cost comparing to conventional surveying methods. The analysis of the results also showed that most of Egyptian Delta governorates have been significantly affected by the different categories of land cover such as agriculture, urban, water bodies and sand areas. Finally, this study showed that the study area has undergone a very severe land use/land cove change as a result of urban sprawl, the problem that need to be seriously studied, through multidimensional fields including socioeconomic, in order to preserve the precious and limited agricultural land and increase food production. Also, It is recommended that continuous remote sensing images collection, analysis interpretation and updating of images concerning urbanization in the Nile Delta is required to monitor the developments for quick response in decision making by appropriate authorities.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Table 1 Change rate of different land use/land cover classes in the studied area during the period from 1987 to 2015
+   Date: 1987-2000 2000-2015 1987-2015 1987 2000 2015
+
+2. Change area
+   Authors: , 
+   Date: 1987 2000 2015 1987-2000 2000-2015 1987-2015 from 1987 to 2015
+
+3. Change area
+   Date: 1987 2000 2015 1987-2000 2000-2015 1987-2015 from 1987 to 2015
+
+4. Image-based atmospheric correction revised and improved
+   Authors: 
+   Date: 1996
+
+5. Integration of SPOT-5 and ETM+ images to Detect Land Cover Change in Urban Environment
+   Authors: , , , , 
+   Date: 2005
+
+6. Change detection of the coastal zone east of the Nile Delta using remote sensing
+   Authors: , 
+   Date: 2010
+
+7. The uncertain future of the Nile Delta
+   Authors: , , 
+   Date: 2016
+
+8. Monitoring urban growth and land use change detection with GIS and remote sensing techniques in Dakahliea governorate Egypt
+   Authors: , 
+   Date: 2015
+
+9. Monitoring agricultural land degradation in Egypt using MODIS NDVI satellite images
+   Authors: , , 
+   Date: 2014
+
+10. Modelling and monitoring land cover change processes in tropical regions
+   Authors: 
+   Date: 1997
+
+11. 
+   Authors: 
+   Date: 1987-2015
+
+12. Assessment of urban sprawl impact on the agricultural land in the Nile Delta of Egypt using remote sensing and digital soil map
+   Authors: 
+   Date: 2012
+
+13. Agricultural land monitoring in Egypt using NOAA-AVHRR and SPOT vegetation data
+   Authors: , 
+   Date: 2010
+
+14. Remote sensing and GIS for mapping and monitoring land cover and land-use changes in the Northwestern coastal zone of Egypt
+   Authors: , 
+   Date: 2007
+
+15. Data classification using support vector machine
+   Authors: , 
+   Date: 2009
+
+16. Principles and Procedures of Statistics
+   Authors: , 
+   Date: 1980
+
+17. The emergence of land change science for global environmental change and sustainability
+   Authors: , , 
+   Date: 2007
+
+18. Land use change analysis in the Zhujiang Delta of China using satellite remote sensing, GIS and stochastic modelling
+   Authors: 
+   Date: 2001
+

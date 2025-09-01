@@ -1,0 +1,18 @@
+{
+  "article_id": "4",
+  "original_sentence": "Land cover analysis in the Sahel areas showed decreasing forest cover.",
+  "entities": [
+    {
+      "text": "Sahel areas",
+      "label": "LOC",
+      "start_char": 27,
+      "end_char": 38
+    },
+    {
+      "text": "forest",
+      "label": "LULC",
+      "start_char": 57,
+      "end_char": 63
+    }
+  ]
+}

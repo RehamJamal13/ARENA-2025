@@ -1,0 +1,38 @@
+GRAMMAR-AWARE LULC RELATION EXTRACTION SUMMARY REPORT
+============================================================
+
+Generated: 2025-06-17 15:08:09
+
+OVERALL STATISTICS:
+--------------------
+Total sentences processed: 10
+Successfully processed: 10
+Success rate: 100.0%
+
+ENTITY ANALYSIS:
+---------------
+Average original entities per sentence: 5.30
+Average enhanced entities per sentence: 11.40
+Average entities discovered per sentence: 6.10
+Average grammatical roles found: 10.10
+Total entities discovered: 61
+
+RELATION ANALYSIS:
+-----------------
+Average relations extracted per sentence: 3.60
+Average relations accepted per sentence: 3.60
+Average relation quality score: 0.360
+Total relations extracted: 36
+Total relations accepted: 36
+Acceptance rate: 100.0%
+
+GRAMMAR ANALYSIS:
+----------------
+Average clauses per sentence: 2.00
+Sentence complexity distribution:
+  complex: 3 (30.0%)
+  simple: 4 (40.0%)
+  compound: 3 (30.0%)
+Sentence type distribution:
+  declarative: 8 (80.0%)
+  unknown: 2 (20.0%)

@@ -1,0 +1,6 @@
+Title: Land Cover Change Detection Techniques
+
+Abstract: 2 0274-6638/21©2021IEEE IEEE GEOSCIENCE AND REMOTE SENSING MAGAZINE MONTH 2021
+L and cover change detection (LCCD) with remote sens- ing images is an important application of Earth observation data because it provides insights into environmental health, global warming, and city management. In particular, very-high-resolution (VHR) remote sensing images can capture details of a ground object and offer an opportunity to detect land cover changes in detail.
+However, VHR images usually have high spatial resolution but contain limited spectral information. Therefore, LCCD with VHR optimal images performs poorly because of high intraclass variation and low interclass variance. In the past decades, various approaches have been promoted to smoothen noise, reduce pseudochanges, and preserve the details of detection maps with VHR images.
+In this article, we first present an overview of the main issues in terms of algorithms, applications, and referred characteristics to promote a comprehensive and general understanding of the development of LCCD with VHR remote sensing images. Several key methodologies are compared with three pairs of real VHR optimal images. Finally, we discuss future challenges and opportunities in applying VHR remote sensing images in LCCD.

@@ -1,0 +1,733 @@
+================================================================================
+TITLE: Land Cover Change Detection Techniques
+================================================================================
+
+AUTHORS:
+
+
+ABSTRACT:
+2 0274-6638/21©2021IEEE IEEE GEOSCIENCE AND REMOTE SENSING MAGAZINE MONTH 2021
+L and cover change detection (LCCD) with remote sens- ing images is an important application of Earth observation data because it provides insights into environmental health, global warming, and city management. In particular, very-high-resolution (VHR) remote sensing images can capture details of a ground object and offer an opportunity to detect land cover changes in detail.
+However, VHR images usually have high spatial resolution but contain limited spectral information. Therefore, LCCD with VHR optimal images performs poorly because of high intraclass variation and low interclass variance. In the past decades, various approaches have been promoted to smoothen noise, reduce pseudochanges, and preserve the details of detection maps with VHR images.
+In this article, we first present an overview of the main issues in terms of algorithms, applications, and referred characteristics to promote a comprehensive and general understanding of the development of LCCD with VHR remote sensing images. Several key methodologies are compared with three pairs of real VHR optimal images. Finally, we discuss future challenges and opportunities in applying VHR remote sensing images in LCCD.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## VHR IMAGE ##
+Numerous remote sensing platforms, such as QuickBird, GeoEye, Worldview, and unmanned aerial vehicles (UAVs), can capture ground details with VHR, given the considerable progress in remote sensing technology 
+However, many studies have demonstrated that high resolution does not automatically mean high detection accuracy in practical applications because of the following reasons: ◗ VHR images usually have a higher intraclass variation than low-or medium-resolution images, resulting in decreased separability between different entities, such as roads and buildings 
+Figure 
+A VHR image generally has a fine resolution in the spatial domain and a coarse resolution in the spectral domain, but it can describe ground targets in detail in terms of their texture, structure, shape, and size. In recent decades, VHR remote sensing images have been used successfully in many practical applications, such as land cover classification 
+
+## METHODOLOGY ##
+Some rules must be defined to retrieve articles on LCCD using VHR remote sensing optical images from a database. In this study, several constraints were defined and applied to achieve the objective: ◗ All of the articles are indexed from the Web of Science (WoS) Core Collection database and were published from 2001 to 2019. ◗ The article titles should contain "very high resolution" or "VHR" and "change detection." "Bitemporal images" or "remote sensing images" were used to refine the search results. ◗ If "object" and "change detection" were included in an article's title, then the article would be selected for analysis because object-based techniques are generally employed for processing VHR images 
+Based on these criteria, 356 articles were selected after applying the constraints and excluding rules. Moreover, the total number of published articles on LCCD with VHR remote sensing images in each year increased from 2001 to 2019 (Figure 
+
+## REVIEW OF THE MAJOR TECHNIQUES OF LCCD WITH VHR OPTICAL IMAGES ##
+
+
+## IMAGE PREPROCESSING IN LCCD ##
+LCCD usually refers to bitemporal or multitemporal images. Thus, preprocessing is required to reduce pseudochanges caused by geometry position errors and spectral reflectance phenological differences. Here, the two widely employed preprocessing steps for change detection are analyzed as follows.
+In LCCD with VHR images, geometric coregistration between bitemporal images in terms of a geographical position is an important preprocessing task because misregistration will bring noise to the detection map 
+Han et al. 
+However, coregistration between bitemporal images depends on the data preprocessing level. In general, ground control points (GCPs) are needed to achieve the coregistration, and GCPs are usually collected by data providers 
+In addition to the preprocessing of coregistration, radiometric cocorrection between bitemporal images is required to reduce pseudochanges in LCCD 
+To solve this problem, scholars have developed many methods, such as radiometric normalization 
+
+## EXPLORATION OF NEIGHBORING CONTEXT ##
+A number of studies have demonstrated that utilizing spatial contextual information can help improve the detection performance of LCCD with VHR optimal images 
+
+## REGULAR NEIGHBORING CONTEXT ##
+similarity 
+In addition, regular structural elements coupled with morphological operations are widely used to extract neighboring contextual features in LCCD 
+In recent years, many deep learning LCCD frameworks have been developed by dividing image pairs into regular blocks to utilize contextual information, based on such approaches as the convolutional neural network (CNN) 
+In addition to constructing a regular geometry around a central pixel to explore neighboring contextual information, mathematical models are widely used to obtain invariant features around a central pixel and measure the change magnitude between pairwise images. Some examples of such mathematical models are Markov random field (MRF) 
+
+## MULTISCALE NEIGHBORING CONTEXT ##
+Multiscale techniques can be used to obtain neighboring contextual information around a pixel in bitemporal VHR images (Table 
+In recent decades, many object-based methods have been developed for LCCD with VHR images. For example, object-level features were extracted to detect land cover change 
+Object-based uncertainty analyses were also used in other studies 
+Furthermore, the parameter setting of many multiscale segmentation algorithms is dependent on the user's experience 
+Second, multiscale deep learning networks are popular when LCCD is applied on VHR images. These networks include the multiscale CNN 
+Other multiscale techniques applicable to LCCD are the multiscale hierarchy LCCD framework 
+
+## ADAPTIVE NEIGHBORING CONTEXT ##
+Adaptive neighboring context is another LCCD branch used to cover the various shapes and sizes of ground targets in a scene (Table 
+Many adaptive-scale-based LCCD methods have been developed in the past decades. These include methods based on the adaptive window size 
+Therefore, the influence of neighboring pixels on the central pixel varies with the spectral reflection of the ground target itself. One advantage of adaptive-scale LCCD methods lies in maintaining the shape of ground targets, improving the homogeneity, and preserving the details of the change area. However, the parameter tuning of adaptivescale methods is generally required in practical application.
+
+## OTHER METHODS FROM COMPUTER VISION ##
+In addition to the mentioned LCCD methods, computer vision techniques, such as the binary descriptors algorithms 
+Many widely used computer vision techniques, such as line feature extraction 
+
+## RESULTS OF THE LCCD AND PERFORMANCE ASSESSMENT ##
+Two kinds of change detection maps exist in practical applications. The first major type is called the binary change detection map, and it can only describe the shape, size, and distribution of land cover change. The other is called the multitask change detection map 
+In addition to multitask change detection methods, "from-to" change information can be acquired through the feature analysis of ground targets. For example, Wen et al. 
+Binary change detection is the most widely used in the family of LCCD with VHR optical images. In addition, one advantage of postclassification-based LCCD methods is their ability to provide "from-to" change information. However, the detection accuracy and performance depends on the classification performance, and the large intraclass variations in VHR images led to difficulty in distinguishing among different classes 
+In summary, accuracy assessment is a quantitative measurement to compare and test the performance of an algorithm. Intuitively, this quantitative measurement is achieved by comparing the result of an algorithm with the corresponding ground truth map (GTM). After the indicators employed in the literature were reviewed 
+By analyzing the definition of each formula, it can be observed that different indicators have an unequal bias for evaluation, and the performance of a specific algorithm may be better or worse than the one of other methods, depending on the indicator. In numerous practical applications and performance assessments of algorithms, three of the nine indicators are usually selected to assess the performance of an algorithm (i.e., FA, MA, and Ka were adopted in 
+
+## EXPERIMENTS ##
+To investigate the performance of LCCD approaches in comparison with VHR optical images, this section compares eight widely used approaches, including three unsupervised methods (CVA_MRF 
+The performance of each algorithm was evaluated by using the nine indicators described in Table 
+
+## DISCUSSION ##
+To obtain an overview of the development of LCCD with VHR optical images, we statistically analyzed the articles referred to. In accordance with the perspective and focus of these articles, we discussed LCCD with VHR optical images from the following viewpoints: technology, application, data sets, and accuracy assessment. The details of this quantitative analysis are presented in the following sections.
+
+## TECHNIQUES ##
+As mentioned in the previous section, here, we dichotomized the major LCCD methods into four groups in terms of different manners of utilizing spatial contextual information: regular neighboring context 
+Moreover, the optimal parameter's setting of an adaptive context exploration algorithm for a specific data set remains a challenge 
+
+## Missing alarm (MA) MA TP FN FN = + ##
+The ratio between the number of pixels that are identified as "unchanged" but are changed in the GTM and the number of pixels that are changed in the GTM.
+
+## Total error (TE) TE TP TN FP FN TP TN ##
+The ratio between the number of pixels that are identified as "unchanged" but are changed in the GTM and the number of pixels that are changed in the GTM.
+Overall accuracy (OA) OA TP TN FP FN TP TN = + + +
+
+## + ##
+The ratio between the number of correctly detected pixels in the result and the total number of the GTM. 
+The AA is for two ratios: one is the ratio between the true changed pixel in the results and the changed pixel in the GTM, and the other is the ratio between the true unchanged pixel in the results and the unchanged pixels in the GTM.
+
+## Completeness (CP) CP TP FN TP = + ##
+The ratio between the number of changed pixels that are correctly identified and the number of the pixels that are changed in the GTM.
+
+## Correctness (CR) CR TP FP TP = + ##
+The ratio between the number of changed pixels that are correctly identified and the total number of changed pixels in the result.
+The ratio between the number of changed pixels that are correctly identified and the number of total changed pixels in the results and GTM. Based on these observations, 92 study areas were located in the urban region, accounting for 30% of the total quantity. In addition, building change detection played an important role in change detection with VHR optical images, accounting for 23.8% of the 307 applications in the 356 articles. However, the application of such methods to disaster change detection, such as earthquake and landslide inventory mapping, has not gained sufficient attention, probably because of the difficulty of acquiring pre-and postevent images for natural disaster events. Furthermore, coregistration between bitemporal images becomes challenging because land cover disasters, such as landslides and earthquakes, usually result in the deformation of ground elevation.
+
+## DATA SETS ##
+Data sets are important in investigating the performance of LCCD algorithms. If an algorithm adapts to more kinds of data sets with different resolutions, then it may have better adaptability and robustness 
+In addition, the size of the study areas mentioned in the articles is reviewed. Area units were measured in square kilometers, and five ranges were divided for quantitative analysis, where S denotes the study area size (Figure 
+That is because, in general, for specific geographical areas, the complexity of spatial certainty increases with an increase in the size of a geographic area 
+
+## ACCURACY ASSESSMENT ##
+The quantitative accuracies of each approach and data set in the experimental section well demonstrated that it is difficult to mark one method as "good" or "bad" in terms of the nine assessment indicators. For example, for data set A, the developed DCVA 
+
+## CHALLENGES AND OPPORTUNITIES OF LCCD WITH VHR IMAGES ##
+Despite the numerous approaches for LCCD with VHR images that have been developed, challenges still exist in practical applications. In this study, these were mentioned from the viewpoint of practitioners, and opportunities were discussed from the perspective of researchers. The details of the challenges and opportunities are presented as follows:
+◗ Radiometric cocorrection requires additional attention: Despite the availability of various LCCD techniques, radiometric cocorrection is required for images used in LCCD.
+The effect of radiometric cocorrection between bitemporal images on the accuracy of change detection maps still requires further investigation. Bitemporal images used in LCCD are usually acquired on different dates, and the process may vary in terms of sun height, atmospheric conditions, and even the phenology season. Thus, a radiometric difference exists between bitempo- (d) KPVD 
+ral images. The radiometric cocorrection of noise should be considered in comprehensive analyses to promote the development of the method and reduce the radiometric difference between bitemporal images in LCCD. ◗ LCCD based on bitemporal images with different resolutions is attractive in practical applications: In the selected 356 articles, only two mentioned different resolutions in LCCD with VHR images 
+
+## CONCLUSION ##
+LCCD with VHR optical images plays an important role in remote sensing. This approach provides an opportunity to discover, describe, and analyze land cover changes on Earth's surface. The rapid development of remote sensing platforms has provided the convenient availability of VHR remote sensing images. VHR optical images have become an important data source for the detection of land cover change. Designing advanced algorithms for these images is necessary to increase the popularity of change detection with VHR images and their potential applications in practical engineering.
+In this article, the problems of LCCD with VHR remote sensing images were reviewed and analyzed in terms of algorithms, data sets, and applications. Challenges and opportunities were then discussed. Our study provides an overview of the available LCCD methods with VHR remote sensing images. Furthermore, the characteristics of the (d) KPVD 
+study areas mentioned in the corresponding methods in the literature, such as data sources and size, were quantitatively analyzed. Results may provide an objective assessment for future investigations.
+In general, many issues, such as implementing an advanced radiometric cocorrection method in the preprocessing of bitemporal images to reduce a radiometric difference, still require further investigation and analysis. Almost all object-based LCCD methods focus on utilizing low-level object-based features of a single object, such as the spectral mean, textural characteristics, and other statistical features. High-level features, such as the topology of an object and its neighbors, should be extensively analyzed in future studies. Furthermore, time series images of an area have become available, and time series change detection and change trend analysis must be considered in LCCD with VHR remote sensing images.    
+
+================================================================================
+REFERENCES:
+================================================================================
+1. The high spatial resolution RS image classification based on SVM method with the multisource data
+   Authors: , , , 
+   Date: 2006
+
+2. Contextually guided very-high-resolution imagery classification with semantic segments
+   Authors: , , , 
+   Date: Oct. 2017
+
+3. Very high resolution multiangle urban classification analysis
+   Authors: , , , , , 
+   Date: 2011
+
+4. An assessment of geometric activity features for per-pixel classification of urban man-made objects using very high resolution satellite imagery
+   Authors: , , , 
+   Date: 2009
+
+5. A neural network approach using multi-scale textural metrics from very highresolution panchromatic imagery for urban land-use classification
+   Authors: , , 
+   Date: 2009
+
+6. An adaptive multiscale information fusion approach for feature extraction and classification of IKONOS multispectral imagery over urban areas
+   Authors: , , 
+   Date: 2007
+
+7. A multiscale feature fusion approach for classification of very high resolution satellite imagery based on wavelet transform
+   Authors: , , 
+   Date: 2008
+
+8. A novel self-organizing neuro-fuzzy multilayered classifier for land cover classification of a VHR image
+   Authors: , , , , 
+   Date: 2008
+
+9. Histogram-based attribute profiles for classification of very high resolution remote sensing images
+   Authors: , 
+   Date: 2015
+
+10. Fast object-level change detection for VHR images
+   Authors: , , , , 
+   Date: 2009
+
+11. A review of remote sensing image classification techniques: The role of spatiocontextual information
+   Authors: , , , , 
+   Date: 2014
+
+12. A review of the effectiveness of spatial information used in urban land cover classification of VHR imagery
+   Authors: , , 
+   Date: 2012
+
+13. Deep feature fusion for VHR remote sensing scene classification
+   Authors: , , , 
+   Date: 2017
+
+14. Scene classification with recurrent attention of VHR remote sensing images
+   Authors: , , , 
+   Date: 2018
+
+15. Effective and efficient midlevel visual elements-oriented land-use classification using VHR remote sensing images
+   Authors: , , , , , 
+   Date: 2015
+
+16. Incorporating generic and specific prior knowledge in a multiscale phase field model for road extraction from VHR images
+   Authors: , , , 
+   Date: 2008
+
+17. Line-constrained shape feature for building change detection in VHR remote sensing imagery
+   Authors: , , , , 
+   Date: 2018
+
+18. Change detection in VHR images based on morphological attribute profiles
+   Authors: , , , , 
+   Date: 2012
+
+19. Advances in geographic object-based image analysis with ontologies: A review of main contributions and limitations from a remote sensing perspective
+   Authors: , , , 
+   Date: Aug. 2013
+
+20. Updating land-cover maps by using texture information from very high-resolution space-borne imagery
+   Authors: , 
+   Date: 1999
+
+21. Urban building damage detection from very high resolution imagery using OCSVM and spatial features
+   Authors: , , 
+   Date: 2010
+
+22. Urban building damage detection from very high resolution imagery by one-class SVM and shadow information
+   Authors: , , 
+
+23. Earthquake damage mapping: An overall assessment of ground surveys and VHR image change detection after L'Aquila 2009 earthquake
+   Authors: 
+   Date: June 2018
+
+24. Registration-noise reduction in difference images for change detection
+   Authors: , , 
+   Date: 1992
+
+25. An approach to fine coregistration between very high resolution multispectral images based on registration noise distribution
+   Authors: , , 
+   Date: 2015
+
+26. A context-sensitive technique robust to registration noise for change detection in VHR multispectral images
+   Authors: , , 
+   Date: 2010
+
+27. Analysis and adaptive estimation of the registration noise distribution in multitemporal VHR images
+   Authors: , , 
+   Date: 2009
+
+28. Edge-based registrationnoise estimation in VHR multitemporal and multisensor images
+   Authors: , , 
+   Date: 2016
+
+29. A toolbox for unsupervised change detection analysis
+   Authors: , , 
+   Date: 2016
+
+30. A multiscale change detection technique robust to registration noise
+   Authors: , , 
+   Date: 2007
+
+31. Fine registration for VHR images based on superpixel registration-noise estimation
+   Authors: , , , , 
+   Date: 2018
+
+32. Semi-automated landslide inventory mapping from bitemporal aerial photographs using change detection and level set method
+   Authors: , , , , 
+   Date: Mar. 2016
+
+33. Change Detection Techniques: A Review
+   Authors: , 
+   Date: 2016
+
+34. A novel framework for the design of change-detection systems for very-high-resolution remote sensing images
+   Authors: , 
+   Date: 2012
+
+35. An unsupervised technique based on morphological filters for change detection in very high resolution images
+   Authors: , , , 
+   Date: 2008
+
+36. Change Detection using Object Features
+   Authors: , , 
+   Date: 2008
+
+37. The research on relative radiometric normalization for change detection of multitemporal images
+   Authors: , , 
+
+38. Unsupervised change detection using fuzzy c-means and MRF from remotely sensed images
+   Authors: , , , 
+   Date: 2013
+
+39. Incorporating metric learning and adversarial network for seasonal invariant change detection
+   Authors: , , , , 
+   Date: 2019
+
+40. Recent advances on spectral-spatial hyperspectral image classification: An overview and new guidelines
+   Authors: , , , 
+   Date: 2017
+
+41. A review of change detection in multitemporal hyperspectral images: Current techniques, applications, and challenges
+   Authors: , , , 
+   Date: 2019
+
+42. Review articledigital change detection methods in ecosystem monitoring: Review
+   Authors: , , , , 
+   Date: 2004
+
+43. Urban tree canopy detection using object-based image analysis for very high resolution satellite images: A literature review
+   Authors: , , 
+   Date: 2015
+
+44. 
+
+45. Change detection in optical aerial images by a multilayer conditional mixed Markov model
+   Authors: , 
+   Date: 2009
+
+46. The time variable in data fusion: A change detection perspective
+   Authors: , 
+   Date: 2015
+
+47. Multilayer Markov random field models for change detection in optical remote sensing images
+   Authors: , , , , 
+   Date: Sept. 2015
+
+48. Spatialspectral feature fusion coupled with multi-scale segmentation voting decision for detecting land cover change with VHR remote sensing images
+   Authors: , , , 
+   Date: 2019
+
+49. Unsupervised change detection of VHR remote sensing images based on multi-resolution Markov random field in wavelet domain
+   Authors: , , , , 
+   Date: 2019
+
+50. Change detection based on conditional random field with region connection constraints in high-resolution remote sensing images
+   Authors: , , , 
+   Date: 2016
+
+51. Change detection based on Gabor wavelet features for very high resolution remote sensing images
+   Authors: , , , 
+   Date: 2017
+
+52. Building change detection after earthquake using multi-criteria decision analysis based on extracted information from high spatial resolution satellite images
+   Authors: , 
+   Date: 2017
+
+53. Robust VHR image change detection based on local features and multi-scale fusion
+   Authors: , , , 
+   Date: 2013
+
+54. Deep Siamese multiscale convolutional network for change detection in multitemporal VHR images
+   Authors: , , , 
+
+55. Object-based change detection method using refined Markov random field
+   Authors: , 
+   Date: 2017
+
+56. Multi-scale object histogram distance for LCCD using bitemporal very-high-resolution remote sensing images
+   Authors: , , , , 
+   Date: 2018
+
+57. Object-based change detection for VHR images based on multiscale uncertainty analysis
+   Authors: , , 
+   Date: 2017
+
+58. Cosegmentation for object-based building change detection from high-resolution remotely sensed images
+   Authors: , , , , 
+   Date: 2017
+
+59. Description and validation of a new set of objectbased temporal geostatistical features for land-use/land-cover change detection
+   Authors: , , , , 
+   Date: Nov. 2016
+
+60. Change detection from remotely sensed images: From pixelbased to object-based approaches
+   Authors: , , , , 
+   Date: June 2013
+
+61. Urban change detection related to earthquakes using an adaptive nonlinear mapping of high-resolution images
+   Authors: , , , , , 
+   Date: 2004
+
+62. An adaptive parcelbased technique robust to registration noise for change detec-tion in multitemporal VHR images
+   Authors: , , 
+   Date: 2007
+
+63. Adaptive window size estimation in unsupervised change detection
+   Authors: , 
+   Date: 2012
+
+64. Novel adaptive histogram trend similarity approach for land cover change detection by using bitemporal very-high-resolution remote sensing images
+   Authors: , , , , , 
+   Date: 2019
+
+65. An approach to multiple change detection in VHR optical images based on iterative clustering and adaptive thresholding
+   Authors: , , 
+   Date: 2019
+
+66. Automatic change analysis in satellite images using binary descriptors and lloyd-max quantization
+   Authors: , 
+   Date: 2015
+
+67. 2d building change detection from high resolution satelliteimagery: A two-step hierarchical method based on 3d invariant primitives
+   Authors: , , , 
+   Date: 2010
+
+68. Fault-tolerant building change detection from urban high-resolution remote sensing imagery
+   Authors: , , 
+   Date: 2013
+
+69. Automatic feature-level change detection (FLCD) for road networks
+   Authors: , , 
+   Date: 2004
+
+70. Local spectrum-trend similarity approach for detecting land-cover change by using spot-5 satellite images
+   Authors: , , 
+   Date: 2013
+
+71. Statistical similarity based change detection for multitemporal remote sensing images
+   Authors: , , 
+   Date: 2017
+
+72. Supervised change detection in VHR images using contextual information and support vector machines
+   Authors: , , , , 
+   Date: Feb. 2013
+
+73. Improving building change detection in vhr remote sensing imagery by combining coarse location and co-segmentation
+   Authors: , , , , 
+   Date: 2018
+
+74. Supervised change detection in VHR images: A comparative analysis
+   Authors: , , , , 
+
+75. Change detection of built-up land: A framework of combining pixel-based detection and object-based recognition
+   Authors: , , , , , 
+   Date: Sept. 2016
+
+76. Parcel-based change detection in land-use maps by adopting the holistic feature
+   Authors: 
+   Date: 2014
+
+77. Sliding window-based probabilistic change detection for remote-sensed images
+   Authors: , 
+   Date: June 2016
+
+78. Multiscale morphological compressed change vector analysis for unsupervised multiple change detection
+   Authors: , , , , , 
+   Date: 2017
+
+79. Study on the capabilities of morphological attribute profiles in change detection on VHR images
+   Authors: , , , , 
+   Date: 2010
+
+80. Building change detection from multitemporal high-resolution remotely sensed images based on a morphological building index
+   Authors: , , 
+   Date: 2014
+
+81. A deep convolutional coupling network for change detection based on heterogeneous optical and radar images
+   Authors: , , , 
+   Date: 2016
+
+82. Automatic change detection in very high resolution images with pulse-coupled neural networks
+   Authors: , 
+   Date: 2010
+
+83. Scene change detection via deep convolution canonical correlation analysis neural network
+   Authors: , , , , 
+
+84. Building instance change detection from large-scale aerial images using convolutional neural networks and simulated samples
+   Authors: , , , 
+   Date: 2019
+
+85. Change detection in multisource VHR images via deep Siamese convolutional multiple-layers recurrent neural network
+   Authors: , , , , 
+   Date: 2019
+
+86. Feature-level change detection using deep representation and feature change analysis for multispectral imagery
+   Authors: , , , , 
+   Date: 2016
+
+87. A conditional adversarial network for change detection in heterogeneous images
+   Authors: , , , 
+   Date: 2019
+
+88. Land cover change detection at subpixel resolution with a Hopfield neural network
+   Authors: , , , 
+   Date: 2015
+
+89. End-to-end change detection for high resolution satellite images using improved UNet plus
+   Authors: , , 
+   Date: 2019
+
+90. Unsupervised deep change vector analysis for multiple-change detection in VHR images
+   Authors: , , 
+   Date: 2019
+
+91. Change detection based on pulse-coupled neural networks and the NMI feature for high spatial resolution remote sensing imagery
+   Authors: , , , 
+   Date: 2014
+
+92. Change detection using high resolution remote sensing images based on active learning and Markov random fields
+   Authors: , , , , 
+
+93. 
+   Date: 2017
+
+94. Conditional mixed-state model for structural change analysis from very high resolution optical images
+   Authors: , , , , 
+   Date: 2009
+
+95. A new change-detection method in high-resolution remote sensing images based on a conditional random field model
+   Authors: , , 
+   Date: 2016
+
+96. Change detection based on a multifeature probabilistic ensemble conditional random field model for high spatial resolution remote sensing imagery
+   Authors: , , , , 
+   Date: 2016
+
+97. Unsupervised change detection based on hybrid conditional random field model for high spatial resolution remote sensing imagery
+   Authors: , , , 
+   Date: 2018
+
+98. Unsupervised change detection with expectation-maximization-based level set
+   Authors: , , , 
+   Date: 2014
+
+99. Automatic change detection in remote sensing images using level set method with neighborhood constraints
+   Authors: , , 
+   Date: 2014
+
+100. Object-based change detection on multiscale fusion for VHR remote sensing images
+   Authors: , , 
+   Date: 2015
+
+101. Improved metric learning with the CNN for very-high-resolution remote sensing image classification
+   Authors: , , , , 
+
+102. 
+   Authors: 
+   Date: 2021
+
+103. Sparse hierarchical clustering for VHR image change detection
+   Authors: , , , , 
+   Date: 2014
+
+104. Object based image analysis for remote sensing
+   Authors: 
+   Date: 2010
+
+105. Geographic object-based image analysis-towards a new paradigm
+   Authors: 
+   Date: Jan. 2014
+
+106. Detecting changes in high-resolution satellite coastal imagery using an image object detection approach
+   Authors: , , , , 
+   Date: 2013
+
+107. Genetic particle swarm optimization based feature selection for very-high-resolution remotely sensed imagery object change detection
+   Authors: , , 
+   Date: 2016
+
+108. An object-based change detection approach using uncertainty analysis for VHR images
+   Authors: , , , , 
+   Date: 2016
+
+109. Objectbased change detection using correlation image analysis and image segmentation
+   Authors: , , 
+   Date: 2008
+
+110. Object-based change detection
+   Authors: , 
+   Date: 2011
+
+111. Stepwise evolution analysis of the region-merging segmentation for scale parameterization
+   Authors: , , , , 
+   Date: 2018
+
+112. Optimizing land cover classification accuracy for change detection, a combined pixel-based and object-based approach in a mountainous area in Mexico
+   Authors: , , 
+   Date: May 2012
+
+113. Change detection in coral reef environment using high-resolution images: Comparison of object-based and pixel-based paradigms
+   Authors: , , , , , 
+   Date: 2018
+
+114. Fuzzy neural network architecture for change detection in remotely sensed imagery
+   Authors: , 
+   Date: 2006
+
+115. End-to-end change detection for high resolution satellite images using improved UNet++
+   Authors: , , 
+   Date: 2019
+
+116. Monitoring land-cover changes: A machine-learning perspec-tive
+   Authors: , , , , 
+   Date: 2016
+
+117. Hierarchical unsupervised change detection in multitemporal hyperspectral images
+   Authors: , , , 
+   Date: 2014
+
+118. A multilevel parcel-based approach to change detection in very high resolution multitemporal images
+   Authors: 
+   Date: 2008
+
+119. Landslide inventory mapping from bitemporal high-resolution remote sensing images using change detection and multiscale segmentation
+   Authors: , , , 
+   Date: 2018
+
+120. Novel land cover change detection method based on k-means clustering and adaptive majority voting using bitemporal remote sensing images
+   Authors: , , , , 
+   Date: Jan. 2019
+
+121. Simultaneous registration and change detection in multitemporal, very high resolution remote sensing data
+   Authors: , , , 
+   Date: 2015
+
+122. A scene change detection framework for multi-temporal very high resolution remote sensing images
+   Authors: , , 
+   Date: July 2016
+
+123. Kernel slow feature analysis for scene change detection
+   Authors: , , 
+   Date: 2017
+
+124. Detecting damaged building regions based on semantic scene change from multitemporal high-resolution remote sensing images
+   Authors: , , , , 
+   Date: 2017
+
+125. Building change detection with RGB-d map generated from UAV images
+   Authors: , , , , 
+   Date: Oct. 2016
+
+126. Airborne photogrammetry and lidar for DSM extraction and 3d change detection over an urban area-a comparative study
+   Authors: , , , , 
+   Date: 2013
+
+127. Using 3d line segments for robust and efficient change detection from multiple noisy images
+   Authors: , 
+   Date: 2008
+
+128. Building change detection based on satellite stereo imagery and digital surface models
+   Authors: , , 
+   Date: 2013
+
+129. 3d building change detection from high resolution spaceborne stereo imagery
+   Authors: , , 
+   Date: 2011
+
+130. 3d change detection-approaches and applications
+   Authors: , , 
+   Date: Dec. 2016
+
+131. A Contrario comparison of local descriptors for change detection in very high spatial resolution satellite images of urban areas
+   Authors: , , 
+   Date: 2019
+
+132. Building change detection in multitemporal very high resolution Sar images
+   Authors: , , 
+   Date: 2014
+
+133. 3d building change detection between current VHR images and past lidar data
+   Authors: , , , 
+   Date: 2018
+
+134. Multi-scale hierarchical sampling change detection using random forest for high-resolution satellite imagery
+   Authors: , , , , , 
+   Date: 2018
+
+135. Learning selfhood scales for urban land cover mapping with very-high-resolution satellite images
+   Authors: , 
+   Date: June 2016
+
+136. A novel automatic change detection method for urban high-resolution remotely sensed imagery based on multiindex scene representation
+   Authors: , , , 
+   Date: 2015
+
+137. Change detection algorithm for the production of land cover change maps over the European union countries
+   Authors: , , , 
+   Date: 2014
+
+138. A review of multi-temporal remote sensing data change detection algorithms
+   Authors: , , , 
+   Date: 2008
+
+139. A comprehensive review of earthquakeinduced building damage detection with remote sensing techniques
+   Authors: , 
+   Date: 2013
+
+140. Recent advances in remote sensing change detection-a review
+   Authors: , , 
+   Date: 2014
+
+141. A review of remote sensing image classification techniques: The role of spatiocontextual information
+   Authors: , , , , 
+   Date: 2014
+
+142. Landslide mapping from aerial photographs using change detection-based Markov random field
+   Authors: , , , , , 
+   Date: Dec. 2016
+
+143. Unsupervised change detection in multispectral remotely sensed imagery with level set methods
+   Authors: , , 
+   Date: 2010
+
+144. Concurrent self-organizing maps for supervised/unsupervised change detection in remote
+   Authors: , , , , 
+   Date: 2014
+
+145. Automatic analysis of the difference image for unsupervised change detection
+   Authors: , 
+   Date: 2000
+
+146. Unsupervised change detection in satellite images using principal component analysis and k-means clustering
+   Authors: 
+   Date: 2009
+
+147. Sequential spectral change vector analysis for iteratively discovering and detecting multiple changes in hyperspectral images
+   Authors: , , , , 
+   Date: 2015
+
+148. Level set evolution with local uncertainty constraints for unsupervised change detection
+   Authors: , , , 
+   Date: 2017
+
+149. Multi-sensor remote sensing image change detection based on sorted histograms
+   Authors: , , 
+   Date: 2018
+
+150. Object-oriented key point vector distance for binary land cover change detection using VHR remote sensing images
+   Authors: , , 
+   Date: 2020
+
+151. Objectbased change detection
+   Authors: , , , 
+   Date: 2012
+
+152. Change detection techniques
+   Authors: , , , 
+   Date: 2004
+
+153. Determining uncertainties and their propagation in dynamic change detection based on classified remotely-sensed images
+   Authors: , 
+   Date: 1996
+
+154. Landslide inventory mapping from bitemporal images using deep convolutional neural networks
+   Authors: , , , , , 
+   Date: 2019
+
+155. Change detection based on faster r-CNN for high-resolution remote sensing images
+   Authors: , , , , , 
+   Date: 2018
+

@@ -1,0 +1,5888 @@
+[
+  {
+    "data": {
+      "text": "#text': 'After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 31,
+              "end": 50,
+              "text": "the 1970s and 1980s",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 65,
+              "end": 69,
+              "text": "loss",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "#text': 'The forests of West and Central Africa probably originally covered a combined area of about 3 million km 2"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 13,
+              "end": 20,
+              "text": "forests",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 24,
+              "end": 28,
+              "text": "West",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 33,
+              "end": 47,
+              "text": "Central Africa",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 87,
+              "end": 113,
+              "text": "area of about 3 million km",
+              "labels": [
+                "SURFACE_UNIT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 114,
+              "end": 115,
+              "text": "2",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": ").'}]}, {'@xmlns': 'http://www.tei-c.org/ns/1.0', 'head': {'@n': '4.2.', '#text': '[Land use ]change in the study site'}, 'p': {'ref': [{'@type': 'figure', '@target': '#fig_1', '#text': '2a'}, {'@type': 'figure', '@target': '#fig_1', '#text': '2b'}], '#text': 'From 1996 to 2017, the area covered by cropped fields, C, has increased from 40% to 51.3% over the study site area, and from 47% to 64% of the arable lands in the study site due to the loss fallows"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 66,
+              "end": 69,
+              "text": "4.2",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 94,
+              "end": 100,
+              "text": "change",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 266,
+              "end": 278,
+              "text": "1996 to 2017",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 323,
+              "end": 332,
+              "text": "increased",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 338,
+              "end": 350,
+              "text": "40% to 51.3%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 386,
+              "end": 392,
+              "text": "47% to",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 393,
+              "end": 396,
+              "text": "64%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 446,
+              "end": 450,
+              "text": "loss",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 451,
+              "end": 458,
+              "text": "fallows",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "[Agriculture] in this region has been dominated over the past three decades by [cotton] production"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 1,
+              "end": 12,
+              "text": "Agriculture",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 53,
+              "end": 75,
+              "text": "the past three decades",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 80,
+              "end": 86,
+              "text": "cotton",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "[Forest] land was decreased nearly by half in 2002 compared to its coverage in 1984, while the size of the gallery [forest] did not change much"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 1,
+              "end": 7,
+              "text": "Forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 18,
+              "end": 27,
+              "text": "decreased",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 38,
+              "end": 42,
+              "text": "half",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 46,
+              "end": 50,
+              "text": "2002",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 79,
+              "end": 83,
+              "text": "1984",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 116,
+              "end": 122,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 132,
+              "end": 138,
+              "text": "change",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "About 26 and 31% of the total area of natural vegetation ([forest], woodland and tree [savanna]) will be converted to farmland and degraded [savanna] by 2050 if we assume the dynamics recorded from 1975 to 1990 and 1990-2010, respectively"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 6,
+              "end": 8,
+              "text": "26",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 13,
+              "end": 16,
+              "text": "31%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 59,
+              "end": 65,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 81,
+              "end": 85,
+              "text": "tree",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 87,
+              "end": 94,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 105,
+              "end": 114,
+              "text": "converted",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 141,
+              "end": 148,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 153,
+              "end": 157,
+              "text": "2050",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 198,
+              "end": 202,
+              "text": "1975",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 206,
+              "end": 210,
+              "text": "1990",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 215,
+              "end": 224,
+              "text": "1990-2010",
+              "labels": [
+                "COORDINATES"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Assuming the dynamics recorded in the second period , the amounts of land covered by [forest], woodland and tree [savanna] will decrease by 5, 9 and 17% of their cover in 1990, respectively, while the amount of degraded [savanna] and farmland will increase by 9 and 22% of the total area, respectively"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 86,
+              "end": 92,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 108,
+              "end": 112,
+              "text": "tree",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 114,
+              "end": 121,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 128,
+              "end": 136,
+              "text": "decrease",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 140,
+              "end": 144,
+              "text": "5, 9",
+              "labels": [
+                "COORDINATES"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 149,
+              "end": 152,
+              "text": "17%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 171,
+              "end": 175,
+              "text": "1990",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 221,
+              "end": 228,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 248,
+              "end": 256,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 260,
+              "end": 261,
+              "text": "9",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 266,
+              "end": 269,
+              "text": "22%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Conversely the decrease in the herbaceous standing [crop], due to the shortening of the [fallow] period, the extension of cultivated and cleared fields, the grazing by cattle, and more generally the increment in landscape discontinuities limit the spread of fire and the size of burnt areas"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 15,
+              "end": 23,
+              "text": "decrease",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 52,
+              "end": 56,
+              "text": "crop",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 89,
+              "end": 95,
+              "text": "fallow",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "describes Rwandan [agriculture] as caught in a \"low investment trap\"; less than 10% of cropland is irrigated, while tractors, bank credit and government aid are all scarce"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 10,
+              "end": 17,
+              "text": "Rwandan",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 19,
+              "end": 30,
+              "text": "agriculture",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 70,
+              "end": 83,
+              "text": "less than 10%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 87,
+              "end": 95,
+              "text": "cropland",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Due to the weeding practice, [bare soil] dominates in cropped fields in the early growing season while herbaceous vegetation continues to grow in fallows and rangelands"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 30,
+              "end": 39,
+              "text": "bare soil",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 76,
+              "end": 96,
+              "text": "early growing season",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 138,
+              "end": 142,
+              "text": "grow",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 146,
+              "end": 153,
+              "text": "fallows",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "In 1986, the grazing land had much higher proportion of the total regional area than other [land use] types while the size of croplands was substantially high after 16 years (Table )"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 3,
+              "end": 7,
+              "text": "1986",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 126,
+              "end": 135,
+              "text": "croplands",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 165,
+              "end": 173,
+              "text": "16 years",
+              "labels": [
+                "DATE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "In 1990, woodland and tree [savanna] were still the dominant [land cover] types"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 3,
+              "end": 7,
+              "text": "1990",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 22,
+              "end": 26,
+              "text": "tree",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 28,
+              "end": 35,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "In fact, some NTFP-providing trees, such as the baobab (Adansonia digitata) and the shea tree (Vitellaria paradoxa), are protected by farmers during the agricultural cycle of [cultivation] and fallows and are therefore still well preserved"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 29,
+              "end": 34,
+              "text": "trees",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 89,
+              "end": 93,
+              "text": "tree",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 176,
+              "end": 187,
+              "text": "cultivation",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 193,
+              "end": 200,
+              "text": "fallows",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "In rangelands, the main cause of woody vegetation decrease is the increasing pressure on wood resources to satisfy the demand for fuel and construction wood, not only from the local rural population, but also from the rapidly growing [urban] population of Niamey only 80 km away"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 24,
+              "end": 29,
+              "text": "cause",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 50,
+              "end": 58,
+              "text": "decrease",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 66,
+              "end": 76,
+              "text": "increasing",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 226,
+              "end": 233,
+              "text": "growing",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 235,
+              "end": 240,
+              "text": "urban",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 256,
+              "end": 262,
+              "text": "Niamey",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 268,
+              "end": 273,
+              "text": "80 km",
+              "labels": [
+                "SURFACE_UNIT"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "In Saloum Senegal, with the increase of cultivated land and shortening of [fallow] cycles, soils have become less fertile close to the villages, although [fallow] land away from the settlement gained in size, mainly due to out-migration"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 3,
+              "end": 9,
+              "text": "Saloum",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 10,
+              "end": 17,
+              "text": "Senegal",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 28,
+              "end": 36,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 75,
+              "end": 81,
+              "text": "fallow",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 155,
+              "end": 161,
+              "text": "fallow",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 193,
+              "end": 199,
+              "text": "gained",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Irrigation from rivers is regarded as minor driver of [LULCC]"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 44,
+              "end": 50,
+              "text": "driver",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "On the one hand, tree growth and [agroforestry] on fields have led to an increase of woody cover in proximity to the village"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 17,
+              "end": 21,
+              "text": "tree",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 22,
+              "end": 28,
+              "text": "growth",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 34,
+              "end": 46,
+              "text": "agroforestry",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 73,
+              "end": 81,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Rangelands are grazed year-round under communal access but grazing also extends to fallows, year-round or only in the dry season depending on accessibility, and to cropped fields after the [crop] harvest"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 22,
+              "end": 32,
+              "text": "year-round",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 83,
+              "end": 90,
+              "text": "fallows",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 92,
+              "end": 102,
+              "text": "year-round",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 114,
+              "end": 128,
+              "text": "the dry season",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 190,
+              "end": 194,
+              "text": "crop",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Ratios of [fallow] to cultivated area are 0.8 in Woure, where the bushfallow system is \"already defunct,\" 1.6 in Silgey and Kolbila, where bush-[fallow] \"would lead to a steady decline in fertility,\" 2 in Koho, where bush-[fallow] is \"marginal,\" and 5 in Sayero, where available land is still \"more than adequate.\""
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 11,
+              "end": 17,
+              "text": "fallow",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 42,
+              "end": 45,
+              "text": "0.8",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 49,
+              "end": 54,
+              "text": "Woure",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 74,
+              "end": 76,
+              "text": "ow",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 106,
+              "end": 109,
+              "text": "1.6",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 113,
+              "end": 119,
+              "text": "Silgey",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 145,
+              "end": 151,
+              "text": "fallow",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 177,
+              "end": 184,
+              "text": "decline",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 200,
+              "end": 201,
+              "text": "2",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 205,
+              "end": 209,
+              "text": "Koho",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 223,
+              "end": 229,
+              "text": "fallow",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 250,
+              "end": 251,
+              "text": "5",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Regular [cultivation] keeps the soil penetrable and farmers are aware of the benefits of trees in their fields"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 9,
+              "end": 20,
+              "text": "cultivation",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 89,
+              "end": 94,
+              "text": "trees",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Since the 1960s, the natural vegetation has been completely transformed and today many trees and [shrubs] have become rare or disappeared (Fig"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 6,
+              "end": 15,
+              "text": "the 1960s",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 60,
+              "end": 71,
+              "text": "transformed",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 76,
+              "end": 81,
+              "text": "today",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 87,
+              "end": 92,
+              "text": "trees",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 98,
+              "end": 104,
+              "text": "shrubs",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "The available evidence suggests that [forest] loss and degradation has been caused primarily by agricultural expansion, sometimes facilitated by other human activities such as wood extraction"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 38,
+              "end": 44,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 46,
+              "end": 50,
+              "text": "loss",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 76,
+              "end": 82,
+              "text": "caused",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 109,
+              "end": 118,
+              "text": "expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Thus, changes in [land use] strategies result not only in a simple expansion of fields to new and less attractive land"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 6,
+              "end": 13,
+              "text": "changes",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 67,
+              "end": 76,
+              "text": "expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Whereas most [shrubs] are annually coppiced in fields prior to [cultivation], they are left to grow in fallowed fields, leading to a higher shrub/ woody plant cover"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 14,
+              "end": 20,
+              "text": "shrubs",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 26,
+              "end": 34,
+              "text": "annually",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 64,
+              "end": 75,
+              "text": "cultivation",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 95,
+              "end": 99,
+              "text": "grow",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 103,
+              "end": 118,
+              "text": "fallowed fields",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 140,
+              "end": 145,
+              "text": "shrub",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "In a small Sahelian catchment in Niger, the increase in cultivated land from 1950 to 1998 was associated with an increase in the extent of eroded land (from 7 to 16%) at the expense of the [savanna]"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 11,
+              "end": 19,
+              "text": "Sahelian",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 33,
+              "end": 38,
+              "text": "Niger",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 44,
+              "end": 52,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 77,
+              "end": 89,
+              "text": "1950 to 1998",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 113,
+              "end": 121,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 157,
+              "end": 164,
+              "text": "7 to 16",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 190,
+              "end": 197,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "New settlements caused an initial decrease of the vegetation due to [[land use]] change (bushland to fields)"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 16,
+              "end": 22,
+              "text": "caused",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 34,
+              "end": 42,
+              "text": "decrease",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 81,
+              "end": 87,
+              "text": "change",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 89,
+              "end": 97,
+              "text": "bushland",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Apparently, the proximity of Yale ´to the road made influx of people higher than Boala, which is in line with the important synergetic cause-effect relation between population-infrastructure and agricultural expansion on tropical [deforestation]"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 42,
+              "end": 46,
+              "text": "road",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 81,
+              "end": 86,
+              "text": "Boala",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 135,
+              "end": 140,
+              "text": "cause",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 141,
+              "end": 147,
+              "text": "effect",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 208,
+              "end": 217,
+              "text": "expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 231,
+              "end": 244,
+              "text": "deforestation",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Recently, obtained a [deforestation] rate of 11% in the [grassland] areas and a degradation of 17% in the woodlands of the northern region of Ghana for the period 1984-1999, which has a similar ecological zone as the southern Burkina Faso"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 22,
+              "end": 35,
+              "text": "deforestation",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 45,
+              "end": 48,
+              "text": "11%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 57,
+              "end": 66,
+              "text": "grassland",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 95,
+              "end": 98,
+              "text": "17%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 142,
+              "end": 147,
+              "text": "Ghana",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 156,
+              "end": 162,
+              "text": "period",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 163,
+              "end": 172,
+              "text": "1984-1999",
+              "labels": [
+                "COORDINATES"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "However, conflicting hypotheses have been reported: on the one hand an expansion (into native [savanna]) and intensification (fertilizer) of cropland [cultivation], and on the other hand [agricultural land] abandonment, caused by, e.g., the civil war in Sudan may both contribute to the observed positive trends"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 71,
+              "end": 80,
+              "text": "expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 95,
+              "end": 102,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 141,
+              "end": 149,
+              "text": "cropland",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 151,
+              "end": 162,
+              "text": "cultivation",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 220,
+              "end": 226,
+              "text": "caused",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 254,
+              "end": 259,
+              "text": "Sudan",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "The decrease in rainfall has been associated with a concentration of the [cultivation] of the sandy soils on the dune"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 4,
+              "end": 12,
+              "text": "decrease",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "The decrease in rainfall has been associated with a concentration of the [cultivation] of the sandy soils on the dune"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 4,
+              "end": 12,
+              "text": "decrease",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "In the period 1975-1990, 1.28 million ha (26%) of natural vegetation was converted to degraded [savanna] and farmland while 2.23 million ha (53%) of natural vegetation was converted to degraded [savanna] and farmland in the period 1990-2010"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 3,
+              "end": 13,
+              "text": "the period",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 14,
+              "end": 23,
+              "text": "1975-1990",
+              "labels": [
+                "COORDINATES"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 25,
+              "end": 37,
+              "text": "1.28 million",
+              "labels": [
+                "COORDINATES"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 42,
+              "end": 44,
+              "text": "26",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 73,
+              "end": 82,
+              "text": "converted",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 96,
+              "end": 103,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 124,
+              "end": 136,
+              "text": "2.23 million",
+              "labels": [
+                "COORDINATES"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 141,
+              "end": 143,
+              "text": "53",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 172,
+              "end": 181,
+              "text": "converted",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 195,
+              "end": 202,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 220,
+              "end": 230,
+              "text": "the period",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 231,
+              "end": 240,
+              "text": "1990-2010",
+              "labels": [
+                "COORDINATES"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "At the local scale, the size of [crop] and grazing lands increased at the expense of shrinking of [forest] cover with distinct variation in magnitude of change between villages"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 33,
+              "end": 37,
+              "text": "crop",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 57,
+              "end": 66,
+              "text": "increased",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 99,
+              "end": 105,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 150,
+              "end": 159,
+              "text": "of change",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "The decrease in woodland, [shrub] savannas, grass savannas and [water] body occurred mainly between 1984 and 2001, while [tree] savannas and gallery [forest] decreased mainly between 2001 and 2013"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 4,
+              "end": 12,
+              "text": "decrease",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 27,
+              "end": 32,
+              "text": "shrub",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 34,
+              "end": 42,
+              "text": "savannas",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 44,
+              "end": 49,
+              "text": "grass",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 50,
+              "end": 58,
+              "text": "savannas",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 64,
+              "end": 69,
+              "text": "water",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 71,
+              "end": 75,
+              "text": "body",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 92,
+              "end": 113,
+              "text": "between 1984 and 2001",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 122,
+              "end": 126,
+              "text": "tree",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 128,
+              "end": 136,
+              "text": "savannas",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 150,
+              "end": 156,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 158,
+              "end": 167,
+              "text": "decreased",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 175,
+              "end": 196,
+              "text": "between 2001 and 2013",
+              "labels": [
+                "DATE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "The main finding of this study is the loss of vegetation cover over a 29 year period which is the result of conversion for [agriculture]"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 38,
+              "end": 42,
+              "text": "loss",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 70,
+              "end": 77,
+              "text": "29 year",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 124,
+              "end": 135,
+              "text": "agriculture",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "From 1984 to 2001, [tree] savannas, bare soils and agricultural lands increased by 17.55%, 18.79% and 21778.79%, respectively, while woodland, gallery [forest], [shrub] savannas and [[water] bodies] decreased by 22.02%, 5.03%, 40.08% and 31.2%, respectively"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 5,
+              "end": 17,
+              "text": "1984 to 2001",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 20,
+              "end": 24,
+              "text": "tree",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 26,
+              "end": 34,
+              "text": "savannas",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 36,
+              "end": 46,
+              "text": "bare soils",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 70,
+              "end": 79,
+              "text": "increased",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 83,
+              "end": 88,
+              "text": "17.55",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 91,
+              "end": 101,
+              "text": "18.79% and",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 102,
+              "end": 110,
+              "text": "21778.79",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 152,
+              "end": 158,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 162,
+              "end": 167,
+              "text": "shrub",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 169,
+              "end": 177,
+              "text": "savannas",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 184,
+              "end": 189,
+              "text": "water",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 191,
+              "end": 197,
+              "text": "bodies",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 199,
+              "end": 208,
+              "text": "decreased",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 212,
+              "end": 217,
+              "text": "22.02",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 220,
+              "end": 224,
+              "text": "5.03",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 227,
+              "end": 233,
+              "text": "40.08%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 238,
+              "end": 242,
+              "text": "31.2",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "At regional scale, the annual rate of change in [forest] land, grazing land, gallery [forest] and cropland was À0.4, À0.9, À1.6 and 3.8%, respectively"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 23,
+              "end": 29,
+              "text": "annual",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 35,
+              "end": 44,
+              "text": "of change",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 49,
+              "end": 55,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 86,
+              "end": 92,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 98,
+              "end": 106,
+              "text": "cropland",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 132,
+              "end": 135,
+              "text": "3.8",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Most of the transformed [forest] converted to woodland (3.6%) and [tree] [savanna] (1.5%)"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 12,
+              "end": 23,
+              "text": "transformed",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 25,
+              "end": 31,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 33,
+              "end": 42,
+              "text": "converted",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 56,
+              "end": 59,
+              "text": "3.6",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 67,
+              "end": 71,
+              "text": "tree",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 74,
+              "end": 81,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 84,
+              "end": 87,
+              "text": "1.5",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "#text': 'While natural [forest] has declined across West Africa, plantations, often but not always of non-native species, have been established to help meet increased demand for timber, fuelwood and pulp"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 24,
+              "end": 30,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 36,
+              "end": 44,
+              "text": "declined",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 52,
+              "end": 63,
+              "text": "West Africa",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 157,
+              "end": 166,
+              "text": "increased",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "P11: (Interviewer: But if I\\'m thinking of the Vea catchment, mainly here it\\'s [rice].) Cause there is a valley"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": []
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "According to it was assumed .'}, {'ref': {'@type': 'table', '@target': '#tab_0', '#text': '1'}, '#text': 'that only 25% of the non-cropped bush-grass-[savanna] is available as [fallow] in the [maize]-[fallow] rotation"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 91,
+              "end": 92,
+              "text": "1",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 111,
+              "end": 119,
+              "text": "only 25%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 131,
+              "end": 138,
+              "text": "cropped",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 151,
+              "end": 158,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 177,
+              "end": 183,
+              "text": "fallow",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 201,
+              "end": 207,
+              "text": "fallow",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "In the surroundings of the cities in the north of Nigeria for example in 2000 patches of grassland and shrubland were still visible whereas in 2015 these were converted to cropland Figure"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 27,
+              "end": 33,
+              "text": "cities",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 50,
+              "end": 57,
+              "text": "Nigeria",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 73,
+              "end": 77,
+              "text": "2000",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 89,
+              "end": 98,
+              "text": "grassland",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 103,
+              "end": 112,
+              "text": "shrubland",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 143,
+              "end": 147,
+              "text": "2015",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 159,
+              "end": 168,
+              "text": "converted",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 172,
+              "end": 180,
+              "text": "cropland",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "In second hand the increase in shrubs The evergreen forest and forest cover mainly the south eastern and south western part of Volta basin for the years 1988 and 2002"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 19,
+              "end": 27,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 31,
+              "end": 37,
+              "text": "shrubs",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 42,
+              "end": 58,
+              "text": "evergreen forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 63,
+              "end": 69,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 127,
+              "end": 132,
+              "text": "Volta",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 143,
+              "end": 166,
+              "text": "the years 1988 and 2002",
+              "labels": [
+                "DATE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "reported a moderate land cover change from 1965 to 2000 a decrease in savanna from 74% to 70% concurring with an expansion of cropland from 17% to 21%"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 31,
+              "end": 37,
+              "text": "change",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 43,
+              "end": 55,
+              "text": "1965 to 2000",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 58,
+              "end": 66,
+              "text": "decrease",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 70,
+              "end": 77,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 83,
+              "end": 93,
+              "text": "74% to 70%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 113,
+              "end": 122,
+              "text": "expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 126,
+              "end": 134,
+              "text": "cropland",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 140,
+              "end": 143,
+              "text": "17%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 147,
+              "end": 150,
+              "text": "21%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Large scale cropland was the third highest driver of forest loss in Africa 9% with the highest proportions by country found in Cape Verde 67% Gambia 53% Niger 50% Sudan 47% and Nigeria 44%"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 12,
+              "end": 20,
+              "text": "cropland",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 43,
+              "end": 49,
+              "text": "driver",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 53,
+              "end": 59,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 60,
+              "end": 64,
+              "text": "loss",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 68,
+              "end": 74,
+              "text": "Africa",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 75,
+              "end": 77,
+              "text": "9%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 127,
+              "end": 137,
+              "text": "Cape Verde",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 138,
+              "end": 141,
+              "text": "67%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 142,
+              "end": 148,
+              "text": "Gambia",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 149,
+              "end": 152,
+              "text": "53%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 159,
+              "end": 162,
+              "text": "50%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 163,
+              "end": 168,
+              "text": "Sudan",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 169,
+              "end": 172,
+              "text": "47%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 177,
+              "end": 184,
+              "text": "Nigeria",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 185,
+              "end": 188,
+              "text": "44%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "From 1955 to 1986 the area on the dune above Mare Yomboli was cleared and used for cultivation and fields on the pediplain were abandoned"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 5,
+              "end": 17,
+              "text": "1955 to 1986",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 83,
+              "end": 94,
+              "text": "cultivation",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "The Upper Guinean forest is a global biodiversity hotspot and has become one of the most human modified forest ecosystems in the tropics having lost over 80% of its original forest cover with the remainder distributed in a fragmented agriculture forest mosaic"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 18,
+              "end": 24,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 95,
+              "end": 103,
+              "text": "modified",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 104,
+              "end": 110,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 149,
+              "end": 157,
+              "text": "over 80%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 174,
+              "end": 180,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 234,
+              "end": 245,
+              "text": "agriculture",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 246,
+              "end": 252,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "With the exception of Eastern Africa area in forest declined in all regions with the most pronounced reduction in Northern Africa 40 %"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 22,
+              "end": 36,
+              "text": "Eastern Africa",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 45,
+              "end": 51,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 52,
+              "end": 60,
+              "text": "declined",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 101,
+              "end": 110,
+              "text": "reduction",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 114,
+              "end": 129,
+              "text": "Northern Africa",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 130,
+              "end": 134,
+              "text": "40 %",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Precipitation factors dominated the spatial distribution of desertification in the Sahel q value 0.9269"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 60,
+              "end": 75,
+              "text": "desertification",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 97,
+              "end": 103,
+              "text": "0.9269",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "The most prominent example of this is pasture expansion which is tightly linked to soy expansion and land speculation across Latin America"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 38,
+              "end": 45,
+              "text": "pasture",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 46,
+              "end": 55,
+              "text": "expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 87,
+              "end": 96,
+              "text": "expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 125,
+              "end": 138,
+              "text": "Latin America",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Finally five of the six Congo basin countries that contain almost all of the continent s humid forests have large extractive industries oil and mineral whose political economy may have had important indirect effects on forest cover"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 8,
+              "end": 12,
+              "text": "five",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 20,
+              "end": 23,
+              "text": "six",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 24,
+              "end": 29,
+              "text": "Congo",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 95,
+              "end": 102,
+              "text": "forests",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 208,
+              "end": 215,
+              "text": "effects",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 219,
+              "end": 225,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Human activities have degraded about 85% of Ghana s Guinea Forest Region"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 31,
+              "end": 40,
+              "text": "about 85%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 44,
+              "end": 49,
+              "text": "Ghana",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 59,
+              "end": 65,
+              "text": "Forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Actually present day cultivation cycles in southwestern Niger could be considered to consist of 10 years under millet followed by 5 years of fallow conditions"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 21,
+              "end": 32,
+              "text": "cultivation",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 56,
+              "end": 61,
+              "text": "Niger",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 96,
+              "end": 104,
+              "text": "10 years",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 111,
+              "end": 117,
+              "text": "millet",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 130,
+              "end": 137,
+              "text": "5 years",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 141,
+              "end": 147,
+              "text": "fallow",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "and Hausermann confirm that the expansion of water bodies we detected in the Tain District see Figure c2 of Ghana is due to a dam Bui dam constructed on Ghana s Black Volta for hydro power generation"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 32,
+              "end": 41,
+              "text": "expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 45,
+              "end": 57,
+              "text": "water bodies",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 73,
+              "end": 90,
+              "text": "the Tain District",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 108,
+              "end": 113,
+              "text": "Ghana",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 153,
+              "end": 158,
+              "text": "Ghana",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 161,
+              "end": 170,
+              "text": "Black Vol",
+              "labels": [
+                "LOC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "The annual rate i.e. 0.8% of water bodies loss per year was higher in 2000 2013 i.e. the postdrought era and recent period than in 1975 2000 which was 0.2% per year in the drought era and soon after the severe drought"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 4,
+              "end": 10,
+              "text": "annual",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 21,
+              "end": 25,
+              "text": "0.8%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 29,
+              "end": 41,
+              "text": "water bodies",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 42,
+              "end": 46,
+              "text": "loss",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 70,
+              "end": 79,
+              "text": "2000 2013",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 131,
+              "end": 140,
+              "text": "1975 2000",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 151,
+              "end": 155,
+              "text": "0.2%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "2020 The major LULC changes in LCB from 1975 to 2013 stated by were the transition of water bodies and wetland around the Lake to cropland the loss of water bodies to other vegetation and an increase in urban area at the expense of other vegetation"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 20,
+              "end": 27,
+              "text": "changes",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 40,
+              "end": 44,
+              "text": "1975",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 48,
+              "end": 52,
+              "text": "2013",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 72,
+              "end": 82,
+              "text": "transition",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 86,
+              "end": 98,
+              "text": "water bodies",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 103,
+              "end": 110,
+              "text": "wetland",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 130,
+              "end": 138,
+              "text": "cropland",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 143,
+              "end": 147,
+              "text": "loss",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 151,
+              "end": 163,
+              "text": "water bodies",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 191,
+              "end": 199,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 203,
+              "end": 208,
+              "text": "urban",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "During 2000 2010 the level of desertification has reduced whereas from 2010 to 2015 most areas have shifted towards an increase in desertification levels which likely driven by the 2012 drought in the Sahel"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 7,
+              "end": 16,
+              "text": "2000 2010",
+              "labels": [
+                "COORDINATES"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 30,
+              "end": 45,
+              "text": "desertification",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 71,
+              "end": 75,
+              "text": "2010",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 79,
+              "end": 83,
+              "text": "2015",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 100,
+              "end": 107,
+              "text": "shifted",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 119,
+              "end": 127,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 131,
+              "end": 146,
+              "text": "desertification",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 167,
+              "end": 173,
+              "text": "driven",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 181,
+              "end": 185,
+              "text": "2012",
+              "labels": [
+                "DATE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Nevertheless the shrubs cluster has increased over time within Volta basin and this could be attributed to the agroforestry practice in the basin"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 17,
+              "end": 23,
+              "text": "shrubs",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 36,
+              "end": 45,
+              "text": "increased",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 63,
+              "end": 68,
+              "text": "Volta",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 111,
+              "end": 123,
+              "text": "agroforestry",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "We observed deforestation patterns in the Ashanti region of Ghana from 1986 to 2015 using Landsat imagery to identify the main causes of deforestation"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 12,
+              "end": 25,
+              "text": "deforestation",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 60,
+              "end": 65,
+              "text": "Ghana",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 71,
+              "end": 78,
+              "text": "1986 to",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 79,
+              "end": 83,
+              "text": "2015",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 127,
+              "end": 133,
+              "text": "causes",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 137,
+              "end": 150,
+              "text": "deforestation",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "The savanna cluster presents an increasing trend during 2002 2016 period probably due to agroforestry practice in the basin"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 4,
+              "end": 11,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 32,
+              "end": 42,
+              "text": "increasing",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 56,
+              "end": 65,
+              "text": "2002 2016",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 89,
+              "end": 101,
+              "text": "agroforestry",
+              "labels": [
+                "LULC"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "The majority of other cash crops was converted to food crop fallow areas 1067.98 km 2"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 27,
+              "end": 32,
+              "text": "crops",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 37,
+              "end": 46,
+              "text": "converted",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 55,
+              "end": 59,
+              "text": "crop",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 60,
+              "end": 66,
+              "text": "fallow",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 73,
+              "end": 83,
+              "text": "1067.98 km",
+              "labels": [
+                "SURFACE_UNIT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 84,
+              "end": 85,
+              "text": "2",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "In contrast relative net gain in open water bodies was observed in the humid region during the period of 1975 2000 with a slight loss in 2000 2013. "
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 25,
+              "end": 29,
+              "text": "gain",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 38,
+              "end": 50,
+              "text": "water bodies",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 91,
+              "end": 104,
+              "text": "the period of",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 105,
+              "end": 114,
+              "text": "1975 2000",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 129,
+              "end": 133,
+              "text": "loss",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 137,
+              "end": 146,
+              "text": "2000 2013",
+              "labels": [
+                "DATE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "The land use is dominated by cultivation however cultivation intensity varies significantly within the region from 10% to 74% according to"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 29,
+              "end": 40,
+              "text": "cultivation",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 49,
+              "end": 60,
+              "text": "cultivation",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 71,
+              "end": 77,
+              "text": "varies",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 115,
+              "end": 125,
+              "text": "10% to 74%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "In Fakara the landscape was converted from a Sahelian savanna to largely eroded agricultural agroforestry parkland during the 20th century"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 3,
+              "end": 9,
+              "text": "Fakara",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 28,
+              "end": 37,
+              "text": "converted",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 45,
+              "end": 53,
+              "text": "Sahelian",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 54,
+              "end": 61,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 93,
+              "end": 105,
+              "text": "agroforestry",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 122,
+              "end": 138,
+              "text": "the 20th century",
+              "labels": [
+                "DATE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "The result reveals that the Mono basin Table land cover presents an increase in built up agricultural land and water bodies while the vegetative clusters such as forest savanna and herbaceous savanna have declined for the three study periods"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 68,
+              "end": 76,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 80,
+              "end": 88,
+              "text": "built up",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 111,
+              "end": 123,
+              "text": "water bodies",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 162,
+              "end": 168,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 169,
+              "end": 176,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 192,
+              "end": 199,
+              "text": "savanna",
+              "labels": [
+                "LULC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 205,
+              "end": 213,
+              "text": "declined",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 222,
+              "end": 227,
+              "text": "three",
+              "labels": [
+                "CARDINAL"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "In the Peanut Basin West Central eco region in Senegal cultivated area peaked to 80% of the land in the mid 1980s when farmers still benefited from agricultural subsidies but this trend then reversed itself declining to about 67% of the land under cultivation in 2000"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 47,
+              "end": 54,
+              "text": "Senegal",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 81,
+              "end": 84,
+              "text": "80%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 100,
+              "end": 113,
+              "text": "the mid 1980s",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 207,
+              "end": 216,
+              "text": "declining",
+              "labels": [
+                "CHANGE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 220,
+              "end": 229,
+              "text": "about 67%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 248,
+              "end": 259,
+              "text": "cultivation",
+              "labels": [
+                "PROCESS"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 263,
+              "end": 267,
+              "text": "2000",
+              "labels": [
+                "DATE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "In West Africa the land cover category settlement made up 0.3% and 0.7% of the total study region in 1975 and 2013 respectively"
+    },
+    "predictions": [
+      {
+        "model_version": "ner_model_v1",
+        "result": [
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 3,
+              "end": 14,
+              "text": "West Africa",
+              "labels": [
+                "LOC"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 58,
+              "end": 62,
+              "text": "0.3%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 67,
+              "end": 71,
+              "text": "0.7%",
+              "labels": [
+                "PERCENT"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 101,
+              "end": 105,
+              "text": "1975",
+              "labels": [
+                "DATE"
+              ]
+            }
+          },
+          {
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "value": {
+              "start": 110,
+              "end": 114,
+              "text": "2013",
+              "labels": [
+                "DATE"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

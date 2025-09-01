@@ -1,0 +1,504 @@
+================================================================================
+TITLE: Assessing Land Use-Land Cover Change and Its Impact on Land Surface Temperature Using LANDSAT Data: A Comparison of Two Urban Areas in India
+================================================================================
+
+AUTHORS:
+- Falguni Mukherjee
+- Deepika Singh
+
+ABSTRACT:
+The purpose of this study is to investigate the spatial and temporal changes in land use and patterns of vegetation and its impacts on land surface temperature (LST) in two Indian cities. Specifically the motivation behind this study is to examine whether a correlation exists between these parameters for the two cities. Indian cities are facing tremendous pressures of rapid urbanization altering the country's land use patterns. This in turn has significantly altered the country's land surface temperature over the years. This study investigates the changes in the land use, land cover and surface temperature in two Indian cities of Surat and Bharuch over a period of 2 decades using Landsat 5 Thematic Mapper and Landsat 8 OLI/TIRS datasets. The study also examines changes in vegetation pattern during this period using a normalized difference vegetation index (NDVI) and investigates the correlation between LST and NDVI. Additionally, the study examines the spatial patterns of LST by mapping the directional profiles of LST. Results of the study reveal that over time both the cities have witnessed a dramatic growth in built-up area, systematic reduction in green space and increase in LST. There is 85% increase in builtup area in Surat in the past 2 decades and 31% increase in built-up area in Bharuch during the same period. At the same time, mean surface temperature in Surat has shown an increase of 2.42 °C per decade while in Bharuch the mean surface temperature has increased by 2.13 °C per decade. Moreover, examination of correlation between LST and NDVI showed a negative relation between the two parameters. Directional profiles showed a continued increase in temperature from 2008 to 2016 from North to South direction Surat indicating an increased urbanization in that direction. Also, new peaks were observed in the profile of Surat for 2008 and 2016 in the north-south direction indicating urban expansion particularly in the southern part of the city. Moreover, substantial growth has taken place in the central part of the city and along the banks of the rivers Tapi and Narmada. This study will be helpful in investigations that address the challenges of urbanization in Surat and Bharuch by assisting local government officials, land management professionals and planners to determine areas where growth must be curbed to avoid further environmental degradation thereby assisting in systematic urban planning practices.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Countries all over the world are undergoing rapid urbanization, and urban areas are expanding at a pace never witnessed before, transforming the urban landscape. A recent United Nations report estimates that 55% of the total world population are urban dwellers and projects that by 2050 the urban population will increase to 68% (United Nations 2018). This would mean an additional 2.5 billion urban dwellers by 2050, and the 2018 UN report estimates that 90% of this increase would occur in Asia and Africa. Thus, the problem is more pronounced in developing countries that have witnessed an emergence of large urban agglomerations (UA) coupled with a rapid urban expansion. This process of urbanization has put a massive strain on the built and natural ecosystem and services of urban areas with far reaching demographic and environmental repercussions. Urban areas in the developing world bear the most consequences of the impacts of environmental degradation and unplanned urbanization coupled with global warming and climate Published in partnership with CECCR at King Abdulaziz University change. This rapid and unplanned urbanization has posed new challenges for planning and governance of urban areas. Urban planners, policy makers and urban residents are thus compelled to find novel and innovative means to adapt to the changing environment and plan urban settlements 
+An important parameter to measure the status of urban health is land surface temperature (LST) 
+Another important variable used in studying the relation between urbanization and its impacts on climate is land use/ land cover changes (LULC). One of the major causes for alteration in LULC is conversion of vegetation and green cover into impervious surfaces fueled by anthropogenic activities 
+Thus, an expansive body of literature 
+India is going through a massive process of urbanization. One in every three Indian today dwells in an urban area. As per the latest census, for the first time since independence the growth in population was more in urban areas in India than in rural areas 
+Surat is the ninth largest urban agglomeration in India. With a population of approximately 4.6 million, it is the second largest city in the western state of Gujarat and the eight largest city of India. Surat has witnessed unprecedented growth and expansion in the past decade making it one of the fastest growing cities in the country. Similarly, Bharuch is a rapidly expanding urban agglomeration also located in the state of Gujarat. Both Surat and Bharuch are located in south Gujarat, a region known as the Golden Corridor owing to its large reserves of hydrocarbons and massive industrial agglomerations spread throughout the region. Bharuch is the largest urban agglomeration in the most industrialized area of India surrounded by large chemical, petrochemical, engineering, textile and pharmaceutical industries. The region is regarded as the chemical capital of India. Industrial growth in Bharuch has been further facilitated by Dahej Port operated by Gujarat Maritime Board (GMB). Bharuch has also witnessed unparalleled growth in the past decade fueled by industrial development in the region. In light of this, we examine the case of Surat and Bharuch cities to understand the changes in the spatial characteristics of the city's urban landscape and if and how those changes have influenced the land surface temperature in both the cities.
+The main goal of this study is to compute the changes in land use patterns and land surface temperature in Surat and Bharuch over a period of 2 decades. To address this objective, multi-temporal satellite images were used to, (1) assess urban change by calculating 
+LULC and LST calculations were further validated to establish the accuracy of their assessments from the calculations.
+The study presented in this paper is part of a larger study that will examine the impacts of LULC and changing vegetation patterns on LST of several other small urban agglomerations in different parts of India to conduct a comparative analysis.
+
+## Study Area ##
+Surat and Bharuch cities are located in the Indian state of Gujarat, one of the fastest urbanizing states in India. More specifically both the cities are located in south Gujarat, part of the Delhi-Mumbai industrial corridor and the region is referred as the Golden Corridor of India. Surat and Bharuch are the largest urban agglomerations in south Gujarat. The region along Surat and Bharuch is home to several chemical, petrochemical, textiles and pharmaceutical industrial conglomerates.
+Surat, a port city is the eighth largest city and the ninth biggest urban agglomeration in India. It is the second largest city in the state of Gujarat and is the commercial and economic capital of the state and also one of the most prosperous cities of India. The city has witnessed unprecedented growth in recent years and is considered to be one of the fastest growing cities in the world. The primary economic base of this city is textiles and diamond industries which has given Surat the title of Diamond City of India. In recent times, the city has also witnessed an emergence of information and communication technology (ICT)-based industries. Surat is at the forefront as the pioneering city in the Indian government's push toward the use of ICTs for urban governance 
+Bharuch, another port city, is one of the biggest industrial areas in India and is also referred to as the chemical capital of India. The region surrounding Bharuch is rich with hydrocarbon reserves with the largest land-based petroleum reserve in India. This has led to a number of engineering, chemical, petrochemical, textile and pharmaceutical Published in partnership with CECCR at King Abdulaziz University industries in the areas surrounding Bharuch. Bharuch is the largest urban area in this industrialized region. Moreover, the city is also home to many metallurgical and port-based industries and houses the only liquid bulk port and chemical terminal in India. Bharuch is one of the major cities along the Delhi-Mumbai industrial corridor.
+
+## Data and Methods ##
+
+
+## Data ##
+In this study, Landsat 5 TM 
+
+## Method for Land Use/Land Cover Classification ##
+A variety of methods are used for image classification 
+Traditionally, classification methods have used ISODATA, K-means, minimum distance and maximum likelihood 
+Unsupervised classification method does not require prior knowledge of the study area's landscape. Hence, human errors are minimized. The method produces classes based on spectral information and are hence not as subjective as visual   Both the urban areas that were examined in this paper do not have a very complicated terrain with normal land cover species. The main focus of this paper was to examine broad land cover classes in the two urban areas and how those classes have changed over 2 decades. Therefore, unsupervised classification was utilized in this study.
+Additionally, this study is part of a larger examination that will evaluate the impacts of LULC and vegetation patterns on LST for several small urban agglomerations in different parts of India for the purpose of comparative analysis. The present study first started with unsupervised classification in order to establish that LULC patterns are changing at an alarming rate for small urban agglomerations in India. Ultimately, the long-term goal is to utilize one or more of the advanced classification algorithms discussed in recent studies 
+A thematic raster layer using ISODATA algorithm was generated in ArcGIS. Four land cover classes were identified using the unsupervised classification method that included water, vegetation, built-up and bare soil.
+
+## Method for NDVI Extraction from Landsat Data ##
+NDVI is widely utilized in studies examining presence of green cover and status and health of vegetation. The index is used based on the rationale that vegetation reacts to the absorption and reflection of red and near-infrared lights. NDVI values range from -1 to 1. A value of zero indicates the presence of urban areas while a negative value is an indication of a water body. A positive value closer to one indicates the presence of green cover 
+
+## Method for Extracting LST from Thermal Band of Landsat Data ##
+Spectral radiance method 
+(1) NDVI = (NIR -Red) After the extraction process, the retrieved spectral radiance was converted to surface temperature using the following formula Here T B is surface temperature, K 1 and K 2 are thermal conversion constants.
+In order to convert the temperature units to Celsius, absolute zero (approx. -273.15) is added to the above formula 
+In order to retrieve surface temperature from band 10 of the Landsat 8 TIRS data, values from the above two equations, vegetation fraction and land surface emissivity were used. Vegetation fraction F V was computed using the following formula 
+Here NDVI min represents minimum NDVI value indicating the presence of bare soil and NDVI max is maximum NDVI value indicating the presence of healthy vegetation 
+Emissivity ε was calculated using the formula Finally, Land Surface Temperature (LST) was calculated using the following equation 
+Here h is Plank's constant (6.626 × 10 -34 Js), c is the velocity of light in vacuum (2.998 × 10 -8 m/s), λ is effective wavelength (10.9 mm for band 10 in Landsat 8 data), σ is Boltzmann constant (1.38 × 10 -23 J/K).
+
+## Correlation Analysis ##
+After computing NDVI and LST, zonal statistics was calculated for each LULC class to summarize NDVI and LST values. Regression analysis was employed to compute the correlation between LST and NDVI.
+(3)
+
+## Accuracy Assessment of Land Use Classification ##
+After calculating the above values, accuracy assessment was conducted to determine how close the computed values are to the true values on ground.
+To assess the accuracy of the classified image a confusion matrix (Table 
+Overall accuracy measures the accuracy of the classification process by determining whether all reference sites are correctly classified and mapped. Overall accuracy is calculated using the following equation 
+Here r is number of rows and columns in error matrix, N is total number of observations (pixels), x ii is observation in row i and column i, Xi+ is marginal total of row i, X + i is marginal total of column i.
+(11)
+
+## LST Validation ##
+A widely used method for validating LST is by using/comparing near-surface air temperature 
+Real-time surface air temperature data were derived from National Oceanic and Atmospheric Administration (NOAA) website for the meteorological station in the study area.
+
+## Results ##
+
+
+## LULC Change ##
+In this study, four LULC classes were assigned viz. vegetation, water body, built-up area and bare soil (Figs. 
+Figure 
+Figure 
+
+## LST Change ##
+LST was calculated for 1998, 2008 and 2016 for Surat and Bharuch. Figure 
+Surat has only one water body, and it showed the lowest mean surface temperature of 
+In case of Bharuch, the mean surface temperature increased by 2.13 °C per decade. As shown in Tables 
+In order to validate LST calculations, daily summary surface temperature collected at the meteorological station was compared with the calculated 
+
+## LST and NDVI Correlation ##
+To assess the correlation between LST and NDVI in both the cities, regression analysis and correlation analysis were conducted.
+In case of Surat, linear regression showed a coefficient of determination (r 2 ) of 0.965 for 1998, 0.969 for 2008 and 0.88 for 2016 (Fig. 
+
+## Directional Profile ##
+Four directional profiles were generated for the study areas, i.e., North-South (N-S), East-West (E-W), Northwest-Southeast (NW-SE) and Northeast-Southwest (NE-SW) to validate the spatial distribution of LST.
+In case of Surat, N-S profile of LST for 1998, 2008 and 2016 showed an initial drop in temperature but then showed continued increase in temperature during 2008 and 2016 owing to the increased urbanization from North to South direction as shown in Fig. 
+In case of Bharuch, not much of a difference was observed in the LST values for different years in each of the four directional profile, i.e., E-W, NE-SW, N-S and NW-SE. Hence, the profile for 2016 is only highlighted in each of the four zones. Highest peak was observed in NW-SE directional profile (Fig. 
+As shown in Fig. 
+As shown in Fig. 
+
+## Discussion ##
+Both Surat and Bharuch have witnessed unprecedented growth in the last 2 decades. While Surat has expanded in all the directions, Bharuch has expanded along the banks of the river. Along with urban expansion, both the cities have witnessed a systematic increase in their temperature. This in turn has exposed both the cities to a variety of infrastructural and climate-related problems. Surat and Bharuch have undergone massive industrialization since 2000 due to the State Government's renewed political agenda of development that has pushed for urbanization and industrialization in the State 
+The rapid growth and expansion has presented its own sets of problems for the cities. Urban expansion has come at the cost of agricultural land. Poor farmers who own small lands have been marginalized, further deepening rural poverty. The SEZs have acquired farmland and pastoral land for different industrial projects 
+Increase in surface temperature coupled with loss of vegetation to built-up area over the years has made both the cities more vulnerable to natural hazards, viz. flooding, The Ukai multipurpose dam was built over Tapi river in the 1970s for the purpose of irrigation, power generation and flood control. The dam is located around 100 kms upstream from Surat. Heavy rainfall in the dam's catchment area in the neighboring state of Maharashtra leads to heavy inflow into the dam's reservoir which when discharged leads to flooding in Surat. Rapid urban expansion of Surat has further exacerbated the problem. Urban expansion in Surat along the banks of the river on both the sides has greatly modified the hydrology by increasing the built-up areas, encroachment of constructions in the floodplains adjacent to the river and construction of new bridges which has reduced the capacity of the river and the open space for the floodwaters to spread out. Additionally, Hazira industrial area located in Hazira SEZ downstream from Surat has grown exponentially over the years by reclaiming sections of the floodplain, reducing the mouth of Tapi River where it meets the sea ( 
+
+## Conclusion ##
+This study has shown that since 1998-2016 both Surat and Bharuch have experienced a loss in vegetation while land surface temperature during that period has increased Published in partnership with CECCR at King Abdulaziz University consistently rising from 1998 to 2016. Additionally during this period both the cities have also experienced an increase in its built-up area and a consistent reduction in water, vegetation and soil, indicating a rapid expansion of urban areas at the cost of its vegetation, soil and water bodies. Surat has expanded over an area of approximately 50.51 sq. kms while Bharuch has expanded slightly over an area of 3.4 sq. kms during this period in multi-directions. Surat has grown over a much larger area as compared to Bharuch during the study period. Nonetheless, both the cities have witnessed an increase in land surface temperature. In case of Surat, land surface temperature was particularly elevated in the central part of the city which is a heavily urbanized area, representing a strong correlation between urban expansion and land surface temperature. In case of both of the cities, growth along the water body was noticeable. However, the results from this study must be read with some caution. Firstly, Landsat data that have been used in this study generate imageries with low-to-moderate spectral resolution. Secondly, this study has utilized unsupervised classification for LULC analysis that imparts uncertainty in classified data 
+Surat is one of the fastest growing cities of India with a rapidly increasing urban population while Bharuch is heavily industrialized area facing rapid urbanization. This has exerted an enormous pressure on the urban environment of both the cities. Rapid and chaotic urban expansion accompanied with high surface temperature has made both the cities vulnerable to diseases, natural hazards like flooding, increased pollution and reduced industrial productivity. This observed phenomena is very similar to other mega cities in India and across the globe and it is high time that cities like Surat and Bharuch start paying attention to the ramifications of industrialization, development and urbanization. Local Government officials in Surat for instance have started heeding the consequences of urban expansion. Surat was one the pioneering member cities of the Asian Cities Climate Change Resilience Network (ACCCRN) established by the Rockefeller Foundation. The main goals of the network focus on ameliorating Surat's flood risk management strategies, public health emergency preparedness and infrastructure 
+The present study has addressed an important issue by providing a detailed analysis of land transformation and surface temperature change in one of the fastest urbanizing areas of India. Medium and small urban agglomerations all over the world particularly in developing countries are facing tremendous pressures of urbanization and the process will continue for the next several decades. Urban areas continue to grow at the cost of green spaces, agricultural land and rural areas. In many parts of the world, urban areas are pushing into the most vulnerable parts of the environment as also witnessed in Surat and Bharuch. Coupled with this, issues of climate change and shifting weather patterns pose a challenging problem for environmental planning and urban and land management. Studies like the one conducted here can assist land use and land management professionals and policy makers in making policy decisions to manage urban areas and curb the impacts of rapid and haphazard urbanization. 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. 2 NDVI Change Spatial variation of NDVI depends on various factors such as slope, topography, radiation availability etc
+   Authors: 
+   Date: 1998. 2008. 2008 to 2016. 2004
+
+2. Spatio-temporal patterns of land use/land cover change in the heterogeneous coastal region of Bangladesh between
+   Authors: , , , , , 
+   Date: 2019. 1990. 2017
+
+3. Land-use/ cover classification in a heterogeneous coastal landscape using RapidEye imagery: evaluating the performance of random forest and support vector machines classifiers
+   Authors: , , , 
+   Date: 2014
+
+4. A systematic approach to model the influence of the type and density of vegetation cover on urban heat using remote sensing
+   Authors: , 
+   Date: 2014
+
+5. Urbanisation in India: challenges, opportunities and the way forward. SAGE Publications
+   Date: 2014
+
+6. Simulating land cover changes and their impacts on land surface temperature in Dhaka
+   Authors: , , , , 
+   Date: 2013
+
+7. Vulnerabilities and responses to climate change for Dhaka
+   Authors: , 
+   Date: 2007
+
+8. India's megacities and climate change: explorations from Delhi and Mumbai (STEPS working paper no. 79)
+   Authors: 
+   Date: 2015
+
+9. Microclimate land surface temperatures across urban land use/land cover forms
+   Authors: , , 
+   Date: 2017
+
+10. Application of landsat data for urban growth monitoring in Jeddah
+   Authors: , , , 
+   Date: 2017
+
+11. Equity impacts of urban land use planning for climate adaptation: critical perspectives from the global north and south
+   Authors: , , , , , , , 
+   Date: 2016
+
+12. Change detection in land surface temperature and land use land cover over Lagos Metropolis, Nigeria
+   Authors: , 
+   Date: 2016
+
+13. Random forest in remote sensing: a review of applications and future directions
+   Authors: , 
+   Date: 2016
+
+14. Contribution of Landsat 8 data for the estimation of land surface temperature in Batna city, eastern Algeria
+   Authors: , , 
+   Date: 2017
+
+15. Addressing flooding in the city of Surat beyond its boundaries
+   Authors: , , , 
+   Date: 2013
+
+16. Regional clear sky evapotranspiration over agricultural land using remote sensing data from Indian geostationary meteorological satellite
+   Authors: , , , 
+   Date: 2010
+
+17. Indian city of Surat anticipates worst effects of climate change. The Guardian
+   Authors: 
+   Date: 2014. Jan 2020
+
+18. Introduction to remote sensing, 4th edn
+   Authors: 
+   Date: 2007
+
+19. On the relation between NDVI, fractional vegetation cover, and leaf area index
+   Authors: , 
+   Date: 1997
+
+20. Spatio-temporal dynamics of land cover and land surface temperature in Ganges-Brahmaputra delta: a comparative analysis between India and Bangladesh
+   Authors: , 
+   Date: 2016
+
+21. 14 Urban expansion in Bharuch from 1998 to
+   Date: 2016
+
+22. Remote sensing image-based analysis of the relationship between urban heat island and land use/cover changes
+   Authors: , , , 
+   Date: 2006
+
+23. Assessment of land use land cover changes and its impact on variations of land surface temperature in Asansol-Durgapur Development Region
+   Authors: , , 
+   Date: 2018
+
+24. Inclusive approaches to urban climate adaptation planning and implementation in the global south
+   Authors: , , 
+   Date: 2016
+
+25. City Mayors Statistics: World's fastest growing urban areas
+   Date: 20 Apr 2019
+
+26. A review of assessing the accuracy of classifications of remotely sensed data
+   Authors: 
+   Date: 1991
+
+27. Societal impacts and vulnerability to floods in Bangladesh and Nepal
+   Authors: 
+   Date: 2015
+
+28. Dhaka megacity. Geospatial perspectives on urbanisation, environment and health
+   Date: 2013
+
+29. Long-term temperature trends at four largest cities of India during the twentieth century
+   Authors: , , 
+   Date: 2009
+
+30. Exploring the relationship between land surface temperature and vegetation abundance for urban heat island mitigation in
+   Authors: 
+   Date: 2011
+
+31. Monitoring land surface temperature relationship to land use/land cover from satellite imagery in Maraqeh County
+   Authors: , , , , 
+   Date: 2013
+
+32. On the compensation for chance agreement in image classification accuracy assessment
+   Authors: 
+   Date: 1992
+
+33. Study of temperature profile on various land use and land cover for emerging heat island
+   Authors: , , , , 
+   Date: 2015
+
+34. The comparison of vegetation index and surface temperature composites for urban heat-island analysis
+   Authors: , 
+   Date: 1996
+
+35. The impact of spatiotemporal patterns of land use land cover and land surface temperature on an urban cool island: a case study of Bengaluru
+   Authors: , 
+   Date: 2019
+
+36. Analysis of urban heat island (UHI) in relation to normalized difference vegetation index (NDVI): a comparative study of Delhi and Mumbai
+   Authors: , 
+   Date: 2015
+
+37. Analytical study of land surface temperature with NDVI and NDBI using Landsat 8 OLI and TIRS data in Florence and Naples city, Italy
+   Authors: , , , 
+   Date: 2018
+
+38. A global synthesis of plant extinction rates in urban areas
+   Authors: , , , , , 
+   Date: 2009
+
+39. Thermophysical behaviour of LULC surfaces and their effect on the urban thermal environment
+   Authors: , , 
+   Date: 2019
+
+40. Determinants of urban-rural land surface temperature differences-a landscape scale perspective
+   Authors: , , , 
+   Date: 2015
+
+41. Challenges and opportunities in an urbanizing India
+   Authors: , 
+   Date: 2016
+
+42. The transition to an urbanizing world and the demand for natural resources
+   Authors: , , 
+   Date: 2010
+
+43. Spatio-temporal assessment of land use/land cover dynamics and urban heat island of Jaipur city using satellite data
+   Authors: , 
+   Date: 2014
+
+44. Introductory Digital Image Processing: A Remote Sensing Perspective, 2nd edn
+   Authors: 
+   Date: 1996
+
+45. Introductory digital image processing: a remote sensing perspective, 4th edn
+   Authors: 
+   Date: 2016
+
+46. Estimating temporal land surface temperature using remote sensing: a study of Vadodara urban area, Gujarat
+   Authors: , 
+   Date: 2012
+
+47. Impact of urbanization and land-use change on climate
+   Authors: , 
+   Date: 2003
+
+48. Land use, land cover, and population density impact on the formation of canopy urban heat islands through traverse survey in the Nagpur urban area
+   Authors: , 
+   Date: 2015
+
+49. Satellite-derived land surface temperature: current status and perspectives
+   Authors: , , 
+   Date: 2013
+
+50. Urban heat island analysis using the Landsat TM data and ASTER data: a case study in Hong Kong
+   Authors: , 
+   Date: 2011
+
+51. Landslide hazard assessment in the Three Gorges area of the Yangtze river using ASTER imagery: Zigui-Badong
+   Authors: , , , , 
+   Date: 2004
+
+52. A survey of image classification methods and techniques for improving classification performance
+   Authors: , 
+   Date: 2007
+
+53. Tau coefficients for accuracy assessment of classification of remote sensing data
+   Authors: , 
+   Date: 1995
+
+54. Support vector machines in remote sensing: a review
+   Authors: , , 
+   Date: 2011
+
+55. GIS use by an urban local body as part of E-governance in India
+   Authors: 
+   Date: 2018
+
+56. Graying, greening and fragmentation in the rapidly expanding Indian city of Bangalore
+   Authors: , , , 
+   Date: 2012
+
+57. Is urban development in Gujarat unhealthy? Conference paper: Networ Special Issue, Anand, Gujarat
+   Authors: , , 
+   Date: 2013
+
+58. A climatological study of the spatiotemporal variability of land surface temperature and vegetation cover of Vadodara district of Gujarat using satellite data
+   Authors: , 
+   Date: 2018
+
+59. Measuring the spatio-temporal variation of habitat isolation due to rapid urbanization: a case study of Shenzen River cross-boundary catchment
+   Authors: , , 
+   Date: 2011
+
+60. Urban heat island assessment for a tropical urban airshed in India
+   Authors: , , , , , 
+   Date: 2012
+
+61. An assessment of satellite remotely sensed land cover parameters in quantitatively describing the climatic effect of urbanization
+   Authors: , , 
+   Date: 1998
+
+62. Quantifying spatial and temporal vegetation recovery dynamics following a wildfire event in a Mediterranean landscape using EO data and GIS
+   Authors: , , 
+   Date: 2014
+
+63. Temporal dynamics of land use/ land cover change and its prediction using CA-ANN model for southwestern coastal Bangladesh
+   Authors: , , , , , , , 
+   Date: 2017
+
+64. Relationship between satellite derived land surface temperatures, arctic vegetation types and NDVI
+   Authors: , , , 
+   Date: 2008
+
+65. The impact of tree cover loss on land surface temperature: a case study of central Massachusetts using Landsat Thematic Mapper thermal data
+   Authors: , , , , , 
+   Date: 2013
+
+66. Minimum Government, Maximum Governance': the restructuring of power in Modi's India
+   Authors: 
+   Date: 2015
+
+67. Accuracy assessment of land use/ land cover classification using remote sensing and GIS
+   Authors: , 
+   Date: 2017
+
+68. Analyzing land surface temperature distribution in response to land use/land cover change using split window algorithm and spectral radiance model in Sundarban Biosphere Reserve
+   Authors: , , 
+   Date: 2016
+
+69. Assessing land transformation and its relation with land surface temperature in Mumbai city, India using geospatial techniques
+   Authors: , , 
+   Date: 2018
+
+70. Identification of factors responsible for urban expansion of Surat
+   Authors: , 
+   Date: 2016
+
+71. A multi-scale qualitative approach to assess the impact of urbanization on natural habitats and their connectivity
+   Authors: , 
+   Date: 2012
+
+72. Politics of Governance: a study of Gujarat
+   Authors: 
+   Date: 2013
+
+73. Spatio-temporal footprints of urbanization in Surat, the Diamond City of India
+   Authors: , , 
+   Date: 2013. 1990-2009
+
+74. Impacts of land-cover types on an urban heat island in Hangzhou, China
+   Authors: , , 
+   Date: 2015
+
+75. Inter-seasonal variations of surface temperature in the urbanized environment of Delhi using Landsat thermal data
+   Authors: , , 
+   Date: 2014
+
+76. Surface temperature estimation in Singhbhum Shear Zone of India using Landsat-7 ETM + thermal infrared data
+   Authors: , , 
+   Date: 2009
+
+77. Accuracy assessment: a user's perspective
+   Authors: , 
+   Date: 1986
+
+78. How can urban water bodies be designed for climate adaptation?
+   Authors: , 
+   Date: 2012
+
+79. Landsat data to evaluate urban expansion and determine land use/land cover changes in Penang Island
+   Authors: , , , 
+   Date: 2010
+
+80. Better cities, better growth: India's urban opportunity. New Climate Economy, World Resources Institute, and Indian Council for Research on International Economic Relations
+   Authors: , 
+   Date: 2016. Mar 2020
+
+81. Characterizing the relationship between land use land cover change and land surface temperature
+   Authors: , , , , , , , 
+   Date: 2017
+
+82. Classification methods for remotely sensed data
+   Authors: , 
+   Date: 2001
+
+83. Remote sensing-based quantification of the relationships between land use land cover changes and surface temperature over the lower Himalayan region
+   Authors: , , , , , , 
+   Date: 2019. 19
+
+84. World Urbanization Prospects 2018 Highlights. Department of Economic and Social Affairs Population Division
+   Date: 2018
+
+85. Response of urban heat island to future urban expansion over the Beijing-Tianjin-Hebei metropolitan area
+   Authors: , , , , 
+   Date: 2016
+
+86. A remote sensing and GIS evaluation of urban expansion and its impact on surface temperature in the Zhujiang Delta, China
+   Authors: 
+   Date: 2001
+
+87. Spatial analysis of urban growth impacts on vegetative greenness with Landsat TM data
+   Authors: , 
+   Date: 2001
+
+88. A sub-pixel analysis of urbanization effect on land surface temperature and its interplay with impervious surface and vegetation coverage in Indianapolis, United States
+   Authors: , 
+   Date: 2008
+
+89. Estimation of land surface temperature-vegetation abundance relationship for urban heat island studies
+   Authors: , , 
+   Date: 2004
+
+90. Evaluating environmental influence of zoning in urban ecosystems with remote sensing
+   Authors: , , , , 
+   Date: 2003
+
+91. The impact of land use and land cover changes on land surface temperature in a karst area of China
+   Authors: , 
+   Date: 2007
+
+92. The impacts of rapid urbanization on the thermal environment: a remote sensing study of Guangzhou, South China
+   Authors: , , , , , 
+   Date: 2012
+
+93. Remote sensing of the urban heat island and its changes in Xiamen City of SE China
+   Authors: , 
+   Date: 2004
+
+94. Influence of urban spatial configuration and sea breeze on land surface temperature on summer clearsky days
+   Authors: , 
+   Date: 2020. 2019
+
+95. The cooling effect of paddy fields on summertime air temperature in residential Tokyo, Japan
+   Authors: , , , 
+   Date: 2001
+
+96. Comparison of impervious surface area and normalized difference vegetation index as indicators of surface urban heat island effects in Landsat imagery
+   Authors: , 
+   Date: 2007
+
+97. The relationship between land surface temperature and NDVI with remote sensing: application to Shanghai Landsat 7 ETM + data
+   Authors: , , , 
+   Date: 2007
+
+98. Bi-temporal characterization of land surface temperature in relation to impervious surface area, NDVI and NDBI, using a sub-pixel image analysis
+   Authors: , , 
+   Date: 2009
+
+99. Analysis of land use/land cover change, population shift and their effects on spatiotemporal patterns of urban heat islands in metropolitan Shangai
+   Authors: , , , , , 
+   Date: 2013
+
+100. Impacts of urban land surface temperature on tract landscape pattern, physical and social variables
+   Authors: , , , , , 
+   Date: 2019
+

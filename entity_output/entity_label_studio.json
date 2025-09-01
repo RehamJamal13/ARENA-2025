@@ -1,0 +1,735 @@
+[
+  {
+    "data": {
+      "text": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.",
+      "meta": {
+        "sentence_id": 0,
+        "extraction_method": "zero-shot-entities"
+      }
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-entity-extraction-v1.0",
+        "score": 0.9,
+        "result": [
+          {
+            "value": {
+              "start": 35,
+              "end": 60,
+              "text": "landscape of Thimphu city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "entity_0_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 48,
+              "end": 60,
+              "text": "Thimphu city",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "entity_0_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 65,
+              "end": 85,
+              "text": "changed considerably",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "entity_0_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 97,
+              "end": 109,
+              "text": "study period",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "entity_0_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 134,
+              "end": 165,
+              "text": "predicted to continue into 2050",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "entity_0_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          }
+        ]
+      }
+    ],
+    "id": 0,
+    "meta": {
+      "num_entities": 5
+    }
+  },
+  {
+    "data": {
+      "text": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",
+      "meta": {
+        "sentence_id": 1,
+        "extraction_method": "zero-shot-entities"
+      }
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-entity-extraction-v1.0",
+        "score": 0.9,
+        "result": [
+          {
+            "value": {
+              "start": 54,
+              "end": 67,
+              "text": "built-up area",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "entity_1_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 43,
+              "end": 49,
+              "text": "12.77%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "entity_1_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 73,
+              "end": 77,
+              "text": "2002",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "entity_1_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 79,
+              "end": 85,
+              "text": "52.88%",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "entity_1_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 90,
+              "end": 94,
+              "text": "2018",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "entity_1_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 141,
+              "end": 161,
+              "text": "cover of bare ground",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "entity_1_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 118,
+              "end": 133,
+              "text": "slight increase",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "entity_1_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          }
+        ]
+      }
+    ],
+    "id": 1,
+    "meta": {
+      "num_entities": 7
+    }
+  },
+  {
+    "data": {
+      "text": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",
+      "meta": {
+        "sentence_id": 2,
+        "extraction_method": "zero-shot-entities"
+      }
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-entity-extraction-v1.0",
+        "score": 0.9,
+        "result": [
+          {
+            "value": {
+              "start": 17,
+              "end": 29,
+              "text": "forest cover",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "entity_2_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 52,
+              "end": 58,
+              "text": "15.25%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "entity_2_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 60,
+              "end": 83,
+              "text": "followed by agriculture",
+              "labels": [
+                "-"
+              ]
+            },
+            "id": "entity_2_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 85,
+              "end": 90,
+              "text": "1.01%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "entity_2_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          }
+        ]
+      }
+    ],
+    "id": 2,
+    "meta": {
+      "num_entities": 4
+    }
+  },
+  {
+    "data": {
+      "text": "Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.",
+      "meta": {
+        "sentence_id": 3,
+        "extraction_method": "zero-shot-entities"
+      }
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-entity-extraction-v1.0",
+        "score": 0.9,
+        "result": []
+      }
+    ],
+    "id": 3,
+    "meta": {
+      "num_entities": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",
+      "meta": {
+        "sentence_id": 4,
+        "extraction_method": "zero-shot-entities"
+      }
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-entity-extraction-v1.0",
+        "score": 0.9,
+        "result": [
+          {
+            "value": {
+              "start": 86,
+              "end": 99,
+              "text": "built up area",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "entity_4_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 131,
+              "end": 140,
+              "text": "city area",
+              "labels": [
+                "SURFACE_UNIT"
+              ]
+            },
+            "id": "entity_4_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 142,
+              "end": 148,
+              "text": "73.21%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "entity_4_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 155,
+              "end": 161,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "entity_4_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 216,
+              "end": 219,
+              "text": "16%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "entity_4_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          }
+        ]
+      }
+    ],
+    "id": 4,
+    "meta": {
+      "num_entities": 5
+    }
+  },
+  {
+    "data": {
+      "text": "Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.",
+      "meta": {
+        "sentence_id": 5,
+        "extraction_method": "zero-shot-entities"
+      }
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-entity-extraction-v1.0",
+        "score": 0.9,
+        "result": [
+          {
+            "value": {
+              "start": 73,
+              "end": 89,
+              "text": "Some 13 villages",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "entity_5_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 40,
+              "end": 68,
+              "text": "terraced agricultural fields",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "entity_5_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          }
+        ]
+      }
+    ],
+    "id": 5,
+    "meta": {
+      "num_entities": 2
+    }
+  },
+  {
+    "data": {
+      "text": "Planned development for Thimphu started in 1985 with the establishment of National Urban Development Commission.",
+      "meta": {
+        "sentence_id": 6,
+        "extraction_method": "zero-shot-entities"
+      }
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-entity-extraction-v1.0",
+        "score": 0.9,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 19,
+              "text": "Planned development",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "entity_6_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 24,
+              "end": 31,
+              "text": "Thimphu",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "entity_6_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 43,
+              "end": 47,
+              "text": "1985",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "entity_6_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 74,
+              "end": 111,
+              "text": "National Urban Development Commission",
+              "labels": [
+                "ORGANIZATION"
+              ]
+            },
+            "id": "entity_6_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          }
+        ]
+      }
+    ],
+    "id": 6,
+    "meta": {
+      "num_entities": 4
+    }
+  },
+  {
+    "data": {
+      "text": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",
+      "meta": {
+        "sentence_id": 7,
+        "extraction_method": "zero-shot-entities"
+      }
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-entity-extraction-v1.0",
+        "score": 0.9,
+        "result": []
+      }
+    ],
+    "id": 7,
+    "meta": {
+      "num_entities": 0
+    }
+  },
+  {
+    "data": {
+      "text": "The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",
+      "meta": {
+        "sentence_id": 8,
+        "extraction_method": "zero-shot-entities"
+      }
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-entity-extraction-v1.0",
+        "score": 0.9,
+        "result": [
+          {
+            "value": {
+              "start": 155,
+              "end": 171,
+              "text": "city's landscape",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "entity_8_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 12,
+              "end": 21,
+              "text": "2002-2018",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "entity_8_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 35,
+              "end": 50,
+              "text": "rapid expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "entity_8_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          }
+        ]
+      }
+    ],
+    "id": 8,
+    "meta": {
+      "num_entities": 4
+    }
+  },
+  {
+    "data": {
+      "text": "The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.",
+      "meta": {
+        "sentence_id": 9,
+        "extraction_method": "zero-shot-entities"
+      }
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-entity-extraction-v1.0",
+        "score": 0.9,
+        "result": [
+          {
+            "value": {
+              "start": 187,
+              "end": 198,
+              "text": "real estate",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "entity_9_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 203,
+              "end": 223,
+              "text": "informal settlements",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "entity_9_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 144,
+              "end": 167,
+              "text": "lesser developed cities",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "entity_9_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 239,
+              "end": 258,
+              "text": "significant changes",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "entity_9_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          },
+          {
+            "value": {
+              "start": 262,
+              "end": 271,
+              "text": "land uses",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "entity_9_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.9
+          }
+        ]
+      }
+    ],
+    "id": 9,
+    "meta": {
+      "num_entities": 5
+    }
+  }
+]

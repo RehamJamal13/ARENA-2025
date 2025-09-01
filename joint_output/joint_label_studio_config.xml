@@ -1,0 +1,61 @@
+<View>
+  <Text name="text" value="$text"/>
+  <Labels name="label" toName="text">
+    <Label value="CARDINAL" background="#FF6B6B"/>
+    <Label value="CHANGE" background="#4ECDC4"/>
+    <Label value="DATE" background="#45B7D1"/>
+    <Label value="DATE: TIME PERIOD" background="#96CEB4"/>
+    <Label value="DIRECTION" background="#FECA57"/>
+    <Label value="EVENT" background="#FF9FF3"/>
+    <Label value="LOC" background="#A55EEA"/>
+    <Label value="LOC (specific name of cities)" background="#54A0FF"/>
+    <Label value="LOC: LOCATION NAME" background="#5F27CD"/>
+    <Label value="LULC" background="#00D2D3"/>
+    <Label value="LULC (aggregate entity: forest and agriculture)" background="#FF9F43"/>
+    <Label value="ORGANIZATION" background="#10AC84"/>
+    <Label value="PERCENT" background="#EE5A24"/>
+    <Label value="PERSON" background="#0098C7"/>
+    <Label value="PROCESS" background="#8395A7"/>
+    <Label value="PROCESS (or: built-up area" background="#FF6B6B"/>
+    <Label value="QUANTITY" background="#4ECDC4"/>
+    <Label value="SURFACE_UNIT" background="#45B7D1"/>
+    <Label value="TEXT" background="#96CEB4"/>
+    <Label value="TIME" background="#FECA57"/>
+    <Label value="TIME_PERIOD" background="#FF9FF3"/>
+    <Label value="VERB" background="#A55EEA"/>
+    <Label value="built-up area" background="#54A0FF"/>
+  </Labels>
+  <Relations name="relation" toName="label">
+    <Relation value="AFFECTS" background="#FF6B6B"/>
+    <Relation value="CAUSES" background="#4ECDC4"/>
+    <Relation value="CONSUMES" background="#45B7D1"/>
+    <Relation value="CONTRIBUTES_TO" background="#96CEB4"/>
+    <Relation value="DECREASES_BY" background="#FECA57"/>
+    <Relation value="ENABLES" background="#FF9FF3"/>
+    <Relation value="FROM_TO" background="#A55EEA"/>
+    <Relation value="HAS" background="#54A0FF"/>
+    <Relation value="HAS_SIGNIFICANT_PROBABILITY" background="#5F27CD"/>
+    <Relation value="INCREASES_BY" background="#00D2D3"/>
+    <Relation value="IS_A" background="#FF9F43"/>
+    <Relation value="IS_AFFECTED_BY" background="#10AC84"/>
+    <Relation value="IS_GREATER_THAN" background="#EE5A24"/>
+    <Relation value="IS_USED_FOR" background="#0098C7"/>
+    <Relation value="LEADS_TO" background="#8395A7"/>
+    <Relation value="LIVES_IN" background="#FF6B6B"/>
+    <Relation value="LOCATED_IN" background="#4ECDC4"/>
+    <Relation value="MEASURES" background="#45B7D1"/>
+    <Relation value="OCCURS_AT_SAME_TIME_AS" background="#96CEB4"/>
+    <Relation value="OCCURS_DURING" background="#FECA57"/>
+    <Relation value="OF" background="#FF9FF3"/>
+    <Relation value="ORIGINATES_FROM" background="#A55EEA"/>
+    <Relation value="PERFORMS" background="#54A0FF"/>
+    <Relation value="PRECEDED_BY" background="#5F27CD"/>
+    <Relation value="PREDICTED_TO_OCCUR" background="#00D2D3"/>
+    <Relation value="PROVIDES" background="#FF9F43"/>
+    <Relation value="REDUCED_TO" background="#10AC84"/>
+    <Relation value="REPLACES" background="#EE5A24"/>
+    <Relation value="STARTED_BY" background="#0098C7"/>
+    <Relation value="TRANSFORMS_INTO" background="#8395A7"/>
+    <Relation value="TRANSFORMS_TO" background="#FF6B6B"/>
+  </Relations>
+</View>

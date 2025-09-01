@@ -1,0 +1,323 @@
+================================================================================
+TITLE: Tropical Coastal Land-Use and Land Cover Changes Impact on Ecosystem Service Value during Rapid Urbanization of Benin, West Africa
+================================================================================
+
+AUTHORS:
+- Damien Tiando
+- Shougeng Hu
+- Xin Fan
+- Muhammad Rashid
+- Leal Pacheco
+
+ABSTRACT:
+West African coastal areas including the Beninese coastal zones have undergone an intensification of socio-economic activity in the last few decades that has been strongly driven by the effects of rapid urbanization. This has led to land-use and land cover changes that represent threats to the sustainability of various ecosystem functions. Such dynamics of land use and land cover changes pose challenges to coastal zone management. Correct assessment is vital for policymakers and planners to ensure efficient and sustainable use of the coastal ecosystem services, and it remains crucial to achieving sustainable coastal zone management. This study examines changes in land-use and land cover (LULC) and their impacts on ecosystem services value (ESV) fluctuations in the tropical coastal region of Benin, West Africa. We employed Globe Land 30 image data for the years 2010 and 2020, and the ESV fluctuations during the study period were evaluated using the benefit transfer approach (BTA) with corresponding local coefficients values and the GIS techniques. The results reveal that (1) in the current urbanizing coastal area, the LULC types have changed significantly, with obvious reductions in forest land and waterbodies and a considerable increase in artificial surfaces;
+(2) the total ESV decreased by 8.51% from USD 7.1557 million in 2010 to USD 6.5941 million in 2020;
+(3) the intensity of LULC in the coastal region has increased over the last 10 years; (4) regions with high land-use intensity have a high rate of ESV change; and (5) provisioning services are the greatest contributors of ESV (51% in 2010; 41% in 2020), followed by supporting services (37% in 2010; 35% in 2020) and regulating services (25% in 2010; 30% in 2020). Uncontrolled changes in LULC from forest land and waterbodies are the main causes of the loss in total ESV, necessitating urgent measures to improve the coastal ecosystem sustainability through effective planning and policies.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+The concept of ecosystem services brings challenges in evaluating and balancing between sustainable socio-economic development and natural resources protection. Scientific assessment of the concept has concerned scholars around the world since the last decade, and it has recently been discussed in the context of Sustainable Development Goals (SDGs), which call for synchronized international efforts towards a more resilient and rational use of ecosystem services 
+The assessment of ecosystem services covers the loss or benefit costs of preserving a given amount or quality of an ecosystem service and is an integral part of the conservation decision-making process 
+Coastal zones are the transitional areas between sea and land and are an important geographic zone both in terms of resources and human habitation 
+Changes in LULC are among the main driving factors of ESV fluctuation 
+Benin is a West African country located in the Northern hemisphere. It is bounded by Togo to the west, Burkina Faso and Niger to the north, Nigeria to the east, and Bight of Benin to the south. The coastal zones of Benin constitute important coastal ecosystems containing various coastal wetlands, mainly composed of mangroves, that are important for the maintenance of biodiversity and also for their role in sustainable socio-economic development 
+
+## Materials and Methods ##
+
+
+## Study Area ##
+The coastal zone of Benin (Figure 
+limited to several small coastal areas comprising a few districts of Benin 
+
+## Materials and Methods ##
+
+
+## Study Area ##
+The coastal zone of Benin (Figure 
+
+## Satellite Imagery Data and Classification ##
+In this study, the LULC data for 2010 and 2020 (Global Land 30 products with 30 m spatial resolution) were obtained from the China Environmental Disaster Reduction Satellite 
+
+## Statistics Analysis 2.3.1. Comprehensive Land-Use Dynamic ##
+Land-use dynamic degree, also known as the land use change rate index, is mainly used to calculate the quantitative value of land use type change, and can also be used to estimate the land use change trend and the change speed in a few years. In this study, the land-use dynamic degree was introduced to quantify the variation of land use during our study period 
+
+## Land-Use Intensity Analysis ##
+Land-use intensity indicates the degree of the interference of human activities on lands. The coastal zones of Benin are experiencing urbanization, with the intensification of human activities. The land-use intensity analysis expresses the comprehensive impacts of human activities on the variation in LULC during urbanization and the conversion of land for coastal development 
+where I is the land-use intensity comprehensive index of the study area related to human activity, L i is the level or stages index of land-use intensity of LULC type i, and P i is the quantity of the LULC type. With reference to Cao, Li et al. 
+
+## Ecosystem Services Value Assessment ##
+The present assessment of ESV in the tropical coastal region of Benin used a benefit transfer approach (BTA) based on the modified local value coefficients proposed by Kindu, Temesgen et al. 
+where A k is the area of LULC type K, and VC K is the value coefficient (USD/ha/year). We also estimated the value provided by individual ecosystem functions within the study area using the following equation:
+where A k is the area of LULC type K, and VC f is the value coefficient of the function f (USD/ha/year).
+
+## Coefficient of Sensitivity (CS) ##
+There are several limitations of the methodology of benefit transfers which we have adopted in this study. Different biomes were used as proxy for different land uses, although they may not match appropriately because there are so many uncertainties about the ESV of the different land use types. Due to these uncertainties of proxy values, a coefficient of sensitivity was analyzed using the standard economic concept of elasticity, i.e., the percentage change in the output for a given percentage change in an input. The coefficient of sensitivity (CS) or coefficient of elasticity (CE) is used to determine the sensitivity and robustness of coefficients in the analysis of ecosystem services 
+With VC and A k , respectively, represent the value coefficient and the size of land-use type K, while ESV i represents the initial value of ESV. The higher the CS value, the more important the corresponding land-use type is to the total ESV.
+
+## Results ##
+
+
+## Variation in Land-Use and Land Cover from 2010 to 2020 ##
+The variation in each LULC type over our study period was analyzed via the superposition of the land data, and we generated spatial distribution maps in 2010 and 2020 (Figure 
+and farmland covered 1.2%. In 2020, forest land occupied 68.3%, while artificial surfaces occupied 6.7%, and farmland 11.6%. The greatest reduction was recorded in forest land (10.2%), followed by grassland (2.1%). From the spatial distribution of Figure 
+It can be seen that farmland and artificial surfaces have increased while the other land-use types decreased during our study period. The expansion of farmland (643.66 km 2 ) was mainly produced via conversion from forest (577.54 km 2 ) and shrubland (63.63 km 2 ). In the same time period artificial surfaces (336.21 km 2 ) expanded, mainly converted from farmland (12.23 km 2 ), forests (51.24 km 2 ), and shrubland (37.82 km 2 ). Wetland (336.21 km 2 ) expanded mainly converted from forest (36.66 km 2 ) and shrubland (25.51 km 2 ).
+By comparing the two maps of land-use intensity (Figure 
+
+## Spatial-Temporal Features of Land Use Change and Intensity from 2010 to 2020 ##
+With the support of the ArcGIS software spatial block statistics tool, the conversion matrix of LULC types (Figure 
+It can be seen that farmland and artificial surfaces have increased while the other land-use types decreased during our study period. The expansion of farmland (643.66 km 2 ) was mainly produced via conversion from forest (577.54 km 2 ) and shrubland (63.63 km 2 ). In the same time period artificial surfaces (336.21 km 2 ) expanded, mainly converted from farmland (12.23 km 2 ), forests (51.24 km 2 ), and shrubland (37.82 km 2 ).) Wetland (336.21 km 2 ) expanded mainly converted from forest (36.66 km 2 ) and shrubland (25.51 km 2) . 
+
+## Spatial-Temporal Features of Land Use Change and Intensity from 2010 to 2020 ##
+With the support of the ArcGIS software spatial block statistics tool, the conversion matrix of LULC types (Figure 
+It can be seen that farmland and artificial surfaces have increased while the other land-use types decreased during our study period. The expansion of farmland (643.66 km 2 ) was mainly produced via conversion from forest (577.54 km 2 ) and shrubland (63.63 km 2 ). In the same time period artificial surfaces (336.21 km 2 ) expanded, mainly converted from farmland (12.23 km 2 ), forests (51.24 km 2 ), and shrubland (37.82 km 2 ).) Wetland (336.21 km 2 ) expanded mainly converted from forest (36.66 km 2 ) and shrubland (25.51 km 2) . 
+
+## Spatial-Temporal Features of Land Use Change and Intensity from 2010 to 2020 ##
+With the support of the ArcGIS software spatial block statistics tool, the conversion matrix of LULC types (Figure 
+It can be seen that farmland and artificial surfaces have increased while the other land-use types decreased during our study period. The expansion of farmland (643.66 km 2 ) was mainly produced via conversion from forest (577.54 km 2 ) and shrubland (63.63 km 2 ). In the same time period artificial surfaces (336.21 km 2 ) expanded, mainly converted from farmland (12.23 km 2 ), forests (51.24 km 2 ), and shrubland (37.82 km 2 ).) Wetland (336.21 km 2 ) expanded mainly converted from forest (36.66 km 2 ) and shrubland (25.51 km 2) . 
+
+## Spatial-Temporal Features of Land Use Change and Intensity from 2010 to ##
+With the support of the ArcGIS software spatial block statistics tool, the c matrix of LULC types (Figure 
+It can be seen that farmland and artificial surfaces have increased while land-use types decreased during our study period. The expansion of farmlan km 2 ) was mainly produced via conversion from forest (577.54 km 2 ) and shrubla km 2 ). In the same time period artificial surfaces (336.21 km 2 ) expanded, mainly c from farmland (12.23 km 2 ), forests (51.24 km 2 ), and shrubland (37.82 km 2 ).) (336.21 km 2 ) expanded mainly converted from forest (36.66 km 2 ) and shrubla km 2) . 
+
+## Spatial-Temporal Features of Land Use Change and Intensity from 2010 to 2020 ##
+With the support of the ArcGIS software spatial block statistics tool, the conversion matrix of LULC types (Figure 
+It can be seen that farmland and artificial surfaces have increased while the other land-use types decreased during our study period. The expansion of farmland (643.66 km 2 ) was mainly produced via conversion from forest (577.54 km 2 ) and shrubland (63.63 km 2 ). In the same time period artificial surfaces (336.21 km 2 ) expanded, mainly converted from farmland (12.23 km 2 ), forests (51.24 km 2 ), and shrubland (37.82 km 2 ).) Wetland (336.21 km 2 ) expanded mainly converted from forest (36.66 km 2 ) and shrubland (25.51 km 2) . 
+
+## Spatial-Temporal Features of Land Use Change and Int ##
+With the support of the ArcGIS software spatial block matrix of LULC types (Figure 
+It can be seen that farmland and artificial surfaces ha land-use types decreased during our study period. The ex km 2 ) was mainly produced via conversion from forest (577. km 2 ). In the same time period artificial surfaces (336.21 km 2 ) from farmland (12.23 km 2 ), forests (51.24 km 2 ), and shru (336.21 km 2 ) expanded mainly converted from forest (36.6 km 2) . 
+
+## Spatial-Temporal Features of Land Use Change and Intensity from 2010 ##
+With the support of the ArcGIS software spatial block statistics tool, th matrix of LULC types (Figure 
+It can be seen that farmland and artificial surfaces have increased wh land-use types decreased during our study period. The expansion of farm km 2 ) was mainly produced via conversion from forest (577.54 km 2 ) and shr km 2 ). In the same time period artificial surfaces (336.21 km 2 ) expanded, main from farmland (12.23 km 2 ), forests (51.24 km 2 ), and shrubland (37.82 km (336.21 km 2 ) expanded mainly converted from forest (36.66 km 2 ) and shru km 2) .    
+
+## Changes of Ecosystem Services Value in Benin Tropical Coastal Region ##
+Changes in the ESV of each LULC type in our study area were assessed based on the modified ecosystem services value coefficient, such as those used by Kindu et al. 
+
+## Changes of Ecosystem Services Value in Benin Tropical Coastal Region ##
+Changes in the ESV of each LULC type in our study area were assessed based on modified ecosystem services value coefficient, such as those used by Kindu et al. 
+The estimated ecosystem service functions and their changes are shown in Table 
+
+## Analysis of Coefficient of Sensitivty ##
+The coefficient of sensitivity (CS) for all LULC types shown in Table 
+The reductions in forest land and waterbodies are reflected in the fluctuations in total ESV. Our results cohere with those of previous efforts to quantify the ESV along the coastal zones of Tanzania by Ligatea et al. 
+
+## Sustainable Coastal Zones and Management and Policy Implications ##
+West Africa's coastal areas, including the Beninese coastal region, face several challenges which put pressure on natural coastal resources and cause the degradation of ecosystem services. Increased human activity has resulted in LULC changes 
+The valuation of ESV makes key scientific information available for use in decisionmaking related to coastal zones' management and the rational use of ecosystem services. Similar to the rest of West Africa's coastal areas, the coastal zone of Benin sustains various coastal ecosystems that are crucial for local populations' livelihoods and health, and which require proper management. Sustainable coastal zones and the rational use of coastal resources remain a priority of the local government. However, the total ESV during our study declined from USD 7.1557 million to USD 6.5941 million.
+Current strategies face the challenge of the increasing degradation of the coastal ecosystem and the services it provides for local populations, livelihoods, and health. One of the main causes of the degradation of the coastal environment is the growth of the coastal population, which puts pressure on ecosystems and coastal environments. Additionally, the current policies and strategies lack the cooperation and enforcement needed to ensure the sustainable management of the coastal zones and the rational use of the ecosystems. In this context, we should construct effective policies to reduce the loss of ESV and sustain coastal zone management.
+The first step is to promote local governance through collaboration between local authorities, institutions, and the population, and thus ensure appropriate decision-making related to coastal ecological environment protection and to provide additional socio-economic benefits to the value of these zones. We must also develop the design of spatial coastal zone management (ISCZM) to integrate LULC changes; coastal development and decisionmaking should consider ecosystem service losses to ensure that ecosystems are preserved. Further, we should promote the valuation of coastal ecosystem services by stakeholders in order to improve planning decisions and thus ensure successful policy implementation in environmental management and decision-making.
+It is important to integrate socio-economic development and biophysical constraints into harmonized ICZM to ensure rational coastal land-use based on the indicators of the sustainable development goals (SDGs).
+
+## Limitations of the Study ##
+Due to the limitations of the assessment methods and data availability, the results obtained in this study might include mistakes. One of the major limitations concerns constructing the model empirically with estimates based on the data collected from relevant studies, as this approach assumes the homogeneity of ecosystem service value across all LULC types 
+
+## Conclusions ##
+The present study has analyzed the role of LULC changes in ESV fluctuations within the urbanized tropical coastal zones of Benin in West Africa. Land-use types changed significantly from 2010 to 2020 due to intensification of human activities, proved by the dramatic farmland expansion and increased artificial surfaces which have led to the large shrinkage of grazing land, shrubland and forests. From the above results, the following conclusions have been drawn:
+(1) The total ESV during the study period was reduced from USD 7.1557 million in 2010 to USD 6.5941 million in 2020, a reduction of -8.51%. Under the current process of urbanization, the intensity of LULC changes has increased, especially in the eastern central coastal region of Cotonou metropolis and the industrial coastal region of Seme; (2) Significant changes in specific ecosystem function have been recorded, such as erosion control, climate regulation, biological control, nutrient cycling, soil formation, water supply, and waste treatment. However, provisioning services were the highest contributor to ESVs (51% in 2010; 41% in 2020), followed by supporting services (37% in 2010; 35% in 2020), and regulating services (25% in 2010; 30% in 2020); (3) Over the past 10 years, the regions with typically high ESVs have shown reduced ESVs, particularly in the coastal industrial zones of Seme. This recent dynamic of lost ESV in the coastal zones of Benin needs to be considered in order to improve the current strategies for the sustainable management of coastal zones, and to preserve the balance between development initiatives and ecosystem health. Given the ongoing coastal population pressure and the intensification of socioeconomic activities in the coastal zone, it is prospective that an increasing demand for land use will place heavy pressure on these ecosystems. Therefore, the capacity of coastal ecosystems to offer ecological functions and services to sustain the life of human beings will be further weakened. Therefore, it is important to regulate and balance population and socioeconomic activities in order to achieve efficient sustainable coastal management; not only must strict provision be made but also training for coastal land use under better monitoring and environmental precautions must be given priority as well as the most efficient technology in the conciliation of environment and economy; (4) The methodology of this study is economically feasible and has the potential to contribute to policy formulation for data poor areas. Further research in determining the value of the various coastal ecosystems such as coastal wetland could help remote sensing-based assessment of ecosystem value, and is expected to result in sustainable coastal resources management.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Earth observation in service of the 2030 agenda for sustainable development
+   Authors: , , , , 
+   Date: 2017
+
+2. Assessment of coastal ecosystem services for conservation strategies in south korea
+   Authors: , , 
+   Date: 2015. 0133856
+
+3. The value of the world's ecosystem services and natural capital
+   Authors: , , , , , , , , , 
+   Date: 1997
+
+4. Accounting for environmental assets
+   Authors: 
+   Date: 1992
+
+5. Progress of integrated ecosystem assessment: Concept, framework and challenges
+   Authors: , , , , , 
+   Date: 2015
+
+6. Impact of land use/cover change on ecosystem service values in the kilombero valley floodplain, southeastern tanzania. Forests
+   Authors: , , , 
+   Date: 2020
+
+7. Auditing the earth: The value of the world's ecosystem services and natural capital
+   Authors: 
+   Date: 1998
+
+8. The role of benefit transfer in ecosystem service valuation
+   Authors: , , , 
+   Date: 2015
+
+9. Global estimates of the value of ecosystems and their services in monetary units
+   Authors: , , , , , , , , , 
+   Date: 2012
+
+10. Change in ecosystem service values in the san antonio area, texas
+   Authors: , , , 
+   Date: 2001
+
+11. Mapping ecosystem services: Practical challenges and opportunities in linking gis and value transfer
+   Authors: , 
+   Date: 2006
+
+12. Valuing nature: Lessons learned and future research directions
+   Authors: , , , , , 
+   Date: 2003
+
+13. Linking land use change, ecosystem services and human well-being: A case study of the manas river basin of xinjiang
+   Authors: , , , , , , , , 
+   Date: 2017
+
+14. Imminent climate and circulation shift in northeast pacific ocean could have major impact on marine resources
+   Authors: , , , 
+   Date: 1998
+
+15. Ecosystems and Human Well-Being
+   Authors: 
+   Date: 2005
+
+16. The future value of ecosystem services: Global scenarios and national implications
+   Authors: , , , 
+   Date: 2020
+
+17. Current status of coastal wetlands in china: Degradation, restoration, and future management
+   Authors: , , , , 
+   Date: 2015
+
+18. Ecosystem services as a common language for coastal ecosystem-based management
+   Authors: , , , , , , , , , 
+   Date: 2010
+
+19. Progress and challenges in valuing coastal and marine ecosystem services
+   Authors: 
+   Date: 2012
+
+20. The impact of urban development on aquifers in large coastal cities of west africa: Present status and future challenges
+   Authors: , , , , , , 
+   Date: 2018
+
+21. Assessing changes in the value of ecosystem services in response to land-use/land-cover dynamics in nigeria
+   Authors: , , , 
+   Date: 2018
+
+22. The effects of changing land use and flood hazard on poverty in coastal bangladesh
+   Authors: , , , 
+   Date: 2020. 104868
+
+23. Changes of ecosystem service value in a coastal zone of zhejiang province, china, during rapid urbanization
+   Authors: , , , , , , , 
+   Date: 2018. 1301
+
+24. Global Conservation of Biodiversity and Ecosystem Services Bioscience
+   Authors: , , , , , 
+   Date: 28 April 2007
+
+25. A review on anthropogenic geomorphology
+   Authors: , , , 
+   Date: 2017
+
+26. Current migrations into coastal zones of benin: Motives, ecological consequences and social realities
+   Authors: , , , , , 
+   Date: 2017
+
+27. Evolution and Impacts of Coastal Land Use in Benin: The Case of the Sèmè-Podji Commune
+   Authors: , , , , 
+   Date: 2011
+
+28. The vulnerability to climate change of cotonou (benin) the rise in sea level
+   Authors: , 
+   Date: 2007
+
+29. The first comprehensive accuracy assessment of globeland30 at a national level: Methodology and results
+   Authors: , , , , 
+   Date: 2015
+
+30. Check and Modification of Globeland30 with Modis Ndvi
+   Authors: , , , , 
+   Date: 2015. 2015
+
+31. Land use and the coastal zone
+   Authors: 
+   Date: 2009
+
+32. Impacts of urbanization-induced land-use changes on ecosystem services: A case study of the pearl river delta metropolitan region, china
+   Authors: , , , , , 
+   Date: 2019
+
+33. Evaluation of tropical coastal land cover and land use changes and their impacts on ecosystem service values
+   Authors: , , 
+   Date: 2018
+
+34. Are agricultural land-use models able to predict changes in land-use intensity?
+   Authors: , , 
+   Date: 2000
+
+35. Study on the model of regional differentiation of land use degree in china
+   Authors: , 
+   Date: 1997
+
+36. The impact of land use/land cover change on ecosystem services in the central highlands of ethiopia
+   Authors: , , 
+   Date: 2017
+
+37. Land use and land cover change in the qinghai lake region of the tibetan plateau and its impact on ecosystem services
+   Authors: , , , , 
+   Date: 2017
+
+38. Global Wetland Outlook: State of the World's Wetlands and Their Services to People
+   Authors: , 
+   Date: 2018
+
+39. Land-use/land-cover change and ecosystem service provision in china
+   Authors: , 
+   Date: 2017
+
+40. 
+   Authors: 
+   Date: 2016
+
+41. Determinants of credit access by smallholder farmers in north-east benin
+   Authors: , , , , , , 
+   Date: 2017
+
+42. Responses of ecosystem service to land use change in qinghai province
+   Authors: , , 
+   Date: 2016
+
+43. Landscape-based upstream-downstream prevalence of land-use/cover change drivers in southeastern rift escarpment of ethiopia
+   Authors: , , , , 
+   Date: 2018
+
+44. Criticism on elasticity-sensitivity coefficient for assessing the robustness and sensitivity of ecosystem services values
+   Authors: , , , 
+   Date: 2016
+
+45. Marine and Coastal Ecosystems and Human Well-Being: A Synthesis Report Based on the Findings of the Millennium Ecosystem Assessment; Environmental Programme
+   Authors: 
+   Date: 2006. 9 July 2021
+
+46. Land use/land cover change and statistical modelling of cultivated land change drivers in nigeria
+   Authors: , 
+   Date: 2018
+
+47. Coupling Analysis of Ecosystem Services Value and Economic Development in the Yangtze River Economic Belt: A Case Study in Hunan Province
+   Authors: , , , 
+
+48. The spatial association of ecosystem services with land use and land cover change at the county level in China
+   Authors: , , 
+   Date: 1995-2015. 2019
+
+49. Ecosystem services and their driving forces in the Middle Reaches of the Yangtze River Urban Agglomerations, China
+   Authors: , , 
+   Date: 2020
+
+50. Identifying the Impact of Landscape Pattern on Ecosystem Services in the Middle Reaches of the Yangtze River Urban Agglomerations, China
+   Authors: , , , 
+   Date: 2020
+

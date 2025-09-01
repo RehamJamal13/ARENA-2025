@@ -1,0 +1,18 @@
+{
+  "article_id": "58",
+  "original_sentence": "Agricultural expansion in California requires careful planning.",
+  "entities": [
+    {
+      "text": "expansion",
+      "label": "CHANGE",
+      "start_char": 13,
+      "end_char": 22
+    },
+    {
+      "text": "California",
+      "label": "LOC",
+      "start_char": 26,
+      "end_char": 36
+    }
+  ]
+}

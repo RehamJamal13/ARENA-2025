@@ -1,0 +1,12 @@
+{
+  "article_id": "30",
+  "original_sentence": "Remote sensing data showed changes in Kyzylkum Desert vegetation.",
+  "entities": [
+    {
+      "text": "Kyzylkum Desert vegetation",
+      "label": "LOC",
+      "start_char": 38,
+      "end_char": 64
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+================================================================================
+TITLE: The impact of land use and land cover changes on socioeconomic factors and livelihood in the Atwima Nwabiagya district of the Ashanti region, Ghana
+================================================================================
+
+AUTHORS:
+- Emmanuel Daata Kullo
+- Eric Forkuo
+- Ernest Biney
+- Emmanuel Harris
+- Jonathan Arthur Quaye-Ballard
+
+ABSTRACT:
+Land use and land cover change (LULCC) is a general term for the human modification of Earth's terrestrial surface. These modifications come by direct and indirect activities of human actions when securing essential resources. Therefore, it is necessary to analyze these land changes for the best management of natural resources and to ensure better livelihood of the inhabitants.
+The influx of population from the Kumasi metropolis and peripheral areas coupled with urbanization is causing rapid changes to LULC in the Atwima Nwabiagya District. This has put pressure on the land cover especially in the forest cover areas and has affected the socioeconomic activities in the district. In view of this problem, this research sought to map and analyze the spatio-temporal LULCC patterns using multi-temporal satellite images from 1986-2019 and to identify the socioeconomic factors and their impact of LULC on the study area. Seven LULC classes were identified including; bare land, closed forest, cropland, open forest, savannah, settlement, and water. The results showed that during the period under review  there have been losses of 4178.5 hectares (7%) in closed and open forest and bare land whilst crop land and settlement have seen an increase of 21685.3 hectares (37%). In all, settlement establishment as a result of population increase, commercial activities, and porous land tenure system was identified as the main factors for LULCC in the Atwima Nwabiagya District.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land Use and Land Cover (LULC) change have been occurring since time immemorial, it is, however, rapid recently due to increasing anthropogenic activities including urbanization and industrialization 
+Many research works have pointed out the relevance of investigating the land cover dynamics as a tool for justifiable supervision of allnatural possessions 
+Though the Atwima Nwabiagya district is one of the fastest-growing areas in Ashanti region ( GSS, 2012 ), adequate information on LULC change over a considerable period is non-existent. There is there-fore the need to research into the socio-economic implications of LULC change on the entire district using RS and GIS. Geographic Information Systems (GIS) and Remote Sensing (RS) are cost-effective and well-established technologies in understanding landscape dynamics 
+
+## Materials and methods ##
+
+
+## Study area ##
+With its capital at Nkawie-Kuma, the district is bordered to the west by both Ahafo Ano South and Atwima Mponua Districts, it is bounded in the east by the Afigya Kwabre District as well as Kumasi Metropolis. To the north, it forms a boundary with Offinso Municipal as well as Amansie West and Atwima Kwanwoma Districts to the south. Its latitudinal extent is estimated to be 6°32 ˈ and 6°75 ˈ in the northern hemisphere whilst the longitudinal boundaries are 1°45 ˈ and 2°00 ˈ in the western hemisphere ( Fig. 
+
+## Data and software used ##
+Satellite images of Landsat 5 Thematic Mapper (TM) for 1986, Landsat 7 Enhanced Thematic Mapper Plus (ETM + ) for 2003, Landsat 7 Enhanced Thematic Mapper Plus (ETM + ) for 2007, and Landsat 8 Operational Land Image and Thermal Infrared Sensor (OLI and TIRS) for 2019 with Path 194 and Row 055 (P194R055) were acquired from the United States Geological Survey (USGS) earth explorer website for classification and analysis. The images used had a cloud cover of less than 10% and a spatial resolution of 30m × 30m. However, the inability to use images with equal intervals was due to the high consideration in using images with less than 10% cloud cover. Table 
+
+## Image pre-processing ##
+The Landsat 7 image acquired on 13 th January 2007had line gaps on the image ( Fig. 
+
+## Image classification ##
+Identification of the LULC classes and their spatial distributions for better land utilization by both inhabitants and policymakers is a major objective in this study. As a test classification method, an amalgam of supervised and unsupervised classification approaches was used to improve the accuracy of the classification 
+
+## Accuracy assessment ##
+According to 
+
+## Table 2 ##
+LULC classes and their descriptions.
+
+## LULC Classes Description ##
+Water This is made of the Barekese and Owabi Dams which are the main water bodies in the study area. Settlements This is dominated by residential and industrial structures most of which showed urban, peri-urban, and rural characteristics. Bare land This is comprised of uncovered rock surfaces and other uncovered zones coming about because of both human activities and natural causes.
+
+## Savannah ##
+This comprises all the creeping and elephant grasses scattered across the study area.
+
+## Open Forest ##
+The vegetation here is dominated by sparsely scattered trees with open canopies. Closed Forest This is made up of rainforest and moist semi-deciduous forest trees with three layers of emergent, canopies, and undergrowth. Crop Land Land used mainly for both cash and food crops cultivation.
+the accuracy of such data should be assessed by juxtaposing the classified image data with some other independently acquired data or reference data or ancillary data (Ground Truthing) of the same area. In this project, accuracy assessment was done using the Semi-Automatic Classification Plugin (SCP) in QGIS. A classification error matrix was also formed to articulate the accuracy by tabulating the classified image data and the reference data. Overall accuracy, producer's accuracy, user's accuracy, and Kappa statistics are the elements common in precision valuation and therefore were calculated.
+
+## Change detection ##
+Change detection is relevant in image analysis since it enables us to determine the gains or losses in the land classes identified 
+
+## Socio-economic analysis ##
+To examine the socio-economic factors of LULC change and their impact on the environment and livelihood of the district, a quantitative and qualitative research design was employed. For the quantitative research design, close-ended questionnaires were used whereas the qualitative design used interview guided to offer respondents, especially family heads, the opportunity to explain further the issues of LULC change affecting the study area. Lopez-Fernandez and Molina-Azorín (2011) noted that the use of both quantitative and qualitative methods does not only reflect the respondents' accurate responses, it also provides flexible methodology in the research. This is not very different from 
+A purposive or judgemental non-probabilistic sampling technique was used during data collection. This was because communities towards the Kumasi metropolis were noted (from the satellite image analysis) to be experiencing greater changes in LULC. The questionnaires and interview guide were therefore purposively administered around such communities to ascertain the reasons behind such changes. In all, 11 communities from a total of about 53 peri-urban and rural communities were selected as a sample frame which is representative enough for the research. The sample frame was designed to target heads of various households in the study communities. In the case of multiple households, structured questionnaires were administered to all available heads of households and their occupants.
+The sample size was heads of households from the eleven selected communities namely; Abuakwa, Nkawie-Kuma, Asenemaso, Toase, Nerebehi, Maakro, Agog, Sepaase, Manhyia, Mim, and Hiawu Besease. The sample size was gotten using the Eq. ( 
+where; n is the sample size, N is the total number of people in the eleven communities, e is the margin of error (0.05), and 1 is a constant. Administered questionnaires were cleaned and entered into SPSS to generate results and analysis. Descriptive and inferential statistics such as frequencies and regression were employed in analyzing the data.
+
+## Results and discussions ##
+3.1. 
+
+## landsat images ##
+As shown in Fig. 
+However, in 2003, there was a slight improvement in some classes. Open forest decreased marginally to 4167.2 hectares representing 7.2 % whilst closed forest declined to 4.5 % or 2620.2 hectares ( Fig. 
+In 2007, dams classified as water continued to decrease significantly to 2.5% with an area coverage of 1453 hectares. LULC classes of settlements, bare land, and crop land saw an increment to 13611.6 hectares representing 23.5%, 12200.6 hectares representing 21.1%, and 14762.9 hectares representing 25.5 % respectively ( Fig. 
+Analysis of the 2019 classified image showed some interesting dynamics in settlements and cropland. The total land area for settlements realized its highest increase to 25900.6 hectares which translates into 44.7%. Cropland also decreased in area to 10911.1 hectares, representing 18.8%. There was also an increase in closed forest coverage to a total area of 1314.6 hectares which is 2.3% of the study area. Savannah land cover saw a significant reduction to 9365.4 hectares (16.2%) which is a considerable reason for a rise in settlement ( Fig. 
+A composite analysis of LULC classes shows that there is has been a significant change in the two dams classified as water from 1986 to 2019. The other land cover classes however realized appreciable changes from one period to another. In 17 years 
+
+## Accuracy assessment ##
+In the study, Kappa was computed using QGIS software. The overall classification accuracies 
+
+## Socio-economic analysis ##
+This section presents the results of the socio-economic analysis by analyzing key socioeconomic factors or indicators of the changes within the district and the effect of these factors or drivers.
+
+## Comparison of the types of land cover that existed before and after respondents settled in the district ##
+Table 
+
+## Table 5 ##
+Types of land cover that existed before and after respondents settled in the district.  18.4%, 13.5% and 24.9% in that order. It is important to note that these variations have occurred over the period because of the numerous socioeconomic features, for instance, demographic increase, farming activities as well as urban growth prevailing in the district. These factors have led to a rapid increase in human activities such as putting up residential buildings to house the rising population and also meet the demand for accommodation among others. A lot of challenges have arisen due to the massive modifications in LULC in the district over the period. Notably, traffic congestion partly because of the vigorous movements most business people undertake, conflicts in land ownership as a result of selling one parcel of land to more than one person by some of the subchiefs as well as social vices occurring out of urban growth and struggle to meet the high living conditions are some of the challenges inhabitants are grappling with.
+
+## Major socioeconomic drivers and human activities causing LULC change in Atwima Nwabiagya District ##
+Several activities contributed to the notable modifications of landuse changes that took place in the district over the period. Fig. 
+Generally, the influx of population either as migrants or through natural increase as well as infrastructural expansion are major socioeconomic drivers leading to increases in residential establishments, agricultural activities, commercial and industrial expansions, and administrative activities. These are fueled by the porous land tenure system and the quest for money by some sub-chiefs in the district. 
+
+## 3.3.3: Impact of socioeconomic factors of LULC on the livelihood of people in the study area ##
+There has also been a negative impact of LULC on livelihoods in Atwima Nwabiagya district through the reduction in forest cover and high cost of accommodation since there are a lot of immigrants and urbanization in the area is increasing exponentially. 72 and 59 respondents representing 29.4% and 24.1% respectively from the data showed that the socioeconomic factors of urbanization and population increase have resulted in the continued reduction in forest cover and high cost of land and accommodation in the district. These result in high living conditions for the people in the study area. The analysis of the socioeconomic drivers on livelihood is presented in Fig. 
+
+## Summarized discussion on the analyzed data ##
+After the statistical analysis, the information revealed that the predominant occupation in the district is Farming and Trading with most of the inhabitants being migrants who quest for land property, and agriculture. The predominant size of the household is from 1 to 5 people in a house which is mostly a single household. The household is made up of parents and children with relatives. The condition of the household is either mud or a blockhouse. Most of the inhabitants have stayed in the area for less than 5years and mostly 6-10years and this shows that the area is presently occupied more by immigrants. Most of the land in the area was acquired through inheritance and lease. This indicates that most of the lands are family lands. The average land sizes that are owned by the inhabitants through inheritance or lease are 3acres to 10acres.
+The types of land cover that were initially prevailing in the area were open and closed forest. The most common land use is residential and agricultural. This has increased the land use in settlement, Bare land, and croplands by reducing the Forest areas.
+The socio-economic factors that are prevailing in the area are building of residential zones since there are a lot of immigrants and Agricultural activities since most inhabitants are farmers and traders. This has resulted in challenges in land ownership as a result of land disputes and traffic congestion. There has also been a negative impact of LULC on livelihoods in Atwima Nwabiagya district through the reduction in forest cover and high cost of accommodation since there is a rise of the number of immigrants and urbanization in the area is increasing exponentially.
+
+## Conclusion ##
+Landsat images were used for classification to reveal the major LULC changes within the Atwima Nwabiagya for the period 1986 to 2019. It was revealed that forests (closed and open) reduced continuously from 1986 (about 14.9%) to 9.4% in 2007. It however increased marginally between 2007 and 2019 partly due to the government afforestation programme. Built up (settlement establishment) improved to 44.7% (2019) from 12.3% 
+The socioeconomic data revealed that the predominant occupation in the district is Farming and Trading with most of the inhabitants being migrants who quest for land property and agriculture. The types of land cover that were initially prevailing in the area were open and closed forest and the most common land use are residential and agricultural. This has increased the land use in settlement, Bare land, and croplands by reducing the Forest areas. Also, the socio-economic conditions that are prevailing in the area are building of residential zones since there are a lot of immigrants and Agricultural activities and most inhabitants are farmers and traders. This has resulted in challenges in land ownership as a result of land disputes and traffic congestion. There has also been a negative impact of LULC on livelihoods in Atwima Nwabiagya district through the reduction in forest cover and high cost of accommodation since there are a lot of immigrants and urbanization in the area is increasing exponentially.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Application of remote sensing and gis for modeling and assessment of land use/cover change in Amman/Jordan
+   Authors: , , 
+   Date: 2013
+
+2. Forestry Outlook Paper for Africa (FOSA): Ghana, 2
+   Authors: 
+   Date: 2001
+
+3. Land use and landscape structural changes in the ecoregions of Ghana
+   Authors: , , 
+   Date: 2014
+
+4. Determinants of periurbanization and land use change patterns in peri-urban Ghana
+   Authors: , , , 
+   Date: 2014
+
+5. A Thesis Submitted to the Department of Civil Engineering College of Engineering (KNUST) In Partial Fulfilment of the Requirements for the Degree of DOCTOR OF PHILOSOPHY in Climate Change and Land Use
+   Authors: 
+   Date: 2016
+
+6. Detection of land use and land cover change in Accra, Ghana, between 1985 and 2003 using Landsat Imagery
+   Authors: , , 
+   Date: 2009. 2021
+
+7. Land Use and Cover Changes in the Mampong Municipality of the Ashanti Region
+   Authors: 
+   Date: 2015
+
+8. Application of Remote Sensing and GIS for Forest Cover Change Detection: A Case Study of Owabi Catchment in Kumasi
+   Authors: 
+   Date: 2011
+
+9. A methodology proposal for land cover change analysis using historical aerial photos
+   Authors: 
+   Date: 2011
+
+10. Ghana statistical service (GSS), 2010 Population and housing census (PHC): Final results, Ghana statistical service
+   Authors: 
+   Date: 2012
+
+11. Land cover change detection using GIS and remote sensing techniques: a spatio-temporal study on Tanguar Haor, Sunamganj, Bangladesh
+   Authors: , 
+   Date: 2017
+
+12. Trends in land use and land cover change in the protected and communal areas of the Zambezi Region
+   Authors: , , , , 
+   Date: 2017
+
+13. Application of a change index based on remotely sensed surface temperature and vegetation indices at a continental scale
+   Authors: , 
+   Date: 1997. 1982-1991
+
+14. Are agricultural land-use models able to predict changes in land-use intensity?
+   Authors: , , 
+   Date: 2000
+
+15. Land use and land cover change as a consequence of the South African land reform programme: a remote sensing approach
+   Authors: 
+   Date: 2012
+
+16. The use of mixed methods research in interdisciplinary educational journals
+   Authors: , 
+   Date: 2011
+
+17. Land-Use /Land-Cover Changes in Major Asian and African Cities. Division of Spatial Information Science
+   Authors: , , 
+   Date: 2015
+
+18. Peri-urban futures: Scenarios and models for land use change in Europe, Peri-Urban Futures: Scenarios and Models for Land use Change in Europe
+   Authors: 
+   Date: 2013
+
+19. Assessment of a Landsat 8 image of Atiwa District in Ghana using ECHO, Random Forest, Minimum Distance and Maximum Likelihood Classification Algorithms
+   Authors: , , , , 
+   Date: 2018
+
+20. Urban material flow analysis: an approach for Bogotá
+   Authors: , 
+   Date: 2014
+
+21. Analysis Of Urban Land Use And Land Cover Changes : A Case Study in Bahir Dar
+   Authors: 
+   Date: 2014
+
+22. Importance of the size of Sample and its determination in the context of data related to the schools of greater Guwahati
+   Authors: , 
+   Date: 2012. January 2012
+
+23. Wie man ein Mixed Methods-Forschungs-Design konstruiert
+   Authors: , 
+   Date: 2017
+
+24. Land use and land cover change detection and urban sprawl analysis of Panamarathupatti Lake
+   Authors: , 
+   Date: 2014
+
+25. Land use and land cover change in the Western Cape Province: quantification of changes & understanding of driving factors
+   Authors: 
+   Date: 2016
+
+26. Integrating quantitative and qualitative data collection and analysis while studying patient-centered medical home models
+   Authors: , 
+   Date: 2013
+
+27. Assessing the land use and land cover changes due to urban assessing the land use and land cover changes due to urban growth in Accra, Ghana
+   Authors: 
+   Date: 2017
+

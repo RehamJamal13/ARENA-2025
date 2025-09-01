@@ -1,0 +1,574 @@
+================================================================================
+TITLE: Remote Sensing of Environment
+================================================================================
+
+AUTHORS:
+- Marco Calderón-Loor
+- Michalis Hadjikakou
+- Brett Bryan
+
+ABSTRACT:
+High-resolution wall-to-wall land-cover mapping and land change assessment for Australia from 1985 to 2015
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land cover has a significant influence on ecosystem function at all spatial scales, from global to local (e.g. 
+Land change assessment relies mainly on the availability of classified spatial information, usually supported by ancillary variables 
+Advances in land change monitoring are occurring rapidly in response to the increasing availability of high and medium-resolution satellite imagery 
+The classification of raw spatial imagery is commonly performed by employing supervised classification methods 
+Australia-the focus of our study-is a country with a heterogeneous landscape and complex land change processes. Major transformations in the Australian landscape began after European settlement, driven by "… [An] unrestricted access to land, technological change and growth in productivity and population" 
+Here, we present the first consistent, high-resolution, long timeseries, wall-to-wall analysis of land-cover and land change for Australia. Using a combination of cloud-based (i.e., GEE) and local computational workflow, we mapped land-cover at 30-m resolution across the entire Australian continent at five-yearly time-steps from 1985 to 2015 by analyzing 281,962 Landsat scenes. The main objectives of this work were to: (i) develop a consistent set of historical land-cover and uncertainty maps at high-spatial resolution for an extended time period covering significant changes to the Australian landscape; (ii) identify land-cover change patterns at national and local scale; and, (iii) assess the accuracy of the land-cover and land change mapping over large areas. Because no historical ground-truth data are available for Australia, we used the Dynamic Land Cover Dataset v2.1 (DLCD) 
+
+## Methods ##
+
+
+## Study area ##
+The focus of this study is continental Australia, with an area of 7,688,287 km 2 , comprising 89 bioregions and 419 subregions 
+
+## Land-cover classification ##
+Our wall-to-wall land-cover classification for Australia combined cloud-based and local computing approaches to pre-process, classify, validate, post-process, and analyze land-cover and land change (Fig. 
+
+## Landsat data and other predictor variables ##
+We used 281,962 atmospherically-corrected Landsat scenes to map land-cover including Landsat 5 (123,299 scenes), Landsat 7 (120,134 scenes), and Landsat 8 (38,529 scenes). At each 
+
+## Pseudo ground-truth data ##
+We used an interactive, semi-automated process for constructing a pseudo-ground truth training and validation dataset. First, we digitally sampled a total of 150,000 pixels via stratified (strata = DLCD landcover class) random sampling. Pixels were scattered across Australia
+
+## Table 2 ##
+Ancillary variables included in theyearly composites. Dots represent the temporal aggregation of the variables tested for the land-cover classification. Variables highlighted in grey were used as final predictors in the land-cover classification process.
+Where: Y: Year; DJF: December, January and February; MAM: March, April and May; JJA: June, July and August; SON: September, October and December; FS: First semester; SS: Second Semester. Sources: 1 Landsat 5, 7 and 8. USGS; covering all the six land-cover classes. We used the raster package 
+Due to the spatial resolution of the DLCD, the reference year and its intrinsic uncertainties, overall accuracy = 82%, we employed an outlier detection method based on the spectral characteristics (at 30-m resolution) for eliminating potentially mislabelled pixels from the pseudoground truth dataset. We used Principal Component Analysis (PCA) 
+
+## Supervised classification ##
+We used a random forest (RF) classifier 
+We tested, on a local computer, hundreds of different combinations of ancillary variables as predictors. After running a RF model for every subset of variables (size and bands were randomly selected) in the training dataset, we selected the most parsimonious model, i.e., the model with fewest variables (to avoid computational limits in GEE) and the highest observed accuracy as measured against the validation dataset. We used the caret 
+To avoid overfitting and to increase the robustness of our classification we used the mode of ten different RF classifications as the mostlikely land-cover classification for every pixel and every time-step. Based on the k-fold cross-validation method used for assessing the uncertainty of a model estimation 
+
+## Post-classification ##
+Approximately 6 7 land-cover change combinations are possible in our study period, some less likely than others, which difficult the establishment of a robust set of transition rules for ensuring the temporal consistency of the classifications. Hence, we decided to take a transparent approach and minimise the amount of postprocessing, but also providing the user with the ability to implement their own postprocessing. Only one post-classification process was implemented where all pixels classified as Built-up areas outside of urban centres defined by the 'Urban Centre and Localities' (Australian Bureau of Statistics, 2016) layer were reclassified as Other. These maps present a transparent landcover classification and, in combination with the two per-pixel confidence layers (see Section 2.3), can be further post-processed and refined according to user preferences. Land-cover transitions and land change was calculated after this post-classification correction (see Section 2.3).
+
+## Accuracy assessment and land-cover change analysis ##
+Using the validation dataset we calculated seven confusion matrices (one per epoch) for determining the overall, producer, and user accuracy (OA, PA, and UA, respectively) of land-cover classifications, after the Built-up area correction 
+Where H represents the entropy, n the number of independent classifications and P i the probability of a given land-cover class. We established three levels of entropy: low, medium, and high when a pixel was mapped as the same land-cover in at least seven, five, and three cases, respectively. The second per-pixel confidence measure was the margin of victory, defined as the difference between the two most common landcover classes among the ten runs 
+For assessing the accuracy of land-cover change represented by our maps, we conducted a random validation of 1800 pixels in six sites with diverse landscape mosaics, as suggested by 
+In every site, we visually checked the land-cover classification of 300 pixels, sampled in a stratified random approach, and the land-cover transitions (if any) across the years. We used Google Earth Pro® for assessing the temporal dynamics of every pixel. We then built binary confusion matrices for assessing whether land change or the lack of it had been correctly identified. Following Foody (2010), we calculated the: 1) sensitivity (S 1 ), that is the proportion of pixels correctly classified as having changed (Eq. 15); 2) specificity (S 2 ), that is the proportion of pixels correctly classified as having not changed (Eq. 16); and, 3) prevalence (θ), that is the proportion of pixels that changed in the period of comparison (Eq. 17) (Table 
+Post-classification land change assessment between two time-points can often lead to erroneous estimations of change 
+
+## Results ##
+
+
+## Land-cover classification ##
+A consistent time-series of seven high spatial resolution land-cover maps was created for Australia for the period 1985-2015 at five year time steps (Fig. 
+At a land-cover class level, accuracies were more variable. For instance, the producer accuracy for 2000 varied from 86.2% to 98.6% for Grasslands and Built-up, respectively, whereas the user accuracy varied from 82.1% to 99.4% for Grasslands and Water, respectively. The same pattern was found for other years, with Grasslands and Other areas having the lowest user and PA (>82%) (see supplementary materials, Table 
+Fig. 
+
+## Land-cover change ##
+Land-cover transitions over the period of study showed that approximately 6.7% (±0.9%) of the total Australian territory experienced definitive land-cover change. Built-up areas experienced the highest relative increase of 19.2% (±3.1%) by 2015 compared to its extent in 1985, expanding mainly into former Grasslands (~ 2152 km 2 ) (Table 
+
+## Table 4 ##
+Binary confusion matrix for estimating the accuracy of land-cover change classification in terms of sensitivity (S 1 ), specificity (S 2 ) and prevalence (θ). Modified from 
+The sensitivity for capturing change in land-cover at the national level was 96.4%, whereas the specificity for representing no-change was 68.3% (Table 
+
+## Discussion ##
+We have developed a consistent time-series of seven high spatial resolution (30-m) land-cover and uncertainty maps for the period 1985-2015 for continental Australia. We show that an error-adjusted area of 510,975 km 2 (±69,877 km 2 ) of Australian land changed at a rate of 17,033 km 2 yr -1 (±2329 km 2 yr -1 ). 
+
+## Interpretation of land change in Australia ##
+Land change has occurred heterogeneously across Australia and between land-cover classes. For instance, Croplands continuously declined in area until 2005 when Grassland transitioned to Cropland and Forest, increasing Cropland extent mainly in Queensland and Victoria. Increases in population and population density, access to markets, and climate conditions are likely to have influenced these cropland dynamics 
+Our definition of Grassland included pastures (managed and unmanaged), chenopods, tussock grasses, and hummock grasses covering around 66% of the Australian land mass and making this class the dominant land-cover class in the country. Changes in Grasslands appeared to be a response to changes in other land-cover classes. At the national level, Grassland increased in extent because of losses in Forest and Cropland (Table 
+Built-up areas experienced the highest relative increases across the country at around 19% over the study period. Increases in population coupled with low population densities, growth in GDP and incentives for infrastructure construction have all influenced the magnitude and direction of urban growth 
+Water presented 5.8% (± 1.4%) increase in area from 1985 to 2015. This apparent increase is most likely to result from temporal dynamics in lake area resulting for seasonal wetting and drying (e.g., salt lakes). Other areas also displayed increases, but it was not possible to discriminate between classification error and actual changes as these areas were commonly confused with other land-cover classes (Table 
+
+## Land-cover classification a comparison ##
+Our estimates of land-cover extent for every class differed with the extents reported by the DLCD v2.1 map (Table 
+New studies at high-spatial resolution are offering new insights of land-cover extent. For example, recent figures produced by 
+
+## Potential application of data and methods, and caveats ##
+Our results provide a comprehensive set of historical wall-to-wall land-cover and uncertainty data layers and land change information for Australia. Until now, national land-cover information for Australia was available only at coarse-spatial resolution (e.g. 
+The methodological framework employed, cloud-based and local, for our mapping provides a robust and efficient approach for producing land-cover information over large areas can be readily adapted, refined, and applied elsewhere as it. Until now, multiclass time-series information at this spatial extent and resolution has been limited to a few regions around the globe and lacked uncertainty information at a spatial level 
+While we have made every effort to make the landcover mapping process transparent, reproducible, and the error and uncertainty explicit, significant limitations persist. First, although GEE offers a proprietary cloud-computing service, free for research purposes, with unparallel capabilities for handling and analyzing petabytes of geospatial information, as part of the terms of service, GEE may add, modify, or deprecate any of its analytical algorithms or functions which might alter the performance of the analysis (we recommend readers keep abreast of the latest updates in GEE by referring to the API changelog, https://developers.google.com/earth-engine/changelog) or even preclude future replication. Similarly, future reproducibility of the current research will also depend on the existence of remote GEE servers. Studies at smaller scales should consider the use of historical stable archives (e.g., USGS EROS) and reproducible workflows.
+
+## Accuracy, uncertainty, and its sources ##
+Besides substantially enhancing the spatial and temporal resolution of the available land-cover information for Australia, our mapping product offers per-pixel confidence information unavailable at national level until now. Our classification performed better for Built-up and Water classes (producer and user accuracy >95%) whereas Grassland and Other areas presented the lowest accuracies (producer and user accuracy >82%). Furthermore, the land-cover extent of every class was unbiased. The omission and commission errors presented similar magnitudes for every class, except for Water where omission errors were slightly higher (i.e., maps identified less area of water bodies than their actual extent), suggesting no systematic under or overestimation. Over time, land-cover maps presented higher omission and commission errors for Grasslands and Forests. Land-cover change accuracy expressed as sensitivity and specificity, differed between the six sites assessed (Table 
+Sources of lower accuracies (in the case of Grasslands and Other areas), commission and omission errors, and land-cover change errors are related to the: 1) definition of land-cover classes; 2) reliability of the satellite imagery and sensor limitations; 3) ancillary variables for landcover classification; and, 4) mislabeled training and validation data. We defined our land-cover classes based on the purpose of our mapping, the land-cover classification used as a reference, accepted definitions, technical capabilities of Landsat sensors, and the available information for discriminating similar classes (e.g., Grassland and Cropland). In this context, there is a trade-off between the reliability of the classifier for capturing differentiable classes (e.g., Built-up areas) and those that present similar spectral characteristics (e.g., Grasslands and Croplands). Furthermore, Grasslands and Other areas contain a vast array of spectrally similar sub-classes. For instance, from visual assessment we found common confusion between areas with sparse vegetation and Grasslands (in some areas those are classified as Forest and in other as Grasslands).
+Similarly, Other areas (that included salt lakes, bare lands, mines, sand dunes, and wetlands) were often classified as Water, Built-up, or Grassland. While the addition of bioclimatic information (e.g., precipitation and mean temperature) and spectral indices (e.g., EVI, NDWI) at a seasonal level helped to improve the consistency of the classifications, further post-processing is required. Despite the temporal and spectral resolution of Landsat sensors, we managed to have cloud-free and shadow-free composites for every time-step. Because of the size of our study area, computation time and memory limitations in GEE, we restricted the number of ancillary variables (n = 49), descriptive statistics (we used only the median), seasons (n = 7), training (n = 19,552) and validation points (n = 9178), and, the number of k-folds (k = 10) used in the classification process. Although we tested the performance of the classification with different sets of variables on a local computer, we may have omitted/included relevant/redundant variables that could have influenced the final classifications. While increasing the training sample size and the number of folds used in the classification may further increase the accuracy of our results, the effect is likely to be marginal.
+Our interactive semi-automated method for constructing an historical set of invariant pseudo-ground truth data performed adequately as we clustered pixels with similar spectral characteristics and retained those that did not change during the period of study. The process had to be complemented with a visual validation for reducing the maximum number of mislabeled pixels, and for ensuring a homogeneous distribution across the country and a robust training and validation dataset. Subjectivity at the moment of deciding the reference class of a pixel could have introduced noise in the training and validation datasets, however, the impact of noise on the final classification should be low 
+Each land-cover map has an associated entropy and margin of victory map (Fig. 
+
+## Conclusion ##
+We have presented a historical set of seven wall-to-wall land-cover maps for Australia at 30-m resolution at 5-year time steps from 1985 to 2015. The maps are the first-of-their-kind for Australia, and one of only a few available at continental scale. They were created by using more than 281,962 Landsat scenes and have an overall accuracy of ~93%. Per-class producer and user accuracies were above 90% for most land-cover classes illustrating the confidence of our estimates. The results show that ~6.7% (±0.9%) of the Australian land mass has experienced land change at a rate of ~17,033 km 2 yr -1 (±2329 km 2 yr -1 ). While the main losses occurred in Croplands and Forests, the highest relative increases were experienced by Built-up areas coming mainly at the expense of Grassland losses. Accuracy assessment suggested that the sensitivity for capturing change was 96.4%, whereas the specificity for representing stable areas was 68.3%, i.e., change was erroneously simulated in areas dominated by a mosaic of Forest (especially open forests and tall woodlands), Grassland (tall shrublands), and Cropland. These results can be combined with the uncertainty maps for the design and implementation of postprocessing rules depending on the final users' needs. Similarly, these outputs can be used for identifying areas that require more ground-truth data. By exploiting the capabilities of GEE for analyzing big geospatial data, we have demonstrated that time-series mapping of land-cover over large areas at high-spatial resolution is now possible. This land change assessment framework is suitable for understanding land dynamics at large extents. Our freely-available maps provide a consistent data product for the assessment of land change at local to national scales and as inputs for a plethora of other modelling exercises and assessments.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Human appropriation of land for food: the role of diet
+   Authors: , , , , 
+   Date: 2016. 2016
+
+2. 
+   Authors: , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+   Date: 2016
+
+3. Satellite remote sensing of grasslands: from observation to management
+   Authors: , , , , 
+   Date: 2016
+
+4. GlobCover: ESA service for global land cover from MERIS
+   Authors: , , , , , , , , , 
+   Date: 2007. 2007
+
+5. Urban Centres and Localities (UCL). Australian Bureau of Statistics
+   Date: 2016
+
+6. No unbiased estimator of the variance of k-fold crossvalidation
+   Authors: , 
+   Date: 2004
+
+7. Forests and climate change: forcings, feedbacks, and the climate benefits of forests
+   Authors: 
+   Date: 2008
+
+8. Consistent global land cover maps for climate modelling communities: current achievements of the ESA's land cover CCI
+   Authors: , , , , , , , , , 
+   Date: 2013
+
+9. CORINE Land Cover Technical Guide: Addendum
+   Authors: , , 
+   Date: 2000
+
+10. Random forests
+   Authors: 
+   Date: 2001
+
+11. Estimating per-pixel thematic uncertainty in remote sensing classifications
+   Authors: , , 
+   Date: 2009
+
+12. Opportunities to improve impact, integration, and evaluation of land change models
+   Authors: , , , 
+   Date: 2013
+
+13. Land-use and sustainability under intersecting global change and domestic policy scenarios: trajectories for Australia to 2050
+   Authors: , , , , , , , , , , , , , , , , , , , , , 
+   Date: 2016
+
+14. Effect of errors in ground truth on classification accuracy
+   Authors: 
+   Date: 2009
+
+15. On the relation between NDVI, fractional vegetation cover, and leaf area index
+   Authors: , 
+   Date: 1997
+
+16. Global land cover mapping at 30m resolution: a POK-based operational approach
+   Authors: , , , , , , , , , , , , 
+   Date: 2015
+
+17. Global land cover mapping: a review and uncertainty analysis
+   Authors: , , , , 
+   Date: 2014
+
+18. Classifying drivers of global forest loss
+   Authors: , , , , 
+   Date: 2018
+
+19. Classification and interaction in random forests
+   Authors: , 
+   Date: 2018
+
+20. Barest pixel composite for agricultural areas using landsat time series
+   Authors: , , , 
+   Date: 2017
+
+21. Deforestation in Australia: drivers, trends and policy responses
+   Authors: 
+   Date: 2016
+
+22. The shuttle radar topography mission
+   Authors: , , , , , , , , , 
+   Date: 2007
+
+23. Global consequences of land use
+   Authors: , , , , , , , , , , , , , , , , , , 
+   Date: 2005
+
+24. Status of land cover classification accuracy assessment
+   Authors: 
+   Date: 2002
+
+25. Assessing the accuracy of land cover change with imperfect ground reference data
+   Authors: 
+   Date: 2010
+
+26. The use of small training sets containing mixed pixels for accurate hard image classification: training on mixed spectral responses for classification by a SVM
+   Authors: , 
+   Date: 2006
+
+27. MODIS collection 5 global land cover: algorithm refinements and characterization of new datasets
+   Authors: , , , , , , 
+   Date: 2010
+
+28. Next generation of global land cover characterization, mapping, and monitoring
+   Authors: , , , 
+   Date: 2013
+
+29. Stable classification with limited sample: transferring a 30-m resolution sample set collected in 2015 to mapping 10-m resolution
+   Authors: , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+   Date: 2019. 2017
+
+30. Google earth engine: planetary-scale geospatial analysis for everyone
+   Authors: , , , , , 
+   Date: 2017
+
+31. Scenarios for Australian agricultural production and land use to 2050
+   Authors: , , , , , , 
+   Date: 2016
+
+32. Estimating fractional cover of photosynthetic vegetation, non-photosynthetic vegetation and bare soil in the Australian tropical savanna region upscaling the EO-1 Hyperion and MODIS sensors
+   Authors: , , , , , 
+   Date: 2009
+
+33. Futures of global urban expansion: uncertainties and implications for biodiversity conservation
+   Authors: , 
+   Date: 2013
+
+34. Evidence of urban land teleconnections and impacts on hinterlands
+   Authors: , , 
+   Date: 2013
+
+35. Global land cover classification at 1 km spatial resolution using a classification tree approach
+   Authors: , , , 
+   Date: 2000
+
+36. High-resolution global maps of 21stcentury forest cover change
+   Authors: , , , , , , , , , , , , , , 
+   Date: 2013
+
+37. Global land-use allocation model linked to an integrated assessment model
+   Authors: , , , , 
+   Date: 2017
+
+38. Land use options for staying within the planetary boundaries -Synergies and trade-offs between global and local sustainability goals
+   Authors: , , , , 
+   Date: 2018
+
+39. Efficient collection of training data for sub-pixel land cover classification using neural networks
+   Authors: , , , 
+   Date: 2011
+
+40. Raster: Geographic Data Analysis and Modeling
+   Authors: , 
+   Date: 2016
+
+41. The WorldClim Interpolated Global Terrestrial Climate Surfaces
+   Authors: , , , , 
+   Date: 2004
+
+42. Downscaling land-use data to provide global 30 ′′ estimates of five land-use classes
+   Authors: , , , , , , , 
+   Date: 2016
+
+43. Land cover changes and their driving mechanisms in Central Asia from 2001 to 2017 supported by Google earth engine
+   Authors: , 
+   Date: 2019
+
+44. Application of DMSP/OLS nighttime light images: a meta-analysis and a systematic literature review
+   Authors: , , , , 
+   Date: 2014
+
+45. Automatic Labelling and selection of training samples for high-resolution remote sensing image classification over urban areas
+   Authors: , , , , 
+   Date: 2015
+
+46. A soil-adjusted vegetation index (SAVI)
+   Authors: 
+   Date: 1988
+
+47. A comparison of vegetation indices over a global set of TM images for EOS-MODIS
+   Authors: , , , 
+   Date: 1997
+
+48. Harmonization of land-use scenarios for the period 1500-2100: 600 years of global gridded annual land-use transitions, wood harvest, and resulting secondary lands
+   Authors: , , , , , , , , , , , , , , , , , , , , , 
+   Date: 2011
+
+49. Climate Change
+   Authors: 
+   Date: 2014. 2014
+
+50. Mapping per-pixel predicted accuracy of classified remote sensing images
+   Authors: , , 
+   Date: 2017
+
+51. How good is the map? A multi-scale cross-comparison framework for global settlement layers: evidence from Central Europe
+   Authors: , , , , 
+   Date: 2016
+
+52. Participatory mapping of forest plantations with open Foris and Google earth engine
+   Authors: , , , , , , , 
+   Date: 2019
+
+53. The caret package
+   Authors: 
+   Date: 2012
+
+54. Landscapes in Transition: Tracking Land Use Change in Australia
+   Authors: 
+   Date: 2011
+
+55. Reprint Land Use and Management-The Australian Context, Land Use in Australia
+   Authors: , 
+   Date: 2018
+
+56. Classification and regression by randomForest
+   Authors: , 
+   Date: 2002
+
+57. A future land use simulation model (FLUS) for simulating multiple land use scenarios by coupling human and natural effects
+   Authors: , , , , , , , , 
+   Date: 2017
+
+58. Development of a global land cover characteristics database and IGBP DISCover from 1 km AVHRR data
+   Authors: , , , , , , 
+   Date: 2000
+
+59. 
+   Authors: , , , , , , , , , 
+   Date: 2011
+
+60. Subpixel land-cover classification for improved urban area estimates using Landsat
+   Authors: , , , 
+   Date: 2017
+
+61. MapBiomas Project -Is a Multi-institutional Initiative to Generate Annual Land Cover and Use Maps using Automatic Classification Processes Applied to Satellite Images
+   Authors: 
+   Date: 2019
+
+62. Agricultural land-use dynamics: assessing the relative importance of socioeconomic and biophysical drivers for more targeted policy
+   Authors: , , , , 
+   Date: 2017
+
+63. Increasing impacts of land use on biodiversity and carbon sequestration driven by population and economic growth
+   Authors: , , , , , , , , , 
+   Date: 2019
+
+64. Remote sensing for grassland management in the arid southwest
+   Authors: , , , , , , , , 
+   Date: 2006
+
+65. Urbanization and Global Trends in Biodiversity and Ecosystem Services, Urbanization, Biodiversity and Ecosystem Services: Challenges and Opportunities
+   Authors: , , 
+   Date: 2013
+
+66. The use of the normalized difference water index (NDWI) in the delineation of open water features
+   Authors: 
+   Date: 1996
+
+67. Estimating pixel-scale land cover classification confidence using nonparametric machine learning methods
+   Authors: , 
+   Date: 2001
+
+68. Exploring issues of training data imbalance and mislabelling on random forest performance for large area land cover classification using the ensemble margin
+   Authors: , , , 
+   Date: 2015
+
+69. Mapping land cover change over continental Africa using Landsat and Google earth engine cloud computing
+   Authors: , , , , , , 
+   Date: 2017
+
+70. REMAP: an online remote sensing application for land cover classification and monitoring
+   Authors: , , , , 
+   Date: 2018
+
+71. Evaluation of random forest ensemble classification for land cover mapping using TM and ancillary geographical data
+   Authors: , , 
+   Date: 2009. 2009
+
+72. Australia's State of the Forest Report
+   Date: 1998. 1998
+
+73. Characterizing land use/land cover using multisensor time series from the perspective of land surface phenology
+   Authors: , 
+   Date: 2019
+
+74. Making better use of accuracy data in land change studies: estimating accuracy and area and quantifying uncertainty using stratified estimation
+   Authors: , , , 
+   Date: 2013
+
+75. Good practices for estimating area and assessing accuracy of land change
+   Authors: , , , , , 
+   Date: 2014
+
+76. Terrestrial Ecoregions of the world: a new map of life on EarthA new global map of terrestrial ecoregions provides an innovative tool for conserving biodiversity
+   Authors: , , , , , , , , , 
+   Date: 2001
+
+77. Effect of training class label noise on classification performances for land cover mapping with satellite image time series
+   Authors: , , , , , 
+   Date: 2017
+
+78. The reflectance at the 950-970 nm region as an indicator of plant water status
+   Authors: , , , , 
+   Date: 1993
+
+79. 
+   Authors: , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , 
+   Date: 2019
+
+80. Land transition estimates from erroneous maps
+   Authors: , 
+   Date: 2010
+
+81. Land-use futures in the shared socio-economic pathways
+   Authors: , , , , , , , , , , , , , , , , , , , , , , , 
+   Date: 2017
+
+82. A critical look at representations of urban areas in global maps
+   Authors: , 
+   Date: 2007
+
+83. Hotspots of uncertainty in land-use and land-cover change projections: a global-scale model comparison
+   Authors: , , , , , , , , , , , , , , , , , , , , , , , , 
+   Date: 2016
+
+84. A modified soil adjusted vegetation index
+   Authors: , , , , 
+   Date: 1994
+
+85. Deep learning and process understanding for data-driven earth system science
+   Authors: , , , , , , 
+   Date: 2019
+
+86. An assessment of the effectiveness of a random forest classifier for land-cover classification
+   Authors: , , , , 
+   Date: 2012
+
+87. Optimization of soil-adjusted vegetation indices
+   Authors: , , 
+   Date: 1996
+
+88. A novel algorithm for calculating transition potential in cellular automata models of land-use/cover change
+   Authors: , , 
+   Date: 2019
+
+89. Operational application of the landsat timeseries to address large area landcover understanding
+   Authors: , , , , , , , , , 
+   Date: 2015
+
+90. A structural classification of Australian vegetation using ICESat/GLAS, ALOS PALSAR, and Landsat sensor data
+   Authors: , , , 
+   Date: 2019
+
+91. Cattle, crops and clearing: regional drivers of landscape change in the Brigalow Belt
+   Authors: , , 
+   Date: 2006
+
+92. A meta-analysis of global urban land expansion
+   Authors: , , , 
+   Date: 2011
+
+93. Uncertainty assessment of hyperspectral image classification: deep learning vs
+   Authors: , , , 
+   Date: 2019
+
+94. A robust rule-based ensemble framework using mean-shift segmentation for Hyperspectral image classification
+   Authors: , , , 
+   Date: 2019. 2057
+
+95. A mathematical theory of communication
+   Authors: 
+   Date: 1948
+
+96. Spatial and temporal patterns of land clearing during policy change
+   Authors: , , , , , 
+   Date: 2018
+
+97. Frequent policy uncertainty can negate the benefits of forest conservation policy
+   Authors: , , , , 
+   Date: 2018
+
+98. Effectiveness of regulatory policy in curbing deforestation in a biodiversity hotspot
+   Authors: , , , , , 
+   Date: 2018
+
+99. Global land change from 1982 to 2016
+   Authors: , , , , , , 
+   Date: 2018
+
+100. SA Land Cover. South Australian Department for Environment and Water
+   Date: 2018
+
+101. Applying machine learning methods and time series analysis to create a national dynamic land cover dataset for Australia
+   Authors: , , , , , , 
+   Date: 2013. 2013
+
+102. R: A Language and Environment for Statistical Computing
+   Authors: 
+   Date: 2013
+
+103. A 30-m landsat-derived cropland extent product of Australia and China using random forest machine learning algorithm on Google earth engine cloud computing platform
+   Authors: , , , , , , , 
+   Date: 2018
+
+104. An Interim Biogeographic Regionalisation for Australia: A Framework for Setting Priorities in the National Reserves System Cooperative
+   Authors: , 
+   Date: 1995
+
+105. Global characterization and monitoring of forest cover using Landsat data: opportunities and challenges
+   Authors: , , , , , , , , , , , , , , , , , 
+   Date: 2012
+
+106. The emergence of land change science for global environmental change and sustainability
+   Authors: , , 
+   Date: 2007
+
+107. A review of current calibration and validation practices in land-change modeling
+   Authors: , , , , , 
+   Date: 2016
+
+108. Land use change modelling: current practice and research priorities
+   Authors: , , , 
+   Date: 2004
+
+109. Land system science and sustainable development of the earth system: a global land project perspective
+   Authors: , , , , , , , , , , , , , , , , , , 
+   Date: 2015
+
+110. Developing spatially and thematically detailed backdated maps for land cover studies
+   Authors: , , , 
+   Date: 2017
+
+111. Crop type mapping without field-level labels: random forest transfer and unsupervised clustering techniques
+   Authors: , , 
+   Date: 2019
+
+112. Principal component analysis
+   Authors: , , 
+   Date: 1987
+
+113. Landsat continuity: issues and opportunities for land cover monitoring
+   Authors: , , , , , , , , 
+   Date: 2008
+
+114. Nominal 30-m cropland extent map of continental Africa by integrating pixel-based and object-based algorithms using Sentinel-2 and Landsat-8 data on Google earth engine
+   Authors: , , , , , , , , 
+   Date: 2017
+
+115. A survival guide to Landsat preprocessing
+   Authors: , , , , , 
+   Date: 2017
+
+116. Use of normalized difference built-up index in automatically mapping urban areas from TM imagery
+   Authors: , , 
+   Date: 2003
+
+117. Building a better urban picture: combining day and night remote sensing imagery
+   Authors: , , , 
+   Date: 2015
+
+118. Optimizing selection of training and auxiliary data for operational land cover classification for the LCMAP initiative
+   Authors: , , , , , , , , , 
+   Date: 2016
+

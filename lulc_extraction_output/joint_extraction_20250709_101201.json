@@ -1,0 +1,333 @@
+{
+  "metadata": {
+    "extraction_date": "2025-07-09T10:12:01.157429",
+    "model": "mistralai/Mistral-7B-Instruct-v0.2",
+    "extraction_type": "joint_entity_relation",
+    "statistics": {
+      "total_sentences_processed": 5,
+      "sentences_with_entities": 2,
+      "sentences_with_relations": 4,
+      "total_entities_extracted": 14,
+      "total_relations_extracted": 9,
+      "entity_types": {
+        "DATE": 2,
+        "LOC": 1,
+        "QUANTITY": 2,
+        "LULC": 1,
+        "PROCESS": 4,
+        "CARDINAL": 4
+      },
+      "relation_types": {
+        "LOCATED_IN": 1,
+        "CAUSES": 3,
+        "INCREASES_BY": 2,
+        "CHANGE_TO": 2,
+        "DECREASES_BY": 1
+      }
+    }
+  },
+  "results": [
+    {
+      "sentence_id": 0,
+      "sentence": "After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g",
+      "original_entities": [
+        {
+          "text": "the 1970s and 1980s",
+          "label": "DATE",
+          "start_char": 31,
+          "end_char": 50
+        },
+        {
+          "text": "loss",
+          "label": "CHANGE",
+          "start_char": 65,
+          "end_char": 69
+        }
+      ],
+      "extracted_entities": [
+        {
+          "text": "1970s, 1980s",
+          "label": "DATE"
+        },
+        {
+          "text": "Sahel",
+          "label": "LOC"
+        },
+        {
+          "text": "large parts",
+          "label": "QUANTITY"
+        },
+        {
+          "text": "degraded land",
+          "label": "LULC"
+        },
+        {
+          "text": "e.g",
+          "label": "PROCESS"
+        }
+      ],
+      "model_response": "\n\nENTITIES:\n- droughts | EVENT\n- 1970s, 1980s | DATE\n- Sahel | LOC\n- large parts | QUANTITY\n- degraded land | LULC\n- e.g | PROCESS\n\nRELATIONS:\n- droughts:EVENT --CAUSES-- loss:CHANGE (medium)\n- 1970s:DATE --PRECEDES-- 1980s:DATE (high)\n- Sahel:LOC --LOCATED_IN-- Africa:LOC (medium)\n- loss:CHANGE --TRANSFORMS_TO-- degraded_land:LULC (low)\n- degraded_land:LULC --IS_A-- LULC (high)\n- large parts:QUANTITY --COMPRISES-- loss:CHANGE (medium)",
+      "extracted_relations": [
+        {
+          "source": "Sahel",
+          "source_type": "LOC",
+          "relationship": "LOCATED_IN",
+          "target": "Africa",
+          "target_type": "LOC",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "num_entities": 5,
+      "num_relations": 1,
+      "processing_timestamp": "2025-07-09T10:11:12.888248"
+    },
+    {
+      "sentence_id": 1,
+      "sentence": "Pastoral production has often existed in some sort of symbiotic interaction with the [agriculture]",
+      "original_entities": [
+        {
+          "text": "agriculture",
+          "label": "LULC",
+          "start_char": 95,
+          "end_char": 106
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- pastoral production:PROCESS\n- agriculture:LULC\n\nRELATIONS:\n- pastoral production:PROCESS --CAUSES-- agriculture:LULC | CONF: HIGH\n- agriculture:LULC --INTERACTS_WITH-- pastoral production:PROCESS | CONF: MEDIUM\n\nNote: The term \"interacts with\" is used here as a placeholder for the more specific \"symbiotic interaction\". However, since the sentence does not provide enough information to determine the exact nature of the interaction, we can only infer that it is a relationship between the two entities.",
+      "extracted_relations": [
+        {
+          "source": "pastoral production",
+          "source_type": "PROCESS",
+          "relationship": "CAUSES",
+          "target": "agriculture",
+          "target_type": "LULC",
+          "confidence": "HIGH"
+        }
+      ],
+      "num_entities": 0,
+      "num_relations": 1,
+      "processing_timestamp": "2025-07-09T10:11:22.465271"
+    },
+    {
+      "sentence_id": 2,
+      "sentence": "The forests of West and Central Africa probably originally covered a combined area of about 3 million km 2",
+      "original_entities": [
+        {
+          "text": "forests",
+          "label": "LULC",
+          "start_char": 13,
+          "end_char": 20
+        },
+        {
+          "text": "West",
+          "label": "LOC",
+          "start_char": 24,
+          "end_char": 28
+        },
+        {
+          "text": "Central Africa",
+          "label": "LOC",
+          "start_char": 33,
+          "end_char": 47
+        },
+        {
+          "text": "area of about 3 million km",
+          "label": "SURFACE_UNIT",
+          "start_char": 87,
+          "end_char": 113
+        },
+        {
+          "text": "2",
+          "label": "CARDINAL",
+          "start_char": 114,
+          "end_char": 115
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- forests:LULC\n- West and Central Africa:LOC\n- about 3 million km 2:QUANTITY\n\nRELATIONS:\n- forests:LULC --ORIGINALLY_COVERED-- West and Central Africa:LOC | CONF: HIGH\n- West and Central Africa:LOC --PROBABLY_HAD-- about 3 million km 2:QUANTITY | CONF: HIGH\n\nNo explicit relations can be extracted from the sentence based on the given rules.",
+      "extracted_relations": [],
+      "num_entities": 0,
+      "num_relations": 0,
+      "processing_timestamp": "2025-07-09T10:11:30.807023"
+    },
+    {
+      "sentence_id": 3,
+      "sentence": "(1993)'}], '#text': \"An increase of land under [cultivation] can be in the form of either (a) clearing more land within the present territory, or (b) migrating to other areas to develop new land for [cultivation]",
+      "original_entities": [
+        {
+          "text": "1993",
+          "label": "DATE",
+          "start_char": 1,
+          "end_char": 5
+        },
+        {
+          "text": "increase",
+          "label": "CHANGE",
+          "start_char": 24,
+          "end_char": 32
+        },
+        {
+          "text": "cultivation",
+          "label": "PROCESS",
+          "start_char": 48,
+          "end_char": 59
+        },
+        {
+          "text": "cultivation",
+          "label": "PROCESS",
+          "start_char": 200,
+          "end_char": 211
+        }
+      ],
+      "extracted_entities": [
+        {
+          "text": "(1993)",
+          "label": "DATE"
+        },
+        {
+          "text": "'An increase of land under cultivation'",
+          "label": "QUANTITY"
+        },
+        {
+          "text": "can be in the form of",
+          "label": "PROCESS"
+        },
+        {
+          "text": "either",
+          "label": "CARDINAL"
+        },
+        {
+          "text": "(a)",
+          "label": "CARDINAL"
+        },
+        {
+          "text": "clearing more land within the present territory",
+          "label": "PROCESS"
+        },
+        {
+          "text": "or",
+          "label": "CARDINAL"
+        },
+        {
+          "text": "(b)",
+          "label": "CARDINAL"
+        },
+        {
+          "text": "migrating to other areas to develop new land for cultivation",
+          "label": "PROCESS"
+        }
+      ],
+      "model_response": "\n\nENTITIES:\n- (1993) | DATE\n- 'An increase of land under cultivation' | QUANTITY\n- can be in the form of | PROCESS\n- either | CARDINAL\n- (a) | CARDINAL\n- clearing more land within the present territory | PROCESS\n- or | CARDINAL\n- (b) | CARDINAL\n- migrating to other areas to develop new land for cultivation | PROCESS\n\nRELATIONS:\n- 'An increase of land under cultivation' :QUANTITY --INCREASES_BY-- (1993) :DATE | CONF: HIGH\n- can be in the form of :PROCESS --CAUSES-- (either :CARDINAL --CHANGE_TO--> :PROCESS) | CONF: MEDIUM\n- (a) :CARDINAL --CHANGE_TO--> clearing more land within the present territory :PROCESS | CONF: HIGH\n- (b) :CARDINAL --CHANGE_TO--> migrating to other areas to develop new land for cultivation :PROCESS | CONF: HIGH\n\nNote: The confidence level for the relations created from the sentence is assumed to be high unless otherwise specified.",
+      "extracted_relations": [
+        {
+          "source": "'An increase of land under cultivation'",
+          "source_type": "QUANTITY",
+          "relationship": "INCREASES_BY",
+          "target": "(1993)",
+          "target_type": "DATE",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "can be in the form of",
+          "source_type": "PROCESS",
+          "relationship": "CAUSES",
+          "target": "(either",
+          "target_type": "CARDINAL",
+          "confidence": "MEDIUM"
+        },
+        {
+          "source": "(a)",
+          "source_type": "CARDINAL",
+          "relationship": "CHANGE_TO",
+          "target": "clearing more land within the present territory",
+          "target_type": "PROCESS",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "(b)",
+          "source_type": "CARDINAL",
+          "relationship": "CHANGE_TO",
+          "target": "migrating to other areas to develop new land for cultivation",
+          "target_type": "PROCESS",
+          "confidence": "HIGH"
+        }
+      ],
+      "num_entities": 9,
+      "num_relations": 4,
+      "processing_timestamp": "2025-07-09T10:11:49.968327"
+    },
+    {
+      "sentence_id": 4,
+      "sentence": "(2006), who estimate an increase in the national [urban] share of 0.45 percent with a reduction in national rainfall of 1 percent",
+      "original_entities": [
+        {
+          "text": "2006",
+          "label": "DATE",
+          "start_char": 1,
+          "end_char": 5
+        },
+        {
+          "text": "increase",
+          "label": "CHANGE",
+          "start_char": 24,
+          "end_char": 32
+        },
+        {
+          "text": "urban",
+          "label": "LULC",
+          "start_char": 50,
+          "end_char": 55
+        },
+        {
+          "text": "0.45 percent",
+          "label": "PERCENT",
+          "start_char": 66,
+          "end_char": 78
+        },
+        {
+          "text": "reduction",
+          "label": "CHANGE",
+          "start_char": 86,
+          "end_char": 95
+        },
+        {
+          "text": "1 percent",
+          "label": "PERCENT",
+          "start_char": 120,
+          "end_char": 129
+        }
+      ],
+      "extracted_entities": [],
+      "model_response": "\n\nENTITIES:\n- (2006):DATE\n- urban:LULC\n- national:LOC\n- 0.45 percent:QUANTITY\n- 1 percent:QUANTITY\n\nRELATIONS:\n- national:LOC --CAUSES-- urban:LULC | CONF: HIGH\n- urban:LULC --INCREASES_BY-- 0.45 percent:QUANTITY | CONF: HIGH\n- urban:LULC --DECREASES_BY-- 1 percent:QUANTITY | CONF: HIGH\n\nThe given sentence does not provide enough information to determine any explicit or directly implied relations between entities other than those mentioned above.",
+      "extracted_relations": [
+        {
+          "source": "national",
+          "source_type": "LOC",
+          "relationship": "CAUSES",
+          "target": "urban",
+          "target_type": "LULC",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "urban",
+          "source_type": "LULC",
+          "relationship": "INCREASES_BY",
+          "target": "0.45 percent",
+          "target_type": "QUANTITY",
+          "confidence": "HIGH"
+        },
+        {
+          "source": "urban",
+          "source_type": "LULC",
+          "relationship": "DECREASES_BY",
+          "target": "1 percent",
+          "target_type": "QUANTITY",
+          "confidence": "HIGH"
+        }
+      ],
+      "num_entities": 0,
+      "num_relations": 3,
+      "processing_timestamp": "2025-07-09T10:12:01.132280"
+    }
+  ]
+}

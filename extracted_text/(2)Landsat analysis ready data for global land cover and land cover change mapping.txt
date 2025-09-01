@@ -1,0 +1,282 @@
+================================================================================
+TITLE: Landsat Analysis Ready Data for Global Land Cover and Land Cover Change Mapping
+================================================================================
+
+AUTHORS:
+- Peter Potapov
+- Matthew Hansen
+- Indrani Kommareddy
+- Anil Kommareddy
+- Svetlana Turubanova
+- Amy Pickens
+- Bernard Adusei
+- Alexandra Tyukavina
+- Qing Ying
+
+ABSTRACT:
+The multi-decadal Landsat data record is a unique tool for global land cover and land use change analysis. However, the large volume of the Landsat image archive and inconsistent coverage of clear-sky observations hamper land cover monitoring at large geographic extent. Here, we present a consistently processed and temporally aggregated Landsat Analysis Ready Data produced by the Global Land Analysis and Discovery team at the University of Maryland (GLAD ARD) suitable for national to global empirical land cover mapping and change detection. The GLAD ARD represent a 16-day time-series of tiled Landsat normalized surface reflectance from 1997 to present, updated annually, and designed for land cover monitoring at global to local scales. A set of tools for multi-temporal data processing and characterization using machine learning provided with GLAD ARD serves as an end-to-end solution for Landsat-based natural resource assessment and monitoring. The GLAD ARD data and tools have been implemented at the national, regional, and global extent for water, forest, and crop mapping. The GLAD ARD data and tools are available at the GLAD website for free access.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+The joint National Aeronautics and Space Administration (NASA) and the United States Geological Survey (USGS) Landsat program, which started in the early 1970s, provides the longest continuous global archive of the satellite earth observation data. Since the launch of 
+The methods for globally consistent, multi-temporal land cover characterization and change detection were developed in the late 1990s-early 2000s using the low spatial resolution data from Advanced Very High Resolution Radiometer (AVHRR) and Moderate Resolution Imaging Spectroradiometer (MODIS) 
+Landsat imagery is available globally as Level 1 data (geometrically corrected data processed to sensor units) from the USGS Earth Resources Observation and Science Center (USGS EROS). The Level 2 (surface reflectance) data are available on request. The lack of Landsat Level 3 products requires users to develop and implement custom solutions for spatial and temporal data aggregation. Several initiatives are aimed to create a consistent ARD data products from the Landsat data archive, including Web-enabled Landsat Data (WELD) 
+The Global Land Analysis and Discovery (GLAD) team at the University of Maryland has developed and implemented an automated Landsat data processing system that generates globally consistent analysis ready data (GLAD ARD) as inputs for land cover and land use mapping and change analysis. The data processing algorithms were developed by Hansen et al. 
+
+## The GLAD ARD Methodology ##
+
+
+## Landsat Image Processing ##
+
+
+## Image Selection ##
+We employ the archive of Landsat TM, ETM+, and OLI/TIRS data collected from the year 1997 to present available from the USGS EROS Data Center (https://earthexplorer.usgs.gov/). The Landsat Collection 1 Level 1 data are organized into three categories (tiers): Tier 1, Tier 2, and Real-Time 
+The purpose of the ARD is to map land cover and land use during the growing season, hence images affected by seasonal snow cover are excluded from processing. The seasonal snow cover was analyzed using the MODIS/Terra Snow Cover Monthly L3 Global product (https://nsidc.org/data/MOD10CM/versions/6) and Landsat imagery. We excluded all 16-day intervals (see section 2.1.5) that feature seasonal snow cover. The snow-free window duration (Figure 
+Almost 3 million images (2,984,860) from 1 January 1997, to 31 October 2019, were selected and processed to create the global ARD. The annual image count (Figure 
+The Tier 1 data delivered as precision and terrain corrected products (L1TP) with image-toimage registration Root Mean Square Error (RMSE) of or below 12 meters 
+
+## Conversion to Radiometric Quantity ##
+Due to the differences in spectral band configuration between Landsat sensors, only spectral bands with matching wavelengths between TM, ETM+, and OLI/TIRS sensors are processed (Table 
+Landsat Collection 1 data contain radiation measurements for reflective visible/infrared bands in the form of scaled reflectance (OLI) or radiance (TM/ETM+) recorded as integer digital numbers (DNs) 
+For the TM and ETM+ data, we use the TOA conversion methods and coefficients from 
+ρ -scaled TOA reflectance; π -pi constant; d -Earth-Sun distance; G -gain factor; DNoriginal digital number; B -bias factor; ESUN -mean exoatmospheric solar irradiance; sunelev -solar elevation angle. Parameters d, G, B, and ESUN are taken from 
+Parameter sunelev comes from the image metadata.
+The OLI data are provided as TOA reflectance without solar zenith correction. We apply Equation 2 to perform the correction for the incoming solar radiation angle. ρ=(0.0002×DN+0.1)/(sin(sunelev×π/180)) × 40,000
+ρ -scaled TOA reflectance; π -pi constant; DN -original digital number; sunelev -solar elevation angle from the image metadata.
+The thermal band is converted into brightness temperature and recorded in Kelvin × 100 to preserve measurement precision (Equation 
+(3) TB -scaled brightness temperature; K1 and K2 -calibration coefficients; G -gain factor; DN -original digital number; B -bias factor. Parameters G, B, K1, and K2 are taken from 
+
+## Observation Quality Assessment ##
+The per-pixel observation quality assessment is used to highlight observations with a high probability of atmospheric contamination by clouds, haze, or cloud shadows. In addition, observation quality assessment performs generic snow/ice and water mapping. Observation quality assessment is based on the aggregation of the Landsat quality assessment band and GLAD quality assessment model output.
+The Landsat Collection 1 data include a Quality Assessment (QA) band based on the globally consistent CFMask cloud and cloud shadow detection algorithm 
+The GLAD observation quality assessment model developed by our team represents a set of regionally adapted decision tree ensembles 
+A comparison of the GLAD and CFMask cloud and cloud shadow detection results in Southeast Asia (Table 
+For the Landsat 5 TM sensor, we applied an additional observation quality check to remove sensor errors. Specifically, we excluded observations which have incorrect (usually, abnormally low) radiance measurements for selected bands. We assigned a "no data" flag to all pixels that have DN values for visible and NIR bands below 7 (empirically derived threshold). For Landsat 5 data from the years 2001 and 2002, when most of the sensor anomalies were detected, an image was removed from ARD processing if it contained more than 10,000 of such pixels.
+
+## Reflectance Normalization ##
+Reflectance normalization is a required step that allows extrapolation of the image characterization models in time and space by ensuring spectral similarity of the same land-cover types. Normalization addresses several factors that affect surface reflectance measurement from space, including scattering and attenuation of radiation passing through the atmosphere, and surface anisotropy. We implemented a relative normalization procedure 
+(2) Pseudo-Invariant Objects
+The mask of pseudo-invariant objects is derived automatically and used to calibrate the perscene surface reflectance normalization model. The mask includes clear-sky land observations (pixels) that represent the same land cover type and phenology stage in the Landsat image and MODIS normalization target composite. Water and snow/ice observations are excluded from the mask due to different properties of surface anisotropy. To select the pseudo-invariant pixels, we first exclude all observations except clear-sky land using the scene QF. Second, we calculate the absolute difference between Landsat and MODIS spectral reflectance for red and shortwave infrared bands. Only pixels with differences below 0.1 reflectance value for both spectral bands qualify for the pseudo-invariant mask. Bright objects (with red band reflectance above 0.5) are excluded from the mask. To avoid reflectance normalization artifacts due to insufficient calibration data, Landsat images with less than 10,000 pseudo-invariant pixels are discarded from the processing chain.
+(
+
+## 3) Model Parametrization ##
+To parametrize the reflectance normalization model, we calculate the bias between Landsat TOA reflectance and MODIS surface reflectance for each spectral band within the mask of pseudoinvariant objects. We collect per-band median bias for each 10 km interval of distance from the Landsat ground track. The set of median values is used to parametrize a per-band linear regression model using least squares fitting method. For each image and each spectral band, we derive gain (G) and bias (B) coefficients to predict the reflectance bias as a function of the distance from the ground track (Equation 
+
+## Δρ=G×d+B (4) ##
+Δρ -reflectance bias; G -gain factor; d -distance from the Landsat ground track; B -bias factor.
+Figure 
+ρ NORM -normalized surface reflectance; ρ TOA -TOA reflectance; G -gain factor; d -distance from the Landsat ground track; B -bias factor. GLAD ARD normalized surface reflectance is highly correlated to the MODIS surface reflectance data used for normalization model parametrization (Figure 
+
+## Temporal Integration and Tiling ##
+The final step of the GLAD ARD processing is a temporal aggregation of individual Landsat images into 16-day composites. The compositing interval was selected corresponding to the Landsat orbital cycle and the MODIS Level 3 data products 
+
+## GLAD ARD Structure ##
+
+
+## Global Tile System ##
+The GLAD ARD tile system was developed to simplify global data handling. The geographic coordinates using the World Geodetic System (WGS84) were selected as the most universal way of sharing global data. The coordinate system is defined by EPSG Geodetic Parameter Dataset as EPSG:4326 (https://spatialreference.org/ref/epsg/wgs-84/), or using PROJ standard (http://proj.org) as +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs. The nearest neighbor resampling may be used to re-project the geographic data into the original Universal Transverse Mercator (UTM) Landsat pixel grid without distortion, assuming that the output UTM zone is the same as for the source Collection 1 Landsat imagery.
+The spatial resolution of the ARD dataset is 0.00025 degree per pixel, which corresponds to 27.83 m per pixel on the Equator. The pixel size is a compromise between the need to preserve the original Landsat data pixel size (30 m/pixel) and to avoid using a repeating decimal number for pixel size (which may cause problems with georeference precision).
+The ARD product is stored in 1 × 1 geographic degrees tiles. The tile format facilitates data handling and the parallelization of data processing. The exact 1 × 1 degree tile format, however, is not optimal for contextual analysis when neighboring pixels are located on different tiles. We implemented a partial solution to this issue by creating a tile system with a 2-pixel overlap. The actual ARD tile size is 4004 × 4004 pixels, an extent of 1.0005 by 1.0005 degrees. The 2-pixel buffer allows implementing contextual analyses using 3 × 3 and 5 × 5 kernels without the need to read data from multiple tiles at a time.
+Tile names are derived from the tile center, and refer to the integer value of degrees. E.g., the name of a tile with center 17.5E and 52.5N is 017E_52N. The ARD product is only generated for tiles that include ice-free land area and where Landsat Tier 1 data exist (Figure 
+
+## 16-Day Composite Data ##
+Each data granule contains observations collected during a single 16-day interval. There are 23 intervals per year (see Table 
+ID -interval identification number (file name), Year -selected year (1980 and later), Interval -selected annual 16-day interval .
+The 16-day data for a tile are stored as 8-band, 16-bit unsigned, LZW-compressed GeoTIFF files. The list of image bands is provided in Table 
+
+## Multi-Temporal Metrics ##
+Despite the global radiometric consistency of the 16-day GLAD ARD product, direct application of this dataset as input to a land cover characterization model is hampered by the irregular frequency of clear-sky observation. The availability of clear-sky observations is a function of the Landsat orbital constellation, data acquisition strategy, and cloud cover. As a result, annual 16-day time-series for the same area may have dramatically different numbers of clear-sky observations between seasons and years 
+The multi-temporal metrics method is a time-series data transformation that improves spatial and temporal consistency, simplifies phenological analysis, and facilitates land cover mapping and change detection at large geographic extents. The metrics approach helps to overcome the inconsistency of clear-sky data availability that is typical for sensors with low observation frequency, such as Landsat. The metrics method was developed in the mid-1980s to extract phenological features from the AVHRR-based NDVI time-series 
+
+## Annual Phenological Metrics ##
+The annual phenological metrics serve as source data for land cover, land use, and vegetation structure mapping models. Metrics represent a set of statistics extracted from the normalized surface reflectance time-series within a corresponding calendar year (January 1 -December 31). However, limited and inconsistent data availability in regions with a short snow-free season or frequent cloud cover may preclude consistent phenology characterization by annual observation time-series. To fill long gaps in observation time-series we use the data from the three previous years. Optionally, the gap-filling algorithm can be disabled to create metrics solely from data collected during the corresponding year. The process of phenological metrics processing includes two stages: (1) selecting clear-sky observations and filling gaps in the observation time-series; and (2) extracting reflectance distribution statistics from the time-series of selected observations. First, we compile a gap-filled time-series of annual observations with the lowest atmospheric contamination (Figure 
+NR AB -Normalized ratio between bands A and B; ρ A , ρ B -normalized surface reflectance of bands A and B.
+SVVI=σ(ρ Blue , ρ Green , ρ Red , ρ NIR , ρ SWIR1 , ρ SWIR2 )-σ(ρ NIR , ρS WIR1 , ρ SWIR2 )+10,000
+SVVI -Spectral variability vegetation index; σ -standard deviation; ρ Blue , etc. -normalized surface reflectance.
+Multi-temporal metrics are generated from the time-series using two observation date ranking approaches (Figure 
+
+## Annual Change Detection Metrics ##
+To extract statistics, we use three different approaches (Figure 
+Observations in each time-series are ranked by (a) spectral band or index value, and (b) corresponding NDVI and brightness temperature values. Similar to phenological metrics, we record selected ranks and average between ranks for each spectral variable.  The time-series I is used to analyze unidirectional trend of spectral reflectance within a two-years interval. We use least squares method to fit linear regression model that predicts spectral reflectance or index value from the observation date (date range is from 1 to 46) for clear-sky observations. We record the slope of linear regression as a metric value. In addition, we calculate and record standard deviation of spectral variable within the time-series I.  The time-series D consists of per-16-day interval spectral reflectance or index differences. We rank difference values, and extract a set of statistics (selected ranks and averages) from these ranking.  The high variability of metrics allows using the generic change detection metric set for the wide spectrum of land cover monitoring applications. Annual metrics for the corresponding and preceding years (Figure 
+Annual change detection metrics serve the operational update of the global forest cover change product that is developed by the GLAD team for Global Forest Watch initiative (www. globalforestwatch.org). The data users should be aware that while using four years of data to create a change detection metrics set improves the classification quality, the metric set is sensitive to changes that happened not only between the corresponding and preceding years, but also between the corresponding year and the years i-2 and i-3. The "last annual observation" metric may be used to exclude changes that happened earlier. Alternatively, a change detection algorithm can be applied annually to eliminate redundant change detections.
+
+## Known Issues and Limitations ##
+The GLAD team is constantly updating the ARD product to ensure data completeness and quality. Here, we list known issues that users should consider when using the product. Some of these issues will be addressed in future revisions of the GLAD ARD.  The current version of the GLAD ARD product is not suitable for real-time land cover monitoring.
+The ARD product rely on Tier 1 data which currently features up to 26 days processing delay by USGS (https://www.usgs.gov/land-resources/nli/landsat/landsat-collection-1). A 16-day interval data are processed only after all daily data are available as Tier 1. Thus, the ARD update usually features a 1-month delay.  Landsat 5 images for 2001-2002 were filtered for possible sensor artifacts during ARD processing.
+However, after examining images recently processed to Collection 1 standard we suggested that some of these artifacts were removed by the data provider. A re-processing of the year 2001 and 2002 ARD will be scheduled to include corrected L5 data.  Images crossing the 180° meridian were not processed due to technical difficulties. This issue was not addressed yet due to low demand for the data in these regions. The images will be processed and the corresponding 16-day composites will be updated later.  Due to low sun azimuth and similarity between snow cover and clouds during winter season in temperate and boreal climates, the GLAD Landsat ARD algorithm is not suitable for winter time image processing above 30N and below 45S Latitude. We are not processing images during times affected by seasonal snow cover so the resulting 16-day intervals have no data. Some of the images (and resulting 16-day composites) may still include snow-covered observations. We suggest further filtering such observations using the "snow/ice" observation quality flag or by removing certain 16-day intervals from data processing.  The surface reflectance normalization is not equal to a physically-based atmospheric and surface anisotropy correction. While the comparison of ARD data with MODIS-based surface reflectance and successful ARD applications for global land cover mapping suggest that the product has sufficient quality for intended use, the ARD data may not be suitable for precise analysis of land surface reflectance.  Users should be aware that the image normalization method is not designed to deal with specular reflectance and thus introduces bias over the water surfaces. We do not recommend using the ARD product for water quality assessment or any other hydrology applications beyond surface water extent mapping.
+Author Contributions: The GLAD ARD concept and algorithm development, M.C.H., P.P., A.P. and A.T; parametrization of observation quality assessment models, S.T., B.A., and P.P.; software and data portal development, I.K., A.K., and A.P.; data processing support, Q.Y. All authors have read and agreed to the published version of the manuscript.
+Funding: The GLAD high-performance computer system and ARD development was supported by funding from NASA Land Cover and Land Use Change, Applied Sciences, and SERVIR programs and USAID CARPE and US Government SilvaCarbon programs.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. 
+   Authors: , , , , , , , , , 
+   Date: 2008
+
+2. Collection 1 Level 1 Product Definition; USGS: Sioux Falls
+   Authors: 
+   Date: 2017
+
+3. Opening the archive: How free data has enabled the science and monitoring promise of Landsat
+   Authors: , , , , 
+   Date: 2012
+
+4. Landsat continuity: Issues and opportunities for land cover monitoring
+   Authors: , , , , , , , , 
+   Date: 2008
+
+5. A review of large area monitoring of land cover change using Landsat data
+   Authors: , 
+   Date: 2012
+
+6. High-resolution global maps of 21st-century forest cover change
+   Authors: , , , , , , , , , 
+   Date: 2013
+
+7. High-resolution mapping of global surface water and its long-term changes
+   Authors: , , , 
+   Date: 2016
+
+8. Annual maps of global artificial impervious area (GAIA) between
+   Authors: , , , , , , , , , 
+   Date: 1985. 2018
+
+9. Global bare ground gain from 2000 to 2012 using Landsat imagery
+   Authors: , , , , , , , 
+   Date: 2017
+
+10. NDVI-derived land cover classifications at a global scale
+   Authors: , 
+   Date: 1994
+
+11. The IGBP-DIS global 1km land cover data set, DISCover: First results
+   Authors: , 
+   Date: 1997
+
+12. Global Percent Tree Cover at a Spatial Resolution of 500 Meters: First Results of the MODIS Vegetation Continuous Fields Algorithm
+   Authors: , , , , , 
+   Date: 2003
+
+13. An overview of MODIS Land data processing and product status
+   Authors: , , , , , , , 
+   Date: 2002
+
+14. Earth science data for all: EOS and the EOS data and information system
+   Authors: , , , , , 
+   Date: 1994
+
+15. Web-enabled Landsat Data (WELD): Landsat ETM+ composited mosaics of the conterminous United States
+   Authors: , , , , , , , , 
+
+16. Analysis Ready Data: Enabling Analysis of the Landsat Archive
+   Authors: , , , , , 
+   Date: 2018
+
+17. FORCE-Landsat + Sentinel-2 Analysis Ready Data and Beyond
+   Authors: 
+   Date: 2019, 11, 1124
+
+18. A method for integrating MODIS and Landsat data for systematic monitoring of forest cover and change in the Congo Basin
+   Authors: , , , , , 
+   Date: 2008
+
+19. Annual continuous fields of woody vegetation structure in the Lower Mekong region from 2000-2017 Landsat time-series
+   Authors: , , , , , , , , , 
+
+20. Quantifying forest cover loss in Democratic Republic of the Congo, 2000-2010, with Landsat ETM+ data
+   Authors: , , , , , , , 
+
+21. Monitoring the dynamics of global surface water
+   Authors: , , , 
+   Date: 1999. 2017. December 2018
+
+22. An improved dark-object subtraction technique for atmospheric scattering correction of multispectral data
+   Authors: 
+   Date: 1988
+
+23. National-scale soybean mapping and area estimation in the United States using medium resolution satellite imagery and field survey
+   Authors: , , , , , , , , , 
+   Date: 2017
+
+24. Summary of current radiometric calibration coefficients for Landsat MSS, TM, ETM+, and EO-1 ALI sensors
+   Authors: , , 
+   Date: 2009
+
+25. Cloud detection algorithm comparison and validation for operational Landsat data products
+   Authors: , , , , , , , , , 
+   Date: 2017
+
+26. Improvement and expansion of the Fmask algorithm: cloud, cloud shadow, and snow detection for Landsats 4-7, 8, and Sentinel 2 images
+   Authors: , , 
+   Date: 2015
+
+27. Geological Survey Landsat 8 Data Users Handbook (LSDS-1574 Version 5.0)
+   Date: 2019
+
+28. Classification and Regression Trees
+   Authors: , , , 
+   Date: 1984
+
+29. Eastern Europe's forest cover dynamics from 1985 to 2012 quantified from the full Landsat archive
+   Authors: , , , , , , 
+   Date: 2015
+
+30. A Landsat Surface Reflectance Dataset for North America
+   Authors: , , , , , , , , , , 
+   Date: 1990-2000. 2006
+
+31. First operational BRDF, albedo nadir reflectance products from MODIS
+   Authors: , , , , , , , , , 
+   Date: 2002
+
+32. Atmospheric correction of MODIS data in the visible to middle infrared: first results
+   Authors: , , 
+   Date: 2002
+
+33. MODIS vegetative cover conversion and vegetation continuous fields
+   Authors: , , , , , 
+   Date: 2011
+
+34. MODIS vegetation index (MOD13). Algorithm Theor. Basis Doc
+   Authors: , , 
+   Date: 1999
+
+35. Global vegetation dynamics: satellite observations over Asia
+   Authors: 
+   Date: 1986
+
+36. Classification of corn and soybeans using multitemporal thematic mapper data
+   Authors: 
+   Date: 1984
+
+37. Characteristics of maximum-value composite images from temporal AVHRR data
+   Authors: 
+   Date: 1986
+
+38. Global discrimination of land cover types from metrics derived from AVHRR pathfinder data
+   Authors: , , 
+   Date: 1995
+
+39. Quantification of global gross forest cover loss
+   Authors: , , 
+   Date: 2010
+
+40. Comprehensive monitoring of Bangladesh tree cover inside and outside of forests
+   Authors: , , , , , , , , , 
+   Date: 2000-2014. 2017
+
+41. Classification and assessment of land cover and land use change in southern Ghana using dense stacks of Landsat 7 ETM+ imagery
+   Authors: , , , , , , , , 
+
+42. A multi-resolution approach to national-scale cultivated area estimation of soybean
+   Authors: , , , , , , , , , 
+   Date: 2017
+
+43. Evaluating Landsat and RapidEye Data for Winter Wheat Mapping and Area Estimation
+   Authors: , , , , , , 
+   Date: 2018
+

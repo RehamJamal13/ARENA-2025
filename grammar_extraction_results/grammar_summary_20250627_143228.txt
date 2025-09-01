@@ -1,0 +1,11 @@
+GRAMMAR-AWARE LULC RELATION EXTRACTION SUMMARY REPORT
+============================================================
+
+Generated: 2025-06-27 14:32:28
+
+OVERALL STATISTICS:
+--------------------
+Total sentences processed: 10
+Successfully processed: 0
+Success rate: 0.0%
+

@@ -1,0 +1,725 @@
+[
+  {
+    "sentence_id": 0,
+    "sentence": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.",
+    "entities": [
+      {
+        "text": "results",
+        "label": "CHANGE",
+        "start_char": 11,
+        "end_char": 18
+      },
+      {
+        "text": "Thimphu",
+        "label": "LOC",
+        "start_char": 48,
+        "end_char": 55
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 56,
+        "end_char": 60
+      },
+      {
+        "text": "changed",
+        "label": "CHANGE",
+        "start_char": 65,
+        "end_char": 72
+      },
+      {
+        "text": "change",
+        "label": "CHANGE",
+        "start_char": 118,
+        "end_char": 124
+      },
+      {
+        "text": "2050",
+        "label": "DATE",
+        "start_char": 161,
+        "end_char": 165
+      }
+    ],
+    "relations": [
+      {
+        "source": "changed",
+        "target": "city",
+        "relation": "resulted in",
+        "confidence": "HIGH",
+        "dependency_features": {
+          "entity1": "changed",
+          "entity2": "city",
+          "connected": true,
+          "path_length": 6,
+          "path_tokens": [
+            "changed",
+            "reveal",
+            "changed",
+            "landscape",
+            "of",
+            "city"
+          ],
+          "path_deps": [
+            "ccomp",
+            "ROOT",
+            "ccomp",
+            "nsubj",
+            "prep",
+            "pobj"
+          ],
+          "path_pos": [
+            "VERB",
+            "VERB",
+            "VERB",
+            "NOUN",
+            "ADP",
+            "NOUN"
+          ],
+          "connecting_verb": "changed",
+          "dependency_pattern": "PREPOSITIONAL",
+          "confidence": "LOW"
+        },
+        "relation_type": "GENERAL",
+        "sentence": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.",
+        "entity1_label": "CHANGE",
+        "entity2_label": "LULC"
+      },
+      {
+        "source": "change",
+        "target": "results",
+        "relation": "indicates/represents",
+        "confidence": "LOW",
+        "dependency_features": {
+          "entity1": "change",
+          "entity2": "results",
+          "connected": true,
+          "path_length": 6,
+          "path_tokens": [
+            "change",
+            "trend",
+            "predicted",
+            "changed",
+            "reveal",
+            "results"
+          ],
+          "path_deps": [
+            "compound",
+            "nsubjpass",
+            "conj",
+            "ccomp",
+            "ROOT",
+            "nsubj"
+          ],
+          "path_pos": [
+            "NOUN",
+            "NOUN",
+            "VERB",
+            "VERB",
+            "VERB",
+            "NOUN"
+          ],
+          "connecting_verb": "predicted",
+          "dependency_pattern": "OTHER",
+          "confidence": "LOW"
+        },
+        "relation_type": "AFFECTS",
+        "sentence": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.",
+        "entity1_label": "CHANGE",
+        "entity2_label": "CHANGE"
+      }
+    ],
+    "relation_count": 2
+  },
+  {
+    "sentence_id": 1,
+    "sentence": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",
+    "entities": [
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start_char": 33,
+        "end_char": 41
+      },
+      {
+        "text": "12.77%",
+        "label": "PERCENT",
+        "start_char": 43,
+        "end_char": 49
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 73,
+        "end_char": 77
+      },
+      {
+        "text": "52.88%",
+        "label": "PERCENT",
+        "start_char": 79,
+        "end_char": 85
+      },
+      {
+        "text": "2018",
+        "label": "DATE",
+        "start_char": 90,
+        "end_char": 94
+      },
+      {
+        "text": "65.5%",
+        "label": "PERCENT",
+        "start_char": 96,
+        "end_char": 101
+      },
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start_char": 125,
+        "end_char": 133
+      }
+    ],
+    "relations": [
+      {
+        "source": "2018",
+        "target": "increase",
+        "relation": "observed",
+        "confidence": "HIGH",
+        "dependency_features": {
+          "entity1": "2018",
+          "entity2": "increase",
+          "connected": true,
+          "path_length": 4,
+          "path_tokens": [
+            "2018",
+            "to",
+            "observed",
+            "increase"
+          ],
+          "path_deps": [
+            "pobj",
+            "prep",
+            "ROOT",
+            "dobj"
+          ],
+          "path_pos": [
+            "NUM",
+            "ADP",
+            "VERB",
+            "NOUN"
+          ],
+          "connecting_verb": "observed",
+          "dependency_pattern": "PREPOSITIONAL",
+          "confidence": "MEDIUM"
+        },
+        "relation_type": "GENERAL",
+        "sentence": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.",
+        "entity1_label": "DATE",
+        "entity2_label": "CHANGE"
+      }
+    ],
+    "relation_count": 1
+  },
+  {
+    "sentence_id": 2,
+    "sentence": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",
+    "entities": [
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 17,
+        "end_char": 23
+      },
+      {
+        "text": "declined",
+        "label": "CHANGE",
+        "start_char": 30,
+        "end_char": 38
+      },
+      {
+        "text": "15.25%",
+        "label": "PERCENT",
+        "start_char": 52,
+        "end_char": 58
+      },
+      {
+        "text": "agriculture",
+        "label": "LULC",
+        "start_char": 72,
+        "end_char": 83
+      },
+      {
+        "text": "1.01%",
+        "label": "PERCENT",
+        "start_char": 85,
+        "end_char": 90
+      }
+    ],
+    "relations": [
+      {
+        "source": "forest",
+        "target": "declined",
+        "relation": "changed",
+        "confidence": "HIGH",
+        "dependency_features": {
+          "entity1": "forest",
+          "entity2": "declined",
+          "connected": true,
+          "path_length": 3,
+          "path_tokens": [
+            "forest",
+            "cover",
+            "declined"
+          ],
+          "path_deps": [
+            "compound",
+            "nsubj",
+            "ROOT"
+          ],
+          "path_pos": [
+            "NOUN",
+            "NOUN",
+            "VERB"
+          ],
+          "connecting_verb": "declined",
+          "dependency_pattern": "OTHER",
+          "confidence": "HIGH"
+        },
+        "relation_type": "GENERAL",
+        "sentence": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).",
+        "entity1_label": "LULC",
+        "entity2_label": "CHANGE"
+      }
+    ],
+    "relation_count": 1
+  },
+  {
+    "sentence_id": 3,
+    "sentence": "Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.",
+    "entities": [
+      {
+        "text": "growth",
+        "label": "CHANGE",
+        "start_char": 17,
+        "end_char": 23
+      },
+      {
+        "text": "urban",
+        "label": "LULC",
+        "start_char": 43,
+        "end_char": 48
+      },
+      {
+        "text": "drivers",
+        "label": "CHANGE",
+        "start_char": 133,
+        "end_char": 140
+      },
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 150,
+        "end_char": 157
+      }
+    ],
+    "relations": [],
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 4,
+    "sentence": "Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.",
+    "entities": [
+      {
+        "text": "the year",
+        "label": "DATE",
+        "start_char": 62,
+        "end_char": 70
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 131,
+        "end_char": 135
+      },
+      {
+        "text": "73.21%",
+        "label": "PERCENT",
+        "start_char": 142,
+        "end_char": 148
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start_char": 155,
+        "end_char": 161
+      },
+      {
+        "text": "only about 16%",
+        "label": "PERCENT",
+        "start_char": 205,
+        "end_char": 219
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 227,
+        "end_char": 231
+      }
+    ],
+    "relations": [],
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 5,
+    "sentence": "Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.",
+    "entities": [
+      {
+        "text": "some 13",
+        "label": "CARDINAL",
+        "start_char": 73,
+        "end_char": 80
+      }
+    ],
+    "relations": [],
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 6,
+    "sentence": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",
+    "entities": [
+      {
+        "text": "Expansion",
+        "label": "CHANGE",
+        "start_char": 0,
+        "end_char": 9
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 21,
+        "end_char": 25
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 29,
+        "end_char": 33
+      },
+      {
+        "text": "Lanjophaka",
+        "label": "LOC",
+        "start_char": 55,
+        "end_char": 65
+      },
+      {
+        "text": "Taba",
+        "label": "LOC",
+        "start_char": 99,
+        "end_char": 103
+      },
+      {
+        "text": "Dechencholing",
+        "label": "LOC",
+        "start_char": 108,
+        "end_char": 121
+      },
+      {
+        "text": "Changjiji",
+        "label": "LOC",
+        "start_char": 139,
+        "end_char": 148
+      },
+      {
+        "text": "Lungtenphu",
+        "label": "LOC",
+        "start_char": 150,
+        "end_char": 160
+      }
+    ],
+    "relations": [
+      {
+        "source": "Expansion",
+        "target": "Lanjophaka",
+        "relation": "added",
+        "confidence": "HIGH",
+        "dependency_features": {
+          "entity1": "Expansion",
+          "entity2": "Lanjophaka",
+          "connected": true,
+          "path_length": 5,
+          "path_tokens": [
+            "Expansion",
+            "added",
+            "areas",
+            "of",
+            "Lanjophaka"
+          ],
+          "path_deps": [
+            "nsubj",
+            "ROOT",
+            "dobj",
+            "prep",
+            "pobj"
+          ],
+          "path_pos": [
+            "NOUN",
+            "VERB",
+            "NOUN",
+            "ADP",
+            "PROPN"
+          ],
+          "connecting_verb": "added",
+          "dependency_pattern": "SUBJECT-VERB-OBJECT",
+          "confidence": "MEDIUM"
+        },
+        "relation_type": "GENERAL",
+        "sentence": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",
+        "entity1_label": "CHANGE",
+        "entity2_label": "LOC"
+      },
+      {
+        "source": "2002",
+        "target": "Expansion",
+        "relation": "caused",
+        "confidence": "HIGH",
+        "dependency_features": {
+          "entity1": "2002",
+          "entity2": "Expansion",
+          "connected": true,
+          "path_length": 5,
+          "path_tokens": [
+            "2002",
+            "in",
+            "Expansion",
+            "added",
+            "Expansion"
+          ],
+          "path_deps": [
+            "pobj",
+            "prep",
+            "nsubj",
+            "ROOT",
+            "nsubj"
+          ],
+          "path_pos": [
+            "NUM",
+            "ADP",
+            "NOUN",
+            "VERB",
+            "NOUN"
+          ],
+          "connecting_verb": "added",
+          "dependency_pattern": "PREPOSITIONAL",
+          "confidence": "MEDIUM"
+        },
+        "relation_type": "GENERAL",
+        "sentence": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.",
+        "entity1_label": "DATE",
+        "entity2_label": "CHANGE"
+      }
+    ],
+    "relation_count": 2
+  },
+  {
+    "sentence_id": 7,
+    "sentence": "The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.",
+    "entities": [
+      {
+        "text": "2002-2018",
+        "label": "COORDINATES",
+        "start_char": 12,
+        "end_char": 21
+      },
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start_char": 41,
+        "end_char": 50
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 58,
+        "end_char": 62
+      },
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 140,
+        "end_char": 147
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 155,
+        "end_char": 159
+      }
+    ],
+    "relations": [],
+    "relation_count": 0
+  },
+  {
+    "sentence_id": 8,
+    "sentence": "These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.",
+    "entities": [
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 17,
+        "end_char": 24
+      },
+      {
+        "text": "expansion",
+        "label": "CHANGE",
+        "start_char": 75,
+        "end_char": 84
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 92,
+        "end_char": 96
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start_char": 100,
+        "end_char": 104
+      },
+      {
+        "text": "city",
+        "label": "LULC",
+        "start_char": 147,
+        "end_char": 151
+      },
+      {
+        "text": "Bhutan",
+        "label": "LOC",
+        "start_char": 172,
+        "end_char": 178
+      },
+      {
+        "text": "transition",
+        "label": "CHANGE",
+        "start_char": 181,
+        "end_char": 191
+      },
+      {
+        "text": "2008",
+        "label": "DATE",
+        "start_char": 208,
+        "end_char": 212
+      }
+    ],
+    "relations": [
+      {
+        "source": "changes",
+        "target": "expansion",
+        "relation": "caused by",
+        "confidence": "HIGH",
+        "dependency_features": {
+          "entity1": "changes",
+          "entity2": "expansion",
+          "connected": true,
+          "path_length": 6,
+          "path_tokens": [
+            "changes",
+            "attributed",
+            "governments",
+            "approval",
+            "for",
+            "expansion"
+          ],
+          "path_deps": [
+            "nsubjpass",
+            "ROOT",
+            "conj",
+            "dobj",
+            "prep",
+            "pobj"
+          ],
+          "path_pos": [
+            "NOUN",
+            "VERB",
+            "VERB",
+            "NOUN",
+            "ADP",
+            "NOUN"
+          ],
+          "connecting_verb": "attributed",
+          "dependency_pattern": "SUBJECT-VERB-OBJECT",
+          "confidence": "LOW"
+        },
+        "relation_type": "GENERAL",
+        "sentence": "These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.",
+        "entity1_label": "CHANGE",
+        "entity2_label": "CHANGE"
+      },
+      {
+        "source": "changes",
+        "target": "2002",
+        "relation": "caused by",
+        "confidence": "HIGH",
+        "dependency_features": {
+          "entity1": "changes",
+          "entity2": "2002",
+          "connected": true,
+          "path_length": 5,
+          "path_tokens": [
+            "changes",
+            "attributed",
+            "governments",
+            "in",
+            "2002"
+          ],
+          "path_deps": [
+            "nsubjpass",
+            "ROOT",
+            "conj",
+            "prep",
+            "pobj"
+          ],
+          "path_pos": [
+            "NOUN",
+            "VERB",
+            "VERB",
+            "ADP",
+            "NUM"
+          ],
+          "connecting_verb": "attributed",
+          "dependency_pattern": "SUBJECT-VERB-OBJECT",
+          "confidence": "MEDIUM"
+        },
+        "relation_type": "GENERAL",
+        "sentence": "These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.",
+        "entity1_label": "CHANGE",
+        "entity2_label": "DATE"
+      }
+    ],
+    "relation_count": 2
+  },
+  {
+    "sentence_id": 9,
+    "sentence": "The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.",
+    "entities": [
+      {
+        "text": "cities",
+        "label": "LULC",
+        "start_char": 161,
+        "end_char": 167
+      },
+      {
+        "text": "causing",
+        "label": "CHANGE",
+        "start_char": 169,
+        "end_char": 176
+      },
+      {
+        "text": "changes",
+        "label": "CHANGE",
+        "start_char": 251,
+        "end_char": 258
+      }
+    ],
+    "relations": [],
+    "relation_count": 0
+  }
+]

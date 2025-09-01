@@ -1,0 +1,34 @@
+{
+  "base_model": "roberta-base",
+  "num_labels": 21,
+  "labels": [
+    "O",
+    "B-CHANGE",
+    "I-CHANGE",
+    "B-LOC",
+    "I-LOC",
+    "B-LULC",
+    "I-LULC",
+    "B-DATE",
+    "I-DATE",
+    "B-PERCENT",
+    "I-PERCENT",
+    "B-CARDINAL",
+    "I-CARDINAL",
+    "B-COORDINATES",
+    "I-COORDINATES",
+    "B-SURFACE_UNIT",
+    "I-SURFACE_UNIT",
+    "B-PROCESS",
+    "I-PROCESS",
+    "B-QUANTITY",
+    "I-QUANTITY"
+  ],
+  "training_sentences": 10928,
+  "validation_sentences": 2732,
+  "performance": {
+    "f1_score": 0.933498490361539,
+    "precision": 0.9238430891817346,
+    "recall": 0.9433578469723048
+  }
+}

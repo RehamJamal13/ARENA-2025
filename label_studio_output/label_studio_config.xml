@@ -1,0 +1,14 @@
+<View>
+  <Text name="text" value="$text"/>
+  <Labels name="label" toName="text">
+    <Label value="CARDINAL" background="yellow"/>
+    <Label value="CHANGE" background="yellow"/>
+    <Label value="COORDINATES" background="yellow"/>
+    <Label value="DATE" background="yellow"/>
+    <Label value="LOC" background="yellow"/>
+    <Label value="LULC" background="yellow"/>
+    <Label value="PERCENT" background="yellow"/>
+    <Label value="PROCESS" background="yellow"/>
+    <Label value="SURFACE_UNIT" background="yellow"/>
+  </Labels>
+</View>

@@ -1,0 +1,197 @@
+================================================================================
+TITLE: Urban sprawl and its impact on land use land cover dynamics of Sekondi-Takoradi metropolitan assembly, Ghana
+================================================================================
+
+AUTHORS:
+- Ernest Biney
+- Ebenezer Boakye
+
+ABSTRACT:
+In Ghana, Sekondi-Takoradi has been one of the preferred cities for many people due to the prevalence of industries, the presence of harbor, and the airport. However, the discovery of oil off the coast of the Western region, where Sekondi-Takoradi is the administrative and economic capital makes it more attractive to people in the area. This has increased the number of urban dwellers and resulted in the conversion of different and Land Use /Land Cover (LULC) forms into urban or built-up areas. Using Landsat imageries from 1991, 2002, 2008, and  2018  of Sekondi-Takoradi, together with geospatial and Shannon's entropy techniques, this paper assesses the impact of urban sprawl on land use and land use dynamics within the metropolis. Results of land use land cover change showed significant changes during the period of study. Settlement increased by 25.93% whereas water, vegetation, and bare land reduced by 0.08%, 16.00%, and 9.86% respectively. This reveals the occurrence of an unguided expansion of built-up area in the metropolis. Also, results from entropy calculations showed high entropy values ranging from 2.42 to 2.50, though the entropy values did not significantly change throughout the study. This indicates that the metropolis has been experiencing sprawl from 1991 to 2018 and thus urban development has significantly changed the land cover stratum of the metropolis. The findings demonstrate the value of spatial modeling in environmental management and urban planning.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Since time immemorial, the earth's surface has been changing at different spaces and time scales. These changes, of which some take place at a short time and others at longer years are caused by natural phenomena and human activities 
+In recent times, industries and developments are increasing the population of urban dwellers and urban centers. The increase in urban population and urban centers are changing vegetative lands or land covers into impervious surfaces. Although these conversions and their effects are globally found in metropolitan areas, it is becoming a disaster in developing countries 
+This paper is sectioned mainly into introduction, materials and methods, results and discussions, and conclusion. However, some main sections are further organized into subsection headings.
+
+## Materials and methods ##
+
+
+## Study area ##
+Sekondi-Takoradi Metropolis ( Fig. 
+The Metropolis serves as an industrial and commercial center and this attracts migrants across the nation to the Metropolis. Takoradi, for instance, houses about 10.2% of all industrial establishments across the country ( Obeng-Odoom, 2019 ). Industries such as timber, plywood, shipbuilding, railway repair and oil industries are major industries found in Sekondi-Takoradi 
+
+## Data ##
+The data used for the study are shown in Table 
+
+## Image pre-processing and classification ##
+The images obtained from the Landsat satellite were in Tier 1 and Tier 2. The Tier 1 images of 
+The identified land cover classes were trained from the images in the google earth engine using a signature editor tool. The random forest algorithm or classifier under the supervised classification in the google earth engine was used to classify the images into four classes. Random forest was chosen due to its usefulness in calculating important information about errors, variable importance, and data outliers. Such information can be used to assess the performance of the model and make changes to the training data if necessary 
+
+## Accuracy assessment ##
+Assessing the quality of results after classification is performed from satellite images is very important for change detection analysis 
+
+## Change detection ##
+Change detection is the process of observing the differences that have taken place in the state of an object, viewed at different periods. To analyze the changes in the land cover, post-classification change detection was used. The reason for using post-classification change detection is that it provides comprehensive information on changes that occurs in a class cover to other classes concerning the place of change, the extent, and the amount of the change 
+
+## Urban sprawl measurement ##
+Urban sprawl throughout 1991 to 2018 was measured by the use of Shannon entropy together with GIS tools. Before the measurement of sprawl was carried out, built-up images were extracted from the classified images to obtain urban built-up images. The raster calculator in QGIS was used to extract build-up images from 1991 to 2018 and then reclassified the images into build-up and non-build-up. Thirteen concentric or multiple ring buffer zones were generated around a chosen center point. The central business district, Takoradi market circle was chosen as the center point for generating the buffer zones. Studies have used different geometries for creating buffer zones; some use circular or concentric circles as buffer zones whereas others use multiple square buffers 
+From the Eq. ( 
+The Shannon entropy (E n ) values vary from 0 to the value of Log (n). When the value is closer to 0, the distribution of the variables is highly concentrated in one zone and if the value is closer to log (n), the distribution is dispersed 
+.A flowchart that summarizes the methodology is presented in Fig. 
+
+## Results and discussions ##
+
+
+## Land use land cover maps ##
+As shown in 
+Comparing the 2018 classified map to the 2008 classified map, it can be seen that, in 2018, there was a reduction in the area coverage of water, vegetation, and bare land. Settlement was the only class that had an increase in its area coverage. This indicates that building and construction have increased significantly over the years. Also, transitioning from 1991 to 2018, there has been a persistent increase in settlement while some of the classes have had an inconsistent or irregular increase or decrease in their land cover. Water, for instance, increased in 2002 but decreased in 2008 and 2018. Vegetation and bare lands, however, decreased throughout the years. Table 
+
+## Accuracy assessment ##
+Accuracy assessment is essential in determining the quality of classification used for change detection and urban change analysis. The accuracy of the various classified maps was computed through the use of the error matrix and Kappa statistic. Error matrix is a table with classified data at the rows and reference data at the columns 
+
+## The trend of land use land cover changes from 1991 to 2018 ##
+Trend analysis on land use and land cover indicates where the land cover types are changing to. In this study, this was done by using the initial years of comparison as the base. Between 1991 and 2002, water decreased by 0.03 km 2 , vegetation decreased by 1.39 km 2 , settlement increased by 2.95 km 2 and bare land decreased by 2.38 km 2 ( Fig. 
+Generally, when the use of land in an urban center is changing from vegetation cover to other land uses, build-up or settlement becomes the dominant land use. The changing trend in the classes between 2008 and 2018 is evidence of build-up being predominant in the change of vegetative class to other land classes. Observing from Figure 
+
+## Urban sprawl analysis ##
+To analyze the nature and pattern of urban sprawl, the land cover maps 
+From Table 
+Second, with a concentric circle of 1 km intervals starting from the city center, the reclassified built-up and non-built-up images were divided into thirteen buffer zones. This was to help in identifying the direction of urban land development 
+The build-up density values in each zone, the Shannon entropy values, and the relative Shannon entropy values were calculated for the various years of the study. The results are presented in Table 
+Table 
+
+## Conclusion ##
+GIS and remote sensing techniques were used to examine and determine changes that took place in the study area from 1991 to 2018. Results of the study showed considerable change in the land covers in which settlement or built-up had an average yearly increment over the 27years (from 1991 to 2018). Water, however, decreased from 1991 to 2002, but increased in 2008 and decreased in 2018. Vegetation and bare land showed a constant decrease from 1991 to 2018. Increasing urban population and its associated demand for residential, industrial and commercial purposes was identified as the major factor behind the increase in settlement and built-up. This, undoubtedly, support the notion that human activities or anthropogenic activities greatly affect the earth's surface. The study also used Shannon's entropy to measure urban sprawl. Values of entropy for the years of 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Land use/cover change in Ghana's oil city: assessing the impact of neoliberal economic policies and implications for sustainable development goal number one-a remote sensing and GIS approach
+   Authors: , , , , 
+   Date: 2018
+
+2. The changing face of Ghanaian towns
+   Authors: 
+   Date: 2012
+
+3. Changing land use/cover of Ghana's oil city (Sekondi-Takoradi Metropolis): implications for sustainable urban development
+   Authors: , , , 
+   Date: 2019
+
+4. Remote sensing for mapping land-use/cover changes and urban sprawl in Sekondi-Takoradi, Western Region of Ghana
+   Authors: , 
+   Date: 2013
+
+5. Modelling potential future urban land use changes in the Sekondi-Takoradi metropolitan area of Ghana
+   Authors: , 
+   Date: 2020
+
+6. Geospatial analysis of land use and land cover transitions from 1986-2014 in a peri-urban Ghana
+   Authors: , , , 
+   Date: 2017
+
+7. Draft Medium-Term Development Plan
+   Authors: 
+   Date: 2010. 2010-2013
+
+8. Spatio Temporal Monitoring of Urban Sprawl using GIS and Remote Sensing Technique
+   Authors: , , 
+   Date: 2018
+
+9. Co-creating an open government action plan: the case of Sekondi-Takoradi metropolitan assembly
+   Authors: , 
+   Date: 2018
+
+10. Comparison of Spatial Data Types for Urban Sprawl Analysis Using Shannon's
+   Authors: 
+   Date: 2017
+
+11. Prevalence of dementia and associated risk factors: a population-based study in the Philippines
+   Authors: , , , 
+   Date: 2018
+
+12. Urban migration and housing during resource booms: the case of Sekondi-Takoradi
+   Authors: , 
+   Date: 2019
+
+13. Sekondi-Takoradi as an oil city
+   Authors: 
+   Date: 2017. December
+
+14. Human-induced land use land cover change and its impact on hydrology
+   Authors: , , , , , 
+   Date: 2019
+
+15. Analysis of impervious land-cover expansion using remote sensing and GIS: a case study of Sylhet sadar upazila
+   Authors: , , 
+   Date: 2018
+
+16. Measuring links between cultural heritage management and sustainable urban development: an overview of global monitoring tools
+   Authors: , , 
+   Date: 2017
+
+17. Exploring the effects of the design and quantity of absence data on the performance of random forest-based landslide susceptibility mapping
+   Authors: , , , 
+   Date: 2019
+
+18. Response of net primary production to land use and land cover change in mainland China since the late 1980s
+   Authors: , , , , , , 
+   Date: 2018
+
+19. Monitoring of Changes in Land Use/Land Cover in Syria from 2010 to 2018 Using Multitemporal Landsat Imagery and GIS
+   Authors: , , 
+   Date: 2020
+
+20. Monitoring land use change and measuring urban sprawl based on its spatial forms: the case of Qom city
+   Authors: , , , , 
+   Date: 2017
+
+21. Measuring urban growth of pune city using shannon entropy approach
+   Authors: , 
+   Date: 2015
+
+22. Urban land policies in Ghana: a case of the emperor's new clothes?
+   Authors: 
+   Date: 2014
+
+23. Oil, local content laws and paternalism: is economic paternalism better old, new or democratic?
+   Authors: 
+   Date: 2019
+
+24. Analyzing the rate of land use and land cover change and determining the causes of forest cover change in Gog district, Gambella regional state
+   Authors: , , 
+   Date: 2017
+
+25. Ghana Living Standards Survey Round 6 (GLSS 6).: Poverty Profile in Ghana
+   Authors: 
+   Date: 2014. 2005-2013
+
+26. Assessment of urban expansion in the Sekondi-Takoradi Metropolis of Ghana using remote-sensing and GIS approach
+   Authors: , 
+   Date: 2014
+
+27. Knowledge, attitudes and practices regarding HIV/AIDS among senior high school students in Sekondi-Takoradi metropolis
+   Authors: , , 
+   Date: 2019
+
+28. Sustainable Planning of Peri-Urban Areas: Introduction to the Special Issue
+   Authors: , 
+   Date: 2017
+
+29. Quantifying spatio-temporal patterns of urban expansion in Beijing during 1985-2013 with rural-urban development transformation
+   Authors: , , , 
+   Date: 2018
+
+30. The development of land use planning scenarios based on land suitability and its influences on eco-hydrological responses in the upstream of the Huaihe River basin
+   Authors: , , , , , , 
+   Date: 2018
+
+31. Impact of urbanization-related land use land cover changes and urban morphology changes on the urban heat island phenomenon
+   Authors: , 
+   Date: 2018
+

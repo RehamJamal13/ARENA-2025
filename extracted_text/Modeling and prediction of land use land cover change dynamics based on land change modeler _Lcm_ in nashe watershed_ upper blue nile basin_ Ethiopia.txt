@@ -1,0 +1,449 @@
+================================================================================
+TITLE: Modeling and Prediction of Land Use Land Cover Change Dynamics Based on Land Change Modeler (LCM) in Nashe Watershed, Upper Blue Nile Basin, Ethiopia
+================================================================================
+
+AUTHORS:
+- Megersa Kebede
+- Tamene Demissie
+- Jens Tränckner
+- Susana Martín-Fernández
+
+ABSTRACT:
+Change of land use land cover (LULC) has been known globally as an essential driver of environmental change. Assessment of LULC change is the most precise method to comprehend the past land use, types of changes to be estimated, the forces and developments behind the changes. The aim of the study was to assess the temporal and spatial LULC dynamics of the past and to predict the future using Landsat images and LCM (Land Change Modeler) by considering the drivers of LULC dynamics. The research was conducted in Nashe watershed (Ethiopia) which is the main tributary of the Upper Blue Nile basin. The total watershed area is 94,578 ha. The Landsat imagery from 2019, 2005, and 1990  was used for evaluating and predicting the spatiotemporal distributions of LULC changes. The future LULC image prediction has been generated depending on the historical trends of LULC changes for the years 2035 and 2050. LCM integrated in TerrSet Geospatial Monitoring and Modeling System assimilated with MLP and CA-Markov chain have been used for monitoring, assessment of change, and future projections. Markov chain was used to generate transition probability matrices between LULC classes and cellular automata were used to predict the LULC map. Validation of the predicted LULC map of 2019 was conducted successfully with the actual LULC map. The validation accuracy was determined using the Kappa statistics and agreement/disagreement marks. The results of the historical LULC depicted that forest land, grass land, and range land are the most affected types of land use. The agricultural land in 1990 was 41,587.21 ha which increased to 57,868.95 ha in 2019 with an average growth rate of 39.15%. The forest land, range land, and grass land declined annually with rates of 48.38%, 19.58%, and 26.23%, respectively. The predicted LULC map shows that the forest cover will further degrade from 16.94% in 2019 to 8.07% in 2050, while agricultural land would be expanded to 69,021.20 ha and 69,264.44 ha in 2035 and 2050 from 57,868.95 ha in 2019. The findings of this investigation indicate an expected rapid change in LULC for the coming years. Converting the forest area, range land, and grass land into other land uses, especially to agricultural land, is the main LULC change in the future. Measures should be implemented to achieve rational use of agricultural land and the forest conversion needs to be well managed.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land use land cover (LULC) change occurs under a variety of pressure and it is the result of changes or modifications in the intensity of an existing LULC type to determine the location and nature of the land use change. The changes of LULC have been perceived as worldwide environmental change drivers in the watershed that are very sensitive to LULC dynamics 
+The LULC changes were broadly assessed in various areas of the world, for instance, Europe and USA 
+The dynamics of LULC intensities and rates are changing because they are highly associated with the overexploitation of natural resources. The natural variability issues like climate change, soil conditions, and terrain characteristics have also accounted for land use changes 
+The drivers' assessment and predicting their future LULC status in the watershed is expected to have an essential contribution for land use planning management and sustainable water resources. The use of historical satellite imageries are used to effectively monitor and analyze LULC change 
+Models of land change are useful tools for environmental and other types of research concerning LULC change 
+The model predicts future LULC images based upon MLPNN (Multi-Layer Perceptron neural networks) and CA-Markov Chain (CA-MC) 
+Remote sensing data particularly Landsat images provide suitable possibility for LULC change monitoring, particularly for developing countries where geospatial technologies are not well developed 
+Due to changes of LULC, Ethiopia experienced serious environmental problems including soil erosion, land degradation, loss of soil fertility, and deforestation 
+The above research questions are so significant and addressed in this study of watershed since a dramatic socio-economic change with expected enormous effect on the land use is undergoing and this will influence various hydrological processes. Thus, especially in the UBNB, those changes need to be predicted in time for environmental management in this area in an effective and sustainable manner. The study findings are utilized to provide empirical evidence on patterns and rates and identify major driving forces of LULC dynamics at watershed level, and improve policies in land use within the framework of sustainable land use planning in relation to future changes or development.
+
+## Materials and Methods ##
+
+
+## Study Area ##
+The Upper Blue Nile Basin (UBNB) is the main stream of the Nile basin and is located within the western and central part of Ethiopia between latitudes 7 • 45 and 12 • 45 N and longitudes 34 • 05 to 39 • 45 E. The UBNB consists of the major part of Ethiopia and covers an area of 157,000 km 2 . The basin is located within the region of Oromia, Amhara and Benishangul-Gumuz of Ethiopia. The basin has three main seasons: a main rainy season which occurs between June and September, a dry season from October to January, and a short rainy season between February and May. The basin mean yearly rainfall ranges within 800-2000 mm and increases with altitude. The Nashe watershed is the major tributary from the left bank within the UBNB of Ethiopia which is situated at about 300 km from Addis Ababa. The sub-basin lies in between 9 • 35 and 9 • 52 N latitudes and 37 • 00 and 37 • 20 E longitudes (Figure 
+
+## Data Types and Sources ##
+The important spatial data required for the study were Digital Elevation Model, Landsat Images, and field data. The three Landsat images used were downloaded from the USGS (http://glovis.usgs.gov/, accessed on 2 January 2017) (Table 
+The coordinates of each location selected were marked with GPS, and these points were verified in Google Earth. During field survey and data collection, socioeconomic The watershed area varies in elevation from 1600 m in the lower plateau under the escarpment to the hills and ridges of the highland climbing to over 2500 m. The annual average rainfall of the Nashe watershed ranges from 1200 mm to 1600 mm (depending on data from five weather stations); June, July, August, and September are the main rainy season of the catchment. The observed average temperature of the catchment is 22 • C. The watershed area is categorized by intensive irrigable lands at the downstream, large water potential sites at the upstream, and also with high head of hydropower potential. Agriculture is the leading financial activity in the watershed and the main source of livelihood for the local population.
+
+## Data Types and Sources ##
+The important spatial data required for the study were Digital Elevation Model, Landsat Images, and field data. The three Landsat images used were downloaded from the USGS (http://glovis.usgs.gov/, accessed on 2 January 2017) (Table 
+
+## Land Use and Land Cover Change Assessment 2.3.1. Image Classification ##
+The classification of images is to categorize automatically all pixels from the Landsat images into LULC classes to extract useful thematic information 
+
+## LULC Types Description ##
+
+
+## Agricultural Land ##
+Includes areas used for perennial and annual crops, irrigated areas, scattered rural settlements, commercial farms (sesame cultivations and sugarcane plantations).
+
+## Forest Land ##
+Areas covered with dense trees (deciduous forests, evergreen forests, mixed forests).
+
+## Range Land ##
+Includes areas covered with small trees, less dense forests, bushes, and shrubs. These areas are less dense than forests.
+
+## Grass Land ##
+Areas covered by grasses are usually used for grazing and those remain for some months in a year.
+
+## Urban Area ##
+Areas of commercial areas, urban and rural settlements, industrial areas.
+
+## Water Body Areas covered by rivers, streams, and reservoirs ##
+To accomplish classification of image in multi-temporal approach and for mapping purposes, the ERDAS Imagine 2015 and ArcGIS 10.3 software were used, respectively. For each LULC, as many as possible training samples were selected throughout the entire image, based on the composite images, as well as Google Earth images. For classification, verification, and validation of the classified images, the training data were used.
+
+## Accuracy Assessment ##
+Accuracy assessment tells us to what extent the ground truth is represented on the equivalent classified image. Since land use maps derived from image classification usually contain some errors, the accuracy of classification results obtained must be assessed. Assessing the classification accuracy provides the degree of confidence in the results and the subsequent change detection 
+The common and most effective method used to measure the accuracy of the classified image from remotely sensed imagery is an error/confusion matrix 
+where r-rows number in the matrix, Xii-number of observations in row i and column i (the diagonal elements), X + i and Xi+-the marginal totals of row i and column I, respectively, and N-observations number.
+
+## Land Use Land Cover Change Drivers ##
+Driving factors influence LULC changes. LULC changes are driven by natural and human activities 
+The evidence likelihood is an empirical probability of change in the LULC categories between an earlier and a later map 
+
+## LULC Change Prediction and Validation ##
+
+
+## LULC Prediction ##
+The LCM (Land Change Modeler) embedded in the TerrSet Geospatial Monitoring and Modeling System (TGMMS) software was used for prediction of future LULC for a specified year based on the classified historical satellite images. The LCM determines how the factors influence future LULC change, how much land cover change took place between earlier and later LULC, and then calculates a relative amount of transitions 
+The trend variations of LULC changes for the years 1990, 2005, and 2019 were analyzed to predict future years of the watershed. The future land use scenarios were based on recent trends, historical land use information, and anticipated future changes. The LCM uses the "change analysis" tab, the "transition potentials" tab, and the "change prediction" tab. The change rates were determined through the "change analysis" tab, along with the "transition potential" maps to simulate the future scenario. The LCM module allows three different approaches to produce maps of transition potential based on the individual sub-models and associated explanatory variables: multi-layer perceptron (MLP) neural network, logistic regression, and a similarity-weighted instance-based machine learning tool (SimWeight) 
+The TerrSet model uses CA-MC which is a stochastic modeling process to simulate the future changing over time from past changes 
+where 0 ≤ Pij < 1 and
+The cellular automata model can be expressed by the following equation:
+where S (t) and S (t+1) are the system status at times t and t + 1, respectively, N-cellular field, t and t + 1 are the different times, f-transformation rule of cellular states in local space, S-the set of limited and discrete cellular states, Pij-the transition probability matrix in a state.
+The CA-Markov considers constraints and factors to prepare a single map of suitability 
+
+## Model Validation ##
+Validation is simply a procedure to assess the quality of the predicted LULC map against a reference map 
+The map shows areas where the model correctly predicted called "hits", areas where the model predicted change but it actually did not occur called "false alarms", and occasions where the model was unable to predict it, but areas are changed in reality, called "misses". After the model prediction capacity was verified between the 1990 and 2005 time periods for 2019, the simulation process was repeated to project the 2035 and 2050 map using 2005 and 2019 classified maps. The other method is the kappa coefficient calculation between the predicted map and actual land use map 
+The overall agreement of the projected and reference map indicates the Kappa for no information (Kno). The location kappa (Klocation) is used to compute the spatial accuracy in the overall landscape, because of the correct assignment values in each category between the simulated and reference map 
+
+## Analysis of Land Use Land Cover Change ##
+The change of LULC assessment was computed using the LCM model. Different LULC categories of quantitative assessment, net change of LULC categories, and the contributors to the net change experienced by each LULC class are the three sections of results identified in the LCM. Change analysis was performed by using the classified maps 
+
+## Percent of change = ##
+Ay -Ax Ax * 100
+Rate of change (ha/year) = Ay -Ax T
+where Ax is the area of LULC (ha) of an earlier land cover image, Ay is the area of LULC (ha) of a later land cover image, T is the time interval between Ax and Ay in years.
+
+## Results and Discussions ##
+
+
+## Accuracy Assessment of the Classified Images ##
+The assessment of accuracy was performed for LULC change analysis by generating confusion/error matrix in each LULC category of 1990, 2005, and 2019 classified maps. The overall accuracy, kappa statistics, producer's and user's accuracy have been used for assessment. The kappa statistics and overall accuracy of classified images shows 91.43%, 87.59%, 85.71% and 0.93, 0.90, and 0.88 for the years 2019, 2005, and 1990, respectively (Table 
+The accuracy assessment of LULC is required in any study using remote sensing Landsat data for the historical LULC. According to the authors of 
+
+## LULC Change Analysis ##
+The change of the LULC analysis was through evaluation of gains, net change, and losses experienced by different categories using change analysis in LCM. The evaluation of spatial and temporal changes between various classes during the period 1990, 2005, and 2019 was analyzed (Figure 
+
+## LULC Change Analysis ##
+The change of the LULC analysis was through evaluation of gains, net change, and losses experienced by different categories using change analysis in LCM. The evaluation of spatial and temporal changes between various classes during the period 1990, 2005, and 2019 was analyzed (Figure 
+Although forest land, range land, and grass land experienced reduction in coverage throughout the study periods, the greatest reduction rate was observed in forest land. To mitigate the rapid rates of LULC conversions at watershed, the application of integrated watershed management strategies, managing the rapid population growth, afforestation of degraded or deforested areas, and reducing the dependency of locals on forest products is critically important. The findings of the study are consistent with other studies conducted in Ethiopia by the authors of 
+
+## Driver Variables of LULC Change ##
+The driver variables influencing changes are based on spatial analysis and added to the model either as static or dynamic components 
+Although forest land, range land, and grass land experienced reduction in coverage throughout the study periods, the greatest reduction rate was observed in forest land. To mitigate the rapid rates of LULC conversions at watershed, the application of integrated watershed management strategies, managing the rapid population growth, afforestation of degraded or deforested areas, and reducing the dependency of locals on forest products is critically important. The findings of the study are consistent with other studies conducted in Ethiopia by the authors of 
+
+## Driver Variables of LULC Change ##
+The driver variables influencing changes are based on spatial analysis and added to the model either as static or dynamic components 
+
+## Driver Variables of LULC Change ##
+The driver variables influencing changes are based on spatial analysis and added to the model either as static or dynamic components 
+From Table 
+
+## Transition Probability Matrix (TPM) ##
+Transition potential modeling is assessing the likelihood of LULC change from one class to another depending on the suitability transition of area and the presence of driving forces 
+In 2005-2019, especially since 2012, a dam on Nashe River was built for irrigation and hydropower purposes. The water body has increased. The displacement of communities occurred from their land during the expansion of hydropower projects and the displacement caused land scarcity. The lowland areas of the watershed was covered with forests, range lands, and grass lands before 1990 even before 2005. Currently, however, a great decline of forest cover is occurring because of urbanization and agricultural land expansion. In recent times, the expansion of urban areas has been continuously increasing at the highest rate.
+The findings of the study show that urban area increase was consistent with other research findings in Africa 
+
+## Validation of the Model ##
+The agreement of the two categorical maps was measured by using Validation Module. In order to assess the accuracy, validation of the model is necessary. Validation is significant as it allows to determine the quality of the predicted land cover map with actual map. A comparison was made between the actual and simulated LULC map of 2019 so as to validate the predicted map. The less effective simulated LULC class is water body as the projected map was from the maps before construction of the dam and the actual LULC map is from after the construction. The validation results between the simulated and actual LULC test summary of the model are presented in Table 
+According to the authors of 
+
+## Future LULC Prediction ##
+The LULC change of the future has been predicted for the years 2035 and 2050. The future probable percentages of changes in LULC for the periods of 2019-2035 and 2035-2050 were analyzed by transition probabilities matrix. The quantity of change and the spatial distribution are the two aspects of LULC prediction in LCM that are provided by Markov chain and MLP neural network, respectively 
+Sustainability 2021, 13, x FOR PEER REVIEW 15 of 23 index. For accuracy assessment measurement in a number of studies, kappa coefficient is still considered as a vital tool 
+
+## Future LULC Prediction ##
+The LULC change of the future has been predicted for the years 2035 and 2050. The future probable percentages of changes in LULC for the periods of 2019-2035 and 2035-2050 were analyzed by transition probabilities matrix. The quantity of change and the spatial distribution are the two aspects of LULC prediction in LCM that are provided by Markov chain and MLP neural network, respectively 
+Significant change was observed from the change analysis result in LULC change between 1990 and 2050. Agricultural land will be the predominant LULC type. It was seen from the result as the area of agricultural land increment from 61.19% in 2019 to 72.98% in 2035 and 73.24% in 2050. This was mainly caused by converting forest, range, and some parts of grass land. Agricultural land increased significantly from 1990 to 2035 and then slowly from 2035 to 2050 (Figure 
+Ref. 
+
+## Conclusions ##
+The present study was carried out to understand the changes in the historical and predicted land use land cover patterns from the year 1990 to 2050. The integrated approach including remote sensing, GIS, and a MLPNN-based CA-MC model was used to understand the spatiotemporal dynamics of LULC and prediction of future LULC change in Nashe watershed, Ethiopia. The conclusions drawn from the research findings were the following.
+The multitemporal satellite imagery data are used for informed decision-making in LULC change, providing the potential information required for monitoring and evaluating of LULC changes. The precision of the data from the remotely sensed imagery classified based on the maximum likelihood classification method with high resolution image of Landsat was checked through an error matrix and it yielded an acceptable result that was further processed for analysis.
+To validate the model, the projected 2019 LULC map was compared with 2019 actual LULC map. After successful model validation, the LULC map for the years 2035 and 2050 were simulated by considering the business-as-usual scenario. In this procedure, we used 1990-2005 and 2005-2019 LULC data as a baseline and current scenario for comparison. Its validation showed a strong correlation between the simulated LULC map and satellitederived map, which proved the simulation model's reliability.
+The rapid and massive changes of LULC in the watershed may have serious environmental impacts. The analysis of LULC change shows that forest cover has been decreasing, as well as the high increasing rate of urban area and agricultural land. The predicted LULC situation show that this cover would continue in the future. This will increase vulnerability of the watershed to landslides, soil loss, gully erosion, worsened air pollution, and impact the hydrology of the studied watershed in particular and the Blue Nile Basin The forest land and range land show a decreasing trend from 2019 to 2035. Unfortunately, the grass land, range land, and agricultural land will slightly increase from 2035 to 2050. This might be due to the limited area of land for different purposes. The major contributing factors to LULC change were the expansion of hydropower and irrigation projects, mostly at the downstream, for expansion of a sugar factory. The scarcity of jobs and urban expansions in the catchment amplified the socio-economic activities for LULC changes. In the watershed, the downstream and partly at the upstream areas, which were previously covered by forests and range lands, have been converted to agricultural land and commercial crop farms.
+Forest reduction also occurred as a result of using charcoal and firewood as the energy source for most of the people living around the watershed, who depend on fuel wood. Additionally, most of the evacuated population during the construction of Nashe and Amerti projects were involved in converting the forest land to agriculture and settlement. Illegal and unplanned settlements by the local people to expand agriculture and settlement also contributed to destruction of forest land, range land, and grass land. Thus, the forest conversion needs to be controlled and well-managed, and a reasonable land use plan should be developed in an organized way. The expansion of one LULC type occurs at the detriment of other LULC classes 
+From the temporal patterns of the changes between 1990 and 2019, forest land decreased at a higher rate. The other affected LULC types were range land and grass land. The urban land and water body LULC classes gained trends in the study. Simulation analysis was conducted for the years of 2035 and 2050 based on historical LULC change data from 1990-2005, 2005-2019, and 1990-2019, which were used as a baseline. Similar to the historical analysis of LULC change, the predicted results of forest, grass, and range land classes were registered net loss in the area from 1990 to 2035. Whereas, the range land and grass land smoothly gained from 2035-2050. The predicted results of the year 2035 and 2050 show an increase in agriculture, water body and urban land. Therefore, future land use activities ought to be based on proper land use development and land regulation to reduce the enduring adverse impact of LULC changes. Ref. 
+Ref. 
+
+## Conclusions ##
+The present study was carried out to understand the changes in the historical and predicted land use land cover patterns from the year 1990 to 2050. The integrated approach including remote sensing, GIS, and a MLPNN-based CA-MC model was used to understand the spatiotemporal dynamics of LULC and prediction of future LULC change in Nashe watershed, Ethiopia. The conclusions drawn from the research findings were the following.
+The multitemporal satellite imagery data are used for informed decision-making in LULC change, providing the potential information required for monitoring and evaluating of LULC changes. The precision of the data from the remotely sensed imagery classified based on the maximum likelihood classification method with high resolution image of Landsat was checked through an error matrix and it yielded an acceptable result that was further processed for analysis.
+To validate the model, the projected 2019 LULC map was compared with 2019 actual LULC map. After successful model validation, the LULC map for the years 2035 and 2050 were simulated by considering the business-as-usual scenario. In this procedure, we used 1990-2005 and 2005-2019 LULC data as a baseline and current scenario for comparison. Its validation showed a strong correlation between the simulated LULC map and satellitederived map, which proved the simulation model's reliability.
+The rapid and massive changes of LULC in the watershed may have serious environmental impacts. The analysis of LULC change shows that forest cover has been decreasing, as well as the high increasing rate of urban area and agricultural land. The predicted LULC situation show that this cover would continue in the future. This will increase vulnerability of the watershed to landslides, soil loss, gully erosion, worsened air pollution, and impact the hydrology of the studied watershed in particular and the Blue Nile Basin in general.
+Therefore, suitable and timely management measures must be taken by policy decision makers to enable sustainable development and to protect the watershed in order to reduce the severity of the changes.
+Settlement expansion, agricultural expansion, firewood extraction, land tenure policy, and infrastructure development were the top LULC change drivers. Moreover, to ensure a better environmental condition, this kind of study revealed a significant prospective to contribute towards the sustainable environmental planning and management system of an area at the local and global levels.
+Finally, it can be concluded that the projected conditions may be reversed, which is very important to reduce the enduring adverse impact of LULC changes on the watershed hydrological components through the announced nationwide tree planting, implementing the strategy of climate resilient green economy and formulating the local-and regional-scale policies required for sustainable development. Future studies incorporating the assessment of land use and land cover change impacts on the hydrological parameters of the watershed would be helpful for better management of the watershed.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Watershed Management in Action: Lessons Learned from FAO Field Projects; Food & Agriculture Organization
+   Authors: 
+   Date: 2017
+
+2. How dynamics and drivers of land use/land cover change impact elephant conservation and agricultural livelihood development in Rombo
+   Authors: , , 
+   Date: 2017
+
+3. Comparing two approaches to land use/cover change modeling and their implications for the assessment of biodiversity loss in a deciduous tropical forest
+   Authors: , , 
+   Date: 2012
+
+4. Evaluating drivers of land-use change and transition potential models in a complex landscape in Southern Mexico
+   Authors: , , 
+   Date: 2013
+
+5. Climate Change and Food Security: Risks and Responses; Food & Agriculture Organization
+   Authors: 
+   Date: 2015
+
+6. Land Use and Land Cover Mapping in Europe
+   Authors: , 
+   Date: 2014
+
+7. Land use change exacerbates tropical South American drought by sea surface temperature variability Land use change exacerbates tropical South American drought by sea surface temperature variability
+   Authors: , , , 
+   Date: 2011
+
+8. Tropical forests were the primary sources of new agricultural land in the 1980s and
+   Authors: , , , , , , 
+   Date: 1990
+
+9. Patterns, causes and consequences of land use / cover dynamics in the Gumara watershed of lake Tana basin
+   Authors: , , 
+   Date: 2016
+
+10. Evaluation and prediction of land use/land cover changes in the Andassa watershed
+   Authors: , , , 
+   Date: 2017
+
+11. National level land-use changes in functional urban areas in Poland, Slovakia, and Czechia
+   Authors: , , 
+   Date: 2021
+
+12. Landscape and urban planning landscape transformation processes in two large and two small cities in Egypt and Jordan over the last five decades using remote sensing data
+   Authors: , , , 
+   Date: 2020
+
+13. Changes in agricultural land use in the context of ongoing transformational processes in Slovakia
+   Authors: , , , 
+   Date: 2013
+
+14. Land-cover and land-use change in a Mediterranean landscape: A spatial analysis of driving forces integrating biophysical and human factors
+   Authors: , , 
+   Date: 2008
+
+15. Ecological planning for sustainable development with a green technology : GIS
+   Authors: , , 
+   Date: 2014
+
+16. Modelling and analyzing the watershed dynamics using Cellular Automata (CA)-Markov model-A geo-information based approach
+   Authors: , , , , 
+   Date: 2012
+
+17. Land use/land cover change modeling and the prediction of subsequent changes in ecosystem service values in a coastal area of China, the Su-Xi-Chang region
+   Authors: , , , , 
+   Date: 2017. 1204
+
+18. Land-use and land-cover scenarios and spatial modeling at the regional scale. US Geol. Surv
+   Authors: , 
+   Date: 2012. 2012-3091, 4
+
+19. Land use change and prediction in the Baimahe Basin using GIS and CA-Markov model
+   Authors: , , 
+   Date: 2014
+
+20. Land change modelling: Moving beyond projections
+   Authors: , , , , 
+   Date: 2013
+
+21. A remote sensing aided multi-layer perceptron-Markov chain analysis for land use and land cover change prediction in Patna district (Bihar), India. Arab
+   Authors: , 
+   Date: 2016
+
+22. Modeling land use/land cover change using remote sensing and geographic information systems: Case study of the Seyhan Basin
+   Authors: , , 
+   Date: 2018
+
+23. A review of approaches to land use changes modeling
+   Authors: 
+   Date: 2018
+
+24. Validation of CA-Markov for simulation of land use and cover change in the Langat Basin
+   Authors: , , , , , , 
+   Date: 2012
+
+25. Geospatial analysis of land use land cover change predictive modeling at Phewa Lake watershed of Nepal
+   Authors: , , 
+   Date: 2014
+
+26. Monitoring and predicting land use change in Beijing using remote sensing and GIS
+   Authors: , , , , , , , 
+   Date: 2006
+
+27. Inductive pattern-based land use/cover change models: A comparison of four software packages
+   Authors: , , , , 
+   Date: 2014
+
+28. IDRISI Selva Tutorial; 17th Version; IDRISI Production
+   Authors: 
+   Date: 2012
+
+29. Scenario-based land cover change modeling and its implications for landscape pattern analysis in the Neka Watershed
+   Authors: , 
+   Date: 2015
+
+30. Generating a future land-use change scenario : A case study of the Little Miami River Watershed
+   Authors: , , 
+   Date: 2012
+
+31. Using CA-Markov model to model the spatiotemporal change of land use/cover in fuxian lake for decision support
+   Authors: , , , , 
+   Date: 2015
+
+32. Land use/land cover change detection in metropolitan Lagos (Nigeria): 1984-2002
+   Authors: , , 
+   Date: May 2006. 2006
+
+33. Examining urban sprawl in Europe using spatial metrics
+   Authors: , 
+   Date: 2015
+
+34. Land use/cover dynamics and its drivers in Gelda catchment, Lake Tana watershed
+   Authors: , 
+   Date: 2017
+
+35. 
+   Authors: 
+   Date: 2011
+
+36. Land-use change modelling in the upper blue nile basin
+   Authors: , , , , , , 
+   Date: 2016
+
+37. Comprehensive assessment of soil erosion risk for better land use planning in river basins: Case study of the Upper Blue Nile River
+   Authors: , , , , , , , 
+   Date: 2017
+
+38. Monitoring and predicting land use change in Tripoli Metropolitan City using an integrated Markov chain and cellular automata models in GIS
+   Authors: , 
+   Date: 2014
+
+39. Optimal ground control points for geometric correction using genetic algorithm with global accuracy
+   Authors: , 
+   Date: 2015
+
+40. Evaluations of land use/land cover changes and land degradation in Dera District, Ethiopia: GIS and Remote Sensing Based Analysis
+   Authors: , , 
+   Date: 2014
+
+41. Trends in remote sensing accuracy assessment approaches in the context of natural resources
+   Authors: , , , 
+   Date: 2019
+
+42. Cohen's Kappa and Classification Table Metrics 2.0: An ArcView 3. x Extension for Accuracy Assessment of Spatially EXPLICIT Models
+   Authors: , 
+   Date: 2005. 2 January 2015
+
+43. Impacts of land use land cover change on sediment yield and stream flow
+   Authors: , , 
+   Date: 2017
+
+44. Spatial Modeling of Deforestation and Land Suitability Assessment in the Tam Dao National Park Region, Vietnam Spatial Modeling of Deforestation and Land Suitability Assessment in the Tam Dao National Park Region
+   Authors: 
+   Date: January 2011
+
+45. Assessing simulated land use/cover maps using similarity and fragmentation indices
+   Authors: , , 
+   Date: 2012
+
+46. TerrSet Geospatial Monitoring and Modeling System-Manual
+   Authors: 
+   Date: 2 January 2016
+
+47. 
+   Authors: , , 
+   Date: 2016
+
+48. Modeling land use change using cellular automata and artificial neural network: The case of Chunati wildlife sanctuary
+   Authors: , , 
+   Date: 2018
+
+49. Future simulation of land use changes in rapidly urbanizing South China based on land change modeler and remote sensing data
+   Authors: , , , , 
+
+50. 
+   Authors: , 
+   Date: 2 January 2015
+
+51. Land use land cover change detection and deforestation modeling
+   Authors: , , 
+   Date: 2019
+
+52. Predicted land use change in the Soyang River Basin, South Korea
+   Authors: , , , 
+   Date: 2-7 October 2011
+
+53. Detection and prediction of land cover changes using Markov chain model in semi-arid rangeland in western Iran
+   Authors: , , 
+   Date: 2015
+
+54. Accuracy assessments of land use change simulation based on Markov-cellular automata model
+   Authors: , , 
+   Date: 2012
+
+55. Predicting spatial and decadal LULC changes through cellular automata Markov chain models using earth observation datasets and geo-information
+   Authors: , , , , 
+   Date: 2015
+
+56. Analysis and prediction of land use changes related to invasive species and major driving forces in the state of Connecticut
+   Authors: , , , , , , 
+   Date: 2016
+
+57. Monitoring land use change and measuring urban sprawl based on its spatial forms: The case of Qom city
+   Authors: , , , , 
+   Date: 2016
+
+58. Predicting urban expansion in arak metropolitan area using two land change models
+   Authors: , , 
+   Date: 2012
+
+59. Understanding interobserver agreement: The kappa statistic
+   Authors: , 
+   Date: 2005
+
+60. Exploring land use and land cover of geotagged social-sensing images using Naive Bayes Classifier
+   Authors: , , , 
+   Date: 2016
+
+61. Analysis and modeling of urban land cover change in Setúbal and Sesimbra
+   Authors: , 
+   Date: 2010
+
+62. Land use/land cover dynamics and modeling of urban land expansion by the land use/land cover dynamics and modeling of urban land expansion by the integration of cellular automata and Markov chain
+   Authors: , , 
+   Date: 2018
+
+63. Forest cover change over four decades in the Blue Nile Basin, Ethiopia: Comparison of three watersheds
+   Authors: , , , 
+   Date: 2014
+
+64. Forecasting areas vulnerable to forest conversion in the tam Dao National Park region
+   Authors: , 
+   Date: 2010
+
+65. Spatial Analysis, and Modeling
+   Authors: , , , 
+   Date: 2005
+
+66. Comparison of the structure and accuracy of two land change models
+   Authors: , 
+   Date: 2005
+
+67. Scenario simulation and the prediction of land use and land cover change in Beijing
+   Authors: , , 
+   Date: 2015
+
+68. Predicting land cover change and avian community responses in rapidly urbanizing environments
+   Authors: , , 
+   Date: 2008
+
+69. Assessment of land use and land cover change using GIS and remote sensing
+   Authors: , , , 
+   Date: 2016. 2 January 2017
+
+70. Land use change detection and prediction in upper Siem Reap River, Cambodia
+   Authors: , , , 
+   Date: 2019
+
+71. Measuring and predicting long-term land cover changes in the functional urban area of Budapest
+   Authors: , , , , , , 
+
+72. Bale Mountains Eco-Region Reduction of Emission from Deforestation and Forest Degradation (REDD+) Project-Ethiopia
+   Authors: , 
+   Date: 2 January 2015
+

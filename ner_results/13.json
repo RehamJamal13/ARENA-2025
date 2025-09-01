@@ -1,0 +1,12 @@
+{
+  "article_id": "13",
+  "original_sentence": "Remote sensing data showed changes in Pampas vegetation.",
+  "entities": [
+    {
+      "text": "Pampas vegetation",
+      "label": "LOC",
+      "start_char": 38,
+      "end_char": 55
+    }
+  ]
+}

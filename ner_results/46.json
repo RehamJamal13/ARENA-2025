@@ -1,0 +1,12 @@
+{
+  "article_id": "46",
+  "original_sentence": "Remote sensing data showed changes in Mulga vegetation.",
+  "entities": [
+    {
+      "text": "Mulga vegetation",
+      "label": "LOC",
+      "start_char": 38,
+      "end_char": 54
+    }
+  ]
+}

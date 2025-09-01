@@ -1,0 +1,223 @@
+================================================================================
+TITLE: Assessment of variation of land use/land cover and its impact on land surface temperature of Asansol subdivision
+================================================================================
+
+AUTHORS:
+- Niladri Das
+- Prolay Mondal
+- Subhasish Sutradhar
+- Ranajit Ghosh
+
+ABSTRACT:
+Land use and land cover (LULC) Normalized difference build-up index (NDBI) Normalized difference water index (NDWI) Land surface temperature (LST) a b s t r a c t Economic development is a basic need for the growth of the region and it stimulates the rapid transformation of land use and land cover (LULC) units. Urbanization and industrialization are one of the major factors to increase temperature. Asansol sub-division is one of the important industrial and urbanized regions of eastern India. In this study, two different years viz. 1993 and 2018 have taken for the preparation of LULC and land surface temperature map. The kappa coefficient has been implied in this investigation to assess the accuracy of LULC maps. Temperature maps show that summer and winter surface temperature increases at the rate of 0.15 °C and 0.19 °C per year respectively. The result also reveals that temperature mainly increases due to the presence of urban, industrial and coal mine areas. The changing land use and land cover patterns show that the coal mine areas have been increased by 15% and urban areas also increased by 60%. Some correlations have been prepared to show the relationship between Land Surface Temperature (LST) and other spatial indices like NDBI, NDVI, and NDWI, where negative correlation prevails between LST and NDVI also with NDWI, but positive relation exists between LST and NDBI. Lastly, simulation of temperature for the year 2041 has been prepared, which shows that in the upcoming years' temperature may be increased up to 0.21 °C/year.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+For proper identification of a region, Land use and Land cover (LULC) is one of the most vital parameters for the proper identification of a region 
+Several studies established that there is a strong influence of LULC on surface temperature and reported that the relative rise in LST depends on LULC change especially in the urban centers 
+Remote Sensing and geospatial technology are some of the major modern tools for the identification of LULC and extraction of land surface temperature (LST) 
+This paper attempt to identify the research objectives: (1) To detect the LULC changes over the last 23 years (2) To assess the Spatial as well as the temporal variation of surface temperature with the changing Land use. (3) To establish the correlation between LST and other spatial indices.
+
+## Materials and methods ##
+
+
+## Description of the test area ##
+Asansol sub-division is lying on the Western part of the Asansol Durgapur Planning Area (ADPA). It occupies 836.80 Km 2 areas and had a population of 16.72 lakhs in 2011. The southern and northern part of the study area is bounded by Ajay and Damodar River.
+The spatial extension of the study area is present between 23 O 41 00 30 00 N to 23 O 53 0 30 00 N and 86 O 47 0 41 00 E to 87 O 14 0 04 00 E (Fig. 
+The test area is experienced by tropical monsoon climate with high temperatures in the summer and dry winter season. The average rainfall is 1408 mm.
+
+## Database and methods ##
+LANDSAT TM (path/row: 139/44; spatial resolution 30 m) data of 1995 and LANDSAT 8 OLI (path/row: 139/44; spatial resolution 30 m) data have been acquired from USGS earth explorer. The   
+2.2.1. Method for land use and land cover classification from Landsat (TM/OLI) imagery LULC map has been classified with the help of supervised classification using the maximum likelihood method of Image Classification tool in ArcGIS 10.5.
+Band 1-5 and band-7 of Landsat-5 TM imagery have been considered for land use classification, but band 6 has been excluded as it denotes thermal band. Contrarily for Landsat-8 OLI imagery, bands 1-7 have been taken into consideration for land use classification. For the preparation of land use and land cover maps, all the bands have been stacked in ArcGIS 10.5 software using image analyst tool, then training sample manager tool has been used to identify the signature of the pixels, for this purpose large number of training samples have been collected randomly from the entire  imagery. The entire procedure for land use classification has been shown through the flow chart (Fig. 
+
+## Method of accuracy assessment of land use maps ##
+In this study, accuracy assessment has been made through the confusion matrix or error matrix. This matrix explains the information about the actual and predicted identification of the pixel 
+where T -Overall accuracy P D ii -the total number of correctly classified pixels N -total number of pixels in the error matrix   In this study, a total of 400 sample sites have been created for the ground truth verification from the Google earth and the actual ground using Global Positioning System (GPS) for the accuracy assessment 
+where PA -Producer's accuracy D ij -number of correctly classified pixels in row i(in the diagonal cell) R i -total number of pixels in row i
+where UA -User's accuracy D ij -number of correctly classified pixels in column j (in the diagonal cell) C j -total number of pixels in column j Except, the above methods, another accuracy coefficient which is known as Kappa coefficient or Kappa hat or K-hat ( b K ) 
+where b K -Kappa-Coefficient N -Total number of pixels m -Number of classes P D ij -Total diagonal elements of an error matrix (the sum of correctly classified pixels in all images) R j -Total number of pixels in row i C j -Total number of pixels in column j Kappa statistic 
+
+## Extraction methods of LST from the thermal band ##
+The temperature of the ground surface has been derived from the thermal bands of Landsat-5 TM (band 6) and Landsat-8 OLI (band 10) for May as summer season and December as winter season.
+But the extraction process of LST from Landsat TM and Landsat OLI is slightly different in terms to calculate spectral radiance (Lk). The procedures for the extraction of LST has been described in detail by many articles 
+where BT = At-satellite brightness temperature Lk = TOA spectral radiance [vide equation ( 
+Step-V Calculation ground surface temperature.   (1.438*10 À2 m K), r ¼Boltzmann constant (1.38*10 À23 J/K), h = Planck's constant (6.626*10 À34 J s), c = velocity of light (2.998 Â 10 8 m/s) and e = emissivity (ranges between 0.97 and 0.99).
+
+## Methods for calculation of various spatial indices ##
+Land Surface Temperature has been associated with the Normalized Difference Vegetation Index (NDVI), Normalized Difference Water Index (NDWI) and Normalized Difference Built-up Index (NDBI).
+NDVI is the difference between near-infrared and red reflectance which is the divisible sum of two and it describes vegetation phenology 
+where  
+where the green band is band 2 for Landsat TM imagery and band 3 for Landsat OLI imagery. Near-Infrared (NIR) band is band 4 for Landsat TM and band 5 for Landsat OLI.
+Values of NDWI lie between À1 to 1. In the case of water bodies, NDWI value is >0.5 and smaller values like negative values correspond to vegetation, so it is easy to distinguish water bodies from vegetation. The values range from 0 to 0.2 corresponds to the builtup features.
+Remote sensed data help us to calculate the built-up index using the Middle infrared band (MIR) and near-infrared band (NIR). NDBI has been derived using the following equation 
+where MIR is the middle infrared band (For Landsat TM it is band 5 and for Landsat OLI it is band 6) and NIR is the near-infrared band (For Landsat TM it is band 4 and for Landsat OLI it is band 5).
+The values of NDBI also lies between À1 to +1, where 0 to 1 correspond to built-up and value near 1 indicates a high density of built-up area 
+
+## Method to identify the association between LST and other spatial parameters ##
+To understand the influence of the different spatial parameters on Surface Temperature, Pearson's Product Moment correlation has been applied. In this study, raster-raster (e.g. LST and NDVI; LST and NDWI and so on) correlation has been calculated in QGIS 3.8.1 software (Discussed in result and analysis section) using scatter plot tool.  
+
+## Method for change detection ##
+Land use and land cover classification of 1995 and 2018 have been compared using the change matrix 
+
+## Method to estimate the predicted temperature ##
+It is an important part of the study, where the future temperature has been predicted for the next 23 years through simulation. There are several methods to predict simulated temperature like Artificial Neural Networks, Markov chain, hybrid neural model, regression model, etc 
+
+## Result and discussion ##
+
+
+## Land use and land cover change analysis ##
+The LULC maps have been categorized into eight classes viz. settlement, water bodies, coal mines, agricultural land, fallow land, industry, vegetation, and wasteland. In 1995 major coal mines area has been observed in the C2 grid (Figs. 
+The accuracy assessment of LULC has also been analyzed with the help of the Kappa coefficient (Vide methodology; equation (4).
+For the LULC of 1995, the value of Kappa was 0.81 and for 2018 the kappa value was 0.88 (Table 
+Fig. 
+At the micro-level, the climate has been changed with the changing of the LULC units. The rate of temperature change is very prominent at the impervious surface 
+
+## Impact of water bodies, vegetation and building area on land surface temperature ##
+Other correlations have been studied between LST and water bodies, built-up areas and vegetation. All the maps have been prepared for the winter season as the winter season is cloud-free and low atmospheric haziness. Fig. 
+Another important relationship has been observed between NDBI and NDWI. NDBI negatively influences NDWI (Fig. 
+The last index that is NDBI or Normalized Difference Built-up Index has a keen impact on ground surface temperature. The relational value between them is 0.93 (Tables 
+
+## Predicted temperature for 2041 ##
+This section is an important part of the study where temperature of 2041 has been predicted with the help of artificial Neural Network model in Q.GIS (Vide methodology). The predicted temperature reveals that temperature will be increased at the place where coal mines, industries and urban area are present. With the increase of human demand, coal mines, industries as well as urban area will rapidly increased in the test region, so there will be huge chance of increasing temperature of the above mention landuse regions. Both figures viz. Figs. 
+
+## Conclusion ##
+This study attempted to find out the fact that the increasing trend of temperature over the land area has been recorded both during summer and winter season. This research also explores that temperature remains above 42 °C at coal mines, industrial patches, and built-up areas. The changing trend of ground surface temperature depicts that maximum and minimum temperature during the summer season has been increased about 0.15 °C and    Moreover, the unused fallow land should be converted into vegetation land so that increasing surface temperature will be under control. In the urban areas, more vegetation should be planted and more parks should be constructed with dense vegetation like Chittaranjan. For the implementation of all these things, strict planning must be applied in this region. This may help to control further temperature increase.   
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Assessing the effect of green cover spatial patterns on urban land surface temperature using landscape metrics approach. Urban Ecosyst
+   Authors: , , 
+   Date: 2014
+
+2. Spatial interpolation to predict missing attributes in GIS using semantic kriging
+   Authors: , , 
+   Date: 2014
+
+3. Assessment of land use land cover changes and its impact on variations of land surface temperature in Asansol-Durgapur Development Region
+   Authors: , , 
+   Date: 2019
+
+4. Coefficient of agreement for nominal scales
+   Authors: 
+   Date: 1960
+
+5. Application of multi-criteria decision making technique for the assessment of groundwater potential zones: a study on Birbhum district
+   Authors: , 
+   Date: 2018
+
+6. Land-use/landcover changes and their impact on surface urban heat islands: case study of Kandy City, Sri Lanka
+   Authors: , , , 
+   Date: 2019
+
+7. Forecasting maximum seasonal temperature using artificial neural networks ''Tehran case study
+   Authors: , , 
+   Date: 2019
+
+8. 
+   Authors: 
+
+9. On the compensation for chance agreement in image classification accuracy assessment
+   Authors: 
+   Date: 1992
+
+10. The impact of spatiotemporal patterns of land use land cover and land surface temperature on an urban cool island: a case study of Bengaluru
+   Authors: , 
+   Date: 2019
+
+11. The use of GIS for monitoring and predicting urban growth in East and West St Paul
+   Authors: 
+   Date: 2002
+
+12. Study on specific heat of water adsorbed in zeolite using DSC
+   Authors: , 
+   Date: 2010
+
+13. Integration of logistic regression, Markov chain and cellular automata models to simulate urban expansion
+   Authors: , , , 
+   Date: 2013
+
+14. The stability of global estimates from confusion matrices
+   Authors: 
+   Date: 1989
+
+15. The measurement of observer agreement for categorical data
+   Authors: , 
+   Date: 1977
+
+16. Changing land surface temperature of a rural Rarh tract river basin of India
+   Authors: , 
+   Date: 2018
+
+17. The use of normalized difference water index (NDWI) in the delineation of open water features
+   Authors: 
+   Date: 1996
+
+18. Specific heat experimental tests of simple and hybrid oxide-water nanofluids: proposing new correlation
+   Authors: , 
+   Date: 2019
+
+19. Detection of land use and land cover change and land surface temperature in English Bazar urban centre
+   Authors: , 
+   Date: 2017
+
+20. Quantifying Surface Urban Heat Island Formation in the World Heritage Tropical Mountain City of Sri Lanka
+   Authors: , , , , , , 
+   Date: 2018
+
+21. Spatial changes of urban heat island formation in the Colombo District, Sri Lanka: implications for sustainability planning
+   Authors: , , , 
+   Date: 2018. 1367
+
+22. The Impacts of Landscape Changes on Annual Mean
+   Authors: , , 
+   Date: 2019
+
+23. Spatial forecasting of the landscape in rapidly urbanizing hill stations of South Asia: a case study of Nuwara Eliya, Sri Lanka
+   Authors: , , , , , 
+   Date: 2019. 1996-2037
+
+24. Spatiotemporal analysis of land use/land cover and its effects on surface urban heat island using landsat data: a case study of metropolitan city Tehran
+   Authors: , , , , , , , 
+   Date: 2018. 1988-2018
+
+25. Weather forecasting based on hybrid neural model
+   Authors: , , 
+   Date: 2017
+
+26. River Flood Prediction Using Markov Model
+   Authors: , 
+   Date: 2016
+
+27. Accuracy assessment: a user's perspective
+   Authors: , 
+   Date: 1986
+
+28. Markov chain analysis of the rainfall patterns of five geographical locations in the south eastern coast of Ghana
+   Authors: , , , 
+   Date: 2017
+
+29. Analysis of the dynamics of African vegetation using the normalized difference vegetation index
+   Authors: , 
+   Date: 1986
+
+30. Estimation of land surface temperaturevegetation abundance relationship for urban heat island studies
+   Authors: , , 
+   Date: 2004
+
+31. Use of normalized difference built-up index in automatically mapping urban areas from TM imagery
+   Authors: , , 
+   Date: 2003
+
+32. Land use optimization for a rapidly urbanizing city with regard to local climate change: Shenzhen as a case study
+   Authors: , 
+   Date: 2015
+
+33. On the ground estimation of vegetation cover in Australian rangelands
+   Authors: , , 
+   Date: 1998
+

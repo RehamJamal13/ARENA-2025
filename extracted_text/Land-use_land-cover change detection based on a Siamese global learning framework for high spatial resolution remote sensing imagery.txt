@@ -1,0 +1,328 @@
+================================================================================
+TITLE: This article has been accepted for inclusion in a future issue of this journal. Content is final as presented, with the exception of pagination
+================================================================================
+
+AUTHORS:
+- Sunan Shi
+- Yanfei Zhong
+- Ji Zhao
+- Pengyuan Lv
+- Yinhe Liu
+- Liangpei Zhang
+
+ABSTRACT:
+High spatial resolution (HSR) remote sensing images can reflect more subtle changes and more specific types of land use and land cover (LULC) due to the abundant spatial geometric information. In this article, a class-prior object-oriented conditional random field (COCRF) framework consisting of a binary change detection (CD) task and a multiclass CD task is proposed to fill the application gap. In the proposed framework, the class-prior knowledge is used to improve the construction of the unary potential in both the binary and multiclass CD tasks, to reduce the influence of spectral variability. The binary CD result provides a constraint to the multiclass CD result. As a result, both parts have effective interaction.
+The class posterior probability images of two dates can be obtained automatically with the class-prior knowledge by sample migration. Furthermore, an object constraint described by the class dispersion within the objects is added to improve the smoothness in local objects, while the pairwise potential improves the smoothness of the whole area by using the eight-neighborhood spectral information of the center pixel. By integrating the above approaches, the problems of error accumulation and the manual intervention required in the traditional multiclass CD methods can be relieved. An adaptive parameter estimation strategy is also adopted in the proposed framework, to save the time required for manual parameter setting. The proposed COCRF framework was validated on two HSR remote sensing image data sets, where it achieved a better performance than the other state-of-the-art CD methods.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## I. INTRODUCTION ##
+C HANGE detection (CD) is aimed at identifying changes on the ground by analyzing multitemporal remote sensing images taken in the same geographical area at different dates 
+Classical CD methods such as image differencing 
+Object-based image analysis using spatial and spectral information is attracting more and more attention and has demonstrated great potential in image processing research 
+As a consequence, many supervised DC methods based on prior data have been proposed to obtain multiclass CD results. Examples of such methods are direct classification relying on stacked multitemporal images 
+What is more, for most OBCD methods, there are basically two kinds of segmentation strategies for the object-level information 
+Aiming at this drawback, random field models, such as Markov random field (MRF) and conditional random field (CRF) models, are other popular ways to model the spatial information, in addition to the OBCD methods. MRF was first used for image processing in 1984 
+Therefore, in this article, the class-prior object-oriented CRF (COCRF) framework consisting of a binary CD task and a multiclass CD task is proposed for HSR remote sensing imagery. The fuzzy object constraint improves the spatial-contextual learning ability, relative to the traditional CRF model. Furthermore, a semi-labeled class map is used as the prior knowledge to explore the class posterior probabilities of the two registered images so that the "from-to" change information can be estimated and the final CD result can show abundant change direction information. The main novel contributions of the COCRF framework are as follows.
+1) The COCRF framework combining the binary and multiclass CD tasks is proposed. The unary potentials are differently constructed for the two tasks, while the pairwise potential and the object constraint of the proposed object-oriented CRF model are the same. The COCRF framework optimizes the binary CD task before the multiclass CD task. The binary CD task is constrained by the multiclass information through a similarity measurement of the class posterior probabilities, to decrease the inaccuracy caused by the use of only the spectral difference or the DC of class labels. The binary CD result provides a mask constraint when computing the "from-to" probability, so that only the changed areas are considered in the multiclass CD task. Furthermore, a joint optimization strategy based on task fusion in the unary potential of the object-oriented CRF model is also considered to generate a more lightweight framework. 2) To address the shortcoming of too much manual work being required in the supervised multiclass CD task, only a semi-labeled class map (the so-called "class prior") of one date is needed in the proposed framework. Aiming at situations without sufficient historical data, we can label part of the image or even just the unchanged area. The sample migration can then be realized because the LULC classes should be the same in the unchanged areas. The class posterior probabilities are then obtained and shared in both tasks to improve the robustness of the final results. The parameters in most of the CRF models are set empirically, which require a lot of manual work. Therefore, an adaptive parameter estimation strategy is adopted in the proposed framework to reduce the run time. 3) To make full use of the spatial information and geographic structure of HSR images and take advantage of pixel interaction at the object level, an object constraint is incorporated into the pairwise CRF model. By analyzing the class dispersion degree within a single object, the strength of the object constraint is determined. The object constraint can reduce the impact of segmentation boundary errors to make the boundaries of the final results smoother and decrease the influence of the internal spectral variability of the objects. The rest of this article is organized as follows. Section II details the proposed COCRF framework. Section III presents an alternative fusion strategy for the binary and multiclass CD tasks. Section IV gives a brief description of the study areas and the experimental results. A sensitivity analysis is presented in Section V. Finally, the conclusions are drawn in Section VI.
+
+## II. PROPOSED CLASS-PRIOR OBJECT-ORIENTED CONDITIONAL RANDOM FIELD FRAMEWORK ##
+The COCRF framework combining class-prior knowledge and an object constraint is proposed for HSR remote sensing imagery, to perform the binary and multiclass CD tasks. The CRF model is the core of the proposed framework, because it is a relatively mature model in the field of image classification and binary CD, and is suitable for the multiclass CD task with LULC classes. However, there is a difference between the unary potentials of CRF for the classification and binary CD tasks, which requires us to establish the unary potentials specifically for the binary and multiclass changes. The pairwise potential and the object constraint of the proposed objectoriented CRF model are same for the two tasks.
+The COCRF framework optimizes the binary and multiclass CD tasks by constructing a mutual constraint of the two tasks on the data flow. As shown in Fig. 
+The data preparation for the COCRF framework consists of sample migration and the acquisition of observations and class posterior probabilities. The sample migration is conducted in unchanged areas because these LULC classes should be the same between the two dates. With the shared class labels acquired by sample migration, the class posterior probability images (P T 1 and P T 2 ) for the two dates can be computed by any supervised classifier. The spectral difference map (x SD ) and segmentation map (x SM ) are separately obtained by the image differencing and the segmentation. With the prepared data, the similarity and the change direction of each pixel between the two dates can be estimated.
+In order to obtain a binary CD result and a multiclass CD result, the unary potentials for the two tasks are generated separately to better illustrate the binary or multiclass changes. A clustering algorithm such as the fuzzy c-means (FCM) algorithm is used to obtain the change probability as the unary potential for the binary CD task. The unary potential of the multiclass CD task is the "from-to" probability estimated by the product of the class posterior probabilities. We do not adopt the PCC method but rather a direct classification strategy based on the "from-to" probability because the classification errors can be largely eliminated in this way.
+The pairwise potential is modeled using an Ising model to consider the contextual information of both the observed and labeled fields. The loopy belief propagation (LBP) algorithm is used to deduce the final results. The spatial information learned by the traditional pairwise potential is limited for HSR images, so the homogeneity at larger or even different scales is considered by adding an object constraint which is suitable for both the binary and multiclass tasks at the same time. The pairwise potential, object constraint, and inference are all the same for the two tasks. Based on the COCRF framework, both binary and multiclass CD results with a low FA rate can be acquired.
+
+## A. Object-Oriented CRF Change Detection Model ##
+CRF is a widely used discriminative probabilistic graphical model that is aimed at modeling the spatial relationship among pixels by the edge connection between neighborhoods 
+where Z (x) = y exp{-l∈L ψ l (x, y l )} is the partition function, which is a normalization factor, and ψ l (x, y l ) denotes the potential function, such as a unary potential, pairwise potential, or even higher order potential functions. L represents the set of all the cliques.
+The pairwise CRF model is commonly used for image processing due to its convenience in modeling and inference. The local discriminative information of each pixel is described by the unary potential, while the pairwise potential considers the spatial-contextual information of both the labeled and observed fields. Thus, the pairwise CRF model is described as follows:
+where ϕ i is the unary potential term. φ i j is the pairwise potential, which focuses on the interaction of the neighborhood pixels defined by η i . Z (x) is the partition function.
+The traditional pairwise CRF model is realized at the pixel level; however, the spatial learning ability is not deep enough for HSR images because the shape and size of different objects do vary greatly. In contrast, the OBCD methods can utilize the spatial information from a broader horizon or even different scales. In order to explore more spatial information while avoiding the negative influence of wrong segmentation boundaries, higher order CRF has been proposed and has achieved good performances at the object level by designing higher order potentials 
+The proposed COCRF framework can be written as
+where ξ s is the additional object constraint varying with the class dispersion within objects. The weights of the neighborhood term and object constraint are controlled by two positive coefficients λ and β to adapt to different data sets.
+
+## B. Unary Potential ##
+The unary potential represents the probability of a single pixel taking a particular label. For the binary CD task, it is always formulated by soft clustering methods in unsupervised strategies, while for the classification task, supervised methods are always adopted. In order to describe the binary and multiclass changes effectively, the unary potentials are separately constructed for the binary and multiclass tasks. The class posterior probabilities are first obtained and shared in both tasks to improve the robustness.
+
+## 1) Class Posterior Probabilities of Two Dates Obtained by the Support Vector Machine Algorithm: ##
+The input data of the proposed framework are remote sensing images of two dates and a semilabeled map corresponding to one of the dates. Due to the lack of changed samples, supervised CD approaches are difficult to implement. In order to make the prior knowledge fully serve the CD task, the class posterior probabilities of the two dates obtained by sample migration and support vector machine (SVM) are used to construct the unary potentials of both tasks. The unchanged areas have the same LULC classes on both dates, so the sample migration focuses more on the purity of the extracted unchanged area than its integrity. The traditional unsupervised CD methods have a high efficiency and can ensure the purity of the extracted unchanged areas. Therefore, the unchanged areas are first obtained through any simple unsupervised CD method, such as the combination of multiband differencing and k-means used in the proposed framework.
+The complete class labels are input into SVM to calculate the class posterior probability image of the same date as the class labels, while the class labels in the unchanged areas are used as the training samples for SVM to calculate the class posterior probability image of another date.
+2) Unary Potential of the Binary CD Task Obtained by the FCM Algorithm: FCM is adopted to obtain the unary potential for the binary CD task. The difference image is usually used as the input of FCM in unsupervised CRF to obtain the change probability, but this is easily influenced by the radiation difference. To make better use of the class-prior knowledge and to judge the change probability of a pixel from the perspective of LULC classes, the similarity of the SVM probability outputs (P T 1 and P T 2 ) is used in the unary potential construction of the binary CD task. Thus, both the spectral difference and the class posterior probability similarity are used to describe the change probability by separately inputting them into the FCM algorithm and then summing over the outputs.
+The class posterior probability of a certain pixel can be viewed as a normalized histogram distribution in the feature space. Therefore, the histogram distance can be used to estimate the similarity of the class posterior probabilities of each pixel between different dates. As shown in Fig. 
+The commonly used histogram distance measurement methods include Kullback-Leibler (KL) divergence, the histogram intersection distance, intersection entropy, and so on. The G-statistic 
+where f and h, respectively, stand for the two vectors of the class posterior probabilities that need to be compared, i represents the class that f or h may belong to, and L is the total number of compared classes. G( f, h) denotes the similarity of f and h. Therefore, the unary potential for the binary CD task is then constructed as an ensemble of the two change features
+where P(y i = l|x SD , P T 1 , P T 2 ) is the posterior probability of pixels being given the label l ∈ {0, 1}, and J denotes the FCM function. G(P T 1 , P T 2 ) represents the similarity of the class posterior probabilities P T 1 and P T 2 .
+
+## 3) Unary Potential of the Multiclass CD Task Obtained by the Probability Estimation: ##
+The class posterior probabilities of a certain pixel at different dates are independent of each other, satisfying the statistical independence assumption. As a result, the unary potential of the multiclass CD task can be considered as the product of the class posterior probabilities on two dates, according to the joint probability calculation rule. Thus, the unary potential of the multiclass CD task is defined as
+where x T 1 and x T 2 separately stand for the original image on dates T 1 and T 2 , P T 1 (y 
+C is the number of classes.
+
+## C. Pairwise Potential ##
+Analyzing HSR remote sensing images using a single pixel as the elementary unit leads to a lot of salt-and-pepper noise due the spectral variability phenomenon. The pairwise potential in CRF is used to solve this problem by taking the neighborhood spatial information around the center pixel into consideration in both the labeled and observed fields. In order to smooth the noise and focus on the detailed contextual information at the same time 
+where the value
+is the Euclidean distance (ED) between adjacent pixels i and j , and σ 2 is estimated as the mean value of the ED of all the pixels. As shown in the above formula, if the two adjacent pixels are labeled with different classes, the neighborhood information is ignored. If the class labels of the two pixels are the same, the more similar change features lead to greater neighborhood contributions. There is no limit to the number of classes, so the pairwise potential is applicable to both the binary and multiclass CD tasks. Here, an eight-neighborhood is considered to construct the spatial correlation of the center pixels.
+
+## D. Object Constraint ##
+An object constraint is applied in the COCRF framework to reduce the FAs caused by spectral anomalies. The objects are acquired using a multiresolution segmentation approach conducted on the stacked multitemporal images, so that the objects in both images are consistent and have good homogeneity. The segmentation map x SM = {x SM s |s = 1, 2, . . . , S}, where S is the number of segmented objects, is used to model the object constraint. The corresponding value of the segmentation map is defined by the binary or multiclass change probability of each pixel. The object constraint is determined according to the dispersion degree of the inner classes within the object.
+With the unary potential, the change type of each pixel can be determined with the highest class posterior probability. Pixels with the same change type are grouped into an inner class x SM sc of the current object x SM s . The inner class that contains the most pixels within an object is considered as the center class x SM so of the object, and y so is the label of the center class.
+The average class posterior probability of each inner class within a certain object is considered as the probability characteristic of each inner class. The G-statistic distance between each inner class x SM sc and the center class x SM so is obtained by the use of (4) to express the dispersion degree within the current object. The proportion of pixels contained in each inner class within the current object to the total pixels of the object is also used in the calculation of the object constraint.
+The formulation of the object constraint is finally defined as follows:
+, y sc = y so 0, y sc = y so 
+The object constraint can decrease the spectral variability of the same class between different dates. If there is a greater distance between the inner classes and the center class of one object, it is considered that the object has greater spectral variability and requires a stronger object constraint. In addition, the object constraint is proportional to the number of pixels within each inner class. An inner class containing a small number of pixels is considered to have been incorrectly divided into the current object due to incorrect segmentation boundaries. Therefore, a weak object constraint can reduce the impact of segmentation boundary errors and make the boundaries of the final results smoother.
+
+## E. Inference and Parameter Estimation ##
+A local approximation approach named LBP, which finds the optimal state of the labeled image with the maximum a posteriori (MAP) criterion, is used to map the final binary and multiclass CD results. LBP is flexible in the modeling and is performed by passing the updated message within the eight-connected neighborhood during the iterations 
+In the COCRF framework, some parameters need to be estimated, including the segmentation scale and the weights of the pairwise potential and object constraint. To reduce the run time of selecting suitable parameters, an adaptive parameter estimation strategy is used to obtain the coefficient λ of the pairwise potential.
+The coefficient β MC D keeps the balance between the unary and pairwise potentials. When the spatial homogeneity of the observed field between the center pixel and its neighborhood is higher, the coefficient R sc should be greater, which means that the label of this pixel should have a higher probability of being consistent with the labels in the neighborhood. In this way, λ BC D is adaptively set for each pixel. Anisotropic local polynomial approximation-based intersection of confidence intervals (LPA-ICIs) is adopted to obtain the adaptive coefficient β BC D . LPA-ICI was first proposed in 2004 for image denoising 
+5) R sc for each pixel is then defined as
+The coefficient β of the object constraint is the reciprocal of λ because a pixel with a lower pairwise potential requires a stronger object constraint to distinguish whether it should be smoothed. To analyze the effect of the adaptive parameter estimation strategy, a nonadaptive COCRF (NACOCRF) framework which uses manually set parameters was compared with the proposed COCRF framework. The segmentation scale is still set manually, but the framework is less sensitive to this parameter, which is proved in Section IV
+
+## III. ALTERNATIVE CRF FUSION STRATEGY FOR THE BINARY AND MULTICLASS CD TASKS ##
+The binary CD task is executed before the multiclass CD task in the proposed COCRF framework, so that the framework needs to execute the object-oriented CRF model twice, which takes double the time. Thus, a jointly optimized COCRF (JOCOCRF) framework with the same components as the proposed COCRF framework but different processes is proposed by jointly optimizing both the binary and multiclass CD tasks. The object-oriented CRF model only needs to be run once because the two tasks are combined in the unary potential. The weight coefficients of the unary potentials of the two tasks are specified by the significance of the two unary potentials. The sum of the two weight coefficients is equal to one. Finally, the unary potential is an integration of the potentials of the binary and multiclass CD tasks
+where w i represents the confidence of each pixel for the potential of the binary CD task, which is calculated according to the variance of the probability distributions of the binary and multiclass CD tasks. The larger the variance of the binary CD probability distributionvar (ϕ B i (x, y i )), the higher the confidence for the potential of the binary CD task, and the lower the confidence for the potential of the multiclass CD task.
+The JOCOCRF framework needs less time and fewer parameters than the COCRF framework. However, the fusion of the unary potentials for the binary and multiclass CD tasks is completely unsupervised, so that there is no guarantee that a credible change probability or class posterior probability can be selected. Thus, the JOCOCRF framework is less robust to different data sets and varying segmentation scales, which is shown in Section IV.
+
+## IV. EXPERIMENTS AND ANALYSIS ##
+
+
+## A. Experimental Description ##
+Two sets of HSR remote sensing images with different spatial resolutions and geometric complexities, plus a class-labeled map, were used to evaluate the effectiveness of the proposed COCRF framework compared with the state-of-the-art CD methods. In addition, the NACOCRF and JOCOCRF frameworks were considered as alternative frameworks.
+The segmentation map used for the object constraint was generated by multiresolution segmentation in eCognition, and the parameters for the shape and compactness were set as 0.2/0.8 for both data sets. The segmentation scales for the two data sets are listed in Table 
+
+## TABLE I PARAMETER SETTINGS OF THE RANDOM FIELD-BASED METHODS ##
+sets 
+For the multiclass CD task, the proposed frameworks were compared with a change analysis approach based on the integration of backdating and an object-based method (BOB) 
+The three proposed COCRF frameworks were also compared with global PCC and global DC based on pixel-based and object-oriented CRF models (PCC_PCRF, DC_PCRF, PCC_OCRF, DC_OCRF), without using the mask constraint of the binary CD result. The four experiments were conducted to analyze the significance of each module of the proposed framework. The parameters of the random field-based methods were manually set, according to the sensitivity analysis, as shown in Table 
+For the quantitative analysis, five measurements are used to evaluate the accuracy of the binary CD results: FAs, missed alarms (MA), overall accuracy (OA), Kappa coefficient, and F1 score. FA is the number of pixels incorrectly classified as changed over the total number of unchanged pixels in the reference map. MA is the number of pixels incorrectly classified as unchanged over the total number of changed pixels in the reference map 
+
+## B. Experiment 1: Shiyan QuickBird Data Set ##
+The two images in the first remote sensing data set were acquired by the QuickBird satellite in 2002 and 2004, with four multispectral bands of a 2.4-m spatial resolution. The study area is Shiyan city, Hubei province, China. The spatial size of the images is 250 × 250 pixels, as shown in Fig. 
+The results of the different binary CD methods (KI, OBCD, MRF, CRF, NACOCRF, COCRF, and JOCOCRF) for the Shiyan QuickBird data set are displayed in Fig. 
+The quantitative results for the binary CD are listed in Table 
+
+## C. Experiment 2: Hankou IKONOS Data Set ##
+To validate the proposed framework in a situation with more complex spatial geometric features, an HSR data set of a different sensor was used in the second experiment. The Wuhan urban area images with four multispectral bands of a 4-m spatial resolution were recorded by the IKONOS sensor over Wuhan in Hubei province, China, in 2008 and 2009. The spatial size of the images is 300 × 400 pixels, as shown in Fig. 
+The binary CD results (KI, OBCD, MRF, CRF, NACOCRF, COCRF, and JOCOCRF) for the Wuhan IKONOS data set are shown in Fig. 
+In the multiclass CD task, the BOB approach shows a few falsely detected change directions, as marked in black, but many change directions are wrongly assumed as unchanged at the same time, as shown in Fig. 
+
+## V. SENSITIVITY ANALYSIS ##
+The parameters denoted by λ and β play important roles in the proposed object-oriented CRF model, where λ is the weight of the pairwise potential and β is the weight of the object constraint. The two parameters control the smoothness of the whole area and the local objects, respectively. The object constraint comes from the segmentation maps, so that the segmentation scale is also an important parameter to be estimated. For all three proposed frameworks, the segmentation scale is selected by manual setting. Sensitivity curves for the segmentation scales are shown in Fig. 
+
+## VI. CONCLUSION ##
+The COCRF framework with adaptive parameter estimation strategy has been proposed in this article to realize binary and multiclass CD for HSR remote sensing images. In addition, the NACOCRF framework, which selects the parameters by manual setting, and a jointly optimized JOCOCRF framework have also been proposed in this article. For HSR remote sensing images, a large number of unsupervised algorithms have been proposed, but few of them focus on the multiclass CD task. Thus, our work addresses this application gap. The similarity of the class posterior probabilities is used, together with the spectral difference, in the construction of the unary potential, to acquire a more robust binary CD result, which was found to be superior to the results of the compared binary CD methods. The object constraint works for the proposed high-order CRF model so that the spatial correlation is considered at the object level and the noise is effectively eliminated. Finally, the change direction is detected by the probability estimation. In the NACOCRF and COCRF frameworks, the binary CD result is used as a mask constraint, so that change directions that do not exist are not detected and FAs are greatly reduced. In the JOCOCRF framework, the binary and multiclass CD tasks are fused in the unary potential, so that the binary and multiclass CD results can be obtained at the same time, which greatly improves the computational efficiency. Although the unsupervised fusion of the two tasks is less robust to different data sets, it has great research value. What is more, the adaptive parameter estimation strategy helps to obtain more robust results and saves a lot of work and time, which will be of great value in practical applications. All in all, the multiclass CD task is of great importance in various applications. In our future work, the application and potential of the multiclass CD task for HSR remote sensing images will be further explored. Unsupervised parameter setting and multitask fusion strategies, which should improve the efficiency of the model operation, will become our main research directions.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Review article digital change detection techniques using remotely-sensed data
+   Authors: 
+   Date: Jun. 1989
+
+2. Evolution and behavioural responses to human-induced rapid environmental change
+   Authors: , , 
+   Date: Mar. 2011
+
+3. A method to detect earthquake-collapsed buildings from high-resolution satellite images
+   Authors: , 
+   Date: Dec. 2013
+
+4. A comprehensive review of earthquake-induced building damage detection with remote sensing techniques
+   Authors: , 
+   Date: Oct. 2013
+
+5. A remote sensing-GIS evaluation of urban expansion and its impact on surface temperature in the Zhujiang Delta, China
+   Authors: 
+   Date: Jul. 2001
+
+6. Monitoring land cover change in urban and peri-urban areas using dense time stacks of Landsat satellite data and a data mining approach
+   Authors: 
+   Date: Sep. 2012
+
+7. Detecting trends in forest disturbance and recovery using yearly Landsat time series: 1. LandTrendr-temporal segmentation algorithms
+   Authors: , , 
+   Date: Dec. 2010
+
+8. Incorporating land-use mapping uncertainty in remote sensing based calibration of land-use change models
+   Authors: 
+   Date: 2013
+
+9. Change detection techniques
+   Authors: , , , 
+   Date: Jun. 2004
+
+10. Change vector analysis in posterior probability space: A new method for land cover change detection
+   Authors: , , , 
+   Date: Mar. 2011
+
+11. An adaptively weighted multi-feature method for object-based change detection in high spatial resolution remote sensing images
+   Authors: , , , 
+   Date: Apr. 2020
+
+12. An object-based temporal inversion approach to urban land use change analysis
+   Authors: 
+   Date: May 2016
+
+13. A spectral gradient difference based approach for land cover change detection
+   Authors: , , , , 
+   Date: Nov. 2013
+
+14. PCA-based landuse change detection and analysis using multitemporal and multisensor satellite data
+   Authors: , , , 
+   Date: Jul. 2008
+
+15. Automatic analysis of the difference image for unsupervised change detection
+   Authors: , 
+   Date: May 2000
+
+16. Change detection based on Gabor wavelet features for very high resolution remote sensing images
+   Authors: , , , 
+   Date: May 2017
+
+17. Change detection based on a multifeature probabilistic ensemble conditional random field model for high spatial resolution remote sensing imagery
+   Authors: , , , , 
+   Date: Dec. 2016
+
+18. Unsupervised change detection based on hybrid conditional random field model for high spatial resolution remote sensing imagery
+   Authors: , , , 
+   Date: Jul. 2018
+
+19. Per-pixel vs. object-based classification of urban land cover extraction using high spatial resolution imagery
+   Authors: , , , , 
+   Date: May 2011
+
+20. A novel change detection approach for multi-temporal high-resolution remote sensing images based on rotation forest and coarse-to-fine uncertainty analyses
+   Authors: , , , , , 
+   Date: Jun. 2018
+
+21. Object-based change detection for VHR images based on multiscale uncertainty analysis
+   Authors: , , 
+   Date: Jan. 2018
+
+22. An object-based change detection approach using uncertainty analysis for VHR images
+   Authors: , , , , 
+   Date: 2016
+
+23. Change detection from remotely sensed images: From pixel-based to objectbased approaches
+   Authors: , , , , 
+   Date: Jun. 2013
+
+24. Object-based change detection
+   Authors: , , , 
+   Date: Jul. 2012
+
+25. Object-based land cover classification and change analysis in the baltimore metropolitan area using multitemporal high resolution remote sensing data
+   Authors: , , 
+   Date: Mar. 2008
+
+26. A new approach for land cover classification and change analysis: Integrating backdating and an objectbased method
+   Authors: , , , 
+   Date: May 2016
+
+27. Object-based change detection from satellite imagery by segmentation optimization and multi-features fusion
+   Authors: , 
+   Date: Jul. 2017
+
+28. An object-based change detection method accounting for temporal dependences in time series with medium to coarse spatial resolution
+   Authors: , , , 
+   Date: Jun. 2008
+
+29. Classification with spatio-temporal interpixel class dependency contexts
+   Authors: , 
+   Date: Jul. 1992
+
+30. Remotely sensed change detection based on artificial neural networks
+   Authors: , 
+   Date: Oct. 1999
+
+31. A review of change detection in multitemporal hyperspectral images: Current techniques, applications, and challenges
+   Authors: , , , 
+   Date: Jun. 2019
+
+32. An automated approach for updating land cover maps based on integrated change detection and classification methods
+   Authors: , , , 
+   Date: Jul. 2012
+
+33. A comprehensive change detection method for updating the national land cover database to Circa 2011
+   Authors: , , , , , 
+   Date: May 2013
+
+34. Change detection in optical remote sensing images with a fully object-level approach
+   Authors: 
+   Date: Jul. 2018
+
+35. Integrating spectral and textural attributes to measure magnitude in object-based change vector analysis
+   Authors: , , , , 
+   Date: Aug. 2019
+
+36. Stochastic relaxation, Gibbs distributions, and the Bayesian restoration of images
+   Authors: , 
+   Date: Nov. 1984
+
+37. Change detection in optical aerial images by a multilayer conditional mixed Markov model
+   Authors: , 
+   Date: Oct. 2009
+
+38. High-resolution image classification integrating spectral-spatial-location cues by conditional random fields
+   Authors: , , , 
+   Date: Sep. 2016
+
+39. Conditional random fields for multitemporal and multiscale classification of optical satellite imagery
+   Authors: , , , 
+   Date: Feb. 2015
+
+40. Detail-preserving smoothing classifier based on conditional random fields for high spatial resolution remote sensing imagery
+   Authors: , , 
+   Date: May 2015
+
+41. Conditional random fields: Probabilistic models for segmenting and labeling sequence data
+   Authors: , , 
+   Date: 2001
+
+42. Discriminative random fields
+   Authors: , 
+   Date: Jun. 2006
+
+43. Modeling and classifying hyperspectral imagery by CRFs with sparse higher order potentials
+   Authors: , 
+   Date: Feb. 2011
+
+44. Segmentation of multispectral highresolution satellite imagery based on integrated feature distributions
+   Authors: , , 
+   Date: Mar. 2010
+
+45. A support vector conditional random fields classifier with a Mahalanobis distance boundary constraint for high spatial resolution remote sensing imagery
+   Authors: , , 
+   Date: Apr. 2014
+
+46. Directional varying scale approximations for anisotropic signal processing
+   Authors: , , , 
+   Date: Sep. 2004
+
+47. Pointwise shape-adaptive DCT for high-quality denoising and deblocking of grayscale and color images
+   Authors: , , 
+   Date: May 2007
+
+48. Unsupervised change detection methods for remote sensing images
+   Authors: , , 
+   Date: Dec. 2002
+
+49. Change detection using object features
+   Authors: , , , , , 
+   Date: 2008
+
+50. Unsupervised change detection of satellite images using local gradual descent
+   Authors: 
+   Date: May 2012
+
+51. Semi-supervised change detection approach combining sparse fusion and constrained k means for multitemporal remote sensing images
+   Authors: , 
+   Date: Dec. 2015
+
+52. A review of assessing the accuracy of classifications of remotely sensed data
+   Authors: 
+   Date: Jul. 1991
+

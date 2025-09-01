@@ -1,0 +1,271 @@
+================================================================================
+TITLE: Analysis of Land Use/Land Cover Change and Its Implication On Natural Resources of the Dedo Watershed, Southwest Ethiopia
+================================================================================
+
+AUTHORS:
+- Mesfin Anteneh
+
+ABSTRACT:
+is study analyzed the land use/land cover (LULC) change and their causes and implications on the natural resources of the Dedo Watershed, Ethiopia. e study used 1984, 2000, and 2017  satellite images to detect the trends of land use/land cover change. Moreover, key informant interviews and focus group discussions were used to identify the driving forces linked to the changes and their impact on the natural resources of the watershed. e study identi ed ve LULC types as follows: cultivation, settlement, dense forest, light vegetation, and grassland. Over the last 33 years, cultivation and settlement land expanded by 15.7% and 0.34%, whereas dense forest, light vegetation, and grazing land declined by 9.2%, 4.97%, and 1.85%, respectively. e establishment of the resettlement program and population pressure and associated demands were the major driving forces behind the land use/cover change. Whereas increased soil erosion, biodiversity loss, and decline in water resources are identi ed as the major impacts of land use land cover changes in the study watershed for the last 33 years. e study concludes that if these trends of cultivation and settlement land expansion allowed continuing, there will be no dense forest vegetation will remain. So, the nding of this study is signi cant.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land use/land cover change (LULCC) is the modi cation of the Earth's terrestrial surface caused by human activities 
+Land use/land cover changes (LULCCs) are triggered by the interplay of socioeconomic and natural environmental factors. Inappropriate farming practices, overgrazing, rapid growth in the human population 
+Over the last decades, a number of studies conveyed the occurrences of LULC changes, their causes, and the resulting natural resource degradation in di erent parts of Ethiopia 
+
+## Materials and Methods ##
+
+
+## Description of the Study ##
+Area. )e study was conducted in the Dedo watershed which is, located in the Jimma Administrative Zone of Oromia National Regional State at about 340 km southwest of Addis Ababa, the capital of Ethiopia. Geographically, it is located between 7 °5′ to 7 °45′ N and 36 °39′ to 37 °15′ E (Figure 
+Subsistence mixed (crop and animal) agriculture is the major means of livelihood in the area with an average farm size of about one hectare (ha). )e common growing crops are maize (Zea mays L.), teff (Ergarostis teff Zucc), rice (Oryza galberrima), and beans (Phaseolus vulgaris L.). Other less important crops include chickpea (Cicer arietinum), potato (Solanum tuberosum), onion (Allium cepa), cabbage (Brassia aleracea), and Chili pepper (Capsicum spp.). Various types of crops such as garlic (Alliium sativum), Ethiopian mustard (Brassica carrinata), oats (Avena sativa), and carrot (Dancus carota sativus) are also cultivated as cash crops. Domestic animal such as cattle, goats, sheep, donkeys, chickens, and bees are kept on a traditional basis.
+
+## Data Collection and Analysis. ##
+)is study uses three different sets of Landsat satellite images for the Dedo watershed over three decades 
+)ough the images are geometrically corrected, radiometric correction and image preprocessing such as sub-setting and layer stacking were performed before the commencement of the actual classification. All the acquired satellite images were enhanced using histogram equalization and haze redaction to improve image quality. In situ data (ground truth points) were collected from the field for image classification and accuracy assessment. In order to identify the major driving forces of LULC changes and other nonvisual information that could not be extracted from the satellite images, focus group discussions (n � 3), with 4 to 6 participants from the local elderly, local community leaders, and agricultural extension workers were organized. In addition, key informants (n � 24) from the local people were interviewed to receive additional insights on issues related to LULC changes.
+
+## Data Analysis. ##
+A pixel-based supervised image classification with a maximum likelihood classification algorithm was used to classify the land-use/cover types of each reference year 
+where r is the number of rows in the matrix, X ii is the number of observations in row i and column i (the diagonal elements), x + i and x i + are the marginal totals of row r and column i, respectively, and N is the number of observations. )en, the LULC changes between two periods (i.e., 1984 to 2000 and 2000 to 2017) were quantified. Change analysis was conducted using the postclassification image comparison technique, which was used in order to minimize possible effects of atmospheric variations and sensor differences with spatial resolution 
+where LUI � the annual rate of change in area for the land use classes. Hence, positive values suggest an increase whereas negative values imply a decrease in the extent of LULC. In addition, a change detection matrix of "from-to" was derived to show LULC class conversion transitions during the 33-year period by overlaying the 1984 and 2017 classified maps. Image classification accuracy assessments and change analysis were undertaken in ArcGIS10.3 software. )e datasets collected about the causes of LULC changes from FGD and key informants were analyzed qualitatively and triangulated with secondary data and the result of LULC. Based on this information, five land use classes were identified (Table 
+
+## Result and Discussion ##
+3.1. Land Use/Cover Classification. )e land use/cover trend analysis made for the two consecutive periods 1984 to 2000 and 2000 to 2017 has indicated that the watershed was exposed to considerable land use changes (Figures 
+
+## Cultivation Land. ##
+During the entire period, the area under cultivated land increased persistently from 21.4% (21913.56 ha) in 1984 to 28.2% (28925.48 ha) in 2000 and 37.1% (37991.28 ha) in 2017 (Table 
+
+## Light vegetation ##
+Areas covered with shrubs, bushes, and small trees, with useful wood, mixed with some grasses. In this study, this land cover class includes agricultural plantation (such as coffee and chat enset) horticultural plantation (such as fruits, ornamental shrubs, and trees, and vegetable gardens), and agrohorticultural plantation.
+
+## Grazing land ##
+Grassy areas are used for grazing.
+
+## Cultivation land ##
+Areas of land that is ploughed and/or prepared for raising both annual and perennial crops.
+
+## Settlement ##
+Small rural communities and other built-up area.   )e Scientific World Journal 5 considerable decline as opposed to the increment in cultivated and settlement land use. Similarly, in the period between 2000 and 2017, the land under grazing land has shown a declining trend with a value of 17097.78 ha to 1615 ha, respectively )is can be attributed to the rapidly growing demand for cultivated and settlement land for other land uses in that specific period.   
+
+## Settlement ##
+
+
+## Causes of Land Use Land Cover Change. ##
+Based on the results of key informants and focused group discussions (FGDs), LULC changes in the study watershed were caused by various factors. However, the establishment of the resettlement program and the ever increasing of population pressure were among the major ones. )ese causes are also reported in regional and national documents (e.g., Bureau of Agriculture 
+
+## Resettlement Program. ##
+)e resettlement program was mentioned by the FGD participants and key informants as one of the important factors behind the changes in the study area. )ey described the resettlement program that took place in the 1980s in the study watershed led to the clearing of forests to acquire new agricultural and settlement land.
+)ey also mentioned that as a result of the resettlement program there was huge loss of forests within which indigenous trees were removed due to selective logging for house construction, fuel wood, and expansion of crop production. Juniperous procera, Millettia ferugunea, and Ximenia ameriicana, and species of Acacia were among the woody species that were seriously affected. )e thousands of homes in the Dedo watershed and its surroundings were also good indicators of the extent of the forest destruction. For example, there were about 1870 housing units in 1986 
+)is figure grew to 4,058 homes in 2009 
+
+## Population Pressure. ##
+Change in population size, distribution, and associated demographic characteristics are often considered the most important factors affecting land use distribution and change 
+
+## Implications of the Observed LULC Change on Land Resources ##
+
+
+## Implications of Soil Erosion. ##
+Land use/cover change is one of the most important factors that govern the surface runoff, rate of soil erosion, and sediment yield from the catchments 
+
+## Implication on Hydrological ##
+Regimes. )e change in LULC significantly alters the hydrological fluxes such as runoff response, availability of water resources, and the environment on a local and global scale 
+)e Scientific World Journal cultivation, could reduce the infiltration rate and percolation of rainwater to recharge streams, springs, and underground water. Overgrazing caused by the shrinking of grazing land causes compaction, which may lead to reduced infiltration rates. It is relevant to mention Lake Haramaya of eastern Ethiopia which disappeared, due to deforestation and clearing of land for farming activities in its surrounding watershed 
+)is reasonably calls for the need for more effort on the balancing of the land use/cover change in general and investments in sustainable land management activities in particular so as to adjust the hydrologic-related disorder occurring in the watershed.
+
+## Implications for Biodiversity. ##
+Land use/cover and habitat loss are widely known as the principal causes of biodiversity depletion in Ethiopia 
+)us, the conversion of forest land to other type of land use caused numerous negative impacts on the ecosystem, as well as the livelihood of the society in the study area.
+
+## Conclusions ##
+)is study examined LULC changes, their driving forces, and implications on land resources between 1984 to 2017 in the Dedo watershed, southwest Ethiopia. Remote sensing and socioeconomic data sources were used as major input for the study. )e results showed that there have been substantial changes in LULC in the Dedo watershed and its adjacent agroecosystem. )e major changes were expansions of cultivation and settlement land and a decline in grazing, dense forest, and light vegetation land use/cover categories.
+)e results indicated that dense vegetation land cover was among the most affected land cover with nearly 14.7 and 23.64% of its total area converted into other LULC types between the 1984 to 2000 and 2000 to 2017 periods, respectively. Cultivation land showed significant change over the entire analysis period with a nearly 15.7% increment. )e study also indicated that socio-economic factors mainly population pressure and the establishment of resettlement programs were major driving forces in land use/cover change. Such a situation has critical implications for the deterioration of natural resources such as biodiversity loss, soil erosion, and a decline in the amount of water resources. Conservation and management of natural resources in the study area are not adequate to alleviate the problem of local land degradation. As a result, the livelihood of the local community and the normal function of the ecosystem is under threat. )is apparently tells us that it will continue to be a development challenge for the watershed and the nation at large. )us, sustainable land management is vital to remove unsustainable practices and create a sustainable environment for all concerned. )erefore, overall watershed management is essential to safeguard an environment that will result in sustainable natural resource management and development in all dimensions of the study watershed.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Detection and analysis of land-use and land-cover changes in the midwest escarpment of the Ethiopian rift valley
+   Authors: , , 
+   Date: 2012
+
+2. Change detection techniques
+   Authors: , , , 
+   Date: 2004
+
+3. Land cover change under unplanned human settlements: a study of the Chyulu hills squatters, Kenya
+   Authors: , , , , , 
+   Date: 2011
+
+4. Land use and land cover change in the Bale mountain eco-region of Ethiopia during 1985 to 2015
+   Authors: , , 
+   Date: 2016
+
+5. Socio-economic driving forces of land-use change in Kunshan, the yangtze
+   Authors: , , , 
+
+6. Online Library for rules of use; OA articles are governed by the applicable Creative Commons License river delta economic area of China
+   Date: 2022. 2007
+
+7. Land-use/ cover dynamics in Northern Afar rangelands, Ethiopia
+   Authors: , , , 
+   Date: 2010
+
+8. e dynamics of urban expansion and its impacts on land use/land cover change and small-scale farmers living near the urban fringe: a case study of Bahir Dar, Ethiopia
+   Authors: , , , , 
+   Date: 2012
+
+9. e implications of land use and land cover change for rural household food insecurity in the north eastern highlands of Ethiopia: the case of Teleyayen subwatershed
+   Authors: , 
+   Date: 2017
+
+10. Analysis of land use land cover change in adei watershed, central highlands of Ethiopia
+   Authors: , 
+   Date: 2019
+
+11. Exploring land use/land cover changes, drivers, and their implications in contrasting agroecological environments of Ethiopia
+   Authors: , , 
+   Date: 2019
+
+12. Land-use and land-cover (LULC) change detection in wami river basin, Tanzania
+   Authors: , 
+   Date: 2019
+
+13. Remote sensingbased quantification of the relationships between land use /land cover changes and surface temperature over the lower Himalayan region
+   Authors: , , 
+   Date: 2019
+
+14. Diversity and status of regeneration of woody plants on the peninsula of Zegie, northwestern Ethiopia
+   Authors: , , , 
+   Date: 2007
+
+15. Actual and potential contribution of enclosures to enhance bio diversity of woody species in the drylands of eastern Tigray
+   Authors: , , 
+   Date: 2006
+
+16. Deforestation and land degradation on the ethiopian highlands: a strategy for physical recovery
+   Authors: 
+   Date: 2001
+
+17. Ecological restoration and church forests in northern Ethiopia
+   Authors: , , , , 
+   Date: 2006
+
+18. Land-use/land-cover (LULC) change and socioeconomic conditions of local community in the central highlands of Ethiopia
+   Authors: , , , , 
+   Date: 2014
+
+19. Land use/ land cover change analysis using object-based classification approach in munessa-shashemene landscape of the Ethiopian highlands
+   Authors: , , , 
+   Date: 2013
+
+20. Land-use change and its socio-environmental impact in eastern Ethiopia's highland
+   Authors: , , , , 
+   Date: 2014
+
+21. Land degradation: a challenge to Ethiopia
+   Authors: 
+   Date: 2001
+
+22. Impact of land use/cover change on streamflow: the case of hare river watershed, Ethiopia
+   Authors: , 
+   Date: 2007
+
+23. Ecological succession and land use changes in a lake retreat area (main Ethiopian rift valley)
+   Authors: , , 
+   Date: 2013
+
+24. Detecting land use/land cover changes in the Lake Hayq (Ethiopia) drainage basin, 1957-2007
+   Authors: , , , 
+   Date: 2015
+
+25. Implications of land use and land cover dynamics for Mountain resource degradation in the northwestern Ethiopian highlands
+   Authors: , 
+   Date: 2001
+
+26. Remote sensing and GIS based land use and land cover change detection in the upper dijo river catchment, silte zone southern Ethiopia
+   Authors: 
+   Date: 2008
+
+27. Central Statistical Agency of Ethiopia), Population and Housing Census of Atlas of Ethiopia, Central Statistical Agency of Ethiopia
+   Authors: 
+   Date: 2007
+
+28. Remote sensing and image interpretation
+   Authors: , 
+   Date: 1994
+
+29. Assessing the Accuracy of Remotely Sensed Data: Principles and Practices
+   Authors: , 
+   Date: 2009
+
+30. Land use/land cover changes and their causes in Libokemkem district of south Gonder, Ethiopia
+   Authors: , , , 
+   Date: 2017
+
+31. Understanding interobserver agreement: the kappa statistic
+   Authors: , 
+   Date: 2005
+
+32. Effect of temporal land use/land cover changes on ecosystem services value in coastal area of China: the case of Su-Xi-Chang region
+   Authors: , , , 
+   Date: 2016
+
+33. Impact of land use land cover change on stream flow: the case studies of gilgel gibe iii
+   Authors: 
+   Date: 2017
+
+34. Bureau of Agriculture), GIS Based Forest Resource Assessment, Quantification and Mapping in Oromia Region
+   Authors: 
+   Date: 2012
+
+35. Human Pressure on the Brazilian Amazon Forests: Janice Wiles
+   Authors: 
+   Date: 2006
+
+36. Central Statistical Agency), Population Projection of Ethiopia for all Regions at Woreda Level from 2014-2017
+   Authors: 
+   Date: 1994
+
+37. Conservation and Recycling
+   Authors: , , 
+   Date: 2009
+
+38. Implications of land use and land cover dynamics for mountain resource degradation in the northwestern Ethiopian Highlands
+   Authors: , 
+   Date: 2001
+
+39. Drivers of land use/land cover changes in munessa-shashemene landscape of the south-central highlands of Ethiopia
+   Authors: , , , 
+   Date: 2015
+
+40. e effect of upstream land use practices on soil erosion and sedimentation in the upper blue Nile Basin, Ethiopia
+   Authors: , 
+   Date: 2015
+
+41. Off-site effects of soil erosion in the environment of Lake Abaya, South Ethiopia
+   Authors: , 
+   Date: 2010
+
+42. Land-use changes and their impacts on soil degradation and surface runoff of two catchments of Northern Ethiopia
+   Authors: , , 
+   Date: 2010
+
+43. e impact of land use change on the hydrology of the angereb watershed, Ethiopia
+   Authors: , 
+   Date: 2012
+
+44. Catchment dynamics and its impact on runoff generation: coupling watershed modeling and statistical analysis to detect catchment responses
+   Authors: 
+   Date: 2014
+
+45. Impact of water overexploitation on highland lakes of eastern Ethiopia
+   Authors: , , 
+   Date: 2007
+
+46. Human impact on the environment in the Ethiopian and Eritrean highlands-a state of the art
+   Authors: , , , , , 
+   Date: 2004
+

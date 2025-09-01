@@ -1,0 +1,37 @@
+2025-06-18 15:05:24,579 - INFO - No valid entity pairs found in: Prior to this, the area was occupied by terraced a...
+2025-06-18 15:14:28,141 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-06-18 15:14:38,516 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-06-18 15:14:47,437 - INFO - No valid entity pairs found in: Prior to this, the area was occupied by terraced a...
+2025-06-18 15:17:31,845 - INFO - No valid entity pairs found in: Prior to this, the area was occupied by terraced a...
+2025-06-18 15:17:55,347 - INFO - No valid entity pairs found in: Prior to this, the area was occupied by terraced a...
+2025-06-18 15:29:35,783 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-06-18 15:33:57,604 - INFO - No valid entity pairs found in: Prior to this, the area was occupied by terraced a...
+2025-06-18 15:50:47,906 - INFO - No valid entity pairs found in: Prior to this, the area was occupied by terraced a...
+2025-06-19 10:55:36,182 - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-06-19 11:41:59,107 - ERROR - Error processing sentence 0: 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "/tmp/ipykernel_1220993/2470794628.py", line 139, in process_all_sentences
+    relations = parse_model_response_actually_fixed(response)
+  File "/tmp/ipykernel_1220993/605741087.py", line 80, in parse_model_response_actually_fixed
+    source_entity_obj = find_closest_original_entity(raw_source_text, original_entities)
+  File "/tmp/ipykernel_1220993/605741087.py", line 13, in find_closest_original_entity
+    for original_entity in original_entities_list:
+TypeError: 'NoneType' object is not iterable
+2025-06-19 11:42:12,412 - ERROR - Error processing sentence 1: 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "/tmp/ipykernel_1220993/2470794628.py", line 139, in process_all_sentences
+    relations = parse_model_response_actually_fixed(response)
+  File "/tmp/ipykernel_1220993/605741087.py", line 80, in parse_model_response_actually_fixed
+    source_entity_obj = find_closest_original_entity(raw_source_text, original_entities)
+  File "/tmp/ipykernel_1220993/605741087.py", line 13, in find_closest_original_entity
+    for original_entity in original_entities_list:
+TypeError: 'NoneType' object is not iterable
+2025-06-19 11:42:19,317 - ERROR - Error processing sentence 2: 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "/tmp/ipykernel_1220993/2470794628.py", line 139, in process_all_sentences
+    relations = parse_model_response_actually_fixed(response)
+  File "/tmp/ipykernel_1220993/605741087.py", line 80, in parse_model_response_actually_fixed
+    source_entity_obj = find_closest_original_entity(raw_source_text, original_entities)
+  File "/tmp/ipykernel_1220993/605741087.py", line 13, in find_closest_original_entity
+    for original_entity in original_entities_list:
+TypeError: 'NoneType' object is not iterable

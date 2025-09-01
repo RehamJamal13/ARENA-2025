@@ -1,0 +1,12 @@
+{
+  "article_id": "28",
+  "original_sentence": "Remote sensing data showed changes in Gobi Desert vegetation.",
+  "entities": [
+    {
+      "text": "Gobi Desert vegetation",
+      "label": "LOC",
+      "start_char": 38,
+      "end_char": 60
+    }
+  ]
+}

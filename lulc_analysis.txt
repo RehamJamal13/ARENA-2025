@@ -1,0 +1,165 @@
+LULC RELATIONSHIP ANALYSIS
+==================================================
+
+Total Entities: 75
+Total Relationships: 100
+
+ENTITY TYPES:
+FROM_LULC: 10 entities
+TO_LULC: 10 entities
+CHANGE: 10 entities
+PROCESS: 10 entities
+MAGNITUDE: 10 entities
+DATE_RANGE: 10 entities
+START_DATE: 10 entities
+END_DATE: 5 entities
+
+RELATIONSHIP TYPES:
+causes: 10 relationships
+converts_to: 10 relationships
+undergoes: 10 relationships
+part_of: 10 relationships
+has_magnitude: 10 relationships
+measured_by: 10 relationships
+occurs_during: 10 relationships
+happens_in: 10 relationships
+precedes: 5 relationships
+starts: 10 relationships
+ends: 5 relationships
+
+ALL RELATIONSHIPS:
+forest --causes--> declined
+forest --converts_to--> CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020
+forest --undergoes--> deforestation
+declined --part_of--> deforestation
+declined --has_magnitude--> 15%
+deforestation --measured_by--> 15%
+declined --occurs_during--> 2010 to 2020
+deforestation --happens_in--> 2010 to 2020
+2010 --precedes--> 2020
+2010 --starts--> 2010 to 2020
+2020 --ends--> 2010 to 2020
+built-up area --causes--> increased
+built-up area --converts_to--> built-up area
+built-up area --undergoes--> urbanization
+increased --part_of--> urbanization
+increased --has_magnitude--> 12.77%
+urbanization --measured_by--> 12.77%
+increased --occurs_during--> 2002 to 2018
+urbanization --happens_in--> 2002 to 2018
+2002 --precedes--> 2018
+2002 --starts--> 2002 to 2018
+2018 --ends--> 2002 to 2018
+forest --causes--> declined
+forest --converts_to--> CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020
+forest --undergoes--> deforestation
+declined --part_of--> deforestation
+declined --has_magnitude--> 15%
+deforestation --measured_by--> 15%
+declined --occurs_during--> 2010 to 2020
+deforestation --happens_in--> 2010 to 2020
+2010 --precedes--> 2020
+2010 --starts--> 2010 to 2020
+2020 --ends--> 2010 to 2020
+agricultural land --causes--> converted
+agricultural land --converts_to--> urban areas
+agricultural land --undergoes--> urbanization
+converted --part_of--> urbanization
+converted --has_magnitude--> DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:
+urbanization --measured_by--> DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:
+converted --occurs_during--> 2015
+urbanization --happens_in--> 2015
+2015 --starts--> 2015
+built-up area --causes--> increased
+built-up area --converts_to--> built-up area
+built-up area --undergoes--> urbanization
+increased --part_of--> urbanization
+increased --has_magnitude--> 12.77%
+urbanization --measured_by--> 12.77%
+increased --occurs_during--> 2002 to 2018
+urbanization --happens_in--> 2002 to 2018
+2002 --precedes--> 2018
+2002 --starts--> 2002 to 2018
+2018 --ends--> 2002 to 2018
+agricultural land --causes--> converted
+agricultural land --converts_to--> urban areas
+agricultural land --undergoes--> urbanization
+converted --part_of--> urbanization
+converted --has_magnitude--> DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:
+urbanization --measured_by--> DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:
+converted --occurs_during--> 2015
+urbanization --happens_in--> 2015
+2015 --starts--> 2015
+agricultural land --causes--> converted
+agricultural land --converts_to--> urban areas
+agricultural land --undergoes--> urbanization
+converted --part_of--> urbanization
+converted --has_magnitude--> DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:
+urbanization --measured_by--> DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:
+converted --occurs_during--> 2015
+urbanization --happens_in--> 2015
+2015 --starts--> 2015
+forest --causes--> declined
+forest --converts_to--> CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020
+forest --undergoes--> deforestation
+declined --part_of--> deforestation
+declined --has_magnitude--> 15%
+deforestation --measured_by--> 15%
+declined --occurs_during--> 2010 to 2020
+deforestation --happens_in--> 2010 to 2020
+2010 --precedes--> 2020
+2010 --starts--> 2010 to 2020
+2020 --ends--> 2010 to 2020
+agricultural land --causes--> converted
+agricultural land --converts_to--> urban areas
+agricultural land --undergoes--> urbanization
+converted --part_of--> urbanization
+converted --has_magnitude--> DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:
+urbanization --measured_by--> DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:
+converted --occurs_during--> 2015
+urbanization --happens_in--> 2015
+2015 --starts--> 2015
+agricultural land --causes--> converted
+agricultural land --converts_to--> urban areas
+agricultural land --undergoes--> urbanization
+converted --part_of--> urbanization
+converted --has_magnitude--> DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:
+urbanization --measured_by--> DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:
+converted --occurs_during--> 2015
+urbanization --happens_in--> 2015
+2015 --starts--> 2015

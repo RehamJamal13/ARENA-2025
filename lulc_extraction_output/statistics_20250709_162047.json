@@ -1,0 +1,23 @@
+{
+  "total_sentences_processed": 5,
+  "sentences_with_relations": 2,
+  "total_relations_extracted": 11,
+  "relation_types": {
+    "CAUSES": 2,
+    "OCCURS_DURING": 2,
+    "AFFECTS": 1,
+    "DECREASES_BY": 2,
+    "LOCATED_IN": 1,
+    "DESIGNATED_AS": 1,
+    "INCREASES_BY": 2
+  },
+  "entity_types": {
+    "DATE": 3,
+    "CHANGE": 4,
+    "LULC_TYPE": 6,
+    "ADJECTIVE": 2,
+    "QUANTITY": 2,
+    "PROCESS": 2,
+    "PERCENT": 3
+  }
+}

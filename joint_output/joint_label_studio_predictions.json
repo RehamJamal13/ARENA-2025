@@ -1,0 +1,5304 @@
+[
+  {
+    "data": {
+      "text": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 18,
+              "text": "Simulation results",
+              "labels": [
+                "TEXT"
+              ]
+            },
+            "id": "joint_ent_0_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 48,
+              "end": 60,
+              "text": "Thimphu city",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_0_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 97,
+              "end": 109,
+              "text": "study period",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_0_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 118,
+              "end": 130,
+              "text": "change trend",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_0_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 161,
+              "end": 165,
+              "text": "2050",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_0_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_0_0",
+            "to_id": "joint_ent_0_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "simulation results",
+              "original_target": "study period"
+            }
+          },
+          {
+            "from_id": "joint_ent_0_1",
+            "to_id": "joint_ent_0_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "Thimphu city",
+              "original_target": "study period"
+            }
+          },
+          {
+            "from_id": "joint_ent_0_3",
+            "to_id": "joint_ent_0_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "change trend",
+              "original_target": "study period"
+            }
+          },
+          {
+            "from_id": "joint_ent_0_3",
+            "to_id": "joint_ent_0_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "PREDICTED_TO_OCCUR"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "change trend",
+              "original_target": "2050"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 0,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 5,
+      "num_relations": 4,
+      "num_relations_mapped": 4,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 54,
+              "end": 67,
+              "text": "built-up area",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_1_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 33,
+              "end": 41,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_1_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 43,
+              "end": 49,
+              "text": "12.77%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_1_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 79,
+              "end": 85,
+              "text": "52.88%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_1_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 96,
+              "end": 101,
+              "text": "65.5%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_1_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 73,
+              "end": 77,
+              "text": "2002",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_1_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 90,
+              "end": 94,
+              "text": "2018",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_1_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_1_0",
+            "to_id": "joint_ent_1_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "INCREASES_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "built-up area",
+              "original_target": "12.77%"
+            }
+          },
+          {
+            "from_id": "joint_ent_1_3",
+            "to_id": "joint_ent_1_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "FROM_TO"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "52.88%",
+              "original_target": "65.5%"
+            }
+          },
+          {
+            "from_id": "joint_ent_1_1",
+            "to_id": "joint_ent_1_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "increase",
+              "original_target": "2002"
+            }
+          },
+          {
+            "from_id": "joint_ent_1_1",
+            "to_id": "joint_ent_1_6",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "increase",
+              "original_target": "2018"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 1,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 7,
+      "num_relations": 4,
+      "num_relations_mapped": 4,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%)."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 17,
+              "end": 29,
+              "text": "forest cover",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_2_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 30,
+              "end": 38,
+              "text": "declined",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_2_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 52,
+              "end": 58,
+              "text": "15.25%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_2_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 72,
+              "end": 83,
+              "text": "agriculture",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_2_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 85,
+              "end": 90,
+              "text": "1.01%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_2_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_2_0",
+            "to_id": "joint_ent_2_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "DECREASES_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "forest cover",
+              "original_target": "15.25%"
+            }
+          },
+          {
+            "from_id": "joint_ent_2_3",
+            "to_id": "joint_ent_2_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "INCREASES_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "agriculture",
+              "original_target": "1.01%"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 2,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 5,
+      "num_relations": 2,
+      "num_relations_mapped": 2,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 6,
+              "end": 23,
+              "text": "population growth",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_3_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 37,
+              "end": 58,
+              "text": "rural urban migration",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_3_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 72,
+              "end": 104,
+              "text": "hasty socio-economic development",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_3_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 110,
+              "end": 119,
+              "text": "democracy",
+              "labels": [
+                "EVENT"
+              ]
+            },
+            "id": "joint_ent_3_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_3_3",
+            "to_id": "joint_ent_3_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "PRECEDED_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "democracy",
+              "original_target": "post democracy"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 3,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 4,
+      "num_relations": 4,
+      "num_relations_mapped": 1,
+      "num_relations_skipped": 3
+    }
+  },
+  {
+    "data": {
+      "text": "Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 142,
+              "end": 148,
+              "text": "73.21%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_4_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 131,
+              "end": 135,
+              "text": "city",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_4_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 66,
+              "end": 75,
+              "text": "year 2050",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_4_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 155,
+              "end": 161,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_4_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 216,
+              "end": 219,
+              "text": "16%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_4_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_4_0",
+            "to_id": "joint_ent_4_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "CONSUMES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "built-up area",
+              "original_target": "city area"
+            }
+          },
+          {
+            "from_id": "joint_ent_4_1",
+            "to_id": "joint_ent_4_0",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "MEASURES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "73.21%",
+              "original_target": "built-up area"
+            }
+          },
+          {
+            "from_id": "joint_ent_4_5",
+            "to_id": "joint_ent_4_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "MEASURES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "16%",
+              "original_target": "forest"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 4,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 6,
+      "num_relations": 5,
+      "num_relations_mapped": 3,
+      "num_relations_skipped": 2
+    }
+  },
+  {
+    "data": {
+      "text": "Prior to this, the area was occupied by terraced agricultural fields and some 13 villages."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": []
+      }
+    ],
+    "id": 5,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 0,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Planned development for Thimphu started in 1985 with the establishment of National Urban Development Commission."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 31,
+              "text": "Planned development for Thimphu",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_6_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 32,
+              "end": 39,
+              "text": "started",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_6_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 43,
+              "end": 47,
+              "text": "1985",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_6_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 74,
+              "end": 111,
+              "text": "National Urban Development Commission",
+              "labels": [
+                "ORGANIZATION"
+              ]
+            },
+            "id": "joint_ent_6_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_6_0",
+            "to_id": "joint_ent_6_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "STARTED_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "planned development for Thimphu",
+              "original_target": "National Urban Development Commission"
+            }
+          },
+          {
+            "from_id": "joint_ent_6_1",
+            "to_id": "joint_ent_6_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "started",
+              "original_target": "1985"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 6,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 4,
+      "num_relations": 2,
+      "num_relations_mapped": 2,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 25,
+              "text": "Expansion of Thimphu city",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_7_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 29,
+              "end": 33,
+              "text": "2002",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_7_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_7_0",
+            "to_id": "joint_ent_7_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "AFFECTS"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "Expansion of Thimphu city",
+              "original_target": "Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba, Dechencholing, Changjiji, Lungtenphu, Simtokha, Babesa"
+            }
+          },
+          {
+            "from_id": "joint_ent_7_1",
+            "to_id": "joint_ent_7_0",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "2002",
+              "original_target": "Expansion of Thimphu city"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 7,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 3,
+      "num_relations": 2,
+      "num_relations_mapped": 2,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 58,
+              "end": 62,
+              "text": "city",
+              "labels": [
+                "LOC: LOCATION NAME"
+              ]
+            },
+            "id": "joint_ent_8_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 4,
+              "end": 21,
+              "text": "period, 2002-2018",
+              "labels": [
+                "DATE: TIME PERIOD"
+              ]
+            },
+            "id": "joint_ent_8_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 8,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 2,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 187,
+              "end": 198,
+              "text": "real estate",
+              "labels": [
+                "PROCESS (or: built-up area"
+              ]
+            },
+            "id": "joint_ent_9_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 111,
+              "end": 122,
+              "text": "immigration",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_9_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 128,
+              "end": 139,
+              "text": "rural areas",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_9_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 144,
+              "end": 167,
+              "text": "lesser developed cities",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_9_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 83,
+              "end": 87,
+              "text": "jobs",
+              "labels": [
+                "QUANTITY"
+              ]
+            },
+            "id": "joint_ent_9_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_9_1",
+            "to_id": "joint_ent_9_0",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "CAUSES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "immigration",
+              "original_target": "boom in real estate"
+            }
+          },
+          {
+            "from_id": "joint_ent_9_4",
+            "to_id": "joint_ent_9_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "CAUSES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "jobs",
+              "original_target": "immigration"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 9,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 5,
+      "num_relations": 5,
+      "num_relations_mapped": 2,
+      "num_relations_skipped": 3
+    }
+  },
+  {
+    "data": {
+      "text": "Although small, agriculture land shows a significant probability to transition to built-up area which has been the trend in many cities The findings indicate that rapid development of urban built will lead to sharp declines in forest and agriculture and increase in urban population."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 16,
+              "end": 32,
+              "text": "agriculture land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_10_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 82,
+              "end": 95,
+              "text": "built-up area",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_10_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 41,
+              "end": 64,
+              "text": "significant probability",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_10_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 227,
+              "end": 233,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_10_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 124,
+              "end": 135,
+              "text": "many cities",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_10_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 266,
+              "end": 282,
+              "text": "urban population",
+              "labels": [
+                "QUANTITY"
+              ]
+            },
+            "id": "joint_ent_10_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_10_0",
+            "to_id": "joint_ent_10_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "HAS_SIGNIFICANT_PROBABILITY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "agriculture land",
+              "original_target": "transitions to built-up area"
+            }
+          },
+          {
+            "from_id": "joint_ent_10_4",
+            "to_id": "joint_ent_10_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LEADS_TO"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "trends",
+              "original_target": "sharp declines in forest"
+            }
+          },
+          {
+            "from_id": "joint_ent_10_4",
+            "to_id": "joint_ent_10_6",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LEADS_TO"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "trends",
+              "original_target": "increase in urban population"
+            }
+          },
+          {
+            "from_id": "joint_ent_10_6",
+            "to_id": "joint_ent_10_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "IS_AFFECTED_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.5,
+            "meta": {
+              "confidence": "LOW",
+              "discovered_by": "joint_extraction",
+              "original_source": "urban population",
+              "original_target": "sharp declines in forest"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 10,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 7,
+      "num_relations": 6,
+      "num_relations_mapped": 4,
+      "num_relations_skipped": 2
+    }
+  },
+  {
+    "data": {
+      "text": "Significant increase in built-up areas were associated with parallel loss of important land cover types such as forest and agriculture."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 20,
+              "text": "significant increase",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_11_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 24,
+              "end": 38,
+              "text": "built-up areas",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_11_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 69,
+              "end": 73,
+              "text": "loss",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_11_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 77,
+              "end": 103,
+              "text": "important land cover types",
+              "labels": [
+                "LULC (aggregate entity: forest and agriculture)"
+              ]
+            },
+            "id": "joint_ent_11_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_11_0",
+            "to_id": "joint_ent_11_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "INCREASES_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "significant increase",
+              "original_target": "built-up areas"
+            }
+          },
+          {
+            "from_id": "joint_ent_11_2",
+            "to_id": "joint_ent_11_0",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_AT_SAME_TIME_AS"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "loss",
+              "original_target": "significant increase"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 11,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 4,
+      "num_relations": 4,
+      "num_relations_mapped": 2,
+      "num_relations_skipped": 2
+    }
+  },
+  {
+    "data": {
+      "text": "Significant changes in Thimphu's landscapes are correlated with the government's decision to expand the city northwards and southwards."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 19,
+              "text": "Significant changes",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_12_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 23,
+              "end": 43,
+              "text": "Thimphu's landscapes",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_12_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 68,
+              "end": 89,
+              "text": "government's decision",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_12_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 109,
+              "end": 119,
+              "text": "northwards",
+              "labels": [
+                "DIRECTION"
+              ]
+            },
+            "id": "joint_ent_12_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 124,
+              "end": 134,
+              "text": "southwards",
+              "labels": [
+                "DIRECTION"
+              ]
+            },
+            "id": "joint_ent_12_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_12_0",
+            "to_id": "joint_ent_12_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "CAUSES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "significant changes",
+              "original_target": "government's decision"
+            }
+          },
+          {
+            "from_id": "joint_ent_12_2",
+            "to_id": "joint_ent_12_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "ENABLES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "government's decision",
+              "original_target": "expansion northwards, expansion southwards"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 12,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 5,
+      "num_relations": 3,
+      "num_relations_mapped": 2,
+      "num_relations_skipped": 1
+    }
+  },
+  {
+    "data": {
+      "text": "This expansion received a boost after the institution of constitutional democracy in 2008 which brought in expediated development in the city."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 5,
+              "end": 14,
+              "text": "expansion",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_13_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 137,
+              "end": 141,
+              "text": "city",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_13_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 57,
+              "end": 81,
+              "text": "constitutional democracy",
+              "labels": [
+                "EVENT"
+              ]
+            },
+            "id": "joint_ent_13_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 85,
+              "end": 89,
+              "text": "2008",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_13_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 13,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 4,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "The results of prediction for 2050 also did not bear well for Thimphu city, with forest cover diminishing to a mere 4.28km 2 (16.32%) which are also highly fragmented."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 81,
+              "end": 93,
+              "text": "forest cover",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_14_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 126,
+              "end": 132,
+              "text": "16.32%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_14_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 62,
+              "end": 74,
+              "text": "Thimphu city",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_14_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_14_0",
+            "to_id": "joint_ent_14_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "DECREASES_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "forest cover",
+              "original_target": "16.32%"
+            }
+          },
+          {
+            "from_id": "joint_ent_14_0",
+            "to_id": "joint_ent_14_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "forest cover",
+              "original_target": "Thimphu city"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 14,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 5,
+      "num_relations": 2,
+      "num_relations_mapped": 2,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Loss of forest cover will degrade important ecological services and increase vulnerability of the city to landslides, gulley erosion, drying of water sources, worsened air pollution, and loss of important biodiversity."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 8,
+              "end": 20,
+              "text": "forest cover",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_15_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 4,
+              "text": "loss",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_15_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 15,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 2,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "The highest land conversion rate occurs in the North Central and Central Coast regions, but conversion of agricultural land for urbanization is mainly in the Red River Delta and Southeast."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 4,
+              "end": 32,
+              "text": "highest land conversion rate",
+              "labels": [
+                "QUANTITY"
+              ]
+            },
+            "id": "joint_ent_16_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 65,
+              "end": 85,
+              "text": "Central Coast region",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_16_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 158,
+              "end": 173,
+              "text": "Red River Delta",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_16_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 178,
+              "end": 187,
+              "text": "Southeast",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_16_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 106,
+              "end": 123,
+              "text": "agricultural land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_16_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 128,
+              "end": 140,
+              "text": "urbanization",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_16_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_16_1",
+            "to_id": "joint_ent_16_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "North Central region",
+              "original_target": "North Central and Central Coast regions"
+            }
+          },
+          {
+            "from_id": "joint_ent_16_2",
+            "to_id": "joint_ent_16_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "Central Coast region",
+              "original_target": "North Central and Central Coast regions"
+            }
+          },
+          {
+            "from_id": "joint_ent_16_3",
+            "to_id": "joint_ent_16_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "Red River Delta",
+              "original_target": "North Central and Central Coast regions"
+            }
+          },
+          {
+            "from_id": "joint_ent_16_4",
+            "to_id": "joint_ent_16_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "Southeast",
+              "original_target": "North Central and Central Coast regions"
+            }
+          },
+          {
+            "from_id": "joint_ent_16_5",
+            "to_id": "joint_ent_16_6",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "TRANSFORMS_TO"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "agricultural land",
+              "original_target": "urban area | CAUSES: urbanization, ENABLES: urbanization"
+            }
+          },
+          {
+            "from_id": "joint_ent_16_6",
+            "to_id": "joint_ent_16_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "urbanization",
+              "original_target": "conversion of agricultural land"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 16,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 7,
+      "num_relations": 7,
+      "num_relations_mapped": 6,
+      "num_relations_skipped": 1
+    }
+  },
+  {
+    "data": {
+      "text": "Land use is also a manifestation of various human activities to exploit the landscape."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": []
+      }
+    ],
+    "id": 17,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 0,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Therefore, landuse change is seen as a human activity to change the natural landscape and emphasize the role and function of land for socio-economic activities Urbanization is a socio-economic process manifested by a rapid increase in the number and size of urban population characteristics."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": []
+      }
+    ],
+    "id": 18,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 0,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "It is also defined as urban expansion, as the process of concentrating the population into cities, or as the rapid formation of urban population points based on production and life development Scientists also examine and observe urbanization from many different angles | Land use change in the World: a literature review: Land area of the world is estimated at 13 billion hectares, of which agricultural land accounts for 37.6%, equivalent to 4.9 billion hectares Built-up land occupied a relatively small area of about 1-3% in 2005, but it is expected to increase to about 260 to 420 million hectares (about 4-5%) by 2050 ."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 391,
+              "end": 408,
+              "text": "agricultural land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_19_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 464,
+              "end": 477,
+              "text": "built-up land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_19_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 422,
+              "end": 427,
+              "text": "37.6%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_19_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 443,
+              "end": 463,
+              "text": "4.9 billion hectares",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "joint_ent_19_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 520,
+              "end": 524,
+              "text": "1-3%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_19_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 574,
+              "end": 601,
+              "text": "260 to 420 million hectares",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "joint_ent_19_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 603,
+              "end": 613,
+              "text": "about 4-5%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_19_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 322,
+              "end": 344,
+              "text": "Land area of the world",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_19_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 22,
+              "end": 37,
+              "text": "urban expansion",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_19_8",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 193,
+              "end": 203,
+              "text": "scientists",
+              "labels": [
+                "PERSON"
+              ]
+            },
+            "id": "joint_ent_19_9",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_19_2",
+            "to_id": "joint_ent_19_0",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "MEASURES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "37.6%",
+              "original_target": "agricultural land"
+            }
+          },
+          {
+            "from_id": "joint_ent_19_4",
+            "to_id": "joint_ent_19_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "MEASURES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "1-3%",
+              "original_target": "built-up land (2005)"
+            }
+          },
+          {
+            "from_id": "joint_ent_19_6",
+            "to_id": "joint_ent_19_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "MEASURES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "4-5%",
+              "original_target": "built-up land (expected 2050)"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 19,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 10,
+      "num_relations": 10,
+      "num_relations_mapped": 3,
+      "num_relations_skipped": 7
+    }
+  },
+  {
+    "data": {
+      "text": "As for urban land, this area could expand from 40 to 143 million hectares in about 45 years, from 2007 to 2050 ."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 7,
+              "end": 17,
+              "text": "urban land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_20_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 35,
+              "end": 41,
+              "text": "expand",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_20_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 53,
+              "end": 73,
+              "text": "143 million hectares",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "joint_ent_20_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 83,
+              "end": 91,
+              "text": "45 years",
+              "labels": [
+                "TIME"
+              ]
+            },
+            "id": "joint_ent_20_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 98,
+              "end": 102,
+              "text": "2007",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_20_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 106,
+              "end": 110,
+              "text": "2050",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_20_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 20,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 6,
+      "num_relations": 3,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 3
+    }
+  },
+  {
+    "data": {
+      "text": "The annual increase in built-up land in developing countries is about 3.6%, while 2.9% is the average increase in industrial countries."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 4,
+              "end": 19,
+              "text": "annual increase",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_21_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 23,
+              "end": 36,
+              "text": "built-up land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_21_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 40,
+              "end": 60,
+              "text": "developing countries",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_21_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 70,
+              "end": 74,
+              "text": "3.6%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_21_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 114,
+              "end": 134,
+              "text": "industrial countries",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_21_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 82,
+              "end": 86,
+              "text": "2.9%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_21_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_21_0",
+            "to_id": "joint_ent_21_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "INCREASES_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "annual increase",
+              "original_target": "3.6%"
+            }
+          },
+          {
+            "from_id": "joint_ent_21_0",
+            "to_id": "joint_ent_21_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "INCREASES_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "annual increase",
+              "original_target": "2.9%"
+            }
+          },
+          {
+            "from_id": "joint_ent_21_1",
+            "to_id": "joint_ent_21_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "built-up land",
+              "original_target": "developing countries"
+            }
+          },
+          {
+            "from_id": "joint_ent_21_1",
+            "to_id": "joint_ent_21_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "built-up land",
+              "original_target": "industrial countries"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 21,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 6,
+      "num_relations": 4,
+      "num_relations_mapped": 4,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "The Pacific and Southeast Asia regions have witnessed considerable land conversion rates from 1990 to 2000, at 7.2% and 6.4%, respectively (ANGEL Along with labour and capital, the land is a crucial factor for production in classical economics, and land use is considered the agricultural economy's backbone Although land-use conversion is essential to promote social progress and economic development, it also has many undesirable effects."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 4,
+              "end": 38,
+              "text": "Pacific and Southeast Asia regions",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_22_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 94,
+              "end": 98,
+              "text": "1990",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_22_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 102,
+              "end": 106,
+              "text": "2000",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_22_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 67,
+              "end": 88,
+              "text": "land conversion rates",
+              "labels": [
+                "QUANTITY"
+              ]
+            },
+            "id": "joint_ent_22_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 111,
+              "end": 115,
+              "text": "7.2%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_22_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 120,
+              "end": 124,
+              "text": "6.4%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_22_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_22_0",
+            "to_id": "joint_ent_22_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "Pacific and Southeast Asia regions",
+              "original_target": "1990, 2000"
+            }
+          },
+          {
+            "from_id": "joint_ent_22_4",
+            "to_id": "joint_ent_22_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "MEASURES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "7.2%",
+              "original_target": "land conversion rates in Pacific region"
+            }
+          },
+          {
+            "from_id": "joint_ent_22_5",
+            "to_id": "joint_ent_22_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "MEASURES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "6.4%",
+              "original_target": "land conversion rates in Southeast Asia region"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 22,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 6,
+      "num_relations": 3,
+      "num_relations_mapped": 3,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "In the north, Vietnam borders China; and in the west Laos and Cambodia."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": []
+      }
+    ],
+    "id": 23,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 0,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "The length of the country from north to south is 1,650 km, while the narrowest position, east to west, is nearly 50 km."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": []
+      }
+    ],
+    "id": 24,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 0,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "It is a tropical country, with most of the area being hilly (accounting for half of the territory), and where the terrain is mainly low mountains."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": []
+      }
+    ],
+    "id": 25,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 0,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Almost all of the population lives in rural areas and works in the agricultural sector, so one-third of the land is used for agriculture (FAO 2019)."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 91,
+              "end": 112,
+              "text": "one-third of the land",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "joint_ent_26_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 67,
+              "end": 86,
+              "text": "agricultural sector",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_26_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 18,
+              "end": 28,
+              "text": "population",
+              "labels": [
+                "PERSON"
+              ]
+            },
+            "id": "joint_ent_26_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 29,
+              "end": 34,
+              "text": "lives",
+              "labels": [
+                "VERB"
+              ]
+            },
+            "id": "joint_ent_26_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 38,
+              "end": 49,
+              "text": "rural areas",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_26_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_26_0",
+            "to_id": "joint_ent_26_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "IS_USED_FOR"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "one-third of the land",
+              "original_target": "agricultural sector"
+            }
+          },
+          {
+            "from_id": "joint_ent_26_2",
+            "to_id": "joint_ent_26_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LIVES_IN"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "population",
+              "original_target": "rural areas"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 26,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 5,
+      "num_relations": 2,
+      "num_relations_mapped": 2,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "According to land use purposes, the land is divided into three main land groups: non-agricultural, agricultural, and unused land."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 13,
+              "end": 17,
+              "text": "land",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_27_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 13,
+              "end": 30,
+              "text": "land use purposes",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_27_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 81,
+              "end": 97,
+              "text": "non-agricultural",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_27_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 85,
+              "end": 97,
+              "text": "agricultural",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_27_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 117,
+              "end": 128,
+              "text": "unused land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_27_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 27,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 5,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Agricultural land is divided into ground for production agriculture, forestry land, aquaculture land, salt-making, and other agriculture."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 17,
+              "text": "agricultural land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_28_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 28,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 1,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Land for production agriculture includes annual cropland (paddy land and other short-term cropland) and perennial cropland."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 31,
+              "text": "land for production agriculture",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_29_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 9,
+              "end": 31,
+              "text": "production agriculture",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_29_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 29,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 2,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "The forest land is divided into protection, production, and special-use forest land."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 4,
+              "end": 15,
+              "text": "forest land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_30_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 30,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 1,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Paddy land in Vietnam is concentrated in two main areas, the Mekong Delta and Red River Delta Delta (Fig."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 10,
+              "text": "paddy land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_31_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 25,
+              "end": 37,
+              "text": "concentrated",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_31_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 61,
+              "end": 73,
+              "text": "Mekong Delta",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_31_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 78,
+              "end": 99,
+              "text": "Red River Delta Delta",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_31_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 31,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 4,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "While non-agricultural land is reported to have increased, the area of this GIS layer showed a 21.5% decrease when verified by the land cover map."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 6,
+              "end": 27,
+              "text": "non-agricultural land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_32_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 31,
+              "end": 39,
+              "text": "reported",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_32_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 95,
+              "end": 100,
+              "text": "21.5%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_32_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 76,
+              "end": 85,
+              "text": "GIS layer",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_32_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_32_0",
+            "to_id": "joint_ent_32_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "DECREASES_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "non-agricultural land",
+              "original_target": "21.5%"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 32,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 4,
+      "num_relations": 2,
+      "num_relations_mapped": 1,
+      "num_relations_skipped": 1
+    }
+  },
+  {
+    "data": {
+      "text": "By 2019, Vietnam had established 373 industrial zones with a total area of 114.4 thousand hectares, accounting for 56.9% of the total planned land area."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 9,
+              "end": 16,
+              "text": "Vietnam",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_33_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 33,
+              "end": 53,
+              "text": "373 industrial zones",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "joint_ent_33_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 61,
+              "end": 71,
+              "text": "total area",
+              "labels": [
+                "QUANTITY"
+              ]
+            },
+            "id": "joint_ent_33_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 75,
+              "end": 98,
+              "text": "114.4 thousand hectares",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "joint_ent_33_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 115,
+              "end": 120,
+              "text": "56.9%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_33_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 128,
+              "end": 151,
+              "text": "total planned land area",
+              "labels": [
+                "QUANTITY"
+              ]
+            },
+            "id": "joint_ent_33_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_33_1",
+            "to_id": "joint_ent_33_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "HAS"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "373 industrial zones",
+              "original_target": "114.4 thousand hectares"
+            }
+          },
+          {
+            "from_id": "joint_ent_33_4",
+            "to_id": "joint_ent_33_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OF"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "56.9%",
+              "original_target": "total planned land area"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 33,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 6,
+      "num_relations": 2,
+      "num_relations_mapped": 2,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "According to the statistics, the evolution of land use purpose is occurring in all localities (Fig."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": []
+      }
+    ],
+    "id": 34,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 0,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Moreover, rapid urbanization has been a significant highlight in the development process of Vietnam in recent decades."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 16,
+              "end": 28,
+              "text": "urbanization",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_35_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 69,
+              "end": 99,
+              "text": "development process of Vietnam",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_35_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 103,
+              "end": 117,
+              "text": "recent decades",
+              "labels": [
+                "TIME_PERIOD"
+              ]
+            },
+            "id": "joint_ent_35_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_35_0",
+            "to_id": "joint_ent_35_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "IS_A"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "urbanization",
+              "original_target": "development process of Vietnam"
+            }
+          },
+          {
+            "from_id": "joint_ent_35_2",
+            "to_id": "joint_ent_35_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "recent decades",
+              "original_target": "development process of Vietnam"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 35,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 3,
+      "num_relations": 2,
+      "num_relations_mapped": 2,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "In 1990, the number of urban areas in Vietnam was about 500 and the urbanization rate was about 17%."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 13,
+              "end": 34,
+              "text": "number of urban areas",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "joint_ent_36_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 3,
+              "end": 7,
+              "text": "1990",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_36_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 38,
+              "end": 45,
+              "text": "Vietnam",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_36_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 23,
+              "end": 34,
+              "text": "urban areas",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_36_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 50,
+              "end": 59,
+              "text": "about 500",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "joint_ent_36_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 68,
+              "end": 85,
+              "text": "urbanization rate",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_36_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 90,
+              "end": 99,
+              "text": "about 17%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_36_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 36,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 7,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "By 2019, the number of urban areas in Vietnam had increased to 846 ."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 13,
+              "end": 34,
+              "text": "number of urban areas",
+              "labels": [
+                "QUANTITY"
+              ]
+            },
+            "id": "joint_ent_37_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 63,
+              "end": 66,
+              "text": "846",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "joint_ent_37_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 38,
+              "end": 45,
+              "text": "Vietnam",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_37_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 3,
+              "end": 7,
+              "text": "2019",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_37_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_37_0",
+            "to_id": "joint_ent_37_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "INCREASES_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "number of urban areas",
+              "original_target": "846"
+            }
+          },
+          {
+            "from_id": "joint_ent_37_1",
+            "to_id": "joint_ent_37_0",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "MEASURES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "846",
+              "original_target": "number of urban areas"
+            }
+          },
+          {
+            "from_id": "joint_ent_37_0",
+            "to_id": "joint_ent_37_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "urban areas",
+              "original_target": "Vietnam"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 37,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 4,
+      "num_relations": 4,
+      "num_relations_mapped": 3,
+      "num_relations_skipped": 1
+    }
+  },
+  {
+    "data": {
+      "text": "In 1986, Vietnam's urban population was under 13 million, but by 2019, that number was 37 million (WORLD BANK, 2020a)."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 9,
+              "end": 16,
+              "text": "Vietnam",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_38_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 19,
+              "end": 35,
+              "text": "urban population",
+              "labels": [
+                "QUANTITY"
+              ]
+            },
+            "id": "joint_ent_38_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 46,
+              "end": 56,
+              "text": "13 million",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "joint_ent_38_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 3,
+              "end": 7,
+              "text": "1986",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_38_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 87,
+              "end": 97,
+              "text": "37 million",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "joint_ent_38_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 65,
+              "end": 69,
+              "text": "2019",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_38_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 99,
+              "end": 109,
+              "text": "WORLD BANK",
+              "labels": [
+                "ORGANIZATION"
+              ]
+            },
+            "id": "joint_ent_38_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_38_3",
+            "to_id": "joint_ent_38_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "1986",
+              "original_target": "before 2019"
+            }
+          },
+          {
+            "from_id": "joint_ent_38_2",
+            "to_id": "joint_ent_38_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "13 million",
+              "original_target": "1986"
+            }
+          },
+          {
+            "from_id": "joint_ent_38_4",
+            "to_id": "joint_ent_38_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "37 million",
+              "original_target": "2019"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 38,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 7,
+      "num_relations": 5,
+      "num_relations_mapped": 3,
+      "num_relations_skipped": 2
+    }
+  },
+  {
+    "data": {
+      "text": "Urban economic growth is twice the national average, contributing over half of the gross domestic product ( According to the objective rule, urbanization must originate from non-agricultural economic development such as industry, commerce, and services  to replace the agricultural economy gradually."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 21,
+              "text": "urban economic growth",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_39_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 35,
+              "end": 51,
+              "text": "national average",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_39_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 66,
+              "end": 75,
+              "text": "over half",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "joint_ent_39_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 83,
+              "end": 105,
+              "text": "gross domestic product",
+              "labels": [
+                "QUANTITY"
+              ]
+            },
+            "id": "joint_ent_39_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 141,
+              "end": 153,
+              "text": "urbanization",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_39_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 174,
+              "end": 211,
+              "text": "non-agricultural economic development",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_39_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 220,
+              "end": 252,
+              "text": "industry, commerce, and services",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_39_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_39_0",
+            "to_id": "joint_ent_39_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "IS_GREATER_THAN"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "urban economic growth",
+              "original_target": "national average"
+            }
+          },
+          {
+            "from_id": "joint_ent_39_0",
+            "to_id": "joint_ent_39_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "CONTRIBUTES_TO"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "urban economic growth",
+              "original_target": "gross domestic product"
+            }
+          },
+          {
+            "from_id": "joint_ent_39_4",
+            "to_id": "joint_ent_39_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "ORIGINATES_FROM"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "urbanization",
+              "original_target": "non-agricultural economic development"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 39,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 7,
+      "num_relations": 4,
+      "num_relations_mapped": 3,
+      "num_relations_skipped": 1
+    }
+  },
+  {
+    "data": {
+      "text": "However, unlike other countries in the region and the world, urbanization in Vietnam is characterized by rural urbanization."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 61,
+              "end": 73,
+              "text": "urbanization",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_40_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 77,
+              "end": 84,
+              "text": "Vietnam",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_40_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 40,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 2,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Urban developments and growth in Vietnam are late and slower than in some regional countries The trend of changing land use purposes in urban areas is to reduce agricultural land, unused land and increase non-agricultural land."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 29,
+              "text": "urban developments and growth",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_41_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 33,
+              "end": 40,
+              "text": "Vietnam",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_41_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 136,
+              "end": 147,
+              "text": "urban areas",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_41_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 161,
+              "end": 178,
+              "text": "agricultural land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_41_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 180,
+              "end": 191,
+              "text": "unused land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_41_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 205,
+              "end": 226,
+              "text": "non-agricultural land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_41_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_41_0",
+            "to_id": "joint_ent_41_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "CAUSES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "urban developments and growth",
+              "original_target": "reducing agricultural land"
+            }
+          },
+          {
+            "from_id": "joint_ent_41_0",
+            "to_id": "joint_ent_41_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "CAUSES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "urban developments and growth",
+              "original_target": "increasing non-agricultural land"
+            }
+          },
+          {
+            "from_id": "joint_ent_41_3",
+            "to_id": "joint_ent_41_7",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "TRANSFORMS_TO"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.5,
+            "meta": {
+              "confidence": "LOW",
+              "discovered_by": "joint_extraction",
+              "original_source": "reducing agricultural land",
+              "original_target": "non-agricultural land"
+            }
+          },
+          {
+            "from_id": "joint_ent_41_3",
+            "to_id": "joint_ent_41_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "DECREASES_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "reducing agricultural land",
+              "original_target": "CARDINAL (Quantity of agricultural land decreases)"
+            }
+          },
+          {
+            "from_id": "joint_ent_41_4",
+            "to_id": "joint_ent_41_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "INCREASES_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "increasing non-agricultural land",
+              "original_target": "CARDINAL (Quantity of non-agricultural land increases)"
+            }
+          },
+          {
+            "from_id": "joint_ent_41_2",
+            "to_id": "joint_ent_41_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "urban areas",
+              "original_target": "Vietnam"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 41,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 8,
+      "num_relations": 6,
+      "num_relations_mapped": 6,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Growth in the non-agricultural land area is mainly due to expanding urban land, land for industrial zones, and construction activities."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 14,
+              "end": 40,
+              "text": "non-agricultural land area",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_42_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 6,
+              "text": "growth",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_42_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 58,
+              "end": 78,
+              "text": "expanding urban land",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_42_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 80,
+              "end": 105,
+              "text": "land for industrial zones",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_42_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 111,
+              "end": 134,
+              "text": "construction activities",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_42_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_42_0",
+            "to_id": "joint_ent_42_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "INCREASES_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "non-agricultural land area",
+              "original_target": "growth"
+            }
+          },
+          {
+            "from_id": "joint_ent_42_1",
+            "to_id": "joint_ent_42_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "CAUSES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "growth",
+              "original_target": "expanding urban land, land for industrial zones, construction activities"
+            }
+          },
+          {
+            "from_id": "joint_ent_42_2",
+            "to_id": "joint_ent_42_0",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "TRANSFORMS_TO"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.5,
+            "meta": {
+              "confidence": "LOW",
+              "discovered_by": "joint_extraction",
+              "original_source": "expanding urban land, land for industrial zones, construction activities",
+              "original_target": "non-agricultural land area"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 42,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 5,
+      "num_relations": 3,
+      "num_relations_mapped": 3,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "The size of urban land increased due to the conversion from agricultural land, of which rice land was the primary type."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 12,
+              "end": 22,
+              "text": "urban land",
+              "labels": [
+                "built-up area"
+              ]
+            },
+            "id": "joint_ent_43_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 4,
+              "end": 8,
+              "text": "size",
+              "labels": [
+                "QUANTITY"
+              ]
+            },
+            "id": "joint_ent_43_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 44,
+              "end": 54,
+              "text": "conversion",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_43_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 60,
+              "end": 77,
+              "text": "agricultural land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_43_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 88,
+              "end": 97,
+              "text": "rice land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_43_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_43_3",
+            "to_id": "joint_ent_43_0",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "TRANSFORMS_TO"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "agricultural land",
+              "original_target": "urban land"
+            }
+          },
+          {
+            "from_id": "joint_ent_43_1",
+            "to_id": "joint_ent_43_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "INCREASES_BY"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.7,
+            "meta": {
+              "confidence": "MEDIUM",
+              "discovered_by": "joint_extraction",
+              "original_source": "size",
+              "original_target": "conversion"
+            }
+          },
+          {
+            "from_id": "joint_ent_43_4",
+            "to_id": "joint_ent_43_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "IS_A"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "rice land",
+              "original_target": "agricultural land"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 43,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 5,
+      "num_relations": 3,
+      "num_relations_mapped": 3,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "In 2011-2015, following the data from MoNRE, Vietnam converted 89.4 thousand hectares of rice land to urban land."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 63,
+              "end": 85,
+              "text": "89.4 thousand hectares",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "joint_ent_44_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 89,
+              "end": 98,
+              "text": "rice land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_44_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 53,
+              "end": 62,
+              "text": "converted",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_44_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 102,
+              "end": 112,
+              "text": "urban land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_44_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 3,
+              "end": 12,
+              "text": "2011-2015",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_44_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 38,
+              "end": 43,
+              "text": "MoNRE",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_44_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_44_1",
+            "to_id": "joint_ent_44_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "TRANSFORMS_TO"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "rice land",
+              "original_target": "urban land"
+            }
+          },
+          {
+            "from_id": "joint_ent_44_0",
+            "to_id": "joint_ent_44_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "MEASURES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "89.4 thousand hectares",
+              "original_target": "converted"
+            }
+          },
+          {
+            "from_id": "joint_ent_44_2",
+            "to_id": "joint_ent_44_4",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "OCCURS_DURING"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "converted",
+              "original_target": "2011-2015"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 44,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 6,
+      "num_relations": 4,
+      "num_relations_mapped": 3,
+      "num_relations_skipped": 1
+    }
+  },
+  {
+    "data": {
+      "text": "In a broader view for the 2007-2017 period, the converted area is estimated at 125.9 thousand ha (data calculated by the author through the land cover maps)."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 48,
+              "end": 62,
+              "text": "converted area",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_45_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 79,
+              "end": 96,
+              "text": "125.9 thousand ha",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "joint_ent_45_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 26,
+              "end": 42,
+              "text": "2007-2017 period",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "joint_ent_45_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 45,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 3,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "This transition is mainly concentrated in three regions: the Southeast, the Red River Delta, and the Mekong River Delta."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": []
+      }
+    ],
+    "id": 46,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 0,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Conversion of agricultural land for investment in urban, industrial, and economic zone projects occurs in major urban areas like Binh The current status of such land conversion has a significant impact on people's lives, especially those living in peri-urban areas."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 14,
+              "end": 31,
+              "text": "agricultural land",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "joint_ent_47_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 0,
+              "end": 10,
+              "text": "conversion",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "joint_ent_47_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 106,
+              "end": 123,
+              "text": "major urban areas",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_47_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 129,
+              "end": 133,
+              "text": "Binh",
+              "labels": [
+                "LOC (specific name of cities)"
+              ]
+            },
+            "id": "joint_ent_47_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 205,
+              "end": 211,
+              "text": "people",
+              "labels": [
+                "PERSON"
+              ]
+            },
+            "id": "joint_ent_47_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 248,
+              "end": 264,
+              "text": "peri-urban areas",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_47_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "joint_ent_47_1",
+            "to_id": "joint_ent_47_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "ENABLES"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "conversion",
+              "original_target": "urban, industrial, and economic zones"
+            }
+          },
+          {
+            "from_id": "joint_ent_47_2",
+            "to_id": "joint_ent_47_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "LOCATED_IN"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "urban, industrial, and economic zones",
+              "original_target": "major urban areas"
+            }
+          },
+          {
+            "from_id": "joint_ent_47_6",
+            "to_id": "joint_ent_47_5",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "AFFECTS"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9,
+            "meta": {
+              "confidence": "HIGH",
+              "discovered_by": "joint_extraction",
+              "original_source": "peri-urban areas",
+              "original_target": "people"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 47,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 7,
+      "num_relations": 6,
+      "num_relations_mapped": 3,
+      "num_relations_skipped": 3
+    }
+  },
+  {
+    "data": {
+      "text": "Land use change has also created social conflicts and intensified violence due to land contention and because the land is the primary source of livelihood for many peri-urban farming households."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 15,
+              "text": "land use change",
+              "labels": [
+                "PROCESS"
+              ]
+            },
+            "id": "joint_ent_48_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 48,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 1,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  },
+  {
+    "data": {
+      "text": "Land in the peri-urban area is becoming increasingly scarce, leading to higher land prices in this area, inadvertently creating psychological pressure on people."
+    },
+    "predictions": [
+      {
+        "model_version": "mistral-joint-extraction-v1.0",
+        "score": 0.85,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 27,
+              "text": "land in the peri-urban area",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "joint_ent_49_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 49,
+    "meta": {
+      "method_used": "joint_entity_relation_extraction",
+      "num_entities": 1,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0
+    }
+  }
+]

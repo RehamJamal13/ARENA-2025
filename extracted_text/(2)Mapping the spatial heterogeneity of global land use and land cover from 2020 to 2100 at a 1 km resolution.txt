@@ -1,0 +1,306 @@
+================================================================================
+TITLE: Mapping the spatial heterogeneity of global land use and land cover from 2020 to 2100 at a 1 km resolution
+================================================================================
+
+AUTHORS:
+- Tianyuan Zhang
+- Changxiu Cheng
+- Xudong Wu
+
+ABSTRACT:
+A fine global future land use/land cover (LULC) is critical for demonstrating the geographic heterogeneity of earth system dynamics and human-earth interaction. In this study, we produced a 1 km global future LULC dataset that takes into account future climate and socio-economic changes as well as the impact of simulated results of the former year on temporally adjacent periods. By incorporating the variations in climatic and socio-economic factors, we differentiated LULC suitability probabilities for historical and future periods across representative SSP-RCP scenarios. then, by using an improved cellular automata model-PLUS to simulate the patch-level changes of various land classes, we iteratively downscaled water-basin-level LULC demands in various future scenarios to a spatial resolution of 1 km. Our dataset achieves a high degree of simulation accuracy (Kappa = 0.94, OA = 0.97, FoM = 0.10) and precisely captures the spatial-temporal heterogeneity of global LULC changes under the combined effects of climate change and socio-economic development. This robust and fine-scale LULC dataset provides valuable spatially-explicit information essential for earth system modeling and intricate dynamics between anthropogenic activities and the environment.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Background & Summary ##
+Land use and land cover (LULC) change reflects the intricate interaction between climate change and intensive human activities 
+Early LULC projections mostly forecast global land use demands at subregional levels, which are generally obtained from integrated assessment models (IAMs) such as AIM (Asia-Pacific integrated model), modular applied general equilibrium tool (MAGNET), Integrated Model to Assess the Global Environment (IMAGE), and Global Change Assessment Model (GCAM). For instance, AIM simulates future regional land use dynamics by categorizing the world into 17 geopolitical regions 
+Cellular automata (CA) have proved to be efficient in allocating land use to more spatially-explicit details, which are capable of defining the rules of cell-to-cell transformation as well as their adaptive behaviors and thus simulating the complex geospatial patterns. By integrating with land use demands generated from IAMs, CA models are capable of simulating scenario-based gridded LULC datasets with a finer resolution (normally 1 km). For instance, Li et al. 
+Moreover, existing practices of future land use allocation generally utilize historical baseline to simulate land use dynamics under representative SSP-RCP scenarios, overlooking the effects of the simulated results of the former year on subsequent ones 
+This study aims to produce a gridded dataset of global LULC at 1 km × 1 km resolution under typical SSP-RCP scenarios from 2020 to 2100 by combining the Patch-generating Land Use Simulation (PLUS) model and GCAM. Firstly, we use GCAM to simulate global land use demand at the water-basin level and calibrate urban land use generated from GCAM by means of a multivariate regression method. Compared to other IAM models such as IMAGE and AIM, GCAM has its advantages in simulating the spatial heterogeneity of global LULC with a classification of 235 regions at the water-basin level, by taking into account the discrepant land cover patterns in different agro-ecological zones and diversified socio-economic levels of different geopolitical regions. Secondly, by using the PLUS model to simulate the patch-level changes of various land classes driven by future suitability probabilities, we allocate the regional land use demand in various future scenarios to a spatial resolution of 1 km × 1 km. Finally, we compare the gridded dataset for future LULC with existing land use products to validate the accuracy of the results. This new dataset guarantees consistency across different SSP-RCP scenarios at explicit spatial details. Moreover, compared to other LULC products for future periods, this gridded dataset fully incorporates the impact of simulated results on temporally adjacent simulations and enhances the fidelity by using future suitability probabilities for land use projection. The outcome of this study can greatly help improve the accuracy of simulating earth system dynamics and modeling human-earth interaction.
+
+## Methods ##
+Overall framework. Figure 
+
+## Projection of LULC demand. ##
+GCAM is an open-source, multi-sector coordinated IAM developed by the Pacific Northwest National Laboratory (PNNL), which gains wide applications in modeling agriculture and land use 
+
+## Downscaling of LULC demand on a water-basin scale. Spatially explicit LULC simulation models ##
+provide a means to convey changes from macro to local scales 
+The baseline LULC data, driving factor data, and restriction zone data used in the simulations are described as shown in Table 
+
+## Data Records ##
+The dataset generated in this study is on a global scale with a resolution of 1 km and encompasses a timespan from 2020 to 2100, which is publicly available on https://doi.org/10.6084/m9.figshare.23542860 
+We also calculated Pearson correlation coefficients to further assess the spatial conformity between the simulated results and historical LULC data in 2020, considering both overall and subtype-specific LULC distributions (refer to Table 
+Moreover, Figure 
+
+## Suitability probability generated by driving factors for future periods. ##
+In the simulation stage for future periods, we found that the LULC simulation derived from future suitability probability can effectively capture the influence of driving factors on LULC change. Using the forest in Southern Africa as a case, Figure 
+Our analysis revealed that the future suitability probability has evolved from its historical counterpart due to the influence of future driving factors. Regions with lower suitability probabilities in the historical probability landscape (shown in blue in Figure 
+We further examined the distribution of the driving factors that lead to the difference between historical and future suitability probability. Historically, the GDP level displayed noticeable national differences. Given Angola's higher historical economic level in comparison to Zambia (see Figure 
+
+## Variations in global LULC changes across different SSP-rCP scenarios. The discrepancy in LULC ##
+under various SSP-RCP scenarios is well reflected in the dataset produced in this study. By taking Southeast Asia as an example, Figure 
+To illustrate the variations in grassland areas across different future scenarios, we concentrate our focus on the Tibetan Plateau, a representative steppe region (see Figure 
+Along with this environmental shift, intensive animal husbandry is forecasted to persist in this region, which is characterized by a growing population with an unabated demand for animal products and feed. This interplay of socio-economic and environmental factors contributes to relative stability in grassland area extent, forestalling any drastic reductions.
+Comparison with other LULC datasets. We compared the gridded dataset generated in this study to LUH2 
+Selecting regions with comprehensive LULC types in China (FoM = 0.12), Africa (FoM = 0.08), and the United States (FoM = 0.11) as examples, we validated the simulation accuracy by comparing our simulation results (see Figure 
+Figure 
+into 32 regions for the downscaling process, we divided the world into 235 regions at the water-basin level. This approach provides a better representation of the spatial heterogeneity in LULC simulations, and facilitates more precise control over the allocation of LULC demand within each water basin. Secondly, we adopted an iterative simulation technique starting with the historical data from 2020 as the basis for modeling the LULC of the subsequent future period, which was then used as the foundation for the simulation of the next period. This iterative approach considers the spatial impact of previous LULC results on the simulation of subsequent periods. By limiting the spatial and temporal scope of the simulation, we were able to control the number of pixels undergoing changes within each water basin. These abovementioned strategies help prevent the uncontrollable expansion of changing pixels within larger regions over extended simulation periods, and thus avoid the aggregation of changing pixels in areas with high suitability probability (refer to Figure 
+
+## Usage Notes ##
+This study produced a global-scale LULC dataset that includes 6 LULC types with a 1 km resolution from 2020 to 2100 under different SSP-RCP scenarios. The dataset displays robust simulation accuracy across world regions at the water-basin level (FoM = 0.10, Kappa coefficient = 0.94, OA = 0.97), which can efficiently capture the differential impacts exerted by each SSP-RCP scenario on the future expansion of LULC. This LULC dataset is fully supportive for mapping the geospatial heterogeneity of future land use and can provide spatially-explicit data for simulating earth system dynamics and anthropogenic impacts on the environment.
+Compared with existing global LULC datasets for future periods, our dataset gave full account to the variation in future suitability probability relative to its historical counterpart, and employed future driving factors to derive updated suitability probability for LULC expansion across different SSP-RCP scenarios. Moreover, we used the PLUS model, a CA model that is capable of modeling the expansion of multiple types of natural LULC Fig. 
+Yet, this dataset still has some limitations. Compared with the natural LULC types, the correlation coefficient between the simulation results and the observed data for urban areas is relatively lower (see Table 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Spatiotemporal patterns and characteristics of land-use change in China during 2010-2015
+   Authors: 
+   Date: 2018
+
+2. Land use/land cover change and the effects on ecosystem services in the Hengduan Mountain region
+   Authors: , , , 
+   Date: 2018
+
+3. Global land change from 1982 to 2016
+   Authors: 
+   Date: 2018
+
+4. Measuring the sustainable development implications of climate change mitigation
+   Authors: 
+   Date: 2020
+
+5. The MAGNET model: Module description
+   Authors: 
+   Date: 2014
+
+6. Scenarios of land use and land cover change in the conterminous United States: Utilizing the special report on emission scenarios at ecoregional scales
+   Authors: 
+   Date: 2012
+
+7. Land use representation in a global CGE model for long-term simulation: CET vs. logit functions
+   Authors: , , , 
+   Date: 2014
+
+8. Harmonization of land-use scenarios for the period 1500-2100: 600 years of global gridded annual land-use transitions, wood harvest, and resulting secondary lands
+   Authors: 
+   Date: 2011
+
+9. Harmonization of global land use change and management for the period 850-2100 (LUH2) for CMIP6
+   Authors: 
+   Date: 2020
+
+10. Global land use for 2015-2100 at 0.05° resolution under diverse socioeconomic and climate scenarios
+   Authors: 
+   Date: 2020
+
+11. Downscaling land use and land cover from the Global Change Assessment Model for coupling with Earth system models
+   Authors: , , , , 
+   Date: 2016
+
+12. Exploring SSP land-use dynamics using the IMAGE model: Regional and gridded scenarios of land-use change and land-based climate change mitigation
+   Authors: 
+   Date: 2018
+
+13. Gridded emissions and land-use data for 2005-2100 under diverse socioeconomic and climate mitigation scenarios
+   Authors: , , , , 
+   Date: 2018
+
+14. Global land-use allocation model linked to an integrated assessment model
+   Authors: , , , , 
+   Date: 2017
+
+15. A New Global Land-Use and Land-Cover Change Product at a 1-km Resolution for 2010 to 2100 Based on Human-Environment Interactions
+   Authors: 
+   Date: 2017
+
+16. Global projections of future urban land expansion under shared socioeconomic pathways
+   Authors: 
+   Date: 2020
+
+17. Future Land Use/Land Cover Change Has Nontrivial and Potentially Dominant Impact on Global Gross Primary Productivity
+   Authors: 
+   Date: 2022
+
+18. Global land projection based on plant functional types with a 1-km resolution under socio-climatic scenarios
+   Authors: , , 
+   Date: 2022
+
+19. Spatial Sequential Modeling and Predication of Global Land Use and Land Cover Changes by Integrating a Global Change Assessment Model and Cellular Automata
+   Authors: 
+   Date: 2019
+
+20. Cell-level coupling of a mechanistic model to cellular automata for improving land simulation
+   Authors: , , 
+   Date: 2023
+
+21. CMIP6 Earth System Models Project Greater Acceleration of Climate Zone Change Due To Stronger Warming
+   Authors: , , , 
+   Date: 2023
+
+22. Present and future Köppen-Geiger climate classification maps at 1-km resolution
+   Authors: 
+   Date: 2018
+
+23. Evaluating the economic impact of water scarcity in a changing world
+   Authors: 
+   Date: 2021
+
+24. Global Energy and CO 2 to the Year 2050
+   Authors: , 
+   Date: 1983
+
+25. Can updated climate pledges limit warming well below 2 °C?
+   Authors: 
+   Date: 2021
+
+26. Humans drive future water scarcity changes across all Shared Socioeconomic Pathways
+   Authors: 
+   Date: 2020
+
+27. Global agricultural green and blue water consumption under future climate and land use changes
+   Authors: 
+   Date: 2019
+
+28. Climate and carbon budget implications of linked future changes in CO 2 and non-CO 2 forcing
+   Authors: 
+   Date: 2019
+
+29. Land use projections in China under global socioeconomic and emission scenarios: Utilizing a scenario-based land-use change assessment framework
+   Authors: , , , , 
+   Date: 2018
+
+30. Land cover classification gridded maps from 1992 to present derived from satellite observation. Copernicus Climate Change Service (C3S) Climate Data Store (CDS)
+   Date: 2019
+
+31. Understanding the drivers of sustainable land expansion using a patch-generating land use simulation (PLUS) model: A case study in Wuhan
+   Authors: 
+   Date: 2021
+
+32. A future land use simulation model (FLUS) for simulating multiple land use scenarios by coupling human and natural effects
+   Authors: 
+   Date: 2017
+
+33. Comparing the input, output, and validation maps for several models of land change
+   Authors: 
+   Date: 2008
+
+34. Death to Kappa: birth of quantity disagreement and allocation disagreement for accuracy assessment
+   Authors: , 
+   Date: 2011
+
+35. Gridded datasets for population and economy under Shared Socioeconomic Pathways
+   Authors: 
+   Date: 2022
+
+36. Gridded datasets for population and economy under Shared Socioeconomic Pathways for 2020-2100
+   Authors: 
+   Date: 2022
+
+37. Effect of Fertility Policy Changes on the Population Structure and Economy of China: From the Perspective of the Shared Socioeconomic Pathways
+   Authors: 
+   Date: 2019
+
+38. Population, urbanization and economic scenarios over the Belt and Road region under the Shared Socioeconomic Pathways
+   Authors: 
+   Date: 2020
+
+39. Gridded GDP projections compatible with the five SSPs (Shared Socioeconomic Pathways
+   Authors: , , 
+   Date: 2020
+
+40. Gridded GDP Projections Compatible With the Five SSPs (Shared Socioeconomic Pathways)
+   Authors: , , 
+   Date: 2021
+
+41. NASA Global Daily Downscaled Projections
+   Authors: 
+   Date: 2022
+
+42. Global LULC projection dataset from 2020 to 2100 at a 1km resolution
+   Authors: , , 
+   Date: 2023
+
+43. Future global land datasets with a 1-km resolution based on the SSP-RCP scenarios
+   Authors: , , 
+   Date: 2021
+
+44. 1 km land use/land cover change of China under comprehensive socioeconomic and climate scenarios for 2020-2100
+   Authors: 
+   Date: 2022
+
+45. Simulation and analysis of 1km land use and land cover change in China under full SSP-RCP scenarios based on GCAM-FLUS models
+   Authors: 
+   Date: 2021
+
+46. Risk of intact forest landscape loss goes beyond global agricultural supply chains
+   Authors: 
+   Date: 2023
+
+47. The national determinants of deforestation in sub-Saharan Africa
+   Authors: 
+   Date: 2013
+
+48. Impacts of climate change on the vegetation of Africa: an adaptive dynamic vegetation modelling approach
+   Authors: , 
+   Date: 2009
+
+49. Greening of the Earth and its drivers
+   Authors: 
+   Date: 2016
+
+50. The future of Southeast Asia's forests
+   Authors: 
+   Date: 2019
+
+51. Highland cropland expansion and forest loss in Southeast Asia in the twenty-first century
+   Authors: 
+   Date: 2018
+
+52. The SSP4: A world of deepening inequality
+   Authors: 
+   Date: 2017
+
+53. China's livestock transition: Driving forces, impacts, and consequences
+   Authors: 
+   Date: 2018
+
+54. Global projections of future cropland expansion to 2050 and direct impacts on biodiversity and carbon storage
+   Authors: 
+   Date: 2018
+
+55. Land use and land cover change impacts on the regional climate of non-Amazonian South America: A review
+   Authors: , , , , 
+   Date: 2015
+
+56. Patterns of land use, extensification, and intensification of Brazilian agriculture
+   Authors: , , , , 
+   Date: 2016
+
+57. Predicting the current and future distributions of major food crop designated geographical indications (GIs) in China under climate change
+   Authors: , , 
+   Date: 2022
+
+58. Potential impacts of climate change on vegetation dynamics in Central Asia
+   Authors: , , , , 
+   Date: 2015
+
+59. Gridded Population of the World, Version 4 (GPWv4): Population Density Adjusted to Match 2015 Revision UN WPP Country Totals, Revision 11
+   Date: 2018
+
+60. Global 1 km × 1 km gridded revised real gross domestic product and electricity consumption during 1992-2019 based on calibrated nighttime light data
+   Authors: , 
+   Date: 2021
+
+61. GPCC Full Data Monthly Product Version 2022 at 0.25°: Monthly Land-Surface Precipitation from Rain-Gauges built on GTS-based and Historical Data
+   Authors: , , , , 
+   Date: 2022
+
+62. Version 4 of the CRU TS monthly high-resolution gridded multivariate climate dataset
+   Authors: , , , 
+   Date: 2020
+

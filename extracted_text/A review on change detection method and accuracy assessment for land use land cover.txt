@@ -1,0 +1,501 @@
+================================================================================
+TITLE: A review on change detection method and accuracy assessment for land use land cover
+================================================================================
+
+AUTHORS:
+- Ali Chughtai
+- Habibullah Abbasi
+- Ismail Karas
+
+ABSTRACT:
+The assessment of land use land cover change is extremely important for understanding the relationship between humans and nature. The enormous changes at a regional scale and advancements in technology have encouraged researchers to gather more information. The remote sensing technology and GIS tools cooperatively have made it easier to monitor the changes in land use land cover (LULC) from past to present. This technology has unraveled the changes at the regional and global level and has also contributed tremendous benefits to the scientific community. A variety of change detection algorithms have been used in the history of remote sensing to detect changes at earth's surface and newer techniques are still in process. The data from remote sensing satellites are the primary sources that provide an opportunity to acquire information about LULC change in recent decades, which extensively use different algorithms according to the research needs. The selection of appropriate change detection method is highly recommended in every remote sensing project. This review paper begins with the traditional pre and post-classification change detection techniques related to LULC information at the regional level. Therefore, this paper evaluated the mostly used change detection method among all others to find remarkable results. Thus the review concludes the post-classification change detection method using maximum likelihood classifier (MLC) supervised classification is applicable in all cases. The comparative analysis was also performed in a selected region having multiple land features during review in which MLC results best in comparison to others. MLC is the most commonly used technique from the past till present that has achieved high accuracy in all regions comparatively to other techniques.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+In the course of the past three decades, remote sensing technology along with the use of GIS has provoked the importance of LULC change assessment due to more rapid and extensive changes made on earth's surface 
+The main purpose of this paper is to review and focus the type of earth's surface regions in the context of LULC classes to define the suitable change detection method for extracting better LULC change information whether by implementing pre-classification change detection technique or post-classification comparison technique of individually classified multi-temporal multispectral medium resolution remotely sensed satellite data because it is freely and easily available such as Landsat mission in comparison of high-resolution satellite data such as SPOT, IKONOS, QUICK BIRD, etc., which is much more costly for academic and individual researchers. Due to the importance of monitoring change in earth's surface features, there is a gigantic need for scientific research for the evaluation of change detection techniques which is currently an active topic and new techniques are continuously developing.
+
+## A review of change detection techniques ##
+In order to the selection of appropriate change detection methods, this review research has focused the evaluation of LULC features of different landscape regions to describe which change detection method is better to execute. Therefore in this section a diversity of change detection methods has been reviewed according to earth's land surface and has been categorized into eight different regions which are: 1) Vegetation, 2) Urbanization, 3) Delta Region, 4) Mountainous Region, 5) River Flow, 6) Coastal Zone, 7) Desertification, and 8) Watershed.
+Most of the studies were trying to answer the reasons of what drives the changes in LULC of the region 
+
+## Vegetation ##
+A variety of change detection methods has been reviewed in this category. This category includes forest areas, agricultural areas, and large-scale plantation schemes such as orchards. 
+
+## Urbanization ##
+This category is based on the researches made upon cities and urban sprawl.
+(K Ridd and Liu, 1998) compared four change detection algorithms in an urban environment of Salt Lake City metropolitan of Utah, United States. Image differencing, image regression, TCT, and CHI-square transformation were used to identify the best change detection method. The study was categorized into 7 categories which are: (1) Construction site to new residential (2) new residential to vegetated residential (3) Farmland to construction site (4) Farmland to industrial/commercial (5) Dry farm to green farm (6) Green farm to dry farm (7) Soil/Gravel tonal change. Among these 7 categories, this study concluded that none of the above mention algorithms has defined change in all 7 categories 
+
+## Delta region ##
+The review of estuaries and delta regions has been discussed in this section.
+(X. 
+
+## Mountainous region ##
+The research study conducted on high and low steep mountainous and hilly region is reviewed here. 
+Supervised classification MLC was used before the post-classification change detection technique to identify the type of land and the changes that occurred during the study period. The results showed a positive change in vegetation due to afforestation in the region and increasing trend in built-up, while a decrease in barren land and agriculture 
+
+## River flow ##
+The researches made on rivers and flood affected areas has been reviewed in this category.
+(Sharma et al., 2011) assessed pre and post-flooding LULC change of three districts of Gujrat state, India. Three different classification approaches iso-data, MLC, and fuzzy rule base were applied to extract LULC information. The post-classification change detection method was used to detect "from-to" quantitative change analysis during the study period. The Kappa statistics values of all three classifications were computed and compared. The comparison of kappa values showed that un-supervised classification ISO-DATA achieved 0.78, supervised classification MLC achieved 0.84, and the Fuzzy rule base classification achieved 0.87 because fuzzy rule classification gave better separation of LULC classes 
+
+## Coastal zone ##
+The LULC assessment of coastline and seashore areas and its surroundings falls under this category. 
+
+## Desertification ##
+The drought and dry land areas falls under this category are reviewed. 
+
+## Watershed ##
+The researches on watershed are reviewed in this category. 
+
+## Analysis of literature review ##
+In the previous section, eight different regions were reviewed along with a variety of change detection techniques applied. This section will evaluate the most commonly used change detection method applied to many of the research studies in the past two decades until the present. The post-classification change detection using MLC supervised classification has been implemented the most and proposed by (H. 
+Few studies had also applied pre-classification change detection technique for a single land feature to detect the changes and extract useful information, for example, NDVI was implemented by 
+The comparative analysis of change detection methods is adapted to justify the best method through thematic accuracy assessment results as  
+Remotely sensed data always vary in spatial, radiometric, spectral, temporal resolutions and different types of sensors which may result errors in image classification, so the selection of appropriate change detection methods is very much necessary, as concluded in this literature that for a classified remotely sensed data whether supervised or unsupervised post-classification comparison technique is the best for change detection of a landscape with multiple LULC classes while a landscape with complex LULC features which cannot be easily evaluated using traditional pixel by pixel classification techniques require some advance classification techniques such as sub-pixel classification, decision rule-based classification and fuzzy classification for precise evaluation of LULC features. The extraction of single land feature to assess change and no change or rate of change using remotely sensed data depends upon the landscape features such as humidity, soil moisture, sun angle and spatial resolution which justify the selection of appropriate change detection method.
+
+## Selection of appropriate change detection method ##
+In the field of remote sensing, analysis of the raster image for the selection of appropriate change detection method is important to extract useful LULC change information. The satellite image raw data may vary due to geometric and radiometric flaws because of the curved shape of    getting the best results (Figs. 
+From the classification results, it is seen in Table 
+
+## Thematic accuracy assessment ##
+Accuracy assessment methods are used to validate the LULC map classification processes which decide the quality of gathered information justifying that the image pixels are well classified or misclassified from remotely sensed data. These accuracy assessments can result qualitatively which is usually a comparison between classified LULC map and on ground situation or quantitatively to identify and quantify by comparing classified map data with reference data, which is very much important for developing results assessment and decision-making. A variety of accuracy assessment methods has been discussed in the previous remote sensing literature 
+Error matrix not only calculates the user, producer and overall accuracy but also allows calculating the kappa statistics which is generated to evaluate the percentage of well classification has been performed. Kappa coefficient of agreement justifies the classification performed perfect agreement or just equal to random or no agreement. User, producer and overall accuracy assessment is basically a chance result in certain accuracy and to get rid of the influence of chance; kappa estimation can be done by calculating coefficient of agreement and mathematically represented as  
+
+## Table 4 ##
+Assessment of overall accuracy.
+
+## K% = 63% ##
+Accuracy assessment of LULC change detection of remotely sensed data plays an important role in remote sensing and for the further information interested candidate should look at these two books 
+
+## Conclusion & recommendation ##
+The multi-temporal satellite images of the same sensor are prerequisites for determining the change and selection of appropriate change detection algorithms to achieve good change results. The analysis for the selection of appropriate change detection is a dynamic research topic and newer techniques are still being developed. This paper has a detailed review of change detection methods applied on different study areas but none of the single change detection methods is applicable at all cases (A. 
+Above all, it is very clear from the above pie diagram that there were numerous change detection methods used in the past two decades among those post-classification using MLC is widely used. In practice, several change detection techniques are often used to implement change detection, whose results are then compared to identify the best product through visual assessment or quantitative accurate assessment. The selection of a suitable change detection method requires careful consideration which has been discussed in section 4. The major finding of the present study is that all methods are not hundred percent accurate, but post-classification yields useful information and should be viewed as complementary in comparison to the others. Therefore it is suggested to research scholars, the scientific community, and resource managers to apply the mentioned approach for change method to get the remarkable results that will be helpful in high thematic accuracy and acceptable outcomes to prevent further losses. 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Deforestation analysis of riverine forest of Sindh Using remote sensing techniques
+   Authors: , , 
+   Date: 2011
+
+2. Analysis of riverine forests of Nawabshah and Hyderabad divisions using landsat satellite data
+   Authors: , , , 
+   Date: 2015
+
+3. Understanding forest loss and recovery: a spatiotemporal analysis of land change in and around Bannerghatta National Park, India
+   Authors: , , 
+   Date: 2014
+
+4. LAND USE AND LAND COVER CHANGES -A FRAMEWORK FOR MONITORING
+   Authors: 
+   Date: 1977
+
+5. Would climate change drive species out of reserves? An assessment of existing reserve-selection methods
+   Authors: , , , , 
+   Date: 2004
+
+6. Classification accuracy: a user approach
+   Authors: 
+   Date: 1982
+
+7. Landuse Change within Okomu and Gilli-Gilli Forest Reserves
+   Authors: 
+   Date: 2016
+
+8. Remote sensing approaches for land use and land surface temperature assessment: a review of methods
+   Authors: 
+   Date: 2017
+
+9. Assessing wetland degradation and loss of ecosystem services in the Niger Delta
+   Authors: , 
+   Date: 2016
+
+10. Assessing different remote sensing techniques to detect land use/cover changes in the eastern Mediterranean
+   Authors: , 
+   Date: 2009
+
+11. Accuracy Assessment of Remote Sensing-Detected Change Detection. S. Khorram, American Society for Photogrammetry and Remote Sensing
+   Authors: , , , , , , , , , , , , 
+   Date: 1999. 2015
+
+12. Change detection using Landsat images and an analysis of the linkages between the change and property tax values in the Istanbul Province of Turkey
+   Authors: , , , 
+   Date: 2017
+
+13. Land use and land cover change detection using satellite remote sensing techniques in the mountainous Three Gorges Area, China
+   Authors: , 
+   Date: 2010
+
+14. Spatial modelling for natural and environmental vulnerability through remote sensing and GIS in Astrakhan
+   Authors: , , 
+   Date: 2018
+
+15. Assessing the Accuracy of Remotely Sensed Data: Principles and Practices
+   Authors: , 
+   Date: 2008
+
+16. Manual of Geospatial Science and Technology. Quality Assurance and Accuracy Assessment of Information Derived from Remotely Sensed Data
+   Authors: , 
+   Date: 2002
+
+17. PCA-based land-use change detection and analysis using multitemporal and multisensor satellite data
+   Authors: , , , 
+   Date: 2008
+
+18. Using remote sensing and GIS to detect and monitor land use and land cover change in Dhaka Metropolitan of Bangladesh during 1960-2005
+   Authors: , 
+   Date: 2009
+
+19. Land use change analysis of Bharatpur district using GIS
+   Authors: , , , , , , 
+   Date: 1992
+
+20. Ecological and Socio-Economic Functions across Tropical Land Use Systems after Rainforest Conversion
+   Authors: , , , , , , 
+   Date: 2016
+
+21. Sub-pixel change detection for urban land-cover analysis via multi-temporal remote sensing images
+   Authors: , , , , 
+   Date: 2014
+
+22. Monitoring land use/land cover changes around Damietta promontory
+   Authors: , , 
+   Date: 2016
+
+23. The dynamics of urban expansion and land use/land cover changes using remote sensing and spatial metrics: the case of Mekelle City of northern Ethiopia
+   Authors: , , , , , , 
+   Date: 2017
+
+24. Land Cover classification and changedetection analysis using multi-temporal remote sensed imagery and landscape metrics
+   Authors: , , 
+   Date: 2017
+
+25. The use of a vegetation index for assessment of the urban heat island effect
+   Authors: , , , , , 
+   Date: 1993
+
+26. What Drives Tropical Deforestation? A Meta-Analysis of Proximate and Underlying Causes of Deforestation Based on Subnational Case Study Evidence
+   Authors: , , 
+   Date: 2001
+
+27. Assessment of spatial relationship between land surface temperature and landuse/cover retrieval from multi-temporal remote sensing data in South Karkheh Sub-basin
+   Authors: , , , 
+   Date: 2013
+
+28. Thermal remote sensing of surface soil water content with partial vegetation cover for incorporation into climate models
+   Authors: , 
+   Date: 1995
+
+29. Monitoring sandy desertification of Otindag Sandy Land based on multi-date remote sensing images
+   Authors: , , , , 
+   Date: 2008
+
+30. Analyzing spatiotemporal land use/ cover dynamic using remote sensing imagery and GIS techniques case: Kan basin of Iran
+   Authors: , , 
+   Date: 2017
+
+31. Land cover change detection using GIS and remote sensing techniques: a spatio-temporal study on Tanguar Haor, Sunamganj
+   Authors: , 
+   Date: 2017
+
+32. Improving change vector analysis by cross-correlogram spectral matching for accurate detection of land-cover conversion
+   Authors: , , , , 
+   Date: 2013
+
+33. Monitoring urban growth and land use change detection with GIS and remote sensing techniques in Daqahlia governorate Egypt
+   Authors: , 
+   Date: 2015
+
+34. Comparing and combining landsat satellite imagery and participatory data to assess land-use and land-cover changes in a coastal village in Papua New Guinea
+   Authors: , , 
+   Date: 2017
+
+35. Forecasting future changes in Manzala Lake surface area by considering variations in land use and land cover using remote sensing approach
+   Authors: , , , , , 
+   Date: 2018
+
+36. Change detection from remotely sensed images: from pixel-based to object-based approaches
+   Authors: , , , , 
+   Date: 2013
+
+37. Change Detection Technique Development for Improved Urbanized Area Delineation
+   Authors: , , 
+   Date: 1981
+
+38. Spatiotemporal land use land cover change analysis and erosion risk mapping of Azad Jammu and Kashmir
+   Authors: , 
+   Date: 2014
+
+39. NDVI-based land-cover change detection using harmonic analysis
+   Authors: , 
+   Date: 2015
+
+40. A comparison of four algorithms for change detection in an urban environment
+   Authors: , 
+   Date: 1998
+
+41. Land use/cover changes and vulnerability to flooding in the Harts catchment
+   Authors: , 
+   Date: 2013
+
+42. Mapping of coastal landforms and volumetric change analysis in the south west coast of Kanyakumari, South India using remote sensing and GIS techniques
+   Authors: , , 
+   Date: 2017
+
+43. Statistical properties of measures of association and the Kappa statistic for assessing the accuracy of remotely sensed data using double sampling. Paper presented at the
+   Authors: , , 
+   Date: 1996. May 21-23, 1996
+
+44. Evaluating urban land cover change in the Hurghada area, Egypt, by using GIS and remote sensing
+   Authors: , , , 
+   Date: 2011
+
+45. Land-use and land-cover changes in rural areas during different political systems: a case study of Slovakia from 1782 to 2006. Land Use Pol
+   Authors: , , , 
+   Date: 2014
+
+46. Introducing new indices for accuracy evaluation of classified images representing semi-natural woodland environments
+   Authors: , 
+   Date: 2001
+
+47. Spatial Analysis of Landuse over Idukki District Using Remote Sensing Techniques
+   Authors: , , 
+   Date: 1978
+
+48. Assessing land use and land cover change in the Wassa West District of Ghana using remote sensing
+   Authors: 
+   Date: 2008
+
+49. Semi-supervised change detection approach combining sparse fusion and constrained k means for multi-temporal remote sensing images
+   Authors: , 
+   Date: 2015
+
+50. The Causes of Land-Use and Land-Cover Change: Moving beyond the Myths
+   Authors: , , , , , , 
+   Date: 2001
+
+51. Projected land-use change impacts on ecosystem services in the United States
+   Authors: , , , , , , 
+   Date: 2014
+
+52. Landscape metrics for analysing urbanization-induced land use and land cover changes
+   Authors: , 
+   Date: 2013
+
+53. Application of high-resolution thermal infrared remote sensing and GIS to assess the urban heat island effect
+   Authors: , , 
+   Date: 1997
+
+54. An area-based accuracy assessment methodology for digital change maps
+   Authors: 
+   Date: 2001
+
+55. Change detection techniques
+   Authors: , , , 
+   Date: 2004
+
+56. A quantitative comparison of change-detection algorithms for monitoring eelgrass from remotely sensed data
+   Authors: , 
+   Date: 1998
+
+57. Analyses of land use and land cover change dynamics using GIS and remote sensing during 1984 and 2015 in the Beressa Watershed Northern Central Highland of Ethiopia
+   Authors: , , 
+   Date: 2016
+
+58. A comparative study of image change detection algorithms in MATLAB
+   Authors: , 
+   Date: 2015
+
+59. Accuracy assessment curves for satellite-based change detection
+   Authors: , 
+   Date: 2000
+
+60. Analysis of land use/cover changes and urban expansion of Nairobi city using remote sensing and GIS
+   Authors: , 
+   Date: 2007
+
+61. Land use/cover change detection and analysis for Dzalanyama forest reserve
+   Authors: , 
+   Date: 2011
+
+62. Land use/land cover changes in the coastal zone of Ban Don Bay, Thailand using Landsat 5 TM data
+   Authors: , 
+   Date: 2008
+
+63. Agenda 21. United Nations Conference on Environment & Development Rio de Janeiro
+   Authors: 
+   Date: 1992
+
+64. Detecting forest canopy change due to insect activity using Landsat MSS
+   Authors: 
+   Date: 1983
+
+65. Estimation of regional surface resistance to evapotranspiration from NDVI and thermal-IR AVHRR data
+   Authors: , 
+   Date: 1989
+
+66. Analysis of land cover changes and landscape fragmentation in Batanghari regency, Jambi province
+   Authors: , , 
+   Date: 2016
+
+67. GIS and remote sensing-based analysis of the impacts of land use/land cover change (LULCC) on the environmental sustainability of Ekiti State, southwestern
+   Authors: , , , 
+   Date: 2018
+
+68. Change detection of land cover and land use using remote sensing and GIS: a case study in Kemer
+   Authors: , , , 
+   Date: 2009
+
+69. Assessment of land cover change hotspots in Gulf of Kachchh, India using multi-temporal remote sensing data and GIS
+   Authors: , , , , 
+   Date: 2016
+
+70. Impacts of urbanization on land use/cover changes and its probable implications on local climate and groundwater level
+   Authors: , , , 
+   Date: 2018
+
+71. Quantifying processes of land-cover change by remote sensing: resettlement and rapid land-cover changes in south-eastern Zambia
+   Authors: , , 
+   Date: 2010
+
+72. The evaluation of the spatial accuracy of computer classification(for remote sensing)
+   Authors: 
+   Date: 1983
+
+73. Land-use futures in the shared socio-economic pathways
+   Authors: , , , , , , 
+   Date: 2017
+
+74. Land-use/cover change in Coimbatore urban area (Tamil Nadu, India)-a remote sensing and GIS-based study
+   Authors: , , , 
+   Date: 2018. 2010
+
+75. Comparison of pixel-based and object-oriented classification methods for extracting built-up areas in arid zone
+   Authors: , , 
+   Date: 2007
+
+76. Assessment of land use/land cover change in the north-West district of Delhi using remote sensing and GIS techniques
+   Authors: , , , 
+   Date: 2012
+
+77. Monitoring land use/cover change using remote sensing and GIS techniques: a case study of Hawalbagh block, district Almora
+   Authors: , 
+   Date: 2015
+
+78. 
+   Authors: , , , , , , 
+   Date: 2000
+
+79. Land-use and land-cover dynamics in response to changes in climatic, biological and socio-political forces: the case of southwestern Ethiopia
+
+80. A coefficient of agreement as a measure of thematic classification accuracy
+   Authors: , 
+   Date: 1986
+
+81. Global biodiversity scenarios for the year 2100
+   Authors: , , , , , , 
+   Date: 2000
+
+82. On the possibility of using CORONA and Landsat data for evaluating and mapping long-term LULC: case study of Iraqi Kurdistan
+   Authors: , , 
+   Date: 2018
+
+83. Monitoring land use changes associated with urbanization: an object based image analysis approach
+   Authors: , 
+   Date: 2017
+
+84. Assessing flood induced landcover changes using remote sensing and fuzzy approach in eastern Gujarat (India)
+   Authors: , , , , , 
+   Date: 2016. 2011
+
+85. The application of remote sensing in the extraction of urban land use changes
+   Authors: , , 
+   Date: 2011
+
+86. Tropical forest monitoring using digital Landsat data in Northeastern India
+   Authors: 
+   Date: 1984
+
+87. Review Article Digital change detection techniques using remotelysensed data
+   Authors: 
+   Date: 1989
+
+88. Unsupervised change detection in remote sensing images using fusion of spectral and statistical indices
+   Authors: , 
+   Date: 2018
+
+89. Conservation: tactics for a constant crisis
+   Authors: 
+   Date: 1991
+
+90. Land use/cover change detection of Tiruchirapalli city, India, using integrated remote sensing and GIS tools
+   Authors: , , 
+   Date: 2012
+
+91. Soft computing techniques for land use and land cover monitoring with multispectral remote sensing images: a review
+   Authors: , 
+   Date: 2019
+
+92. Remote sensing based analysis of land use/land cover dynamics in Takula block, Almora district (Uttarakhand)
+   Authors: , 
+   Date: 2017
+
+93. Red and photographic infrared linear combinations for monitoring vegetation
+   Authors: 
+   Date: 1979
+
+94. Median change vector analysis algorithm for land-use land-cover change detection from remote-sensing data
+   Authors: , , 
+   Date: 2012
+
+95. Assessment of some remote sensing techniques used to detect land use/land cover changes in South-East Transilvania
+   Authors: 
+   Date: 2014
+
+96. A remote sensing?GIS evaluation of urban expansion and its impact on surface temperature in the Zhujiang Delta, China
+   Authors: 
+   Date: 2010
+
+97. Assessing the effects of humaninduced land degradation in the former homelands of northern South Africa with a 1 km AVHRR NDVI time-series
+   Authors: , , , 
+   Date: 2004
+
+98. Change detection using change vector analysis from landsat TM images in Wuhan
+   Authors: , 
+   Date: 2011
+
+99. Monitoring coastal zone land use and land cover changes of Abu Dhabi using remote sensing
+   Authors: , 
+   Date: 2006
+
+100. Using satellite imagery and GIS for land-use and land-cover change mapping in an estuarine watershed
+   Authors: , 
+   Date: 2007
+
+101. Land cover changed object detection in remote sensing data with medium spatial resolution
+   Authors: , , 
+   Date: 2015
+
+102. Modeling land use/land cover change using remote sensing and geographic information systems: case study of the Seyhan Basin
+   Authors: , , 
+   Date: 2018
+
+103. Monitoring desertification by remote sensing using the Tasselled Cap transform for long-term change detection
+   Authors: , , 
+   Date: 2016
+
+104. Remote Sensing based multi-temporal land cover classification and change detection in northwestern Ethiopia
+   Authors: , 
+   Date: 2017
+
+105. Trajectory analysis of land cover change in arid environment of China
+   Authors: , , 
+   Date: 2007
+
+106. Remote sensing change detection and process analysis of long-term land use change and human impacts
+   Authors: , , 
+   Date: 2011
+

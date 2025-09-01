@@ -1,0 +1,285 @@
+================================================================================
+TITLE: Investigating land use land cover changes and their effects on land surface temperature and urban heat islands in Sharqiyah Governorate, Egypt
+================================================================================
+
+AUTHORS:
+- Asmaa Fahmy
+- Mohamed Abdelfatah
+- Gamal El-Fiky
+
+ABSTRACT:
+The Urban Heat Island (UHI) issue is a result of the undesirable effects of urban growth on the environment, such as temperature rises and landscape changes that cause environmental dangers. Thus, the purpose of this research is to investigate the effect of Land Use Land Cover (LULC) change on Land Surface Temperature (LST) and then study UHI in Sharqiyah from 2001 to 2022 using remote sensing data. This data was collected from the Landsat satellite and Moderate Resolution Imaging Spectroradiometer (MODIS) 11A Thermal sensors. A Mono-Window Algorithm was used on Landsat 8 and 9 data to estimate the LST. To determine the LST and UHI, the thermal band was utilized. LULC maps were created using the Support Vector Machine (SVM) classification technique. To evaluate various LULC indices in the Sharqiyah and find their correlation with LST, the spectral indices Normalized Difference Vegetation Index (NDVI), Normalized Difference Bare Land Index (NDBaI), and Normalized Difference Built-up Index (NDBI) were obtained from the processing of multispectral Landsat data. To check data sources, air temperature measurements for Sharqiyah were also acquired. The results show that urban expansion has increased in a noticeable trend. The built-up area increased by 18.9% during the research phase, and the region's mean LST increased within 3.98℃. The UHI threshold temperature increased by 4.27℃. This research is critical for Planning Engineers and environmental scientists to realize LULC variations effects on LST and to suggest suitable political steps to regulate urbanization in Sharqiyah Governorate.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+One of the main important environmental factors influencing our ecosystems and daily lives is the climate 
+Using data from satellites with a medium spatial resolution, such as Landsat Thematic Mapper (TM), Enhanced Thematic Map-per+ (ETM + ), Operational Land Imager/Thermal Infrared Sensor (OLI/TIRS), and MODIS, a wide range of research on the SUHI phenomenon is carried out. Thermal wavelength satellite sensors can provide spatially complete and time-synchronized coverage of an urban area; in contrast to static stations and vehicle traversal, real higher and lower temperatures across a city region can be achieved 
+Also, since the mid-1990 s, several spectral indices, such as, the Normalized Difference Vegetation Index (NDVI), the Normalized Difference Built-up Index (NDBI), and the Normalized Difference Bare Land Index (NDBaI) have been able to be employed for precise and rapid classification from satellite data 
+In Egypt, several types of research were performed to better investigate the UHI and its harmful effects on the environment. 2011, and 2022, using Landsat TM and OLI data. To satisfy the purpose of the study, the following data and techniques were employed, and represented as a flowchart as shown in Fig. 
+
+## Materials and methods ##
+
+
+## Study area ##
+Sharqiyah Governorate is Egypt's third most popular governorate, covering about 4818 km 2 . Its capital is Zagazig, and the 10th of Ramadan City is one of its largest industrial cities. It is placed in the country's northern region and on the eastern edge of the Nile Delta, between longitudes 31°15 0 and 32°15 0 E, and latitudes 30°10 0 and 31°5 0 N, as shown in Fig. 
+
+## Data sources ##
+In the research, Satellite Landsat imagery TM, ETM+, and OLI/ TIRS for each study year 
+
+## LULC classification ##
+The bands of Landsat 8 were combined to create a multi-band image, which was subsequently processed to a resolution of 30 m and mapped to the WGS 84/UTM zone 36 N used ArcGIS software. LULC classification means automatically grouping each of the image's cells into different classes of land cover. Different classification strategies have been used in earlier research to classify satellite imagery cells into numerous LULC classes utilizing multi-temporal Landsat satellite imagery 
+For the accuracy assessment, sample points of Sharqiyah were chosen using an irregular stratified selection strategy. For all years, several samples were utilized to correlate classified imagery cells with reference points. For each classified image, about 400 earthpoints were collected to examine the precision of the LC classifica- tions. The past Google Earth information was used to get the actual points for the various land cover classes. So, some statistical strategies were used: user's accuracy (UA), which focuses on earth's reality probability, and producer's accuracy (PA), which focuses on classification fitness. Based on these strategies, the overall accuracy (OA) was estimated. Then it was determined using kappa statistics (K), which is a non-parametric indicator developed to assess the degree of similarity between producer and user values. Past research indicated that the required accuracy rate for LULC classification should be set at 80 % (Rousta et al. 2018).
+
+## Extraction of different LULC indices ##
+NDVI is the most commonly used criterion for detecting vegetation. NDBaI was used to determine the amount of bare land on the land surface. NDBI is a further important urban climate indication for ecological observation. These three indices can be applied to categorize different types of LULC (Table 
+
+## Land surface temperature determination ##
+In the study of the earth's surface dynamics, LST is a significant issue. The Mono-Window Algorithm (MWA) has been used in this paper to extract LST from Landsat satellite data 
+Initially, Eq. ( 
+Where, L k = sensor radiance, L maxk = maximum radiance of band 6, L mink = minimum radiance of band 6, Q Cal = quantized calibrated pixel value in DN, Q Cal max = max quantized calibrated pixel value in DN, and Q Cal min = min quantized calibrated pixel value in DN.
+Where, M L = radiance multiplicative scaling factor, A L = radiance additive scaling factor for band10, Q Cal = pixel value in DN. Eq (3) is applied to adjust for local sun elevation angles for band 1 to band 9, and LST is estimated using band 10 (10.6 lm À11.19 lm) of the Landsat 8 thermal data
+h S is scene-center solar elevation angle in degrees, Following the DN transformation, Eq. ( 
+Where, K 1 & K 2 are the calibration constants of thermal bands, as shown in Table 
+Then, the LST is determined using Eq. ( 
+Where k = is the central band wavelength of emitted radiance, BT = Brightness temperature, and e = emissivity (evaluated by using Eq. ( 
+Where Pv = proportion of vegetation evaluated by using Eq. ( 
+Where NDVI was already estimated. The map of LST distribution over Sharqiyah was created by classifying temperatures into suitable ranges and assigning them colors.
+
+## Mapping UHI, Non-UHI ##
+The following equations were used to determine UHI and non-UHI regions 
+Where l is the mean LST and r is the standard deviation (STD) of LST in Sharqiyah, respectively. Using (Eq. ( 
+
+## Results and discussion ##
+
+
+## Land use land cover classification ##
+For this research, SVM was utilized to classify the LULC. The LULC of Sharqiyah is divided into four classes (vegetation, builtup, bare land, and water bodies) based on Landsat pictures for  an increase in the built-up area; furthermore, there is a decline in the vegetation cover. Uncontrolled urbanization due to increasing population, migration to cities, and infrastructure investment depletes natural resources like agricultural areas 
+Based on the error matrix used to evaluate the LU/LC maps' quality, the overall accuracy for the years 2001, 2011, and 2022 were 92.53 %, 92 %, and 92.69 %, respectively (Table 
+According to Table 
+
+## Land surface temperature over different land uses and land covers ##
+As Sharqiyah Governorate is largely covered by vegetation due to its status as an agricultural governorate, the vegetation and water body areas on the map have the least LST, as shown in Fig. 
+The statistics of the LST of 2001 show that the mean temperature for the built-up areas in Sharqiyah was 35.28℃. From Fig. 
+LST of the vegetation class increased from 2001 to 2011 and showed a significant increase by 2022, predominantly falling within the temperature range of 30-35 °C, with some small patches observed in the range of 35-40 °C as shown in Fig. 
+
+## Spatiotemporal distribution of LULC indices ##
+The LULC index maps of Sharqiyah are represented in Fig. 
+
+## Relationship between LST and LULC indices ##
+Global population growth is one of the reasons for increasing stress on natural environmental supplies and extreme growth in LST, which has a direct impact on LULC properties 
+
+## Urban Heat Island distribution ##
+The study's results found that UHI spatial distribution followed virtually the same pattern during the study period. Throughout the study period, Sharqiyah's south part has the highest density of UHI areas, as shown Fig. 
+
+## Verification of LST ##
+The LST data must be validated to confirm the validity of the outcomes. We collected data produced from MODIS images. Some difficulties with this form of validation deal with unreliability in accuracy, including the correct measurement of the imagery. To resolve these issues, the NWP for air temperature measurements was utilized. NWP (ERA5, the most recent edition of the Copernicus Climate Change Service's atmospheric reanalysis of global climate) obtained the air temperature values. As a result, the datasets Landsat and MODIS can be used as valid guidelines for the air temper-  
+
+## Conclusion ##
+The LST is an essential issue in the climate mechanism on Earth. Landsat-5, Landsat-7, Landsat-8, and Landsat-9 images were collected from the USGS. Using data from Landsat, this research evaluates the LULC and LST during the study period. Urban development and climate variation both lead to a rise in land surface temperature. When we compare vegetation and built-up regions, the built-up area has higher LST values. Landsat imagery data analysis has been researched to estimate the extent of the UHI-impacted region from 2001 to 2022 and the impact of LULC variations on the LST. The LST grew quickly, especially in urban areas and desert/bare land. The utilization of Landsat with the MWA technique produced acceptable results; however, outliers occurred as an outcome of the preprocessing step. Over the study period, the built-up regions rose considerably (10.22 % to 29.12 %). In contrast, vegetation reduced substantially from 66.15 % to 53.39 %, and bare land decreased by 5.63 %. Variations in LULC have also impacted the allocation of land cover regions over time, especially the transition of land cover classes from previously vegetated land to urban zones or towards more bare land. As a result, the distribution of UHI areas has increased over time, while mean LST has risen rapidly with decreasing waterbodies and vegetation. The major goal of this research was to identify variations in LULC and land surface temperature caused by development in Sharqiyah. It was also shown that vegetation and LST have a negative correlation. In contrast, built-up regions and bare land have a positive correlation with LST. The study's findings give a complete knowledge of the causes of growing LST, which are mostly related to increased urbanization and, as a result, the spread of agricultural land encroachment. However, preventing urbanization without a shift in high-level management decisions is difficult. There were several challenges observed when doing the research. For instance, satellite images were collected at different times. If these images had been acquired at the same time, the results would have been more dependable and accurate. An important limitation of this study is that results may be affected when there are partially cloudy conditions, as clouds can cause abnormal values in the data. If the satellite data's geospatial accuracy had been higher, the LC classification would be more accurate. This research has significant implications for future environmental science research. To further investigate the impact of other environmental factors on LULC changes and LST, such as precipitation, humidity, and wind patterns, policymakers and urban planners can make more informed decisions to manage urban growth and minimize its negative impact on the environment and human health. Spectral indices such as Enhanced Vegetation Index (EVI), Soil Adjusted Vegetation Index (SAVI), and Normalized Difference Moisture Index (NDMI) can be estimated from surface reflectance data. Advanced remote sensing technologies, such as Sentinel data and radar, can be used to detect and monitor urban areas more accurately, particularly in rapidly urbanizing areas like Sharqiyah, to identify trends and patterns over time with greater accuracy and inform policy decisions to mitigate UHI areas and the negative impacts of urbanization.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Analysis of Urban Heat Island Characteristics and Mitigation Strategies for Eight Arid and Semi-Arid Gulf Region Cities
+   Authors: 
+   Date: 2021
+
+2. Assessment of Urban Heat Island Based on the Relationship between Land Surface Temperature and Land Use/Land Cover in Tehran
+   Authors: , , , 
+   Date: 2016
+
+3. Remote Sensing Image-Based Analysis of the Relationship between Urban Heat Island and Land Use/Cover Changes
+   Authors: , , , 
+   Date: 2006
+
+4. Improving Accuracy of Land Surface Temperature Prediction Model Based on Deep-Learning
+   Authors: , 
+   Date: 2020
+
+5. Impervious Surface Growth and Its Inter-Relationship with Vegetation Cover and Land Surface Temperature in Peri-Urban Areas of Delhi
+   Authors: , , , 
+   Date: 2021. March
+
+6. Change Detection of Urban Heat Islands and Some Related Parameters Using Multi-Temporal Landsat Images; a Case Study for Cairo City
+   Authors: , 
+   Date: 2014
+
+7. Qualitative Assessment of Groundwater Quality Based on Land Use Spectral Retrieved Indices: Case Study Sohag Governorate
+   Authors: , 
+   Date: 2018. April
+
+8. Spatial Variability of Urban Heat Islands in Cairo City, Egypt Using Time Series of Landsat Satellite Images
+   Authors: , , 
+   Date: 2016
+
+9. Environmental Monitoring of Spatiotemporal Change in Land Use/Land Cover and Its Impact on Land Surface Temperature in El-Fayoum Governorate
+   Authors: , 
+   Date: 2017. November
+
+10. Mitigating Urban Heat Island Effects in Urban Environments: Strategies and Tools
+   Authors: , , , 
+   Date: 2023
+
+11. Examining Urban Heat Island Relations to Land Use and Air Pollution: Multiple Endmember Spectral Mixture Analysis for Thermal Remote Sensing
+   Authors: , 
+   Date: 2013
+
+12. Responses of Urban Heat Island in Atlanta to Different Land-Use Scenarios
+   Authors: , 
+   Date: 2018
+
+13. Dynamic Analysis and Ecological Evaluation of Urban Heat Islands in Raipur City
+   Authors: , 
+   Date: 2017. August
+
+14. Analytical Study of Land Surface Temperature with NDVI and NDBI Using Landsat 8 OLI and TIRS Data in Florence and Naples City, Italy
+   Authors: , , , 
+   Date: 2018
+
+15. Climate Change and Growing Megacities: Hazards and Vulnerability
+   Authors: , , , , , 
+   Date: 2017
+
+16. Revision of the Single-Channel Algorithm for Land Surface Temperature Retrieval from Landsat Thermal-Infrared Data
+   Authors: , , , , , 
+   Date: 2009
+
+17. Simulation of Surface Urban Heat Islands under 'IDEAL'Conditions at Night Part 1: Theory and Tests against Field Data
+   Authors: , , , , , 
+   Date: 1991
+
+18. Global Temperature Variations between 1861 and 1984
+   Authors: , , 
+   Date: 1986
+
+19. 
+   Authors: , , , , , , , , 
+   Date: 2002
+
+20. 2021a. ''Prediction of Seasonal Urban Thermal Field Variance Index Using Machine Learning Algorithms in Cumilla, Bangladesh
+   Authors: , , , , , , , 
+   Date: October 2020
+
+21. 2021b. ''Prediction of Seasonal Urban Thermal Field Variance Index Using Machine Learning Algorithms in Cumilla, Bangladesh
+   Authors: , , , , , , , 
+   Date: January
+
+22. Assessment and Prediction of Seasonal Land Surface Temperature Change Using Multi-Temporal Landsat Images and Their Impacts on Agricultural Yields in Rajshahi
+   Authors: , , , , , , , 
+   Date: 2021
+
+23. Urban Heat Island Analysis Using the Landsat 8 Satellite Data: A Case Study in Skopje, Macedonia
+   Authors: , , 
+   Date: 2018
+
+24. An Assessment of the Accuracy of MODIS Land Surface Temperature over Egypt Using Ground-Based Measurements
+   Authors: , , , , 
+   Date: 2019
+
+25. A Support Vector Machine for Landslide Susceptibility Mapping in Gangwon Province
+   Authors: , , 
+   Date: 2017
+
+26. Quantifying Spatial-Temporal Pattern of Urban Heat Island in Beijing: An Improved Assessment Using Land Surface Temperature (LST) Time Series Observations from LANDSAT, MODIS, and Chinese New Satellite GaoFen-1
+   Authors: , , , , , 
+   Date: 2016
+
+27. A GIS Approach to Land-Use Change Dynamics Detection
+   Authors: , 
+   Date: 1990
+
+28. Urban Heat Island in Summer of Nanjing Based on TM Data
+   Authors: , , , , 
+   Date: 2009. 2009
+
+29. Evaluation of Collection-6 MODIS Land Surface Temperature Product Using Multi-Year Ground Measurements in an Arid Area of Northwest China
+   Authors: , , , 
+   Date: 2018
+
+30. Impact of Anthropogenic Activities on Urban Heat Islands in Major Cities of El-Minya Governorate
+   Authors: , , , 
+   Date: 2022
+
+31. Impact of Urbanization on Land Use/Land Covers Change Using Geo-Spatial Techniques
+   Authors: , 
+   Date: 2014
+
+32. ERA5-Land Hourly Data from 1981 to Present, Copernicus Climate Change Service (C3S) Climate Data Store (CDS)[Data Set]
+   Authors: 
+   Date: 2019
+
+33. A Quantitative Approach for Analyzing the Relationship between Urban Heat Islands and Land Cover
+   Authors: , 
+   Date: 2012
+
+34. An Assessment of Satellite Remotely-Sensed Land Cover Parameters in Quantitatively Describing the Climatic Effect of Urbanization
+   Authors: , , 
+   Date: 1998
+
+35. Detection of Land Use and Land Cover Change and Land Surface Temperature in English Bazar Urban Centre
+   Authors: , 
+   Date: 2017
+
+36. A Mono-Window Algorithm for Retrieving Land Surface Temperature from Landsat TM Data and Its Application to the Israel-Egypt Border Region
+   Authors: , , 
+   Date: 2001
+
+37. Labib Intisar, and Masfiq Anzum Arnob. 2020. ''In Depth-Analysis of Urban Resident-Satisfaction Level of Mirpur
+   Authors: , , , , 
+   Date: December
+
+38. Modelling Landscape Dynamics with LST in Protected Areas of Western Ghats
+   Authors: , , 
+   Date: 2018
+
+39. Monitoring and Modeling of Spatiotemporal Urban Expansion and Land-Use/Land-Cover Change Using Integrated Markov Chain Cellular Automata Model
+   Authors: , , , , , , , , , , , , , , 
+   Date: 2017. 2018. 1988-2018
+
+40. Landsat-8: Science and Product Vision for Terrestrial Global Change Research
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+41. Green and Cool Roofs to Mitigate Urban Heat Island Effects in the Chicago Metropolitan Area: Evaluation with a Regional Climate Model
+   Authors: , , , , , 
+   Date: 2016
+
+42. The Application of Remote Sensing in the Extraction of Urban Iand Use Changes
+   Authors: , , 
+   Date: 2011
+
+43. Red and Photographic Infrared l, Lnear Combinations for Monitoring Vegetation
+   Authors: 
+   Date: 1979
+
+44. 
+   Authors: , , , 
+   Date: 2023
+
+45. Sentinel-2A MSI and Landsat 8 OLI Provide Data Continuity for Geological Remote Sensing
+   Authors: , , , , , 
+   Date: 2016. 2016
+
+46. Use of Normalized Difference Built-up Index in Automatically Mapping Urban Areas from TM Imagery
+   Authors: , , 
+   Date: 2003
+
+47. Capturing Urban Heat Island Formation in a Subtropical City of China Based on Landsat Images: Implications for Sustainable Urban Development
+   Authors: , , , 
+   Date: 2021
+
+48. Use of Normalized Difference Bareness Index in Quickly Mapping Bare Areas from TM/ETM+
+   Authors: , 
+   Date: 2005. August
+
+49. Estimation of Daily Maximum and Minimum Air Temperature Using MODIS Land Surface Temperature Products
+   Authors: , , 
+   Date: 2013
+
+50. 
+   Authors: , , , 
+   Date: 2023
+

@@ -1,0 +1,95 @@
+2025-05-21 11:11:03,466 - INFO - Loading NER output from input.json
+2025-05-21 11:11:03,468 - ERROR - Error loading NER output: [Errno 2] No such file or directory: 'input.json'
+2025-05-21 11:11:52,741 - INFO - Loading NER output from extracted_entities_structured.json
+2025-05-21 11:11:52,778 - INFO - Loaded 1986 sentences with entities
+2025-05-21 11:11:52,781 - INFO - Processing all 1986 sentences
+2025-05-21 11:11:52,782 - INFO - Loading LLaMA 3 tokenizer: meta-llama/Meta-Llama-3-8B
+2025-05-21 11:11:53,031 - ERROR - Error setting up LLaMA 3 model: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Meta-Llama-3-8B.
+401 Client Error. (Request ID: Root=1-682d98d8-09c823793bc41d3b0b9328bc;0a5df354-f8fd-497e-b98e-18be708bbe83)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Meta-Llama-3-8B/resolve/main/config.json.
+Access to model meta-llama/Meta-Llama-3-8B is restricted. You must have access to it and be authenticated to access it. Please log in.
+2025-05-21 11:12:38,677 - INFO - Loading NER output from extracted_entities_structured.json
+2025-05-21 11:12:38,711 - INFO - Loaded 1986 sentences with entities
+2025-05-21 11:12:38,714 - INFO - Processing all 1986 sentences
+2025-05-21 11:12:38,715 - INFO - Loading LLaMA 3 tokenizer: meta-llama/Meta-Llama-3-8B
+2025-05-21 11:12:38,938 - ERROR - Error setting up LLaMA 3 model: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Meta-Llama-3-8B.
+401 Client Error. (Request ID: Root=1-682d9906-7950873b27e49823549d5aec;ef4e49b8-ecb0-4549-b526-0ca22815aa02)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Meta-Llama-3-8B/resolve/main/config.json.
+Access to model meta-llama/Meta-Llama-3-8B is restricted. You must have access to it and be authenticated to access it. Please log in.
+2025-05-21 11:43:07,847 - INFO - Loading NER output from extracted_entities_structured.json
+2025-05-21 11:43:07,876 - INFO - Loaded 1986 sentences with entities
+2025-05-21 11:43:07,877 - INFO - Processing all 1986 sentences
+2025-05-21 11:43:07,878 - INFO - Loading LLaMA 3 tokenizer: meta-llama/Meta-Llama-3-8B
+2025-05-21 11:43:08,643 - INFO - Loading LLaMA 3 model: meta-llama/Meta-Llama-3-8B
+2025-05-21 11:43:09,856 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-21 11:44:27,746 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-21 11:45:40,533 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-21 11:46:24,970 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-05-21 11:46:49,240 - ERROR - Error setting up LLaMA 3 model: CUDA out of memory. Tried to allocate 112.00 MiB. GPU 0 has a total capacity of 32.00 GiB of which 150.54 MiB is free. Including non-PyTorch memory, this process has 29.71 GiB memory in use. Of the allocated memory 28.54 GiB is allocated by PyTorch, and 266.87 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+2025-05-21 12:00:08,415 - INFO - Loading NER output from extracted_entities_structured.json
+2025-05-21 12:00:08,453 - INFO - Loaded 1986 sentences with entities
+2025-05-21 12:00:08,457 - INFO - Processing first 100 sentences
+2025-05-21 12:00:08,458 - INFO - Loading LLaMA 3 tokenizer: meta-llama/Meta-Llama-3-8B-Instruct
+2025-05-21 12:00:09,079 - INFO - Using 4-bit quantization
+2025-05-21 12:00:09,084 - INFO - Loading LLaMA 3 model: meta-llama/Meta-Llama-3-8B-Instruct
+2025-05-21 12:00:22,500 - INFO - LLaMA 3 model loaded successfully on cuda
+2025-05-21 12:02:16,329 - INFO - Loading NER output from extracted_entities_structured.json
+2025-05-21 12:02:16,362 - INFO - Loaded 1986 sentences with entities
+2025-05-21 12:02:16,365 - INFO - Processing first 100 sentences
+2025-05-21 12:02:16,368 - INFO - Loading LLaMA 3 tokenizer: meta-llama/Meta-Llama-3-8B-Instruct
+2025-05-21 12:02:16,986 - INFO - Using 4-bit quantization
+2025-05-21 12:02:16,989 - INFO - Loading LLaMA 3 model: meta-llama/Meta-Llama-3-8B-Instruct
+2025-05-21 12:02:25,753 - INFO - LLaMA 3 model loaded successfully on cuda
+2025-05-21 12:05:29,919 - INFO - Loading NER output from extracted_entities_structured.json
+2025-05-21 12:05:29,952 - INFO - Loaded 1986 sentences with entities
+2025-05-21 12:05:29,956 - INFO - Processing first 100 sentences
+2025-05-21 12:05:29,957 - INFO - Loading LLaMA 3 tokenizer: meta-llama/Meta-Llama-3-8B-Instruct
+2025-05-21 12:05:30,614 - INFO - Using 4-bit quantization
+2025-05-21 12:05:30,619 - INFO - Loading LLaMA 3 model: meta-llama/Meta-Llama-3-8B-Instruct
+2025-05-21 12:05:39,048 - INFO - LLaMA 3 model loaded successfully on cuda
+2025-05-21 12:07:55,707 - INFO - Loading NER output from extracted_entities_structured.json
+2025-05-21 12:07:55,744 - INFO - Loaded 1986 sentences with entities
+2025-05-21 12:07:55,747 - INFO - Processing first 100 sentences
+2025-05-21 12:07:55,748 - INFO - Loading LLaMA 3 tokenizer: meta-llama/Meta-Llama-3-8B-Instruct
+2025-05-21 12:07:56,398 - INFO - Using 4-bit quantization
+2025-05-21 12:07:56,402 - INFO - Loading LLaMA 3 model: meta-llama/Meta-Llama-3-8B-Instruct
+2025-05-21 12:08:04,524 - INFO - LLaMA 3 model loaded successfully on cuda
+2025-05-21 12:09:06,685 - INFO - Loading NER output from extracted_entities_structured.json
+2025-05-21 12:09:06,719 - INFO - Loaded 1986 sentences with entities
+2025-05-21 12:09:06,722 - INFO - Processing first 5 sentences
+2025-05-21 12:09:06,723 - INFO - Loading LLaMA 3 tokenizer: meta-llama/Meta-Llama-3-8B
+2025-05-21 12:09:07,342 - INFO - Loading LLaMA 3 model: meta-llama/Meta-Llama-3-8B
+2025-05-21 12:09:15,578 - INFO - LLaMA 3 model loaded successfully on cuda
+2025-05-21 12:10:13,585 - INFO - Loading NER output from extracted_entities_structured.json
+2025-05-21 12:10:13,621 - INFO - Loaded 1986 sentences with entities
+2025-05-21 12:10:13,624 - INFO - Processing first 5 sentences
+2025-05-21 12:10:13,625 - INFO - Loading LLaMA 3 tokenizer: meta-llama/Meta-Llama-3-8B
+2025-05-21 12:10:14,312 - INFO - Loading LLaMA 3 model: meta-llama/Meta-Llama-3-8B
+2025-05-21 12:10:21,166 - INFO - LLaMA 3 model loaded successfully on cuda
+2025-05-21 12:11:06,429 - INFO - Loading NER output from extracted_entities_structured.json
+2025-05-21 12:11:06,457 - INFO - Loaded 1986 sentences with entities
+2025-05-21 12:11:06,460 - INFO - Processing first 100 sentences
+2025-05-21 12:11:06,461 - INFO - Loading LLaMA 3 tokenizer: meta-llama/Meta-Llama-3-8B-Instruct
+2025-05-21 12:11:07,061 - INFO - Using 4-bit quantization
+2025-05-21 12:11:07,064 - INFO - Loading LLaMA 3 model: meta-llama/Meta-Llama-3-8B-Instruct
+2025-05-21 12:11:14,415 - INFO - LLaMA 3 model loaded successfully on cuda
+2025-05-21 12:18:36,040 - INFO - Loading LLaMA 3 tokenizer: meta-llama/Meta-Llama-3-8B
+2025-05-21 12:18:36,680 - INFO - Using 4-bit quantization
+2025-05-21 12:18:36,684 - INFO - Loading LLaMA 3 model: meta-llama/Meta-Llama-3-8B
+2025-05-21 12:18:45,561 - INFO - LLaMA 3 model loaded successfully on cuda
+2025-05-21 12:18:45,564 - INFO - Loading NER output from extracted_entities_structured.json
+2025-05-21 12:18:45,586 - INFO - Loaded 1986 sentences with entities
+2025-05-21 12:18:45,588 - INFO - Processing all 1986 sentences
+2025-05-21 12:22:17,458 - INFO - Starting LULC event extraction with LLaMA 3
+2025-05-21 17:09:31,887 - INFO - Loading LLaMA 3 tokenizer: meta-llama/Meta-Llama-3-8B
+2025-05-21 17:09:32,515 - INFO - Using 4-bit quantization
+2025-05-21 17:09:32,519 - INFO - Loading LLaMA 3 model: meta-llama/Meta-Llama-3-8B
+2025-05-21 17:09:42,093 - INFO - LLaMA 3 model loaded successfully on cuda
+2025-05-21 17:09:42,148 - INFO - Loading NER output from extracted_entities_structured.json
+2025-05-21 17:09:42,171 - INFO - Loaded 1986 sentences with entities
+2025-05-21 17:09:42,172 - INFO - Processing all 1986 sentences
+2025-05-21 17:12:35,777 - INFO - Starting LULC event extraction with LLaMA 3

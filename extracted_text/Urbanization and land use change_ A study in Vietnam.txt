@@ -1,0 +1,241 @@
+================================================================================
+TITLE: Environmental & Socio-economic Studies
+================================================================================
+
+AUTHORS:
+- Tran Nguyen
+- Tuan
+
+ABSTRACT:
+Land-use change is a human process aimed at transforming the natural landscape and emphasizing the role and function of land for socio-economic activities. However, we do not know how the land transition in Vietnam has been proceeding recently. Thus, this article aims to examine the current urbanization process of land conversion in Vietnam. To explore the current situation and recent change of land use, the author analyzed standardized databases and maps from reports of the Ministry of Natural Resources and Environment of Vietnam (MoNRE), the General Statistics Office of Vietnam (GSO), and the land cover map of Japan Aerospace Exploration Agency (JAXA). Research results show that the land transition in Vietnam has been similar to the world trend. The highest land conversion rate occurs in the North Central and Central Coast regions, but conversion of agricultural land for urbanization is mainly in the Red River Delta and Southeast. The study also noted some negative socio-economic impacts of land conversion on the lives of suburban residents.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+According to the literature, land use is a landbased feature of what can be built and what the land can be used for. It identifies what types of communities, environments, or settlements can be used for a particular kind of ground (ABARES, 2020). Land use is also a manifestation of various human activities to exploit the landscape. Therefore, landuse change is seen as a human activity to change the natural landscape and emphasize the role and function of land for socio-economic activities 
+Urbanization is a socio-economic process manifested by a rapid increase in the number and size of urban population characteristics. It is also defined as urban expansion, as the process of concentrating the population into cities, or as the rapid formation of urban population points based on production and life development 
+Scientists also examine and observe urbanization from many different angles 
+
+## Land use change in the World: a literature review ##
+Land area of the world is estimated at 13 billion hectares, of which agricultural land accounts for 37.6%, equivalent to 4.9 billion hectares 
+Built-up land occupied a relatively small area of about 1-3% in 2005, but it is expected to increase to about 260 to 420 million hectares (about 4-5%) by 2050 (ELECTRIS ET AL., 2009). As for urban land, this area could expand from 40 to 143 million hectares in about 45 years, from 2007 to 2050 (SETO ET AL., 2010). The annual increase in built-up land in developing countries is about 3.6%, while 2.9% is the average increase in industrial countries. The Pacific and Southeast Asia regions have witnessed considerable land conversion rates from 1990 to 2000, at 7.2% and 6.4%, respectively (ANGEL 
+Along with labour and capital, the land is a crucial factor for production in classical economics, and land use is considered the agricultural economy's backbone 
+Although land-use conversion is essential to promote social progress and economic development, it also has many undesirable effects. These impacts are divided into three main categories: displacement and loss of housing, loss of livelihoods, and environmental pollution thus degradation with 
+
+## Methodology ##
+
+
+## Research area ##
+Vietnam is the centre of Southeast Asia and is located on the eastern edge of the Indo-Chinese peninsula. Vietnam's land border is 4,639 km long, bordering the South China Sea (in Vietnam known as the East Sea) and the Gulf of Thailand. In the north, Vietnam borders China; and in the west Laos and Cambodia. The length of the country from north to south is 1,650 km, while the narrowest position, east to west, is nearly 50 km. It is a tropical country, with most of the area being hilly (accounting for half of the territory), and where the terrain is mainly low mountains. With a coastline of 3,260 km, Vietnam is among those countries with a high coastline index compared with its territorial area. Accordingly, on average, there is 1 km of coastline for every 10 km 2 of land, six times higher than the world average. With an area stretching from north to south, Vietnam's zoning also goes through different historical periods.  
+
+## Data source ##
+As this study's primary purpose was to evaluate land-use change, the author had to combine many different methods and data sources for comparison. First, raw land cover data were collected from the JAXA. These maps were computed in 2007 for all three regions, 2015 for the North (including Red River Delta and Northen Midland and Mountains), and 2017 for the Central and South regions (the remaining regions). While the North's area of spatial resolution is 15 m, this figure is 10 m for the other two regions. Overall accuracy is above 90% (kappa factor 0.9). This map data has a higher spatial accuracy and resolution than other overlay maps in Vietnam, ensuring user reliability (DUONG 
+
+## Results -land use change in Vietnam ##
+Due to Vietnam's complicated location and topography, its land resources are very diverse and differentiated from plains to high mountains, from north to south, and from east to west. Land in this country can be classified into 13 main land groups and 31 categories. Almost all of the population lives in rural areas and works in the agricultural sector, so one-third of the land is used for agriculture (FAO 2019). According to land use purposes, the land is divided into three main land groups: non-agricultural, agricultural, and unused land. Agricultural land is divided into ground for production agriculture, forestry land, aquaculture land, salt-making, and other agriculture. Land for production agriculture includes annual cropland (paddy land and other short-term cropland) and perennial cropland. The forest land is divided into protection, production, and special-use forest land. Fig. 
+Land conversion has different effects the types of land use. Paddy land in Vietnam is concentrated in two main areas, the Mekong Delta and Red River Delta Delta (Fig. 
+There is a mismatch when comparing data published by the GSO with calculations based on land cover maps. While non-agricultural land is reported to have increased, the area of this GIS layer showed a 21.5% decrease when verified by the land cover map. Published figures are those used in the planning scheme for projects. However, slow progress, inefficiency, misuse, and waste still occur in many projects. In 2019, the progress of 1,878 projects were delayed. Land acquisition and land clearance were the main reasons for this delay (1,267 projects). 73,992.96 ha of land was found to be violated and delayed in project construction. In particular, construction in industrial zones is rampant, but the occupancy rate remains low, leading to a decrease in land-use efficiency. By 2019, Vietnam had established 373 industrial zones with a total area of 114.4 thousand hectares, accounting for 56.9% of the total planned land area. Of these, 280 Industrial Zones were in operation, and 93 are still in the construction and infrastructure stage. The occupancy rate in industrial zones is low, at about 57.4%. Some localities also have lower occupancy rates than the national average (Data collected from the reports of MoNRE). These figures indicate a waste of land resources.
+According to the statistics, the evolution of land use purpose is occurring in all localities (Fig. 
+
+## Discussion ##
+This study's main aim was to explore land use pattern changes, emphasizing the conversion of agricultural land to built-up land (urban land) in Vietnam. Moreover, rapid urbanization has been a significant highlight in the development process of Vietnam in recent decades. In 1990, the number of urban areas in Vietnam was about 500 and the urbanization rate was about 17%. By 2019, the number of urban areas in Vietnam had increased to 846 (MONRE, 2019). In 1986, Vietnam's urban population was under 13 million, but by 2019, that number was 37 million (WORLD BANK, 2020a).
+Urban economic growth is twice the national average, contributing over half of the gross domestic product ( 
+According to the objective rule, urbanization must originate from non-agricultural economic development such as industry, commerce, and services (SATTERTHWAITE ET AL., 2010) to replace the agricultural economy gradually. However, unlike other countries in the region and the world, urbanization in Vietnam is characterized by rural urbanization. That is, it transforms agricultural villages and communities into urban districts and wards. Urban developments and growth in Vietnam are late and slower than in some regional countries 
+The trend of changing land use purposes in urban areas is to reduce agricultural land, unused land and increase non-agricultural land. Growth in the non-agricultural land area is mainly due to expanding urban land, land for industrial zones, and construction activities. The size of urban land increased due to the conversion from agricultural land, of which rice land was the primary type. In 2011-2015, following the data from MoNRE, Vietnam converted 89.4 thousand hectares of rice land to urban land. In a broader view for the 2007-2017 period, the converted area is estimated at 125.9 thousand ha (data calculated by the author through the land cover maps). This transition is mainly concentrated in three regions: the Southeast, the Red River Delta, and the Mekong River Delta.
+Conversion of agricultural land for investment in urban, industrial, and economic zone projects occurs in major urban areas like Binh 
+The current status of such land conversion has a significant impact on people's lives, especially those living in peri-urban areas. This problem occurs in Vietnam and occurs in developing countries with high urbanization rates (KUSILUKA ET AL., 2011; AUTAM & ANDERSEN, 2016; NIKUZE ET AL., 2019). Socially, the lifestyle change from rural to urban residents has changed cultural standards and leads to a transformation in the social lives and behavior of each suburban resident. Urbanization also transforms kinship relationships, village communities have multidimensional social relationships, which are complicated by combining many classes of the population and the transformation of orgaizational models. This is one of the characteristics of urban communities (MINISTRY OF CONSTRUCTION, 2020). Land use change has also created social conflicts and intensified violence due to land contention and because the land is the primary source of livelihood for many peri-urban farming households. Land in the peri-urban area is becoming increasingly scarce, leading to higher land prices in this area, inadvertently creating psychological pressure on people. Consequently, the poor may be pushed further out of town/city or are forced into areas of land of little value or which lack public services.
+In economic terms, urbanization creates a change in land use in the peri-urban area. The transfer of a large part of the agricultural land into the construction or industrial zones and urban residential areas has resulted in loss of the livelihoods of many farmers. This problem forces them to switch from agricultural production to non-agricultural activities 
+
+## Conclusions ##
+Urban expansion and rural restructuring due to land-use conflicts are increasing worldwide 
+The study data also showed that land conversion is mainly concentrated in the North Central and Central Coast areas. The percentage of agricultural and non-agricultural land in these regions' provinces has mostly increased by over 7%, while unused land decreased by over 100%. These regions contain many of Vietnam's cities. However, the conversion of land from agriculture to urban areas is concentrated in two regions: the Southeast and the Red River Delta. Furthermore, the transition trend has also shifted to the East of Vietnam to take advantage of the long coastline. This transformation aims to help the development of coastal tourism and facilitate domestic and international trade.
+The study has shown the socio-economic impacts on the lives of peri-urban residents after converting agricultural land. Economically, urbanization and industrialization have left 11 million hectares of land abandoned and in danger of degradation and reduces the quality and productivity of agricultural products, thereby significantly affecting the income of farmers. In addition, the transformation of agricultural land to non-agricultural also forces farmers to switch to non-agricultural activities. It is a challenge for farmers because it requires time and investment in both money and intelligence to adapt to the new conditions. Socially, people's lifestyles also require a transition from rural to urban. The change in land use has also created social conflicts and intensified violence due to land disputes.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Research and Application Project of EORC, JAXA, Hompage of High-Resolution Land Use and Land Cover Map Products
+   Authors: 
+   Date: 2020
+
+2. The dynamics of global urban expansion
+   Authors: , , 
+   Date: 2005
+
+3. Thông cáo báo chí Kết quả Tổng điều tra Dân số và Nhà ở năm
+   Authors: 
+   Date: 2020. 2019
+
+4. ASEAN Sustainable Urbanisation Strategy
+   Authors: 
+   Date: 2018
+
+5. Agricultural Land Conversion Drivers: A Comparison Between Less Developed, Developing and Developed Countries
+   Authors: , , 
+   Date: 2011
+
+6. Assessing Global Land Use: Balancing Consumption
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+7. Urbanization in Developing Countries: Current Trends, Future Projections, and Key Challenges for Sustainability
+   Authors: 
+   Date: 2006
+
+8. JAXA High-Resolution Land Use/Land Cover Map for Central Vietnam in
+   Authors: , , , 
+   Date: 2018. 2007. 2017
+
+9. The Century Ahead: Four Global Scenarios
+   Authors: , , , 
+   Date: 2009
+
+10. Country gender assessment of agriculture and the rural sector in Vietnam
+   Authors: 
+   Date: 2019
+
+11. Rural livelihood diversification and household well-being: Insights from Humla, Nepal
+   Authors: , 
+   Date: 2016
+
+12. Tropical forests were the primary sources of new agricultural land in the 1980s and 1990s
+   Authors: , , , , , , 
+   Date: 2010
+
+13. Assessing Neighbor and Population Growth Influences on Agricultural Land Conversion
+   Authors: , 
+   Date: 2017
+
+14. Determinants of Urbanization
+   Authors: , 
+   Date: 2013
+
+15. Global Land Use Area Change Matrix: Input to GEO-4
+   Authors: 
+   Date: 2006
+
+16. The negative impact of land acquisition on indigenous communities' livelihood and environment in Tanzania
+   Authors: , , , , 
+   Date: 2011
+
+17. Dynamics of Land-use and land-cover change in tropical regions
+   Authors: , , 
+   Date: 2003
+
+18. Urbanization and the Southern United States
+   Authors: 
+   Date: 2012
+
+19. Midcourse Manoeuvres: An overview of community strategies and remedies for natural resource conflicts in India, Indonesia & Myanmar
+   Authors: 
+   Date: 2018
+
+20. Tổng quan về khu vực ven đô các thành phố lớn trong quá trình đô thị hoá nhanh (Overview of urban peri-urban areas in major cities in the rapid urbanization process)
+   Date: 2020
+
+21. Báo cáo Môi trường Quốc gia năm 2010: Tổng quan môi trường Việt Nam
+   Authors: 
+   Date: 2010. 2010
+
+22. Báo cáo hiện trạng Môi trường Quốc gia giai đoạn 2011-2015 (National Environment Status Report
+   Authors: 
+   Date: 2015. 2011-2015
+
+23. Báo cáo hiện trạng môi trường quốc gia năm 2019: Quản lý chất thải rắn sinh hoạt (National environmental status report 2019: Domestic solid waste management)
+   Authors: 
+   Date: 2020
+
+24. Livelihood impacts of displacement and resettlement on informal households -A case study from Kigali
+   Authors: , , , 
+   Date: 2019
+
+25. The Impact of Land Conversion on Income and Food Security Status For Farmer Households in 5 Villages in Temon Sub-District
+   Authors: , , 
+   Date: 2017. 2017
+
+26. Conversion of land use and household livelihoods in Vietnam: A study in Nghe An
+   Authors: 
+   Date: 2021
+
+27. Effect of Land Acquisition and Compensation on the Livelihoods of People in Quang Ninh District
+   Authors: , , 
+   Date: 2019
+
+28. 
+   Authors: 
+
+29. Measuring material flows and resource productivity
+   Date: 2008. 2008
+
+30. Rural and urban areas: comparing lives using rural/urban classifications
+   Authors: 
+   Date: 2011
+
+31. Land Use Change and Coastal Management
+   Authors: , 
+   Date: 2017
+
+32. Customary Land Conversion and the Formation of the African City
+   Authors: , 
+   Date: 2020
+
+33. Land Use. Our World in Data
+   Authors: , 
+   Date: 2019
+
+34. Urbanization and its implications for food and farming
+   Authors: , , 
+   Date: 2010
+
+35. Land Use Planning and Open Space Preservation: Economic Impacts of Low-Density Urbanization and Urban Sprawl
+   Authors: 
+   Date: 2009
+
+36. Stocks, flows and prospects of land
+   Authors: , , , , , , , , 
+   Date: 2010
+
+37. Global land change from 1982 to 2016
+   Authors: , , , , , , 
+   Date: 2018
+
+38. Multiple Paths to Industrialization: A global Context of the Rise of Emerging States
+   Authors: 
+   Date: 2019
+
+39. The consequences of expropriation of agricultural land and loss of livelihoods on those households who lost land in Da Nang
+   Authors: 
+   Date: 2021
+
+40. Urbanization and Economic growth: the arguments and evidence for Africa and Asia
+   Authors: , 
+   Date: 2013
+
+41. Efficient cities are crucial to Vietnam's transformation into a high-income society
+   Authors: 
+   Date: 2015
+
+42. Netherlands Environmental Assessment Agency (PBL)
+   Authors: , 
+   Date: 2009
+
+43. Quy hoạch tỉnh theo Luật Quy hoạch năm 2017: Còn nhiều thách thức và vướng mắc trong quá trình triển khai thực hiện (Provincial planning according to the Planning Law in 2017: There are still many challenges and obstacles in the implementation process)
+   Authors: 
+   Date: 2020
+
+44. Vietnam Urbanization Review
+   Date: 2011
+
+45. Taking Stock: Recent Economic Developments of Vietnam. Special Focus: Vietnam's Tourism Developments: Stepping Back from the Tipping Point-Vietnam's Tourism Trends, Challenges, and Policy Priorities
+   Date: 2019
+
+46. Land Use Changes: Economics, Social, and Environmental Impacts
+   Authors: 
+   Date: 2008
+
+47. on land development on the urban fringe of Beijing: A case study of gated informal housing communities
+   Authors: 
+   Date: 2017
+

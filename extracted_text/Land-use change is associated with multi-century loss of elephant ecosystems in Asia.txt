@@ -1,0 +1,444 @@
+================================================================================
+TITLE: Land-use change is associated with multi-century loss of elephant ecosystems in Asia
+================================================================================
+
+AUTHORS:
+- Shermin De Silva
+- Tiffany Wu
+- Philip Nyhus
+- Ashley Weaver
+- Alison Thieme
+- Josiah Johnson
+- Jamie Wadey
+- Alexander Mossbrucker
+- Thinh Vu
+- Thy Neang
+- Becky Chen
+- Melissa Songer
+- Peter Leimgruber
+
+ABSTRACT:
+Understanding historic patterns of land use and land cover change across large temporal and spatial scales is critical for developing effective biodiversity conservation management and policy. We quantify the extent and fragmentation of suitable habitat across the continental range of Asian elephants (Elephas maximus) based on present-day occurrence data and land-use variables between 850 and 2015 A.D. We found that following centuries of relative stability, over 64% (3.36 million km 2 ) of suitable elephant habitat across Asia was lost since the year 1700, coincident with colonial-era land-use practices in South Asia and subsequent agricultural intensification in Southeast Asia. Average patch size dropped 83% from approximately 99,000-16,000 km 2 and the area occupied by the largest patch decreased 83% from ~ 4 million km 2 (45% of area) to 54,000 km 2 (~ 7.5% of area). Whereas 100% of the area within 100 km of the current elephant range could have been considered suitable habitat in the year 1700, over half was unsuitable by 2015, driving potential conflict with people. These losses reflect long-term decline of non-forested ecosystems, exceeding estimates of deforestation within this century. Societies must consider ecological histories in addition to proximate threats to develop more just and sustainable land-use and conservation strategies.
+Habitat loss and degradation are leading drivers of terrestrial biodiversity loss worldwide 1-3 . An estimated three quarters of the Earth's land surface has been significantly altered by human activities 4 . Historic reasons include conversion for cultivation and settlement, reflecting both local and global socioeconomic drivers of land-use and land-cover (LULC) change 
+Although LULC trends in recent decades may be inferred from satellite imagery and statistical data 2,7,8 , it remains difficult to assess the impact of long-term anthropogenic processes on particular species or ecosystems. Human-induced changes are known to restrict the ranges of many terrestrial mammal species 9,10 but historical records on population abundance and distribution are often limited for many taxa, complicating efforts to assess impacts over longer periods. Nevertheless, longer historical perspectives are necessary to appreciate the true magnitude of changes to threatened ecosystems. For example, historical studies have influenced conservation policies related to remnant prairies in Oregon, wetlands in Iowa, and forests in Germany, at times challenging standard management practices 11 .
+One way to overcome these data gaps is through ecological niche models (see also species distribution models), in which species occurrence data, together with environmental covariates, are used to infer possible occurrence or suitable habitat at a different area or time 
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Untitled ##
+1165 years for a widely-distributed endangered mammal, the Asian elephant (Elephas maximus). Elephants are ecosystem engineers that uniquely influence the structure of ecosystems 
+The extant Asian elephant range (Fig. 
+We characterized change in the extent and fragmentation of elephant ecosystems for the period between 850 and 2015 A.D using land-use variables from the Land-Use Harmonization 2 dataset 
+
+## Results ##
+Historic changes. Percentage of primary forest cover was less important for the LUH2 model than elevation, forested and non-forested primary and secondary lands, croplands, pastures and wood harvest activities (Table 
+Present-day suitability versus distribution. Only 48.6% of the current range was found to be suitable by 2015 (Figs. 2, 3, S3 and Table 
+
+## Discussion ##
+We find that after several centuries of relative stability, nearly two-thirds of habitat suitable for elephants within the 13 elephant range countries declined within the past 300-500 years. A gradual negative trend in the extent of suitable habitat commences as early as the 1500 s, but shows marked acceleration during the 1700s. Whereas all of the area (100%) within 100 km of the current range was classified as suitable in 1700, less than half (48.6%) of it was classified as suitable by the year 2015. Change in the Largest Patch Index (LPI) signifies that in the year 1700 an elephant might hypothetically have been able to traverse as much as 45% of the "suitable" area without interruption, but by 2015 this was down to just 7.5%. These include two of the top three most threatened ecoregions in the world, the tropical dry forest and tropical/subtropical grasslands and savannahs 
+It has been shown that up to 90% of tropical woodlands were inhabited and shaped by human societies over the past 12,000 years, opposing the view that "human transformation of terrestrial nature is mostly recent and inherently destructive. " 
+these landscapes, the losses we report are unlikely to represent areas of pure "wilderness" or primary forest, but rather a mixture of habitat types, including those with some degree of human management 
+The presence of elephants in suboptimal habitat today likely reflects a lag between land-use changes and elephant population responses 
+
+## Regional trends. ##
+Trends in South Asia are largely driven by India and Sri Lanka, which contain the largest remaining wild populations (Table 
+The relationship between people and nature today is complicated by the ongoing expansion of population centers, agriculture sectors, and extractive economic activity that places additional pressure on forest resources 
+This longer perspective also contextualizes another recent study in Nepal that documented changes in forest cover between 1930 and 2020 using topographic maps and satellite imagery 
+Table 
+quantified directly using data on forest cover change over the past century but negative incidents may be most prevalent in areas of relatively recent deforestation as remnant elephant populations continue to be displaced. In Southeast Asia, the disappearance of highly suitable habitat in what is now central Thailand is particularly striking (Figs. 
+Two of the most critically endangered elephant populations are found in Sumatra and Vietnam. Although nearly 98% of the current range in Vietnam is classified as suitable (Table 
+LULC change is both a cause and a consequence of human and wildlife displacements. Our results indicate that areas of suitable habitat for elephants have not merely decreased, they have also redistributed (Fig. 
+
+## Range ##
+In 2018 there was rapid, large-scale disruption of a trans-boundary elephant corridor at Cox Bazar between Bangladesh and Myanmar with the settlement of Rohingya refugees 
+Given the depletion and fragmentation of suitable habitat, as well as elephants' preference for secondary and regenerating habitat, attempts at dispersal outside the current range might be expected 
+
+## Study limitations and possible extensions. ##
+There are a number of reasons why the actual distribution of a species may not match its modelled niche, such as dispersal limitations or overharvest (i.e. hunting and capture, see also 
+Other limitations concern the definition of what actually constitutes "suitable" habitat for the species. Ecological niche models typically rely on relating the species of interest (i.e. occurrence, behavior) to ecological covariates. They exclude at least two important considerations. First, habitat characteristics offer a limited view of which areas may support a particular species in the absence of demographic data. Animals may be attracted to locations that promote harm to them; these are known as ecological traps 
+Conversely, we must also avoid mistaking the present management of a landscape with the practices that gave rise to it. We reiterate that although human activities are now limited in the locations we sampled, these areas were very likely also shaped by people preceding and during the time scales being considered here 
+Finally, the datasets underlying our results (the LUH2 variables) use relatively coarse resolution and are themselves models based on assumptions concerning land-use transitions rather than direct measurements and observations. In fact, results based on the LUH2 reconstructions may be more conservative than models using finer resolution data that make fewer assumptions. Winkler et al. 
+Likewise, more work is needed to understand possible changes in suitable habitat under future scenarios of land-use. One study using fine-resolution (1 km 2 ) LULC datasets for India and Nepal predicted a loss of 41.8% of the available habitat over this century 
+
+## Methods ##
+Elephant occurrence. A schematic of the work process is given in Fig. 
+To minimize sampling bias that could result in model overfitting, we further subsampled data to cover the full distribution as widely as possible while eliminating redundant points located within any particular landscape.
+For instance, thousands of potential redundancies from collar-based tracking datasets were removed by using only one randomly selected data point per individual, per population or landscape. Outliers from the remaining points were removed using Cooks' distance 
+Predictor variables. We used the Land-Use Harmonization 2 (LUH2) data products 
+Data analysis and benchmarking. We limited the geographic extent of all analyses to the 13 range countries in which elephants are currently found. We used MAXENT, a maximum entropy algorithm 
+To establish whether a model using the LUH2 variables yields reasonable predictions of habitat suitability for elephants, we first compared the result for the year 2000 to a prediction based on other, higher resolution benchmark variables, including climate, terrain, land-cover, and human and livestock densities (n = 12 variables, Table 
+Polygons representing the known elephant range were digitized from Hedges et al. 
+We calculated the total change in extent of suitable habitat by subtracting the area of suitable habitat available in 2015 from the area available in 1700, as major changes were observed within this period. We also specifically quantified the percentage of suitable habitat found within a 100 km buffer of the current range polygons in both years. We then calculated fragmentation statistics (Table 
+
+## States (units: fraction of grid cell) ##
+Transitions between land use states (units: fraction of grid cell per year)
+Management-irrigation (units: fraction of crop area) 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. (1234567890) Scientific Reports |
+   Date: 2023
+
+2. Future habitat loss and extinctions driven by land-use change in biodiversity hotspots under four scenarios of climate-change mitigation
+   Authors: 
+   Date: 2015
+
+3. Catastrophic declines in wilderness areas undermine global environment targets
+   Authors: 
+   Date: 2016
+
+4. Quantification of habitat fragmentation reveals extinction risk in terrestrial mammals
+   Authors: 
+   Date: 2017
+
+5. Global assessment report on biodiversity and ecosystem services of the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services
+   Authors: 
+   Date: 2019
+
+6. Dynamics of land-use and land-cover change in tropical regions
+   Authors: , , 
+   Date: 2003
+
+7. Pervasive human-driven decline of life on Earth points to the need for transformative change
+   Authors: 
+   Date: 2019
+
+8. High-resolution global maps of 21st-century forest cover change
+   Authors: 
+   Date: 2013
+
+9. Global land use changes are four times greater than previously estimated
+   Authors: , , , 
+   Date: 2021
+
+10. Collapse of the world's largest herbivores
+   Authors: 
+   Date: 2015
+
+11. Moving in the Anthropocene: Global reductions in terrestrial mammalian movements
+   Authors: 
+   Date: 2018
+
+12. Past forward: Recommendations from historical ecology for ecosystem management
+   Authors: , , , 
+   Date: 2020
+
+13. Global habitat suitability models of terrestrial mammals
+   Authors: 
+   Date: 2011. 1234567890. 2023
+
+14. Monitoring biodiversity loss with primary species-occurrence data: toward national-level indicators for the 2010 target of the Convention on Biological Diversity
+   Authors: , 
+   Date: 2009
+
+15. Deforestation and extant distributions of Mexican endemic mammals
+   Authors: , , , , 
+   Date: 2005
+
+16. Megagardeners of the forest-The role of elephants in seed dispersal
+   Authors: , 
+   Date: 2011
+
+17. An ecoregion-based approach to protecting half the terrestrial realm
+   Authors: 
+   Date: 2017
+
+18. Human-wildlife conflict and coexistence
+   Authors: 
+   Date: 2016
+
+19. Human-elephant conflict: A review of current management strategies and future directions
+   Authors: , , , 
+   Date: 2019
+
+20. Indigenous peoples in Asia: A long history
+   Authors: 
+   Date: 2021
+
+21. Distribution and status of the Asian elephant
+   Authors: 
+   Date: 1978
+
+22. Elephas maximus. The IUCN Red List of Threatened Species. e.T7140A45818198
+   Authors: 
+   Date: 15 February 2022. 2020
+
+23. Asian elephants and seasonally dry forests
+   Authors: , 
+   Date: 2011
+
+24. There will be conflict-Agricultural landscapes are prime, rather than marginal, habitats for Asian elephants
+   Authors: 
+   Date: 2021
+
+25. Problem-elephant translocation: Translocating the problem and the elephant?
+   Authors: , , , 
+   Date: 2012
+
+26. Harmonization of Global Land Use Change and Management for the Period 850-2100 (LUH2) for CMIP6
+   Authors: 
+   Date: 2020
+
+27. Population differentiation within and among Asian elephant (Elephas maximus) populations in southern India
+   Authors: , , , 
+   Date: 2005
+
+28. Pan-India population genetics signifies the importance of habitat connectivity for wild Asian elephant conservation
+   Authors: 
+   Date: 2021
+
+29. People have shaped most of terrestrial nature for at least 12,000 years
+   Authors: 
+   Date: 2021
+
+30. Anthropogenic transformation of the biomes, 1700 to 2000
+   Authors: , , , , 
+   Date: 2010
+
+31. Humans and forests in pre-colonial Southeast Asia
+   Authors: 
+   Date: 1995
+
+32. European colonialism since 1700
+   Authors: 
+   Date: 2013
+
+33. Using presence-only modelling to predict Asian elephant habitat use in a tropical forest landscape: Implications for conservation
+   Authors: , , 
+   Date: 2010
+
+34. Between a rock and a hard place: Rugged terrain features and human disturbance affect behaviour and habitat use of Sumatran elephants in Aceh
+   Authors: 
+   Date: 2021
+
+35. Conservation status of Asian elephants: The influence of habitat and governance
+   Authors: 
+   Date: 2017
+
+36. Drivers of change in Myanmar's wild elephant distribution
+   Authors: , , , , 
+   Date: 2016
+
+37. Demographic tipping points as early indicators of vulnerability for slow-breeding megafaunal populations
+   Authors: , 
+   Date: 2019
+
+38. Fifty years in Ceylon: An autobiography
+   Authors: 
+   Date: 1891
+
+39. First country-wide survey of the Endangered Asian elephant: Towards better conservation and management in Sri Lanka
+   Authors: , , , , 
+   Date: 2019
+
+40. The nilgiris biosphere reserve: An unrealized vision for conservation
+   Authors: , 
+   Date: 2013
+
+41. Assessing the extent and causes of forest degradation in India: Where do we stand?
+   Authors: 
+   Date: 2010
+
+42. Patterns and correlates of human-elephant conflict around a south Indian reserve
+   Authors: 
+   Date: 2012
+
+43. An elephantine challenge: Human-elephant conflict distribution in the largest Asian elephant population, southern India
+   Authors: , , , , 
+   Date: 2014
+
+44. Living with wildlife and mitigating conflicts around three Indian protected areas
+   Authors: , , , 
+   Date: 2013
+
+45. Habitat loss and human-elephant conflict in Assam, India: Does a critical threshold exist?
+   Authors: , , 
+   Date: 2011
+
+46. Deforestation increases frequency of incidents with elephants (Elephas maximus)
+   Authors: , , , 
+   Date: 2019
+
+47. Human-elephant conflict and land cover change in Sri Lanka
+   Authors: , , , 
+   Date: 2022
+
+48. Assessing protected area networks in the conservation of elephants (Elephas Maximus) in Sri Lanka
+   Authors: , , , 
+   Date: 2022
+
+49. Tracking forest loss and fragmentation between 1930 and 2020 in Asian elephant (Elephas maximus) range in Nepal
+   Authors: 
+   Date: 2021. 2021
+
+50. Long-term trends in wild-capture and population dynamics point to an uncertain future for captive elephants
+   Authors: , , , , 
+   Date: 2019
+
+51. An assessment of the live elephant trade in Thailand
+   Authors: 
+   Date: 2014
+
+52. Modeling population viability of captive elephants in Myanmar (Burma): Implications for wild populations
+   Authors: 
+   Date: 2008
+
+53. New elephant crisis in Asia-Early warning signs from Myanmar
+   Authors: 
+   Date: 2018
+
+54. Guidelines for the rehabilitation of captive elephants as a possible restocking option for wild populations
+   Authors: , , , , 
+   Date: 2020
+
+55. Natural and anthropogenic drivers of Bornean elephant movement strategies
+   Authors: , , , , 
+   Date: 2020
+
+56. A preliminary study on the impact of changing shifting cultivation practices on dry season forage for Asian elephants in Sri Lanka
+   Authors: 
+   Date: 2013
+
+57. Shifting cultivation: A new old paradigm for managing tropical forests
+   Authors: 
+   Date: 2000
+
+58. Shifting Cultivation Policies: Balancing Environmental and Social Sustainability
+   Authors: 
+   Date: 2017
+
+59. Consequences of swidden transitions for crop and fallow biodiversity in Southeast Asia
+   Authors: 
+   Date: 2009
+
+60. Land-use and land-cover change in montane mainland southeast
+   Authors: , 
+   Date: 2005
+
+61. A global view of shifting cultivation: Recent, current, and future extent
+   Authors: 
+   Date: 2017
+
+62. Elephants face 'time bomb' in Bangladesh land clash with Rohingya refugees
+   Authors: 
+   Date: 2019
+
+63. China elephants: Herd on mammoth 500km trek reaches Kunming
+   Authors: 
+   Date: 2021
+
+64. China elephants: 150,000 evacuated from path of trekking herd
+   Authors: 
+   Date: 2021
+
+65. Protected areas in South Asia: Status and prospects
+   Authors: 
+   Date: 2022
+
+66. High and far: Biases in the location of protected areas
+   Authors: , 
+   Date: 2009
+
+67. On the problem of modeling a fundamental niche from occurrence data
+   Authors: , , , 
+   Date: 2019
+
+68. Changes in habitat suitability over a two decade period before and after Asian elephant recolonization
+   Authors: , , , 
+   Date: 2020
+
+69. Protected areas in South Asia have not prevented habitat loss: A study using historical models of land-use change
+   Authors: , , , , 
+   Date: 2013
+
+70. A framework for understanding ecological traps and an evaluation of existing evidence
+   Authors: , 
+   Date: 2006
+
+71. Community-managed forests and wildlife-friendly agriculture play a subsidiary but not substitutive role to protected areas for the endangered Asian elephant
+   Authors: 
+   Date: 2014
+
+72. The elephant in the farm: Long-term solutions are the key to coexistence
+   Authors: , , , , 
+   Date: 2021
+
+73. Revisiting social natures: People-elephant conflict and coexistence in Sri Lanka
+   Authors: , 
+   Date: 2019
+
+74. Displacement and relocation from protected areas: Towards a biological and historical synthesis
+   Authors: , 
+   Date: 2006
+
+75. Beyond parks and reserves: The ethics and politics of conservation with a case study from Peru
+   Authors: , 
+   Date: 2011
+
+76. Building human-elephant relationships based on science and local ownership: A long-lasting issue in the era of Sustainable Development Goals
+   Authors: 
+   Date: 2021
+
+77. Predicting range shifts of Asian elephants under global change
+   Authors: 
+   Date: 2019
+
+78. Distribution, status, and conservation needs of Asian elephants (Elephas maximus) in Lampung Province
+   Authors: 
+   Date: 2005
+
+79. Observations on elephants in the Maduru Oya National Park Sri Lanka (Mammalia, Elephantidae)
+   Authors: , 
+   Date: 2001
+
+80. Area suitability prediction for conserving elephants: An application of likelihood ratio prediction model
+   Authors: , , 
+   Date: 2015
+
+81. Influential observations in linear regression
+   Authors: 
+   Date: 1979
+
+82. Modelling spatial distribution of critically endangered Asian elephant and Hoolock gibbon in Bangladesh forest ecosystems under a changing climate
+   Authors: , , 
+   Date: 2015
+
+83. 
+   Authors: , 
+   Date: 2013
+
+84. R: A language and environment for statistical computing
+   Authors: 
+   Date: 2017
+
+85. The effects of small sample size and sample bias on threshold selection and accuracy assessment of species distribution models
+   Authors: , , 
+   Date: 2012
+
+86. Range-wide mapping workshop for Asian elephants (Elephas maximus)
+   Authors: , , 
+   Date: 2008
+
+87. Genetic analyses favour an ancient and natural origin of elephants on
+   Authors: 
+   Date: 2018
+
+88. Evidence of Sundaland's subsidence requires revisiting its biogeography
+   Authors: , , , , 
+   Date: 2020
+
+89. FRAGSTATS v4: Spatial pattern analysis program for categorical and continuous maps
+   Authors: , , 
+   Date: 2012
+
+90. AKDEC home range size and habitat selection of Sumatran elephants
+   Authors: , , , 
+   Date: 2016
+
+91. Ranging behavior of the Asian elephant in Sri Lanka
+   Authors: 
+   Date: 2008
+

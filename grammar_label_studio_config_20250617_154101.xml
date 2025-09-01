@@ -1,0 +1,74 @@
+<View>
+  <Header value="Grammar-Aware LULC Entity and Relation Annotation"/>
+  
+  <Text name="text" value="$text"/>
+  
+  <!-- Entity Labels -->
+  <Labels name="label" toName="text" showInline="true">
+    <Label value="CARDINAL" background="#FF6B6B" description="Entity type"/>
+    <Label value="CHANGE" background="#4ECDC4" description="Change/Transformation processes"/>
+    <Label value="COORDINATES" background="#45B7D1" description="Entity type"/>
+    <Label value="DATE" background="#96CEB4" description="Dates and time periods"/>
+    <Label value="DISCOVERED_LULC" background="#FECA57" description="Grammar-discovered LULC terms"/>
+    <Label value="DISCOVERED_OBJECT" background="#FF9FF3" description="Grammar-discovered objects"/>
+    <Label value="DISCOVERED_SUBJECT" background="#A55EEA" description="Grammar-discovered subjects"/>
+    <Label value="LOC" background="#54A0FF" description="Location/Place names"/>
+    <Label value="LULC" background="#5F27CD" description="Land Use/Land Cover types"/>
+    <Label value="PERCENT" background="#00D2D3" description="Entity type"/>
+  </Labels>
+  
+  <!-- Relation Labels -->
+  <Relations name="relation" toName="label">
+    <Relation value="adjacent_to" background="#FF6B6B" description="general relationship"/>
+    <Relation value="changes_to" background="#4ECDC4" description="general relationship"/>
+    <Relation value="comprises" background="#45B7D1" description="general relationship"/>
+    <Relation value="comprises_of" background="#96CEB4" description="general relationship"/>
+    <Relation value="contains" background="#FECA57" description="general relationship"/>
+    <Relation value="encompasses" background="#FF9FF3" description="general relationship"/>
+    <Relation value="has_component" background="#A55EEA" description="general relationship"/>
+    <Relation value="has_percentage" background="#54A0FF" description="general relationship"/>
+    <Relation value="is_a" background="#5F27CD" description="general relationship"/>
+    <Relation value="measures" background="#00D2D3" description="general relationship"/>
+    <Relation value="occupied_by" background="#FF9F43" description="general relationship"/>
+    <Relation value="precedes" background="#10AC84" description="general relationship"/>
+    <Relation value="reduces" background="#EE5A24" description="general relationship"/>
+    <Relation value="will_continue_into" background="#0098C7" description="general relationship"/>
+    <Relation value="affects" background="#8395A7" description="causal relationship"/>
+    <Relation value="causes" background="#FD79A8" description="causal relationship"/>
+    <Relation value="results_in" background="#FDCB6E" description="causal relationship"/>
+    <Relation value="happened_during" background="#6C5CE7" description="temporal relationship"/>
+    <Relation value="happens_by" background="#A29BFE" description="temporal relationship"/>
+    <Relation value="occurs_during" background="#74B9FF" description="temporal relationship"/>
+    <Relation value="has_undergone_change" background="#E17055" description="spatial relationship"/>
+    <Relation value="is_located_in" background="#81ECEC" description="spatial relationship"/>
+    <Relation value="located_in" background="#55A3FF" description="spatial relationship"/>
+    <Relation value="reveals_information_about" background="#FD79A8" description="informational relationship"/>
+  </Relations>
+  
+  <!-- Quality Assessment -->
+  <Choices name="overall_quality" toName="text" choice="single" showInline="false">
+    <Choice value="Excellent" background="#00ff00"/>
+    <Choice value="Good" background="#90EE90"/>
+    <Choice value="Fair" background="#FFD700"/>
+    <Choice value="Poor" background="#FF6347"/>
+    <Choice value="Very Poor" background="#FF0000"/>
+  </Choices>
+  
+  <!-- Grammar Quality -->
+  <Choices name="grammar_quality" toName="text" choice="single" showInline="false">
+    <Choice value="Grammar Analysis Accurate"/>
+    <Choice value="Grammar Analysis Partial"/>
+    <Choice value="Grammar Analysis Incorrect"/>
+  </Choices>
+  
+  <!-- Relation Quality -->
+  <Choices name="relation_quality" toName="text" choice="single" showInline="false">
+    <Choice value="Relations Semantically Correct"/>
+    <Choice value="Relations Partially Correct"/>
+    <Choice value="Relations Need Major Correction"/>
+  </Choices>
+  
+  <!-- Comments -->
+  <TextArea name="comments" toName="text" placeholder="Additional comments about the annotation quality..." rows="3" showInline="false"/>
+  
+</View>

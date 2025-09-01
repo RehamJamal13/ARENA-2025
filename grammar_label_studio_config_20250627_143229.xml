@@ -1,0 +1,40 @@
+<View>
+  <Header value="Grammar-Aware LULC Entity and Relation Annotation"/>
+  
+  <Text name="text" value="$text"/>
+  
+  <!-- Entity Labels -->
+  <Labels name="label" toName="text" showInline="true">
+  </Labels>
+  
+  <!-- Relation Labels -->
+  <Relations name="relation" toName="label">
+  </Relations>
+  
+  <!-- Quality Assessment -->
+  <Choices name="overall_quality" toName="text" choice="single" showInline="false">
+    <Choice value="Excellent" background="#00ff00"/>
+    <Choice value="Good" background="#90EE90"/>
+    <Choice value="Fair" background="#FFD700"/>
+    <Choice value="Poor" background="#FF6347"/>
+    <Choice value="Very Poor" background="#FF0000"/>
+  </Choices>
+  
+  <!-- Grammar Quality -->
+  <Choices name="grammar_quality" toName="text" choice="single" showInline="false">
+    <Choice value="Grammar Analysis Accurate"/>
+    <Choice value="Grammar Analysis Partial"/>
+    <Choice value="Grammar Analysis Incorrect"/>
+  </Choices>
+  
+  <!-- Relation Quality -->
+  <Choices name="relation_quality" toName="text" choice="single" showInline="false">
+    <Choice value="Relations Semantically Correct"/>
+    <Choice value="Relations Partially Correct"/>
+    <Choice value="Relations Need Major Correction"/>
+  </Choices>
+  
+  <!-- Comments -->
+  <TextArea name="comments" toName="text" placeholder="Additional comments about the annotation quality..." rows="3" showInline="false"/>
+  
+</View>

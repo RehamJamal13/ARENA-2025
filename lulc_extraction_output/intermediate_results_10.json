@@ -1,0 +1,831 @@
+[
+  {
+    "sentence": "#text: After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible desertification and large parts of the Sahel were designated as degraded land (e.g",
+    "original_entities": [
+      {
+        "text": "the 1970s and 1980s",
+        "label": "DATE",
+        "start": 29,
+        "end": 48
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start": 63,
+        "end": 67
+      },
+      {
+        "text": "desertification",
+        "label": "PROCESS",
+        "start": 131,
+        "end": 146
+      }
+    ],
+    "extracted_entities": [
+      {
+        "text": "droughts",
+        "type": "PROCESS"
+      },
+      {
+        "text": "1970s",
+        "type": "TIME_PERIODS"
+      },
+      {
+        "text": "1980s",
+        "type": "TIME_PERIODS"
+      },
+      {
+        "text": "observed loss of woody vegetation cover",
+        "type": "CHANGE"
+      },
+      {
+        "text": "irreverisible desertification",
+        "type": "PROCESS"
+      },
+      {
+        "text": "Sahel",
+        "type": "LOC"
+      },
+      {
+        "text": "degraded land",
+        "type": "LULC"
+      },
+      {
+        "text": "large parts",
+        "type": "QUANTITY"
+      }
+    ],
+    "extracted_relations": [
+      "droughts:PROCESS --OCCURS_DURING-- 1970s:TIME_PERIODS",
+      "droughts:PROCESS --OCCURS_DURING-- 1980s:TIME_PERIODS",
+      "observed loss of woody vegetation cover:CHANGE --CAUSES-- irreverisible desertification:PROCESS",
+      "irreverisible desertification:PROCESS --AFFECTS-- Sahel:LOC",
+      "irreverisible desertification:PROCESS --AFFECTS-- degraded land:LULC",
+      "large parts:QUANTITY --PART_OF-- degraded land:LULC"
+    ],
+    "raw_model_response": " droughts | PROCESS\n- 1970s | TIME_PERIODS\n- 1980s | TIME_PERIODS\n- observed loss of woody vegetation cover | CHANGE\n- irreverisible desertification | PROCESS\n- Sahel | LOC\n- degraded land | LULC\n- large parts | QUANTITY\n\nRELATIONS:\n- droughts:PROCESS --OCCURS_DURING-- 1970s:TIME_PERIODS\n- droughts:PROCESS --OCCURS_DURING-- 1980s:TIME_PERIODS\n- observed loss of woody vegetation cover:CHANGE --CAUSES-- irreverisible desertification:PROCESS\n- irreverisible desertification:PROCESS --AFFECTS-- Sahel:LOC\n- irreverisible desertification:PROCESS --AFFECTS-- degraded land:LULC\n- large parts:QUANTITY --PART_OF-- degraded land:LULC\n\nNote: I've extracted entities and relations based on the provided rules and guidelines. Please review and correct if necessary.\n\nAlso, I'd like to clarify that \"irreversible desertification\" is a PROCESS, not LULC.",
+    "processing_timestamp": "2025-07-28T13:44:45.243674"
+  },
+  {
+    "sentence": "#text: The forests of West and Central Africa probably originally covered a combined area of about 3 million km 2",
+    "original_entities": [
+      {
+        "text": "forests",
+        "label": "LULC",
+        "start": 11,
+        "end": 18
+      },
+      {
+        "text": "West",
+        "label": "LOC",
+        "start": 22,
+        "end": 26
+      },
+      {
+        "text": "Central Africa",
+        "label": "LOC",
+        "start": 31,
+        "end": 45
+      },
+      {
+        "text": "area of about 3 million km",
+        "label": "SURFACE_UNIT",
+        "start": 85,
+        "end": 111
+      },
+      {
+        "text": "2",
+        "label": "CARDINAL",
+        "start": 112,
+        "end": 113
+      }
+    ],
+    "extracted_entities": [
+      {
+        "text": "West and Central Africa",
+        "type": "LOC (geographic region)"
+      },
+      {
+        "text": "forests",
+        "type": "LULC (land cover type)"
+      }
+    ],
+    "extracted_relations": [
+      "forests | LULC --LOCATED_IN-- West and Central Africa | LOC"
+    ],
+    "raw_model_response": " West and Central Africa | LOC (geographic region)\n- forests | LULC (land cover type)\n\nRELATIONS:\n- None explicitly stated\n\nNOTES:\n\n* No explicit relationships are mentioned in the sentence.\n\nHowever, we can infer a potential relationship:\n- forests | LULC --LOCATED_IN-- West and Central Africa | LOC\n\nThis inference assumes that the forests referred to are located within the specified geographic region.\n\nIf you'd like to extract more information, please provide additional context or clarify what you're looking for.",
+    "processing_timestamp": "2025-07-28T13:44:52.550088"
+  },
+  {
+    "sentence": ")., head: Land use change in the study site, p: ref: 2a, 2b, From 1996 to 2017, the area covered by cropped fields, C, has increased from 40% to 51.3% over the study site area, and from 47% to 64% of the arable lands in the study site due to the loss fallows",
+    "original_entities": [
+      {
+        "text": "change",
+        "label": "CHANGE",
+        "start": 19,
+        "end": 25
+      },
+      {
+        "text": "2a",
+        "label": "CARDINAL",
+        "start": 53,
+        "end": 55
+      },
+      {
+        "text": "1996 to 2017",
+        "label": "DATE",
+        "start": 66,
+        "end": 78
+      },
+      {
+        "text": "increased",
+        "label": "CHANGE",
+        "start": 123,
+        "end": 132
+      },
+      {
+        "text": "40% to",
+        "label": "PERCENT",
+        "start": 138,
+        "end": 144
+      },
+      {
+        "text": "51.3%",
+        "label": "PERCENT",
+        "start": 145,
+        "end": 150
+      },
+      {
+        "text": "47% to 64%",
+        "label": "PERCENT",
+        "start": 186,
+        "end": 196
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start": 246,
+        "end": 250
+      },
+      {
+        "text": "fallows",
+        "label": "LULC",
+        "start": 251,
+        "end": 258
+      }
+    ],
+    "extracted_entities": [
+      {
+        "text": "\"Land use change\"",
+        "type": "LULC (general term)"
+      },
+      {
+        "text": "\"study site\"",
+        "type": "LOC (geographical location)"
+      },
+      {
+        "text": "\"From 1996 to 2017\"",
+        "type": "TIME_PERIODS (temporal range)"
+      },
+      {
+        "text": "\"cropped fields\"",
+        "type": "LULC (land use type)"
+      },
+      {
+        "text": "\"C\"",
+        "type": "LULC (abbreviation for cropped fields)"
+      },
+      {
+        "text": "\"area\"",
+        "type": "SURFACE_UNIT (unit of measurement)"
+      },
+      {
+        "text": "\"fallows\"",
+        "type": "LULC (land use type)"
+      }
+    ],
+    "extracted_relations": [
+      "cropped fields:LULC --LOCATED_IN-- study site:LOC",
+      "cropped fields:LULC --OCCURS_DURING-- From 1996 to 2017:TIME_PERIODS",
+      "cropped fields:LULC --INCREASES_BY-- 11.3%:PERCENT",
+      "arable lands:LULC --LOCATED_IN-- study site:LOC",
+      "arable lands:LULC --OCCURS_DURING-- From 1996 to 2017:TIME_PERIODS",
+      "arable lands:LULC --DECREASES_BY-- 17%:PERCENT",
+      "fallows:LULC --LOST-- (implied, but not explicit)",
+      "fallows:LULC --CAUSES-- cropped fields:LULC (implied, but not explicit)"
+    ],
+    "raw_model_response": " \"Land use change\" | LULC (general term)\n- \"study site\" | LOC (geographical location)\n- \"From 1996 to 2017\" | TIME_PERIODS (temporal range)\n- \"cropped fields\" | LULC (land use type)\n- \"C\" | LULC (abbreviation for cropped fields)\n- \"area\" | SURFACE_UNIT (unit of measurement)\n- \"fallows\" | LULC (land use type)\n\nRELATIONS:\n- cropped fields:LULC --LOCATED_IN-- study site:LOC\n- cropped fields:LULC --OCCURS_DURING-- From 1996 to 2017:TIME_PERIODS\n- cropped fields:LULC --INCREASES_BY-- 11.3%:PERCENT\n- arable lands:LULC --LOCATED_IN-- study site:LOC\n- arable lands:LULC --OCCURS_DURING-- From 1996 to 2017:TIME_PERIODS\n- arable lands:LULC --DECREASES_BY-- 17%:PERCENT\n- fallows:LULC --LOST-- (implied, but not explicit)\n- fallows:LULC --CAUSES-- cropped fields:LULC (implied, but not explicit)\n\nNote: The sentence does not explicitly state the cause-and-effect relationship between fallows and cropped fields, but it implies that the loss",
+    "processing_timestamp": "2025-07-28T13:45:12.119126"
+  },
+  {
+    "sentence": "Agriculture in this region has been dominated over the past three decades by cotton production",
+    "original_entities": [
+      {
+        "text": "Agriculture",
+        "label": "LULC",
+        "start": 0,
+        "end": 11
+      },
+      {
+        "text": "the past three decades",
+        "label": "DATE",
+        "start": 51,
+        "end": 73
+      }
+    ],
+    "extracted_entities": [
+      {
+        "text": "Agriculture",
+        "type": "PROCESS"
+      },
+      {
+        "text": "Region",
+        "type": "LOC"
+      },
+      {
+        "text": "Cotton production",
+        "type": "LULC"
+      }
+    ],
+    "extracted_relations": [
+      "Agriculture:PROCESS --AFFECTS-- Region:LOC",
+      "Cotton production:LULC --DOMINATES-- Agriculture:PROCESS",
+      "Agriculture:PROCESS --AFFECTS-- Region:LOC",
+      "Cotton production:LULC --CAUSES-- Agriculture:PROCESS"
+    ],
+    "raw_model_response": " Agriculture | PROCESS\n- Region | LOC\n- Cotton production | LULC\n\nRELATIONS:\n- Agriculture:PROCESS --AFFECTS-- Region:LOC\n- Cotton production:LULC --DOMINATES-- Agriculture:PROCESS\n\nREASONING:\n\"Agriculture in this region\" refers to a specific geographical area, so it's a LOC.\n\n\"The past three decades\" implies a temporal context, but since no specific dates are provided, I'll extract it as a TIME_PERIODS.\n\n\"Cotton production\" is a type of land use, so it's an LULC.\n\nThe sentence states that \"has been dominated\", which indicates a significant influence or control, so I'll extract a CAUSES relationship.\n\nThe subject of the sentence is \"Agriculture\", which is a PROCESS, and the object is \"this region\", which is a LOC. Therefore, the relation is AFFECTS.\n\nThe sentence also mentions \"over the past three decades\", which provides a temporal context for the dominance of cotton production. However, since no specific dates are provided, I won't extract a TIME_PERIODS entity.\n\n**OUTPUT FORMAT:**\nENTITIES:\n- Agriculture | PROCESS\n- Region | LOC\n- Cotton production | LULC\n- TIME_PERIODS | TIME_PERIODS\n\nRELATIONS:\n- Agriculture:PROCESS --AFFECTS-- Region:LOC\n- Cotton production:LULC --CAUSES-- Agriculture:PROCESS",
+    "processing_timestamp": "2025-07-28T13:45:30.947148"
+  },
+  {
+    "sentence": "Forest land was decreased nearly by half in 2002 compared to its coverage in 1984, while the size of the gallery forest did not change much",
+    "original_entities": [
+      {
+        "text": "Forest",
+        "label": "LULC",
+        "start": 0,
+        "end": 6
+      },
+      {
+        "text": "decreased",
+        "label": "CHANGE",
+        "start": 16,
+        "end": 25
+      },
+      {
+        "text": "half",
+        "label": "CARDINAL",
+        "start": 36,
+        "end": 40
+      },
+      {
+        "text": "2002",
+        "label": "DATE",
+        "start": 44,
+        "end": 48
+      },
+      {
+        "text": "1984",
+        "label": "DATE",
+        "start": 77,
+        "end": 81
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 113,
+        "end": 119
+      },
+      {
+        "text": "change",
+        "label": "CHANGE",
+        "start": 128,
+        "end": 134
+      }
+    ],
+    "extracted_entities": [
+      {
+        "text": "Forest land",
+        "type": "LULC"
+      },
+      {
+        "text": "2002",
+        "type": "DATE"
+      },
+      {
+        "text": "1984",
+        "type": "DATE"
+      },
+      {
+        "text": "Gallery forest",
+        "type": "LULC"
+      }
+    ],
+    "extracted_relations": [
+      "Forest land:LULC --DECREASES_BY-- nearly by half | PERCENT",
+      "Forest land:LULC --OCCURS_DURING-- 2002:DATE",
+      "Forest land:LULC --COMPARED_TO-- 1984:DATE",
+      "Gallery forest:LULC --DOES_NOT_CHANGE_MUCH-- | PROCESS (implied, no explicit mention)"
+    ],
+    "raw_model_response": " Forest land | LULC\n- 2002 | DATE\n- 1984 | DATE\n- Gallery forest | LULC\n\nRELATIONS:\n- Forest land:LULC --DECREASES_BY-- nearly by half | PERCENT\n- Forest land:LULC --OCCURS_DURING-- 2002:DATE\n- Forest land:LULC --COMPARED_TO-- 1984:DATE\n- Gallery forest:LULC --DOES_NOT_CHANGE_MUCH-- | PROCESS (implied, no explicit mention)\n\nNOTES:\n\n* \"nearly by half\" implies a significant reduction, but since there's no exact percentage provided, I couldn't extract a precise PERCENT entity.\n* Although \"did not change much\" is mentioned for the gallery forest, it's not a direct measurement, so I didn't extract a QUANTITY or PERCENT entity. Instead, I used the PROCESS label to imply a lack of significant change.\n\nThe sentence doesn't provide enough information to establish a CHANGE_TO relationship between different LULC types, as the focus is on the change in extent rather than a transformation between types.",
+    "processing_timestamp": "2025-07-28T13:45:46.340911"
+  },
+  {
+    "sentence": "About 26 and 31% of the total area of natural vegetation (forest, woodland and tree savanna) will be converted to farmland and degraded savanna by 2050 if we assume the dynamics recorded from 1975 to 1990 and 1990-2010, respectively",
+    "original_entities": [
+      {
+        "text": "About 26",
+        "label": "CARDINAL",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "text": "31%",
+        "label": "PERCENT",
+        "start": 13,
+        "end": 16
+      },
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 58,
+        "end": 64
+      },
+      {
+        "text": "tree",
+        "label": "LULC",
+        "start": 79,
+        "end": 83
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 84,
+        "end": 91
+      },
+      {
+        "text": "converted",
+        "label": "CHANGE",
+        "start": 101,
+        "end": 110
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 136,
+        "end": 143
+      },
+      {
+        "text": "2050",
+        "label": "DATE",
+        "start": 147,
+        "end": 151
+      },
+      {
+        "text": "1975 to",
+        "label": "DATE",
+        "start": 192,
+        "end": 199
+      },
+      {
+        "text": "1990",
+        "label": "DATE",
+        "start": 200,
+        "end": 204
+      },
+      {
+        "text": "1990-2010",
+        "label": "COORDINATES",
+        "start": 209,
+        "end": 218
+      }
+    ],
+    "extracted_entities": [
+      {
+        "text": "26",
+        "type": "CARDINAL"
+      },
+      {
+        "text": "31%",
+        "type": "PERCENT"
+      },
+      {
+        "text": "total area of natural vegetation",
+        "type": "LULC"
+      },
+      {
+        "text": "forest",
+        "type": "LULC"
+      },
+      {
+        "text": "woodland",
+        "type": "LULC"
+      },
+      {
+        "text": "tree savanna",
+        "type": "LULC"
+      },
+      {
+        "text": "farmland",
+        "type": "LULC"
+      },
+      {
+        "text": "degraded savanna",
+        "type": "LULC"
+      },
+      {
+        "text": "1975",
+        "type": "DATE"
+      },
+      {
+        "text": "1990",
+        "type": "DATE"
+      },
+      {
+        "text": "2010",
+        "type": "DATE"
+      },
+      {
+        "text": "2050",
+        "type": "DATE"
+      }
+    ],
+    "extracted_relations": [
+      "total area of natural vegetation:LULC --MEASURES-- 26:CARDINAL",
+      "total area of natural vegetation:LULC --MEASURES-- 31%:PERCENT",
+      "forest:LULC --PART_OF-- total area of natural vegetation:LULC",
+      "woodland:LULC --PART_OF-- total area of natural vegetation:LULC",
+      "tree savanna:LULC --PART_OF-- total area of natural vegetation:LULC",
+      "farmland:LULC --CHANGE_TO-- degraded savanna:LULC",
+      "1975:DATE --OCCURS_DURING-- recorded dynamics",
+      "1990:DATE --OCCURS_DURING-- recorded dynamics",
+      "2010:DATE --OCCURS_DURING-- recorded dynamics",
+      "2050:DATE --OCCURS_DURING-- predicted scenario",
+      "1975:DATE --CAUSES-- 1990:DATE"
+    ],
+    "raw_model_response": " 26 | CARDINAL\n- 31% | PERCENT\n- total area of natural vegetation | LULC\n- forest | LULC\n- woodland | LULC\n- tree savanna | LULC\n- farmland | LULC\n- degraded savanna | LULC\n- 1975 | DATE\n- 1990 | DATE\n- 2010 | DATE\n- 2050 | DATE\n\nRELATIONS:\n- total area of natural vegetation:LULC --MEASURES-- 26:CARDINAL\n- total area of natural vegetation:LULC --MEASURES-- 31%:PERCENT\n- forest:LULC --PART_OF-- total area of natural vegetation:LULC\n- woodland:LULC --PART_OF-- total area of natural vegetation:LULC\n- tree savanna:LULC --PART_OF-- total area of natural vegetation:LULC\n- farmland:LULC --CHANGE_TO-- degraded savanna:LULC\n- 1975:DATE --OCCURS_DURING-- recorded dynamics\n- 1990:DATE --OCCURS_DURING-- recorded dynamics\n- 2010:DATE --OCCURS_DURING-- recorded dynamics\n- 2050:DATE --OCCURS_DURING-- predicted scenario\n- 1975:DATE --CAUSES-- 1990:DATE\n- 1990:DATE",
+    "processing_timestamp": "2025-07-28T13:46:05.944214"
+  },
+  {
+    "sentence": "Assuming the dynamics recorded in the second period , the amounts of land covered by forest, woodland and tree savanna will decrease by 5, 9 and 17% of their cover in 1990, respectively, while the amount of degraded savanna and farmland will increase by 9 and 22% of the total area, respectively",
+    "original_entities": [
+      {
+        "text": "forest",
+        "label": "LULC",
+        "start": 85,
+        "end": 91
+      },
+      {
+        "text": "tree",
+        "label": "LULC",
+        "start": 106,
+        "end": 110
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 111,
+        "end": 118
+      },
+      {
+        "text": "decrease",
+        "label": "CHANGE",
+        "start": 124,
+        "end": 132
+      },
+      {
+        "text": "5, 9",
+        "label": "COORDINATES",
+        "start": 136,
+        "end": 140
+      },
+      {
+        "text": "17%",
+        "label": "PERCENT",
+        "start": 145,
+        "end": 148
+      },
+      {
+        "text": "1990",
+        "label": "DATE",
+        "start": 167,
+        "end": 171
+      },
+      {
+        "text": "savanna",
+        "label": "LULC",
+        "start": 216,
+        "end": 223
+      },
+      {
+        "text": "increase",
+        "label": "CHANGE",
+        "start": 242,
+        "end": 250
+      },
+      {
+        "text": "9",
+        "label": "CARDINAL",
+        "start": 254,
+        "end": 255
+      },
+      {
+        "text": "22%",
+        "label": "PERCENT",
+        "start": 260,
+        "end": 263
+      }
+    ],
+    "extracted_entities": [
+      {
+        "text": "\"second period\"",
+        "type": "TIME_PERIODS"
+      },
+      {
+        "text": "\"forest\"",
+        "type": "LULC"
+      },
+      {
+        "text": "\"woodland\"",
+        "type": "LULC"
+      },
+      {
+        "text": "\"tree savanna\"",
+        "type": "LULC"
+      },
+      {
+        "text": "\"degraded savanna\"",
+        "type": "LULC"
+      },
+      {
+        "text": "\"farmland\"",
+        "type": "LULC"
+      },
+      {
+        "text": "\"1990\"",
+        "type": "DATE"
+      },
+      {
+        "text": "\"5\"",
+        "type": "CARDINAL"
+      },
+      {
+        "text": "\"9\"",
+        "type": "CARDINAL"
+      },
+      {
+        "text": "\"17\"",
+        "type": "CARDINAL"
+      },
+      {
+        "text": "\"22\"",
+        "type": "CARDINAL"
+      }
+    ],
+    "extracted_relations": [
+      "forest:LULC --DECREASES_BY-- 5%:PERCENT | 1990:DATE",
+      "woodland:LULC --DECREASES_BY-- 9%:PERCENT | 1990:DATE",
+      "tree savanna:LULC --DECREASES_BY-- 17%:PERCENT | 1990:DATE",
+      "degraded savanna:LULC --INCREASES_BY-- 9%:PERCENT | 1990:DATE",
+      "farmland:LULC --INCREASES_BY-- 22%:PERCENT | 1990:DATE"
+    ],
+    "raw_model_response": " \"second period\" | TIME_PERIODS\n- \"forest\" | LULC\n- \"woodland\" | LULC\n- \"tree savanna\" | LULC\n- \"degraded savanna\" | LULC\n- \"farmland\" | LULC\n- \"1990\" | DATE\n- \"5\" | CARDINAL\n- \"9\" | CARDINAL\n- \"17\" | CARDINAL\n- \"22\" | CARDINAL\n\nRELATIONS:\n\n- forest:LULC --DECREASES_BY-- 5%:PERCENT | 1990:DATE\n- woodland:LULC --DECREASES_BY-- 9%:PERCENT | 1990:DATE\n- tree savanna:LULC --DECREASES_BY-- 17%:PERCENT | 1990:DATE\n- degraded savanna:LULC --INCREASES_BY-- 9%:PERCENT | 1990:DATE\n- farmland:LULC --INCREASES_BY-- 22%:PERCENT | 1990:DATE\n\nNote: The sentence assumes a comparison between the second period and 1990, but the exact dates are not specified. Therefore, I've used \"1990:DATE\" as the target for the relations.\n\nThe sentence mentions three LULC types decreasing and two increasing, with corresponding percentage values. The relationships established are all INCREASES_BY and DE",
+    "processing_timestamp": "2025-07-28T13:46:25.482703"
+  },
+  {
+    "sentence": "Conversely the decrease in the herbaceous standing crop, due to the shortening of the fallow period, the extension of cultivated and cleared fields, the grazing by cattle, and more generally the increment in landscape discontinuities limit the spread of fire and the size of burnt areas",
+    "original_entities": [
+      {
+        "text": "decrease",
+        "label": "CHANGE",
+        "start": 15,
+        "end": 23
+      },
+      {
+        "text": "crop",
+        "label": "LULC",
+        "start": 51,
+        "end": 55
+      },
+      {
+        "text": "fallow",
+        "label": "LULC",
+        "start": 86,
+        "end": 92
+      },
+      {
+        "text": "burnt areas",
+        "label": "LULC",
+        "start": 275,
+        "end": 286
+      }
+    ],
+    "extracted_entities": [
+      {
+        "text": "herbaceous standing crop",
+        "type": "LULC"
+      },
+      {
+        "text": "fallow period",
+        "type": "PROCESS"
+      },
+      {
+        "text": "cultivated and cleared fields",
+        "type": "LULC"
+      },
+      {
+        "text": "cattle",
+        "type": "PROCESS"
+      },
+      {
+        "text": "landscape discontinuities",
+        "type": "PROCESS"
+      },
+      {
+        "text": "fire",
+        "type": "PROCESS"
+      },
+      {
+        "text": "burnt areas",
+        "type": "LULC"
+      }
+    ],
+    "extracted_relations": [
+      "* herbaceous standing crop:LULC --DECREASES_BY-- due to fallow period:PROCESS",
+      "* fallow period:PROCESS --CAUSES-- decrease in herbaceous standing crop:LULC",
+      "* cultivated and cleared fields:LULC --EXTENDS-- due to fallow period:PROCESS",
+      "* cattle:PROCESS --GRAZES-- cultivated and cleared fields:LULC",
+      "* landscape discontinuities:PROCESS --LIMITS-- spread of fire:PROCESS",
+      "* fire:PROCESS --AFFECTS-- size of burnt areas:LULC",
+      "* burnt areas:LULC --IS_AFFECTED_BY-- fire:PROCESS"
+    ],
+    "raw_model_response": " herbaceous standing crop | LULC\n- fallow period | PROCESS\n- cultivated and cleared fields | LULC\n- cattle | PROCESS\n- landscape discontinuities | PROCESS\n- fire | PROCESS\n- burnt areas | LULC\n\nRELATIONS:\n\n* herbaceous standing crop:LULC --DECREASES_BY-- due to fallow period:PROCESS\n* fallow period:PROCESS --CAUSES-- decrease in herbaceous standing crop:LULC\n* cultivated and cleared fields:LULC --EXTENDS-- due to fallow period:PROCESS\n* cattle:PROCESS --GRAZES-- cultivated and cleared fields:LULC\n* landscape discontinuities:PROCESS --LIMITS-- spread of fire:PROCESS\n* fire:PROCESS --AFFECTS-- size of burnt areas:LULC\n* burnt areas:LULC --IS_AFFECTED_BY-- fire:PROCESS\n\nNote: I extracted the entities and relations based on the provided instructions. Please let me know if you need further clarification or modifications.\n\nAlso, please note that I used the following relations:\n\n* DECREASES_BY: To indicate the decrease in herbaceous standing crop due to the fallow period.\n* CAUSES: To establish the causality between the fallow period and the decrease in herbaceous standing crop.\n* EXTENDS: To describe the extension of cultivated and cleared fields due to the fallow period.\n* GRAZES: To describe the action of cattle",
+    "processing_timestamp": "2025-07-28T13:46:44.971428"
+  },
+  {
+    "sentence": "describes Rwandan agriculture as caught in a \"low investment trap\"; less than 10% of cropland is irrigated, while tractors, bank credit and government aid are all scarce",
+    "original_entities": [
+      {
+        "text": "Rwandan",
+        "label": "LOC",
+        "start": 10,
+        "end": 17
+      },
+      {
+        "text": "agriculture",
+        "label": "LULC",
+        "start": 18,
+        "end": 29
+      },
+      {
+        "text": "less than 10%",
+        "label": "PERCENT",
+        "start": 68,
+        "end": 81
+      },
+      {
+        "text": "cropland",
+        "label": "LULC",
+        "start": 85,
+        "end": 93
+      }
+    ],
+    "extracted_entities": [
+      {
+        "text": "\"Rwandan agriculture\"",
+        "type": "LULC"
+      },
+      {
+        "text": "\"low investment trap\"",
+        "type": "PROCESS"
+      },
+      {
+        "text": "\"less than 10%\"",
+        "type": "PERCENT"
+      },
+      {
+        "text": "\"cropland\"",
+        "type": "LULC"
+      },
+      {
+        "text": "\"irrigated\"",
+        "type": "CHANGE"
+      },
+      {
+        "text": "\"tractors\"",
+        "type": "PROCESS"
+      },
+      {
+        "text": "\"bank credit\"",
+        "type": "PROCESS"
+      },
+      {
+        "text": "\"government aid\"",
+        "type": "PROCESS"
+      }
+    ],
+    "extracted_relations": [
+      "Rwandan agriculture:LULC --AFFECTS-- low investment trap:PROCESS",
+      "cropland:LULC --DECREASES_BY-- less than 10%:PERCENT",
+      "cropland:LULC --IS_IRRIGATED-- less than 10%:PERCENT",
+      "tractors:PROCESS --SCARCE--",
+      "bank credit:PROCESS --SCARCE--",
+      "government aid:PROCESS --SCARCE--"
+    ],
+    "raw_model_response": " \"Rwandan agriculture\" | LULC\n- \"low investment trap\" | PROCESS\n- \"less than 10%\" | PERCENT\n- \"cropland\" | LULC\n- \"irrigated\" | CHANGE\n- \"tractors\" | PROCESS\n- \"bank credit\" | PROCESS\n- \"government aid\" | PROCESS\n\nRELATIONS:\n- Rwandan agriculture:LULC --AFFECTS-- low investment trap:PROCESS\n- cropland:LULC --DECREASES_BY-- less than 10%:PERCENT\n- cropland:LULC --IS_IRRIGATED-- less than 10%:PERCENT\n- tractors:PROCESS --SCARCE-- \n- bank credit:PROCESS --SCARCE--\n- government aid:PROCESS --SCARCE--\n\nNote: Since there is no explicit mention of a transformation between LULC types, I did not extract a CHANGE_TO relation. Instead, I extracted relations describing the state of Rwandan agriculture, the scarcity of certain processes, and the limited irrigation of cropland.\n\nAlso, I used the relation SCARCE to describe the availability of tractors, bank credit, and government aid, as they are mentioned as being scarce.",
+    "processing_timestamp": "2025-07-28T13:47:01.913729"
+  },
+  {
+    "sentence": "Due to the weeding practice, bare soil dominates in cropped fields in the early growing season while herbaceous vegetation continues to grow in fallows and rangelands",
+    "original_entities": [
+      {
+        "text": "bare soil",
+        "label": "LULC",
+        "start": 29,
+        "end": 38
+      },
+      {
+        "text": "cropped",
+        "label": "LULC",
+        "start": 52,
+        "end": 59
+      },
+      {
+        "text": "the early",
+        "label": "DATE",
+        "start": 70,
+        "end": 79
+      },
+      {
+        "text": "growing",
+        "label": "CHANGE",
+        "start": 80,
+        "end": 87
+      },
+      {
+        "text": "herbaceous vegetation",
+        "label": "LULC",
+        "start": 101,
+        "end": 122
+      },
+      {
+        "text": "grow",
+        "label": "CHANGE",
+        "start": 136,
+        "end": 140
+      },
+      {
+        "text": "fallows",
+        "label": "LULC",
+        "start": 144,
+        "end": 151
+      }
+    ],
+    "extracted_entities": [
+      {
+        "text": "bare soil",
+        "type": "LULC"
+      },
+      {
+        "text": "cropped fields",
+        "type": "LULC"
+      },
+      {
+        "text": "herbaceous vegetation",
+        "type": "LULC"
+      },
+      {
+        "text": "fallows",
+        "type": "LULC"
+      },
+      {
+        "text": "rangelands",
+        "type": "LULC"
+      },
+      {
+        "text": "weeding practice",
+        "type": "PROCESS"
+      },
+      {
+        "text": "early growing season",
+        "type": "TIME_PERIOD"
+      },
+      {
+        "text": "fallow",
+        "type": "LULC"
+      }
+    ],
+    "extracted_relations": [
+      "* bare soil: LULC --AFFECTS-- cropped fields: LULC",
+      "* bare soil: LULC --OCCURS_DURING-- early growing season: TIME_PERIOD",
+      "* herbaceous vegetation: LULC --OCCURS_DURING-- fallows: LULC",
+      "* herbaceous vegetation: LULC --OCCURS_DURING-- rangelands: LULC",
+      "* weeding practice: PROCESS --CAUSES-- bare soil: LULC",
+      "* fallows: LULC --CONTAINS-- herbaceous vegetation: LULC",
+      "* rangelands: LULC --CONTAINS-- herbaceous vegetation: LULC",
+      "* fallows: LULC --AFFECTS-- herbaceous vegetation: LULC",
+      "* rangelands: LULC --"
+    ],
+    "raw_model_response": " bare soil | LULC\n- cropped fields | LULC\n- herbaceous vegetation | LULC\n- fallows | LULC\n- rangelands | LULC\n- weeding practice | PROCESS\n- early growing season | TIME_PERIOD\n- fallow | LULC\n\nRELATIONS:\n\n* bare soil: LULC --AFFECTS-- cropped fields: LULC\n* bare soil: LULC --OCCURS_DURING-- early growing season: TIME_PERIOD\n* herbaceous vegetation: LULC --OCCURS_DURING-- fallows: LULC\n* herbaceous vegetation: LULC --OCCURS_DURING-- rangelands: LULC\n* weeding practice: PROCESS --CAUSES-- bare soil: LULC\n* fallows: LULC --CONTAINS-- herbaceous vegetation: LULC\n* rangelands: LULC --CONTAINS-- herbaceous vegetation: LULC\n\nNote: I've extracted the entities and relationships based on the provided instructions. However, please note that the relations \"CONTAINS\" are not recommended according to the guidelines. Instead, you could rephrase the relations using \"AFFECTS\" or \"OCCURS_DURING\". For example:\n\n* fallows: LULC --AFFECTS-- herbaceous vegetation: LULC\n* rangelands: LULC --",
+    "processing_timestamp": "2025-07-28T13:47:21.348997"
+  }
+]

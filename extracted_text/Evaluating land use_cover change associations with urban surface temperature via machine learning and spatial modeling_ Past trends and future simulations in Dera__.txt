@@ -1,0 +1,545 @@
+================================================================================
+TITLE: Evaluating land use/cover change associations with urban surface temperature via machine learning and spatial modeling: Past trends and future simulations in Dera Ghazi Khan, Pakistan
+================================================================================
+
+AUTHORS:
+- Muhammad Mehmood
+- Adnanul Rehman
+- Muhammad Sajjad
+- Jinxi Song
+- Zeeshan Zafar
+- Zhai Shiyan
+- Qin Yaochen
+- Alban Kuriqi
+- Xing Gao
+
+ABSTRACT:
+While urbanization puts lots of pressure on green areas, the transition of green-to-grey surfaces under land use land cover change is directly related to increased land surface temperature-compromising livability and comfort in cities due to the heat island effect. In this context, we evaluate historical and future associations between land use land cover changes and land surface temperature in Dera Ghazi Khan-one of the top cities in Pakistan-using multi-temporal Landsat data over two decades . After assessing current land use changes and future predictions, their impact on land surface temperature and urban heat island effect is measured using machine learning via Multi-Layer Perceptron-Markov Chain, Artificial Neural Network and Cellular Automata. Significant changes in land use land cover were observed in the last two decades. The built-up area expanded greatly (874 ha) while agriculture land (-687 ha) and barren land (-253 ha) show decreasing trend. The water bodies were found the lowest changes (57 ha) and vegetation cover got the largest proportion in all the years. This green-grey conversion in the last two decades (8.7%) and prospect along the main corridors show the gravity of unplanned urban growth at the cost of vegetation and agricultural land (-6.8%). The land surface temperature and urban heat island effect shows a strong positive correlation between urbanization and vegetation removal. The simulation results presented in this study confirm that by 2032, the city will face a 5° C high mean temperature based on historical patterns, which could potentially lead to more challenges associated with urban heat island if no appropriate measures are taken. It is expected that due to land cover changes by 2032, ~60% of urban and peri-urban areas will experience very hot to hot temperatures (> 31.5°C). Our results provide baseline information to urban managers and planners to understand the increasing trends of land surface temperature in response to land cover changes. The study is important for urban resource management, sustainable development policies, and actions to mitigate the heat island effect. It will further asset the broader audience to understand the
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Land use (LU)/land cover (LC) refers to the classification of landscape according to the natural elements and anthropogenic activities. Collectively, the terms are often used as LULC due to their interrelationship 
+Cities are considered the locomotive of development. Development practices across the world have accelerated urbanization 
+The high LST concentration is primarily influenced by both horizontal and vertical expansion 
+To measure variations in LULC and LST in cities, geo-information technologies such as Geographic Information Systems (GIS) and remote sensing (RS) are flourishing 
+Although some previous studies have focused on the historical changes and future LULC scenarios in Pakistan and worldwide 
+
+## Siddique ##
+(2) model LST and its association with spatial indices as NDVI and NDBI; (3) simulate future changes in LULC and LST for 2032; and (4) explore the impact of different LULC changes on LST and formation of UHI effect.
+
+## Study area ##
+The study area is situated in the southwestern district in Punjab province at the foothill of the Koh-e-Suleiman mountain range (Suleiman Range) 
+The study area received a large population from the surrounding less developed areas in the past two decades mainly due to better quality of life, health care, education, and security reasons. Also, an influx of migrants from rural areas after the destructive flood event in 2010 brought significant changes in the existing LULC pattern 
+
+## Methodology ##
+
+
+## Data Collection and Pre-processing ##
+For this research, the study period is considered as the years 2002, 2012, and 2022. In these two decades, three Multi-spectral Landsat Satellite data (for the years mentioned) are downloaded from the United States Geological Survey's (USGS) Earth Explorer archives to evaluate LULC changes and their association with LST. The Landsat 5 Thematic Mapper (TM) data are used for 2002 and 2012, and the Landsat 8 Operational Land Imager (OLI) data are used for 2022. All the data are retrieved for March to prevent any influences of seasonal variations. Cloud coverage is set to a minimum scale of <10% for all Landsat images. However, it is notable that the cloud cover is nearly 0 % for all the used images of the study area. Additional details (metadata) regarding the images were retrieved from the USGS repository. Detailed information about the images is provided in Table 
+
+## Classification of LULC and change detection ##
+The Image Classification tool in ArcGIS 10.5 is used to classify the LULC map due to its straightforward processing approach and simpleto-use nature with higher accuracy in terms of LULC classification. Following other research in this field, we use the supervised classification based on the maximum likelihood technique-one of the most applied techniques for LULC classification. Under the supervised classification, the images are classified using spectral signatures that are provided through training samples. Landsat-5 TM imaging bands 1-5 and band-7 are utilized to classify different land use classes. It is noted that band 6 is rejected since it represents a thermal band. In the case of Landsat-8 OLI imagery, bands 1-7 are employed. To create the LULC maps, all bands are initially stacked in ArcGIS 10.5 software using the Image Analyst Tool. To attain the accurate LULC classification, Landsat surface reflectance-derived spectral indices, such as the Normalized Difference Vegetation Index (NDVI) and Normalized Difference Built-up Index (NDBI) were utilized 
+
+## Accuracy assessment of classified maps ##
+The confusion matrix, also known as the error matrix, is used to measure the accuracy of the classified maps. The pixel's actual and expected identity information is explained in this matrix as suggested by 
+
+## Retrieval of land surface temperature ##
+The LST is calculated by employing the thermal bands of radiometrically and geometrically corrected earth observation data from Landsat satellite during 2002-2022 for the periods 2002, 2012, and 2022. Thermal data are retrieved from the Landsat sensors and stored as Digital Numbers (DN). Later, these DNs are transformed into LST using a four-step procedure described by 
+Step 1 involves the conversion of DNs values to radiance utilizing the following Equation (1):
+(1)
+where. L λ represents spectral radiance for both Landsat 5 TM and 8 OLI images;
+LMIN for Landsat 5 TM is 1.238 and 0.10033 for both thermal bands (Bands 10 and 11) of Landsat 8 OLI image.
+LMAX represents the Landsat 5 TM as 15.30 and 22.00180 for both thermal bands (Bands 10 and 11) of the Landsat 8 OLI image.
+Step 2 follows the conversion of the radiance above to satellite brightness temperature (BT) at sensors into degree Celsius as Equation 
+Here, K1 and K2 reflect calibration constants given as 607.76 and 1260.56 accordingly for Landsat 5 TM. For Landsat 8, OLI images of K1 and K2 (both bands 10 and 11) are given as 
+Step 3 involves the final step to calculate the LST by utilizing the following three Equations 3:
+in which, LST reflects land surface temperature; TB represents satellite brightness temperature; λ represents the wavelength of emitted radiance with a peak discharge of 11.5 μm; ρ can be calculated by applying the following Equation (4), and ε offers the ground surface emissivity that can be calculated from proportion vegetation (PV) using Equation 
+where.
+h is Planck's constant (6.626 * 10-34 J s), σ is Boltzmann constant (1.380649 * 10-23 J/K), and c = velocity of light (2.998 * 108 m/s). Further,
+
+## PV NDVI NDVImin NDVImax NDVImin ##
+PV represents vegetation proportion calculated from the normalized difference vegetation index (NDVI) for all the respective years 
+The LST drives from Landsat 8, bands 10, and 11 are then averaged to obtain the cumulative LST composite image using the Cell Statistics Spatial Analyst tool extension in ArcGIS 10.5 software.
+
+## Land surface temperature classification in relation to LULC changes ##
+To determine the relationship between LST and land cover changes over the past 20 years, if any, the LST is categorized into six different zones to better understand the temporal and spatial differences. The selection of LST threshold values to visualize clusters/zones, past literature, expert opinion, and study area characteristics were considered. We categorize the LST zones as very cold (<21.1°C), cold (21.1-<23.1°C), chilly (23.1-<25.1°C), cool (25.1-27.1°C), warmish (27.1-29.1°C), hot (29.1-<31.1°C), and very hot (> 31.1°C) 
+
+## Land surface temperature in relation to spatial indices ##
+Indices such as the Normalized Difference Vegetation Index (NDVI) and the Normalized Difference Built-up Index (NDBI) have been linked to LST 
+where NIR represents the Near-infrared band and R is the Red band of the satellite image. Landsat TM bands 4 and 3 are utilized to derive NDVI, while Landsat OLI bands 5 and 4 are used. The NDVI scale runs between -1 to +1, with a negative value of NDVI indicating water whereas positive NDVI indicates vegetation.
+Except for NDVI, LST is significantly influenced by impervious surfaces. Hence, we also consider this parameter and represent it using the well-known NDBI. The following equation (Equation 
+
+## ND I SWIR NIR SWIR NIR ##
+where, SWIR represents the Short-wave Infrared band and NIR is the Near-infrared band of satellite images.
+Utilizing the NDBI, we can determine the built-up areas using remotely sensed data. For Landsat TM and Landsat OLI, bands 5 and 6 are utilized for SWIR, respectively. Similarly, bands 4 and 5 are utilized from Landsat TM and Landsat OLI images for NIR, respectively. Similar to NDVI, the NDBI values lie between -1 to +1, with values closer to -1 reflecting lesser built-up and values closer to +1 showing a high density of built-up areas.
+The association between LST and spatial indices is initially determined using single and multiple linear regression analysis 
+
+## Simulating LULC projections for the year 2032 ##
+Given the fact that LULC is spatially dynamic, their simulation necessitates the use of spatial techniques for guaranteeing long-term sustainability and addressing current and future development needs. By combining GIS and RS methodologies, precise spatial models such as the Multi-layer Perceptron-Markov Chain (MLP-MC) have been developed to properly simulate future LULC 
+The projection is made using two sorts of data: dependent variables like the previous LULC changes estimated (transitional matrix) from Landsat images of 2012, and 2022 and independent variables including elevation, slope, distance from activity centers, distance from waterways, and proximity to road networks. The distances to activity centers, waterways, and roads are estimated using the Euclidian distance function in ArcMap software. Furthermore, the ALOS-PALSAR DEM (12.5 × 12.5 meters spatial resolution) is employed in ArcMap software to estimate the elevation and slope of the study area. The up-scaling procedure with mean aggregation rules (resampling function in ArcGIS) was used to homogenize the spatial resolution of DEM and Landsat images. The transition potential matrix is created using the aforementioned variables. A random sampling approach is used to collect the samples of LULC. The maximum iteration (1000) and neighborhood pixel (9 cells) are selected to automatically train the prediction model 
+
+## Simulating LST projection for years 2032 ##
+Under the global warming situation, increased LST in metropolitan areas is a matter of serious concern for urban planners and decision-makers as it would impact energy demands, compromise livability in cities, and has potential health-related challenges 
+In this study, LST simulation is based on the LST data from 2002 to 2022. Using QGIS software, the study area is subdivided into 500 × 500 meters spatial grids (fishnet) to obtain the sample points. The said grid size is set with the minimum spacing range in mind where features of one point can significantly influence LST. The LST and LULC data from previous steps are utilized for the training of a Neural Network in Terrset in order to predict LST 
+The regression analysis offers information on how well the target data set describes the variance in the output results. The closer the value of R is to 1, the perfect correlation between the output and target data is expected. The Graphic User Interface (GUI) is created to test the performance indication before implementing the network. After the network's performance metrics are reasonable, they are retained for prediction. During the evaluation, the values of R and MSE are reported as 0.8 and 0.5, respectively. Thus, LST for 2032 is simulated using the call-back function. The number of hidden layers is determined by numerous experiments depending on MSE and R values. These hidden layers are significant because they influence the outcomes by allowing the network to display non-linear behavior. Three hidden layers were chosen for the current study 
+
+## Results ##
+
+
+## Spatial-temporal heterogeneities in LULC ##
+Two precise patterns are observed in terms of LULC classification (Figure 
+Moving forward, Supplementary Figure 
+One of the important aspects of LULC classification is its reliability and accuracy. Detailed accuracy assessment is performed by picking 210 ground truth points (GTP) for all years. Multiple sources were used to seek the accuracy assessment and their detail is given in section 2.2.1.   As the urban areas increased, so did the study area's temperature in the last two decades (Figure 
+
+## LULC-wise LST discrepancies ##
+As expected, the lowest temperature in comparison with other land use classes is recorded for water bodies over 2002-2022 and in the predicted scenario for 2032. Where 23°C is the mean temperature in 2002 for water bodies, the value remained almost the same in 2012. In 2022, however, the value jumped to 33°C (Figure 
+
+## Exploring connections among LST, NDBI and NDVI ##
+NDBI is used to identify the human settlements in land cover with few other essential features like roads, dams, canals, etc. 
+As for the NDVI, a completely mirrored scenario can be seen. For instance, the variation of NDVI values can be analyzed based on the radiation absorbed by the red spectral area chlorophyll and reflectance near the infrared spectral area of NDVI the more vegetation there will be. However, Figure 
+The relation between LST and NDVI for the study area during the last decade shows a disproportionate relation. In 2002, the highest concentration of NDVI values was between the 25 to 30°C range, with a low value of -0.2 to 0.2 (Supplementary Figure 
+The relation between LST and NDBI shows the corresponding scenario of LST and NDBI. An evaluation of the linear relationship between NDBI and LST shows a positive association between both (Supplementary Figure 
+
+## Drivers of LULC and LST changes ##
+Five driving forces are selected to predict the LST and LULC changes for the year 2032. As for the elevation (Figure 
+The predicted LULC and LST are illustrated in Figures 
+
+## A B ##
+(A) Predicted LULC and (B) LST for the year 2032. 
+
+## Discussion ##
+Sustainability in the long-term context requires informed planning and management in the face of environmental changes through space and time. In an anthropogenic activities-based climate change-induced warming world, rapid urbanization-led impervious surface in cities leads to land resource degradation and scorching heat, which creates challenging conditions in terms of health issues and energy use among many others
+The historical city of D. G. Khan was the first of its kind gridded planned city in 1911 
+In 1970, a flux of labor migration toward the middle east countries (e.g., the United Arab Emirates and Saudi Arabia) 
+A clear trend of decreasing NDVI and increasing NDBI (Figure 
+Recently, the government developed several land-use policies and rehabilitation programs at the federal and provincial levels. Still, lack of political interest and insufficient urban governance are the main barriers to implementing these initiatives. In recent years, the government has launched a Billion Trees Tsunami program all over Pakistan to tackle green cover degradation in the country, which has important implications for urban climatic conditions 
+Our results have shown that green spaces are insufficient to overcome the large urban footprint. Hence, the green cover should be introduced and preserved on large patches to overcome the impact of impervious surfaces. The city and divisional government should introduce strict policies to implement green space initiatives at a larger scale to overcome the LST effect. The predicted results of 2032 also indicated the tremendous increase of 4-5° C LST and UHI, which represents an alarming situation for urban dwellers and should be a matter of the highest concern for relevant authorities. 
+
+## Conclusions and recommendations ##
+This study leverages multi-temporal remote sensing data to track historical and predict future patterns of land use/cover changes, LST, and the association between them in a mid-country city that is a part of the China-Pakistan Economic Corridor (CPEC) under the One Road One Built project. The overarching goal of the study is to determine how changes in land use classes affected LST. The methods used in this study are quite effective in accomplishing the research objectives. The study area is divided into four LULC categories, such as water bodies, built-up land, bare land, and vegetation. Due to political and socio-economic considerations, the land cover classification revealed that built-up areas and water bodies increased by 8.7 and 0.6%, respectively, over the study period . In contrast, bare land and vegetation dropped by 2.5 and 6.8%, respectively.
+Furthermore, the study determines a negative association of vegetation area (NDVI) and water bodies with LST. The LULC significantly influences the LST and is extremely sensitive to vegetation and soil moisture; vegetation is the most important element in this connection. Although there is a positive association between NDBI and LST, higher LST is reported in areas with less vegetated (barren land) and vice versa. We conclude that without proper measures, a tremendous increase in the impervious surface is expected at the cost of green areas, which could potentially compromise the livability and comfortability of cities in the wake of global warming. This situation would very well lead to the UHI effect influencing millions of people in terms of increased energy demands and health-related challenges.
+In order to cope with this increasing LST situation, green urban design and infrastructure planning and development must be prioritized. Similarly, enhancing water features like lakes, canals, waterfalls, and public fountains along with significantly increasing green areas like artificial parks, green walls, gardens, and linear plantings, particularly woody plants could positively drive the UHI mitigation efforts. In addition, to achieve the intended ecological development in terms of environmental resource planning and management, LULC alteration activities should be minimized, and environmental education should be reawakened. The findings of this study have important implications for urban landscape planning, particularly when it comes to landscape connectivity between green and impervious surfaces and their impact on LST. All of these would result in science-based information having important implications for urban planning and land resource management along with providing opportunities to design appropriate action plans to mitigate the UHI effect.
+
+## Limitations and future works ##
+The present study provides important and useful information for the study area to design proper adaptation and mitigation policies and action plans. Such actions at local levels would progressively contribute to regional sustainability from a bottom-up perspective. From a short-to-medium-term impact perspective, predicting future changes in LULC and how it will influence the LST under environmental changes provides key references for planning and management of the land resource in a more sustainable way along with providing opportunities for adaptation and mitigating climate change through local actions. Future urban studies could concentrate on the topic of rapid urbanization's impact on public health and infrastructure along with the influence of predicted LST on health-related issues in urban societies-left for upcoming studies. Future research should address the following limitations. Higher-resolution images for LULC categorization may improve LULC composition-LST correlation explanation and urban planner usability. Urban morphology is needed to better understand the nonlinear association between LULC and LST in urban areas. For more conclusive LST prediction findings, other nonlinear regression approaches may need to be investigated. This study used temperature indices to analyze LST; multi-season analysis will provide more information. Although LULC is a primary influence in LST variation, other characteristics affecting LST, most likely topography and elevation, are equally essential. In commercial/ industrial locations, surface morphology also effects surface temperature retrieval. More precise spatial distribution information 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Simulating land cover changes and their impacts on land surface temperature in Dhaka
+   Authors: , , , , 
+   Date: 2013
+
+2. Effects of floods policy in Pakistan and management issues: (case of district Dera-ghazi Khan)
+   Authors: , , , , 
+   Date: 2014
+
+3. Land cover change effects on land surface temperature trends in an African urbanizing dryland region
+   Authors: , , 
+   Date: 2019
+
+4. An urban paradox: urban resilience or human needs
+   Authors: , 
+   Date: 2021
+
+5. Spatial and decadal prediction of land use/land cover using multi-layer perceptronneural network (Mlp-Nn) algorithm for a semi-arid region of Asir, Saudi Arabia
+   Authors: , , , , , 
+   Date: 2021
+
+6. Urban land cover change modelling using time-series satellite images: a case study of urban growth in five cities of Saudi Arabia
+   Authors: , , 
+   Date: 2016
+
+7. Assessment and simulation of land use and land cover change impacts on the land surface temperature of Chaoyang District in Beijing
+   Authors: , , , , , 
+   Date: 2020
+
+8. Evaluating single and multi-date landsat classifications of land-cover in a seasonally dry tropical forest
+   Authors: , , , , 
+   Date: 2021
+
+9. Quantifying the contribution of diminishing green spaces and urban sprawl to urban heat island effect in a rapidly urbanizing metropolitan city of Pakistan
+   Authors: , , , , , 
+   Date: 2022
+
+10. Survey of emissivity variability in thermography of urban areas
+   Authors: , 
+   Date: 1982
+
+11. The spatiotemporal dynamics of urbanisation and local climate: a case study of Islamabad
+   Authors: , , 
+   Date: 2021
+
+12. Overseas Migration and its Socio-economic Impacts on the Families Left Behind in Pakistan: A Case Study in the Province
+   Authors: 
+   Date: 2008
+
+13. Integrated influencing mechanism of potential drivers on seasonal variability of Lst in Kolkata municipal corporation
+   Authors: , , , , , 
+   Date: 2022
+
+14. Assessment of urban Heat Island based on the relationship between land surface temperature and land use/ land cover in Tehran
+   Authors: , , , 
+   Date: 2016
+
+15. Investigating the relationship between local climate zone and land surface temperature using an improved Wudapt methodology-a case study of Yangtze River Delta
+   Authors: , , , , , 
+   Date: 2018
+
+16. Drivers of migration: why do people move?
+   Authors: 
+   Date: 2018
+
+17. Microclimate variation among urban land covers: the importance of vertical and horizontal structure in air and land surface temperature relationships
+   Authors: , 
+   Date: 2017
+
+18. Assessment of variation of land use/land cover and its impact on land surface temperature of Asansol subdivision
+   Authors: , , , 
+   Date: 2021
+
+19. Geospatial modelling of changes in land use/land cover dynamics using multi-layer perception Markov chain model in Rajshahi City
+   Authors: , , , 
+   Date: 2021
+
+20. Modeling the impacts of future Lulc and climate change on runoff and sediment yield in a strategic basin in the Caatinga/Atlantic forest ecotone of Brazil
+   Authors: , , , , , , 
+   Date: 2021
+
+21. Effects of landscape composition and pattern on land surface temperature: an urban heat island study in the megacities of Southeast Asia
+   Authors: , , 
+   Date: 2017
+
+22. Computational modeling of land surface temperature using remote sensing data to investigate the spatial arrangement of buildings and energy consumption relationship
+   Authors: , , , , , 
+   Date: 2020. 2017
+
+23. Derivation and applications of probabilistic measures of class membership from the maximumlikelihood classification
+   Authors: , , , 
+   Date: 1992
+
+24. The effect of economic development on haze pollution (Pm2. 5) based on a spatial perspective: urbanization as a mediating variable
+   Authors: , , , 
+   Date: 2020
+
+25. Remote sensing and historical morphodynamics of alluvial plains. The 1909 Indus flood and the city of Dera Gazhi Khan (province of
+   Authors: , , , , 
+   Date: 2018
+
+26. Remote sensing and historical Morphodynamics of Alluvial Plains. The 1909 Indus flood and the City of Dera Ghazi Khan (province of
+   Authors: , , , , 
+   Date: 2019
+
+27. Analytical study of seasonal variability in land surface temperature with normalized difference vegetation index, normalized difference water index, normalized difference built-up index, and normalized multiband drought index
+   Authors: , , 
+   Date: 2019
+
+28. Influences of urban spatial form on urban heat island effects at the community level in China
+   Authors: , , , , , 
+   Date: 2020
+
+29. Predicting land use/land cover changes using a ca-Markov model under two different scenarios
+   Authors: , , 
+   Date: 2018
+
+30. A critical analysis of 2010 floods in Pakistan
+   Authors: , , , 
+   Date: 2012
+
+31. Monitoring land use/land cover change, urban growth dynamics and landscape pattern analysis in five fastest urbanized cities in Bangladesh
+   Authors: 
+   Date: 2017
+
+32. The urban heat island: implications for health in a changing environment
+   Authors: , , 
+   Date: 2017
+
+33. 
+   Authors: , , , , , 
+   Date: 2019
+
+34. Urban Ecosystem Services and Stakeholders: Towards a Sustainable Capability Approach
+
+35. Using Gis tools to detect the land use/land cover changes during forty years in Lodhran District of Pakistan
+   Authors: , , , , , 
+   Date: 2020
+
+36. Study of land cover/land use changes using Rs and Gis: a case study of Multan district
+   Authors: , , , , , 
+   Date: 2019
+
+37. Analysis and mapping of present and future drivers of local urban climate using remote sensing: a case of Lahore
+   Authors: , 
+   Date: 2020
+
+38. Advances in remote sensing applications for urban sustainability
+   Authors: , , 
+   Date: 2016
+
+39. Monitoring the effects of vegetation cover losses on land surface temperature dynamics using geospatial approach in Rajshahi City
+   Authors: , , , , , 
+   Date: 2021
+
+40. Using Geographic Information System and Remote Sensing Techniques in Environmental Management: A Case Study in Cumilla City Corporation
+   Authors: , , , , 
+   Date: 2019
+
+41. Modelling future land use land cover changes and their impacts on land surface temperatures in Rajshahi
+   Authors: , , , , 
+   Date: 2020
+
+42. Prediction of seasonal urban thermal field variance index using machine learning algorithms in Cumilla
+   Authors: , , , , , 
+   Date: 2021b
+
+43. Remote sensing approach to simulate the land use/land cover and seasonal land surface temperature change using machine learning algorithms in a fastest-growing megacity of Bangladesh
+   Authors: , , , , , 
+   Date: 2021c
+
+44. A spatial zoning approach to calibrate and validate urban growth models
+   Authors: , , , 
+   Date: 2017
+
+45. Cpec will be Reviewed for Balochistan
+   Authors: 
+   Date: 2018
+
+46. Impact assessment of land use change on surface temperature and agricultural productivity in Peshawar-Pakistan
+   Authors: , , , , , 
+   Date: 2019
+
+47. Socioeconomic impacts of the billion trees afforestation program in Khyber Pakhtunkhwa Province (kpk)
+   Authors: , , , , , 
+   Date: 2019
+
+48. Green growth initative will lead toward sustainable development of natural resources in Pakistan: an Investgation of "billion tree tsunami afforestation project
+   Authors: , 
+   Date: 2017
+
+49. Neo-liberal urbanism and sustainability in Turkey: commodification of nature in gated community marketing
+   Authors: , 
+   Date: 2021
+
+50. Assessing the Double Injustice of Climate Change and Urbanization on Water Security in Peri-urban Areas: Creating Citizen-Centric Scenarios
+   Authors: , , 
+   Date: 2019
+
+51. Linking potential heat source and sink to urban heat island: heterogeneous effects of landscape pattern on land surface temperature
+   Authors: , , , 
+   Date: 2017
+
+52. Water quality trend assessment in Jakarta: a rapidly growing Asian megacity
+   Authors: , , , , , 
+   Date: 2019
+
+53. The Great Climate Migration
+   Authors: 
+   Date: 2020
+
+54. Simulation and prediction of land surface temperature (Lst) dynamics within Ikom City in Nigeria using artificial neural network (Ann)
+   Authors: , , 
+   Date: 2016
+
+55. Politics for environment: youth perception on campaign for billion tree tsunami to combat climate change situation in Pakistan
+   Authors: 
+   Date: 2020
+
+56. Spatio-temporal analysis and simulation of land cover changes and their impacts on land surface temperature in urban agglomeration of Bisha watershed, Saudi Arabia
+   Authors: , , , , , 
+   Date: 2021
+
+57. Monitoring land use and land cover changes in the mountainous cities of Oman using Gis and ca-Markov modelling techniques
+   Authors: , , 
+   Date: 2020
+
+58. Assessing Landsat images availability and its effects on Phenological metrics
+   Authors: , 
+   Date: 2021
+
+59. Managing the blue carbon ecosystem: a remote sensing and Gis approach
+   Authors: , , 
+   Date: 2021
+
+60. Time series analyses and forecasting of surface urban Heat Island intensity using Arima model in Punjab
+   Authors: , , , , , 
+   Date: 2023
+
+61. Application of remote sensing and Gis inland use/land cover mapping and change detection in a part of South Western Nigeria
+   Authors: , 
+   Date: 2007
+
+62. 
+   Authors: , , , , , 
+   Date: 2020
+
+63. Modeling spatio-temporal land transformation and its associated impacts on land surface temperature (Lst)
+
+64. Flash flood water management practices in Dera Ghazi Khan City (Pakistan): a remote sensing and Gis prospective
+   Authors: , 
+   Date: 2016
+
+65. 
+
+66. Urban environmental quality assessment using remote sensing and census data
+   Authors: , , 
+   Date: 2018
+
+67. Seasonal contrast of the dominant factors for spatial distribution of land surface temperature in urban areas
+   Authors: , , , , 
+   Date: 2018
+
+68. Land surface temperature and its impact factors in Western Sichuan plateau
+   Authors: , , , , 
+   Date: 2017
+
+69. An evaluation of an object-oriented paradigm for land use/land cover classification
+   Authors: , 
+   Date: 2008
+
+70. Geophysical hazards microzonation and suitable site selection through multicriteria analysis using geographical information system
+   Authors: , , , , , 
+   Date: 2021
+
+71. 
+   Authors: , , , , , 
+   Date: 2022
+
+72. Hazard susceptibility assessment using the analytical hierarchy process and frequency ratio techniques in the Northwest Himalayas
+   Authors: 
+
+73. Analysis and projection of land-use/ land-cover dynamics through scenario-based simulations using the ca-Markov model: a case study in guanting reservoir basin
+   Authors: , , , 
+   Date: 2020
+
+74. Accuracy assessment of land use/land cover classification using remote sensing and Gis
+   Authors: , 
+   Date: 2017
+
+75. Land-use/ land-cover changes and its contribution to urban Heat Island: a case study of Islamabad
+   Authors: , , , , 
+   Date: 2020
+
+76. Impacts, Drivers, and Future Adaptation Opportunities for a Warming Pakistan: Learnings from an In-dustrialized City. Handbook of Climate Change Manage-ment: Research
+   Authors: 
+   Date: 2020
+
+77. Scenario-based simulation on dynamics of land-use-land-cover change in Punjab Province
+   Authors: , , , 
+   Date: 2017
+
+78. Leveraging machine learning and remote sensing to monitor long-term spatial-temporal wetland changes: towards a national Ramsar inventory in Pakistan
+   Authors: , , , 
+   Date: 2023
+
+79. Healthy environment: the need to mitigate urban heat island effects on human health
+   Authors: , , , , 
+   Date: 2011
+
+80. Effects of land use/land cover on diurnal temperature range in the temperate grassland region of China
+   Authors: , , 
+   Date: 2017
+
+81. Effects of building density on land surface temperature in China: spatial patterns and determinants
+   Authors: , , , , , 
+   Date: 2020
+
+82. Landuse land-cover classification by machine learning classifiers for satellite observations-a review
+   Authors: , , , , , 
+   Date: 2020
+
+83. Modeling spatio-temporal assessment of land use land cover of Lahore and its impact on land surface temperature using multi-spectral remote sensing data
+   Authors: , 
+   Date: 2022
+
+84. ). Spatiotemporal variation of seasonal heat islands mapping of Pakistan during 2000-2019, using day-time and night-time land surface temperatures Modis and meteorological stations data
+   Authors: , , , , , , , , 
+   Date: 2023. 2022b
+
+85. Land surface temperature relation with normalized satellite indices for the estimation of spatio-temporal trends in temperature among various land use land cover classes of an arid Potohar region using Landsat data
+   Authors: , , , , , 
+   Date: 2020
+
+86. Ca-Markov chain analysis of seasonal land surface temperature and land use land cover change using optical multi-temporal satellite data of Faisalabad
+   Authors: , 
+   Date: 2020
+
+87. Monitoring land use and land cover changes using geospatial techniques, a case study of Fateh Jang
+   Authors: , , , , 
+   Date: 2021
+
+88. Land change modeler and ca-Markov chain analysis for land use land cover change using satellite data of Peshawar
+   Authors: , , 
+   Date: 2022a
+
+89. The effects of land use planning on housing spread: a case study in the region of
+   Authors: , , , , 
+   Date: 2020
+
+90. Accuracy assessment of land use land cover classification using Google earth
+   Authors: , 
+   Date: 2015
+
+91. Analysis of the dynamics of African vegetation using the normalized difference vegetation index
+   Authors: , 
+   Date: 1986
+
+92. 
+   Authors: , , , , , 
+
+93. land surface temperature
+
+94. Analysis and simulation of land cover changes and their impacts on land surface temperature in a lower Himalayan region
+   Authors: , , , , , 
+   Date: 2019a
+
+95. Remote sensing-based quantification of the relationships between land use land cover changes and surface temperature over the lower Himalayan region
+   Authors: , , , , , 
+   Date: 2019b. 2017
+
+96. Spatio temporal analysis trend of land use and land cover change against temperature based on remote sensing data in Malang City
+   Authors: , 
+   Date: 2016
+
+97. Prediction of land use and land cover changes in Mumbai City, India, using remote sensing data and a multilayer perceptron neural network-based markov chain model
+   Authors: , , 
+   Date: 2021
+
+98. Leveraging cloud-based computing and spatial modeling approaches for land surface temperature disparities in response to land cover change: evidence from Pakistan
+   Authors: , 
+   Date: 2022
+
+99. Detecting multitemporal land cover change and land surface temperature in Pearl River Delta by adopting local climate zone
+   Authors: , , , , , 
+   Date: 2019
+
+100. Does land reserve system improve quality of urbanization? Evidence from China
+   Authors: , , , 
+   Date: 2020
+
+101. Loss of vegetative cover and increased land surface temperature: a case study of Islamabad
+   Authors: , 
+   Date: 2019
+
+102. Integrating the system dynamic and cellular automata models to predict land use and land cover change
+   Authors: , , , , , , 
+   Date: 2011. 2016
+
+103. Alternative management plan for flash floods/flows of Mithawan Hill torrents in Pakistan
+   Authors: , 
+   Date: 2014
+
+104. Fostering deep learning approaches to evaluate the impact of urbanization on vegetation and future prospects
+   Authors: , , , , , 
+   Date: 2023
+
+105. Use of normalized difference built-up index in automatically mapping urban areas from tm imagery
+   Authors: , , 
+   Date: 2003
+
+106. Comparison of urbanization and climate change impacts on urban flood volumes: importance of urban planning and drainage adaptation
+   Authors: , , , 
+   Date: 2019
+

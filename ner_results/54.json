@@ -1,0 +1,30 @@
+{
+  "article_id": "54",
+  "original_sentence": "I visited Paris and Berlin in the summer for forest conservation.",
+  "entities": [
+    {
+      "text": "Paris",
+      "label": "LOC",
+      "start_char": 10,
+      "end_char": 15
+    },
+    {
+      "text": "Berlin",
+      "label": "LOC",
+      "start_char": 20,
+      "end_char": 26
+    },
+    {
+      "text": "the summer",
+      "label": "DATE",
+      "start_char": 30,
+      "end_char": 40
+    },
+    {
+      "text": "forest",
+      "label": "LULC",
+      "start_char": 45,
+      "end_char": 51
+    }
+  ]
+}

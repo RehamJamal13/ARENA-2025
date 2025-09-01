@@ -1,0 +1,12 @@
+{
+  "article_id": "50",
+  "original_sentence": "Remote sensing data showed changes in Arctic Tundra vegetation.",
+  "entities": [
+    {
+      "text": "Arctic Tundra vegetation",
+      "label": "LOC",
+      "start_char": 38,
+      "end_char": 62
+    }
+  ]
+}

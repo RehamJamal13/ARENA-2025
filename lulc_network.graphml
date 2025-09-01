@@ -1,0 +1,810 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d4" for="edge" attr.name="sentence" attr.type="string" />
+  <key id="d3" for="edge" attr.name="relationship" attr.type="string" />
+  <key id="d2" for="node" attr.name="sentence" attr.type="string" />
+  <key id="d1" for="node" attr.name="type" attr.type="string" />
+  <key id="d0" for="node" attr.name="label" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="Article_1_FROM_LULC_0">
+      <data key="d0">forest</data>
+      <data key="d1">FROM_LULC</data>
+      <data key="d2">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </node>
+    <node id="Article_1_TO_LULC_0">
+      <data key="d0">CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020</data>
+      <data key="d1">TO_LULC</data>
+      <data key="d2">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </node>
+    <node id="Article_1_CHANGE_0">
+      <data key="d0">declined</data>
+      <data key="d1">CHANGE</data>
+      <data key="d2">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </node>
+    <node id="Article_1_PROCESS_0">
+      <data key="d0">deforestation</data>
+      <data key="d1">PROCESS</data>
+      <data key="d2">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </node>
+    <node id="Article_1_MAGNITUDE_0">
+      <data key="d0">15%</data>
+      <data key="d1">MAGNITUDE</data>
+      <data key="d2">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </node>
+    <node id="Article_1_DATE_RANGE_0">
+      <data key="d0">2010 to 2020</data>
+      <data key="d1">DATE_RANGE</data>
+      <data key="d2">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </node>
+    <node id="Article_1_START_DATE_0">
+      <data key="d0">2010</data>
+      <data key="d1">START_DATE</data>
+      <data key="d2">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </node>
+    <node id="Article_1_END_DATE_0">
+      <data key="d0">2020</data>
+      <data key="d1">END_DATE</data>
+      <data key="d2">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </node>
+    <node id="Article_1_FROM_LULC_1">
+      <data key="d0">built-up area</data>
+      <data key="d1">FROM_LULC</data>
+      <data key="d2">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </node>
+    <node id="Article_1_TO_LULC_1">
+      <data key="d0">built-up area</data>
+      <data key="d1">TO_LULC</data>
+      <data key="d2">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </node>
+    <node id="Article_1_CHANGE_1">
+      <data key="d0">increased</data>
+      <data key="d1">CHANGE</data>
+      <data key="d2">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </node>
+    <node id="Article_1_PROCESS_1">
+      <data key="d0">urbanization</data>
+      <data key="d1">PROCESS</data>
+      <data key="d2">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </node>
+    <node id="Article_1_MAGNITUDE_1">
+      <data key="d0">12.77%</data>
+      <data key="d1">MAGNITUDE</data>
+      <data key="d2">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </node>
+    <node id="Article_1_DATE_RANGE_1">
+      <data key="d0">2002 to 2018</data>
+      <data key="d1">DATE_RANGE</data>
+      <data key="d2">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </node>
+    <node id="Article_1_START_DATE_1">
+      <data key="d0">2002</data>
+      <data key="d1">START_DATE</data>
+      <data key="d2">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </node>
+    <node id="Article_1_END_DATE_1">
+      <data key="d0">2018</data>
+      <data key="d1">END_DATE</data>
+      <data key="d2">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </node>
+    <node id="Article_1_FROM_LULC_2">
+      <data key="d0">forest</data>
+      <data key="d1">FROM_LULC</data>
+      <data key="d2">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </node>
+    <node id="Article_1_TO_LULC_2">
+      <data key="d0">CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020</data>
+      <data key="d1">TO_LULC</data>
+      <data key="d2">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </node>
+    <node id="Article_1_CHANGE_2">
+      <data key="d0">declined</data>
+      <data key="d1">CHANGE</data>
+      <data key="d2">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </node>
+    <node id="Article_1_PROCESS_2">
+      <data key="d0">deforestation</data>
+      <data key="d1">PROCESS</data>
+      <data key="d2">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </node>
+    <node id="Article_1_MAGNITUDE_2">
+      <data key="d0">15%</data>
+      <data key="d1">MAGNITUDE</data>
+      <data key="d2">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </node>
+    <node id="Article_1_DATE_RANGE_2">
+      <data key="d0">2010 to 2020</data>
+      <data key="d1">DATE_RANGE</data>
+      <data key="d2">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </node>
+    <node id="Article_1_START_DATE_2">
+      <data key="d0">2010</data>
+      <data key="d1">START_DATE</data>
+      <data key="d2">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </node>
+    <node id="Article_1_END_DATE_2">
+      <data key="d0">2020</data>
+      <data key="d1">END_DATE</data>
+      <data key="d2">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </node>
+    <node id="Article_1_FROM_LULC_3">
+      <data key="d0">agricultural land</data>
+      <data key="d1">FROM_LULC</data>
+      <data key="d2">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </node>
+    <node id="Article_1_TO_LULC_3">
+      <data key="d0">urban areas</data>
+      <data key="d1">TO_LULC</data>
+      <data key="d2">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </node>
+    <node id="Article_1_CHANGE_3">
+      <data key="d0">converted</data>
+      <data key="d1">CHANGE</data>
+      <data key="d2">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </node>
+    <node id="Article_1_PROCESS_3">
+      <data key="d0">urbanization</data>
+      <data key="d1">PROCESS</data>
+      <data key="d2">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </node>
+    <node id="Article_1_MAGNITUDE_3">
+      <data key="d0">DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:</data>
+      <data key="d1">MAGNITUDE</data>
+      <data key="d2">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </node>
+    <node id="Article_1_DATE_RANGE_3">
+      <data key="d0">2015</data>
+      <data key="d1">DATE_RANGE</data>
+      <data key="d2">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </node>
+    <node id="Article_1_START_DATE_3">
+      <data key="d0">2015</data>
+      <data key="d1">START_DATE</data>
+      <data key="d2">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </node>
+    <node id="Article_1_FROM_LULC_4">
+      <data key="d0">built-up area</data>
+      <data key="d1">FROM_LULC</data>
+      <data key="d2">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </node>
+    <node id="Article_1_TO_LULC_4">
+      <data key="d0">built-up area</data>
+      <data key="d1">TO_LULC</data>
+      <data key="d2">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </node>
+    <node id="Article_1_CHANGE_4">
+      <data key="d0">increased</data>
+      <data key="d1">CHANGE</data>
+      <data key="d2">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </node>
+    <node id="Article_1_PROCESS_4">
+      <data key="d0">urbanization</data>
+      <data key="d1">PROCESS</data>
+      <data key="d2">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </node>
+    <node id="Article_1_MAGNITUDE_4">
+      <data key="d0">12.77%</data>
+      <data key="d1">MAGNITUDE</data>
+      <data key="d2">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </node>
+    <node id="Article_1_DATE_RANGE_4">
+      <data key="d0">2002 to 2018</data>
+      <data key="d1">DATE_RANGE</data>
+      <data key="d2">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </node>
+    <node id="Article_1_START_DATE_4">
+      <data key="d0">2002</data>
+      <data key="d1">START_DATE</data>
+      <data key="d2">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </node>
+    <node id="Article_1_END_DATE_4">
+      <data key="d0">2018</data>
+      <data key="d1">END_DATE</data>
+      <data key="d2">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </node>
+    <node id="Article_1_FROM_LULC_5">
+      <data key="d0">agricultural land</data>
+      <data key="d1">FROM_LULC</data>
+      <data key="d2">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </node>
+    <node id="Article_1_TO_LULC_5">
+      <data key="d0">urban areas</data>
+      <data key="d1">TO_LULC</data>
+      <data key="d2">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </node>
+    <node id="Article_1_CHANGE_5">
+      <data key="d0">converted</data>
+      <data key="d1">CHANGE</data>
+      <data key="d2">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </node>
+    <node id="Article_1_PROCESS_5">
+      <data key="d0">urbanization</data>
+      <data key="d1">PROCESS</data>
+      <data key="d2">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </node>
+    <node id="Article_1_MAGNITUDE_5">
+      <data key="d0">DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:</data>
+      <data key="d1">MAGNITUDE</data>
+      <data key="d2">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </node>
+    <node id="Article_1_DATE_RANGE_5">
+      <data key="d0">2015</data>
+      <data key="d1">DATE_RANGE</data>
+      <data key="d2">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </node>
+    <node id="Article_1_START_DATE_5">
+      <data key="d0">2015</data>
+      <data key="d1">START_DATE</data>
+      <data key="d2">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </node>
+    <node id="Article_1_FROM_LULC_6">
+      <data key="d0">agricultural land</data>
+      <data key="d1">FROM_LULC</data>
+      <data key="d2">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </node>
+    <node id="Article_1_TO_LULC_6">
+      <data key="d0">urban areas</data>
+      <data key="d1">TO_LULC</data>
+      <data key="d2">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </node>
+    <node id="Article_1_CHANGE_6">
+      <data key="d0">converted</data>
+      <data key="d1">CHANGE</data>
+      <data key="d2">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </node>
+    <node id="Article_1_PROCESS_6">
+      <data key="d0">urbanization</data>
+      <data key="d1">PROCESS</data>
+      <data key="d2">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </node>
+    <node id="Article_1_MAGNITUDE_6">
+      <data key="d0">DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:</data>
+      <data key="d1">MAGNITUDE</data>
+      <data key="d2">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </node>
+    <node id="Article_1_DATE_RANGE_6">
+      <data key="d0">2015</data>
+      <data key="d1">DATE_RANGE</data>
+      <data key="d2">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </node>
+    <node id="Article_1_START_DATE_6">
+      <data key="d0">2015</data>
+      <data key="d1">START_DATE</data>
+      <data key="d2">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </node>
+    <node id="Article_1_FROM_LULC_7">
+      <data key="d0">forest</data>
+      <data key="d1">FROM_LULC</data>
+      <data key="d2">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </node>
+    <node id="Article_1_TO_LULC_7">
+      <data key="d0">CHANGE: declined
+PROCESS: deforestation
+MAGNITUDE: 15%
+DATE_RANGE: 2010 to 2020
+START_DATE: 2010
+END_DATE: 2020</data>
+      <data key="d1">TO_LULC</data>
+      <data key="d2">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </node>
+    <node id="Article_1_CHANGE_7">
+      <data key="d0">declined</data>
+      <data key="d1">CHANGE</data>
+      <data key="d2">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </node>
+    <node id="Article_1_PROCESS_7">
+      <data key="d0">deforestation</data>
+      <data key="d1">PROCESS</data>
+      <data key="d2">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </node>
+    <node id="Article_1_MAGNITUDE_7">
+      <data key="d0">15%</data>
+      <data key="d1">MAGNITUDE</data>
+      <data key="d2">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </node>
+    <node id="Article_1_DATE_RANGE_7">
+      <data key="d0">2010 to 2020</data>
+      <data key="d1">DATE_RANGE</data>
+      <data key="d2">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </node>
+    <node id="Article_1_START_DATE_7">
+      <data key="d0">2010</data>
+      <data key="d1">START_DATE</data>
+      <data key="d2">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </node>
+    <node id="Article_1_END_DATE_7">
+      <data key="d0">2020</data>
+      <data key="d1">END_DATE</data>
+      <data key="d2">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </node>
+    <node id="Article_1_FROM_LULC_8">
+      <data key="d0">agricultural land</data>
+      <data key="d1">FROM_LULC</data>
+      <data key="d2">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </node>
+    <node id="Article_1_TO_LULC_8">
+      <data key="d0">urban areas</data>
+      <data key="d1">TO_LULC</data>
+      <data key="d2">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </node>
+    <node id="Article_1_CHANGE_8">
+      <data key="d0">converted</data>
+      <data key="d1">CHANGE</data>
+      <data key="d2">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </node>
+    <node id="Article_1_PROCESS_8">
+      <data key="d0">urbanization</data>
+      <data key="d1">PROCESS</data>
+      <data key="d2">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </node>
+    <node id="Article_1_MAGNITUDE_8">
+      <data key="d0">DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:</data>
+      <data key="d1">MAGNITUDE</data>
+      <data key="d2">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </node>
+    <node id="Article_1_DATE_RANGE_8">
+      <data key="d0">2015</data>
+      <data key="d1">DATE_RANGE</data>
+      <data key="d2">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </node>
+    <node id="Article_1_START_DATE_8">
+      <data key="d0">2015</data>
+      <data key="d1">START_DATE</data>
+      <data key="d2">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </node>
+    <node id="Article_1_FROM_LULC_9">
+      <data key="d0">agricultural land</data>
+      <data key="d1">FROM_LULC</data>
+      <data key="d2">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </node>
+    <node id="Article_1_TO_LULC_9">
+      <data key="d0">urban areas</data>
+      <data key="d1">TO_LULC</data>
+      <data key="d2">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </node>
+    <node id="Article_1_CHANGE_9">
+      <data key="d0">converted</data>
+      <data key="d1">CHANGE</data>
+      <data key="d2">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </node>
+    <node id="Article_1_PROCESS_9">
+      <data key="d0">urbanization</data>
+      <data key="d1">PROCESS</data>
+      <data key="d2">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </node>
+    <node id="Article_1_MAGNITUDE_9">
+      <data key="d0">DATE_RANGE: 2015
+START_DATE: 2015
+END_DATE:</data>
+      <data key="d1">MAGNITUDE</data>
+      <data key="d2">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </node>
+    <node id="Article_1_DATE_RANGE_9">
+      <data key="d0">2015</data>
+      <data key="d1">DATE_RANGE</data>
+      <data key="d2">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </node>
+    <node id="Article_1_START_DATE_9">
+      <data key="d0">2015</data>
+      <data key="d1">START_DATE</data>
+      <data key="d2">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </node>
+    <edge source="Article_1_FROM_LULC_0" target="Article_1_CHANGE_0">
+      <data key="d3">causes</data>
+      <data key="d4">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_0" target="Article_1_TO_LULC_0">
+      <data key="d3">converts_to</data>
+      <data key="d4">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_0" target="Article_1_PROCESS_0">
+      <data key="d3">undergoes</data>
+      <data key="d4">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_0" target="Article_1_PROCESS_0">
+      <data key="d3">part_of</data>
+      <data key="d4">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_0" target="Article_1_MAGNITUDE_0">
+      <data key="d3">has_magnitude</data>
+      <data key="d4">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_0" target="Article_1_DATE_RANGE_0">
+      <data key="d3">occurs_during</data>
+      <data key="d4">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_0" target="Article_1_MAGNITUDE_0">
+      <data key="d3">measured_by</data>
+      <data key="d4">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_0" target="Article_1_DATE_RANGE_0">
+      <data key="d3">happens_in</data>
+      <data key="d4">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </edge>
+    <edge source="Article_1_START_DATE_0" target="Article_1_END_DATE_0">
+      <data key="d3">precedes</data>
+      <data key="d4">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </edge>
+    <edge source="Article_1_START_DATE_0" target="Article_1_DATE_RANGE_0">
+      <data key="d3">starts</data>
+      <data key="d4">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </edge>
+    <edge source="Article_1_END_DATE_0" target="Article_1_DATE_RANGE_0">
+      <data key="d3">ends</data>
+      <data key="d4">Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_1" target="Article_1_CHANGE_1">
+      <data key="d3">causes</data>
+      <data key="d4">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_1" target="Article_1_TO_LULC_1">
+      <data key="d3">converts_to</data>
+      <data key="d4">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_1" target="Article_1_PROCESS_1">
+      <data key="d3">undergoes</data>
+      <data key="d4">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_1" target="Article_1_PROCESS_1">
+      <data key="d3">part_of</data>
+      <data key="d4">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_1" target="Article_1_MAGNITUDE_1">
+      <data key="d3">has_magnitude</data>
+      <data key="d4">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_1" target="Article_1_DATE_RANGE_1">
+      <data key="d3">occurs_during</data>
+      <data key="d4">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_1" target="Article_1_MAGNITUDE_1">
+      <data key="d3">measured_by</data>
+      <data key="d4">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_1" target="Article_1_DATE_RANGE_1">
+      <data key="d3">happens_in</data>
+      <data key="d4">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </edge>
+    <edge source="Article_1_START_DATE_1" target="Article_1_END_DATE_1">
+      <data key="d3">precedes</data>
+      <data key="d4">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </edge>
+    <edge source="Article_1_START_DATE_1" target="Article_1_DATE_RANGE_1">
+      <data key="d3">starts</data>
+      <data key="d4">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </edge>
+    <edge source="Article_1_END_DATE_1" target="Article_1_DATE_RANGE_1">
+      <data key="d3">ends</data>
+      <data key="d4">The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_2" target="Article_1_CHANGE_2">
+      <data key="d3">causes</data>
+      <data key="d4">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_2" target="Article_1_TO_LULC_2">
+      <data key="d3">converts_to</data>
+      <data key="d4">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_2" target="Article_1_PROCESS_2">
+      <data key="d3">undergoes</data>
+      <data key="d4">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </edge>
+    <edge source="Article_1_CHANGE_2" target="Article_1_PROCESS_2">
+      <data key="d3">part_of</data>
+      <data key="d4">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </edge>
+    <edge source="Article_1_CHANGE_2" target="Article_1_MAGNITUDE_2">
+      <data key="d3">has_magnitude</data>
+      <data key="d4">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </edge>
+    <edge source="Article_1_CHANGE_2" target="Article_1_DATE_RANGE_2">
+      <data key="d3">occurs_during</data>
+      <data key="d4">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </edge>
+    <edge source="Article_1_PROCESS_2" target="Article_1_MAGNITUDE_2">
+      <data key="d3">measured_by</data>
+      <data key="d4">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </edge>
+    <edge source="Article_1_PROCESS_2" target="Article_1_DATE_RANGE_2">
+      <data key="d3">happens_in</data>
+      <data key="d4">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </edge>
+    <edge source="Article_1_START_DATE_2" target="Article_1_END_DATE_2">
+      <data key="d3">precedes</data>
+      <data key="d4">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </edge>
+    <edge source="Article_1_START_DATE_2" target="Article_1_DATE_RANGE_2">
+      <data key="d3">starts</data>
+      <data key="d4">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </edge>
+    <edge source="Article_1_END_DATE_2" target="Article_1_DATE_RANGE_2">
+      <data key="d3">ends</data>
+      <data key="d4">On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%).</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_3" target="Article_1_CHANGE_3">
+      <data key="d3">causes</data>
+      <data key="d4">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_3" target="Article_1_TO_LULC_3">
+      <data key="d3">converts_to</data>
+      <data key="d4">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_3" target="Article_1_PROCESS_3">
+      <data key="d3">undergoes</data>
+      <data key="d4">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_3" target="Article_1_PROCESS_3">
+      <data key="d3">part_of</data>
+      <data key="d4">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_3" target="Article_1_MAGNITUDE_3">
+      <data key="d3">has_magnitude</data>
+      <data key="d4">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_3" target="Article_1_DATE_RANGE_3">
+      <data key="d3">occurs_during</data>
+      <data key="d4">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_3" target="Article_1_MAGNITUDE_3">
+      <data key="d3">measured_by</data>
+      <data key="d4">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_3" target="Article_1_DATE_RANGE_3">
+      <data key="d3">happens_in</data>
+      <data key="d4">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </edge>
+    <edge source="Article_1_START_DATE_3" target="Article_1_DATE_RANGE_3">
+      <data key="d3">starts</data>
+      <data key="d4">Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_4" target="Article_1_CHANGE_4">
+      <data key="d3">causes</data>
+      <data key="d4">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_4" target="Article_1_TO_LULC_4">
+      <data key="d3">converts_to</data>
+      <data key="d4">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_4" target="Article_1_PROCESS_4">
+      <data key="d3">undergoes</data>
+      <data key="d4">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_4" target="Article_1_PROCESS_4">
+      <data key="d3">part_of</data>
+      <data key="d4">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_4" target="Article_1_MAGNITUDE_4">
+      <data key="d3">has_magnitude</data>
+      <data key="d4">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_4" target="Article_1_DATE_RANGE_4">
+      <data key="d3">occurs_during</data>
+      <data key="d4">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_4" target="Article_1_MAGNITUDE_4">
+      <data key="d3">measured_by</data>
+      <data key="d4">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_4" target="Article_1_DATE_RANGE_4">
+      <data key="d3">happens_in</data>
+      <data key="d4">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </edge>
+    <edge source="Article_1_START_DATE_4" target="Article_1_END_DATE_4">
+      <data key="d3">precedes</data>
+      <data key="d4">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </edge>
+    <edge source="Article_1_START_DATE_4" target="Article_1_DATE_RANGE_4">
+      <data key="d3">starts</data>
+      <data key="d4">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </edge>
+    <edge source="Article_1_END_DATE_4" target="Article_1_DATE_RANGE_4">
+      <data key="d3">ends</data>
+      <data key="d4">Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_5" target="Article_1_CHANGE_5">
+      <data key="d3">causes</data>
+      <data key="d4">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_5" target="Article_1_TO_LULC_5">
+      <data key="d3">converts_to</data>
+      <data key="d4">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_5" target="Article_1_PROCESS_5">
+      <data key="d3">undergoes</data>
+      <data key="d4">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_5" target="Article_1_PROCESS_5">
+      <data key="d3">part_of</data>
+      <data key="d4">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_5" target="Article_1_MAGNITUDE_5">
+      <data key="d3">has_magnitude</data>
+      <data key="d4">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_5" target="Article_1_DATE_RANGE_5">
+      <data key="d3">occurs_during</data>
+      <data key="d4">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_5" target="Article_1_MAGNITUDE_5">
+      <data key="d3">measured_by</data>
+      <data key="d4">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_5" target="Article_1_DATE_RANGE_5">
+      <data key="d3">happens_in</data>
+      <data key="d4">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </edge>
+    <edge source="Article_1_START_DATE_5" target="Article_1_DATE_RANGE_5">
+      <data key="d3">starts</data>
+      <data key="d4">Prior to this, the area was occupied by terraced agricultural fields and some 13 villages.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_6" target="Article_1_CHANGE_6">
+      <data key="d3">causes</data>
+      <data key="d4">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_6" target="Article_1_TO_LULC_6">
+      <data key="d3">converts_to</data>
+      <data key="d4">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_6" target="Article_1_PROCESS_6">
+      <data key="d3">undergoes</data>
+      <data key="d4">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_6" target="Article_1_PROCESS_6">
+      <data key="d3">part_of</data>
+      <data key="d4">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_6" target="Article_1_MAGNITUDE_6">
+      <data key="d3">has_magnitude</data>
+      <data key="d4">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_6" target="Article_1_DATE_RANGE_6">
+      <data key="d3">occurs_during</data>
+      <data key="d4">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_6" target="Article_1_MAGNITUDE_6">
+      <data key="d3">measured_by</data>
+      <data key="d4">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_6" target="Article_1_DATE_RANGE_6">
+      <data key="d3">happens_in</data>
+      <data key="d4">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </edge>
+    <edge source="Article_1_START_DATE_6" target="Article_1_DATE_RANGE_6">
+      <data key="d3">starts</data>
+      <data key="d4">Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_7" target="Article_1_CHANGE_7">
+      <data key="d3">causes</data>
+      <data key="d4">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_7" target="Article_1_TO_LULC_7">
+      <data key="d3">converts_to</data>
+      <data key="d4">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_7" target="Article_1_PROCESS_7">
+      <data key="d3">undergoes</data>
+      <data key="d4">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_7" target="Article_1_PROCESS_7">
+      <data key="d3">part_of</data>
+      <data key="d4">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_7" target="Article_1_MAGNITUDE_7">
+      <data key="d3">has_magnitude</data>
+      <data key="d4">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_7" target="Article_1_DATE_RANGE_7">
+      <data key="d3">occurs_during</data>
+      <data key="d4">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_7" target="Article_1_MAGNITUDE_7">
+      <data key="d3">measured_by</data>
+      <data key="d4">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_7" target="Article_1_DATE_RANGE_7">
+      <data key="d3">happens_in</data>
+      <data key="d4">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </edge>
+    <edge source="Article_1_START_DATE_7" target="Article_1_END_DATE_7">
+      <data key="d3">precedes</data>
+      <data key="d4">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </edge>
+    <edge source="Article_1_START_DATE_7" target="Article_1_DATE_RANGE_7">
+      <data key="d3">starts</data>
+      <data key="d4">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </edge>
+    <edge source="Article_1_END_DATE_7" target="Article_1_DATE_RANGE_7">
+      <data key="d3">ends</data>
+      <data key="d4">The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_8" target="Article_1_CHANGE_8">
+      <data key="d3">causes</data>
+      <data key="d4">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_8" target="Article_1_TO_LULC_8">
+      <data key="d3">converts_to</data>
+      <data key="d4">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_8" target="Article_1_PROCESS_8">
+      <data key="d3">undergoes</data>
+      <data key="d4">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_8" target="Article_1_PROCESS_8">
+      <data key="d3">part_of</data>
+      <data key="d4">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_8" target="Article_1_MAGNITUDE_8">
+      <data key="d3">has_magnitude</data>
+      <data key="d4">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_8" target="Article_1_DATE_RANGE_8">
+      <data key="d3">occurs_during</data>
+      <data key="d4">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_8" target="Article_1_MAGNITUDE_8">
+      <data key="d3">measured_by</data>
+      <data key="d4">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_8" target="Article_1_DATE_RANGE_8">
+      <data key="d3">happens_in</data>
+      <data key="d4">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </edge>
+    <edge source="Article_1_START_DATE_8" target="Article_1_DATE_RANGE_8">
+      <data key="d3">starts</data>
+      <data key="d4">These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_9" target="Article_1_CHANGE_9">
+      <data key="d3">causes</data>
+      <data key="d4">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_9" target="Article_1_TO_LULC_9">
+      <data key="d3">converts_to</data>
+      <data key="d4">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </edge>
+    <edge source="Article_1_FROM_LULC_9" target="Article_1_PROCESS_9">
+      <data key="d3">undergoes</data>
+      <data key="d4">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_9" target="Article_1_PROCESS_9">
+      <data key="d3">part_of</data>
+      <data key="d4">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_9" target="Article_1_MAGNITUDE_9">
+      <data key="d3">has_magnitude</data>
+      <data key="d4">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </edge>
+    <edge source="Article_1_CHANGE_9" target="Article_1_DATE_RANGE_9">
+      <data key="d3">occurs_during</data>
+      <data key="d4">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_9" target="Article_1_MAGNITUDE_9">
+      <data key="d3">measured_by</data>
+      <data key="d4">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </edge>
+    <edge source="Article_1_PROCESS_9" target="Article_1_DATE_RANGE_9">
+      <data key="d3">happens_in</data>
+      <data key="d4">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </edge>
+    <edge source="Article_1_START_DATE_9" target="Article_1_DATE_RANGE_9">
+      <data key="d3">starts</data>
+      <data key="d4">The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses.</data>
+    </edge>
+  </graph>
+</graphml>

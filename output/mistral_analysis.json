@@ -1,0 +1,42 @@
+{
+  "performance": {
+    "total_sentences": 5,
+    "successful_extractions": 5,
+    "success_rate": "100.0%",
+    "total_relations": 30,
+    "avg_relations_per_sentence": 6.0
+  },
+  "confidence_distribution": {
+    "HIGH": 15,
+    "MEDIUM": 6,
+    "LOW": 0,
+    "UNKNOWN": 0,
+    "CONFIDENCE": 9
+  },
+  "discovered_relation_types": {
+    "occurs_during": 3,
+    "results_in": 2,
+    "is_predicted_to_continue_into": 1,
+    "has_undergone": 1,
+    "refers_to": 1,
+    "affects": 1,
+    "> causes": 1,
+    "> results_in": 2,
+    "<": 2,
+    "> increases_by": 1,
+    "> follows_after": 1,
+    "> covers_area_of": 1,
+    "[loses]": 1,
+    "is_caused_by": 1,
+    "consists_of": 2,
+    "triggers": 2,
+    "predicts": 1,
+    "covers_area_of": 1,
+    "has_magnitude_of": 1,
+    "is_reduced_to": 1,
+    "occupies": 1,
+    "extends_across": 1,
+    "makes_up": 1
+  },
+  "unique_relation_types_count": 23
+}

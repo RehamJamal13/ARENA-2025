@@ -1,0 +1,395 @@
+================================================================================
+TITLE: Impact of land use/land cover change on the topsoil selenium concentration and its potential bioavailability in a karst area of southwest China
+================================================================================
+
+AUTHORS:
+- Kongcao Xiao
+- Junjie Tang
+- Hao Chen
+- Dejun Li
+- Yongxian Liu
+
+ABSTRACT:
+Land use/land cover change affects total soil Se content and its bioavailability. Soil organic carbon was the overriding edaphic factor controlling soil Se status. Climate variables strongly influenced soil Se status at the regional scale. Soil Se retention increased after cropland abandonment mainly due to SOC accumulation.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Selenium (Se) is an essential trace element for human and animal health 
+Beyond total soil Se content, Se uptake by plants, i.e. bioavailability, depends more on its speciation and binding to soil fractions 
+The abundance and bioavailability of Se in soil can be modified by a wide range of factors, including plant, soil properties, and climate conditions 
+Land use/land cover change, which is an important aspect of global change, is always accompanied by changes in plant communities and strongly influences soil properties, particularly SOM 
+Since 1950s, the Chinese government has implemented a series of ecological restoration programs, such as the Grain to Green Project, to guarantee the sustainable development of economy and society. In this context, land use/land cover change, e.g. the conversion of cropland to grassland or forest, is a common phenomenon occurring especially in the karst region of southwest China 
+
+## Materials and methods ##
+
+
+## Study area ##
+This study was conducted in a typical karst area in the northwest of Guangxi Zhuang Autonomous Region, southwest China, including Huanjiang county and adjacent Duan county (23°40 0 N-25°25 0 N, 107°35 0 E-108°30 0 E). Most of the soils across this region are developed on carbonate rocks. The study region belongs to subtropical monsoon climate, with mean annual air temperature (MAT) ranging from 17.8 to 22.2 °C and mean annual precipitation (MAP) ranging from 1346 to 1640 mm.
+
+## Field sampling ##
+Field sampling was conducted from the end of March to early June 2015. The sampling sites were selected based on land use/land cover types, including active cropland, grassland, shrubland, and secondary forest (Fig. 
+In total, 125 sites were selected, with 27 croplands, 29 grasslands, 36 shrublands, and 33 secondary forests therein. At each site, a 20 Â 20 m sampling plot was established and surface soil samples (0-15 cm) were collected with a stainless steel auger (5 cm in diameter). We sampled 10-15 soil cores randomly in each plot and then mixed it to form a composite sample. After transporting to the laboratory, the soils were air-dried at room temperature, disaggregated, and then passed through a 2 mm mesh sieve, with plant residues and stone fragments removed by hand-sorting. The 2 mm sieved soil samples were used to measure phosphate extractable Se, soil pH, size fractions, exchangeable Ca, Mg, Fe and Al. An aliquot of 2 mm sieved samples were further ground and passed through a 0.15 mm mesh sieve to measure total soil Se and soil organic carbon (SOC).
+
+## Chemical analyses ##
+Total soil Se (Se total ) was analyzed according to the method as described in 
+The prepared samples for determining Se total and Se phosphate were analyzed by hydride generation-atomic fluorescence spectrometry (HG-AFS830, Titan Instrument Co., Ltd., Beijing, China). Data for Se total and Se phosphate concentrations were finally presented as lg Se kg À1 dry soil. The total Se concentration of the standard reference material was 651 ± 83 mg Se kg À1 (the certified values of 640 ± 140 mg Se kg À1 ).
+Soil gravimetric water content (GWC) was determined by drying soil at 105 °C to constant weight. Soil pH was measured in a suspension of 1:2.5 soil:water ratio using a pH meter (FE20K, Mettler-Toledo, Switzerland). SOC was determined by wet oxidation with potassium dichromate redox colorimetric method. Soil total phosphorus (TP) was digested with an H 2 SO 4 + HClO 4 solution. Soil available phosphorus (AP) was extracted with 0.5 M NaHCO 3 . TP and AP were determined using the molybdenum colorimetric method. Size fractions, i.e. clay (<2 lm), silt (2-50 lm), and sand (50-2000 lm) were analyzed on a laser diffraction particle size analyzer after decarbonation (Mastersizer, 2000, Malvern, UK). Exchangeable calcium (Ca ex ) and magnesium (Mg ex ) were measured after extracting with 1 mol L À1 ammonium acetate at pH 7.0 with inductively coupled plasma-atomic emission spectroscopy (ICP-AES). Fe and Al oxides were extracted by ammonium oxalate solution (0.2 mol L À1 , pH = 3), which can extract free amorphous oxides and hydrous oxides and Fe and Al-humus complexes, and were quantified by ICP-AES.
+
+## Statistical analyses ##
+Statistical analyses were performed with SPSS software package version 16.0 (SPSS Inc., Chicago, IL, USA). All data were first checked for normality and homogeneity before variance analysis. One-way ANOVA with Tukey's post hoc test was used to examine the differenes in Se total and Se phosphate among various land use/land cover types at P < 0.05 significance level. Pearson's correlation analysis was used to examine the relationships between environmental factors and Se total , Se phosphate , and the Se phosphate /Se total ratio. Stepwise multiple linear regression approach was used to identify the strongest explanatory variables for Se total , Se phosphate and the Se phosphate /Se total ratio.
+
+## Results ##
+
+
+## Total soil Se concentration (Se total ) ##
+Se total for all samples ranged from 220 to 1820 lg kg À1 , with an arithmetic average value of 676 ± 24 (mean ± SE) lg kg À1 . There was significant difference in Se total among land use/land cover types (P < 0.01, Fig. 
+
+## Phosphate extractable Se (Se phosphate ) ##
+Se phosphate for all samples ranged from 1 to 257 lg kg À1 , with an arithmetic mean value of 79 ± 5 lg kg À1 . Land use/land cover had significant influences on Se phosphate (P < 0.01, Fig. 
+
+## Dependence of Se on environmental variables ##
+Se total was positively correlated with MAP, MAT, GWC, SOC, C:N ratio, TP, pH, Ca, Mg, Fe-Al oxides and sand contents, while was negatively correlated with AP. Similarly, Se phosphate was positively correlated with GWC, SOC, TP, pH, Ca and Mg contents, while was negatively correlated with AP. In addition, unlike Se total , Se phosphate did not correlate with Fe-Al oxides and sand contents, but negatively correlate with MAP, MAT, and clay content (Table 
+Stepwise multiple linear regression analysis further demonstrated that SOC, MAP, and C:N ratio were the best three predictors for Se total , explaining 55% of Se total variation (Table 
+
+## Discussion ##
+
+
+## Soil Se abundance and bioavailability in the studied region ##
+In the present study, Se total for all samples (220-1820 lg kg À1 ) is within the reported range of topsoil Se concentration across China (5-79080 lg kg À1 ) 
+Se-deficient (<125 lg kg À1 ), Se-marginal (125-175 lg kg À1 ), Se-sufficient (175-400 lg kg À1 ), Se-rich (400-3000 lg kg À1 ), and Se-excessive (>3000 lg kg À1 ). Moreover, the proportion of potentially bioavailable Se, i.e. Se phosphate , to total Se in the studied region is on average 12.9 ± 0.8%, which is higher than that reported for Enshi soils (<5%) 
+
+## Land use/land cover impact on soil Se abundance and bioavailability ##
+In the current study, both soil Se total and Se phosphate showed a tendency to increase along the sequence of cropland, grassland, shrubland, and secondary forest (Fig. 
+Several mechanisms might be responsible for the significant Se enrichment in topsoils of the secondary forest. First and foremost, significantly higher concentration of SOC accumulates in the secondary forest, relative to the other four land use/land cover types (Table 
+Second, soils in the secondary forest are much wetter than those in the other three land use/land cover types (Table 
+
+## 2À ##
+) which is hardly adsorbed on soil solid surface, and is not only readily available to plants but vulnerable to loss by leaching. However, when under the environment of moderate redox, as in the case of the secondary forest in our study, the prevailing form of inorganic Se would be selenite (SeO 3
+
+## 2À ##
+) which is firmly adsorbed on clay minerals and sesquioxides, and is not readily available to plants, thus largely retaining in the soil 
+Third, the high humidity environment in the secondary forest enhances carbonate rock dissolution. In the present study, significant correlations were observed between Se total and some bedrock-derived elements such as P, Ca, and Mg (Table 
+generally higher relative to the cropland and other land use/land cover types in the karst region of southwest China.
+
+## Factors influencing soil Se abundance and bioavailability ##
+Parent bedrock has traditionally been considered the primary source of Se in soil. Furthermore, parent material can also exert great controls on Se biogeochemical cycling by influencing soil physicochemical properties, including pH, texture, ion composition (P, Ca, etc.), metal oxides, and SOM stock 
+Atmospheric Se inputs via precipitation is another important source of soil Se, and in some cases it plays a dominant role, over parent bedrocks, in controlling the distribution of Se in topsoils 
+Clay and Fe-Al oxides has been considered important edaphic variables contributing to Se retention in the soil, due to their relative high surface area and abundant binding sites 
+
+## Conclusions ##
+Our results demonstrated that land use/land cover change had significant effects on the total concentration and potential bioavailability of Se in topsoils in a karst Se-enriched area in Guangxi, southwest China. Both Se total and Se phosphate were generally higher in the secondary forest than those in the cropland and grassland. SOC was the overriding edaphic variable controlling soil Se abundance and bioavailability. Furthermore, soil Se abundance and bioavailability could be strongly influenced by climatic variables such as MAP and MAT. In addition, high P status, coinciding with lower organic matter content, may be responsible for less Se retention in cropland. Our findings suggest that the abundance and potential bioavailability of Se in topsoil would substantially increase after cropland abandonment in the karst Se-enriched area of southwest China, mainly due to SOM accumulation. In the long run, there is a high risk of accelerated Se resource depletion in intensified agricultural systems, especially for those with high input of P fertilizers.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Hazardous concentrations of selenium in soil and groundwater in North-West India
+   Authors: , , , , 
+   Date: 2011
+
+2. Geological control of soil organic carbon and nitrogen stocks at the landscape scale
+   Authors: , , , , , , , , 
+   Date: 2017
+
+3. Terrestrial selenium distribution in China is potentially linked to monsoonal climate
+   Authors: , , , , , 
+   Date: 2014
+
+4. Regional environmental differentiation and regional safety threshold of soil selenium
+   Authors: , , 
+   Date: 1995
+
+5. Selenium fractionation and speciation in rocks, soils, waters and plants in polluted surface mine environment
+   Authors: , , , 
+   Date: 2005
+
+6. Soil carbon stores in Nordic well-drained forest soilsrelationships with climate and texture class
+   Authors: , , , , , , 
+   Date: 2003
+
+7. Selenite interactions with some particulate organic and mineral fractions isolated from a natural grassland soil
+   Authors: , , 
+   Date: 2009
+
+8. Lower mineralizability of soil carbon with higher legacy soil moisture
+   Authors: , , , , , , , 
+   Date: 2019
+
+9. Selenium content of Belgian cultivated soils and its uptake by field crops and vegetables
+   Authors: , , , , , 
+   Date: 2014
+
+10. Selenium distribution in the Chinese environment and its relationship with human health: a review
+   Authors: , , , , , , , , , 
+   Date: 2018
+
+11. Role of organic acids on the bioavailability of selenium in soil: A review
+   Authors: , , , , 
+   Date: 2017
+
+12. Effect of phosphorus status of the soil on selenium availability
+   Authors: , , 
+   Date: 2010
+
+13. Plants, selenium and human health
+   Authors: , 
+   Date: 2003
+
+14. Effects of land use on selected properties and heavy metal concentration for soil in the US Great Plains
+   Authors: , , 
+   Date: 2016
+
+15. Solubility, speciation, and transformations of selenium in soils
+   Authors: , , 
+   Date: 1989
+
+16. Selenium environmental cycling and bioavailability: a structural chemist point of view
+   Authors: , 
+   Date: 2009
+
+17. Selenium deficiency and toxicity in the environment
+   Authors: 
+   Date: 2005
+
+18. Longevity and selenium deficiency: evidence from the People's Republic of China
+   Authors: , 
+   Date: 1995
+
+19. Seasonal fluctuations of selenium and sulfur accumulation in selenium hyperaccumulators and related nonaccumulators
+   Authors: , , , , 
+   Date: 2007
+
+20. Background levels of selenium in some selected Brazilian tropical soils
+   Authors: , , 
+   Date: 2014
+
+21. Effects of land use on the concentrations of some heavy metals in soils of Golestan province
+   Authors: , , 
+   Date: 2015
+
+22. The association between selenium and humic substances in forested ecosystems-laboratory evidence
+   Authors: , 
+   Date: 1994
+
+23. Association between longevity and element levels in food and drinking water of typical Chinese longevity area
+   Authors: , , , , , , 
+   Date: 2016
+
+24. How to use the world's scarce selenium resources efficiently to increase the selenium concentration in food
+   Authors: , , , 
+   Date: 2007
+
+25. Trace metal availability and soil quality index relationships under different land uses
+   Authors: , , , 
+   Date: 2015
+
+26. Role of redox potential in chemical transformations of selenium in soils
+   Authors: , 
+   Date: 1996
+
+27. Effects of land use types on dissolved trace metal concentrations in the Le'an River Basin
+   Authors: , , , , 
+   Date: 2017
+
+28. Selenium deficiency risk predicted to increase under future climate change
+   Authors: , , , , , , , , 
+   Date: 2017
+
+29. Efficiency of different methods in extracting selenium from agricultural soils of Finland
+   Authors: , , , 
+   Date: 2009
+
+30. Selenium fractions in selenate-fertilized field soils of Finland
+   Authors: , , 
+   Date: 2011
+
+31. Current knowledge on the importance of selenium in food for living organisms: a review
+   Authors: , 
+   Date: 2016
+
+32. The essential toxin: The changing perception of selenium in environmental sciences
+   Authors: , 
+   Date: 2009
+
+33. Selenium distribution in Canadian soil profiles
+   Authors: 
+   Date: 1974
+
+34. Dynamics of soil organic carbon and nitrogen following agricultural abandonment in a karst region
+   Authors: , , , , , , , , , 
+   Date: 2017
+
+35. Interaction between selenium and soil organic matter and its impact on soil selenium bioavailability: A review
+   Authors: , , , , , 
+   Date: 2017
+
+36. Land-use change affects stocks and stoichiometric ratios of soil carbon, nitrogen, and phosphorus in a typical agro-pastoral region of northwest China
+   Authors: , , , 
+   Date: 2018
+
+37. Effects of environmental factors on the longevous people in China
+   Authors: , , 
+   Date: 2011
+
+38. Transformations of selenium as affected by sediment oxidation-reduction potential and pH
+   Authors: , , 
+   Date: 1990
+
+39. Correlation between the natural levels of selenium and soil physicochemical characteristics from the Jequitinhonha Valley (MG), Brazil
+   Authors: , , , 
+   Date: 2017
+
+40. Selenium bioavailability and uptake as affected by four different plants in a loamy clay soil with particular attention to mycorrhizae inoculated ryegrass
+   Authors: , , , , , 
+   Date: 2007
+
+41. Distribution coefficient of selenium in Japanese agricultural soils
+   Authors: , , 
+   Date: 2005
+
+42. Relationships of bio-climatic zones and lithology with various characteristics of forest soils in Greece
+   Authors: 
+   Date: 1984
+
+43. Selenium in food and the human body: a review
+   Authors: , 
+   Date: 2008
+
+44. Macro-and microscale investigation of selenium speciation in blackfoot river, Idaho sediments
+   Authors: , , , , 
+   Date: 2008
+
+45. Physiological functions of beneficial elements
+   Authors: , , , , 
+   Date: 2009
+
+46. The impact of land use on the organic and inorganic selenium content in soils developed from Loess
+   Authors: , 
+   Date: 2017
+
+47. Selenium fractions in organic matter from Se-rich soils and weathered stone coal in selenosis areas of China
+   Authors: , , 
+   Date: 2012
+
+48. The importance of selenium to human health
+   Authors: 
+   Date: 2000
+
+49. Selenium and heavy metals content in some Mediterranean soils
+   Authors: , , , , , , , 
+   Date: 2010
+
+50. Relationships among soil moisture, aeration and plant communities in natural and harvested coniferous forests in coastal British Columbia
+   Authors: , , , 
+   Date: 2012
+
+51. Land-use related organic matter dynamics in North Cameroon soils assessed by 13 C analysis of soil organic matter fractions
+   Authors: , , 
+   Date: 2005
+
+52. Spatial distribution of Se in soils from different land use types and its influencing factors within the Yanghe Watershed
+   Authors: , , , , , , , 
+   Date: 2015
+
+53. Controlling factors of soil selenium distribution in a watershed in Se-enriched and longevity region of South China
+   Authors: , , , , , 
+   Date: 2018. 20048-20056
+
+54. Land use change and soil organic carbon dynamics
+   Authors: 
+   Date: 2008
+
+55. Distribution and translocation of selenium from soil to grain and its speciation in paddy rice
+   Authors: , , , 
+   Date: 2010
+
+56. Distribution of soil selenium in China is potentially controlled by deposition and volatilization
+   Authors: , , , , , , 
+   Date: 2016. 20953
+
+57. Spatial variability of soil selenium as affected by geologic and pedogenic processes and its effect on ecosystem and human health
+   Authors: , , , , , , , 
+   Date: 2009
+
+58. Selenium speciation and extractability in Dutch agricultural soils
+   Authors: , , 
+   Date: 2015
+
+59. Selenium-rich dissolved organic matter determines selenium uptake in wheat grown on Low-selenium arable land soils
+   Authors: , , 
+   Date: 2016
+
+60. Selenium in soil and endemic diseases in China
+   Authors: , , , , , , 
+   Date: 2002
+
+61. Distribution and speciation of ambient selenium in contrasted soils, from mineral to organic rich
+   Authors: , , , , , 
+   Date: 2014
+
+62. Increased vegetation growth and carbon stock in China karst via ecological engineering
+   Authors: , , , , , , , , , 
+   Date: 2018
+
+63. Contaminants from cretaceous black shale: II. Effect of geology, weathering, climate, and land use on salinity and selenium cycling, Mancos Shale landscapes, southwestern United States
+   Authors: , , , , 
+   Date: 2014
+
+64. A comprehensive review on environmental transformation of selenium: recent advances and research perspectives
+   Authors: , , , , , , 
+   Date: 2019
+
+65. Relationship between soil physicochemical properties and selenium species based on path analysis
+   Authors: , , , 
+   Date: 2011
+
+66. Biogeochemical cycling of selenium in Chinese environments
+   Authors: , 
+   Date: 2001
+
+67. Environmental selenium research: From microscopic processes to global understanding
+   Authors: , , , , , , 
+   Date: 2012
+
+68. Study on response of carbonate rock dissolution rate to the season in Zhongliang Mountain
+   Authors: , , , , , , , 
+   Date: 2010
+
+69. Concentrations and characteristics of selenium in soil samples from Dashan Region, a seleniumenriched area in China
+   Authors: , , , , , , 
+   Date: 2015
+
+70. Total selenium content of agricultural soils in Japan
+   Authors: , , , 
+   Date: 2009
+
+71. Selenium in plants and soils, and selenosis in Enshi, China: Implications for selenium biofortification
+   Authors: , , , , , , 
+   Date: 2012
+
+72. Essential nutrients in soil humic and fulvic acids under different land use systems
+   Authors: , , , 
+   Date: 2017
+
+73. Carbonate rock dissolution rates in different landuses and their carbon sink effect
+   Authors: 
+   Date: 2011
+
+74. Hong Kong soil researches Ⅱ. Distribution and content of selenium in soils
+   Authors: , , , , , 
+   Date: 2005
+
+75. Spatial distributions and potential risk analysis of total soil selenium in Guangdong province
+   Authors: , , , , , 
+   Date: 2008
+
+76. Beneficial and paradoxical roles of selenium at nutritional levels of intake in healthspan and longevity
+   Authors: , , 
+   Date: 2018
+
+77. Study on the relationship between soil selenium and plant selenium uptake
+   Authors: , , , 
+   Date: 2005
+

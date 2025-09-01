@@ -1,0 +1,30 @@
+LULC Relation Extraction Summary
+Generated: 2025-07-09T16:42:50.811023
+Model: mistralai/Mistral-7B-Instruct-v0.2
+==================================================
+
+OVERALL STATISTICS:
+- Total sentences processed: 20
+- Sentences with relations: 10
+- Total relations extracted: 46
+- Success rate: 50.0%
+
+RELATION TYPE DISTRIBUTION:
+- CAUSES: 10
+- DECREASES_BY: 8
+- CHANGE_TO: 7
+- OCCURS_DURING: 6
+- INCREASES_BY: 5
+- AFFECTS: 4
+- LOCATED_IN: 2
+- ENABLES: 2
+- MEASURES: 2
+
+ENTITY TYPE DISTRIBUTION:
+- LULC: 32
+- PROCESS: 15
+- QUANTITY: 14
+- CHANGE: 13
+- LOC: 9
+- DATE: 7
+- PERCENT: 2

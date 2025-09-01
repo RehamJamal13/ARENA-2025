@@ -1,0 +1,18 @@
+{
+  "article_id": "56",
+  "original_sentence": "Deforestation in the Amazon rainforest affects global climate.",
+  "entities": [
+    {
+      "text": "Deforestation",
+      "label": "PROCESS",
+      "start_char": 0,
+      "end_char": 13
+    },
+    {
+      "text": "Amazon rainforest",
+      "label": "LOC",
+      "start_char": 21,
+      "end_char": 38
+    }
+  ]
+}

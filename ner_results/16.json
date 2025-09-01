@@ -1,0 +1,18 @@
+{
+  "article_id": "16",
+  "original_sentence": "Land cover analysis in the Gran Chaco areas showed decreasing forest cover.",
+  "entities": [
+    {
+      "text": "Gran Chaco areas",
+      "label": "LOC",
+      "start_char": 27,
+      "end_char": 43
+    },
+    {
+      "text": "forest",
+      "label": "LULC",
+      "start_char": 62,
+      "end_char": 68
+    }
+  ]
+}

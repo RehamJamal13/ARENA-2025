@@ -1,0 +1,10 @@
+{
+  "total_sentences_processed": 2,
+  "sentences_with_relations": 1,
+  "total_relations_extracted": 3,
+  "relation_types": {
+    "CAUSES": 1,
+    "DECREASES_BY": 1,
+    "LOCATED_IN": 1
+  }
+}

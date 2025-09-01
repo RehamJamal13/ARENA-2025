@@ -1,0 +1,12 @@
+{
+  "article_id": "5",
+  "original_sentence": "The Fynbos region has experienced significant land use changes.",
+  "entities": [
+    {
+      "text": "Fynbos region",
+      "label": "LOC",
+      "start_char": 4,
+      "end_char": 17
+    }
+  ]
+}

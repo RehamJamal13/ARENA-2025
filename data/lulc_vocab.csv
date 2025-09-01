@@ -1,0 +1,779 @@
+term,label
+term,LULC
+annual cropland,LULC
+perennial crops,LULC
+grassland meadows,LULC
+fallows,LULC
+shrub land,LULC
+forest,LULC
+bare soil,LULC
+build-up surface,LULC
+water bodies,LULC
+cereals,LULC
+vegetables and melons,LULC
+oilseed crops,LULC
+root tuber crops with high starch or inulin content,LULC
+beverage and spice crops,LULC
+leguminous crops,LULC
+sugar crops,LULC
+other crops,LULC
+term,LULC_process
+process,LULC_process
+deforestation,LULC_process
+reforestation,LULC_process
+forest restoration,LULC_process
+afforestation,LULC_process
+cultivation,LULC_process
+abandon of crops,LULC_process
+agricultural decline,LULC_process
+agriculture abandonment,LULC_process
+crop rotation,LULC_process
+artificialisation,LULC_process
+artificialization,LULC_process
+artificial land,LULC_process
+urbanisation,LULC_process
+urbanization,LULC_process
+urban development,LULC_process
+desertification,LULC_process
+erosion,LULC_process
+savanniword,LULC_process
+increase,LULC_process
+decrease,LULC_process
+expand,LULC_process
+shrink,LULC_process
+grow,LULC_process
+decline,LULC_process
+rise,LULC_process
+fall,LULC_process
+convert,LULC_process
+transform,LULC_process
+replace,LULC_process
+turn into,LULC_process
+change to,LULC_process
+shift to,LULC_process
+transition to,LULC_process
+give way to,LULC_process
+make way for,LULC_process
+degrade,LULC_process
+restore,LULC_process
+reclaim,LULC_process
+rehabilitate,LULC_process
+regenerate,LULC_process
+deteriorate,LULC_process
+improve,LULC_process
+enhance,LULC_process
+damage,LULC_process
+fragment,LULC_process
+fragmentize,LULC_process
+clear,LULC_process
+log,LULC_process
+cultivate,LULC_process
+irrigate,LULC_process
+abandon,LULC_process
+afforest,LULC_process
+reforest,LULC_process
+deforest,LULC_process
+urbanize,LULC_process
+develop,LULC_process
+mine,LULC_process
+drain,LULC_process
+flood,LULC_process
+build sustainable,LULC_process
+significant increase,LULC_process
+slight increase,LULC_process
+rural urban,LULC_process
+economic development,LULC_process
+urban development,LULC_PROCESS
+future change,LULC_process
+low transition,LULC_process
+rapid development,LULC_process
+expediated development,LULC_process
+current forest,LULC_process
+human process,LULC_process
+current urbanization,LULC_process
+highest land,LULC_process
+economic process,LULC_process
+rapid increase,LULC_process
+agricultural land,LULC_process
+annual increase,LULC_process
+average increase,LULC_process
+considerable land,LULC_process
+raw land,LULC_process
+main land,LULC_process
+paddy land,LULC
+urban land,LULC_process
+rapid urbanization,LULC_process
+urban economic,LULC_process
+rural urbanization,LULC_process
+unused land,LULC_process
+major urban,LULC_process
+global change,LULC_process
+human land,LULC_process
+diverse grassland,LULC
+specific land,LULC_process
+temperate forest,LULC_process
+agricultural abandonment,LULC_process
+dramatic land,LULC_process
+important water,LULC
+spatiotemporal change,LULC_process
+random forest,LULC_process
+overall land,LULC_process
+complex process,LULC_process
+process massive geographic,LULC_process
+high land,LULC_process
+sustainable development,LULC_process
+sustainable land,LULC_process
+different land,LULC_process
+upcoming urbanization,LULC_process
+mixed forest,LULC_process
+residential land,LULC_process
+annual land,LULC
+total increase,LULC_process
+simultaneous slight increase,LULC_process
+steady decrease,LULC_process
+global land,LULC_process
+future land,LULC_process
+overall change,LULC_process
+actual land,LULC_process
+probable change,LULC_process
+informed land,LULC_process
+initial soil,LULC_process
+usle soil,LULC
+appropriate land,LULC_process
+major land,LULC_process
+total surface,LULC_process
+open water,LULC_process
+temporal land,LULC_process
+traditional agricultural,LULC_process
+overall increase,LULC_process
+mean surface,LULC
+systematic urban,LULC_process
+rapid urban,LULC_process
+unplanned urbanization,LULC_process
+land use/,LULC_process
+massive process,LULC_process
+ninth largest urban,LULC_process
+largest urban,LULC_process
+industrial development,LULC_process
+urban change,LULC_process
+ninth biggest urban,LULC_process
+largest land,LULC_process
+broad land,LULC_process
+continued increase,LULC_process
+systematic increase,LULC_process
+significant change,LULC_process
+major agricultural,LULC_process
+spatial change,LULC_process
+bare land,LULC
+progressive decline,LULC_process
+continuous decline,LULC_process
+prominent land,LULC_process
+exponential rise,LULC_process
+explicit land,LULC_process
+current land,LULC_process
+modest decline,LULC_process
+considerable decrease,LULC_process
+natural land,LULC_process
+massive land,LULC_process
+new development,LULC_process
+permanent crops,LULC_process
+greatest rise,LULC_process
+barren land,LULC_process
+significant process,LULC_process
+operational land,LULC_process
+prevalent land,LULC_process
+low land,LULC_process
+abundant change,LULC_process
+similar change,LULC_process
+credible change,LULC_process
+enhance effective,LULC_process
+progressive urban,LULC_process
+sustainable urban,LULC_process
+future urban land,LULC_process
+improve overall,LULC_process
+distinct urban,LULC_process
+total change,LULC_process
+random process,LULC_process
+overall annual change,LULC_process
+land suitable,LULC_process
+unsuitable land,LULC_process
+systematic process,LULC_process
+temporal transition,LULC_process
+sustainable urban development,LULC_process
+suitable land,LULC_process
+unauthorised development,LULC_process
+annual forest,LULC_process
+historical land,LULC_process
+continuous shrub,LULC
+seasonal change,LULC_process
+correct land,LULC_process
+secondary forest,LULC_process
+annual change,LULC_process
+different annual,LULC
+original land,LULC_process
+native forest,LULC_process
+significant decline,LULC_process
+sustainable future land,LULC_process
+unprecedented increase,LULC_process
+noticeable decrease,LULC_process
+rapid urban development,LULC_process
+massive infrastructural development,LULC_process
+significant decrease,LULC_process
+highest positive net change,LULC_process
+largest negative change,LULC_process
+subtropical crops,LULC_process
+extended cultivation,LULC_process
+effective land,LULC_process
+increase economic,LULC_process
+better agricultural,LULC_process
+seasonal surface,LULC_process
+net increase,LULC_process
+supervised land,LULC_process
+major soil,LULC
+degraded land,LULC_process
+spatial development,LULC_process
+dynamic process,LULC_process
+planned development,LULC_process
+biggest change,LULC_process
+determined land,LULC_process
+single transition,LULC_process
+transition potential,LULC_process
+primary development,LULC_process
+important urban,LULC_process
+uncontrolled urbanization,LULC_process
+land usecover,LULC_process
+detailed process,LULC_process
+future urban,LULC_process
+fresh water,LULC
+horizontal development,LULC_process
+soil bare,LULC
+ongoing change,LULC_process
+specific change,LULC_process
+fundamental shift,LULC_process
+dense forest,LULC_process
+high annual,LULC
+current urban,LULC_process
+arable cropland,LULC_process
+infrastructural development,LULC_process
+total land,LULC_process
+sustainable forest,LULC_process
+potential change,LULC_process
+unprecedented progressive land,LULC_process
+public land,LULC_process
+systematic land,LULC_process
+national agricultural development,LULC_process
+horizontal agricultural land,LULC_process
+unregulated urbanisation,LULC_process
+rapid unregulated urbanisation,LULC_process
+land boundary,LULC_process
+develop sustainable,LULC_process
+extensive land,LULC_process
+develop accurate,LULC_process
+accurate land,LULC_process
+develop effective,LULC_process
+hydrological process,LULC_process
+drastic decrease,LULC_process
+annual surface,LULC_process
+available water,LULC_process
+dominant soil,LULC
+industrial crops,LULC_process
+abrupt land,LULC_process
+feasible way,LULC_process
+temporal change,LULC_process
+key process,LULC_process
+smaller change,LULC_process
+real surface,LULC
+optimal way,LULC_process
+flexible change,LULC_process
+substantial forest,LULC_process
+significant annual forest,LULC_process
+nonforested land,LULC_process
+natural forest,LULC_process
+recent reforestation,LULC_process
+rapid decline,LULC_process
+restore forested,LULC_process
+appropriate forest,LULC_process
+forest restoration,LULC_PROCESS
+wide economic development,LULC_process
+continuous change,LULC_process
+dramatic decline,LULC_process
+net decline,LULC_process
+regional development,LULC_process
+complete transition,LULC_process
+open land,LULC_process
+active cropland,LULC_process
+relative high surface,LULC_process
+intensified agricultural,LULC_process
+easy way,LULC_process
+effective way,LULC_process
+entire process,LULC_process
+new land,LULC_process
+measured change,LULC_process
+change potential,LULC_process
+highest change,LULC_process
+lowest change,LULC_process
+simulated transition,LULC_process
+simulated change,LULC_process
+illogical transition,LULC_process
+scientific process,LULC_process
+entire surface,LULC_process
+particular land,LULC_process
+certain specific land,LULC_process
+single land,LULC_process
+dominant land,LULC_process
+curved surface,LULC_process
+certain land,LULC_process
+residential development,LULC_process
+excellent way,LULC_process
+single right way,LULC_process
+practical way,LULC_process
+good way,LULC_process
+predominant land,LULC_process
+lengthy process,LULC_process
+artificial green urban,LULC_process
+new urban,LULC_process
+industrial land,LULC_process
+new residential development,LULC_process
+best way,LULC_process
+average annual change,LULC_process
+relative change,LULC_process
+absolute change,LULC_process
+net change,LULC_process
+little change,LULC_process
+significant absolute change,LULC_process
+negative net change,LULC_process
+surprising change,LULC_process
+static land,LULC_process
+dominant process,LULC_process
+little land,LULC_process
+critical land,LULC_process
+observed change,LULC_process
+particular transition,LULC_process
+similar way,LULC_process
+linear change,LULC_process
+uniform annual change,LULC_process
+past land,LULC_process
+unstable change,LULC_process
+stable change,LULC_process
+real change,LULC_process
+respective change,LULC_process
+high change,LULC_process
+low change,LULC_process
+different change,LULC_process
+specific transition,LULC_process
+normal land,LULC_process
+detailed land,LULC_process
+new forest,LULC_process
+individual land,LULC_process
+global urban,LULC_process
+stable transition,LULC_process
+subnational cropland,LULC_process
+accurate cropland,LULC_process
+average cropland,LULC
+final cropland,LULC_process
+previous cropland,LULC
+impervious surface,LULC_process
+global urbanization,LULC_process
+degraded forest,LULC_process
+urbanization identifiable,LULC_process
+strict land,LULC_process
+regional land,LULC_process
+balanced land,LULC_process
+classified land,LULC_process
+derived transition,LULC_process
+net decrease,LULC_process
+overall decrease,LULC_process
+alaskan grassland,LULC
+higher cropland,LULC
+higher forest,LULC_process
+strategic forest,LULC_process
+unique land,LULC_process
+dynamic land,LULC_process
+slight decrease,LULC_process
+continuous land,LULC_process
+irrigated agriculture,LULC_process
+significant rise,LULC_process
+average rise,LULC_process
+loose soil,LULC
+enhanced surface,LULC_process
+rapid change,LULC_process
+worldwide environmental change,LULC_process
+economic change,LULC_process
+subsequent change,LULC_process
+earlier land,LULC_process
+later land,LULC_process
+great decline,LULC_process
+reasonable land,LULC_process
+proper land,LULC_process
+relative rise,LULC_process
+fine global future land,LULC_process
+future regional land,LULC_process
+environmental shift,LULC_process
+alternative land,LULC_process
+surface directional,LULC_process
+dipterocarp forest,LULC_process
+perennial industrial,LULC
+unplanned land,LULC_process
+continuous decrease,LULC_process
+multiple land,LULC_process
+suitable change,LULC_process
+best change,LULC_process
+tonal change,LULC_process
+positive change,LULC_process
+quantitative change,LULC_process
+good change,LULC_process
+single change,LULC_process
+numerous change,LULC_process
+considerable increase,LULC_process
+coastal development,LULC_process
+rational coastal land,LULC_process
+current process,LULC_process
+considerable change,LULC_process
+apparent forest,LULC_process
+minimum soil,LULC_process
+permanent meadows,LULC
+abrupt change,LULC_process
+arable land,LULC_process
+tropical deforestation,LULC_process
+excess forest,LULC_process
+total cropland,LULC
+temporary deforestation,LULC_process
+recent decline,LULC_process
+deforestation gross,LULC_process
+disturbed forest,LULC_process
+older fallows,LULC
+environmental change,LULC_process
+surface aerodynamic,LULC_process
+important crops,LULC_process
+progressive decrease,LULC_process
+gradual increase,LULC_process
+persistent increase,LULC_process
+irregular increase,LULC_process
+constant decrease,LULC_process
+apparent increase,LULC_process
+previous land,LULC_process
+clear water,LULC
+rational development,LULC_process
+total grassland,LULC
+balanced development,LULC_process
+dynamic change,LULC_process
+socioeconomic development,LULC_process
+actual annual,LULC
+significant land,LULC_process
+anthropogenic land,LULC_process
+anthropogenic environmental change,LULC_process
+land overall,LULC_process
+anthropogenic forest,LULC_process
+inappropriate land,LULC_process
+fragmented land,LULC_process
+develop appropriate,LULC_process
+entire land,LULC_process
+net forest,LULC_process
+unmanaged natural forest,LULC_process
+global anthropogenic land,LULC_process
+future forest,LULC_process
+global forest,LULC_process
+proactive land,LULC_process
+restore degraded,LULC_process
+environmental damage,LULC_process
+reduced deforestation,LULC_process
+closed shrub,LULC
+decrease net,LULC_process
+large land,LULC_process
+different transition,LULC_process
+improved crop,LULC_process
+sustainable rural development,LULC_process
+increase overall,LULC_process
+major crop,LULC_process
+lignocellulosic crops,LULC_process
+associated land,LULC_process
+technical land,LULC_process
+joint land,LULC_process
+relevant sustainable development,LULC_process
+turn net,LULC_process
+rural development,LULC_process
+private land,LULC_process
+multiple forest,LULC_process
+participatory process,LULC_process
+successful deforestation,LULC_process
+long process,LULC_process
+total global agricultural land,LULC_process
+agriculture specific,LULC_process
+avoided deforestation,LULC_process
+clear land,LULC_process
+undisturbed forest,LULC_process
+observed increase,LULC_process
+potential deforestation,LULC_process
+national forest,LULC_process
+annual global crop,LULC
+alarming decline,LULC_process
+smart agriculture,LULC_process
+efficient forest,LULC_process
+increase agricultural,LULC_process
+local surface,LULC_process
+lower surface,LULC_process
+notable change,LULC_process
+build temporary,LULC_process
+annual multidecadal land,LULC
+national land,LULC_process
+individual cropland,LULC_process
+stable cropland,LULC_process
+open surface,LULC_process
+multidecadal surface,LULC_process
+multidecadal water,LULC_process
+free land,LULC_process
+stable forest,LULC_process
+official forest,LULC_process
+national arable land,LULC_process
+global herbaceous crop,LULC
+net cropland,LULC_process
+global gross forest,LULC_process
+intensive gross forest,LULC_process
+gross forest,LULC_process
+global cropland,LULC_process
+largest net cropland,LULC_process
+largest relative cropland,LULC_process
+gross global cropland,LULC_process
+highest annual land,LULC
+industrial agriculture,LULC_process
+open forest,LULC_process
+second dominant land,LULC_process
+improper land,LULC_process
+poor land,LULC_process
+total agricultural land,LULC_process
+mechanized agriculture,LULC_process
+associated decrease,LULC_process
+extreme land,LULC_process
+urban green,LULC_process
+increase urban green,LULC_process
+potential land,LULC_process
+rapid decrease,LULC_process
+dramatic rise,LULC_process
+maximum transition,LULC_process
+highest deforestation,LULC_process
+irrigated crops,LULC_process
+highest urbanization,LULC_process
+reclaim large,LULC_process
+consequent increase,LULC_process
+corresponding increase,LULC_process
+high deforestation,LULC_process
+current natural forest,LULC_process
+random rotation,LULC
+tropical dry forest,LULC_process
+recent deforestation,LULC_process
+significant human change,LULC_process
+artificial afforestation,LULC_process
+considerable decline,LULC_process
+affected land,LULC_process
+global agriculture,LULC_process
+gross change,LULC_process
+steady annual net decrease,LULC_process
+new transition,LULC_process
+multiple change,LULC_process
+technological change,LULC_process
+definitive land,LULC_process
+highest relative increase,LULC_process
+process transparent,LULC_process
+available land,LULC_process
+riparian forest,LULC_process
+extensive root,LULC_process
+vast forest,LULC_process
+forest dwelling,LULC_process
+proper forest,LULC_process
+initial transition,LULC_process
+largest increase,LULC_process
+temporal dynamic change,LULC_process
+main change,LULC_process
+social development,LULC_process
+future development,LULC_process
+significant forest,LULC_process
+initial increase,LULC_process
+remarkable overall land,LULC_process
+accurate forest,LULC_process
+convert spectral,LULC_process
+considerable positive change,LULC_process
+continual cultivation,LULC_process
+supervised random forest,LULC_process
+yangambi water,LULC
+ferralitic soil,LULC
+deteriorate physicochemical,LULC_process
+rapid economic development,LULC_process
+latest land,LULC_process
+current urbanisation,LULC_process
+rapid rise,LULC_process
+replace fossil,LULC_process
+initial process,LULC_process
+saline land,LULC_process
+likely decrease,LULC_process
+destructive flood,LULC_process
+large urban,LULC_process
+tremendous increase,LULC_process
+green urban,LULC_process
+ecological development,LULC_process
+similar decline,LULC_process
+fallow land,LULC_process
+modern agriculture,LULC_process
+unsustainable land,LULC_process
+use/ land,LULC_process
+annual average decline,LULC_process
+major decline,LULC_process
+annual average increase,LULC_process
+universal way,LULC_process
+annual phenological,LULC
+normalized surface,LULC_process
+generic change,LULC_process
+redundant change,LULC_process
+conflicting land,LULC_process
+substantial decline,LULC_process
+physical development,LULC_process
+dry land,LULC_process
+multitask change,LULC_process
+continuous increase,LULC_process
+highest increase,LULC_process
+oldest agricultural,LULC_process
+continuous cultivation,LULC_process
+recorded change,LULC_process
+total agriculture,LULC_process
+severe land,LULC_process
+general land,LULC_process
+process relative,LULC_process
+high agricultural development,LULC_process
+annual crops,LULC
+agricultural development,LULC_process
+conscious land,LULC_process
+integrated land,LULC_process
+sustainable agricultural,LULC_process
+water hyacinth,LULC
+diverse land,LULC_process
+rapid infrastructural development,LULC_process
+available barren land,LULC_process
+slighter decrease,LULC_process
+appropriate water,LULC
+limited land,LULC_process
+direct way,LULC_process
+vegetationagricultural land,LULC_process
+observed land,LULC_process
+common land,LULC_process
+little net change,LULC_process
+minimal land,LULC_process
+predominant forest,LULC_process
+coastal change,LULC_process
+improve predictive,LULC_process
+intensive agriculture,LULC_process
+abundant water,LULC
+deciduous forest,LULC_process
+swampy land,LULC_process
+highest decline,LULC_process
+highest net change,LULC_process
+dominant agricultural land,LULC_process
+natural process,LULC_process
+build hydropower,LULC_process
+high decline,LULC_process
+new cultivation,LULC_process
+expand agricultural,LULC_process
+high erosion,LULC_process
+cultivate steep,LULC_process
+improve agricultural,LULC_process
+lowest net change,LULC_process
+booming increase,LULC_process
+convenient way,LULC_process
+develop useful,LULC_process
+clustering process,LULC_process
+repetitive process,LULC_process
+potential solar land,LULC_process
+solar land,LULC_process
+additional land,LULC_process
+adverse land,LULC_process
+main decrease,LULC_process
+agricultural economic development,LULC_process
+coordinated development,LULC_process
+severe decline,LULC_process
+ecological restoration,LULC_process
+mountainous urban,LULC_process
+obvious shift,LULC_process
+highest annual urban,LULC_process
+future urbanisation,LULC_process
+national development,LULC_process
+unplanned urban,LULC_process
+comprehensive urban process,LULC_process
+land close,LULC_process
+unprecedented urban,LULC_process
+little development,LULC_process
+possible future urban,LULC_process
+urban mountainous,LULC_process
+massive increase,LULC_process
+maximum decrease,LULC_process
+maximum change,LULC_process
+negligible decline,LULC_process
+intensive urbanization,LULC_process
+overall forest,LULC_process
+agricultural change,LULC_process
+permanent land,LULC_process
+consistent land,LULC_process
+explicit change,LULC_process
+fractional forest,LULC_process
+hydric soil,LULC
+larger land,LULC_process
+initial land,LULC_process
+annual herbaceous,LULC
+additional forest,LULC_process
+key land,LULC_process
+total forest,LULC_process
+total shrub,LULC
+normal crop,LULC
+specific surface,LULC
+modest way,LULC_process
+comprehensive land,LULC_process
+overall decline,LULC_process
+strong land,LULC_process
+lowest decline,LULC_process
+highest seasonal rise,LULC_process
+highest rise,LULC_process
+lowest rise,LULC_process
+seasonal decrease,LULC_process
+decline higher,LULC_process
+high increase,LULC_process
+proper water,LULC
+flood susceptible,LULC_process
+bilateral land,LULC_process
+substantial increase,LULC_process
+overall longterm dynamic transition,LULC_process
+greater flood,LULC_process
+great socioeconomic development,LULC_process
+stochastic process,LULC_process
+high transition,LULC_process
+great increase,LULC_process
+extensive urban development,LULC_process
+overall urban,LULC_process
+potential urban,LULC_process
+typical land,LULC_process
+categorical change,LULC_process
+spatiotemporal land,LULC_process
+significant transition,LULC_process
+closed forest,LULC_process
+demographic increase,LULC_process
+natural increase,LULC_process
+porous land,LULC_process
+average land,LULC_process
+annual mean surface,LULC
+extreme decrease,LULC_process
+sparse forest,LULC_process
+remarkable decline,LULC_process
+secondary land,LULC_process
+relevant land,LULC_process
+herbaceous land,LULC
+available global land,LULC_process
+tropical forest,LULC_process
+largest tropical forest,LULC_process
+general way,LULC_process
+dramatic decrease,LULC_process
+better water,LULC
+ongoing rapid urbanization,LULC_process
+expeditious urbanization,LULC_process
+dramatic change,LULC_process
+robust urbanization,LULC_process
+greater change,LULC_process
+consistent increase,LULC_process
+central urban,LULC_process
+enormous land,LULC_process
+rehabilitate degraded,LULC_process

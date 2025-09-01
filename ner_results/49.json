@@ -1,0 +1,12 @@
+{
+  "article_id": "49",
+  "original_sentence": "Remote sensing data showed changes in New Zealand Temperate Forest vegetation.",
+  "entities": [
+    {
+      "text": "New Zealand Temperate Forest vegetation",
+      "label": "LOC",
+      "start_char": 38,
+      "end_char": 77
+    }
+  ]
+}

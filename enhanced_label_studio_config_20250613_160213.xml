@@ -1,0 +1,26 @@
+<View>
+  <Header value="Enhanced LULC Entity and Relation Annotation"/>
+  <Text name="text" value="$text"/>
+  
+  <Labels name="label" toName="text">
+    <Label value="CARDINAL" background="#FF6B6B"/>
+    <Label value="CHANGE" background="#4ECDC4"/>
+    <Label value="COORDINATES" background="#45B7D1"/>
+    <Label value="DATE" background="#96CEB4"/>
+    <Label value="LOC" background="#FECA57"/>
+    <Label value="LULC" background="#FF9FF3"/>
+    <Label value="PERCENT" background="#A55EEA"/>
+    <Label value="PROCESS" background="#54A0FF"/>
+    <Label value="TEMPORAL" background="#5F27CD"/>
+  </Labels>
+  
+  <Relations name="relation" toName="label">
+  </Relations>
+  
+  <Choices name="quality" toName="text" choice="single">
+    <Choice value="High Quality"/>
+    <Choice value="Medium Quality"/>
+    <Choice value="Low Quality"/>
+    <Choice value="Needs Review"/>
+  </Choices>
+</View>

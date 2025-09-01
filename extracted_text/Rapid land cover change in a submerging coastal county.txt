@@ -1,0 +1,286 @@
+================================================================================
+TITLE: Rapid Land Cover Change in a Submerging Coastal County
+================================================================================
+
+AUTHORS:
+- Keryn Gedan
+- Rebecca Epanchin-Niell
+- Man Qi
+
+ABSTRACT:
+Sea level rise is reshaping the coasts, allowing coastal habitats such as tidal marshes to migrate inland. To predict where changes will occur, it is critical to understand the factors that influence land cover transition. Here, we test the influence of land cover type on land cover transition. We hypothesized that marsh migration may vary by upland land cover type, due to dominant plant species' differences in salinity and inundation tolerance. Additionally, the response of people may make specific land cover types more likely to be protected from transition. We measured land cover change in high resolution aerial imagery over the relatively short period of 2009 to 2017 in coastal Somerset County, Maryland. In logistic models of land cover transition, we found that 'agricultural land' and 'scrub shrub wetland / forested wetland' cover classes were more likely to transition to 'emergent wetland' than 'forest/scrub shrub' or 'urban or built-up land' cover classes, after controlling for elevation and distance to shore, two wellknown predictors of marsh migration. Over only 8 years, loss of upland area in the county totaled 6.1 km 2 , of which 5.7 km 2 was agricultural land. This represents a loss of over 2% of the farmland in the county, the majority of which converted to emergent wetland during the study period.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Accelerated sea level rise is having a marked impact on coastal ecosystems. One of the most striking effects of sea level rise is the transition of uplands to tidal wetlands and open water 
+Characteristics of the landscape are important determinants of the timing and pace of upland transition 
+One landscape factor that has rarely been considered as a determinant of upland transition to marsh is upland land cover type, and that is the focus of this study. In one explicit consideration of upland land cover type, 
+Furthermore, human interventions have great potential to alter the way upland land cover types transition by either slowing or accelerating change. The installation of tide gates, levees, or berms can prevent tidal influence and slow change, or fail suddenly and cause rapid change to marsh or open water. Terracing or surface regrading to raise the elevation of the land could also prevent upland conversion of areas in the so-called "accommodation space", where marsh migration is predicted to occur. Lastly, land management practices, such as timber harvest, might affect the water budget of forests or remove relict trees and alter light conditions in areas where forest regeneration has already ceased ("the persistent zone", 
+In this study, we investigated land cover transitions in a rapidly submerging county on the coast of the Chesapeake Bay over a short time period of 8 years. Using high resolution aerial imagery, we classified land use and land cover change from 2009 to 2017 to detect land use transitions and determine the effect of initial upland land cover type on the probability of upland transition. We also investigated the effect of other known landscape predictor variables, namely elevation and distance to shoreline, and their interaction with upland land cover type in determining transition to marsh.
+
+## Methods ##
+
+
+## Study Area ##
+Somerset County, Maryland on the Lower Eastern Shore of the Chesapeake Bay was selected as the study region due to the high rate of land use transition that has been observed there in recent years and attributed to rapid relative sea level rise 
+
+## Spatial Imagery Data ##
+The National Agriculture Imagery Program (NAIP) program provides statewide, high-resolution imagery during the growing season of every other year. The earliest NAIP images available for Maryland with complete spectral information (four spectral bands: near infrared, red, green, and blue) were collected in August 2009. June 2017 was the most recent available image. NAIP imagery has a spatial resolution of 1 m and a horizontal accuracy of 6.0 m. From our observation of error in 67 stable features (e.g. road intersection and building corners) from across the study area, there is a horizontal offset of 2.96 ± 1.65 m between images from 2009 to 2017.
+One disadvantage of using NAIP data for classification is the high heterogeneity of images at fine scale spatial resolution, which can be challenging for classification algorithms. Additionally, processing time of these images is much greater due to the amount of data in even a relatively small study area such as ours. However, one advantage of using high resolution imagery is the ability of the human eye to detect land use cover types and validate classifications. Additionally, as opposed to coarser imagery such as Landsat, very fine scale changes can be detected.
+
+## Image Classification ##
+We used a combination of automated classification and postclassification manual checking and review to interpret land cover from the NAIP images. The land cover types in our study area mainly included agricultural land, such as cropland, orchards, poultry houses, irrigation canals, and ponds; urban or built-up land, such as houses, lawns, highways, power infrastructure, towns, and commercial complexes; upland forest; estuarine and palustrine wetlands; and water bodies (see Fig. 1b, e). The land cover classes we used in this study were based on 
+We ultimately selected six land cover classes, described in more detail below: (1) Forest/Scrub Shrub, (2) Agricultural Land, (3) Urban or Built-up Land, (4) Water, (5) Scrub Shrub Wetland / Forested Wetland, and (6) Emergent Wetland. It should be noted that Agricultural Land had two subclasses during classification, i.e. Bare Agricultural Land and Vegetated Agricultural Land, as agricultural lands can be bare or vegetated depending on the point in the harvest cycle at the time NAIP images were collected. These two subclasses were merged as Agricultural Land during post-classification.
+Forest/Scrub Shrub Areas dominated by trees and/or shrubs with tree and shrub coverage of 30% or greater, regardless of tidal regime, salinity level, or understory plant community type.
+Agricultural Land Crop fields, pastures, orchards, groves, vineyards, and nurseries, ornamental horticultural areas, confined feeding operations, farmsteads, holding areas for livestock.
+Urban or Built-up Land Areas of intensive use with much of the land covered by structures. Included in this category are residential buildings, cities, towns, villages, commercial and industrial buildings and parking lots, and transportation and power infrastructure.
+Scrub Shrub Wetland / Forested Wetland Wetlands with 10 to 30% coverage of woody vegetation, regardless of tidal regime or salinity level.
+Emergent Wetland Tidal and nontidal wetlands with at least 30% coverage of emergent plants, emergent mosses or lichens and less than 10% coverage of trees and shrubs.
+Water Permanent open water, aquatic bed, streams and canals, lakes, reservoirs, bays and estuaries, ditches and canals, and small ponds for farms.
+These classes are here forth referred to by the bolded words for brevity.
+For automated classification, we applied the Normalized Difference Water Index 
+While training the classifier, two rounds of supervised classification were conducted with each of the segmented subset images using a decision tree algorithm. The decision tree algorithm was selected after visually comparing the performance of several other algorithms, namely k-nearest neighbor, Wetlands random forest, and support vector machine, in distinguishing the most similar or difficult to distinguish classes in our study system: e.g. 'Vegetated Agricultural Land' versus 'Emergent Wetland', 'Scrub Shrub Wetland / Forested Wetlands' versus 'Emergent Wetland', 'Bare Agricultural Land' versus 'Water' (Fig. 
+After automated classification, we performed manual review and correction of 100% of the interpreted area of each individual year with incremental screen by screen (working west to east or north to south) qualitative review and corrected misclassified objects at 1:3000 scale with a Minimum Mapping Unit (MMU) for each class as shown in Table 
+
+## Classification Accuracy Assessment and Change Detection ##
+To assess classification accuracy, we randomly sampled 200 map objects per year from within 2009 and 2017 images and visually determined land cover type. The percentage of correctly classified points indicated the classification accuracy, i.e. Producer's Accuracy (PA). PA was calculated for each land cover class after automated classification and after manual correction.
+We measured land cover change within polygons resulting from the intersection of the objects in the 2 years using the thematic change workflow tool in ENVI 93 + IDL85. This approach provides "from-to" information, hereafter called "transition," for all polygons in the theme. We reduced noise by excluding small segments (less than 1000 m 2 ) that were a result of horizontal inconsistency between years. Landscape transitions were calculated and mapped within ENVI.
+
+## Statistical Analysis of Change Patterns ##
+We investigated how observed land cover transitions in Somerset County were explained by two landscape characteristics, elevation and distance to shoreline, which jointly determine the expected reach of changes associated with rising sea levels. Elevation of each object within the classified images was extracted as the median elevation within the DEM of all pixels within the object, and distance was measured between the shoreline (defined as where open water and tidal creeks met any other land cover type within the 2009 classified scene) and the center of each object. We calculated the mean elevation and distance to shoreline of transition area sorted by their original land cover type (i.e. 2009), and compared them with the elevation and distance to shoreline of total area of each land cover type in 2009.
+In a separate analysis using area weighted logistic regression, we statistically examined the influence of elevation, distance to shoreline, and upland land cover type on the probability of upland transition to emergent wetland. This enabled us to explicitly test whether initial upland land cover type influenced the rate of marsh migration, controlling for distance and elevation. We limited analysis to the set of objects that were classified as upland land cover (1) Forest, 2) Agricultural Land, 3) Urban Land, or 4) Scrub Shrub Wetland) in 2009. We assigned the binary response variable a value of 1 if the object had transitioned to emergent wetland by 2017 and 0 if it remained as upland in 2017. To focus on the primary region of anticipated change, we consider a focal area for our analysis that only included objects between -1 and 4 m (NAVD88) elevation and distance to shoreline of less than 2 km. We also considered an expanded analysis that incorporated the full span of predominant conditions in the We used logistic regression because our response variable (transition to emergent wetlands or not) is binary. Furthermore, because objects in our analysis were delineated as contiguous areas of uniform land cover and transition, spatial autocorrelation among objects is avoided. However, objects are non-uniform in size. As such, each observation in our data represents a different sized "population" of locations on the landscape (e.g. different numbers of pixels), so we weighted observations by object size to capture their differential spatial representativeness. Furthermore, we use the sandwich estimator (i.e., Huber and White) of variance to obtain standard errors that are robust to underlying heteroskedasticity. We examine variance inflation factors to ensure that multicollinearity among predictor variables is not a problem. Analyses were conducted in STATA 15.1 (StataCorp 2019), using the logit command and pweights (probability weights); predicted probability graphs were created using mgen.
+
+## Results ##
+
+
+## Accuracy Assessment and Description of the Study Region ##
+The segmentation process identified a total of 109,278 and 104,974 segments in the 2009 and 2017 map areas, respectively, which ranged in area from 1 to 686,920 m 2 (see Fig. 
+The most common land cover type in the study area in 2009 was forest (39.9%, or 249.23 km 2 , Fig. 
+
+## Land Cover Transitions ##
+We found that 1651 patches comprising a total area of 16.1 km 2 , or 2.57% of the total area, transitioned during the study period (Fig. 
+One of the most striking changes in the study region during this time was a loss of agricultural land. Agricultural lands were the largest source of change (38.0%) (Table 
+Forest area experienced little net change during the study. Land transitioning out of forest (25.9%) approximately equaled land transitioning into forest (25.5%). Scrub shrub wetland behaved similarly; the same proportion of land transitioned out (16.1%) and into (16.5%) scrub shrub wetland. Minimal land transitioned out of urban or water during the study period (3.2 and 1.4% of the transition area, respectively) (Table 
+
+## Predictors of Land Cover Transitions ##
+Overall, the study region was extremely low elevation, with 71% of the area at less than 2 m (NAVD88) (Fig. 
+We observed a divergent pattern in land cover transitions across elevations. Transitions to emergent wetland from any land cover class occurred at low elevation (<1 m NAVD88), whereas transitions to forest from almost any land cover class occurred at higher elevation (>4 m NAVD88, high for this region) (Fig. 
+
+## Probabilities of Upland Land Use Types Converting to Emergent Wetland ##
+Logistic regression results demonstrated that elevation is an important predictor of upland conversion to emergent wetland, with low-lying areas having higher probabilities of conversion (Table 
+In our base model (<2 km from shoreline; <4 m median elevation), the VIF was highest for distance (VIF = 4.06) and the coefficient on distance was insignificant, so our preferred model excluded distance (Table 
+
+## Discussion ##
+The land use transitions that we observed occurring over the last decade in Somerset County, Maryland are consistent with predicted marsh migration in response to sea level rise.
+Emergent wetland area increased, upland area decreased, and upland to emergent wetland transitions were more likely at lower elevation and closer to shore. Importantly, we found that upland land cover type affected the likelihood of transition to emergent wetland. Transition to emergent wetland was more likely for agricultural and scrub shrub wetland areas than for urban or forest areas after controlling for elevation and distance to shore. This is the first study to demonstrate an effect of upland land cover type on marsh migration rates.
+There are a number of reasons why agricultural land may be more likely than forest to transition to marsh. First, crops grown in this region, primarily corn and soy, are more sensitive to salinity and flooding than the predominant forest canopy tree in the region, the loblolly pine Pinus taeda 
+Another consideration is that some land use types may exhibit more frequent and more reversible land cover transitions than others. For example, agricultural land could be taken out of production and effectively transition to emergent wetland, only to be farmed again in later years if conditions allow. Other land use types might exhibit more unidirectional change. Forest, for  Wetlands example, can subsist in the persistent zone until a single climatic event kills adult and causes a state change to marsh 
+The scrub shrub wetland cover class included tidal and non-tidal freshwater swamps with low tree or shrub cover, whereas tidal and non-tidal freshwater swamps with high tree cover were classified as forest (Fig. 
+The present rate of sea level rise in the study region is 4.1 mm/yr (NOAA data from 1971 to 2019, Fig. 
+The changes that we observed in land cover were likely affected by this gradual increase in sea level, but additional factors cannot be dismissed in this type of analysis. Other contributors may include overtopping by storm surge or extreme tides and groundwater dynamics that affect saltwater intrusion. Surge from a single storm can salinize groundwater for months or years 
+The study period also included a prolonged, extreme drought in summer 2011, with the lowest observed Palmer Drought Severity Index (PDSI) values since 1930 and extreme drought values well below -4 during the growing season months of May, June, and July 2011 (Fig. 
+Conversion of upland area to emergent wetland or open water totaled 6.1 km 2 . The largest net loss, 5.7 km 2 , was from agricultural land cover (Table 
+
+## Predictors of Land Cover Change ##
+Interestingly, transitions from agriculture to forest exhibited a similar elevation profile to those from agriculture to emergent wetland. In our experience working in the region with farmers whose land is affected by saltwater intrusion 
+
+## Detection of Change ##
+Our results are based on visual detection of land cover change using a supervised classification algorithm. It is likely that land cover changes which did not substantially shift the spectral signature of an area were missed by this approach. For example, agricultural land transition was only detected when the parcel's spectral signature resembled a scrub shrub wetland, forest, or emergent wetland more than agriculture. Prior to major spectral change, these lands can still visually and spectrally resemble agriculture in high resolution images (KG, personal observation). Effects such as reductions in yield due to saltwater intrusion or recent abandonment would not have been detected in this analysis. We were unable to track these subtler shifts in plant communities, or changes occurring under a forest canopy, what has been termed "invisible migration" 
+Most prior mapping studies of marsh migration have been over centennial time scales (e.g. Smith 2013; 
+
+## Future Directions ##
+These findings have led us in a number of directions to investigate the future of coastal land cover transitions in this region. First, we are investigating changes in cropping and land use decisions on agricultural lands to enhance understanding of the transition paths by which agricultural lands may respond to sea level rise and coastal salinization, as mediated by crop susceptibility and economic factors. In field trials, we are evaluating the suitability of transitioning agricultural lands for production of alternative crops, such as sorghum (Sorghum bicolor) and barley (Hordeum vulgare L.), and planted wetland restoration species, such as Spartina patens. We are also investigating the transition of emergent wetlands to open water during marsh pond expansion 
+
+## Wetlands ##
+
+
+## Conclusion ##
+We report rapid rates of marsh migration and upland conversion in a low-lying tidally dissected county in Maryland. Agricultural land and scrub shrub wetland were more able to conversion to emergent wetland than forest or urban land, after controlling for two important variables in land use transition, elevation and distance to shore. Questions remain about the proximate social, landscape, and climate drivers responsible for this greater vulnerability; these will be the subject of future research. Further insight into variables influencing coastal change can guide the development of policies and land management efforts to promote coastal resilience and improve predictive models of land cover change on the coast.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. A land use and land cover classification system for use with remote sensor data
+   Authors: 
+   Date: 1976
+
+2. Upslope development of a tidal marsh as a function of upland land use
+   Authors: , , 
+   Date: 2017
+
+3. Salt marsh migration into lawns revealed by a novel sediment-based approach
+   Authors: , , , 
+   Date: 2019
+
+4. Evaluating the effects of land-use change and future climate change on vulnerability of coastal landscapes to saltwater intrusion
+   Authors: , , , , , , , , 
+   Date: 2018a
+
+5. Seekamp EL (2018b) Sea level rise impacts on rural coastal social-ecological systems and the implications for decision making
+   Authors: , , , , , , , 
+
+6. Sea-level rise: projections for Maryland
+   Authors: , , 
+   Date: 2018. 2018
+
+7. Nonlinear change in sea level observed at north American tide stations
+   Authors: , 
+   Date: 2015
+
+8. Ecology of tidal freshwater forests in coastal deltaic Louisiana and northeastern South Carolina. Ecology of tidal freshwater forested wetlands of the southeastern United States
+   Authors: , , 
+   Date: 2007
+
+9. Tidal freshwater forest accretion does not keep pace with sea level rise
+   Authors: 
+   Date: 2012
+
+10. NOAA Coastal Change Analysis Program (C-CAP) : guidance for regional implementation
+   Authors: , , , , , , , , , , 
+   Date: 1995
+
+11. Land subsidence and relative sea-level rise in the southern Chesapeake Bay region. US Geological Survey Circular
+   Authors: , 
+   Date: 2013
+
+12. Barriers to and opportunities for landward migration of coastal wetlands with sea-level rise
+   Authors: , , 
+   Date: 2016
+
+13. Saltwater intrusion and coastal climate adaptation: building community resilience
+   Authors: , , , 
+   Date: 2018. 15 Aug 2019
+
+14. Threatened protection: sea level rise and coastal protected lands of the eastern United States
+   Authors: , , , 
+   Date: 2017
+
+15. Is sea level rise accelerating in the Chesapeake Bay? A demonstration of a novel new approach for analyzing sea level data
+   Authors: , 
+   Date: 2012
+
+16. Sea level rise and the dynamics of the marsh-upland boundary
+   Authors: , , , , , , , 
+   Date: 2019
+
+17. Landowner behavior can determine the success of conservation strategies for ecosystem migration under sea-level rise
+   Authors: , , 
+   Date: 2017
+
+18. Salt marsh migration into salinized agricultural fields: a novel assembly of plant communities
+   Authors: , 
+   Date: 2019
+
+19. Vulnerability and resilience to climate change in a rural coastal community. Responses to disasters and climate change
+   Authors: , , 
+   Date: 2017
+
+20. Derivation of leaf-area index from quality of light on the forest floor
+   Authors: 
+   Date: 1969
+
+21. Use of NDVI and land surface temperature for drought assessment: merits and limitations
+   Authors: , , , , , , , 
+   Date: 2010
+
+22. Sea-level rise and storm surges structure coastal forests into persistence and regeneration niches
+   Authors: , , 
+   Date: 2019
+
+23. Sea-level driven land conversion and the formation of ghost forests
+   Authors: , 
+   Date: 2019
+
+24. Sea level driven marsh expansion in a coupled model of marsh erosion and migration
+   Authors: , , , 
+   Date: 2016
+
+25. A casualty of climate change? Loss of freshwater forest islands on Florida's Gulf Coast
+   Authors: , , 
+   Date: 2017
+
+26. The use of the normalized difference water index (NDWI) in the delineation of open water features
+   Authors: 
+   Date: 1996
+
+27. MD iMAP: Maryland's mapping & GIS data portal
+   Authors: 
+   Date: 2019. 15 Aug 2019
+
+28. Science, society, and the coastal groundwater squeeze
+   Authors: , , , 
+   Date: 2017
+
+29. Differences in impacts of hurricane sandy on freshwater swamps on the Delmarva Peninsula, mid-Atlantic Coast, USA
+   Authors: 
+   Date: 2016
+
+30. Biogeomorphic patterns emerge in marshes during sea level rise-driven pond formation
+   Authors: , , 
+
+31. Expansion of tidal marsh in response to sea-level rise: Gulf Coast of Florida
+   Authors: , 
+   Date: 2016
+
+32. Hotspot of accelerated sea-level rise on the Atlantic coast of North America
+   Authors: , , , , 
+   Date: 1977. 2012
+
+33. Future response of global coastal wetlands to sea-level rise
+   Authors: , , , , , , , , , , 
+   Date: 2018
+
+34. Massive upland to wetland conversion compensated for historical marsh loss in Chesapeake Bay
+   Authors: , , 
+   Date: 2018
+
+35. The role of Phragmites australis in mediating inland salt marsh migration in a mid-Atlantic estuary
+   Authors: 
+   Date: 2013
+
+36. The impact of past management practices on tidal marsh resilience to sea level rise in the Delaware estuary
+   Authors: , , 
+   Date: 2017
+
+37. Where the wetlands are-and where they are going: legal and policy tools for facilitating coastal ecosystem migration in response to sea-level rise
+   Authors: 
+   Date: 2020
+
+38. Agricultural drainage water management in arid and semi-arid areas
+   Authors: , 
+   Date: 2002
+
+39. State and local governments plan for development of most land vulnerable to rising sea level along the US Atlantic coast
+   Authors: , , , , , , , , , , , , , 
+   Date: 2009
+
+40. The invisible flood: the chemistry, ecology, and social implications of coastal saltwater intrusion
+   Authors: , , , , , , , , , , 
+   Date: 2019
+
+41. Census of Agriculture -2012 Census Publications -State and County Profiles -Maryland
+   Authors: 
+   Date: 2012. 15 Aug 2019
+
+42. National Wetlands Inventory website. U.S. Department of the Interior, Fish and Wildlife Service
+   Date: 2013
+
+43. Seawater intrusion processes, investigation and management: recent advances and future challenges
+   Authors: , , 
+   Date: 2013
+
+44. Sealevel rise and coastal forest retreat on the west coast of Florida
+   Authors: , , , , 
+   Date: 1999
+
+45. Interactions of storm, drought, and sea-level rise on coastal forest: a case study
+   Authors: , , , 
+   Date: 2003
+
+46. Impact of hydrogeological factors on groundwater salinization due to oceansurge inundation
+   Authors: , , , , 
+   Date: 2018
+

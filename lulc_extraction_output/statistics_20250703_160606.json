@@ -1,0 +1,14 @@
+{
+  "total_sentences": 2,
+  "sentences_with_entities": 2,
+  "sentences_with_relations": 1,
+  "total_entities": 3,
+  "total_relations": 1,
+  "relation_types": {
+    "DECREASES_BY": 1
+  },
+  "confidence_distribution": {
+    "MEDIUM": 1
+  },
+  "skipped_sentences": 0
+}

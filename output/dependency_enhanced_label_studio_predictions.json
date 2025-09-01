@@ -1,0 +1,1254 @@
+[
+  {
+    "data": {
+      "text": "Simulation results reveal that the landscape of Thimphu city has changed considerably during the study period and the change trend is predicted to continue into 2050."
+    },
+    "predictions": [
+      {
+        "model_version": "dependency-enhanced-mistral-v1.0",
+        "score": 1.0,
+        "result": [
+          {
+            "value": {
+              "start": 11,
+              "end": 18,
+              "text": "results",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_0_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 48,
+              "end": 55,
+              "text": "Thimphu",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "dep_ent_0_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 56,
+              "end": 60,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "dep_ent_0_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 65,
+              "end": 72,
+              "text": "changed",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_0_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 118,
+              "end": 124,
+              "text": "change",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_0_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 161,
+              "end": 165,
+              "text": "2050",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "dep_ent_0_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "dep_ent_0_3",
+            "to_id": "dep_ent_0_2",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "resulted in"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.74,
+            "meta": {
+              "llm_confidence": "HIGH",
+              "dependency_confidence": "LOW",
+              "relation_type": "GENERAL",
+              "dependency_path": [
+                "changed",
+                "reveal",
+                "changed",
+                "landscape",
+                "of",
+                "city"
+              ],
+              "path_length": 6,
+              "connecting_verb": "changed",
+              "dependency_pattern": "PREPOSITIONAL"
+            }
+          },
+          {
+            "from_id": "dep_ent_0_4",
+            "to_id": "dep_ent_0_0",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "indicates/represents"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.5,
+            "meta": {
+              "llm_confidence": "LOW",
+              "dependency_confidence": "LOW",
+              "relation_type": "AFFECTS",
+              "dependency_path": [
+                "change",
+                "trend",
+                "predicted",
+                "changed",
+                "reveal",
+                "results"
+              ],
+              "path_length": 6,
+              "connecting_verb": "predicted",
+              "dependency_pattern": "OTHER"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 0,
+    "meta": {
+      "method_used": "dependency_enhanced_extraction",
+      "num_entities": 6,
+      "num_relations": 2,
+      "num_relations_mapped": 2,
+      "num_relations_skipped": 0,
+      "avg_path_length": 6.0,
+      "relation_types": {
+        "GENERAL": 1,
+        "AFFECTS": 1
+      }
+    }
+  },
+  {
+    "data": {
+      "text": "The study observed a significant increase (12.77%) in built-up area from 2002 (52.88%) to 2018 (65.5%), followed by a slight increase in the cover of bare ground."
+    },
+    "predictions": [
+      {
+        "model_version": "dependency-enhanced-mistral-v1.0",
+        "score": 1.0,
+        "result": [
+          {
+            "value": {
+              "start": 33,
+              "end": 41,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_1_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 43,
+              "end": 49,
+              "text": "12.77%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "dep_ent_1_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 73,
+              "end": 77,
+              "text": "2002",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "dep_ent_1_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 79,
+              "end": 85,
+              "text": "52.88%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "dep_ent_1_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 90,
+              "end": 94,
+              "text": "2018",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "dep_ent_1_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 96,
+              "end": 101,
+              "text": "65.5%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "dep_ent_1_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 125,
+              "end": 133,
+              "text": "increase",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_1_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "dep_ent_1_4",
+            "to_id": "dep_ent_1_6",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "observed"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.8200000000000001,
+            "meta": {
+              "llm_confidence": "HIGH",
+              "dependency_confidence": "MEDIUM",
+              "relation_type": "GENERAL",
+              "dependency_path": [
+                "2018",
+                "to",
+                "observed",
+                "increase"
+              ],
+              "path_length": 4,
+              "connecting_verb": "observed",
+              "dependency_pattern": "PREPOSITIONAL"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 1,
+    "meta": {
+      "method_used": "dependency_enhanced_extraction",
+      "num_entities": 7,
+      "num_relations": 1,
+      "num_relations_mapped": 1,
+      "num_relations_skipped": 0,
+      "avg_path_length": 4.0,
+      "relation_types": {
+        "GENERAL": 1
+      }
+    }
+  },
+  {
+    "data": {
+      "text": "On the contrary, forest cover declined drastically (15.25%) followed by agriculture (1.01%)."
+    },
+    "predictions": [
+      {
+        "model_version": "dependency-enhanced-mistral-v1.0",
+        "score": 1.0,
+        "result": [
+          {
+            "value": {
+              "start": 17,
+              "end": 23,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "dep_ent_2_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 30,
+              "end": 38,
+              "text": "declined",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_2_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 52,
+              "end": 58,
+              "text": "15.25%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "dep_ent_2_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 72,
+              "end": 83,
+              "text": "agriculture",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "dep_ent_2_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 85,
+              "end": 90,
+              "text": "1.01%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "dep_ent_2_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "dep_ent_2_0",
+            "to_id": "dep_ent_2_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "changed"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.9000000000000001,
+            "meta": {
+              "llm_confidence": "HIGH",
+              "dependency_confidence": "HIGH",
+              "relation_type": "GENERAL",
+              "dependency_path": [
+                "forest",
+                "cover",
+                "declined"
+              ],
+              "path_length": 3,
+              "connecting_verb": "declined",
+              "dependency_pattern": "OTHER"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 2,
+    "meta": {
+      "method_used": "dependency_enhanced_extraction",
+      "num_entities": 5,
+      "num_relations": 1,
+      "num_relations_mapped": 1,
+      "num_relations_skipped": 0,
+      "avg_path_length": 3.0,
+      "relation_types": {
+        "GENERAL": 1
+      }
+    }
+  },
+  {
+    "data": {
+      "text": "Rapid population growth triggered by rural urban migration coupled with hasty socio-economic development post democracy are the main drivers of these changes."
+    },
+    "predictions": [
+      {
+        "model_version": "dependency-enhanced-mistral-v1.0",
+        "score": 0,
+        "result": [
+          {
+            "value": {
+              "start": 17,
+              "end": 23,
+              "text": "growth",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_3_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 43,
+              "end": 48,
+              "text": "urban",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "dep_ent_3_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 133,
+              "end": 140,
+              "text": "drivers",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_3_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 150,
+              "end": 157,
+              "text": "changes",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_3_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 3,
+    "meta": {
+      "method_used": "dependency_enhanced_extraction",
+      "num_entities": 4,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0,
+      "avg_path_length": 0,
+      "relation_types": {}
+    }
+  },
+  {
+    "data": {
+      "text": "Under the business as usual scenario, prediction analysis for the year 2050 show that built up area will consume almost all of the city area (73.21%) with forest significantly reduced to patches making up only about 16% of the city."
+    },
+    "predictions": [
+      {
+        "model_version": "dependency-enhanced-mistral-v1.0",
+        "score": 0,
+        "result": [
+          {
+            "value": {
+              "start": 62,
+              "end": 70,
+              "text": "the year",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "dep_ent_4_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 131,
+              "end": 135,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "dep_ent_4_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 142,
+              "end": 148,
+              "text": "73.21%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "dep_ent_4_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 155,
+              "end": 161,
+              "text": "forest",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "dep_ent_4_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 205,
+              "end": 219,
+              "text": "only about 16%",
+              "labels": [
+                "PERCENT"
+              ]
+            },
+            "id": "dep_ent_4_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 227,
+              "end": 231,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "dep_ent_4_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 4,
+    "meta": {
+      "method_used": "dependency_enhanced_extraction",
+      "num_entities": 6,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0,
+      "avg_path_length": 0,
+      "relation_types": {}
+    }
+  },
+  {
+    "data": {
+      "text": "Prior to this, the area was occupied by terraced agricultural fields and some 13 villages."
+    },
+    "predictions": [
+      {
+        "model_version": "dependency-enhanced-mistral-v1.0",
+        "score": 0,
+        "result": [
+          {
+            "value": {
+              "start": 73,
+              "end": 80,
+              "text": "some 13",
+              "labels": [
+                "CARDINAL"
+              ]
+            },
+            "id": "dep_ent_5_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 5,
+    "meta": {
+      "method_used": "dependency_enhanced_extraction",
+      "num_entities": 1,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0,
+      "avg_path_length": 0,
+      "relation_types": {}
+    }
+  },
+  {
+    "data": {
+      "text": "Expansion of Thimphu city in 2002 added local areas of Lanjophaka, Heo-Samteling, Jungshi-Pamtsho, Taba and Dechencholing in the north and Changjiji, Lungtenphu, Simtokha, and Babesa in the south ( Fig."
+    },
+    "predictions": [
+      {
+        "model_version": "dependency-enhanced-mistral-v1.0",
+        "score": 1.0,
+        "result": [
+          {
+            "value": {
+              "start": 0,
+              "end": 9,
+              "text": "Expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_6_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 21,
+              "end": 25,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "dep_ent_6_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 29,
+              "end": 33,
+              "text": "2002",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "dep_ent_6_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 55,
+              "end": 65,
+              "text": "Lanjophaka",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "dep_ent_6_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 99,
+              "end": 103,
+              "text": "Taba",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "dep_ent_6_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 108,
+              "end": 121,
+              "text": "Dechencholing",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "dep_ent_6_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 139,
+              "end": 148,
+              "text": "Changjiji",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "dep_ent_6_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 150,
+              "end": 160,
+              "text": "Lungtenphu",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "dep_ent_6_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "dep_ent_6_0",
+            "to_id": "dep_ent_6_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "added"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.8200000000000001,
+            "meta": {
+              "llm_confidence": "HIGH",
+              "dependency_confidence": "MEDIUM",
+              "relation_type": "GENERAL",
+              "dependency_path": [
+                "Expansion",
+                "added",
+                "areas",
+                "of",
+                "Lanjophaka"
+              ],
+              "path_length": 5,
+              "connecting_verb": "added",
+              "dependency_pattern": "SUBJECT-VERB-OBJECT"
+            }
+          },
+          {
+            "from_id": "dep_ent_6_2",
+            "to_id": "dep_ent_6_0",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "caused"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.8200000000000001,
+            "meta": {
+              "llm_confidence": "HIGH",
+              "dependency_confidence": "MEDIUM",
+              "relation_type": "GENERAL",
+              "dependency_path": [
+                "2002",
+                "in",
+                "Expansion",
+                "added",
+                "Expansion"
+              ],
+              "path_length": 5,
+              "connecting_verb": "added",
+              "dependency_pattern": "PREPOSITIONAL"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 6,
+    "meta": {
+      "method_used": "dependency_enhanced_extraction",
+      "num_entities": 8,
+      "num_relations": 2,
+      "num_relations_mapped": 2,
+      "num_relations_skipped": 0,
+      "avg_path_length": 5.0,
+      "relation_types": {
+        "GENERAL": 2
+      }
+    }
+  },
+  {
+    "data": {
+      "text": "The period, 2002-2018 represents a rapid expansion of the city accompanied by expediated socio-economic development that led to significant changes in the city's landscape."
+    },
+    "predictions": [
+      {
+        "model_version": "dependency-enhanced-mistral-v1.0",
+        "score": 0,
+        "result": [
+          {
+            "value": {
+              "start": 12,
+              "end": 21,
+              "text": "2002-2018",
+              "labels": [
+                "COORDINATES"
+              ]
+            },
+            "id": "dep_ent_7_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 41,
+              "end": 50,
+              "text": "expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_7_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 58,
+              "end": 62,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "dep_ent_7_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 140,
+              "end": 147,
+              "text": "changes",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_7_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 155,
+              "end": 159,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "dep_ent_7_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 7,
+    "meta": {
+      "method_used": "dependency_enhanced_extraction",
+      "num_entities": 5,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0,
+      "avg_path_length": 0,
+      "relation_types": {}
+    }
+  },
+  {
+    "data": {
+      "text": "These expediated changes can be attributed to: i) governments approval for expansion of the city in 2002, followed by the hastened construction of city infrastructure post Bhutan's transition to democracy in 2008."
+    },
+    "predictions": [
+      {
+        "model_version": "dependency-enhanced-mistral-v1.0",
+        "score": 1.0,
+        "result": [
+          {
+            "value": {
+              "start": 17,
+              "end": 24,
+              "text": "changes",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_8_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 75,
+              "end": 84,
+              "text": "expansion",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_8_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 92,
+              "end": 96,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "dep_ent_8_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 100,
+              "end": 104,
+              "text": "2002",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "dep_ent_8_3",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 147,
+              "end": 151,
+              "text": "city",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "dep_ent_8_4",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 172,
+              "end": 178,
+              "text": "Bhutan",
+              "labels": [
+                "LOC"
+              ]
+            },
+            "id": "dep_ent_8_5",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 181,
+              "end": 191,
+              "text": "transition",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_8_6",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 208,
+              "end": 212,
+              "text": "2008",
+              "labels": [
+                "DATE"
+              ]
+            },
+            "id": "dep_ent_8_7",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "from_id": "dep_ent_8_0",
+            "to_id": "dep_ent_8_1",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "caused by"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.74,
+            "meta": {
+              "llm_confidence": "HIGH",
+              "dependency_confidence": "LOW",
+              "relation_type": "GENERAL",
+              "dependency_path": [
+                "changes",
+                "attributed",
+                "governments",
+                "approval",
+                "for",
+                "expansion"
+              ],
+              "path_length": 6,
+              "connecting_verb": "attributed",
+              "dependency_pattern": "SUBJECT-VERB-OBJECT"
+            }
+          },
+          {
+            "from_id": "dep_ent_8_0",
+            "to_id": "dep_ent_8_3",
+            "type": "relation",
+            "direction": "right",
+            "labels": [
+              "caused by"
+            ],
+            "from_name": "relation",
+            "to_name": "label",
+            "score": 0.8200000000000001,
+            "meta": {
+              "llm_confidence": "HIGH",
+              "dependency_confidence": "MEDIUM",
+              "relation_type": "GENERAL",
+              "dependency_path": [
+                "changes",
+                "attributed",
+                "governments",
+                "in",
+                "2002"
+              ],
+              "path_length": 5,
+              "connecting_verb": "attributed",
+              "dependency_pattern": "SUBJECT-VERB-OBJECT"
+            }
+          }
+        ]
+      }
+    ],
+    "id": 8,
+    "meta": {
+      "method_used": "dependency_enhanced_extraction",
+      "num_entities": 8,
+      "num_relations": 2,
+      "num_relations_mapped": 2,
+      "num_relations_skipped": 0,
+      "avg_path_length": 5.5,
+      "relation_types": {
+        "GENERAL": 2
+      }
+    }
+  },
+  {
+    "data": {
+      "text": "The resultant improvement in basic facilities combined with creation of additional jobs further attracted more immigration from rural areas and lesser developed cities, causing a boom in real estate and informal settlements and triggering significant changes in land uses."
+    },
+    "predictions": [
+      {
+        "model_version": "dependency-enhanced-mistral-v1.0",
+        "score": 0,
+        "result": [
+          {
+            "value": {
+              "start": 161,
+              "end": 167,
+              "text": "cities",
+              "labels": [
+                "LULC"
+              ]
+            },
+            "id": "dep_ent_9_0",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 169,
+              "end": 176,
+              "text": "causing",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_9_1",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          },
+          {
+            "value": {
+              "start": 251,
+              "end": 258,
+              "text": "changes",
+              "labels": [
+                "CHANGE"
+              ]
+            },
+            "id": "dep_ent_9_2",
+            "from_name": "label",
+            "to_name": "text",
+            "type": "labels",
+            "score": 0.95
+          }
+        ]
+      }
+    ],
+    "id": 9,
+    "meta": {
+      "method_used": "dependency_enhanced_extraction",
+      "num_entities": 3,
+      "num_relations": 0,
+      "num_relations_mapped": 0,
+      "num_relations_skipped": 0,
+      "avg_path_length": 0,
+      "relation_types": {}
+    }
+  }
+]

@@ -1,0 +1,398 @@
+================================================================================
+TITLE: Comparison of Land Use Land Cover Classifiers Using Different Satellite Imagery and Machine Learning Techniques
+================================================================================
+
+AUTHORS:
+- Sana Basheer
+- Xiuqu Wang
+- Aitazaz Farooque
+- Rana Nawaz
+- Kai Liu
+- Toyin Adekanmbi
+- Suqi Liu
+
+ABSTRACT:
+Accurate land use land cover (LULC) classification is vital for the sustainable management of natural resources and to learn how the landscape is changing due to climate. For accurate and efficient LULC classification, high-quality datasets and robust classification methods are required. With the increasing availability of satellite data, geospatial analysis tools, and classification methods, it is essential to systematically assess the performance of different combinations of satellite data and classification methods to help select the best approach for LULC classification. Therefore, this study aims to evaluate the LULC classification performance of two commonly used platforms (i.e., ArcGIS Pro and Google Earth Engine) with different satellite datasets (i.e., Landsat, Sentinel, and Planet) through a case study for the city of Charlottetown in Canada. Specifically, three classifiers in ArcGIS Pro, including support vector machine (SVM), maximum likelihood (ML), and random forest/random tree (RF/RT), are utilized to develop LULC maps over the period of 2017-2021. Whereas four classifiers in Google Earth Engine, including SVM, RF/RT, minimum distance (MD), and classification and regression tree (CART), are used to develop LULC maps for the same period. To identify the most efficient and accurate classifier, the overall accuracy and kappa coefficient for each classifier is calculated throughout the study period for all combinations of satellite data, classification platforms, and methods. Change detection is then conducted using the best classifier to quantify the LULC changes over the study period. Results show that the SVM classifier in both ArcGIS Pro and Google Earth Engine presents the best performance compared to other classifiers. In particular, the SVM in ArcGIS Pro shows an overall accuracy of 89% with Landsat, 91% with Sentinel, and 94% with Planet. Similarly, in Google Earth Engine, the SVM shows an accuracy of 87% with Landsat 8 and 92% with Sentinel 2. Furthermore, change detection results show that 13.80% and 14.10% of forest areas have been turned into bare land and urban class, respectively, and 3.90% of the land has been converted into the urban area from 2017 to 2021, suggesting the intensive urbanization. The results of this study will provide the scientific basis for selecting the remote sensing classifier and satellite imagery to develop accurate LULC maps.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Accurate information on land use land cover (LULC) can facilitate various research activities related to floods, droughts, migration, and climate change at several scales. The constant and precise investigation of LULC is a vital aspect of any region's sustainability and development. LULC changes (i.e., deforestation and urbanization, etc.) are one the prominent drivers of climate change around the globe 
+The severity of extreme events is mainly modulated by the LULC changes. The extreme events of heat waves in 2003 and 2010 in Western Europe and Russia inspired researchers to investigate extreme events by looking at the LULC of the area 
+Analysis of different LULC categories, using machine learning approaches, can be performed in a geographic information system platform (i.e., ArcGIS Pro) or Google Earth Engine using remote sensing datasets. The geographic information system can be used for a better understanding of spatial and temporal analysis related to LULC classification 
+Recently, state-of-the-art machine learning algorithms (i.e., random forest/random tree (RF/RT), classification and regression tree (CART), support vector machine (SVM), maximum likelihood (ML), and minimum distance (MD)) have captured the researchers' attention 
+
+## Data and Methods ##
+
+
+## Study Area ##
+This study focuses on Charlottetown, the capital of Prince Edward Island (PEI), commonly known as the Island, a province of Canada located in the Maritimes (Figure 
+
+## Satellite Data ##
+This project will employ three types of datasets to perform LULC categorization. These datasets include low (Landsat 8), median (Sentinel 2), and high (Planet) resolution satellite images. In this research, all visible and infrared bands (the thermal infrared band was excluded) were used for the LULC analysis 
+
+## Methodological Framework for LULC Classification ##
+Currently, geospatial Big Data are garnering an abundance of attention and are emphasized globally. ArcGIS Pro and Google Earth Engine are the most popular platforms for large data processing and LULC classification. Several approaches have been established and employed to measure changes in different LULC changes. However, there is currently no research that uses both platforms and includes different input datasets to examine the accurate LULC changes through time in Charlottetown, PEI. In this study, a framework was developed to compare and analyze the performance and viability of different classification methods in ArcGIS Pro and Google Earth Engine, using different datasets. Table 
+
+## Classification Methods ##
+To perform a pixel-based supervised classification, a set of training samples specific to each year was obtained. Every training sample pixel was assigned to a LULC class on the basis of supplementary data, such as Google Street View and orthophoto images from each year of the study 
+
+## • ##
+Classification and regression tree (CART) is a decision classification tree that facilitates straightforward decision-making and regression analyses 
+
+## • ##
+Random forest/random tree (RF/RT) RF/RT constructs an ensemble classifier and is one of the commonly used classifiers 
+
+## • ##
+Support vector machine (SVM). One of the supervised learning techniques is SVM which is used to resolve different problems related to regression and classifications.
+In the training phase, SVM classifiers generate an ideal hyperplane that splits several classes with the less misclassified pixels from input datasets. The kernel functions, cost parameters, and gamma 
+
+## • ##
+Minimum distance classifier (MD). The MD classifier classifies imagery datasets into classes that reduce the distance between the class in multi-feature space and image data. This distance between the image data is expressed as a similarity index, such that the minimal distance and highest similarity are equivalent. The main idea behind this process is to calculate the spectral distance between the measurement vector for the candidate pixel and the mean vector for each signature 
+• Maximum likelihood classifier (ML). Maximum likelihood classifier is a supervised classification method that describes every band by a normal distribution. This supervised classification method is based on the Byes theorem 
+
+## Data Processing ##
+In Google Earth Engine, LULC classification maps were generated using Landsat 8 and Sentinel 2 imagery. We use SVM, RF, MD, and CART classifiers in Google Earth Engine. Contaminated pixels caused by cloud cover were eliminated from all images using the cloud mask method provided on the Google Earth Engine 
+Using SVM, RT, and ML classifiers, LULC maps were created in ArcGIS Pro. As the major input for classification, images with the least or zero cloud cover were employed. Atmospherically and geometrically corrected images from the three sources (Landsat 8, Sentinel 2, and Planet) with zero cloud cover were utilized as the primary input. The source of data was USGS and Planet Scope sites. Images from the Planet Scope site were mosaiced to cover the whole study area in ArcGIS Pro. Then, all images from all three data sources were clipped to the city of Charlottetown boundary using ArcGIS Pro for LULC classification. Image treatment is entirely independent in ArcGIS Pro than in Google Earth Engine.
+A total of 354 training samples were used for LULC classification, from which 284 were used as training samples, and 145 were used as testing samples. Google Earth Pro was used to visually evaluate high-resolution orthophoto images from 2017 to 2021. Training and validation samples were generated with Google Earth Pro. They were then loaded into ArcGIS Pro and the Google Earth Engine platform as shape files to train classifiers. As a rule 
+For the CART classifier: the optimal cross-validation factor was estimated to be ten based on the research of Kohavi 
+
+## Accuracy Assessment ##
+Methods, procedures, time, and space affected the classification's precision 
+Overall Accuracy = T C.P T S.P × 100
+Whereas T C.P is the total number of correctly classified pixels and T S.P is the total number of sample pixels.
+Whereas O.A is the overall accuracy and C.A is chance agreement. Equations ( 
+
+## Change Detection ##
+Numerous techniques exist to identify the LULC change from different imagery datasets 
+
+## Results and Discussion ##
+
+
+## LULC Classification Maps ##
+
+
+## LULC Classification of Landsat 8 Imagery in ArcGIS Pro ##
+From Figure 
+
+## LULC Classification of Sentinel 2 Imagery in ArcGIS Pro ##
+Figure 
+
+## LULC Classification of Planet Imagery in ArcGIS Pro ##
+Results show that the classification output of Planet imagery resulted in most of the LULC classes being well classified for the study area with the SVM classifier (Figure 
+
+## LULC Classification of Landsat 8 Imagery in Google Earth Engine ##
+Figure 
+
+## LULC Classification of Sentinel 2 Imagery in Google Earth Engine ##
+Figure 
+
+## Accuracy Assessment ##
+In this research, to check the accuracy of each classifier, we used a validation dataset that was different from the training datasets. By stratified random sampling, we distributed these points over the study area 
+Figure 
+
+## Change Detection ##
+There are a variety of approaches for detecting LULC changes using different satellite image data 
+
+## Conclusions ##
+The climate around the globe has been modified by human activities through the LULC changes. The LULC changes (i.e., deforestation, urbanization, etc.) played an important role in climate change since the pre-industrial era 
+Change detection analysis shows deforestation and rapid urbanization as 18.80% of forest area was converted to bare land, and 38.81% of bare land was converted to urban area throughout the study period. In addition, some classes may be categorized using expert knowledge and supplementary data 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Deforestation-induced climate change reduces carbon storage in remaining tropical forests
+   Authors: , , , , , 
+   Date: 2022. 1964
+
+2. Human-Induced Alterations to Land Use and Climate and Their Responses for Hydrology and Water Management in the Mekong River Basin
+   Authors: , , 
+   Date: 2019
+
+3. Explaining the hydroclimatic variability and change in the Salmon River basin
+   Authors: , , 
+   Date: 2012
+
+4. Spatial Prediction of Erosion Risk of a Small Mountainous Watershed Using RUSLE: A Case-Study of the Palar Sub-Watershed in Kodaikanal, South India
+   Authors: , 
+   Date: 2018. 1608
+
+5. Coupled Surface and Groundwater Hydrological Modeling in a Changing Climate
+   Authors: , , 
+   Date: 2017
+
+6. Hydrogeochemical constraints on groundwater resource sustainable development in the arid Golmud alluvial fan plain on Tibetan plateau
+   Authors: , , , , , , , , , 
+   Date: 2021
+
+7. Accessible Phreatic Groundwater Resources in the Central Shijiazhuang of North China Plain: Perspective From the Hydrogeochemical Constraints
+   Authors: , , , , , , , 
+
+8. Investigating Sources, Driving Forces and Potential Health Risks of Nitrate and Fluoride in Groundwater of a Typical Alluvial Fan Plain
+   Authors: , , , , , , 
+   Date: 2022. 149909
+
+9. Systems Analysis of Coupled Natural and Human Processes in the Mekong River Basin. Hydrology 2021
+   Authors: , , 
+
+10. A Cellular Automata Fast Flood Evaluation (CA-ffé) Model
+   Authors: , , , 
+   Date: 2019
+
+11. Performance of Different Machine Learning Algorithms on Satellite Image Classification in Rural and Urban Setup
+   Authors: , , , , , , 
+   Date: 2020
+
+12. Human-Induced Modifications to Land Surface Fluxes and Their Implications on Water Management under Past and Future Climate Change Conditions
+   Authors: , 
+   Date: 2017
+
+13. Land Cover Mapping of Large Areas from Satellites: Status and Research Priorities
+   Authors: 
+   Date: 2000
+
+14. Soil Erosion Assessment Tools from Point to Regional Scales-The Role of Geomorphologists in Land Management Research and Implementation
+   Authors: , 
+   Date: 2002
+
+15. Landsat-8: Science and product vision for terrestrial global change research
+   Authors: , , , , , , , , , 
+
+16. The Global Landsat Archive: Status, Consolidation, and Direction
+   Authors: , , , , , , , , , 
+   Date: 2016
+
+17. Optical Remotely Sensed Time Series Data for Land Cover Classification: A Review
+   Authors: , , 
+   Date: 2016
+
+18. Cover Classification Using Google Earth Engine and Random Forest Classifier-The Role of Image Composition
+   Authors: , , , 
+
+19. Consistent Geographical Patterns of Changes in High-Impact European Heatwaves
+   Authors: , 
+   Date: 2010
+
+20. Land-Atmosphere Coupling and Climate Change in Europe
+   Authors: , , , 
+   Date: 2006
+
+21. Human Contribution to the European Heatwave of 2003
+   Authors: , , 
+   Date: 2004
+
+22. Automatic Land-Cover Mapping Using Landsat Time-Series Data Based on Google Earth Engine
+   Authors: , , , , , 
+
+23. Integrative Image Segmentation Optimization and Machine Learning Approach for High Quality Land-Use and Land-Cover Mapping Using Multisource Remote Sensing Data (Erratum)
+   Authors: , , , 
+   Date: 2018
+
+24. Scale Issues Related to the Accuracy Assessment of Land Use/Land Cover Maps Produced Using Multi-Resolution Data: Comments on "the Improvement of Land Cover Classification by Thermal Remote Sensing
+   Authors: 
+   Date: 2015
+
+25. PlanetScope Imageries and LiDAR Point Clouds Processing for Automation Land Cover Mapping and Vegetation Assessment of a Reclaimed Sulfur Mine
+   Authors: , , 
+
+26. Google Earth Engine: Planetary-Scale Geospatial Analysis for Everyone
+   Authors: , , , , , 
+   Date: 2017
+
+27. Using Google Earth Engine to Detect Land Cover Change: Singapore as a Use Case
+   Authors: , , 
+   Date: 2018
+
+28. Google Earth Engine for Geo-Big Data Applications: A Meta-Analysis and Systematic Review
+   Authors: , , , , , 
+   Date: 2020
+
+29. Mapping of Major Land-Use Changes in the Kolleru Lake Freshwater Ecosystem by Using Landsat Satellite Images in Google Earth Engine
+   Authors: , , , 
+   Date: 2020. 2493
+
+30. Exploring Google Earth Engine Platform for Big Data Processing: Classification of Multi-Temporal Satellite Imagery for Crop Mapping
+   Authors: , , , , 
+   Date: 2017
+
+31. Multitemporal Settlement and Population Mapping from Landsat Using Google Earth Engine
+   Authors: , , , , , , , 
+   Date: 2015
+
+32. Multitemporal Cloud Masking in the
+   Authors: , , , , 
+   Date: 2018. 1079
+
+33. Google Earth Engine Based Three Decadal Landsat Imagery Analysis for Mapping of Mangrove Forests and Its Surroundings in the Trat Province of Thailand
+   Authors: , , , , , , , , 
+   Date: 2018
+
+34. Comparing Supervised Algorithms in Land Use and Land Cover Classification of a Landsat Time-Series
+   Authors: , , , , , 
+   Date: July 2016
+
+35. Implementation of Machine-Learning Classification in Remote Sensing: An Applied Review
+   Authors: , , 
+   Date: 2018
+
+36. Land-Use/Cover Classification in a Heterogeneous Coastal Landscape Using RapidEye Imagery: Evaluating the Performance of Random Forest and Support Vector Machines Classifiers
+   Authors: , , , 
+   Date: 2014
+
+37. Landsat-8 and Sentinel-2 Based Forest Fire Burn Area Mapping Using Machine Learning Algorithms on GEE Cloud Platform over Uttarakhand, Western Himalaya
+   Authors: , , 
+   Date: 2020
+
+38. Annual Large-Scale Urban Land Mapping Based on Landsat Time Series in Google Earth Engine and OpenStreetMap Data: A Case Study in the Middle Yangtze River Basin
+   Authors: , , , , 
+   Date: 2020
+
+39. Object-Oriented LULC Classification in Google Earth Engine Combining SNIC, GLCM, and Machine Learning Algorithms
+   Authors: , 
+
+40. 
+   Authors: , 
+   Date: 2021
+
+41. 
+   Authors: , 
+   Date: 1 June 2022
+
+42. Analyzing Land Use/Land Cover Changes Using Remote Sensing and GIS in Rize
+   Authors: 
+   Date: 2008
+
+43. Utilization of Google Earth Engine (GEE) for Land Cover Monitoring over Klang Valley
+   Authors: , 
+   Date: 2020
+
+44. Current and near-term advances in Earth observation for ecological applications
+   Authors: , 
+   Date: 2021
+
+45. A Technical Review of Planet Smallsat Data: Practical Considerations for Processing and Using PlanetScope Imagery
+   Authors: , 
+
+46. Classification and Regression Trees
+   Authors: , , , , 
+   Date: 1984
+
+47. Analysis of Machine Learning Classifiers for LULC Classification on Google Earth Engine
+   Authors: 
+   Date: 2019
+
+48. Random Forests
+   Authors: 
+   Date: 2001
+
+49. Classification of Land Cover, Forest, and Tree Species Classes with ZiYuan-3 Multispectral and Stereo Data
+   Authors: , , , , 
+   Date: 2019
+
+50. Random forest classifier for remote sensing classification
+   Authors: 
+   Date: 2005
+
+51. Land-Use Land-Cover Classification by Machine Learning Classifiers for Satellite Observations-A Review
+   Authors: , , , , , 
+
+52. Determining the suitability and accuracy of various statistical algorithms for satellite data classification
+   Authors: , 
+   Date: 2014
+
+53. Land Cover Classification Using Maximum Likelihood Method
+   Authors: , , , , , , 
+   Date: 2000 and 2019. 2019
+
+54. Remote Sensing and Image Interpretation (Fifth Edition)
+   Authors: , , 
+   Date: 2004
+
+55. A Study of Cross-Validation and Bootstrap for Accuracy Estimation and Model Selection; Ijcai: Montreal, QC
+   Authors: 
+   Date: 1995
+
+56. Random Forest in Remote Sensing: A Review of Applications and Future Directions
+   Authors: , 
+   Date: 2016
+
+57. A Practical Guide to Support Vector Classification
+   Authors: , , 
+   Date: 2003
+
+58. A Comparative Assessment of Machine-Learning Techniques for Land Use and Land Cover Classification of the Brazilian Tropical Savanna Using ALOS-2/PALSAR-2 Polarimetric Images
+   Authors: , , , , 
+
+59. Evaluation of Different Machine Learning Methods for Land Cover Mapping of a Mediterranean Area Using Multi-Seasonal Landsat Images and Digital Terrain Models
+   Authors: , 
+   Date: 2012
+
+60. Harshness in Image Classification Accuracy Assessment
+   Authors: 
+   Date: 2008
+
+61. Land Use Classification and Change Detection by Using Multi-Temporal Remotely Sensed Imagery: The Case of Chunati Wildlife Sanctuary
+   Authors: , , , 
+   Date: 2018
+
+62. Improving the Accuracy of Land Use and Land Cover Classification of Landsat Data Using Post-Classification Enhancement
+   Authors: , , 
+   Date: 2009
+
+63. Improving the Accuracy of Land Cover Mapping by Distributing Training Samples
+   Authors: , , , , , , , , 
+
+64. Towards a common validation sample set for global land-cover mapping
+   Authors: , , , , , , , , , 
+   Date: 2014
+
+65. Analysis of Land Use and Land Cover Using Machine Learning Algorithms on Google Earth Engine for Munneru River Basin, India. Sustainability 2021
+   Authors: , , 
+   Date: 13758
+
+66. Interrater Reliability: The Kappa Statistic
+   Authors: 
+   Date: 2012
+
+67. Land Cover Mapping from Remotely Sensed and Auxiliary Data for Harmonized Official Statistics
+   Authors: , , , , 
+   Date: 2018
+
+68. Change Detection Using Landsat Time Series: A Review of Frequencies, Preprocessing, Algorithms, and Applications
+   Authors: 
+   Date: 2017
+
+69. Change Detection Techniques
+   Authors: , , , 
+   Date: 2004
+
+70. Geographic Resources Decision Support System for Land Use, Land Cover Dynamics Analysis
+   Authors: , 
+   Date: September 2004
+
+71. Using Classification and NDVI Differencing Methods for Monitoring Sparse Vegetation Coverage: A Case Study of Saltcedar in Nevada, USA
+   Authors: , , , , , 
+   Date: 2008
+
+72. Comparison of Support Vector Machine, Neural Network, and CART Algorithms for the Land-Cover Classification Using Limited Training Data Points
+   Authors: , 
+   Date: 2012
+
+73. A Comprehensive Change Detection Method for Updating the National Land Cover Database to circa 2011
+   Authors: , , , , , 
+   Date: 2013
+
+74. Land Use and Cover Change during the Rapid Economic Growth Period from 1990 to 2010: A Case Study of Shanghai
+   Authors: , , 
+   Date: 2018
+
+75. Assessment of Land-Use and Land-Cover Change in Guangxi
+   Authors: , , 
+   Date: 2019. 2189
+
+76. Climate Change 2007: The Physical Science Basis
+   Authors: , , 
+   Date: 2007
+

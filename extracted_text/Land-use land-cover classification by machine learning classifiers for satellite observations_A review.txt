@@ -1,0 +1,542 @@
+================================================================================
+TITLE: Land-Use Land-Cover Classification by Machine Learning Classifiers for Satellite Observations-A Review
+================================================================================
+
+AUTHORS:
+- Swapan Talukdar
+- Pankaj Singha
+- Susanta Mahato
+- Swades Pal
+- Yuei-An Liou
+- Atiqur Rahman
+
+ABSTRACT:
+Rapid and uncontrolled population growth along with economic and industrial development, especially in developing countries during the late twentieth and early twenty-first centuries, have increased the rate of land-use/land-cover (LULC) change many times. Since quantitative assessment of changes in LULC is one of the most efficient means to understand and manage the land transformation, there is a need to examine the accuracy of different algorithms for LULC mapping in order to identify the best classifier for further applications of earth observations. In this article, six machine-learning algorithms, namely random forest (RF), support vector machine (SVM), artificial neural network (ANN), fuzzy adaptive resonance theory-supervised predictive mapping (Fuzzy ARTMAP), spectral angle mapper (SAM) and Mahalanobis distance (MD) were examined. Accuracy assessment was performed by using Kappa coefficient, receiver operational curve (RoC), index-based validation and root mean square error (RMSE). Results of Kappa coefficient show that all the classifiers have a similar accuracy level with minor variation, but the RF algorithm has the highest accuracy of 0.89 and the MD algorithm (parametric classifier) has the least accuracy of 0.82. In addition, the index-based LULC and visual cross-validation show that the RF algorithm (correlations between RF and normalised differentiation water index, normalised differentiation vegetation index and normalised differentiation built-up index are 0.96, 0.99 and 1, respectively, at 0.05 level of significance) has the highest accuracy level in comparison to the other classifiers adopted. Findings from the literature also proved that ANN and RF algorithms are the best LULC classifiers, although a non-parametric classifier like SAM (Kappa coefficient 0.84; area under curve (AUC) 0.85) has a better and consistent accuracy level than the other machine-learning algorithms. Finally, this review concludes that the RF algorithm is the best machine-learning LULC classifier, among the six examined algorithms although it is necessary to further test the RF algorithm in different morphoclimatic conditions in the future.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Untitled ##
+Knowledge of land-use/land-cover (LULC) change is essential in a number of fields based on the use of Earth observations, such as urban and regional planning 
+Several techniques have been developed to map LULC patterns and dynamics from the satellite observations, including traditional terrestrial mapping, as well as satellite-based mapping. Terrestrial mapping, known as a field survey, is a direct way of mapping in which the map can be produced at various scales incorporating information with different levels of precision, although it is a manpowerbased, time-and money-consuming way to map large areas 
+Recently, the application of machine-learning algorithms on remotely-sensed imageries for LULC mapping has been attracting considerable attention 
+Over the last decade, more advanced methods, such as artificial neural networks (ANN), SVM, RF, decision tree, and other models, have gained exceptional attention in remote sensing-based applications, such as LULC classification. Thus, numerous studies on the LULC modelling have been carried out using different machine-learning algorithms 
+Several studies found that the LULC classification using medium-and low-resolution observations from satellites has several spectral and spatial limitations that affect its accuracy 
+
+## Materials and Methods ##
+
+
+## Study Area ##
+We selected a stretch of riparian landscape of the river Ganga from Rajmahal to Farakka barrage in India emphasizing three major dynamic river islands (locally, charland) dominated by patches. LULC classification in relatively stable areas is easier than highly dynamic landscape like charland and such work is undertaken by many scholars. How far the advanced methods are useful for delineating LULC units in such a dynamic area was given emphasis with different approaches of accuracy assessment. Successful application of one method in different similar sites proves its usability. Hence, to test the precision of the applied methods three such patches from the study stretch were used. The study area covers parts of Jharkhand and the West Bengal states of India. More precisely, it covers some parts of Sahibganj District of Jharkhand and Malda and the Murshidabad districts of West Bengal (Figure 
+
+## Materials ##
+In this work, the Landsat 8 Operational Land Imager (OLI) image (path/row 139/43) downloaded from the United States Geological Survey (USGS) website (https://earthexplorer.usgs.gov) ) has been used to map the LULC using different machine-learning algorithms (Figure 
+
+## Methods for Land-Use/Land-Cover (LULC) Modelling ##
+The LULC classification was performed using the six most popular machine-learning classifiers. The descriptions of the parameters for optimizing the models and software used to perform the LULC classification are given in Table 
+The ANN is a forward structure black-box model, which is trained by back propagation algorithm (supervised training algorithm). The ANN is functioned like a human brain or nervous system containing nerve fibres with many interconnections through other axons 
+One of most important algorithms that ANN usually uses is the back propagation algorithm, which is a gradient-decent algorithm. The main function of it is to minimize the error between the actual network outputs and the outputs of training input/output pairs 
+The MLP architecture can be explained mathematically. In MLP architecture, the input layer comprises the n0 neurons, which collect a normalized set of input variables of xi (i = 1, 2……n0). The second layer is also known as the hidden layer that contains the n1 neurons and receives a set of variables of yj(j = 1, 2……...n1), which are the output of the first layer. Each of the layers receive a bias value of 1 in each of the neurons that rectify their outputs. The third or output layer consists of the n2 neurons with number equal to output variables of zk(K = 1, 2…., n2). A continuous non-linear mapping is performed in the n0 neurons of xi variables in the output layer to the yi variables in the hidden layer after summing them up using an activation function. The parameter of this function is also defined as weights of neurons in each hidden layer for each result of neurons of the input layer 
+where n represents the number of classes, i a denotes the expected output, and i b is the response of designed ANN from the i neuron of the total n neurons in the output layer. 
+
+## Support Vector Machine (SVM) ##
+SVM is a non-parametric supervised machine learning technique and initially aimed to solve the binary classification problems 
+The original SVM method has been launched with a set of data, and its objective is to find the hyper-plane that can separate the datasets into a number of classes, as the aim of SVM is to find the optimal separating hyper-plane from the available hyper-planes 
+
+## 3.Fuzzy ARTMAP (FA) ##
+The fuzzy ARTMAP technique is based on the similarity of the fuzzy subset calculation as well as the adaptive and vibrant category selection through the feature space search. The structure of fuzzy ARTMAP includes two modules, i.e., ARTa and ARTb. These two modules can be further sub-divided into two sub-modules in the function (attention and orientation subsystem). The attention subsystem has several functions. For example, it deals with the modules, establishes the exact internal illustration, and creates fine-tuning for the modules. In contrast, the orientation subsystem is used for dealing with the newly appeared module 
+Based on the comprehensive investigation of fuzzy ARTMAP as well as the characteristics of remote-sensing data, a simplified fuzzy ARTMAP algorithm has been applied using the Terrset software. It comprises two layers in which the first is used for the feature data input and the second for the classification of remote-sensing data. In the first layer, the numbers of neurons are equal to the feature dimensions of the data, while in the second layer, the numbers of neurons are decided by the user as per the trial and process results 
+4. Random Forest RF is a new non-parametric ensemble machine-learning algorithm developed by Breiman 
+In recent times, several studies have shown a satisfactory performance for LULC classification using RF in the field of remote-sensing applications 
+
+## Method for Parametric Classifier ##
+
+
+## Mahalanobis Distance (MD) ##
+Supervised image classification is performed to detect the quantitative approach in the remotesensing image. The prime goals of supervised classification are to segment the spectral domain into the areas that match the ground cover interest classes for a particular purpose. The Mahalanobis distance (MD) supervised image classification algorithm was developed by an Indian applied statistician Mahalanobis in the 1930s 
+where i
+x is the vector showing the pixel of image data, k x is the sample mean vector of the k th class,
+V is the variance/covariance matrix for class i ; and T represents transpose of the matrix.
+
+## Method for Non-Parametric Classifier ##
+1. Spectral Angle Mapper (SAM) SAM is an auto-generated supervised spectral classifier machine learning technique that is used to determine the spectral similarity between the given image spectra and reference spectra in an n (here n denotes the spectral band number) dimensional space using the calculation of the angle between the spectra 
+In SAM, only angular information can be used to identify the pixel spectra. Thus, SAM uses only angular information to identify the pixel spectra, which assumes that an observed reflectance spectrum in a vector format is a multidimensional space with the number of dimensions equal to the number of bands. The difference between image spectra and reference spectra is shown as the level of angle where a small angle indicates high similarity and a high angle indicates low similarity. The maximum threshold limits of tolerance of angle are not classified. Hence, it is better to define a threshold angle limit (in radians) under which a pixel cannot be classified. In our study, SAM has been applied using the ENVI 5.3 image processing environment for LULC classification. This technique is comparatively intensive for illumination and albedo conditions while calibrating reflectance information. The SAM is auto-generated supervised classification.
+
+## Similarity Test among the Classifiers ##
+For representing the difference of performance of the algorithms for delineating LULC, similarity ratio (SR) is computed. It is simply the ratio between proportions of area of a given LULC computed by two algorithms. SR = 1 signifies the absolute similarity of the areal proportion of LULC computed by two algorithms. A value >1 or <1 means growing dissimilarity.
+
+## Accuracy Assessment and Correlation among the Classifiers ##
+The post-classification accuracy assessment has been considered as the most vital part of validating the LULC maps produced by the models 
+The receiver operating characteristics (RoC) curve graph was plotted to validate the performance of LULC classifiers for detecting the different features of LULC. The graph was plotted between sensitivity and specificity being on y and x axes, respectively. The sensitivity of a model represents the proportion of correctly predicted positive pixels (i.e., the pixels belonging to a particular LULC class were correctly predicted or identified), while the specificity refers to the proportion of correctly predicted negative pixels (i.e., the pixels not belonging to a particular LULC class was correctly predicted or identified). The sensitivity and specificity were calculated following Equations ( 
+where represents true positive, d refers to true negative, b means false positive, and c represents false negative. The area under curve (AUC) of the RoC curve depict the performance of classifiers for predicting the LULC. The value of AUC ranges from 0-1, while the AUC close to 1 represents the high degree of model performances.
+The root mean square error (RMSE) was computed to evaluating the performance of machine learning classifiers using the observed and prediction sample points. The RMSE was calculated by using Equation 
+where n represents the number of sample points.
+The "index-based technique" has been introduced to evaluate and select the best machinelearning technique for LULC mapping. Thus, three satellite data-derived indices; normalized differential vegetation index (NDVI), normalized differential water index (NDWI) and normalized differential built-up index (NDBI), have been calculated for this purpose. Each index has been classified based on a manual threshold. For better visualization, LULC classes (water, vegetationagricultural land, built-up area) and threshold-based NDWI, NDVI, NDBI have been masked out from the study area using the selected three windows. The closeness of the area between the indexderived area and classifier-derived LULC area could be considered as a good result and vice versa. Then, we used correlation matrix among the area of land use classes of six LULC models and satellite data-derived indices to statistically validate the index-based methods:
+We also used a visual interpretation procedure to evaluate the accuracy assessment of LULC models. Furthermore, Karl Pearson's coefficient of correlation technique was applied to understand the association among the results of area coverage of land use classes obtained from the six LULC models. Higher correlation coefficient values indicate conformity of the models.
+
+## Results ##
+
+
+## LULC Classification ##
+The spatial analysis of the LULC map shows that the built-up area, and rivers and wetland are more prominent and clearer in the outputs of SVM and random forest classifiers, while they are least prominent in the output of SAM. On the other hand, the fallow land and agricultural land are more prominent in the output of ANN, followed by fuzzy ARTMAP and Mahalanobis distance classifiers. The vegetation cover and sand bar are fairly classified in all classifiers. In RF and SVM, they are excellently classified (Figure 
+
+## Validation of the LULC Classification ##
+The overall accuracy (in percentage) using Kappa coefficient (K) for all the classifiers is shown in Table 
+The water bodies and wetlands have been classified very well and they can be matched with the Google Earth images in three sites, whereas both vegetation and agricultural land have been prominently visualized by all classifiers. In the cases of RF, fuzzy ARTMAP and SVM, the land-use features were classified very well as proved by comparing with the Google Earth images. Although it is very difficult to model a built-up area with 30-meter resolution images, machine-learning algorithms with good training sites can perform predictions very well. Therefore, in the present study, some classifiers like MD and fuzzy ARTMAP generated more built-up area than the other classifiers and even the reality. However, the ANN, RF and SAM have classified built-up area as found in Google Earth images and even similar to what we have found in the field survey.
+
+## Discussion ##
+
+
+## Variation in LULC in the Output of Classifiers Used ##
+Several studies reported that the areas of LULC classes are not equal in all the classification techniques, whether machine-learning algorithms or traditional classification techniques are adopted 
+
+## Comparison of Accuracy Assessment of Different Classifiers with the Literature ##
+The accuracy of a classification varied with methods, techniques, time and space 
+
+## Conclusions ##
+This study was conducted to examine the accuracy of different machine-learning classifiers for LULC mapping for satellite observations. The aim was to suggest the best classifier. Six machinelearning algorithms were applied on the Landsat 8 (OLI) data for the LULC classification. Accuracy assessments were undertaken by using the Kappa coefficient, an index-based technique and empirical observations. Results suggest that the area under each LULC class varies under different classifiers. The maximum variation is observed for the agricultural and fallow lands, while the minimum for the water bodies and wetlands. Such variation requires a need to prove the best suited classifier.
+Furthermore, the Kappa coefficient and index-based analysis also show variation in the accuracy of each LULC classifier. The variation in the accuracy of the classifiers used is found to be minor, but this minor variation has very important significance in the area of LULC mapping and planning. Both the Kappa coefficient and index-based analysis show that the RF has the highest accuracy of all classifiers applied in this study. To justify the result, previous literature on this was taken into consideration and most of the studies concluded that either RF or ANN is the best classifier. Although the previous studies found a higher accuracy for RF and ANN than this study, this study concludes that RF is the best machine-learning classifier for LULC modelling in the highly dynamic charlanddominated areas. Furthermore, numerous studies suggested that the accuracy of LULC mapping varies with time and location. Thus, for future research, it is suggested to analyse the accuracy of the classifiers for different morphoclimatic and geomorphic conditions.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. 
+
+2. Change analysis of land use/land cover and modelling urban growth in Greater Doha
+   Authors: , 
+   Date: 2015
+
+3. Assessment of land use/land cover change in the North-West District of Delhi using remote sensing and GIS techniques
+   Authors: , , , 
+   Date: 2012
+
+4. Assessing spatiotemporal eco-environmental vulnerability by Landsat data
+   Authors: , , 
+   Date: 2017
+
+5. Mapping global eco-environment vulnerability due to human and nature disturbances
+   Authors: , 
+   Date: 2019
+
+6. Global mapping of eco-environmental vulnerability from human and nature disturbances
+   Authors: , 
+   Date: 2019
+
+7. Wetland habitat vulnerability of lower Punarbhaba river basin of the uplifted Barind region of Indo-Bangladesh
+   Authors: , 
+   Date: 2018
+
+8. Zoning eco-environmental vulnerability for environmental management and protection
+   Authors: , , , 
+   Date: 2016
+
+9. Changes in glaciers and glacial lakes and the identification of dangerous glacial lakes in the Pumqu River Basin
+   Authors: , , 
+   Date: 2014. 2014
+
+10. Object-based flood mapping and affected rice field estimation with Landsat 8 OLI and MODIS data
+   Authors: , 
+   Date: 2015
+
+11. Use of high-resolution FORMOSAT-2 satellite images for post-earthquake disaster assessment: A study following the 12 May 2008 Wenchuan Earthquake
+   Authors: , , 
+   Date: 2010
+
+12. Assessment of disaster losses in rice paddy field and yield after Tsunami induced by the 2011 great east Japan earthquake
+   Authors: , , , , , , 
+   Date: 2012
+
+13. Debris Flow Susceptibility Mapping Using Machine-Learning Techniques in Shigatse Area
+   Authors: , , , 
+   Date: 2019
+
+14. Effects of damming on the hydrological regime of Punarbhaba river basin wetlands
+   Authors: , 
+   Date: 2019
+
+15. Dynamics of ecosystem services (ESs) in response to land use land cover (LU/LC) changes in the lower Gangetic plain of India
+   Authors: , , , , , 
+   Date: 2020
+
+16. Land-use change from arable lands to orchards reduced soil erosion and increased nutrient loss in a small catchment
+   Authors: , , , , , 
+   Date: 2019
+
+17. A SAR-Based Index for Landscape Changes in African Savannas
+   Authors: , 
+   Date: 2017
+
+18. Soil salinity assessment by using nearinfrared channel and Vegetation Soil Salinity Index derived from Landsat 8 OLI data: A case study in the Tra Vinh Province
+   Authors: , , , , 
+   Date: 2020
+
+19. Land use/land cover change detection combining automatic processing and visual interpretation
+   Authors: , , , , , 
+   Date: 2017
+
+20. Analyzing Land Use/Land Cover Changes Using Remote Sensing and GIS in Rize
+   Authors: 
+   Date: 2008
+
+21. Changing pattern of urban landscape and its effect on land surface temperature in and around Delhi
+   Authors: , , , 
+   Date: 2019
+
+22. Assessing the Effects of Land-Use Types in Surface Urban Heat Islands for Developing Comfortable Living in Hanoi City
+   Authors: , , , , , , 
+   Date: 2018. 1965
+
+23. Monitoring Urban Sprawl Using Remote Sensing and GIS Techniques of a Fast Growing Urban Centre, India
+   Authors: , , , 
+   Date: 2011
+
+24. Assessment of public open spaces (POS) and landscape quality based on per capita POS index in Delhi
+   Authors: , , , , , 
+   Date: 2019
+
+25. Assessing the role of hydrological modifications on land use/land cover dynamics in Punarbhaba river basin of Indo-Bangladesh
+   Authors: , 
+   Date: 2018
+
+26. Influence of anthropogenic land-use change on hillslope erosion in the Waipaoa River Basin
+   Authors: , 
+   Date: 2016
+
+27. Groundwater potential zones for sustainable management plans in a river basin of India and Bangladesh
+   Authors: , , 
+
+28. Groundwater potential mapping in a rural river basin by union (OR) and intersection (AND) of four multi-criteria decision-making models
+   Authors: , 
+   Date: 2019
+
+29. Monitoring of land use/land-cover dynamics using remote sensing: A case of Tana River Basin
+   Authors: , , , 
+   Date: 2019
+
+30. The future of satellite remote sensing in hydrogeology
+   Authors: 
+   Date: 2005
+
+31. FORMOSAT-2 Quick Imaging
+   Authors: , , , 
+   Date: 2016
+
+32. Expert system classification of urban land use/cover for Delhi
+   Authors: , , , , 
+   Date: 2008
+
+33. Remote Sensing for Landslide Investigations: An Overview of Recent Achievements and Perspectives
+   Authors: , , , 
+   Date: 2014
+
+34. Land use and land cover change detection using satellite remote sensing techniques in the mountainous Three Gorges Area, China
+   Authors: , 
+   Date: 2010
+
+35. Assessment of the effectiveness of support vector machines for hyperspectral data
+   Authors: , 
+   Date: 2004
+
+36. Comparison of two dimensional multitemporal Sentinel-2 data with three-dimensional remote sensing data sources for forest inventory parameter estimation over a boreal forest
+   Authors: , , , , 
+   Date: 2019
+
+37. Long-Term Satellite Image Time-Series for Land Use/Land Cover Change Detection Using Refined Open Source Data in a Rural Region
+   Authors: , , 
+   Date: 2019
+
+38. Estimating long-term LULC changes in an agriculture-dominated basin using CORONA (1970) and LISS IV (2013-14) satellite images: A case study of Ramganga River
+   Authors: , 
+   Date: 2019
+
+39. Land cover and land use change analysis using multi-spatial resolution data and object-based image analysis
+   Authors: , , , , 
+   Date: 2018
+
+40. Land use/land cover classification and its change detection using multi-temporal MODIS NDVI data
+   Authors: , , , 
+   Date: 2015
+
+41. Assessment of ASTER Land Cover and MODIS NDVI Data at Multiple Scales for Ecological Characterization of an Arid Urban Center
+   Authors: , 
+   Date: 2005
+
+42. Implementation of machine-learning classification in remote sensing: An applied review
+   Authors: , , 
+   Date: 2018
+
+43. Land-use/cover classification in a heterogeneous coastal landscape using Rapid Eye imagery: Evaluating the performance of random forest and support vector machines classifiers
+   Authors: , , , 
+   Date: 2014
+
+44. Comparison of machine learning algorithms for classification of LiDAR points for characterization of canola canopy structure
+   Authors: , , , , 
+   Date: 2019
+
+45. Supervised and unsupervised landuse map generation from remotely sensed images using ant based systems
+   Authors: , , 
+   Date: 2011
+
+46. Deep learning in remote sensing applications: A meta-analysis and review
+   Authors: , , , , , 
+   Date: 2019
+
+47. Guidance on and comparison of machine learning classifiers for Landsatbased land cover and land use mapping
+   Authors: , , 
+   Date: 2019
+
+48. Introduction to the issue on advances in remote sensing image processing
+   Authors: , , , 
+   Date: 2011
+
+49. Joint Deep Learning for land cover and land use classification
+   Authors: , , , , , , 
+   Date: 2019
+
+50. A 30-m Landsat-derived cropland extent product of Australia and China using random forest machine learning algorithm on Google Earth Engine cloud computing platform
+   Authors: , , , , , , 
+   Date: 2018
+
+51. Random forest classifier for remote sensing classification
+   Authors: 
+   Date: 2005
+
+52. Artificial neural networks for land-cover classification and mapping
+   Authors: 
+   Date: 1993
+
+53. A comparative assessment of machinelearning techniques for land use and land cover classification of the Brazilian tropical savanna using ALOS-2/PALSAR-2 polarimetric images
+   Authors: , , , , 
+   Date: 2019
+
+54. A comparison of machine learning algorithms for mapping of complex surface-mined and agricultural landscapes using ZiYuan-3 stereo satellite imagery
+   Authors: , , , 
+
+55. Mapping land-cover modifications over large areas: A comparison of machine learning algorithms
+   Authors: , , , , , 
+   Date: 2008
+
+56. Evaluation and comparison of eight machine learning models in land use/land cover mapping using Landsat 8 OLI: A case study of the northern region of Iran
+   Authors: 
+   Date: 2019, 1, 1448
+
+57. A framework for evaluating land use and land cover classification using convolutional neural networks
+   Authors: , , 
+   Date: 2019
+
+58. A review of supervised object-based land-cover image classification
+   Authors: , , , , , 
+   Date: 2017
+
+59. Support vector machines in remote sensing: A review
+   Authors: , , 
+   Date: 2011
+
+60. PCA-based land-use change detection and analysis using multitemporal and multisensor satellite data
+   Authors: , , , 
+   Date: 2008
+
+61. Improving land use/land cover classification by integrating pixel unmixing and decision tree methods
+   Authors: , , , , , 
+
+62. Improving the accuracy of land use and land cover classification of Landsat data using post-classification enhancement
+   Authors: , , 
+   Date: 2009
+
+63. Accuracy assessment using sub-pixel fractional error matrices of global land cover products derived from satellite data
+   Authors: , 
+   Date: 2004
+
+64. Detection of land use and land cover change and land surface temperature in English Bazar urban centre
+   Authors: , 
+   Date: 2017
+
+65. Erosion Induced Population Displacements: A Socio-economic Case Study in the Gangetic Riverine Tract at Malda District, West Bengal
+   Authors: , 
+   Date: 2010
+
+66. Introduction neural networks in remote sensing
+   Authors: , 
+   Date: 1997
+
+67. Dynamic artificial neural networks with affective systems
+   Authors: , 
+   Date: 2013
+
+68. A neural network approach to radiometric sensing of land surface parameters
+   Authors: , , 
+   Date: 1999
+
+69. Retrieving soil moisture from simulated brightness temperatures by a neural network
+   Authors: , , 
+   Date: 2001
+
+70. A survey of image classification methods and techniques for improving classification performance
+   Authors: , 
+   Date: 2007
+
+71. Multispectral landuse classification using neural networks and support vector machines: One or the other, or both?
+   Authors: , 
+   Date: 2008
+
+72. Multiple regression, ANN (RBF, MLP) and ANFIS models for prediction of swell potential of clayey soils
+   Authors: , 
+   Date: 2011
+
+73. Fast learning in networks of locally-tuned processing units
+   Authors: , 
+   Date: 1989
+
+74. Performance analysis of radial basis function networks and multi-layer perceptron networks in modelling urban change: A case study
+   Authors: , , , 
+   Date: 2015
+
+75. Evaluation of stiffened end-plate moment connection through optimized artificial neural network
+   Authors: , 
+   Date: 2012
+
+76. An assessment of support vector machines for land cover classification
+   Authors: , , 
+   Date: 2002
+
+77. Semiautomatic approach for land cover classification: A remote sensing study for arid climate in Southeastern Tunisia
+   Authors: , , 
+   Date: 2017
+
+78. Selection of classification techniques for land use/land cover change investigation
+   Authors: , , , , 
+   Date: 2012
+
+79. Support vector machines for classification
+   Authors: , 
+   Date: 2015
+
+80. Multiclass and binary SVM classification: Implications for training and classification users
+   Authors: , 
+   Date: 2008
+
+81. Fuzzy ARTMAP supervised classification of multi-spectral remotely-sensed images
+   Authors: , , 
+   Date: 1998
+
+82. Fuzzy ARTMAP-A neural classifier for multispectral image classification
+   Authors: 
+   Date: 2006
+
+83. Random forests
+   Authors: 
+   Date: 2001
+
+84. Spatio-temporal patterns of land use/land cover change in the heterogeneous coastal region of Bangladesh between
+   Authors: , , , , , , 
+   Date: 1990. 2017. 2019
+
+85. Classification and Regression by randomForest
+   Authors: , 
+   Date: 2002
+
+86. Flood mapping based on multiple endmember spectral mixture analysis and random forest classifier-The case of Yuyao
+   Authors: , , , 
+   Date: 2015
+
+87. Class-Specific Mahalanobis Distance Metric Learning for Biological Image Classification
+   Authors: , 
+   Date: 2012. June 2012. 2012
+
+88. A Comparison of Spectral Angle Mapper and Artificial Neural Network Classifiers Combined with Landsat TM Imagery Analysis for Obtaining Burnt Area Mapping
+   Authors: , , , , 
+   Date: 2010
+
+89. Object-Based Urban Tree Species Classification Using Bi-Temporal WorldView-2 and WorldView-3 Images. Remote Sens
+   Authors: , , , 
+   Date: 2015
+
+90. Auxiliary datasets improve accuracy of object-based land use/land cover classification in heterogeneous savanna landscapes
+   Authors: , , , , 
+   Date: 2019
+
+91. Comparing global vegetation maps with the Kappa statistic
+   Authors: , 
+   Date: 1992
+
+92. Land cover and land use classification performance of machine learning algorithms in a boreal landscape using Sentinel-2 data. GISci. Remote Sens
+   Authors: 
+   Date: 2019
+
+93. Comparison of maximum likelihood classification method with supervised artificial neural network algorithms for land use activities
+   Authors: , , 
+   Date: 2004
+
+94. Comparison of Random Forest, k-Nearest Neighbor, and Support Vector Machine Classifiers for Land Cover Classification Using Sentinel-2 Imagery
+   Authors: , 
+   Date: 2018
+
+95. Evaluation of different machine learning methods for land cover mapping of a Mediterranean area using multi-seasonal Landsat images and Digital Terrain Models
+   Authors: , 
+   Date: 2014
+
+96. Harshness in image classification accuracy assessment
+   Authors: 
+   Date: 2008
+
+97. Accuracy assessment of land use/land cover classification using remote sensing and GIS
+   Authors: , 
+   Date: 2017
+
+98. Land use classification and change detection by using multi-temporal remotely sensed imagery: The case of Chunati wildlife sanctuary
+   Authors: , , , 
+   Date: 2018
+
+99. Assessing the accuracy of multi-temporal built-up land layers across rural-urban trajectories in the United States
+   Authors: , , , 
+   Date: 2018
+
+100. A new approach to change vector analysis using distance and similarity measures
+   Authors: , , , , 
+   Date: 2011
+
+101. Comparing machine learning classifiers for object-based land cover classification using very high-resolution imagery
+   Authors: , , , , 
+   Date: 2015
+
+102. A comparison of classification techniques to support land cover and land use analysis in tropical coastal zones
+   Authors: , , 
+   Date: 2011
+
+103. An evaluation of bagging, boosting, and random forests for land-cover classification in Cape Cod, Massachusetts, USA. GIScience Remote Sens
+   Authors: , , , , 
+   Date: 2012
+
+104. Land cover change assessment using decision trees, support vector machines and maximum likelihood classification algorithms
+   Authors: , 
+   Date: 2010
+
+105. Comparative Assessment of Supervised Classifiers for Land Use-Land Cover Classification in a Tropical Region Using Time-Series PALSAR Mosaic Data
+   Authors: , , , , 
+   Date: 2014
+
+106. Comparison of support vector machine, random forest and neural network classifiers for tree species classification on airborne hyperspectral APEX images
+   Authors: , 
+   Date: 2017
+
+107. Comparison of two Classification methods (MLC and SVM) to extract land use and land cover in Johor Malaysia. 7th IGRSM International Remote Sensing & GIS Conference and Exhibition
+   Authors: , , 
+   Date: 23 April 2014. 2014
+
+108. Fuzziness-based active learning framework to enhance hyperspectral image classification performance for discriminative and generative classifiers
+   Authors: , , , , , 
+   Date: 2018
+
+109. Comparisons of using Random Forest and Maximum Likelihood Classifiers with Worldview-2 imagery for classifying Crop Types
+   Authors: , , , 
+   Date: October 2015
+
+110. Parameter investigation of Artificial Neural Network and Support Vector Machine for image classification
+   Authors: , , , 
+   Date: January 2017. 2017
+
+111. A Futuristic Deep Learning Framework Approach for Land Use-Land Cover Classification Using Remote Sensing
+   Authors: , , , , 
+   Date: 2018. 2018
+

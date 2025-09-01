@@ -1,0 +1,18 @@
+{
+  "article_id": "57",
+  "original_sentence": "Tokyo has excellent wetland restoration projects.",
+  "entities": [
+    {
+      "text": "Tokyo",
+      "label": "LOC",
+      "start_char": 0,
+      "end_char": 5
+    },
+    {
+      "text": "wetland",
+      "label": "LULC",
+      "start_char": 20,
+      "end_char": 27
+    }
+  ]
+}

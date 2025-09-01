@@ -1,0 +1,21 @@
+<View>
+  <Text name="text" value="$text"/>
+  <Labels name="label" toName="text">
+    <Label value="CARDINAL" background="#FF6B6B"/>
+    <Label value="CHANGE" background="#4ECDC4"/>
+    <Label value="COORDINATES" background="#45B7D1"/>
+    <Label value="DATE" background="#96CEB4"/>
+    <Label value="LOC" background="#FECA57"/>
+    <Label value="LULC" background="#FF9FF3"/>
+    <Label value="PERCENT" background="#A55EEA"/>
+  </Labels>
+  <Relations name="relation" toName="label">
+    <Relation value="added" background="#FF6B6B"/>
+    <Relation value="caused" background="#4ECDC4"/>
+    <Relation value="caused by" background="#45B7D1"/>
+    <Relation value="changed" background="#96CEB4"/>
+    <Relation value="indicates/represents" background="#FECA57"/>
+    <Relation value="observed" background="#FF9FF3"/>
+    <Relation value="resulted in" background="#A55EEA"/>
+  </Relations>
+</View>

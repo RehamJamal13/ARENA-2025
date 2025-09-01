@@ -1,0 +1,489 @@
+================================================================================
+TITLE: Land Use Policy
+================================================================================
+
+AUTHORS:
+- Shawky Mansour
+- Mohammed Al-Belushi
+- Talal Al-Awadhi
+
+ABSTRACT:
+As a result of the socioeconomic transformation, the rapid urban expansion of cities and towns in the Gulf Cooperation Council (GCC) states has predominately led to tremendous pressure on the limited natural resources and loss of productive lands. Indeed, the spatial patterns of urbanisation and their impacts on mountain resources and environment have received little attention, particularly in Oman. Predicting urban growth in the mountainous cities has the potential to better understand the interaction between the spatial growth patterns and the mountain topography. This study aims to analyse spatiotemporal dynamics of land use/land cover (LULC) (2008)(2009)(2010)(2011)(2012)(2013)(2014)(2015)(2016)(2017)(2018) and simulate urban expansion  in Nizwa city, Al Dakhliyah governorate, Oman. Cellular Automata (CA)-Markov and geospatial techniques were utilised to assess and project urban growth and land cover changes. The analysis was based on three maps of LULC at equal intervals derived from satellite imageries: Landsat TM for 1998, 2008 and 2018, along with topographic spatial layers (elevation, aspects, and terrain slopes) derived from the ASTER digital elevation model. In addition, other spatial parameters (population density, proximity to urban centres, and proximity to major roads,) were incorporated in the simulation process. The findings revealed that the actual LULC change during 2008-2018 was 12,014 ha of net urban growth (418.5 % change), while the simulated change was expected to be 14,985 ha by 2028, with a total of 37,465 ha increase in the built-up area and urban growth by 2038. Although the topographic variability will control LULC changes, the urban expansion overly will occupy the arable land across the valleys along with the flat areas. During the next two decades, the built-up areas will dominant, with a large percentage of vacant land (net loss 12,813 ha) and vegetation cover (net loss 35 ha) will be gradually converted into residential land use. The output of the simulations in this research could serve not only as spatial guidelines for monitoring future trends of LULC dynamics, but also address the threats and deteriorates of urban sustainability in the Omani mountainous cities. Furthermore, identifying bare soils and vegetation areas that are susceptible to urbanisation is of value for the national strategy of future urban planning in Oman.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction and theoretical framework ##
+Globally, the percentage of the urban population has dramatically increased from 14 % in 1900 to 29.1 % in 1950, reaching 54 % in 2014 and is expected to increase to 66 % in 2050 
+According to terrain and morphology, urban patterns in developing countries can be classified into various types, particularly coasts, deserts, plains, mountains, and upland. However, urban dynamics in mountainous cities remain poorly investigated and understood. Mountains cover a quarter of the earth surface, with almost 12 % of the world populations living in mountains and areas that are located in high elevations. Globally, populations living in mountainous urban zones are gradually increasing 
+Since the recent oil boom 
+During the last decade, an obvious shift in the urban population has taken place in Oman. In 2016, Oman had the highest annual urban population growth (6.43 %) in the world, with the urban population reaching 83.56 % in 2017. Moreover, almost 25 % of the Omani urban population live in large cities 
+The majority of urban agglomerations in most Omani cities are characterised by scattered settlements that are incomplete, not only with regard to service provision but also in spatial accessibility 
+Urban sprawl and expansion of unplanned built-up areas over mountain valleys and basins certainly exerted tremendous pressure on the natural landscape 
+There is a lack of research regarding urban growth across the mountains of Oman, thus, this study aims to analyse spatiotemporal changes of mountainous urban in Oman using satellite images, employing advanced GIS algorithms. Understanding the spatiotemporal dynamic of LULC and predicting future urbanisation are crucial, particularly for sustainable development, formulating national development policies, and urban planning strategies. The study analysis adopts the Markov chain modelling technique, an effective method for quantitative simulation 
+-To what extent are the substantial changes in the mountain landscape due to urban growth along the Omani mountainous cities? -What are the spatiotemporal divergences of LULC changes? -What is the nature and trends of future urban growth in the Omani mountainous areas?
+Spatial modelling and simulation have been used to address these research questions and the pattern and mechanism of mountainous urban growth in Oman can provide an important basis for identifying driving forces of expansion. In addition, such analysis can provide decision-makers with clear visions of controlling unplanned urban sprawl and promoting sustainable urban development and proper land management.
+A large body of literature has investigated land use dynamics as these changes have direct influences on population well-being and quality of life through the extent to which ecosystem elements are in balance. For instance, measuring and assessing the consequences of land use changes on natural resource preservation, production from agricultural land, air pollution, and access to potable water etc. have been previously reported (e.g. 
+A second line of research on LULC changes has focused on understanding the impacts of land changes on environmental systems and communities 
+In recent decades, urban agglomerations in the GCC states (e.g., Oman, UAE and Saudi Arabia) as well as cities have recorded higher rates of urban growth 
+Regarding spatial algorithms, spatial models and advanced GIS methods have been widely employed to explain LULC patterns, distribution and directions as well as predict the amount of land use changes. For example, the multisystem agent model combines the cellular landscape with agent-based simulation to optimise the decision making process of LULC dynamics 
+A more comprehensive investigation and description of the urban fabric, design and structure of cities in the GCC can be found in the literature (e.g. 
+Ultimately, explicit modelling research on spatial drivers, geographical factors and future predictions of the comprehensive urban process in the Omani cities and urban clusters has not been conducted. Specifically, the dynamics of mountainous urban patterns and its associated processes need to be spatially investigated. Consequently, the present study, through the integrated GIS and image processing approach, is the first attempt to bridge the gap in existing literature by simulating, modelling and predicting LULC dynamics of mountainous urban area in Oman. Monitoring and simulating urban growth across the mountainous cities of Oman result in useful information and spatial guidelines for decision-makers and policy managers not only in domains of urban sprawl, housing planning, and provision of public infrastructure but also in other critical issues in the mountainous cities such as ecological balance, vegetation shrinking and land degradation in urban areas.
+
+## Study area ##
+Oman is mountainous, with most of the populous places located in mountain valleys and basins. The physical landscape of Oman is characterised by two large mountain ranges, Al Hajar Al Sharqy and Al Hajar Al Gharbi mountains (Eastern and western rocky or stone mountains), which cover the northern eastern and western part of the country. Al Jabal Al Akhdr, which is more than 3000 m height, is the highest mountain in the region (Fig. 
+The study area covers about 448.4 square kilometres including all urban agglomeration around Nizwa city is located in between latitudes of 22°55′ 59 N and the longitude of 57°31′ 59 E. It is an ancient city and located in the heart of Al Dakhliyah governorate at a crossroads between Muscat and the Hajar mountain range in the northern part of Oman. The city is the regional centre of the governorate and the largest city, located on the fringes of Al Jabal Al Akhdr Mountain, approximately 164 km from the capital Muscat. The total population of Nizwa city increased from 84,528 in 2010 to 123,396 inhabitants in 2017 
+The climate is characterised as hot in the summer, with pleasant average temperatures in winter and rain fall, especially in the mountainous region of Al Jabal Al Akhdr. On average, the warmest month is July, while the coldest is January (World climates, 2019). The traditional market of Nizwa located in the city centre is famous for handicrafts, souvenirs and antiques and other items, and is the main tourist attraction in the city. The most important landscape feature in the city is Nizwa's splendid fort, which is one of the oldest and most impressive castles in the Sultanate of Oman, located in the inner part of the city and was built in 1660. Nizwa is famous for having the largest popular markets in Oman which include several local products, crafts and traditional industries, as well as gold and silver jewelry, wood and copper industry, textile and palm industries. Nizwa Fruit & Vegetable Market is the newest market built on the highest architectural specifications and play a crucial role in retail trading and linking rural to urban. In addition to small enterprises and retail activities, the city is also known as one of the top tourist destinations in Oman where various ancient monuments are located particularly castles, caves, forts, and waterfalls.
+Topographically, the study area can be divided into three distinct regions: the mountainous area located to the north and northeast (Fig. 
+
+## Methods of data acquisition and analysis ##
+Landsat images 
+The Landsat images of L1T indicates precision and terrain corrected data which provides systematic radiometric and geometric accuracy by incorporating ground control points (GCPs). A rectification and georeferencing process for 1998, 2008, and 2018 Landsat images was performed using 8, 12, and 15 ground-control points respectively. The digital topographic map of 1:50 000 scale and the Global Positing System (GPS) were the source of the selected GCPs. Generally, road intersections, valleys, hills and building of public infrastructure were identified as major GCPs and these references are located near the corners and the middle of the study area. Comparisons of the GCPs points against common points in the images revealed that georeferencing was accurate within 1 pixel (15 m). The vector map layers were generated using various vector and grid data formats, such as population settlements and density, highways and roads, urban centres, and digital elevation model (DEM) 30 m resolution which was used to generate slopes, aspects and area elevation. In this analysis, LULC classification was implemented based on five classes and a brief description of major LULC classes is provided in Table 
+
+## Suitability maps ##
+The formation of suitability maps for each land use class is influenced by spatial factors and constraints, with the parameters denoting the suitability of a location to be developed using continuous values (Fig. 
+Suitability criteria were used to define the suitability of land use changes of a specific LULC class for each pixel, with 0 representing no suitability and 255 indicates the highest suitability of land use changes (Fig. 
+
+## Markov chain (MC) ##
+In order to predict LULC changes across the study area, CA Markov method was performed within Terrset software package. The Markov model is a stochastic model used to simulate randomly changing and continuous surfaces. It is also a theory based on the assumption that the future state of any object depends mainly upon the current state, not on the previous states. In LULC changes, the model describes quantities of conversion states between land classes and calculates rates of transfer among various land use types 
+Fig. 
+Where S (t), S (t + 1) are the phenomenon or system status at time t or t +1; P ij is the transition probability matrix in a state which is calculated as the following: (2)
+Where, P is the Markov transition matrix, i,j is the LULC type in the first and second time, P ij denotes the probability of LULC type i to change into type j, N refers to the number of LULC classes in the region.
+
+## Cellular automata-Markov (CA-Markov) ##
+Markov chain alone is not sufficient for simulation and predicting of LULC dynamics because it does not consider spatial distribution of each land category or the spatial direction of growth 
+
+## LULCij ##
+The transformation of cells from time t to another t + 1 is a function of its cell state, its neighbourhood proximity, and a set of transition rules. The evolution of cells can be calculated as follows:
+
+## ( ) .( ) .( ) ) ##
+Where + t 1 LULCi j , indicates the potential status of cell i.j to change at time t + 1 while t LULCi j , represents states of cell i.j at time t. t Si j , illustrates suitability indices of cell i.j at time t. t Px y i j , , , specifies the probability of cell i.j to change from x to y. t Nij denotes a neighbourhood index of cell i.j.
+In CAM model, the transition rule is computed according to suitability indices, neighbourhood indices, and transition probabilities.
+In this study, the multi criteria evaluation (MCE) suitability maps were created utilising weighted linear combination as follows:
+.
+Where t Si j , represents suitability index for cell i.j at time t, while tx i j , refers to a score of criteria m for cell i.j at time t. w m indicates the weight which is given to each criteria and c m signifies a Boolean value of growth constraints.
+The transition rule was also calculated based on the transition potential of each cell, which is calculated based on changes of LULC classes of two periods as follows: 
+
+## Table 2 ##
+Characteristics of land use/land cover (LULC) types.
+
+## LULC type Description ##
+Built-up area Developed environment including all residential, commercial and industrial areas, urban agglomerations and transportation infrastructure Vegetation Total plant cover which encompasses mixed palm trees, gardens, inner city recreational areas, cultivated lands, grasslands, and agricultural areas Bare land
+Open land that has no buildings and is not being used, often bare soils, it can be used for several purposes, particularly for residential, agricultural and industrial use Rocky land
+Land dominated by rocky blocks or consists of large areas of rock which almost cover the entire landscape Mountains Large landforms that rise above the surrounding lands and rugged terrains activity a y.
+The third element of calculating the transition rule is the neighbourhood indices which is calculated as follows:
+The t Ni j , was computed based on the extended Moore neighbourhoods which is a contiguity 5 × 5 filter, that is, each cell is surrounded by a matrix which composed by 5 × 5. A Moore neighborhood filter was utilized to capture local interaction among cells. The filter is a regular squared lattice and it is composed of a central cell and eight surrounding cells. This size of the neighbourhood was applied since it allows the influences of surrounding cells on the central one.
+
+## Findings ##
+
+
+## Model validation ##
+To validate the model and evaluate its reliability in predicting LULC for projected years 2028 and 2038, the observed maps of the actual LULC for the year 2008 and 2018 were compared with the projected map for the same years. The validation process was based on the Kappa Index of Agreement (KIA), which is widely utilised in validating LULC predictions (e.g. 
+In this study, the validation process was computed to the total LULC classes using the validate function in Terrset software. The Kappa statistics (K) were assessed to measure how closely the instances classified between actual and projected maps of the years 2008 and 2018 (Fig. 
+Although all Kappa parameters in 2018 were higher than 2008, they were all higher than 0.8 in both years, ranging from 0.8050 to 0.9170, which can be described as substantial agreement to almost perfect agreement 
+
+## Transition probability matrices ##
+From the transition probabilities between maps of 1998 and 2008, the transition probability matrix for 2008 was computed following Eqs. 4 and 5. The Markov matrix (Table 
+The transition probabilities matrix between 2008 and 2018 for predicting LULC changes in 2028 and 2038 is presented in Table 
+Proximity to major roads J-shape decreasing 100 m to 2.5 km = high suitability 2.5 km to 5 km = decreasing suitability 5 km to 8.5 km = lowest suitability Land close to highway and major roads is more accessible and more valuable; consequently, suitable for housing and urban growth 
+Road network 2018, Supreme Committee of Town Planning and Ministry of Housing, Oman. Slopes J-shape decreasing 0 degree to 21 degree = high suitability 22 degree to 31 degree = decreasing suitability 32 km to 73 degree = lowest suitability The steeper the slopes, the less suitable the land for urban growth; the lower the slopes, the more suitable for residential and build up expansion 
+
+## LULC dynamics ##
+The dynamic changes of LULC categories for the years 2008, 2018, 2028, and 2038 are presented in Fig. 
+Fig. 
+
+## LULC future predictions ##
+The transition probability matrix of 2008-2018 was used to predict LULC changes in the future 20 years up to 2038. The map of 2018 was set as a starting year to forecast LULC changes in 2028. Similarly, to predict urban dynamics in 2038, the map of 2028 was set as a starting year utilising the same transition probability matrix of the 2008-2018 period. According to the successful simulation of LULC change patterns and distribution in 2018, future changes of urban landscape were projected across the study area from 2018 till 2038 (Fig. 
+Fig. 
+
+## Discussion ##
+One of the main aims of this research was to investigate the spatiotemporal characteristics of urban expansion in the mountainous regions of Oman. Landsat images 
+The dynamic of built-up areas is associated with urban population growth 
+Land use dynamics in the mountainous cities of Oman describe the influences of human footprints on ecological, hydrological and environmental structures, where the higher the level of intensively land use changes, the more destructive effects on the ecological balance of   urban environment 
+The rapid consumption of space and natural resources in the Omani mountainous cities due to ongoing urbanisation is not only a major challenge of sustainable development, but also a burden for future strategic plans of 2020 and 2040. Evidently, the expansion of urban areas need to be equipped with sufficient basic infrastructure, mainly transportation, water, energy and other social amenities. Similar studies conducted elsewhere in developing countries 
+Overall, the present study provides new insights into simulating LULC dynamics of mountainous urban areas. To the best of our knowledge, research on spatial analysis and LULC prediction in Oman generally is very rare. Consequently, these findings contribute new  understanding and have several key implications for research on urban planning of mountainous cities in Oman as well as in neighbouring countries. Using advanced GIS and image processing metric techniques to identify areas that are susceptible to urbanisation is invaluable for the national strategy of future urban planning. In addition, the output of the simulations in this research could serve not only as spatial guidelines for monitoring future trends of LULC dynamics, but also to address threats and deterioration of urban sustainability in mountainous cities. Image spatial resolution remains a key factor which directly influences spatial metrics, landscape details and analysis output 
+
+## Conclusion ##
+During the last decade, Omani cities have experienced unprecedented urban expansion due to socioeconomic transformation, mega projects and consistent immigration to urban areas. Accordingly, there is growing pressure on major urban agglomerations, placing intense demand on vacant lands for housing development. Geospatial simulation is an important technique to model and forecast urban growth and its consequences on future planning and sustainable development. In this research, the integration of remote sensing and advanced GIS techniques with the CA-Markov model successfully simulated urban growth and LULC changes in Nizwa city. The model was validated with 2018 observed data and showed satisfactory reliability. The findings indicated that the spatial patterns of urbanisation in the study area were influenced by terrain, topography, and transportation network. In addition, the major urban expansion occurred across vegetation areas, substantially along open spaces and bare lands.
+In the mountainous cities of Oman such as Nizwa, the urbanisation can lead to a sprawl pattern because of rugged terrains, higher slopes, hilltops and unsuitable topographies. The settlements often are surrounded by mountain ranges, thus flat lands close to existing urban centres are dramatically shrunk by the urban sprawl. The negative impact of urban sprawl, such as destroying vegetation and urban ecosystem, should be avoided. Planners and policy makers must consider the high risks of landslides, flash floods and difficulties of spatial accessibilities to basic and public services. Consequently, effective management policies should be adopted for tackling the urban sprawl expansions and the shrinking of green spaces and vacant lands, for example, providing residents with land for housing should be regulated based on spatial guidelines adopting planned locations that pose little development challenges.
+To the best of our knowledge, research regarding spatial modelling of mountainous cities in Oman is very rare. This analysis employed advanced GIS techniques, spatial modelling and utilisation of satellite images in the simulations of LULC changes to successfully predict the future of urban growth. The modelling process gave promisingly accurate and reliable results for examining possible future urban changes, allowing urban landscape patterns and growth directions to be identified and predicted. These results can provide a great opportunity for addressing the future challenges of the urban mountainous environment, its sustainability and growth scenarios. The simulated results of this study can be employed to assess urban planning policies in the mountainous cities of Oman and the surrounding regions. Likewise, the produced results of this research can serve as an indispensable guideline for local governors and planners to manage the spatiotemporal directions of urban expansion and their future ramifications. 
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Changes of plant cover and land use types (1950's to 1980's) in three mire reserves and their neighbourhood in Estonia
+   Authors: 
+   Date: 1993
+
+2. Towards an integrative theory approach to sustainable urban design in saudi arabia: the value of geodesign
+   Authors: , , 
+   Date: 2013
+
+3. Assessing spatial inequality and accessibility to schools in urban areas: a case study of Aseeb, Oman
+   Authors: , 
+   Date: 2018
+
+4. Towards Meaningful Spaces: Reclaiming Cultural Context to Its Inhabitants in GCC Cities Through the Conceptual Phase of Urban Design Process
+   Authors: 
+   Date: 2016
+
+5. Urban Growth from Patchwork to Sustainability: Case Study Muscat
+   Authors: 
+   Date: 2014
+
+6. The heritage prospective and urban expansion in capital cities: old defence sites in Muscat
+   Authors: 
+   Date: 2013
+
+7. Oman: the Modernization of the Sultanate
+   Authors: 
+   Date: 2016
+
+8. Monitoring and predicting land use change in Tripoli Metropolitan City using an integrated Markov chain and cellular automata models in GIS
+   Authors: , 
+   Date: 2014
+
+9. Integration of logistic regression, Markov chain and cellular automata models to simulate urban expansion
+   Authors: , , , 
+   Date: 2013
+
+10. Tracking dynamic land-use change using spatially explicit Markov Chain based on cellular automata: the case of Tehran
+   Authors: , , 
+   Date: 2011
+
+11. Modelling land use change with generalized linear models-a multimodel analysis of change between 1860 and 2000 in Gallatin Valley
+   Authors: 
+   Date: 2004
+
+12. The Impact of the Oil Industry on Society in the Arabian Peninsula
+   Authors: 
+   Date: 1986
+
+13. Quantifying parameter uncertainty in a coral reef model using Metropolis-Coupled Markov Chain Monte Carlo
+   Authors: , , , 
+   Date: 2010
+
+14. A review of assessing the accuracy of classifications of remotely sensed data
+   Authors: 
+   Date: 1991
+
+15. Analysis of land use change and urbanization in the Kucukcekmece water basin (Istanbul, Turkey) with temporal satellite data using remote sensing and GIS
+   Authors: , , 
+   Date: 2008
+
+16. Land use change around protected areas: management to balance human needs and ecological function
+   Authors: , , , , 
+   Date: 2007
+
+17. Impacts of urbanization of mountainous areas on resources and environment: based on ecological footprint model
+   Authors: , 
+   Date: 2018
+
+18. Sustainable rehabilitation of the built environment in Lebanon
+   Authors: , 
+   Date: 2014
+
+19. Digital world meets urban planet-new prospects for evidence-based urban studies arising from joint exploitation of big earth data, information technology and shared knowledge
+   Authors: , , , , , 
+   Date: 2018
+
+20. Mountains as the Water Towers of the World: A Call for Action on the Sustainable Development Goals (SDGs)
+   Authors: 
+   Date: 2014
+
+21. Using a new PDP modelling approach for land-use and land-cover change predictions: a case study in the Stubai Valley (Central Alps)
+   Authors: , , , 
+   Date: 2016
+
+22. The development of vital precincts in Doha: urban regeneration and socio-cultural factors
+   Authors: , 
+   Date: 2015
+
+23. Urban regeneration of GCC cities: preserving the urban fabric's cultural heritage and social complexity
+   Authors: , 
+   Date: 2017
+
+24. Application of cellular automata and Markov-chain model in geospatial environmental modeling-a review
+   Authors: , , , , , 
+   Date: 2017
+
+25. Next generation of global land cover characterization, mapping, and monitoring
+   Authors: , , , 
+   Date: 2013
+
+26. Urbanization and global environmental change: local effects of urban warming
+   Authors: 
+   Date: 2007
+
+27. Modeling urban land use change by the integration of cellular automaton and Markov model
+   Authors: , , , , , 
+   Date: 2011
+
+28. Habitat III Regional Report for Arab Region
+   Authors: 
+   Date: 2016
+
+29. Integrated assessment of the environmental impact of an IDP camp in Sudan based on very high resolution multi-temporal satellite imagery
+   Authors: , , 
+   Date: 2012
+
+30. On the process and economics of land settlement in Oman: mathematical modeling and reasoning in urban planning and design
+   Authors: , , , 
+   Date: 2018
+
+31. The spatiotemporal form of urban growth: measurement, analysis and modeling
+   Authors: , , 
+   Date: 2003
+
+32. Application of Ca-Markov model and land use/land cover changes in Malacca River Watershed
+   Authors: 
+   Date: 2017
+
+33. A Markovian and cellular automata land-use change predictive model of the Usangu Catchment
+   Authors: , 
+   Date: 2017
+
+34. Remote sensing efficiency for urban analysis of MECCA and surrounds. Paper Presented at the The International Archives of the Photogrammetry
+   Authors: , , 
+   Date: 2016
+
+35. Impact of urbanization and land-use change on climate
+   Authors: , 
+   Date: 2003
+
+36. A spatiotemporal analysis of landscape change using an integrated Markov chain and cellular automata models
+   Authors: , 
+   Date: 2016
+
+37. Evolution of informal settlements upgrading strategies in Egypt: from negligence to participatory development
+   Authors: 
+   Date: 2015
+
+38. Application of markov chain & cellular automata based model for prediction of Urban transitions
+   Authors: , , 
+   Date: 2016
+
+39. Land-Use Dynamic Simulator (LUDAS): A multi-agent system model for simulating spatio-temporal dynamics of coupled human-landscape system. I. Structure and theoretical specification
+   Authors: , , , 
+   Date: 2008
+
+40. Socio-economic driving forces of land-use change in Kunshan, the Yangtze River Delta economic area of China
+   Authors: , , , 
+   Date: 2007
+
+41. Climate change and extreme heat events
+   Authors: , 
+   Date: 2008
+
+42. Land Use Regulation (in Arabic)
+   Authors: 
+   Date: 2019
+
+43. Geospatial based multi-criteria analysis for ecotourism land suitability using GIS & AHP: a case study of Masirah Island
+   Authors: , , 
+   Date: 2019
+
+44. The impact of urbanization on CO2 emissions: evidence from developing countries
+   Authors: , 
+   Date: 2011
+
+45. Application of remote sensing and GIS inland use/ land cover mapping and change detection in a part of south western Nigeria
+   Authors: , 
+   Date: 2007
+
+46. Spatiotemporal urbanization processes in the megacity of Mumbai, India: a Markov chains-cellular automata urban growth model
+   Authors: , 
+   Date: 2013
+
+47. Dynamics of urbanization and its impact on land-use/land-cover: a case study of megacity Delhi
+   Authors: , , , , 
+   Date: 2011
+
+48. Multicriteria decision approach for land use land cover change using Markov chain analysis and a cellular automata approach
+   Authors: , 
+   Date: 2006
+
+49. 
+   Authors: , 
+   Date: 2016
+
+50. Environmental impact assessment of urban land use transitions-a context-sensitive approach
+   Authors: , , , 
+   Date: 2009
+
+51. 
+   Authors: , , 
+   Date: 2016
+
+52. Assessing landscape changes and dynamics using patch analysis and GIS modeling
+   Authors: , 
+   Date: 2012
+
+53. Agricultural land for urban development: the process of land conversion in Central Vietnam
+   Authors: , , 
+   Date: 2014
+
+54. Quantification error versus location error in comparison of categorical maps
+   Authors: 
+   Date: 2001. 2000
+
+55. Hotspots of uncertainty in land-use and land-cover change projections: a global-scale model comparison
+   Authors: , , , , , 
+   Date: 2016
+
+56. Monitoring urban sprawl using remote sensing and GIS techniques of a fast growing urban centre, India
+   Authors: , , , 
+   Date: 2011
+
+57. A multi-agent model system for land-use change simulation
+   Authors: , , , , , 
+   Date: 2013
+
+58. Urbanization effects on observed surface air temperature trends in North China
+   Authors: , , , , , 
+   Date: 2008
+
+59. Desert sprawl: rapid urbanisation: the transformation of the desert in Oman
+   Authors: 
+   Date: 2015
+
+60. Visualizing Urban Form as Mass Ornament in Muscat Capital Area
+   Authors: 
+   Date: 2016
+
+61. Land use/land cover dynamics and modeling of urban land expansion by the integration of cellular automata and markov chain
+   Authors: , , , , , 
+   Date: 2018
+
+62. Rapid urban development and national master planning in Arab Gulf countries
+   Authors: 
+   Date: 2014
+
+63. Emerging urbanization in the Southern Andes: environmental impacts of urban sprawl in Santiago de Chile on the Andean piedmont
+   Authors: , 
+   Date: 2004
+
+64. Assessing land-use statistics to model land cover change in a mountainous landscape in the European Alps
+   Authors: , , , 
+   Date: 2008
+
+65. Simulation of land use spatial pattern of towns and villages based on CA-Markov model
+   Authors: , , , , 
+   Date: 2011
+
+66. Climate change and urbanization: effects and implications for urban governance
+   Authors: 
+   Date: 2008
+
+67. The Oil Boom in the GCC Countries, 2002-2008: Old Challenges, Changing Dynamics
+   Authors: 
+   Date: 2009
+
+68. Land use decisions in developing countries and their representation in multi-agent systems
+   Authors: , 
+   Date: 2006
+
+69. A meta-analysis of global urban land expansion
+   Authors: , , , 
+   Date: 2011
+
+70. Global forecasts of urban expansion to 2030 and direct impacts on biodiversity and carbon pools
+   Authors: , , 
+   Date: 2012
+
+71. Urban sprawl pattern and land-use change detection in Yazd
+   Authors: , , , , , 
+   Date: 2011
+
+72. Predicting spatial and decadal LULC changes through cellular automata Markov chain models using earth observation datasets and geo-information
+   Authors: , , , , 
+   Date: 2015
+
+73. Selection of classification techniques for land use/land cover change investigation
+   Authors: , , , , 
+   Date: 2012
+
+74. Modeling of spatiotemporal dynamics of land use and land cover in a part of Brahmaputra River basin using Geoinformatic techniques
+   Authors: , , , 
+   Date: 2013
+
+75. Spatio-temporal urban landscape change analysis using the Markov chain model and a modified genetic algorithm
+   Authors: , , 
+   Date: 2007
+
+76. Projecting land-use and land-cover changes in a tropical mountain forest of Southern Ecuador
+   Authors: , , , 
+   Date: 2014
+
+77. Understanding interobserver agreement: the kappa statistic
+   Authors: , 
+   Date: 2005
+
+78. Linking long-term landscape dynamics to the multiple interactions among ecosystem services in the European Alps
+   Authors: , , , 
+   Date: 2016
+
+79. Effects of urbanization and urban stream restoration on the physical and biological structure of stream ecosystems
+   Authors: , , , , , 
+   Date: 2011
+
+80. Modelling low-rise high-density neighbourhoods in Oman
+   Authors: 
+   Date: 2016
+
+81. Desert Sprawl. Rapid urbanisation: the transformation of the desert in Oman
+   Authors: 
+   Date: 2015
+
+82. Spatio-temporal urban growth dynamics of Lagos Metropolitan Region of Nigeria based on Hybrid methods for LULC modeling and prediction
+   Authors: , 
+   Date: 2018
+
+83. Urban evolution of the city of Doha: an investigation into the impact of economic transformations on urban structures
+   Authors: , , 
+   Date: 2012
+
+84. Urban Population Growth
+   Authors: 
+   Date: 2019
+
+85. Impacts of land use/land cover change and socioeconomic development on regional ecosystem services: The case of fast-growing Hangzhou metropolitan area
+   Authors: , , , , 
+   Date: 2013
+
+86. A spatiotemporal model of land use change based on ant colony optimization, Markov chain and cellular automata
+   Authors: , , 
+   Date: 2012
+
+87. Effects of urbanization on landscape patterns in a mountainous area: a case study in the Mentougou district
+   Authors: , , , , , 
+   Date: 2016
+
+88. Agricultural landscape dynamics in response to economic transition: comparisons between different spatial planning zones in Ningbo region
+   Authors: 
+   Date: 2017
+
+89. Land-cover change and environmental impact analysis in the Greater Mankato area of Minnesota using remote sensing and GIS modelling
+   Authors: 
+   Date: 2008
+
+90. Yearly Climatic Data for Nizwa
+   Date: 2019
+
+91. An aggregated multivariate regression land-use model and its application to land-use change processes in the Daqing region (northeast China)
+   Authors: , 
+   Date: 2006
+
+92. Land use dynamics of the fastgrowing Shanghai Metropolis, China (1979-2008) and its implications for land use and urban planning policy
+   Authors: , , , 
+   Date: 2011
+
+93. Spatial correlation between type of mountain area and land use degree in Guizhou province
+   Authors: , 
+   Date: 2016
+
+94. Effects of land-use and land-cover pattern on landscape-scale biodiversity in the European Alps
+   Authors: , , , 
+   Date: 2010
+

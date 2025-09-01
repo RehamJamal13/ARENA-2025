@@ -1,0 +1,332 @@
+================================================================================
+TITLE: Assessment of land use land cover change and its effects using artificial neural network-based cellular automation
+================================================================================
+
+AUTHORS:
+- Nishant Mehra
+- Janaki Swain
+
+ABSTRACT:
+The challenge of urban growth and land use land cover (LULC) change is particularly critical in developing countries. The use of remote sensing and GIS has helped to generate LULC thematic maps, which have proven immensely valuable in resource and land-use management, facilitating sustainable development by balancing developmental interests and conservation measures. The research utilized socioeconomic and spatial variables such as slope, elevation, distance from streams, distance from roads, distance from built-up areas, and distance from the center of town to determine their impact on the LULC of 2016 and 2019. The research integrates Artificial Neural Network with Cellular Automta to forecast and establish potential land use changes for the years 2025 and 2040. Comparison between the predicted and actual LULC maps of 2022 indicates high agreement with kappa hat of 0.77 and a percentage of correctness of 86.83%. The study indicates that the built-up area will increase by 8.37 km 2 by 2040, resulting in a reduction of 7.08 km 2 and 1.16 km 2 in protected and agricultural areas, respectively. These findings will assist urban planners and lawmakers to adopt management and conservation strategies that balance urban expansion and conservation of natural resources leading to the sustainable development of the cities.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+The demographic projections suggest that the Central and Southern Asia are poised to emerge as the world's most populous region by 2037 
+The significant characteristics of urban sprawl are a rapid decrease in vegetated areas 
+The integrated use of remote sensing and GIS has helped immensely in the management of land and natural resources and in understanding the complex linkages between spatial patterns and processes responsible for change 
+Cellular automata (CA)-based models are spatially explicit models (SEM) that work on a simple premise that the future state of a land cover type is dependent on the past local interactions between the different land covers 
+To address the inherent constraints in the individual models, various researchers have employed hybrid models like CA-Markov model 
+The study aims to model LULC change using MLP-ANN and cellular automation simulation in the city of Dharamshala, one of the fastest-growing cities in the state of Himachal Pradesh, India. The results are expected to act as a road map for urban planners and policymakers for sustainable development of the city. The research used the MOLUSCE plugin, as a tool to predict and assess the transformations occurring in each LULC type in the study area. In the study, LULC maps of 2016 and 2019 were used as independent variables in the model to simulate and validate the LULC map of 2022, and thereafter, LULC maps of 2025 and 2040 were predicted.
+
+## Study area ##
+The research locale encompasses Dharamshala, situated in the state of Himachal Pradesh, India, as illustrated in Fig. 
+The city is the winter capital of the state of Himachal Pradesh and the headquarters of the Central Tibetan Administration. The city is a famous hill station destination, both for national and international visitors. Further, it is also the administrative headquarters of Kangra district. The city was declared a municipal corporation in the year 2015 by merging 9 adjacent villages and has ever since witnessed rapid urbanization. It is one among the 100 cities in India and the only city in the state of Himachal Pradesh chosen in the year 2016 to be developed under the National Smart Cities Mission by the Government of India.
+A dramatic rise in urban spaces has been witnessed in the city from the year 2016 onwards, and there exists an inherent imperative to address the recent alterations that have manifested within this geographical area through a scientific lens. The time scale chosen in the study corresponds to the maximum socio-economic changes occurring in the city due to the formation of municipal limits, hosting of international cricket matches and also serving as the residence of His Holiness Dalai Lama.
+
+## Methods ##
+The simulation's correctness is determined by the quality of the data and criteria used in the investigation 
+The study incorporated LULC maps of 2016, 2019, and 2022 and digital elevation model (DEM), the details of which are given in Table 
+The riverine sources, in this part of the Himalayan region, are characterized by the presence of boulders and cobbles, and thus, the chances of overlapping spectral characteristics for the built-up areas and water bodies were likely. The Strahler order algorithm available in SAGA was used to accurately delineate the water bodies.
+Various researchers have included slope, elevation, and aspect, as geospatial parameters; population density as the socio-economic parameter; and spatial variables such as distance from the water bodies, roads, built-up areas, and from the center of town for simulation 
+The methodological workflow for the area under investigation is summarized in Fig. 
+The transition probabilities derived from MLP-ANN learning processes are fed into CA to predict and estimate the LULC changes in this hybrid model of CA-ANN 
+
+## Image pre-processing ##
+The satellite imageries of 2016, 2019, and 2022 were transformed to spectral radiance values, and the Dark Object Subtraction (DOS) in the semi-automatic classification (SCP) plugin in QGIS was used for performing atmospheric correction. Thereafter, the images were mosaicked, and an image subset was performed using the shapefile of the municipal corporation limits of Dharamshala city. The shape file of municipal limits was geometrically corrected with the use of ground control points (GCP) selected using GPS. This was executed in a manner that ensured the Root mean Squared Error (RMSE) attained a value of less than half of a pixel 
+
+## Inputs ##
+The LULC maps for 2016 and 2019 are taken as input and establish the spatio-temporal dynamics of the region. The MOLUSCE plugin was used to create a transition map between 2016 and 2019 showing the percentage change occurring in each of the five land cover types for the period from 2016 to 2019.
+For using the CA model, the region should be a discrete grided area, with each cell specifying a land cover type. The driving factors could be categorized as having different spatial attributes, such as distance parameters, physical properties, and neighborhood relationships 
+The transition functions are non-linear and represent the relationship between driving factors and transformation probabilities of land cover type 
+Based on spatio-temporal dynamics and the impact of driving factors, the simulation is initially performed for the year 2022, and based on the performance of the model, the predictions are thereafter made for the years 2025 and 2040 in the iterative steps of two and six, respectively, in the model.
+
+## Evaluating correlation and transition analysis ##
+The examination of correlation among the driving factors was executed using the Cramer coefficient, also known as the Cramer V method, particularly suitable for contingency tables larger than 2 × 2. The outcomes span a range of 0 to 1, where elevated values signify a heightened correlation amid the driving factors. A coefficient surpassing 0.15 indicates a substantial explanatory potency of variables 
+The changes (in area and percentage) occurring in the land cover classes for the period 2016 to 2019 are shown in Table 
+
+## Transition potential modeling ##
+The transformations occurring in a region are a highly complex process dependent on spatio-temporal changes and driving factors responsible for the changes 
+
+## Validation ##
+In LULC simulation, the cross-tabulation matrix, also referred to as a contingency table, error matrix, or confusion matrix, stands as an extensively utilized approach for the evaluation of outcomes 
+Several simulations with different combinations of exploratory maps were performed, as shown in Table 
+
+## Results and discussion ##
+The LULC distribution for the years 2016, 2019, and 2022 is shown in Table 
+The region lying at an altitude of less than 1500 m remained the most critical with maximum changes in LULC classes being witnessed there. The built-up areas, agricultural  areas, and protected areas showed maximum transition in this region. The main reason for this could be attributed to the better transportation facilities, road connectivity, suitable climatic conditions for living and agricultural practices, commercial establishments, and more population concentration in this region. Higher altitude regions, because of terrain and other geographical constraints, are less vulnerable to built-up areas. Thus, the city requires greater concern and attention from policymakers and environmentalists to pave the way for a balanced, holistic, and sustainable development model. The simulation and accurate prediction of LULC become necessary to understand the trend and direction of urban sprawl. The LULC maps of 2025 and 2040 were prepared using CA modeling, and the spatial distribution of these LULC maps is shown in Fig. 
+The LULC change analysis of the maps from 2016 to 2025 and 2016 to 2040 is shown in Tables 
+The swift expansion of urbanized regions, stemming from demographic expansion and the influx of tourists, emphasizes the critical significance of implementing sustainable urban planning strategies. Effective land-use management strategies should be implemented by policymakers and urban planners involving the promotion of efficient land use, reducing urban sprawl, and preserving green spaces, contributing to the attainment of Sustainable Development Goal (SDG) 11, which focuses on creating sustainable cities and communities.
+The decline in protected areas is a matter of concern as it poses a threat to biodiversity and ecosystems. Strict implementation of legislation, with the involvement of environmentalists and policymakers, can help protect and restore these areas, thus preserving biodiversity and ensuring the long-term sustainability of natural resources. This effort directly relates to SDG 15, which focuses on maintaining and enhancing life on land.
+Land-use planning plays a crucial role in fostering responsible consumption and production patterns. By optimizing land use and preventing further encroachment on protected areas, policymakers can contribute to sustainable resource management and reduce the environmental impact of human activities, which aligns with the objectives of SDG 12, aiming to ensure responsible consumption and production.
+The increasing population and tourists will remain the major driving factors for the change. The decrease in agricultural areas indicates a shift in agriculture practice, which lately has been the preferred occupation of the residents. Further, the decrease in protected areas indicates the persistent encroachments and abeyance of legislation. In order to address the decreasing agricultural areas, it is crucial to promote sustainable farming practices and increase agricultural productivity to address the escalating requirements of sustenance. This can be accomplished through the implementation of innovative techniques, support for small-scale farmers, and ensuring food security for all, thereby working towards achieving Zero Hunger (SDG-2).
+
+## Conclusions ##
+The study applied ANN-based CA approach for prediction of land cover classes which showed substantial agreement between the simulated and the actual LULC map, with the accuracy metric kappa showing a value of 0.77. The model incorporated six driving factors, out of which four were socio-economic spatial parameters, distance from builtup areas, roads, center of town, and streams; while two were geospatial parameters, elevation, and slope. These criteria combinations performed the best in the CA-ANN model showing the highest value of accuracy of 86.83%. The selection of these factors was based on their potential influence on the study's outcomes. For instance, proximity to built-up areas may impact pollution levels and development rates, while distance from roads may correlate with traffic noise and urbanization patterns. Elevation and slope could affect water resource accessibility, and proximity to streams might indicate water source quality.
+The study predicts that the built-up areas will increase by 17.84% in the year 2025 and 19.69% by the year 2040. The protected areas will decrease by 14.75% and 16.66%, agricultural areas by 2.81% and 2.72%, and barren land by 0.29% and 0.31% for the years 2025 and 2040, respectively. The rapid increase in population and tourism has led to a significant rise in built-up areas, creating an urgent demand for more land and putting undue pressure on protected areas and agricultural areas. Strict implementation of legislation is necessary to prevent further encroachments in the protected areas. Studying the critical land-use classes in terms of socio-ecological and environmental concerns is valuable for balancing environmental pressures and conservation interventions. The findings can offer guidance to administrators, policymakers, agricultural practitioners, and urban planners in formulating methodologies for sustainable land-use planning and management, fostering the optimal utilization of natural resources.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. World population prospects
+   Authors: , , , , 
+   Date: 2022
+
+2. India overtakes China as the world's most populous country
+   Authors: , , 
+   Date: 2023
+
+3. Monitoring and modelling of urban sprawl using remote sensing and GIS techniques
+   Authors: , , 
+   Date: 2008
+
+4. Land use/land cover modeling of Sagar Island, India using remote sensing and GIS techniques
+   Authors: , , , , 
+   Date: 2019
+
+5. Assessment of land use/land cover dynamics vis-à-vis hydrometeorological variability in Wular Lake environs Kashmir Valley, India using multitemporal satellite data
+   Authors: , 
+   Date: 2014
+
+6. Land use/land cover change assessment of Halda watershed using remote sensing and GIS
+   Authors: , , 
+   Date: 2020
+
+7. Monitoring land use/cover change using remote sensing and GIS techniques: a case study of Hawalbagh block, district Almora
+   Authors: , 
+   Date: 2015
+
+8. Visualization of urban growth pattern in Chennai using geoinformatics and spatial metrics
+   Authors: , 
+   Date: 2016
+
+9. Urban expansion and loss of agricultural land-a GIS based study of Saharanpur City
+   Authors: 
+   Date: 2000
+
+10. Study on land-use and land-cover change dynamics in Eastern Arunachal Pradesh, NE India using remote sensing and GIS
+   Authors: , , , 
+   Date: 2019
+
+11. Application of GIS for land-use/land-cover change analysis in a mountainous terrain
+   Authors: , , , , 
+   Date: 1996
+
+12. Land-cover change analysis of Garur Ganga watershed using GIS/remote sensing technique
+   Authors: , 
+   Date: 2001
+
+13. Assessing different remote sensing techniques to detect land use/cover changes in the eastern Mediterranean
+   Authors: , 
+   Date: 2009
+
+14. Monitoring urban growth and land use change detection with GIS and remote sensing techniques in Daqahlia governorate Egypt
+   Authors: , 
+   Date: 2015
+
+15. Monitoring and predicting land use and land cover changes using remote sensing and GIS techniques-a case study of a hilly area
+   Authors: , , 
+   Date: 2018
+
+16. Analyses of land use and land cover change dynamics using GIS and remote sensing during 1984 and 2015 in the Beressa Watershed Northern Central Highland of Ethiopia
+   Authors: , , 
+   Date: 2016
+
+17. Study of urban heat island effect on Ahmedabad City and its relationship with urbanization and vegetation parameters
+   Authors: , , , , 
+   Date: 2015
+
+18. Spatiotemporal change analysis and prediction of future land use and land cover changes using QGIS MOLUSCE Plugin and Remote Sensing Big Data: a case study of Linyi
+   Authors: , , , , 
+   Date: 2022
+
+19. Prevalent vegetation growth enhancement in urban environment
+   Authors: , , 
+   Date: 2016
+
+20. Land cover classification using IRS LISS III image and DEM in a rugged terrain: a case study in Himalayas
+   Authors: , , , 
+   Date: 2005
+
+21. Land use and land cover change detection and prediction in the Kathmandu district of Nepal using remote sensing and GIS
+   Authors: , , , , 
+   Date: 2020
+
+22. Improving land-use change modeling by integrating ANN with cellular automata-Markov chain model
+   Authors: , , , 
+   Date: 2020
+
+23. Land use and land cover change and its resultant erosion susceptible level: an appraisal using RUSLE and logistic regression in a tropical plateau basin of West Bengal
+   Authors: , , , 
+   Date: 2021
+
+24. From pattern to process: landscape fragmentation and the analysis of land use/land cover change
+   Authors: , , 
+   Date: 2004
+
+25. Post-classification corrections in improving the classification of land use/land cover of arid region using RS and GIS: the case of Arjuni watershed
+   Authors: , , , 
+   Date: 2017
+
+26. The simulation and prediction of spatio-temporal urban growth trends using cellular automata models: a review
+   Authors: , , , 
+   Date: 2016
+
+27. A review of assessment methods for cellular automata models of land-use change and urban growth
+   Authors: , 
+   Date: 2020
+
+28. Image classification in remote sensing
+   Authors: , , , 
+   Date: 2013
+
+29. Classification of imbalanced remote-sensing data by neural networks
+   Authors: , 
+   Date: 1997
+
+30. Modeling and simulating land use/cover change using artificial neural network from remotely sensing data
+   Authors: , 
+   Date: 2019
+
+31. Remote sensing approach to simulate the land use/land cover and seasonal land surface temperature change using machine learning algorithms in a fastest-growing megacity of Bangladesh
+   Authors: , , , , , , , , 
+   Date: 2021
+
+32. Cellular automata as models of complexity
+   Authors: 
+   Date: 1984
+
+33. Research article modelling inside GIS: part 1. Model structures, exploratory spatial data analysis and aggregation
+   Authors: , 
+   Date: 1994
+
+34. Modeling urban dynamics through GIS-based cellular automata
+   Authors: , , 
+   Date: 1999
+
+35. Cellular automata models for the simulation of real-world urban processes: a review and analysis
+   Authors: , , , 
+   Date: 2010
+
+36. A brief history of cellular automata
+   Authors: 
+   Date: 2000
+
+37. Simulating urban growth in a developing nation's region using a cellular automatabased model
+   Authors: , , 
+   Date: 2004
+
+38. Urban sprawl simulation linking macro-scale processes to micro-dynamics through cellular automata, an application in Thessaloniki
+   Authors: 
+   Date: 2012
+
+39. Predicting the future land use and land cover changes for Bhavani basin, Tamil Nadu, India, using QGIS MOLUSCE plugin
+   Authors: , 
+   Date: 2022
+
+40. Future land use land cover changes in El-Fayoum governorate: a simulation study using satellite data and CA-Markov model
+   Authors: , , 
+   Date: 2023
+
+41. Modeling the impact of the future state of land use land cover change patterns on land surface temperatures beyond the frontiers of greater Kumasi: a coupled cellular automaton (CA) and Markov chains approaches
+   Authors: , 
+   Date: 2023
+
+42. Prediction of land use and land cover changes for North Sumatra, Indonesia, using an artificial-neural-network-based cellular automaton
+   Authors: , 
+   Date: 2019
+
+43. 
+   Authors: 
+   Date: 2013
+
+44. Prediction of water quality index using artificial neural network and multiple linear regression modelling approach in Shivganga River basin
+   Authors: , , , , 
+   Date: 2019
+
+45. Simulating mixed land-use change under multi-label concept by integrating a convolutional neural network and cellular automata: a case study of Huizhou
+   Authors: , , , , , 
+   Date: 2022
+
+46. Transition index maps for urban growth simulation: application of artificial neural networks, weight of evidence and fuzzy multi-criteria evaluation
+   Authors: , , 
+   Date: 2017
+
+47. Modeling multiple land use changes using ANN, CART and MARS: comparing tradeoffs in goodness of fit and explanatory power of data mining tools
+   Authors: , 
+   Date: 2014
+
+48. Introduction neural networks in remote sensing
+   Authors: , 
+   Date: 1997
+
+49. Spatial dynamic prediction of landuse/landcover change (case study: Tamalanrea sub-district, Makassar city)
+   Authors: , , , 
+   Date: 2019
+
+50. Land cover change detection in the urban catchments of Dar es Salaam, Tanzania using remote sensing and GIS techniques
+   Authors: , , 
+   Date: 2019
+
+51. A case study of the 12 July 2021 Bhagsunath (McLeod Ganj) flash flood in Dharamshala, Himachal Pradesh: A warning against constricting natural drainage
+   Authors: , , , 
+   Date: 2022
+
+52. Modeling annual parameters of clear-sky land surface temperature variations and evaluating the impact of cloud cover using time series of Landsat TIR data
+   Authors: , 
+   Date: 2014
+
+53. Land use and land cover change detection using geospatial techniques in the Sikkim Himalaya
+   Authors: , , 
+   Date: 2020
+
+54. Understanding the role of training sample size in the uncertainty of high-resolution LULC mapping using random forest
+   Authors: , , , , 
+   Date: 2023
+
+55. Individual tree detection based on variable and fixed window size local maxima filtering applied to IKONOS imagery for even-aged Eucalyptus plantation forests
+   Authors: , , , 
+   Date: 2011
+
+56. Monitoring and assessment of land use and land cover changes
+   Authors: 
+   Date: 2017. 1977-2010
+
+57. Assessing the geoindicators of land degradation in the Kashmir Himalayan region
+   Authors: , 
+   Date: 2012
+
+58. Simulation of land use/land cover change and its effects on the hydrological characteristics of the upper reaches of the Hanjiang Basin
+   Authors: , , , 
+   Date: 2015
+
+59. Sustainable land development model for rapid growth areas using GIS
+   Authors: , 
+   Date: 1998
+
+60. Exploring multiscale object-based convolutional neural network (multi-OCNN) for remote sensing image classification at high spatial resolution
+   Authors: , , , , 
+   Date: 2020
+
+61. Delineating urban growth boundary using remote sensing, ANN-MLP and CA model: a case study of Thiruvananthapuram urban agglomeration
+   Authors: , 
+   Date: 2021
+
+62. Forecasting land-cover growth using remotely sensed data: a case study of the Igneada protection area in Turkey
+   Authors: , , , 
+   Date: 2015
+
+63. Modeling dynamic urban land-use change with geographical cellular automata and generalized pattern search-optimized rules
+   Authors: 
+   Date: 2017
+
+64. Revisiting kappa to account for change in the accuracy assessment of land-use change models
+   Authors: , , , , , 
+   Date: 2015. 2011
+
+65. Accuracy assessment of land use/land cover classification using remote sensing and GIS
+   Authors: , 
+   Date: 2017
+

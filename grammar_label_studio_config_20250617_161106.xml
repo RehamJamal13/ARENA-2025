@@ -1,0 +1,68 @@
+<View>
+  <Header value="Grammar-Aware LULC Entity and Relation Annotation"/>
+  
+  <Text name="text" value="$text"/>
+  
+  <!-- Entity Labels -->
+  <Labels name="label" toName="text" showInline="true">
+    <Label value="CARDINAL" background="#FF6B6B" description="Entity type"/>
+    <Label value="CHANGE" background="#4ECDC4" description="Change/Transformation processes"/>
+    <Label value="COORDINATES" background="#45B7D1" description="Entity type"/>
+    <Label value="DATE" background="#96CEB4" description="Dates and time periods"/>
+    <Label value="DISCOVERED_LULC" background="#FECA57" description="Grammar-discovered LULC terms"/>
+    <Label value="DISCOVERED_OBJECT" background="#FF9FF3" description="Grammar-discovered objects"/>
+    <Label value="DISCOVERED_SUBJECT" background="#A55EEA" description="Grammar-discovered subjects"/>
+    <Label value="LOC" background="#54A0FF" description="Location/Place names"/>
+    <Label value="LULC" background="#5F27CD" description="Land Use/Land Cover types"/>
+    <Label value="PERCENT" background="#00D2D3" description="Entity type"/>
+  </Labels>
+  
+  <!-- Relation Labels -->
+  <Relations name="relation" toName="label">
+    <Relation value="affects" background="#FF6B6B" description="causal relationship"/>
+    <Relation value="results_in" background="#4ECDC4" description="causal relationship"/>
+    <Relation value="triggers" background="#45B7D1" description="causal relationship"/>
+    <Relation value="changes_to" background="#96CEB4" description="general relationship"/>
+    <Relation value="comprises" background="#FECA57" description="general relationship"/>
+    <Relation value="encompasses" background="#FF9FF3" description="general relationship"/>
+    <Relation value="follows" background="#A55EEA" description="general relationship"/>
+    <Relation value="is_a" background="#54A0FF" description="general relationship"/>
+    <Relation value="is_a_factor_of" background="#5F27CD" description="general relationship"/>
+    <Relation value="is_associated_with" background="#00D2D3" description="general relationship"/>
+    <Relation value="measures" background="#FF9F43" description="general relationship"/>
+    <Relation value="modifies" background="#10AC84" description="general relationship"/>
+    <Relation value="occurred_during" background="#EE5A24" description="general relationship"/>
+    <Relation value="precedes" background="#0098C7" description="general relationship"/>
+    <Relation value="transforms_into" background="#8395A7" description="general relationship"/>
+    <Relation value="happens_by" background="#FD79A8" description="temporal relationship"/>
+    <Relation value="occurs_during" background="#FDCB6E" description="temporal relationship"/>
+    <Relation value="located_in" background="#6C5CE7" description="spatial relationship"/>
+  </Relations>
+  
+  <!-- Quality Assessment -->
+  <Choices name="overall_quality" toName="text" choice="single" showInline="false">
+    <Choice value="Excellent" background="#00ff00"/>
+    <Choice value="Good" background="#90EE90"/>
+    <Choice value="Fair" background="#FFD700"/>
+    <Choice value="Poor" background="#FF6347"/>
+    <Choice value="Very Poor" background="#FF0000"/>
+  </Choices>
+  
+  <!-- Grammar Quality -->
+  <Choices name="grammar_quality" toName="text" choice="single" showInline="false">
+    <Choice value="Grammar Analysis Accurate"/>
+    <Choice value="Grammar Analysis Partial"/>
+    <Choice value="Grammar Analysis Incorrect"/>
+  </Choices>
+  
+  <!-- Relation Quality -->
+  <Choices name="relation_quality" toName="text" choice="single" showInline="false">
+    <Choice value="Relations Semantically Correct"/>
+    <Choice value="Relations Partially Correct"/>
+    <Choice value="Relations Need Major Correction"/>
+  </Choices>
+  
+  <!-- Comments -->
+  <TextArea name="comments" toName="text" placeholder="Additional comments about the annotation quality..." rows="3" showInline="false"/>
+  
+</View>

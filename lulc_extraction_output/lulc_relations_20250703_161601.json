@@ -1,0 +1,47 @@
+[
+  {
+    "sentence_id": 0,
+    "sentence": "After the droughts in the 1970s and 1980s, the observed loss of woody vegetation cover was often considered as irreversible [desertification] and large parts of the Sahel were designated as degraded land (e.g",
+    "entities": [
+      {
+        "text": "the 1970s and 1980s",
+        "label": "DATE",
+        "start_char": 31,
+        "end_char": 50
+      },
+      {
+        "text": "loss",
+        "label": "CHANGE",
+        "start_char": 65,
+        "end_char": 69
+      }
+    ],
+    "model_response": "\n\nRELATIONS:\n- droughts --CAUSES-- loss | CONF: HIGH\n- loss --DECREASES_BY-- woody_vegetation_cover | CONF: MEDIUM\n- woody_vegetation_cover --IS_CONSIDERED_AS-- irreversible_loss | CONF: MEDIUM\n- irreversible_loss --IS_ASSIGNED_AS-- desertification | CONF: HIGH\n- large_parts --LOCATED_IN-- Sahel | CONF: HIGH\n- large_parts --ARE_DESIGNATED_AS-- degraded_land | CONF: HIGH",
+    "extracted_relations": [
+      {
+        "source": "loss",
+        "relationship": "DECREASES_BY",
+        "target": "woody_vegetation_cover",
+        "confidence": "MEDIUM"
+      }
+    ],
+    "num_relations": 1,
+    "processing_timestamp": "2025-07-03T16:15:53.852442"
+  },
+  {
+    "sentence_id": 1,
+    "sentence": "Pastoral production has often existed in some sort of symbiotic interaction with the [agriculture]",
+    "entities": [
+      {
+        "text": "agriculture",
+        "label": "LULC",
+        "start_char": 95,
+        "end_char": 106
+      }
+    ],
+    "model_response": "\n\nSENTENCE: \"Pastoral production has often existed in some sort of symbiotic interaction with the agriculture.\"\n\nRELATIONS:\n- pastoral_production --INTERACTS_WITH-- agriculture | CONF: HIGH\n\nThis relation indicates that pastoral production and agriculture interact with each other in a symbiotic manner. The exact nature of this interaction is not specified in the sentence, but it implies some form of mutual benefit or interdependence. This relationship is considered high confidence because it is explicitly stated in the sentence.",
+    "extracted_relations": [],
+    "num_relations": 0,
+    "processing_timestamp": "2025-07-03T16:16:01.809783"
+  }
+]

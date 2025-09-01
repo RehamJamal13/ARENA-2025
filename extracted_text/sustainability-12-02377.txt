@@ -1,0 +1,357 @@
+================================================================================
+TITLE: An Analysis of Urban Land Use/Land Cover Changes in Blantyre City, Southern Malawi (1994-2018)
+================================================================================
+
+AUTHORS:
+- John Mawenda
+- Teiji Watanabe
+- Ram Avtar
+
+ABSTRACT:
+Rapid and unplanned urban growth has adverse environmental and social consequences. This is prominent in sub-Saharan Africa where the urbanisation rate is high and characterised by the proliferation of informal settlements. It is, therefore, crucial that urban land use/land cover (LULC) changes be investigated in order to enhance effective planning and sustainable growth. In this paper, the spatial and temporal LULC changes in Blantyre city were studied using the integration of remotely sensed Landsat imageries of 1994, 2007 and 2018, and a geographic information system (GIS). The supervised classification method using the support vector machine algorithm was applied to generate the LULC maps. The study also analysed the transition matrices derived from the classified map to identify prominent processes of changes for planning prioritisation. The results showed that the built-up class, which included urban structures such as residential, industrial, commercial and public installations, increased in the 24-year study period. On the contrary, bare land, which included vacant lands, open spaces with little or no vegetation, hilly clear-cut areas and other fallow land, declined over the study period. This was also the case with the vegetation class (i.e., forests, parks, permanent tree-covered areas and shrubs). The post-classification results revealed that the LULC changes during the second period (2007)(2008)(2009)(2010)(2011)(2012)(2013)(2014)(2015)(2016)(2017)(2018) were faster compared to the first period (1994)(1995)(1996)(1997)(1998)(1999)(2000)(2001)(2002)(2003)(2004)(2005)(2006)(2007). Furthermore, the results revealed that the increase in built-up areas systematically targeted the bare land and avoided the vegetated areas, and that the vegetated areas were systematically cleared to bare land during the study period . The findings of this study have revealed the pressure of human activities on the land and natural environment in Blantyre and provided the basis for sustainable urban planning and development in Blantyre city.
+
+================================================================================
+PAPER CONTENT:
+================================================================================
+
+## Introduction ##
+Studying land use/land cover (LULC) is vital for enhancing our understanding of global environmental change and sustainability 
+Like other anthropogenic-environmental interactions, urban LULC changes are due to a myriad of factors, as no single factor can account for these changes. The interactions are different in every region, but most scholars agree that most LULC changes are influenced by specific economic, demographic, socio-political and environmental conditions 
+Malawi is among the world's least developed and one of the most densely populated countries in Africa. Like other developing countries in sub-Saharan Africa, Malawi has been experiencing progressive urban growth since it attained its independence on 6th July 1964. Malawi's system of governance changed from a one-party rule dictatorship  to a multiparty democratic system from 1994 to the present. During the democratic rule, the urban population increased 2-fold from 1,095,419 in 1998 to 2,115,867 in 2018 in its four main cities of Lilongwe, Blantyre, Mzuzu and Zomba, where over 70 per cent lives in informal settlements 
+Despite that several studies have been done on LULC changes in Malawi 
+Over the past three decades, advances in remote sensing technologies have expedited LULC change studies. By obtaining satellite imagery over a period of time, remote sensing methods can be utilised to analyse historical LULC changes 
+Although cities in Malawi actively engage in planning-including the development of master plans that provide an overview of spatial and infrastructural intentions, strategic plans that outline the broad ways in which thematic issues are to be addressed and investment plans that list priority infrastructure-the plans are barely recognised by the public in urban jurisdictions and often lack effective implementation mechanisms. This is usually blamed on a lack of resources 
+In Blantyre city, the second-largest city in Malawi by population and size, the urban LULC situation is unclear and has not yet been quantified. There is also not enough empirical data on urban LULC changes over time. Therefore, the aim of this study is to analyse urban LULC changes from 1994 to 2018 in Blantyre city using remotely sensed Landsat data in order to support sustainable urban planning. The year of 1994 was chosen as a start date because it is when Malawi changed its governance system from a one-party system to a multiparty system. The year of 2018 was chosen as the end date because it is when the field verification was taken, while the year of 2007 was chosen as an intermediate date to illustrate the rates of change.
+The study also identified random and systematic transitions derived from the classified maps to focus on prominent signals of change in the study area. The study period 1994-2018 was chosen in order to understand how the democratic governance systems influenced the LULC changes in urban environments of Blantyre city. The significance of the study is threefold: (1) the study will reveal the underlying human processes in the urban environment and their interactions; (2) the information generated can assist with managing the pressures of human activities and urban developments on the land, and (3) the results of this study can be used as baseline information to determine future urban land use and for setting policy priorities to promote inclusive and equitable urban development.
+Ultimately, this will help to realise well-balanced urban growth for citizens and the environment in Blantyre city.
+
+## Materials and Methods ##
+
+
+## Study Area ##
+Blantyre is the oldest and second-largest city in Malawi. It was established by the Scottish missionaries in the 1870s and declared a planning area in 1897. It is the main commercial city hosting most of the private sector headquarters in the country. The city lies within the latitude 15 • 47 10" S and longitude 35 • 00 20.10" E, as shown in Figure 
+In 1966, Blantyre was the prime city in Malawi with 109,461 people, seconded by Zomba, the then capital city, with only 19,666 inhabitants. With the transfer of the capital city from Zomba to Lilongwe, as part of a deliberate government policy to redistribute the urban population and implement spatially balanced development across the country 
+
+## Remote Sensing Data ##
+The remotely sensed data used for this study were Landsat Thematic Mapper (TM) and Landsat Operational Land Imager (OLI) with 30 m spatial resolution and a 16 day repeat cycle 
+
+## Image Processing ##
+The Landsat images were an L1T product (systematically, geometrically and topographically corrected). The study area was clipped as a vector file onto the Landsat image in ArcGIS Pro software (ESRI, Redland, CA, USA). In order to reduce confusion between spectral features and improve overall image classification, the radiometric and atmospheric corrections were applied using the Fast Line-of-sight Atmospheric Analysis of Spectral Hypercubes (FLAASH) Model in ENVI 5.2 software (Harris Geospatial, Broomfield, CA, USA) prior to image classification 
+
+## Image Classification ##
+The support vector machine (SVM) classifier in the supervised classification scheme in ArcGIS Pro software (ESRI, Redland, CA, USA) was employed to derive four major LULC classes, namely bare land, built-up area, vegetation and water, as shown in Table 
+
+## LULC Classes Description ##
+
+
+## Bare land ##
+Vacant lands, open areas with little or no vegetation, exposed rocks, quarry, hilly clear-cut areas and other idle fallow land sometimes illegally used for agriculture.
+
+## Built-up area ##
+Urban structures of all types: residential, industrial, commercial, public installations, roads/highways and other similar facilities.
+
+## Vegetation ##
+Forest, parks and permanent tree-covered areas, temporary croplands, grassland, shrubs and other idle lands along streams. Water Permanent open water, especially manmade dams/ponds.
+The classes were adopted from 
+
+## Accuracy Assessment ##
+Accuracy assessment is a prerequisite step in the LULC classification process. This aims to quantitatively determine how effectively pixels are grouped into the correct feature classes in the area under investigation 
+where N is the total number of observations in the error matrix, r is the number of rows and columns in the error matrix, X ii is the number of observations in row i and column i (i.e., the diagonal elements), X +i is the marginal total of row I, X i+ is the marginal total of column i.
+A Kappa value greater than 0.80 indicates excellent agreement, while a value between 0.4 and 0.80 indicates moderate agreement and a value less than or equal to 0.4 indicates poor agreement between classification categories 
+
+## Annual Rates of Change ##
+For an improved description of LULC changes, we calculated the annual rate of change. This process measures the amount of LULC change per year and was calculated according to the approach proposed by 
+where R is the rate of change, A 1 and A 2 are the area in km 2 at the beginning and end of the analysis period, and t 1 and t 2 correspond to the time in years from start to finish, respectively.
+
+## Land Use/Land Cover Change Detection ##
+LULC change detection was carried out by a post-classification comparison of bi-temporal maps. This is perhaps the most common approach for change detection 
+where P + j -P jj is the observed total gross gain of category j, P i + is the size of category i in the start date, 1994 in our case.
+J i=1, i j P j+ is the sum of the sizes of all categories, excluding categories of j, in the start date (1994).
+where (P i+ -P ii ) is the observed total gross loss of category i, P + j is the size of category j in the last date, 2018 in our case. J j=1, j j P + j is the sum of all sizes of all categories, excluding j, in the later date (2018).
+Transitions with observed values that were larger than expected values by 1 per cent point under both random processes of gain and losses were identified as systematic transitions 
+
+## Results ##
+
+
+## Land Use/Land Cover Classification ##
+The spatiotemporal patterns of LULC classes considered in this study for 1994, 2007 and 2018 derived from the Landsat images using the SVM classifier are shown in Figure 
+There have been distinct urban LULC changes in Blantyre city over the 24-year period. The changes are mainly characterised by an increase in a built-up area and a decrease in bare land and vegetation. The water class remained constant (less than 0.5 per cent of the study area) throughout the study period. Overall, the built-up area increased at an annual rate of 5.34 per cent from 1994 to 2018. In the first period 
+Bare land declined at the annual rate of 0.52 per cent over the study period. However, during the first period 
+
+## Accuracy Assessment of the LULC Classification ##
+Table 
+
+## Post-Classification Change Detection ##
+Table 
+The matrices were also analysed to understand the transition budget by calculating the gains, losses, total change, swap and net change as shown in Table 
+The losses and the resulting swap proportions for the built-up class would not be expected but it could have resulted from the errors of commission and omission during the classification process. The error of commission and omission are the complement of the user's and the producer's accuracies, respectively, as shown in Table 
+
+## Detection of Random and Systematic Transitions ##
+This study further analysed the transition matrix for 1994 and 2018 in order to identify the most significant changes among the LULC classes. The expected gains under the random process of gain were calculated using Equation (3). The expected gains and the differences between the observed and expected proportions are given in Table 
+The differences between the observed and expected gains for vegetation to the built-up area (-1. 
+The equivalent relationship between the different LULC classes, which examines the actual and expected losses under the random process of loss, is shown in Table 
+In a nutshell, there has been a systematic conversion of the bare land class to the built-up class as well as a systematic degradation of the vegetation class to the bare land class in Blantyre city over the 24-year study period. This was demonstrated by the concurrent incidences of the systematic gains and losses 
+
+## Discussion ##
+The results indicated that there were increased anthropogenic-induced urban LULC changes in Blantyre city over the past 24 years. This was substantiated by the observed accelerated increase in built-up area from 4.1 per cent during the initial period to almost 7 per cent in the later period, with an overall annual change at 5.3 per cent. This is similar to the accelerated declining rates observed for the vegetation and bare land classes (Section 3.1). The increase in the built-up class is comparable to other studies conducted in the sub-Saharan African cities, including the Dakar metropolitan area in Senegal, Nairobi city in Kenya, and Harare city in Zimbabwe, which experienced an increase in built-up areas at the annual rates of 9.6, 9.5 and 4.7 per cent, respectively, between the years 1990 and 2014 
+Firstly, the observed annual growth rate of 5.3 per cent for the built-up class in the study area surpassed the urban population growth rate estimated at 2.3 per cent between 1998 and 2018 
+Secondly, the vegetation loss observed in this study signifies the loss of green spaces (such as forests and parks) 
+Lastly, the decline in bare land exerts enormous pressure on land suitable for urban development. Recently, over 10,000 families were reported to have built their houses illegally in areas such as wetlands, steep slopes and river/stream buffer zones in the city 
+Furthermore, the analysis of the transitional matrix derived from the 1994 and 2018 classified maps, as shown in Table 
+These systematic processes suggest that the gain in built-up targets bare land and avoids vegetation. This can be explained by the fact that most land under vegetated areas, such as Ndirande, Soche and Kanjedza forest reserves, as well as the Mudi catchment area, are protected leaving bare land vulnerable to conversion to built-up. Additionally, most vegetated areas have unsuitable land for development, such as wetlands, steep slopes and river/stream buffer zones. Likewise, the gain in bare land systematically targets the vegetation class and avoids the built-up class. This systematic process has caused the loss of vegetative cover in the study area. This loss could be explained by anthropogenic activities, such as wood extraction for firewood, brick burning and lapses in management 
+
+## Limitations of the Study ##
+This study used Landsat data with a spatial resolution of 30 m, meaning that the changes below this pixel size might have been missed during classification processes. Therefore, the use of high-resolution satellite data could have provided more detailed information about LULC changes with higher accuracy.
+
+## Conclusions ##
+This study provides the details of urban LULC changes in Blantyre city from 1994 to 2018 characterised by an increase in built-up area and the decline of vegetation and bare land areas, respectively. The study further reveals a two-step temporal transition, firstly from the vegetation class to the bare land class, and from the bare land class to the built-up class. This clearly demonstrates the existence of inefficiencies in the management of urban growth in the city. Based on this information, urban development stakeholders can make policy and planning priorities to ensure sustainable urban development. In order to ensure sustainable urban development in Blantyre city, this study suggests that the authorities should expedite the allocation of all suitable land for development while safeguarding unauthorised development in risky areas. This study, further, calls for all planning authorities in Malawi at the city, district, regional and national levels to review physical plans more often and help to facilitate the timely supply of serviced land across the country.
+Regarding the observed vegetation cover loss, some innovative policy measures, such as identifying crucial vegetation areas for protection from anthropogenic forces, could be implemented. There is also a need to enhance cooperation among urban stakeholders and local residents, including providing incentives that could encourage locals to conserve vegetation and allow natural regeneration on bare hills and other vegetation reserves within the city boundary.
+
+================================================================================
+REFERENCES:
+================================================================================
+1. Analysis of twenty years of categorical land transitions in the Lower Hunter of New South Wales
+   Authors: , , , 
+   Date: 2010
+
+2. Monitoring urban growth and land use change detection with GIS and remote sensing techniques in Daqahlia governorate Egypt
+   Authors: , 
+   Date: 2015
+
+3. UNDESA)/Population Division
+   Date: 2019
+
+4. UNDESA)/Population Division
+   Date: 2015
+
+5. Land change dynamics: Insights from Intensity Analysis applied to an African emerging city
+   Authors: , , 
+   Date: 2016
+
+6. Global change and the ecology of cities
+   Authors: , , , , 
+   Date: 2008. 15 November 2019
+
+7. Land Use Change and Biodiversity: A Synthesis of Rates and Consequences during the Period of Satellite Imagery. In Land Change Science: Observing, Monitoring, and Understanding Trajectories of Change on the Earth's Surface
+   Authors: , , 
+   Date: 2004
+
+8. Dynamics of urban growth in the Washington DC metropolitan area, 1973-1996, from Landsat observations
+   Authors: , , 
+   Date: 2000
+
+9. Land-Use/Land-Cover Change Analysis and Urban Growth Modeling in the Greater Accra Metropolitan Area (GAMA)
+   Authors: , 
+   Date: 2019, 3, 26
+
+10. Be Counted, Leave No One Behind
+   Date: 2018. 31 October 2019
+
+11. Situation of Urbanization in Malawi (Consultancy Services to Prepare a National Urban Policy Framework); Ministry of Lands and Housing
+   Authors: 
+   Date: 2013
+
+12. Local Perception of Drivers of Land-Use and Land-Cover Change Dynamics across Dedza District
+   Authors: , , , , , , 
+   Date: 2019
+
+13. Land use and household energy dynamics in Malawi
+   Authors: , 
+   Date: 2016
+
+14. Land use/land cover change and implications for ecosystems services in the Likangala River Catchment
+   Authors: , , 
+   Date: 2016
+
+15. Remote sensing-derived national land cover land use maps: A comparison for Malawi
+   Authors: , , 
+   Date: 2014
+
+16. Modeling Deforestation in Dzalanyama Forest Reserve
+   Authors: , 
+   Date: 2014
+
+17. Land cover mapping in the Upper Shire River catchment in Malawi using Landsat satellite data
+   Authors: , , 
+   Date: 2010
+
+18. Using a time series of satellite imagery to detect land use and land cover changes in the Atlanta, Georgia Metropolitan Area
+   Authors: , 
+   Date: 2002
+
+19. The role of spatial metrics in the analysis and modeling of urban land use change
+   Authors: , , 
+   Date: 2005
+
+20. Urban Growth Analysis and Remote Sensing: A Case Study of Kolkata
+   Authors: 
+   Date: 1980-2010. 2012
+
+21. Land use land cover change in Guangzhou, China, from 1998 to 2003, based on Landsat TM/ETM+ imagery
+   Authors: , , 
+   Date: 2007
+
+22. Land use and Land cover Change Detection and Urban Sprawl Analysis of Vijayawada City using Multi-temporal Landsat Data
+   Authors: , , , , 
+   Date: 2012
+
+23. Urban land contestation, challenges and planning strategies in Malawi's main urban centres
+   Authors: , 
+   Date: 2018
+
+24. Contained urban growth in post-independence Malawi
+   Authors: 
+   Date: 1997
+
+25. Blantyre Urban Structure Plan Background Report
+   Date: 2000. 2014. 2000
+
+26. Remote sensing change detection for ecological monitoring in United States protected areas
+   Authors: 
+   Date: 2015
+
+27. Landsat-Earth Observation Satellite (Version 1
+   Date: August 2016. 2016
+
+28. Land-cover change analysis and simulation in Conakry (Guinea), using hybrid cellular-automata and markov model
+   Authors: , , 
+   Date: 2018
+
+29. A land use and land cover classification system for use with remote sensor data
+   Authors: , , , 
+   Date: 1976
+
+30. Assessment of land-use/land-cover change and forest fragmentation in the Garhwal Himalayan Region of India
+   Authors: , , 
+   Date: 2017
+
+31. Thematic map comparison: Evaluating the statistical significance of differences in classification accuracy
+   Authors: 
+   Date: 2004
+
+32. Assessing the Accuracy of Remotely Sensed Data: Principles and Practices
+   Authors: , , , 
+   Date: 2009
+
+33. Standardizing the Calculation of the Annual Rate of Deforestation
+   Authors: 
+   Date: 2003
+
+34. Digital Change Detection
+   Authors: 
+   Date: 2005
+
+35. Land-cover change and environmental impact analysis in the Greater Mankato area of Minnesota using remote sensing and GIS modelling
+   Authors: 
+   Date: 2008
+
+36. Analysis of the Land Use and Cover Changes in the Metropolitan Area of Tepic-Xalisco (1973-2015) through Landsat Images
+   Authors: , , , 
+   Date: 2018. 1860
+
+37. Systematic transitions in land use and land cover in a pre-Andean sub watershed with high human intervention in the Araucania Region
+   Authors: , 
+   Date: 2016
+
+38. Systematic and random transitions of land-cover types in Burkina Faso
+   Authors: , , , , 
+   Date: 2011
+
+39. Analyzing about sixty years of land-cover change and associated landscape fragmentation in Shiretoko Peninsula, Northern Japan
+   Authors: , 
+   Date: 2011
+
+40. Identifying systematic land cover transitions using remote sensing and GIS: The fate of forests inside and outside protected areas of Southwestern Ghana
+   Authors: , , 
+   Date: 2008
+
+41. Detecting important categorical land changes while accounting for persistence
+   Authors: , , , 
+   Date: 2004
+
+42. Systematic processes of land use/land cover change to identify relevant driving forces: Implications on water quality
+   Authors: , , 
+   Date: 2014
+
+43. Random and systematic land-cover transitions in northern Ghana
+   Authors: 
+   Date: 2006
+
+44. Trends and spatial patterns of urbanization in Asia and Africa: A comparative analysis
+   Authors: , 
+   Date: 2017
+
+45. Principles and Applications of the Global Human Settlement Layer as Baseline for the Land Use Efficiency Indicator-SDG 11.3. 1. ISPRS
+   Authors: , , , , 
+   Date: 2019
+
+46. World Cities Report: Urbanisation and Development Emerging Futures
+   Authors: 
+   Date: 2016
+
+47. The importance of land cover change across urban-rural typologies for climate modelling
+   Authors: , , , 
+   Date: 2013
+
+48. Implications for sustainable urban development
+   Authors: , , , 
+   Date: 2019
+
+49. Landscape pattern and ecosystem service value changes: Implications for environmental sustainability planning for the rapidly urbanizing summer capital of the Philippines
+   Authors: , 
+   Date: 2013
+
+50. Effects of Urban Development on Floods; USGS Fact Sheet
+   Authors: 
+   Date: 2003
+
+51. Valuing Cultural Ecosystem Services
+   Authors: , , 
+   Date: 2016
+
+52. Blantyre City Council U-Turns on Houses Demolition, The Times Group
+   Authors: 
+   Date: 10 March 2018. 8 April 2019
+
+53. Building a Productive, Competitive and Resilient Nation
+   Date: 2017-2022. November. 2017. 2017
+
+54. Urban Vulnerability, Disaster Risk Reduction and Resettlement in Mzuzu City, Malawi
+   Authors: 
+   Date: 2017
+
+55. Deforestation since independence: A quantitative assessment of four decades of land-cover change in Malawi
+   Authors: , , , , 
+   Date: 2017
+
+56. Status of Forests and Tree Management in Malawi; A Position Paper Prepared for the Coordination Union for Rehabilitation of the Environment (CURE)
+   Authors: , , , 
+   Date: 2010
+
+57. An Analysis of the Causes of Deforestation in Malawi: A Case of Mwazisi
+   Authors: , 
+   Date: 2019
+
+58. 
+   Authors: 
+   Date: 2009. 28 October 2018
+
+59. The Problem of Fuel Wood Energy Demand in Malawi with Reference to the Construction Industry
+   Authors: 
+   Date: 2005. 17 January 2019
+
+60. Solving deforestation, protecting and managing key water catchments in Malawi using smart public and private partnerships
+   Authors: , , 
+   Date: 2015
+
+61. Malawi Urban Housing Sector Profile, Nairobi. 2010. Available online
+   Date: 26 February 2019
+
+62. eb7b708aeffab5687c833/The-political-economy-of-urban-food-security
+   Authors: 
+   Date: 2012. 7 April 2019
+
+63. Blantyre Water Board wins the battle against encroachers
+   Authors: 
+   Date: 2012, 1, 20
+

@@ -1,0 +1,18 @@
+{
+  "article_id": "7",
+  "original_sentence": "Agricultural expansion occurred in the Kalahari Desert area.",
+  "entities": [
+    {
+      "text": "expansion",
+      "label": "CHANGE",
+      "start_char": 13,
+      "end_char": 22
+    },
+    {
+      "text": "Kalahari Desert area",
+      "label": "LOC",
+      "start_char": 39,
+      "end_char": 59
+    }
+  ]
+}

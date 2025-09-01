@@ -1,0 +1,12 @@
+{
+  "article_id": "8",
+  "original_sentence": "Remote sensing data showed changes in Namib Desert vegetation.",
+  "entities": [
+    {
+      "text": "Namib Desert vegetation",
+      "label": "LOC",
+      "start_char": 38,
+      "end_char": 61
+    }
+  ]
+}
