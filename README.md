@@ -32,7 +32,7 @@ We explored two complementary strategies:
  **Results**:  
 Claude Sonnet 4 + CoT prompting achieved the **best performance** with a **Micro-F1 score of 0.786**, outperforming other models.
 
-![Model Performance on RE](model_performance_RE.png)
+![Model Performance on RE](Model Performance on RE.png)
 
 ### 3. **Relevant Sentence Extraction**
 - To narrow down to sentences that likely contain relations, two approaches were tested:
