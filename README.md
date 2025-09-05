@@ -53,6 +53,7 @@ This dataset was then used to evaluate both pipeline and joint extraction method
 ---
 
 ## 🗂 Repository Structure
+```
 ARENA-2025/
 │
 ├── 📂 papers/
@@ -89,3 +90,4 @@ ARENA-2025/
 │
 ├── README.md # Project overview and documentation
 └── requirements.txt # Dependencies for reproducibility
+```
