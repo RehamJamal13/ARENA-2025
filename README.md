@@ -53,3 +53,39 @@ This dataset was then used to evaluate both pipeline and joint extraction method
 ---
 
 ## 🗂 Repository Structure
+ARENA-2025/
+│
+├── 📂 papers/
+│ └── Collection of downloaded scientific articles on LULC change
+│ (source material for entity and relation extraction)
+│
+├── 📂 extracted_text/
+│ └── Pre-processed text extracted from the PDF papers
+│ (segmented into sentences and paragraphs)
+│
+├── 📂 data/
+│ ├── LULC.csv # Vocabulary of Land Use / Land Cover terms
+│ ├── LCprocess.csv # Vocabulary of LULC process/change terms
+│ ├── all_segmented_sentences_from_articles.csv
+│ │ → Complete sentence segmentation from all papers
+│ ├── extracted_lulc_sentences_from_articles_by_BERT.csv
+│ │ → Sentences classified as LULC-relevant by the fine-tuned BERT model
+│ ├── sentence_extraction_results_IR.csv
+│ │ → Relevant sentences retrieved using IR (MiniLM embeddings)
+│ ├── paragraph_extraction_results_IR.csv
+│ │ → Relevant paragraphs retrieved using IR approach
+│ └── Queries.csv # 233 predefined queries for RE evaluation
+│
+├─├── 📂 Joint Entity/
+│ ├── 📂 RESULT/ # Output results from experiments
+│ ├── 📂 prompt/ # Prompts used for entity/relation extraction
+│
+├
+│
+├─├── 📂 Pipeline Approach/
+│ ├── Rule-based: **SpaCy + custom vocabulary notebooks
+│ ├── ransformer-based: **fine-tuned RoBERTa model for improved NER** notebooks
+│ ├── Relation Extractio notebooks
+│
+├── README.md # Project overview and documentation
+└── requirements.txt # Dependencies for reproducibility
